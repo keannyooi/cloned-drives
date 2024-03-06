@@ -1,13 +1,13 @@
 {
     "carID": "c01210",
-    "cr": 630,
+    "cr": 631,
     "make": "Subaru",
-    "model": "Impreza WRX STI",
+    "model": "Impreza WRX STi",
     "modelYear": 2001,
     "country": "JP",
     "topSpeed": 148,
     "0to60": 5.3,
-    "handling": 80,
+    "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Street Racer"],
@@ -21,30 +21,24 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 67.95,
-    "ola": 60.38,
+    "mra": 57.14,
+    "ola": 75,
     "description": "The first version of the 2nd gen STI, well-known for its weirdly shaped headlights, hence it was called \"Blobeye\".",
- 
     "333TopSpeed": 152,
     "3330to60": 5,
-    "333Handling": 83,
-
+    "333Handling": 85,
     "666TopSpeed": 155,
     "6660to60": 4.8,
-    "666Handling": 85,
-
+    "666Handling": 87,
     "699TopSpeed": 155,
     "6990to60": 4.5,
-    "699Handling": 89,
-
+    "699Handling": 91,
     "969TopSpeed": 159,
     "9690to60": 4.8,
-    "969Handling": 89,
-
+    "969Handling": 91,
     "996TopSpeed": 158,
     "9960to60": 4.5,
-    "996Handling": 85,
-
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence"
+    "996Handling": 87,
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaWRXSTi(2001).png",
+    "creator": "Bnuuy"
 }

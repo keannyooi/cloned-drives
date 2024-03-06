@@ -1,13 +1,13 @@
 {
     "carID": "c03022",
-    "cr": 720,
+    "cr": 704,
     "make": "Mercedes-Benz",
     "model": "Vision SLR Concept Roadster",
     "modelYear": 1999,
     "country": "DE",
     "topSpeed": 199,
     "0to60": 4.1,
-    "handling": 88,
+    "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Concept","Unique","The Tyrol Tour","Year of the Rabbit"],
@@ -21,29 +21,29 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 77.35,
+    "mra": 76.18,
     "ola": 97.56,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzVisionSLRRoadsterConcept(1999).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 202, 
 "3330to60": 3.9, 
-"333Handling": 91,
+"333Handling": 89,
 
 "666TopSpeed": 204, 
 "6660to60": 3.7, 
-"666Handling": 94,
+"666Handling": 92,
 
 "699TopSpeed": 204, 
 "6990to60": 3.5, 
-"699Handling": 98,
+"699Handling": 95,
 
 "969TopSpeed": 207, 
 "9690to60": 3.7, 
-"969Handling": 98,
+"969Handling": 95,
 
 "996TopSpeed": 207, 
 "9960to60": 3.5, 
-"996Handling": 94
+"996Handling": 92
 }

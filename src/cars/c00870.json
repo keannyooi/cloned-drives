@@ -1,6 +1,6 @@
 {
     "carID": "c00870",
-    "cr": 820,
+    "cr": 824,
     "make": [
         "Mercedes-Benz",
         "McLaren"
@@ -10,7 +10,7 @@
     "country": "DE",
     "topSpeed": 217,
     "0to60": 3.3,
-    "handling": 88,
+    "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
@@ -20,7 +20,7 @@
         "Track Day"
     ],
     "isPrize": true,
-    "weight": 1568,
+    "weight": 1560,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Open Air",
@@ -29,23 +29,23 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 95,
-    "ola": 88,
+    "ola": 94.55,
     "description": "",
      "333TopSpeed": 219,
     "3330to60": 3.1,
-    "333Handling": 91,
+    "333Handling": 92,
     "666TopSpeed": 222,
     "6660to60": 3.0,
-    "666Handling": 94,
+    "666Handling": 95,
     "996TopSpeed": 224,
     "9960to60": 2.8,
-    "996Handling": 94,
+    "996Handling": 95,
     "969TopSpeed": 224,
     "9690to60": 3.0,
-    "969Handling": 98,
+    "969Handling": 99,
     "699TopSpeed": 222,
     "6990to60": 2.8,
-    "699Handling": 98,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Exist"
+    "699Handling": 99,
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzSLRMcLarenStirlingMossEdition(2009).png",
+    "creator": "Bnuuy"
 }

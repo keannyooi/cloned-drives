@@ -1,20 +1,20 @@
 {
     "carID": "c01196",
-    "cr": 610,
+    "cr": 718,
     "make": "Subaru",
-    "model": "Impreza RB320",
-    "modelYear": 2006,
+    "model": "Impreza WRX STi RB320",
+    "modelYear": 2007,
     "country": "JP",
     "topSpeed": 158,
     "0to60": 4.8,
-    "handling": 81,
+    "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Street Racer", "Track Day"],
     "isPrize": false,
     
-    "weight": 1495,
-    "gc": "Low",
+    "weight": 1450,
+    "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
@@ -22,29 +22,29 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 64.86,
-    "ola": 83.33,
+    "ola": 74.22,
     "description": "This Hawkeye STI was made in honor of the late Richard Burns' legacy.",
  
     "333TopSpeed": 161,
     "3330to60": 4.6,
-    "333Handling": 84,
+    "333Handling": 89,
 
     "666TopSpeed": 165,
     "6660to60": 4.3,
-    "666Handling": 86,
+    "666Handling": 92,
 
     "699TopSpeed": 165,
     "6990to60": 4.1,
-    "699Handling": 90,
+    "699Handling": 95,
 
     "969TopSpeed": 168,
     "9690to60": 4.3,
-    "969Handling": 90,
+    "969Handling": 95,
 
     "996TopSpeed": 168,
     "9960to60": 4.1,
-    "996Handling": 86,
+    "996Handling": 92,
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaWRXSTiRB320(2007).png",
+    "creator": "Bnuuy"
 }
