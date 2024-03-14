@@ -1,6 +1,6 @@
 {
     "carID": "c00026",
-    "cr": 520,
+    "cr": 515,
     "make": "Alfa Romeo",
     "model": "156 GTA",
     "modelYear": 2002,
@@ -13,7 +13,7 @@
     "tags": [],
     "isPrize": false,
     "weight": 1410,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.3,
     "699Handling": 90,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo156GTA(2002).png",
     "creator": "Havvy"
 }
