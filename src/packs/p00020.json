@@ -1,0 +1,75 @@
+{
+    "packName": "00s Elite Pack",
+    "description": "5 Rare or Higher 00s cards",
+	"repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/00sElitePack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 2000,
+            "end": 2009
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        }
+    ]
+}

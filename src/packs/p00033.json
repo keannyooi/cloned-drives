@@ -1,0 +1,76 @@
+{
+    "packName": "5x Booster Pack",
+    "description": "The normal pack of 25 Random low end cards",
+	"price": 102500,
+	"repetition": 5,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/5xBoosterPack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 50,			
+			"common": 50,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 50,			
+			"common": 50,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 50,			
+			"common": 50,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 50,
+			"uncommon": 50,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 30,
+			"uncommon": 70,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        }
+    ]
+}
