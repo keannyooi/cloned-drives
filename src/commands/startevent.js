@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
-const { registerFont, loadImage, createCanvas } = require("canvas");
+const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
@@ -49,9 +49,8 @@ module.exports = {
                     event.deadline = DateTime.now().plus({ days: parseInt(event.deadline) }).toISO();
                 }
 
-                registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed", weight: "bold" });
                 const canvas = createCanvas(903 * Math.ceil(event.roster.length / 5), 299 * (event.roster.length <= 5 ? event.roster.length : 5));
-                const ctx = canvas.getContext("2d");
+                const context = canvas.getContext("2d");
                 let attachment, cucked = false;
 
                 try {
@@ -71,22 +70,22 @@ module.exports = {
                             loadImage(bot.emojis.cache.get(glofEmojiID).url),
                             loadImage(bot.emojis.cache.get(packEmojiID).url)
                         ]);
-                    ctx.fillStyle = "#ffffff";
+                    context.fillStyle = "#ffffff";
 
                     for (let i = 0; i < event.roster.length; i++) {
                         let baseX = Math.floor(i / 5) * 903;
                         let baseY = (i % 5) * 299;
 
-                        ctx.font = 'bold 41px "Roboto Condensed"';
-                        ctx.textAlign = "left";
-                        ctx.drawImage(bot.graphics.eventTemp, baseX, baseY);
-                        ctx.drawImage(hudPromises[i], baseX + 13, baseY + 59, 374, 224);
-                        ctx.drawImage(mapPromises[i], baseX + 482, baseY + 190, 98, 98);
-                        ctx.fillText(i + 1, baseX + 130, baseY + 41);
-                        ctx.fillText(event.roster[i].upgrade, baseX + 31, baseY + 277);
+                        context.font = 'bold 41px "Roboto Condensed"';
+                        context.textAlign = "left";
+                        context.drawImage(bot.graphics.eventTemp, baseX, baseY);
+                        context.drawImage(hudPromises[i], baseX + 13, baseY + 59, 374, 224);
+                        context.drawImage(mapPromises[i], baseX + 482, baseY + 190, 98, 98);
+                        context.fillText(i + 1, baseX + 130, baseY + 41);
+                        context.fillText(event.roster[i].upgrade, baseX + 31, baseY + 277);
 
                         let x = 0;
-                        ctx.font = 'bold 38px "Roboto Condensed"';
+                        context.font = 'bold 38px "Roboto Condensed"';
                         for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
                             let image;
                             switch (key) {
@@ -107,38 +106,38 @@ module.exports = {
                                     value = value.carID;
                                     let car = require(`../cars/${value}`);
                                     if (car["cr"] > 849) {
-                                        ctx.fillStyle = "#ffb80d";
+                                        context.fillStyle = "#ffb80d";
                                     }
                                     else if (car["cr"] <= 849 && car["cr"] > 699) {
-                                        ctx.fillStyle = "#9e3fff";
+                                        context.fillStyle = "#9e3fff";
                                     }
                                     else if (car["cr"] <= 699 && car["cr"] > 549) {
-                                        ctx.fillStyle = "#ff3639";
+                                        context.fillStyle = "#ff3639";
                                     }
                                     else if (car["cr"] <= 549 && car["cr"] > 399) {
-                                        ctx.fillStyle = "#ffd737";
+                                        context.fillStyle = "#ffd737";
                                     }
                                     else if (car["cr"] <= 399 && car["cr"] > 249) {
-                                        ctx.fillStyle = "37cdff";
+                                        context.fillStyle = "37cdff";
                                     }
                                     else if (car["cr"] <= 249 && car["cr"] > 99) {
-                                        ctx.fillStyle = "#78ff53";
+                                        context.fillStyle = "#78ff53";
                                     }
                                     else {
-                                        ctx.fillStyle = "#aaaaaa";
+                                        context.fillStyle = "#aaaaaa";
                                     }
                                     break;
                                 case "pack":
                                     image = packImage
                                     let pack = require(`../packs/${value}`);
                                     if (pack["packName"].toLowerCase().includes("elite")) {
-                                        ctx.fillStyle = "#ff3639";
+                                        context.fillStyle = "#ff3639";
                                     }
                                     else if (pack["packName"].toLowerCase().includes("booster")) {
-                                        ctx.fillStyle = "#78ff53";
+                                        context.fillStyle = "#78ff53";
                                     }
                                     else {
-                                        ctx.fillStyle = "#ffd737";
+                                        context.fillStyle = "#ffd737";
                                     }
                                     break;
                                 default:
@@ -146,21 +145,21 @@ module.exports = {
                             }
 
                             let { w, h } = adjustSize(image);
-                            ctx.drawImage(image, baseX + 676 + ((65 - w) / 2), baseY + 58 + (x * 77) + ((64 - h) / 2), w, h);
-                            ctx.fillText(value, baseX + 754, baseY + 103 + (x * 77));
-                            ctx.fillStyle = "#ffffff";
+                            context.drawImage(image, baseX + 676 + ((65 - w) / 2), baseY + 58 + (x * 77) + ((64 - h) / 2), w, h);
+                            context.fillText(value, baseX + 754, baseY + 103 + (x * 77));
+                            context.fillStyle = "#ffffff";
                             x++;
                         }
 
-                        ctx.textAlign = "center";
-                        ctx.font = 'bold 30px "Roboto Condensed"';
+                        context.textAlign = "center";
+                        context.font = 'bold 30px "Roboto Condensed"';
                         let reqString = "";
                         let words = reqDisplay(event.roster[i].reqs).split(" "), line = "", rowY = 0;
                         for (let x = 0; x < words.length; x++) {
                             reqString = line + words[x] + " ";
-                            let metrics = ctx.measureText(reqString);
+                            let metrics = context.measureText(reqString);
                             if (metrics.width > 234 && x > 0) {
-                                ctx.fillText(line, baseX + 533, baseY + 77 + rowY);
+                                context.fillText(line, baseX + 533, baseY + 77 + rowY);
                                 line = words[x] + " ";
                                 rowY += 25;
                             }
@@ -168,7 +167,7 @@ module.exports = {
                                 line = reqString;
                             }
                         }
-                        ctx.fillText(line, baseX + 533, baseY + 77 + rowY);
+                        context.fillText(line, baseX + 533, baseY + 77 + rowY);
                     }
 
                     function adjustSize(image) {
@@ -180,11 +179,11 @@ module.exports = {
                 }
                 catch (error) {
                     console.log(error);
-                    attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "event.jpg" });
+                    attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "event.jpeg" });
                     cucked = true;
                 }
                 if (!cucked) {
-                    attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "event.jpg" });
+                    attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "event.jpeg" });
                 }
 
                 const successMessage = new SuccessMessage({

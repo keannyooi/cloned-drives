@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { createCanvas, loadImage } = require("canvas");
+const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
@@ -82,10 +82,10 @@ async function regenDealership() {
     await serverStatModel.updateOne({}, { dealershipCatalog: catalog });
 
     const canvas = createCanvas(694, 249);
-    const ctx = canvas.getContext("2d");
+    const context = canvas.getContext("2d");
     let attachment, promises, cucked = false;
     try {
-        ctx.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
+        context.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
         const cards = catalog.map(car => {
             let currentCar = require(`../../cars/${car.carID}`);
             return loadImage(currentCar["racehud"]);
@@ -93,16 +93,16 @@ async function regenDealership() {
         promises = await Promise.all(cards);
 
         for (let i = 0; i < catalog.length; i++) {
-            ctx.drawImage(promises[i], cardPlacement[i].x, cardPlacement[i].y, 167, 103);
+            context.drawImage(promises[i], cardPlacement[i].x, cardPlacement[i].y, 167, 103);
         }
     }
     catch (error) {
         console.log(error);
-        attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "dealership.jpg" });
+        attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "dealership.jpeg" });
         cucked = true;
     }
     if (!cucked) {
-        attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "dealership.jpg" });
+        attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "dealership.jpeg" });
     }
 
     const dealershipChannel = await bot.homeGuild.channels.fetch(dealershipChannelID);

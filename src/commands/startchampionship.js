@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
-const { registerFont, loadImage, createCanvas } = require("canvas");
+const { registerFont, loadImage, createCanvas } = require("@napi-rs/canvas");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
