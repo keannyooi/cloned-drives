@@ -10,7 +10,7 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Rest of The World","The Amplification of Asia","Unique","Concept"],
+    "tags": ["Rest of The World", "The Amplification of Asia", "Unique", "Concept"],
     "isPrize": false,
 	
     "weight": 2700,
@@ -19,31 +19,31 @@
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
-    "enginePos": "Front",
-    "fuelType": "Petrol",
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
     "mra": 53.36,
     "ola": 72.5,
-    "description": "",
+    "description": "The other concept car revealed alongside the Hongqi S9 is what would eventually become Hongqi's top-of-the-line luxury SUV. The reason it bears quite a resemblance to the Rolls-Royce Cullinan is quite simple: it was designed by none other than the man who designed the Cullinan himself, Giles Taylor. Hongqi only claimed a 600km driving range and Level 4 self-driving technology for it at the show.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/hongqie115.png",
     "creator": "Keanny",
 
-"333TopSpeed": 117,
-"3330to60": 3.7,
-"333Handling": 80,
+    "333TopSpeed": 117,
+    "3330to60": 3.7,
+    "333Handling": 80,
 
-"666TopSpeed": 121,
-"6660to60": 3.5,
-"666Handling": 82,
+    "666TopSpeed": 121,
+    "6660to60": 3.5,
+    "666Handling": 82,
 
-"699TopSpeed": 121,
-"6990to60": 3.3,
-"699Handling": 85,
+    "699TopSpeed": 121,
+    "6990to60": 3.3,
+    "699Handling": 85,
 
-"969TopSpeed": 126,
-"9690to60": 3.5,
-"969Handling": 85,
+    "969TopSpeed": 126,
+    "9690to60": 3.5,
+    "969Handling": 85,
 
-"996TopSpeed": 126,
-"9960to60": 3.3,
-"996Handling": 82
+    "996TopSpeed": 126,
+    "9960to60": 3.3,
+    "996Handling": 82
 }

@@ -1,6 +1,6 @@
 {
     "carID": "c03565",
-    "cr": 710,
+    "cr": 712,
     "make": "Hongqi",
     "model": "E-HS9 Flagship",
     "modelYear": 2020,
@@ -10,7 +10,7 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Rest of The World","The Amplification of Asia"],
+    "tags": ["Rest of The World", "The Amplification of Asia"],
     "isPrize": false,
 	
     "weight": 2610,
@@ -19,31 +19,31 @@
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
-    "enginePos": "Front",
-    "fuelType": "Petrol",
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
     "mra": 62.12,
     "ola": 74.57,
-    "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "description": "Hongqi's top-of-the-line electric SUV shows up after a year's worth of refinements during the heights of the global pandemic, and it's out for the Cullinan's blood. With the help of the man behind the Cullinan himself, the E-HS9 offers the Cullinan experience for a fraction of its price.",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HongqiE-HS9Flagship(2020).png",
     "creator": "Keanny",
 
-"333TopSpeed": 128,
-"3330to60": 4.6,
-"333Handling": 77,
+    "333TopSpeed": 128,
+    "3330to60": 4.6,
+    "333Handling": 77,
 
-"666TopSpeed": 132,
-"6660to60": 4.3,
-"666Handling": 80,
+    "666TopSpeed": 132,
+    "6660to60": 4.3,
+    "666Handling": 80,
 
-"699TopSpeed": 132,
-"6990to60": 4.1,
-"699Handling": 83,
+    "699TopSpeed": 132,
+    "6990to60": 4.1,
+    "699Handling": 83,
 
-"969TopSpeed": 137,
-"9690to60": 4.3,
-"969Handling": 83,
+    "969TopSpeed": 137,
+    "9690to60": 4.3,
+    "969Handling": 83,
 
-"996TopSpeed": 137,
-"9960to60": 4.1,
-"996Handling": 80
+    "996TopSpeed": 137,
+    "9960to60": 4.1,
+    "996Handling": 80
 }

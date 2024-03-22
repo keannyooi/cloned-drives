@@ -1,6 +1,6 @@
 {
     "carID": "c03564",
-    "cr": 540,
+    "cr": 541,
     "make": "Hongqi",
     "model": "E-HS9 Executive",
     "modelYear": 2020,
@@ -10,7 +10,7 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Rest of The World","The Amplification of Asia"],
+    "tags": ["Rest of The World", "The Amplification of Asia"],
     "isPrize": false,
 	
     "weight": 2512,
@@ -19,31 +19,31 @@
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
-    "enginePos": "Front",
-    "fuelType": "Petrol",
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
     "mra": 54.46,
     "ola": 70.11,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HongqiE-HS9Executive(2020).png",
     "creator": "Keanny",
 
-"333TopSpeed": 128,
-"3330to60": 6,
-"333Handling": 74,
+    "333TopSpeed": 128,
+    "3330to60": 6,
+    "333Handling": 74,
 
-"666TopSpeed": 132,
-"6660to60": 5.7,
-"666Handling": 77,
+    "666TopSpeed": 132,
+    "6660to60": 5.7,
+    "666Handling": 77,
 
-"699TopSpeed": 132,
-"6990to60": 5.4,
-"699Handling": 80,
+    "699TopSpeed": 132,
+    "6990to60": 5.4,
+    "699Handling": 80,
 
-"969TopSpeed": 137,
-"9690to60": 5.7,
-"969Handling": 80,
+    "969TopSpeed": 137,
+    "9690to60": 5.7,
+    "969Handling": 80,
 
-"996TopSpeed": 137,
-"9960to60": 5.4,
-"996Handling": 77
+    "996TopSpeed": 137,
+    "9960to60": 5.4,
+    "996Handling": 77
 }

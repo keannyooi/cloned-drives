@@ -1,5 +1,5 @@
 {
-    "carID": "c0",
+    "carID": "c05125",
     "cr": 412,
     "make": "Aiways",
     "model": "U5 Premium",
@@ -10,8 +10,9 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD 2.0: New Era", "Eco-Friendly","Rest of The World"],
+    "tags": ["CD 2.0: New Era", "Eco-Friendly", "Rest of The World"],
     "isPrize": false,
+
     "weight": 1770,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +24,26 @@
     "mra": 56.77,
     "ola": 82.58,
     "description": "",
-"333TopSpeed": 107,
-"3330to60": 7,
-"333Handling": 79,
-
-"666TopSpeed": 112,
-"6660to60": 6.7,
-"666Handling": 81,
-
-"699TopSpeed": 112,
-"6990to60": 6.3,
-"699Handling": 84,
-
-"969TopSpeed": 117,
-"9690to60": 6.7,
-"969Handling": 84,
-
-"996TopSpeed": 117,
-"9960to60": 6.3,
-"996Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AiwaysU5Premium(2020.png",
-    "creator": "Keanny"
+    "creator": "Keanny",
+  
+    "333TopSpeed": 107,
+    "3330to60": 7,
+    "333Handling": 79,
+
+    "666TopSpeed": 112,
+    "6660to60": 6.7,
+    "666Handling": 81,
+
+    "699TopSpeed": 112,
+    "6990to60": 6.3,
+    "699Handling": 84,
+
+    "969TopSpeed": 117,
+    "9690to60": 6.7,
+    "969Handling": 84,
+
+    "996TopSpeed": 117,
+    "9960to60": 6.3,
+    "996Handling": 81
 }
