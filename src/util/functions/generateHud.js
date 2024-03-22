@@ -1,6 +1,6 @@
 "use strict";
 
-const { registerFont, loadImage, createCanvas } = require("canvas");
+const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const tyreAbbrevs = {
     "Standard": "STD",
@@ -12,30 +12,31 @@ const tyreAbbrevs = {
 }
 
 async function generateHud(currentCar, upgrade) {
-    registerFont("Rubik-BoldItalic.ttf", { family: "Rubik" });
     const canvas = createCanvas(500, 312);
-    const ctx = canvas.getContext("2d");
+    const context = canvas.getContext("2d");
+    context.textAlign = "center";
+    context.fillStyle = "#ffffff";
+    context.font = "bold italic 17px Rubik";
+
     const hud = await loadImage(currentCar["racehud"]);
-    ctx.drawImage(hud, 0, 0, 500, 312);
+    context.drawImage(hud, 0, 0, 500, 312);
 
     let bmReference = currentCar["reference"] ? require(`../../cars/${currentCar["reference"]}`) : currentCar;
-    let accel = upgrade !== "000" ? bmReference[`${upgrade}0to60`] : bmReference["0to60"]
-    if (accel === 99.9) {
-        accel = "N/A";
+    let topSpeed = bmReference["topSpeed"], accel = bmReference["0to60"], handling = bmReference["handling"]
+    if (upgrade !== "000") {
+        topSpeed = bmReference[`${upgrade}TopSpeed`];
+        accel = bmReference[`${upgrade}0to60`];
+        handling = bmReference[`${upgrade}Handling`];
     }
-    else {
-        accel = accel.toFixed(1)
-    }
-    ctx.textAlign = "right";
-    ctx.fillStyle = "#ffffff";
-    ctx.font = '17px "Rubik"';
-    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}TopSpeed`] : bmReference["topSpeed"], 45, 109);
-    ctx.fillText(accel, 45, 135);
-    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}Handling`] : bmReference["handling"], 45, 161);
-    ctx.fillText(bmReference["driveType"], 47, 188);
-    ctx.fillText(tyreAbbrevs[bmReference["tyreType"]], 45, 214);
+    accel = accel === 99.9 ? "N/A" : accel.toFixed(1);
+    
+    context.fillText(topSpeed.toString(), 28, 109);
+    context.fillText(accel, 28, 135);
+    context.fillText(handling.toString(), 28, 161);
+    context.fillText(bmReference["driveType"], 28, 188);
+    context.fillText(tyreAbbrevs[bmReference["tyreType"]], 28, 214);
 
-    let attachment = new AttachmentBuilder(canvas.toBuffer(), { name:"hud.png" });
+    let attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name:"hud.jpeg" });
     return attachment;
 }
 

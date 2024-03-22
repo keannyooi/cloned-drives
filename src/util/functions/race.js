@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { createCanvas, loadImage } = require("canvas");
+const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
@@ -14,21 +14,21 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
     if (!disablegraphics) {
         try {
             const canvas = createCanvas(674, 379);
-            const ctx = canvas.getContext("2d");
+            const context = canvas.getContext("2d");
             const [background, playerHud, opponentHud] = await Promise.all([
                 loadImage(currentTrack["background"]),
                 loadImage(player.racehud),
                 loadImage(opponent.racehud),
             ]);
 
-            ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-            ctx.drawImage(bot.graphics.raceTemp, 0, 0, canvas.width, canvas.height);
-            ctx.drawImage(playerHud, 35, 69, 186, 113);
-            ctx.drawImage(opponentHud, 457, 198, 186, 112);
-            attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "thing.jpg" });
+            context.drawImage(background, 0, 0, canvas.width, canvas.height);
+            context.drawImage(bot.graphics.raceTemp, 0, 0, canvas.width, canvas.height);
+            context.drawImage(playerHud, 35, 69, 186, 113);
+            context.drawImage(opponentHud, 457, 198, 186, 112);
+            attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "thing.jpeg" });
         }
         catch (error) {
-            attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "thing.jpg" });
+            attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "thing.jpeg" });
         }
     }
 
@@ -139,7 +139,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
                         }
                         break;
                     case "driveType":
-                        if (currentTrack["surface"] !== ["Asphalt", "Drag", "Track"] || currentTrack["weather"] === "Rainy") {
+                        if (!["Asphalt", "Drag", "Track"].includes(currentTrack["surface"]) || currentTrack["weather"] === "Rainy") {
                             response += "Better drive system for the surface conditions, ";
                         }
                         break;

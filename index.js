@@ -76,14 +76,14 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
 });
 
 // try me
-process.on("uncaughtException", async error => {
-    console.log(error.stack);
-    const errorReport = new BotError({
-        stack: error.stack,
-        unknownSource: true
-    });
-    await errorReport.sendReport();
-});
+// process.on("uncaughtException", async error => {
+//     console.log(error.stack);
+//     const errorReport = new BotError({
+//         stack: error.stack,
+//         unknownSource: true
+//     });
+//     await errorReport.sendReport();
+// });
 
 // loop thingy
 setInterval(async () => {

@@ -1,8 +1,9 @@
 "use strict";
 
 const { Client, Collection, GatewayIntentBits, Partials } = require("discord.js");
+const { join } = require("path");
 const { DateTime } = require("luxon");
-const { loadImage } = require("canvas");
+const { GlobalFonts, loadImage } = require("@napi-rs/canvas");
 const { spawn } = require("child_process");
 const { schedule } = require("node-cron");
 
@@ -26,6 +27,9 @@ class Bot extends Client {
     }
 
     async loadGraphics() {
+        GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "RobotoCondensed-Regular.ttf"), "Roboto Condensed");
+        GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "Rubik-BoldItalic.ttf"), "Rubik");
+
         await Promise.all([
             loadImage("https://file.garden/ZSrBMiDRyR84aPJp/race_template_thing.png"),
             loadImage("https://file.garden/ZSrBMiDRyR84aPJp/zecardsandbids.png"),
