@@ -4,7 +4,7 @@
   "description": "A car \"racing\" Discord bot. One may notice that it borrows many elements from a mobile game called Top Drives.",
   "main": "index.js",
   "dependencies": {
-    "canvas": "^2.11.0",
+    "@napi-rs/canvas": "^0.1.51",
     "discord.js": "^14.8.0",
     "dotenv": "^10.0.0",
     "luxon": "^1.27.0",
