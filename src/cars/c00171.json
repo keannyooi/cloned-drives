@@ -1,19 +1,19 @@
 {
     "carID": "c00171",
-    "cr": 376,
+    "cr": 411,
     "make": "BMW",
     "model": "i3",
     "modelYear": 2013,
     "country": "DE",
     "topSpeed": 92,
     "0to60": 6.9,
-    "handling": 70,
+    "handling": 75,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Eco-Friendly", "Servers Choice", "Innovative", "OG"],
     "isPrize": false,
 
-    "weight": 1294,
+    "weight": 1270,
     "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Hatchback",
@@ -27,23 +27,23 @@
  
     "333TopSpeed": 98,
     "3330to60": 6.6,
-    "333Handling": 72,
+    "333Handling": 77,
 
     "666TopSpeed": 103,
     "6660to60": 6.2,
-    "666Handling": 75,
+    "666Handling": 80,
 
     "996TopSpeed": 109,
     "9960to60": 5.7,
-    "996Handling": 75,
+    "996Handling": 80,
 
     "969TopSpeed": 109,
     "9690to60": 6.2,
-    "969Handling": 78,
+    "969Handling": 83,
 
     "699TopSpeed": 103,
     "6990to60": 5.7,
-    "699Handling": 78,
+    "699Handling": 83,
 
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWi3(2013).png",
     "creator": "Keanny"
