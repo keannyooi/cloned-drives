@@ -1,13 +1,13 @@
 {
     "carID": "c03457",
-    "cr": 730,
+    "cr": 789,
     "make": "Acura",
     "model": "RDX A-Spec Pikes Peak",
     "modelYear": 2019,
     "country": "US",
     "topSpeed": 123,
     "0to60": 4.1,
-    "handling": 83,
+    "handling": 86,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["The Americas Assault", "Motorsport"],
@@ -24,26 +24,26 @@
     "mra": 60.29,
     "ola": 68.29,
     "description": "Acura went wild with their Pikes Peak selection in 2019. Among the nsx and tlx, they also brought a 350 BHP RDX to the table. Sadly doesn't have the crazy aero packages the other two got.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraRDXA-SpecPikesPeak(2019).png",
     "creator": "Based",
 
 "333TopSpeed": 127, 
 "3330to60": 3.9, 
-"333Handling": 86,
+"333Handling": 89,
 
 "666TopSpeed": 131, 
 "6660to60": 3.7, 
-"666Handling": 88,
+"666Handling": 92,
 
 "699TopSpeed": 131, 
 "6990to60": 3.5, 
-"699Handling": 92,
+"699Handling": 95,
 
 "969TopSpeed": 136, 
 "9690to60": 3.7, 
-"969Handling": 92,
+"969Handling": 95,
 
 "996TopSpeed": 136, 
 "9960to60": 3.7, 
-"996Handling": 88
+"996Handling": 92
 }
