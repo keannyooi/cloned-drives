@@ -2,12 +2,12 @@
     "carID": "c03638",
     "cr": 832,
     "make": "Fiat",
-    "model": "Tipo TCR",
+    "model": "Tipo TCR #64 Tecnodom Sport",
     "modelYear": 2020,
     "country": "IT",
     "topSpeed": 161,
     "0to60": 4.0,
-    "handling": 94,
+    "handling": 101,
     "driveType": "FWD",
     "tyreType": "Slick",
     "tags": ["Motorsport", "The Tyrol Tour: Remix","Endless Summer"],
@@ -32,21 +32,21 @@
 
     "333TopSpeed": 164,
     "3330to60": 3.8,
-    "333Handling": 97,
+    "333Handling": 104,
     
     "666TopSpeed": 167,
     "6660to60": 3.6,
-    "666Handling": 100,
+    "666Handling": 108,
     
     "699TopSpeed": 167,
     "6990to60": 3.4,
-    "699Handling": 104,
+    "699Handling": 112,
     
     "969TopSpeed": 171,
     "9690to60": 3.6,
-    "969Handling": 104,
+    "969Handling": 112,
     
     "996TopSpeed": 171,
     "9960to60": 3.4,
-    "996Handling": 100
+    "996Handling": 108
 }

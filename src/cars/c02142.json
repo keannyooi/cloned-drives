@@ -1,10 +1,7 @@
 {
     "carID": "c02142",
-    "cr": 640,
-    "make": [
-        "G-Power",
-        "BMW"
-    ],
+    "cr": 635,
+    "make": ["G-Power","BMW"],
     "model": "G4 3.0i EVO III",
     "modelYear": 2009,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner","Oceanic View"
-    ],
+    "tags": ["Tuner","Oceanic View"],
     "isPrize": false,
     "weight": 1340,
     "gc": "Low",
@@ -43,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 4,
     "699Handling": 94,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GPowerG43.0iEVOIII(2009).png",
     "creator": "Bnuuy"
 }

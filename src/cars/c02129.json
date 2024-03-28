@@ -1,10 +1,7 @@
 {
     "carID": "c02129",
     "cr": 469,
-    "make": [
-        "Carlsson",
-        "Mercedes-Benz"
-    ],
+    "make": ["Carlsson","Mercedes-Benz"],
     "model": "C 37 RS",
     "modelYear": 1995,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1548,
     "gc": "Medium",
