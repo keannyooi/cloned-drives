@@ -1,0 +1,75 @@
+{
+    "packName": "Cosmo Pack",
+    "description": "A bigger than life pack, with nothing but Exotics and better!",
+	"repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/COSMOPack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "IT",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 85,
+			"legendary": 13.5,
+			"mystic": 1.5
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 85,
+			"legendary": 13.5,
+			"mystic": 1.5
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 85,
+			"legendary": 13.5,
+			"mystic": 1.5
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 85,
+			"legendary": 13.5,
+			"mystic": 1.5
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 85,
+			"legendary": 13.5,
+			"mystic": 1.5
+        }
+    ]
+}
