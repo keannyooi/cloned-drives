@@ -9,7 +9,8 @@
     "0to60": 2.7,
     "handling": 98,
     "driveType": "RWD",
-    "tyreType": ["Performance","Track Day","Hypercar","Ultra Expensive","OG"],
+    "tyreType": "Performance"
+	"tags": ["Track Day","Hypercar","Ultra Expensive","OG"],
     "isPrize": true,
     "weight": 1250,
     "gc": "Low",
