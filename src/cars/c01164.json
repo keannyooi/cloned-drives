@@ -1,6 +1,6 @@
 {
     "carID": "c01164",
-    "cr": 880,
+    "cr": 879,
     "make": "Saleen",
     "model": "S7 Twin Turbo",
     "modelYear": 2005,
@@ -18,8 +18,8 @@
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
-    "tcs": false,
-    "abs": false,
+    "tcs": true,
+    "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 115.29,
