@@ -14,7 +14,7 @@ module.exports = {
     name: "buycar",
     usage: ["<deal/bm> <car name>", "<deal/bm> <amount> <car name>"],
     args: 2,
-    category: "Admin",
+    category: "Gameplay",
     description: "Buy a car from either the dealership or the black market using this command!",
 	
     async execute(message, args) {
