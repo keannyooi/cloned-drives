@@ -1,13 +1,13 @@
 {
     "carID": "c02093",
-    "cr": 539,
+    "cr": 554,
     "make": ["Alpina","BMW"],
     "model": "Roadster V8",
     "modelYear": 2003,
     "country": "DE",
-    "topSpeed": 162,
-    "0to60": 5.2,
-    "handling": 80,
+    "topSpeed": 160,
+    "0to60": 5.1,
+    "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Tuner"],
@@ -26,23 +26,23 @@
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaRoadsterV8(2003).png",
     "creator": "Bnuuy",
 
-    "333TopSpeed": 165,
-    "3330to60": 4.9,
-    "333Handling": 83,
+"333TopSpeed": 163,
+"3330to60": 4.8,
+"333Handling": 84,
 
-    "666TopSpeed": 168,
-    "6660to60": 4.7,
-    "666Handling": 85,
+"666TopSpeed": 167,
+"6660to60": 4.6,
+"666Handling": 86,
 
-    "996TopSpeed": 172,
-    "9960to60": 4.4,
-    "996Handling": 85,
+"699TopSpeed": 167,
+"6990to60": 4.3,
+"699Handling": 90,
 
-    "969TopSpeed": 172,
-    "9690to60": 4.7,
-    "969Handling": 89,
+"969TopSpeed": 170,
+"9690to60": 4.6,
+"969Handling": 90,
 
-    "699TopSpeed": 168,
-    "6990to60": 4.4,
-    "699Handling": 89
+"996TopSpeed": 170,
+"9960to60": 4.3,
+"996Handling": 86
 }
