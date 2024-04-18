@@ -1,6 +1,6 @@
 {
     "carID": "c01386",
-    "cr": 168,
+    "cr": 238,
     "make": "Volkswagen",
     "model": "Rabbit GTI",
     "modelYear": 1983,
@@ -13,7 +13,7 @@
     "tags": ["Hot Hatch", "Servers Choice", "OG"],
     "isPrize": false,
     "weight": 940,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
