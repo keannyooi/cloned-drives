@@ -1,13 +1,13 @@
 {
     "carID": "c02382",
-    "cr": 1120,
+    "cr": 1235,
     "make": "Bugatti",
     "model": "Bolide",
-    "modelYear": 2023,
+    "modelYear": 2024,
     "country": "FR",
     "topSpeed": 307,
     "0to60": 2.2,
-    "handling": 100,
+    "handling": 112,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Unique", "Track Day", "Ultra Expensive", "Eargasm", "Year of the Rabbit"],
@@ -25,26 +25,26 @@
     "ola": 87.27,
     "description": "None.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BugattiBolide(2024).png",
     "creator": "Bnuuy",
 
-    "333TopSpeed": 309,
-    "3330to60": 2.1,
-    "333Handling": 103,
+"333TopSpeed": 309,
+"3330to60": 2.1,
+"333Handling": 116,
 
-    "666TopSpeed": 310,
-    "6660to60": 2.0,
-    "666Handling": 107,
+"666TopSpeed": 310,
+"6660to60": 2,
+"666Handling": 119,
 
-    "996TopSpeed": 312,
-    "9960to60": 1.9,
-    "996Handling": 107,
+"699TopSpeed": 310,
+"6990to60": 1.9,
+"699Handling": 124,
 
-    "969TopSpeed": 312,
-    "9690to60": 2.0,
-    "969Handling": 111,
+"969TopSpeed": 312,
+"9690to60": 2,
+"969Handling": 124,
 
-    "699TopSpeed": 310,
-    "6990to60": 1.9,
-    "699Handling": 111
+"996TopSpeed": 312,
+"9960to60": 1.9,
+"996Handling": 119
 }

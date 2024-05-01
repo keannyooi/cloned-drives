@@ -1,13 +1,13 @@
 {
     "carID": "c03576",
-    "cr": 810,
+    "cr": 884,
     "make": "Bufori",
-    "model": "BMS R1",
+    "model": "BMS R1 #11 Axle Motorsports",
     "modelYear": 2009,
     "country": "MY",
     "topSpeed": 169,
     "0to60": 3.5,
-    "handling": 95,
+    "handling": 100,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Rest of The World","The Amplification of Asia","Motorsport","Endless Summer"],
@@ -24,26 +24,26 @@
     "mra": 97.22,
     "ola": 97.14,
     "description": "A group of Malaysians, including F1 driver Alex Yoong, had 9 weeks to build a GT3 race car and race it against other seasoned teams in the Macau Grand Prix. They somehow managed to pull it off and the resulting car could keep up with the big boys, up until the accelerator pedal got stuck on lap 7 and the car crashed backwards into a tyre barrier. While Alex Yoong was ok, the car wasn't so lucky and is now abandoned somewhere in Hong Kong, a sad end to what I personally think is a movie-worthy story.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BuforiBMSR1%2311AxleMotorsports(2009).png",
     "creator": "Keanny",
 
     "333TopSpeed": 172,
     "3330to60": 3.3,
-    "333Handling": 98,
+    "333Handling": 103,
 
     "666TopSpeed": 175,
     "6660to60": 3.1,
-    "666Handling": 101,
+    "666Handling": 107,
 
     "699TopSpeed": 175,
     "6990to60": 3,
-    "699Handling": 105,
+    "699Handling": 111,
 
     "969TopSpeed": 178,
     "9690to60": 3.1,
-    "969Handling": 105,
+    "969Handling": 111,
 
     "996TopSpeed": 178,
     "9960to60": 3,
-    "996Handling": 101
+    "996Handling": 107
 }

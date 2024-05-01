@@ -1,10 +1,7 @@
 {
     "carID": "c01466",
-    "cr": 880,
-    "make": [
-        "Stapleton Auto Works",
-        "Cadillac"
-    ],
+    "cr": 857,
+    "make": ["Stapleton Auto Works","Cadillac"],
     "model": "LSXcalade",
     "modelYear": 2007,
     "country": "US",
@@ -48,6 +45,6 @@
 "996TopSpeed": 174,
 "9960to60": 1.9,
 "996Handling": 32,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/StapletonAutoWorksLSXcalade(2007).png",
     "creator": "Aqo"
 }

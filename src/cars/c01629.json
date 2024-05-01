@@ -1,6 +1,6 @@
 {
     "carID": "c01629",
-    "cr": 595,
+    "cr": 597,
     "make": "Mitsubishi",
     "model": "3000GT VR-4",
     "modelYear": 1991,
@@ -10,10 +10,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1720,
     "gc": "Medium",
@@ -23,10 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 62.16,
-    "ola": 72.17,
+    "mra": 63.85,
+    "ola": 70,
     "description": "",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 84,
     "666TopSpeed": 162,
