@@ -1,13 +1,13 @@
 {
     "carID": "c02512",
-    "cr": 980,
+    "cr": 1116,
     "make": "Audi",
-    "model": "R18 e-tron quattro",
+    "model": "R18 e-tron quattro #1 Audi Sport Team Joest",
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 209,
     "0to60": 2.7,
-    "handling": 99,
+    "handling": 112,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
@@ -24,26 +24,26 @@
     "mra": 117.4,
     "ola": 106.3,
     "description": "None.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Sutzi",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR18etronquattro(2014).png",
+    "creator": "Bnuuy",
 
 "333TopSpeed": 211, 
 "3330to60": 2.6, 
-"333Handling": 102,
+"333Handling": 116,
 
 "666TopSpeed": 214, 
 "6660to60": 2.4, 
-"666Handling": 106,
+"666Handling": 119,
 
 "699TopSpeed": 214, 
 "6990to60": 2.3, 
-"699Handling": 110,
+"699Handling": 124,
 
 "969TopSpeed": 216, 
 "9690to60": 2.4, 
-"969Handling": 110,
+"969Handling": 124,
 
 "996TopSpeed": 216, 
 "9960to60": 2.3, 
-"996Handling": 106
+"996Handling": 119
 }

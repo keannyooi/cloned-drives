@@ -1,13 +1,13 @@
 {
     "carID": "c03836",
-    "cr": 1020,
+    "cr": 1124,
     "make": "Peugeot",
-    "model": "9X8",
+    "model": "9X8 #93 Peugeot TotalEnergies",
     "modelYear": 2022,
     "country": "FR",
     "topSpeed": 199,
     "0to60": 2.4,
-    "handling": 100,
+    "handling": 110,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Endless Summer","Motorsport","Unique","Eco-Friendly","The Tyrol Tour: Remix"],
@@ -24,26 +24,26 @@
     "mra": 119.94,
     "ola": 85,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot9X8(2022).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 202,
 "3330to60": 2.3,
-"333Handling": 103,
+"333Handling": 114,
 
 "666TopSpeed": 204,
 "6660to60": 2.2,
-"666Handling": 107,
+"666Handling": 117,
 
 "699TopSpeed": 204,
 "6990to60": 2,
-"699Handling": 111,
+"699Handling": 122,
 
 "969TopSpeed": 207,
 "9690to60": 2.2,
-"969Handling": 111,
+"969Handling": 122,
 
 "996TopSpeed": 207,
 "9960to60": 2,
-"996Handling": 107
+"996Handling": 117
 }

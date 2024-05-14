@@ -1,11 +1,8 @@
 {
     "carID": "c00823",
-    "cr": 400,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
-    "model": "C 36",
+    "cr": 405,
+    "make": ["Mercedes-Benz","Mercedes-AMG"],
+    "model": "C 36 AMG",
     "modelYear": 1994,
     "country": "DE",
     "topSpeed": 154,
@@ -41,6 +38,6 @@
     "699TopSpeed": 161,
     "6990to60": 5.3,
     "699Handling": 85,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzC36AMG(1994).png",
     "creator": "Connor"
 }

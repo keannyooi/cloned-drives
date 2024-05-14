@@ -1,13 +1,13 @@
 {
     "carID": "c02606",
-    "cr": 920,
+    "cr": 1009,
     "make": "Porsche",
-    "model": "911 GT3 R",
-    "modelYear": 2022,
+    "model": "911 GT3 R #911 Manthey EMA",
+    "modelYear": 2023,
     "country": "DE",
     "topSpeed": 199,
     "0to60": 2.7,
-    "handling": 97,
+    "handling": 104,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
@@ -24,26 +24,26 @@
     "mra": 96,
     "ola": 80,
     "description": "Porsche's Latest GT3 Racecar.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GT3R(2022).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 202, 
 "3330to60": 2.6, 
-"333Handling": 100,
+"333Handling": 107,
 
 "666TopSpeed": 204, 
 "6660to60": 2.4, 
-"666Handling": 103,
+"666Handling": 111,
 
 "699TopSpeed": 204, 
 "6990to60": 2.3, 
-"699Handling": 108,
+"699Handling": 115,
 
 "969TopSpeed": 207, 
 "9690to60": 2.4, 
-"969Handling": 108,
+"969Handling": 115,
 
 "996TopSpeed": 207, 
 "9960to60": 2.3, 
-"996Handling": 103
+"996Handling": 111
 }

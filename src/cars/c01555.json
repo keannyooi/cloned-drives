@@ -1,6 +1,6 @@
 {
     "carID": "c01555",
-    "cr": 550,
+    "cr": 629,
     "make": "Honda",
     "model": "NSX-R",
     "modelYear": 1992,
@@ -16,7 +16,7 @@
     ],
     "isPrize": false,
     "weight": 1230,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": false,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 93,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaNSXR(1992).png",
     "creator": "Connor"
 }
