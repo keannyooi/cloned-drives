@@ -1,0 +1,75 @@
+{
+    "packName": "German 5x Elite Pack",
+    "description": "The normal pack of 25 Rare or Higher German cards",
+	"repetition": 5,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/DE5xElitePack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "DE",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        }
+    ]
+}

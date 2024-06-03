@@ -1,6 +1,6 @@
 {
     "carID": "c00984",
-    "cr": 250,
+    "cr": 317,
     "make": "Opel",
     "model": "Cascada 1.6 Turbo",
     "modelYear": 2013,
@@ -9,7 +9,7 @@
     "0to60": 8.9,
     "handling": 76,
     "driveType": "FWD",
-    "tyreType": "Performance",
+    "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
     "weight": 1733,
@@ -38,6 +38,6 @@
     "699TopSpeed": 153,
     "6990to60": 7.6,
     "699Handling": 84,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelCascada16Turbo(2013).png",
     "creator": "Connor"
 }
