@@ -1,13 +1,13 @@
 {
     "carID": "c04392",
-    "cr": 830,
+    "cr": 903,
     "make": "Audi",
-    "model": "R8 LMS",
+    "model": "R8 LMS #98 Phoenix Racing",
     "modelYear": 2009,
     "country": "DE",
     "topSpeed": 191,
     "0to60": 3.4,
-    "handling": 96,
+    "handling": 101,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite", "Motorsport","Cloned Drives Beta: Last of"],
@@ -24,26 +24,26 @@
     "mra": 94.44,
     "ola": 94.17,
     "description": "First R8 race car enjoyed success with wining 115 races and 12 championship titles in 3 years.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR8LMS%2398PhoenixRacing(2009).png",
     "creator": "Crossfire",
 
     "333TopSpeed": 194, 
     "3330to60": 3.2, 
-    "333Handling": 99,
+    "333Handling": 104,
 
     "666TopSpeed": 196, 
     "6660to60": 3.1, 
-    "666Handling": 102,
+    "666Handling": 108,
 
     "996TopSpeed": 199, 
     "9960to60": 2.9, 
-    "996Handling": 102,
+    "996Handling": 108,
 
     "969TopSpeed": 199, 
     "9690to60": 3.1, 
-    "969Handling": 107,
+    "969Handling": 112,
 
     "699TopSpeed": 196, 
     "6990to60": 2.9, 
-    "699Handling": 107
+    "699Handling": 112
 }

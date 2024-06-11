@@ -1,17 +1,17 @@
 {
     "carID": "c04155",
-    "cr": 680,
+    "cr": 729,
     "make": "Volvo",
-    "model": "850 Estate BTCC",
+    "model": "850 Estate BTCC #15 Volvo 850 Racing",
     "modelYear": 1994,
     "country": "SE",
     "topSpeed": 162,
     "0to60": 4.6,
-    "handling": 93,
+    "handling": 95,
     "driveType": "FWD",
     "tyreType": "Slick",
     "tags": ["The Rest of the Best: 2023", "Rest of The World", "Motorsport"],
-    "isPrize": true,
+    "isPrize": false,
 	
     "weight": 950,
     "gc": "Low",
@@ -24,26 +24,26 @@
     "mra": 75.41,
     "ola": 86.96,
     "description": "Taking a wagon to Touring Car Championships.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Volvo850EstateBTCC%2315Volvo850Racing(1994).png",
     "creator": "Crossfire",
 
     "333TopSpeed": 165, 
     "3330to60": 4.4, 
-    "333Handling": 96,
+    "333Handling": 98,
 
     "666TopSpeed": 168, 
     "6660to60": 4.1, 
-    "666Handling": 99,
+    "666Handling": 101,
 
     "996TopSpeed": 172, 
     "9960to60": 3.9, 
-    "996Handling": 99,
+    "996Handling": 101,
 
     "969TopSpeed": 172, 
     "9690to60": 4.1, 
-    "969Handling": 103,
+    "969Handling": 105,
 
     "699TopSpeed": 168, 
     "6990to60": 3.9, 
-    "699Handling": 103
+    "699Handling": 105
 }
