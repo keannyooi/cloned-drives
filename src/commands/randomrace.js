@@ -71,16 +71,16 @@ module.exports = {
                             streak++;
                             let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0;
                             if (streak <= 58) {
-                                reward = streak * 500 + 1000;
-                                crBonusBase = 30;
-                            }
-                            else if (streak > 58 && streak <= 98) {
-                                reward = streak * 250 + 15500;
+                                reward = streak * 500 + 1500;
                                 crBonusBase = 100;
                             }
+                            else if (streak > 58 && streak <= 98) {
+                                reward = streak * 350 + 17500;
+                                crBonusBase = 150;
+                            }
                             else if (streak > 98 && streak <= 198) {
-                                reward = streak * 200 + 21000;
-                                crBonusBase = 300;
+                                reward = streak * 225 + 25000;
+                                crBonusBase = 350;
                             }
                             else {
                                 reward = streak * 100 + 100000;
@@ -294,8 +294,11 @@ module.exports = {
             else if (streak > 15 && streak <= 30) {
                 return car["isPrize"] === true || car["cr"] < 300 || car["cr"] > 649;
             }
-            else if (streak > 30 && streak <= 50) {
+            else if (streak > 30 && streak <= 49) {
                 return car["isPrize"] === true || car["cr"] < 400 || car["cr"] > 849;
+            }
+            else if (streak === 50) {
+                return car["cr"] < 1500;
             }
             else if (streak > 50 && streak <= 75) {
                 return car["isPrize"] === true || car["cr"] < 549 || car["cr"] > 990;
@@ -312,7 +315,7 @@ module.exports = {
             else if (streak === 125) {
                 return car["cr"] < 1500;
             }
-            else if (streak > 126 && streak <= 175) {
+            else if (streak > 125 && streak <= 175) {
                 return car["cr"] < 849;
             }
             else {
