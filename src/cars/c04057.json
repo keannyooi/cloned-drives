@@ -1,17 +1,17 @@
 {
     "carID": "c04057",
-    "cr": 1020,
+    "cr": 1127,
     "make": "Ferrari",
-    "model": "499P",
+    "model": "499P #50 Ferrari AF Corse",
     "modelYear": 2022,
     "country": "IT",
     "topSpeed": 205,
     "0to60": 2.4,
-    "handling": 100,
+    "handling": 110,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Endless Summer","Motorsport","Eco-Friendly","The Tyrol Tour: Remix"],
-    "isPrize": true,
+    "isPrize":false,
 	
     "weight": 1030,
     "gc": "Low",
@@ -24,26 +24,26 @@
     "mra": 120.02,
     "ola": 87.96,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "hhttps://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ferrari499P(2022).png",
     "creator": "Lemon",
 
 "333TopSpeed": 208,
 "3330to60": 2.3,
-"333Handling": 103,
+"333Handling": 113,
 
 "666TopSpeed": 210,
 "6660to60": 2.2,
-"666Handling": 107,
+"666Handling": 117,
 
 "699TopSpeed": 210,
 "6990to60": 2,
-"699Handling": 111,
+"699Handling": 122,
 
 "969TopSpeed": 213,
 "9690to60": 2.2,
-"969Handling": 111,
+"969Handling": 122,
 
 "996TopSpeed": 213,
 "9960to60": 2,
-"996Handling": 107
+"996Handling": 117
 }
