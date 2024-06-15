@@ -1,8 +1,9 @@
 {
-    "packName": "German Titan Pack",
-    "description": "The best purchasable pack in CD!",
+    "packName": "Motorsport Titan Pack",
+    "description": "The best pack in CD!",
+	"price": 650000,
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/DETITANPack.png",
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MotorsportTITANPack.png",
     
     "filter": {
         "make": "None",
@@ -10,8 +11,8 @@
             "start": 1000,
             "end": 3000
         },
-        "country": "DE",
-        "tags": "None",
+        "country": "None",
+        "tags": "Motorsport",
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",

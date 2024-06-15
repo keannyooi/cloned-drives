@@ -1,8 +1,9 @@
 {
-    "packName": "German Titan Pack",
-    "description": "The best purchasable pack in CD!",
+    "packName": "Motorsport Elite Pack",
+    "description": "The normal pack of 5 Rare or Higher Motorsport cards",
+    "price": 325000,
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/DETITANPack.png",
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MotorsportElitePack.png",
     
     "filter": {
         "make": "None",
@@ -10,8 +11,8 @@
             "start": 1000,
             "end": 3000
         },
-        "country": "DE",
-        "tags": "None",
+        "country": "None",
+        "tags": "Motorsport",
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
@@ -25,51 +26,51 @@
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         }
     ]
 }
