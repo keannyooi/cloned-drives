@@ -70,17 +70,17 @@ module.exports = {
                         if (result > 0) {
                             streak++;
                             let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0;
-                            if (streak <= 58) {
-                                reward = streak * 500 + 1500;
-                                crBonusBase = 100;
+                            if (streak <= 49) {
+                                reward = streak * 550 + 2500;
+                                crBonusBase = 220;
                             }
-                            else if (streak > 58 && streak <= 98) {
-                                reward = streak * 350 + 17500;
-                                crBonusBase = 150;
+                            else if (streak > 49 && streak <= 98) {
+                                reward = streak * 375 + 19500;
+                                crBonusBase = 375;
                             }
                             else if (streak > 98 && streak <= 198) {
-                                reward = streak * 225 + 25000;
-                                crBonusBase = 350;
+                                reward = streak * 250 + 27000;
+                                crBonusBase = 1000;
                             }
                             else {
                                 reward = streak * 100 + 100000;
