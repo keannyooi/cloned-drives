@@ -1,6 +1,6 @@
 {
     "carID": "c02753",
-    "cr": 650,
+    "cr": 644,
     "make": ["Bisimoto", "Honda"],
     "model": "Accord Coupe V6",
     "modelYear": 2013,
@@ -25,26 +25,26 @@
     "ola": 83.33,
     "description": "Although not as obscenely overpowered as Bisimoto's Odyssey, the Accord still packs a mean punch.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BisimotoAccordCoupeV6(2014).png",
     "creator": "McNuggets",
 
-    "333TopSpeed": 152,
-    "3330to60": 4.6,
-    "333Handling": 83,
+"333TopSpeed": 152,
+"3330to60": 4.6,
+"333Handling": 91,
 
-    "666TopSpeed": 156,
-    "6660to60": 4.3,
-    "666Handling": 85,
+"666TopSpeed": 156,
+"6660to60": 4.3,
+"666Handling": 94,
 
-    "996TopSpeed": 159,
-    "9960to60": 4.1,
-    "996Handling": 85,
+"699TopSpeed": 156,
+"6990to60": 4.1,
+"699Handling": 98,
 
-    "969TopSpeed": 159,
-    "9690to60": 4.3,
-    "969Handling": 89,
+"969TopSpeed": 159,
+"9690to60": 4.3,
+"969Handling": 98,
 
-    "699TopSpeed": 156,
-    "6990to60": 4.1,
-    "699Handling": 89
+"996TopSpeed": 159,
+"9960to60": 4.1,
+"996Handling": 94
 }
