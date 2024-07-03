@@ -79,13 +79,13 @@ module.exports = {
 
                     let money, upgMultiplier = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
             if (car["cr"] > 1500) { //BOSS 1500+
-                money = 0;
+                money = 1;
             }
-			else if (car["cr"] > 1129 && car["cr"] <= 1499) { //1130-1499
-				money = 0;
+			else if (car["cr"] > 1149 && car["cr"] <= 1499) { //1150-1499
+				money = 7250000;
             }
-			else if (car["cr"] > 1099 && car["cr"] <= 1129) { //1100-1129
-				money = 0;
+			else if (car["cr"] > 1099 && car["cr"] <= 1149) { //1100-1149
+				money = 4200000;
             }
             else if (car["cr"] > 1049 && car["cr"] <= 1099) { //1050-1099
                 money = 1400000;

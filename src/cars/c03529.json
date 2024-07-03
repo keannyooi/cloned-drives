@@ -1,6 +1,6 @@
 {
     "carID": "c03529",
-    "cr": 1010,
+    "cr": 1014,
     "make": "Hennessey",
     "model": "Venom F5 Concept",
     "modelYear": 2017,
@@ -11,7 +11,7 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Concept", "Hypercar", "Unique", "Ultra Expensive","The Americas Assault"],
-    "isPrize": true,
+    "isPrize": false,
     
     "weight": 1338,
     "gc": "Low",
