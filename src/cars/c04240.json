@@ -1,13 +1,13 @@
 {
     "carID": "c04240",
-    "cr": 994,
+    "cr": 1001,
     "make": "Audi",
-    "model": "quattro Group B A2",
+    "model": "quattro A2 Group B",
     "modelYear": 1983,
     "country": "DE",
     "topSpeed": 137,
     "0to60": 3.6,
-    "handling": 83,
+    "handling": 84,
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": ["Innovative", "Motorsport", "Eurotech Elite"],
@@ -25,26 +25,26 @@
     "mra": 67.92,
     "ola": 72.22,
     "description": "A2 evolution of the Group B quattro absolutley dominated, winning a total of eight world rallies in 1983 and 1984.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiquattroGroupBA2(1983).png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiquattroGroupBA2(1983).png",
     "creator": "Connor",
 
     "333TopSpeed": 141,
     "3330to60": 3.4,
-    "333Handling": 86,
+    "333Handling": 87,
 
     "666TopSpeed": 145,
     "6660to60": 3.2, 
-    "666Handling": 88,
+    "666Handling": 90,
 
     "996TopSpeed": 148,
     "9960to60": 3.1,
-    "996Handling": 88,
+    "996Handling": 90,
 
     "969TopSpeed": 148,
     "9690to60": 3.2,
-    "969Handling": 92,
+    "969Handling": 93,
 
     "699TopSpeed": 145,
     "6990to60": 3.1,
-    "699Handling": 92
+    "699Handling": 93
 }
