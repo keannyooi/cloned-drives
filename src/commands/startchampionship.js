@@ -46,12 +46,11 @@ module.exports = {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 championship.isActive = true;
                 if (championship.deadline.length < 9) {
-                    echampionship.deadline = DateTime.now().plus({ days: parseInt(championship.deadline) }).toISO();
+                    championship.deadline = DateTime.now().plus({ days: parseInt(championship.deadline) }).toISO();
                 }
 
-                registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed", weight: "bold" });
                 const canvas = createCanvas(903 * Math.ceil(championship.roster.length / 5), 299 * (championship.roster.length <= 5 ? championship.roster.length : 5));
-                const ctx = canvas.getContext("2d");
+                const context = canvas.getContext("2d");
                 let attachment, cucked = false;
 
                 try {

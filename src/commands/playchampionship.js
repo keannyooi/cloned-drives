@@ -20,7 +20,7 @@ module.exports = {
     aliases: ["pc"],
     usage: "<championship name>",
     args: 1,
-    category: "Gameplay",
+    category: "Admin", //Gameplay
     cooldown: 10,
     description: "Participates in an championship by doing a race.",
     async execute(message, args) {
