@@ -19,7 +19,7 @@ module.exports = {
         const events = await eventModel.find();
         const { totalEvents } = await serverStatModel.findOne({});
         const eventName = args.splice(1, args.length).join(" ");
-        if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 30) {
+        if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 50) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, round amount provided is either not a number or not supported.",

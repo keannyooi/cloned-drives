@@ -1,16 +1,16 @@
 {
-    "packName": "Cosmo Pack",
-    "description": "A bigger than life pack, with nothing but Exotics and better!",
+    "packName": "Koenigesegg Birthday Pack",
+    "description": "A Pack Celebrating 30 years of koenigsegg",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/COSMOPack.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
-        "make": "None",
+        "make": "Koenigsegg",
         "modelYear": {
             "start": 1000,
             "end": 3000
         },
-        "country": "GB",
+        "country": "None",
         "tags": "None",
         "driveType": "None",
         "tyreType": "None",
@@ -27,9 +27,9 @@
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
         },
         {
 			"standard": 0,			
@@ -37,9 +37,9 @@
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
         },
         {
 			"standard": 0,			
@@ -47,9 +47,9 @@
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
         },
         {
 			"standard": 0,			
@@ -57,9 +57,9 @@
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
         },
         {
 			"standard": 0,			
@@ -67,9 +67,9 @@
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
         }
     ]
 }
