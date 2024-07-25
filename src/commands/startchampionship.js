@@ -183,7 +183,7 @@ module.exports = {
                     cucked = true;
                 }
                 if (!cucked) {
-                    attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "championship.jpg" });
+                    attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "championship.jpeg" });
                 }
 
                 const successMessage = new SuccessMessage({
