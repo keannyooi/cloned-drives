@@ -1,8 +1,9 @@
 {
-    "packName": "Normal Cosmo Pack",
-    "description": "A bigger than life pack, with nothing but Exotics and better!",
+    "packName": "Legendary Hunter Pack",
+    "description": "GambaGamba!",
+	"price": 3000,
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/COSMOPack.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
         "make": "None",
@@ -22,54 +23,54 @@
 
     "packSequence": [
         {
-			"standard": 0,			
+			"standard": 100,			
 			"common": 0,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
         },
         {
-			"standard": 0,			
+			"standard": 100,			
 			"common": 0,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
         },
         {
-			"standard": 0,			
+			"standard": 100,			
 			"common": 0,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
         },
         {
-			"standard": 0,			
+			"standard": 100,			
 			"common": 0,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
         },
         {
-			"standard": 0,			
+			"standard": 99.8,			
 			"common": 0,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"exotic": 0,
+			"legendary": 0.2,
+			"mystic": 0
         }
     ]
 }

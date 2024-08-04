@@ -1,0 +1,75 @@
+{
+	"packName": "5 Legendary Pack",
+	"description": "The pack consisting of 5 Legendarys and 20 Commons!.",
+	"repetition": 5,
+	"pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/StandardPack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+		{
+			"standard": 0,			
+			"common": 100,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 100,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 100,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 100,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
+		}
+	]
+}

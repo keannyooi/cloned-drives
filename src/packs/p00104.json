@@ -1,14 +1,14 @@
 {
-    "packName": "Normal Cosmo Pack",
-    "description": "A bigger than life pack, with nothing but Exotics and better!",
+    "packName": "2018 Elite Pack",
+    "description": "5 Rare or Higher 2018 cards",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/COSMOPack.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
         "make": "None",
         "modelYear": {
-            "start": 1000,
-            "end": 3000
+            "start": 2018,
+            "end": 2018
         },
         "country": "None",
         "tags": "None",
@@ -25,51 +25,51 @@
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 85,
-			"legendary": 13.5,
-			"mystic": 1.5
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
         }
     ]
 }
