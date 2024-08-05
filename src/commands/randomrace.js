@@ -71,20 +71,20 @@ module.exports = {
                             streak++;
                             let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0;
                             if (streak <= 49) {
-                                reward = streak * 550 + 2500;
-                                crBonusBase = 220;
-                            }
-                            else if (streak > 49 && streak <= 98) {
-                                reward = streak * 375 + 19500;
+                                reward = streak * 375 + 15000;
                                 crBonusBase = 375;
                             }
-                            else if (streak > 98 && streak <= 198) {
+                            else if (streak > 49 && streak <= 98) {
                                 reward = streak * 250 + 27000;
                                 crBonusBase = 1000;
                             }
-                            else {
+                            else if (streak > 98 && streak <= 198) {
                                 reward = streak * 100 + 100000;
                                 crBonusBase = 5000;
+                            }
+                            else {
+                                reward = streak * 100 + 100000;
+                                crBonusBase = 50000;
                             }
                             if (playerCar.cr - opponentCar.cr <= 30) {
                                 crBonus = (opponentCar.cr - playerCar.cr + 40) * crBonusBase;
