@@ -1,13 +1,13 @@
 {
     "carID": "c02621",
-    "cr": 150,
+    "cr": 161,
     "make": "Citroen",
-    "model": "DS-21",
+    "model": "DS 21",
     "modelYear": 1966,
     "country": "FR",
     "topSpeed": 107,
     "0to60": 14.8,
-    "handling": 61,
+    "handling": 63,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["Innovative"],
@@ -25,26 +25,26 @@
     "ola": 68.92,
     "description": "",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenDS21(1966).png",
     "creator": "Aqo",
 
     "333TopSpeed": 112,
     "3330to60": 14.1,
-    "333Handling": 63,
+    "333Handling": 65,
 
     "666TopSpeed": 117,
     "6660to60": 13.3,
-    "666Handling": 65,
+    "666Handling": 67,
 
     "996TopSpeed": 122,
     "9960to60": 12.6,
-    "996Handling": 65,
+    "996Handling": 67,
 
     "969TopSpeed": 122,
     "9690to60": 13.3,
-    "969Handling": 68,
+    "969Handling": 70,
 
     "699TopSpeed": 117,
     "6990to60": 12.6,
-    "699Handling": 68
+    "699Handling": 70
 }
