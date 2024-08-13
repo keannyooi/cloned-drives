@@ -1,0 +1,49 @@
+{
+    "carID": "c05692",
+    "cr": 209,
+    "make": ["Volkswagen"],
+    "model": "New Beetle 1.4 16V United",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 14.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1125,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 29.44,
+    "ola": 59.57,
+    "description": "Wait, i think i've already seen this somewhere.",
+
+"333TopSpeed": 105,
+"3330to60": 13.4,
+"333Handling": 72,
+
+"666TopSpeed": 110,
+"6660to60": 12.7,
+"666Handling": 75,
+
+"699TopSpeed": 110,
+"6990to60": 12,
+"699Handling": 78,
+
+"969TopSpeed": 116,
+"9690to60": 12.7,
+"969Handling": 78,
+
+"996TopSpeed": 116,
+"9960to60": 12,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle1.416VUnited(2008).png",
+    "creator": "Andu"
+}

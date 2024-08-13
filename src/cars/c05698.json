@@ -1,0 +1,49 @@
+{
+    "carID": "c05698",
+    "cr": 272,
+    "make": ["Volkswagen"],
+    "model": "Beetle Cabriolet 1.6 TDI Design",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 11.7,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1452,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.21,
+    "ola": 61.54,
+    "description": "Reasonably economical.",
+
+"333TopSpeed": 118,
+"3330to60": 11.1,
+"333Handling": 75,
+
+"666TopSpeed": 122,
+"6660to60": 10.5,
+"666Handling": 78,
+
+"699TopSpeed": 122,
+"6990to60": 9.9,
+"699Handling": 81,
+
+"969TopSpeed": 127,
+"9690to60": 10.5,
+"969Handling": 81,
+
+"996TopSpeed": 127,
+"9960to60": 9.9,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetleCabrioletDune(2017).png",
+    "creator": "Andu"
+}

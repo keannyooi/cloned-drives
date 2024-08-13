@@ -1,0 +1,49 @@
+{
+    "carID": "c05588",
+    "cr": 180,
+    "make": ["Volkswagen"],
+    "model": "New Beetle Cabriolet 1.4 16V United",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 15.4,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1263,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 28.21,
+    "ola": 62.34,
+    "description": "Produced for the 35 cities Volkswagen United Masters national Indoor Football Tournament.",
+
+    "333TopSpeed": 105,
+    "3330to60": 14.6,
+    "333Handling": 71,
+    
+    "666TopSpeed": 110,
+    "6660to60": 13.9,
+    "666Handling": 74,
+    
+    "699TopSpeed": 110,
+    "6990to60": 13.1,
+    "699Handling": 77,
+    
+    "969TopSpeed": 116,
+    "9690to60": 13.9,
+    "969Handling": 77,
+    
+    "996TopSpeed": 116,
+    "9960to60": 13.1,
+    "996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetleCabriolet1.416VUnited(2008).png",
+    "creator": "Andu"
+}

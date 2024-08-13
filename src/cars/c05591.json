@@ -1,0 +1,49 @@
+{
+    "carID": "c05591",
+    "cr": 348,
+    "make": ["Volkswagen"],
+    "model": "New Beetle Ragster Concept",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 8.0,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders", "Style Icon"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.01,
+    "ola": 74.99,
+    "description": "A little sneak peek to what the next gen would look like.",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.6,
+    "333Handling": 80,
+    
+    "666TopSpeed": 133,
+    "6660to60": 7.2,
+    "666Handling": 82,
+    
+    "699TopSpeed": 133,
+    "6990to60": 6.8,
+    "699Handling": 85,
+    
+    "969TopSpeed": 137,
+    "9690to60": 7.2,
+    "969Handling": 85,
+    
+    "996TopSpeed": 137,
+    "9960to60": 6.8,
+    "996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetleRagsterConcept(2005).png",
+    "creator": "Andu"
+}

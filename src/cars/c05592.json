@@ -1,0 +1,49 @@
+{
+    "carID": "c05592",
+    "cr": 305,
+    "make": ["Volkswagen"],
+    "model": "New Beetle 2.0 GLS",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 10.1,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1228,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.31,
+    "ola": 69.08,
+    "description": "One man's chick car is another man's reasonably priced, reasonably well-executed coupe.",
+
+    "333TopSpeed": 117,
+    "3330to60": 9.6,
+    "333Handling": 74,
+    
+    "666TopSpeed": 121,
+    "6660to60": 9.1,
+    "666Handling": 77,
+    
+    "699TopSpeed": 121,
+    "6990to60": 8.6,
+    "699Handling": 80,
+    
+    "969TopSpeed": 126,
+    "9690to60": 9.1,
+    "969Handling": 80,
+    
+    "996TopSpeed": 126,
+    "9960to60": 8.6,
+    "996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle2.0GLS(1998).png",
+    "creator": "Andu"
+}

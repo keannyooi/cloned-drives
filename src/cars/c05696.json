@@ -1,0 +1,49 @@
+{
+    "carID": "c05696",
+    "cr": 355,
+    "make": ["Volkswagen"],
+    "model": "Beetle Cabriolet 2.0 TDI Exclusive",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 9.3,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1482,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.26,
+    "ola": 66.91,
+    "description": "Exclusively a cheater. XOXO Dieselgate.",
+
+"333TopSpeed": 125,
+"3330to60": 8.8,
+"333Handling": 77,
+
+"666TopSpeed": 130,
+"6660to60": 8.4,
+"666Handling": 80,
+
+"699TopSpeed": 130,
+"6990to60": 7.9,
+"699Handling": 83,
+
+"969TopSpeed": 134,
+"9690to60": 8.4,
+"969Handling": 83,
+
+"996TopSpeed": 134,
+"9960to60": 7.9,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetleCabriolet2.0TDIExclusive(2012).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c05695",
+    "cr": 480,
+    "make": ["Volkswagen"],
+    "model": "Beetle Cabriolet Turbo",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1505,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.90,
+    "ola": 79.48,
+    "description": "Forced air for the driver and the engine.",
+
+"333TopSpeed": 141,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 145,
+"6660to60": 6.2,
+"666Handling": 81,
+
+"699TopSpeed": 145,
+"6990to60": 5.9,
+"699Handling": 84,
+
+"969TopSpeed": 148,
+"9690to60": 6.2,
+"969Handling": 84,
+
+"996TopSpeed": 148,
+"9960to60": 5.9,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetleCabrioletTurbo(2013).png",
+    "creator": "Andu"
+}

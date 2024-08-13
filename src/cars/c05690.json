@@ -1,0 +1,49 @@
+{
+    "carID": "c05690",
+    "cr": 270,
+    "make": ["Volkswagen"],
+    "model": "New Beetle 1.6",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 111,
+    "0to60": 11.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1203,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.53,
+    "ola": 66.67,
+    "description": "A facelift for the happy bug.",
+
+"333TopSpeed": 116,
+"3330to60": 10.8,
+"333Handling": 74,
+
+"666TopSpeed": 120,
+"6660to60": 10.3,
+"666Handling": 77,
+
+"699TopSpeed": 120,
+"6990to60": 9.7,
+"699Handling": 80,
+
+"969TopSpeed": 125,
+"9690to60": 10.3,
+"969Handling": 80,
+
+"996TopSpeed": 125,
+"9960to60": 9.7,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle1.6(2006).png",
+    "creator": "Andu"
+}

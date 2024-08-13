@@ -1,0 +1,49 @@
+{
+    "carID": "c05586",
+    "cr": 80,
+    "make": ["Volkswagen"],
+    "model": "Super Beetle 1600",
+    "modelYear": 1970,
+    "country": "DE",
+    "topSpeed": 82,
+    "0to60": 18.4,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 885,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 2.22,
+    "ola": 52.17,
+    "description": "+ 500cc + Super.",
+
+    "333TopSpeed": 88,
+    "3330to60": 17.5,
+    "333Handling": 63,
+    
+    "666TopSpeed": 95,
+    "6660to60": 16.6,
+    "666Handling": 65,
+    
+    "699TopSpeed": 95,
+    "6990to60": 15.6,
+    "699Handling": 68,
+    
+    "969TopSpeed": 101,
+    "9690to60": 16.6,
+    "969Handling": 68,
+    
+    "996TopSpeed": 101,
+    "9960to60": 15.6,
+    "996Handling": 65,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenSuperBeetle1600(1970).png",
+    "creator": "Andu"
+}

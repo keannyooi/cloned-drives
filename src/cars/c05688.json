@@ -1,0 +1,49 @@
+{
+    "carID": "c05688",
+    "cr": 413,
+    "make": ["Volkswagen"],
+    "model": "New Beetle 1.8 T",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 123,
+    "0to60": 7.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1264,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.67,
+    "ola": 75.00,
+    "description": "The Bug Gets An Attitude",
+
+"333TopSpeed": 127,
+"3330to60": 7.3,
+"333Handling": 76,
+
+"666TopSpeed": 131,
+"6660to60": 6.9,
+"666Handling": 79,
+
+"699TopSpeed": 131,
+"6990to60": 6.5,
+"699Handling": 82,
+
+"969TopSpeed": 136,
+"9690to60": 6.9,
+"969Handling": 82,
+
+"996TopSpeed": 136,
+"9960to60": 6.5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle1.8T(1999).png",
+    "creator": "Andu"
+}

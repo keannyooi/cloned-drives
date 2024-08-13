@@ -1,0 +1,49 @@
+{
+    "carID": "c05583",
+    "cr": 38,
+    "make": ["Volkswagen"],
+    "model": "Beetle 1200",
+    "modelYear": 1962,
+    "country": "DE",
+    "topSpeed": 73,
+    "0to60": 27.5,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 752,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 54.55,
+    "description": "+ 100cc.",
+
+    "333TopSpeed": 80,
+    "3330to60": 26.1,
+    "333Handling": 61,
+    
+    "666TopSpeed": 87,
+    "6660to60": 24.8,
+    "666Handling": 63,
+    
+    "699TopSpeed": 87,
+    "6990to60": 23.4,
+    "699Handling": 65,
+    
+    "969TopSpeed": 94,
+    "9690to60": 24.8,
+    "969Handling": 65,
+    
+    "996TopSpeed": 94,
+    "9960to60": 23.4,
+    "996Handling": 63,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetle1200(1962).png",
+    "creator": "Andu"
+}

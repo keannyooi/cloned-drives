@@ -1,0 +1,49 @@
+{
+    "carID": "c05691",
+    "cr": 380,
+    "make": ["Volkswagen"],
+    "model": "New Beetle 2.3 V5 Colour Concept",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 8.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1325,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.36,
+    "ola": 70.88,
+    "description": "Yes, colours are a concept for the germans.",
+
+"333TopSpeed": 136,
+"3330to60": 8.2,
+"333Handling": 75,
+
+"666TopSpeed": 140,
+"6660to60": 7.7,
+"666Handling": 78,
+
+"699TopSpeed": 140,
+"6990to60": 7.3,
+"699Handling": 81,
+
+"969TopSpeed": 144,
+"9690to60": 7.7,
+"969Handling": 81,
+
+"996TopSpeed": 144,
+"9960to60": 7.3,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle2.3V5ColourConcept(2001).png",
+    "creator": "Andu"
+}

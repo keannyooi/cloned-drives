@@ -1,0 +1,49 @@
+{
+    "carID": "c05694",
+    "cr": 405,
+    "make": ["Volkswagen"],
+    "model": "New Beetle Dune Concept",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 9.3,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon", "Concept"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.69,
+    "ola": 60.22,
+    "description": "The prequel of the later official dunes, difference is this one can actually go up a dune.",
+
+"333TopSpeed": 129,
+"3330to60": 8.8,
+"333Handling": 73,
+
+"666TopSpeed": 133,
+"6660to60": 8.4,
+"666Handling": 76,
+
+"699TopSpeed": 133,
+"6990to60": 7.9,
+"699Handling": 79,
+
+"969TopSpeed": 137,
+"9690to60": 8.4,
+"969Handling": 79,
+
+"996TopSpeed": 137,
+"9960to60": 7.9,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetleDuneConcept(2000).png",
+    "creator": "Andu"
+}

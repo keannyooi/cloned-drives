@@ -1,0 +1,49 @@
+{
+    "carID": "c05699",
+    "cr": 378,
+    "make": ["Volkswagen"],
+    "model": "Beetle Cabriolet 1.4 TSI R-Line",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 8.6,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1434,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.95,
+    "ola": 69.77,
+    "description": "Reasonably sporty.",
+
+"333TopSpeed": 129,
+"3330to60": 8.2,
+"333Handling": 77,
+
+"666TopSpeed": 133,
+"6660to60": 7.7,
+"666Handling": 80,
+
+"699TopSpeed": 133,
+"6990to60": 7.3,
+"699Handling": 83,
+
+"969TopSpeed": 137,
+"9690to60": 7.7,
+"969Handling": 83,
+
+"996TopSpeed": 137,
+"9960to60": 7.3,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetleCabriolet1.4TSIR-Line(2017).png",
+    "creator": "Andu"
+}

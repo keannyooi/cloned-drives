@@ -1,0 +1,49 @@
+{
+    "carID": "c05585",
+    "cr": 58,
+    "make": ["Volkswagen"],
+    "model": "Beetle 1500",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 79,
+    "0to60": 21.5,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 820,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 53.95,
+    "description": "+ 400cc.",
+
+    "333TopSpeed": 86,
+    "3330to60": 20.4,
+    "333Handling": 62,
+    
+    "666TopSpeed": 92,
+    "6660to60": 19.4,
+    "666Handling": 64,
+    
+    "699TopSpeed": 92,
+    "6990to60": 18.3,
+    "699Handling": 67,
+    
+    "969TopSpeed": 99,
+    "9690to60": 19.4,
+    "969Handling": 67,
+    
+    "996TopSpeed": 99,
+    "9960to60": 18.3,
+    "996Handling": 64,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetle1500(1967).png",
+    "creator": "Andu"
+}

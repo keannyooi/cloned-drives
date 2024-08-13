@@ -1,0 +1,49 @@
+{
+    "carID": "c05589",
+    "cr": 254,
+    "make": ["Volkswagen"],
+    "model": "New Beetle Cabriolet 1.9 TDI",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 11.6,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 42.51,
+    "ola": 67.05,
+    "description": "A cutesy convertible with that big big muscle man torque.",
+
+    "333TopSpeed": 115,
+    "3330to60": 11,
+    "333Handling": 73,
+    
+    "666TopSpeed": 119,
+    "6660to60": 10.4,
+    "666Handling": 76,
+    
+    "699TopSpeed": 119,
+    "6990to60": 9.9,
+    "699Handling": 79,
+    
+    "969TopSpeed": 124,
+    "9690to60": 10.4,
+    "969Handling": 79,
+    
+    "996TopSpeed": 124,
+    "9960to60": 9.9,
+    "996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetleCabriolet1.9TDI(2003).png",
+    "creator": "Andu"
+}

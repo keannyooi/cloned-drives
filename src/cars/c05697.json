@@ -1,0 +1,49 @@
+{
+    "carID": "c05697",
+    "cr": 414,
+    "make": ["Volkswagen"],
+    "model": "Beetle Cabriolet Dune",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 7.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Style Icon"],
+    "isPrize": false,
+    "weight": 1466,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.83,
+    "ola": 67.97,
+    "description": "Sandy hair, sandy beaches, golden car!",
+
+"333TopSpeed": 122,
+"3330to60": 7.3,
+"333Handling": 77,
+
+"666TopSpeed": 127,
+"6660to60": 6.9,
+"666Handling": 80,
+
+"699TopSpeed": 127,
+"6990to60": 6.5,
+"699Handling": 83,
+
+"969TopSpeed": 131,
+"9690to60": 6.9,
+"969Handling": 83,
+
+"996TopSpeed": 131,
+"9960to60": 6.5,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetleCabrioletDune(2017).png",
+    "creator": "Andu"
+}
