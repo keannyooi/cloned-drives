@@ -5,13 +5,13 @@
     "model": "Bolide",
     "modelYear": 2024,
     "country": "FR",
-    "topSpeed": 307,
+    "topSpeed": 236,
     "0to60": 2.2,
     "handling": 112,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Unique", "Track Day", "Ultra Expensive", "Eargasm", "Year of the Rabbit"],
-    "isPrize": true,
+    "isPrize": false,
 
     "weight": 1450,
     "gc": "Low",
@@ -28,23 +28,23 @@
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BugattiBolide(2024).png",
     "creator": "Bnuuy",
 
-"333TopSpeed": 309,
+"333TopSpeed": 238,
 "3330to60": 2.1,
 "333Handling": 116,
 
-"666TopSpeed": 310,
+"666TopSpeed": 240,
 "6660to60": 2,
 "666Handling": 119,
 
-"699TopSpeed": 310,
+"699TopSpeed": 240,
 "6990to60": 1.9,
 "699Handling": 124,
 
-"969TopSpeed": 312,
+"969TopSpeed": 243,
 "9690to60": 2,
 "969Handling": 124,
 
-"996TopSpeed": 312,
+"996TopSpeed": 243,
 "9960to60": 1.9,
 "996Handling": 119
 }
