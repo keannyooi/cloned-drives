@@ -1,0 +1,49 @@
+{
+    "carID": "c05716",
+    "cr": 614,
+    "make": ["EBTech", "Volkswagen"],
+    "model": "Fox VR6 BiTurbo RWD",
+    "modelYear": 2007,
+    "country": "BR",
+    "topSpeed": 150,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders", "Hot Hatch", "Unique"],
+    "isPrize": false,
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.66,
+    "ola": 76.60,
+    "description": "As i was saying, Renault's 3L was a completely different idea to VW's but EBTech knew how to solev that problem.",
+
+"333TopSpeed": 153,
+"3330to60": 4.5,
+"333Handling": 87,
+
+"666TopSpeed": 157,
+"6660to60": 4.2,
+"666Handling": 90,
+
+"699TopSpeed": 157,
+"6990to60": 4,
+"699Handling": 93,
+
+"969TopSpeed": 160,
+"9690to60": 4.2,
+"969Handling": 93,
+
+"996TopSpeed": 160,
+"9960to60": 4,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/EBTechFoxVR6BiTurboRWD(2007).png",
+    "creator": "Andu"
+}

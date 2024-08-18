@@ -1,0 +1,49 @@
+{
+    "carID": "c05711",
+    "cr": 149,
+    "make": ["Volkswagen"],
+    "model": "Fox 1.2 Easy",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 92,
+    "0to60": 16.8,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 998,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 4.99,
+    "ola": 53.57,
+    "description": "Easy! Just like it is to drive this.",
+
+"333TopSpeed": 98,
+"3330to60": 16,
+"333Handling": 70,
+
+"666TopSpeed": 103,
+"6660to60": 15.1,
+"666Handling": 72,
+
+"699TopSpeed": 103,
+"6990to60": 14.3,
+"699Handling": 75,
+
+"969TopSpeed": 109,
+"9690to60": 15.1,
+"969Handling": 75,
+
+"996TopSpeed": 109,
+"9960to60": 14.3,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenFox1.2Easy(2005).png",
+    "creator": "Andu"
+}

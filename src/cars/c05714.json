@@ -1,0 +1,49 @@
+{
+    "carID": "c05714",
+    "cr": 291,
+    "make": ["Volkswagen"],
+    "model": "SpaceCross 1.6 MPI",
+    "modelYear": 2015,
+    "country": "BR",
+    "topSpeed": 112,
+    "0to60": 10.6,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1140,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.15,
+    "ola": 64.15,
+    "description": "A mix of most.",
+
+"333TopSpeed": 117,
+"3330to60": 10.1,
+"333Handling": 74,
+
+"666TopSpeed": 121,
+"6660to60": 9.5,
+"666Handling": 77,
+
+"699TopSpeed": 121,
+"6990to60": 9,
+"699Handling": 80,
+
+"969TopSpeed": 126,
+"9690to60": 9.5,
+"969Handling": 80,
+
+"996TopSpeed": 126,
+"9960to60": 9,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenSpaceCross1.6MPI(2015).png",
+    "creator": "Andu"
+}

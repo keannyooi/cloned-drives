@@ -1,0 +1,49 @@
+{
+    "carID": "c05707",
+    "cr": 163,
+    "make": ["Volkswagen"],
+    "model": "Lupo 1.7 SDI Rave",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 98,
+    "0to60": 15.2,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 980,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 5.55,
+    "ola": 60.53,
+    "description": "Uhm... I think we got to the wrong rave...",
+
+"333TopSpeed": 103,
+"3330to60": 14.4,
+"333Handling": 69,
+
+"666TopSpeed": 109,
+"6660to60": 13.7,
+"666Handling": 71,
+
+"699TopSpeed": 109,
+"6990to60": 12.9,
+"699Handling": 74,
+
+"969TopSpeed": 114,
+"9690to60": 13.7,
+"969Handling": 74,
+
+"996TopSpeed": 114,
+"9960to60": 12.9,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenLupo1.7SDIRave(2004).png",
+    "creator": "Andu"
+}

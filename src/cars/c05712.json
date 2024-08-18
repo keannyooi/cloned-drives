@@ -1,0 +1,49 @@
+{
+    "carID": "c05712",
+    "cr": 222,
+    "make": ["Volkswagen"],
+    "model": "Fox 1.0 MPI Trendline",
+    "modelYear": 2015,
+    "country": "BR",
+    "topSpeed": 101,
+    "0to60": 13.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1066,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.02,
+    "ola": 65.67,
+    "description": "Always thought this looks like a squished Golf mk7.",
+
+"333TopSpeed": 106,
+"3330to60": 12.7,
+"333Handling": 72,
+
+"666TopSpeed": 111,
+"6660to60": 12.1,
+"666Handling": 75,
+
+"699TopSpeed": 111,
+"6990to60": 11.4,
+"699Handling": 78,
+
+"969TopSpeed": 116,
+"9690to60": 12.1,
+"969Handling": 78,
+
+"996TopSpeed": 116,
+"9960to60": 11.4,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenFox1.0MPITrendline(2015).png",
+    "creator": "Andu"
+}

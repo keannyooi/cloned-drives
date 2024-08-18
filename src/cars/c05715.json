@@ -1,0 +1,49 @@
+{
+    "carID": "c05715",
+    "cr": 200,
+    "make": ["Volkswagen"],
+    "model": "Fox 1.4 TDI Style",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 14.0,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1085,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 25.00,
+    "ola": 60.14,
+    "description": "Last effort chance.",
+
+"333TopSpeed": 105,
+"3330to60": 13.3,
+"333Handling": 71,
+
+"666TopSpeed": 110,
+"6660to60": 12.6,
+"666Handling": 74,
+
+"699TopSpeed": 110,
+"6990to60": 11.9,
+"699Handling": 77,
+
+"969TopSpeed": 116,
+"9690to60": 12.6,
+"969Handling": 77,
+
+"996TopSpeed": 116,
+"9960to60": 11.9,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenFox1.4TDIStyle(2009).png",
+    "creator": "Andu"
+}

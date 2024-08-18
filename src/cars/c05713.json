@@ -1,0 +1,49 @@
+{
+    "carID": "c05713",
+    "cr": 358,
+    "make": ["Volkswagen"],
+    "model": "Fox 1.6 MSI Total Flex Pepper",
+    "modelYear": 2017,
+    "country": "BR",
+    "topSpeed": 118,
+    "0to60": 9.1,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1093,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 57.23,
+    "ola": 70.33,
+    "description": "Closest thing we ever got to a Fox GTI.",
+
+"333TopSpeed": 122,
+"3330to60": 8.6,
+"333Handling": 75,
+
+"666TopSpeed": 127,
+"6660to60": 8.2,
+"666Handling": 78,
+
+"699TopSpeed": 127,
+"6990to60": 7.7,
+"699Handling": 81,
+
+"969TopSpeed": 131,
+"9690to60": 8.2,
+"969Handling": 81,
+
+"996TopSpeed": 131,
+"9960to60": 7.7,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenFox1.6MSITotalFlexPepper(2017).png",
+    "creator": "Andu"
+}

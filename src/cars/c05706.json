@@ -1,0 +1,49 @@
+{
+    "carID": "c05706",
+    "cr": 147,
+    "make": ["Volkswagen"],
+    "model": "Lupo 1.0 MPI Trendline",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 94,
+    "0to60": 16.4,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 885,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 4.44,
+    "ola": 59.76,
+    "description": "Simple.",
+
+"333TopSpeed": 100,
+"3330to60": 15.6,
+"333Handling": 69,
+
+"666TopSpeed": 105,
+"6660to60": 14.8,
+"666Handling": 71,
+
+"699TopSpeed": 105,
+"6990to60": 13.9,
+"699Handling": 74,
+
+"969TopSpeed": 111,
+"9690to60": 14.8,
+"969Handling": 74,
+
+"996TopSpeed": 111,
+"9960to60": 13.9,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenLupo1.0MPITrendline(1998).png",
+    "creator": "Andu"
+}

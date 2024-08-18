@@ -1,0 +1,49 @@
+{
+    "carID": "c05709",
+    "cr": 397,
+    "make": ["Rothe","Volkswagen"],
+    "model": "Lupo GTI Turbo",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 6.5,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders", "Hot Hatch", "Tuner"],
+    "isPrize": false,
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.42,
+    "ola": 83.08,
+    "description": "Oops, my bad, just dropped a turbo in.",
+
+"333TopSpeed": 144,
+"3330to60": 6.2,
+"333Handling": 81,
+
+"666TopSpeed": 147,
+"6660to60": 5.9,
+"666Handling": 83,
+
+"699TopSpeed": 147,
+"6990to60": 5.5,
+"699Handling": 87,
+
+"969TopSpeed": 151,
+"9690to60": 5.9,
+"969Handling": 87,
+
+"996TopSpeed": 151,
+"9960to60": 5.5,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RotheLupoGTITurbo(2004).png",
+    "creator": "Andu"
+}
