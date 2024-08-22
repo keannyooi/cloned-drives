@@ -1,0 +1,75 @@
+{
+    "packName": "RWD Coupe Standard Pack",
+	"description": "The pack consisting of RWD Coupe cards from standard all the way to legendary.",
+	"repetition": 1,
+	"pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/StandardPack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "RWD",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "Coupe",
+		"seatCount": "None"
+    },
+
+	"packSequence": [
+		{
+			"standard": 50,			
+			"common": 50,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 70,
+			"uncommon": 30,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 70,
+			"uncommon": 30,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 60,
+			"rare": 30,
+			"epic": 10,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
     "carID": "c00469",
-    "cr": 880,
+    "cr": 879,
     "make": "Ford",
     "model": "GT90",
     "modelYear": 1995,
@@ -10,12 +10,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Concept",
-        "Supercar",
-        "Ultra Expensive"
-    ],
+    "tags": ["Unique","Concept","Supercar","Ultra Expensive"],
     "isPrize": false,
     "weight": 1451,
     "gc": "Low",
@@ -43,6 +38,6 @@
     "699TopSpeed": 257,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence"
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT90(1995).png",
+    "creator": "Bnuuy"
 }
