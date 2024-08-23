@@ -29,11 +29,11 @@ async function regenBM() {
             crEnd = i < 4 ? 99 : 399;
             if (i >= 4) {
                 price = 200 + (Math.floor(Math.random() * 100));
-                stock = 20;
+                stock = 40;
             }
             else {
                 price = 25 + (Math.floor(Math.random() * 10));
-                stock = 50;
+                stock = 40;
             }
         }
         else if (randNum < 60) {
@@ -41,7 +41,7 @@ async function regenBM() {
             crEnd = i < 4 ? 399 : 699;
             if (i >= 4) {
                 price = 400 + (Math.floor(Math.random() * 200));
-                stock = 10;
+                stock = 40;
             }
             else {
                 price = 50 + (Math.floor(Math.random() * 25));
@@ -53,30 +53,30 @@ async function regenBM() {
             crEnd = i < 4 ? 399 : 699;
             if (i >= 4) {
                 price = 400 + (Math.floor(Math.random() * 200));
-                stock = 10;
+                stock = 40;
             }
             else {
                 price = 100 + (Math.floor(Math.random() * 50));
-                stock = 30;
+                stock = 40;
             }
         }
-        else if (randNum < 95) {
+        else if (randNum < 93) {
             crStart = i < 4 ? 400 : 700;
             crEnd = i < 4 ? 549 : 849;
             if (i >= 4) {
                 price = 800 + (Math.floor(Math.random() * 400));
-                stock = 10;
+                stock = 20;
             }
             else {
                 price = 200 + (Math.floor(Math.random() * 100));
-                stock = 15;
+                stock = 25;
             }
         }
         else {
             crStart = 850;
             crEnd = 999;
             price = 1600 + (Math.floor(Math.random() * 800));
-            stock = 5;
+            stock = 10;
         }
 
         while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["cr"] > crEnd || bmReference["cr"] < crStart || !currentCar["active"]) {
