@@ -194,6 +194,32 @@ const consts = {
                 "Drag": 700
             }
         },
+		"TT OffRoad": {
+            drivePen: 0,
+            absPen: 0,
+            tcsPen: 0,
+            tyrePen: {
+                "Standard": 0,
+                "Performance": 0,
+                "All-Surface": -75,
+                "Off-Road": -100,
+                "Slick": 0,
+                "Drag": 0
+            }
+        },
+		"TT OnRoad": {
+            drivePen: 0,
+            absPen: 0,
+            tcsPen: 0,
+            tyrePen: {
+                "Standard": 0,
+                "Performance": 0,
+                "All-Surface": 0,
+                "Off-Road": 0,
+                "Slick": 0,
+                "Drag": 0
+            }
+        },
         "Sunny Ice": {
             drivePen: 17,
             absPen: 4.25,

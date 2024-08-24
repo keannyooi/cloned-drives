@@ -1,0 +1,18 @@
+{
+	"trackName": "Slalom Test (Track)",
+	"weather": "Sunny",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 20,
+		"handling": 100,
+		"weight": 80,
+		"mra": 0,
+		"ola": 10
+	}
+}
