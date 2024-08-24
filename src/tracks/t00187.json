@@ -1,18 +1,18 @@
 {
-	"trackName": "(TT) OLA (Onroad)",
+	"trackName": "(TT) Top Speed (Offroad)",
 	"weather": "TT",
-	"surface": "OnRoad",
+	"surface": "OffRoad",
 	"speedbumps": 0,
 	"humps": 0,
 	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
 	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
 	
 	"specsDistr": {
-		"topSpeed": 0,
+		"topSpeed": 100,
 		"0to60": 0,
 		"handling": 0,
 		"weight": 0,
 		"mra": 0,
-		"ola": 100
+		"ola": 0
 	}
 }

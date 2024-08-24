@@ -1,5 +1,5 @@
 {
-	"trackName": "(TT) OLA (Onroad)",
+	"trackName": "(TT) The 100/6 killer (Onroad)",
 	"weather": "TT",
 	"surface": "OnRoad",
 	"speedbumps": 0,
@@ -8,11 +8,11 @@
 	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
 	
 	"specsDistr": {
-		"topSpeed": 0,
-		"0to60": 0,
-		"handling": 0,
-		"weight": 0,
-		"mra": 0,
+		"topSpeed": 100,
+		"0to60": 100,
+		"handling": 100,
+		"weight": 100,
+		"mra": 100,
 		"ola": 100
 	}
 }

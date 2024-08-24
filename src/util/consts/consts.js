@@ -200,11 +200,11 @@ const consts = {
             tcsPen: 0,
             tyrePen: {
                 "Standard": 0,
-                "Performance": 0,
+                "Performance": 100,
                 "All-Surface": -75,
                 "Off-Road": -100,
-                "Slick": 0,
-                "Drag": 0
+                "Slick": 400,
+                "Drag": 700
             }
         },
 		"TT OnRoad": {
