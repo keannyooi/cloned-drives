@@ -1,13 +1,13 @@
 {
     "carID": "c02490",
-    "cr": 920,
+    "cr": 1012,
     "make": "TVR",
-    "model": "Speed 12 GT1 Racer",
+    "model": "Speed 12 GT1 #12 TVR Racing",
     "modelYear": 1996,
     "country": "GB",
     "topSpeed": 245,
     "0to60": 3.0,
-    "handling": 95,
+    "handling": 103,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport", "Unique"],
@@ -24,26 +24,26 @@
     "mra": 125,
     "ola": 86.67,
     "description": "Brrrrrrrrrrrrrrr.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/TVRSpeed12GT1(1996).png",
+    "creator": "Bnuuy",
 
 "333TopSpeed": 247, 
 "3330to60": 2.8, 
-"333Handling": 98,
+"333Handling": 106,
 
 "666TopSpeed": 249, 
 "6660to60": 2.7, 
-"666Handling": 101,
+"666Handling": 110,
 
 "699TopSpeed": 249, 
 "6990to60": 2.6, 
-"699Handling": 105,
+"699Handling": 114,
 
 "969TopSpeed": 251, 
 "9690to60": 2.7, 
-"969Handling": 105,
+"969Handling": 114,
 
 "996TopSpeed": 251, 
 "9960to60": 2.6, 
-"996Handling": 101 
+"996Handling": 110 
 }

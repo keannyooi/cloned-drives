@@ -5,7 +5,7 @@ const rarityCheck = require("./rarityCheck.js");
 
 function carNameGen(args) {
     let { currentCar, rarity, upgrade, removePrizeTag, removeBMTag } = args;
-    const trophyEmoji = bot.emojis.cache.get("775636479145148418");
+    const trophyEmoji = bot.emojis.cache.get("1162882228741734520");
     let make = currentCar["make"], bmReference = currentCar;
     if (typeof make === "object") {
         make = currentCar["make"][0];

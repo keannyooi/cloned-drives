@@ -53,7 +53,7 @@ async function regenDealership() {
             crStart = i < 4 ? 400 : 750;
             crEnd = i < 4 ? 499 : 899;
             if (i >= 4) {
-                price = 222000 + (Math.floor(Math.random() * 200000));
+                price = 299000 + (Math.floor(Math.random() * 200000));
                 stock = 50;
             }
             else {
