@@ -48,7 +48,7 @@ const consts = {
                 "All-Surface": 0,
                 "Off-Road": 0,
                 "Slick": 0,
-                "Drag": -11.5
+                "Drag": -7.5
             }
         },
             "Rainy Drag": {
@@ -61,7 +61,7 @@ const consts = {
                 "All-Surface": 0,
                 "Off-Road": 0,
                 "Slick": 20,
-                "Drag": 250
+                "Drag": 70
             }
         },
         "Sunny Track": {
@@ -74,7 +74,7 @@ const consts = {
                 "All-Surface": 0,
                 "Off-Road": 0,
                 "Slick": -16,
-                "Drag": 10
+                "Drag": 9
             }
         },
         "Rainy Track": {
@@ -87,7 +87,7 @@ const consts = {
                 "All-Surface": 5,
                 "Off-Road": 50,
                 "Slick": 40,
-                "Drag": 250
+                "Drag": 120
             }
         },
         "Sunny Asphalt": {
@@ -100,7 +100,7 @@ const consts = {
                 "All-Surface": 0,
                 "Off-Road": 0,
                 "Slick": 0,
-                "Drag": 10
+                "Drag": 5
             }
         },
         "Rainy Asphalt": {
@@ -113,7 +113,7 @@ const consts = {
                 "All-Surface": 5,
                 "Off-Road": 40,
                 "Slick": 50,
-                "Drag": 250
+                "Drag": 100
             }
         },
         "Sunny Gravel": {
@@ -126,7 +126,7 @@ const consts = {
                 "All-Surface": -4,
                 "Off-Road": -4.5,
                 "Slick": 40,
-                "Drag": 500
+                "Drag": 100
             }
         },
         "Rainy Gravel": {
@@ -139,7 +139,7 @@ const consts = {
                 "All-Surface": -5.5,
                 "Off-Road": -7.5,
                 "Slick": 42.5,
-                "Drag": 500
+                "Drag": 200
             }
         },
         "Sunny Sand": {
