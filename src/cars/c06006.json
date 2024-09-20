@@ -1,0 +1,49 @@
+{
+    "carID": "c06006",
+    "cr": 314,
+    "make": ["Toyota"],
+    "model": "Camry LE V6",
+    "modelYear": 1988,
+    "country": "JP",
+    "topSpeed": 116,
+    "0to60": 8.7,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1305,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.85,
+    "ola": 66.67,
+    "description": "Born in the USA.",
+
+"333TopSpeed": 120,
+"3330to60": 8.3,
+"333Handling": 68,
+
+"666TopSpeed": 125,
+"6660to60": 7.8,
+"666Handling": 70,
+
+"699TopSpeed": 125,
+"6990to60": 7.4,
+"699Handling": 73,
+
+"969TopSpeed": 129,
+"9690to60": 7.8,
+"969Handling": 73,
+
+"996TopSpeed": 129,
+"9960to60": 7.4,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryV6LE(1988).png",
+    "creator": "Andu"
+}

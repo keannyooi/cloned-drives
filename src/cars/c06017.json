@@ -1,0 +1,49 @@
+{
+    "carID": "c06017",
+    "cr": 416,
+    "make": ["Toyota"],
+    "model": "Camry Solara Convertible SE V6",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 7.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.62,
+    "ola": 76.06,
+    "description": "The long lost cousin of the PT Cruiser.",
+    
+"333TopSpeed": 134,
+"3330to60": 6.7,
+"333Handling": 72,
+
+"666TopSpeed": 138,
+"6660to60": 6.4,
+"666Handling": 75,
+
+"699TopSpeed": 138,
+"6990to60": 6,
+"699Handling": 78,
+
+"969TopSpeed": 142,
+"9690to60": 6.4,
+"969Handling": 78,
+
+"996TopSpeed": 142,
+"9960to60": 6,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamrySolaraConvertibleSEV6(2004).png",
+    "creator": "Andu"
+}

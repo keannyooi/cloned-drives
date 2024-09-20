@@ -1,0 +1,49 @@
+{
+    "carID": "c06018",
+    "cr": 452,
+    "make": ["Toyota"],
+    "model": "Camry Solara Coupe SE V6 Sport",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 6.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1587,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.1,
+    "ola": 74.07,
+    "description": "Noteworthy.",
+    
+"333TopSpeed": 134,
+"3330to60": 6.5,
+"333Handling": 74,
+
+"666TopSpeed": 138,
+"6660to60": 6.1,
+"666Handling": 77,
+
+"699TopSpeed": 138,
+"6990to60": 5.8,
+"699Handling": 80,
+
+"969TopSpeed": 142,
+"9690to60": 6.1,
+"969Handling": 80,
+
+"996TopSpeed": 142,
+"9960to60": 5.8,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamrySolaraCoupeeSEV6Sport(2003).png",
+    "creator": "Andu"
+}

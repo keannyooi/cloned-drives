@@ -1,0 +1,49 @@
+{
+    "carID": "c06011",
+    "cr": 344,
+    "make": ["Toyota"],
+    "model": "Camry Solara Convertible SLE V6",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 128,
+    "0to60": 8.5,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1587,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.8,
+    "ola": 70.59,
+    "description": "This screams rich 50 year old woman that lives in Orange County.",
+    
+"333TopSpeed": 132,
+"3330to60": 8.1,
+"333Handling": 70,
+
+"666TopSpeed": 136,
+"6660to60": 7.7,
+"666Handling": 72,
+
+"699TopSpeed": 136,
+"6990to60": 7.2,
+"699Handling": 75,
+
+"969TopSpeed": 140,
+"9690to60": 7.7,
+"969Handling": 75,
+
+"996TopSpeed": 140,
+"9960to60": 7.2,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamrySolaraConvertibleSLEV6(1998).png",
+    "creator": "Andu"
+}

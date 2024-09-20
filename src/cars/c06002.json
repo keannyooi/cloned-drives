@@ -1,0 +1,49 @@
+{
+    "carID": "c06002",
+    "cr": 143,
+    "make": ["Toyota"],
+    "model": "Camry Wagon 2.0 Turbo-D",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 14.4,
+    "handling": 62,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1355,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 12.22,
+    "ola": 63.89,
+    "description": "DDD: Delicious Diesel Damry!",
+
+"333TopSpeed": 104,
+"3330to60": 13.7,
+"333Handling": 64,
+
+"666TopSpeed": 110,
+"6660to60": 13,
+"666Handling": 66,
+
+"699TopSpeed": 110,
+"6990to60": 12.2,
+"699Handling": 69,
+
+"969TopSpeed": 115,
+"9690to60": 13,
+"969Handling": 69,
+
+"996TopSpeed": 115,
+"9960to60": 12.2,
+"996Handling": 66,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryWagon2.0Turbo-D(1987).png",
+    "creator": "Andu"
+}

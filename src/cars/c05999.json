@@ -1,0 +1,49 @@
+{
+    "carID": "c05999",
+    "cr": 163,
+    "make": ["Toyota"],
+    "model": "Camry DLX",
+    "modelYear": 1984,
+    "country": "JP",
+    "topSpeed": 102,
+    "0to60": 13.7,
+    "handling": 61,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1100,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 16.85,
+    "ola": 62.77,
+    "description": "Forget the german diesels, here is the japanese!",
+
+"333TopSpeed": 107,
+"3330to60": 13,
+"333Handling": 63,
+
+"666TopSpeed": 112,
+"6660to60": 12.3,
+"666Handling": 65,
+
+"699TopSpeed": 112,
+"6990to60": 11.6,
+"699Handling": 68,
+
+"969TopSpeed": 117,
+"9690to60": 12.3,
+"969Handling": 68,
+
+"996TopSpeed": 117,
+"9960to60": 11.6,
+"996Handling": 65,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryDLX(1984).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06027",
+    "cr": 501,
+    "make": ["Toyota"],
+    "model": "Avalon TRD",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 6.0,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders"],
+    "isPrize": false,
+    "weight": 1681,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.77,
+    "ola": 80.00,
+    "description": "Still an Avalon, Just a Slightly Angrier One.",
+    
+"333TopSpeed": 135,
+"3330to60": 5.7,
+"333Handling": 82,
+
+"666TopSpeed": 139,
+"6660to60": 5.4,
+"666Handling": 84,
+
+"699TopSpeed": 139,
+"6990to60": 5.1,
+"699Handling": 88,
+
+"969TopSpeed": 143,
+"9690to60": 5.4,
+"969Handling": 88,
+
+"996TopSpeed": 143,
+"9960to60": 5.1,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaAvalonTRD(2020).png",
+    "creator": "Andu"
+}

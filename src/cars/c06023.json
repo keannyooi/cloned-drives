@@ -1,0 +1,49 @@
+{
+    "carID": "c06023",
+    "cr": 414,
+    "make": ["Toyota"],
+    "model": "Camry Hybrid XLE",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 117,
+    "0to60": 7.3,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1585,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 62.5,
+    "ola": 74.48,
+    "description": "This second verse is similar to the first but also more efficient.",
+    
+"333TopSpeed": 121,
+"3330to60": 6.9,
+"333Handling": 74,
+
+"666TopSpeed": 126,
+"6660to60": 6.6,
+"666Handling": 77,
+
+"699TopSpeed": 126,
+"6990to60": 6.2,
+"699Handling": 80,
+
+"969TopSpeed": 130,
+"9690to60": 6.6,
+"969Handling": 80,
+
+"996TopSpeed": 130,
+"9960to60": 6.2,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryHybridXLE(2012).png",
+    "creator": "Andu"
+}

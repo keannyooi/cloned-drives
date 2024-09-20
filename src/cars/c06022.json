@@ -1,0 +1,49 @@
+{
+    "carID": "c06022",
+    "cr": 375,
+    "make": ["Toyota"],
+    "model": "Camry LE",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 8.2,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1457,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.61,
+    "ola": 71.84,
+    "description": "More luxury and more mpg for America's most popular car.",
+    
+"333TopSpeed": 119,
+"3330to60": 7.8,
+"333Handling": 74,
+
+"666TopSpeed": 123,
+"6660to60": 7.4,
+"666Handling": 77,
+
+"699TopSpeed": 123,
+"6990to60": 7,
+"699Handling": 80,
+
+"969TopSpeed": 128,
+"9690to60": 7.4,
+"969Handling": 80,
+
+"996TopSpeed": 128,
+"9960to60": 7,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryLE(2012).png",
+    "creator": "Andu"
+}

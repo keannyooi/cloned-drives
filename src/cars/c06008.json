@@ -1,0 +1,49 @@
+{
+    "carID": "c06008",
+    "cr": 296,
+    "make": ["Toyota"],
+    "model": "Camry 2.2 GLi",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 126,
+    "0to60": 9.6,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1365,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.63,
+    "ola": 68.75,
+    "description": "Non US-Spec.",
+    
+"333TopSpeed": 130,
+"3330to60": 9.1,
+"333Handling": 69,
+
+"666TopSpeed": 134,
+"6660to60": 8.6,
+"666Handling": 71,
+
+"699TopSpeed": 134,
+"6990to60": 8.2,
+"699Handling": 74,
+
+"969TopSpeed": 138,
+"9690to60": 8.6,
+"969Handling": 74,
+
+"996TopSpeed": 138,
+"9960to60": 8.2,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamry2.2GLi(1991).png",
+    "creator": "Andu"
+}

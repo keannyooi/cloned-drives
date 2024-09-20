@@ -1,0 +1,49 @@
+{
+    "carID": "c06005",
+    "cr": 292,
+    "make": ["Toyota"],
+    "model": "Camry Wagon 2.5 V6 GLi",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 9,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1425,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.13,
+    "ola": 67.78,
+    "description": "V6 for more pulling power",
+
+"333TopSpeed": 120,
+"3330to60": 8.5,
+"333Handling": 67,
+
+"666TopSpeed": 124,
+"6660to60": 8.1,
+"666Handling": 69,
+
+"699TopSpeed": 124,
+"6990to60": 7.6,
+"699Handling": 72,
+
+"969TopSpeed": 129,
+"9690to60": 8.1,
+"969Handling": 72,
+
+"996TopSpeed": 129,
+"9960to60": 7.6,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryWagon2.5V6GLi(1990).png",
+    "creator": "Andu"
+}

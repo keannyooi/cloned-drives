@@ -1,0 +1,49 @@
+{
+    "carID": "c06000",
+    "cr": 187,
+    "make": ["Toyota"],
+    "model": "Camry LE",
+    "modelYear": 1983,
+    "country": "JP",
+    "topSpeed": 104,
+    "0to60": 12.2,
+    "handling": 62,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1171,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 19.63,
+    "ola": 66.39,
+    "description": "At home in America.",
+
+"333TopSpeed": 109,
+"3330to60": 11.6,
+"333Handling": 64,
+
+"666TopSpeed": 114,
+"6660to60": 11,
+"666Handling": 66,
+
+"699TopSpeed": 114,
+"6990to60": 10.4,
+"699Handling": 69,
+
+"969TopSpeed": 119,
+"9690to60": 11,
+"969Handling": 69,
+
+"996TopSpeed": 119,
+"9960to60": 10.4,
+"996Handling": 66,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryLE(1983)(1983).png",
+    "creator": "Andu"
+}

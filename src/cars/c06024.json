@@ -1,0 +1,49 @@
+{
+    "carID": "c06024",
+    "cr": 418,
+    "make": ["Toyota"],
+    "model": "Camry LE",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 133,
+    "0to60": 7.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1565,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.45,
+    "ola": 70.43,
+    "description": "Relocating from major appliances to sporting goods. Really.",
+    
+"333TopSpeed": 137,
+"3330to60": 7.3,
+"333Handling": 76,
+
+"666TopSpeed": 141,
+"6660to60": 6.9,
+"666Handling": 79,
+
+"699TopSpeed": 141,
+"6990to60": 6.5,
+"699Handling": 82,
+
+"969TopSpeed": 145,
+"9690to60": 6.9,
+"969Handling": 82,
+
+"996TopSpeed": 145,
+"9960to60": 6.5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryLE(2018).png",
+    "creator": "Andu"
+}

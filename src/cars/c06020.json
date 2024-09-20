@@ -1,0 +1,49 @@
+{
+    "carID": "c06020",
+    "cr": 342,
+    "make": ["Toyota"],
+    "model": "Camry G Four Limited Edition",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.3,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.1,
+    "ola": 66.67,
+    "description": "Ultra beige.",
+    
+"333TopSpeed": 117,
+"3330to60": 8.8,
+"333Handling": 72,
+
+"666TopSpeed": 121,
+"6660to60": 8.4,
+"666Handling": 75,
+
+"699TopSpeed": 121,
+"6990to60": 7.9,
+"699Handling": 78,
+
+"969TopSpeed": 126,
+"9690to60": 8.4,
+"969Handling": 78,
+
+"996TopSpeed": 126,
+"9960to60": 7.9,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryGFourLimitedEdition(2009).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06026",
+    "cr": 535,
+    "make": ["Toyota"],
+    "model": "Avalon Touring V6",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 132,
+    "0to60": 6.1,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1692,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.7,
+    "ola": 75.82,
+    "description": "The new Avalon might drive like a crossover, but it offers something no CUV ever has.",
+    
+"333TopSpeed": 136,
+"3330to60": 5.8,
+"333Handling": 77,
+
+"666TopSpeed": 140,
+"6660to60": 5.5,
+"666Handling": 80,
+
+"699TopSpeed": 140,
+"6990to60": 5.2,
+"699Handling": 83,
+
+"969TopSpeed": 144,
+"9690to60": 5.5,
+"969Handling": 83,
+
+"996TopSpeed": 144,
+"9960to60": 5.2,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaAvalonTouringV6(2019).png",
+    "creator": "Andu"
+}

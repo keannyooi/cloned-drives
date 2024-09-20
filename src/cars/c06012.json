@@ -1,0 +1,49 @@
+{
+    "carID": "c06012",
+    "cr": 389,
+    "make": ["Toyota"],
+    "model": "Camry Gracia Four Touring Edition 2.5 V6",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 7.9,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1610,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.83,
+    "ola": 68.35,
+    "description": "You could say, this is real gracious.",
+    
+"333TopSpeed": 117,
+"3330to60": 7.5,
+"333Handling": 70,
+
+"666TopSpeed": 121,
+"6660to60": 7.1,
+"666Handling": 72,
+
+"699TopSpeed": 121,
+"6990to60": 6.7,
+"699Handling": 75,
+
+"969TopSpeed": 126,
+"9690to60": 7.1,
+"969Handling": 75,
+
+"996TopSpeed": 126,
+"9960to60": 6.7,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryGracia2.5V6FourTouringEdition(1997)).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06004",
+    "cr": 307,
+    "make": ["Toyota"],
+    "model": "Camry All-Track LE",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.3,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1405,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.4,
+    "ola": 60.22,
+    "description": "Yes, Toyota made AWD Camrys, and a few Americans bought them.",
+
+"333TopSpeed": 117,
+"3330to60": 8.8,
+"333Handling": 66,
+
+"666TopSpeed": 121,
+"6660to60": 8.4,
+"666Handling": 68,
+
+"699TopSpeed": 121,
+"6990to60": 7.9,
+"699Handling": 71,
+
+"969TopSpeed": 126,
+"9690to60": 8.4,
+"969Handling": 71,
+
+"996TopSpeed": 126,
+"9960to60": 7.9,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryAll-TrackLE(1987).png",
+    "creator": "Andu"
+}

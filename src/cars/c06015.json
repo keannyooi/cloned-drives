@@ -1,0 +1,49 @@
+{
+    "carID": "c06015",
+    "cr": 315,
+    "make": ["Toyota"],
+    "model": "Camry 2.4G Touring",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1520,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.26,
+    "ola": 67.02,
+    "description": "Supermodel pose, super background.",
+    
+"333TopSpeed": 117,
+"3330to60": 8.9,
+"333Handling": 72,
+
+"666TopSpeed": 121,
+"6660to60": 8.5,
+"666Handling": 75,
+
+"699TopSpeed": 121,
+"6990to60": 8,
+"699Handling": 78,
+
+"969TopSpeed": 126,
+"9690to60": 8.5,
+"969Handling": 78,
+
+"996TopSpeed": 126,
+"9960to60": 8,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamry2.4GTouring(2002).png",
+    "creator": "Andu"
+}

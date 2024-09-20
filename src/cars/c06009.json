@@ -1,0 +1,49 @@
+{
+    "carID": "c06009",
+    "cr": 366,
+    "make": ["Toyota"],
+    "model": "Camry Coupe V6 SE",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 136,
+    "0to60": 8,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1365,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.17,
+    "ola": 75,
+    "description": "The so called sports car noone asked for.",
+    
+"333TopSpeed": 140,
+"3330to60": 7.6,
+"333Handling": 71,
+
+"666TopSpeed": 144,
+"6660to60": 7.2,
+"666Handling": 74,
+
+"699TopSpeed": 144,
+"6990to60": 6.8,
+"699Handling": 77,
+
+"969TopSpeed": 147,
+"9690to60": 7.2,
+"969Handling": 77,
+
+"996TopSpeed": 147,
+"9960to60": 6.8,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryCoupeV6SE(1993).png",
+    "creator": "Andu"
+}

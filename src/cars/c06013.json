@@ -1,0 +1,49 @@
+{
+    "carID": "c06013",
+    "cr": 399,
+    "make": ["Toyota"],
+    "model": "Camry Solara Coupe SE V6",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 7.6,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1465,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.14,
+    "ola": 73.49,
+    "description": "Things are starting to heat up.",
+    
+"333TopSpeed": 138,
+"3330to60": 7.2,
+"333Handling": 72,
+
+"666TopSpeed": 142,
+"6660to60": 6.8,
+"666Handling": 75,
+
+"699TopSpeed": 142,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 146,
+"9690to60": 6.8,
+"969Handling": 78,
+
+"996TopSpeed": 146,
+"9960to60": 6.5,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamrySolaraCoupeSLEV6(1998)).png",
+    "creator": "Andu"
+}

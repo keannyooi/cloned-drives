@@ -1,0 +1,49 @@
+{
+    "carID": "c06025",
+    "cr": 444,
+    "make": ["Toyota"],
+    "model": "Avalon XLE AWD",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 7.7,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1672,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.11,
+    "ola": 68.42,
+    "description": "Getting an Avalon with all-wheel drive requires downgrading from a V-6 to a four-cylinder. How much traction do you require?",
+    
+"333TopSpeed": 134,
+"3330to60": 7.3,
+"333Handling": 76,
+
+"666TopSpeed": 138,
+"6660to60": 6.9,
+"666Handling": 79,
+
+"699TopSpeed": 138,
+"6990to60": 6.5,
+"699Handling": 82,
+
+"969TopSpeed": 142,
+"9690to60": 6.9,
+"969Handling": 82,
+
+"996TopSpeed": 142,
+"9960to60": 6.5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaAvalonXLEAWD(2021).png",
+    "creator": "Andu"
+}

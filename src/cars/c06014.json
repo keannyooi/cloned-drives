@@ -1,0 +1,49 @@
+{
+    "carID": "c06014",
+    "cr": 436,
+    "make": ["Toyota"],
+    "model": "Camry Solara TRD",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 6.0,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders"],
+    "isPrize": false,
+    "weight": 1542,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.71,
+    "ola": 73.95,
+    "description": "Add a little bit of spice.",
+    
+"333TopSpeed": 139,
+"3330to60": 5.7,
+"333Handling": 82,
+
+"666TopSpeed": 143,
+"6660to60": 5.4,
+"666Handling": 84,
+
+"699TopSpeed": 143,
+"6990to60": 5.1,
+"699Handling": 88,
+
+"969TopSpeed": 147,
+"9690to60": 5.4,
+"969Handling": 88,
+
+"996TopSpeed": 147,
+"9960to60": 5.1,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamrySolaraTRD(2000).png",
+    "creator": "Andu"
+}

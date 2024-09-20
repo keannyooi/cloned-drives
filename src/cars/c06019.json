@@ -1,0 +1,49 @@
+{
+    "carID": "c06019",
+    "cr": 421,
+    "make": ["Toyota"],
+    "model": "Camry TS-01 Concept",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 140,
+    "0to60": 6.2,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders", "Concept"],
+    "isPrize": false,
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.27,
+    "ola": 74.19,
+    "description": "Super Sedan.",
+    
+"333TopSpeed": 144,
+"3330to60": 5.9,
+"333Handling": 82,
+
+"666TopSpeed": 147,
+"6660to60": 5.6,
+"666Handling": 84,
+
+"699TopSpeed": 147,
+"6990to60": 5.3,
+"699Handling": 88,
+
+"969TopSpeed": 151,
+"9690to60": 5.6,
+"969Handling": 88,
+
+"996TopSpeed": 151,
+"9960to60": 5.3,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryTS-01Concept(2005).png",
+    "creator": "Andu"
+}
