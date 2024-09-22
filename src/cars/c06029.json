@@ -1,0 +1,49 @@
+{
+    "carID": "c06029",
+    "cr": 500,
+    "make": ["Toyota"],
+    "model": "Camry XSE AWD",
+    "modelYear": 2024,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1700,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.07,
+    "ola": 66.83,
+    "description": "Toyota's updated, hybrid-only Camry shows that family sedans are far from dead.",
+    
+"333TopSpeed": 120,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 124,
+"6660to60": 6.2,
+"666Handling": 81,
+
+"699TopSpeed": 124,
+"6990to60": 5.9,
+"699Handling": 84,
+
+"969TopSpeed": 129,
+"9690to60": 6.2,
+"969Handling": 84,
+
+"996TopSpeed": 129,
+"9960to60": 5.9,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryXSEAWD(2024).png",
+    "creator": "Andu"
+}
