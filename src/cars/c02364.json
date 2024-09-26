@@ -1,16 +1,16 @@
 {
     "carID": "c02364",
-    "cr": 710,
+    "cr": 707,
     "make": "Venturi",
     "model": "400 GT",
     "modelYear": 1994,
-    "country": "MC",
+    "country": "FR",
     "topSpeed": 180,
     "0to60": 4.2,
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar","Rest of The World"],
+    "tags": ["Supercar"],
     "isPrize": false,
 
     "weight": 1300,
@@ -25,8 +25,8 @@
     "ola": 82.75,
     "description": "A Ferrari F40 knockoff from France.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Venturi400GT(1994).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 183,
     "3330to60": 4.0,

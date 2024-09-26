@@ -1,16 +1,16 @@
 {
     "carID": "c02287",
-    "cr": 630,
+    "cr": 632,
     "make": "Venturi",
-    "model": "260 Atlantique",
-    "modelYear": 1992,
-    "country": "MC",
+    "model": "Atlantique 260",
+    "modelYear": 1991,
+    "country": "FR",
     "topSpeed": 166,
     "0to60": 5.0,
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1143,
@@ -25,8 +25,8 @@
     "ola": 73.16,
     "description": "Another special lightened version of the Venturi 260.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Venturi260Atlantique(1991).png",
+    "creator": "Crossfire",
 	
     "333TopSpeed": 169,
     "3330to60": 4.8,

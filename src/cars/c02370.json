@@ -1,16 +1,16 @@
 {
     "carID": "c02370",
-    "cr": 610,
+    "cr": 609,
     "make": "Venturi",
     "model": "Atlantique 300",
-    "modelYear": 1996,
-    "country": "MC",
+    "modelYear": 1998,
+    "country": "FR",
     "topSpeed": 169,
     "0to60": 5.3,
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1250,
@@ -25,8 +25,8 @@
     "ola": 77.31,
     "description": "A fully reworked Venturi, taking inspiration of its styling from various Ferrari vehicles.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VenturiAtlantique300(1998).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 172,
     "3330to60": 5.0,

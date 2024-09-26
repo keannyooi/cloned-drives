@@ -1,16 +1,16 @@
 {
     "carID": "c02371",
-    "cr": 680,
+    "cr": 683,
     "make": "Venturi",
     "model": "Atlantique 300 Biturbo",
     "modelYear": 1999,
-    "country": "MC",
+    "country": "FR",
     "topSpeed": 169,
     "0to60": 4.6,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Year of the Rabbit"],
+    "tags": ["Year of the Rabbit"],
     "isPrize": false,
 
     "weight": 1300,
@@ -25,8 +25,8 @@
     "ola": 76.75,
     "description": "Add another turbo and you get 30 more hp and smoother power delivery.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VenturiAtlantique300Biturbo(1999).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 172,
     "3330to60": 4.4,

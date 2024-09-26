@@ -1,16 +1,16 @@
 {
     "carID": "c02344",
-    "cr": 530,
+    "cr": 528,
     "make": ["MVS", "Venturi"],
     "model": "Venturi 260",
     "modelYear": 1989,
-    "country": "MC",
+    "country": "FR",
     "topSpeed": 165,
     "0to60": 5.8,
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1253,
@@ -25,8 +25,8 @@
     "ola": 67.28,
     "description": "As the company dropped the MVS marque in favour of the Venturi name, they also added a turbocharged 2.8L V6 for more performance.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi260(1989).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 168,
     "3330to60": 5.5,

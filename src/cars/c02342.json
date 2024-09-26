@@ -1,16 +1,16 @@
 {
     "carID": "c02342",
-    "cr": 290,
+    "cr": 289,
     "make": ["MVS", "Venturi"],
-    "model": "Venturi 160 Automatic",
+    "model": "Venturi 160",
     "modelYear": 1987,
-    "country": "MC",
+    "country": "FR",
     "topSpeed": 129,
     "0to60": 8.3,
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Year of the Rabbit"],
+    "tags": ["Year of the Rabbit"],
     "isPrize": false,
 
     "weight": 1295,
@@ -25,8 +25,8 @@
     "ola": 69.88,
     "description": "A catalyzed naturally-aspirated version of the normal 200 meant to be made for the Japanese market.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi160(1989).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 133,
     "3330to60": 7.9,

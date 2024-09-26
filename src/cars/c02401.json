@@ -1,16 +1,16 @@
 {
     "carID": "c02401",
-    "cr": 390,
+    "cr": 387,
     "make": ["MVS", "Venturi"],
     "model": "Venturi 200 Transcup",
-    "modelYear": 1988,
-    "country": "MC",
+    "modelYear": 1990,
+    "country": "FR",
     "topSpeed": 145,
     "0to60": 7.0,
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1295,
@@ -25,8 +25,8 @@
     "ola": 62.12,
     "description": "If you heard a word 'Transcup' in the naming of a car, a removable top version would most likely not to be your first thought in mind.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi200Transcup(1990).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 149,
     "3330to60": 6.7,

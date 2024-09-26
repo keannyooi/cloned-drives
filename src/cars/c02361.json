@@ -1,16 +1,16 @@
 {
     "carID": "c02361",
-    "cr": 600,
+    "cr": 597,
     "make": "Venturi",
     "model": "260 LM",
     "modelYear": 1994,
-    "country": "MC",
+    "country": "FR",
     "topSpeed": 167,
     "0to60": 5.3,
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1213,
@@ -25,8 +25,8 @@
     "ola": 79.09,
     "description": "A special lightened version of the Venturi 260.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Venturi260LM(1994).png",
+    "creator": "Crossfire",
 
     "333TopSpeed": 170,
     "3330to60": 5.0,
