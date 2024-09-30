@@ -1,0 +1,49 @@
+{
+    "carID": "c06096",
+    "cr": 390,
+    "make": ["Honda"],
+    "model": "Accord EX",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 126,
+    "0to60": 8.1,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1515,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.62,
+    "ola": 72.24,
+    "description": "Another Accord? We have pretty much run out of nice things to say.",
+    
+"333TopSpeed": 130,
+"3330to60": 7.7,
+"333Handling": 75,
+
+"666TopSpeed": 134,
+"6660to60": 7.3,
+"666Handling": 78,
+
+"699TopSpeed": 134,
+"6990to60": 6.9,
+"699Handling": 81,
+
+"969TopSpeed": 138,
+"9690to60": 7.3,
+"969Handling": 81,
+
+"996TopSpeed": 138,
+"9960to60": 6.9,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX(2008).png",
+    "creator": "Andu"
+}

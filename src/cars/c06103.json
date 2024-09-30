@@ -1,0 +1,49 @@
+{
+    "carID": "c06103",
+    "cr": 591,
+    "make": ["Honda"],
+    "model": "Accord 2.0T Sport",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 5.7,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1540,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.35,
+    "ola": 82.49,
+    "description": "Zen simplicity with a side of sportiness.",
+    
+"333TopSpeed": 129,
+"3330to60": 5.4,
+"333Handling": 81,
+
+"666TopSpeed": 133,
+"6660to60": 5.1,
+"666Handling": 83,
+
+"699TopSpeed": 133,
+"6990to60": 4.8,
+"699Handling": 87,
+
+"969TopSpeed": 137,
+"9690to60": 5.1,
+"969Handling": 87,
+
+"996TopSpeed": 137,
+"9960to60": 4.8,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccord2.0TSport(2018).png",
+    "creator": "Andu"
+}

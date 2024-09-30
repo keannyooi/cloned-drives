@@ -1,0 +1,49 @@
+{
+    "carID": "c06085",
+    "cr": 295,
+    "make": ["Honda"],
+    "model": "Accord EX",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 9.6,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1240,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.89,
+    "ola": 66.44,
+    "description": "More than an appliance.",
+    
+"333TopSpeed": 123,
+"3330to60": 9.1,
+"333Handling": 69,
+
+"666TopSpeed": 128,
+"6660to60": 8.6,
+"666Handling": 71,
+
+"699TopSpeed": 128,
+"6990to60": 8.2,
+"699Handling": 74,
+
+"969TopSpeed": 132,
+"9690to60": 8.6,
+"969Handling": 74,
+
+"996TopSpeed": 132,
+"9960to60": 8.2,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX(1990).png",
+    "creator": "Andu"
+}

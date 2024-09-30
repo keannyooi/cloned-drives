@@ -1,0 +1,49 @@
+{
+    "carID": "c06089",
+    "cr": 341,
+    "make": ["Honda"],
+    "model": "Accord EX-V6",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 128,
+    "0to60": 8.7,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.36,
+    "ola": 76.24,
+    "description": "Value? Yes. Character? Absolutely. Personality? Uh, can we get back to you on that?",
+    
+"333TopSpeed": 132,
+"3330to60": 8.3,
+"333Handling": 71,
+
+"666TopSpeed": 136,
+"6660to60": 7.8,
+"666Handling": 74,
+
+"699TopSpeed": 136,
+"6990to60": 7.4,
+"699Handling": 77,
+
+"969TopSpeed": 140,
+"9690to60": 7.8,
+"969Handling": 77,
+
+"996TopSpeed": 140,
+"9960to60": 7.4,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX-V6(1995).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06100",
+    "cr": 416,
+    "make": ["Honda"],
+    "model": "Accord Hybrid Touring",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 7.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1621,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 51.4,
+    "ola": 80.04,
+    "description": "It plays the numbers.",
+    
+"333TopSpeed": 119,
+"3330to60": 6.7,
+"333Handling": 76,
+
+"666TopSpeed": 123,
+"6660to60": 6.4,
+"666Handling": 79,
+
+"699TopSpeed": 123,
+"6990to60": 6,
+"699Handling": 82,
+
+"969TopSpeed": 128,
+"9690to60": 6.4,
+"969Handling": 82,
+
+"996TopSpeed": 128,
+"9960to60": 6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordHybridTouring(2017).png",
+    "creator": "Andu"
+}

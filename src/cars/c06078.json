@@ -1,0 +1,49 @@
+{
+    "carID": "c06078",
+    "cr": 212,
+    "make": ["Honda"],
+    "model": "Accord EX",
+    "modelYear": 1983,
+    "country": "JP",
+    "topSpeed": 108,
+    "0to60": 12.2,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1041,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 33.27,
+    "ola": 59.67,
+    "description": "By now, every car manufacturer in the world has torn down an Accord, scratched his corporate head, and marveled at how they do it.",
+    
+"333TopSpeed": 113,
+"3330to60": 11.6,
+"333Handling": 66,
+
+"666TopSpeed": 118,
+"6660to60": 11,
+"666Handling": 68,
+
+"699TopSpeed": 118,
+"6990to60": 10.4,
+"699Handling": 71,
+
+"969TopSpeed": 122,
+"9690to60": 11,
+"969Handling": 71,
+
+"996TopSpeed": 122,
+"9960to60": 10.4,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX(1983).png",
+    "creator": "Andu"
+}

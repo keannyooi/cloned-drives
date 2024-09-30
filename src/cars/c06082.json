@@ -1,0 +1,49 @@
+{
+    "carID": "c06082",
+    "cr": 325,
+    "make": ["Honda"],
+    "model": "Accord 2.0i 16V EXL",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 8.8,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1155,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.66,
+    "ola": 72.73,
+    "description": "",
+    
+"333TopSpeed": 131,
+"3330to60": 8.4,
+"333Handling": 68,
+
+"666TopSpeed": 135,
+"6660to60": 7.9,
+"666Handling": 70,
+
+"699TopSpeed": 135,
+"6990to60": 7.5,
+"699Handling": 73,
+
+"969TopSpeed": 139,
+"9690to60": 7.9,
+"969Handling": 73,
+
+"996TopSpeed": 139,
+"9960to60": 7.5,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccord2.0iEXL(1985).png",
+    "creator": "Andu"
+}

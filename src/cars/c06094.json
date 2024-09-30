@@ -1,0 +1,49 @@
+{
+    "carID": "c06094",
+    "cr": 528,
+    "make": ["Honda"],
+    "model": "Accord Coupe EX-V6",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 133,
+    "0to60": 6.1,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1496,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.58,
+    "ola": 77.04,
+    "description": "V-6 + MT = Increased EQ.",
+    
+"333TopSpeed": 137,
+"3330to60": 5.8,
+"333Handling": 75,
+
+"666TopSpeed": 141,
+"6660to60": 5.5,
+"666Handling": 78,
+
+"699TopSpeed": 141,
+"6990to60": 5.2,
+"699Handling": 81,
+
+"969TopSpeed": 145,
+"9690to60": 5.5,
+"969Handling": 81,
+
+"996TopSpeed": 145,
+"9960to60": 5.2,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordCoupeEX-V6(2003).png",
+    "creator": "Andu"
+}

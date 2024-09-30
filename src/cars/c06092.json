@@ -1,0 +1,49 @@
+{
+    "carID": "c06092",
+    "cr": 443,
+    "make": ["Honda"],
+    "model": "Accord Hybrid",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 6.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1593,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 62.96,
+    "ola": 75,
+    "description": "Haul ass and save gas.",
+    
+"333TopSpeed": 135,
+"3330to60": 6.5,
+"333Handling": 72,
+
+"666TopSpeed": 139,
+"6660to60": 6.1,
+"666Handling": 75,
+
+"699TopSpeed": 139,
+"6990to60": 5.8,
+"699Handling": 78,
+
+"969TopSpeed": 143,
+"9690to60": 6.1,
+"969Handling": 78,
+
+"996TopSpeed": 143,
+"9960to60": 5.8,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordHybrid(2005).png",
+    "creator": "Andu"
+}

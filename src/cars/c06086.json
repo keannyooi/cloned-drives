@@ -1,0 +1,49 @@
+{
+    "carID": "c06086",
+    "cr": 335,
+    "make": ["Honda"],
+    "model": "Accord Coupe 2.2i Exclusive",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8.5,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1205,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.03,
+    "ola": 75.29,
+    "description": "Honda runs one up the middle.",
+    
+"333TopSpeed": 117,
+"3330to60": 8.1,
+"333Handling": 70,
+
+"666TopSpeed": 121,
+"6660to60": 7.7,
+"666Handling": 72,
+
+"699TopSpeed": 121,
+"6990to60": 7.2,
+"699Handling": 75,
+
+"969TopSpeed": 126,
+"9690to60": 7.7,
+"969Handling": 75,
+
+"996TopSpeed": 126,
+"9960to60": 7.2,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordCoupe2.2iExclusive(1993).png",
+    "creator": "Andu"
+}

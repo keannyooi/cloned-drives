@@ -1,0 +1,49 @@
+{
+    "carID": "c06104",
+    "cr": 457,
+    "make": ["Honda"],
+    "model": "Accord VTi-LX Hybrid",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1563,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 49.52,
+    "ola": 81.16,
+    "description": "High efficiency with few compromises.",
+    
+"333TopSpeed": 120,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 124,
+"6660to60": 6.2,
+"666Handling": 81,
+
+"699TopSpeed": 124,
+"6990to60": 5.9,
+"699Handling": 84,
+
+"969TopSpeed": 129,
+"9690to60": 6.2,
+"969Handling": 84,
+
+"996TopSpeed": 129,
+"9960to60": 5.9,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordVTi-LX(2018).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06101",
+    "cr": 416,
+    "make": ["Honda"],
+    "model": "Accord EX-L",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 128,
+    "0to60": 7.6,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1505,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.23,
+    "ola": 82.63,
+    "description": "Another kind of camouflage: These cars have the ability to transcend, to fade from attention on dull drives and then reappear when you’re fully engaged.",
+    
+"333TopSpeed": 132,
+"3330to60": 7.2,
+"333Handling": 76,
+
+"666TopSpeed": 136,
+"6660to60": 6.8,
+"666Handling": 79,
+
+"699TopSpeed": 136,
+"6990to60": 6.5,
+"699Handling": 82,
+
+"969TopSpeed": 140,
+"9690to60": 6.8,
+"969Handling": 82,
+
+"996TopSpeed": 140,
+"9960to60": 6.5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX-L(2013).png",
+    "creator": "Andu"
+}

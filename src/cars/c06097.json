@@ -1,0 +1,49 @@
+{
+    "carID": "c06097",
+    "cr": 486,
+    "make": ["Honda"],
+    "model": "Accord EX-L V6",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 6.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1626,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.22,
+    "ola": 76.53,
+    "description": "Benchmark Midsizer Is No Wallflower",
+    
+"333TopSpeed": 131,
+"3330to60": 6.2,
+"333Handling": 76,
+
+"666TopSpeed": 135,
+"6660to60": 5.9,
+"666Handling": 79,
+
+"699TopSpeed": 135,
+"6990to60": 5.5,
+"699Handling": 82,
+
+"969TopSpeed": 139,
+"9690to60": 5.9,
+"969Handling": 82,
+
+"996TopSpeed": 139,
+"9960to60": 5.5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordEX-LV6(2008).png",
+    "creator": "Andu"
+}

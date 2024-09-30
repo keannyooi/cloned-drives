@@ -1,0 +1,49 @@
+{
+    "carID": "c06084",
+    "cr": 286,
+    "make": ["Honda"],
+    "model": "Accord Wagon EX",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 9.6,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1437,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.06,
+    "ola": 64.58,
+    "description": "A bigger caboose for your caboodle.",
+    
+"333TopSpeed": 123,
+"3330to60": 9.1,
+"333Handling": 68,
+
+"666TopSpeed": 128,
+"6660to60": 8.6,
+"666Handling": 70,
+
+"699TopSpeed": 128,
+"6990to60": 8.2,
+"699Handling": 73,
+
+"969TopSpeed": 132,
+"9690to60": 8.6,
+"969Handling": 73,
+
+"996TopSpeed": 132,
+"9960to60": 8.2,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordWagonEX(1991).png",
+    "creator": "Andu"
+}

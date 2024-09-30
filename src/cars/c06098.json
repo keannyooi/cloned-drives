@@ -1,0 +1,49 @@
+{
+    "carID": "c06098",
+    "cr": 579,
+    "make": ["Honda"],
+    "model": "Accord Coupe EX-L V6",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 5.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1536,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.97,
+    "ola": 79.65,
+    "description": "Handsome styling, big trunk, but also a pretty big price.",
+    
+"333TopSpeed": 134,
+"3330to60": 5.4,
+"333Handling": 77,
+
+"666TopSpeed": 138,
+"6660to60": 5.1,
+"666Handling": 80,
+
+"699TopSpeed": 138,
+"6990to60": 4.8,
+"699Handling": 83,
+
+"969TopSpeed": 142,
+"9690to60": 5.1,
+"969Handling": 83,
+
+"996TopSpeed": 142,
+"9960to60": 4.8,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordCoupeEX-LV6(2008).png",
+    "creator": "Andu"
+}

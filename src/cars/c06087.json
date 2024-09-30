@@ -1,0 +1,49 @@
+{
+    "carID": "c06087",
+    "cr": 296,
+    "make": ["Honda"],
+    "model": "Accord Wagon EX",
+    "modelYear": 1994,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 9.6,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1445,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.52,
+    "ola": 62.5,
+    "description": "The Accord wagon was unanimously awarded the honor of most sedan-like wagon.",
+    
+"333TopSpeed": 126,
+"3330to60": 9.1,
+"333Handling": 69,
+
+"666TopSpeed": 131,
+"6660to60": 8.6,
+"666Handling": 71,
+
+"699TopSpeed": 131,
+"6990to60": 8.2,
+"699Handling": 74,
+
+"969TopSpeed": 135,
+"9690to60": 8.6,
+"969Handling": 74,
+
+"996TopSpeed": 135,
+"9960to60": 8.2,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordWagonEX(1994).png",
+    "creator": "Andu"
+}

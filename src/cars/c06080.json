@@ -1,0 +1,49 @@
+{
+    "carID": "c06080",
+    "cr": 278,
+    "make": ["Honda"],
+    "model": "Accord Aerodeck 2.0 EXi",
+    "modelYear": 1986,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 9.8,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1105,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.14,
+    "ola": 71.43,
+    "description": "Honda's classic wedge.",
+    
+"333TopSpeed": 123,
+"3330to60": 9.3,
+"333Handling": 67,
+
+"666TopSpeed": 128,
+"6660to60": 8.8,
+"666Handling": 69,
+
+"699TopSpeed": 128,
+"6990to60": 8.3,
+"699Handling": 72,
+
+"969TopSpeed": 132,
+"9690to60": 8.8,
+"969Handling": 72,
+
+"996TopSpeed": 132,
+"9960to60": 8.3,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordAerodeck2.0EXi(1986).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06077",
+    "cr": 132,
+    "make": ["Honda"],
+    "model": "Accord CVCC LX Hatchback",
+    "modelYear": 1976,
+    "country": "JP",
+    "topSpeed": 90,
+    "0to60": 15.4,
+    "handling": 61,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 925,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 9.55,
+    "ola": 62.34,
+    "description": "The first Honda Accord leaves an indelible mark on us and the world.",
+    
+"333TopSpeed": 96,
+"3330to60": 14.6,
+"333Handling": 63,
+
+"666TopSpeed": 102,
+"6660to60": 13.9,
+"666Handling": 65,
+
+"699TopSpeed": 102,
+"6990to60": 13.1,
+"699Handling": 68,
+
+"969TopSpeed": 107,
+"9690to60": 13.9,
+"969Handling": 68,
+
+"996TopSpeed": 107,
+"9960to60": 13.1,
+"996Handling": 65,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordCVCCLXHatchback(1976).png",
+    "creator": "Andu"
+}
