@@ -1,0 +1,49 @@
+{
+    "carID": "c06120",
+    "cr": 470,
+    "make": ["Nissan"],
+    "model": "Altima SR AWD",
+    "modelYear": 2023,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 7.7,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1552,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.76,
+    "ola": 75.72,
+    "description": "Despite a refresh last year, the Altima doesn't gain any ground on the segment leaders.",
+    
+"333TopSpeed": 123,
+"3330to60": 7.3,
+"333Handling": 82,
+
+"666TopSpeed": 128,
+"6660to60": 6.9,
+"666Handling": 84,
+
+"699TopSpeed": 128,
+"6990to60": 6.5,
+"699Handling": 88,
+
+"969TopSpeed": 132,
+"9690to60": 6.9,
+"969Handling": 88,
+
+"996TopSpeed": 132,
+"9960to60": 6.5,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltimaSRAWD(2023).png",
+    "creator": "Andu"
+}

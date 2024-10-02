@@ -1,0 +1,49 @@
+{
+    "carID": "c06106",
+    "cr": 234,
+    "make": ["Datsun"],
+    "model": "810 Maxima",
+    "modelYear": 1982,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 10.5,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1306,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.33,
+    "ola": 74.29,
+    "description": "Picking up the pace.",
+    
+"333TopSpeed": 116,
+"3330to60": 10,
+"333Handling": 68,
+
+"666TopSpeed": 120,
+"6660to60": 9.5,
+"666Handling": 70,
+
+"699TopSpeed": 120,
+"6990to60": 8.9,
+"699Handling": 73,
+
+"969TopSpeed": 125,
+"9690to60": 9.5,
+"969Handling": 73,
+
+"996TopSpeed": 125,
+"9960to60": 8.9,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Datsun810Maxima(1982).png",
+    "creator": "Andu"
+}

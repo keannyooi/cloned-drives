@@ -1,0 +1,49 @@
+{
+    "carID": "c06117",
+    "cr": 416,
+    "make": ["Nissan"],
+    "model": "Altima Hybrid",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 7.2,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1605,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 55.81,
+    "ola": 77.78,
+    "description": "Nissan copy and pasted the camry hybrid powertrain for a limited run and last ever Altima hybrid.",
+    
+"333TopSpeed": 122,
+"3330to60": 6.8,
+"333Handling": 74,
+
+"666TopSpeed": 127,
+"6660to60": 6.5,
+"666Handling": 77,
+
+"699TopSpeed": 127,
+"6990to60": 6.1,
+"699Handling": 80,
+
+"969TopSpeed": 131,
+"9690to60": 6.5,
+"969Handling": 80,
+
+"996TopSpeed": 131,
+"9960to60": 6.1,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltimaHybrid(2012).png",
+    "creator": "Andu"
+}

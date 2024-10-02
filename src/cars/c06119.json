@@ -1,0 +1,49 @@
+{
+    "carID": "c06119",
+    "cr": 413,
+    "make": ["Nissan"],
+    "model": "Altima 2.5SR",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 7.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1439,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.13,
+    "ola": 73.91,
+    "description": "Swimming against the crossover tide.",
+    
+"333TopSpeed": 124,
+"3330to60": 7.4,
+"333Handling": 77,
+
+"666TopSpeed": 129,
+"6660to60": 7,
+"666Handling": 80,
+
+"699TopSpeed": 129,
+"6990to60": 6.6,
+"699Handling": 83,
+
+"969TopSpeed": 133,
+"9690to60": 7,
+"969Handling": 83,
+
+"996TopSpeed": 133,
+"9960to60": 6.6,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltima2.5SR(2016).png",
+    "creator": "Andu"
+}

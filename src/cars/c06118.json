@@ -1,0 +1,49 @@
+{
+    "carID": "c06118",
+    "cr": 541,
+    "make": ["Nissan"],
+    "model": "Altima 3.5SL",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 146,
+    "0to60": 6.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1584,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.13,
+    "ola": 78.95,
+    "description": "Unruly no more. Famous for its torque-steering tantrums, this mid-sizer gets even more power and straightens up its act.",
+    
+"333TopSpeed": 150,
+"3330to60": 5.8,
+"333Handling": 76,
+
+"666TopSpeed": 153,
+"6660to60": 5.5,
+"666Handling": 79,
+
+"699TopSpeed": 153,
+"6990to60": 5.2,
+"699Handling": 82,
+
+"969TopSpeed": 157,
+"9690to60": 5.5,
+"969Handling": 82,
+
+"996TopSpeed": 157,
+"9960to60": 5.2,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltima3.5SL(2007).png",
+    "creator": "Andu"
+}

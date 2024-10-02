@@ -1,0 +1,49 @@
+{
+    "carID": "c06110",
+    "cr": 274,
+    "make": ["Nissan"],
+    "model": "Maxima QX 2.0 V6 Elegance",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 124,
+    "0to60": 10.6,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.48,
+    "ola": 60.38,
+    "description": "UK buyers have taken a long time to see the merits of the Nissan QX. Perhaps it was tarred by the same brush as its unremarkable predecessor, the Maxima, sales volumes of which were distinctly Minima.",
+    
+"333TopSpeed": 128,
+"3330to60": 10.1,
+"333Handling": 70,
+
+"666TopSpeed": 132,
+"6660to60": 9.5,
+"666Handling": 72,
+
+"699TopSpeed": 132,
+"6990to60": 9,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 9.5,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 9,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanMaximaQX2.0V6Elegance(1995).png",
+    "creator": "Andu"
+}

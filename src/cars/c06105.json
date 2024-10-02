@@ -1,0 +1,49 @@
+{
+    "carID": "c06105",
+    "cr": 202,
+    "make": ["Datsun"],
+    "model": "810 Sedan",
+    "modelYear": 1977,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 12.2,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1233,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.18,
+    "ola": 65.57,
+    "description": "The four door 240Z.",
+    
+"333TopSpeed": 116,
+"3330to60": 11.6,
+"333Handling": 67,
+
+"666TopSpeed": 120,
+"6660to60": 11,
+"666Handling": 69,
+
+"699TopSpeed": 120,
+"6990to60": 10.4,
+"699Handling": 72,
+
+"969TopSpeed": 125,
+"9690to60": 11,
+"969Handling": 72,
+
+"996TopSpeed": 125,
+"9960to60": 10.4,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Datsun810Sedan(1977).png",
+    "creator": "Andu"
+}

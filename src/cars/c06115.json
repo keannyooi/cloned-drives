@@ -1,0 +1,49 @@
+{
+    "carID": "c06115",
+    "cr": 379,
+    "make": ["Nissan"],
+    "model": "Altima 2.5S",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1404,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.64,
+    "ola": 74.21,
+    "description": "The start of the Altima driver stereotype.",
+    
+"333TopSpeed": 117,
+"3330to60": 7.6,
+"333Handling": 74,
+
+"666TopSpeed": 121,
+"6660to60": 7.2,
+"666Handling": 77,
+
+"699TopSpeed": 121,
+"6990to60": 6.8,
+"699Handling": 80,
+
+"969TopSpeed": 126,
+"9690to60": 7.2,
+"969Handling": 80,
+
+"996TopSpeed": 126,
+"9960to60": 6.8,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltima2.5S(2005).png",
+    "creator": "Andu"
+}

@@ -1,0 +1,49 @@
+{
+    "carID": "c06107",
+    "cr": 303,
+    "make": ["Nissan"],
+    "model": "Maxima GXE",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 9.2,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1416,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.7,
+    "ola": 63.04,
+    "description": "Don't let its appearance fool you.",
+    
+"333TopSpeed": 124,
+"3330to60": 8.7,
+"333Handling": 69,
+
+"666TopSpeed": 129,
+"6660to60": 8.3,
+"666Handling": 71,
+
+"699TopSpeed": 129,
+"6990to60": 7.8,
+"699Handling": 74,
+
+"969TopSpeed": 133,
+"9690to60": 8.3,
+"969Handling": 74,
+
+"996TopSpeed": 133,
+"9960to60": 7.8,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanMaximaGXE(1985).png",
+    "creator": "Andu"
+}

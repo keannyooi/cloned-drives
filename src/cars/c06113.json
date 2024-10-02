@@ -1,0 +1,49 @@
+{
+    "carID": "c06113",
+    "cr": 317,
+    "make": ["Nissan"],
+    "model": "Altima GLE",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 9.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1363,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.41,
+    "ola": 65.22,
+    "description": "Maintaining a shine in spite of a few cracks.",
+    
+"333TopSpeed": 129,
+"3330to60": 8.7,
+"333Handling": 70,
+
+"666TopSpeed": 133,
+"6660to60": 8.3,
+"666Handling": 72,
+
+"699TopSpeed": 133,
+"6990to60": 7.8,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 8.3,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 7.8,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanMaximaGLE(1993).png",
+    "creator": "Andu"
+}
