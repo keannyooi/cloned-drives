@@ -1,0 +1,49 @@
+{
+    "carID": "c06125",
+    "cr": 644,
+    "make": ["BMW"],
+    "model": "X1 M35i",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1665,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.65,
+    "ola": 80.77,
+    "description": "A Mini Countryman JCW in fancy clothing, How ferocious!",
+    
+"333TopSpeed": 158,
+"3330to60": 4.9,
+"333Handling": 85,
+
+"666TopSpeed": 162,
+"6660to60": 4.7,
+"666Handling": 87,
+
+"699TopSpeed": 162,
+"6990to60": 4.4,
+"699Handling": 91,
+
+"969TopSpeed": 165,
+"9690to60": 4.7,
+"969Handling": 91,
+
+"996TopSpeed": 165,
+"9960to60": 4.4,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX1M35i(2023).png",
+    "creator": "Andu"
+}

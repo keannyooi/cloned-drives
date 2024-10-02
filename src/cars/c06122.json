@@ -1,0 +1,49 @@
+{
+    "carID": "c06122",
+    "cr": 649,
+    "make": ["BMW"],
+    "model": "X1 XDrive35i M Sport",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 5.3,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CD Contenders"],
+    "isPrize": false,
+    "weight": 1729,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.74,
+    "ola": 68.57,
+    "description": "BMW greatness circa 2005, great steering, quick.",
+    
+"333TopSpeed": 132,
+"3330to60": 5,
+"333Handling": 83,
+
+"666TopSpeed": 136,
+"6660to60": 4.8,
+"666Handling": 85,
+
+"699TopSpeed": 136,
+"6990to60": 4.5,
+"699Handling": 89,
+
+"969TopSpeed": 140,
+"9690to60": 4.8,
+"969Handling": 89,
+
+"996TopSpeed": 140,
+"9960to60": 4.5,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX1xDrive35iMSport(2014).png",
+    "creator": "Andu"
+}

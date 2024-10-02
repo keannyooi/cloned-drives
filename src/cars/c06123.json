@@ -1,0 +1,49 @@
+{
+    "carID": "c06123",
+    "cr": 606,
+    "make": ["BMW"],
+    "model": "X1 XDrive28i X-Line",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 129,
+    "0to60": 6.2,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1689,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.4,
+    "ola": 74.8,
+    "description": "The lowliest BMW crossover was one of the marque's best efforts these days.",
+    
+"333TopSpeed": 133,
+"3330to60": 5.9,
+"333Handling": 80,
+
+"666TopSpeed": 137,
+"6660to60": 5.6,
+"666Handling": 82,
+
+"699TopSpeed": 137,
+"6990to60": 5.3,
+"699Handling": 85,
+
+"969TopSpeed": 141,
+"9690to60": 5.6,
+"969Handling": 85,
+
+"996TopSpeed": 141,
+"9960to60": 5.3,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX1xDrive28ixLine(2020).png",
+    "creator": "Andu"
+}

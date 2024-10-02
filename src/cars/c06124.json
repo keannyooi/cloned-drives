@@ -1,0 +1,49 @@
+{
+    "carID": "c06124",
+    "cr": 704,
+    "make": ["BMW"],
+    "model": "X1 XDrive28i xLine",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 5.7,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1701,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.93,
+    "ola": 76.74,
+    "description": "There's nothing radical about the new version of BMW's smallest SUV, but it offers a lot for a smallish price.",
+    
+"333TopSpeed": 134,
+"3330to60": 5.4,
+"333Handling": 81,
+
+"666TopSpeed": 138,
+"6660to60": 5.1,
+"666Handling": 83,
+
+"699TopSpeed": 138,
+"6990to60": 4.8,
+"699Handling": 87,
+
+"969TopSpeed": 142,
+"9690to60": 5.1,
+"969Handling": 87,
+
+"996TopSpeed": 142,
+"9960to60": 4.8,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX1xDrive28ixLine(2023).png",
+    "creator": "Andu"
+}
