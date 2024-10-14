@@ -1,8 +1,7 @@
 {
-    "packName": "5x Normal Titan Pack",
-    "description": "The best pack in CD!",
-	"price": 2500000,
-	"repetition": 5,
+    "packName": "American Titan Pack",
+    "description": "The best purchasable pack in CD!",
+	"repetition": 1,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
     
     "filter": {
@@ -11,7 +10,7 @@
             "start": 1000,
             "end": 3000
         },
-        "country": "None",
+        "country": "US",
         "tags": "None",
         "driveType": "None",
         "tyreType": "None",

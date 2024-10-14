@@ -1,12 +1,11 @@
 {
-    "packName": "5x Normal Titan Pack",
-    "description": "The best pack in CD!",
-	"price": 2500000,
+    "packName": "5x Porsche Titan Pack",
+    "description": "The best Porsche pack in CD!",
 	"repetition": 5,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/PorksciTITANPack.png",
     
     "filter": {
-        "make": "None",
+        "make": "Porsche",
         "modelYear": {
             "start": 1000,
             "end": 3000
