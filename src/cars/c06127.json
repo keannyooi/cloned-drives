@@ -1,0 +1,49 @@
+{
+    "carID": "c06127",
+    "cr": 51,
+    "make": ["Citroen"],
+    "model": "DS 19 Decapotable Par Chapron",
+    "modelYear": 1961,
+    "country": "FR",
+    "topSpeed": 83,
+    "0to60": 21.8,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": true,
+    "weight": 1240,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 9.55,
+    "ola": 59.63,
+    "description": "Unmistaken beauty.",
+    
+"333TopSpeed": 89,
+"3330to60": 20.7,
+"333Handling": 61,
+
+"666TopSpeed": 96,
+"6660to60": 19.6,
+"666Handling": 63,
+
+"699TopSpeed": 96,
+"6990to60": 18.5,
+"699Handling": 65,
+
+"969TopSpeed": 102,
+"9690to60": 19.6,
+"969Handling": 65,
+
+"996TopSpeed": 102,
+"9960to60": 18.5,
+"996Handling": 63,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenDS19D%C3%A9capotableparChapron(1961).png",
+    "creator": "Andu"
+}

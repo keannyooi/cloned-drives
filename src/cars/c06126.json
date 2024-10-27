@@ -1,0 +1,49 @@
+{
+    "carID": "c06126",
+    "cr": 82,
+    "make": ["Citroen"],
+    "model": "DS 19",
+    "modelYear": 1955,
+    "country": "FR",
+    "topSpeed": 89,
+    "0to60": 19.1,
+    "handling": 62,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1125,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.55,
+    "ola": 61.78,
+    "description": "The birth of a goddess.",
+    
+"333TopSpeed": 95,
+"3330to60": 18.1,
+"333Handling": 64,
+
+"666TopSpeed": 101,
+"6660to60": 17.2,
+"666Handling": 66,
+
+"699TopSpeed": 101,
+"6990to60": 16.2,
+"699Handling": 69,
+
+"969TopSpeed": 107,
+"9690to60": 17.2,
+"969Handling": 69,
+
+"996TopSpeed": 107,
+"9960to60": 16.2,
+"996Handling": 66,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenDS19(1955).png",
+    "creator": "Andu"
+}

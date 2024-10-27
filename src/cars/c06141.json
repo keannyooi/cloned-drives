@@ -1,0 +1,49 @@
+{
+    "carID": "c06141",
+    "cr": 385,
+    "make": ["Citroen"],
+    "model": "XM 3.0 V6 24 Exclusive",
+    "modelYear": 1997,
+    "country": "FR",
+    "topSpeed": 144,
+    "0to60": 7.8,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1550,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.16,
+    "ola": 77.42,
+    "description": "The last goodbye.",
+    
+"333TopSpeed": 148,
+"3330to60": 7.4,
+"333Handling": 71,
+
+"666TopSpeed": 151,
+"6660to60": 7,
+"666Handling": 74,
+
+"699TopSpeed": 151,
+"6990to60": 6.6,
+"699Handling": 77,
+
+"969TopSpeed": 155,
+"9690to60": 7,
+"969Handling": 77,
+
+"996TopSpeed": 155,
+"9960to60": 6.6,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenXM30V624Exclusive(1997).png",
+    "creator": "Andu"
+}

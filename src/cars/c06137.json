@@ -1,0 +1,49 @@
+{
+    "carID": "c06137",
+    "cr": 321,
+    "make": ["Citroen"],
+    "model": "SM 3.0",
+    "modelYear": 1973,
+    "country": "FR",
+    "topSpeed": 140,
+    "0to60": 8.6,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1480,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.50,
+    "ola": 76.74,
+    "description": "We'll order the tiny bump of power.",
+    
+"333TopSpeed": 144,
+"3330to60": 8.2,
+"333Handling": 66,
+
+"666TopSpeed": 147,
+"6660to60": 7.7,
+"666Handling": 68,
+
+"699TopSpeed": 147,
+"6990to60": 7.3,
+"699Handling": 71,
+
+"969TopSpeed": 151,
+"9690to60": 7.7,
+"969Handling": 71,
+
+"996TopSpeed": 151,
+"9960to60": 7.3,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitorenSM30(1973).png",
+    "creator": "Andu"
+}

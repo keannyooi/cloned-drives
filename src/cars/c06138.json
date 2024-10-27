@@ -1,0 +1,49 @@
+{
+    "carID": "c06138",
+    "cr": 249,
+    "make": ["Citroen"],
+    "model": "XM 2.0",
+    "modelYear": 1989,
+    "country": "FR",
+    "topSpeed": 120,
+    "0to60": 11.0,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.54,
+    "ola": 65.75,
+    "description": "All bark no bite.",
+    
+"333TopSpeed": 124,
+"3330to60": 10.4,
+"333Handling": 69,
+
+"666TopSpeed": 129,
+"6660to60": 9.9,
+"666Handling": 71,
+
+"699TopSpeed": 129,
+"6990to60": 9.3,
+"699Handling": 74,
+
+"969TopSpeed": 133,
+"9690to60": 9.9,
+"969Handling": 74,
+
+"996TopSpeed": 133,
+"9960to60": 9.3,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenXM20(1989).png",
+    "creator": "Andu"
+}

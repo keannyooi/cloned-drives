@@ -1,0 +1,49 @@
+{
+    "carID": "c06132",
+    "cr": 112,
+    "make": ["Citroen"],
+    "model": "CX 2500 D",
+    "modelYear": 1978,
+    "country": "FR",
+    "topSpeed": 99,
+    "0to60": 17.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1340,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 11.55,
+    "ola": 61.18,
+    "description": "A silent for the time diesel sofa.",
+    
+"333TopSpeed": 104,
+"3330to60": 16.1,
+"333Handling": 65,
+
+"666TopSpeed": 110,
+"6660to60": 15.3,
+"666Handling": 67,
+
+"699TopSpeed": 110,
+"6990to60": 14.4,
+"699Handling": 70,
+
+"969TopSpeed": 115,
+"9690to60": 15.3,
+"969Handling": 70,
+
+"996TopSpeed": 115,
+"9960to60": 14.4,
+"996Handling": 67,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenCX2500D(1978).png",
+    "creator": "Andu"
+}

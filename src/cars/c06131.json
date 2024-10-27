@@ -1,0 +1,49 @@
+{
+    "carID": "c06131",
+    "cr": 234,
+    "make": ["Citroen"],
+    "model": "CX 2400 Pallas",
+    "modelYear": 1976,
+    "country": "FR",
+    "topSpeed": 113,
+    "0to60": 11.2,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1215,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.60,
+    "ola": 67.58,
+    "description": "Hydropneumatifragilistic Pallasialidocious.",
+    
+"333TopSpeed": 118,
+"3330to60": 10.6,
+"333Handling": 68,
+
+"666TopSpeed": 122,
+"6660to60": 10.1,
+"666Handling": 70,
+
+"699TopSpeed": 122,
+"6990to60": 9.5,
+"699Handling": 73,
+
+"969TopSpeed": 127,
+"9690to60": 10.1,
+"969Handling": 73,
+
+"996TopSpeed": 127,
+"9960to60": 9.5,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenCX2400Pallas(1976).png",
+    "creator": "Andu"
+}

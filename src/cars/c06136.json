@@ -1,0 +1,49 @@
+{
+    "carID": "c06136",
+    "cr": 209,
+    "make": ["Citroen"],
+    "model": "CX 2400 Super Break",
+    "modelYear": 1976,
+    "country": "FR",
+    "topSpeed": 108,
+    "0to60": 12.0,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1315,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.36,
+    "ola": 66.67,
+    "description": "Super Mario!",
+    
+"333TopSpeed": 113,
+"3330to60": 11.4,
+"333Handling": 67,
+
+"666TopSpeed": 118,
+"6660to60": 10.8,
+"666Handling": 69,
+
+"699TopSpeed": 118,
+"6990to60": 10.2,
+"699Handling": 72,
+
+"969TopSpeed": 122,
+"9690to60": 10.8,
+"969Handling": 72,
+
+"996TopSpeed": 122,
+"9960to60": 10.2,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenCX2400Break(1976).png",
+    "creator": "Andu"
+}

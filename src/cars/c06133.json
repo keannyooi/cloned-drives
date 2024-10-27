@@ -1,0 +1,49 @@
+{
+    "carID": "c06133",
+    "cr": 260,
+    "make": ["Citroen"],
+    "model": "CX 25 TRD Turbo 2",
+    "modelYear": 1987,
+    "country": "FR",
+    "topSpeed": 121,
+    "0to60": 10.4,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.22,
+    "ola": 63.22,
+    "description": "Turn up the music on that 50kg stereo you have on your shoulders and let's pump up that diesel!",
+    
+"333TopSpeed": 125,
+"3330to60": 9.9,
+"333Handling": 68,
+
+"666TopSpeed": 130,
+"6660to60": 9.4,
+"666Handling": 70,
+
+"699TopSpeed": 130,
+"6990to60": 8.8,
+"699Handling": 73,
+
+"969TopSpeed": 134,
+"9690to60": 9.4,
+"969Handling": 73,
+
+"996TopSpeed": 134,
+"9960to60": 8.8,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenCX25TRDTurbo2(1987).png",
+    "creator": "Andu"
+}

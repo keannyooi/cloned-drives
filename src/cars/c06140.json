@@ -1,0 +1,49 @@
+{
+    "carID": "c06140",
+    "cr": 341,
+    "make": ["Citroen"],
+    "model": "XM 2.0 Turbo CT",
+    "modelYear": 1992,
+    "country": "FR",
+    "topSpeed": 133,
+    "0to60": 8.7,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CD Chasers"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.48,
+    "ola": 73.56,
+    "description": "A very much needed gut punch.",
+    
+"333TopSpeed": 137,
+"3330to60": 8.3,
+"333Handling": 71,
+
+"666TopSpeed": 141,
+"6660to60": 7.8,
+"666Handling": 74,
+
+"699TopSpeed": 141,
+"6990to60": 7.4,
+"699Handling": 77,
+
+"969TopSpeed": 145,
+"9690to60": 7.8,
+"969Handling": 77,
+
+"996TopSpeed": 145,
+"9960to60": 7.4,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenXM20TurboCT(1992).png",
+    "creator": "Andu"
+}
