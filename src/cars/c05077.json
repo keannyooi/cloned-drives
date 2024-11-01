@@ -1,13 +1,13 @@
 {
     "carID": "c05077",
-    "cr": 850,
+    "cr": 974,
     "make": "Porsche",
-    "model": "LMP1/98",
+    "model": "LMP1/98 #7 Mobil1 Porsche AG",
     "modelYear": 1998,
     "country": "DE",
     "topSpeed": 195,
     "0to60": 3.3,
-    "handling": 96,
+    "handling": 108,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
@@ -24,26 +24,26 @@
     "mra": 100,
     "ola": 82.56,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porschelmp1-98(1998).png",
 
 "333TopSpeed": 198,
 "3330to60": 3.1,
-"333Handling": 99,
+"333Handling": 112,
 
 "666TopSpeed": 200,
 "6660to60": 3,
-"666Handling": 102,
+"666Handling": 115,
 
 "699TopSpeed": 200,
 "6990to60": 2.8,
-"699Handling": 107,
+"699Handling": 120,
 
 "969TopSpeed": 203,
 "9690to60": 3,
-"969Handling": 107,
+"969Handling": 120,
 
 "996TopSpeed": 203,
 "9960to60": 2.8,
-"996Handling": 102,
+"996Handling": 115,
     "creator": "Bnuuy"
 }
