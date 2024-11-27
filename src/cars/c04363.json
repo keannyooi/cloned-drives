@@ -1,13 +1,13 @@
 {
     "carID": "c04363",
-    "cr": 1010,
+    "cr": 1085,
     "make": "Porsche",
     "model": "718 Cayman GT4 ePerformance",
     "modelYear": 2023,
     "country": "DE",
     "topSpeed": 186,
     "0to60": 2.2,
-    "handling": 98,
+    "handling": 103,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Motorsport","Eco-Friendly","Unique","Innovative","Cloned Drives Beta: Last of"],
@@ -23,27 +23,27 @@
     "fuelType": "Electric",
     "mra": 112.49,
     "ola": 80,
-    "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "description": "All-electric customer motorsport offers a new way to excite fans worldwide, starting with the race car: With variable power and all-wheel drive, the GT4 e-Performance is designed for a wide variety of racing formats – built to inspire.",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Porsche718CaymanGT4ePerformance(2023).png",
 
 "333TopSpeed": 189,
 "3330to60": 2.1,
-"333Handling": 101,
+"333Handling": 106,
 
 "666TopSpeed": 192,
 "6660to60": 2,
-"666Handling": 104,
+"666Handling": 110,
 
 "699TopSpeed": 192,
 "6990to60": 1.9,
-"699Handling": 109,
+"699Handling": 114,
 
 "969TopSpeed": 194,
 "9690to60": 2,
-"969Handling": 109,
+"969Handling": 114,
 
 "996TopSpeed": 194,
 "9960to60": 1.9,
-"996Handling": 104,
+"996Handling": 110,
     "creator": "Bnuuy"
 }

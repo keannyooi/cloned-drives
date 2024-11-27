@@ -1,13 +1,13 @@
 {
     "carID": "c03909",
-    "cr": 1000,
+    "cr": 1078,
     "make": "Porsche",
-    "model": "917/30 Can-Am Spyder",
+    "model": "917/30 Can-Am Spyder #6 Penske Racing ",
     "modelYear": 1973,
     "country": "DE",
     "topSpeed": 240,
     "0to60": 2.1,
-    "handling": 95,
+    "handling": 101,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
@@ -23,27 +23,27 @@
     "fuelType": "Petrol",
     "mra": 116.66,
     "ola": 100,
-    "description": "Only around 1100ps, slow in comparison to the Turbopanzer.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "description": "The car that set a record pace of 221.12MPH round a lap of Talladega on August 9th 1975.",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Porsche917-30CanAmSpyder(1973).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 242,
 "3330to60": 2,
-"333Handling": 98,
+"333Handling": 104,
 
 "666TopSpeed": 244,
 "6660to60": 1.9,
-"666Handling": 101,
+"666Handling": 108,
 
 "699TopSpeed": 244,
 "6990to60": 1.8,
-"699Handling": 105,
+"699Handling": 112,
 
 "969TopSpeed": 247,
 "9690to60": 1.9,
-"969Handling": 105,
+"969Handling": 112,
 
 "996TopSpeed": 247,
 "9960to60": 1.8,
-"996Handling": 101
+"996Handling": 108
 }

@@ -1,13 +1,13 @@
 {
     "carID": "c04856",
-    "cr": 1020,
+    "cr": 1136,
     "make": "Porsche",
     "model": "Vision Gran Turismo",
     "modelYear": 2021,
     "country": "DE",
     "topSpeed": 217,
     "0to60": 2.1,
-    "handling": 96,
+    "handling": 107,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Concept","Unique","Track Day","Cloned Drives Beta: Last of"],
@@ -23,27 +23,27 @@
     "fuelType": "Electric",
     "mra": 105,
     "ola": 91.22,
-    "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "description": "The Porsche Vision Gran Turismo is unmistakably a Porsche, but one that features future-orientated versions of familiar Porsche design elements. Some of the standout design details include the sporty height-to-width ratio, an extremely low-set bonnet and very pronounced wings. At the front, the lights and the integrated air intakes share a similar design language with the Taycan, while at the rear the narrow light strip is a development of that found on 911 and Taycan models.",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/PorscheVisionGranTurismo(2021).png",
 
 "333TopSpeed": 219,
 "3330to60": 2,
-"333Handling": 99,
+"333Handling": 111,
 
 "666TopSpeed": 222,
 "6660to60": 1.9,
-"666Handling": 102,
+"666Handling": 114,
 
 "699TopSpeed": 222,
 "6990to60": 1.8,
-"699Handling": 107,
+"699Handling": 119,
 
 "969TopSpeed": 224,
 "9690to60": 1.9,
-"969Handling": 107,
+"969Handling": 119,
 
 "996TopSpeed": 224,
 "9960to60": 1.8,
-"996Handling": 102,
+"996Handling": 114,
     "creator": "Bnuuy"
 }
