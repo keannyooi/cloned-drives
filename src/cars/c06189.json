@@ -1,0 +1,50 @@
+{
+    "carID": "c06189",
+    "cr": 93,
+    "make": "Mercedes-Benz",
+    "model": "200 D",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 18.2,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 15,
+    "ola": 55.98,
+
+    "description": "If you do your maintenance, this underpowered 4-cylinder will get you to the moon and back, although you won't be very fast with just 72 horsepower.",
+
+"333TopSpeed": 104,
+"3330to60": 17.3,
+"333Handling": 66,
+
+"666TopSpeed": 110,
+"6660to60": 16.4,
+"666Handling": 68,
+
+"699TopSpeed": 110,
+"6990to60": 15.5,
+"699Handling": 71,
+
+"969TopSpeed": 115,
+"9690to60": 16.4,
+"969Handling": 71,
+
+"996TopSpeed": 115,
+"9960to60": 15.5,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz200D(1985).png",
+    "creator": "Pfugs"
+}

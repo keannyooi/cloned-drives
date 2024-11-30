@@ -1,0 +1,50 @@
+{
+    "carID": "c06182",
+    "cr": 1030,
+    "make": ["TechArt", "Porsche"],
+    "model": "GTstreet R Flyweight",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 2.1,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Tuner","Hypercar","Unique","Track Day"],
+    "isPrize": false,
+    "weight": 1610,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 102.16,
+    "ola": 74.63,
+	
+    "description": "",
+	
+"333TopSpeed": 219,
+"3330to60": 2,
+"333Handling": 97,
+
+"666TopSpeed": 222,
+"6660to60": 1.9,
+"666Handling": 100,
+
+"699TopSpeed": 222,
+"6990to60": 1.8,
+"699Handling": 104,
+
+"969TopSpeed": 224,
+"9690to60": 1.9,
+"969Handling": 104,
+
+"996TopSpeed": 224,
+"9960to60": 1.8,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/TechArtGTstreetRFlyweight(2023).png",
+    "creator": "2epicsonly"
+}

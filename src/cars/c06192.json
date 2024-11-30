@@ -1,0 +1,50 @@
+{
+    "carID": "c06192",
+    "cr": 955,
+    "make": "MG",
+    "model": "EXE181",
+    "modelYear": 2024,
+    "country": "CN",
+    "topSpeed": 257,
+    "0to60": 1.8,
+    "handling": 30,
+    "driveType": "4WD",
+    "tyreType": "Drag",
+    "tags": ["CDCCS","Concept","Unique","Ultra Expensive","Style Icon","Eco-Friendly","RestoMod"],
+    "isPrize": true,
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 133.33,
+    "ola": 93.6,
+	
+    "description": "The EXE181 pays homage to one of MG’s best ever projects: the MG EX181 land speed car of 1957. The extra ‘E’ for the modern concept denotes the powerplant. You want some famous names? None other than a young Stirling Moss piloted the original Roaring Raindrop to 245.64mph",
+	
+"333TopSpeed": 259,
+"3330to60": 1.7,
+"333Handling": 31,
+
+"666TopSpeed": 261,
+"6660to60": 1.6,
+"666Handling": 32,
+
+"699TopSpeed": 261,
+"6990to60": 1.5,
+"699Handling": 33,
+
+"969TopSpeed": 263,
+"9690to60": 1.6,
+"969Handling": 33,
+
+"996TopSpeed": 263,
+"9960to60": 1.5,
+"996Handling": 32,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MGEXE181(2024).png",
+    "creator": "Bnuuy"
+}
