@@ -1,0 +1,50 @@
+{
+    "carID": "c06198",
+    "cr": 466,
+    "make": "Mercedes-Benz",
+    "model": "EQE 300",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 7,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2355,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 62.3,
+    "ola": 81.67,
+
+    "description": "Proof that luxury doesn’t need to scream. Smooth, efficient, and just fast enough to remind you it’s a Mercedes — without scaring your wallet too much (still got to spend around 80k).",
+
+"333TopSpeed": 134,
+"3330to60": 6.6,
+"333Handling": 83,
+
+"666TopSpeed": 138,
+"6660to60": 6.3,
+"666Handling": 85,
+
+"699TopSpeed": 138,
+"6990to60": 6,
+"699Handling": 89,
+
+"969TopSpeed": 142,
+"9690to60": 6.3,
+"969Handling": 89,
+
+"996TopSpeed": 142,
+"9960to60": 6,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzEQE300(2022).png",
+    "creator": "ama4nn"
+}

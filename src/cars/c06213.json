@@ -1,0 +1,50 @@
+{
+    "carID": "c06213",
+    "cr": 671,
+    "make": "BMW",
+    "model": "X5 CC",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 6.4,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.26,
+    "ola": 72.11,
+	
+    "description": "",
+	
+"333TopSpeed": 118,
+"3330to60": 6.1,
+"333Handling": 76,
+
+"666TopSpeed": 122,
+"6660to60": 5.8,
+"666Handling": 79,
+
+"699TopSpeed": 122,
+"6990to60": 5.4,
+"699Handling": 82,
+
+"969TopSpeed": 127,
+"9690to60": 5.8,
+"969Handling": 82,
+
+"996TopSpeed": 127,
+"9960to60": 5.4,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX5CC(2003).png",
+    "creator": "Bnuuy"
+}

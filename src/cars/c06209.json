@@ -1,0 +1,50 @@
+{
+    "carID": "c06209",
+    "cr": 639,
+    "make": "BMW",
+    "model": "i7 eDrive50",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 5.3,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2595,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 80,
+    "ola": 88.59,
+	
+    "description": "",
+	
+"333TopSpeed": 131,
+"3330to60": 5,
+"333Handling": 86,
+
+"666TopSpeed": 135,
+"6660to60": 4.8,
+"666Handling": 88,
+
+"699TopSpeed": 135,
+"6990to60": 4.5,
+"699Handling": 92,
+
+"969TopSpeed": 139,
+"9690to60": 4.8,
+"969Handling": 92,
+
+"996TopSpeed": 139,
+"9960to60": 4.5,
+"996Handling": 88,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWi7eDrive50M(2023).png",
+    "creator": "Bnuuy"
+}

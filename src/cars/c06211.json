@@ -1,0 +1,50 @@
+{
+    "carID": "c06211",
+    "cr": 886,
+    "make": "BMW",
+    "model": "i7 M70 xDrive",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.5,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2695,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 81.82,
+    "ola": 97.14,
+	
+    "description": "",
+	
+"333TopSpeed": 158,
+"3330to60": 3.3,
+"333Handling": 88,
+
+"666TopSpeed": 162,
+"6660to60": 3.1,
+"666Handling": 91,
+
+"699TopSpeed": 162,
+"6990to60": 3,
+"699Handling": 94,
+
+"969TopSpeed": 165,
+"9690to60": 3.1,
+"969Handling": 94,
+
+"996TopSpeed": 165,
+"9960to60": 3,
+"996Handling": 91,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWi7M70xDrive(2023).png",
+    "creator": "Bnuuy"
+}

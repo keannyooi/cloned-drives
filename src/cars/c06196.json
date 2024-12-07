@@ -1,0 +1,50 @@
+{
+    "carID": "c06196",
+    "cr": 215,
+    "make": "Mercedes-Benz",
+    "model": "200",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 117,
+    "0to60": 11.9,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1260,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.12,
+    "ola": 66.22,
+
+    "description": "Same power as the 300 D for 8000 Deutsche Mark less.",
+
+"333TopSpeed": 121,
+"3330to60": 11.3,
+"333Handling": 68,
+
+"666TopSpeed": 126,
+"6660to60": 10.7,
+"666Handling": 70,
+
+"699TopSpeed": 126,
+"6990to60": 10.1,
+"699Handling": 73,
+
+"969TopSpeed": 130,
+"9690to60": 10.7,
+"969Handling": 73,
+
+"996TopSpeed": 130,
+"9960to60": 10.1,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz200(1985).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06206",
+    "cr": 1,
+    "make": "AC",
+    "model": "Six 16/70 Drophead Coupe",
+    "modelYear": 1938,
+    "country": "GB",
+    "topSpeed": 60,
+    "0to60": 29.1,
+    "handling": 44,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 980,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 60,
+	
+    "description": "",
+	
+"333TopSpeed": 69,
+"3330to60": 27.6,
+"333Handling": 45,
+
+"666TopSpeed": 77,
+"6660to60": 26.2,
+"666Handling": 47,
+
+"699TopSpeed": 77,
+"6990to60": 24.7,
+"699Handling": 49,
+
+"969TopSpeed": 86,
+"9690to60": 26.2,
+"969Handling": 49,
+
+"996TopSpeed": 86,
+"9960to60": 24.7,
+"996Handling": 47,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ACSix1670DHC(1938).png",
+    "creator": "Bnuuy"
+}

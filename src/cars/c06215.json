@@ -1,0 +1,50 @@
+{
+    "carID": "c06215",
+    "cr": 1002,
+    "make": "Naran",
+    "model": "Hyper Coupe",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 230,
+    "0to60": 2.3,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","Grand Tourer","Ultra Expensive"],
+    "isPrize": false,
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.45,
+    "ola": 95.44,
+	
+    "description": "",
+	
+"333TopSpeed": 232,
+"3330to60": 2.2,
+"333Handling": 96,
+
+"666TopSpeed": 235,
+"6660to60": 2.1,
+"666Handling": 99,
+
+"699TopSpeed": 235,
+"6990to60": 2,
+"699Handling": 103,
+
+"969TopSpeed": 237,
+"9690to60": 2.1,
+"969Handling": 103,
+
+"996TopSpeed": 237,
+"9960to60": 2,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NaranHyperCoupe(2021).png",
+    "creator": "Kuroi"
+}

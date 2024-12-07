@@ -1,0 +1,50 @@
+{
+    "carID": "c06220",
+    "cr": 979,
+    "make": "McLaren",
+    "model": "W1",
+    "modelYear": 2024,
+    "country": "GB",
+    "topSpeed": 217,
+    "0to60": 2.6,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Hypercar","Ultra Expensive","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1399,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 133.35,
+    "ola": 79.51,
+	
+    "description": "",
+	
+"333TopSpeed": 219,
+"3330to60": 2.5,
+"333Handling": 100,
+
+"666TopSpeed": 222,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 222,
+"6990to60": 2.2,
+"699Handling": 108,
+
+"969TopSpeed": 224,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 224,
+"9960to60": 2.2,
+"996Handling": 103,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/McLarenW1(2024).png",
+    "creator": "ama4nn"
+}

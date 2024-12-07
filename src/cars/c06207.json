@@ -1,0 +1,50 @@
+{
+    "carID": "c06207",
+    "cr": 1,
+    "make": "AC",
+    "model": "Six 16/80 Competition Sports",
+    "modelYear": 1937,
+    "country": "GB",
+    "topSpeed": 90,
+    "0to60": 18.3,
+    "handling": 49,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1016,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.25,
+    "ola": 59.64,
+	
+    "description": "",
+	
+"333TopSpeed": 96,
+"3330to60": 17.4,
+"333Handling": 51,
+
+"666TopSpeed": 102,
+"6660to60": 16.5,
+"666Handling": 52,
+
+"699TopSpeed": 102,
+"6990to60": 15.6,
+"699Handling": 54,
+
+"969TopSpeed": 107,
+"9690to60": 16.5,
+"969Handling": 54,
+
+"996TopSpeed": 107,
+"9960to60": 15.6,
+"996Handling": 52,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ACSix1680CompetitionSports(1937).png",
+    "creator": "Bnuuy"
+}

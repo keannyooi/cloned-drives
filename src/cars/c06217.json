@@ -1,0 +1,50 @@
+{
+    "carID": "c06217",
+    "cr": 910,
+    "make": "BMW",
+    "model": "Vision M NEXT",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Eco-Friendly","Unique","Concept"],
+    "isPrize": false,
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 91.54,
+    "ola": 88.88,
+	
+    "description": "",
+	
+"333TopSpeed": 189,
+"3330to60": 2.8,
+"333Handling": 96,
+
+"666TopSpeed": 192,
+"6660to60": 2.6,
+"666Handling": 99,
+
+"699TopSpeed": 192,
+"6990to60": 2.5,
+"699Handling": 103,
+
+"969TopSpeed": 194,
+"9690to60": 2.6,
+"969Handling": 103,
+
+"996TopSpeed": 194,
+"9960to60": 2.5,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWVisionMNEXT(2019).png",
+    "creator": "12C"
+}

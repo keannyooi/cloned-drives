@@ -1,0 +1,50 @@
+{
+    "carID": "c06223",
+    "cr": 843,
+    "make": "Dallara",
+    "model": "Stradale Barchetta Aero",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 160,
+    "0to60": 3.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Track Day"],
+    "isPrize": false,
+    "weight": 860,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.55,
+    "ola": 85,
+	
+    "description": "",
+	
+"333TopSpeed": 163,
+"3330to60": 3,
+"333Handling": 97,
+
+"666TopSpeed": 167,
+"6660to60": 2.9,
+"666Handling": 100,
+
+"699TopSpeed": 167,
+"6990to60": 2.7,
+"699Handling": 104,
+
+"969TopSpeed": 170,
+"9690to60": 2.9,
+"969Handling": 104,
+
+"996TopSpeed": 170,
+"9960to60": 2.7,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DallaraStradaleBarchettaAero(2018).png",
+    "creator": "Yapper"
+}

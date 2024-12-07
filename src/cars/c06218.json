@@ -1,0 +1,50 @@
+{
+    "carID": "c06218",
+    "cr": 808,
+    "make": "Bugatti",
+    "model": "EB110 CNG Prototype",
+    "modelYear": 1994,
+    "country": "FR",
+    "topSpeed": 214,
+    "0to60": 3.5,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","Concept","Innovative"],
+    "isPrize": false,
+    "weight": 1680,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Alternative",
+    "mra": 82.15,
+    "ola": 92.5,
+	
+    "description": "",
+	
+"333TopSpeed": 216,
+"3330to60": 3.3,
+"333Handling": 89,
+
+"666TopSpeed": 219,
+"6660to60": 3.1,
+"666Handling": 92,
+
+"699TopSpeed": 219,
+"6990to60": 3,
+"699Handling": 95,
+
+"969TopSpeed": 221,
+"9690to60": 3.1,
+"969Handling": 95,
+
+"996TopSpeed": 221,
+"9960to60": 3,
+"996Handling": 92,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BugattiEB110CNGPrototype(1994).png",
+    "creator": "Pfugs"
+}
