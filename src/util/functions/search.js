@@ -39,7 +39,7 @@ async function search(message, query, searchList, type, currentMessage) {
     }
 
     const searchResults = searchList.filter(s => {
-        console.log(listGen[type](s)); // Add this line to output the value before listGen function call
+        //console.log(listGen[type](s)); // Add this line to output the value before listGen function call
         let test = listGen[type](s).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
 		return query.every(part => test.includes(part.replace(/[()"']/g, '')));
     });
