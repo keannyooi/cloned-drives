@@ -1,0 +1,50 @@
+{
+    "carID": "c06231",
+    "cr": 1199,
+    "make": "Toyota",
+    "model": "GR Supra Funny Car",
+    "modelYear": 2024,
+    "country": "JP",
+    "topSpeed": 337,
+    "0to60": 0.4,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["CDCCS","Tuner","Motorsport","Unique","Oddity"],
+    "isPrize": true,
+    "weight": 1173,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 247.65,
+    "ola": 118.36,
+	
+    "description": "",
+	
+"333TopSpeed": 339,
+"3330to60": 0.4,
+"333Handling": 10,
+
+"666TopSpeed": 340,
+"6660to60": 0.4,
+"666Handling": 11,
+
+"699TopSpeed": 340,
+"6990to60": 0.3,
+"699Handling": 11,
+
+"969TopSpeed": 342,
+"9690to60": 0.4,
+"969Handling": 11,
+
+"996TopSpeed": 342,
+"9960to60": 0.3,
+"996Handling": 11,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GRSupraFunnyCar(2024).png",
+    "creator": "ama4nn"
+}
