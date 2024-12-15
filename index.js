@@ -2,7 +2,7 @@
 
 require("dotenv").config();
 const bot = require("./src/config/config.js");
-const { readdirSync } = require("fs");
+const { readdirSync, readFileSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
@@ -27,6 +27,12 @@ for (let commandFile of commandFiles) {
     let command = require(`./src/commands/${commandFile}`);
     bot.commands.set(command.name, command);
 }
+// Preload all car data into memory
+const carData = readdirSync("./src/cars")
+    .filter(file => file.endsWith(".json"))
+    .map(file => JSON.parse(readFileSync(`./src/cars/${file}`, "utf8")));
+
+module.exports = { carData }; // Export the data for use in other modules
 
 connect(process.env.MONGO_PW, {
     useNewUrlParser: true,

@@ -1,23 +1,23 @@
 "use strict";
 
 const { readdirSync } = require("fs");
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
+const packFiles = readdirSync("./src/packs").filter(file => file.endsWith('.json'));
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
-    name: "tracklist",
-    aliases: ["alltracks", "tracks","tl"],
+    name: "packlist",
+    aliases: ["packs", "packstore","pl"],
     usage: ["[page number]", "[keyword]"],
     args: 0,
     category: "Info",
-    description: "Shows all the tracks that are available in Cloned Drives in list form. You can filter by keyword.",
+    description: "Shows all the packs that are available in Cloned Drives in list form. You can filter by keyword.",
     async execute(message, args) {
         const { settings } = await profileModel.findOne({ userID: message.author.id });
-        let list = trackFiles, page;
-		
+        let list = packFiles, page;
+
         // Extract keyword or page number
         let keyword = null;
         if (args.length > 0 && isNaN(args[0])) {
@@ -40,8 +40,8 @@ module.exports = {
         if (keyword) {
             list = list.filter(file => {
                 try {
-                    const currentTrack = require(`../tracks/${file}`);
-                    return currentTrack["trackName"] && currentTrack["trackName"].toLowerCase().includes(keyword);
+                    const currentPack = require(`../packs/${file}`);
+                    return currentPack["packName"] && currentPack["packName"].toLowerCase().includes(keyword);
                 } catch (err) {
                     console.error(`Error loading file: ${file}`, err);
                     return false;
@@ -51,8 +51,8 @@ module.exports = {
             if (!list.length) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
-                    title: "No Tracks Found",
-                    desc: `No Tracks found matching the keyword \`${keyword}\`.`,
+                    title: "No Packs Found",
+                    desc: `No packs found matching the keyword \`${keyword}\`.`,
                     author: message.author
                 });
                 return errorMessage.sendMessage();
@@ -60,21 +60,21 @@ module.exports = {
 		 page = 1; // Explicitly set the page to 1 after keyword filtering
         }
 
-        // Calculate paginatio
+        // Calculate pagination
         const totalPages = Math.ceil(list.length / (settings.listamount || defaultPageLimit));
         if (page < 0 || totalPages < page) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, invalid integer provided.",
-                desc: `The track list ends at page \`${totalPages}\``,
+                desc: `The pack list ends at page \`${totalPages}\``,
                 author: message.author
             }).displayClosest(page);
             return errorMessage.sendMessage();
         }
         list.sort((a, b) => {
-            const trackA = require(`../tracks/${a}`)["trackName"];
-            const trackB = require(`../tracks/${b}`)["trackName"];
-            return trackA.localeCompare(trackB);
+            const packA = require(`../packs/${a}`)["packName"];
+            const packB = require(`../packs/${b}`)["packName"];
+            return packA.localeCompare(packB);
         });
 
         try {
@@ -85,12 +85,18 @@ module.exports = {
         }
 
         function listDisplay(section, page, totalPages) {
-            let trackList = "";
+            let packList = "";
             for (let i = 0; i < section.length; i++) {
                 try {
-                    let currentTrack = require(`../tracks/${section[i]}`);
-                    trackList += `**${i + 1}.** ${currentTrack["trackName"]} `;
-                    trackList += "\n"; // New line for each Track entry
+                    let currentPack = require(`../packs/${section[i]}`);
+                    packList += `**${i + 1}.** ${currentPack["packName"]} `;
+                    
+                    // Add green circle for packs with a "price" property
+                    if (currentPack.hasOwnProperty("price")) {
+                        packList += "\uD83D\uDFE2"; // Green circle emoji
+                    }
+
+                    packList += "\n"; // New line for each pack entry
                 } catch (err) {
                     console.error(`Error loading file: ${section[i]}`, err);
                 }
@@ -98,10 +104,10 @@ module.exports = {
 
             const infoMessage = new InfoMessage({
                 channel: message.channel,
-                title: "List of All Tracks in Cloned Drives",
+                title: "List of All Packs in Cloned Drives",
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
-                fields: [{ name: "Track", value: trackList }],
+                fields: [{ name: "Pack", value: packList }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });
             return infoMessage;
