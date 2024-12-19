@@ -1,0 +1,50 @@
+{
+    "carID": "c06246",
+    "cr": 487,
+    "make": "BMW",
+    "model": "120 M Sport",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 7.4,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.8,
+    "ola": 73.25,
+
+    "description": "Who stole the i?",
+
+"333TopSpeed": 144,
+"3330to60": 7,
+"333Handling": 84,
+
+"666TopSpeed": 147,
+"6660to60": 6.7,
+"666Handling": 86,
+
+"699TopSpeed": 147,
+"6990to60": 6.3,
+"699Handling": 90,
+
+"969TopSpeed": 151,
+"9690to60": 6.7,
+"969Handling": 90,
+
+"996TopSpeed": 151,
+"9960to60": 6.3,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW120MSport(2024).png",
+    "creator": "Pfugs"
+}

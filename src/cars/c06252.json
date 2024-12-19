@@ -1,0 +1,50 @@
+{
+    "carID": "c06252",
+    "cr": 269,
+    "make": "Mercedes-Benz",
+    "model": "230 E",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 10.0,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.3,
+    "ola": 70,
+
+    "description": "A 4-cylinder engine so good it won over the journalists of it's time because of how advanced and technically superior the W124 felt over it's much beloved predecessor.",
+
+"333TopSpeed": 128,
+"3330to60": 9.5,
+"333Handling": 69,
+
+"666TopSpeed": 132,
+"6660to60": 9,
+"666Handling": 71,
+
+"699TopSpeed": 132,
+"6990to60": 8.5,
+"699Handling": 74,
+
+"969TopSpeed": 137,
+"9690to60": 9,
+"969Handling": 74,
+
+"996TopSpeed": 137,
+"9960to60": 8.5,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz230E(1985).png",
+    "creator": "Pfugs"
+}

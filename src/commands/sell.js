@@ -13,7 +13,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "sell",
-    aliases: ["s"],
+    aliases: ["s", "sellcat"],
     usage: ["[amount / 'all'] | <car name goes here>", "[amount / 'all'] | -<car ID>"],
     description: "Sells one or more cars from your garage.",
     args: 1,

@@ -12,6 +12,7 @@ const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
     name: "buycar",
+	aliases: ["buycat"],
     usage: ["<deal/bm> <car name>", "<deal/bm> <amount> <car name>"],
     args: 2,
     category: "Gameplay",

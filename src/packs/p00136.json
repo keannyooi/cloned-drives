@@ -1,18 +1,18 @@
 {
-    "packName": "2018MY Elite Pack",
-    "description": "5 Rare or Higher 2018 cards",
+    "packName": "German RWD Elite Pack",
+    "description": "The normal pack of 5 Rare or Higher German RWD cards",
 	"repetition": 1,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
         "make": "None",
         "modelYear": {
-            "start": 2018,
-            "end": 2018
+            "start": 1000,
+            "end": 3000
         },
-        "country": "None",
+        "country": "DE",
         "tags": "None",
-        "driveType": "None",
+        "driveType": "RWD",
         "tyreType": "None",
 		"enginePos": "None",
         "fuelType": "None",

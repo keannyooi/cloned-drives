@@ -1,14 +1,14 @@
 {
-    "packName": "2018MY Elite Pack",
-    "description": "5 Rare or Higher 2018 cards",
+    "packName": "2010-2014MY Titan Pack",
+    "description": "The best purchasable pack in CD!",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
     
     "filter": {
         "make": "None",
         "modelYear": {
-            "start": 2018,
-            "end": 2018
+            "start": 2010,
+            "end": 2014
         },
         "country": "None",
         "tags": "None",
@@ -25,51 +25,51 @@
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
         },
         {
 			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
         }
     ]
 }

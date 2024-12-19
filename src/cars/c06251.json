@@ -1,0 +1,50 @@
+{
+    "carID": "c06251",
+    "cr": 215,
+    "make": "Mercedes-Benz",
+    "model": "250 D Turbo",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 11.7,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1440,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.14,
+    "ola": 62.48,
+
+    "description": "The potential of the diesel finally fully utilised through means of a turbocharger.",
+
+"333TopSpeed": 125,
+"3330to60": 11.1,
+"333Handling": 67,
+
+"666TopSpeed": 130,
+"6660to60": 10.5,
+"666Handling": 69,
+
+"699TopSpeed": 130,
+"6990to60": 9.9,
+"699Handling": 72,
+
+"969TopSpeed": 134,
+"9690to60": 10.5,
+"969Handling": 72,
+
+"996TopSpeed": 134,
+"9960to60": 9.9,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz250DTurbo(1992).png",
+    "creator": "Pfugs"
+}

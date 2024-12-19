@@ -15,7 +15,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "carlist",
-    aliases: ["allcars"],
+    aliases: ["allcars","catlist"],
     usage: ["", "[page number]", "-s [sorting criteria]", "[page number] -s [sorting criteria]"],
     args: 0,
     category: "Info",

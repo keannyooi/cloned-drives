@@ -12,7 +12,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "carinfo",
-    aliases: ["cinfo"],
+    aliases: ["cinfo","catinfo"],
     usage: ["<car name>", "-<car ID>"],
     args: 1,
     category: "Info",

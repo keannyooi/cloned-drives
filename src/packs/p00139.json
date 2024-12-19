@@ -1,22 +1,22 @@
 {
-    "packName": "2011MY Titan Pack",
-    "description": "The best pack in CD!",
+    "packName": "Performance Tyre SUV Titan Pack",
+    "description": "The best purchasable pack in CD!",
 	"repetition": 1,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
     
     "filter": {
         "make": "None",
         "modelYear": {
-            "start": 2011,
-            "end": 2011
+            "start": 1000,
+            "end": 3000
         },
         "country": "None",
         "tags": "None",
         "driveType": "None",
-        "tyreType": "None",
+        "tyreType": "Performance",
 		"enginePos": "None",
         "fuelType": "None",
-        "bodyStyle": "None",
+        "bodyStyle": "SUV",
 		"seatCount": "None"
     },
 

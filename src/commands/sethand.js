@@ -9,7 +9,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "sethand",
-    aliases: ["sh"],
+    aliases: ["sh","setcat"],
     usage: ["<car name>", "-<car ID>"],
     args: 1,
     category: "Configuration",
