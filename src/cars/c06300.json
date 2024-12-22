@@ -1,0 +1,50 @@
+{
+    "carID": "c06300",
+    "cr": 489,
+    "make": "Mercedes-Benz",
+    "model": "500 E",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Silver Screen","Super Sedan"],
+    "isPrize": false,
+    "weight": 1700,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.21,
+    "ola": 87.03,
+
+    "description": "Because the 500 E's widened body wouldn't fit down the production line at Mercedes's Sindelfingen factory with the rest of the W124s, Porsche, which coincidentally was undergoing financial problems at the time and needed the money, was contracted to build the 500 E. This process was very complicated and took 18 days per car as the chassis had to be hand-assembled at Porsche in Zuffenhausen, then transported to Sindelfingen for painting, then back to Zuffenhausen for final assembly and then back to Mercedes one last time for final inspection.",
+
+"333TopSpeed": 158,
+"3330to60": 5.6,
+"333Handling": 79,
+
+"666TopSpeed": 162,
+"6660to60": 5.3,
+"666Handling": 81,
+
+"699TopSpeed": 162,
+"6990to60": 5,
+"699Handling": 84,
+
+"969TopSpeed": 165,
+"9690to60": 5.3,
+"969Handling": 84,
+
+"996TopSpeed": 165,
+"9960to60": 5,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz500E(1991).png",
+    "creator": "Pfugs"
+}

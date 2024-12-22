@@ -1,0 +1,50 @@
+{
+    "carID": "c06295",
+    "cr": 835,
+    "make": "Lotec",
+    "model": "Sirius",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 249,
+    "0to60": 3.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Supercar","Unique"],
+    "isPrize": false,
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.18,
+    "ola": 103.57,
+
+    "description": "The dreams of producing the Sirius were shattered when Lotec couldn't find an investor that had the means to finance the project despite the high interest from Middle Eastern buyers.",
+
+"333TopSpeed": 251,
+"3330to60": 3.5,
+"333Handling": 95,
+
+"666TopSpeed": 253,
+"6660to60": 3.3,
+"666Handling": 98,
+
+"699TopSpeed": 253,
+"6990to60": 3.1,
+"699Handling": 102,
+
+"969TopSpeed": 255,
+"9690to60": 3.3,
+"969Handling": 102,
+
+"996TopSpeed": 255,
+"9960to60": 3.1,
+"996Handling": 98,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LotecSirius(2001).png",
+    "creator": "Pfugs"
+}

@@ -86,8 +86,13 @@ module.exports = {
                                 reward = streak * 100 + 100000;
                                 crBonusBase = 50000;
                             }
+							// multiply the reward
+							reward *= 2;
+							
                             if (playerCar.cr - opponentCar.cr <= 30) {
                                 crBonus = (opponentCar.cr - playerCar.cr + 40) * crBonusBase;
+								//multiply the crBonus
+								//crBonus *= 1.33;
                             }
 
                             let subtotal = reward + crBonus

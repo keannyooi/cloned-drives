@@ -1,0 +1,50 @@
+{
+    "carID": "c06297",
+    "cr": 703,
+    "make": ["Lotec","Ferrari"],
+    "model": "TT 1000",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 230,
+    "0to60": 4,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Supercar","Unique","Tuner","Ultra Expensive"],
+    "isPrize": false,
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 115.05,
+    "ola": 116.19,
+
+    "description": "1000hp deathtrap F40-lookalike Testarossa built to show the technical prowess of Lotec, only 3 were built.",
+
+"333TopSpeed": 232,
+"3330to60": 3.8,
+"333Handling": 85,
+
+"666TopSpeed": 235,
+"6660to60": 3.6,
+"666Handling": 87,
+
+"699TopSpeed": 235,
+"6990to60": 3.4,
+"699Handling": 91,
+
+"969TopSpeed": 237,
+"9690to60": 3.6,
+"969Handling": 91,
+
+"996TopSpeed": 237,
+"9960to60": 3.4,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LotecTT1000(1989).png",
+    "creator": "Pfugs"
+}
