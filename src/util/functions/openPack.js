@@ -10,13 +10,38 @@ const sortCars = require("./sortCars.js");
 async function openPack(args) {
     const { message, currentPack, currentMessage, test } = args;
     const cardFilter = currentPack["filter"];
-    let rand, check, crStart, crEnd, pulledCards = "";
-    let currentCard = require(`../../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+    let pulledCards = "";
     let addedCars = [];
 
+    // Generate the filtered pool of cars
+    const filteredCars = carFiles.filter(carFile => filterCard(carFile, cardFilter));
+
+    // Validate the filtered pool
+    if (filteredCars.length === 0) {
+        const errorMessage = new ErrorMessage({
+            channel: message.channel,
+            title: "Error: No cars available in the filtered pool.",
+            desc: "Adjust your filter or choose a different pack.",
+            author: message.author
+        });
+        return errorMessage.sendMessage({ currentMessage });
+    }
+
+    if (filteredCars.length < currentPack["repetition"] * 5) {
+        const errorMessage = new ErrorMessage({
+            channel: message.channel,
+            title: "Error: Insufficient cars in the filtered pool for this pack.",
+            desc: "Consider reducing repetitions or adjusting the filter.",
+            author: message.author
+        });
+        return errorMessage.sendMessage({ currentMessage });
+    }
+
     for (let i = 0; i < currentPack["repetition"] * 5; i++) {
-        rand = Math.floor(Math.random() * 1000) / 10;
-        check = 0;
+        let rand = Math.floor(Math.random() * 1000) / 10;
+        let check = 0, crStart, crEnd;
+
+        // Determine rarity range
         for (let rarity of Object.keys(currentPack["packSequence"][Math.floor(i / currentPack["repetition"])])) {
             check += currentPack["packSequence"][Math.floor(i / currentPack["repetition"])][rarity];
             if (check > rand) {
@@ -60,25 +85,27 @@ async function openPack(args) {
             }
         }
 
-        let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], timeoutCounter = 0;
-        currentCard = require(`../../cars/${carFile}`);
-        while ((currentCard["cr"] < crStart || currentCard["cr"] > crEnd || filterCard(carFile, cardFilter) === false) && timeoutCounter < 50000) {
-            carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
-            currentCard = require(`../../cars/${carFile}`);
-            timeoutCounter++;
-        }
+        // Select a random car from the filtered pool that matches the CR range
+        let carFile, currentCard;
+        let validCars = filteredCars.filter(file => {
+            currentCard = require(`../../cars/${file}`);
+            return currentCard["cr"] >= crStart && currentCard["cr"] <= crEnd;
+        });
 
-        if (timeoutCounter >= 50000) {
+        if (validCars.length === 0) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
-                title: "Error, pack generation timed out likely due to no cars in generation pool.",
-                desc: "Don't worry, your money is refunded. (provided that you bought the pack)",
-                author: message.author,
-                footer: "Disclaimer: There is an *extremely* rare chance of this error to pop up even though nothing went wrong."
+                title: "Error: No cars matching criteria within the filtered pool.",
+                desc: "Consider adjusting the filter or pack settings.",
+                author: message.author
             });
             return errorMessage.sendMessage({ currentMessage });
         }
-        addedCars.push({ carID: carFile.slice(0, 6), upgrade: "000"});
+
+        carFile = validCars[Math.floor(Math.random() * validCars.length)];
+        currentCard = require(`../../cars/${carFile}`);
+
+        addedCars.push({ carID: carFile.slice(0, 6), upgrade: "000" });
     }
 
     addedCars = sortCars(addedCars, "cr", "ascending");
@@ -89,8 +116,7 @@ async function openPack(args) {
 
         if ((i + 1) % 5 !== 0) {
             pulledCards += ` **[[Card]](${currentCar["racehud"]})**\n`;
-        }
-        else {
+        } else {
             const packScreen = new InfoMessage({
                 channel: message.channel,
                 title: `Opening ${currentPack["packName"]}...`,
@@ -110,35 +136,34 @@ async function openPack(args) {
     function filterCard(carFile, filter) {
         let currentCard = require(`../../cars/${carFile}`);
         if (currentCard["reference"] || currentCard["isPrize"] === true) return false;
-        // return filterCheck({ car: carFile, filter });
         let passed = true;
+
         for (let criteria in filter) {
             if (filter[criteria] !== "None") {
                 switch (criteria) {
                     case "make":
                     case "tags":
-					case "creator":
+                    case "creator":
                     case "bodyStyle":
                         if (Array.isArray(currentCard[criteria])) {
-                            if (currentCard[criteria].some(m => m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
-                        }
-                        else {
-                            if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
+                            if (currentCard[criteria].some(m => m && m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
+                        } else if (currentCard[criteria] && currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) {
+                            passed = false;
                         }
                         break;
                     case "modelYear":
                     case "seatCount":
-                        if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
+                        if (!currentCard[criteria] || currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) {
+                            passed = false;
+                        }
                         break;
-default:
-  if (
-    typeof currentCard[criteria] === 'string' &&
-    typeof filter[criteria] === 'string' &&
-    currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()
-  ) {
-    passed = false;
-  }
-  break;
+                    default:
+                        if (currentCard[criteria] && typeof currentCard[criteria] === 'string' &&
+                            filter[criteria] && typeof filter[criteria] === 'string' &&
+                            currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) {
+                            passed = false;
+                        }
+                        break;
                 }
             }
         }
