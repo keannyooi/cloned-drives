@@ -1,0 +1,50 @@
+{
+    "carID": "c06304",
+    "cr": 1016,
+    "make": "AMZ Racing",
+    "model": "Eiger",
+    "modelYear": 2018,
+    "country": "CH",
+    "topSpeed": 74,
+    "0to60": 2.0,
+    "handling": 104,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 172,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 73.69,
+	
+    "description": "Eiger was designed to be one of the most daring leaps in AMZ’s history of innovation, introducing several new concepts with the goal of defending the first place in the world rankings.",
+	
+"333TopSpeed": 81,
+"3330to60": 1.9,
+"333Handling": 107,
+
+"666TopSpeed": 88,
+"6660to60": 1.8,
+"666Handling": 111,
+
+"699TopSpeed": 88,
+"6990to60": 1.7,
+"699Handling": 115,
+
+"969TopSpeed": 95,
+"9690to60": 1.8,
+"969Handling": 115,
+
+"996TopSpeed": 95,
+"9960to60": 1.7,
+"996Handling": 111,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZEiger(2018).png",
+    "creator": "Bnuuy"
+}

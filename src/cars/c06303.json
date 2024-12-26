@@ -1,0 +1,50 @@
+{
+    "carID": "c06303",
+    "cr": 1094,
+    "make": "AMZ Racing",
+    "model": "Mythen WR",
+    "modelYear": 2023,
+    "country": "CH",
+    "topSpeed": 77,
+    "0to60": 0.9,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly"],
+    "isPrize": true,
+    "weight": 140,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 90,
+	
+    "description": "The mythen chassis, previously utilized in the 2019 season, underwent thorough cleaning and weight reduction to serve as the foundation for the 2023 world record attempt. Over the course of a year, reengineering efforts were dedicated to the drivetrain, aerodynamics, and electrical systems, pushing the car to the edge of its performance capabilities.",
+	
+"333TopSpeed": 84,
+"3330to60": 0.9,
+"333Handling": 103,
+
+"666TopSpeed": 91,
+"6660to60": 0.8,
+"666Handling": 107,
+
+"699TopSpeed": 91,
+"6990to60": 0.8,
+"699Handling": 111,
+
+"969TopSpeed": 97,
+"9690to60": 0.8,
+"969Handling": 111,
+
+"996TopSpeed": 97,
+"9960to60": 0.8,
+"996Handling": 107,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZMythenWR(2023).png",
+    "creator": "Bnuuy"
+}

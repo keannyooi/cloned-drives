@@ -1,0 +1,50 @@
+{
+    "carID": "c06302",
+    "cr": 1102,
+    "make": "AMZ Racing",
+    "model": "Dufour",
+    "modelYear": 2024,
+    "country": "CH",
+    "topSpeed": 77,
+    "0to60": 1.8,
+    "handling": 114,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly"],
+    "isPrize": true,
+    "weight": 183,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 77.94,
+	
+    "description": "Named after the Dufourspitze, Switzerland’s highest peak, AMZ’s 17th car introduces significant innovations while building on the strong foundation of its predecessor.",
+	
+"333TopSpeed": 84,
+"3330to60": 1.7,
+"333Handling": 118,
+
+"666TopSpeed": 91,
+"6660to60": 1.6,
+"666Handling": 122,
+
+"699TopSpeed": 91,
+"6990to60": 1.5,
+"699Handling": 127,
+
+"969TopSpeed": 97,
+"9690to60": 1.6,
+"969Handling": 127,
+
+"996TopSpeed": 97,
+"9960to60": 1.5,
+"996Handling": 122,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZDufour(2024).png",
+    "creator": "Bnuuy"
+}
