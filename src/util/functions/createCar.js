@@ -55,12 +55,15 @@ function createCar(currentCar, unitPreference, hideStats) {
         carSpecs += `Handling: ${carModule.handling}
         ${carModule.enginePos} Engine, ${carModule.driveType}
         ${carModule.tyreType} Tyres\n`;
-        if (unitPreference === "imperial") {
-            carSpecs += `Weight: ${carModule.weight.toLocaleString("en")}kg (${unbritish(carModule.weight, "weight").toLocaleString("en")}lbs)\n`;
-        }
-        else {
-            carSpecs += `Weight: ${carModule.weight.toLocaleString("en")}kg\n`;
-        }
+if (unitPreference === "imperial") {
+    const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
+    const weightLbs = carModule.weight !== undefined ? unbritish(carModule.weight, "weight").toLocaleString("en") : "N/A";
+    carSpecs += `Weight: ${weightKg}kg (${weightLbs}lbs)\n`;
+} else {
+    const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
+    carSpecs += `Weight: ${weightKg}kg\n`;
+}
+
 
         carSpecs += `Ground Clearance: ${carModule.gc}
         ${carModule.tcs ? "✅" : "❌"} TCS, ${carModule.abs ? "✅" : "❌"} ABS\n`;
