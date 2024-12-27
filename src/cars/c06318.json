@@ -1,0 +1,50 @@
+{
+    "carID": "c06318",
+    "cr": 262,
+    "make": "Mercedes-Benz",
+    "model": "300 D Turbo 4MATIC",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 11.2,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 40.66,
+    "ola": 59.15,
+
+    "description": "The most expensive top of the range diesel combined with the complicated 4MATIC system just makes you think about who would need this sort of car.",
+
+"333TopSpeed": 125,
+"3330to60": 10.6,
+"333Handling": 67,
+
+"666TopSpeed": 130,
+"6660to60": 10.1,
+"666Handling": 69,
+
+"699TopSpeed": 130,
+"6990to60": 9.5,
+"699Handling": 72,
+
+"969TopSpeed": 134,
+"9690to60": 10.1,
+"969Handling": 72,
+
+"996TopSpeed": 134,
+"9960to60": 9.5,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz300DTurbo4MATIC(1989).png",
+    "creator": "Pfugs"
+}

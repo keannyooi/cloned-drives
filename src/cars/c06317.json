@@ -1,0 +1,50 @@
+{
+    "carID": "c06317",
+    "cr": 250,
+    "make": "Mercedes-Benz",
+    "model": "300 D Turbo",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 10.6,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1475,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 47.13,
+    "ola": 64.92,
+
+    "description": "The most powerful diesel sedan in it's day needed so much air that Mercedes decided the best way to solve this was to cut holes in the fenders.",
+
+"333TopSpeed": 128,
+"3330to60": 9.5,
+"333Handling": 69,
+
+"666TopSpeed": 132,
+"6660to60": 9,
+"666Handling": 71,
+
+"699TopSpeed": 132,
+"6990to60": 8.5,
+"699Handling": 74,
+
+"969TopSpeed": 137,
+"9690to60": 9,
+"969Handling": 74,
+
+"996TopSpeed": 137,
+"9960to60": 8.5,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz300DTurbo(1987).png",
+    "creator": "Pfugs"
+}
