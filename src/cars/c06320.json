@@ -1,0 +1,50 @@
+{
+    "carID": "c06320",
+    "cr": 780,
+    "make": "AMZ Racing",
+    "model": "Maloja",
+    "modelYear": 2008,
+    "country": "CH",
+    "topSpeed": 84,
+    "0to60": 3.6,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity"],
+    "isPrize": false,
+    "weight": 238,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 31.29,
+    "ola": 75.26,
+	
+    "description": "Maloja is the second race car built by AMZ. After the debut season, AMZ increased usage of carbon fibre reinforced plastics.",
+	
+"333TopSpeed": 90,
+"3330to60": 3.4,
+"333Handling": 101,
+
+"666TopSpeed": 96,
+"6660to60": 3.2,
+"666Handling": 104,
+
+"699TopSpeed": 96,
+"6990to60": 3.1,
+"699Handling": 109,
+
+"969TopSpeed": 103,
+"9690to60": 3.2,
+"969Handling": 109,
+
+"996TopSpeed": 103,
+"9960to60": 3.1,
+"996Handling": 104,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZMaloja(2008).png",
+    "creator": "Bnuuy"
+}
