@@ -1,0 +1,48 @@
+{
+    "carID": "c06375",
+    "cr": 1039,
+    "make": "AMZ Racing",
+    "model": "Mythen",
+    "modelYear": 2019,
+    "country": "CH",
+    "topSpeed": 71,
+    "0to60": 1.8,
+    "handling": 105,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly","Rest of The World"],
+    "isPrize": false,
+    "weight": 162,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 76.94,
+    "description": "The Mythen, a striking massif in the heart of Switzerland, were chosen as the namesake for 13th car of AMZ. With a fundamental alteration of the packaging within the chassis and consistent lightweight design, MYTHEN has become the lightest car in AMZ’s history, weighing 162.5 kg.",
+"333TopSpeed": 78,
+"3330to60": 1.7,
+"333Handling": 108,
+
+"666TopSpeed": 86,
+"6660to60": 1.6,
+"666Handling": 112,
+
+"699TopSpeed": 86,
+"6990to60": 1.5,
+"699Handling": 117,
+
+"969TopSpeed": 93,
+"9690to60": 1.6,
+"969Handling": 117,
+
+"996TopSpeed": 93,
+"9960to60": 1.5,
+"996Handling": 112,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZMythen(2019).png",
+    "creator": "Bnuuy"
+}
