@@ -1,0 +1,50 @@
+{
+    "carID": "c06387",
+    "cr": 406,
+    "make": "Mercedes-Benz",
+    "model": "300 E-24",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 147,
+    "0to60": 7.6,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1480,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.92,
+    "ola": 77.77,
+
+    "description": "When Mercedes management heard of a gust coming from the west (which turned out to be the Peugeot 605), the engineers scrambled for their car to stay ahead and decided that adding more valves would solve their inconvenient French problem.",
+
+"333TopSpeed": 151,
+"3330to60": 7.2,
+"333Handling": 74,
+
+"666TopSpeed": 154,
+"6660to60": 6.8,
+"666Handling": 77,
+
+"699TopSpeed": 154,
+"6990to60": 6.5,
+"699Handling": 80,
+
+"969TopSpeed": 158,
+"9690to60": 6.8,
+"969Handling": 80,
+
+"996TopSpeed": 158,
+"9960to60": 6.5,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz300E-24(1989).png",
+    "creator": "Pfugs"
+}

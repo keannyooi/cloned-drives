@@ -1,0 +1,50 @@
+{
+    "carID": "c06384",
+    "cr": 273,
+    "make": "Mercedes-Benz",
+    "model": "220 E",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 10.2,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS"],
+    "isPrize": false,
+    "weight": 1370,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.4,
+    "ola": 69.43,
+
+    "description": "The renowned 2.2 liter engine returns as a 16-valve for the 1992 model year to critical acclaim.",
+
+"333TopSpeed": 135,
+"3330to60": 9.7,
+"333Handling": 69,
+
+"666TopSpeed": 139,
+"6660to60": 9.2,
+"666Handling": 71,
+
+"699TopSpeed": 139,
+"6990to60": 8.7,
+"699Handling": 74,
+
+"969TopSpeed": 143,
+"9690to60": 9.2,
+"969Handling": 74,
+
+"996TopSpeed": 143,
+"9960to60": 8.7,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz220E(1992).png",
+    "creator": "Pfugs"
+}

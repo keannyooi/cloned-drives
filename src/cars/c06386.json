@@ -1,0 +1,50 @@
+{
+    "carID": "c06386",
+    "cr": 426,
+    "make": "Mercedes-Benz",
+    "model": "400 E",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Super Sedan","Sleeper"],
+    "isPrize": false,
+    "weight": 1620,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 82.36,
+
+    "description": "An unassuming body that looks like every other W124, a 4.2-liter V8 as well as parts off of the 500 E and the R129 SL make this the ultimate Mercedes sleeper.",
+
+"333TopSpeed": 158,
+"3330to60": 6.2,
+"333Handling": 77,
+
+"666TopSpeed": 162,
+"6660to60": 5.9,
+"666Handling": 80,
+
+"699TopSpeed": 162,
+"6990to60": 5.5,
+"699Handling": 83,
+
+"969TopSpeed": 165,
+"9690to60": 5.9,
+"969Handling": 83,
+
+"996TopSpeed": 165,
+"9960to60": 5.5,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz400E(1992).png",
+    "creator": "Pfugs"
+}
