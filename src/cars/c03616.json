@@ -1,13 +1,13 @@
 {
     "carID": "c03616",
-    "cr": 960,
+    "cr": 1080,
     "make": "Aston Martin",
-    "model": "AMR-One",
+    "model": "AMR-One #009 Aston Martin Racing",
     "modelYear": 2011,
     "country": "GB",
     "topSpeed": 205,
     "0to60": 2.5,
-    "handling": 99,
+    "handling": 111,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["The Midlands Cruise","Motorsport","Ultra Expensive","Unique","Endless Summer"],
@@ -24,26 +24,26 @@
     "mra": 105.61,
     "ola": 88.88,
     "description": "For the 2011 season, Aston Martin Racing returned to the Le Mans 24 Hour race and Le Mans Series with a new LMP1 race car designed from the ground up with an open cockpit carbon-fibre monocoque chassis and a new purpose-designed 2 litre petrol powered race engine. By the Silverstone round of the Le Mans series, the previous V12 engined Lola-Aston Martin LMP1 was again pressed into front line service. It turned out that the older car was both faster and more reliable than the newer one.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AstonMartinAMR-One(2011).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 208,
 "3330to60": 2.4,
-"333Handling": 102,
+"333Handling": 115,
 
 "666TopSpeed": 210,
 "6660to60": 2.3,
-"666Handling": 106,
+"666Handling": 118,
 
 "699TopSpeed": 210,
 "6990to60": 2.1,
-"699Handling": 110,
+"699Handling": 123,
 
 "969TopSpeed": 213,
 "9690to60": 2.3,
-"969Handling": 110,
+"969Handling": 123,
 
 "996TopSpeed": 213,
 "9960to60": 2.1,
-"996Handling": 106
+"996Handling": 118
 }

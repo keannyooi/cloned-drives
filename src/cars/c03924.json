@@ -1,13 +1,13 @@
 {
     "carID": "c03924",
-    "cr": 880,
+    "cr": 951,
     "make": "Acura",
-    "model": "NSX GT3 Evo",
+    "model": "NSX GT3 Evo #57 Meyer Shank Racing",
     "modelYear": 2019,
     "country": "US",
     "topSpeed": 180,
     "0to60": 3.0,
-    "handling": 97,
+    "handling": 103,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
@@ -24,26 +24,26 @@
     "mra": 92.50,
     "ola": 87.55,
     "description": "None.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AcuraNSXGT3Evo(2019).png",
     "creator": "DodgeDemon",
 
-"333TopSpeed": 186,
+"333TopSpeed": 183,
 "3330to60": 2.8,
-"333Handling": 100,
+"333Handling": 106,
 
-"666TopSpeed": 189,
+"666TopSpeed": 186,
 "6660to60": 2.7,
-"666Handling": 103,
+"666Handling": 110,
 
-"699TopSpeed": 189,
+"699TopSpeed": 186,
 "6990to60": 2.5,
-"699Handling": 108,
+"699Handling": 114,
 
-"969TopSpeed": 192,
+"969TopSpeed": 189,
 "9690to60": 2.7,
-"969Handling": 108,
+"969Handling": 114,
 
-"996TopSpeed": 192,
+"996TopSpeed": 189,
 "9960to60": 2.5,
-"996Handling": 103
+"996Handling": 110
 }

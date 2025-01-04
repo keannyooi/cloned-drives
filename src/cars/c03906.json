@@ -1,13 +1,13 @@
 {
     "carID": "c03906",
-    "cr": 980,
+    "cr": 1059,
     "make": "Porsche",
-    "model": "917/10 Can-Am Spyder",
+    "model": "917/10 Can-Am Spyder #6 Penske Racing",
     "modelYear": 1972,
     "country": "DE",
     "topSpeed": 237,
     "0to60": 2.2,
-    "handling": 94,
+    "handling": 100,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
@@ -24,26 +24,26 @@
     "mra": 114.29,
     "ola": 102.69,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Porsche917-10CanAmSpyder(1972).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 239,
 "3330to60": 2.1,
-"333Handling": 97,
+"333Handling": 103,
 
 "666TopSpeed": 241,
 "6660to60": 2,
-"666Handling": 100,
+"666Handling": 107,
 
 "699TopSpeed": 241,
 "6990to60": 1.9,
-"699Handling": 104,
+"699Handling": 111,
 
 "969TopSpeed": 244,
 "9690to60": 2,
-"969Handling": 104,
+"969Handling": 111,
 
 "996TopSpeed": 244,
 "9960to60": 1.9,
-"996Handling": 100
+"996Handling": 107
 }

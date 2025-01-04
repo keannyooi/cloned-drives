@@ -1,13 +1,13 @@
 {
     "carID": "c03169",
-	"cr": 960,
+	"cr": 1061,
     "make": ["Mercedes-Benz", "Sauber"],
-    "model": "C11",
+    "model": "C11 #2 Sauber Motorsport ",
     "modelYear": 1990,
     "country": "DE",
     "topSpeed": 249,
     "0to60": 2.7,
-    "handling": 97,
+    "handling": 107,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport", "Ultra Expensive", "Unique","The Tyrol Tour: Remix"],
@@ -27,31 +27,27 @@
     "description": "Dominantly won the sports prototype championship in 1990.",
 
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Mercedes-BenzC11(1990).png",
     "creator": "Sutzi",
 
 
-    "333TopSpeed": 251,
-    "3330to60": 2.6,
-    "333Handling": 100,
+"333TopSpeed": 251,
+"3330to60": 2.6,
+"333Handling": 111,
 
+"666TopSpeed": 253,
+"6660to60": 2.4,
+"666Handling": 114,
 
-    "666TopSpeed": 253,
-    "6660to60": 2.4,
-    "666Handling": 103,
+"699TopSpeed": 253,
+"6990to60": 2.3,
+"699Handling": 119,
 
+"969TopSpeed": 255,
+"9690to60": 2.4,
+"969Handling": 119,
 
-    "996TopSpeed": 255,
-    "9960to60": 2.3,
-    "996Handling": 103,
-
-
-    "969TopSpeed": 255,
-    "9690to60": 2.4,
-    "969Handling": 108,
-
-
-    "699TopSpeed": 253,
-    "6990to60": 2.3,
-    "699Handling": 108
+"996TopSpeed": 255,
+"9960to60": 2.3,
+"996Handling": 114
 }

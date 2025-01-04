@@ -1,13 +1,13 @@
 {
     "carID": "c03922",
-    "cr": 988,
+    "cr": 1072,
     "make": "Acura",
     "model": "NSX EV Concept",
     "modelYear": 2016,
     "country": "US",
     "topSpeed": 202,
     "0to60": 2.5,
-    "handling": 97,
+    "handling": 104,
     "driveType": "4WD",
     "tyreType": "Slick",
     "tags": ["Endless Summer", "Eco-Friendly", "Concept", "Motorsport", "The Americas Assault"],
@@ -29,21 +29,21 @@
 
 "333TopSpeed": 205,
 "3330to60": 2.4,
-"333Handling": 100,
+"333Handling": 107,
 
 "666TopSpeed": 207,
 "6660to60": 2.3,
-"666Handling": 103,
+"666Handling": 111,
 
 "699TopSpeed": 207,
 "6990to60": 2.1,
-"699Handling": 108,
+"699Handling": 115,
 
 "969TopSpeed": 210,
 "9690to60": 2.3,
-"969Handling": 108,
+"969Handling": 115,
 
 "996TopSpeed": 210,
 "9960to60": 2.1,
-"996Handling": 103
+"996Handling": 111
 }

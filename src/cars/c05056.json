@@ -1,13 +1,13 @@
 {
     "carID": "c05056",
-    "cr": 950,
+    "cr": 1012,
     "make": "Porsche",
-    "model": "935/78 \"Moby Dick\"",
+    "model": "935/78 \"Moby Dick\" #43 Martini Racing Porsche System",
     "modelYear": 1978,
     "country": "DE",
     "topSpeed": 227,
     "0to60": 2.6,
-    "handling": 96,
+    "handling": 100,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Motorsport","Unique","Style Icon","Cloned Drives Beta: Last of"],
@@ -24,26 +24,26 @@
     "mra": 119.48,
     "ola": 93.5,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/PorscheMobyDick(1978).png",
 
 "333TopSpeed": 229,
 "3330to60": 2.5,
-"333Handling": 99,
+"333Handling": 103,
 
 "666TopSpeed": 232,
 "6660to60": 2.3,
-"666Handling": 102,
+"666Handling": 107,
 
 "699TopSpeed": 232,
 "6990to60": 2.2,
-"699Handling": 107,
+"699Handling": 111,
 
 "969TopSpeed": 234,
 "9690to60": 2.3,
-"969Handling": 107,
+"969Handling": 111,
 
 "996TopSpeed": 234,
 "9960to60": 2.2,
-"996Handling": 102,
+"996Handling": 107,
     "creator": "Bnuuy"
 }

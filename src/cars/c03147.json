@@ -1,8 +1,8 @@
 {
     "carID": "c03147",
-	"cr": 900,
+	"cr": 1011,
     "make": ["Mercedes-Benz", "Sauber"],
-    "model": "C291",
+    "model": "C291 #2 Sauber Motorsport",
     "modelYear": 1991,
     "country": "DE",
     "topSpeed": 215,
@@ -27,26 +27,26 @@
     "description": "The last Group C Mercedes which performed poorly leading to Mercedes leaving Sports car racing all together.",
 
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Mercedes-BenzC291(1991).png",
     "creator": "Sutzi",
 
-    "333TopSpeed": 217,
-    "3330to60": 2.9,
-    "333Handling": 100,
+"333TopSpeed": 217,
+"3330to60": 2.8,
+"333Handling": 111,
 
-    "666TopSpeed": 220,
-    "6660to60": 2.7,
-    "666Handling": 103,
+"666TopSpeed": 220,
+"6660to60": 2.7,
+"666Handling": 114,
 
-    "996TopSpeed": 222,
-    "9960to60": 2.6,
-    "996Handling": 103,
+"699TopSpeed": 220,
+"6990to60": 2.5,
+"699Handling": 119,
 
-    "969TopSpeed": 222,
-    "9690to60": 2.7,
-    "969Handling": 108,
+"969TopSpeed": 222,
+"9690to60": 2.7,
+"969Handling": 119,
 
-    "699TopSpeed": 220,
-    "6990to60": 2.6,
-    "699Handling": 108
+"996TopSpeed": 222,
+"9960to60": 2.5,
+"996Handling": 114
 }

@@ -1,13 +1,13 @@
 {
     "carID": "c02511",
-    "cr": 910,
+    "cr": 996,
     "make": "Aston Martin",
     "model": "Vulcan",
     "modelYear": 2015,
     "country": "GB",
     "topSpeed": 224,
     "0to60": 3.0,
-    "handling": 97,
+    "handling": 104,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Track Day", "Unique", "Ultra Expensive","The Royal Collection"],
@@ -24,26 +24,26 @@
     "mra": 110.45,
     "ola": 86.66,
     "description": "None.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AstonMartinVulcan(2015).png",
     "creator": "Bnuuy",
 
-"333TopSpeed": 226, 
-"3330to60": 2.8, 
-"333Handling": 100,
+"333TopSpeed": 226,
+"3330to60": 2.8,
+"333Handling": 107,
 
-"666TopSpeed": 229, 
-"6660to60": 2.7, 
-"666Handling": 103,
+"666TopSpeed": 229,
+"6660to60": 2.7,
+"666Handling": 111,
 
-"699TopSpeed": 229, 
-"6990to60": 2.6, 
-"699Handling": 108,
+"699TopSpeed": 229,
+"6990to60": 2.5,
+"699Handling": 115,
 
-"969TopSpeed": 231, 
-"9690to60": 2.7, 
-"969Handling": 108,
+"969TopSpeed": 231,
+"9690to60": 2.7,
+"969Handling": 115,
 
-"996TopSpeed": 231, 
-"9960to60": 2.6, 
-"996Handling": 103
+"996TopSpeed": 231,
+"9960to60": 2.5,
+"996Handling": 111
 }

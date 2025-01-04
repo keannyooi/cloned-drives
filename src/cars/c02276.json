@@ -1,13 +1,13 @@
 {
     "carID": "c02276",
-    "cr": 970,
+    "cr": 1040,
     "make": "Alfa Romeo",
     "model": "164 Procar",
     "modelYear": 1988,
     "country": "IT",
     "topSpeed": 215,
     "0to60": 2.1,
-    "handling": 94,
+    "handling": 99,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport","Innovative", "Oddity", "Super Sedan"],
@@ -24,26 +24,26 @@
     "mra": 91.3,
     "ola": 95.23,
     "description": "The ancient Roman writer Virgil warned us against trusting appearances too much, and that’s especially true for two special Alfa Romeo 164, as under their skin hides the heart and bones of a Formula One racer.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/AlfaRomeo163Procar(1988).png",
     "creator": "Bnuuy",
 	
-"333TopSpeed": 217, 
-"3330to60": 2.0, 
-"333Handling": 97,
+"333TopSpeed": 217,
+"3330to60": 2,
+"333Handling": 102,
 
-"666TopSpeed": 220, 
-"6660to60": 1.9, 
-"666Handling": 100,
+"666TopSpeed": 220,
+"6660to60": 1.9,
+"666Handling": 106,
 
-"699TopSpeed": 220, 
-"6990to60": 1.8, 
-"699Handling": 104,
+"699TopSpeed": 220,
+"6990to60": 1.8,
+"699Handling": 110,
 
-"969TopSpeed": 222, 
-"9690to60": 1.9, 
-"969Handling": 104,
+"969TopSpeed": 222,
+"9690to60": 1.9,
+"969Handling": 110,
 
-"996TopSpeed": 222, 
-"9960to60": 1.8, 
-"996Handling": 100
+"996TopSpeed": 222,
+"9960to60": 1.8,
+"996Handling": 106
 }
