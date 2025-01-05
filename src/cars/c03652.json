@@ -1,13 +1,13 @@
 {
     "carID": "c03652",
-	"cr": 1059,
+	"cr": 1052,
     "make": ["Mercedes-Benz", "Sauber"],
     "model": "C292 #1 Sauber Motorsport",
     "modelYear": 1992,
     "country": "DE",
     "topSpeed": 230,
     "0to60": 2.7,
-    "handling": 108,
+    "handling": 107,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport", "Concept", "Unique", "Ultra Expensive","Endless Summer","The Tyrol Tour: Remix"],
@@ -27,27 +27,27 @@
     "description": "The Group C prototype which never raced due to Mercedes pulling out of Group C just before the start of the 1992 season.",
 
 
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/TS/Mercedes-BenzC292(1992).png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzC292(1992).png",
     "creator": "Sutzi",
 
 
 "333TopSpeed": 232,
 "3330to60": 2.6,
-"333Handling": 112,
+"333Handling": 111,
 
 "666TopSpeed": 235,
 "6660to60": 2.4,
-"666Handling": 115,
+"666Handling": 114,
 
 "699TopSpeed": 235,
 "6990to60": 2.3,
-"699Handling": 120,
+"699Handling": 119,
 
 "969TopSpeed": 237,
 "9690to60": 2.4,
-"969Handling": 120,
+"969Handling": 119,
 
 "996TopSpeed": 237,
 "9960to60": 2.3,
-"996Handling": 115
+"996Handling": 114
 }
