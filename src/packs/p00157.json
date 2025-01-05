@@ -1,8 +1,8 @@
 {
-    "packName": "Hybrid MEGA Pack",
-    "description": "A Huge pack of Hybrid cards",
+    "packName": "Normal MEGA Pack",
+    "description": "A Huge pack of cards",
 	"repetition": 4,
-    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/HybridMEGAPack.png",
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MEGAPack.png",
     
     "filter": {
         "make": "None",
@@ -15,7 +15,7 @@
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
-        "fuelType": "Hybrid",
+        "fuelType": "None",
         "bodyStyle": "None",
 		"seatCount": "None"
     },

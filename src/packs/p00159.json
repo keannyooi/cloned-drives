@@ -1,8 +1,8 @@
 {
-    "packName": "Hybrid MEGA Pack",
-    "description": "A Huge pack of Hybrid cards",
-	"repetition": 4,
-    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/HybridMEGAPack.png",
+    "packName": "50 Uncommon- Pack",
+    "description": "50 normal Uncommons or Lower cards",
+	"repetition": 10,
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/50uncommon-.png",
     
     "filter": {
         "make": "None",
@@ -15,61 +15,61 @@
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
-        "fuelType": "Hybrid",
+        "fuelType": "None",
         "bodyStyle": "None",
 		"seatCount": "None"
     },
 
     "packSequence": [
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 70,
-			"legendary": 30,
-			"mystic": 0
-        },
-        {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 50,
-			"legendary": 50,
-			"mystic": 0
-        },
-        {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 50,
-			"legendary": 50,
-			"mystic": 0
-        },
-        {
-			"standard": 0,			
-			"common": 0,
+			"standard": 50,			
+			"common": 50,
 			"uncommon": 0,
 			"rare": 0,
 			"epic": 0,
 			"exotic": 0,
-			"legendary": 100,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 20,			
+			"common": 30,
+			"uncommon": 50,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 50,
+			"uncommon": 50,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
 			"mystic": 0
         },
         {
 			"standard": 0,			
 			"common": 0,
-			"uncommon": 0,
+			"uncommon": 100,
 			"rare": 0,
 			"epic": 0,
 			"exotic": 0,
-			"legendary": 90,
-			"mystic": 10
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 100,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
         }
     ]
 }

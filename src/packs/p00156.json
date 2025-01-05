@@ -1,8 +1,8 @@
 {
-    "packName": "Hybrid MEGA Pack",
-    "description": "A Huge pack of Hybrid cards",
+    "packName": "Off-Road Tyre MEGA Pack",
+    "description": "A Huge pack of Off-Road Tyre cards",
 	"repetition": 4,
-    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/HybridMEGAPack.png",
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/OFFRoadMEGAPack.png",
     
     "filter": {
         "make": "None",
@@ -13,9 +13,9 @@
         "country": "None",
         "tags": "None",
         "driveType": "None",
-        "tyreType": "None",
+        "tyreType": "Off-Road",
 		"enginePos": "None",
-        "fuelType": "Hybrid",
+        "fuelType": "None",
         "bodyStyle": "None",
 		"seatCount": "None"
     },
