@@ -1,0 +1,49 @@
+{
+	"carID": "c06511",
+    "cr": 846,
+    "make": "Ford",
+    "model": "Mustang Mach-E GT Performance",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 3.7,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2273,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 67.12,
+    "ola": 92.33,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-EGTPerformance(2021).png",
+
+"333TopSpeed": 128,
+"3330to60": 3.5,
+"333Handling": 88,
+
+"666TopSpeed": 132,
+"6660to60": 3.3,
+"666Handling": 91,
+
+"699TopSpeed": 132,
+"6990to60": 3.1,
+"699Handling": 94,
+
+"969TopSpeed": 137,
+"9690to60": 3.3,
+"969Handling": 94,
+
+"996TopSpeed": 137,
+"9960to60": 3.1,
+"996Handling": 91,
+    "creator": "ama4nn"
+}

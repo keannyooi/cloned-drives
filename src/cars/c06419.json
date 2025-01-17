@@ -1,0 +1,49 @@
+{
+	"carID": "c06419",
+    "cr": 1044,
+    "make": "Ford",
+    "model": "GT Mk IV",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 225,
+    "0to60": 2.7,
+    "handling": 106,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Track Day","Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 111.56,
+    "ola": 87.12,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTMkIV(2023).png",
+
+"333TopSpeed": 227,
+"3330to60": 2.6,
+"333Handling": 109,
+
+"666TopSpeed": 230,
+"6660to60": 2.4,
+"666Handling": 113,
+
+"699TopSpeed": 230,
+"6990to60": 2.3,
+"699Handling": 118,
+
+"969TopSpeed": 232,
+"9690to60": 2.4,
+"969Handling": 118,
+
+"996TopSpeed": 232,
+"9960to60": 2.3,
+"996Handling": 113,
+    "creator": "Bnuuy"
+}

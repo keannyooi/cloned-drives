@@ -1,0 +1,49 @@
+{
+	"carID": "c06426",
+    "cr": 438,
+    "make": "Dodge",
+    "model": "Challenger Rallye Redline",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 137,
+    "0to60": 6.2,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Silver Screen"],
+    "isPrize": false,
+	
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.19,
+    "ola": 74.19,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerRallyeRedline2012.png",
+
+"333TopSpeed": 141,
+"3330to60": 5.9,
+"333Handling": 76,
+
+"666TopSpeed": 145,
+"6660to60": 5.6,
+"666Handling": 79,
+
+"699TopSpeed": 145,
+"6990to60": 5.3,
+"699Handling": 82,
+
+"969TopSpeed": 148,
+"9690to60": 5.6,
+"969Handling": 82,
+
+"996TopSpeed": 148,
+"9960to60": 5.3,
+"996Handling": 79,
+    "creator": "DodgeDemon"
+}

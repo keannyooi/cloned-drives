@@ -1,0 +1,50 @@
+{
+    "carID": "c06528",
+    "cr": 261,
+    "make": "International Harvester",
+    "model": "Scout 800B 266 4x4 Sno-Star",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 85,
+    "0to60": 16.8,
+    "handling": 58,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault","Oddity"],
+    "isPrize": true,
+    "weight": 1500,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10,
+    "ola": 54.22,
+
+    "description": "The factory snowplow package.",
+
+"333TopSpeed": 91,
+"3330to60": 16,
+"333Handling": 60,
+
+"666TopSpeed": 97,
+"6660to60": 15.1,
+"666Handling": 62,
+
+"699TopSpeed": 97,
+"6990to60": 14.3,
+"699Handling": 64,
+
+"969TopSpeed": 103,
+"9690to60": 15.1,
+"969Handling": 64,
+
+"996TopSpeed": 103,
+"9960to60": 14.3,
+"996Handling": 62,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScout800B2664x4Sno-Star(1970).png",
+    "creator": "Pfugs"
+}

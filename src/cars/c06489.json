@@ -1,0 +1,49 @@
+{
+	"carID": "c06489",
+    "cr": 665,
+    "make": "Ford",
+    "model": "GT40 Mk I Lightweight",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 202,
+    "0to60": 4.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Motorsport"],
+    "isPrize": true,
+	
+    "weight": 937,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.15,
+    "ola": 100,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT140MkILightweight(1965).png",
+
+"333TopSpeed": 205,
+"3330to60": 4,
+"333Handling": 83,
+
+"666TopSpeed": 207,
+"6660to60": 3.8,
+"666Handling": 85,
+
+"699TopSpeed": 207,
+"6990to60": 3.6,
+"699Handling": 89,
+
+"969TopSpeed": 210,
+"9690to60": 3.8,
+"969Handling": 89,
+
+"996TopSpeed": 210,
+"9960to60": 3.6,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

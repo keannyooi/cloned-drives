@@ -1,0 +1,49 @@
+{
+	"carID": "c06484",
+    "cr": 677,
+    "make": "Dodge",
+    "model": "Viper Defender Off-Road",
+    "modelYear": 1993,
+    "country": "US",
+    "topSpeed": 92,
+    "0to60": 5.5,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault","Concept","Unique","Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 1950,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 73.69,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeViperDefenderOffRoad(1993).png",
+
+"333TopSpeed": 98,
+"3330to60": 5.2,
+"333Handling": 80,
+
+"666TopSpeed": 103,
+"6660to60": 5,
+"666Handling": 82,
+
+"699TopSpeed": 103,
+"6990to60": 4.7,
+"699Handling": 85,
+
+"969TopSpeed": 109,
+"9690to60": 5,
+"969Handling": 85,
+
+"996TopSpeed": 109,
+"9960to60": 4.7,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

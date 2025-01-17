@@ -1,0 +1,50 @@
+{
+    "carID": "c06518",
+    "cr": 300,
+    "make": "Scout",
+    "model": "Race Terra NORRA Mexican 1000 #1976 Anything Scout Vintage Racing Team",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 95,
+    "0to60": 14.5,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault","Motorsport","RestoMod"],
+    "isPrize": true,
+    "weight": 1950,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 20,
+    "ola": 51.03,
+
+    "description": "VW knows how to revive a brand the right way.",
+
+"333TopSpeed": 100,
+"3330to60": 13.8,
+"333Handling": 62,
+
+"666TopSpeed": 106,
+"6660to60": 13.1,
+"666Handling": 64,
+
+"699TopSpeed": 106,
+"6990to60": 12.3,
+"699Handling": 67,
+
+"969TopSpeed": 111,
+"9690to60": 13.1,
+"969Handling": 67,
+
+"996TopSpeed": 111,
+"9960to60": 12.3,
+"996Handling": 64,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ScoutRaceTerraNORRAMexican1000(2023).png",
+    "creator": "Pfugs"
+}

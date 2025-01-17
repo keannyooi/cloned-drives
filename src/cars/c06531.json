@@ -1,0 +1,50 @@
+{
+    "carID": "c06531",
+    "cr": 227,
+    "make": "International Harvester",
+    "model": "Scout 800A 266 4x2 Traveltop",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 83,
+    "0to60": 16.6,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1380,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10,
+    "ola": 57.83,
+
+    "description": "",
+
+"333TopSpeed": 89,
+"3330to60": 15.8,
+"333Handling": 60,
+
+"666TopSpeed": 96,
+"6660to60": 14.9,
+"666Handling": 62,
+
+"699TopSpeed": 96,
+"6990to60": 14.1,
+"699Handling": 64,
+
+"969TopSpeed": 102,
+"9690to60": 14.9,
+"969Handling": 64,
+
+"996TopSpeed": 102,
+"9960to60": 14.1,
+"996Handling": 62,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScout800A2664x2Traveltop(1968).png",
+    "creator": "Pfugs"
+}

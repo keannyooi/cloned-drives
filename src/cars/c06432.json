@@ -1,0 +1,49 @@
+{
+	"carID": "c06432",
+    "cr": 658,
+    "make": "Dodge",
+    "model": "Challenger SRT 392",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 182,
+    "0to60": 4.2,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1940,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.78,
+    "ola": 80.95,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRT3922015.png",
+
+"333TopSpeed": 185,
+"3330to60": 4,
+"333Handling": 86,
+
+"666TopSpeed": 188,
+"6660to60": 3.8,
+"666Handling": 88,
+
+"699TopSpeed": 188,
+"6990to60": 3.6,
+"699Handling": 92,
+
+"969TopSpeed": 191,
+"9690to60": 3.8,
+"969Handling": 92,
+
+"996TopSpeed": 191,
+"9960to60": 3.6,
+"996Handling": 88,
+    "creator": "DodgeDemon"
+}

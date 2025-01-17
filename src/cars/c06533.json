@@ -1,0 +1,50 @@
+{
+    "carID": "c06533",
+    "cr": 215,
+    "make": "International Harvester",
+    "model": "Scout 800 152-T 4x2 Sportop",
+    "modelYear": 1966,
+    "country": "US",
+    "topSpeed": 80,
+    "0to60": 17.2,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1310,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 8,
+    "ola": 56.98,
+
+    "description": "Probably the least sporty vehicle ever to have 'Sport' in it's name. Interestingly also has a turbocharger.",
+
+"333TopSpeed": 87,
+"3330to60": 16.3,
+"333Handling": 59,
+
+"666TopSpeed": 93,
+"6660to60": 15.5,
+"666Handling": 61,
+
+"699TopSpeed": 93,
+"6990to60": 14.6,
+"699Handling": 63,
+
+"969TopSpeed": 100,
+"9690to60": 15.5,
+"969Handling": 63,
+
+"996TopSpeed": 100,
+"9960to60": 14.6,
+"996Handling": 61,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScout800152-T4x2Sportop(1966).png",
+    "creator": "Pfugs"
+}

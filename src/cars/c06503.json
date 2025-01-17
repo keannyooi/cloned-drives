@@ -1,0 +1,50 @@
+{
+	"carID": "c06503",
+    "cr": 738,
+    "make": "Ford",
+    "model": "Mustang GT Convertible",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.03,
+    "ola": 76.19,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangGTConvertible(2023).png",
+	
+
+"333TopSpeed": 158,
+"3330to60": 4.1,
+"333Handling": 91,
+
+"666TopSpeed": 162,
+"6660to60": 3.9,
+"666Handling": 94,
+
+"699TopSpeed": 162,
+"6990to60": 3.7,
+"699Handling": 98,
+
+"969TopSpeed": 165,
+"9690to60": 3.9,
+"969Handling": 98,
+
+"996TopSpeed": 165,
+"9960to60": 3.7,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

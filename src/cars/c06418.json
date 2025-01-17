@@ -1,0 +1,49 @@
+{
+	"carID": "c06418",
+    "cr": 1020,
+    "make": "Ford",
+    "model": "GT Mk II",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 223,
+    "0to60": 2.8,
+    "handling": 105,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Track Day","Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 85.71,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTMkII(2019).png",
+
+"333TopSpeed": 225,
+"3330to60": 2.7,
+"333Handling": 108,
+
+"666TopSpeed": 228,
+"6660to60": 2.5,
+"666Handling": 112,
+
+"699TopSpeed": 228,
+"6990to60": 2.4,
+"699Handling": 117,
+
+"969TopSpeed": 230,
+"9690to60": 2.5,
+"969Handling": 117,
+
+"996TopSpeed": 230,
+"9960to60": 2.4,
+"996Handling": 112,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+	"carID": "c06477",
+    "cr": 704,
+    "make": "Dodge",
+    "model": "Charger Super Bee Widebody",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 168,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 2020,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.59,
+    "ola": 82.05,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSuperBeeWidebody2023.png",
+
+"333TopSpeed": 171,
+"3330to60": 3.7,
+"333Handling": 90,
+
+"666TopSpeed": 174,
+"6660to60": 3.5,
+"666Handling": 93,
+
+"699TopSpeed": 174,
+"6990to60": 3.3,
+"699Handling": 97,
+
+"969TopSpeed": 177,
+"9690to60": 3.5,
+"969Handling": 97,
+
+"996TopSpeed": 177,
+"9960to60": 3.3,
+"996Handling": 93,
+    "creator": "DodgeDemon"
+}

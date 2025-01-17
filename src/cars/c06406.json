@@ -1,0 +1,49 @@
+{
+	"carID": "c06406",
+    "cr": 970,
+    "make": "Chevrolet",
+    "model": "Corvette ZR1 Convertible",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 229,
+    "0to60": 2.3,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Hypercar"],
+    "isPrize": false,
+	
+    "weight": 1705,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 82.5,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZR1Convertible(2024).png",
+
+"333TopSpeed": 231,
+"3330to60": 2.2,
+"333Handling": 97,
+
+"666TopSpeed": 234,
+"6660to60": 2.1,
+"666Handling": 100,
+
+"699TopSpeed": 234,
+"6990to60": 2,
+"699Handling": 104,
+
+"969TopSpeed": 236,
+"9690to60": 2.1,
+"969Handling": 104,
+
+"996TopSpeed": 236,
+"9960to60": 2,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

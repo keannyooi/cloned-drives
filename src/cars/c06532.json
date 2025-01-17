@@ -1,0 +1,50 @@
+{
+    "carID": "c06532",
+    "cr": 235,
+    "make": "International Harvester",
+    "model": "Scout 800 232 4x4 Traveltop",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 80,
+    "0to60": 18.3,
+    "handling": 56,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1395,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 8,
+    "ola": 53.55,
+
+    "description": "",
+
+"333TopSpeed": 87,
+"3330to60": 17.4,
+"333Handling": 58,
+
+"666TopSpeed": 93,
+"6660to60": 16.5,
+"666Handling": 60,
+
+"699TopSpeed": 93,
+"6990to60": 15.6,
+"699Handling": 62,
+
+"969TopSpeed": 100,
+"9690to60": 16.5,
+"969Handling": 62,
+
+"996TopSpeed": 100,
+"9960to60": 15.6,
+"996Handling": 60,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScout8002324x4Traveltop(1965).png",
+    "creator": "Pfugs"
+}

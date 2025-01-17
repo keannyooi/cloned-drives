@@ -1,0 +1,50 @@
+{
+    "carID": "c06520",
+    "cr": 266,
+    "make": "International Harvester",
+    "model": "Scout II 345 4x4 Traveler",
+    "modelYear": 1980,
+    "country": "US",
+    "topSpeed": 83,
+    "0to60": 16.7,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1710,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15,
+    "ola": 53.89,
+
+    "description": "The last of the Scouts and a heavily emission regulation-choked demise.",
+
+"333TopSpeed": 89,
+"3330to60": 15.9,
+"333Handling": 62,
+
+"666TopSpeed": 96,
+"6660to60": 15,
+"666Handling": 64,
+
+"699TopSpeed": 96,
+"6990to60": 14.2,
+"699Handling": 67,
+
+"969TopSpeed": 102,
+"9690to60": 15,
+"969Handling": 67,
+
+"996TopSpeed": 102,
+"9960to60": 14.2,
+"996Handling": 64,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScoutII3454x4Traveler(1980).png",
+    "creator": "Pfugs"
+}

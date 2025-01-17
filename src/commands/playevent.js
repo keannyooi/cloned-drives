@@ -112,63 +112,95 @@ module.exports = {
                     currentMessage.removeButtons();
                     const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
 
-                    if (result > 0) {
-                        for (let [key, value] of Object.entries(event.roster[round - 1].rewards)) {
-                            switch (key) {
-                                case "money":
-                                case "fuseTokens":
-                                case "trophies":
-                                    let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === event.name && entry[key] !== undefined);
-                                    if (hasEntry > -1) {
-                                        unclaimedRewards[hasEntry][key] += value;
-                                    }
-                                    else {
-                                        let template = {};
-                                        template[key] = value;
-                                        template.origin = event.name;
-                                        unclaimedRewards.push(template);
-                                    }
-                                    break;
-                                case "car":
-                                    unclaimedRewards.push({
-                                        car: {
-                                            carID: value.carID.slice(0, 6),
-                                            upgrade: value.upgrade
-                                        },
-                                        origin: event.name
-                                    });
-                                    break;
-                                case "pack":
-                                    unclaimedRewards.push({
-                                        pack: value.slice(0, 6),
-                                        origin: event.name
-                                    });
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
+if (result > 0) {
+    try {
+        console.log(`Processing rewards for Round ${round} of event "${event.name}"`);
 
-                        message.channel.send(`**You have beaten Round ${round}! Claim your reward using \`cd-rewards\`.**`);
-                        const set = {};
-                        set[`playerProgress.${message.author.id}`] = round + 1;
-                        await Promise.all([
-                            eventModel.updateOne({ eventID: event.eventID }, { "$set": set }),
-                            profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards })
-                        ]);
+        for (let [key, value] of Object.entries(event.roster[round - 1].rewards)) {
+            switch (key) {
+                case "money":
+                case "fuseTokens":
+                case "trophies":
+                    // Check if a reward from the same event already exists
+                    let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === event.name && entry[key] !== undefined);
+                    if (hasEntry > -1) {
+                        unclaimedRewards[hasEntry][key] += value;
+                    } else {
+                        let template = { origin: event.name };
+                        template[key] = value;
+                        unclaimedRewards.push(template);
                     }
-                    return bot.deleteID(message.author.id);
-                }
-            }
-            else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, you may not play this event yet.",
-                    desc: `The event you are trying to view is not active currently. You may only view this event if you're an <@&${eventMakerRoleID}>.`,
-                    author: message.author,
-                });
-                return message.channel.send(errorMessage);
+                    break;
+
+                case "car":
+                    if (value && value.carID && value.upgrade !== undefined) {
+                        unclaimedRewards.push({
+                            car: {
+                                carID: value.carID.slice(0, 6),
+                                upgrade: value.upgrade
+                            },
+                            origin: event.name
+                        });
+                    } else {
+                        console.error(`Invalid car reward format for Round ${round}:`, value);
+                    }
+                    break;
+
+                case "pack":
+                    if (value && typeof value === "string") {
+                        unclaimedRewards.push({
+                            pack: value.slice(0, 6),
+                            origin: event.name
+                        });
+                    } else {
+                        console.error(`Invalid pack reward format for Round ${round}:`, value);
+                    }
+                    break;
+
+                default:
+                    console.warn(`Unrecognized reward type "${key}" in Round ${round} of event "${event.name}"`);
+                    break;
             }
         }
+
+        // Log the updated rewards array
+        console.log("Updated unclaimedRewards:", unclaimedRewards);
+
+        // Update player progress and rewards atomically
+        const set = {};
+        set[`playerProgress.${message.author.id}`] = round + 1;
+
+        const session = await profileModel.startSession();
+        session.startTransaction();
+        try {
+            await eventModel.updateOne(
+                { eventID: event.eventID },
+                { "$set": set },
+                { session }
+            );
+            await profileModel.updateOne(
+                { userID: message.author.id },
+                { unclaimedRewards },
+                { session }
+            );
+            await session.commitTransaction();
+
+            // Notify the user of success
+            message.channel.send(`**You have beaten Round ${round}! Claim your reward using \`cd-rewards\`.**`);
+        } catch (dbError) {
+            await session.abortTransaction();
+            console.error("Database update failed:", dbError);
+            message.channel.send("An error occurred while updating your progress and rewards. Please try again later.");
+        } finally {
+            session.endSession();
+        }
+    } catch (error) {
+        console.error("An error occurred while processing rewards:", error);
+        message.channel.send("An unexpected error occurred while processing your rewards. Please contact support.");
     }
+}
+				}
+        }
+    }
+	}
 };

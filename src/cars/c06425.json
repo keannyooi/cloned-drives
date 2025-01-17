@@ -1,0 +1,49 @@
+{
+	"carID": "c06425",
+    "cr": 687,
+    "make": "Dodge",
+    "model": "Challenger GT AWD Concept",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 165,
+    "0to60": 4.2,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Concept"],
+    "isPrize": false,
+	
+    "weight": 1960,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.41,
+    "ola": 73.81,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerGTAWDConcept2015.png",
+
+"333TopSpeed": 168,
+"3330to60": 4,
+"333Handling": 86,
+
+"666TopSpeed": 171,
+"6660to60": 3.8,
+"666Handling": 88,
+
+"699TopSpeed": 171,
+"6990to60": 3.6,
+"699Handling": 92,
+
+"969TopSpeed": 174,
+"9690to60": 3.8,
+"969Handling": 92,
+
+"996TopSpeed": 174,
+"9960to60": 3.6,
+"996Handling": 88,
+    "creator": "DodgeDemon"
+}

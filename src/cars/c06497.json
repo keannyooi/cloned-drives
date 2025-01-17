@@ -1,0 +1,49 @@
+{
+	"carID": "c06497",
+    "cr": 887,
+    "make": ["Shelby","Ford"],
+    "model": "Super Snake",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 215,
+    "0to60": 3,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Tuner","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1701,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 107.89,
+    "ola": 83.56,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ShelbySuperSnake(2024).png",
+
+"333TopSpeed": 217,
+"3330to60": 2.8,
+"333Handling": 96,
+
+"666TopSpeed": 220,
+"6660to60": 2.7,
+"666Handling": 99,
+
+"699TopSpeed": 220,
+"6990to60": 2.5,
+"699Handling": 103,
+
+"969TopSpeed": 222,
+"9690to60": 2.7,
+"969Handling": 103,
+
+"996TopSpeed": 222,
+"9960to60": 2.5,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

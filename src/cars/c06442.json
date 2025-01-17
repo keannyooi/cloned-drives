@@ -1,0 +1,49 @@
+{
+	"carID": "c06442",
+    "cr": 399,
+    "make": "Dodge",
+    "model": "Challenger SXT",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 6.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1740,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.81,
+    "ola": 75,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSXT2011.png",
+
+"333TopSpeed": 123,
+"3330to60": 6.1,
+"333Handling": 75,
+
+"666TopSpeed": 128,
+"6660to60": 5.8,
+"666Handling": 78,
+
+"699TopSpeed": 128,
+"6990to60": 5.4,
+"699Handling": 81,
+
+"969TopSpeed": 132,
+"9690to60": 5.8,
+"969Handling": 81,
+
+"996TopSpeed": 132,
+"9960to60": 5.4,
+"996Handling": 78,
+    "creator": "DodgeDemon"
+}

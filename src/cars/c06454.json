@@ -1,0 +1,49 @@
+{
+	"carID": "c06454",
+    "cr": 487,
+    "make": "Dodge",
+    "model": "Charger Police Hemi",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 150,
+    "0to60": 5.8,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": true,
+	
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.94,
+    "ola": 76.12,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerPoliceHemi2006.png",
+
+"333TopSpeed": 153,
+"3330to60": 5.5,
+"333Handling": 76,
+
+"666TopSpeed": 157,
+"6660to60": 5.2,
+"666Handling": 79,
+
+"699TopSpeed": 157,
+"6990to60": 4.9,
+"699Handling": 82,
+
+"969TopSpeed": 160,
+"9690to60": 5.2,
+"969Handling": 82,
+
+"996TopSpeed": 160,
+"9960to60": 4.9,
+"996Handling": 79,
+    "creator": "DodgeDemon"
+}

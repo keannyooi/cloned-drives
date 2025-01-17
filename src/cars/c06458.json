@@ -1,0 +1,49 @@
+{
+	"carID": "c06458",
+    "cr": 545,
+    "make": "Dodge",
+    "model": "Charger R/T",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 5.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1930,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.73,
+    "ola": 80.25,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRT2011.png",
+
+"333TopSpeed": 135,
+"3330to60": 4.9,
+"333Handling": 79,
+
+"666TopSpeed": 139,
+"6660to60": 4.7,
+"666Handling": 81,
+
+"699TopSpeed": 139,
+"6990to60": 4.4,
+"699Handling": 84,
+
+"969TopSpeed": 143,
+"9690to60": 4.7,
+"969Handling": 84,
+
+"996TopSpeed": 143,
+"9960to60": 4.4,
+"996Handling": 81,
+    "creator": "DodgeDemon"
+}

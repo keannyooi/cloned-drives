@@ -1,0 +1,49 @@
+{
+	"carID": "c06507",
+    "cr": 470,
+    "make": "Ford",
+    "model": "Mustang Mach-E",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 6.8,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1959,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 51.95,
+    "ola": 90,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-E(2020).png",
+
+"333TopSpeed": 117,
+"3330to60": 6.5,
+"333Handling": 84,
+
+"666TopSpeed": 121,
+"6660to60": 6.1,
+"666Handling": 86,
+
+"699TopSpeed": 121,
+"6990to60": 5.8,
+"699Handling": 90,
+
+"969TopSpeed": 126,
+"9690to60": 6.1,
+"969Handling": 90,
+
+"996TopSpeed": 126,
+"9960to60": 5.8,
+"996Handling": 86,
+    "creator": "ama4nn"
+}

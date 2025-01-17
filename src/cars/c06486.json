@@ -1,0 +1,49 @@
+{
+	"carID": "c06486",
+    "cr": 524,
+    "make": "Ford",
+    "model": "GT 101 Prototype",
+    "modelYear": 1964,
+    "country": "US",
+    "topSpeed": 165,
+    "0to60": 5.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 81.26,
+    "ola": 97.56,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT101Prototype(1964).png",
+
+"333TopSpeed": 168,
+"3330to60": 4.8,
+"333Handling": 77,
+
+"666TopSpeed": 171,
+"6660to60": 4.5,
+"666Handling": 80,
+
+"699TopSpeed": 171,
+"6990to60": 4.3,
+"699Handling": 83,
+
+"969TopSpeed": 174,
+"9690to60": 4.5,
+"969Handling": 83,
+
+"996TopSpeed": 174,
+"9960to60": 4.3,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

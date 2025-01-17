@@ -1,0 +1,49 @@
+{
+	"carID": "c06404",
+    "cr": 994,
+    "make": "Chevrolet",
+    "model": "Corvette Z06 GT3.R #63 DXDT Racing",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 191,
+    "0to60": 2.8,
+    "handling": 104,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.95,
+    "ola": 83.26,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZ06GT3R(2024).png",
+
+"333TopSpeed": 194,
+"3330to60": 2.7,
+"333Handling": 107,
+
+"666TopSpeed": 196,
+"6660to60": 2.5,
+"666Handling": 111,
+
+"699TopSpeed": 196,
+"6990to60": 2.4,
+"699Handling": 115,
+
+"969TopSpeed": 199,
+"9690to60": 2.5,
+"969Handling": 115,
+
+"996TopSpeed": 199,
+"9960to60": 2.4,
+"996Handling": 111,
+    "creator": "Bnuuy"
+}

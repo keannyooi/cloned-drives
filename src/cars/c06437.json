@@ -1,0 +1,49 @@
+{
+	"carID": "c06437",
+    "cr": 755,
+    "make": "Dodge",
+    "model": "Challenger SRT Hellcat Redeye Widebody",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 203,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 2050,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.34,
+    "ola": 100,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTHellcatRedeyeWidebody2019.png",
+
+"333TopSpeed": 206,
+"3330to60": 3.4,
+"333Handling": 90,
+
+"666TopSpeed": 208,
+"6660to60": 3.2,
+"666Handling": 93,
+
+"699TopSpeed": 208,
+"6990to60": 3.1,
+"699Handling": 97,
+
+"969TopSpeed": 211,
+"9690to60": 3.2,
+"969Handling": 97,
+
+"996TopSpeed": 211,
+"9960to60": 3.1,
+"996Handling": 93,
+    "creator": "DodgeDemon"
+}

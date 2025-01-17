@@ -1,0 +1,49 @@
+{
+	"carID": "c06413",
+    "cr": 809,
+    "make": "Lucid",
+    "model": "Air Touring",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 140,
+    "0to60": 3.4,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2360,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 81.6,
+    "ola": 80.19,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LucidAirTouring(2023).png",
+
+"333TopSpeed": 144,
+"3330to60": 3.2,
+"333Handling": 85,
+
+"666TopSpeed": 147,
+"6660to60": 3.1,
+"666Handling": 87,
+
+"699TopSpeed": 147,
+"6990to60": 2.9,
+"699Handling": 91,
+
+"969TopSpeed": 151,
+"9690to60": 3.1,
+"969Handling": 91,
+
+"996TopSpeed": 151,
+"9960to60": 2.9,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

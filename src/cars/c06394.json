@@ -1,0 +1,49 @@
+{
+    "carID": "c06394",
+    "cr": 487,
+    "make": "Jeep",
+    "model": "Gladiator 4600",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 98,
+    "0to60": 7.9,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault","Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 2100,
+    "gc": "High",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.02,
+    "ola": 65.82,
+    "description": "",
+	"racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JeepGladiator4600(2019).png",
+
+"333TopSpeed": 103,
+"3330to60": 7.5,
+"333Handling": 68,
+
+"666TopSpeed": 109,
+"6660to60": 7.1,
+"666Handling": 70,
+
+"699TopSpeed": 109,
+"6990to60": 6.7,
+"699Handling": 73,
+
+"969TopSpeed": 114,
+"9690to60": 7.1,
+"969Handling": 73,
+
+"996TopSpeed": 114,
+"9960to60": 6.7,
+"996Handling": 70,
+    "creator": "DodgeDemon"
+}

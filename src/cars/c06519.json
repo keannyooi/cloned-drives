@@ -1,0 +1,50 @@
+{
+    "carID": "c06519",
+    "cr": 258,
+    "make": "International Harvester",
+    "model": "Scout II 345 4x4 Midas Cruiser",
+    "modelYear": 1980,
+    "country": "US",
+    "topSpeed": 82,
+    "0to60": 16.9,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15,
+    "ola": 53.25,
+
+    "description": "For some of the last Scouts, IH contracted Midas Van Conversion Co. out of Elkhart to build a special edition.",
+
+"333TopSpeed": 88,
+"3330to60": 16.1,
+"333Handling": 61,
+
+"666TopSpeed": 95,
+"6660to60": 15.2,
+"666Handling": 63,
+
+"699TopSpeed": 95,
+"6990to60": 14.4,
+"699Handling": 65,
+
+"969TopSpeed": 101,
+"9690to60": 15.2,
+"969Handling": 65,
+
+"996TopSpeed": 101,
+"9960to60": 14.4,
+"996Handling": 63,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/1new/0in/InternationalHarvesterScoutII3454x4MidasCruiser(1980).png",
+    "creator": "Pfugs"
+}

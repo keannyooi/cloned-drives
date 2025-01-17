@@ -1,0 +1,49 @@
+{
+	"carID": "c06429",
+    "cr": 690,
+    "make": "Dodge",
+    "model": "Challenger R/T Scat Pack 1320",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 168,
+    "0to60": 3.8,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.18,
+    "ola": 83.72,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerRTScatPack13202019.png",
+
+"333TopSpeed": 171,
+"3330to60": 3.6,
+"333Handling": 86,
+
+"666TopSpeed": 174,
+"6660to60": 3.4,
+"666Handling": 88,
+
+"699TopSpeed": 174,
+"6990to60": 3.2,
+"699Handling": 92,
+
+"969TopSpeed": 177,
+"9690to60": 3.4,
+"969Handling": 92,
+
+"996TopSpeed": 177,
+"9960to60": 3.2,
+"996Handling": 88,
+    "creator": "DodgeDemon"
+}

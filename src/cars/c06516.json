@@ -1,0 +1,49 @@
+{
+	"carID": "c06516",
+    "cr": 875,
+    "make": "Dodge",
+    "model": "Challenger SRT Demon 170",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 1.7,
+    "handling": 30,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Track Day"],
+    "isPrize": true,
+	
+    "weight": 1939,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92.67,
+    "ola": 82.35,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTDemon1702023.png",
+
+"333TopSpeed": 152,
+"3330to60": 1.6,
+"333Handling": 31,
+
+"666TopSpeed": 156,
+"6660to60": 1.5,
+"666Handling": 32,
+
+"699TopSpeed": 156,
+"6990to60": 1.4,
+"699Handling": 33,
+
+"969TopSpeed": 159,
+"9690to60": 1.5,
+"969Handling": 33,
+
+"996TopSpeed": 159,
+"9960to60": 1.4,
+"996Handling": 32,
+    "creator": "DodgeDemon"
+}

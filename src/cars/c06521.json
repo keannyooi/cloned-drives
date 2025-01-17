@@ -1,0 +1,50 @@
+{
+    "carID": "c06521",
+    "cr": 299,
+    "make": "International Harvester",
+    "model": "Super Scout II 345",
+    "modelYear": 1977,
+    "country": "US",
+    "topSpeed": 85,
+    "0to60": 15.4,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1524,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 18,
+    "ola": 54.55,
+
+    "description": "",
+
+"333TopSpeed": 91,
+"3330to60": 14.6,
+"333Handling": 64,
+
+"666TopSpeed": 97,
+"6660to60": 13.9,
+"666Handling": 66,
+
+"699TopSpeed": 97,
+"6990to60": 13.1,
+"699Handling": 69,
+
+"969TopSpeed": 103,
+"9690to60": 13.9,
+"969Handling": 69,
+
+"996TopSpeed": 103,
+"9960to60": 13.1,
+"996Handling": 66,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterSuperScoutII345(1977).png",
+    "creator": "Pfugs"
+}

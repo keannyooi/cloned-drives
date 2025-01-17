@@ -1,0 +1,49 @@
+{
+	"carID": "c06479",
+    "cr": 427,
+    "make": "Dodge",
+    "model": "Charger SXT",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 6.4,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.02,
+    "ola": 75,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSXT2015.png",
+
+"333TopSpeed": 123,
+"3330to60": 6.1,
+"333Handling": 80,
+
+"666TopSpeed": 128,
+"6660to60": 5.8,
+"666Handling": 82,
+
+"699TopSpeed": 128,
+"6990to60": 5.4,
+"699Handling": 85,
+
+"969TopSpeed": 132,
+"9690to60": 5.8,
+"969Handling": 85,
+
+"996TopSpeed": 132,
+"9960to60": 5.4,
+"996Handling": 82,
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,49 @@
+{
+	"carID": "c06513",
+    "cr": 952,
+    "make": "Ford",
+    "model": "Mustang Mach-E 1400",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 160,
+    "0to60": 2.1,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly","Track Day","Unique","Oddity"],
+    "isPrize": true,
+	
+    "weight": 2250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 121.68,
+    "ola": 103.46,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-E1400(2020).png",
+
+"333TopSpeed": 163,
+"3330to60": 2,
+"333Handling": 94,
+
+"666TopSpeed": 167,
+"6660to60": 1.9,
+"666Handling": 97,
+
+"699TopSpeed": 167,
+"6990to60": 1.8,
+"699Handling": 101,
+
+"969TopSpeed": 170,
+"9690to60": 1.9,
+"969Handling": 101,
+
+"996TopSpeed": 170,
+"9960to60": 1.8,
+"996Handling": 97,
+    "creator": "ama4nn"
+}

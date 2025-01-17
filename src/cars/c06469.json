@@ -1,0 +1,49 @@
+{
+	"carID": "c06469",
+    "cr": 653,
+    "make": "Dodge",
+    "model": "Charger SRT 392",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 178,
+    "0to60": 4.3,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.13,
+    "ola": 79.07,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRT3922015.png",
+
+"333TopSpeed": 181,
+"3330to60": 4.1,
+"333Handling": 87,
+
+"666TopSpeed": 184,
+"6660to60": 3.9,
+"666Handling": 90,
+
+"699TopSpeed": 184,
+"6990to60": 3.7,
+"699Handling": 93,
+
+"969TopSpeed": 187,
+"9690to60": 3.9,
+"969Handling": 93,
+
+"996TopSpeed": 187,
+"9960to60": 3.7,
+"996Handling": 90,
+    "creator": "DodgeDemon"
+}

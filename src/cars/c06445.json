@@ -1,0 +1,49 @@
+{
+    "carID": "c06445",
+    "cr": 801,
+    "make": ["Wingard Motorsports & Custom Coaches", "Shelby"],
+    "model": "Shelby Series 2 Coupe 7.3 Godzilla 25th Anniversary Edition",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 200,
+    "0to60": 3.5,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1451,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 101.45,
+    "ola": 91.43,
+    "description": "The idea of producing a 'Series 2' materialized yet again in 2023, just ahead of the Series 1's 25th anniversary, when it was made official that 10 Series 2 Coupes would be built with a variety of engine options that might even include an all-electric powertrain.",
+
+"333TopSpeed": 203,
+"3330to60": 3.3,
+"333Handling": 92,
+
+"666TopSpeed": 205,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 205,
+"6990to60": 3,
+"699Handling": 99,
+
+"969TopSpeed": 208,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 208,
+"9960to60": 3,
+"996Handling": 95,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/WingardMotorsports%26CustomCoachesShelbySeries2Coupe7.3Godzilla25thAnniversaryEdition(2024).png",
+    "creator": "Pfugs"
+}

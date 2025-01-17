@@ -1,0 +1,49 @@
+{
+	"carID": "c06504",
+    "cr": 840,
+    "make": "Ford",
+    "model": "Mustang FP800S",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 209,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 101.11,
+    "ola": 87.62,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangFP800S(2023).png",
+
+"333TopSpeed": 211,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 214,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 214,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 216,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 216,
+"9960to60": 2.8,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

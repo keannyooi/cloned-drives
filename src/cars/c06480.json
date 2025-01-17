@@ -1,0 +1,49 @@
+{
+	"carID": "c06480",
+    "cr": 423,
+    "make": "Dodge",
+    "model": "Charger SXT AWD",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 6.7,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1880,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.74,
+    "ola": 81.17,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSXTAWD2012.png",
+
+"333TopSpeed": 123,
+"3330to60": 6.4,
+"333Handling": 77,
+
+"666TopSpeed": 128,
+"6660to60": 6,
+"666Handling": 80,
+
+"699TopSpeed": 128,
+"6990to60": 5.7,
+"699Handling": 83,
+
+"969TopSpeed": 132,
+"9690to60": 6,
+"969Handling": 83,
+
+"996TopSpeed": 132,
+"9960to60": 5.7,
+"996Handling": 80,
+    "creator": "DodgeDemon"
+}

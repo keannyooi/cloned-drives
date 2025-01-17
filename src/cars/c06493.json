@@ -1,0 +1,49 @@
+{
+	"carID": "c06493",
+    "cr": 715,
+    "make": "Ford",
+    "model": "GT J-1",
+    "modelYear": 1966,
+    "country": "US",
+    "topSpeed": 206,
+    "0to60": 3.9,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 102.69,
+    "ola": 104.56,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTJ1(1966).png",
+
+"333TopSpeed": 209,
+"3330to60": 3.7,
+"333Handling": 85,
+
+"666TopSpeed": 211,
+"6660to60": 3.5,
+"666Handling": 87,
+
+"699TopSpeed": 211,
+"6990to60": 3.3,
+"699Handling": 91,
+
+"969TopSpeed": 214,
+"9690to60": 3.5,
+"969Handling": 91,
+
+"996TopSpeed": 214,
+"9960to60": 3.3,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

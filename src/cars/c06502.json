@@ -1,0 +1,50 @@
+{
+	"carID": "c06502",
+    "cr": 760,
+    "make": "Ford",
+    "model": "Mustang GT",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1736,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.5,
+    "ola": 74.42,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangGT(2023).png",
+	
+
+"333TopSpeed": 158,
+"3330to60": 4,
+"333Handling": 92,
+
+"666TopSpeed": 162,
+"6660to60": 3.8,
+"666Handling": 95,
+
+"699TopSpeed": 162,
+"6990to60": 3.6,
+"699Handling": 99,
+
+"969TopSpeed": 165,
+"9690to60": 3.8,
+"969Handling": 99,
+
+"996TopSpeed": 165,
+"9960to60": 3.6,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

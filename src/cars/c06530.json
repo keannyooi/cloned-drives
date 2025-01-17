@@ -1,0 +1,50 @@
+{
+    "carID": "c06530",
+    "cr": 297,
+    "make": "International Harvester",
+    "model": "Scout 800A 304 4x4 Aristocrat",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 86,
+    "0to60": 14.7,
+    "handling": 58,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1415,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 12,
+    "ola": 54.42,
+
+    "description": "The Aristocrat Package was the final send-off for the original-bodied Scout.",
+
+"333TopSpeed": 92,
+"3330to60": 14,
+"333Handling": 60,
+
+"666TopSpeed": 98,
+"6660to60": 13.2,
+"666Handling": 62,
+
+"699TopSpeed": 98,
+"6990to60": 12.5,
+"699Handling": 64,
+
+"969TopSpeed": 104,
+"9690to60": 13.2,
+"969Handling": 64,
+
+"996TopSpeed": 104,
+"9960to60": 12.5,
+"996Handling": 62,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScout800A3044x4Aristocrat(1968).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,49 @@
+{
+	"carID": "c06462",
+    "cr": 499,
+    "make": "Dodge",
+    "model": "Charger R/T Daytona",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.48,
+    "ola": 78.62,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRTDaytona2006.png",
+
+"333TopSpeed": 149,
+"3330to60": 5.4,
+"333Handling": 77,
+
+"666TopSpeed": 152,
+"6660to60": 5.1,
+"666Handling": 80,
+
+"699TopSpeed": 152,
+"6990to60": 4.8,
+"699Handling": 83,
+
+"969TopSpeed": 156,
+"9690to60": 5.1,
+"969Handling": 83,
+
+"996TopSpeed": 156,
+"9960to60": 4.8,
+"996Handling": 80,
+    "creator": "DodgeDemon"
+}

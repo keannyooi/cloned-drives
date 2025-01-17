@@ -1,0 +1,49 @@
+{
+	"carID": "c06496",
+    "cr": 822,
+    "make": ["Shelby","Ford"],
+    "model": "85th Commemorative Edition GT40",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 227,
+    "0to60": 3.3,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Track Day","Ultra Expensive","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 1080,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 106.51,
+    "ola": 104.95,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Shelby85thCommemorativeEditionGT40(2008).png",
+
+"333TopSpeed": 229,
+"3330to60": 3.1,
+"333Handling": 90,
+
+"666TopSpeed": 232,
+"6660to60": 3,
+"666Handling": 93,
+
+"699TopSpeed": 232,
+"6990to60": 2.8,
+"699Handling": 97,
+
+"969TopSpeed": 234,
+"9690to60": 3,
+"969Handling": 97,
+
+"996TopSpeed": 234,
+"9960to60": 2.8,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

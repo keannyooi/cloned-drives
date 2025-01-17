@@ -1,0 +1,49 @@
+{
+	"carID": "c06505",
+    "cr": 861,
+    "make": "Ford",
+    "model": "Mustang GTD",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 202,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.52,
+    "ola": 80,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangGTD(2023).png",
+
+"333TopSpeed": 205,
+"3330to60": 3.1,
+"333Handling": 98,
+
+"666TopSpeed": 207,
+"6660to60": 3,
+"666Handling": 101,
+
+"699TopSpeed": 207,
+"6990to60": 2.8,
+"699Handling": 105,
+
+"969TopSpeed": 210,
+"9690to60": 3,
+"969Handling": 105,
+
+"996TopSpeed": 210,
+"9960to60": 2.8,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+	"carID": "c06498",
+    "cr": 864,
+    "make": ["Shelby","Ford"],
+    "model": "Super Snake Convertible",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 212,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Tuner","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1765,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.59,
+    "ola": 85.11,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ShelbySuperSnakeConvertible(2024).png",
+
+"333TopSpeed": 214,
+"3330to60": 2.9,
+"333Handling": 95,
+
+"666TopSpeed": 217,
+"6660to60": 2.8,
+"666Handling": 98,
+
+"699TopSpeed": 217,
+"6990to60": 2.6,
+"699Handling": 102,
+
+"969TopSpeed": 219,
+"9690to60": 2.8,
+"969Handling": 102,
+
+"996TopSpeed": 219,
+"9960to60": 2.6,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

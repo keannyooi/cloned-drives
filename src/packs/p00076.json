@@ -1,6 +1,6 @@
 {
-	"packName": "German Standard Pack",
-	"description": "The pack consisting of random German cards from standard all the way to legendary.",
+	"packName": "German Basic Pack",
+	"description": "The pack consisting of random German cards from uncommon all the way to legendary.",
 	"price": 65000,
 	"repetition": 1,
 	"pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/DEStandard.png",
@@ -23,30 +23,10 @@
 
 	"packSequence": [
 		{
-			"standard": 50,			
-			"common": 50,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 0,
-			"legendary": 0,
-			"mystic": 0
-		},
-		{
 			"standard": 0,			
-			"common": 70,
-			"uncommon": 30,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 0,
-			"legendary": 0,
-			"mystic": 0
-		},
-		{
-			"standard": 0,			
-			"common": 70,
-			"uncommon": 30,
-			"rare": 0,
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
 			"epic": 0,
 			"exotic": 0,
 			"legendary": 0,
@@ -55,8 +35,28 @@
 		{
 			"standard": 0,			
 			"common": 0,
-			"uncommon": 60,
+			"uncommon": 70,
 			"rare": 30,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 0,
+			"mystic": 0
+		},
+		{
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 30,
+			"rare": 60,
 			"epic": 10,
 			"exotic": 0,
 			"legendary": 0,

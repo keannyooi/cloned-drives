@@ -1,0 +1,18 @@
+{
+	"trackName": "Eighth Mile Drag (Sunny)",
+	"weather": "Sunny",
+	"surface": "Drag",
+	"speedbumps": 3,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZmdgDS5GsALKuOXo/T/1-8Mile.png",
+	
+	"specsDistr": {
+		"topSpeed": 1,
+		"0to60": 60,
+		"handling": 0,
+		"weight": 0,
+		"mra": 10,
+		"ola": 30
+	}
+}

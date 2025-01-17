@@ -1,6 +1,6 @@
 {
     "carID": "c00348",
-    "cr": 478,
+    "cr": 483,
     "make": "Dodge",
     "model": "Challenger GT AWD",
     "modelYear": 2017,
@@ -14,7 +14,7 @@
         "Muscle Car"
     ],
     "isPrize": false,
-    "weight": 1861,
+    "weight": 1860,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Coupe",
@@ -23,7 +23,7 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 63,
-    "ola": 82.54,
+    "ola": 73.02,
     "description": "",
      "333TopSpeed": 135,
     "3330to60": 6.0,
@@ -40,6 +40,6 @@
     "699TopSpeed": 139,
     "6990to60": 5.4,
     "699Handling": 85,
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerAWD(2017).png",
-    "creator": "McNuggets"
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerGTAWD2017.png",
+    "creator": "DodgeDemon"
 }

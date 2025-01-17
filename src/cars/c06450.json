@@ -1,0 +1,50 @@
+{
+    "carID": "c06450",
+    "cr": 665,
+    "make": "Shelby",
+    "model": "Series 1",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 170,
+    "0to60": 4.4,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1202,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 81.82,
+
+    "description": "Carroll Shelby's only own car turned out to be a complete disaster and subsequently flopped. The engineering was great, everything else not so much.",
+
+"333TopSpeed": 173,
+"3330to60": 4.2,
+"333Handling": 89,
+
+"666TopSpeed": 176,
+"6660to60": 4,
+"666Handling": 92,
+
+"699TopSpeed": 176,
+"6990to60": 3.7,
+"699Handling": 95,
+
+"969TopSpeed": 179,
+"9690to60": 4,
+"969Handling": 95,
+
+"996TopSpeed": 179,
+"9960to60": 3.7,
+"996Handling": 92,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ShelbySeries1(1999).png",
+    "creator": "Pfugs"
+}

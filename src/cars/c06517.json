@@ -1,0 +1,49 @@
+{
+	"carID": "c06517",
+    "cr": 654,
+    "make": "Dodge",
+    "model": "Challenger R/T Scat Pack Widebody",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 175,
+    "0to60": 4.3,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1960,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.58,
+    "ola": 82.55,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeViperRTScatPackWidebody2019.png",
+
+"333TopSpeed": 178,
+"3330to60": 4.1,
+"333Handling": 88,
+
+"666TopSpeed": 181,
+"6660to60": 3.9,
+"666Handling": 91,
+
+"699TopSpeed": 181,
+"6990to60": 3.7,
+"699Handling": 94,
+
+"969TopSpeed": 184,
+"9690to60": 3.9,
+"969Handling": 94,
+
+"996TopSpeed": 184,
+"9960to60": 3.7,
+"996Handling": 91,
+    "creator": "DodgeDemon"
+}

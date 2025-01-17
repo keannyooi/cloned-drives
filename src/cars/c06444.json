@@ -1,0 +1,49 @@
+{
+	"carID": "c06444",
+    "cr": 614,
+    "make": "Dodge",
+    "model": "Challenger T/A",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1890,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.13,
+    "ola": 77.55,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerTA2017.png",
+
+"333TopSpeed": 158,
+"3330to60": 4.7,
+"333Handling": 82,
+
+"666TopSpeed": 162,
+"6660to60": 4.4,
+"666Handling": 84,
+
+"699TopSpeed": 162,
+"6990to60": 4.2,
+"699Handling": 88,
+
+"969TopSpeed": 165,
+"9690to60": 4.4,
+"969Handling": 88,
+
+"996TopSpeed": 165,
+"9960to60": 4.2,
+"996Handling": 84,
+    "creator": "DodgeDemon"
+}

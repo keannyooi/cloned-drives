@@ -1,0 +1,49 @@
+{
+	"carID": "c06482",
+    "cr": 506,
+    "make": "Dodge",
+    "model": "Super8hemi Concept",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 154,
+    "0to60": 5.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car", "Concept"],
+    "isPrize": false,
+	
+    "weight": 1633,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.37,
+    "ola": 77.19,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeSuper8HemiConcept2001.png",
+
+"333TopSpeed": 157,
+"3330to60": 5.4,
+"333Handling": 76,
+
+"666TopSpeed": 161,
+"6660to60": 5.1,
+"666Handling": 79,
+
+"699TopSpeed": 161,
+"6990to60": 4.8,
+"699Handling": 82,
+
+"969TopSpeed": 164,
+"9690to60": 5.1,
+"969Handling": 82,
+
+"996TopSpeed": 164,
+"9960to60": 4.8,
+"996Handling": 79,
+    "creator": "DodgeDemon"
+}

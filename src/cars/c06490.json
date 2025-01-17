@@ -1,0 +1,49 @@
+{
+	"carID": "c06490",
+    "cr": 507,
+    "make": "Ford",
+    "model": "GT40 Mk III",
+    "modelYear": 1966,
+    "country": "US",
+    "topSpeed": 158,
+    "0to60": 5.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.77,
+    "ola": 93.56,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT40MkIII(1966).png",
+
+"333TopSpeed": 161,
+"3330to60": 4.9,
+"333Handling": 80,
+
+"666TopSpeed": 165,
+"6660to60": 4.7,
+"666Handling": 82,
+
+"699TopSpeed": 165,
+"6990to60": 4.4,
+"699Handling": 85,
+
+"969TopSpeed": 168,
+"9690to60": 4.7,
+"969Handling": 85,
+
+"996TopSpeed": 168,
+"9960to60": 4.4,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

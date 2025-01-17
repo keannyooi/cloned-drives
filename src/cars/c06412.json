@@ -1,0 +1,49 @@
+{
+	"carID": "c06412",
+    "cr": 870,
+    "make": "Chevrolet",
+    "model": "Corvette Z06 Z07 Export",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 189,
+    "0to60": 3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Supercar","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1714,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.95,
+    "ola": 80,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZ06Z07Export2023.png",
+
+"333TopSpeed": 192,
+"3330to60": 2.8,
+"333Handling": 98,
+
+"666TopSpeed": 195,
+"6660to60": 2.7,
+"666Handling": 101,
+
+"699TopSpeed": 195,
+"6990to60": 2.5,
+"699Handling": 105,
+
+"969TopSpeed": 197,
+"9690to60": 2.7,
+"969Handling": 105,
+
+"996TopSpeed": 197,
+"9960to60": 2.5,
+"996Handling": 101,
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06448",
+    "cr": 714,
+    "make": "Shelby",
+    "model": "Series 1 Supercharged",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 183,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1202,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.36,
+    "ola": 85.37,
+
+    "description": "The holy grail Series 1.",
+
+"333TopSpeed": 186,
+"3330to60": 3.9,
+"333Handling": 90,
+
+"666TopSpeed": 189,
+"6660to60": 3.7,
+"666Handling": 93,
+
+"699TopSpeed": 189,
+"6990to60": 3.5,
+"699Handling": 97,
+
+"969TopSpeed": 192,
+"9690to60": 3.7,
+"969Handling": 97,
+
+"996TopSpeed": 192,
+"9960to60": 3.5,
+"996Handling": 93,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ShelbySeries1Supercharged(1999).png",
+    "creator": "Pfugs"
+}

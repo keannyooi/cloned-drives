@@ -1,0 +1,75 @@
+{
+    "packName": "American MEGA Pack",
+    "description": "A Huge pack of American cards",
+	"repetition": 4,
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MotorSportMEGAPack.png",
+    
+    "filter": {
+        "make": "US",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 70,
+			"legendary": 30,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 50,
+			"legendary": 50,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 50,
+			"legendary": 50,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 100,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 0,
+			"exotic": 0,
+			"legendary": 90,
+			"mystic": 10
+        }
+    ]
+}

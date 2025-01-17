@@ -1,0 +1,49 @@
+{
+	"carID": "c06494",
+    "cr": 513,
+    "make": "Ford",
+    "model": "GT Roadster Prototype",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 161,
+    "0to60": 5.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 980,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.43,
+    "ola": 104.63,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTRoadsterPrototype(1965).png",
+
+"333TopSpeed": 164,
+"3330to60": 4.8,
+"333Handling": 79,
+
+"666TopSpeed": 167,
+"6660to60": 4.6,
+"666Handling": 81,
+
+"699TopSpeed": 167,
+"6990to60": 4.3,
+"699Handling": 84,
+
+"969TopSpeed": 171,
+"9690to60": 4.6,
+"969Handling": 84,
+
+"996TopSpeed": 171,
+"9960to60": 4.3,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

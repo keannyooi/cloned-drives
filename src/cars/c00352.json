@@ -1,6 +1,6 @@
 {
     "carID": "c00352",
-    "cr": 723,
+    "cr": 732,
     "make": "Dodge",
     "model": "Challenger SRT Hellcat Widebody",
     "modelYear": 2018,
@@ -15,7 +15,7 @@
         "OG"
     ],
     "isPrize": false,
-    "weight": 2472,
+    "weight": 2020,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Coupe",
@@ -23,7 +23,7 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 82.22,
+    "mra": 88.09,
     "ola": 97.3,
     "description": "The Challenger goes wide.",
      "333TopSpeed": 198,
@@ -41,6 +41,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.1,
     "699Handling": 95,
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTHellcatWidebody(2018).png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTHellcatWidebody2018.png",
     "creator": "DodgeDemon"
 }

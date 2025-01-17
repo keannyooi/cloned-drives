@@ -1,0 +1,49 @@
+{
+	"carID": "c06420",
+    "cr": 951,
+    "make": "Ford",
+    "model": "GT LM GTE-Pro #68 Ford Chip Ganassi Racing",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 187,
+    "0to60": 3.2,
+    "handling": 104,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Motorsport","Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 1245,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.88,
+    "ola": 81.25,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTLMGTE-Pro(2015).png",
+
+"333TopSpeed": 190,
+"3330to60": 3,
+"333Handling": 107,
+
+"666TopSpeed": 193,
+"6660to60": 2.9,
+"666Handling": 111,
+
+"699TopSpeed": 193,
+"6990to60": 2.7,
+"699Handling": 115,
+
+"969TopSpeed": 195,
+"9690to60": 2.9,
+"969Handling": 115,
+
+"996TopSpeed": 195,
+"9960to60": 2.7,
+"996Handling": 111,
+    "creator": "Bnuuy"
+}

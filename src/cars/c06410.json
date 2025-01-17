@@ -1,0 +1,49 @@
+{
+	"carID": "c06410",
+    "cr": 854,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray Export",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 184,
+    "0to60": 3.5,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1679,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 64.81,
+    "ola": 80,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteStingrayExport2021.png",
+
+"333TopSpeed": 187,
+"3330to60": 3.3,
+"333Handling": 94,
+
+"666TopSpeed": 190,
+"6660to60": 3.1,
+"666Handling": 97,
+
+"699TopSpeed": 190,
+"6990to60": 3,
+"699Handling": 101,
+
+"969TopSpeed": 192,
+"9690to60": 3.1,
+"969Handling": 101,
+
+"996TopSpeed": 192,
+"9960to60": 3,
+"996Handling": 97,
+    "creator": "DodgeDemon"
+}

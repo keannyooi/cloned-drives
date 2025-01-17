@@ -1,0 +1,49 @@
+{
+	"carID": "c06435",
+    "cr": 840,
+    "make": "Dodge",
+    "model": "Challenger SRT Demon Track Pack",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 168,
+    "0to60": 2.1,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1941,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.77,
+    "ola": 79.05,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTDemonTrackPack2018.png",
+
+"333TopSpeed": 171,
+"3330to60": 2,
+"333Handling": 10,
+
+"666TopSpeed": 174,
+"6660to60": 1.9,
+"666Handling": 11,
+
+"699TopSpeed": 174,
+"6990to60": 1.8,
+"699Handling": 11,
+
+"969TopSpeed": 177,
+"9690to60": 1.9,
+"969Handling": 11,
+
+"996TopSpeed": 177,
+"9960to60": 1.8,
+"996Handling": 11,
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,49 @@
+{
+	"carID": "c06514",
+    "cr": 476,
+    "make": ["Smyth Performance","Dodge"],
+    "model": "Charger R/T Ute",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 5.8,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Oddity"],
+    "isPrize": false,
+	
+    "weight": 1660,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.94,
+    "ola": 76.12,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SmythPerformanceChargerRTUte2006.png",
+
+"333TopSpeed": 130,
+"3330to60": 5.5,
+"333Handling": 76,
+
+"666TopSpeed": 134,
+"6660to60": 5.2,
+"666Handling": 79,
+
+"699TopSpeed": 134,
+"6990to60": 4.9,
+"699Handling": 82,
+
+"969TopSpeed": 138,
+"9690to60": 5.2,
+"969Handling": 82,
+
+"996TopSpeed": 138,
+"9960to60": 4.9,
+"996Handling": 79,
+    "creator": "DodgeDemon"
+}

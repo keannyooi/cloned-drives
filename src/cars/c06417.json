@@ -1,0 +1,49 @@
+{
+	"carID": "c06417",
+    "cr": 767,
+    "make": "Fisker",
+    "model": "Ocean Extreme",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 127,
+    "0to60": 3.8,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2481,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 62.3,
+    "ola": 78.95,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/oceanextreme2023.png",
+
+"333TopSpeed": 131,
+"3330to60": 3.6,
+"333Handling": 76,
+
+"666TopSpeed": 135,
+"6660to60": 3.4,
+"666Handling": 79,
+
+"699TopSpeed": 135,
+"6990to60": 3.2,
+"699Handling": 82,
+
+"969TopSpeed": 139,
+"9690to60": 3.4,
+"969Handling": 82,
+
+"996TopSpeed": 139,
+"9960to60": 3.2,
+"996Handling": 79,
+    "creator": "Kuroi"
+}

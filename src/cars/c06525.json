@@ -1,0 +1,50 @@
+{
+    "carID": "c06525",
+    "cr": 265,
+    "make": "International Harvester",
+    "model": "Scout II 304 XLC 4x4 Traveltop",
+    "modelYear": 1976,
+    "country": "US",
+    "topSpeed": 82,
+    "0to60": 16.8,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1674,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 14,
+    "ola": 54.76,
+
+    "description": "",
+
+"333TopSpeed": 88,
+"3330to60": 16,
+"333Handling": 62,
+
+"666TopSpeed": 95,
+"6660to60": 15.1,
+"666Handling": 64,
+
+"699TopSpeed": 95,
+"6990to60": 14.3,
+"699Handling": 67,
+
+"969TopSpeed": 101,
+"9690to60": 15.1,
+"969Handling": 67,
+
+"996TopSpeed": 101,
+"9960to60": 14.3,
+"996Handling": 64,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InternationalHarvesterScoutII304XLC4x4Traveltop(1976).png",
+    "creator": "Pfugs"
+}

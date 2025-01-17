@@ -1,0 +1,49 @@
+{
+	"carID": "c06506",
+    "cr": 882,
+    "make": "Ford",
+    "model": "Mustang FR500C GT3 #56 Multimatic Motorsport",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 187,
+    "0to60": 3.5,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.56,
+    "ola": 87.69,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangFR500CGT3(2007).png",
+
+"333TopSpeed": 190,
+"3330to60": 3.3,
+"333Handling": 103,
+
+"666TopSpeed": 193,
+"6660to60": 3.1,
+"666Handling": 107,
+
+"699TopSpeed": 193,
+"6990to60": 3,
+"699Handling": 111,
+
+"969TopSpeed": 195,
+"9690to60": 3.1,
+"969Handling": 111,
+
+"996TopSpeed": 195,
+"9960to60": 3,
+"996Handling": 107,
+    "creator": "Bnuuy"
+}

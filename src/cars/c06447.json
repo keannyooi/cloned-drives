@@ -1,0 +1,50 @@
+{
+    "carID": "c06447",
+    "cr": 763,
+    "make": "Shelby",
+    "model": "Series 2 Prototype",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 190,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","Concept","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1270,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.43,
+    "ola": 89.19,
+
+    "description": "Despite allocating the production slots, the Series 2 never came to be due to the project exceeding cost because of additional homologation cost.",
+
+"333TopSpeed": 193,
+"3330to60": 3.5,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.3,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.1,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.3,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.1,
+"996Handling": 94,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ShelbySeries2Prototype(2007).png",
+    "creator": "Pfugs"
+}

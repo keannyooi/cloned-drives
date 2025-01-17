@@ -1,0 +1,49 @@
+{
+	"carID": "c06457",
+    "cr": 514,
+    "make": "Dodge",
+    "model": "Charger R/T",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 5.8,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.94,
+    "ola": 76.12,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRT2006.png",
+
+"333TopSpeed": 130,
+"3330to60": 5.5,
+"333Handling": 72,
+
+"666TopSpeed": 134,
+"6660to60": 5.2,
+"666Handling": 75,
+
+"699TopSpeed": 134,
+"6990to60": 4.9,
+"699Handling": 78,
+
+"969TopSpeed": 138,
+"9690to60": 5.2,
+"969Handling": 78,
+
+"996TopSpeed": 138,
+"9960to60": 4.9,
+"996Handling": 75,
+    "creator": "DodgeDemon"
+}

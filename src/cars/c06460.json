@@ -1,0 +1,49 @@
+{
+	"carID": "c06460",
+    "cr": 531,
+    "make": "Dodge",
+    "model": "Charger R/T AWD",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 6,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1930,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.57,
+    "ola": 70,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRTAWD2007.png",
+
+"333TopSpeed": 130,
+"3330to60": 5.7,
+"333Handling": 71,
+
+"666TopSpeed": 134,
+"6660to60": 5.4,
+"666Handling": 74,
+
+"699TopSpeed": 134,
+"6990to60": 5.1,
+"699Handling": 77,
+
+"969TopSpeed": 138,
+"9690to60": 5.4,
+"969Handling": 77,
+
+"996TopSpeed": 138,
+"9960to60": 5.1,
+"996Handling": 74,
+    "creator": "DodgeDemon"
+}

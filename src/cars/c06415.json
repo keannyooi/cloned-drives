@@ -1,0 +1,49 @@
+{
+	"carID": "c06415",
+    "cr": 827,
+    "make": ["Lucid-Atieva","Lucid"],
+    "model": "EDNA",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 152,
+    "0to60": 2.7,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly","Concept","Unique","Oddity"],
+    "isPrize": true,
+	
+    "weight": 2270,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Other",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 82.5,
+    "ola": 77.69,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LucidAtievaEDNA(2016).png",
+
+"333TopSpeed": 155,
+"3330to60": 2.6,
+"333Handling": 86,
+
+"666TopSpeed": 159,
+"6660to60": 2.4,
+"666Handling": 88,
+
+"699TopSpeed": 159,
+"6990to60": 2.3,
+"699Handling": 92,
+
+"969TopSpeed": 162,
+"9690to60": 2.4,
+"969Handling": 92,
+
+"996TopSpeed": 162,
+"9960to60": 2.3,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

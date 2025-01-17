@@ -1,0 +1,49 @@
+{
+	"carID": "c06409",
+    "cr": 1002,
+    "make": "Chevrolet",
+    "model": "Corvette E-Ray ZER Convertible",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 183,
+    "0to60": 2.5,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 69.44,
+    "ola": 72,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteE-RayZERConvertible2024.png",
+
+"333TopSpeed": 186,
+"3330to60": 2.4,
+"333Handling": 95,
+
+"666TopSpeed": 189,
+"6660to60": 2.3,
+"666Handling": 98,
+
+"699TopSpeed": 189,
+"6990to60": 2.1,
+"699Handling": 102,
+
+"969TopSpeed": 192,
+"9690to60": 2.3,
+"969Handling": 102,
+
+"996TopSpeed": 192,
+"9960to60": 2.1,
+"996Handling": 98,
+    "creator": "DodgeDemon"
+}

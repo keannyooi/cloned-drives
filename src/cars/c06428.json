@@ -1,0 +1,49 @@
+{
+	"carID": "c06428",
+    "cr": 598,
+    "make": "Dodge",
+    "model": "Challenger R/T",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 5,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1880,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.46,
+    "ola": 76,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerRT2015.png",
+
+"333TopSpeed": 158,
+"3330to60": 4.8,
+"333Handling": 81,
+
+"666TopSpeed": 162,
+"6660to60": 4.5,
+"666Handling": 83,
+
+"699TopSpeed": 162,
+"6990to60": 4.3,
+"699Handling": 87,
+
+"969TopSpeed": 165,
+"9690to60": 4.5,
+"969Handling": 87,
+
+"996TopSpeed": 165,
+"9960to60": 4.3,
+"996Handling": 83,
+    "creator": "DodgeDemon"
+}

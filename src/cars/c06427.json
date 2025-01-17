@@ -1,0 +1,49 @@
+{
+	"carID": "c06427",
+    "cr": 559,
+    "make": "Dodge",
+    "model": "Challenger R/T",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.1,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Silver Screen"],
+    "isPrize": false,
+	
+    "weight": 1850,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.56,
+    "ola": 74.51,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerRT2011.png",
+
+"333TopSpeed": 149,
+"3330to60": 4.8,
+"333Handling": 77,
+
+"666TopSpeed": 152,
+"6660to60": 4.6,
+"666Handling": 80,
+
+"699TopSpeed": 152,
+"6990to60": 4.3,
+"699Handling": 83,
+
+"969TopSpeed": 156,
+"9690to60": 4.6,
+"969Handling": 83,
+
+"996TopSpeed": 156,
+"9960to60": 4.3,
+"996Handling": 80,
+    "creator": "DodgeDemon"
+}

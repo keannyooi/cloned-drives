@@ -1,0 +1,49 @@
+{
+	"carID": "c06475",
+    "cr": 767,
+    "make": "Dodge",
+    "model": "Charger SRT Hellcat Widebody Concept",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 196,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Americas Assault","Muscle Car","Super Sedan","Concept"],
+    "isPrize": false,
+	
+    "weight": 2040,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 88.89,
+    "description": "",
+	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcatWidebodyConcept2019.png",
+
+"333TopSpeed": 199,
+"3330to60": 3.4,
+"333Handling": 92,
+
+"666TopSpeed": 201,
+"6660to60": 3.2,
+"666Handling": 95,
+
+"699TopSpeed": 201,
+"6990to60": 3.1,
+"699Handling": 99,
+
+"969TopSpeed": 204,
+"9690to60": 3.2,
+"969Handling": 99,
+
+"996TopSpeed": 204,
+"9960to60": 3.1,
+"996Handling": 95,
+    "creator": "DodgeDemon"
+}
