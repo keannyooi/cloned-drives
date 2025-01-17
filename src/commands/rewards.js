@@ -20,94 +20,73 @@ module.exports = {
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
         const playerData = await profileModel.findOne({ userID: message.author.id });
-if (playerData.unclaimedRewards.length > 0) {
-    console.log(`Processing rewards for user ${message.author.id}`);
-    let rewardLog = "", line = "", limitExceeded = false;
-
-    for (let reward of playerData.unclaimedRewards) {
-        let { origin } = reward;
-
-        try {
-            switch (Object.keys(reward)[0]) {
-                case "money":
-                    if (typeof reward.money === "number" && reward.money > 0) {
+        if (playerData.unclaimedRewards.length > 0) {
+            let rewardLog = "", line = "", limitExceeded = false;
+            for (let reward of playerData.unclaimedRewards) {
+                let { origin } = reward;
+                switch (Object.keys(reward)[0]) {
+                    case "money":
                         playerData.money += reward.money;
                         line = `Received **${moneyEmoji}${reward.money.toLocaleString("en")}** from **${origin}**\n`;
-                    } else {
-                        console.error(`Invalid money reward:`, reward);
-                    }
-                    break;
-
-                case "car":
-                    if (reward.car && typeof reward.car.carID === "string") {
+                        break;
+                    case "fuseTokens":
+                        playerData.fuseTokens += reward.fuseTokens;
+                        line = `Received **${fuseEmoji}${reward.fuseTokens.toLocaleString("en")}** from **${origin}**\n`;
+                        break;
+                    case "trophies":
+                        playerData.trophies += reward.trophies;
+                        line = `Received **${trophyEmoji}${reward.trophies.toLocaleString("en")}** from **${origin}**\n`;
+                        break;
+                    case "car":
                         let currentCar = require(`../cars/${reward.car.carID}.json`);
                         playerData.garage = addCars(playerData.garage, [reward.car]);
                         line = `Received **1x ${carNameGen({ currentCar, rarity: true, upgrade: reward.car.upgrade })}** from **${origin}**\n`;
-                    } else {
-                        console.error(`Invalid car reward:`, reward);
-                    }
-                    break;
-
-                case "pack":
-                    if (reward.pack && typeof reward.pack === "string") {
+                        break;
+                    case "pack":
                         let currentPack = require(`../packs/${reward.pack}.json`);
                         let addedCars = await openPack({ message, currentPack });
-                        if (Array.isArray(addedCars)) {
-                            playerData.garage = addCars(playerData.garage, addedCars);
-                            line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
-                        } else {
-                            console.error(`Invalid pack reward:`, reward);
-                        }
-                    }
-                    break;
+                        if (!Array.isArray(addedCars)) return;
 
-                default:
-                    console.warn(`Unknown reward type:`, reward);
-                    break;
+                        playerData.garage = addCars(playerData.garage, addedCars);
+                        line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
+                        break;
+                    default:
+                        break;
+                }
+
+                if (rewardLog.length + line.length < 4096) { // discord embed desc limit
+                    rewardLog += line;
+                }
+                else if (!limitExceeded) {
+                    limitExceeded = true;
+                    rewardLog += "...etc";
+                }
             }
-        } catch (err) {
-            console.error(`Error processing reward from ${origin}:`, err);
-            continue;
-        }
 
-        if (rewardLog.length + line.length < 4096) {
-            rewardLog += line;
-        } else if (!limitExceeded) {
-            limitExceeded = true;
-            rewardLog += "...etc\n";
-        }
-    }
-
-    try {
-        await profileModel.updateOne(
-            { userID: message.author.id },
-            {
+            await profileModel.updateOne({ userID: message.author.id }, {
                 money: playerData.money,
                 fuseTokens: playerData.fuseTokens,
                 trophies: playerData.trophies,
                 garage: playerData.garage,
                 unclaimedRewards: []
-            }
-        );
-        const successMessage = new SuccessMessage({
-            channel: message.channel,
-            title: "Successfully claimed your rewards!",
-            desc: rewardLog,
-            author: message.author
-        });
-        return successMessage.sendMessage();
-    } catch (err) {
-        console.error(`Failed to update database for user ${message.author.id}:`, err);
-        return message.channel.send("An error occurred while claiming your rewards. Please try again later.");
+            });
+
+            const successMessage = new SuccessMessage({
+                channel: message.channel,
+                title: "Successfully claimed your rewards!",
+                desc: rewardLog,
+                author: message.author
+            });
+            return successMessage.sendMessage();
+        }
+        else {
+            const infoMessage = new InfoMessage({
+                channel: message.channel,
+                title: "It looks like you don't have any unclaimed rewards.",
+                desc: "Please come back here when you have pending rewards!",
+                author: message.author
+            });
+            return infoMessage.sendMessage();
+        }
     }
-} else {
-    const infoMessage = new InfoMessage({
-        channel: message.channel,
-        title: "It looks like you don't have any unclaimed rewards.",
-        desc: "Please come back here when you have pending rewards!",
-        author: message.author
-    });
-    return infoMessage.sendMessage();
-}
-}
-}
+};
