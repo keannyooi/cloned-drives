@@ -5,12 +5,12 @@
     "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MotorSportMEGAPack.png",
     
     "filter": {
-        "make": "US",
+        "make": "None",
         "modelYear": {
             "start": 1000,
             "end": 3000
         },
-        "country": "None",
+        "country": "US",
         "tags": "None",
         "driveType": "None",
         "tyreType": "None",
