@@ -1,0 +1,48 @@
+{
+    "carID": "c06582",
+    "cr": 797,
+    "make": "AMZ Racing",
+    "model": "Simplon",
+    "modelYear": 2009,
+    "country": "CH",
+    "topSpeed": 81,
+    "0to60": 3.4,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Rest of The World","The Tyrol Tour"],
+    "isPrize": true,
+    "weight": 198,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 52.5,
+    "ola": 79.15,
+    "description": "Simplon is AMZ's first car to beat the 200 kg mark. It was capable of winning the dynamic events at Formula Student UK in Silverstone.",
+"333TopSpeed": 87,
+"3330to60": 3.2,
+"333Handling": 101,
+
+"666TopSpeed": 94,
+"6660to60": 3.1,
+"666Handling": 104,
+
+"699TopSpeed": 94,
+"6990to60": 2.9,
+"699Handling": 109,
+
+"969TopSpeed": 100,
+"9690to60": 3.1,
+"969Handling": 109,
+
+"996TopSpeed": 100,
+"9960to60": 2.9,
+"996Handling": 104,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZSimplon(2009).png",
+    "creator": "Bnuuy"
+}

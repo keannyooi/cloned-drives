@@ -1,0 +1,48 @@
+{
+    "carID": "c06580",
+    "cr": 1031,
+    "make": "AMZ Racing",
+    "model": "Pilatus",
+    "modelYear": 2017,
+    "country": "CH",
+    "topSpeed": 71,
+    "0to60": 1.8,
+    "handling": 104,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 179,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 80,
+    "description": "With pilatus, the first car named after a Swiss mountain, the AMZ set the goal to reclaim the first place in the world ranking. To improve reliability and to minimise the potential risks in all components, the weaknesses of the previous car gotthard were carefully analysed.",
+"333TopSpeed": 78,
+"3330to60": 1.7,
+"333Handling": 107,
+
+"666TopSpeed": 86,
+"6660to60": 1.6,
+"666Handling": 111,
+
+"699TopSpeed": 86,
+"6990to60": 1.5,
+"699Handling": 115,
+
+"969TopSpeed": 93,
+"9690to60": 1.6,
+"969Handling": 115,
+
+"996TopSpeed": 93,
+"9960to60": 1.5,
+"996Handling": 111,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZPilatus(2017).png",
+    "creator": "Bnuuy"
+}
