@@ -1,0 +1,50 @@
+{
+    "carID": "c06613",
+    "cr": 354,
+    "make": "Mercedes-Benz",
+    "model": "280 E",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 8.6,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.35,
+    "ola": 74.6,
+
+    "description": "The 280 E, which was made to slot inbetween the 300 E and it's cheaper alternative 260 E, was too little too late for Bruno Sacco's original design and really only got it's time in the spotlight after the second facelift killed off it's cheaper sibling.",
+
+"333TopSpeed": 147,
+"3330to60": 8.2,
+"333Handling": 73,
+
+"666TopSpeed": 150,
+"6660to60": 7.7,
+"666Handling": 76,
+
+"699TopSpeed": 150,
+"6990to60": 7.3,
+"699Handling": 79,
+
+"969TopSpeed": 154,
+"9690to60": 7.7,
+"969Handling": 79,
+
+"996TopSpeed": 154,
+"9960to60": 7.3,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz280E(1992).png",
+    "creator": "Pfugs"
+}

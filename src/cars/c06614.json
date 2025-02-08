@@ -1,0 +1,50 @@
+{
+    "carID": "c06614",
+    "cr": 434,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV 300",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 7.2,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2460,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 60,
+    "ola": 86.1,
+
+    "description": "All the luxury of the EQE sedan, now in a taller, roomier package. Perfect for when you want elegance with a side of adventure , and a better view of traffic.",
+
+"333TopSpeed": 134,
+"3330to60": 6.8,
+"333Handling": 81,
+
+"666TopSpeed": 138,
+"6660to60": 6.5,
+"666Handling": 83,
+
+"699TopSpeed": 138,
+"6990to60": 6.1,
+"699Handling": 87,
+
+"969TopSpeed": 142,
+"9690to60": 6.5,
+"969Handling": 87,
+
+"996TopSpeed": 142,
+"9960to60": 6.1,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzEQESUV300(2023).png",
+    "creator": "ama4nn"
+}

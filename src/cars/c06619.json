@@ -1,0 +1,50 @@
+{
+    "carID": "c06619",
+    "cr": 895,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "EQE SUV 53 4MATIC+ Dynamic Plus",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 3.2,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2690,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 80,
+    "ola": 104.5,
+
+    "description": "Pay extra to unlock 12 more mph in your luxury SUV and reach 149mph , because who doesn't need track speed on a Costco run?",
+
+"333TopSpeed": 152,
+"3330to60": 3,
+"333Handling": 86,
+
+"666TopSpeed": 156,
+"6660to60": 2.9,
+"666Handling": 88,
+
+"699TopSpeed": 156,
+"6990to60": 2.7,
+"699Handling": 92,
+
+"969TopSpeed": 159,
+"9690to60": 2.9,
+"969Handling": 92,
+
+"996TopSpeed": 159,
+"9960to60": 2.7,
+"996Handling": 88,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-AMGEQESUV534MATIC%2BDynamicPlus(2023).png",
+    "creator": "ama4nn"
+}

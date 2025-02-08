@@ -1,0 +1,50 @@
+{
+    "carID": "c06612",
+    "cr": 333,
+    "make": "Mercedes-Benz",
+    "model": "260 E 4MATIC",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.23,
+    "ola": 62.26,
+
+    "description": "Because management only made their mind up last second, Mercedes's engineers had to come up with a solution to implement the 4MATIC system quickly. Their solution culminated in the implementation of a drive shaft running through the front springs.",
+
+"333TopSpeed": 135,
+"3330to60": 9,
+"333Handling": 70,
+
+"666TopSpeed": 139,
+"6660to60": 8.6,
+"666Handling": 72,
+
+"699TopSpeed": 139,
+"6990to60": 8.1,
+"699Handling": 75,
+
+"969TopSpeed": 143,
+"9690to60": 8.6,
+"969Handling": 75,
+
+"996TopSpeed": 143,
+"9960to60": 8.1,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz260E4MATIC(1987).png",
+    "creator": "Pfugs"
+}

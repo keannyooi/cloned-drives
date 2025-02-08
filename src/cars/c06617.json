@@ -1,0 +1,50 @@
+{
+    "carID": "c06617",
+    "cr": 786,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "EQE SUV 43 4MATIC",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 4.1,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2600,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 72.19,
+    "ola": 97.11,
+
+    "description": "Where utility meets adrenaline. It's fast, stylish, and ready to make grocery runs feel like qualifying laps.",
+
+"333TopSpeed": 134,
+"3330to60": 3.9,
+"333Handling": 85,
+
+"666TopSpeed": 138,
+"6660to60": 3.7,
+"666Handling": 87,
+
+"699TopSpeed": 138,
+"6990to60": 3.5,
+"699Handling": 91,
+
+"969TopSpeed": 142,
+"9690to60": 3.7,
+"969Handling": 91,
+
+"996TopSpeed": 142,
+"9960to60": 3.5,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-AMGEQESUV434MATIC(2022).png",
+    "creator": "ama4nn"
+}

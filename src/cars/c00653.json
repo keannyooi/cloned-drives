@@ -1,6 +1,6 @@
 {
     "carID": "c00653",
-    "cr": 858,
+    "cr": 788,
     "make": "Lamborghini",
     "model": "Diablo VT 6.0",
     "modelYear": 2000,
@@ -15,7 +15,7 @@
     ],
     "isPrize": false,
     "weight": 1625,
-    "gc": "Medium",
+    "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
@@ -40,6 +40,6 @@
     "699TopSpeed": 213,
     "6990to60": 3.3,
     "699Handling": 98,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniDiabloVT6.0(2000).png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LamborghiniDiabloVT60(2000).png",
     "creator": "DodgeDemon"
 }
