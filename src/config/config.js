@@ -31,9 +31,9 @@ class Bot extends Client {
         GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "Rubik-BoldItalic.ttf"), "Rubik");
 
         await Promise.all([
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/race_template_thing.png"),
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/zecardsandbids.png"),
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/voWCtQc.png")
+            loadImage("https://temporary-file-garden.link/ZSrBMiDRyR84aPJp/race_template_thing.png"),
+            loadImage("https://temporary-file-garden.link/ZSrBMiDRyR84aPJp/zecardsandbids.png"),
+            loadImage("https://temporary-file-garden.link/ZSrBMiDRyR84aPJp/voWCtQc.png")
         ])
             .then(loaded => {
                 let [raceTemp, dealerTemp, eventTemp] = loaded;
