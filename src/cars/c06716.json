@@ -1,0 +1,48 @@
+{
+    "carID": "c06716",
+    "cr": 427,
+    "make": "Nissan",
+    "model": "Skyline 250GT",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 7.5,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1570,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.22,
+    "ola": 76.29,
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 7.1,
+"333Handling": 81,
+
+"666TopSpeed": 121,
+"6660to60": 6.8,
+"666Handling": 83,
+
+"699TopSpeed": 121,
+"6990to60": 6.4,
+"699Handling": 87,
+
+"969TopSpeed": 126,
+"9690to60": 6.8,
+"969Handling": 87,
+
+"996TopSpeed": 126,
+"9960to60": 6.4,
+"996Handling": 83,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/NissanSkyline250GT(2006).png",
+    "creator": "Kuroi"
+}

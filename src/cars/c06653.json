@@ -1,0 +1,48 @@
+{
+    "carID": "c06653",
+    "cr": 792,
+    "make": ["iCar","Cherry"],
+    "model": "GT Concept",
+    "modelYear": 2023,
+    "country": "CN",
+    "topSpeed": 130,
+    "0to60": 3.5,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia","Eco-Friendly","Rest of The World","Concept"],
+    "isPrize": false,
+    "weight": 1890,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 47.29,
+    "ola": 103.25,
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 3.3,
+"333Handling": 88,
+
+"666TopSpeed": 138,
+"6660to60": 3.1,
+"666Handling": 91,
+
+"699TopSpeed": 138,
+"6990to60": 3,
+"699Handling": 94,
+
+"969TopSpeed": 142,
+"9690to60": 3.1,
+"969Handling": 94,
+
+"996TopSpeed": 142,
+"9960to60": 3,
+"996Handling": 91,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/CheryiCarGT(2023).png",
+    "creator": "Bnuuy"
+}

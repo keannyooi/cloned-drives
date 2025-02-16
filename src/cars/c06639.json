@@ -1,0 +1,48 @@
+{
+    "carID": "c06639",
+    "cr": 1,
+    "make": "Honda",
+    "model": "T500",
+    "modelYear": 1964,
+    "country": "JP",
+    "topSpeed": 65,
+    "0to60": 23.6,
+    "handling": 47,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia","Kei Car"],
+    "isPrize": false,
+    "weight": 640,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 49.1,
+    "description": "",
+
+"333TopSpeed": 73,
+"3330to60": 22.4,
+"333Handling": 49,
+
+"666TopSpeed": 81,
+"6660to60": 21.2,
+"666Handling": 50,
+
+"699TopSpeed": 81,
+"6990to60": 20.1,
+"699Handling": 52,
+
+"969TopSpeed": 89,
+"9690to60": 21.2,
+"969Handling": 52,
+
+"996TopSpeed": 89,
+"9960to60": 20.1,
+"996Handling": 50,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/HondaT500(1964).png",
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,48 @@
+{
+    "carID": "c06665",
+    "cr": 583,
+    "make": "Infiniti",
+    "model": "Q70L 3.7",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1795,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 71.44,
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.5,
+"333Handling": 80,
+
+"666TopSpeed": 162,
+"6660to60": 5.2,
+"666Handling": 82,
+
+"699TopSpeed": 162,
+"6990to60": 4.9,
+"699Handling": 85,
+
+"969TopSpeed": 165,
+"9690to60": 5.2,
+"969Handling": 85,
+
+"996TopSpeed": 165,
+"9960to60": 4.9,
+"996Handling": 82,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/InfinitiQ70L37(2015).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,48 @@
+{
+    "carID": "c06718",
+    "cr": 619,
+    "make": "Nissan",
+    "model": "Skyline 350GT",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.3,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1630,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.44,
+    "ola": 77.62,
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 5,
+"333Handling": 82,
+
+"666TopSpeed": 121,
+"6660to60": 4.8,
+"666Handling": 84,
+
+"699TopSpeed": 121,
+"6990to60": 4.5,
+"699Handling": 88,
+
+"969TopSpeed": 126,
+"9690to60": 4.8,
+"969Handling": 88,
+
+"996TopSpeed": 126,
+"9960to60": 4.5,
+"996Handling": 84,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/NissanSkyline350GT(2006).png",
+    "creator": "Kuroi"
+}

@@ -1,0 +1,48 @@
+{
+    "carID": "c06685",
+    "cr": 323,
+    "make": "Lexus",
+    "model": "LX 450",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 107,
+    "0to60": 10.6,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CDCCS","The Amplification of Asia","Extreme Juggernaut"],
+    "isPrize": false,
+    "weight": 2254,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 31.83,
+    "ola": 64.15,
+    "description": "",
+
+"333TopSpeed": 112,
+"3330to60": 10.1,
+"333Handling": 66,
+
+"666TopSpeed": 117,
+"6660to60": 9.5,
+"666Handling": 68,
+
+"699TopSpeed": 117,
+"6990to60": 9,
+"699Handling": 71,
+
+"969TopSpeed": 122,
+"9690to60": 9.5,
+"969Handling": 71,
+
+"996TopSpeed": 122,
+"9960to60": 9,
+"996Handling": 68,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/LexusLX450(1995).png",
+    "creator": "Kuroi"
+}

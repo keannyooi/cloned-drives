@@ -1,0 +1,48 @@
+{
+    "carID": "c06679",
+    "cr": 554,
+    "make": "Nissan",
+    "model": "Fuga 370GT",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1720,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62,
+    "ola": 73.33,
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 5.5,
+"333Handling": 80,
+
+"666TopSpeed": 121,
+"6660to60": 5.2,
+"666Handling": 82,
+
+"699TopSpeed": 121,
+"6990to60": 4.9,
+"699Handling": 85,
+
+"969TopSpeed": 126,
+"9690to60": 5.2,
+"969Handling": 85,
+
+"996TopSpeed": 126,
+"9960to60": 4.9,
+"996Handling": 82,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/NissanFuga370GT(2009).png",
+    "creator": "Pfugs"
+}

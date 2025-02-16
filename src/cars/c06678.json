@@ -1,0 +1,48 @@
+{
+    "carID": "c06678",
+    "cr": 388,
+    "make": "Nissan",
+    "model": "Fuga 250GT",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1700,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.75,
+    "ola": 72.25,
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 7.6,
+"333Handling": 79,
+
+"666TopSpeed": 121,
+"6660to60": 7.2,
+"666Handling": 81,
+
+"699TopSpeed": 121,
+"6990to60": 6.8,
+"699Handling": 84,
+
+"969TopSpeed": 126,
+"9690to60": 7.2,
+"969Handling": 84,
+
+"996TopSpeed": 126,
+"9960to60": 6.8,
+"996Handling": 81,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/NissanFuga250GT(2009).png",
+    "creator": "Pfugs"
+}

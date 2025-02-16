@@ -1,0 +1,48 @@
+{
+    "carID": "c06719",
+    "cr": 649,
+    "make": "Nissan",
+    "model": "Skyline 370GT",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.2,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1640,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.29,
+    "ola": 77.6,
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 4.9,
+"333Handling": 85,
+
+"666TopSpeed": 121,
+"6660to60": 4.7,
+"666Handling": 87,
+
+"699TopSpeed": 121,
+"6990to60": 4.4,
+"699Handling": 91,
+
+"969TopSpeed": 126,
+"9690to60": 4.7,
+"969Handling": 91,
+
+"996TopSpeed": 126,
+"9960to60": 4.4,
+"996Handling": 87,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/NissanSkyline370GT(2008).png",
+    "creator": "Kuroi"
+}

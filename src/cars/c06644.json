@@ -1,0 +1,48 @@
+{
+    "carID": "c06644",
+    "cr": 326,
+    "make": ["iCar","Cherry"],
+    "model": "03",
+    "modelYear": 2024,
+    "country": "CN",
+    "topSpeed": 93,
+    "0to60": 9,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia","Eco-Friendly","Rest of The World"],
+    "isPrize": false,
+    "weight": 1775,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 27.8,
+    "ola": 81.55,
+    "description": "",
+
+"333TopSpeed": 99,
+"3330to60": 8.5,
+"333Handling": 75,
+
+"666TopSpeed": 104,
+"6660to60": 8.1,
+"666Handling": 78,
+
+"699TopSpeed": 104,
+"6990to60": 7.6,
+"699Handling": 81,
+
+"969TopSpeed": 110,
+"9690to60": 8.1,
+"969Handling": 81,
+
+"996TopSpeed": 110,
+"9960to60": 7.6,
+"996Handling": 78,
+    "racehud": "https://temporary-file-garden.link/ZmdgDS5GsALKuOXo/Cards/0in/CheryiCar03(2024).png",
+    "creator": "Bnuuy"
+}
