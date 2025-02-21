@@ -1,0 +1,50 @@
+{
+    "carID": "c06785",
+    "cr": 529,
+    "make": "BMW",
+    "model": "X6 xDrive30d",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 7.6,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 2055,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 47.89,
+    "ola": 70.26,
+
+    "description": "",
+
+"333TopSpeed": 141,
+"3330to60": 7.2,
+"333Handling": 79,
+
+"666TopSpeed": 145,
+"6660to60": 6.8,
+"666Handling": 81,
+
+"699TopSpeed": 145,
+"6990to60": 6.5,
+"699Handling": 84,
+
+"969TopSpeed": 148,
+"9690to60": 6.8,
+"969Handling": 84,
+
+"996TopSpeed": 148,
+"9960to60": 6.5,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX6xDrive30d(2008).png",
+    "creator": "Pfugs"
+}

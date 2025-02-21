@@ -1,0 +1,50 @@
+{
+    "carID": "c06794",
+    "cr": 789,
+    "make": "BMW",
+    "model": "X6 M M Drivers Package",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 171,
+    "0to60": 4.2,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 2290,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.88,
+    "ola": 75.47,
+
+    "description": "",
+
+"333TopSpeed": 174,
+"3330to60": 4,
+"333Handling": 85,
+
+"666TopSpeed": 177,
+"6660to60": 3.8,
+"666Handling": 87,
+
+"699TopSpeed": 177,
+"6990to60": 3.6,
+"699Handling": 91,
+
+"969TopSpeed": 180,
+"9690to60": 3.8,
+"969Handling": 91,
+
+"996TopSpeed": 180,
+"9960to60": 3.6,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX6MMDriversPackage(2009).png",
+    "creator": "Pfugs"
+}

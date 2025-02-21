@@ -1,0 +1,50 @@
+{
+    "carID": "c06783",
+    "cr": 566,
+    "make": "Volvo",
+    "model": "Iron Knight",
+    "modelYear": 2016,
+    "country": "SE",
+    "topSpeed": 172,
+    "0to60": 4.4,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","Rest of The World","Unique","Track Day"],
+    "isPrize": false,
+    "weight": 4500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 109.46,
+    "ola": 112.56,
+
+    "description": "The fastest truck in the world accelerates to 60 just as fast as a touring car while weighing 4500 kilograms with the help of a 2400 hp 12.8-liter diesel.",
+
+"333TopSpeed": 175,
+"3330to60": 4.2,
+"333Handling": 80,
+
+"666TopSpeed": 178,
+"6660to60": 4,
+"666Handling": 82,
+
+"699TopSpeed": 178,
+"6990to60": 3.7,
+"699Handling": 85,
+
+"969TopSpeed": 181,
+"9690to60": 4,
+"969Handling": 85,
+
+"996TopSpeed": 181,
+"9960to60": 3.7,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolvoIronKnight(2016).png",
+    "creator": "Pfugs"
+}
