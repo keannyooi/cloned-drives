@@ -1,0 +1,50 @@
+{
+    "carID": "c06818",
+    "cr": 530,
+    "make": "BMW",
+    "model": "120i M Sport",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.7,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1465,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.47,
+    "ola": 74.36,
+
+    "description": "",
+
+"333TopSpeed": 150,
+"3330to60": 6.4,
+"333Handling": 83,
+
+"666TopSpeed": 153,
+"6660to60": 6,
+"666Handling": 85,
+
+"699TopSpeed": 153,
+"6990to60": 5.7,
+"699Handling": 89,
+
+"969TopSpeed": 157,
+"9690to60": 6,
+"969Handling": 89,
+
+"996TopSpeed": 157,
+"9960to60": 5.7,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW120iMSport(2020).png",
+    "creator": "Pfugs"
+}

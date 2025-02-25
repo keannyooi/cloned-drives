@@ -1,0 +1,50 @@
+{
+    "carID": "c06819",
+    "cr": 530,
+    "make": "BMW",
+    "model": "128ti",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 6.1,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1515,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.03,
+    "ola": 77.5,
+
+    "description": "",
+
+"333TopSpeed": 154,
+"3330to60": 5.8,
+"333Handling": 85,
+
+"666TopSpeed": 158,
+"6660to60": 5.5,
+"666Handling": 87,
+
+"699TopSpeed": 158,
+"6990to60": 5.2,
+"699Handling": 91,
+
+"969TopSpeed": 161,
+"9690to60": 5.5,
+"969Handling": 91,
+
+"996TopSpeed": 161,
+"9960to60": 5.2,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW128ti(2020).png",
+    "creator": "Pfugs"
+}

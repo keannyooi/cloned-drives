@@ -1,0 +1,50 @@
+{
+    "carID": "c06814",
+    "cr": 339,
+    "make": "BMW",
+    "model": "116i M Sport",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 10.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1395,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.2,
+    "ola": 62.59,
+
+    "description": "",
+
+"333TopSpeed": 128,
+"3330to60": 9.7,
+"333Handling": 80,
+
+"666TopSpeed": 132,
+"6660to60": 9.2,
+"666Handling": 82,
+
+"699TopSpeed": 132,
+"6990to60": 8.7,
+"699Handling": 85,
+
+"969TopSpeed": 137,
+"9690to60": 9.2,
+"969Handling": 85,
+
+"996TopSpeed": 137,
+"9960to60": 8.7,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW116iMSport(2020).png",
+    "creator": "Pfugs"
+}

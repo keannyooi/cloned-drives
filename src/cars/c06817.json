@@ -1,0 +1,50 @@
+{
+    "carID": "c06817",
+    "cr": 435,
+    "make": "BMW",
+    "model": "118i Luxury Line",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 8.2,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1365,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.12,
+    "ola": 70.13,
+
+    "description": "",
+
+"333TopSpeed": 135,
+"3330to60": 7.8,
+"333Handling": 82,
+
+"666TopSpeed": 139,
+"6660to60": 7.4,
+"666Handling": 84,
+
+"699TopSpeed": 139,
+"6990to60": 7,
+"699Handling": 88,
+
+"969TopSpeed": 143,
+"9690to60": 7.4,
+"969Handling": 88,
+
+"996TopSpeed": 143,
+"9960to60": 7,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW118iLuxuryLine(2019).png",
+    "creator": "Pfugs"
+}

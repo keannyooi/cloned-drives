@@ -1,0 +1,50 @@
+{
+    "carID": "c06803",
+    "cr": 540,
+    "make": "BMW",
+    "model": "645Ci",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.28,
+    "ola": 86.79,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 4.8,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 4.5,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 4.8,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 4.5,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW645Ci(2004).png",
+    "creator": "Bnuuy"
+}

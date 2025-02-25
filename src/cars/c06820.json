@@ -1,0 +1,50 @@
+{
+    "carID": "c06820",
+    "cr": 705,
+    "make": "BMW",
+    "model": "M135i xDrive",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour","Hot Hatch"],
+    "isPrize": false,
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.56,
+    "ola": 79.1,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 4.6,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 4.3,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 4.1,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 4.3,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 4.1,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWM135ixDrive(2019).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06811",
+    "cr": 583,
+    "make": "BMW",
+    "model": "630i Gran Turismo Luxury Line",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.1,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1720,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.89,
+    "ola": 83.2,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.8,
+"333Handling": 85,
+
+"666TopSpeed": 162,
+"6660to60": 5.5,
+"666Handling": 87,
+
+"699TopSpeed": 162,
+"6990to60": 5.2,
+"699Handling": 91,
+
+"969TopSpeed": 165,
+"9690to60": 5.5,
+"969Handling": 91,
+
+"996TopSpeed": 165,
+"9960to60": 5.2,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW630iGT(2017).png",
+    "creator": "Bnuuy"
+}

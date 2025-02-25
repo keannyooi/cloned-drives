@@ -1,0 +1,50 @@
+{
+    "carID": "c06810",
+    "cr": 621,
+    "make": "BMW",
+    "model": "630d xDrive Gran Turismo M Sport",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1880,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 62.5,
+    "ola": 81.5,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.7,
+"333Handling": 84,
+
+"666TopSpeed": 162,
+"6660to60": 5.4,
+"666Handling": 86,
+
+"699TopSpeed": 162,
+"6990to60": 5.1,
+"699Handling": 90,
+
+"969TopSpeed": 165,
+"9690to60": 5.4,
+"969Handling": 90,
+
+"996TopSpeed": 165,
+"9960to60": 5.1,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW630dxDriveGT(2017).png",
+    "creator": "Bnuuy"
+}
