@@ -1,0 +1,50 @@
+{
+    "carID": "c06832",
+    "cr": 1043,
+    "make": "Porsche",
+    "model": "935 VAILLANT",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 2.6,
+    "handling": 108,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","935 ICON","Collectable"],
+    "isPrize": false,
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 109.55,
+    "ola": 77.77,
+
+    "description": "Racing pilot Bob Wollek claimed victory in a baptism of fire at the Nürburgring, which brought the sponsor and heating manufacturer Vaillant international prominence. Green Hell is an apt description for both the legendary race track and this 935. This card has boosted Handling!",
+
+"333TopSpeed": 213,
+"3330to60": 2.5,
+"333Handling": 112,
+
+"666TopSpeed": 216,
+"6660to60": 2.3,
+"666Handling": 115,
+
+"699TopSpeed": 216,
+"6990to60": 2.2,
+"699Handling": 120,
+
+"969TopSpeed": 218,
+"9690to60": 2.3,
+"969Handling": 120,
+
+"996TopSpeed": 218,
+"9960to60": 2.2,
+"996Handling": 115,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/935VAILLANT.png",
+    "creator": "Bnuuy"
+}

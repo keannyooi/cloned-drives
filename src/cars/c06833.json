@@ -1,0 +1,50 @@
+{
+    "carID": "c06833",
+    "cr": 1043,
+    "make": "Porsche",
+    "model": "935 ICON (Collectors Edition)",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 221,
+    "0to60": 2.5,
+    "handling": 108,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","935 ICON","Collectable"],
+    "isPrize": true,
+    "weight": 1090,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 120.66,
+    "ola": 66.66,
+
+    "description": "There are Porsche race cars that motorsport fans will never forget. Their legendary designs contributed towards achieving cult status just like their best times. The range of different colours did not make a Porsche faster, but certainly more desirable. This card is boosted! Can be redeamed inside the Trader!",
+
+"333TopSpeed": 223,
+"3330to60": 2.4,
+"333Handling": 112,
+
+"666TopSpeed": 226,
+"6660to60": 2.3,
+"666Handling": 115,
+
+"699TopSpeed": 226,
+"6990to60": 2.1,
+"699Handling": 120,
+
+"969TopSpeed": 228,
+"9690to60": 2.3,
+"969Handling": 120,
+
+"996TopSpeed": 228,
+"9960to60": 2.1,
+"996Handling": 115,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/935CE.png",
+    "creator": "Bnuuy"
+}

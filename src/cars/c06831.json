@@ -1,0 +1,50 @@
+{
+    "carID": "c06831",
+    "cr": 1043,
+    "make": "Porsche",
+    "model": "935 SALZBURG",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 2.6,
+    "handling": 107,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","935 ICON","Collectable"],
+    "isPrize": false,
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 120.66,
+    "ola": 77.77,
+
+    "description": "In 1970, the world was amazed as a small closely knit team from Austria won the 24 Hours of Le Mans. It was the beginning of the super race car Porsche 917, which not only blew the competition away, but also their own pilots. This card has boosted MRA!",
+
+"333TopSpeed": 213,
+"3330to60": 2.5,
+"333Handling": 111,
+
+"666TopSpeed": 216,
+"6660to60": 2.3,
+"666Handling": 114,
+
+"699TopSpeed": 216,
+"6990to60": 2.2,
+"699Handling": 119,
+
+"969TopSpeed": 218,
+"9690to60": 2.3,
+"969Handling": 119,
+
+"996TopSpeed": 218,
+"9960to60": 2.2,
+"996Handling": 114,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/935SalzBurg.png",
+    "creator": "Bnuuy"
+}
