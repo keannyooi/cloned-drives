@@ -1,0 +1,50 @@
+{
+    "carID": "c06844",
+    "cr": 319,
+    "make": "Jaguar",
+    "model": "XJS 4.0 Convertible",
+    "modelYear": 1992,
+    "country": "GB",
+    "topSpeed": 139,
+    "0to60": 8.6,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1790,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.06,
+    "ola": 74.5,
+
+    "description": "",
+
+"333TopSpeed": 143,
+"3330to60": 8.2,
+"333Handling": 69,
+
+"666TopSpeed": 146,
+"6660to60": 7.7,
+"666Handling": 71,
+
+"699TopSpeed": 146,
+"6990to60": 7.3,
+"699Handling": 74,
+
+"969TopSpeed": 150,
+"9690to60": 7.7,
+"969Handling": 74,
+
+"996TopSpeed": 150,
+"9960to60": 7.3,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJRS4.0conv(1992).png",
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06843",
+    "cr": 867,
+    "make": "Jaguar",
+    "model": "XJR-4 IMSA GTP #44 Group 44 team",
+    "modelYear": 1982,
+    "country": "GB",
+    "topSpeed": 211,
+    "0to60": 3.3,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Royal Collection","Motorsport"],
+    "isPrize": false,
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 102.5,
+    "ola": 97.3,
+
+    "description": "",
+
+"333TopSpeed": 213,
+"3330to60": 3.1,
+"333Handling": 96,
+
+"666TopSpeed": 216,
+"6660to60": 3,
+"666Handling": 99,
+
+"699TopSpeed": 216,
+"6990to60": 2.8,
+"699Handling": 103,
+
+"969TopSpeed": 218,
+"9690to60": 3,
+"969Handling": 103,
+
+"996TopSpeed": 218,
+"9960to60": 2.8,
+"996Handling": 99,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJR4IMSAGTP(1982).png",
+    "creator": "Bnuuy"
+}

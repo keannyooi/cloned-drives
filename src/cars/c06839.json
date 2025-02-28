@@ -1,0 +1,50 @@
+{
+    "carID": "c06839",
+    "cr": 650,
+    "make": ["JW Automotive","Ford"],
+    "model": "GT40 Mark V Powered by Ford",
+    "modelYear": 1980,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 4.3,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection","RestoMod","Ultra Expensive"],
+    "isPrize": false,
+    "weight": 1075,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.56,
+    "ola": 101.24,
+
+    "description": "",
+
+"333TopSpeed": 200,
+"3330to60": 4.1,
+"333Handling": 83,
+
+"666TopSpeed": 202,
+"6660to60": 3.9,
+"666Handling": 85,
+
+"699TopSpeed": 202,
+"6990to60": 3.7,
+"699Handling": 89,
+
+"969TopSpeed": 205,
+"9690to60": 3.9,
+"969Handling": 89,
+
+"996TopSpeed": 205,
+"9960to60": 3.7,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JWAGT40MarkVPbF(1980).png",
+    "creator": "Bnuuy"
+}
