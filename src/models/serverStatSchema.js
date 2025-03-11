@@ -4,6 +4,7 @@ const { Schema, model } = require("mongoose");
 
 const serverStatSchema = new Schema({
     totalEvents: Number,
+	totalChampionships: Number,
     totalOffers: Number,
     dealershipCatalog: Array,
     bmCatalog: Array,

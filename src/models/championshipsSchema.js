@@ -3,7 +3,7 @@
 const { Schema, model } = require("mongoose");
 
 const championshipsSchema = new Schema({
-    championshipsID: String,
+    championshipID: String,
     name: String,
     isActive: { type: Boolean, default: false },
     isVIP: { type: Boolean, default: false },
