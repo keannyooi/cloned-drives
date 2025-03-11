@@ -1,0 +1,50 @@
+{
+    "carID": "c06852",
+    "cr": 619,
+    "make": "Jaguar",
+    "model": "XKR-S",
+    "modelYear": 2008,
+    "country": "GB",
+    "topSpeed": 174,
+    "0to60": 4.8,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.27,
+    "ola": 77.25,
+
+    "description": "A ferocious feline in a sharp suit. Supercharged V8 power, track-tuned handling, and just enough attitude to let everyone know it means business.",
+
+"333TopSpeed": 177,
+"3330to60": 4.6,
+"333Handling": 89,
+
+"666TopSpeed": 180,
+"6660to60": 4.3,
+"666Handling": 92,
+
+"699TopSpeed": 180,
+"6990to60": 4.1,
+"699Handling": 95,
+
+"969TopSpeed": 183,
+"9690to60": 4.3,
+"969Handling": 95,
+
+"996TopSpeed": 183,
+"9960to60": 4.1,
+"996Handling": 92,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXKR-S(2008).png",
+    "creator": "ama4nn"
+}

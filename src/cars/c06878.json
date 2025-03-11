@@ -1,0 +1,50 @@
+{
+    "carID": "c06878",
+    "cr": 218,
+    "make": "AMC",
+    "model": "Javelin 343 Shift-Command",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 8.9,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1528,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50,
+    "ola": 74.73,
+
+    "description": "AMC's first pony car equipped with a 343 cubic inch V8 and a sporty Borg-Warner 3-speed Shift-Command automatic transmission, a sportier version of the regular AMC automatic transmission which could be shifted manually.",
+
+"333TopSpeed": 124,
+"3330to60": 8.5,
+"333Handling": 67,
+
+"666TopSpeed": 129,
+"6660to60": 8,
+"666Handling": 69,
+
+"699TopSpeed": 129,
+"6990to60": 7.6,
+"699Handling": 72,
+
+"969TopSpeed": 133,
+"9690to60": 8,
+"969Handling": 72,
+
+"996TopSpeed": 133,
+"9960to60": 7.6,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelin343Shift-Command(1968).png",
+    "creator": "Johnny"
+}

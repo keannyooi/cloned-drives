@@ -1,0 +1,50 @@
+{
+    "carID": "c06975",
+    "cr": 337,
+    "make": "Nissan",
+    "model": "Kicks e-Power VL",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 103,
+    "0to60": 9.4,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1142,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 34.31,
+    "ola": 72.34,
+
+    "description": "",
+
+"333TopSpeed": 108,
+"3330to60": 8.9,
+"333Handling": 77,
+
+"666TopSpeed": 113,
+"6660to60": 8.5,
+"666Handling": 80,
+
+"699TopSpeed": 113,
+"6990to60": 8.0,
+"699Handling": 83,
+
+"969TopSpeed": 118,
+"9690to60": 8.5,
+"969Handling": 83,
+
+"996TopSpeed": 117,
+"9960to60": 8.0,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanKickse-PowelVL(2020).png",
+    "creator": "Scorpio"
+}

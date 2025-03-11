@@ -1,0 +1,50 @@
+{
+    "carID": "c06884",
+    "cr": 651,
+    "make": "AMC",
+    "model": "Javelin 390 BSCC Group 2",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 156,
+    "0to60": 4.5,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Muscle Car", "Motorsport","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.77,
+    "ola": 80.24,
+
+    "description": "A BSCC crowd favourite in the early 70s piloted by David Howes. Due to the more relaxed regulations of the British championship, the Javelin was powered by AMC's 389ci V8 and fitted with wider slick tires, making it faster than all Trans-Am variants of the car. The car suffered from reliability issues in the '72 season, but after they were resolved in the '73 season, Howes began claiming class wins and podiums. In 1975, the Javelin was put into dry storage until it resurfaced again at the 2016 Silverstone Classic, having been sold to Belgian racing driver Marc Devis.",
+
+"333TopSpeed": 159,
+"3330to60": 4.3,
+"333Handling": 89,
+
+"666TopSpeed": 163,
+"6660to60": 4,
+"666Handling": 92,
+
+"699TopSpeed": 163,
+"6990to60": 3.8,
+"699Handling": 95,
+
+"969TopSpeed": 166,
+"9690to60": 4,
+"969Handling": 95,
+
+"996TopSpeed": 166,
+"9960to60": 3.8,
+"996Handling": 92,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelin390BSCCGroup2(1972).png",
+    "creator": "Johnny"
+}

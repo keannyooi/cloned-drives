@@ -1,0 +1,50 @@
+{
+    "carID": "c06898",
+    "cr": 406,
+    "make": "Audi",
+    "model": "A4 2.8 30V quattro",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 7.4,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.48,
+    "ola": 67.56,
+
+    "description": "",
+
+"333TopSpeed": 150,
+"3330to60": 7,
+"333Handling": 76,
+
+"666TopSpeed": 153,
+"6660to60": 6.7,
+"666Handling": 79,
+
+"699TopSpeed": 153,
+"6990to60": 6.3,
+"699Handling": 82,
+
+"969TopSpeed": 157,
+"9690to60": 6.7,
+"969Handling": 82,
+
+"996TopSpeed": 157,
+"9960to60": 6.3,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA42830Vquattro(1999).png",
+    "creator": "Connor"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06927",
+    "cr": 697,
+    "make": "Jaguar",
+    "model": "XJ-S TWR Trans-Am #44 Group 44 Team",
+    "modelYear": 1976,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Royal Collection","Motorsport"],
+    "isPrize": false,
+    "weight": 1406,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.75,
+    "ola": 88.88,
+
+    "description": "",
+
+"333TopSpeed": 183,
+"3330to60": 4.2,
+"333Handling": 91,
+
+"666TopSpeed": 186,
+"6660to60": 4,
+"666Handling": 94,
+
+"699TopSpeed": 186,
+"6990to60": 3.7,
+"699Handling": 98,
+
+"969TopSpeed": 189,
+"9690to60": 4,
+"969Handling": 98,
+
+"996TopSpeed": 189,
+"9960to60": 3.7,
+"996Handling": 94,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJSTransAm(1976).png",
+    "creator": "Bnuuy"
+}

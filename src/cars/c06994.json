@@ -1,0 +1,50 @@
+{
+    "carID": "c06994",
+    "cr": 318,
+    "make": "Mercedes-Benz",
+    "model": "A 210 Evolution",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 126,
+    "0to60": 8.3,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour","Sleeper"],
+    "isPrize": false,
+    "weight": 1165,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.25,
+    "ola": 66.66,
+
+    "description": "An Evo version of the A-Class... yes, really.",
+
+"333TopSpeed": 130,
+"3330to60": 7.9,
+"333Handling": 74,
+
+"666TopSpeed": 134,
+"6660to60": 7.5,
+"666Handling": 77,
+
+"699TopSpeed": 134,
+"6990to60": 7.1,
+"699Handling": 80,
+
+"969TopSpeed": 138,
+"9690to60": 7.5,
+"969Handling": 80,
+
+"996TopSpeed": 138,
+"9960to60": 7.1,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzA210Evolution(2002).png",
+    "creator": "Pfugs"
+}

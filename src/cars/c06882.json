@@ -1,0 +1,50 @@
+{
+    "carID": "c06882",
+    "cr": 273,
+    "make": "AMC",
+    "model": "Javelin 390 SST Shift-Command",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 7.6,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1529,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.87,
+    "ola": 92.11,
+
+    "description": "In 1970 the AMC Javelin underwent it's first and only facelift for its first generation featuring a new front-end design, implementing a twin-venturi grille incorporating the headlamps, a new bumper design without air intakes, smooth front fender extensions, and a longer hood.",
+
+"333TopSpeed": 124,
+"3330to60": 7.2,
+"333Handling": 68,
+
+"666TopSpeed": 129,
+"6660to60": 6.8,
+"666Handling": 70,
+
+"699TopSpeed": 129,
+"6990to60": 6.5,
+"699Handling": 73,
+
+"969TopSpeed": 133,
+"9690to60": 6.8,
+"969Handling": 73,
+
+"996TopSpeed": 133,
+"9960to60": 6.5,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelin390SSTShift-Command(1970).png",
+    "creator": "Johnny"
+}

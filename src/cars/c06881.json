@@ -1,0 +1,50 @@
+{
+    "carID": "c06881",
+    "cr": 435,
+    "make": "AMC",
+    "model": "Javelin 390 SST Go Package",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 5.7,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1494,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.76,
+    "ola": 59.65,
+
+    "description": "The most performance oriented package of the '70 Javelin for when you want to go fast.",
+
+"333TopSpeed": 120,
+"3330to60": 5.4,
+"333Handling": 68,
+
+"666TopSpeed": 124,
+"6660to60": 5.1,
+"666Handling": 70,
+
+"699TopSpeed": 124,
+"6990to60": 4.8,
+"699Handling": 73,
+
+"969TopSpeed": 129,
+"9690to60": 5.1,
+"969Handling": 73,
+
+"996TopSpeed": 129,
+"9960to60": 4.8,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelin390SSTGoPackage(1970).png",
+    "creator": "Johnny"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06909",
+    "cr": 338,
+    "make": "Jaguar",
+    "model": "XJS 6.0 Convertible",
+    "modelYear": 1994,
+    "country": "GB",
+    "topSpeed": 152,
+    "0to60": 7.3,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1953,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.68,
+    "ola": 85.02,
+
+    "description": "",
+
+"333TopSpeed": 155,
+"3330to60": 6.9,
+"333Handling": 74,
+
+"666TopSpeed": 159,
+"6660to60": 6.6,
+"666Handling": 77,
+
+"699TopSpeed": 159,
+"6990to60": 6.2,
+"699Handling": 80,
+
+"969TopSpeed": 162,
+"9690to60": 6.6,
+"969Handling": 80,
+
+"996TopSpeed": 162,
+"9960to60": 6.2,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJRS6.0conv(1994).png",
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06897",
+    "cr": 358,
+    "make": "Audi",
+    "model": "A4 1.8T 5V quattro",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 8.2,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1325,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.90,
+    "ola": 68.29,
+
+    "description": "",
+
+"333TopSpeed": 141,
+"3330to60": 7.8,
+"333Handling": 75,
+
+"666TopSpeed": 145,
+"6660to60": 7.4,
+"666Handling": 78,
+
+"699TopSpeed": 145,
+"6990to60": 7,
+"699Handling": 81,
+
+"969TopSpeed": 148,
+"9690to60": 7.4,
+"969Handling": 81,
+
+"996TopSpeed": 148,
+"9960to60": 7,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA418T5Vquattro(1999).png",
+    "creator": "Connor"
+}

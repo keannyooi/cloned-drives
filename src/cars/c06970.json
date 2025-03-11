@@ -1,0 +1,50 @@
+{
+    "carID": "c06970",
+    "cr": 168,
+    "make": "BMW",
+    "model": "3200 S",
+    "modelYear": 1962,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 9.7,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.88,
+    "ola": 77.51,
+
+    "description": "",
+
+"333TopSpeed": 122,
+"3330to60": 9.2,
+"333Handling": 63,
+
+"666TopSpeed": 127,
+"6660to60": 8.7,
+"666Handling": 65,
+
+"699TopSpeed": 127,
+"6990to60": 8.2,
+"699Handling": 68,
+
+"969TopSpeed": 131,
+"9690to60": 8.7,
+"969Handling": 68,
+
+"996TopSpeed": 131,
+"9960to60": 8.2,
+"996Handling": 65,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW3200S(1962).png",
+    "creator": "Scorpio"
+}

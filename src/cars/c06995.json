@@ -1,0 +1,50 @@
+{
+    "carID": "c06995",
+    "cr": 171,
+    "make": "Mercedes-Benz",
+    "model": "A 170 CDI Elegance",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 12,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 35.29,
+    "ola": 66.89,
+
+    "description": "",
+
+"333TopSpeed": 118,
+"3330to60": 11.4,
+"333Handling": 71,
+
+"666TopSpeed": 122,
+"6660to60": 10.8,
+"666Handling": 74,
+
+"699TopSpeed": 122,
+"6990to60": 10.2,
+"699Handling": 77,
+
+"969TopSpeed": 127,
+"9690to60": 10.8,
+"969Handling": 77,
+
+"996TopSpeed": 127,
+"9960to60": 10.2,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzA170CDIElegance(2001).png",
+    "creator": "Pfugs"
+}

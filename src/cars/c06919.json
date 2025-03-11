@@ -1,0 +1,50 @@
+{
+    "carID": "c06919",
+    "cr": 336,
+    "make": "Jaguar",
+    "model": "XJ-SC 3.6",
+    "modelYear": 1983,
+    "country": "GB",
+    "topSpeed": 136,
+    "0to60": 8,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1700,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.59,
+    "ola": 79.12,
+
+    "description": "",
+
+"333TopSpeed": 140,
+"3330to60": 7.6,
+"333Handling": 68,
+
+"666TopSpeed": 144,
+"6660to60": 7.2,
+"666Handling": 70,
+
+"699TopSpeed": 144,
+"6990to60": 6.8,
+"699Handling": 73,
+
+"969TopSpeed": 147,
+"9690to60": 7.2,
+"969Handling": 73,
+
+"996TopSpeed": 147,
+"9960to60": 6.8,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJSC3.6(1983).png",
+    "creator": "Bnuuy"
+}

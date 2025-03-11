@@ -1,0 +1,50 @@
+{
+    "carID": "c06904",
+    "cr": 498,
+    "make": "Audi",
+    "model": "S4 Avant",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper","CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1540,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.26,
+    "ola": 65.51,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.5,
+"333Handling": 81,
+
+"666TopSpeed": 162,
+"6660to60": 5.2,
+"666Handling": 83,
+
+"699TopSpeed": 162,
+"6990to60": 4.9,
+"699Handling": 87,
+
+"969TopSpeed": 165,
+"9690to60": 5.2,
+"969Handling": 87,
+
+"996TopSpeed": 165,
+"9960to60": 4.9,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiS4Avant(1998).png",
+    "creator": "Connor"
+}

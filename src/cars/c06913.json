@@ -1,0 +1,50 @@
+{
+    "carID": "c06913",
+    "cr": 336,
+    "make": "Jaguar",
+    "model": "XJS 4.0",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 140,
+    "0to60": 8.4,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1730,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.55,
+    "ola": 72.18,
+
+    "description": "",
+
+"333TopSpeed": 144,
+"3330to60": 8,
+"333Handling": 70,
+
+"666TopSpeed": 147,
+"6660to60": 7.6,
+"666Handling": 72,
+
+"699TopSpeed": 147,
+"6990to60": 7.1,
+"699Handling": 75,
+
+"969TopSpeed": 151,
+"9690to60": 7.6,
+"969Handling": 75,
+
+"996TopSpeed": 151,
+"9960to60": 7.1,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJS4.0(1991).png",
+    "creator": "Bnuuy"
+}

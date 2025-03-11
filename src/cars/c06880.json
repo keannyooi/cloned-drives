@@ -1,0 +1,50 @@
+{
+    "carID": "c06880",
+    "cr": 323,
+    "make": "AMC",
+    "model": "Javelin 390 SST",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 117,
+    "0to60": 6.9,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1559,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.75,
+    "ola": 64.49,
+
+    "description": "A Javelin SST equipped with the brand new AMC 390 V8, putting out 315 horsepower and 425 ft lbs of torque to the rear wheels, sending the car from 0 to 60 mph in 6.9 seconds.",
+
+"333TopSpeed": 121,
+"3330to60": 6.6,
+"333Handling": 67,
+
+"666TopSpeed": 126,
+"6660to60": 6.2,
+"666Handling": 69,
+
+"699TopSpeed": 126,
+"6990to60": 5.9,
+"699Handling": 72,
+
+"969TopSpeed": 130,
+"9690to60": 6.2,
+"969Handling": 72,
+
+"996TopSpeed": 130,
+"9960to60": 5.9,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelin390SST(1968).png",
+    "creator": "Johnny"
+}

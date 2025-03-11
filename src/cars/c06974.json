@@ -1,0 +1,50 @@
+{
+    "carID": "c06974",
+    "cr": 456,
+    "make": "Nissan",
+    "model": "Kicks Beach Patrol Concept",
+    "modelYear": 2024,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 9.4,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CDCCS, Concept","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1527,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.55,
+    "ola": 65.96,
+
+    "description": "",
+
+"333TopSpeed": 124,
+"3330to60": 8.9,
+"333Handling": 77,
+
+"666TopSpeed": 129,
+"6660to60": 8.5,
+"666Handling": 80,
+
+"699TopSpeed": 129,
+"6990to60": 8.0,
+"699Handling": 83,
+
+"969TopSpeed": 133,
+"9690to60": 8.5,
+"969Handling": 83,
+
+"996TopSpeed": 133,
+"9960to60": 8.0,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanKicksBeachPatrolConcept(2024).png",
+    "creator": "Scoprio"
+}

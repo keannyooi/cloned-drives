@@ -1,0 +1,50 @@
+{
+    "carID": "c06853",
+    "cr": 592,
+    "make": "Jaguar",
+    "model": "Advanced Lightweight Coupe",
+    "modelYear": 2005,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 5,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.43,
+    "ola": 75,
+
+    "description": "A concept that redefined sleek. With aluminum construction and a hint of feline aggression, it’s the blueprint for modern, well, at the time, Jaguar style — equal parts innovation and allure.",
+
+"333TopSpeed": 183,
+"3330to60": 4.8,
+"333Handling": 87,
+
+"666TopSpeed": 186,
+"6660to60": 4.5,
+"666Handling": 90,
+
+"699TopSpeed": 186,
+"6990to60": 4.3,
+"699Handling": 93,
+
+"969TopSpeed": 189,
+"9690to60": 4.5,
+"969Handling": 93,
+
+"996TopSpeed": 189,
+"9960to60": 4.3,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarAdvancedLightweightCoupe(2005).png",
+    "creator": "ama4nn"
+}

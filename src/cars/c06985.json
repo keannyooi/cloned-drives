@@ -1,0 +1,50 @@
+{
+    "carID": "c06985",
+    "cr": 1029,
+    "make": "Porsche",
+    "model": "Taycan Turbo GT",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 2.2,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Eco-Friendly","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 2290,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 95.65,
+    "ola": 82.55,
+
+    "description": "",
+
+"333TopSpeed": 183,
+"3330to60": 2.1,
+"333Handling": 95,
+
+"666TopSpeed": 186,
+"6660to60": 2,
+"666Handling": 98,
+
+"699TopSpeed": 186,
+"6990to60": 1.9,
+"699Handling": 102,
+
+"969TopSpeed": 189,
+"9690to60": 2,
+"969Handling": 102,
+
+"996TopSpeed": 189,
+"9960to60": 1.9,
+"996Handling": 98,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PorscheTaycanTurboGT(2024).png",
+    "creator": "Bnuuy"
+}

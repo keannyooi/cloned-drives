@@ -1,0 +1,50 @@
+{
+    "carID": "c06932",
+    "cr": 560,
+    "make": "BMW",
+    "model": "iX3 M Sport",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 6.4,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["CDCCS","Eco-Friendly","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 2185,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 69.56,
+    "ola": 87.5,
+
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 6.1,
+"333Handling": 80,
+
+"666TopSpeed": 121,
+"6660to60": 5.8,
+"666Handling": 82,
+
+"699TopSpeed": 121,
+"6990to60": 5.4,
+"699Handling": 85,
+
+"969TopSpeed": 126,
+"9690to60": 5.8,
+"969Handling": 85,
+
+"996TopSpeed": 126,
+"9960to60": 5.4,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWiX3(2020).png",
+    "creator": "Bnuuy"
+}

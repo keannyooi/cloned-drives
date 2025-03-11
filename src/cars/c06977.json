@@ -1,0 +1,50 @@
+{
+    "carID": "c06977",
+    "cr": 329,
+    "make": "Nissan",
+    "model": "Kicks XV Diesel",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 10.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Amplification of Asia"],
+    "isPrize": false,
+    "weight": 1373,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 41.54,
+    "ola": 70.37,
+
+    "description": "",
+
+"333TopSpeed": 118,
+"3330to60": 10.3,
+"333Handling": 76,
+
+"666TopSpeed": 122,
+"6660to60": 9.7,
+"666Handling": 79,
+
+"699TopSpeed": 122,
+"6990to60": 9.2,
+"699Handling": 82,
+
+"969TopSpeed": 127,
+"9690to60": 9.7,
+"969Handling": 82,
+
+"996TopSpeed": 127,
+"9960to60": 9.2,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanKicksXVDiesel(2019).png",
+    "creator": "Scorpio"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06901",
+    "cr": 1033,
+    "make": "BMW",
+    "model": "M4 Turbo DTM #00 Puma BMW Team RBM",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 192,
+    "0to60": 2.7,
+    "handling": 109,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","CDCCS","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 1070,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 115.00,
+    "ola": 97.59,
+
+    "description": "",
+
+"333TopSpeed": 195,
+"3330to60": 2.6,
+"333Handling": 113,
+
+"666TopSpeed": 197,
+"6660to60": 2.4,
+"666Handling": 116,
+
+"699TopSpeed": 197,
+"6990to60": 2.3,
+"699Handling": 121,
+
+"969TopSpeed": 200,
+"9690to60": 2.4,
+"969Handling": 121,
+
+"996TopSpeed": 200,
+"9960to60": 2.3,
+"996Handling": 116,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWM4TurboDTM.png",
+    "creator": "Connor"
+}

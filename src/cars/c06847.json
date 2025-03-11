@@ -1,0 +1,50 @@
+{
+    "carID": "c06847",
+    "cr": 489,
+    "make": "Jaguar",
+    "model": "XK",
+    "modelYear": 2006,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1720,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.39,
+    "ola": 76.89,
+
+    "description": "A sleek, British classic with a V8 heart. It�s the kind of car that makes you feel like you�re always on a winding country road, even when you're stuck in traffic.",
+
+"333TopSpeed": 158,
+"3330to60": 5.4,
+"333Handling": 85,
+
+"666TopSpeed": 162,
+"6660to60": 5.1,
+"666Handling": 87,
+
+"699TopSpeed": 162,
+"6990to60": 4.8,
+"699Handling": 91,
+
+"969TopSpeed": 165,
+"9690to60": 5.1,
+"969Handling": 91,
+
+"996TopSpeed": 165,
+"9960to60": 4.8,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXK(2006).png",
+    "creator": "ama4nn"
+}

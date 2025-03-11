@@ -1,0 +1,50 @@
+{
+    "carID": "c06918",
+    "cr": 350,
+    "make": "Jaguar",
+    "model": "XJS V12",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 7.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1825,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.69,
+    "ola": 78.33,
+
+    "description": "",
+
+"333TopSpeed": 153,
+"3330to60": 7.3,
+"333Handling": 72,
+
+"666TopSpeed": 157,
+"6660to60": 6.9,
+"666Handling": 75,
+
+"699TopSpeed": 157,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 160,
+"9690to60": 6.9,
+"969Handling": 78,
+
+"996TopSpeed": 160,
+"9960to60": 6.5,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJSV12(1991).png",
+    "creator": "Bnuuy"
+}

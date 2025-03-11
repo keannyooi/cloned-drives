@@ -1,0 +1,50 @@
+{
+    "carID": "c06888",
+    "cr": 544,
+    "make": "AMC",
+    "model": "Javelin Trans-Am",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 150,
+    "0to60": 5.1,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Motorsport","CDCCS","The Americas Assault"],
+    "isPrize": false,
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.45,
+    "ola": 83.14,
+
+    "description": "Roger Penske signed a contract with AMC after back to back championship wins in the two previous seasons, dropping Chevrolet for the 1970 Trans-Am season because he could not get along with Chevrolet Racing's Vince Piggins, as well as Chevy being stingy with development money. Penske also took racing driver Mark Donohue and former Chevy suspension engineer Don Cox with him, and started improving the Javelin Trans-Am car. Together wtih Traco, they developed a destroked 360 engine to fit the 305ci engine displacement limit, outputing 430 horsepower, a massive improvement over their old 290ci V8. Despite reliability issues causing AMC to lose 23 engines, they managed to win three races during the 1970 season.",
+
+"333TopSpeed": 153,
+"3330to60": 4.8,
+"333Handling": 85,
+
+"666TopSpeed": 157,
+"6660to60": 4.6,
+"666Handling": 87,
+
+"699TopSpeed": 157,
+"6990to60": 4.3,
+"699Handling": 91,
+
+"969TopSpeed": 160,
+"9690to60": 4.6,
+"969Handling": 91,
+
+"996TopSpeed": 160,
+"9960to60": 4.3,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMCJavelinTrans-Am(1970).png",
+    "creator": "Johnny"
+}

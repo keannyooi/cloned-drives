@@ -1,0 +1,50 @@
+{
+    "carID": "c06984",
+    "cr": 993,
+    "make": "Aehra",
+    "model": "Impeto",
+    "modelYear": 2025,
+    "country": "IT",
+    "topSpeed": 161,
+    "0to60": 2.8,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","Eco-Friendly","Super Sedan","The Tyrol Tour"],
+    "isPrize": false,
+    "weight": 2300,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 80,
+    "ola": 93.46,
+
+    "description": "",
+
+"333TopSpeed": 164,
+"3330to60": 2.7,
+"333Handling": 86,
+
+"666TopSpeed": 167,
+"6660to60": 2.5,
+"666Handling": 88,
+
+"699TopSpeed": 167,
+"6990to60": 2.4,
+"699Handling": 92,
+
+"969TopSpeed": 171,
+"9690to60": 2.5,
+"969Handling": 92,
+
+"996TopSpeed": 171,
+"9960to60": 2.4,
+"996Handling": 88,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AehraImpeto(2025).png",
+    "creator": "ama4nn"
+}

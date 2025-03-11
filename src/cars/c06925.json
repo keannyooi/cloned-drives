@@ -1,0 +1,50 @@
+{
+    "carID": "c06925",
+    "cr": 422,
+    "make": "Jaguar",
+    "model": "XJS Monaco by Paul Bailey Design",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 169,
+    "0to60": 6.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection","Tuner","Unique"],
+    "isPrize": false,
+    "weight": 1950,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.25,
+    "ola": 88.88,
+
+    "description": "",
+
+"333TopSpeed": 172,
+"3330to60": 5.9,
+"333Handling": 83,
+
+"666TopSpeed": 175,
+"6660to60": 5.6,
+"666Handling": 85,
+
+"699TopSpeed": 175,
+"6990to60": 5.3,
+"699Handling": 89,
+
+"969TopSpeed": 178,
+"9690to60": 5.6,
+"969Handling": 89,
+
+"996TopSpeed": 178,
+"9960to60": 5.3,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJSMonaco(1991).png",
+    "creator": "Bnuuy"
+}

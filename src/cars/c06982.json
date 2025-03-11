@@ -1,0 +1,50 @@
+{
+    "carID": "c06982",
+    "cr": 893,
+    "make": "Renault",
+    "model": "Espace F1",
+    "modelYear": 1994,
+    "country": "FR",
+    "topSpeed": 194,
+    "0to60": 2.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Unique","Track Day","Innovative"],
+    "isPrize": true,
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.77,
+    "ola": 103.55,
+
+    "description": "",
+
+"333TopSpeed": 197,
+"3330to60": 2.6,
+"333Handling": 95,
+
+"666TopSpeed": 199,
+"6660to60": 2.4,
+"666Handling": 98,
+
+"699TopSpeed": 199,
+"6990to60": 2.3,
+"699Handling": 102,
+
+"969TopSpeed": 202,
+"9690to60": 2.4,
+"969Handling": 102,
+
+"996TopSpeed": 202,
+"9960to60": 2.3,
+"996Handling": 98,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultEspaceF1(1994).png",
+    "creator": "Pfugs"
+}

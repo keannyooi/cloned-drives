@@ -1,0 +1,50 @@
+{
+    "carID": "c06855",
+    "cr": 760,
+    "make": ["G-Power","BMW"],
+    "model": "X6 M Typhoon RS Ultimate V10",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 206,
+    "0to60": 4.1,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Tuner","Unique","The Tyrol Tour"],
+    "isPrize": true,
+    "weight": 2140,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.57,
+    "ola": 93.69,
+
+    "description": "Ultimate widebody + ultimate horsepower + ultimate top speed + RWD swap = ultimate eyesore.",
+
+"333TopSpeed": 209,
+"3330to60": 3.9,
+"333Handling": 87,
+
+"666TopSpeed": 211,
+"6660to60": 3.7,
+"666Handling": 90,
+
+"699TopSpeed": 211,
+"6990to60": 3.5,
+"699Handling": 93,
+
+"969TopSpeed": 214,
+"9690to60": 3.7,
+"969Handling": 93,
+
+"996TopSpeed": 214,
+"9960to60": 3.5,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/G-PowerX6MTyphoonRSUltimateV10(2011).png",
+    "creator": "Pfugs"
+}

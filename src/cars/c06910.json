@@ -1,0 +1,50 @@
+{
+    "carID": "c06910",
+    "cr": 384,
+    "make": "Jaguar",
+    "model": "XJS V12 Convertible",
+    "modelYear": 1994,
+    "country": "GB",
+    "topSpeed": 160,
+    "0to60": 6.8,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 1985,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.56,
+    "ola": 84.6,
+
+    "description": "",
+
+"333TopSpeed": 163,
+"3330to60": 6.5,
+"333Handling": 75,
+
+"666TopSpeed": 167,
+"6660to60": 6.1,
+"666Handling": 78,
+
+"699TopSpeed": 167,
+"6990to60": 5.8,
+"699Handling": 81,
+
+"969TopSpeed": 170,
+"9690to60": 6.1,
+"969Handling": 81,
+
+"996TopSpeed": 170,
+"9960to60": 5.8,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJRSV12conv(1994).png",
+    "creator": "Bnuuy"
+}

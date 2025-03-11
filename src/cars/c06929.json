@@ -1,0 +1,50 @@
+{
+    "carID": "c06929",
+    "cr": 268,
+    "make": "Rivian",
+    "model": "ECV 700",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 77,
+    "0to60": 8.1,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 3169,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Other",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 79.01,
+
+    "description": "",
+
+"333TopSpeed": 84,
+"3330to60": 7.7,
+"333Handling": 69,
+
+"666TopSpeed": 91,
+"6660to60": 7.3,
+"666Handling": 71,
+
+"699TopSpeed": 91,
+"6990to60": 6.9,
+"699Handling": 74,
+
+"969TopSpeed": 97,
+"9690to60": 7.3,
+"969Handling": 74,
+
+"996TopSpeed": 97,
+"9960to60": 6.9,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RivianECV700(2024).png",
+    "creator": "DodgeDemon"
+}
