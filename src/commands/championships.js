@@ -140,7 +140,7 @@ module.exports = {
                         }
                    }
                     else if (championship.isActive) {
-                       intervalString = `\`unlimited time remaining\` ${progress > championship.roster.length ? "✅" : ""}`;
+                       intervalString = `\`.\` ${progress > championship.roster.length ? "✅" : ""}`;
                    }
                     championshipList += `${championship.name} ${intervalString}\n`;
                 }
