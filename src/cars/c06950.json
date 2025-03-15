@@ -1,0 +1,50 @@
+{
+    "carID": "c06950",
+    "cr": 798,
+    "make": ["Brabus","Mercedes-Benz","Mercedes-AMG"],
+    "model": "800 Adventure XLP",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 4.6,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Tyrol Tour","Tuner","Ultra Expensive","Unique","Extreme Juggernaut"],
+    "isPrize": false,
+    "weight": 2936,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.98,
+    "ola": 65.23,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 4.4,
+"333Handling": 68,
+
+"666TopSpeed": 138,
+"6660to60": 4.1,
+"666Handling": 70,
+
+"699TopSpeed": 138,
+"6990to60": 3.9,
+"699Handling": 73,
+
+"969TopSpeed": 142,
+"9690to60": 4.1,
+"969Handling": 73,
+
+"996TopSpeed": 142,
+"9960to60": 3.9,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Brabus800AdventureXLP(2020).png",
+    "creator": "Bnuuy"
+}

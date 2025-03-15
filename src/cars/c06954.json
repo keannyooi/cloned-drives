@@ -1,0 +1,50 @@
+{
+    "carID": "c06954",
+    "cr": 480,
+    "make": "Alpine",
+    "model": "M63",
+    "modelYear": 1963,
+    "country": "FR",
+    "topSpeed": 145,
+    "0to60": 5.6,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 620,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 78.54,
+
+    "description": "Alpine introduces their first prototype for their future Le Mans racer, which was unreliable and stayed so until the A220. Too bad, Alpine, and you still haven't changed to this day. The M63 used Gordini-tuned engines requested by Rédélé.",
+
+"333TopSpeed": 149,
+"3330to60": 5.3,
+"333Handling": 81,
+
+"666TopSpeed": 152,
+"6660to60": 5,
+"666Handling": 83,
+
+"699TopSpeed": 152,
+"6990to60": 4.8,
+"699Handling": 87,
+
+"969TopSpeed": 156,
+"9690to60": 5,
+"969Handling": 87,
+
+"996TopSpeed": 156,
+"9960to60": 4.8,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineM63(1963).png",
+    "creator": "ama4nn"
+}

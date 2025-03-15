@@ -1,0 +1,50 @@
+{
+    "carID": "c06953",
+    "cr": 729,
+    "make": "Alpine",
+    "model": "A220",
+    "modelYear": 1968,
+    "country": "FR",
+    "topSpeed": 205,
+    "0to60": 3.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 680,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 91.67,
+    "ola": 95.41,
+
+    "description": "Designed to take on the 24 Hours of Le Mans, the A220 is powered by a high-revving but unfortunately unreliable V8. It faced tough competition and was unable to complete the race each year.",
+
+"333TopSpeed": 208,
+"3330to60": 3.7,
+"333Handling": 86,
+
+"666TopSpeed": 210,
+"6660to60": 3.5,
+"666Handling": 88,
+
+"699TopSpeed": 210,
+"6990to60": 3.3,
+"699Handling": 92,
+
+"969TopSpeed": 213,
+"9690to60": 3.5,
+"969Handling": 92,
+
+"996TopSpeed": 213,
+"9960to60": 3.3,
+"996Handling": 88,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineA220(1968).png",
+    "creator": "ama4nn"
+}

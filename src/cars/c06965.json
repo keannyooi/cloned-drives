@@ -1,0 +1,50 @@
+{
+    "carID": "c06965",
+    "cr": 363,
+    "make": ["Car Design Schacht", "Mercedes-Benz"],
+    "model": "300 CE SL Powerkit",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour","Tuner","Unique"],
+    "isPrize": false,
+    "weight": 1410,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.4,
+    "ola": 73.53,
+
+    "description": "What the hell is this now?",
+
+"333TopSpeed": 158,
+"3330to60": 6.5,
+"333Handling": 80,
+
+"666TopSpeed": 162,
+"6660to60": 6.1,
+"666Handling": 82,
+
+"699TopSpeed": 162,
+"6990to60": 5.8,
+"699Handling": 85,
+
+"969TopSpeed": 165,
+"9690to60": 6.1,
+"969Handling": 85,
+
+"996TopSpeed": 165,
+"9960to60": 5.8,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CarDesignSchacht300CESLPowerkit(1988).png",
+    "creator": "Pfugs"
+}

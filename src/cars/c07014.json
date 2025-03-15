@@ -1,0 +1,50 @@
+{
+    "carID": "c07014",
+    "cr": 583,
+    "make": "Rolls-Royce",
+    "model": "Sweptail",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection","Unique","Ultra Expensive"],
+    "isPrize": true,
+    "weight": 2560,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.1,
+    "ola": 76.89,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.1,
+"333Handling": 75,
+
+"666TopSpeed": 162,
+"6660to60": 4.9,
+"666Handling": 78,
+
+"699TopSpeed": 162,
+"6990to60": 4.6,
+"699Handling": 81,
+
+"969TopSpeed": 165,
+"9690to60": 4.9,
+"969Handling": 81,
+
+"996TopSpeed": 165,
+"9960to60": 4.6,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoyceSweptail(2018).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06957",
+    "cr": 590,
+    "make": ["Loewer", "Mercedes-Benz"],
+    "model": "600 CE",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 5.1,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","The Tyrol Tour","Tuner","Unique"],
+    "isPrize": false,
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68,
+    "ola": 90.2,
+
+    "description": "What Forza players would call a power build.",
+
+"333TopSpeed": 180,
+"3330to60": 4.8,
+"333Handling": 80,
+
+"666TopSpeed": 183,
+"6660to60": 4.6,
+"666Handling": 82,
+
+"699TopSpeed": 183,
+"6990to60": 4.3,
+"699Handling": 85,
+
+"969TopSpeed": 186,
+"9690to60": 4.6,
+"969Handling": 85,
+
+"996TopSpeed": 186,
+"9960to60": 4.3,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Loewer600CE(1992).png",
+    "creator": "Pfugs"
+}

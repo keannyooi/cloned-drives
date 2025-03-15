@@ -1,0 +1,50 @@
+{
+    "carID": "c06952",
+    "cr": 700,
+    "make": "Alpine",
+    "model": "A220 Short Tail",
+    "modelYear": 1968,
+    "country": "FR",
+    "topSpeed": 135,
+    "0to60": 3.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 65.28,
+    "ola": 89.89,
+
+    "description": "The A220 got its rear shortened by 30cm to improve the handling on twisty tracks and rally stages. This change led to better performance, but way less top speed for rally.",
+
+"333TopSpeed": 139,
+"3330to60": 3.5,
+"333Handling": 87,
+
+"666TopSpeed": 143,
+"6660to60": 3.3,
+"666Handling": 90,
+
+"699TopSpeed": 143,
+"6990to60": 3.1,
+"699Handling": 93,
+
+"969TopSpeed": 147,
+"9690to60": 3.3,
+"969Handling": 93,
+
+"996TopSpeed": 147,
+"9960to60": 3.1,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineA220ShortTail(1968).png",
+    "creator": "ama4nn"
+}

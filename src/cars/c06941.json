@@ -1,0 +1,50 @@
+{
+    "carID": "c06941",
+    "cr": 621,
+    "make": ["Brabus","Mercedes-Benz"],
+    "model": "550 Adventure",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 6.3,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["CDCCS","The Tyrol Tour","Tuner","Ultra Expensive","Extreme Juggernaut"],
+    "isPrize": false,
+    "weight": 2650,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.04,
+    "ola": 65.88,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 6,
+"333Handling": 67,
+
+"666TopSpeed": 138,
+"6660to60": 5.7,
+"666Handling": 69,
+
+"699TopSpeed": 138,
+"6990to60": 5.4,
+"699Handling": 72,
+
+"969TopSpeed": 142,
+"9690to60": 5.7,
+"969Handling": 72,
+
+"996TopSpeed": 142,
+"9960to60": 5.4,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Brabus550Adventure(2019).png",
+    "creator": "Bnuuy"
+}

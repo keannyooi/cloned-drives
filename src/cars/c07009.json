@@ -1,0 +1,50 @@
+{
+    "carID": "c07009",
+    "cr": 525,
+    "make": "Rolls-Royce",
+    "model": "Phantom Drophead Coupe",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 5.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 2700,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.15,
+    "ola": 74.25,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5.4,
+"333Handling": 72,
+
+"666TopSpeed": 156,
+"6660to60": 5.1,
+"666Handling": 75,
+
+"699TopSpeed": 156,
+"6990to60": 4.8,
+"699Handling": 78,
+
+"969TopSpeed": 159,
+"9690to60": 5.1,
+"969Handling": 78,
+
+"996TopSpeed": 159,
+"9960to60": 4.8,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoycePhantomDropheadCoupe(2012).png",
+    "creator": "Pfugs"
+}

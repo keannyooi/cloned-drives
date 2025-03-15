@@ -1,0 +1,50 @@
+{
+    "carID": "c07008",
+    "cr": 486,
+    "make": "Rolls-Royce",
+    "model": "Phantom Drophead Coupe",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 6,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 2695,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.33,
+    "ola": 74.68,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5.7,
+"333Handling": 70,
+
+"666TopSpeed": 156,
+"6660to60": 5.4,
+"666Handling": 72,
+
+"699TopSpeed": 156,
+"6990to60": 5.1,
+"699Handling": 75,
+
+"969TopSpeed": 159,
+"9690to60": 5.4,
+"969Handling": 75,
+
+"996TopSpeed": 159,
+"9960to60": 5.1,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoycePhantomDropheadCoupe(2007).png",
+    "creator": "Pfugs"
+}

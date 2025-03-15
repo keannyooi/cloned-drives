@@ -1,0 +1,50 @@
+{
+    "carID": "c07013",
+    "cr": 554,
+    "make": "Rolls-Royce",
+    "model": "Phantom II",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 5.5,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 2659,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.47,
+    "ola": 73.08,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5.2,
+"333Handling": 73,
+
+"666TopSpeed": 156,
+"6660to60": 5,
+"666Handling": 76,
+
+"699TopSpeed": 156,
+"6990to60": 4.7,
+"699Handling": 79,
+
+"969TopSpeed": 159,
+"9690to60": 5,
+"969Handling": 79,
+
+"996TopSpeed": 159,
+"9960to60": 4.7,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoycePhantomII(2012).png",
+    "creator": "Pfugs"
+}

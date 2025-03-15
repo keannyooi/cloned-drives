@@ -1,0 +1,50 @@
+{
+    "carID": "c06956",
+    "cr": 564,
+    "make": "Alpine",
+    "model": "M65",
+    "modelYear": 1965,
+    "country": "FR",
+    "topSpeed": 160,
+    "0to60": 5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 68.72,
+    "ola": 82.88,
+
+    "description": "The third M prototype for 1965, yet again being better than its predecessor, the M64. It's basically an endless cycle! Until..",
+
+"333TopSpeed": 163,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 167,
+"6660to60": 4.5,
+"666Handling": 85,
+
+"699TopSpeed": 167,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 170,
+"9690to60": 4.5,
+"969Handling": 89,
+
+"996TopSpeed": 170,
+"9960to60": 4.3,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineM65(1965).png",
+    "creator": "ama4nn"
+}

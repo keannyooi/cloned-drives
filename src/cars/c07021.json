@@ -1,0 +1,50 @@
+{
+    "carID": "c07021",
+    "cr": 504,
+    "make": "Alfa Romeo",
+    "model": "S.Z. Trofeo",
+    "modelYear": 1993,
+    "country": "IT",
+    "topSpeed": 151,
+    "0to60": 6.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Tyrol Tour","Unique","Track Day"],
+    "isPrize": false,
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 80.3,
+
+    "description": "",
+
+"333TopSpeed": 154,
+"3330to60": 5.9,
+"333Handling": 92,
+
+"666TopSpeed": 158,
+"6660to60": 5.6,
+"666Handling": 95,
+
+"699TopSpeed": 158,
+"6990to60": 5.3,
+"699Handling": 99,
+
+"969TopSpeed": 161,
+"9690to60": 5.6,
+"969Handling": 99,
+
+"996TopSpeed": 161,
+"9960to60": 5.3,
+"996Handling": 95,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlfaRomeoSZTrofeo(1993).png",
+    "creator": "Scorpio"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c06955",
+    "cr": 545,
+    "make": "Alpine",
+    "model": "M64",
+    "modelYear": 1964,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["CDCCS","Motorsport"],
+    "isPrize": false,
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 68.03,
+    "ola": 82.51,
+
+    "description": "The second M prototype for 1964, which was definitely better than the M63. Alpine is slowly developing their ultimate Le Mans and endurance racer.",
+
+"333TopSpeed": 158,
+"3330to60": 4.8,
+"333Handling": 82,
+
+"666TopSpeed": 162,
+"6660to60": 4.6,
+"666Handling": 84,
+
+"699TopSpeed": 162,
+"6990to60": 4.3,
+"699Handling": 88,
+
+"969TopSpeed": 165,
+"9690to60": 4.6,
+"969Handling": 88,
+
+"996TopSpeed": 165,
+"9960to60": 4.3,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineM64(1964).png",
+    "creator": "ama4nn"
+}

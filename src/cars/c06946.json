@@ -1,0 +1,50 @@
+{
+    "carID": "c06946",
+    "cr": 992,
+    "make": "Chevrolet",
+    "model": "Blazer EV.R NASCAR Prototype",
+    "modelYear": 2025,
+    "country": "US",
+    "topSpeed": 186,
+    "0to60": 2.3,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["CDCCS","The Americas Assault","Eco-Friendly", "Motorsport"],
+    "isPrize": false,
+    "weight": 1814,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 102.87,
+    "ola": 103.22,
+
+    "description": "A glimpse into NASCAR's future: No sound, 2 tons, no top speed and fake crossovers — can you do anything more fun? Doubt so!",
+
+"333TopSpeed": 189,
+"3330to60": 2.2,
+"333Handling": 99,
+
+"666TopSpeed": 192,
+"6660to60": 2.1,
+"666Handling": 102,
+
+"699TopSpeed": 192,
+"6990to60": 2,
+"699Handling": 107,
+
+"969TopSpeed": 194,
+"9690to60": 2.1,
+"969Handling": 107,
+
+"996TopSpeed": 194,
+"9960to60": 2,
+"996Handling": 102,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletBlazerEV.RNASCARPrototype(2025).png",
+    "creator": "ama4nn"
+}

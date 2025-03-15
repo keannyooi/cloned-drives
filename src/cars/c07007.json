@@ -1,0 +1,50 @@
+{
+    "carID": "c07007",
+    "cr": 573,
+    "make": "Rolls-Royce",
+    "model": "Phantom Coupe",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 5.4,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 2600,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.45,
+    "ola": 72.72,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5.1,
+"333Handling": 74,
+
+"666TopSpeed": 156,
+"6660to60": 4.9,
+"666Handling": 77,
+
+"699TopSpeed": 156,
+"6990to60": 4.6,
+"699Handling": 80,
+
+"969TopSpeed": 159,
+"9690to60": 4.9,
+"969Handling": 80,
+
+"996TopSpeed": 159,
+"9960to60": 4.6,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoycePhantomCoupe(2012).png",
+    "creator": "Pfugs"
+}

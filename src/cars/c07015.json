@@ -1,0 +1,50 @@
+{
+    "carID": "c07015",
+    "cr": 670,
+    "make": "Rolls-Royce",
+    "model": "100EX Centenary",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection","Unique","Ultra Expensive","Concept"],
+    "isPrize": false,
+    "weight": 2720,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.77,
+    "ola": 79.16,
+
+    "description": "9.0L V16 Convertible?",
+
+"333TopSpeed": 158,
+"3330to60": 4.2,
+"333Handling": 73,
+
+"666TopSpeed": 162,
+"6660to60": 4,
+"666Handling": 76,
+
+"699TopSpeed": 162,
+"6990to60": 3.7,
+"699Handling": 79,
+
+"969TopSpeed": 165,
+"9690to60": 4,
+"969Handling": 79,
+
+"996TopSpeed": 165,
+"9960to60": 3.7,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoyceSweptail(2018).png",
+    "creator": "Pfugs"
+}

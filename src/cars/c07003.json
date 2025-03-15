@@ -1,0 +1,50 @@
+{
+    "carID": "c07003",
+    "cr": 513,
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "modelYear": 2003,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 5.8,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["CDCCS","The Royal Collection"],
+    "isPrize": false,
+    "weight": 2650,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.84,
+    "ola": 73.98,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5.5,
+"333Handling": 71,
+
+"666TopSpeed": 156,
+"6660to60": 5.2,
+"666Handling": 74,
+
+"699TopSpeed": 156,
+"6990to60": 4.9,
+"699Handling": 77,
+
+"969TopSpeed": 159,
+"9690to60": 5.2,
+"969Handling": 77,
+
+"996TopSpeed": 159,
+"9960to60": 4.9,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Rolls-RoycePhantom(2003).png",
+    "creator": "Pfugs"
+}
