@@ -1,0 +1,50 @@
+{
+    "carID": "c07068",
+    "cr": 311,
+    "make": "Mercedes-Benz",
+    "model": "CLA 200 CDI 4MATIC Shooting Brake AMG Line",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 9.1,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 40,
+    "ola": 73.47,
+
+    "description": "",
+
+"333TopSpeed": 136,
+"3330to60": 8.6,
+"333Handling": 76,
+
+"666TopSpeed": 140,
+"6660to60": 8.2,
+"666Handling": 79,
+
+"699TopSpeed": 140,
+"6990to60": 7.7,
+"699Handling": 82,
+
+"969TopSpeed": 144,
+"9690to60": 8.2,
+"969Handling": 82,
+
+"996TopSpeed": 144,
+"9960to60": 7.7,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzCLA200CDI4MATICSB(2015).png",
+    "creator": "Pfugs"
+}

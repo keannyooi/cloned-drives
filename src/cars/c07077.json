@@ -1,0 +1,50 @@
+{
+    "carID": "c07077",
+    "cr": 310,
+    "make": "SEAT",
+    "model": "Exeo 1.8T 5V Style",
+    "modelYear": 2009,
+    "country": "ES",
+    "topSpeed": 135,
+    "0to60": 9.0,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Rest of The World"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.60,
+    "ola": 66.66,
+
+    "description": "Last application of the legendary 1.8T.",
+
+"333TopSpeed": 139,
+"3330to60": 8.5,
+"333Handling": 77,
+
+"666TopSpeed": 143,
+"6660to60": 8.1,
+"666Handling": 80,
+
+"699TopSpeed": 143,
+"6990to60": 7.6,
+"699Handling": 83,
+
+"969TopSpeed": 147,
+"9690to60": 8.1,
+"969Handling": 83,
+
+"996TopSpeed": 147,
+"9960to60": 7.6,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SEATExeo18T5VStyle(2009).png",
+    "creator": "Connor"
+}

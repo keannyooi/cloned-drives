@@ -1,0 +1,50 @@
+{
+    "carID": "c07069",
+    "cr": 275,
+    "make": "Mercedes-Benz",
+    "model": "CLA 200 CDI Shooting Brake Urban",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 9.3,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1435,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 44.66,
+    "ola": 72.16,
+
+    "description": "",
+
+"333TopSpeed": 138,
+"3330to60": 8.8,
+"333Handling": 75,
+
+"666TopSpeed": 142,
+"6660to60": 8.4,
+"666Handling": 78,
+
+"699TopSpeed": 142,
+"6990to60": 7.9,
+"699Handling": 81,
+
+"969TopSpeed": 146,
+"9690to60": 8.4,
+"969Handling": 81,
+
+"996TopSpeed": 146,
+"9960to60": 7.9,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzCLA200CDISB(2015).png",
+    "creator": "Pfugs"
+}

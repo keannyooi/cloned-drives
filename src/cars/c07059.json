@@ -1,0 +1,50 @@
+{
+    "carID": "c07059",
+    "cr": 345,
+    "make": "Bentley",
+    "model": "Turbo R",
+    "modelYear": 1985,
+    "country": "GB",
+    "topSpeed": 142,
+    "0to60": 6.7,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2245,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.63,
+    "ola": 68.12,
+
+    "description": "",
+
+"333TopSpeed": 146,
+"3330to60": 6.4,
+"333Handling": 71,
+
+"666TopSpeed": 149,
+"6660to60": 6,
+"666Handling": 74,
+
+"699TopSpeed": 149,
+"6990to60": 5.7,
+"699Handling": 77,
+
+"969TopSpeed": 153,
+"9690to60": 6,
+"969Handling": 77,
+
+"996TopSpeed": 153,
+"9960to60": 5.7,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyTurboR(1985).png",
+    "creator": "Pfugs"
+}

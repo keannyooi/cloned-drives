@@ -1,0 +1,50 @@
+{
+    "carID": "c07072",
+    "cr": 346,
+    "make": "SEAT",
+    "model": "Exeo 2.0 TDI FR",
+    "modelYear": 2011,
+    "country": "ES",
+    "topSpeed": 141,
+    "0to60": 8.2,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Rest of The World"],
+    "isPrize": false,
+    "weight": 1455,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 58.15,
+    "ola": 75.60,
+
+    "description": "",
+
+"333TopSpeed": 145,
+"3330to60": 7.8,
+"333Handling": 79,
+
+"666TopSpeed": 148,
+"6660to60": 7.4,
+"666Handling": 81,
+
+"699TopSpeed": 148,
+"6990to60": 7,
+"699Handling": 84,
+
+"969TopSpeed": 152,
+"9690to60": 7.4,
+"969Handling": 84,
+
+"996TopSpeed": 152,
+"9960to60": 7,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SEATExeo20TDIFR(2011).png",
+    "creator": "Connor"
+}

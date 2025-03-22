@@ -1,0 +1,50 @@
+{
+    "carID": "c07070",
+    "cr": 294,
+    "make": "Mercedes-Benz",
+    "model": "CLA 180 Shooting Brake AMG Line",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 8.9,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1355,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.91,
+    "ola": 73.55,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 8.5,
+"333Handling": 76,
+
+"666TopSpeed": 138,
+"6660to60": 8,
+"666Handling": 79,
+
+"699TopSpeed": 138,
+"6990to60": 7.6,
+"699Handling": 82,
+
+"969TopSpeed": 142,
+"9690to60": 8,
+"969Handling": 82,
+
+"996TopSpeed": 142,
+"9960to60": 7.6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzCLA180SB(2015).png",
+    "creator": "Pfugs"
+}

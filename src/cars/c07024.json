@@ -1,0 +1,50 @@
+{
+    "carID": "c07024",
+    "cr": 1036,
+    "make": "Toyota",
+    "model": "GR Supra GT500 #36 TGR Team au TOM'S",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 193,
+    "0to60": 2.7,
+    "handling": 109,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Chop Shop"],
+    "isPrize": false,
+    "weight": 1020,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 116.9,
+    "ola": 98.45,
+
+    "description": "",
+
+"333TopSpeed": 196,
+"3330to60": 2.6,
+"333Handling": 113,
+
+"666TopSpeed": 198,
+"6660to60": 2.4,
+"666Handling": 116,
+
+"699TopSpeed": 198,
+"6990to60": 2.3,
+"699Handling": 121,
+
+"969TopSpeed": 201,
+"9690to60": 2.4,
+"969Handling": 121,
+
+"996TopSpeed": 201,
+"9960to60": 2.3,
+"996Handling": 116,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaGRSupraGT500.png",
+    "creator": "ama4nn"
+}

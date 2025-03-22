@@ -1,0 +1,50 @@
+{
+    "carID": "c07078",
+    "cr": 222,
+    "make": "SEAT",
+    "model": "Exeo 1.6 Reference",
+    "modelYear": 2008,
+    "country": "ES",
+    "topSpeed": 118,
+    "0to60": 11.9,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Rest of The World"],
+    "isPrize": false,
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.46,
+    "ola": 67.22,
+
+    "description": "",
+
+"333TopSpeed": 122,
+"3330to60": 11.3,
+"333Handling": 76,
+
+"666TopSpeed": 127,
+"6660to60": 10.7,
+"666Handling": 79,
+
+"699TopSpeed": 127,
+"6990to60": 10.1,
+"699Handling": 82,
+
+"969TopSpeed": 131,
+"9690to60": 10.7,
+"969Handling": 82,
+
+"996TopSpeed": 131,
+"9960to60": 10.1,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SEATExeo16Reference(2008).png",
+    "creator": "Connor"
+}

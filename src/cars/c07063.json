@@ -1,0 +1,50 @@
+{
+    "carID": "c07063",
+    "cr": 479,
+    "make": "Mercedes-Benz",
+    "model": "CLA 250 Shooting Brake AMG Line",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.4,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.07,
+    "ola": 79.1,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 6.1,
+"333Handling": 82,
+
+"666TopSpeed": 156,
+"6660to60": 5.8,
+"666Handling": 84,
+
+"699TopSpeed": 156,
+"6990to60": 5.4,
+"699Handling": 88,
+
+"969TopSpeed": 159,
+"9690to60": 5.8,
+"969Handling": 88,
+
+"996TopSpeed": 159,
+"9960to60": 5.4,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzCLA250SB(2015).png",
+    "creator": "Pfugs"
+}

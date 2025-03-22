@@ -1,0 +1,50 @@
+{
+    "carID": "c07054",
+    "cr": 492,
+    "make": "Bentley",
+    "model": "Turbo RT Mulliner",
+    "modelYear": 1998,
+    "country": "GB",
+    "topSpeed": 168,
+    "0to60": 5.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.5,
+    "ola": 79.51,
+
+    "description": "The last of the Turbo R-based Bentleys... about time.",
+
+"333TopSpeed": 171,
+"3330to60": 5.4,
+"333Handling": 75,
+
+"666TopSpeed": 174,
+"6660to60": 5.1,
+"666Handling": 78,
+
+"699TopSpeed": 174,
+"6990to60": 4.8,
+"699Handling": 81,
+
+"969TopSpeed": 177,
+"9690to60": 5.1,
+"969Handling": 81,
+
+"996TopSpeed": 177,
+"9960to60": 4.8,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyTurboRTMulliner(1998).png",
+    "creator": "Pfugs"
+}

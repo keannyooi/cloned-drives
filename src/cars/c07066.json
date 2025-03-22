@@ -1,0 +1,50 @@
+{
+    "carID": "c07066",
+    "cr": 336,
+    "make": "Mercedes-Benz",
+    "model": "CLA 220 CDI Shooting Brake Urban",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 7.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.45,
+    "ola": 82.15,
+
+    "description": "",
+
+"333TopSpeed": 138,
+"3330to60": 7.4,
+"333Handling": 76,
+
+"666TopSpeed": 142,
+"6660to60": 7,
+"666Handling": 79,
+
+"699TopSpeed": 142,
+"6990to60": 6.6,
+"699Handling": 82,
+
+"969TopSpeed": 146,
+"9690to60": 7,
+"969Handling": 82,
+
+"996TopSpeed": 146,
+"9960to60": 6.6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/Mercedes-BenzCLA220CDISB(2015).png",
+    "creator": "Pfugs"
+}

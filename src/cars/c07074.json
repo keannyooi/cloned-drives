@@ -1,0 +1,50 @@
+{
+    "carID": "c07074",
+    "cr": 326,
+    "make": "SEAT",
+    "model": "Exeo ST 2.0 TDI Style",
+    "modelYear": 2011,
+    "country": "ES",
+    "topSpeed": 130,
+    "0to60": 9.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Rest of The World"],
+    "isPrize": false,
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.30,
+    "ola": 65.30,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 9.3,
+"333Handling": 77,
+
+"666TopSpeed": 138,
+"6660to60": 8.8,
+"666Handling": 80,
+
+"699TopSpeed": 138,
+"6990to60": 8.3,
+"699Handling": 83,
+
+"969TopSpeed": 142,
+"9690to60": 8.8,
+"969Handling": 83,
+
+"996TopSpeed": 142,
+"9960to60": 8.3,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SEATExeoST20TDIStyle(2011).png",
+    "creator": "Connor"
+}
