@@ -1,0 +1,50 @@
+{
+    "carID": "c07081",
+    "cr": 1024,
+    "make": "Rivian",
+    "model": "R1T Quad",
+    "modelYear": 2025,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 2.5,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Chop Shop","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 3152,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 75.25,
+    "ola": 78.95,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 2.4,
+"333Handling": 84,
+
+"666TopSpeed": 138,
+"6660to60": 2.3,
+"666Handling": 86,
+
+"699TopSpeed": 138,
+"6990to60": 2.1,
+"699Handling": 90,
+
+"969TopSpeed": 142,
+"9690to60": 2.3,
+"969Handling": 90,
+
+"996TopSpeed": 142,
+"9960to60": 2.1,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RivianR1TQuad(2025).png",
+    "creator": "DodgeDemon"
+}

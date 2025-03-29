@@ -1,0 +1,50 @@
+{
+    "carID": "c07084",
+    "cr": 1009,
+    "make": "Rivian",
+    "model": "R2 Prototype",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 2.9,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Chop Shop","Eco-Friendly","Concept"],
+    "isPrize": false,
+    "weight": 2600,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 69.05,
+    "ola": 68.97,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 2.8,
+"333Handling": 75,
+
+"666TopSpeed": 138,
+"6660to60": 2.6,
+"666Handling": 78,
+
+"699TopSpeed": 138,
+"6990to60": 2.5,
+"699Handling": 81,
+
+"969TopSpeed": 142,
+"9690to60": 2.6,
+"969Handling": 81,
+
+"996TopSpeed": 142,
+"9960to60": 2.5,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RivianR2Prototype(2024).png",
+    "creator": "DodgeDemon"
+}

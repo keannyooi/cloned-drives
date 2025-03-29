@@ -1,0 +1,50 @@
+{
+    "carID": "c07079",
+    "cr": 850,
+    "make": "Rivian",
+    "model": "R1T Pikes Peak",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 111,
+    "0to60": 3.0,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Motorsport","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 3175,
+    "gc": "High",
+    "seatCount": 1,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 65.31,
+    "ola": 81.25,
+
+    "description": "",
+
+"333TopSpeed": 116,
+"3330to60": 2.8,
+"333Handling": 85,
+
+"666TopSpeed": 120,
+"6660to60": 2.7,
+"666Handling": 87,
+
+"699TopSpeed": 120,
+"6990to60": 2.5,
+"699Handling": 91,
+
+"969TopSpeed": 125,
+"9690to60": 2.7,
+"969Handling": 91,
+
+"996TopSpeed": 125,
+"9960to60": 2.5,
+"996Handling": 87,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RivianR1TPikesPeak(2023).png",
+    "creator": "DodgeDemon"
+}

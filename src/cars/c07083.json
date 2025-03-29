@@ -1,0 +1,50 @@
+{
+    "carID": "c07083",
+    "cr": 983,
+    "make": "Rivian",
+    "model": "R1T Tri All-Terrain",
+    "modelYear": 2025,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 2.9,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Chop Shop","Eco-Friendly","Extreme Juggernaut"],
+    "isPrize": false,
+    "weight": 3162,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 66.98,
+    "ola": 77.26,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 2.8,
+"333Handling": 73,
+
+"666TopSpeed": 138,
+"6660to60": 2.6,
+"666Handling": 76,
+
+"699TopSpeed": 138,
+"6990to60": 2.5,
+"699Handling": 79,
+
+"969TopSpeed": 142,
+"9690to60": 2.6,
+"969Handling": 79,
+
+"996TopSpeed": 142,
+"9960to60": 2.5,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RivianR1TTriAll-Terrain(2025).png",
+    "creator": "DodgeDemon"
+}
