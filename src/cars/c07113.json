@@ -1,0 +1,50 @@
+{
+    "carID": "c07113",
+    "cr": 320,
+    "make": "Cadillac",
+    "model": "Escalade DUB Edition",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 8.5,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 2519,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.31,
+    "ola": 68.96,
+
+    "description": "Day N Night (Midnight Club 3)",
+
+"333TopSpeed": 139,
+"3330to60": 5.9,
+"333Handling": 70,
+
+"666TopSpeed": 143,
+"6660to60": 5.6,
+"666Handling": 72,
+
+"699TopSpeed": 143,
+"6990to60": 5.3,
+"699Handling": 75,
+
+"969TopSpeed": 147,
+"9690to60": 5.6,
+"969Handling": 75,
+
+"996TopSpeed": 147,
+"9960to60": 5.3,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/28",
+    "creator": "GAAN"
+}

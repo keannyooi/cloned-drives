@@ -1,0 +1,50 @@
+{
+    "carID": "c07110",
+    "cr": 1391,
+    "make": "Red Bull",
+    "model": "X2010",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 286,
+    "0to60": 2.8,
+    "handling": 146,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 615,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 187.92,
+    "ola": 99.65,
+
+    "description": "If you built the fastest racing car on land, one that throws aside all rules and regulations, what would that car look like, how would it perform, and how would it feel to drive? (Gran Turismo 5)",
+
+"333TopSpeed": 288,
+"3330to60": 2.7,
+"333Handling": 151,
+
+"666TopSpeed": 290,
+"6660to60": 2.5,
+"666Handling": 156,
+
+"699TopSpeed": 290,
+"6990to60": 2.4,
+"699Handling": 162,
+
+"969TopSpeed": 291,
+"9690to60": 2.5,
+"969Handling": 162,
+
+"996TopSpeed": 291,
+"9960to60": 2.4,
+"996Handling": 156,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/25",
+    "creator": "Johnny"
+}

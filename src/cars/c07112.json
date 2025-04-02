@@ -1,0 +1,50 @@
+{
+    "carID": "c07112",
+    "cr": 400,
+    "make": "Dodge",
+    "model": "Challenger R/T (John Tanner)",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 135,
+    "0to60": 6.2,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 1660,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.79,
+    "ola": 78.57,
+
+    "description": "Wake up tanner! (Driver San Francisco)",
+
+"333TopSpeed": 139,
+"3330to60": 5.9,
+"333Handling": 70,
+
+"666TopSpeed": 143,
+"6660to60": 5.6,
+"666Handling": 72,
+
+"699TopSpeed": 143,
+"6990to60": 5.3,
+"699Handling": 75,
+
+"969TopSpeed": 147,
+"9690to60": 5.6,
+"969Handling": 75,
+
+"996TopSpeed": 147,
+"9960to60": 5.3,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/27",
+    "creator": "GAAN"
+}

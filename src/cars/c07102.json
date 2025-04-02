@@ -1,0 +1,50 @@
+{
+    "carID": "c07102",
+    "cr": 839,
+    "make": "Porsche",
+    "model": "911 GT3 (Custom)",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 3.6,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 116.12,
+    "ola": 88.88,
+
+    "description": "Customly Chooned",
+
+"333TopSpeed": 219,
+"3330to60": 3.4,
+"333Handling": 96,
+
+"666TopSpeed": 222,
+"6660to60": 3.2,
+"666Handling": 99,
+
+"699TopSpeed": 222,
+"6990to60": 3.1,
+"699Handling": 103,
+
+"969TopSpeed": 224,
+"9690to60": 3.2,
+"969Handling": 103,
+
+"996TopSpeed": 224,
+"9960to60": 3.1,
+"996Handling": 99,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/17",
+    "creator": "Connor"
+}

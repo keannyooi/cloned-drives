@@ -1,0 +1,50 @@
+{
+    "carID": "c07115",
+    "cr": 337,
+    "make": "Sannis",
+    "model": "Livisa 180RS",
+    "modelYear": 1996,
+    "country": "JP",
+    "topSpeed": 136,
+    "0to60": 6.6,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.93,
+    "ola": 89.85,
+
+    "description": "Speed Speed Lover, Games not over (Tokyo Extreme Racer 2025)",
+
+"333TopSpeed": 140,
+"3330to60": 6.3,
+"333Handling": 76,
+
+"666TopSpeed": 144,
+"6660to60": 5.9,
+"666Handling": 79,
+
+"699TopSpeed": 144,
+"6990to60": 5.6,
+"699Handling": 82,
+
+"969TopSpeed": 147,
+"9690to60": 5.9,
+"969Handling": 82,
+
+"996TopSpeed": 147,
+"9960to60": 5.6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/30",
+    "creator": "GAAN"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07106",
+    "cr": 972,
+    "make": "Pagani",
+    "model": "Huayra BC Forza Edition",
+    "modelYear": 2023,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 3.2,
+    "handling": 102,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 128,
+    "ola": 93.7,
+
+    "description": "Edition of the ages! (Forza Horizon 5)",
+
+"333TopSpeed": 223,
+"3330to60": 3,
+"333Handling": 105,
+
+"666TopSpeed": 226,
+"6660to60": 2.9,
+"666Handling": 109,
+
+"699TopSpeed": 226,
+"6990to60": 2.7,
+"699Handling": 113,
+
+"969TopSpeed": 228,
+"9690to60": 2.9,
+"969Handling": 113,
+
+"996TopSpeed": 228,
+"9960to60": 2.7,
+"996Handling": 109,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/21",
+    "creator": "Fiero"
+}
