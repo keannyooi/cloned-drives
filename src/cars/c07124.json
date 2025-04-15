@@ -1,0 +1,50 @@
+{
+    "carID": "c07124",
+    "cr": 907,
+    "make": "BMW",
+    "model": "M5 by Ceky Performance",
+    "modelYear": 2025,
+    "country": "DE",
+    "topSpeed": 235,
+    "0to60": 2.1,
+    "handling": 30,
+    "driveType": "4WD",
+    "tyreType": "Drag",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 137.6,
+    "ola": 100.3,
+
+    "description": "(AC Mod)",
+
+"333TopSpeed": 237,
+"3330to60": 2,
+"333Handling": 31,
+
+"666TopSpeed": 239,
+"6660to60": 1.9,
+"666Handling": 32,
+
+"699TopSpeed": 239,
+"6990to60": 1.8,
+"699Handling": 33,
+
+"969TopSpeed": 242,
+"9690to60": 1.9,
+"969Handling": 33,
+
+"996TopSpeed": 242,
+"9960to60": 1.8,
+"996Handling": 32,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/39",
+    "creator": "Fiero"
+}

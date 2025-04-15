@@ -1,0 +1,50 @@
+{
+    "carID": "c07116",
+    "cr": 73,
+    "make": "Gavril",
+    "model": "MD60 Crew Cab Custom",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 76,
+    "0to60": 17.3,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 6140,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 60.12,
+
+    "description": "",
+
+"333TopSpeed": 83,
+"3330to60": 16.4,
+"333Handling": 61,
+
+"666TopSpeed": 90,
+"6660to60": 15.6,
+"666Handling": 63,
+
+"699TopSpeed": 90,
+"6990to60": 14.7,
+"699Handling": 65,
+
+"969TopSpeed": 97,
+"9690to60": 15.6,
+"969Handling": 65,
+
+"996TopSpeed": 97,
+"9960to60": 14.7,
+"996Handling": 63,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/31",
+    "creator": "Scorpio"
+}

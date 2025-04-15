@@ -1,0 +1,50 @@
+{
+    "carID": "c07117",
+    "cr": 137,
+    "make": "Gavril",
+    "model": "MD70 Overlander",
+    "modelYear": 1986,
+    "country": "US",
+    "topSpeed": 97,
+    "0to60": 20.6,
+    "handling": 56,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["AF25"],
+    "isPrize": true,
+    "weight": 7535,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.48,
+    "ola": 63.11,
+
+    "description": "",
+
+"333TopSpeed": 102,
+"3330to60": 19.6,
+"333Handling": 58,
+
+"666TopSpeed": 108,
+"6660to60": 18.5,
+"666Handling": 60,
+
+"699TopSpeed": 108,
+"6990to60": 17.5,
+"699Handling": 62,
+
+"969TopSpeed": 113,
+"9690to60": 18.5,
+"969Handling": 62,
+
+"996TopSpeed": 113,
+"9960to60": 17.5,
+"996Handling": 60,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/AprilFools2025/32",
+    "creator": "Scorpio"
+}
