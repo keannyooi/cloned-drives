@@ -1,0 +1,18 @@
+{
+	"trackName": "AVUS (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZmdgDS5GsALKuOXo/TB/AvusSunny.webp",
+	"map": "https://file.garden/ZmdgDS5GsALKuOXo/T/AVUS.png",
+	
+	"specsDistr": {
+		"topSpeed": 100,
+		"0to60": 20,
+		"handling": 10,
+		"weight": 0,
+		"mra": 50,
+		"ola": 0
+	}
+}

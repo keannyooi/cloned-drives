@@ -1,0 +1,50 @@
+{
+    "carID": "c07132",
+    "cr": 622,
+    "make": ["bb", "Isdera"],
+    "model": "CW 311",
+    "modelYear": 1978,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 4.6,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","Supercar","Concept"],
+    "isPrize": false,
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 91.51,
+    "ola": 94.93,
+
+    "description": "The concept that later turned into the Isdera Imperator and was thought of as a successor to the legendary 300 SL Gullwing was so breathtaking Mercedes allowed it to wear the star.",
+
+"333TopSpeed": 202,
+"3330to60": 4.4,
+"333Handling": 83,
+
+"666TopSpeed": 204,
+"6660to60": 4.1,
+"666Handling": 85,
+
+"699TopSpeed": 204,
+"6990to60": 3.9,
+"699Handling": 89,
+
+"969TopSpeed": 207,
+"9690to60": 4.1,
+"969Handling": 89,
+
+"996TopSpeed": 207,
+"9960to60": 3.9,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/bbCW311(1978).png",
+    "creator": "Pfugs"
+}

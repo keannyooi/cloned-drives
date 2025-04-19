@@ -1,19 +1,18 @@
 {
     "carID": "c03706",
-    "cr": 601,
+    "cr": 634,
     "make": "Audi",
     "model": "RS 4 Avant",
-    "modelYear": 2000,
+    "modelYear": 2001,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 4.8,
-    "handling": 78,
+    "0to60": 4.6,
+    "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
     "isPrize": false,
-	
-    "weight": 1620,
+    "weight": 1677,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Wagon",
@@ -21,29 +20,31 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 72.73,
-    "ola": 66.67,
+    "mra": 69.69,
+    "ola": 73.19,
+
     "description": "The Continent's golden retrivers will drool with joy.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiRS4Avant(2000).png",
-    "creator": "Exist",
 
 "333TopSpeed": 158,
-"3330to60": 4.6,
-"333Handling": 81,
+"3330to60": 4.4,
+"333Handling": 84,
 
 "666TopSpeed": 162,
-"6660to60": 4.3,
-"666Handling": 83,
+"6660to60": 4.1,
+"666Handling": 86,
 
 "699TopSpeed": 162,
-"6990to60": 4.1,
-"699Handling": 87,
+"6990to60": 3.9,
+"699Handling": 90,
 
 "969TopSpeed": 165,
-"9690to60": 4.3,
-"969Handling": 87,
+"9690to60": 4.1,
+"969Handling": 90,
 
 "996TopSpeed": 165,
-"9960to60": 4.1,
-"996Handling": 83
+"9960to60": 3.9,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiRS4Avant(2001).png",
+    "creator": "Connor"
 }

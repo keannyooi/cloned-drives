@@ -1,0 +1,50 @@
+{
+    "carID": "c07130",
+    "cr": 617,
+    "make": ["Isdera", "Mercedes-Benz"],
+    "model": "Imperator 108i AMG 6.0-32V",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 4.7,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","Supercar"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.79,
+    "ola": 93,
+
+    "description": "When Mercedes had no interest of putting the CW 311 into production, Eberhard Schulz just started making it himself.",
+
+"333TopSpeed": 196,
+"3330to60": 4.5,
+"333Handling": 84,
+
+"666TopSpeed": 198,
+"6660to60": 4.2,
+"666Handling": 86,
+
+"699TopSpeed": 198,
+"6990to60": 4,
+"699Handling": 90,
+
+"969TopSpeed": 201,
+"9690to60": 4.2,
+"969Handling": 90,
+
+"996TopSpeed": 201,
+"9960to60": 4,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaImperator108i6.0-32V(1987).png",
+    "creator": "Pfugs"
+}

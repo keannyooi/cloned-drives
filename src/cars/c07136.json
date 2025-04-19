@@ -1,0 +1,50 @@
+{
+    "carID": "c07136",
+    "cr": 680,
+    "make": "Isdera",
+    "model": "Erator GTE Mk III",
+    "modelYear": 1969,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.9,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique"],
+    "isPrize": false,
+    "weight": 960,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.03,
+    "ola": 95.8,
+
+    "description": "Hand-assembled by a crazy German in his garage, in an attempt to seek a job at one of Germany's big car manufacturers.",
+
+"333TopSpeed": 199,
+"3330to60": 3.7,
+"333Handling": 81,
+
+"666TopSpeed": 201,
+"6660to60": 3.5,
+"666Handling": 83,
+
+"699TopSpeed": 201,
+"6990to60": 3.3,
+"699Handling": 87,
+
+"969TopSpeed": 204,
+"9690to60": 3.5,
+"969Handling": 87,
+
+"996TopSpeed": 204,
+"9960to60": 3.3,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaEratorGTEMkIII(1969).png",
+    "creator": "Pfugs"
+}

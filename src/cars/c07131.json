@@ -1,0 +1,50 @@
+{
+    "carID": "c07131",
+    "cr": 540,
+    "make": "Isdera",
+    "model": "Imperator 108i 5.6",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 178,
+    "0to60": 5.3,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","Supercar"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.81,
+    "ola": 88.5,
+
+    "description": "'AbfangjÃ¤ger', as it was soon called by the german press, caused quite the sensation when it was presented.",
+
+"333TopSpeed": 181,
+"3330to60": 5,
+"333Handling": 83,
+
+"666TopSpeed": 184,
+"6660to60": 4.8,
+"666Handling": 85,
+
+"699TopSpeed": 184,
+"6990to60": 4.5,
+"699Handling": 89,
+
+"969TopSpeed": 187,
+"9690to60": 4.8,
+"969Handling": 89,
+
+"996TopSpeed": 187,
+"9960to60": 4.5,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaImperator108i5.6(1985).png",
+    "creator": "Pfugs"
+}

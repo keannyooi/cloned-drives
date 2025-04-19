@@ -1,0 +1,50 @@
+{
+    "carID": "c07147",
+    "cr": 50,
+    "make": "BMW",
+    "model": "501 8 Zylinder",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 18.5,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1365,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 65.28,
+
+    "description": "",
+
+"333TopSpeed": 104,
+"3330to60": 17.6,
+"333Handling": 58,
+
+"666TopSpeed": 110,
+"6660to60": 16.7,
+"666Handling": 60,
+
+"699TopSpeed": 110,
+"6990to60": 15.7,
+"699Handling": 62,
+
+"969TopSpeed": 115,
+"9690to60": 16.7,
+"969Handling": 62,
+
+"996TopSpeed": 115,
+"9960to60": 15.7,
+"996Handling": 60,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW5018Zylinder(1956).png",
+    "creator": "Scorpio"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07127",
+    "cr": 786,
+    "make": "Isdera",
+    "model": "Silver Arrow C112i",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 230,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","Supercar","Ultra Expensive"],
+    "isPrize": true,
+    "weight": 1568,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 102.78,
+    "ola": 102.7,
+
+    "description": "Swiss businessman Albert KlÃ¶ti bought the remaining chassis from Isdera and promptly decided to ruin the car. Oh yeah, and he also gave it Mercedes badges for some reason.",
+
+"333TopSpeed": 232,
+"3330to60": 3.5,
+"333Handling": 91,
+
+"666TopSpeed": 235,
+"6660to60": 3.3,
+"666Handling": 94,
+
+"699TopSpeed": 235,
+"6990to60": 3.1,
+"699Handling": 98,
+
+"969TopSpeed": 237,
+"9690to60": 3.3,
+"969Handling": 98,
+
+"996TopSpeed": 237,
+"9960to60": 3.1,
+"996Handling": 94,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaSilverArrowC112i(1999).png",
+    "creator": "Pfugs"
+}

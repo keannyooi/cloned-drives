@@ -1,0 +1,50 @@
+{
+    "carID": "c07148",
+    "cr": 113,
+    "make": "BMW",
+    "model": "502 3.2L",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 106,
+    "0to60": 14.8,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1455,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 24.79,
+    "ola": 72.15,
+
+    "description": "",
+
+"333TopSpeed": 111,
+"3330to60": 14.1,
+"333Handling": 59,
+
+"666TopSpeed": 116,
+"6660to60": 13.3,
+"666Handling": 61,
+
+"699TopSpeed": 116,
+"6990to60": 12.6,
+"699Handling": 63,
+
+"969TopSpeed": 121,
+"9690to60": 13.3,
+"969Handling": 63,
+
+"996TopSpeed": 121,
+"9960to60": 12.6,
+"996Handling": 61,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW5023.2L(1956).png",
+    "creator": "Scorpio"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07153",
+    "cr": 1040,
+    "make": "Audi",
+    "model": "R8R #7 Audi Sport Team Joest",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 208,
+    "0to60": 2.7,
+    "handling": 108,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Chop Shop"],
+    "isPrize": false,
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 116.37,
+    "ola": 104.18,
+
+    "description": "None.",
+
+"333TopSpeed": 211,
+"3330to60": 2.6,
+"333Handling": 112,
+
+"666TopSpeed": 213,
+"6660to60": 2.4,
+"666Handling": 115,
+
+"699TopSpeed": 213,
+"6990to60": 2.3,
+"699Handling": 120,
+
+"969TopSpeed": 216,
+"9690to60": 2.4,
+"969Handling": 120,
+
+"996TopSpeed": 216,
+"9960to60": 2.3,
+"996Handling": 115,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR8R(1999).png",
+    "creator": "GAAN"
+}

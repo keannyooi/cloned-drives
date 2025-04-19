@@ -1,0 +1,50 @@
+{
+    "carID": "c07152",
+    "cr": 1038,
+    "make": "Audi",
+    "model": "R8C #10 Audi Sport UK",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 108,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Chop Shop"],
+    "isPrize": false,
+    "weight": 949,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 104.55,
+    "ola": 104.35,
+
+    "description": "A closed cockpit version of the Audi R8R.",
+
+"333TopSpeed": 219,
+"3330to60": 2.6,
+"333Handling": 112,
+
+"666TopSpeed": 222,
+"6660to60": 2.4,
+"666Handling": 115,
+
+"699TopSpeed": 222,
+"6990to60": 2.3,
+"699Handling": 120,
+
+"969TopSpeed": 224,
+"9690to60": 2.4,
+"969Handling": 120,
+
+"996TopSpeed": 224,
+"9960to60": 2.3,
+"996Handling": 115,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR8C(1999).png",
+    "creator": "GAAN"
+}

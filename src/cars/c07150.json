@@ -1,0 +1,50 @@
+{
+    "carID": "c07150",
+    "cr": 328,
+    "make": "Audi",
+    "model": "Q4 35 e-tron S line",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 9.0,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1890,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 45.91,
+    "ola": 75.55,
+
+    "description": "",
+
+"333TopSpeed": 105,
+"3330to60": 8.5,
+"333Handling": 79,
+
+"666TopSpeed": 110,
+"6660to60": 8.1,
+"666Handling": 81,
+
+"699TopSpeed": 110,
+"6990to60": 7.6,
+"699Handling": 84,
+
+"969TopSpeed": 116,
+"9690to60": 8.1,
+"969Handling": 84,
+
+"996TopSpeed": 116,
+"9960to60": 7.6,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiQ435etronSline(2021).png",
+    "creator": "Connor"
+}

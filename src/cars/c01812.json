@@ -1,10 +1,7 @@
 {
     "carID": "c01812",
     "cr": 164,
-    "make": [
-        "Pandora-Inc",
-        "Honda"
-    ],
+    "make": ["Pandora-Inc","Honda"],
     "model": "COMPETEC S660 Version II",
     "modelYear": 2017,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Kei Car",
-        "Motorsport",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","Motorsport","The Japanese Odyssey","CD Champions"],
     "isPrize": true,
     "weight": 825,
     "gc": "Low",

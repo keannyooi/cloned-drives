@@ -1,0 +1,50 @@
+{
+    "carID": "c07133",
+    "cr": 478,
+    "make": "Isdera",
+    "model": "Spyder 036i",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique"],
+    "isPrize": false,
+    "weight": 945,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.38,
+    "ola": 79.31,
+
+    "description": "Eberhard Schulz decided to add the letter 'i' to the end of the name of all his cars to indicate mechanical fuel injection despite never making a car without it.",
+
+"333TopSpeed": 158,
+"3330to60": 5.5,
+"333Handling": 82,
+
+"666TopSpeed": 162,
+"6660to60": 5.2,
+"666Handling": 84,
+
+"699TopSpeed": 162,
+"6990to60": 4.9,
+"699Handling": 88,
+
+"969TopSpeed": 165,
+"9690to60": 5.2,
+"969Handling": 88,
+
+"996TopSpeed": 165,
+"9960to60": 4.9,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaSpyder036i(1987).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07129",
+    "cr": 422,
+    "make": "Isdera",
+    "model": "Imperator 108i 5.0",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 6.3,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","Supercar"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 86.04,
+
+    "description": "The Imperator gained a slightly lower cost variant towards the end of its production run.",
+
+"333TopSpeed": 165,
+"3330to60": 6,
+"333Handling": 82,
+
+"666TopSpeed": 168,
+"6660to60": 5.7,
+"666Handling": 84,
+
+"699TopSpeed": 168,
+"6990to60": 5.4,
+"699Handling": 88,
+
+"969TopSpeed": 172,
+"9690to60": 5.7,
+"969Handling": 88,
+
+"996TopSpeed": 172,
+"9960to60": 5.4,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IsderaImperator108i5.0(1991).png",
+    "creator": "Pfugs"
+}
