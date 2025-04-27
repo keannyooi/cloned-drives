@@ -1,0 +1,50 @@
+{
+    "carID": "c07196",
+    "cr": 116,
+    "make": "Mercedes-Benz",
+    "model": "250 TD",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 103,
+    "0to60": 16.9,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1440,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 29.11,
+    "ola": 62.5,
+
+    "description": "Unbelievably, SsangYong used this engine up to 2007.",
+
+"333TopSpeed": 108,
+"3330to60": 16.1,
+"333Handling": 66,
+
+"666TopSpeed": 113,
+"6660to60": 15.2,
+"666Handling": 68,
+
+"699TopSpeed": 113,
+"6990to60": 14.4,
+"699Handling": 71,
+
+"969TopSpeed": 118,
+"9690to60": 15.2,
+"969Handling": 71,
+
+"996TopSpeed": 118,
+"9960to60": 14.4,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz250TD(1985).png",
+    "creator": "Pfugs"
+}

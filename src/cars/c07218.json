@@ -1,0 +1,50 @@
+{
+    "carID": "c07218",
+    "cr": 327,
+    "make": "Renault",
+    "model": "5 EV Prototype",
+    "modelYear": 2021,
+    "country": "FR",
+    "topSpeed": 92,
+    "0to60": 9.1,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco Friendly", "Concept","Chop Shop"],
+    "isPrize": false,
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 29.45,
+    "ola": 68.13,
+
+    "description": "And just before the 4, the 5 was revived, which definitely brought a smile to many!",
+
+"333TopSpeed": 98,
+"3330to60": 8.6,
+"333Handling": 79,
+
+"666TopSpeed": 103,
+"6660to60": 8.2,
+"666Handling": 81,
+
+"699TopSpeed": 103,
+"6990to60": 7.7,
+"699Handling": 84,
+
+"969TopSpeed": 109,
+"9690to60": 8.2,
+"969Handling": 84,
+
+"996TopSpeed": 109,
+"9960to60": 7.7,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Renault5EVPrototype(2021).png",
+    "creator": "Fried"
+}

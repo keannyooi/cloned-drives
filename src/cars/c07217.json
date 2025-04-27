@@ -1,0 +1,50 @@
+{
+    "carID": "c07217",
+    "cr": 504,
+    "make": "Alpine",
+    "model": "A290_B",
+    "modelYear": 2023,
+    "country": "FR",
+    "topSpeed": 107,
+    "0to60": 5.9,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Hot Hatch", "Eco Friendly","Chop Shop"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 64.84,
+    "ola": 81.36,
+
+    "description": "Alpine unveils a brand new concept for Renault's 5 EV prototype as a brutal-looking hot hatch.",
+
+"333TopSpeed": 112,
+"3330to60": 5.6,
+"333Handling": 83,
+
+"666TopSpeed": 117,
+"6660to60": 5.3,
+"666Handling": 85,
+
+"699TopSpeed": 117,
+"6990to60": 5,
+"699Handling": 89,
+
+"969TopSpeed": 122,
+"9690to60": 5.3,
+"969Handling": 89,
+
+"996TopSpeed": 122,
+"9960to60": 5,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineA290(2023).png",
+    "creator": "Fried"
+}
