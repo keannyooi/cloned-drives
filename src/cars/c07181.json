@@ -1,0 +1,50 @@
+{
+    "carID": "c07181",
+    "cr": 420,
+    "make": "Nissan",
+    "model": "Skyline 2000 GT-R Racing Concept",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 140,
+    "0to60": 6.8,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Chop Shop","Motorsport","RestoMod"],
+    "isPrize": false,
+    "weight": 1145,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.04,
+    "ola": 104.41,
+
+    "description": "",
+
+"333TopSpeed": 144,
+"3330to60": 6.5,
+"333Handling": 88,
+
+"666TopSpeed": 147,
+"6660to60": 6.1,
+"666Handling": 91,
+
+"699TopSpeed": 147,
+"6990to60": 5.8,
+"699Handling": 94,
+
+"969TopSpeed": 151,
+"9690to60": 6.1,
+"969Handling": 94,
+
+"996TopSpeed": 151,
+"9960to60": 5.8,
+"996Handling": 91,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanSkyline2000GT-RRacingConcept(2018).png",
+    "creator": "GAAN"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07178",
+    "cr": 1054,
+    "make": "Audi",
+    "model": "R18 TDI #2 Audi Sport Team Joest",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 209,
+    "0to60": 2.8,
+    "handling": 111,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Chop Shop"],
+    "isPrize": false,
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 116.47,
+    "ola": 105.96,
+
+    "description": "Domination again.",
+
+"333TopSpeed": 211,
+"3330to60": 2.7,
+"333Handling": 115,
+
+"666TopSpeed": 214,
+"6660to60": 2.5,
+"666Handling": 118,
+
+"699TopSpeed": 214,
+"6990to60": 2.4,
+"699Handling": 123,
+
+"969TopSpeed": 216,
+"9690to60": 2.5,
+"969Handling": 123,
+
+"996TopSpeed": 216,
+"9960to60": 2.4,
+"996Handling": 118,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR18TDI(2011).png",
+    "creator": "GAAN"
+}

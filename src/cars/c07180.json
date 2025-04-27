@@ -1,0 +1,50 @@
+{
+    "carID": "c07180",
+    "cr": 357,
+    "make": "Nissan",
+    "model": "Skyline 2000 GT-R (C110)",
+    "modelYear": 1973,
+    "country": "JP",
+    "topSpeed": 124,
+    "0to60": 7.2,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Style Icon"],
+    "isPrize": false,
+    "weight": 1145,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.73,
+    "ola": 70,
+
+    "description": "",
+
+"333TopSpeed": 128,
+"3330to60": 6.8,
+"333Handling": 75,
+
+"666TopSpeed": 132,
+"6660to60": 6.5,
+"666Handling": 78,
+
+"699TopSpeed": 132,
+"6990to60": 6.1,
+"699Handling": 81,
+
+"969TopSpeed": 137,
+"9690to60": 6.5,
+"969Handling": 81,
+
+"996TopSpeed": 137,
+"9960to60": 6.1,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanSkyline2000GT-RC110(1973).png",
+    "creator": "GAAN"
+}

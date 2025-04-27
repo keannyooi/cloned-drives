@@ -1,0 +1,50 @@
+{
+    "carID": "c07176",
+    "cr": 1059,
+    "make": "Audi",
+    "model": "R15 TDI Plus #7 Audi Sport Team Joest",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.8,
+    "handling": 111,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Chop Shop"],
+    "isPrize": false,
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 132.13,
+    "ola": 107.53,
+
+    "description": "Evolution of the regular R15 TDI; built after losing against Peugeot in 2009.",
+
+"333TopSpeed": 208,
+"3330to60": 2.7,
+"333Handling": 115,
+
+"666TopSpeed": 210,
+"6660to60": 2.5,
+"666Handling": 118,
+
+"699TopSpeed": 210,
+"6990to60": 2.4,
+"699Handling": 123,
+
+"969TopSpeed": 213,
+"9690to60": 2.5,
+"969Handling": 123,
+
+"996TopSpeed": 213,
+"9960to60": 2.4,
+"996Handling": 118,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR15TDIPlus(2010).png",
+    "creator": "GAAN"
+}
