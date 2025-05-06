@@ -135,10 +135,10 @@ module.exports = {
             let a = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
             let b = parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]);
             let moneyMultiplier = 0;
-            if (cr > 1500) { //BOSS 1500+
+            if (cr > 1245) { //BOSS 1245+
                 moneyMultiplier = 20000000;
             }
-			else if (cr > 1130 && cr <= 1500) { //1130-1499
+			else if (cr > 1130 && cr <= 1245) { //1130-1245
 				moneyMultiplier = 350000;
             }
 			else if (cr > 1100 && cr <= 1130) { //1100-1129
