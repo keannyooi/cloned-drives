@@ -1,0 +1,50 @@
+{
+    "carID": "c07224",
+    "cr": 468,
+    "make": "Audi",
+    "model": "A4 2.0 TFSI quattro",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 148,
+    "0to60": 6.7,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1595,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.26,
+    "ola": 68.65,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 6.4,
+"333Handling": 80,
+
+"666TopSpeed": 155,
+"6660to60": 6,
+"666Handling": 82,
+
+"699TopSpeed": 155,
+"6990to60": 5.7,
+"699Handling": 85,
+
+"969TopSpeed": 159,
+"9690to60": 6,
+"969Handling": 85,
+
+"996TopSpeed": 159,
+"9960to60": 5.7,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA420TFSIquattro(2005).png",
+    "creator": "Connor"
+}

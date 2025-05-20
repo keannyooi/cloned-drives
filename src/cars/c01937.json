@@ -19,7 +19,7 @@
     "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
-    "abs": false,
+    "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 24.52,

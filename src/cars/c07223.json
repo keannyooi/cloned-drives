@@ -1,0 +1,50 @@
+{
+    "carID": "c07223",
+    "cr": 419,
+    "make": "Audi",
+    "model": "A4 2.0 TFSI",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 150,
+    "0to60": 7.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.26,
+    "ola": 76.05,
+
+    "description": "B7 generation is nothing more than a deep reskin of B6.",
+
+"333TopSpeed": 153,
+"3330to60": 6.7,
+"333Handling": 80,
+
+"666TopSpeed": 157,
+"6660to60": 6.4,
+"666Handling": 82,
+
+"699TopSpeed": 157,
+"6990to60": 6,
+"699Handling": 85,
+
+"969TopSpeed": 160,
+"9690to60": 6.4,
+"969Handling": 85,
+
+"996TopSpeed": 160,
+"9960to60": 6,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA420TFSI(2004).png",
+    "creator": "Connor"
+}

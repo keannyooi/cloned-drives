@@ -1,0 +1,50 @@
+{
+    "carID": "c07220",
+    "cr": 224,
+    "make": "Audi",
+    "model": "A4 Avant 1.9 TDI",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 10.9,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.60,
+    "ola": 62.38,
+
+    "description": "",
+
+"333TopSpeed": 126,
+"3330to60": 10.4,
+"333Handling": 76,
+
+"666TopSpeed": 131,
+"6660to60": 9.8,
+"666Handling": 79,
+
+"699TopSpeed": 131,
+"6990to60": 9.3,
+"699Handling": 82,
+
+"969TopSpeed": 135,
+"9690to60": 9.8,
+"969Handling": 82,
+
+"996TopSpeed": 135,
+"9960to60": 9.3,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA4Avant19TDI(2005).png",
+    "creator": "Connor"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07222",
+    "cr": 314,
+    "make": "Audi",
+    "model": "A4 Cabrio 2.7 TDI",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 8.5,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1745,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 49.70,
+    "ola": 72.94,
+
+    "description": "",
+
+"333TopSpeed": 142,
+"3330to60": 8.1,
+"333Handling": 77,
+
+"666TopSpeed": 146,
+"6660to60": 7.7,
+"666Handling": 80,
+
+"699TopSpeed": 146,
+"6990to60": 7.2,
+"699Handling": 83,
+
+"969TopSpeed": 149,
+"9690to60": 7.7,
+"969Handling": 83,
+
+"996TopSpeed": 149,
+"9960to60": 7.2,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA4Cabrio27TDI(2006).png",
+    "creator": "Connor"
+}

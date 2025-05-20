@@ -1,0 +1,50 @@
+{
+    "carID": "c07219",
+    "cr": 288,
+    "make": "Audi",
+    "model": "A4 2.0 TDI",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 9.4,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1501,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 53.71,
+    "ola": 68.05,
+
+    "description": "",
+
+"333TopSpeed": 136,
+"3330to60": 8.9,
+"333Handling": 77,
+
+"666TopSpeed": 140,
+"6660to60": 8.5,
+"666Handling": 80,
+
+"699TopSpeed": 140,
+"6990to60": 8,
+"699Handling": 83,
+
+"969TopSpeed": 144,
+"9690to60": 8.5,
+"969Handling": 83,
+
+"996TopSpeed": 144,
+"9960to60": 8,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA420TDI(2004).png",
+    "creator": "Connor"
+}

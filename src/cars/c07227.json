@@ -1,0 +1,50 @@
+{
+    "carID": "c07227",
+    "cr": 422,
+    "make": "Audi",
+    "model": "A4 allroad 2.0 TDI quattro",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 9.4,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1630,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 46.30,
+    "ola": 65.95,
+
+    "description": "",
+
+"333TopSpeed": 126,
+"3330to60": 8.9,
+"333Handling": 79,
+
+"666TopSpeed": 131,
+"6660to60": 8.5,
+"666Handling": 81,
+
+"699TopSpeed": 131,
+"6990to60": 8,
+"699Handling": 84,
+
+"969TopSpeed": 135,
+"9690to60": 8.5,
+"969Handling": 84,
+
+"996TopSpeed": 135,
+"9960to60": 8,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA4allroad20TDIquattro(2013).png",
+    "creator": "Connor"
+}
