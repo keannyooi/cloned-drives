@@ -1,0 +1,50 @@
+{
+    "carID": "c07239",
+    "cr": 440,
+    "make": "Bentley",
+    "model": "Continental S",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 6,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2420,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.11,
+    "ola": 73.03,
+	
+    "description": "",
+	
+"333TopSpeed": 158,
+"3330to60": 5.7,
+"333Handling": 74,
+
+"666TopSpeed": 162,
+"6660to60": 5.4,
+"666Handling": 77,
+
+"699TopSpeed": 162,
+"6990to60": 5.1,
+"699Handling": 80,
+
+"969TopSpeed": 165,
+"9690to60": 5.4,
+"969Handling": 80,
+
+"996TopSpeed": 165,
+"9960to60": 5.1,
+"996Handling": 77,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalS(1995).png",
+    "creator": "Hastur"
+}

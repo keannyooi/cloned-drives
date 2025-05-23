@@ -1,0 +1,50 @@
+{
+    "carID": "c07246",
+    "cr": 539,
+    "make": "Bentley",
+    "model": "Continental R Le Mans",
+    "modelYear": 2001,
+    "country": "GB",
+    "topSpeed": 173,
+    "0to60": 5.4,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.5,
+    "ola": 77.05,
+	
+    "description": "",
+	
+"333TopSpeed": 176,
+"3330to60": 5.1,
+"333Handling": 77,
+
+"666TopSpeed": 179,
+"6660to60": 4.9,
+"666Handling": 80,
+
+"699TopSpeed": 179,
+"6990to60": 4.6,
+"699Handling": 83,
+
+"969TopSpeed": 182,
+"9690to60": 4.9,
+"969Handling": 83,
+
+"996TopSpeed": 182,
+"9960to60": 4.6,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalRLeMans(2001).png",
+    "creator": "Hastur"
+}

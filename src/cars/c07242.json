@@ -1,0 +1,50 @@
+{
+    "carID": "c07242",
+    "cr": 482,
+    "make": "Bentley",
+    "model": "Continental T",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2420,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.24,
+    "ola": 73.68,
+	
+    "description": "",
+	
+"333TopSpeed": 158,
+"3330to60": 5.4,
+"333Handling": 75,
+
+"666TopSpeed": 162,
+"6660to60": 5.1,
+"666Handling": 78,
+
+"699TopSpeed": 162,
+"6990to60": 4.8,
+"699Handling": 81,
+
+"969TopSpeed": 165,
+"9690to60": 5.1,
+"969Handling": 81,
+
+"996TopSpeed": 165,
+"9960to60": 4.8,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalT(1996).png",
+    "creator": "Hastur"
+}

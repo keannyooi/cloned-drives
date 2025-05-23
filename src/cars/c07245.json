@@ -1,0 +1,50 @@
+{
+    "carID": "c07245",
+    "cr": 496,
+    "make": "Bentley",
+    "model": "Continental T Mulliner",
+    "modelYear": 1999,
+    "country": "GB",
+    "topSpeed": 168,
+    "0to60": 5.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.1,
+    "ola": 76.87,
+	
+    "description": "",
+	
+"333TopSpeed": 171,
+"3330to60": 5.4,
+"333Handling": 76,
+
+"666TopSpeed": 174,
+"6660to60": 5.1,
+"666Handling": 79,
+
+"699TopSpeed": 174,
+"6990to60": 4.8,
+"699Handling": 82,
+
+"969TopSpeed": 177,
+"9690to60": 5.1,
+"969Handling": 82,
+
+"996TopSpeed": 177,
+"9960to60": 4.8,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalTMulliner(1999).png",
+    "creator": "Hastur"
+}

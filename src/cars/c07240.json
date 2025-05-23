@@ -1,0 +1,50 @@
+{
+    "carID": "c07240",
+    "cr": 441,
+    "make": "Bentley",
+    "model": "Continental R",
+    "modelYear": 1997,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 6.1,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2420,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.73,
+    "ola": 72.35,
+	
+    "description": "",
+	
+"333TopSpeed": 158,
+"3330to60": 5.8,
+"333Handling": 75,
+
+"666TopSpeed": 162,
+"6660to60": 5.5,
+"666Handling": 78,
+
+"699TopSpeed": 162,
+"6990to60": 5.2,
+"699Handling": 81,
+
+"969TopSpeed": 165,
+"9690to60": 5.5,
+"969Handling": 81,
+
+"996TopSpeed": 165,
+"9960to60": 5.2,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalR(1997).png",
+    "creator": "Hastur"
+}

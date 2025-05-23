@@ -1,0 +1,50 @@
+{
+    "carID": "c07243",
+    "cr": 446,
+    "make": "Bentley",
+    "model": "Continental SC Mulliner",
+    "modelYear": 1999,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2610,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.18,
+    "ola": 82.5,
+	
+    "description": "",
+	
+"333TopSpeed": 158,
+"3330to60": 5.6,
+"333Handling": 74,
+
+"666TopSpeed": 162,
+"6660to60": 5.3,
+"666Handling": 77,
+
+"699TopSpeed": 162,
+"6990to60": 5,
+"699Handling": 80,
+
+"969TopSpeed": 165,
+"9690to60": 5.3,
+"969Handling": 80,
+
+"996TopSpeed": 165,
+"9960to60": 5,
+"996Handling": 77,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalSCMulliner(1999).png",
+    "creator": "Hastur"
+}
