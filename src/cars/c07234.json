@@ -1,0 +1,50 @@
+{
+    "carID": "c07234",
+    "cr": 372,
+    "make": "Alpine",
+    "model": "A290 GT 180",
+    "modelYear": 2024,
+    "country": "FR",
+    "topSpeed": 99,
+    "0to60": 7,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Eco Friendly","Chop Shop"],
+    "isPrize": false,
+    "weight": 1479,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 31.35,
+    "ola": 80,
+
+    "description": "The less powerful model of the brand new Alpine R5.",
+
+"333TopSpeed": 104,
+"3330to60": 6.6,
+"333Handling": 82,
+
+"666TopSpeed": 110,
+"6660to60": 6.3,
+"666Handling": 84,
+
+"699TopSpeed": 110,
+"6990to60": 6,
+"699Handling": 88,
+
+"969TopSpeed": 115,
+"9690to60": 6.3,
+"969Handling": 88,
+
+"996TopSpeed": 115,
+"9960to60": 6,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineA290GT180(2024).png",
+    "creator": "ama4nn"
+}

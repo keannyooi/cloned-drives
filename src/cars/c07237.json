@@ -1,0 +1,50 @@
+{
+    "carID": "c07237",
+    "cr": 769,
+    "make": "Renault",
+    "model": "R5 Turbo 3E",
+    "modelYear": 2022,
+    "country": "FR",
+    "topSpeed": 124,
+    "0to60": 3.4,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco Friendly", "Hot Hatch", "Concept","Chop Shop"],
+    "isPrize": true,
+    "weight": 980,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 67.54,
+    "ola": 79.44,
+
+    "description": "The world wasn't ready for this amount of cool.",
+
+"333TopSpeed": 128,
+"3330to60": 3.2,
+"333Handling": 93,
+
+"666TopSpeed": 132,
+"6660to60": 3.1,
+"666Handling": 96,
+
+"699TopSpeed": 132,
+"6990to60": 2.9,
+"699Handling": 100,
+
+"969TopSpeed": 137,
+"9690to60": 3.1,
+"969Handling": 100,
+
+"996TopSpeed": 137,
+"9960to60": 2.9,
+"996Handling": 96,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultR5Turbo3E(2022).png",
+    "creator": "ama4nn"
+}
