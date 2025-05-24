@@ -1,6 +1,6 @@
 {
     "carID": "c02102",
-    "cr": 1040,
+    "cr": 1045,
     "make": "Bentley",
     "model": "Speed 8 #7 Team Bentley",
     "modelYear": 2003,
@@ -16,7 +16,7 @@
         "Unique"
     ],
     "isPrize": false,
-    "weight": 918,
+    "weight": 908,
     "gc": "Low",
     "seatCount": 1,
     "bodyStyle": "Coupe",
@@ -24,8 +24,8 @@
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 84.85,
-    "ola": 71.43,
+    "mra": 126.79,
+    "ola": 104.91,
     "description": "British green racing machine.",
      "333TopSpeed": 216,
     "3330to60": 2.7,
@@ -42,6 +42,6 @@
     "699TopSpeed": 219,
     "6990to60": 2.4,
     "699Handling": 121,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BentleySpeed8(2003).png",
-    "creator": "Exist"
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleySpeed8(2003).png",
+    "creator": "GAAN"
 }
