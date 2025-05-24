@@ -1,0 +1,50 @@
+{
+    "carID": "c07276",
+    "cr": 197,
+    "make": "Audi",
+    "model": "A4 1.6",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 119,
+    "0to60": 12.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1295,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.14,
+    "ola": 66.12,
+	
+    "description": "",
+	
+"333TopSpeed": 123,
+"3330to60": 11.8,
+"333Handling": 75,
+
+"666TopSpeed": 128,
+"6660to60": 11.2,
+"666Handling": 78,
+
+"699TopSpeed": 128,
+"6990to60": 10.5,
+"699Handling": 81,
+
+"969TopSpeed": 132,
+"9690to60": 11.2,
+"969Handling": 81,
+
+"996TopSpeed": 132,
+"9960to60": 10.5,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA41.6(2001).png",
+    "creator": "Connor"
+}

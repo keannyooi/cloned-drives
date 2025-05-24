@@ -1,0 +1,50 @@
+{
+    "carID": "c07275",
+    "cr": 340,
+    "make": "Renault",
+    "model": "5 E-Tech 110 kWh",
+    "modelYear": 2024,
+    "country": "FR",
+    "topSpeed": 93,
+    "0to60": 7.7,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Eco Friendly"],
+    "isPrize": false,
+    "weight": 1469,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 33.49,
+    "ola": 75.32,
+	
+    "description": "The fastest of the new 5 lineup.",
+	
+"333TopSpeed": 99,
+"3330to60": 7.3,
+"333Handling": 79,
+
+"666TopSpeed": 104,
+"6660to60": 6.9,
+"666Handling": 81,
+
+"699TopSpeed": 104,
+"6990to60": 6.5,
+"699Handling": 84,
+
+"969TopSpeed": 110,
+"9690to60": 6.9,
+"969Handling": 84,
+
+"996TopSpeed": 110,
+"9960to60": 6.5,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Renault5E-Tech110kWh(2024).png",
+    "creator": "ama4nn"
+}

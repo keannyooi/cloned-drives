@@ -1,0 +1,50 @@
+{
+    "carID": "c07280",
+    "cr": 385,
+    "make": "Audi",
+    "model": "A4 Avant 3.0 V6 quattro",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 147,
+    "0to60": 7.9,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [""],
+    "isPrize": false,
+    "weight": 1570,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.70,
+    "ola": 75.94,
+	
+    "description": "",
+	
+"333TopSpeed": 151,
+"3330to60": 7.5,
+"333Handling": 77,
+
+"666TopSpeed": 154,
+"6660to60": 7.1,
+"666Handling": 80,
+
+"699TopSpeed": 154,
+"6990to60": 6.7,
+"699Handling": 83,
+
+"969TopSpeed": 158,
+"9690to60": 7.1,
+"969Handling": 83,
+
+"996TopSpeed": 158,
+"9960to60": 6.7,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA4Avant3.0V6quattro(2001).png",
+    "creator": "Connor"
+}

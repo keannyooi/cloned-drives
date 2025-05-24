@@ -1,0 +1,50 @@
+{
+    "carID": "c07281",
+    "cr": 231,
+    "make": "Triumph",
+    "model": "2.5 PI Mk2",
+    "modelYear": 1970,
+    "country": "GB",
+    "topSpeed": 111,
+    "0to60": 10.5,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [""],
+    "isPrize": false,
+    "weight": 1242,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.62,
+    "ola": 66.19,
+	
+    "description": "A Michelotti-designed Triumph saloon with the drivetrain of the Triumph TR6.",
+	
+"333TopSpeed": 116,
+"3330to60": 10,
+"333Handling": 66,
+
+"666TopSpeed": 120,
+"6660to60": 9.5,
+"666Handling": 68,
+
+"699TopSpeed": 120,
+"6990to60": 8.9,
+"699Handling": 71,
+
+"969TopSpeed": 125,
+"9690to60": 9.5,
+"969Handling": 71,
+
+"996TopSpeed": 125,
+"9960to60": 8.9,
+"996Handling": 68,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Triumph2.5PIMk2.png",
+    "creator": "Johnny"
+}
