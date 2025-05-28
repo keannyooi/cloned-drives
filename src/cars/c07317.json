@@ -1,0 +1,50 @@
+{
+    "carID": "c07317",
+    "cr": 180,
+    "make": "Zastava",
+    "model": "Yugo 65A GLX",
+    "modelYear": 1988,
+    "country": "YU",
+    "topSpeed": 86,
+    "0to60": 11.7,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 969,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15.00,
+    "ola": 63.29,
+	
+    "description": "Most powerful Yugo. Why do Yugos have rear-window defrosters? To keep your hands warm.",
+	
+"333TopSpeed": 102,
+"3330to60": 11.1,
+"333Handling": 61,
+
+"666TopSpeed": 108,
+"6660to60": 10.5,
+"666Handling": 63,
+
+"699TopSpeed": 108,
+"6990to60": 9.9,
+"699Handling": 65,
+
+"969TopSpeed": 113,
+"9690to60": 10.5,
+"969Handling": 65,
+
+"996TopSpeed": 113,
+"9960to60": 9.9,
+"996Handling": 63,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaYugo65AGLX(1988).png",
+    "creator": "Connor"
+}

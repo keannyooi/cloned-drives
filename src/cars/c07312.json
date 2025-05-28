@@ -1,0 +1,50 @@
+{
+    "carID": "c07312",
+    "cr": 296,
+    "make": "Renault",
+    "model": "Wind 1.6 16V 130 Gordini",
+    "modelYear": 2011,
+    "country": "FR",
+    "topSpeed": 123,
+    "0to60": 9,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1204,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.82,
+    "ola": 70.38,
+
+    "description": "Gordini in name but not in spirit.",
+    
+"333TopSpeed": 127,
+"3330to60": 8.5,
+"333Handling": 76,
+
+"666TopSpeed": 131,
+"6660to60": 8.1,
+"666Handling": 79,
+
+"699TopSpeed": 131,
+"6990to60": 7.6,
+"699Handling": 82,
+
+"969TopSpeed": 136,
+"9690to60": 8.1,
+"969Handling": 82,
+
+"996TopSpeed": 136,
+"9960to60": 7.6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultlWind1.616V130Gordini(2011).png",
+    "creator": "Hastur"
+} 

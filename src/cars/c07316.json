@@ -1,0 +1,50 @@
+{
+    "carID": "c07316",
+    "cr": 85,
+    "make": "Zastava",
+    "model": "Yugo 55 GLS",
+    "modelYear": 1984,
+    "country": "YU",
+    "topSpeed": 86,
+    "0to60": 18.1,
+    "handling": 57,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 790,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.00,
+    "ola": 57.45,
+	
+    "description": "More powerful Yugo with whopping 55 hp. How do you make a Yugo go from 0 to 60 in five seconds? Push it off a cliff.",
+	
+"333TopSpeed": 92,
+"3330to60": 17.2,
+"333Handling": 59,
+
+"666TopSpeed": 98,
+"6660to60": 16.3,
+"666Handling": 61,
+
+"699TopSpeed": 98,
+"6990to60": 15.4,
+"699Handling": 63,
+
+"969TopSpeed": 104,
+"9690to60": 16.3,
+"969Handling": 63,
+
+"996TopSpeed": 104,
+"9960to60": 15.4,
+"996Handling": 61,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaYugo55GLS(1984).png",
+    "creator": "Connor"
+}

@@ -1,8 +1,8 @@
 {
-    "carID": "c07275",
-    "cr": 386,
+    "carID": "c07341",
+    "cr": 388,
     "make": "Renault",
-    "model": "5 E-Tech 110 kWh",
+    "model": "4 E-Tech Electric 150 Comfort Range",
     "modelYear": 2024,
     "country": "FR",
     "topSpeed": 93,
@@ -12,7 +12,7 @@
     "tyreType": "Standard",
     "tags": ["Chop Shop","Eco Friendly"],
     "isPrize": false,
-    "weight": 1469,
+    "weight": 1462,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Hatchback",
@@ -20,31 +20,31 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 33.49,
-    "ola": 75.32,
+    "mra": 38.51,
+    "ola": 72.03,
 	
-    "description": "The fastest of the new 5 lineup.",
+    "description": "Fast stuff.",
 	
 "333TopSpeed": 99,
 "3330to60": 7.3,
-"333Handling": 79,
+"333Handling": 80,
 
 "666TopSpeed": 104,
 "6660to60": 6.9,
-"666Handling": 81,
+"666Handling": 82,
 
 "699TopSpeed": 104,
 "6990to60": 6.5,
-"699Handling": 84,
+"699Handling": 85,
 
 "969TopSpeed": 110,
 "9690to60": 6.9,
-"969Handling": 84,
+"969Handling": 85,
 
 "996TopSpeed": 110,
 "9960to60": 6.5,
-"996Handling": 81,
+"996Handling": 82,
 	
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Renault5E-Tech110kWh(2024).png",
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Renault4E-TechElectric150ComfortRange(2024).png",
     "creator": "ama4nn"
 }

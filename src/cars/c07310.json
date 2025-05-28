@@ -1,0 +1,50 @@
+{
+    "carID": "c07310",
+    "cr": 355,
+    "make": "Renault",
+    "model": "Wind Concept",
+    "modelYear": 2004,
+    "country": "FR",
+    "topSpeed": 129,
+    "0to60": 7.1,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop", "Concept"],
+    "isPrize": false,
+    "weight": 855,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.24,
+    "ola": 62.28,
+
+    "description": "Melted Crocs.",
+    
+"333TopSpeed": 133,
+"3330to60": 6.7,
+"333Handling": 81,
+
+"666TopSpeed": 137,
+"6660to60": 6.4,
+"666Handling": 83,
+
+"699TopSpeed": 137,
+"6990to60": 6,
+"699Handling": 87,
+
+"969TopSpeed": 141,
+"9690to60": 6.4,
+"969Handling": 87,
+
+"996TopSpeed": 141,
+"9960to60": 6,
+"996Handling": 83,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultWindConcept(2004).png",
+    "creator": "Hastur"
+} 

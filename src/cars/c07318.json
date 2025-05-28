@@ -1,0 +1,50 @@
+{
+    "carID": "c07318",
+    "cr": 172,
+    "make": "Zastava",
+    "model": "Yugo Cabrio 1.3 EFI",
+    "modelYear": 1989,
+    "country": "YU",
+    "topSpeed": 93,
+    "0to60": 12.1,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 885,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.00,
+    "ola": 66.11,
+	
+    "description": "If you want to survive a 30 kmh crash, then Yugo Cabrio is not for you.",
+	
+"333TopSpeed": 99,
+"3330to60": 11.5,
+"333Handling": 61,
+
+"666TopSpeed": 104,
+"6660to60": 10.9,
+"666Handling": 63,
+
+"699TopSpeed": 104,
+"6990to60": 10.3,
+"699Handling": 65,
+
+"969TopSpeed": 110,
+"9690to60": 10.9,
+"969Handling": 65,
+
+"996TopSpeed": 110,
+"9960to60": 10.3,
+"996Handling": 63,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaYugoCabrio1.3EFI(1989).png",
+    "creator": "Connor"
+}

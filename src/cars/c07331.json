@@ -1,0 +1,50 @@
+{
+    "carID": "c07331",
+    "cr": 524,
+    "make": "BMW",
+    "model": "X5 3.0si",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 7.7,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2000,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.85,
+    "ola": 72.63,
+	
+    "description": "",
+	
+"333TopSpeed": 144,
+"3330to60": 7.3,
+"333Handling": 77,
+
+"666TopSpeed": 147,
+"6660to60": 6.9,
+"666Handling": 80,
+
+"699TopSpeed": 147,
+"6990to60": 6.5,
+"699Handling": 83,
+
+"969TopSpeed": 151,
+"9690to60": 6.9,
+"969Handling": 83,
+
+"996TopSpeed": 151,
+"9960to60": 6.5,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX53.0si(2006).png",
+    "creator": "Scorpio"
+}

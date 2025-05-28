@@ -1,0 +1,50 @@
+{
+    "carID": "c07346",
+    "cr": 368,
+    "make": "Renault",
+    "model": "Avantime 3.0 V6",
+    "modelYear": 2001,
+    "country": "FR",
+    "topSpeed": 137,
+    "0to60": 8.3,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1741,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Other",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.25,
+    "ola": 72.29,
+	
+    "description": "Very fast Avantime because, yes.",
+	
+"333TopSpeed": 141,
+"3330to60": 7.9,
+"333Handling": 73,
+
+"666TopSpeed": 145,
+"6660to60": 7.5,
+"666Handling": 76,
+
+"699TopSpeed": 145,
+"6990to60": 7.1,
+"699Handling": 79,
+
+"969TopSpeed": 148,
+"9690to60": 7.5,
+"969Handling": 79,
+
+"996TopSpeed": 148,
+"9960to60": 7.1,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultAvantime3.0V6(2001).png",
+    "creator": "ama4nn"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07338",
+    "cr": 266,
+    "make": "Mercedes-Benz",
+    "model": "E 200",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 10.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.5,
+    "ola": 72.66,
+	
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 9.8,
+"333Handling": 70,
+
+"666TopSpeed": 132,
+"6660to60": 9.3,
+"666Handling": 72,
+
+"699TopSpeed": 132,
+"6990to60": 8.8,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 9.3,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 8.8,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzE200(1993).png",
+    "creator": "Pfugs"
+}

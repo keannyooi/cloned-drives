@@ -1,0 +1,50 @@
+{
+    "carID": "c07315",
+    "cr": 77,
+    "make": "Zastava",
+    "model": "Jugo 45",
+    "modelYear": 1980,
+    "country": "YU",
+    "topSpeed": 83,
+    "0to60": 19.5,
+    "handling": 57,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 700,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.00,
+    "ola": 45.12,
+	
+    "description": "Original production Yugo, for Yugoslav market only hence Jugo with a J.",
+	
+"333TopSpeed": 89,
+"3330to60": 18.5,
+"333Handling": 59,
+
+"666TopSpeed": 96,
+"6660to60": 17.6,
+"666Handling": 61,
+
+"699TopSpeed": 96,
+"6990to60": 16.6,
+"699Handling": 63,
+
+"969TopSpeed": 102,
+"9690to60": 17.6,
+"969Handling": 63,
+
+"996TopSpeed": 102,
+"9960to60": 16.6,
+"996Handling": 61,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaJugo45(1980).png",
+    "creator": "Connor"
+}

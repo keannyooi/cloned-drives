@@ -1,0 +1,50 @@
+{
+    "carID": "c07311",
+    "cr": 239,
+    "make": "Renault",
+    "model": "Wind TCe 100 Dynamique",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 118,
+    "0to60": 10.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1187,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.56,
+    "ola": 67.78,
+
+    "description": "Let there be light.",
+    
+"333TopSpeed": 122,
+"3330to60": 9.9,
+"333Handling": 75,
+
+"666TopSpeed": 127,
+"6660to60": 9.4,
+"666Handling": 78,
+
+"699TopSpeed": 127,
+"6990to60": 8.8,
+"699Handling": 81,
+
+"969TopSpeed": 131,
+"9690to60": 9.4,
+"969Handling": 81,
+
+"996TopSpeed": 131,
+"9960to60": 8.8,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultWindTCe100Dynamique(2010).png",
+    "creator": "Hastur"
+} 
