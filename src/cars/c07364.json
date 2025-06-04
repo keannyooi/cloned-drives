@@ -1,0 +1,50 @@
+{
+    "carID": "c07364",
+    "cr": 220,
+    "make": "Renault",
+    "model": "Zoe R90 Intens",
+    "modelYear": 2017,
+    "country": "FR",
+    "topSpeed": 85,
+    "0to60": 12.8,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1430,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 8.96,
+    "ola": 56.16,
+
+    "description": "Play-Doh.",
+    
+"333TopSpeed": 91,
+"3330to60": 12.2,
+"333Handling": 75,
+
+"666TopSpeed": 97,
+"6660to60": 11.5,
+"666Handling": 78,
+
+"699TopSpeed": 97,
+"6990to60": 10.9,
+"699Handling": 81,
+
+"969TopSpeed": 103,
+"9690to60": 11.5,
+"969Handling": 81,
+
+"996TopSpeed": 103,
+"9960to60": 10.9,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoeR90Intens(2017).png",
+    "creator": "Fried"
+} 

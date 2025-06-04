@@ -1,0 +1,50 @@
+{
+    "carID": "c07366",
+    "cr": 309,
+    "make": "Renault",
+    "model": "Zoe R135 Intens",
+    "modelYear": 2019,
+    "country": "FR",
+    "topSpeed": 89,
+    "0to60": 9.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1502,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 17.25,
+    "ola": 72.21,
+
+    "description": "Not quite an R.S.",
+    
+"333TopSpeed": 95,
+"3330to60": 8.6,
+"333Handling": 76,
+
+"666TopSpeed": 101,
+"6660to60": 8.2,
+"666Handling": 79,
+
+"699TopSpeed": 101,
+"6990to60": 7.7,
+"699Handling": 82,
+
+"969TopSpeed": 107,
+"9690to60": 8.2,
+"969Handling": 82,
+
+"996TopSpeed": 107,
+"9960to60": 7.7,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoeR135Intens(2019).png",
+    "creator": "Fried"
+} 

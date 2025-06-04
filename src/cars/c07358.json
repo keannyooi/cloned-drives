@@ -1,0 +1,50 @@
+{
+    "carID": "c07358",
+    "cr": 563,
+    "make": "Audi",
+    "model": "Q6 50 TFSI quattro edition one",
+    "modelYear": 2021,
+    "country": "CN",
+    "topSpeed": 129,
+    "0to60": 7.0,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 2340,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.40,
+    "ola": 71.42,
+	
+    "description": "How sad is it that one of the last cars with a VR6 was a big ugly SUV?",
+	
+"333TopSpeed": 133,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 137,
+"6660to60": 6.3,
+"666Handling": 81,
+
+"699TopSpeed": 137,
+"6990to60": 6,
+"699Handling": 84,
+
+"969TopSpeed": 141,
+"9690to60": 6.3,
+"969Handling": 84,
+
+"996TopSpeed": 141,
+"9960to60": 6,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiQ650TFSIquattroeditionone(2021).png",
+    "creator": "Connor"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07354",
+    "cr": 500,
+    "make": "Ford",
+    "model": "Explorer Premium Extended Range",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 6.5,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Eco Friendly"],
+    "isPrize": false,
+    "weight": 2102,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 45.68,
+    "ola": 72.55,
+	
+    "description": "I do prefer the Explorer EV in blue, it's the only thing that makes this car fine, I guess.",
+	
+"333TopSpeed": 117,
+"3330to60": 6.2,
+"333Handling": 79,
+
+"666TopSpeed": 121,
+"6660to60": 5.9,
+"666Handling": 81,
+
+"699TopSpeed": 121,
+"6990to60": 5.5,
+"699Handling": 84,
+
+"969TopSpeed": 126,
+"9690to60": 5.9,
+"969Handling": 84,
+
+"996TopSpeed": 126,
+"9960to60": 5.5,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordExplorerPremiumExtendedRange(2024).png",
+    "creator": "ama4nn"
+}

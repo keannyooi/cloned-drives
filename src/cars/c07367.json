@@ -1,0 +1,50 @@
+{
+    "carID": "c07367",
+    "cr": 221,
+    "make": "Renault",
+    "model": "Zoe Z.E. Concept",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 87,
+    "0to60": 12.5,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop", "Concept", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 9.22,
+    "ola": 60.8,
+
+    "description": "100% electric spa on wheels.",
+    
+"333TopSpeed": 93,
+"3330to60": 11.9,
+"333Handling": 76,
+
+"666TopSpeed": 99,
+"6660to60": 11.3,
+"666Handling": 79,
+
+"699TopSpeed": 99,
+"6990to60": 10.6,
+"699Handling": 82,
+
+"969TopSpeed": 105,
+"9690to60": 11.3,
+"969Handling": 82,
+
+"996TopSpeed": 105,
+"9960to60": 10.6,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoeZ.E.Concept(2009).png",
+    "creator": "Hastur"
+} 

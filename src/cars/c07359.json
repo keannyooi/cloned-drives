@@ -1,0 +1,50 @@
+{
+    "carID": "c07359",
+    "cr": 325,
+    "make": ["eRally", "Renault"],
+    "model": "Zoe",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 85,
+    "0to60": 11.6,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Chop Shop", "Eco-Friendly", "Motorsport"],
+    "isPrize": false,
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 8.94,
+    "ola": 61.2,
+
+    "description": "Mythical bankruptcy sale pull",
+    
+"333TopSpeed": 91,
+"3330to60": 11,
+"333Handling": 73,
+
+"666TopSpeed": 97,
+"6660to60": 10.4,
+"666Handling": 76,
+
+"699TopSpeed": 97,
+"6990to60": 9.9,
+"699Handling": 79,
+
+"969TopSpeed": 103,
+"9690to60": 10.4,
+"969Handling": 79,
+
+"996TopSpeed": 103,
+"9960to60": 9.9,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/eRallyZoe(2016).png",
+    "creator": "Hastur"
+} 

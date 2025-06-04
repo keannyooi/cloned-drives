@@ -1,0 +1,50 @@
+{
+    "carID": "c07363",
+    "cr": 217,
+    "make": "Renault",
+    "model": "Zoe Q210 Zen",
+    "modelYear": 2012,
+    "country": "FR",
+    "topSpeed": 85,
+    "0to60": 12.9,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop", "Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1430,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 8.94,
+    "ola": 60.47,
+
+    "description": "Zoe Renault would like to have a word.",
+    
+"333TopSpeed": 91,
+"3330to60": 12.3,
+"333Handling": 75,
+
+"666TopSpeed": 97,
+"6660to60": 11.6,
+"666Handling": 78,
+
+"699TopSpeed": 97,
+"6990to60": 11,
+"699Handling": 81,
+
+"969TopSpeed": 103,
+"9690to60": 11.6,
+"969Handling": 81,
+
+"996TopSpeed": 103,
+"9960to60": 11,
+"996Handling": 78,
+
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoeQ210Zen(2012).png",
+    "creator": "Hastur"
+} 

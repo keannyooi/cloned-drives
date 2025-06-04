@@ -1,0 +1,50 @@
+{
+    "carID": "c07353",
+    "cr": 385,
+    "make": "Ford",
+    "model": "Explorer Select",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 8.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop","Eco Friendly"],
+    "isPrize": false,
+    "weight": 1920,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 38.56,
+    "ola": 69.12,
+	
+    "description": "While the USA gets a fat fuck ICE SUV, Ford EU has decided they'd go eco friendly and make an entirely different electric model for Europe. Guess the Capri needed a sibling?",
+	
+"333TopSpeed": 104,
+"3330to60": 7.6,
+"333Handling": 77,
+
+"666TopSpeed": 110,
+"6660to60": 7.2,
+"666Handling": 80,
+
+"699TopSpeed": 110,
+"6990to60": 6.8,
+"699Handling": 83,
+
+"969TopSpeed": 115,
+"9690to60": 7.2,
+"969Handling": 83,
+
+"996TopSpeed": 115,
+"9960to60": 6.8,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordExplorerSelect(2024).png",
+    "creator": "ama4nn"
+}
