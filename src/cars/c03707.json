@@ -1,19 +1,18 @@
 {
     "carID": "c03707",
-    "cr": 706,
+    "cr": 703,
     "make": "Audi",
     "model": "RS 4 Avant",
     "modelYear": 2012,
     "country": "DE",
-    "topSpeed": 174,
+    "topSpeed": 155,
     "0to60": 4.4,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
-    "weight": 1795,
+    "weight": 1870,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Wagon",
@@ -21,11 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 77.89,
-    "ola": 76.88,
-    "description": "The Quattro division pumps out another practical speed demon.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiRS4Avant(2012).png",
-    "creator": "Exist",
+    "mra": 77.19,
+    "ola": 77.27,
+
+    "description": "The quattro division pumps out another practical speed demon.",
 
 "333TopSpeed": 177,
 "3330to60": 4.2,
@@ -45,5 +43,8 @@
 
 "996TopSpeed": 183,
 "9960to60": 3.7,
-"996Handling": 93
+"996Handling": 93,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiRS4Avant(2012).png",
+    "creator": "Connor"
 }
