@@ -1,0 +1,50 @@
+{
+    "carID": "c07378",
+    "cr": 347,
+    "make": "Audi",
+    "model": "A4 Avant 2.0 TDI Ambition",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 8.4,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.62,
+    "ola": 73.80,
+	
+    "description": "",
+	
+"333TopSpeed": 142,
+"3330to60": 8,
+"333Handling": 81,
+
+"666TopSpeed": 146,
+"6660to60": 7.6,
+"666Handling": 83,
+
+"699TopSpeed": 146,
+"6990to60": 7.1,
+"699Handling": 87,
+
+"969TopSpeed": 149,
+"9690to60": 7.6,
+"969Handling": 87,
+
+"996TopSpeed": 149,
+"9960to60": 7.1,
+"996Handling": 83,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA4Avant2.0TDIAmbition(2012).png",
+    "creator": "Connor"
+}

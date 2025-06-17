@@ -1,0 +1,50 @@
+{
+    "carID": "c07372",
+    "cr": 303,
+    "make": "Audi",
+    "model": "A4 2.0 TDIe Ambition",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 9.3,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1526,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.76,
+    "ola": 75.26,
+	
+    "description": "e stands for economy. Trust.",
+	
+"333TopSpeed": 137,
+"3330to60": 8.8,
+"333Handling": 80,
+
+"666TopSpeed": 141,
+"6660to60": 8.4,
+"666Handling": 82,
+
+"699TopSpeed": 141,
+"6990to60": 7.9,
+"699Handling": 85,
+
+"969TopSpeed": 145,
+"9690to60": 8.4,
+"969Handling": 85,
+
+"996TopSpeed": 145,
+"9960to60": 7.9,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA42.0TDIeAmbition(2008).png",
+    "creator": "Connor"
+}

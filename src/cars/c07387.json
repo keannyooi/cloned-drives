@@ -1,0 +1,50 @@
+{
+    "carID": "c07387",
+    "cr": 292,
+    "make": "Leapmotor",
+    "model": "S01 380 Pro",
+    "modelYear": 2019,
+    "country": "CN",
+    "topSpeed": 84,
+    "0to60": 7.2,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of the World", "Eco Friendly", "Chop Shop"],
+    "isPrize": false,
+    "weight": 1215,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 10,
+    "ola": 82.85,
+	
+    "description": "",
+	
+"333TopSpeed": 90,
+"3330to60": 6.8,
+"333Handling": 83,
+
+"666TopSpeed": 96,
+"6660to60": 6.5,
+"666Handling": 85,
+
+"699TopSpeed": 96,
+"6990to60": 6.1,
+"699Handling": 89,
+
+"969TopSpeed": 103,
+"9690to60": 6.5,
+"969Handling": 89,
+
+"996TopSpeed": 103,
+"9960to60": 6.1,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/LeapmotorS01380Pro(2019).png",
+    "creator": "Keanny"
+}

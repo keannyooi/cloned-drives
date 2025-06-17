@@ -1,0 +1,50 @@
+{
+    "carID": "c07370",
+    "cr": 361,
+    "make": "Audi",
+    "model": "A4 1.8 TFSI Pro line",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 142,
+    "0to60": 8.2,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1519,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.19,
+    "ola": 73.17,
+	
+    "description": "",
+	
+"333TopSpeed": 146,
+"3330to60": 7.8,
+"333Handling": 81,
+
+"666TopSpeed": 149,
+"6660to60": 7.4,
+"666Handling": 83,
+
+"699TopSpeed": 149,
+"6990to60": 7,
+"699Handling": 87,
+
+"969TopSpeed": 153,
+"9690to60": 7.4,
+"969Handling": 87,
+
+"996TopSpeed": 153,
+"9960to60": 7,
+"996Handling": 83,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA41.8TFSIProline(2007).png",
+    "creator": "Connor"
+}

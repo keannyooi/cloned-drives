@@ -1,0 +1,50 @@
+{
+    "carID": "c07383",
+    "cr": 363,
+    "make": "nanoFlowcell",
+    "model": "QUANTiNO",
+    "modelYear": 2015,
+    "country": "CH",
+    "topSpeed": 124,
+    "0to60": 8.1,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World", "Innovative", "Unique", "Eco Friendly", "Chop Shop"],
+    "isPrize": false,
+    "weight": 1420,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 56.25,
+    "ola": 74.07,
+	
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 7.7,
+"333Handling": 77,
+
+"666TopSpeed": 132,
+"6660to60": 7.3,
+"666Handling": 80,
+
+"699TopSpeed": 132,
+"6990to60": 6.9,
+"699Handling": 83,
+
+"969TopSpeed": 137,
+"9690to60": 7.3,
+"969Handling": 83,
+
+"996TopSpeed": 137,
+"9960to60": 6.9,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/nanoFlowcellQUANTiNO(2015).png",
+    "creator": "Keanny"
+}

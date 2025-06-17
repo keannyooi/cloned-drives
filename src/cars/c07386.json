@@ -1,0 +1,50 @@
+{
+    "carID": "c07386",
+    "cr": 161,
+    "make": "Changan",
+    "model": "CM8 1.3",
+    "modelYear": 2004,
+    "country": "CN",
+    "topSpeed": 84,
+    "0to60": 12.1,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World","Chop Shop"],
+    "isPrize": false,
+    "weight": 1130,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 5,
+    "ola": 69.42,
+	
+    "description": "",
+	
+"333TopSpeed": 90,
+"3330to60": 11.5,
+"333Handling": 63,
+
+"666TopSpeed": 96,
+"6660to60": 10.9,
+"666Handling": 65,
+
+"699TopSpeed": 96,
+"6990to60": 10.3,
+"699Handling": 68,
+
+"969TopSpeed": 103,
+"9690to60": 10.9,
+"969Handling": 68,
+
+"996TopSpeed": 103,
+"9960to60": 10.3,
+"996Handling": 65,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/ChanganCM81.3(2004).png",
+    "creator": "Keanny"
+}

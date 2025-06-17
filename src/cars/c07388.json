@@ -1,0 +1,50 @@
+{
+    "carID": "c07388",
+    "cr": 293,
+    "make": "Tongji",
+    "model": "Volare 4WD-FC-EREV",
+    "modelYear": 2013,
+    "country": "CN",
+    "topSpeed": 93,
+    "0to60": 8.8,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Rest of the World", "Eco Friendly", "Chop Shop"],
+    "isPrize": false,
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 20,
+    "ola": 59.09,
+	
+    "description": "According to Carscoops, like many other vehicles on display at Shanghai, there aren't alot of details available for the concept. Dude, I found a whole spec sheet for this thing online. Although I'll admit, I did make up the horsepower figure while making this card.",
+	
+"333TopSpeed": 99,
+"3330to60": 8.4,
+"333Handling": 76,
+
+"666TopSpeed": 104,
+"6660to60": 7.9,
+"666Handling": 79,
+
+"699TopSpeed": 104,
+"6990to60": 7.5,
+"699Handling": 82,
+
+"969TopSpeed": 110,
+"9690to60": 7.9,
+"969Handling": 82,
+
+"996TopSpeed": 110,
+"9960to60": 7.5,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/TongjiVolare4WD-FC-EREV(2013).png",
+    "creator": "Keanny"
+}

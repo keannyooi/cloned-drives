@@ -1,0 +1,50 @@
+{
+    "carID": "c07374",
+    "cr": 366,
+    "make": "Audi",
+    "model": "A4 2.7 TDI Ambiente",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 8.8,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1616,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.63,
+    "ola": 75.94,
+	
+    "description": "",
+	
+"333TopSpeed": 146,
+"3330to60": 7.5,
+"333Handling": 81,
+
+"666TopSpeed": 149,
+"6660to60": 7.1,
+"666Handling": 83,
+
+"699TopSpeed": 149,
+"6990to60": 6.7,
+"699Handling": 87,
+
+"969TopSpeed": 153,
+"9690to60": 7.1,
+"969Handling": 87,
+
+"996TopSpeed": 153,
+"9960to60": 6.7,
+"996Handling": 83,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA42.7TDIAmbiente(2008).png",
+    "creator": "Connor"
+}
