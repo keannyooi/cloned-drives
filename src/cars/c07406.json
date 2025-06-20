@@ -1,0 +1,50 @@
+{
+    "carID": "c07406",
+    "cr": 842,
+    "make": "Specialised Sporting Vehicles",
+    "model": "Exile",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 185,
+    "0to60": 3.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Track Day","Concept"],
+    "isPrize": false,
+    "weight": 1060,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.05,
+    "ola": 93.75,
+	
+    "description": "Lee Noble's new company failed to deliver on any promises, just like the last efforts made when he was still in Noble. In 2025, he still insists that the car will eventually be delivered.",
+	
+"333TopSpeed": 188,
+"3330to60": 3,
+"333Handling": 97,
+
+"666TopSpeed": 191,
+"6660to60": 2.9,
+"666Handling": 100,
+
+"699TopSpeed": 191,
+"6990to60": 2.7,
+"699Handling": 104,
+
+"969TopSpeed": 193,
+"9690to60": 2.9,
+"969Handling": 104,
+
+"996TopSpeed": 193,
+"9960to60": 2.7,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SpecialisedSportingVehiclesExile(2017).png",
+    "creator": "Pfugs"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07418",
+    "cr": 814,
+    "make": "Noble",
+    "model": "M400",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Track Day"],
+    "isPrize": false,
+    "weight": 1089,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.6,
+    "ola": 96.02,
+	
+    "description": "A pair of Garrett T28 turbochargers push power well past the 400 hp-mark and the M12 gets a new name for it's last version.",
+	
+"333TopSpeed": 186,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 189,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 189,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 192,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 192,
+"9960to60": 2.8,
+"996Handling": 98,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NobleM400(2004).png",
+    "creator": "Pfugs"
+}

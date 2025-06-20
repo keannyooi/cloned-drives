@@ -1,0 +1,50 @@
+{
+    "carID": "c07422",
+    "cr": 848,
+    "make": "Noble",
+    "model": "M600 Speedster",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 3.4,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Supercar","Unique"],
+    "isPrize": false,
+    "weight": 1198,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.37,
+    "ola": 100.59,
+	
+    "description": "The first open top Noble after the M10. Only took them 18 years.",
+	
+"333TopSpeed": 227,
+"3330to60": 3.2,
+"333Handling": 96,
+
+"666TopSpeed": 230,
+"6660to60": 3.1,
+"666Handling": 99,
+
+"699TopSpeed": 230,
+"6990to60": 2.9,
+"699Handling": 103,
+
+"969TopSpeed": 232,
+"9690to60": 3.1,
+"969Handling": 103,
+
+"996TopSpeed": 232,
+"9960to60": 2.9,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NobleM600Speedster(2016).png",
+    "creator": "Pfugs"
+}

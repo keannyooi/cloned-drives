@@ -1,0 +1,50 @@
+{
+    "carID": "c07417",
+    "cr": 809,
+    "make": "Noble",
+    "model": "M15",
+    "modelYear": 2006,
+    "country": "GB",
+    "topSpeed": 185,
+    "0to60": 3.4,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Concept"],
+    "isPrize": false,
+    "weight": 1254,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 84.43,
+    "ola": 82.65,
+	
+    "description": "Meant as a competitor to the likes of the Ferrari F430, the M15 would've been the first Noble to feature driver aids, electric windows and US Type Approval. The car never came to fruition though, as Lee Noble left the company during it's development and the new owner decided he simply didn't like it despite running prototypes already existing. In the end, the M600 was given the green light instead.",
+	
+"333TopSpeed": 188,
+"3330to60": 3.2,
+"333Handling": 93,
+
+"666TopSpeed": 191,
+"6660to60": 3.1,
+"666Handling": 96,
+
+"699TopSpeed": 191,
+"6990to60": 2.9,
+"699Handling": 100,
+
+"969TopSpeed": 193,
+"9690to60": 3.1,
+"969Handling": 100,
+
+"996TopSpeed": 193,
+"9960to60": 2.9,
+"996Handling": 96,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NobleM15(2006).png",
+    "creator": "Pfugs"
+}

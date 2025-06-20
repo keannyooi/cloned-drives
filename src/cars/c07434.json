@@ -1,0 +1,50 @@
+{
+    "carID": "c07434",
+    "cr": 822,
+    "make": ["Jiotto", "Dome"]
+    "model": "Caspita",
+    "modelYear": 1992,
+    "country": "JP",
+    "topSpeed": 199,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop"],
+    "isPrize": false,
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.53,
+    "ola": 106.61,
+	
+    "description": "The new Caspita is even faster, incase the last one wasn't already perfectly fine..",
+	
+"333TopSpeed": 202,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 204,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 204,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 207,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 207,
+"9960to60": 2.8,
+"996Handling": 98,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JiottoCaspita(1992).png",
+    "creator": "Pfugs"
+}

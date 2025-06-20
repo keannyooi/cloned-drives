@@ -1,0 +1,50 @@
+{
+    "carID": "c07414",
+    "cr": 755,
+    "make": "Noble",
+    "model": "M12 GTO-3",
+    "modelYear": 2003,
+    "country": "GB",
+    "topSpeed": 167,
+    "0to60": 3.7,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Track Day"],
+    "isPrize": false,
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 70.52,
+    "ola": 96.72,
+	
+    "description": "Bored out to 3 liters, the Duratec V6 now makes over 350 hp.",
+	
+"333TopSpeed": 170,
+"3330to60": 3.5,
+"333Handling": 94,
+
+"666TopSpeed": 173,
+"6660to60": 3.3,
+"666Handling": 97,
+
+"699TopSpeed": 173,
+"6990to60": 3.1,
+"699Handling": 101,
+
+"969TopSpeed": 176,
+"9690to60": 3.3,
+"969Handling": 101,
+
+"996TopSpeed": 176,
+"9960to60": 3.1,
+"996Handling": 97,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NobleM12GTO-3(2003).png",
+    "creator": "Pfugs"
+}

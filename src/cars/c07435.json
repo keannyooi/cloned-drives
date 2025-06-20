@@ -1,0 +1,50 @@
+{
+    "carID": "c07435",
+    "cr": 448,
+    "make": "Renault",
+    "model": "Racoon",
+    "modelYear": 1992,
+    "country": "FR",
+    "topSpeed": 96,
+    "0to60": 9.5,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Chop Shop", "Concept"],
+    "isPrize": false,
+    "weight": 1580,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 57.84,
+    "ola": 71.58,
+
+    "description": "Amphibious sports car or misunderstood mammmal? Who knows.",
+    
+"333TopSpeed": 101,
+"3330to60": 9,
+"333Handling": 73,
+
+"666TopSpeed": 107,
+"6660to60": 8.6,
+"666Handling": 76,
+
+"699TopSpeed": 107,
+"6990to60": 8.1,
+"699Handling": 79,
+
+"969TopSpeed": 112,
+"9690to60": 8.6,
+"969Handling": 79,
+
+"996TopSpeed": 112,
+"9960to60": 8.1,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/RenaultRacoon(1992).png",
+    "creator": "Hastur"
+} 

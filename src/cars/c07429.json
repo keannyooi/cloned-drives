@@ -1,0 +1,50 @@
+{
+    "carID": "c07429",
+    "cr": 884,
+    "make": ["Jetstream Motorsport","Noble"],
+    "model": "M400 RSR GT Cup #12 Jetstream Motorsport",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 178,
+    "0to60": 3.2,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Chop Shop","Tuner","Motorsport"],
+    "isPrize": false,
+    "weight": 1060,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 82.05,
+    "ola": 84.38,
+	
+    "description": "Unsurprisingly, this failed GT4 homologation.",
+	
+"333TopSpeed": 181,
+"3330to60": 3,
+"333Handling": 100,
+
+"666TopSpeed": 184,
+"6660to60": 2.9,
+"666Handling": 103,
+
+"699TopSpeed": 184,
+"6990to60": 2.7,
+"699Handling": 108,
+
+"969TopSpeed": 187,
+"9690to60": 2.9,
+"969Handling": 108,
+
+"996TopSpeed": 187,
+"9960to60": 2.7,
+"996Handling": 103,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JetstreamMotorsportM400RSRGTCup%2312JetstreamMotorsport(2012).png",
+    "creator": "Pfugs"
+}

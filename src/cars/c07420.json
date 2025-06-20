@@ -1,0 +1,50 @@
+{
+    "carID": "c07420",
+    "cr": 871,
+    "make": "Noble",
+    "model": "M600",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 3.1,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Supercar"],
+    "isPrize": false,
+    "weight": 1261,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.46,
+    "ola": 105.05,
+	
+    "description": "After 10 years, Noble presented their first completely new development that actually ended up being produced. The engine came from the Volvo XC90.",
+	
+"333TopSpeed": 227,
+"3330to60": 2.9,
+"333Handling": 96,
+
+"666TopSpeed": 230,
+"6660to60": 2.8,
+"666Handling": 99,
+
+"699TopSpeed": 230,
+"6990to60": 2.6,
+"699Handling": 103,
+
+"969TopSpeed": 232,
+"9690to60": 2.8,
+"969Handling": 103,
+
+"996TopSpeed": 232,
+"9960to60": 2.6,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NobleM600(2010).png",
+    "creator": "Pfugs"
+}

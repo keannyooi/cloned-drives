@@ -1,0 +1,50 @@
+{
+    "carID": "c07404",
+    "cr": 800,
+    "make": ["TWR","Jaguar"],
+    "model": "Supercat",
+    "modelYear": 2025,
+    "country": "GB",
+    "topSpeed": 204,
+    "0to60": 3.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Chop Shop","Unique","RestoMod","Grand Tourer","Eargasm"],
+    "isPrize": false,
+    "weight": 1605,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.19,
+    "ola": 103.03,
+	
+    "description": "A restomod not based on a 911? Unheard of.",
+	
+"333TopSpeed": 207,
+"3330to60": 3.1,
+"333Handling": 91,
+
+"666TopSpeed": 209,
+"6660to60": 3,
+"666Handling": 94,
+
+"699TopSpeed": 209,
+"6990to60": 2.8,
+"699Handling": 98,
+
+"969TopSpeed": 212,
+"9690to60": 3,
+"969Handling": 98,
+
+"996TopSpeed": 212,
+"9960to60": 2.8,
+"996Handling": 94,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TWRSupercat(2025).png",
+    "creator": "Pfugs"
+}
