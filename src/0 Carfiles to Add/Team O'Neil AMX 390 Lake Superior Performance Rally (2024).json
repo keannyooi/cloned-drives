@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 730,
+    "make": "Team O'Neil",
+    "model": "AMX 390 Lake Superior Performance Rally",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 122,
+    "0to60": 5.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown", "Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1678,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.61,
+    "ola": 51.85,
+	
+    "description": "The O'Neil AMX entered the Lake Superior Performance Rally once more in 2024 sporting a new fully white paint. Improvement was made since the last race, and Tim finished 10th place this time.",
+	
+"333TopSpeed": 126,
+"3330to60": 5.1,
+"333Handling": 83,
+
+"666TopSpeed": 131,
+"6660to60": 4.9,
+"666Handling": 85,
+
+"699TopSpeed": 131,
+"6990to60": 4.6,
+"699Handling": 89,
+
+"969TopSpeed": 135,
+"9690to60": 4.9,
+"969Handling": 89,
+
+"996TopSpeed": 135,
+"9960to60": 4.6,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TeamO'NeilAMX-390LakeSuperiorPerformanceRally(2024).png",
+    "creator": "Johnny"
+}

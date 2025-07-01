@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 404,
+    "make": "AMC",
+    "model": "AMX/3 Torino Show Car",
+    "modelYear": 1970,
+    "country": "IT",
+    "topSpeed": 135,
+    "0to60": 6.1,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1384,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 81.33,
+    "ola": 55.74,
+	
+    "description": "This is the first fully developed AMX/3 to feature the styling changes made on the Monza car. The car was completed by Diomante and Bizzarrini in the second half of 1970 after AMC's withdrawal from the AMX/3 project. It was painted in Azzuro Teal Blue, and was aiming to have a higher displacement than the DeTomaso Pantera. Since the 360 V8 was cheaper than the 390 and bigger than the Pantera's 351, the 390 featured in all previous cars was replaced by a 360 V8. The 360 was planned to be base engine for the AMX/3 if it ever reached production. In October 1970, the car was exhibited at the Turin Show.",
+	
+"333TopSpeed": 139,
+"3330to60": 5.8,
+"333Handling": 77,
+
+"666TopSpeed": 143,
+"6660to60": 5.5,
+"666Handling": 80,
+
+"699TopSpeed": 143,
+"6990to60": 5.2,
+"699Handling": 83,
+
+"969TopSpeed": 147,
+"9690to60": 5.5,
+"969Handling": 83,
+
+"996TopSpeed": 147,
+"9960to60": 5.2,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3TorinoShowCar(1970).png",
+    "creator": "Johnny"
+}

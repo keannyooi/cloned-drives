@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 643,
+    "make": "Bizzarrini",
+    "model": "AMX/3 Spyder",
+    "modelYear": 1995,
+    "country": "IT",
+    "topSpeed": 193,
+    "0to60": 4.3,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 79.63,
+    "ola": 65.12,
+	
+    "description": "The ninth chassis was originally supposed to be a spyder version of the AMX/3 until the project was abandoned by AMC. It was later sold to Giordanengo along with the seventh car, who finished the car and equipped it with a Chevy 327. The car was also sold to D'Ieteren in 1992, who gave it an AMC heart, a 390 AMC V8. He also opted for a ZF 5-speed transaxle, like the one found in the original prototype. Like the seventh car, the AMX/3 Spyder is also displayed at Autoworld in Belgium.",
+	
+"333TopSpeed": 196,
+"3330to60": 4.1,
+"333Handling": 81,
+
+"666TopSpeed": 198,
+"6660to60": 3.9,
+"666Handling": 83,
+
+"699TopSpeed": 198,
+"6990to60": 3.7,
+"699Handling": 87,
+
+"969TopSpeed": 201,
+"9690to60": 3.9,
+"969Handling": 87,
+
+"996TopSpeed": 201,
+"9960to60": 3.7,
+"996Handling": 83,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BizzarriniAMX3Spyder(1995).png",
+    "creator": "Johnny"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 336,
+    "make": "AMC",
+    "model": "AMX/3",
+    "modelYear": 1971,
+    "country": "IT",
+    "topSpeed": 125,
+    "0to60": 6.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1384,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 81.93,
+    "ola": 58.62,
+	
+    "description": "The sixth AMX/3 was Diomante's personal car, and it initally had the 360 V8 like the fifth car. For unknown reasons, Diomante had replaced the 360 with a 290 at some point in time, making it the slowest AMX/3 of the bunch. Diomante sold the car in 2022 to Simon Vels in The Netherlands.",
+	
+"333TopSpeed": 129,
+"3330to60": 6.5,
+"333Handling": 77,
+
+"666TopSpeed": 133,
+"6660to60": 6.1,
+"666Handling": 80,
+
+"699TopSpeed": 133,
+"6990to60": 5.8,
+"699Handling": 83,
+
+"969TopSpeed": 137,
+"9690to60": 6.1,
+"969Handling": 83,
+
+"996TopSpeed": 137,
+"9960to60": 5.8,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3(1971).png",
+    "creator": "Johnny"
+}

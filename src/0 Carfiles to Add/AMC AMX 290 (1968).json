@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 260,
+    "make": "AMC",
+    "model": "AMX 290",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 109,
+    "0to60": 7.8,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Muscle Car"],
+    "isPrize": false,
+    "weight": 1441,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.71,
+    "ola": 69.23,
+	
+    "description": "The AMX was marketed as the only American sports car that costs less than $3500, and was a market niche at the time which attracted youngsters into AMC dealers. All AMXs were equipped with a four-barrel carburetor and the AMC small block V8. The 290 is the base model engine, and it has small intake and exhaust valves, thin block webbing, and a cast nodular iron crankshaft, making it different from the 343 and 390 mechanically. Despite this, the engine is good for 225 horsepower at the crank, which is impressive for a base model nontheless.",
+	
+"333TopSpeed": 114,
+"3330to60": 7.4,
+"333Handling": 68,
+
+"666TopSpeed": 119,
+"6660to60": 7,
+"666Handling": 70,
+
+"699TopSpeed": 119,
+"6990to60": 6.6,
+"699Handling": 73,
+
+"969TopSpeed": 123,
+"9690to60": 7,
+"969Handling": 73,
+
+"996TopSpeed": 123,
+"9960to60": 6.6,
+"996Handling": 70,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX290(1968).png",
+    "creator": "Johnny"
+}

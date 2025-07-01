@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 575,
+    "make": "Team O'Neil",
+    "model": "AMX 390 Climb to the Clouds",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 5,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown", "Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1678,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.61,
+    "ola": 52.83,
+	
+    "description": "This AMC AMX was built by Tim O'Neil and features a modified 390 with some modern upgrades. The suspension and steering rack was sourced from an E36 BMW, and the original Borgwarner T-10 was replaced by a Jericho transmission. Tim's first race in his AMX was the Mount Washington Hill Climb where his best time was a 7:42.8, and he finished 7th in his class.",
+	
+"333TopSpeed": 129,
+"3330to60": 4.8,
+"333Handling": 88,
+
+"666TopSpeed": 133,
+"6660to60": 4.5,
+"666Handling": 91,
+
+"699TopSpeed": 133,
+"6990to60": 4.3,
+"699Handling": 94,
+
+"969TopSpeed": 137,
+"9690to60": 4.5,
+"969Handling": 94,
+
+"996TopSpeed": 137,
+"9960to60": 4.3,
+"996Handling": 91,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TeamO'NeilAMX390ClimbtotheClouds(2021).png",
+    "creator": "Johnny"
+}

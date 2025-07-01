@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 315,
+    "make": "AMC",
+    "model": "AMX 360 Shift-Command Go Package",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 7.2,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Muscle Car"],
+    "isPrize": false,
+    "weight": 1441,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.14,
+    "ola": 61.11,
+	
+    "description": "A '70 360-equipped AMX with the Shift-Command transmission and the Go Package finished in Big Bad Blue.",
+	
+"333TopSpeed": 129,
+"3330to60": 6.8,
+"333Handling": 70,
+
+"666TopSpeed": 133,
+"6660to60": 6.5,
+"666Handling": 72,
+
+"699TopSpeed": 133,
+"6990to60": 6.1,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 6.5,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 6.1,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX360Shift-CommandGoPackage(1970).png",
+    "creator": "Johnny"
+}
