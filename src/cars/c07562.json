@@ -1,0 +1,50 @@
+{
+    "carID": "c07562",
+    "cr": 998,
+    "make": ["Equus","Chevrolet"],
+    "model": "Throwback",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 220,
+    "0to60": 2.5,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Unique","Supercar","Tuner"],
+    "isPrize": false,
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.73,
+    "ola": 80.80,
+	
+    "description": "",
+	
+"333TopSpeed": 222,
+"3330to60": 2.4,
+"333Handling": 94,
+
+"666TopSpeed": 225,
+"6660to60": 2.3,
+"666Handling": 97,
+
+"699TopSpeed": 225,
+"6990to60": 2.1,
+"699Handling": 101,
+
+"969TopSpeed": 227,
+"9690to60": 2.3,
+"969Handling": 101,
+
+"996TopSpeed": 227,
+"9960to60": 2.1,
+"996Handling": 97,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/EquusThrowback(2018).png",
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07460",
+    "cr": 485,
+    "make": "AMC",
+    "model": "AMX/3 Monza Test Car",
+    "modelYear": 1969,
+    "country": "IT",
+    "topSpeed": 170,
+    "0to60": 5.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1402,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 78.46,
+    "ola": 55.30,
+	
+    "description": "The Bizzarrini-revised chassis was equipped on the second AMX/3, and like the first car it was at first tested by BMW in December 1969. Visually the car is the same as the first car, the only differences being large air vents and the air intake in the front fascia, as well as side marker lights on the front and rear wings. In the spring of 1970, the car was painted red, and tested by Bizzarrini and racing driver Antonio Nieri at Monza. At Monza they tested different wings, and consequently the AMX/3 was able to hit 170 mph, beating the inital goal of 160 mph. Nieri's fastest lap was a 1:56, which was equal to the time set by the Bizzarrini 5300 GT. The car was referred to the Red Monza Car by AMC, and in 1971 an Italian magazine tested the car on the streets of Turin.",
+	
+"333TopSpeed": 173,
+"3330to60": 5.2,
+"333Handling": 77,
+
+"666TopSpeed": 176,
+"6660to60": 5,
+"666Handling": 80,
+
+"699TopSpeed": 176,
+"6990to60": 4.7,
+"699Handling": 83,
+
+"969TopSpeed": 179,
+"9690to60": 5,
+"969Handling": 83,
+
+"996TopSpeed": 179,
+"9960to60": 4.7,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3MonzaTestCar(1969).png",
+    "creator": "Johnny"
+}

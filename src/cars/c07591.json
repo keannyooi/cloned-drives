@@ -1,0 +1,50 @@
+{
+    "carID": "c07591",
+    "cr": 809,
+    "make": "Tesla",
+    "model": "Model Y Long Range AWD",
+    "modelYear": 2025,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 4.1,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1997,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 85.25,
+    "ola": 87.46,
+	
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 3.9,
+"333Handling": 86,
+
+"666TopSpeed": 133,
+"6660to60": 3.7,
+"666Handling": 88,
+
+"699TopSpeed": 133,
+"6990to60": 3.5,
+"699Handling": 92,
+
+"969TopSpeed": 137,
+"9690to60": 3.7,
+"969Handling": 92,
+
+"996TopSpeed": 137,
+"9960to60": 3.5,
+"996Handling": 88,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TeslaModelYLongRangeAWD(2025).png",
+    "creator": "Scorpio"
+}

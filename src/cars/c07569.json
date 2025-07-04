@@ -1,0 +1,50 @@
+{
+    "carID": "c07569",
+    "cr": 476,
+    "make": "Lincoln",
+    "model": "MKX 3.5 V6 AWD",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 111,
+    "0to60": 8.1,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2005,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.48,
+    "ola": 69.14,
+	
+    "description": "",
+	
+"333TopSpeed": 116,
+"3330to60": 7.7,
+"333Handling": 75,
+
+"666TopSpeed": 120,
+"6660to60": 7.3,
+"666Handling": 78,
+
+"699TopSpeed": 120,
+"6990to60": 6.9,
+"699Handling": 81,
+
+"969TopSpeed": 125,
+"9690to60": 7.3,
+"969Handling": 81,
+
+"996TopSpeed": 125,
+"9960to60": 6.9,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LincolnMKX3.5V6AWD(2007).png",
+    "creator": "Scorpio"
+}

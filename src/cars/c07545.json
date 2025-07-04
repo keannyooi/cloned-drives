@@ -1,0 +1,50 @@
+{
+    "carID": "c07545",
+    "cr": 984,
+    "make": ["Divergent","Czinger"],
+    "model": "Blade",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 199,
+    "0to60": 2.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Concept"],
+    "isPrize": true,
+    "weight": 630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 95.65,
+    "ola": 90.91,
+	
+    "description": "",
+	
+"333TopSpeed": 202,
+"3330to60": 2.1,
+"333Handling": 97,
+
+"666TopSpeed": 204,
+"6660to60": 2,
+"666Handling": 100,
+
+"699TopSpeed": 204,
+"6990to60": 1.9,
+"699Handling": 104,
+
+"969TopSpeed": 207,
+"9690to60": 2,
+"969Handling": 104,
+
+"996TopSpeed": 207,
+"9960to60": 1.9,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DivergentBlade(2015).png",
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07602",
+    "cr": 297,
+    "make": "Pontiac",
+    "model": "Vibe GT-R",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 7.2,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Concept","Hot Hatch"],
+    "isPrize": false,
+    "weight": 1282,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.06,
+    "ola": 77.78,
+	
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 6.8,
+"333Handling": 77,
+
+"666TopSpeed": 121,
+"6660to60": 6.5,
+"666Handling": 80,
+
+"699TopSpeed": 121,
+"6990to60": 6.1,
+"699Handling": 83,
+
+"969TopSpeed": 126,
+"9690to60": 6.5,
+"969Handling": 83,
+
+"996TopSpeed": 126,
+"9960to60": 6.1,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PontiacVibeGT-R(2001).png",
+    "creator": "Scorpio"
+}

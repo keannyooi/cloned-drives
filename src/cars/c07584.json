@@ -1,0 +1,50 @@
+ {
+    "carID": "c07584",
+    "cr": 295,
+    "make": "Saturn",
+    "model": "LST Concept",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 7.2,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Concept","Street Racer"],
+    "isPrize": false,
+    "weight": 1444,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.4,
+    "ola": 71.9,
+	
+    "description": "None",
+	
+"333TopSpeed": 128,
+"3330to60": 6.8,
+"333Handling": 75,
+
+"666TopSpeed": 132,
+"6660to60": 6.5,
+"666Handling": 78,
+
+"699TopSpeed": 132,
+"6990to60": 6.1,
+"699Handling": 81,
+
+"969TopSpeed": 137,
+"9690to60": 6.5,
+"969Handling": 81,
+
+"996TopSpeed": 137,
+"9960to60": 6.1,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnLSTConcept(2000).png",
+    "creator": "GAAN"
+}

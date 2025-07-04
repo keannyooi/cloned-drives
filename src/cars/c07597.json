@@ -1,0 +1,50 @@
+{
+    "carID": "c07597",
+    "cr": 311,
+    "make": "Pontiac",
+    "model": "Vibe",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 110,
+    "0to60": 9.6,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.65,
+    "ola": 72.92,
+	
+    "description": "",
+	
+"333TopSpeed": 115,
+"3330to60": 9.1,
+"333Handling": 73,
+
+"666TopSpeed": 119,
+"6660to60": 8.6,
+"666Handling": 76,
+
+"699TopSpeed": 119,
+"6990to60": 8.2,
+"699Handling": 79,
+
+"969TopSpeed": 124,
+"9690to60": 8.6,
+"969Handling": 79,
+
+"996TopSpeed": 124,
+"9960to60": 8.2,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PontiacVibe(2009).png",
+    "creator": "Scorpio"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07570",
+    "cr": 523,
+    "make": "Lincoln",
+    "model": "MKX 3.7 V6 AWD",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 7.3,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2005,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.5,
+    "ola": 69.44,
+	
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 6.9,
+"333Handling": 76,
+
+"666TopSpeed": 121,
+"6660to60": 6.6,
+"666Handling": 79,
+
+"699TopSpeed": 121,
+"6990to60": 6.2,
+"699Handling": 82,
+
+"969TopSpeed": 126,
+"9690to60": 6.6,
+"969Handling": 82,
+
+"996TopSpeed": 126,
+"9960to60": 6.3,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LincolnMKX3.7V6AWD(2011).png",
+    "creator": "Scorpio"
+}

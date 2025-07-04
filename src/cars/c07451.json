@@ -1,0 +1,50 @@
+{
+    "carID": "c07451",
+    "cr": 724,
+    "make": "AMC",
+    "model": "AMX 390 SCCA #3 Bruce Morehead Racing",
+    "modelYear": 1969,
+    "country": "US",
+    "topSpeed": 175,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown", "Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.67,
+    "ola": 73.17,
+	
+    "description": "This is one of the few AMC AMX road racers, which was purchased by Bruce Morehead to compete in SCCA-A-Production and B-Production events. The car was also eligible for FIA and IMSA Pro Series events. Morehead had the suspension setup by the Holman Moody. Jim Frankland race-prepared the Detroit locker rearend, and assisted with the rear suspension as well. The engine was tuned to 500 horespower and designed for endurance racing. Morehead raced raced the car from 1969 to the mid 70s, and managed to win the SCCA National at Sebring in 1969. He also entered the AMX into the 1970 12 hours of Sebring, where engine problems would result in an early retirement.",
+	
+"333TopSpeed": 178,
+"3330to60": 3.9,
+"333Handling": 90,
+
+"666TopSpeed": 181,
+"6660to60": 3.7,
+"666Handling": 93,
+
+"699TopSpeed": 181,
+"6990to60": 3.5,
+"699Handling": 97,
+
+"969TopSpeed": 184,
+"9690to60": 3.7,
+"969Handling": 97,
+
+"996TopSpeed": 184,
+"9960to60": 3.5,
+"996Handling": 93,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX390%233BruceMoreheadRacing(1969).png",
+    "creator": "Johnny"
+}

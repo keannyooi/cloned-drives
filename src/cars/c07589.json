@@ -1,0 +1,50 @@
+{
+    "carID": "c07589",
+    "cr": 428,
+    "make": "Saturn",
+    "model": "VUE XR AWD",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 9.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1770,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.41,
+    "ola": 72.53,
+	
+    "description": "None",
+	
+"333TopSpeed": 130,
+"3330to60": 8.6,
+"333Handling": 70,
+
+"666TopSpeed": 134,
+"6660to60": 8.2,
+"666Handling": 72,
+
+"699TopSpeed": 134,
+"6990to60": 7.7,
+"699Handling": 75,
+
+"969TopSpeed": 138,
+"9690to60": 8.2,
+"969Handling": 75,
+
+"996TopSpeed": 138,
+"9960to60": 7.7,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnVUEXRAWD(2007).png",
+    "creator": "GAAN"
+}

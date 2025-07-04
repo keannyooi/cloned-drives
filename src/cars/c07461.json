@@ -1,0 +1,50 @@
+{
+    "carID": "c07461",
+    "cr": 441,
+    "make": "AMC",
+    "model": "AMX/3 Press Release Car",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1402,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 79.08,
+    "ola": 57.14,
+	
+    "description": "This is the only AMX/3 that was imported to the US for development. It did not feature the changes made to the Monza car, and thus it was essentially the same as the original prototype. On April 4th, 1970, the car had its US press release at the Waldorf in New York. The fiberglass mockup was subsequently presented a day later at the New York Auto Show. Dick Teague purchased the car from AMC in 1978, and as of today the car is still a member of the Teague family, owned by his daughter Lisa.",
+	
+"333TopSpeed": 149,
+"3330to60": 5.4,
+"333Handling": 76,
+
+"666TopSpeed": 152,
+"6660to60": 5.1,
+"666Handling": 79,
+
+"699TopSpeed": 152,
+"6990to60": 4.8,
+"699Handling": 82,
+
+"969TopSpeed": 156,
+"9690to60": 5.1,
+"969Handling": 82,
+
+"996TopSpeed": 156,
+"9960to60": 4.8,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3PressReleaseCar(1970).png",
+    "creator": "Johnny"
+}

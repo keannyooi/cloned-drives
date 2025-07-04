@@ -1,0 +1,50 @@
+{
+    "carID": "c07443",
+    "cr": 274,
+    "make": "AMC",
+    "model": "AMX 343 Shift-Command Go Package",
+    "modelYear": 1968,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 7.8,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Muscle Car"],
+    "isPrize": false,
+    "weight": 1441,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.86,
+    "ola": 66.67,
+	
+    "description": "Johnny's dad says hi 2.",
+	
+"333TopSpeed": 125,
+"3330to60": 7.4,
+"333Handling": 69,
+
+"666TopSpeed": 130,
+"6660to60": 7,
+"666Handling": 71,
+
+"699TopSpeed": 130,
+"6990to60": 6.6,
+"699Handling": 74,
+
+"969TopSpeed": 134,
+"9690to60": 7,
+"969Handling": 74,
+
+"996TopSpeed": 134,
+"9960to60": 6.6,
+"996Handling": 71,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX343Shift-CommandGoPackage(1968).png",
+    "creator": "Johnny"
+}

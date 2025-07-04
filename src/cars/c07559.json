@@ -1,0 +1,50 @@
+{
+    "carID": "c07559",
+    "cr": 602,
+    "make": "Ford",
+    "model": "Edge ST",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 133,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2067,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.69,
+    "ola": 66.67,
+	
+    "description": "",
+	
+"333TopSpeed": 137,
+"3330to60": 5.4,
+"333Handling": 83,
+
+"666TopSpeed": 141,
+"6660to60": 5.1,
+"666Handling": 80,
+
+"699TopSpeed": 141,
+"6990to60": 4.8,
+"699Handling": 89,
+
+"969TopSpeed": 145,
+"9690to60": 5.1,
+"969Handling": 89,
+
+"996TopSpeed": 145,
+"9960to60": 4.8,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordEdgeST(2018).png",
+    "creator": "Scorpio"
+}

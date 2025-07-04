@@ -1,0 +1,50 @@
+{
+    "carID": "c07555",
+    "cr": 452,
+    "make": "Ford",
+    "model": "Edge 2.0 TDCi Sport AWD",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 129,
+    "0to60": 9.2,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1875,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.09,
+    "ola": 76.09,
+	
+    "description": "",
+	
+"333TopSpeed": 133,
+"3330to60": 8.7,
+"333Handling": 76,
+
+"666TopSpeed": 137,
+"6660to60": 8.3,
+"666Handling": 79,
+
+"699TopSpeed": 137,
+"6990to60": 7.8,
+"699Handling": 82,
+
+"969TopSpeed": 141,
+"9690to60": 8.3,
+"969Handling": 82,
+
+"996TopSpeed": 141,
+"9960to60": 7.8,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordEdge2.0TDCiSportAWD(2016).png",
+    "creator": "Scorpio"
+}

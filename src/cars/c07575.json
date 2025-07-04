@@ -1,0 +1,50 @@
+{
+    "carID": "c07575",
+    "cr": 403,
+    "make": ["Ram","Dodge"],
+    "model": "Rampage Big Horn 2.2 Turbodiesel",
+    "modelYear": 2025,
+    "country": "BR",
+    "topSpeed": 122,
+    "0to60": 9.6,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1950,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 47.06,
+    "ola": 72.92,
+	
+    "description": "",
+	
+"333TopSpeed": 126,
+"3330to60": 9.1,
+"333Handling": 72,
+
+"666TopSpeed": 131,
+"6660to60": 8.6,
+"666Handling": 75,
+
+"699TopSpeed": 131,
+"6990to60": 8.2,
+"699Handling": 78,
+
+"969TopSpeed": 135,
+"9690to60": 8.6,
+"969Handling": 78,
+
+"996TopSpeed": 135,
+"9960to60": 8.2,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/RamRampageBigHorn2.2Turbodiesel(2025).png",
+    "creator": "DodgeDemon"
+}

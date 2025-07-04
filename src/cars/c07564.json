@@ -1,0 +1,50 @@
+{
+    "carID": "c07564",
+    "cr": 1051,
+    "make": "Hennessey",
+    "model": "Venom F5 Evolution",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 311,
+    "0to60": 2.4,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Hypercar","Unique","Ultra Expensive"],
+    "isPrize": true,
+    "weight": 1385,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 154.84,
+    "ola": 95.83,
+	
+    "description": "",
+	
+"333TopSpeed": 313,
+"3330to60": 2.3,
+"333Handling": 98,
+
+"666TopSpeed": 314,
+"6660to60": 2.2,
+"666Handling": 101,
+
+"699TopSpeed": 314,
+"6990to60": 2,
+"699Handling": 105,
+
+"969TopSpeed": 316,
+"9690to60": 2.2,
+"969Handling": 105,
+
+"996TopSpeed": 316,
+"9960to60": 2,
+"996Handling": 101,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Evolution(2025).png",
+    "creator": "DodgeDemon"
+}

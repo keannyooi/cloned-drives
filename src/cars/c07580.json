@@ -1,0 +1,50 @@
+{
+    "carID": "c07580",
+    "cr": 1,
+    "make": "Tesla",
+    "model": "Robovan",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 60,
+    "0to60": 10.5,
+    "handling": 45,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Eco-Friendly","Concept","Oddity"],
+    "isPrize": true,
+    "weight": 6305,
+    "gc": "Low",
+    "seatCount": 20,
+    "bodyStyle": "Other",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 52.25,
+	
+    "description": "",
+	
+"333TopSpeed": 69,
+"3330to60": 10.0,
+"333Handling": 45,
+
+"666TopSpeed": 77,
+"6660to60": 9.5,
+"666Handling": 48,
+
+"699TopSpeed": 77,
+"6990to60": 8.9,
+"699Handling": 50,
+
+"969TopSpeed": 86,
+"9690to60": 9.5,
+"969Handling": 50,
+
+"996TopSpeed": 83,
+"9960to60": 8.9,
+"996Handling": 48,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TeslaRobovan(2024).png",
+    "creator": "Scorpio"
+}

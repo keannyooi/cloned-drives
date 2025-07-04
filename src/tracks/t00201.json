@@ -1,0 +1,18 @@
+{
+	"trackName": "Watkins Glen International Short (Rainy)",
+	"weather": "Rainy",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/aFBkIPmb4DlYDcyR/TrackBG/WatkinsGlenShortRainy.jpg",
+	"map": "https://file.garden/aFBkIPmb4DlYDcyR/TrackM/Watkins_Glen_Short.png",
+	
+	"specsDistr": {
+		"topSpeed": 15,
+		"0to60": 40,
+		"handling": 70,
+		"weight": 5,
+		"mra": 80,
+		"ola": 0
+	}
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07556",
+    "cr": 566,
+    "make": "Ford",
+    "model": "Edge 2.0T ST-Line AWD",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 7.0,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1976,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.38,
+    "ola": 68.57,
+	
+    "description": "",
+	
+"333TopSpeed": 140,
+"3330to60": 6.6,
+"333Handling": 77,
+
+"666TopSpeed": 144,
+"6660to60": 6.3,
+"666Handling": 80,
+
+"699TopSpeed": 144,
+"6990to60": 6.0,
+"699Handling": 83,
+
+"969TopSpeed": 147,
+"9690to60": 6.3,
+"969Handling": 83,
+
+"996TopSpeed": 147,
+"9960to60": 6.0,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordEdge2.0TST-LineAWD(2018).png",
+    "creator": "Scorpio"
+}

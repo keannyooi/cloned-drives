@@ -1,0 +1,50 @@
+{
+    "carID": "c07578",
+    "cr": 589,
+    "make": ["Ram","Dodge"],
+    "model": "Rampage R/T",
+    "modelYear": 2024,
+    "country": "BR",
+    "topSpeed": 137,
+    "0to60": 6.6,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1910,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.56,
+    "ola": 60.61,
+	
+    "description": "",
+	
+"333TopSpeed": 141,
+"3330to60": 6.3,
+"333Handling": 76,
+
+"666TopSpeed": 145,
+"6660to60": 5.9,
+"666Handling": 79,
+
+"699TopSpeed": 145,
+"6990to60": 5.6,
+"699Handling": 82,
+
+"969TopSpeed": 148,
+"9690to60": 5.9,
+"969Handling": 82,
+
+"996TopSpeed": 148,
+"9960to60": 5.6,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/RamRampageRT(2024).png",
+    "creator": "DodgeDemon"
+}

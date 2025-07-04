@@ -1,0 +1,50 @@
+{
+    "carID": "c07445",
+    "cr": 368,
+    "make": "AMC",
+    "model": "AMX 360 Go Package",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 6.6,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Muscle Car"],
+    "isPrize": false,
+    "weight": 1441,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.97,
+    "ola": 51.52,
+	
+    "description": "In 1970 the 343 was replaced by the new 360 V8 producing 290 hp. The Go Package now included a Ram Air hood scoop, and the red stripe tires were replaced with white lettered tires. The front suspension was also revised with ball joints, upper and lower control arms, coil springs, and shocks above the upper control arms.",
+	
+"333TopSpeed": 120,
+"3330to60": 6.3,
+"333Handling": 70,
+
+"666TopSpeed": 124,
+"6660to60": 5.9,
+"666Handling": 72,
+
+"699TopSpeed": 124,
+"6990to60": 5.6,
+"699Handling": 75,
+
+"969TopSpeed": 129,
+"9690to60": 5.9,
+"969Handling": 75,
+
+"996TopSpeed": 129,
+"9960to60": 5.6,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX360GoPackage(1970).png",
+    "creator": "Johnny"
+}

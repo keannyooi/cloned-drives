@@ -1,0 +1,50 @@
+{
+    "carID": "c07565",
+    "cr": 1003,
+    "make": "Hennessey",
+    "model": "Venom F5 Revolution Roadster",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 250,
+    "0to60": 2.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Hypercar","Unique","Ultra Expensive","Trackday"],
+    "isPrize": false,
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 145.35,
+    "ola": 94.40,
+	
+    "description": "",
+	
+"333TopSpeed": 252,
+"3330to60": 2.4,
+"333Handling": 99,
+
+"666TopSpeed": 254,
+"6660to60": 2.3,
+"666Handling": 102,
+
+"699TopSpeed": 254,
+"6990to60": 2.1,
+"699Handling": 107,
+
+"969TopSpeed": 256,
+"9690to60": 2.3,
+"969Handling": 107,
+
+"996TopSpeed": 256,
+"9960to60": 2.1,
+"996Handling": 102,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5RevolutionRoadster(2023).png",
+    "creator": "DodgeDemon"
+}

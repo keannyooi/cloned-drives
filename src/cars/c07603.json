@@ -1,0 +1,50 @@
+{
+    "carID": "c07603",
+    "cr": 1039,
+    "make": "Chevrolet",
+    "model": "Corvette ZR1X Convertible ZTK Package",
+    "modelYear": 2026,
+    "country": "US",
+    "topSpeed": 212,
+    "0to60": 1.9,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Eco-Friendly","Hypercar"],
+    "isPrize": false,
+    "weight": 1915,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 90.05,
+    "ola": 85.25,
+	
+    "description": "",
+	
+"333TopSpeed": 214,
+"3330to60": 1.8,
+"333Handling": 99,
+
+"666TopSpeed": 217,
+"6660to60": 1.7,
+"666Handling": 102,
+
+"699TopSpeed": 217,
+"6990to60": 1.6,
+"699Handling": 107,
+
+"969TopSpeed": 219,
+"9690to60": 1.7,
+"969Handling": 107,
+
+"996TopSpeed": 219,
+"9960to60": 1.6,
+"996Handling": 102,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ChevroletCorvetteZR1X(2026).png",
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07566",
+    "cr": 948,
+    "make": "Hennessey",
+    "model": "Venom F5-M Roadster",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 311,
+    "0to60": 3.3,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Hypercar","Unique","Ultra Expensive"],
+    "isPrize": false,
+    "weight": 1405,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 150,
+    "ola": 103.03,
+	
+    "description": "",
+	
+"333TopSpeed": 313,
+"3330to60": 3.1,
+"333Handling": 97,
+
+"666TopSpeed": 314,
+"6660to60": 3,
+"666Handling": 100,
+
+"699TopSpeed": 314,
+"6990to60": 2.8,
+"699Handling": 104,
+
+"969TopSpeed": 316,
+"9690to60": 3,
+"969Handling": 104,
+
+"996TopSpeed": 316,
+"9960to60": 2.8,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5MRoadster(2024).png",
+    "creator": "DodgeDemon"
+}

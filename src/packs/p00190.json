@@ -1,0 +1,75 @@
+{
+    "packName": "Liberty Showdown Titan Pack",
+    "description": "The best Liberty Showdown pack in CD!",
+	"repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/LibertyShowdownTitanPack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": "Liberty Showdown",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        }
+    ]
+}

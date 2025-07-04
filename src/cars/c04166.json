@@ -1,13 +1,13 @@
 {
     "carID": "c04166",
-    "cr": 997,
+    "cr": 1005,
     "make": "Hennessey",
     "model": "Venom F5 Revolution",
     "modelYear": 2023,
     "country": "US",
     "topSpeed": 250,
     "0to60": 2.5,
-    "handling": 95,
+    "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Track Day", "Hypercar", "Unique", "Ultra Expensive", "The Americas Assault"],
@@ -21,29 +21,29 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 143.68,
+    "mra": 146.63,
     "ola": 93.60,
     "description": "An all-new revolution of the Venom.",
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyVenomF5Revolution(2023).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Revolution(2023).png",
     "creator": "DodgeDemon",
 
 "333TopSpeed": 252,
 "3330to60": 2.4,
-"333Handling": 98,
+"333Handling": 99,
 
 "666TopSpeed": 254,
 "6660to60": 2.3,
-"666Handling": 101,
+"666Handling": 102,
 
 "699TopSpeed": 254,
 "6990to60": 2.1,
-"699Handling": 105,
+"699Handling": 107,
 
 "969TopSpeed": 256,
 "9690to60": 2.3,
-"969Handling": 105,
+"969Handling": 107,
 
 "996TopSpeed": 256,
 "9960to60": 2.1,
-"996Handling": 101
+"996Handling": 102
 }

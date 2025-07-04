@@ -1,0 +1,50 @@
+{
+    "carID": "c07459",
+    "cr": 485,
+    "make": "AMC",
+    "model": "AMX/3 Car #5",
+    "modelYear": 1970,
+    "country": "IT",
+    "topSpeed": 170,
+    "0to60": 5.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1402,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 76.46,
+    "ola": 53.85,
+	
+    "description": "The fifth AMX/3 was finished around the same time as fourth car, and was at the time the last car with the old body design. In 1978, Dick Teague also purchased this car, and painted it in Big Bad Yellow, mounted a front wing, and installed '79 Pontiac Firebird taillights. He was also working on converting the gauges from km/h to mph, but never finished, so they were completed by George Doughtie Jr.",
+	
+"333TopSpeed": 173,
+"3330to60": 5.2,
+"333Handling": 77,
+
+"666TopSpeed": 176,
+"6660to60": 5,
+"666Handling": 80,
+
+"699TopSpeed": 176,
+"6990to60": 4.7,
+"699Handling": 83,
+
+"969TopSpeed": 179,
+"9690to60": 5,
+"969Handling": 83,
+
+"996TopSpeed": 179,
+"9960to60": 4.7,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3Car%235(1970).png",
+    "creator": "Johnny"
+}

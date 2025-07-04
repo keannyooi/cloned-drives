@@ -1,0 +1,50 @@
+{
+    "carID": "c07558",
+    "cr": 535,
+    "make": "Ford",
+    "model": "Edge 3.7 V6 Sport AWD",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 7.1,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2023,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.39,
+    "ola": 61.97,
+	
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 6.7,
+"333Handling": 75,
+
+"666TopSpeed": 121,
+"6660to60": 6.4
+"666Handling": 78,
+
+"699TopSpeed": 121,
+"6990to60": 6.0,
+"699Handling": 81,
+
+"969TopSpeed": 126,
+"9690to60": 6.4,
+"969Handling": 81,
+
+"996TopSpeed": 126,
+"9960to60": 6.0,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordEdge3.7V6Sport(2011).png",
+    "creator": "Scorpio"
+}

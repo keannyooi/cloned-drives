@@ -1,0 +1,50 @@
+{
+    "carID": "c07572",
+    "cr": 603,
+    "make": "Ford",
+    "model": "Maverick Lobo",
+    "modelYear": 2025,
+    "country": "US",
+    "topSpeed": 110,
+    "0to60": 6.1,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1760,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Pick-Up",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.89,
+    "ola": 72.13,
+	
+    "description": "Maverick Lobotomy.",
+	
+"333TopSpeed": 115,
+"3330to60": 5.8,
+"333Handling": 80,
+
+"666TopSpeed": 119,
+"6660to60": 5.5,
+"666Handling": 82,
+
+"699TopSpeed": 119,
+"6990to60": 5.2,
+"699Handling": 85,
+
+"969TopSpeed": 124,
+"9690to60": 5.5,
+"969Handling": 85,
+
+"996TopSpeed": 124,
+"9960to60": 5.2,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMaverickLobo(2025).png",
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07543",
+    "cr": 1086,
+    "make": "Czinger",
+    "model": "21C",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 219,
+    "0to60": 1.9,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Eco-Friendly","Ultra Expensive","Hypercar"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 118.75,
+    "ola": 94.74,
+	
+    "description": "",
+	
+"333TopSpeed": 221,
+"3330to60": 1.8,
+"333Handling": 101,
+
+"666TopSpeed": 224,
+"6660to60": 1.7,
+"666Handling": 104,
+
+"699TopSpeed": 224,
+"6990to60": 1.6,
+"699Handling": 109,
+
+"969TopSpeed": 226,
+"9690to60": 1.7,
+"969Handling": 109,
+
+"996TopSpeed": 226,
+"9960to60": 1.6,
+"996Handling": 104,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Czinger21C(2024).png",
+    "creator": "DodgeDemon"
+}

@@ -1,0 +1,50 @@
+ {
+    "carID": "c07582",
+    "cr": 387,
+    "make": "Saturn",
+    "model": "CV1 Concept",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 8.5,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Concept"],
+    "isPrize": false,
+    "weight": 1081,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.13,
+    "ola": 68.24,
+	
+    "description": "None",
+	
+"333TopSpeed": 128,
+"3330to60": 8.1,
+"333Handling": 70,
+
+"666TopSpeed": 132,
+"6660to60": 7.7,
+"666Handling": 72,
+
+"699TopSpeed": 132,
+"6990to60": 7.2,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 7.7,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 7.2,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnCV1Concept(2001).png",
+    "creator": "GAAN"
+}

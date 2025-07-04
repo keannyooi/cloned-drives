@@ -1,0 +1,50 @@
+{
+    "carID": "c07458",
+    "cr": 485,
+    "make": "AMC",
+    "model": "AMX/3",
+    "modelYear": 1998,
+    "country": "IT",
+    "topSpeed": 170,
+    "0to60": 5.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown", "Unique"],
+    "isPrize": false,
+    "weight": 1402,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 77.46,
+    "ola": 54.55,
+	
+    "description": "The seventh car was constructed under the AMC funded project, but never finished. In 1972, the car was sold to Giorgio Giordanengo, who finished the car in 1998 with the assistance of Diomante and Bizzarrini. Afterwards it was sold to Roland D'Ieteren and displayed at Autoworld in Belgium.",
+	
+"333TopSpeed": 173,
+"3330to60": 5.2,
+"333Handling": 77,
+
+"666TopSpeed": 176,
+"6660to60": 5,
+"666Handling": 80,
+
+"699TopSpeed": 176,
+"6990to60": 4.7,
+"699Handling": 83,
+
+"969TopSpeed": 179,
+"9690to60": 5,
+"969Handling": 83,
+
+"996TopSpeed": 179,
+"9960to60": 4.7,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMX3(1998).png",
+    "creator": "Johnny"
+}

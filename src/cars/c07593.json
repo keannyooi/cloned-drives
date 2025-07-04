@@ -1,0 +1,50 @@
+{
+    "carID": "c07593",
+    "cr": 455,
+    "make": "Tesla",
+    "model": "Model Y Standard Range",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 135,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1909,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 65.45,
+    "ola": 86.96,
+	
+    "description": "",
+	
+"333TopSpeed": 139,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 143,
+"6660to60": 6.2,
+"666Handling": 81,
+
+"699TopSpeed": 143,
+"6990to60": 5.9,
+"699Handling": 84,
+
+"969TopSpeed": 147,
+"9690to60": 6.2,
+"969Handling": 84,
+
+"996TopSpeed": 147,
+"9960to60": 5.9,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TeslaModelYStandardRange(2021).png",
+    "creator": "Scorpio"
+}

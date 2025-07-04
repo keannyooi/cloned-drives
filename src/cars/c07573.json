@@ -1,0 +1,50 @@
+{
+    "carID": "c07573",
+    "cr": 294,
+    "make": "Plymouth",
+    "model": "XNR",
+    "modelYear": 1960,
+    "country": "US",
+    "topSpeed": 153,
+    "0to60": 7.7,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Concept","Oddity"],
+    "isPrize": true,
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.7,
+    "ola": 106.49,
+	
+    "description": "",
+	
+"333TopSpeed": 166,
+"3330to60": 7.3,
+"333Handling": 68,
+
+"666TopSpeed": 169,
+"6660to60": 6.9,
+"666Handling": 70,
+
+"699TopSpeed": 169,
+"6990to60": 6.5,
+"699Handling": 73,
+
+"969TopSpeed": 173,
+"9690to60": 6.9,
+"969Handling": 73,
+
+"996TopSpeed": 173,
+"9960to60": 6.5,
+"996Handling": 70,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthXNR(1960).png",
+    "creator": "DodgeDemon"
+}
