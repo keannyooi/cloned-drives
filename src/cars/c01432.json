@@ -1,8 +1,8 @@
 {
     "carID": "c01432",
-    "cr": 714,
+    "cr": 715,
     "make": "Koenigsegg",
-    "model": "Pre-CC XP001",
+    "model": "CC XP001",
     "modelYear": 1996,
     "country": "SE",
     "topSpeed": 186,
@@ -18,10 +18,10 @@
         "Innovative"
     ],
     "isPrize": false,
-    "weight": 1000,
+    "weight": 950,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": "Coupe",
+    "bodyStyle": "Convertible",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",
@@ -44,6 +44,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.4,
     "699Handling": 95,
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/KoenigseggPre-CCXP001(1996).png",
-    "creator": "Aqo"
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggCCXP001(1996).png",
+    "creator": "Bnuuy"
 }
