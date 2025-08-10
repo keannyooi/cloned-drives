@@ -18,7 +18,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "Wagon",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

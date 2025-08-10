@@ -2,7 +2,7 @@
     "packName": "Dodge Elite Pack",
     "description": "The Dodge pack of 5 Rare or Higher cards",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/DodgeElite.png",
     
     "filter": {
         "make": "Dodge",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

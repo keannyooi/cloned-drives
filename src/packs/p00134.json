@@ -2,7 +2,7 @@
     "packName": "Pagani Special Pack",
     "description": "An insane pack featuring Pagani",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/paganini.png",
     
     "filter": {
         "make": "Pagani",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

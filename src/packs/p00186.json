@@ -2,7 +2,7 @@
     "packName": "Off-Road Titan Pack",
     "description": "The best purchasable pack in CD!",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/OffRoadTitan.png",
     
     "filter": {
         "make": "None",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

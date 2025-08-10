@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "SUV",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

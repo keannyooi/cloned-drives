@@ -2,7 +2,7 @@
     "packName": "SUV Legendary Pack",
     "description": "The normal pack of 5 Legendary SUV cards",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/SUVLegend.png",
     
     "filter": {
         "make": "None",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "SUV",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

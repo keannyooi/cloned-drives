@@ -10,7 +10,7 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive","Hypercar","Rest of The World","Unique","Chop Shop"],
+    "tags": ["Ultra Expensive","Hypercar","Rest of The World","Unique","Chop Shop","Daily Prize"],
     "isPrize": true,
     "weight": 1220,
     "gc": "Low",
@@ -22,7 +22,7 @@
     "fuelType": "Petrol",
     "mra": 160,
     "ola": 103.69,
-    "description": "",
+    "description": "This card is winnable from the 1 of 1 Bonus event! What you’re looking at is a Koenigsegg Agera RS. Except it’s not. Well, it used to be. What it’s become is the Koenigsegg Chimera: a gloriously mad one-off mash-up that fuses the body of an Agera RS, the engine from a Jesko and the ‘simulated’ manual gearbox from the gorgeous CC850.",
 "333TopSpeed": 292,
 "3330to60": 2.3,
 "333Handling": 99,
@@ -43,5 +43,6 @@
 "9960to60": 2,
 "996Handling": 102,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggChimera(2024).png",
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
 }

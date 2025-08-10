@@ -2,7 +2,7 @@
     "packName": "Koenigsegg Birthday Pack",
     "description": "A Pack Celebrating 30 years of koenigsegg",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/egg1.png",
     
     "filter": {
         "make": "Koenigsegg",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

@@ -15,7 +15,7 @@
     "weight": 1720,
     "gc": "Low",
     "seatCount": 5,
-    "bodyStyle": "Sedan",
+    "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
@@ -46,5 +46,6 @@
 "996Handling": 84,
 	
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiS4Avant(2003).png",
-    "creator": "Connor"
+    "creator": "Connor",
+    "hiddenTag": [""]
 }

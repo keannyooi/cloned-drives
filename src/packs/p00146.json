@@ -2,7 +2,7 @@
     "packName": "Mitsubishi Elite Pack",
     "description": "The normal pack of 5 Rare or Higher Mitsubishi cards",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/MitsubishiElite.png",
     
     "filter": {
         "make": "Mitsubishi",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

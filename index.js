@@ -22,15 +22,37 @@ const offerModel = require("./src/models/offerSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
+const path = require("path");
 
 for (let commandFile of commandFiles) {
     let command = require(`./src/commands/${commandFile}`);
     bot.commands.set(command.name, command);
 }
-// Preload all car data into memory
-const carData = readdirSync("./src/cars")
-    .filter(file => file.endsWith(".json"))
-    .map(file => JSON.parse(readFileSync(`./src/cars/${file}`, "utf8")));
+// Preload all car data into memory with error tracking
+const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+
+const carData = [];
+let failedFiles = 0;
+
+for (const file of carFiles) {
+    const filePath = path.join("./src/cars", file);
+    try {
+        const rawData = readFileSync(filePath, "utf8");
+        const parsed = JSON.parse(rawData);
+        carData.push(parsed);
+    } catch (err) {
+        failedFiles++;
+        console.error(`❌ Failed to load car file: ${file}`);
+        console.error(`   ↳ Error: ${err.message}`);
+    }
+}
+
+if (failedFiles > 0) {
+    console.warn(`⚠️ Loaded ${carData.length} car files, but ${failedFiles} failed. Check errors above.`);
+    process.exit(1); // Exit with error code AFTER showing warning
+} else {
+    console.log(`✅ Loaded all ${carData.length} car files successfully.`);
+}
 
 module.exports = { carData }; // Export the data for use in other modules
 

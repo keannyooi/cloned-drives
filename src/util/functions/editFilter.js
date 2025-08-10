@@ -15,6 +15,7 @@ function editFilter(message, filter, args) {
         case "tags":
         case "collection":
         case "bodyStyle":
+		case "hiddenTag":
             let argument = args.slice(1, args.length).join(" ").toLowerCase();
             isValid = carFiles.findIndex(function (carFile) {
                 let currentCar = require(`../../cars/${carFile}`), bmReference = currentCar;
@@ -27,12 +28,18 @@ function editFilter(message, filter, args) {
                     }
                     return currentCar[criteria].some(collection => collection.toLowerCase() === argument);
                 }
-                else if (Array.isArray(bmReference[criteria])) {
-                    return bmReference[criteria].some(tag => tag.toLowerCase() === argument);
-                }
-                else {
-                    return bmReference[criteria].toLowerCase() === argument;
-                }
+else if (criteria === "hiddenTag") {
+    // hiddenTag only exists on currentCar, not reference
+    return Array.isArray(currentCar["hiddenTag"]) &&
+           currentCar["hiddenTag"].some(tag => tag.toLowerCase() === argument);
+}
+else if (Array.isArray(bmReference[criteria])) {
+    return bmReference[criteria].some(tag => tag.toLowerCase() === argument);
+}
+else {
+    return bmReference[criteria].toLowerCase() === argument;
+}
+
             });
 
             if (isValid > -1) {
@@ -220,6 +227,7 @@ function editFilter(message, filter, args) {
                 case "tags":
                 case "collection":
                 case "bodyStyle":
+				case "hiddenTag":
                     if (!arg2) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -359,9 +367,38 @@ function editFilter(message, filter, args) {
 
     return [filter, successMessage];
 
-    function format(criteria) {
-        return criteria.toLowerCase().replace("type", "Type").replace("tcount", "tCount").replace("style", "Style").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned").replace("bm", "BM");
-    }
+function format(input) {
+    const map = {
+        cr: "cr",
+        make: "make",
+        tags: "tags",
+        collection: "collection",
+        bodystyle: "bodyStyle",
+        hiddenTag: "hiddenTag",
+        modelyear: "modelYear",
+        seatcount: "seatCount",
+        enginepos: "enginePos",
+        drivetype: "driveType",
+        fueltype: "fuelType",
+        tyertype: "tyreType",
+        isprize: "isPrize",
+        isstock: "isStock",
+        isupgraded: "isUpgraded",
+        ismaxed: "isMaxed",
+        isowned: "isOwned",
+        isbm: "isBM",
+        abs: "abs",
+        tcs: "tcs",
+        gc: "gc",
+        search: "search",
+        creator: "creator",
+        applyreqs: "applyreqs",
+        disable: "disable",
+        remove: "remove"
+    };
+    return map[input.toLowerCase()] || input;
 }
+
+    }
 
 module.exports = editFilter;

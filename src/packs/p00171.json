@@ -1,7 +1,7 @@
 {
-    "packName": "6 Rares Pack",
-    "description": "6 Rare cards!",
-	"repetition": 20,
+    "packName": "10 Rares Pack",
+    "description": "10 Rare cards!",
+	"repetition": 2,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

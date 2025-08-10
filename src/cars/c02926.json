@@ -17,7 +17,7 @@
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
-    "abs": true,
+    "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 103.33,
@@ -39,5 +39,6 @@
     "6990to60": 2.6,
     "699Handling": 117,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ferrari488GTE(2016).png",
-    "creator": "Lemon"
+    "creator": "Lemon",
+    "hiddenTag": [""]
 }

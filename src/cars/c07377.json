@@ -15,7 +15,7 @@
     "weight": 1490,
     "gc": "Low",
     "seatCount": 5,
-    "bodyStyle": "Sedan",
+    "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
@@ -23,7 +23,7 @@
     "mra": 40.15,
     "ola": 64.70,
 	
-    "description": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA4Avant1.8TFSIProline(2012).png",
+    "description": "",
 	
 "333TopSpeed": 128,
 "3330to60": 9.7,
@@ -46,5 +46,6 @@
 "996Handling": 82,
 	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA4Avant1.8TFSIProline(2012).png",
-    "creator": "Connor"
+    "creator": "Connor",
+    "hiddenTag": [""]
 }

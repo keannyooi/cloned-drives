@@ -1,6 +1,6 @@
 {
     "carID": "c07465",
-    "cr": 755,
+    "cr": 766,
     "make": ["Arrington Performance", "Dodge"],
     "model": "Rampage \"Outrage\"",
     "modelYear": 2019,
@@ -43,5 +43,6 @@
 "9960to60": 3.1,
 "996Handling": 94,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ArringtonPerformanceRampageOutrage(2019).png",
-    "creator": "DodgeDemon"
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
 }

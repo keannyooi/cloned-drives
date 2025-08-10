@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "Electric",
         "bodyStyle": "Sedan",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

@@ -10,7 +10,7 @@
     "handling": 111,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of","Daily Prize"],
     "isPrize": true,
 	
     "weight": 700,
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 107.99,
     "ola": 73.85,
-    "description": "",
+    "description": "This card is winnable from the Indycar Surprise Bonus event! For its third and final season contesting IndyCar in 1990, Porsche Motorsport commissioned a brand-new chassis from March Engineering, which was explicitly built to accept the latest 161 cid turbocharged Porsche V-8. Porsche also increased its lineup to two cars, one driven by Teo Fabi, and the other driven by John Andretti.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche90P(1990).png",
 
 "333TopSpeed": 222,
@@ -45,5 +45,6 @@
 "996TopSpeed": 227,
 "9960to60": 2.5,
 "996Handling": 118,
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
 }

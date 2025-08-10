@@ -15,7 +15,7 @@
     "weight": 1314,
     "gc": "Low",
     "seatCount": 5,
-    "bodyStyle": "Sedan",
+    "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
@@ -39,5 +39,6 @@
     "6990to60": 5.8,
     "699Handling": 95,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaCivicSiCoupe(2017).png",
-    "creator": "Macan"
+    "creator": "Macan",
+    "hiddenTag": [""]
 }

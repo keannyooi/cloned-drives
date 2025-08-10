@@ -2,7 +2,7 @@
     "packName": "Japanese Cosmo Pack",
     "description": "A bigger than life pack, with nothing but Exotics and better!",
 	"repetition": 1,
-    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/COSMOPack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/JPCosmo.png",
     
     "filter": {
         "make": "None",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [

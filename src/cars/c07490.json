@@ -15,7 +15,7 @@
     "weight": 1560,
     "gc": "Medium",
     "seatCount": 5,
-    "bodyStyle": "Convertible",
+    "bodyStyle": "Wagon",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
@@ -43,5 +43,6 @@
 "9960to60": 6.1,
 "996Handling": 65,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangHoboTop(1966).png",
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
 }

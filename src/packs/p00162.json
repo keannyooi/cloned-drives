@@ -2,7 +2,7 @@
 	"packName": "Dodge Basic Pack",
 	"description": "The pack consisting of random cards from Uncommon all the way to Legendary.",
 	"repetition": 1,
-	"pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/StandardPack.png",
+	"pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/dodgebasic.png",
 	
 	"filter": {
 		"make": "Dodge",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
 	},
 
 	"packSequence": [

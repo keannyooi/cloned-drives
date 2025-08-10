@@ -9,74 +9,96 @@ const { cardPlacement, failedToLoadImageLink, dealershipChannelID } = require(".
 const carNameGen = require("./carNameGen.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
 
+function getSaleValue(cr) {
+    if (cr > 949) return 640000;
+    if (cr > 899) return 400000;
+    if (cr > 849) return 300000;
+    if (cr > 799) return 180000;
+    if (cr > 749) return 120000;
+    if (cr > 699) return 80000;
+    if (cr > 599) return 72000;
+    if (cr > 499) return 40000;
+    if (cr > 399) return 30000;
+    if (cr > 299) return 16000;
+    if (cr > 199) return 12000;
+    if (cr > 99) return 6000;
+    return 4000;
+}
+
+function getRandomCRRange(i) {
+    if (i < 4) {
+        const ranges = [
+            [1, 99],
+            [100, 199],
+            [200, 299],
+            [300, 399],
+            [400, 499]
+        ];
+        return ranges[Math.floor(Math.random() * ranges.length)];
+    } else {
+        const ranges = [
+            [400, 499],
+            [500, 599],
+            [600, 699],
+            [700, 749],
+            [750, 899],
+            [900, 999]
+        ];
+        return ranges[Math.floor(Math.random() * ranges.length)];
+    }
+}
+
+function scaleStockByCR(cr) {
+    const minCR = 1;
+    const maxCR = 999;
+    const maxStock = 999;
+    const minStock = 50;
+    return Math.floor(maxStock - ((cr - minCR) / (maxCR - minCR)) * (maxStock - minStock));
+}
+
 async function regenDealership() {
     const catalog = [];
+
     for (let i = 0; i < 8; i++) {
-        const randNum = Math.floor(Math.random() * 100);
-        let price, stock = 1000, crStart, crEnd;
-        let currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
-        let currentCar = require(`../../cars/${currentFile}`);
+        let currentFile, currentCar, crStart, crEnd, price;
 
-        if (randNum < 33) {
-            crStart = i < 4 ? 1 : 400;
-            crEnd = i < 4 ? 99 : 499;
-            if (i >= 4) {
-                price = 30000 + (Math.floor(Math.random() * 22000));
-            }
-            else {
-                price = 4000 + (Math.floor(Math.random() * 5000));
-            }
-        }
-        else if (randNum < 66) {
-            crStart = i < 4 ? 100 : 500;
-            crEnd = i < 4 ? 199 : 599;
-            if (i >= 4) {
-                price = 75000 + (Math.floor(Math.random() * 96000));
-                stock = 50;
-            }
-            else {
-                price = 6000 + (Math.floor(Math.random() * 8000));
-            }
-        }
-        else if (randNum < 91) {
-            crStart = i < 4 ? 300 : 600;
-            crEnd = i < 4 ? 399 : 699;
-            if (i >= 4) {
-                price = 96000 + (Math.floor(Math.random() * 96000));
-                stock = 50;
-            }
-            else {
-                price = 16000 + (Math.floor(Math.random() * 24000));
-            }
-        }
-        else {
-            crStart = i < 4 ? 400 : 750;
-            crEnd = i < 4 ? 499 : 899;
-            if (i >= 4) {
-                price = 299000 + (Math.floor(Math.random() * 200000));
-                stock = 50;
-            }
-            else {
-                price = 30000 + (Math.floor(Math.random() * 22000));
-            }
-        }
-
-        while (currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || currentCar["isPrize"] || currentCar["cr"] > crEnd || currentCar["cr"] < crStart) {
+        // Get a valid car file
+        let valid = false;
+        while (!valid) {
             currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCar = require(`../../cars/${currentFile}`);
+            const [tempStart, tempEnd] = getRandomCRRange(i);
+            const cr = currentCar["cr"];
+
+            if (
+                !currentCar["reference"] &&
+                !currentCar["isPrize"] &&
+                !catalog.find(car => currentFile.includes(car.carID)) &&
+                cr >= tempStart && cr <= tempEnd
+            ) {
+                crStart = tempStart;
+                crEnd = tempEnd;
+                valid = true;
+            }
         }
+
+        const cr = currentCar["cr"];
+        const baseValue = getSaleValue(cr);
+        const markup = 1.2 + Math.random() * 0.25; // 20–45% markup
+        price = Math.floor(baseValue * markup);
+
+        const stock = scaleStockByCR(cr);
+
         catalog.push({ carID: currentFile.slice(0, 6), price, stock });
     }
 
-    catalog.sort(function (a, b) {
+    catalog.sort((a, b) => {
         if (a.price === b.price) {
             const carA = require(`../../cars/${a.carID}`);
             const carB = require(`../../cars/${b.carID}`);
             return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
         }
-        else {
-            return a.price - b.price;
-        }
+        return a.price - b.price;
     });
 
     await serverStatModel.updateOne({}, { dealershipCatalog: catalog });
@@ -84,6 +106,7 @@ async function regenDealership() {
     const canvas = createCanvas(694, 249);
     const context = canvas.getContext("2d");
     let attachment, promises, cucked = false;
+
     try {
         context.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
         const cards = catalog.map(car => {
@@ -95,12 +118,12 @@ async function regenDealership() {
         for (let i = 0; i < catalog.length; i++) {
             context.drawImage(promises[i], cardPlacement[i].x, cardPlacement[i].y, 167, 103);
         }
-    }
-    catch (error) {
+    } catch (error) {
         console.log(error);
         attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "dealership.jpeg" });
         cucked = true;
     }
+
     if (!cucked) {
         attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "dealership.jpeg" });
     }

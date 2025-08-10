@@ -43,7 +43,7 @@ function filterCheck(args) {
                     }
                 }
                 else if (Array.isArray(value)) {
-                    let checkArray = bmReference[key];
+                    let checkArray = (key === "hiddenTag" ? currentCar[key] : bmReference[key]);
                     if (!Array.isArray(checkArray)) {
                         checkArray = [checkArray];
                     }

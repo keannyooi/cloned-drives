@@ -1,0 +1,77 @@
+{
+    "packName": "German 4WD Titan Pack",
+    "description": "The best German 4WD pack in CD!",
+	"repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/DE4WDTitan.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "DE",
+        "tags": "None",
+        "driveType": "4WD",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        }
+    ]
+}

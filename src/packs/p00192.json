@@ -1,0 +1,77 @@
+{
+    "packName": "DodgeDemon Creator Pack",
+    "description": "The Demon pack!",
+	"repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/DodgeDemonElite.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None",
+        "creator": "dodgeDemon",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 63,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 63,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 63,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 63,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 63,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        }
+    ]
+}

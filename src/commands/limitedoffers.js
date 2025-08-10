@@ -15,7 +15,9 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const timeDisplay = require("../util/functions/timeDisplay.js");
 const offerModel = require("../models/offerSchema.js");
-const { defaultPageLimit } = require("../util/consts/consts.js");
+const listUpdate = require("../util/functions/listUpdate.js");
+
+const PAGE_LIMIT = 6; // 👈 Hardcoded page limit
 
 module.exports = {
     name: "limitedoffers",
@@ -29,16 +31,39 @@ module.exports = {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-            let offers = await offerModel.find();
+let allOffers = await offerModel.find();
 
-            // Filter inactive offers for non-event makers
-            if (!args[0] && !guildMember.roles.cache.has(eventMakerRoleID)) {
-                offers = offers.filter(offer => offer.isActive);
-            }
+	// Filter inactive offers if the user isn't an event maker
+	let offers = allOffers.filter(offer => {
+		const isVisible = offer.isActive || guildMember.roles.cache.has(eventMakerRoleID);
+		const purchases = offer.purchasedPlayers?.[message.author.id] ?? 0;
+		const remainingStock = offer.stock - purchases;
+		return isVisible && remainingStock > 0;
+	});
 
+if (!args[0] && offers.length === 0) {
+    const infoMessage = new InfoMessage({
+        channel: message.channel,
+        title: "No Offers Available",
+        desc: "You've already purchased all the available offers.",
+        author: message.author,
+    });
+    return infoMessage.sendMessage();
+}
             // Display offers list or specific offer details
             if (!args[0]) {
-                return displayOffersList(offers, guildMember, message, moneyEmoji);
+                const totalPages = Math.ceil(offers.length / PAGE_LIMIT);
+return listUpdate(
+    offers,
+    1,
+    totalPages,
+    (section, page, totalPages) =>
+        displayOffersList(section, page, totalPages, guildMember, message, moneyEmoji, PAGE_LIMIT),
+    {
+        listamount: PAGE_LIMIT,
+        buttonstyle: "primary"
+    }
+);
             } else {
                 const query = args.map(arg => arg.toLowerCase());
                 const searchResults = await search(message, query, offers, "offer");
@@ -53,38 +78,36 @@ module.exports = {
     },
 };
 
-async function displayOffersList(offers, guildMember, message, moneyEmoji) {
-    const fields = offers
-        .filter(offer => {
-            const purchases = offer.purchasedPlayers[message.author.id] ?? 0;
-            return purchases < offer.stock; // Exclude offers fully purchased by the user
-        })
-        .map(offer => {
-            let status = `${offer.name} (x${offer.stock - (offer.purchasedPlayers[message.author.id] ?? 0)})`;
-            if (offer.isActive && offer.deadline !== "unlimited") {
-                const interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline));
-                status += interval.invalid === null ? ` ${timeDisplay(interval)}` : " `currently ending, no longer purchasable`";
-            }
-            if (guildMember.roles.cache.has(eventMakerRoleID) && offer.isActive) {
-                status += " 🟢";
-            }
-            return {
-                name: status,
-                value: `${moneyEmoji}${offer.price.toLocaleString("en")}`,
-            };
-        });
+function displayOffersList(fields, page, totalPages, guildMember, message, moneyEmoji, pageLimit) {
+	const section = fields;
+
+    const paginatedFields = section.map(offer => {
+		let status = `${offer.name} (x${offer.stock - (offer.purchasedPlayers[guildMember.user.id] ?? 0)})`;
+        if (offer.isActive && offer.deadline !== "unlimited") {
+            const interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline));
+            status += interval.invalid === null ? ` ${timeDisplay(interval)}` : " `currently ending, no longer purchasable`";
+        }
+        if (guildMember.roles.cache.has(eventMakerRoleID) && offer.isActive) {
+            status += " 🟢";
+        }
+        return {
+            name: status,
+            value: `${moneyEmoji}${offer.price.toLocaleString("en")}`,
+        };
+    });
 
     const infoMessage = new InfoMessage({
         channel: message.channel,
         title: "Limited Offers",
-        desc: fields.length > 0
+        desc: paginatedFields.length > 0
             ? "These offers are only for a limited time, be sure to get them before they disappear!"
             : "There are currently no offers available for you to purchase.",
-        author: message.author,
-        fields: fields.length > 0 ? fields : null,
-        footer: "Type cd-limitedoffers <offer name> to find out more about an offer.",
+        author: guildMember.user,
+        fields: paginatedFields.length > 0 ? paginatedFields : [],
+        footer: `Page ${page} of ${totalPages} • Type cd-limitedoffers <offer name> to find out more about an offer.`,
     });
-    return infoMessage.sendMessage();
+
+    return infoMessage;
 }
 
 async function displayOfferDetails(offer, guildMember, message, moneyEmoji, fuseEmoji, currentMessage) {
@@ -95,9 +118,9 @@ async function displayOfferDetails(offer, guildMember, message, moneyEmoji, fuse
             channel: message.channel,
             title: `${offer.name} (x${offer.stock - (offer.purchasedPlayers[message.author.id] ?? 0)} remaining)`,
             desc: `**This offer's currently ${offer.isActive ? "for sale!" : "not for sale."}**
-                Time Remaining: \`${offer.deadline.length > 9 ? timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline))) : offer.deadline}\`
-                Price: ${moneyEmoji}${offer.price.toLocaleString("en")}
-                __**Contents of Offer:**__`,
+Time Remaining: \`${offer.deadline.length > 9 ? timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline))) : offer.deadline}\`
+Price: ${moneyEmoji}${offer.price.toLocaleString("en")}
+__**Contents of Offer:**__`,
             author: message.author,
             fields,
             footer: `Offer ID: ${offer.offerID}`,

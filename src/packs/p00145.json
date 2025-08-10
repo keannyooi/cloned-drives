@@ -2,7 +2,7 @@
 	"packName": "Mitsubishi Basic Pack",
 	"description": "The pack consisting of Mitsubishi cards from uncommon all the way to legendary.",
 	"repetition": 1,
-	"pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/StandardPack.png",
+	"pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/MitsubishiBasicPack.png",
 	
 	"filter": {
 		"make": "Mitsubishi",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
 	},
 
 	"packSequence": [

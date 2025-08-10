@@ -1,8 +1,8 @@
 {
-    "packName": "Japanese Off-Road Legendary Grab Pack",
+    "packName": "Japanese Off-Road Legendary Pack",
     "description": "Unique Pack to get 1 Japanese Off-Road Legendary!",
 	"repetition": 1,
-    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/BattlePack.png",
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/JapaneseOffroadLegend.png",
     
     "filter": {
         "make": "None",
@@ -17,7 +17,9 @@
 		"enginePos": "None",
         "fuelType": "None",
         "bodyStyle": "None",
-		"seatCount": "None"
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
     },
 
     "packSequence": [
