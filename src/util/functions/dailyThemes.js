@@ -33,6 +33,11 @@ module.exports = {
         { name: "Eco Warriors", desc: "Green machines fighting for the planet." },
         { name: "Ferrari vs Lamborghini", desc: "Wannabes vs Has beens" },
         { name: "Battle of the Brits", desc: "UK's finest automotive show." },
+		{ name: "Lotus Lover", desc: "Lightweight by design." },
+		{ name: "Aston Martin Ambassador", desc: "Lance Stroll could not lick the windows of these ones!" },
+		{ name: "McLaren Money", desc: "Take daddys credit card and rip those packs." },
+		{ name: "Bri'ish RWD Moment", desc: "its not often you get RWD in britan." },
+		{ name: "Concepts in the Rain", desc: "At least it is not snow!" },
         { name: "The FWD Drag", desc: "Front-wheel-drive drag strip showdown." }
     ],
     boostedEvents: [
@@ -50,5 +55,5 @@ module.exports = {
 		{ name: "1 of 1", desc: "Quick now is the chance to obtain a special prizecar! its c07612!?" },
         { name: "Indycar Surprise", desc: "Quick now is the chance to obtain a special prizecar! its c04859!?" }
     ],
-    daysOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    daysOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday"]
 };
