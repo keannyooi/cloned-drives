@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 392,
+    "make": "Mercedes-Benz",
+    "model": "320 TE",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 7.7,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.8,
+    "ola": 76.16,
+
+    "description": "Was is'n das für'n Kömbi?",
+
+"333TopSpeed": 142,
+"3330to60": 7.3,
+"333Handling": 74,
+
+"666TopSpeed": 146,
+"6660to60": 6.9,
+"666Handling": 77,
+
+"699TopSpeed": 146,
+"6990to60": 6.5,
+"699Handling": 80,
+
+"969TopSpeed": 149,
+"9690to60": 6.9,
+"969Handling": 80,
+
+"996TopSpeed": 149,
+"9960to60": 6.5,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-Benz320TE(1992).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

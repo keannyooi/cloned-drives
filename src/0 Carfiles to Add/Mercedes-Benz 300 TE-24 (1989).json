@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 375,
+    "make": "Mercedes-Benz",
+    "model": "300 TE-24",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 7.9,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.38,
+    "ola": 78.92,
+
+    "description": "",
+
+"333TopSpeed": 142,
+"3330to60": 7.5,
+"333Handling": 73,
+
+"666TopSpeed": 146,
+"6660to60": 7.1,
+"666Handling": 76,
+
+"699TopSpeed": 146,
+"6990to60": 6.7,
+"699Handling": 79,
+
+"969TopSpeed": 149,
+"9690to60": 7.1,
+"969Handling": 79,
+
+"996TopSpeed": 149,
+"9960to60": 6.7,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-Benz300TE-24(1989).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

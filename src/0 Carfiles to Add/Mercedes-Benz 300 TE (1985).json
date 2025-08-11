@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 342,
+    "make": "Mercedes-Benz",
+    "model": "300 TE",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 8.4,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.74,
+    "ola": 73.18,
+
+    "description": "",
+
+"333TopSpeed": 138,
+"3330to60": 8,
+"333Handling": 71,
+
+"666TopSpeed": 142,
+"6660to60": 7.6,
+"666Handling": 74,
+
+"699TopSpeed": 142,
+"6990to60": 7.1,
+"699Handling": 77,
+
+"969TopSpeed": 146,
+"9690to60": 7.6,
+"969Handling": 77,
+
+"996TopSpeed": 146,
+"9960to60": 7.1,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-Benz300TE(1985).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

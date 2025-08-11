@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 337,
+    "make": "Mercedes-Benz",
+    "model": "300 TE 4MATIC",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 9.3,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.33,
+    "ola": 65.9,
+
+    "description": "",
+
+"333TopSpeed": 131,
+"3330to60": 8.8,
+"333Handling": 70,
+
+"666TopSpeed": 135,
+"6660to60": 8.4,
+"666Handling": 72,
+
+"699TopSpeed": 135,
+"6990to60": 7.9,
+"699Handling": 75,
+
+"969TopSpeed": 139,
+"9690to60": 8.4,
+"969Handling": 75,
+
+"996TopSpeed": 139,
+"9960to60": 7.9,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-Benz300TE4MATIC(1987).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}
