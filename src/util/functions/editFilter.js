@@ -380,7 +380,7 @@ function format(input) {
         enginepos: "enginePos",
         drivetype: "driveType",
         fueltype: "fuelType",
-        tyertype: "tyreType",
+        tyretype: "tyreType",
         isprize: "isPrize",
         isstock: "isStock",
         isupgraded: "isUpgraded",
