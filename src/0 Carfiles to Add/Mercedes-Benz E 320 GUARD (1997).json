@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 273,
+    "make": "Mercedes-Benz",
+    "model": "E 320 GUARD Elegance",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 9.1,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1920,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.92,
+    "ola": 75.94,
+
+    "description": "",
+
+"333TopSpeed": 135,
+"3330to60": 8.6,
+"333Handling": 65,
+
+"666TopSpeed": 139,
+"6660to60": 8.2,
+"666Handling": 67,
+
+"699TopSpeed": 139,
+"6990to60": 7.7,
+"699Handling": 70,
+
+"969TopSpeed": 143,
+"9690to60": 8.2,
+"969Handling": 70,
+
+"996TopSpeed": 143,
+"9960to60": 7.7,
+"996Handling": 67,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzE320GUARDElegance(1997).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

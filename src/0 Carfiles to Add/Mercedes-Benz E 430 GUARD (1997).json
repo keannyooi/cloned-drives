@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 254,
+    "make": "Mercedes-Benz",
+    "model": "E 430 GUARD Avantgarde",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 9.6,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 2665,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.68,
+    "ola": 73.64,
+
+    "description": "",
+
+"333TopSpeed": 135,
+"3330to60": 9.1,
+"333Handling": 64,
+
+"666TopSpeed": 139,
+"6660to60": 8.6,
+"666Handling": 66,
+
+"699TopSpeed": 139,
+"6990to60": 8.2,
+"699Handling": 69,
+
+"969TopSpeed": 143,
+"9690to60": 8.6,
+"969Handling": 69,
+
+"996TopSpeed": 143,
+"9960to60": 8.2,
+"996Handling": 66,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzE430GUARDAvantgarde(1997).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

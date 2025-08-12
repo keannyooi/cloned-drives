@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 217,
+    "make": "Mercedes-Benz",
+    "model": "E 220 Cabriolet",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 11.2,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1640,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.66,
+    "ola": 77.77,
+
+    "description": "",
+
+"333TopSpeed": 132,
+"3330to60": 10.6,
+"333Handling": 67,
+
+"666TopSpeed": 136,
+"6660to60": 10.1,
+"666Handling": 69,
+
+"699TopSpeed": 136,
+"6990to60": 9.5,
+"699Handling": 72,
+
+"969TopSpeed": 140,
+"9690to60": 10.1,
+"969Handling": 72,
+
+"996TopSpeed": 140,
+"9960to60": 9.5,
+"996Handling": 69,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzE220Cabriolet(1993).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

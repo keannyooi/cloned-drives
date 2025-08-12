@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 232,
+    "make": "Mercedes-Benz",
+    "model": "E 420 GUARD Elegance",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 10,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 2665,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 71.44,
+
+    "description": "",
+
+"333TopSpeed": 135,
+"3330to60": 9.5,
+"333Handling": 63,
+
+"666TopSpeed": 139,
+"6660to60": 9,
+"666Handling": 65,
+
+"699TopSpeed": 139,
+"6990to60": 8.5,
+"699Handling": 68,
+
+"969TopSpeed": 143,
+"9690to60": 9,
+"969Handling": 68,
+
+"996TopSpeed": 143,
+"9960to60": 8.5,
+"996Handling": 65,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzE420GUARDElegance(1997).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}
