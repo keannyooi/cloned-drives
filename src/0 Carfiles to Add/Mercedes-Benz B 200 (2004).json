@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 238,
+    "make": "Mercedes-Benz",
+    "model": "B 200 Sports Tourer Classic",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 9.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1345,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.69,
+    "ola": 67.1,
+
+    "description": "",
+
+"333TopSpeed": 124,
+"3330to60": 9.3,
+"333Handling": 72,
+
+"666TopSpeed": 129,
+"6660to60": 8.8,
+"666Handling": 75,
+
+"699TopSpeed": 129,
+"6990to60": 8.3,
+"699Handling": 78,
+
+"969TopSpeed": 133,
+"9690to60": 8.8,
+"969Handling": 78,
+
+"996TopSpeed": 133,
+"9960to60": 8.3,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzB200SportsTourerClassic(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

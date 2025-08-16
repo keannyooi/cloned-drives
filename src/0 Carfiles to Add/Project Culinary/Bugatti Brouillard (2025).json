@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 1010,
+    "make": "Bugatti",
+    "model": "Brouillard",
+    "modelYear": 2025,
+    "country": "FR",
+    "topSpeed": 236,
+    "0to60": 2.3,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1965,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 127.85,
+    "ola": 91.25,
+
+    "description": "",
+
+"333TopSpeed": 238,
+"3330to60": 2.2,
+"333Handling": 96,
+
+"666TopSpeed": 240,
+"6660to60": 2.1,
+"666Handling": 99,
+
+"699TopSpeed": 240,
+"6990to60": 2,
+"699Handling": 103,
+
+"969TopSpeed": 243,
+"9690to60": 2.1,
+"969Handling": 103,
+
+"996TopSpeed": 243,
+"9960to60": 2,
+"996Handling": 99,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BugattiBrouillard(2025).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

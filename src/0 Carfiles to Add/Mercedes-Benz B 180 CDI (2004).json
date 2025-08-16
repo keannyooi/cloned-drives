@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 182,
+    "make": "Mercedes-Benz",
+    "model": "B 180 CDI Sports Tourer Classic",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 114,
+    "0to60": 11,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1435,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 39.4,
+    "ola": 64.07,
+
+    "description": "",
+
+"333TopSpeed": 119,
+"3330to60": 10.4,
+"333Handling": 71,
+
+"666TopSpeed": 123,
+"6660to60": 9.9,
+"666Handling": 74,
+
+"699TopSpeed": 123,
+"6990to60": 9.3,
+"699Handling": 77,
+
+"969TopSpeed": 128,
+"9690to60": 9.9,
+"969Handling": 77,
+
+"996TopSpeed": 128,
+"9960to60": 9.3,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzB180CDISportsTourerClassic(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 187,
+    "make": "Mercedes-Benz",
+    "model": "B 170 Sports Tourer Elegance",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 114,
+    "0to60": 11,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.09,
+    "ola": 65.35,
+
+    "description": "",
+
+"333TopSpeed": 119,
+"3330to60": 11.5,
+"333Handling": 69,
+
+"666TopSpeed": 123,
+"6660to60": 10.9,
+"666Handling": 71,
+
+"699TopSpeed": 123,
+"6990to60": 10.3,
+"699Handling": 74,
+
+"969TopSpeed": 128,
+"9690to60": 10.9,
+"969Handling": 74,
+
+"996TopSpeed": 128,
+"9960to60": 10.3,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzB170SportsTourerElegance(2005).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}
