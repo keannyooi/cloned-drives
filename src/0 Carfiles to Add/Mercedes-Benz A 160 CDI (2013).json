@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 232,
+    "make": "Mercedes-Benz",
+    "model": "A 160 CDI Style",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 13.2,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 35.41,
+    "ola": 62.89,
+
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 12.5,
+"333Handling": 73,
+
+"666TopSpeed": 121,
+"6660to60": 11.9,
+"666Handling": 76,
+
+"699TopSpeed": 121,
+"6990to60": 11.2,
+"699Handling": 79,
+
+"969TopSpeed": 126,
+"9690to60": 11.9,
+"969Handling": 79,
+
+"996TopSpeed": 126,
+"9960to60": 11.2,
+"996Handling": 76,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA160CDIStyle(2013).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

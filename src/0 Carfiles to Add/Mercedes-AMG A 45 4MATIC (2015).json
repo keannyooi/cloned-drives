@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 697,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "A 45 4MATIC",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.68,
+    "ola": 80.95,
+
+    "description": "More power, more weight and a new name for the facelift A 45.",
+
+"333TopSpeed": 158,
+"3330to60": 4,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 3.8,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 3.6,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 3.8,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 3.6,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-AMGA454MATIC(2015).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

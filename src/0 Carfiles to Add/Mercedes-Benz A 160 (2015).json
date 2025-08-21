@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 316,
+    "make": "Mercedes-Benz",
+    "model": "A 160 Style",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 10,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1295,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.6,
+    "ola": 64.25,
+
+    "description": "Boooooooring.",
+
+"333TopSpeed": 122,
+"3330to60": 9.5,
+"333Handling": 75,
+
+"666TopSpeed": 127,
+"6660to60": 9,
+"666Handling": 78,
+
+"699TopSpeed": 127,
+"6990to60": 8.5,
+"699Handling": 81,
+
+"969TopSpeed": 131,
+"9690to60": 9,
+"969Handling": 81,
+
+"996TopSpeed": 131,
+"9960to60": 8.5,
+"996Handling": 78,
+
+    "racehud": "",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

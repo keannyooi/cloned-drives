@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 745,
+    "make": ["mcchip-dkr", "Mercedes-Benz", "Mercedes-AMG"],
+    "model": "mc440",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 4,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Tuner"],
+    "isPrize": false,
+    "weight": 1584,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.53,
+    "ola": 85.88,
+
+    "description": "Auto Motor und Sport named this the red devil.",
+
+"333TopSpeed": 186,
+"3330to60": 3.8,
+"333Handling": 89,
+
+"666TopSpeed": 189,
+"6660to60": 3.6,
+"666Handling": 92,
+
+"699TopSpeed": 189,
+"6990to60": 3.4,
+"699Handling": 95,
+
+"969TopSpeed": 192,
+"9690to60": 3.6,
+"969Handling": 95,
+
+"996TopSpeed": 192,
+"9960to60": 3.4,
+"996Handling": 92,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/mcchip-dkrmc440(2013).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 292,
+    "make": "Mercedes-Benz",
+    "model": "A 180 CDI SE",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 10.5,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 41,
+    "ola": 66.18,
+
+    "description": "",
+
+"333TopSpeed": 122,
+"3330to60": 10,
+"333Handling": 74,
+
+"666TopSpeed": 127,
+"6660to60": 9.5,
+"666Handling": 77,
+
+"699TopSpeed": 127,
+"6990to60": 8.9,
+"699Handling": 80,
+
+"969TopSpeed": 131,
+"9690to60": 9.5,
+"969Handling": 80,
+
+"996TopSpeed": 131,
+"9960to60": 8.9,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA180CDISE(2012).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

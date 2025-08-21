@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 713,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "A 45 4MATIC AMG Driver's Package",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.68,
+    "ola": 80.95,
+
+    "description": "A 45 equipped with the AMG Driver's Package and AMG Aerodynamics Package.",
+
+"333TopSpeed": 171,
+"3330to60": 4,
+"333Handling": 88,
+
+"666TopSpeed": 174,
+"6660to60": 3.8,
+"666Handling": 91,
+
+"699TopSpeed": 174,
+"6990to60": 3.6,
+"699Handling": 94,
+
+"969TopSpeed": 177,
+"9690to60": 3.8,
+"969Handling": 94,
+
+"996TopSpeed": 177,
+"9960to60": 3.6,
+"996Handling": 91,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-AMGA454MATICAMGDriversPackage(2015).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}

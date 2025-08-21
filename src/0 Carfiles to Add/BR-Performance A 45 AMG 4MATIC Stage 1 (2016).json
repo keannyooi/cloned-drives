@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 717,
+    "make": ["BR-Performance", "Mercedes-Benz", "Mercedes-AMG"],
+    "model": "A 45 AMG 4MATIC Stage 1",
+    "modelYear": 2016,
+    "country": "LU",
+    "topSpeed": 155,
+    "0to60": 4,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Tuner","Rest of the World"],
+    "isPrize": false,
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.38,
+    "ola": 79.86,
+
+    "description": "BR-Performance, a chip tuner from Luxembourg, squeezes that little bit of extra power out of the A 45's engine.",
+
+"333TopSpeed": 158,
+"3330to60": 3.8,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 3.6,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 3.4,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 3.6,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 3.4,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BR-PerformanceA45AMG4MATICStage1(2016).png",
+    "creator": "Pfugs",
+    "hiddenTag": [""]
+}
