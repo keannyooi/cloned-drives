@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 288,
+    "make": ["Dodge","Shelby"],
+    "model": "Shelby Charger Turbo",
+    "modelYear": 1985,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 7.5,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Tuner"],
+    "isPrize": false,
+    "weight": 1160,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.8,
+    "ola": 68.79,
+
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 7.1,
+"333Handling": 77,
+
+"666TopSpeed": 132,
+"6660to60": 6.8,
+"666Handling": 80,
+
+"699TopSpeed": 132,
+"6990to60": 6.4,
+"699Handling": 83,
+
+"969TopSpeed": 137,
+"9690to60": 6.8,
+"969Handling": 83,
+
+"996TopSpeed": 137,
+"9960to60": 6.4,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeShelbyChargerTurbo(1985).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

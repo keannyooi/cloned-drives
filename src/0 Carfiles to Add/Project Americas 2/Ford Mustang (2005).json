@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 385,
+    "make": "Ford",
+    "model": "Mustang",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 6.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1540,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.36,
+    "ola": 79.56,
+
+    "description": "",
+
+"333TopSpeed": 119,
+"3330to60": 6.4,
+"333Handling": 77,
+
+"666TopSpeed": 123,
+"6660to60": 6,
+"666Handling": 80,
+
+"699TopSpeed": 123,
+"6990to60": 5.7,
+"699Handling": 83,
+
+"969TopSpeed": 128,
+"9690to60": 6,
+"969Handling": 83,
+
+"996TopSpeed": 128,
+"9960to60": 5.7,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustang(2005).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

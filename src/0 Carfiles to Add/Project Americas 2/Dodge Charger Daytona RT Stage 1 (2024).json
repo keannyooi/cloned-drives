@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 678,
+    "make": "Dodge",
+    "model": "Charger Daytona R/T Stage 1",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 134,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Eco-Friendly","Muscle Car"],
+    "isPrize": false,
+    "weight": 2648,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 72.31,
+    "ola": 85.11,
+
+    "description": "",
+	
+"333TopSpeed": 138,
+"3330to60": 4.5,
+"333Handling": 87,
+
+"666TopSpeed": 142,
+"6660to60": 4.2,
+"666Handling": 90,
+
+"699TopSpeed": 142,
+"6990to60": 4,
+"699Handling": 93,
+
+"969TopSpeed": 146,
+"9690to60": 4.2,
+"969Handling": 93,
+
+"996TopSpeed": 146,
+"9960to60": 4,
+"996Handling": 90,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeChargerDaytonaRTStage1(2024).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

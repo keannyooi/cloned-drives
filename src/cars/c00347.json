@@ -1,6 +1,6 @@
 {
     "carID": "c00347",
-    "cr": 589,
+    "cr": 668,
     "make": "Dodge",
     "model": "Challenger Concept",
     "modelYear": 2006,
@@ -13,7 +13,7 @@
     "tags": ["Concept","Muscle Car","Unique"],
     "isPrize": false,
     "weight": 1850,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
@@ -21,7 +21,7 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 75,
-    "ola": 97.78,
+    "ola": 80,
     "description": "Challenge the Challenger",
      "333TopSpeed": 177,
     "3330to60": 4.3,
@@ -38,7 +38,7 @@
     "699TopSpeed": 180,
     "6990to60": 3.8,
     "699Handling": 88,
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerConcept(2006).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeChallengerConcept(2006).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

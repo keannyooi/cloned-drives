@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 616,
+    "make": "Ford",
+    "model": "Mustang Bullitt",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 153,
+    "0to60": 5.0,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1570,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.65,
+    "ola": 84.15,
+
+    "description": "",
+
+"333TopSpeed": 156,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 160,
+"6660to60": 4.5,
+"666Handling": 85,
+
+"699TopSpeed": 160,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 163,
+"9690to60": 4.5,
+"969Handling": 89,
+
+"996TopSpeed": 163,
+"9960to60": 4.3,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangBullitt(2008).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 706,
+    "make": "Cadillac",
+    "model": "Lyriq Luxury AWD",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 4.9,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2626,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 79.03,
+    "ola": 92.43,
+
+    "description": "",
+	
+"333TopSpeed": 135,
+"3330to60": 4.7,
+"333Handling": 84,
+
+"666TopSpeed": 139,
+"6660to60": 4.4,
+"666Handling": 86,
+
+"699TopSpeed": 139,
+"6990to60": 4.2,
+"699Handling": 90,
+
+"969TopSpeed": 143,
+"9690to60": 4.4,
+"969Handling": 90,
+
+"996TopSpeed": 143,
+"9960to60": 4.2,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/CadillacLyriqLuxuryAWD(2023).png",
+    "creator": "ama4nn",
+    "hiddenTag": [""]
+}
