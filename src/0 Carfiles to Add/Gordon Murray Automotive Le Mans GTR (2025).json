@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 991,
+    "make": "Gordon Murray Automotive",
+    "model": "Le Mans GTR",
+    "modelYear": 2025,
+    "country": "GB",
+    "topSpeed": 235,
+    "0to60": 2.6,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","Unique","Hypercar","Style Icon","Ultra Expensive"],
+    "isPrize": false,
+    "weight": 952,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 125,
+    "ola": 95.22,
+
+    "description": "",
+
+"333TopSpeed": 237,
+"3330to60": 2.5,
+"333Handling": 100,
+
+"666TopSpeed": 239,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 239,
+"6990to60": 2.2,
+"699Handling": 108,
+
+"969TopSpeed": 242,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 242,
+"9960to60": 2.2,
+"996Handling": 103,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/GMALeMansGTR(2025).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 492,
+    "make": "Ford",
+    "model": "Mustang V6",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1567,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.95,
+    "ola": 83.57,
+
+    "description": "",
+
+"333TopSpeed": 124,
+"3330to60": 5.5,
+"333Handling": 80,
+
+"666TopSpeed": 129,
+"6660to60": 5.2,
+"666Handling": 82,
+
+"699TopSpeed": 129,
+"6990to60": 4.9,
+"699Handling": 85,
+
+"969TopSpeed": 133,
+"9690to60": 5.2,
+"969Handling": 85,
+
+"996TopSpeed": 133,
+"9960to60": 4.9,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangV6(2011).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

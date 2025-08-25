@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 452,
+    "make": "Ford",
+    "model": "Mustang V6 Convertible",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 6.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1627,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.13,
+    "ola": 82.45,
+
+    "description": "",
+
+"333TopSpeed": 124,
+"3330to60": 5.8,
+"333Handling": 79,
+
+"666TopSpeed": 129,
+"6660to60": 5.5,
+"666Handling": 81,
+
+"699TopSpeed": 129,
+"6990to60": 5.2,
+"699Handling": 84,
+
+"969TopSpeed": 133,
+"9690to60": 5.5,
+"969Handling": 84,
+
+"996TopSpeed": 133,
+"9960to60": 5.2,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangV6Conv(2011).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

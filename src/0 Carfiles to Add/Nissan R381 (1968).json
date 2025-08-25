@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 811,
+    "make": "Nissan",
+    "model": "R381",
+    "modelYear": 1968,
+    "country": "JP",
+    "topSpeed": 189,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+    "weight": 855,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 94.28,
+    "ola": 103.03,
+
+    "description": "",
+
+"333TopSpeed": 192,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 195,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 195,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 197,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 197,
+"9960to60": 2.8,
+"996Handling": 95,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanR381(1968).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

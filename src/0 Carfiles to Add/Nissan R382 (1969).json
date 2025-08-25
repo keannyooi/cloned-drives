@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 855,
+    "make": "Nissan",
+    "model": "R382",
+    "modelYear": 1969,
+    "country": "JP",
+    "topSpeed": 196,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+    "weight": 790,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.87,
+    "ola": 96.77,
+
+    "description": "",
+
+"333TopSpeed": 199,
+"3330to60": 2.9,
+"333Handling": 94,
+
+"666TopSpeed": 201,
+"6660to60": 2.8,
+"666Handling": 97,
+
+"699TopSpeed": 201,
+"6990to60": 2.6,
+"699Handling": 101,
+
+"969TopSpeed": 204,
+"9690to60": 2.8,
+"969Handling": 101,
+
+"996TopSpeed": 204,
+"9960to60": 2.6,
+"996Handling": 97,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanR382(1969).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 541,
+    "make": ["Mitsuoka","Ford"],
+    "model": "Galue Convertible 4.6 V8",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 139,
+    "0to60": 5.9,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Muscle Car","Tuner"],
+    "isPrize": false,
+    "weight": 1761,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.99,
+    "ola": 85.14,
+
+    "description": "",
+
+"333TopSpeed": 143,
+"3330to60": 5.6,
+"333Handling": 76,
+
+"666TopSpeed": 146,
+"6660to60": 5.3,
+"666Handling": 79,
+
+"699TopSpeed": 146,
+"6990to60": 5,
+"699Handling": 82,
+
+"969TopSpeed": 150,
+"9690to60": 5.3,
+"969Handling": 82,
+
+"996TopSpeed": 150,
+"9960to60": 5,
+"996Handling": 79,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MitsuokaGalueConv46V8(2007).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

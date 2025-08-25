@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 616,
+    "make": ["Mitsuoka","Ford"],
+    "model": "Galue Convertible 5.0 V8",
+    "modelYear": 2011,
+    "country": "JP",
+    "topSpeed": 144,
+    "0to60": 5.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Muscle Car","Tuner"],
+    "isPrize": false,
+    "weight": 1780,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.11,
+    "ola": 94.25,
+
+    "description": "",
+
+"333TopSpeed": 148,
+"3330to60": 4.9,
+"333Handling": 77,
+
+"666TopSpeed": 151,
+"6660to60": 4.7,
+"666Handling": 80,
+
+"699TopSpeed": 151,
+"6990to60": 4.4,
+"699Handling": 83,
+
+"969TopSpeed": 155,
+"9690to60": 4.7,
+"969Handling": 83,
+
+"996TopSpeed": 155,
+"9960to60": 4.4,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MitsuokaGalueConv5V8(2011).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

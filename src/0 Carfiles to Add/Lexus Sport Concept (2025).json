@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 878,
+    "make": "Lexus",
+    "model": "Sport Concept",
+    "modelYear": 2025,
+    "country": "JP",
+    "topSpeed": 180,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.73,
+    "ola": 91.36,
+
+    "description": "",
+
+"333TopSpeed": 183,
+"3330to60": 2.7,
+"333Handling": 95,
+
+"666TopSpeed": 186,
+"6660to60": 2.5,
+"666Handling": 98,
+
+"699TopSpeed": 186,
+"6990to60": 2.4,
+"699Handling": 102,
+
+"969TopSpeed": 189,
+"9690to60": 2.5,
+"969Handling": 102,
+
+"996TopSpeed": 189,
+"9960to60": 2.4,
+"996Handling": 98,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusSportsConcept(2025).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

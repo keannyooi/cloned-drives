@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 610,
+    "make": "Ford",
+    "model": "Mustang GT Convertible",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 147,
+    "0to60": 5,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1685,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.6,
+    "ola": 93.11,
+
+    "description": "",
+
+"333TopSpeed": 151,
+"3330to60": 4.8,
+"333Handling": 84,
+
+"666TopSpeed": 154,
+"6660to60": 4.5,
+"666Handling": 86,
+
+"699TopSpeed": 154,
+"6990to60": 4.3,
+"699Handling": 90,
+
+"969TopSpeed": 158,
+"9690to60": 4.5,
+"969Handling": 90,
+
+"996TopSpeed": 158,
+"9960to60": 4.3,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustang5GTConv(2013).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

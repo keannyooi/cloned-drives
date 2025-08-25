@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 526,
+    "make": "Ford",
+    "model": "Mustang GT Convertible",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 143,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1641,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.96,
+    "ola": 83.56,
+
+    "description": "",
+
+"333TopSpeed": 147,
+"3330to60": 5.3,
+"333Handling": 80,
+
+"666TopSpeed": 150,
+"6660to60": 5,
+"666Handling": 82,
+
+"699TopSpeed": 150,
+"6990to60": 4.8,
+"699Handling": 85,
+
+"969TopSpeed": 154,
+"9690to60": 5,
+"969Handling": 85,
+
+"996TopSpeed": 154,
+"9960to60": 4.8,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangGTConvertible(2005).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

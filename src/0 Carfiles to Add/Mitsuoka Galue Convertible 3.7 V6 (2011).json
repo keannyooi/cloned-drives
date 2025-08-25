@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 460,
+    "make": ["Mitsuoka","Ford"],
+    "model": "Galue Convertible 3.7 V6",
+    "modelYear": 2011,
+    "country": "JP",
+    "topSpeed": 117,
+    "0to60": 6.4,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Muscle Car","Tuner"],
+    "isPrize": false,
+    "weight": 1735,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.43,
+    "ola": 86.5,
+
+    "description": "",
+
+"333TopSpeed": 121,
+"3330to60": 6.1,
+"333Handling": 74,
+
+"666TopSpeed": 126,
+"6660to60": 5.8,
+"666Handling": 77,
+
+"699TopSpeed": 126,
+"6990to60": 5.4,
+"699Handling": 80,
+
+"969TopSpeed": 130,
+"9690to60": 5.8,
+"969Handling": 80,
+
+"996TopSpeed": 130,
+"9960to60": 5.4,
+"996Handling": 77,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MitsuokaGalueConv37V6(2011).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}
