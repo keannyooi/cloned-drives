@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 355,
+    "make": "Abarth",
+    "model": "595C",
+    "modelYear": 2014,
+    "country": "IT",
+    "topSpeed": 127,
+    "0to60": 7,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+    "weight": 1075,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.19,
+    "ola": 52.61,
+
+    "description": "",
+
+"333TopSpeed": 131,
+"3330to60": 6.6,
+"333Handling": 80,
+
+"666TopSpeed": 135,
+"6660to60": 6.3,
+"666Handling": 82,
+
+"699TopSpeed": 135,
+"6990to60": 6,
+"699Handling": 85,
+
+"969TopSpeed": 139,
+"9690to60": 6.3,
+"969Handling": 85,
+
+"996TopSpeed": 139,
+"9960to60": 6,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Abarth595C(2014).png",
+    "creator": "Kuroi",
+    "hiddenTag": [""]
+}

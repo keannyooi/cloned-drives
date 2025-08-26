@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 362,
+    "make": "Abarth",
+    "model": "595",
+    "modelYear": 2012,
+    "country": "IT",
+    "topSpeed": 133,
+    "0to60": 7,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+    "weight": 1045,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.91,
+    "ola": 53.21,
+
+    "description": "",
+
+"333TopSpeed": 137,
+"3330to60": 6.6,
+"333Handling": 80,
+
+"666TopSpeed": 141,
+"6660to60": 6.3,
+"666Handling": 82,
+
+"699TopSpeed": 141,
+"6990to60": 6,
+"699Handling": 85,
+
+"969TopSpeed": 145,
+"9690to60": 6.3,
+"969Handling": 85,
+
+"996TopSpeed": 145,
+"9960to60": 6,
+"996Handling": 82,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Abarth595(2012).png",
+    "creator": "Kuroi",
+    "hiddenTag": [""]
+}

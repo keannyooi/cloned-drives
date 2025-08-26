@@ -1,0 +1,77 @@
+{
+    "packName": "80s Titan Pack",
+    "description": "The best 1980s pack in CD!",
+	"repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1980,
+            "end": 1989
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 83,
+			"exotic": 13,
+			"legendary": 3.2,
+			"mystic": 0.8
+        }
+    ]
+}
