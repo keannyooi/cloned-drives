@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 118,
+    "make": "Plymouth",
+    "model": "Horizon TC3 Sport Rallye",
+    "modelYear": 1979,
+    "country": "US",
+    "topSpeed": 99,
+    "0to60": 14.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1020,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.38,
+    "ola": 65.23,
+
+    "description": "",
+	
+"333TopSpeed": 104,
+"3330to60": 13.4,
+"333Handling": 72,
+
+"666TopSpeed": 110,
+"6660to60": 12.7,
+"666Handling": 75,
+
+"699TopSpeed": 110,
+"6990to60": 12,
+"699Handling": 78,
+
+"969TopSpeed": 115,
+"9690to60": 12.7,
+"969Handling": 78,
+
+"996TopSpeed": 115,
+"9960to60": 12,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthHorizonTC3SportRallye(1979).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

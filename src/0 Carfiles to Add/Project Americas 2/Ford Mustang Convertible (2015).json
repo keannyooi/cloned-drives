@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 499,
+    "make": "Ford",
+    "model": "Mustang Convertible",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 5.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1620,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.28,
+    "ola": 83.56,
+
+    "description": "",
+
+"333TopSpeed": 125,
+"3330to60": 5.6,
+"333Handling": 83,
+
+"666TopSpeed": 130,
+"6660to60": 5.3,
+"666Handling": 85,
+
+"699TopSpeed": 130,
+"6990to60": 5,
+"699Handling": 89,
+
+"969TopSpeed": 134,
+"9690to60": 5.3,
+"969Handling": 89,
+
+"996TopSpeed": 134,
+"9960to60": 5,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangConvertible(2015).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}
