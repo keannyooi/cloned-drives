@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 666,
+    "make": "AMC",
+    "model": "Javelin Trans-Am #63 Jocko's Racing Equipment",
+    "modelYear": 1973,
+    "country": "US",
+    "topSpeed": 158,
+    "0to60": 4.4,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1392,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.43,
+    "ola": 80.24,
+	
+    "description": "Team AMC withdrew from Trans-Am racing in 1973 to lay all of their focus on NASCAR. An ex-Penske Javelin piloted by Jocko Maggiacomo Jr. would however continue to race in Trans-Am. After three years, Jocko finally won the Trans-Am Championship in 1976, which would be the Javelin's final championship title.",
+	
+"333TopSpeed": 161,
+"3330to60": 4.2,
+"333Handling": 88,
+
+"666TopSpeed": 165,
+"6660to60": 4,
+"666Handling": 91,
+
+"699TopSpeed": 165,
+"6990to60": 3.7,
+"699Handling": 94,
+
+"969TopSpeed": 168,
+"9690to60": 4,
+"969Handling": 94,
+
+"996TopSpeed": 168,
+"9960to60": 3.7,
+"996Handling": 91,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelinTransAmJocko'sRacingEquipment(1973).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}

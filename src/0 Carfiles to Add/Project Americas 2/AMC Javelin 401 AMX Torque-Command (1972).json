@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 292,
+    "make": "AMC",
+    "model": "Javelin 401 AMX Torque-Command",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 7.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1471,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.14,
+    "ola": 90.91,
+	
+    "description": "A 401 AMX equipped with the Chrysler-sourced Torque-Command. Perfect for someone who wants an AMX, but can't be bothered to shift in city traffic.",
+	
+"333TopSpeed": 129,
+"3330to60": 7.3,
+"333Handling": 72,
+
+"666TopSpeed": 133,
+"6660to60": 6.9,
+"666Handling": 75,
+
+"699TopSpeed": 133,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 137,
+"9690to60": 6.9,
+"969Handling": 78,
+
+"996TopSpeed": 137,
+"9960to60": 6.5,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin401AMXTorque-Command(1972).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 284,
+    "make": "AMC",
+    "model": "Javelin 401 SST Torque-Command",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 7.7,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1471,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.14,
+    "ola": 90.91,
+	
+    "description": "Like the 360 Torque-Command, the 401s performance was also impacted when paired with the Torque-Command as a result of the longer gears.",
+	
+"333TopSpeed": 129,
+"3330to60": 7.3,
+"333Handling": 70,
+
+"666TopSpeed": 133,
+"6660to60": 6.9,
+"666Handling": 72,
+
+"699TopSpeed": 133,
+"6990to60": 6.5,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 6.9,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 6.5,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin401SSTTorque-Command(1972).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 310,
+    "make": "AMC",
+    "model": "Javelin 360 SST Go Package",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 7.3,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1406,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.49,
+    "ola": 81.45,
+	
+    "description": "The 1972 Javelin was slighlty restyled, featuring the new egg crate grille design and a similar chrome overlay on the taillights.",
+	
+"333TopSpeed": 120,
+"3330to60": 6.9,
+"333Handling": 71,
+
+"666TopSpeed": 125,
+"6660to60": 6.6,
+"666Handling": 74,
+
+"699TopSpeed": 125,
+"6990to60": 6.2,
+"699Handling": 77,
+
+"969TopSpeed": 129,
+"9690to60": 6.6,
+"969Handling": 77,
+
+"996TopSpeed": 129,
+"9960to60": 6.2,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin360SSTGoPackage(1972).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}

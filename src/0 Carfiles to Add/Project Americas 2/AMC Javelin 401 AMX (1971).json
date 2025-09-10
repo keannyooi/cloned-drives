@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 373,
+    "make": "AMC",
+    "model": "Javelin 401 AMX",
+    "modelYear": 1971,
+    "country": "US",
+    "topSpeed": 109,
+    "0to60": 6.5,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1471,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 61.54,
+	
+    "description": "A 1971 Javelin 401 AMX with a Borg-Warner T-10 four speed manual transmission and a Hurst floor shifter. The car is significantly quicker to 60 than the Shift-Command version, at the cost of a reduced top speed, due to its 3.73:1 rear end ratio.",
+	
+"333TopSpeed": 114,
+"3330to60": 6.2,
+"333Handling": 72,
+
+"666TopSpeed": 119,
+"6660to60": 5.9,
+"666Handling": 75,
+
+"699TopSpeed": 119,
+"6990to60": 5.5,
+"699Handling": 78,
+
+"969TopSpeed": 123,
+"9690to60": 5.9,
+"969Handling": 78,
+
+"996TopSpeed": 123,
+"9960to60": 5.5,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin401AMX(1971).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}

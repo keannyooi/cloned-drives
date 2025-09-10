@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 804,
+    "make": "AMC",
+    "model": "Javelin 360 AMX TCM #2 Shannons Insurance",
+    "modelYear": 2015,
+    "country": "AU",
+    "topSpeed": 158,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.43,
+    "ola": 71.36,
+	
+    "description": "For the 2015 TCM season, Jim Richards built another Javelin AMX race car based on a 1973 model. This Javelin is slightly heavier than the previous version, but it outputs 660 horsepower, an improvement over the mere 620 horespower in the older car.",
+	
+"333TopSpeed": 161,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 165,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 165,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 168,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 168,
+"9960to60": 2.8,
+"996Handling": 95,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin360TCM2ShannonsInsurance(2015).png",
+    "creator": "Johnny"
+	"hiddenTag": [""]
+}
