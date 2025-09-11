@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 617,
+    "make": "AMC",
+    "model": "Javelin Trans-Am",
+    "modelYear": 1971,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1392,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.43,
+    "ola": 81.24,
+	
+    "description": "In preparation for the 1971 Trans-Am season, Roger Penske sold all of his old AMC equipment to American Racing Associates, except for one Javelin, which he kept for developing a baseline setup. Traco managed to up the power to 450 horsepower, and the front suspension was refined. A change in the Trans-Am regulations allowed for dry-sump oil systems, which would ultimately resolve the oil starvation problems for the Javelin. Together with Mark Donohue and George Follmer, AMC managed to win eight races during the 1971 season, resulting in Donohue winning the drivers championship, as well as AMC coming out victorious for the constructors championship with a whopping 82 points.",
+	
+"333TopSpeed": 158,
+"3330to60": 4.4,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 4.1,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 3.9,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 4.1,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 3.9,
+"996Handling": 90,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelinTrans-Am(1971).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

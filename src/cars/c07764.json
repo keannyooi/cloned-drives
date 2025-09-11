@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 617,
+    "make": "AMC",
+    "model": "Javelin Trans-Am",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1392,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.43,
+    "ola": 81.5,
+	
+    "description": "In 1972, Penske was contracted by AMC to compete in NASCAR, instead of Trans-Am. However, this would not be the end of AMC's Trans-Am assault, as Roy Woods and American Racing Associates would instead take over Team Javelin for this season. George Follmer continued driving for AMC, and would ultimately pilot the Javelin to victory to four out of seven races. In the end, AMC won their final Trans-Am championship.",
+	
+"333TopSpeed": 158,
+"3330to60": 4.4,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 4.1,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 3.9,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 4.1,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 3.9,
+"996Handling": 90,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelinTransAm(1972).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

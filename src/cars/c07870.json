@@ -1,0 +1,51 @@
+{
+    "carID": "c07870",
+    "cr": 854,
+    "make": "Dodge",
+    "model": "Charger Daytona Scat Pack Stage 2",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 137,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Eco-Friendly","Muscle Car"],
+    "isPrize": false,
+    "weight": 2648,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 74.3,
+    "ola": 84.21,
+
+    "description": "",
+	
+"333TopSpeed": 141,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 145,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 145,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 148,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 148,
+"9960to60": 2.8,
+"996Handling": 95,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeChargerDaytonaScatPackStage2(2024).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

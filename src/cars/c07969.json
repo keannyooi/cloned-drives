@@ -1,0 +1,51 @@
+{
+    "carID": "c07969",
+    "cr": 556,
+    "make": "Ford",
+    "model": "Mustang EcoBoost",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1598,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.31,
+    "ola": 76.12,
+
+    "description": "",
+
+"333TopSpeed": 149,
+"3330to60": 5.3,
+"333Handling": 84,
+
+"666TopSpeed": 152,
+"6660to60": 5,
+"666Handling": 86,
+
+"699TopSpeed": 152,
+"6990to60": 4.8,
+"699Handling": 90,
+
+"969TopSpeed": 156,
+"9690to60": 5,
+"969Handling": 90,
+
+"996TopSpeed": 156,
+"9960to60": 4.8,
+"996Handling": 86,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangEco(2015).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07730",
+    "cr": 895,
+    "make": "Ford",
+    "model": "Mustang VDS GT3 #98 Marc VDS Racing",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 180,
+    "0to60": 3.4,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 102.65,
+	
+    "description": "",
+	
+"333TopSpeed": 183,
+"3330to60": 3.2,
+"333Handling": 104,
+
+"666TopSpeed": 186,
+"6660to60": 3.1,
+"666Handling": 108,
+
+"699TopSpeed": 186,
+"6990to60": 2.9,
+"699Handling": 112,
+
+"969TopSpeed": 189,
+"9690to60": 3.1,
+"969Handling": 112,
+
+"996TopSpeed": 189,
+"9960to60": 2.9,
+"996Handling": 108,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangVDSGT3(2010).png",
+    "creator": "Fiero",
+	"hiddenTag": [""]
+}

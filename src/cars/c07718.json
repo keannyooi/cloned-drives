@@ -1,0 +1,51 @@
+{
+    "carID": "c07718",
+    "cr": 1,
+    "make": "Oscar Mayer",
+    "model": "Wienermobile",
+    "modelYear": 1952,
+    "country": "US",
+    "topSpeed": 65,
+    "0to60": 23.5,
+    "handling": 44,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 2948,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 62.98,
+	
+    "description": "The oldest surviving Wienermobile.",
+	
+"333TopSpeed": 73,
+"3330to60": 22.3,
+"333Handling": 45,
+
+"666TopSpeed": 81,
+"6660to60": 21.2,
+"666Handling": 47,
+
+"699TopSpeed": 64,
+"6990to60": 84.9,
+"699Handling": 47,
+
+"969TopSpeed": 81,
+"9690to60": 20,
+"969Handling": 49,
+
+"996TopSpeed": 89,
+"9960to60": 21.2,
+"996Handling": 47,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1952).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

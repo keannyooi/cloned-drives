@@ -1,0 +1,51 @@
+{
+    "carID": "c07947",
+    "cr": 261,
+    "make": "Dodge",
+    "model": "Omni America",
+    "modelYear": 1987,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 10.2,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1000,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 30.45,
+    "ola": 60.78,
+
+    "description": "",
+	
+"333TopSpeed": 110,
+"3330to60": 9.7,
+"333Handling": 68,
+
+"666TopSpeed": 115,
+"6660to60": 9.2,
+"666Handling": 70,
+
+"699TopSpeed": 115,
+"6990to60": 8.7,
+"699Handling": 73,
+
+"969TopSpeed": 120,
+"9690to60": 9.2,
+"969Handling": 73,
+
+"996TopSpeed": 120,
+"9960to60": 8.7,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeOmniAmerica(1987).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

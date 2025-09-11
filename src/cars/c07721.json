@@ -1,0 +1,51 @@
+{
+    "carID": "c07721",
+    "cr": 989,
+    "make": "Ford",
+    "model": "Mustang GT3 #68 Haupt Racing Team",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 188,
+    "0to60": 2.8,
+    "handling": 104,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1289,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 101.23,
+    "ola": 87.56,
+	
+    "description": "",
+	
+"333TopSpeed": 191,
+"3330to60": 2.7,
+"333Handling": 107,
+
+"666TopSpeed": 194,
+"6660to60": 2.5,
+"666Handling": 111,
+
+"699TopSpeed": 194,
+"6990to60": 2.4,
+"699Handling": 115,
+
+"969TopSpeed": 196,
+"9690to60": 2.5,
+"969Handling": 115,
+
+"996TopSpeed": 196,
+"9960to60": 2.4,
+"996Handling": 111,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangGT3(2024).png",
+    "creator": "Fiero",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07702",
+    "cr": 325,
+    "make": "Saturn",
+    "model": "SL2 Autocross",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 8.4,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Track Day"],
+    "isPrize": false,
+    "weight": 1088,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54,
+    "ola": 74,
+	
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 8,
+"333Handling": 79,
+
+"666TopSpeed": 132,
+"6660to60": 7.6,
+"666Handling": 81,
+
+"699TopSpeed": 132,
+"6990to60": 7.1,
+"699Handling": 84,
+
+"969TopSpeed": 137,
+"9690to60": 7.6,
+"969Handling": 84,
+
+"996TopSpeed": 137,
+"9960to60": 7.1,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSL2Autocross(1999).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

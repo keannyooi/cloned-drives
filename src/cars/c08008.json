@@ -1,0 +1,51 @@
+{
+    "carID": "c08008",
+    "cr": 231,
+    "make": "Plymouth",
+    "model": "Horizon 2.2",
+    "modelYear": 1981,
+    "country": "US",
+    "topSpeed": 101,
+    "0to60": 10.8,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1020,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 12.54,
+    "ola": 56.71,
+
+    "description": "",
+
+"333TopSpeed": 106,
+"3330to60": 10.3,
+"333Handling": 68,
+
+"666TopSpeed": 111,
+"6660to60": 9.7,
+"666Handling": 70,
+
+"699TopSpeed": 111,
+"6990to60": 9.2,
+"699Handling": 73,
+
+"969TopSpeed": 116,
+"9690to60": 9.7,
+"969Handling": 73,
+
+"996TopSpeed": 116,
+"9960to60": 9.2,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthHorizon2.2(1981).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

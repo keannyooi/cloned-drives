@@ -1,0 +1,51 @@
+{
+    "carID": "c07740",
+    "cr": 776,
+    "make": "AMC",
+    "model": "Javelin 360 AMX TCM #2 Shannons Insurance",
+    "modelYear": 2009,
+    "country": "AU",
+    "topSpeed": 158,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Muscle Car", "Motorsport"],
+    "isPrize": false,
+    "weight": 1580,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 73.5,
+	
+    "description": "Jim Richards' 1972 Javelin AMX was transformed into a race car for the Touring Car Masters in 2009, sporting the 360 V8 producing in excess of 600 horespower. To comply with TCM regulations, the car is a lot heavier than the old Trans-Am cars at 1580 kg. The Javelin would later debut at Adelaide's Clipsal 500 opening round of the 2012 TCM season.",
+	
+"333TopSpeed": 161,
+"3330to60": 3.3,
+"333Handling": 91,
+
+"666TopSpeed": 165,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 165,
+"6990to60": 3,
+"699Handling": 98,
+
+"969TopSpeed": 168,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 168,
+"9960to60": 3,
+"996Handling": 94,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin360TCM2ShannonsInsurance(2009).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

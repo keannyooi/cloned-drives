@@ -1,0 +1,51 @@
+{
+    "carID": "c07687",
+    "cr": 270,
+    "make": "Ford",
+    "model": "Urban Explorer Concept",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 10.3,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Concept"],
+    "isPrize": false,
+    "weight": 2033,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.2,
+    "ola": 60.19,
+	
+    "description": "",
+	
+"333TopSpeed": 124,
+"3330to60": 9.8,
+"333Handling": 72,
+
+"666TopSpeed": 129,
+"6660to60": 9.3,
+"666Handling": 75,
+
+"699TopSpeed": 129,
+"6990to60": 8.8,
+"699Handling": 78,
+
+"969TopSpeed": 133,
+"9690to60": 9.3,
+"969Handling": 78,
+
+"996TopSpeed": 133,
+"9960to60": 8.8,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordUrbanExplorerConcept(2000).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07750",
+    "cr": 380,
+    "make": "AMC",
+    "model": "Javelin 401 AMX Go Package",
+    "modelYear": 1971,
+    "country": "US",
+    "topSpeed": 109,
+    "0to60": 6.5,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1471,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 61.54,
+	
+    "description": "A 1971 Javelin 401 AMX with a Borg-Warner T-10 four speed manual transmission and a Hurst floor shifter, as well as the Go Package makes for the perfect pony car for spirited driving.",
+	
+"333TopSpeed": 114,
+"3330to60": 6.2,
+"333Handling": 73,
+
+"666TopSpeed": 119,
+"6660to60": 5.9,
+"666Handling": 76,
+
+"699TopSpeed": 119,
+"6990to60": 5.5,
+"699Handling": 79,
+
+"969TopSpeed": 123,
+"9690to60": 5.9,
+"969Handling": 79,
+
+"996TopSpeed": 123,
+"9960to60": 5.5,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin401AMXGoPackage(1971).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

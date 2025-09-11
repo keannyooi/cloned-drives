@@ -1,0 +1,51 @@
+{
+    "carID": "c07712",
+    "cr": 1,
+    "make": "Oscar Mayer",
+    "model": "Wienermobile",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 96,
+    "0to60": 21.2,
+    "handling": 49,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 6043,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53,
+    "ola": 84.91,
+	
+    "description": "None",
+	
+"333TopSpeed": 101,
+"3330to60": 20.1,
+"333Handling": 51,
+
+"666TopSpeed": 107,
+"6660to60": 19.1,
+"666Handling": 52,
+
+"699TopSpeed": 107,
+"6990to60": 18,
+"699Handling": 54,
+
+"969TopSpeed": 112,
+"9690to60": 19.1,
+"969Handling": 54,
+
+"996TopSpeed": 112,
+"9960to60": 18,
+"996Handling": 52,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(2001).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

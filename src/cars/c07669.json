@@ -1,0 +1,51 @@
+{
+    "carID": "c07669",
+    "cr": 267,
+    "make": "Ford",
+    "model": "Explorer Limited 4x4",
+    "modelYear": 1994,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 11.2,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1891,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.72,
+    "ola": 64.29,
+	
+    "description": "",
+	
+"333TopSpeed": 111,
+"3330to60": 11.0,
+"333Handling": 64,
+
+"666TopSpeed": 116,
+"6660to60": 10.4,
+"666Handling": 66,
+
+"699TopSpeed": 116,
+"6990to60": 9.9,
+"699Handling": 69,
+
+"969TopSpeed": 121,
+"9690to60": 10.4,
+"969Handling": 69,
+
+"996TopSpeed": 121,
+"9960to60": 9.9,
+"996Handling": 66,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorerLimited4x4(1994).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

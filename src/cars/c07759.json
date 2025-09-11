@@ -1,0 +1,51 @@
+{
+    "carID": "c07759",
+    "cr": 293,
+    "make": "AMC",
+    "model": "Javelin 401 SST Shift-Command ADPS State-Trooper",
+    "modelYear": 1971,
+    "country": "US",
+    "topSpeed": 143,
+    "0to60": 8.2,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.36,
+    "ola": 80.49,
+	
+    "description": "An Alabama Police State-Trooper Javelin equipped with some options of the Go Package, including disk brakes, heavy-duty suspension, AC, power steering, Rally-Pac instruments, and the Go Pack tires. The cowl induction hood and LSD was left out, and the rear end ratio was 2.97:1 which allowed for speeds over 140 mph",
+	
+"333TopSpeed": 147,
+"3330to60": 7.8,
+"333Handling": 72,
+
+"666TopSpeed": 150,
+"6660to60": 7.4,
+"666Handling": 75,
+
+"699TopSpeed": 150,
+"6990to60": 7,
+"699Handling": 78,
+
+"969TopSpeed": 154,
+"9690to60": 7.4,
+"969Handling": 78,
+
+"996TopSpeed": 154,
+"9960to60": 7,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin401SSTShift-CommandADPSStateTrooper(1971).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

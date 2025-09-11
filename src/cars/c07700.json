@@ -1,0 +1,51 @@
+{
+    "carID": "c07700",
+    "cr": 297,
+    "make": "Saturn",
+    "model": "SL1",
+    "modelYear": 1996,
+    "country": "US",
+    "topSpeed": 110,
+    "0to60": 10.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1065,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.77,
+    "ola": 66.67,
+	
+    "description": "",
+	
+"333TopSpeed": 115,
+"3330to60": 10,
+"333Handling": 76,
+
+"666TopSpeed": 119,
+"6660to60": 9.5,
+"666Handling": 79,
+
+"699TopSpeed": 119,
+"6990to60": 8.9,
+"699Handling": 82,
+
+"969TopSpeed": 124,
+"9690to60": 9.5,
+"969Handling": 82,
+
+"996TopSpeed": 124,
+"9960to60": 8.9,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSL1(1996).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

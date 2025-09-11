@@ -1,0 +1,51 @@
+{
+    "carID": "c07705",
+    "cr": 284,
+    "make": "Saturn",
+    "model": "SC2 SCCA #34 scR motorsports",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 8.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Track Day"],
+    "isPrize": false,
+    "weight": 1020,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.14,
+    "ola": 74.44,
+	
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 8,
+"333Handling": 80,
+
+"666TopSpeed": 132,
+"6660to60": 7.6,
+"666Handling": 82,
+
+"699TopSpeed": 132,
+"6990to60": 7.1,
+"699Handling": 85,
+
+"969TopSpeed": 137,
+"9690to60": 7.6,
+"969Handling": 85,
+
+"996TopSpeed": 137,
+"9960to60": 7.1,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSC2SCCA(1997).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

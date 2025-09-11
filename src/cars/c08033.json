@@ -1,0 +1,51 @@
+{
+    "carID": "c08033",
+    "cr": 346,
+    "make": ["Shelby","Dodge"],
+    "model": "Charger GLH-S",
+    "modelYear": 1987,
+    "country": "US",
+    "topSpeed": 135,
+    "0to60": 6.8,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Tuner"],
+    "isPrize": false,
+    "weight": 1170,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.17,
+    "ola": 76.17,
+
+    "description": "",
+	
+"333TopSpeed": 139,
+"3330to60": 6.5,
+"333Handling": 79,
+
+"666TopSpeed": 143,
+"6660to60": 6.1,
+"666Handling": 81,
+
+"699TopSpeed": 143,
+"6990to60": 5.8,
+"699Handling": 84,
+
+"969TopSpeed": 147,
+"9690to60": 6.1,
+"969Handling": 84,
+
+"996TopSpeed": 147,
+"9960to60": 5.8,
+"996Handling": 81,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeShelbyChargerTurbo(1985).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

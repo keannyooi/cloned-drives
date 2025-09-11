@@ -1,0 +1,51 @@
+{
+    "carID": "c07704",
+    "cr": 524,
+    "make": "Saturn",
+    "model": "SC2 Turbo\"One Lap of America\"",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Track Day"],
+    "isPrize": false,
+    "weight": 1066,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.87,
+    "ola": 96.37,
+	
+    "description": "",
+	
+"333TopSpeed": 134,
+"3330to60": 4.9,
+"333Handling": 83,
+
+"666TopSpeed": 138,
+"6660to60": 4.7,
+"666Handling": 85,
+
+"699TopSpeed": 138,
+"6990to60": 4.4,
+"699Handling": 89,
+
+"969TopSpeed": 142,
+"9690to60": 4.7,
+"969Handling": 89,
+
+"996TopSpeed": 142,
+"9960to60": 4.4,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSC2Turbo(2001).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

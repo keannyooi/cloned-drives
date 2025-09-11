@@ -1,0 +1,51 @@
+{
+    "carID": "c07963",
+    "cr": 804,
+    "make": "Ford",
+    "model": "Mustang Boss 302R #16 Multimatic Motorsports",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 166,
+    "0to60": 3.8,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.52,
+    "ola": 91.62,
+
+    "description": "",
+
+"333TopSpeed": 169,
+"3330to60": 3.6,
+"333Handling": 100,
+
+"666TopSpeed": 172,
+"6660to60": 3.4,
+"666Handling": 103,
+
+"699TopSpeed": 172,
+"6990to60": 3.2,
+"699Handling": 108,
+
+"969TopSpeed": 175,
+"9690to60": 3.4,
+"969Handling": 108,
+
+"996TopSpeed": 175,
+"9960to60": 3.2,
+"996Handling": 103,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangBoss302R(2010).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07972",
+    "cr": 601,
+    "make": "Ford",
+    "model": "Mustang EcoBoost Power Pack",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 148,
+    "0to60": 5.3,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1598,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.25,
+    "ola": 77.6,
+
+    "description": "",
+
+"333TopSpeed": 152,
+"3330to60": 5,
+"333Handling": 86,
+
+"666TopSpeed": 155,
+"6660to60": 4.8,
+"666Handling": 88,
+
+"699TopSpeed": 155,
+"6990to60": 4.5,
+"699Handling": 92,
+
+"969TopSpeed": 159,
+"9690to60": 4.8,
+"969Handling": 92,
+
+"996TopSpeed": 159,
+"9960to60": 4.5,
+"996Handling": 88,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangEcoPP(2015).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07952",
+    "cr": 243,
+    "make": "Dodge",
+    "model": "Rampage",
+    "modelYear": 1983,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 10.5,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1045,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.49,
+    "ola": 63.26,
+
+    "description": "",
+	
+"333TopSpeed": 113,
+"3330to60": 10,
+"333Handling": 66,
+
+"666TopSpeed": 118,
+"6660to60": 9.5,
+"666Handling": 68,
+
+"699TopSpeed": 118,
+"6990to60": 8.9,
+"699Handling": 71,
+
+"969TopSpeed": 122,
+"9690to60": 9.5,
+"969Handling": 71,
+
+"996TopSpeed": 122,
+"9960to60": 8.9,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeRampage(1983).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

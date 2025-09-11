@@ -1,0 +1,51 @@
+{
+    "carID": "c07706",
+    "cr": 330,
+    "make": ["Vilner","Saturn"],
+    "model": "Saturn Sky",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 123,
+    "0to60": 6.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Tuner"],
+    "isPrize": false,
+    "weight": 1325,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 47.15,
+    "ola": 69.84,
+	
+    "description": "",
+	
+"333TopSpeed": 127,
+"3330to60": 6.6,
+"333Handling": 80,
+
+"666TopSpeed": 131,
+"6660to60": 6.2,
+"666Handling": 82,
+
+"699TopSpeed": 131,
+"6990to60": 5.9,
+"699Handling": 85,
+
+"969TopSpeed": 136,
+"9690to60": 6.2,
+"969Handling": 85,
+
+"996TopSpeed": 136,
+"9960to60": 5.9,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/VilnerSaturnSky(2011).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

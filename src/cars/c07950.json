@@ -1,0 +1,51 @@
+{
+    "carID": "c07950",
+    "cr": 223,
+    "make": "Dodge",
+    "model": "Rampage",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 103,
+    "0to60": 11.1,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 31.77,
+    "ola": 59.53,
+
+    "description": "",
+	
+"333TopSpeed": 108,
+"3330to60": 10.5,
+"333Handling": 66,
+
+"666TopSpeed": 113,
+"6660to60": 10,
+"666Handling": 68,
+
+"699TopSpeed": 113,
+"6990to60": 9.4,
+"699Handling": 71,
+
+"969TopSpeed": 118,
+"9690to60": 10,
+"969Handling": 71,
+
+"996TopSpeed": 118,
+"9960to60": 9.4,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeRampage(1982).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

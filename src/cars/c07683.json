@@ -1,0 +1,50 @@
+{
+    "carID": "c07683",
+    "cr": 692,
+    "make": "Ford",
+    "model": "Explorer Police Interceptor Utility",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 148,
+    "0to60": 6.3,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 2276,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.74,
+    "ola": 69.84,
+    "description": "",
+	
+"333TopSpeed": 152,
+"3330to60": 6,
+"333Handling": 76,
+
+"666TopSpeed": 155,
+"6660to60": 5.7,
+"666Handling": 79,
+
+"699TopSpeed": 155,
+"6990to60": 5.4,
+"699Handling": 82,
+
+"969TopSpeed": 159,
+"9690to60": 5.7,
+"969Handling": 82,
+
+"996TopSpeed": 159,
+"9960to60": 5.4,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorerPoliceInterceptorUtility(2016).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

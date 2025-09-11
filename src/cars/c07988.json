@@ -1,0 +1,51 @@
+{
+    "carID": "c07988",
+    "cr": 692,
+    "make": "Ford",
+    "model": "Mustang Shelby GT350",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 177,
+    "0to60": 4.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1715,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.58,
+    "ola": 91.25,
+
+    "description": "",
+
+"333TopSpeed": 180,
+"3330to60": 4.1,
+"333Handling": 92,
+
+"666TopSpeed": 183,
+"6660to60": 3.9,
+"666Handling": 95,
+
+"699TopSpeed": 183,
+"6990to60": 3.7,
+"699Handling": 99,
+
+"969TopSpeed": 186,
+"9690to60": 3.9,
+"969Handling": 99,
+
+"996TopSpeed": 186,
+"9960to60": 3.7,
+"996Handling": 95,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangGT350(2016).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

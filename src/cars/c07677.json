@@ -1,0 +1,50 @@
+{
+    "carID": "c07677",
+    "cr": 631,
+    "make": "Ford",
+    "model": "Explorer 3.5 EcoBoost Platinum 4WD",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 123,
+    "0to60": 5.9,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2249,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.42,
+    "ola": 77.97,
+    "description": "",
+	
+"333TopSpeed": 127,
+"3330to60": 5.6,
+"333Handling": 75,
+
+"666TopSpeed": 131,
+"6660to60": 5.3,
+"666Handling": 78,
+
+"699TopSpeed": 131,
+"6990to60": 5,
+"699Handling": 81,
+
+"969TopSpeed": 136,
+"9690to60": 5.3,
+"969Handling": 81,
+
+"996TopSpeed": 136,
+"9960to60": 5,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorer3.5EcoBoostPlatinum4WD(2016).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07708",
+    "cr": 754,
+    "make": "Saturn",
+    "model": "Sky Autosport Dynamics #8 Team Falken Tire",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 3.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Tuner","Motorsport"],
+    "isPrize": true,
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 101.6,
+    "ola": 97.33,
+	
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 3.5,
+"333Handling": 96,
+
+"666TopSpeed": 133,
+"6660to60": 3.3,
+"666Handling": 99,
+
+"699TopSpeed": 133,
+"6990to60": 3.1,
+"699Handling": 103,
+
+"969TopSpeed": 137,
+"9690to60": 3.3,
+"969Handling": 103,
+
+"996TopSpeed": 137,
+"9960to60": 3.1,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSkyAutosportDynamics(2011).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

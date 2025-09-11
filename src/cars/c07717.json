@@ -1,0 +1,51 @@
+{
+    "carID": "c07717",
+    "cr": 8,
+    "make": "Oscar Mayer",
+    "model": "Wienermobile",
+    "modelYear": 1958,
+    "country": "US",
+    "topSpeed": 55,
+    "0to60": 99.9,
+    "handling": 46,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 1699,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 68.57,
+	
+    "description": "This futuristic-looking Wienermobile was based off a Willys-Jeep chassis.",
+	
+"333TopSpeed": 64,
+"3330to60": 94.9,
+"333Handling": 48,
+
+"666TopSpeed": 72,
+"6660to60": 89.9,
+"666Handling": 49,
+
+"699TopSpeed": 72,
+"6990to60": 84.9,
+"699Handling": 51,
+
+"969TopSpeed": 81,
+"9690to60": 89.9,
+"969Handling": 51,
+
+"996TopSpeed": 81,
+"9960to60": 84.9,
+"996Handling": 49,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1958).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

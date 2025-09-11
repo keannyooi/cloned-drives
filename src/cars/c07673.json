@@ -1,0 +1,50 @@
+{
+    "carID": "c07673",
+    "cr": 529,
+    "make": "Ford",
+    "model": "Explorer 2.3 EcoBoost XLT 4WD",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 7.2,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2073,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.45,
+    "ola": 58.33,
+    "description": "",
+	
+"333TopSpeed": 124,
+"3330to60": 6.8,
+"333Handling": 74,
+
+"666TopSpeed": 129,
+"6660to60": 6.5,
+"666Handling": 77,
+
+"699TopSpeed": 129,
+"6990to60": 6.1,
+"699Handling": 80,
+
+"969TopSpeed": 133,
+"9690to60": 6.5,
+"969Handling": 80,
+
+"996TopSpeed": 133,
+"9960to60": 6.1,
+"996Handling": 77,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorer2.3EcoBoostXLT4WD(2011).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07695",
+    "cr": 395,
+    "make": "Saturn",
+    "model": "Astra XR 3-Door",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 8.6,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1273,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.73,
+    "ola": 72.53,
+	
+    "description": "",
+	
+"333TopSpeed": 130,
+"3330to60": 8.2,
+"333Handling": 79,
+
+"666TopSpeed": 134,
+"6660to60": 7.7,
+"666Handling": 81,
+
+"699TopSpeed": 134,
+"6990to60": 7.3,
+"699Handling": 84,
+
+"969TopSpeed": 138,
+"9690to60": 7.7,
+"969Handling": 84,
+
+"996TopSpeed": 138,
+"9960to60": 7.3,
+"996Handling": 81,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnAstraXR3-door(2008).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

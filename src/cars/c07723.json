@@ -1,0 +1,51 @@
+{
+    "carID": "c07723",
+    "cr": 932,
+    "make": "Acura",
+    "model": "TLX-GT #43 RealTime Racing",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 179,
+    "0to60": 3.1,
+    "handling": 102,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.25,
+    "ola": 78.64,
+	
+    "description": "",
+	
+"333TopSpeed": 182,
+"3330to60": 2.9,
+"333Handling": 105,
+
+"666TopSpeed": 185,
+"6660to60": 2.8,
+"666Handling": 109,
+
+"699TopSpeed": 185,
+"6990to60": 2.6,
+"699Handling": 113,
+
+"969TopSpeed": 188,
+"9690to60": 2.8,
+"969Handling": 113,
+
+"996TopSpeed": 188,
+"9960to60": 2.6,
+"996Handling": 109,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AcuraTLX-GT(2015).png",
+    "creator": "Fiero",
+	"hiddenTag": [""]
+}

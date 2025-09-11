@@ -1,0 +1,51 @@
+{
+    "carID": "c07746",
+    "cr": 199,
+    "make": "AMC",
+    "model": "Javelin 360 Torque-Command",
+    "modelYear": 1973,
+    "country": "US",
+    "topSpeed": 117,
+    "0to60": 10,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.82,
+    "ola": 76,
+	
+    "description": "For the 1973 model year, the Javelin received new bumpers with two rigid rubber guards, which allowed the car to withstand 5 mph head-on collision and a 2.5 mph rear impact wihout damage done to the engine, lights and safety equipment. The front seats were also changed to be more comfortable and lighter.",
+	
+"333TopSpeed": 121,
+"3330to60": 9.5,
+"333Handling": 70,
+
+"666TopSpeed": 126,
+"6660to60": 9,
+"666Handling": 72,
+
+"699TopSpeed": 126,
+"6990to60": 8.5,
+"699Handling": 75,
+
+"969TopSpeed": 130,
+"9690to60": 9,
+"969Handling": 75,
+
+"996TopSpeed": 130,
+"9960to60": 8.5,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin360Torque-Command(1973).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

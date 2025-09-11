@@ -1,0 +1,50 @@
+{
+    "carID": "c07671",
+    "cr": 431,
+    "make": "Ford",
+    "model": "Explorer 2.0 EcoBoost Sport 4WD",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 9.2,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2046,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.25,
+    "ola": 58.7,
+    "description": "",
+	
+"333TopSpeed": 118,
+"3330to60": 8.7,
+"333Handling": 73,
+
+"666TopSpeed": 122,
+"6660to60": 8.3,
+"666Handling": 76,
+
+"699TopSpeed": 122,
+"6990to60": 7.8,
+"699Handling": 79,
+
+"969TopSpeed": 127,
+"9690to60": 8.3,
+"969Handling": 79,
+
+"996TopSpeed": 127,
+"9960to60": 7.8,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorer2.0EcoBoostSport4WD(2013).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c07694",
+    "cr": 504,
+    "make": "Saturn",
+    "model": "Aura XR",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 6.2,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1647,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.62,
+    "ola": 78.79,
+	
+    "description": "",
+	
+"333TopSpeed": 120,
+"3330to60": 5.9,
+"333Handling": 76,
+
+"666TopSpeed": 124,
+"6660to60": 5.6,
+"666Handling": 79,
+
+"699TopSpeed": 124,
+"6990to60": 5.3,
+"699Handling": 82,
+
+"969TopSpeed": 129,
+"9690to60": 5.6,
+"969Handling": 82,
+
+"996TopSpeed": 129,
+"9960to60": 5.3,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnAuraXR(2007).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c07672",
+    "cr": 582,
+    "make": "Ford",
+    "model": "Explorer 2.3 EcoBoost ST-Line AWD",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 6.6,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1971,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.86,
+    "ola": 66.67,
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 6.3,
+"333Handling": 76,
+
+"666TopSpeed": 133,
+"6660to60": 5.9,
+"666Handling": 79,
+
+"699TopSpeed": 133,
+"6990to60": 5.6,
+"699Handling": 82,
+
+"969TopSpeed": 137,
+"9690to60": 5.9,
+"969Handling": 82,
+
+"996TopSpeed": 137,
+"9960to60": 5.6,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorer2.3EcoBoostST-LineAWD(2020).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

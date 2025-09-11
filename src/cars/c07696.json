@@ -1,0 +1,51 @@
+{
+    "carID": "c07696",
+    "cr": 339,
+    "make": "Saturn",
+    "model": "LS1",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 8.7,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1335,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.32,
+    "ola": 79.49,
+	
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 8.3,
+"333Handling": 71,
+
+"666TopSpeed": 132,
+"6660to60": 7.8,
+"666Handling": 74,
+
+"699TopSpeed": 132,
+"6990to60": 7.4,
+"699Handling": 77,
+
+"969TopSpeed": 137,
+"9690to60": 7.8,
+"969Handling": 77,
+
+"996TopSpeed": 137,
+"9960to60": 7.4,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnLS1(2000).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

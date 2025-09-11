@@ -1,0 +1,51 @@
+{
+    "carID": "c07686",
+    "cr": 422,
+    "make": "Ford",
+    "model": "Explorer XLT Sport 4x4",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 8.5,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2065,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.37,
+    "ola": 61.18,
+	
+    "description": "",
+	
+"333TopSpeed": 110,
+"3330to60": 8.1,
+"333Handling": 69,
+
+"666TopSpeed": 115,
+"6660to60": 7.7,
+"666Handling": 71,
+
+"699TopSpeed": 115,
+"6990to60": 7.2,
+"699Handling": 74,
+
+"969TopSpeed": 120,
+"9690to60": 7.7,
+"969Handling": 74,
+
+"996TopSpeed": 120,
+"9960to60": 7.2,
+"996Handling": 71,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorerXLTSport4x4(2002).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

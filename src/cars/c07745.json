@@ -1,0 +1,51 @@
+{
+    "carID": "c07745",
+    "cr": 210,
+    "make": "AMC",
+    "model": "Javelin 360 SST Shift-Command",
+    "modelYear": 1971,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1410,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.07,
+    "ola": 73.68,
+	
+    "description": "The SST Javelin was no longer the top trim of the Javelin, but it still kept its premium status with its upgraded interior upholstery and full wheel covers.",
+	
+"333TopSpeed": 117,
+"3330to60": 9,
+"333Handling": 70,
+
+"666TopSpeed": 121,
+"6660to60": 8.6,
+"666Handling": 72,
+
+"699TopSpeed": 121,
+"6990to60": 8.1,
+"699Handling": 75,
+
+"969TopSpeed": 126,
+"9690to60": 8.6,
+"969Handling": 75,
+
+"996TopSpeed": 126,
+"9960to60": 8.1,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCJavelin360SSTShift-Command(1971).png",
+    "creator": "Johnny",
+	"hiddenTag": [""]
+}

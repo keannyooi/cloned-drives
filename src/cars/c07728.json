@@ -1,0 +1,51 @@
+{
+    "carID": "c07728",
+    "cr": 896,
+    "make": "Dodge",
+    "model": "Viper Competition Coupe Series 2 GT3.R #37 Zakspeed Racing",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 177,
+    "0to60": 3.4,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.53,
+    "ola": 88.88,
+	
+    "description": "",
+	
+"333TopSpeed": 180,
+"3330to60": 3.2,
+"333Handling": 104,
+
+"666TopSpeed": 183,
+"6660to60": 3.1,
+"666Handling": 108,
+
+"699TopSpeed": 183,
+"6990to60": 2.9,
+"699Handling": 112,
+
+"969TopSpeed": 186,
+"9690to60": 3.1,
+"969Handling": 112,
+
+"996TopSpeed": 186,
+"9960to60": 2.9,
+"996Handling": 108,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeViperCompetitionCoupeSeries2GT3.R(2009).png",
+    "creator": "Fiero",
+	"hiddenTag": [""]
+}

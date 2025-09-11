@@ -1,0 +1,51 @@
+{
+    "carID": "c07725",
+    "cr": 925,
+    "make": ["Callaway","Chevrolet"],
+    "model": "Corvette C7 GT3-R #77 Callaway Competition",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 190,
+    "0to60": 3.3,
+    "handling": 102,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.28,
+    "ola": 89.37,
+	
+    "description": "",
+	
+"333TopSpeed": 193,
+"3330to60": 3.1,
+"333Handling": 105,
+
+"666TopSpeed": 195,
+"6660to60": 3,
+"666Handling": 109,
+
+"699TopSpeed": 195,
+"6990to60": 2.8,
+"699Handling": 113,
+
+"969TopSpeed": 198,
+"9690to60": 3,
+"969Handling": 113,
+
+"996TopSpeed": 198,
+"9960to60": 2.8,
+"996Handling": 109,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/CallawayCorvetteC7GT3-R(2016).png",
+    "creator": "Fiero",
+	"hiddenTag": [""]
+}

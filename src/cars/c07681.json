@@ -1,0 +1,50 @@
+{
+    "carID": "c07681",
+    "cr": 439,
+    "make": "Ford",
+    "model": "Explorer Limited 4x4",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 8.2,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2167,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.94,
+    "ola": 70.73,
+    "description": "",
+	
+"333TopSpeed": 111,
+"3330to60": 7.8,
+"333Handling": 70,
+
+"666TopSpeed": 116,
+"6660to60": 7.4,
+"666Handling": 72,
+
+"699TopSpeed": 116,
+"6990to60": 7,
+"699Handling": 75,
+
+"969TopSpeed": 121,
+"9690to60": 7.4,
+"969Handling": 75,
+
+"996TopSpeed": 121,
+"9960to60": 7,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordExplorerLimited4x4(2006).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

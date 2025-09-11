@@ -1,0 +1,51 @@
+{
+    "carID": "c07979",
+    "cr": 603,
+    "make": "Ford",
+    "model": "Mustang GT Convertible",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 146,
+    "0to60": 5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1675,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.15,
+    "ola": 94.25,
+
+    "description": "",
+
+"333TopSpeed": 150,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 153,
+"6660to60": 4.5,
+"666Handling": 85,
+
+"699TopSpeed": 153,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 157,
+"9690to60": 4.5,
+"969Handling": 89,
+
+"996TopSpeed": 157,
+"9960to60": 4.3,
+"996Handling": 85,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustang5GTConv(2011).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
+}

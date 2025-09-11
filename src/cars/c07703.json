@@ -1,0 +1,51 @@
+{
+    "carID": "c07703",
+    "cr": 506,
+    "make": "Saturn",
+    "model": "SL2 Rally Spec",
+    "modelYear": 1996,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 8.5,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown","Track Day"],
+    "isPrize": false,
+    "weight": 1070,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.29,
+    "ola": 74.44,
+	
+    "description": "",
+	
+"333TopSpeed": 124,
+"3330to60": 8.1,
+"333Handling": 80,
+
+"666TopSpeed": 129,
+"6660to60": 7.7,
+"666Handling": 82,
+
+"699TopSpeed": 129,
+"6990to60": 7.2,
+"699Handling": 85,
+
+"969TopSpeed": 133,
+"9690to60": 7.7,
+"969Handling": 85,
+
+"996TopSpeed": 133,
+"9960to60": 7.2,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSL2RallySpec(1996).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

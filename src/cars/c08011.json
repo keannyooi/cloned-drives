@@ -1,0 +1,51 @@
+{
+    "carID": "c08011",
+    "cr": 145,
+    "make": "Plymouth",
+    "model": "Horizon Miser",
+    "modelYear": 1981,
+    "country": "US",
+    "topSpeed": 93,
+    "0to60": 15.2,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 960,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 3.14,
+    "ola": 68.42,
+
+    "description": "",
+	
+"333TopSpeed": 99,
+"3330to60": 14.4,
+"333Handling": 66,
+
+"666TopSpeed": 104,
+"6660to60": 13.7,
+"666Handling": 68,
+
+"699TopSpeed": 104,
+"6990to60": 12.9,
+"699Handling": 71,
+
+"969TopSpeed": 110,
+"9690to60": 13.7,
+"969Handling": 71,
+
+"996TopSpeed": 110,
+"9960to60": 12.9,
+"996Handling": 68,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthHorizonMiser(1981).png",
+    "creator": "DodgeDemon",
+    "hiddenTag": [""]
+}

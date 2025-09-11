@@ -1,0 +1,51 @@
+{
+    "carID": "c07714",
+    "cr": 1,
+    "make": "Oscar Mayer",
+    "model": "Wienermobile",
+    "modelYear": 1995,
+    "country": "US",
+    "topSpeed": 100,
+    "0to60": 20.2,
+    "handling": 48,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 6123,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.75,
+    "ola": 82.18,
+	
+    "description": "The first of many Wienermobiles to be built off an Isuzu Elf frame.",
+	
+"333TopSpeed": 105,
+"3330to60": 19.2,
+"333Handling": 50,
+
+"666TopSpeed": 110,
+"6660to60": 18.2,
+"666Handling": 51,
+
+"699TopSpeed": 110,
+"6990to60": 17.2,
+"699Handling": 53,
+
+"969TopSpeed": 116,
+"9690to60": 18.2,
+"969Handling": 53,
+
+"996TopSpeed": 116,
+"9960to60": 17.2,
+"996Handling": 51,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1995).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

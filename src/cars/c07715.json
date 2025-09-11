@@ -1,0 +1,51 @@
+{
+    "carID": "c07715",
+    "cr": 1,
+    "make": "Oscar Mayer",
+    "model": "Wienermobile",
+    "modelYear": 1988,
+    "country": "US",
+    "topSpeed": 80,
+    "0to60": 22.8,
+    "handling": 47,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 3672,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "Other",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10,
+    "ola": 69.3,
+	
+    "description": "The revival of the Wienermobile. This version became the modern blueprint for all future Wieners.",
+	
+"333TopSpeed": 87,
+"3330to60": 21.7,
+"333Handling": 49,
+
+"666TopSpeed": 93,
+"6660to60": 20.5,
+"666Handling": 50,
+
+"699TopSpeed": 93,
+"6990to60": 19.4,
+"699Handling": 52,
+
+"969TopSpeed": 100,
+"9690to60": 20.5,
+"969Handling": 52,
+
+"996TopSpeed": 100,
+"9960to60": 19.4,
+"996Handling": 50,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1988).png",
+    "creator": "GAAN",
+	"hiddenTag": [""]
+}

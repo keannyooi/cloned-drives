@@ -1,5 +1,8 @@
 "use strict";
 
+const fs = require("fs");
+const path = require("path");
+
 const bot = require("../config/config.js");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
@@ -12,6 +15,27 @@ const reqDisplay = require("../util/functions/reqDisplay.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
 
+// 🔧 Manual dev switch to disable DMs
+const DEV_MODE = false;
+
+// 🔄 Loader to read all files in a folder and build a lookup object
+function loadFolder(folderPath) {
+    const data = {};
+    const files = fs.readdirSync(folderPath);
+    for (const file of files) {
+        if (file.endsWith(".js") || file.endsWith(".json")) {
+            const key = path.basename(file, path.extname(file)); // filename without extension
+            data[key] = require(path.join(folderPath, file));
+        }
+    }
+    return data;
+}
+
+// 📂 Preload cars, tracks, packs
+const cars = loadFolder(path.join(__dirname, "../cars"));
+const tracks = loadFolder(path.join(__dirname, "../tracks"));
+const packs = loadFolder(path.join(__dirname, "../packs"));
+
 module.exports = {
     name: "startevent",
     aliases: ["launchevent"],
@@ -22,6 +46,7 @@ module.exports = {
     async execute(message, args) {
         const events = await eventModel.find({ isActive: false });
         let query = args.map(i => i.toLowerCase());
+
         await new Promise(resolve => resolve(search(message, query, events, "event")))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
@@ -39,12 +64,14 @@ module.exports = {
                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                 author: message.author
             });
+
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
                 const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true });
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 event.isActive = true;
+
                 if (event.deadline.length < 9) {
                     event.deadline = DateTime.now().plus({ days: parseInt(event.deadline) }).toISO();
                 }
@@ -55,21 +82,21 @@ module.exports = {
 
                 try {
                     let hudPromises = await Promise.all(event.roster.map(car => {
-                        let currentCar = require(`../cars/${car.carID}`);
+                        let currentCar = cars[car.carID];
                         return loadImage(currentCar["racehud"]);
                     }));
                     let mapPromises = await Promise.all(event.roster.map(track => {
-                        let currentTrack = require(`../tracks/${track.track}`);
+                        let currentTrack = tracks[track.track];
                         return loadImage(currentTrack["map"]);
                     }));
-                    let [moneyImage, fuseImage,
-                        trophyImage, carImage, packImage] = await Promise.all([
-                            loadImage(bot.emojis.cache.get(moneyEmojiID).url),
-                            loadImage(bot.emojis.cache.get(fuseEmojiID).url),
-                            loadImage(bot.emojis.cache.get(trophyEmojiID).url),
-                            loadImage(bot.emojis.cache.get(glofEmojiID).url),
-                            loadImage(bot.emojis.cache.get(packEmojiID).url)
-                        ]);
+                    let [moneyImage, fuseImage, trophyImage, carImage, packImage] = await Promise.all([
+                        loadImage(bot.emojis.cache.get(moneyEmojiID).url),
+                        loadImage(bot.emojis.cache.get(fuseEmojiID).url),
+                        loadImage(bot.emojis.cache.get(trophyEmojiID).url),
+                        loadImage(bot.emojis.cache.get(glofEmojiID).url),
+                        loadImage(bot.emojis.cache.get(packEmojiID).url)
+                    ]);
+
                     context.fillStyle = "#ffffff";
 
                     for (let i = 0; i < event.roster.length; i++) {
@@ -86,7 +113,7 @@ module.exports = {
 
                         let x = 0;
                         context.font = 'bold 38px "Roboto Condensed"';
-                        for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
+                        for (let [key, value] of Object.entries(event.roster[i].rewards)) {
                             let image;
                             switch (key) {
                                 case "money":
@@ -102,41 +129,25 @@ module.exports = {
                                     value = value.toLocaleString("en");
                                     break;
                                 case "car":
-                                    image = carImage
+                                    image = carImage;
                                     value = value.carID;
-                                    let car = require(`../cars/${value}`);
-                                    if (car["cr"] > 849) {
-                                        context.fillStyle = "#ffb80d";
-                                    }
-                                    else if (car["cr"] <= 849 && car["cr"] > 699) {
-                                        context.fillStyle = "#9e3fff";
-                                    }
-                                    else if (car["cr"] <= 699 && car["cr"] > 549) {
-                                        context.fillStyle = "#ff3639";
-                                    }
-                                    else if (car["cr"] <= 549 && car["cr"] > 399) {
-                                        context.fillStyle = "#ffd737";
-                                    }
-                                    else if (car["cr"] <= 399 && car["cr"] > 249) {
-                                        context.fillStyle = "37cdff";
-                                    }
-                                    else if (car["cr"] <= 249 && car["cr"] > 99) {
-                                        context.fillStyle = "#78ff53";
-                                    }
-                                    else {
-                                        context.fillStyle = "#aaaaaa";
-                                    }
+                                    let car = cars[value];
+                                    if (car["cr"] > 849) context.fillStyle = "#ffb80d";
+                                    else if (car["cr"] > 699) context.fillStyle = "#9e3fff";
+                                    else if (car["cr"] > 549) context.fillStyle = "#ff3639";
+                                    else if (car["cr"] > 399) context.fillStyle = "#ffd737";
+                                    else if (car["cr"] > 249) context.fillStyle = "#37cdff";
+                                    else if (car["cr"] > 99) context.fillStyle = "#78ff53";
+                                    else context.fillStyle = "#aaaaaa";
                                     break;
                                 case "pack":
-                                    image = packImage
-                                    let pack = require(`../packs/${value}`);
+                                    image = packImage;
+                                    let pack = packs[value];
                                     if (pack["packName"].toLowerCase().includes("elite")) {
                                         context.fillStyle = "#ff3639";
-                                    }
-                                    else if (pack["packName"].toLowerCase().includes("booster")) {
+                                    } else if (pack["packName"].toLowerCase().includes("booster")) {
                                         context.fillStyle = "#78ff53";
-                                    }
-                                    else {
+                                    } else {
                                         context.fillStyle = "#ffd737";
                                     }
                                     break;
@@ -162,8 +173,7 @@ module.exports = {
                                 context.fillText(line, baseX + 533, baseY + 77 + rowY);
                                 line = words[x] + " ";
                                 rowY += 25;
-                            }
-                            else {
+                            } else {
                                 line = reqString;
                             }
                         }
@@ -176,12 +186,12 @@ module.exports = {
                         let h = image.height * scale;
                         return { w, h };
                     }
-                }
-                catch (error) {
+                } catch (error) {
                     console.log(error);
                     attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "event.jpeg" });
                     cucked = true;
                 }
+
                 if (!cucked) {
                     attachment = new AttachmentBuilder(await canvas.encode("jpeg"), { name: "event.jpeg" });
                 }
@@ -191,20 +201,25 @@ module.exports = {
                     title: `Successfully started the ${event.name} event!`,
                     author: message.author,
                 });
+
                 await currentEventsChannel.send({
                     content: `**The ${event.name} event has officially started!**`,
                     files: [attachment]
                 });
 
-                for (let { userID } of playerDatum) {
-                    let user = await bot.homeGuild.members.fetch(userID)
-                        .catch(() => "unable to find user, next");
-                    
-                    if (typeof user !== "string") {
-                        await user.send(`**Notification: The ${event.name} event has officially started!**`)
-				            .catch(() => console.log(`unable to send notification to user ${userID}`));
+                // 🔕 Respect DEV_MODE to prevent mass DMs
+                if (!DEV_MODE) {
+                    for (let { userID } of playerDatum) {
+                        let user = await bot.homeGuild.members.fetch(userID).catch(() => "unable to find user, next");
+                        if (typeof user !== "string") {
+                            await user.send(`**Notification: The ${event.name} event has officially started!**`)
+                                .catch(() => console.log(`unable to send notification to user ${userID}`));
+                        }
                     }
+                } else {
+                    console.log(`[DEV_MODE] Skipping DM notifications for ${playerDatum.length} players.`);
                 }
+
                 await eventModel.updateOne({ eventID: event.eventID }, event);
                 return successMessage.sendMessage({ attachment, currentMessage });
             }
