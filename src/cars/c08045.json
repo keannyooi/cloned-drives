@@ -1,5 +1,5 @@
 {
-    "carID": "c0",
+    "carID": "c08045",
     "cr": 277,
     "make": "Mini",
     "model": "One Convertible",
@@ -10,7 +10,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Full Throttle"],
     "isPrize": false,
     "weight": 1235,
     "gc": "Medium",
@@ -43,5 +43,6 @@
 "9960to60": 9.3,
 "996Handling": 77,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MiniOneConvertible(2009).png",
-    "creator": "GAAN"
+    "creator": "GAAN",
+    "hiddenTag": [""]
 }
