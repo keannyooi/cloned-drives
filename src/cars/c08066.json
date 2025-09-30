@@ -1,0 +1,50 @@
+{
+    "carID": "c08066",
+    "cr": 954,
+    "make": ["Hennessey","Dodge"],
+    "model": "Challenger SRT Demon HPE1200",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 222,
+    "0to60": 2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car","Tuner"],
+    "isPrize": true,
+    "weight": 1950,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 105.26,
+    "ola": 90,
+    "description": "",
+	
+"333TopSpeed": 224,
+"3330to60": 1.9,
+"333Handling": 92,
+
+"666TopSpeed": 227,
+"6660to60": 1.8,
+"666Handling": 95,
+
+"699TopSpeed": 227,
+"6990to60": 1.7,
+"699Handling": 99,
+
+"969TopSpeed": 229,
+"9690to60": 1.8,
+"969Handling": 99,
+
+"996TopSpeed": 229,
+"9960to60": 1.7,
+"996Handling": 95,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyChallengerSRTDemonHPE1200(2018).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

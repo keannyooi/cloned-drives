@@ -1,0 +1,50 @@
+{
+    "carID": "c08109",
+    "cr": 236,
+    "make": "Plymouth",
+    "model": "Belvedere 361 Sedan",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 9.4,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.92,
+    "ola": 67.43,
+    "description": "",
+	
+"333TopSpeed": 110,
+"3330to60": 8.9,
+"333Handling": 61,
+
+"666TopSpeed": 115,
+"6660to60": 8.5,
+"666Handling": 63,
+
+"699TopSpeed": 115,
+"6990to60": 8,
+"699Handling": 65,
+
+"969TopSpeed": 120,
+"9690to60": 8.5,
+"969Handling": 65,
+
+"996TopSpeed": 120,
+"9960to60": 8,
+"996Handling": 63,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedere361Sedan(1965).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

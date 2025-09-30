@@ -1,0 +1,50 @@
+{
+    "carID": "c08075",
+    "cr": 282,
+    "make": "Jeep",
+    "model": "Cherokee 2.0 Multijet 140",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 11.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.65,
+    "ola": 69.95,
+    "description": "",
+	
+"333TopSpeed": 120,
+"3330to60": 10.6,
+"333Handling": 71,
+
+"666TopSpeed": 125,
+"6660to60": 10.1,
+"666Handling": 74,
+
+"699TopSpeed": 125,
+"6990to60": 9.5,
+"699Handling": 77,
+
+"969TopSpeed": 129,
+"9690to60": 10.1,
+"969Handling": 77,
+
+"996TopSpeed": 129,
+"9960to60": 9.5,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee2.0Multijet140(2014).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08053",
+    "cr": 493,
+    "make": ["Dodge","Shelby"],
+    "model": "Shelby Omni GLH-T Pro Rally",
+    "modelYear": 1985,
+    "country": "US",
+    "topSpeed": 122,
+    "0to60": 7.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown","Motorsport"],
+    "isPrize": false,
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.73,
+    "ola": 72.73,
+    "description": "",
+	
+"333TopSpeed": 126,
+"3330to60": 7.3,
+"333Handling": 72,
+
+"666TopSpeed": 131,
+"6660to60": 6.9,
+"666Handling": 75,
+
+"699TopSpeed": 131,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 135,
+"9690to60": 6.9,
+"969Handling": 78,
+
+"996TopSpeed": 135,
+"9960to60": 6.5,
+"996Handling": 75,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeShelbyOmniGLH-TProRally(1985).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

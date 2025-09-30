@@ -1,0 +1,50 @@
+{
+    "carID": "c08063",
+    "cr": 756,
+    "make": ["Geiger","Dodge"],
+    "model": "Charger SRT Hellcat",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 3.5,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car","Tuner"],
+    "isPrize": false,
+    "weight": 2070,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.22,
+    "ola": 97.14,
+    "description": "",
+	
+"333TopSpeed": 208,
+"3330to60": 3.3,
+"333Handling": 88,
+
+"666TopSpeed": 210,
+"6660to60": 3.1,
+"666Handling": 91,
+
+"699TopSpeed": 210,
+"6990to60": 3,
+"699Handling": 94,
+
+"969TopSpeed": 213,
+"9690to60": 3.1,
+"969Handling": 94,
+
+"996TopSpeed": 213,
+"9960to60": 3,
+"996Handling": 91,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/GeigerChargerSRTHellcat(2016).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

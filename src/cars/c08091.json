@@ -1,0 +1,50 @@
+{
+    "carID": "c08091",
+    "cr": 409,
+    "make": "Jeep",
+    "model": "Cherokee Overland Concept",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 10.4,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown"],
+    "isPrize": true,
+    "weight": 2000,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.7,
+    "ola": 63.46,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 9.9,
+"333Handling": 64,
+
+"666TopSpeed": 121,
+"6660to60": 9.4,
+"666Handling": 66,
+
+"699TopSpeed": 121,
+"6990to60": 8.8,
+"699Handling": 69,
+
+"969TopSpeed": 126,
+"9690to60": 9.4,
+"969Handling": 69,
+
+"996TopSpeed": 126,
+"9960to60": 8.8,
+"996Handling": 66,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokeeOverlandConcept(2011).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

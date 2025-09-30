@@ -1,0 +1,50 @@
+{
+    "carID": "c08125",
+    "cr": 94,
+    "make": "Plymouth",
+    "model": "Belvedere Station Wagon",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 92,
+    "0to60": 14.2,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 4.38,
+    "ola": 64.79,
+    "description": "",
+	
+"333TopSpeed": 98,
+"3330to60": 13.5,
+"333Handling": 57,
+
+"666TopSpeed": 103,
+"6660to60": 12.8,
+"666Handling": 59,
+
+"699TopSpeed": 103,
+"6990to60": 12.1,
+"699Handling": 61,
+
+"969TopSpeed": 109,
+"9690to60": 12.8,
+"969Handling": 61,
+
+"996TopSpeed": 109,
+"9960to60": 12.1,
+"996Handling": 59,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedereStationWagon(1965).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

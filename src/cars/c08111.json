@@ -1,0 +1,50 @@
+{
+    "carID": "c08111",
+    "cr": 277,
+    "make": "Plymouth",
+    "model": "Belvedere 383 Convertible",
+    "modelYear": 1967,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 8.3,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.53,
+    "ola": 82.27,
+    "description": "",
+	
+"333TopSpeed": 120,
+"3330to60": 7.9,
+"333Handling": 61,
+
+"666TopSpeed": 124,
+"6660to60": 7.5,
+"666Handling": 63,
+
+"699TopSpeed": 124,
+"6990to60": 7.1,
+"699Handling": 65,
+
+"969TopSpeed": 129,
+"9690to60": 7.5,
+"969Handling": 65,
+
+"996TopSpeed": 129,
+"9960to60": 7.1,
+"996Handling": 63,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedere383Convertible(1967).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

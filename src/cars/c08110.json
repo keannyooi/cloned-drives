@@ -1,0 +1,50 @@
+{
+    "carID": "c08110",
+    "cr": 202,
+    "make": "Plymouth",
+    "model": "Belvedere 361 Station Wagon",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 10,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1770,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.02,
+    "ola": 68.69,
+    "description": "",
+	
+"333TopSpeed": 110,
+"3330to60": 9.5,
+"333Handling": 59,
+
+"666TopSpeed": 115,
+"6660to60": 9,
+"666Handling": 61,
+
+"699TopSpeed": 115,
+"6990to60": 8.5,
+"699Handling": 63,
+
+"969TopSpeed": 120,
+"9690to60": 9,
+"969Handling": 63,
+
+"996TopSpeed": 120,
+"9960to60": 8.5,
+"996Handling": 61,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedere361StationWagon(1965).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08086",
+    "cr": 543,
+    "make": "Jeep",
+    "model": "Cherokee Dakar Concept",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 7.7,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown","Concept"],
+    "isPrize": false,
+    "weight": 1870,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.12,
+    "ola": 70.36,
+    "description": "",
+	
+"333TopSpeed": 119,
+"3330to60": 7.3,
+"333Handling": 71,
+
+"666TopSpeed": 123,
+"6660to60": 6.9,
+"666Handling": 74,
+
+"699TopSpeed": 123,
+"6990to60": 6.5,
+"699Handling": 77,
+
+"969TopSpeed": 128,
+"9690to60": 6.9,
+"969Handling": 77,
+
+"996TopSpeed": 128,
+"9960to60": 6.5,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokeeDakarConcept(2014).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

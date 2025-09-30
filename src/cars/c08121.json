@@ -1,0 +1,50 @@
+{
+    "carID": "c08121",
+    "cr": 245,
+    "make": "Plymouth",
+    "model": "Belvedere Satellite 361 Hardtop Coupe",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 9.3,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1580,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.37,
+    "ola": 66.67,
+    "description": "",
+	
+"333TopSpeed": 110,
+"3330to60": 8.8,
+"333Handling": 62,
+
+"666TopSpeed": 115,
+"6660to60": 8.4,
+"666Handling": 64,
+
+"699TopSpeed": 115,
+"6990to60": 7.9,
+"699Handling": 67,
+
+"969TopSpeed": 120,
+"9690to60": 8.4,
+"969Handling": 67,
+
+"996TopSpeed": 120,
+"9960to60": 7.9,
+"996Handling": 64,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedereSatellite361HardtopCoupe(1965).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08078",
+    "cr": 384,
+    "make": "Jeep",
+    "model": "Cherokee 2.2 Multijet",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 127,
+    "0to60": 8.6,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1830,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 49.42,
+    "ola": 72.94,
+    "description": "",
+	
+"333TopSpeed": 131,
+"3330to60": 8.2,
+"333Handling": 73,
+
+"666TopSpeed": 135,
+"6660to60": 7.7,
+"666Handling": 76,
+
+"699TopSpeed": 135,
+"6990to60": 7.3,
+"699Handling": 79,
+
+"969TopSpeed": 139,
+"9690to60": 7.7,
+"969Handling": 79,
+
+"996TopSpeed": 139,
+"9960to60": 7.3,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee2.2Multijet(2018).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

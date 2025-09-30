@@ -1,0 +1,50 @@
+{
+    "carID": "c08102",
+    "cr": 353,
+    "make": "Jeep",
+    "model": "Patriot",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 9.8,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1410,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 30.11,
+    "ola": 76.53,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 9.3,
+"333Handling": 69,
+
+"666TopSpeed": 121,
+"6660to60": 8.8,
+"666Handling": 71,
+
+"699TopSpeed": 121,
+"6990to60": 8.3,
+"699Handling": 74,
+
+"969TopSpeed": 126,
+"9690to60": 8.8,
+"969Handling": 74,
+
+"996TopSpeed": 126,
+"9960to60": 8.3,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepPatriot(2007).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

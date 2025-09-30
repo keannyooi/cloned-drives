@@ -1,0 +1,50 @@
+{
+    "carID": "c08108",
+    "cr": 120,
+    "make": "Plymouth",
+    "model": "Belvedere 273 Station Wagon",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 99,
+    "0to60": 12.6,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1710,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 31.91,
+    "ola": 73.35,
+    "description": "",
+	
+"333TopSpeed": 124,
+"3330to60": 12,
+"333Handling": 58,
+
+"666TopSpeed": 129,
+"6660to60": 11.3,
+"666Handling": 60,
+
+"699TopSpeed": 129,
+"6990to60": 10.7,
+"699Handling": 62,
+
+"969TopSpeed": 133,
+"9690to60": 11.3,
+"969Handling": 62,
+
+"996TopSpeed": 133,
+"9960to60": 10.7,
+"996Handling": 60,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedere273StationWagon(1965).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

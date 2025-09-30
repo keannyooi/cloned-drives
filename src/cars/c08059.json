@@ -1,0 +1,50 @@
+{
+    "carID": "c08059",
+    "cr": 788,
+    "make": ["Exomod","Dodge"],
+    "model": "C68 Carbon \"Chalkstorm\"",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 208,
+    "0to60": 3.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car","Tuner","RestoMod"],
+    "isPrize": false,
+    "weight": 2020,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 100,
+    "description": "",
+	
+"333TopSpeed": 211,
+"3330to60": 3.2,
+"333Handling": 91,
+
+"666TopSpeed": 213,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 213,
+"6990to60": 2.9,
+"699Handling": 98,
+
+"969TopSpeed": 216,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 216,
+"9960to60": 2.9,
+"996Handling": 94,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ExomodC68CarbonChalkstorm(2023).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08136",
+    "cr": 386,
+    "make": "Plymouth",
+    "model": "Road Runner 440-6 Convertible",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 6.1,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1850,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.22,
+    "ola": 88.52,
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 5.8,
+"333Handling": 68,
+
+"666TopSpeed": 133,
+"6660to60": 5.5,
+"666Handling": 70,
+
+"699TopSpeed": 133,
+"6990to60": 5.2,
+"699Handling": 73,
+
+"969TopSpeed": 137,
+"9690to60": 5.5,
+"969Handling": 73,
+
+"996TopSpeed": 137,
+"9960to60": 5.2,
+"996Handling": 70,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthRoadRunner440-6Convertible(1970).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08138",
+    "cr": 421,
+    "make": "Plymouth",
+    "model": "Road Runner Superbird",
+    "modelYear": 1969,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 6,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1660,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.31,
+    "ola": 86.67,
+    "description": "",
+	
+"333TopSpeed": 149,
+"3330to60": 5.7,
+"333Handling": 70,
+
+"666TopSpeed": 152,
+"6660to60": 5.4,
+"666Handling": 72,
+
+"699TopSpeed": 152,
+"6990to60": 5.1,
+"699Handling": 75,
+
+"969TopSpeed": 156,
+"9690to60": 5.4,
+"969Handling": 75,
+
+"996TopSpeed": 156,
+"9960to60": 5.1,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthRoadRunnerSuperBird(1969).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

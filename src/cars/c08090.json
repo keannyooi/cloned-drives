@@ -1,0 +1,50 @@
+{
+    "carID": "c08090",
+    "cr": 352,
+    "make": "Jeep",
+    "model": "Cherokee 3.7",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 10.2,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1880,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.13,
+    "ola": 70.67,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 9.7,
+"333Handling": 66,
+
+"666TopSpeed": 121,
+"6660to60": 9.2,
+"666Handling": 68,
+
+"699TopSpeed": 121,
+"6990to60": 8.7,
+"699Handling": 71,
+
+"969TopSpeed": 126,
+"9690to60": 9.2,
+"969Handling": 71,
+
+"996TopSpeed": 126,
+"9960to60": 8.7,
+"996Handling": 68,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee3.7(2008).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08092",
+    "cr": 277,
+    "make": "Jeep",
+    "model": "Cherokee Pioneer",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 101,
+    "0to60": 12.8,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1900,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 26.94,
+    "ola": 61.26,
+    "description": "",
+	
+"333TopSpeed": 106,
+"3330to60": 12.2,
+"333Handling": 64,
+
+"666TopSpeed": 111,
+"6660to60": 11.5,
+"666Handling": 66,
+
+"699TopSpeed": 111,
+"6990to60": 10.9,
+"699Handling": 69,
+
+"969TopSpeed": 116,
+"9690to60": 11.5,
+"969Handling": 69,
+
+"996TopSpeed": 116,
+"9960to60": 10.9,
+"996Handling": 66,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokeePioneer(2004).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

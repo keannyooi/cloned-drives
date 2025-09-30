@@ -1,0 +1,50 @@
+{
+    "carID": "c08099",
+    "cr": 462,
+    "make": "Jeep",
+    "model": "Commander 5.7 Hemi",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 6.9,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2290,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.08,
+    "ola": 72.46,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 6.6,
+"333Handling": 69,
+
+"666TopSpeed": 121,
+"6660to60": 6.2,
+"666Handling": 71,
+
+"699TopSpeed": 121,
+"6990to60": 5.9,
+"699Handling": 74,
+
+"969TopSpeed": 126,
+"9690to60": 6.2,
+"969Handling": 74,
+
+"996TopSpeed": 126,
+"9960to60": 5.9,
+"996Handling": 71,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCommander5.7Hemi(2006).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

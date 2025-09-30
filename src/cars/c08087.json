@@ -1,0 +1,50 @@
+{
+    "carID": "c08087",
+    "cr": 540,
+    "make": "Jeep",
+    "model": "Cherokee Trailhawk 3.2",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 7.7,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1860,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.12,
+    "ola": 70.36,
+    "description": "",
+	
+"333TopSpeed": 119,
+"3330to60": 7.3,
+"333Handling": 70,
+
+"666TopSpeed": 123,
+"6660to60": 6.9,
+"666Handling": 72,
+
+"699TopSpeed": 123,
+"6990to60": 6.5,
+"699Handling": 75,
+
+"969TopSpeed": 128,
+"9690to60": 6.9,
+"969Handling": 75,
+
+"996TopSpeed": 128,
+"9960to60": 6.5,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokeeTrailhawk3.2(2014).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

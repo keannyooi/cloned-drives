@@ -1,0 +1,50 @@
+{
+    "carID": "c08064",
+    "cr": 650,
+    "make": ["Hennessey","Dodge"],
+    "model": "Challenger SRT8 392 HPE500",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 186,
+    "0to60": 4.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car","Tuner"],
+    "isPrize": false,
+    "weight": 1900,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.77,
+    "ola": 80.95,
+    "description": "",
+	
+"333TopSpeed": 189,
+"3330to60": 4,
+"333Handling": 84,
+
+"666TopSpeed": 192,
+"6660to60": 3.8,
+"666Handling": 86,
+
+"699TopSpeed": 192,
+"6990to60": 3.6,
+"699Handling": 90,
+
+"969TopSpeed": 194,
+"9690to60": 3.8,
+"969Handling": 90,
+
+"996TopSpeed": 194,
+"9960to60": 3.6,
+"996Handling": 86,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyChallengerSRT8392HPE500(2012).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

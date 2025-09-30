@@ -1,0 +1,50 @@
+{
+    "carID": "c08061",
+    "cr": 750,
+    "make": ["Exomod","Dodge"],
+    "model": "D68 Carbon Daytona",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 203,
+    "0to60": 3.7,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car","Tuner","RestoMod"],
+    "isPrize": false,
+    "weight": 2020,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 97.3,
+    "description": "",
+	
+"333TopSpeed": 206,
+"3330to60": 3.5,
+"333Handling": 90,
+
+"666TopSpeed": 208,
+"6660to60": 3.3,
+"666Handling": 93,
+
+"699TopSpeed": 208,
+"6990to60": 3.1,
+"699Handling": 97,
+
+"969TopSpeed": 211,
+"9690to60": 3.3,
+"969Handling": 97,
+
+"996TopSpeed": 211,
+"9960to60": 3.1,
+"996Handling": 93,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ExomodD69CarbonDaytona(2023).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

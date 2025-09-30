@@ -1,0 +1,50 @@
+{
+    "carID": "c08081",
+    "cr": 354,
+    "make": "Jeep",
+    "model": "Cherokee 2.4",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 118,
+    "0to60": 9.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1660,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.88,
+    "ola": 65.26,
+    "description": "",
+	
+"333TopSpeed": 122,
+"3330to60": 9,
+"333Handling": 73,
+
+"666TopSpeed": 127,
+"6660to60": 8.6,
+"666Handling": 76,
+
+"699TopSpeed": 127,
+"6990to60": 8.1,
+"699Handling": 79,
+
+"969TopSpeed": 131,
+"9690to60": 8.6,
+"969Handling": 79,
+
+"996TopSpeed": 131,
+"9960to60": 8.1,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee2.4(2014).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

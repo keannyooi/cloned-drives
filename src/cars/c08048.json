@@ -1,0 +1,50 @@
+{
+    "carID": "c08048",
+    "cr": 597,
+    "make": "DMC",
+    "model": "DeLorean EV Prototype",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 4.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Eco-Friendly","RestoMod"],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 56.32,
+    "ola": 77.55,
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 4.7,
+"333Handling": 82,
+
+"666TopSpeed": 133,
+"6660to60": 4.4,
+"666Handling": 84,
+
+"699TopSpeed": 133,
+"6990to60": 4.2,
+"699Handling": 88,
+
+"969TopSpeed": 137,
+"9690to60": 4.4,
+"969Handling": 88,
+
+"996TopSpeed": 137,
+"9960to60": 4.2,
+"996Handling": 84,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DMCDeLoreanEVPrototype(2011).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

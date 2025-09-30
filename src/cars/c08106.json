@@ -1,0 +1,50 @@
+{
+    "carID": "c08106",
+    "cr": 327,
+    "make": "Jeep",
+    "model": "Renegade 1.3 T4",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 122,
+    "0to60": 9.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.13,
+    "ola": 75.61,
+    "description": "",
+	
+"333TopSpeed": 126,
+"3330to60": 8.6,
+"333Handling": 72,
+
+"666TopSpeed": 131,
+"6660to60": 8.2,
+"666Handling": 75,
+
+"699TopSpeed": 131,
+"6990to60": 7.7,
+"699Handling": 78,
+
+"969TopSpeed": 135,
+"9690to60": 8.2,
+"969Handling": 78,
+
+"996TopSpeed": 135,
+"9960to60": 7.7,
+"996Handling": 75,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepRenegade1.3T4(2019).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

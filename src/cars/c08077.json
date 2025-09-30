@@ -1,0 +1,50 @@
+{
+    "carID": "c08077",
+    "cr": 349,
+    "make": "Jeep",
+    "model": "Cherokee 2.0 Multijet 170 4x4",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 9.9,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 1880,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 39.44,
+    "ola": 64.65,
+    "description": "",
+	
+"333TopSpeed": 123,
+"3330to60": 9.4,
+"333Handling": 71,
+
+"666TopSpeed": 128,
+"6660to60": 8.9,
+"666Handling": 74,
+
+"699TopSpeed": 128,
+"6990to60": 8.4,
+"699Handling": 77,
+
+"969TopSpeed": 132,
+"9690to60": 8.9,
+"969Handling": 77,
+
+"996TopSpeed": 132,
+"9960to60": 8.4,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee2.0Multijet1704x4(2014).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

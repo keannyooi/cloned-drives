@@ -1,0 +1,50 @@
+{
+    "carID": "c08096",
+    "cr": 410,
+    "make": "Jeep",
+    "model": "Commander 3.0 CRD",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 8.7,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Liberty Showdown"],
+    "isPrize": false,
+    "weight": 2355,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 41.18,
+    "ola": 61.54,
+    "description": "",
+	
+"333TopSpeed": 129,
+"3330to60": 8.3,
+"333Handling": 66,
+
+"666TopSpeed": 133,
+"6660to60": 7.8,
+"666Handling": 68,
+
+"699TopSpeed": 133,
+"6990to60": 7.4,
+"699Handling": 71,
+
+"969TopSpeed": 137,
+"9690to60": 7.8,
+"969Handling": 71,
+
+"996TopSpeed": 137,
+"9960to60": 7.4,
+"996Handling": 68,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCommander3.0CRD(2006).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}

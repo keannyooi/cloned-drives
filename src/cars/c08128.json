@@ -1,0 +1,50 @@
+{
+    "carID": "c08128",
+    "cr": 480,
+    "make": "Plymouth",
+    "model": "GTX 426 Hemi",
+    "modelYear": 1969,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 5.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Liberty Showdown","Muscle Car"],
+    "isPrize": false,
+    "weight": 1810,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.65,
+    "ola": 90.57,
+    "description": "",
+	
+"333TopSpeed": 140,
+"3330to60": 5,
+"333Handling": 70,
+
+"666TopSpeed": 144,
+"6660to60": 4.8,
+"666Handling": 72,
+
+"699TopSpeed": 144,
+"6990to60": 4.5,
+"699Handling": 75,
+
+"969TopSpeed": 147,
+"9690to60": 4.8,
+"969Handling": 75,
+
+"996TopSpeed": 147,
+"9960to60": 4.5,
+"996Handling": 72,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthGTX426Hemi(1969).png",
+    "creator": "DodgeDemon",
+	"hiddenTag": [""]
+}
