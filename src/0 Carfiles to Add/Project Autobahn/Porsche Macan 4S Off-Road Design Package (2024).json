@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 836,
+    "make": "Porsche",
+    "model": "Macan 4S Off-Road Design Package",
+    "modelYear": 2024,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 4,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2350,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 71.25,
+    "ola": 75,
+    "description": "",
+	
+"333TopSpeed": 152,
+"3330to60": 3.8,
+"333Handling": 87,
+
+"666TopSpeed": 156,
+"6660to60": 3.6,
+"666Handling": 90,
+
+"699TopSpeed": 156,
+"6990to60": 3.4,
+"699Handling": 93,
+
+"969TopSpeed": 159,
+"9690to60": 3.6,
+"969Handling": 93,
+
+"996TopSpeed": 159,
+"9960to60": 3.4,
+"996Handling": 90,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PorscheMacan4SOff(2024).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

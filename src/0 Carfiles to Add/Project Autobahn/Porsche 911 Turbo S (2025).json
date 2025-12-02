@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 991,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "modelYear": 2025,
+    "country": "DE",
+    "topSpeed": 200,
+    "0to60": 2.3,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+    "weight": 1725,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 94.15,
+    "ola": 73.64,
+    "description": "",
+	
+"333TopSpeed": 203,
+"3330to60": 2.2,
+"333Handling": 97,
+
+"666TopSpeed": 205,
+"6660to60": 2.1,
+"666Handling": 100,
+
+"699TopSpeed": 205,
+"6990to60": 2,
+"699Handling": 104,
+
+"969TopSpeed": 208,
+"9690to60": 2.1,
+"969Handling": 104,
+
+"996TopSpeed": 208,
+"9960to60": 2,
+"996Handling": 100,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Porsche911TurboS(2025).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

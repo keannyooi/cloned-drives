@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 731,
+    "make": "Porsche",
+    "model": "911 Carrera Club Coupe",
+    "modelYear": 2026,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 4.2,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 86.49,
+    "ola": 79.12,
+    "description": "",
+	
+"333TopSpeed": 186,
+"3330to60": 4,
+"333Handling": 94,
+
+"666TopSpeed": 189,
+"6660to60": 3.8,
+"666Handling": 97,
+
+"699TopSpeed": 189,
+"6990to60": 3.6,
+"699Handling": 101,
+
+"969TopSpeed": 192,
+"9690to60": 3.8,
+"969Handling": 101,
+
+"996TopSpeed": 192,
+"9960to60": 3.6,
+"996Handling": 97,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Porsche911CarreraClubCoupe(2026).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}
