@@ -1,11 +1,11 @@
 {
     "carID": "c03354",
-    "cr": 327,
+    "cr": 326,
     "make": "Dodge",
-    "model": "Dart Limited 1.4T",
+    "model": "Dart 1.4T",
     "modelYear": 2013,
     "country": "US",
-    "topSpeed": 120,
+    "topSpeed": 119,
     "0to60": 8.2,
     "handling": 75,
     "driveType": "FWD",
@@ -13,7 +13,7 @@
     "tags": ["The Americas Assault"],
     "isPrize": false,
     
-    "weight": 1478,
+    "weight": 1480,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -24,26 +24,26 @@
     "mra": 55.41,
     "ola": 68.29,
     "description": "Tailoring for America.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DodgeDartLimited1.4T(2013).png",
-    "creator": "Biszkoptowiec",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeDart1.4T(2013).png",
+    "creator": "DodgeDemon",
 
-    "333TopSpeed": 124,
+    "333TopSpeed": 123,
     "3330to60": 7.8,
     "333Handling": 77,
 
-    "666TopSpeed": 129,
+    "666TopSpeed": 128,
     "6660to60": 7.4,
     "666Handling": 80,
 
-    "996TopSpeed": 133,
+    "996TopSpeed": 132,
     "9960to60": 7.0,
     "996Handling": 80,
 
-    "969TopSpeed": 133,
+    "969TopSpeed": 132,
     "9690to60": 7.4,
     "969Handling": 83,
 
-    "699TopSpeed": 129,
+    "699TopSpeed": 128,
     "6990to60": 7.0,
     "699Handling": 83,
     "hiddenTag": [""]

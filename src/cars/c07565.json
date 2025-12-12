@@ -1,11 +1,11 @@
 {
     "carID": "c07565",
-    "cr": 1003,
+    "cr": 1022,
     "make": "Hennessey",
     "model": "Venom F5 Revolution Roadster",
     "modelYear": 2023,
     "country": "US",
-    "topSpeed": 250,
+    "topSpeed": 280,
     "0to60": 2.5,
     "handling": 96,
     "driveType": "RWD",
@@ -20,32 +20,32 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 145.35,
-    "ola": 94.40,
+    "mra": 151.52,
+    "ola": 103.62,
 	
     "description": "",
 	
-"333TopSpeed": 252,
+"333TopSpeed": 282,
 "3330to60": 2.4,
 "333Handling": 99,
 
-"666TopSpeed": 254,
+"666TopSpeed": 284,
 "6660to60": 2.3,
 "666Handling": 102,
 
-"699TopSpeed": 254,
+"699TopSpeed": 284,
 "6990to60": 2.1,
 "699Handling": 107,
 
-"969TopSpeed": 256,
+"969TopSpeed": 286,
 "9690to60": 2.3,
 "969Handling": 107,
 
-"996TopSpeed": 256,
+"996TopSpeed": 286,
 "9960to60": 2.1,
 "996Handling": 102,
 	
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5RevolutionRoadster(2023).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5RevolutionRoadster(2023)2.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

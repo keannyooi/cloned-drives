@@ -1,12 +1,12 @@
 {
     "carID": "c07566",
-    "cr": 948,
+    "cr": 1023,
     "make": "Hennessey",
     "model": "Venom F5-M Roadster",
     "modelYear": 2024,
     "country": "US",
     "topSpeed": 311,
-    "0to60": 3.3,
+    "0to60": 2.6,
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -20,8 +20,8 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 150,
-    "ola": 103.03,
+    "mra": 165,
+    "ola": 107.69,
 	
     "description": "",
 	
@@ -45,7 +45,7 @@
 "9960to60": 2.8,
 "996Handling": 100,
 	
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5MRoadster(2024).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5MRoadster(2024)2.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

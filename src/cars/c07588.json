@@ -1,13 +1,13 @@
 {
     "carID": "c07588",
-    "cr": 525,
+    "cr": 533,
     "make": "Saturn",
     "model": "VUE Red Line",
     "modelYear": 2004,
     "country": "US",
     "topSpeed": 130,
     "0to60": 7.0,
-    "handling": 67,
+    "handling": 69,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Liberty Showdown","Street Racer"],
@@ -45,7 +45,7 @@
 "9960to60": 6,
 "996Handling": 71,
 	
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnVUERedLine(2004).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnVUERedLine.png",
     "creator": "GAAN",
     "hiddenTag": [""]
 }

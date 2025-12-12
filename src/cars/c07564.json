@@ -1,6 +1,6 @@
 {
     "carID": "c07564",
-    "cr": 1051,
+    "cr": 1057,
     "make": "Hennessey",
     "model": "Venom F5 Evolution",
     "modelYear": 2024,
@@ -20,8 +20,8 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 154.84,
-    "ola": 95.83,
+    "mra": 171.43,
+    "ola": 100,
 	
     "description": "",
 	
@@ -45,7 +45,7 @@
 "9960to60": 2,
 "996Handling": 101,
 	
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Evolution(2025).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Evolution(2024).png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

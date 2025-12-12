@@ -1,22 +1,16 @@
 {
     "carID": "c01185",
-    "cr": 712,
-    "make": [
-        "Stielow Engineering",
-        "Chevrolet"
-    ],
+    "cr": 692,
+    "make": ["Stielow Engineering","Chevrolet"],
     "model": "Red Devil",
     "modelYear": 2011,
     "country": "US",
     "topSpeed": 193,
     "0to60": 4.1,
-    "handling": 88,
+    "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Tuner", "Year of the Rabbit"
-    ],
+    "tags": ["Muscle Car","Tuner","RestoMod"],
     "isPrize": false,
     "weight": 1632,
     "gc": "Low",
@@ -28,23 +22,27 @@
     "fuelType": "Petrol",
     "mra": 110.81,
     "ola": 105.81,
-    "description": "A '69 camaro on steroids.",
-     "333TopSpeed": 196,
-    "3330to60": 3.9,
-    "333Handling": 91,
-    "666TopSpeed": 198,
-    "6660to60": 3.7,
-    "666Handling": 94,
-    "996TopSpeed": 201,
-    "9960to60": 3.5,
-    "996Handling": 94,
-    "969TopSpeed": 201,
-    "9690to60": 3.7,
-    "969Handling": 98,
-    "699TopSpeed": 198,
-    "6990to60": 3.5,
-    "699Handling": 98,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/StielowEngineeringRedDevil(2011).png",
+    "description": "",
+"333TopSpeed": 196,
+"3330to60": 3.9,
+"333Handling": 88,
+
+"666TopSpeed": 198,
+"6660to60": 3.7,
+"666Handling": 91,
+
+"699TopSpeed": 198,
+"6990to60": 3.5,
+"699Handling": 94,
+
+"969TopSpeed": 201,
+"9690to60": 3.7,
+"969Handling": 94,
+
+"996TopSpeed": 201,
+"9960to60": 3.5,
+"996Handling": 91,
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/StielowEngineeringRedDevil(2011).png",
     "creator": "Johnny",
-    "hiddenTag": [""]
+	"hiddenTag": [""]
 }

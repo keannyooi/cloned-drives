@@ -1,20 +1,16 @@
 {
     "carID": "c00474",
-    "cr": 673,
+    "cr": 689,
     "make": "Ford",
     "model": "Mustang GT",
     "modelYear": 2015,
     "country": "US",
-    "topSpeed": 160,
+    "topSpeed": 164,
     "0to60": 4.6,
-    "handling": 83,
+    "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Silver Screen",
-        "Style Icon",
-        "Muscle Car","OG"
-    ],
+    "tags": ["Silver Screen","Style Icon","Muscle Car","OG"],
     "isPrize": false,
     "weight": 1728,
     "gc": "Medium",
@@ -26,23 +22,30 @@
     "fuelType": "Petrol",
     "mra": 76.27,
     "ola": 93.33,
-    "description": "Pony car cure for a broken heart.",
-     "333TopSpeed": 163,
-    "3330to60": 4.4,
-    "333Handling": 86,
-    "666TopSpeed": 167,
-    "6660to60": 4.1,
-    "666Handling": 88,
-    "996TopSpeed": 170,
-    "9960to60": 3.9,
-    "996Handling": 88,
-    "969TopSpeed": 170,
-    "9690to60": 4.1,
-    "969Handling": 92,
-    "699TopSpeed": 167,
-    "6990to60": 3.9,
-    "699Handling": 92,
-    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangGT(2015).png",
-    "creator": "Keanny",
+
+    "description": "",
+
+"333TopSpeed": 167,
+"3330to60": 4.4,
+"333Handling": 88,
+
+"666TopSpeed": 170,
+"6660to60": 4.1,
+"666Handling": 91,
+
+"699TopSpeed": 170,
+"6990to60": 3.9,
+"699Handling": 94,
+
+"969TopSpeed": 174,
+"9690to60": 4.1,
+"969Handling": 94,
+
+"996TopSpeed": 174,
+"9960to60": 3.9,
+"996Handling": 91,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangGT(2015).png",
+    "creator": "Bnuuy",
     "hiddenTag": [""]
 }
