@@ -1,0 +1,77 @@
+{
+    "packName": "2007 Elite Pack",
+    "description": "The normal pack of 5 Rare or Higher cards",
+	"repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 2007,
+            "end": 2007
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        }
+    ]
+}

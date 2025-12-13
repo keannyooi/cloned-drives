@@ -1,0 +1,78 @@
+{
+    "packName": "XMAS Pack 2025",
+    "description": "Merry XMAS from the team at CD!",
+    "price": 202567,
+	"repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 2020,
+            "end": 2025
+        },
+        "country": "None",
+        "tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 1,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 20,
+			"exotic": 60,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 6,
+			"legendary": 0.9,
+			"mystic": 0.1
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"epic": 50,
+			"exotic": 50,
+			"legendary": 0,
+			"mystic": 0
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 20,
+			"epic": 73,
+			"exotic": 5.8,
+			"legendary": 1,
+			"mystic": 0.2
+        }
+    ]
+}
