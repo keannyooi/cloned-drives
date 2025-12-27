@@ -1,0 +1,18 @@
+{
+	"trackName": "Las Vegas F1 Circuit (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/aFBkIPmb4DlYDcyR/TrackBG/LVsunny.png",
+	"map": "https://file.garden/aFBkIPmb4DlYDcyR/TrackM/LasVegasGP.png",
+	
+  "specsDistr": {
+    "topSpeed": 90,
+    "0to60": 30,
+    "handling": 55,
+    "weight": 3,
+    "mra": 85,
+    "ola": 15
+	}
+}

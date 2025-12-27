@@ -1,0 +1,18 @@
+{
+	"trackName": "Talladega International Motor Speedway (Sunny)",
+	"weather": "Sunny",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/aFBkIPmb4DlYDcyR/TrackBG/dega.png",
+	"map": "https://file.garden/aFBkIPmb4DlYDcyR/TrackM/TalladegaSS.png",
+	
+  "specsDistr": {
+    "topSpeed": 100,
+    "0to60": 1,
+    "handling": 25,
+    "weight": 0,
+    "mra": 100,
+    "ola": 5
+	}
+}

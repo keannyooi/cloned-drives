@@ -1,0 +1,18 @@
+{
+	"trackName": "Indianapolis Motor Speedway (Rainy)",
+	"weather": "Rainy",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/aFBkIPmb4DlYDcyR/TrackBG/IndyRainy.png",
+	"map": "https://file.garden/aFBkIPmb4DlYDcyR/TrackM/IndySS.png",
+	
+  "specsDistr": {
+    "topSpeed": 90,
+    "0to60": 5,
+    "handling": 40,
+    "weight": 0,
+    "mra": 95,
+    "ola": 10
+	}
+}
