@@ -1,0 +1,50 @@
+{
+    "carID": "c08204",
+    "cr": 751,
+    "make": ["Ruf","Porsche"],
+    "model": "3800 S",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Full Throttle"],
+    "isPrize": false,
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 86.74,
+    "ola": 89.72,
+    "description": "",
+	
+"333TopSpeed": 189,
+"3330to60": 3.6,
+"333Handling": 91,
+
+"666TopSpeed": 192,
+"6660to60": 3.4,
+"666Handling": 94,
+
+"699TopSpeed": 192,
+"6990to60": 3.2,
+"699Handling": 98,
+
+"969TopSpeed": 194,
+"9690to60": 3.4,
+"969Handling": 98,
+
+"996TopSpeed": 194,
+"9960to60": 3.2,
+"996Handling": 94,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ruf3800S(2013).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}
