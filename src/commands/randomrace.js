@@ -113,9 +113,10 @@ module.exports = {
                             }
                             message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${crBonus} low cr bonus${bmBonus !== 0 ? ` and ${moneyEmoji}${bmBonus} black market car bonus` : ""})! Claim your reward using \`cd-rewards\`.**`);
                         }
-                        else if (result < 0) {
-                            streak = 0;
-                        }
+							else if (result < 0) {
+							streak = Math.floor(streak * 0.49);
+						}
+
                         if (streak > highestStreak) {
                             highestStreak = streak;
                         }
