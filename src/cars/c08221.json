@@ -1,0 +1,51 @@
+{
+    "carID": "c08221",
+    "cr": 484,
+    "make": "Lexus",
+    "model": "LS 430 Ultra Luxury",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 6.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1895,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.61,
+    "ola": 79.19,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 6.4,
+"333Handling": 77,
+
+"666TopSpeed": 162,
+"6660to60": 6,
+"666Handling": 80,
+
+"699TopSpeed": 162,
+"6990to60": 5.7,
+"699Handling": 83,
+
+"969TopSpeed": 165,
+"9690to60": 6,
+"969Handling": 83,
+
+"996TopSpeed": 165,
+"9960to60": 5.7,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLS430UltraLuxury(2001).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

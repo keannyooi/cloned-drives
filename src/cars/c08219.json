@@ -1,0 +1,51 @@
+{
+    "carID": "c08219",
+    "cr": 503,
+    "make": "Toyota",
+    "model": "Land Cruiser 300 3.3d V6 Twin Turbo VX Limited",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 7.2,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 2630,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 56.25,
+    "ola": 58.33,
+
+    "description": "",
+
+"333TopSpeed": 134,
+"3330to60": 6.8,
+"333Handling": 70,
+
+"666TopSpeed": 138,
+"6660to60": 6.5,
+"666Handling": 72,
+
+"699TopSpeed": 138,
+"6990to60": 6.1,
+"699Handling": 75,
+
+"969TopSpeed": 142,
+"9690to60": 6.5,
+"969Handling": 75,
+
+"996TopSpeed": 142,
+"9960to60": 6.1,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ToyotaLandCruiser33dV6TwinTurboVXLimited(2021).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

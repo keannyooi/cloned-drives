@@ -1,0 +1,51 @@
+{
+    "carID": "c08226",
+    "cr": 99,
+    "make": "Triumph",
+    "model": "TR7 Drophead",
+    "modelYear": 1979,
+    "country": "GB",
+    "topSpeed": 110,
+    "0to60": 11,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1088,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.76,
+    "ola": 69.88,
+
+    "description": "Now available with 93 million miles of headroom.",
+
+"333TopSpeed": 115,
+"3330to60": 10.4,
+"333Handling": 71,
+
+"666TopSpeed": 119,
+"6660to60": 9.9,
+"666Handling": 74,
+
+"699TopSpeed": 119,
+"6990to60": 9.3,
+"699Handling": 77,
+
+"969TopSpeed": 124,
+"9690to60": 9.9,
+"969Handling": 77,
+
+"996TopSpeed": 124,
+"9960to60": 9.3,
+"996Handling": 74,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TriumphTR7Drophead(1979).png",
+    "creator": "Hastur",
+    "hiddenTag": [""]
+}
