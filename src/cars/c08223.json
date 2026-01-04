@@ -1,0 +1,51 @@
+{
+    "carID": "c08223",
+    "cr": 390,
+    "make": "Hyundai",
+    "model": "IONIQ 5 Standard Range Walk",
+    "modelYear": 2021,
+    "country": "KR",
+    "topSpeed": 115,
+    "0to60": 8.2,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle","Eco-Friendly","Rest of The World"],
+    "isPrize": false,
+    "weight": 1800,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 45.56,
+    "ola": 81.50,
+
+    "description": "I would rather walk.",
+
+"333TopSpeed": 120,
+"3330to60": 7.8,
+"333Handling": 82,
+
+"666TopSpeed": 124,
+"6660to60": 7.4,
+"666Handling": 84,
+
+"699TopSpeed": 124,
+"6990to60": 7,
+"699Handling": 88,
+
+"969TopSpeed": 129,
+"9690to60": 7.4,
+"969Handling": 88,
+
+"996TopSpeed": 129,
+"9960to60": 7,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HyundaiIoniq5StandardRangeWalk(2021).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

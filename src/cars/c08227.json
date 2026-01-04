@@ -1,0 +1,51 @@
+{
+    "carID": "c08227",
+    "cr": 89,
+    "make": ["Crayford", "Triumph"],
+    "model": "TR7 Tracer",
+    "modelYear": 1977,
+    "country": "GB",
+    "topSpeed": 107,
+    "0to60": 11.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle", "Oddity", "Unique"],
+    "isPrize": false,
+    "weight": 1115,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.79,
+    "ola": 66.07,
+
+    "description": "I LOVE MY TR7!",
+
+"333TopSpeed": 112,
+"3330to60": 10.7,
+"333Handling": 70,
+
+"666TopSpeed": 117,
+"6660to60": 10.2,
+"666Handling": 72,
+
+"699TopSpeed": 117,
+"6990to60": 9.6,
+"699Handling": 75,
+
+"969TopSpeed": 122,
+"9690to60": 10.2,
+"969Handling": 75,
+
+"996TopSpeed": 122,
+"9960to60": 9.6,
+"996Handling": 72,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/CrayfordTR7Tracer(1977).png",
+    "creator": "Hastur",
+    "hiddenTag": [""]
+}
