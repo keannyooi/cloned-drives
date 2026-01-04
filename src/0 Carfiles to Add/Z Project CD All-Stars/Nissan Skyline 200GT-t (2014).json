@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 484,
+    "make": "Nissan",
+    "model": "Skyline 200GT-t",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.9,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 74.25,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 6.6,
+"333Handling": 84,
+
+"666TopSpeed": 121,
+"6660to60": 6.2,
+"666Handling": 86,
+
+"699TopSpeed": 121,
+"6990to60": 5.9,
+"699Handling": 90,
+
+"969TopSpeed": 126,
+"9690to60": 6.2,
+"969Handling": 90,
+
+"996TopSpeed": 126,
+"9960to60": 5.9,
+"996Handling": 86,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanSkyline200GTt(2014).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

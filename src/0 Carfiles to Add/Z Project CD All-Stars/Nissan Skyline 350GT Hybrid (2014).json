@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 680,
+    "make": "Nissan",
+    "model": "Skyline 350GT Hybrid",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1780,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 63.54,
+    "ola": 79.2,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 4.7,
+"333Handling": 86,
+
+"666TopSpeed": 121,
+"6660to60": 4.4,
+"666Handling": 88,
+
+"699TopSpeed": 121,
+"6990to60": 4.2,
+"699Handling": 92,
+
+"969TopSpeed": 126,
+"9690to60": 4.4,
+"969Handling": 92,
+
+"996TopSpeed": 126,
+"9960to60": 4.2,
+"996Handling": 88,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanSkyline350GTHybrid(2014).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

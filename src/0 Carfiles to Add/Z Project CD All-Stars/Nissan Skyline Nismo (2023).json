@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 684,
+    "make": "Nissan",
+    "model": "Skyline Nismo",
+    "modelYear": 2023,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.4,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.66,
+    "ola": 84.69,
+    "description": "The Nissan Skyline Nismo has the same tuned engine as the Nissan Z Nismo and even gets the same Recaro seats. Limited to 1000 cars, this made up 70% of Skylines sold in japan for 2023 & 2024",
+	
+"333TopSpeed": 117,
+"3330to60": 4.2,
+"333Handling": 89,
+
+"666TopSpeed": 121,
+"6660to60": 4,
+"666Handling": 92,
+
+"699TopSpeed": 121,
+"6990to60": 3.7,
+"699Handling": 95,
+
+"969TopSpeed": 126,
+"9690to60": 4,
+"969Handling": 95,
+
+"996TopSpeed": 126,
+"9960to60": 3.7,
+"996Handling": 92,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanSkylineNismo(2023).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

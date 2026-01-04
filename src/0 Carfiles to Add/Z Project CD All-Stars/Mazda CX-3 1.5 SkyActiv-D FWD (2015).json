@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 360,
+    "make": "Mazda",
+    "model": "CX-3 1.5 SkyActiv-D FWD",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 110,
+    "0to60": 9.7,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1215,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 60.62,
+    "ola": 65.97,
+    "description": "",
+	
+"333TopSpeed": 115,
+"3330to60": 9.2,
+"333Handling": 80,
+
+"666TopSpeed": 119,
+"6660to60": 8.7,
+"666Handling": 82,
+
+"699TopSpeed": 119,
+"6990to60": 8.2,
+"699Handling": 85,
+
+"969TopSpeed": 124,
+"9690to60": 8.7,
+"969Handling": 85,
+
+"996TopSpeed": 124,
+"9960to60": 8.2,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MazdaCX315SkyActivDFWD(2015).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

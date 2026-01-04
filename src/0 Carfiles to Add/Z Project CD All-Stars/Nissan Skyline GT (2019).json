@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 649,
+    "make": "Nissan",
+    "model": "Skyline GT",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.2,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1670,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.55,
+    "ola": 76.59,
+    "description": "",
+	
+"333TopSpeed": 117,
+"3330to60": 4.9,
+"333Handling": 85,
+
+"666TopSpeed": 121,
+"6660to60": 4.7,
+"666Handling": 87,
+
+"699TopSpeed": 121,
+"6990to60": 4.4,
+"699Handling": 91,
+
+"969TopSpeed": 126,
+"9690to60": 4.7,
+"969Handling": 91,
+
+"996TopSpeed": 126,
+"9960to60": 4.4,
+"996Handling": 87,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/NissanSkylineGT(2019).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

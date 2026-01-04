@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 383,
+    "make": "Mazda",
+    "model": "CX-3 2.0 SkyActiv-G GT Sport",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 9.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1193,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.17,
+    "ola": 65.93,
+    "description": "",
+	
+"333TopSpeed": 122,
+"3330to60": 8.6,
+"333Handling": 80,
+
+"666TopSpeed": 127,
+"6660to60": 8.2,
+"666Handling": 82,
+
+"699TopSpeed": 127,
+"6990to60": 7.7,
+"699Handling": 85,
+
+"969TopSpeed": 131,
+"9690to60": 8.2,
+"969Handling": 85,
+
+"996TopSpeed": 131,
+"9960to60": 7.7,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MazdaCX320SkyActivGGTSport(2015).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

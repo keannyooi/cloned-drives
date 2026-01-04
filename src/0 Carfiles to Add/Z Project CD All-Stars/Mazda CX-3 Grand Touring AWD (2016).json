@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 417,
+    "make": "Mazda",
+    "model": "CX-3 Grand Touring AWD",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 8.5,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1349,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.79,
+    "ola": 65.88,
+    "description": "",
+	
+"333TopSpeed": 122,
+"3330to60": 8.1,
+"333Handling": 77,
+
+"666TopSpeed": 127,
+"6660to60": 7.7,
+"666Handling": 80,
+
+"699TopSpeed": 127,
+"6990to60": 7.2,
+"699Handling": 83,
+
+"969TopSpeed": 131,
+"9690to60": 7.7,
+"969Handling": 83,
+
+"996TopSpeed": 131,
+"9960to60": 7.2,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MazdaCX320SkyActivGGTSport(2015).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}
