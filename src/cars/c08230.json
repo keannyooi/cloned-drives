@@ -1,0 +1,51 @@
+{
+    "carID": "c08230",
+    "cr": 690,
+    "make": "Lexus",
+    "model": "LC 500 Convertible Ultimate Edition",
+    "modelYear": 2024,
+    "country": "JP",
+    "topSpeed": 168,
+    "0to60": 4.7,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle","Grand Tourer"],
+    "isPrize": false,
+    "weight": 2105,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.69,
+    "ola": 85.11,
+
+    "description": "The Ultimate Edition represents the final send-off for the LC in Europe.",
+
+"333TopSpeed": 171,
+"3330to60": 4.5,
+"333Handling": 90,
+
+"666TopSpeed": 174,
+"6660to60": 4.2,
+"666Handling": 93,
+
+"699TopSpeed": 174,
+"6990to60": 4,
+"699Handling": 97,
+
+"969TopSpeed": 177,
+"9690to60": 4.2,
+"969Handling": 97,
+
+"996TopSpeed": 177,
+"9960to60": 4,
+"996Handling": 93,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLC500ConvertibleUltimateEdition(2024).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

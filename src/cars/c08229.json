@@ -1,16 +1,16 @@
 {
-    "carID": "c00696",
-    "cr": 666,
+    "carID": "c08229",
+    "cr": 680,
     "make": "Lexus",
-    "model": "LC 500 Convertible Hokkaido Edition",
-    "modelYear": 2020,
+    "model": "LC Convertible Prototype",
+    "modelYear": 2019,
     "country": "JP",
-    "topSpeed": 168,
+    "topSpeed": 188,
     "0to60": 4.9,
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": ["Full Throttle","Grand Tourer","Concept"],
     "isPrize": false,
     "weight": 2105,
     "gc": "Medium",
@@ -23,29 +23,29 @@
     "mra": 81.52,
     "ola": 83.47,
 
-    "description": "Lexus describes the Hokkaido Edition as an erupting volcano.",
+    "description": "This sure is one of the ways to camo your car... and the driver.",
 
-"333TopSpeed": 171,
+"333TopSpeed": 191,
 "3330to60": 4.7,
 "333Handling": 89,
 
-"666TopSpeed": 174,
+"666TopSpeed": 194,
 "6660to60": 4.4,
 "666Handling": 92,
 
-"699TopSpeed": 174,
+"699TopSpeed": 194,
 "6990to60": 4.2,
 "699Handling": 95,
 
-"969TopSpeed": 177,
+"969TopSpeed": 196,
 "9690to60": 4.4,
 "969Handling": 95,
 
-"996TopSpeed": 177,
+"996TopSpeed": 196,
 "9960to60": 4.2,
 "996Handling": 92,
 
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLC500ConvertibleHokkaidoEdition(2020).png",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLCConvertiblePrototype(2019).png",
     "creator": "Pfugs",
 	"hiddenTag": [""]
 }

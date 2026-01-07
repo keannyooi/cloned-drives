@@ -1,0 +1,51 @@
+{
+    "carID": "c08240",
+    "cr": 499,
+    "make": "Lexus",
+    "model": "LS 430 Ultra Luxury",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1910,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.93,
+    "ola": 76.34,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 6.2,
+"333Handling": 77,
+
+"666TopSpeed": 162,
+"6660to60": 5.9,
+"666Handling": 80,
+
+"699TopSpeed": 162,
+"6990to60": 5.5,
+"699Handling": 83,
+
+"969TopSpeed": 165,
+"9690to60": 5.9,
+"969Handling": 83,
+
+"996TopSpeed": 165,
+"9960to60": 5.5,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLS430UltraLuxury(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

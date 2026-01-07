@@ -1,0 +1,51 @@
+{
+    "carID": "c08241",
+    "cr": 621,
+    "make": "Lexus",
+    "model": "LS 500h AWD Executive",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2270,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 64.21,
+    "ola": 80.86,
+
+    "description": "",
+
+"333TopSpeed": 158,
+"3330to60": 5.5,
+"333Handling": 82,
+
+"666TopSpeed": 162,
+"6660to60": 5.2,
+"666Handling": 84,
+
+"699TopSpeed": 162,
+"6990to60": 4.9,
+"699Handling": 88,
+
+"969TopSpeed": 165,
+"9690to60": 5.2,
+"969Handling": 88,
+
+"996TopSpeed": 165,
+"9960to60": 4.9,
+"996Handling": 84,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLS500hAWDExecutive(2018).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

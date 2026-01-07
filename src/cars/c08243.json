@@ -1,0 +1,51 @@
+{
+    "carID": "c08243",
+    "cr": 488,
+    "make": "Toyota",
+    "model": "Land Cruiser ROX Concept",
+    "modelYear": 2024,
+    "country": "US",
+    "topSpeed": 109,
+    "0to60": 8.4,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Full Throttle","Unique","Concept","Eco-Friendly"],
+    "isPrize": false,
+    "weight": 2655,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 56,
+    "ola": 70.24,
+
+    "description": "The \"Recreation Open eXperience\" for SEMA 2024.",
+
+"333TopSpeed": 114,
+"3330to60": 8,
+"333Handling": 68,
+
+"666TopSpeed": 119,
+"6660to60": 7.6,
+"666Handling": 70,
+
+"699TopSpeed": 119,
+"6990to60": 7.1,
+"699Handling": 73,
+
+"969TopSpeed": 123,
+"9690to60": 7.6,
+"969Handling": 73,
+
+"996TopSpeed": 123,
+"9960to60": 7.1,
+"996Handling": 70,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ToyotaLandCruiserROXConcept(2024).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

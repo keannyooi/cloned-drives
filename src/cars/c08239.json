@@ -1,0 +1,51 @@
+{
+    "carID": "c08239",
+    "cr": 455,
+    "make": "Toyota",
+    "model": "Celsior Type A",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1895,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.61,
+    "ola": 79.19,
+
+    "description": "",
+
+"333TopSpeed": 117,
+"3330to60": 6.4,
+"333Handling": 77,
+
+"666TopSpeed": 121,
+"6660to60": 6,
+"666Handling": 80,
+
+"699TopSpeed": 121,
+"6990to60": 5.7,
+"699Handling": 83,
+
+"969TopSpeed": 126,
+"9690to60": 6,
+"969Handling": 83,
+
+"996TopSpeed": 126,
+"9960to60": 5.7,
+"996Handling": 80,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/ToyotaCelsiorTypeA(2001).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

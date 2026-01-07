@@ -1,0 +1,51 @@
+{
+    "carID": "c08231",
+    "cr": 1009,
+    "make": "Lexus",
+    "model": "LC 500 GT500 #1 LEXUS TEAM KeePer TOM'S",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 190,
+    "0to60": 2.8,
+    "handling": 107,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Full Throttle","Grand Tourer","Motorsport"],
+    "isPrize": false,
+    "weight": 1020,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 114.29,
+    "ola": 98.21,
+
+    "description": "Debuting as a replacement for the RC F GT500, the LC 500 GT500 debuted at the first race of the 2017 Super GT season, the Okayama GT 300km. It went on to win 14 of the 24 races it was entered in.",
+
+"333TopSpeed": 193,
+"3330to60": 2.7,
+"333Handling": 111,
+
+"666TopSpeed": 195,
+"6660to60": 2.5,
+"666Handling": 114,
+
+"699TopSpeed": 195,
+"6990to60": 2.4,
+"699Handling": 119,
+
+"969TopSpeed": 198,
+"9690to60": 2.5,
+"969Handling": 119,
+
+"996TopSpeed": 198,
+"9960to60": 2.4,
+"996Handling": 114,
+
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLC500GT5001LEXUSTEAMKeePerTOMS.png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}
