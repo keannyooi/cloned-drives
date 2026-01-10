@@ -5,35 +5,49 @@ const bot = require("../../config/config.js");
 const processResults = require("./corefiles/processResults.js");
 
 async function searchUser(message, username, currentMessage) {
-    const playerList = await bot.homeGuild.members.fetch();
-    let searchResults = playerList.filter(member => {
-        return member.nickname?.toLowerCase().includes(username) || member.user.tag.toLowerCase().includes(username);
-    });
-    searchResults = [...searchResults.values()];
-    
-    return processResults(message, searchResults, () => {
-        const options = [];
-        for (let i = 0; i < searchResults.length; i++) {
-            options.push({
-                label: searchResults[i].user.tag,
-                value: `${i + 1}`
-            });
-        }
+    // ❌ REMOVED: guild.members.fetch()
+    // ✅ Use cache only to avoid gateway member chunking
+    const playerList = bot.homeGuild.members.cache;
 
-        let list = new StringSelectMenuBuilder()
-            .setCustomId("search")
-            .setPlaceholder("Select a user...")
-            .addOptions(...options);
-        return list;
-    }, null, currentMessage)
-        .catch(throwError => {
-            console.log(throwError);
-            const list = [];
-            playerList.forEach(player => {
-                list.push(player.user.tag);
-            });
-            return throwError(username, list);
+    // Normalize username once
+    const search = username.toLowerCase();
+
+    // Filter cached members safely
+    let searchResults = playerList.filter(member =>
+        member.nickname?.toLowerCase().includes(search) ||
+        member.user.tag.toLowerCase().includes(search)
+    );
+
+    // Convert Collection → Array
+    searchResults = [...searchResults.values()];
+
+    return processResults(
+        message,
+        searchResults,
+        () => {
+            const options = searchResults.map((member, index) => ({
+                label: member.user.tag,
+                value: String(index + 1)
+            }));
+
+            return new StringSelectMenuBuilder()
+                .setCustomId("search")
+                .setPlaceholder("Select a user...")
+                .addOptions(...options);
+        },
+        null,
+        currentMessage
+    ).catch(throwError => {
+        console.error(throwError);
+
+        // Fallback list from cache (safe)
+        const list = [];
+        playerList.forEach(member => {
+            list.push(member.user.tag);
         });
+
+        return throwError(username, list);
+    });
 }
 
 module.exports = searchUser;

@@ -30,7 +30,7 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    await getCar(result.user, currentMessage);
+					await getCar(await message.client.users.fetch(result.user.id), currentMessage);
                 })
                 .catch(error => {
                     throw error;
