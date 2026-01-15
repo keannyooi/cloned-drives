@@ -79,8 +79,46 @@ function getButtons(type, buttonStyle) {
                 }
             }
             return { yse, nop, skip };
-        default:
-            return;
+
+		case "hilo":
+            let high, low, skipHilo;
+
+            if (buttonStyle === "classic") {
+                high = new ButtonBuilder()
+                    .setCustomId("high")
+                    .setEmoji("⬆️")
+                    .setStyle(Secondary);
+
+                low = new ButtonBuilder()
+                    .setCustomId("low")
+                    .setEmoji("⬇️")
+                    .setStyle(Secondary);
+
+                skipHilo = new ButtonBuilder()
+                    .setCustomId("skip")
+                    .setEmoji("💰")
+                    .setStyle(Secondary);
+            } else {
+                high = new ButtonBuilder()
+                    .setCustomId("high")
+                    .setLabel("Higher")
+                    .setStyle(Success);
+
+                low = new ButtonBuilder()
+                    .setCustomId("low")
+                    .setLabel("Lower")
+                    .setStyle(Danger);
+
+                skipHilo = new ButtonBuilder()
+                    .setCustomId("skip")
+                    .setLabel("Cash Out")
+                    .setStyle(Primary);
+            }
+
+            return { high, low, skip: skipHilo };
+
+default:
+    throw new Error(`getButtons: Unknown button type "${type}"`);
     }
 }
 

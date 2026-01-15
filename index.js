@@ -24,6 +24,23 @@ const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
 const path = require("path");
 
+// 🔒 Global crash protection
+process.on("unhandledRejection", (reason, promise) => {
+    console.error("UNHANDLED REJECTION:", reason);
+});
+
+process.on("uncaughtException", (error) => {
+    console.error("UNCAUGHT EXCEPTION:", error);
+
+    try {
+        const errorReport = new BotError({
+            stack: error.stack,
+            unknownSource: true
+        });
+        errorReport.sendReport();
+    } catch (_) {}
+});
+
 for (let commandFile of commandFiles) {
     let command = require(`./src/commands/${commandFile}`);
     bot.commands.set(command.name, command);
