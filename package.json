@@ -15,8 +15,8 @@
     "string-similarity": "^4.0.4"
   },
   "scripts": {
-    "devstart": "node index.js dev",
-    "start": "node index.js",
+    "devstart": "node --max-old-space-size=4096 index.js dev",
+    "start": "node --max-old-space-size=4096 index.js",
     "replace": "node src/config/replace.js"
   },
   "author": "keanny",

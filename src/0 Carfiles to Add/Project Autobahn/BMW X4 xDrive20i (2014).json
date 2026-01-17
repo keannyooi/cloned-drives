@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 540,
+    "make": "BMW",
+    "model": "X4 xDrive20i M Sport",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 7.7,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1735,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.4,
+    "ola": 67.81,
+    "description": "",
+	
+"333TopSpeed": 136,
+"3330to60": 7.3,
+"333Handling": 80,
+
+"666TopSpeed": 140,
+"6660to60": 6.9,
+"666Handling": 82,
+
+"699TopSpeed": 140,
+"6990to60": 6.5,
+"699Handling": 85,
+
+"969TopSpeed": 144,
+"9690to60": 6.9,
+"969Handling": 85,
+
+"996TopSpeed": 144,
+"9960to60": 6.5,
+"996Handling": 82,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMWX4xDrive20iMSport(2014).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

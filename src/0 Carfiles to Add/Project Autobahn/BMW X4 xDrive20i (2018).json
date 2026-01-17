@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 543,
+    "make": "BMW",
+    "model": "X4 xDrive20i M Sport X",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 7.8,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1750,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.48,
+    "ola": 67.25,
+    "description": "",
+	
+"333TopSpeed": 138,
+"3330to60": 7.4,
+"333Handling": 81,
+
+"666TopSpeed": 142,
+"6660to60": 7,
+"666Handling": 83,
+
+"699TopSpeed": 142,
+"6990to60": 6.6,
+"699Handling": 87,
+
+"969TopSpeed": 146,
+"9690to60": 7,
+"969Handling": 87,
+
+"996TopSpeed": 146,
+"9960to60": 6.6,
+"996Handling": 83,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMWX4xDrive20i(2018).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

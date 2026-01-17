@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 579,
+    "make": ["Wheelsandmore","Aston Martin"],
+    "model": "DB9 Volante",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 191,
+    "0to60": 4.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle","Tuner"],
+    "isPrize": false,
+    "weight": 1855,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.11,
+    "ola": 80.06,
+    "description": "",
+	
+"333TopSpeed": 194,
+"3330to60": 4.7,
+"333Handling": 83,
+
+"666TopSpeed": 196,
+"6660to60": 4.4,
+"666Handling": 85,
+
+"699TopSpeed": 196,
+"6990to60": 4.2,
+"699Handling": 89,
+
+"969TopSpeed": 199,
+"9690to60": 4.4,
+"969Handling": 89,
+
+"996TopSpeed": 199,
+"9960to60": 4.2,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/WheelsandmoreDB9Volante(2009).png",
+    "creator": "Kuroi",
+	"hiddenTag": [""]
+}

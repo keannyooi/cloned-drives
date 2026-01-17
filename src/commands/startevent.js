@@ -18,23 +18,13 @@ const eventModel = require("../models/eventSchema.js");
 // 🔧 Manual dev switch to disable DMs
 const DEV_MODE = false;
 
-// 🔄 Loader to read all files in a folder and build a lookup object
-function loadFolder(folderPath) {
-    const data = {};
-    const files = fs.readdirSync(folderPath);
-    for (const file of files) {
-        if (file.endsWith(".js") || file.endsWith(".json")) {
-            const key = path.basename(file, path.extname(file)); // filename without extension
-            data[key] = require(path.join(folderPath, file));
-        }
-    }
-    return data;
+// 📂 Load data ON DEMAND instead of preloading everything
+function loadFile(folderName, fileName) {
+    const filePath = path.join(__dirname, `../${folderName}/${fileName}.json`);
+    // Clear cache to ensure fresh data
+    delete require.cache[require.resolve(filePath)];
+    return require(filePath);
 }
-
-// 📂 Preload cars, tracks, packs
-const cars = loadFolder(path.join(__dirname, "../cars"));
-const tracks = loadFolder(path.join(__dirname, "../tracks"));
-const packs = loadFolder(path.join(__dirname, "../packs"));
 
 module.exports = {
     name: "startevent",
@@ -68,7 +58,6 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
-                const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true });
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 event.isActive = true;
 
@@ -81,14 +70,28 @@ module.exports = {
                 let attachment, cucked = false;
 
                 try {
-                    let hudPromises = await Promise.all(event.roster.map(car => {
-                        let currentCar = cars[car.carID];
-                        return loadImage(currentCar["racehud"]);
-                    }));
-                    let mapPromises = await Promise.all(event.roster.map(track => {
-                        let currentTrack = tracks[track.track];
-                        return loadImage(currentTrack["map"]);
-                    }));
+                    // 🔄 Load images in batches to reduce memory spike
+                    const batchSize = 5;
+                    let hudImages = [];
+                    let mapImages = [];
+                    
+                    for (let i = 0; i < event.roster.length; i += batchSize) {
+                        const batch = event.roster.slice(i, i + batchSize);
+                        
+                        const hudBatch = await Promise.all(batch.map(item => {
+                            const car = loadFile("cars", item.carID);
+                            return loadImage(car.racehud);
+                        }));
+                        
+                        const mapBatch = await Promise.all(batch.map(item => {
+                            const track = loadFile("tracks", item.track);
+                            return loadImage(track.map);
+                        }));
+                        
+                        hudImages.push(...hudBatch);
+                        mapImages.push(...mapBatch);
+                    }
+
                     let [moneyImage, fuseImage, trophyImage, carImage, packImage] = await Promise.all([
                         loadImage(bot.emojis.cache.get(moneyEmojiID).url),
                         loadImage(bot.emojis.cache.get(fuseEmojiID).url),
@@ -106,8 +109,8 @@ module.exports = {
                         context.font = 'bold 41px "Roboto Condensed"';
                         context.textAlign = "left";
                         context.drawImage(bot.graphics.eventTemp, baseX, baseY);
-                        context.drawImage(hudPromises[i], baseX + 13, baseY + 59, 374, 224);
-                        context.drawImage(mapPromises[i], baseX + 482, baseY + 190, 98, 98);
+                        context.drawImage(hudImages[i], baseX + 13, baseY + 59, 374, 224);
+                        context.drawImage(mapImages[i], baseX + 482, baseY + 190, 98, 98);
                         context.fillText(i + 1, baseX + 130, baseY + 41);
                         context.fillText(event.roster[i].upgrade, baseX + 31, baseY + 277);
 
@@ -131,7 +134,7 @@ module.exports = {
                                 case "car":
                                     image = carImage;
                                     value = value.carID;
-                                    let car = cars[value];
+                                    let car = loadFile("cars", value);
                                     if (car["cr"] > 849) context.fillStyle = "#ffb80d";
                                     else if (car["cr"] > 699) context.fillStyle = "#9e3fff";
                                     else if (car["cr"] > 549) context.fillStyle = "#ff3639";
@@ -142,7 +145,7 @@ module.exports = {
                                     break;
                                 case "pack":
                                     image = packImage;
-                                    let pack = packs[value];
+                                    let pack = loadFile("packs", value);
                                     if (pack["packName"].toLowerCase().includes("elite")) {
                                         context.fillStyle = "#ff3639";
                                     } else if (pack["packName"].toLowerCase().includes("booster")) {
@@ -207,21 +210,63 @@ module.exports = {
                     files: [attachment]
                 });
 
-                // 🔕 Respect DEV_MODE to prevent mass DMs
+                await eventModel.updateOne({ eventID: event.eventID }, event);
+                
+                // ✅ Send success message IMMEDIATELY
+                await successMessage.sendMessage({ attachment, currentMessage });
+
+                // 🔕 Send DM notifications in background (non-blocking)
                 if (!DEV_MODE) {
-                    for (let { userID } of playerDatum) {
-                        let user = await bot.homeGuild.members.fetch(userID).catch(() => "unable to find user, next");
-                        if (typeof user !== "string") {
-                            await user.send(`**Notification: The ${event.name} event has officially started!**`)
-                                .catch(() => console.log(`unable to send notification to user ${userID}`));
+                    sendNotifications(event.name).catch(err => {
+                        console.error('[EVENT DMs] Error sending notifications:', err);
+                    });
+                } else {
+                    profileModel.countDocuments({ "settings.sendeventnotifs": true })
+                        .then(count => console.log(`[DEV_MODE] Skipping DM notifications for ${count} players.`));
+                }
+                
+                // Background notification function
+                async function sendNotifications(eventName) {
+                    const BATCH_SIZE = 50;
+                    let processedCount = 0;
+                    const startTime = Date.now();
+                    
+                    console.log(`[EVENT DMs] Starting background notifications for "${eventName}"...`);
+                    
+                    const cursor = profileModel.find({ "settings.sendeventnotifs": true }).cursor();
+                    
+                    let batch = [];
+                    for await (const profile of cursor) {
+                        batch.push(profile);
+                        
+                        if (batch.length >= BATCH_SIZE) {
+                            await processBatch(batch, eventName);
+                            batch = [];
+                            processedCount += BATCH_SIZE;
+                            console.log(`[EVENT DMs] Processed ${processedCount} notifications...`);
                         }
                     }
-                } else {
-                    console.log(`[DEV_MODE] Skipping DM notifications for ${playerDatum.length} players.`);
+                    
+                    // Process remaining users
+                    if (batch.length > 0) {
+                        await processBatch(batch, eventName);
+                        processedCount += batch.length;
+                    }
+                    
+                    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                    console.log(`[EVENT DMs] Completed ${processedCount} notifications in ${elapsed}s.`);
+                    
+                    async function processBatch(userBatch, eventName) {
+                        await Promise.all(userBatch.map(async ({ userID }) => {
+                            try {
+                                const user = await bot.homeGuild.members.fetch(userID);
+                                await user.send(`**Notification: The ${eventName} event has officially started!**`);
+                            } catch (err) {
+                                console.log(`Unable to send notification to user ${userID}`);
+                            }
+                        }));
+                    }
                 }
-
-                await eventModel.updateOne({ eventID: event.eventID }, event);
-                return successMessage.sendMessage({ attachment, currentMessage });
             }
         }
     }

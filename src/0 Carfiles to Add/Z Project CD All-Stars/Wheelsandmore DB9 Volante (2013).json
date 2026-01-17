@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 609,
+    "make": ["Wheelsandmore","Aston Martin"],
+    "model": "DB9 Volante",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 4.8,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Full Throttle","Tuner"],
+    "isPrize": false,
+    "weight": 1835,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 79.42,
+    "description": "",
+	
+"333TopSpeed": 198,
+"3330to60": 4.6,
+"333Handling": 85,
+
+"666TopSpeed": 200,
+"6660to60": 4.3,
+"666Handling": 87,
+
+"699TopSpeed": 200,
+"6990to60": 4.1,
+"699Handling": 91,
+
+"969TopSpeed": 203,
+"9690to60": 4.3,
+"969Handling": 91,
+
+"996TopSpeed": 203,
+"9960to60": 4.1,
+"996Handling": 87,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/WheelsandmoreDB9Volante(2013).png",
+    "creator": "Kuroi",
+	"hiddenTag": [""]
+}
