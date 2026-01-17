@@ -2,10 +2,11 @@
 
 console.log("📥 hilo.js loaded");
 
+const bot = require("../config/config.js");
 const { ActionRowBuilder } = require("discord.js");
 const { readdirSync } = require("fs");
 const { InfoMessage } = require("../util/classes/classes.js");
-const { defaultChoiceTime } = require("../util/consts/consts.js");
+const { defaultChoiceTime, hiloChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const profileModel = require("../models/profileSchema.js");
@@ -68,9 +69,10 @@ module.exports = {
         }
         // 10% chance for mega bonus
         else if (eventRoll < 0.25) {
+          const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
           const megaBonus = streak * 5000;
           reward += megaBonus;
-          eventMessage = `\n\n💎 **MEGA BONUS!** +${megaBonus.toLocaleString()}`;
+          eventMessage = `\n\n💎 **MEGA BONUS!** +${moneyEmoji}${megaBonus.toLocaleString()}`;
           eventActive = true;
         }
         // 8% chance for perfect streak bonus
@@ -83,10 +85,12 @@ module.exports = {
       }
       
       // 📊 Progressive difficulty - expand range as streak increases
-      if (streak >= 5 && streak % 5 === 0) {
+      if (streak >= 5 && streak % 5 === 0 && streak < 15) {
         difficulty = "hard";
         const newBracket = CR_BRACKETS[Math.floor(Math.random() * CR_BRACKETS.length)];
         currentBracket = newBracket;
+        // Regenerate nextCar in the new bracket
+        nextCar = randomCarInRange(currentBracket.min, currentBracket.max);
         eventMessage += `\n\n⚠️ **DIFFICULTY INCREASED!** Now playing in ${currentBracket.label}`;
       }
       
@@ -94,6 +98,11 @@ module.exports = {
         difficulty = "extreme";
         // Extreme mode: any CR range
         currentBracket = { min: 0, max: 999, label: "All Classes" };
+        // Regenerate nextCar for extreme mode
+        if (streak === 15) {
+          nextCar = randomCar();
+          eventMessage += `\n\n🔥 **EXTREME MODE ACTIVATED!** All CR ranges unlocked!`;
+        }
       }
 
       const { high, low, skip } = getButtons("hilo", profile.settings.buttonstyle);
@@ -120,7 +129,7 @@ module.exports = {
       let processed = false;
       const collector = message.channel.createMessageComponentCollector({ 
         filter, 
-        time: defaultChoiceTime 
+        time: hiloChoiceTime  // Use Hi-Lo specific timer (30 seconds)
       });
 
       collector.on("collect", async (button) => {
@@ -136,9 +145,10 @@ module.exports = {
             if (bonusRoundsLeft > 0) {
               const cashOutBonus = Math.floor(reward * 0.15);
               reward += cashOutBonus;
+              const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
               embed.editEmbed({ 
                 title: "⏭️ Cashed Out Early!",
-                desc: `You kept your bonus round rewards!\n+$${cashOutBonus.toLocaleString()} early cashout bonus`
+                desc: `You kept your bonus round rewards!\n+${moneyEmoji}${cashOutBonus.toLocaleString()} early cashout bonus`
               });
             } else {
               embed.editEmbed({ title: "⏭️ Game cancelled." });
@@ -159,6 +169,7 @@ module.exports = {
             collector.stop("lost");
             
             const nextCarName = carNameGen({ currentCar: nextCar, rarity: true });
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             
             // 💰 Calculate what you keep based on streak
             let keptAmount = 0;
@@ -187,12 +198,12 @@ module.exports = {
               
               embed.editEmbed({
                 title: "🍀 LUCKY SAVE!",
-                desc: `❌ Wrong guess, but luck was on your side!\n\n**Next Car**\n${nextCarName}\n\n🔥 Streak ended at: ${streak}\n💰 Kept ${keepPercentage}%: ${keptAmount.toLocaleString()}\n🍀 Lucky bonus: ${luckyBonus.toLocaleString()}\n💵 Total saved: ${reward.toLocaleString()}`,
+                desc: `❌ Wrong guess, but luck was on your side!\n\n**Next Car**\n${nextCarName}\n\n🔥 Streak ended at: ${streak}\n💰 Kept ${keepPercentage}%: ${moneyEmoji}${keptAmount.toLocaleString()}\n🍀 Lucky bonus: ${moneyEmoji}${luckyBonus.toLocaleString()}\n💵 Total saved: ${moneyEmoji}${reward.toLocaleString()}`,
                 image: nextCar.racehud || null
               });
             } else {
               const lossMessage = keepPercentage > 0 
-                ? `💰 Kept ${keepPercentage}%: ${keptAmount.toLocaleString()}\n💸 Lost: ${lostAmount.toLocaleString()}`
+                ? `💰 Kept ${keepPercentage}%: ${moneyEmoji}${keptAmount.toLocaleString()}\n💸 Lost: ${moneyEmoji}${lostAmount.toLocaleString()}`
                 : `💸 Lost everything`;
               
               embed.editEmbed({
@@ -208,6 +219,7 @@ module.exports = {
           // ✅ Correct guess
           streak++;
           let gain = calculateReward(streak);
+          const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
           
           // Apply multiplier
           gain = Math.floor(gain * multiplier);
@@ -220,7 +232,7 @@ module.exports = {
           if (crDiff <= 10) {
             perfectBonus = Math.floor(gain * 0.5);
             gain += perfectBonus;
-            bonusText = `\n🎯 **CLOSE CALL BONUS!** +${perfectBonus.toLocaleString()}`;
+            bonusText = `\n🎯 **CLOSE CALL BONUS!** +${moneyEmoji}${perfectBonus.toLocaleString()}`;
           }
           
           // 🔥 Milestone bonuses
@@ -228,15 +240,15 @@ module.exports = {
           if (streak === 5) {
             milestoneBonus = 10000;
             gain += milestoneBonus;
-            bonusText += `\n🔥 **5-STREAK MILESTONE!** +${milestoneBonus.toLocaleString()}`;
+            bonusText += `\n🔥 **5-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
           } else if (streak === 10) {
             milestoneBonus = 25000;
             gain += milestoneBonus;
-            bonusText += `\n🔥 **10-STREAK MILESTONE!** +${milestoneBonus.toLocaleString()}`;
+            bonusText += `\n🔥 **10-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
           } else if (streak === 20) {
             milestoneBonus = 75000;
             gain += milestoneBonus;
-            bonusText += `\n🔥 **20-STREAK MILESTONE!** +${milestoneBonus.toLocaleString()}`;
+            bonusText += `\n🔥 **20-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
           }
 
           reward += gain;
@@ -264,7 +276,7 @@ module.exports = {
           
           embed.editEmbed({
             title: "✅ Correct!",
-            desc: `You guessed right! +$${gain.toLocaleString()}${bonusText}\n\n${renderCar(currentCar, streak, reward, multiplier, bonusRoundsLeft)}`,
+            desc: `You guessed right! +${moneyEmoji}${gain.toLocaleString()}${bonusText}\n\n${renderCar(currentCar, streak, reward, multiplier, bonusRoundsLeft)}`,
             image: currentCar.racehud || null,
             footer: "It gets harder every round…"
           });
@@ -307,10 +319,11 @@ module.exports = {
             { unclaimedRewards }
           );
 
+          const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
           const finalEmbed = new InfoMessage({
             channel: message.channel,
             title: "💰 Rewards Saved!",
-            desc: `✅ Game ended!\n\n🔥 Streak: ${streak}\n💵 Earned: **$${reward.toLocaleString()}**\n\nUse \`cd-rewards\` to claim your earnings!`,
+            desc: `✅ Game ended!\n\n🔥 Streak: ${streak}\n💵 Earned: **${moneyEmoji}${reward.toLocaleString()}**\n\nUse \`cd-rewards\` to claim your earnings!`,
             author: message.author
           });
 
@@ -367,28 +380,16 @@ function randomCarInRange(minCR, maxCR) {
   return validCars[Math.floor(Math.random() * validCars.length)];
 }
 
-function randomCarDifferent(car) {
-  if (carFiles.length < 2) return car;
-
-  let next;
-  let attempts = 0;
-  do {
-    next = randomCar();
-    attempts++;
-  } while (next.name === car.name && attempts < 10);
-
-  return next;
-}
-
 function renderCar(car, streak, reward, multiplier, bonusRounds, bracket) {
   const carName = carNameGen({ currentCar: car, rarity: true });
+  const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
   let bonusInfo = "";
   
   if (bonusRounds > 0) {
     bonusInfo = `\n✨ Bonus: **${multiplier}x** (${bonusRounds} round${bonusRounds > 1 ? 's' : ''} left)`;
   }
   
-  return `**Current Car**\n${carName}\n\n🔥 Streak: ${streak}\n💵 Pot: ${reward.toLocaleString()}${bonusInfo}`;
+  return `**Current Car**\n${carName}\n\n🔥 Streak: ${streak}\n💵 Pot: ${moneyEmoji}${reward.toLocaleString()}${bonusInfo}`;
 }
 
 function getCarCR(car) {

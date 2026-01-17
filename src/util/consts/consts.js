@@ -29,9 +29,10 @@ const consts = {
         { x: 520, y: 143 }
     ],
     
-    defaultWaitTime: 60000,
-    defaultChoiceTime: 10000,
-    defaultQTETime: 5000,
+	defaultWaitTime: 60000,
+	defaultChoiceTime: 10000,
+	defaultQTETime: 5000,
+	hiloChoiceTime: 30000,  // 30 seconds for Hi-Lo rounds
     
     defaultPageLimit: 10,
     

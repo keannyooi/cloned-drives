@@ -15,6 +15,35 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const profileModel = require("../models/profileSchema.js");
 
+// 💎 REWARD CONSTANTS - Easy to balance!
+const BOSS_BONUSES = {
+    51: 1000000,   // Streak is incremented after win, so 50 → 51
+    76: 1500000,   // 75 → 76
+    101: 2500000,  // 100 → 101
+    base: 500000,      // Base for 105+
+    increment: 250000  // Per 5 rounds above 100
+};
+
+const DOMINATION_TIERS = [
+    { threshold: 100, multiplier: 0.6, label: "TOTAL DOMINATION" },
+    { threshold: 50, multiplier: 0.4, label: "DOMINATION" },
+    { threshold: 20, multiplier: 0.15, label: "STRONG WIN" }
+];
+
+const MILESTONE_BONUSES = {
+    10: 75000,
+    25: 250000,
+    150: 5000000,
+    200: 10000000
+};
+
+const LOSS_PROTECTION = {
+    100: 0.67,  // Keep 67% at streak 100+
+    50: 0.60,   // Keep 60% at streak 50+
+    25: 0.53,   // Keep 51% at streak 25+
+    default: 0.49
+};
+
 module.exports = {
     name: "randomrace",
     aliases: ["rr"],
@@ -33,7 +62,12 @@ module.exports = {
 
         let { streak, highestStreak, opponent, trackID, reqs } = rrStats;
 
-        if (!carFiles.includes(`${opponent.carID}.json`) || (streak > 75 && Object.keys(reqs || {}).length === 0)) {
+        // 🔒 Don't regenerate boss if already at boss round with valid opponent
+        const isCurrentlyBossRound = streak === 50 || streak === 75 || streak === 100 || (streak > 100 && (streak - 100) % 5 === 0);
+        const shouldRandomize = !carFiles.includes(`${opponent.carID}.json`) || 
+                                (streak > 75 && Object.keys(reqs || {}).length === 0 && !isCurrentlyBossRound);
+        
+        if (shouldRandomize) {
             await randomize();
         }
 
@@ -166,27 +200,20 @@ module.exports = {
 
                             // 💎 Tiered domination bonuses based on point difference
                             let perfectBonus = 0;
-                            if (result >= 100) {
-                                perfectBonus = Math.floor(subtotal * 0.5);
-                                eventMessage += `\n💎 **TOTAL DOMINATION!** +${bot.emojis.cache.get(moneyEmojiID)}${perfectBonus.toLocaleString()}`;
-                            } else if (result >= 50) {
-                                perfectBonus = Math.floor(subtotal * 0.3);
-                                eventMessage += `\n💎 **DOMINATION!** +${bot.emojis.cache.get(moneyEmojiID)}${perfectBonus.toLocaleString()}`;
-                            } else if (result >= 20) {
-                                perfectBonus = Math.floor(subtotal * 0.15);
-                                eventMessage += `\n✨ **STRONG WIN!** +${bot.emojis.cache.get(moneyEmojiID)}${perfectBonus.toLocaleString()}`;
+                            for (const tier of DOMINATION_TIERS) {
+                                if (result >= tier.threshold) {
+                                    perfectBonus = Math.floor(subtotal * tier.multiplier);
+                                    eventMessage += `\n💎 **${tier.label}!** +${bot.emojis.cache.get(moneyEmojiID)}${perfectBonus.toLocaleString()}`;
+                                    break;
+                                }
                             }
 
                             // ⚔️ Boss round bonus (streak has already been incremented)
                             if (isBossRound) {
-                                if (streak === 51) {
-                                    bossBonus = 1000000;
-                                } else if (streak === 76) {
-                                    bossBonus = 1500000;
-                                } else if (streak === 101) {
-                                    bossBonus = 2500000;
+                                if (BOSS_BONUSES[streak]) {
+                                    bossBonus = BOSS_BONUSES[streak];
                                 } else if (streak > 101 && (streak - 101) % 5 === 0) {
-                                    bossBonus = 500000 + (Math.floor((streak - 101) / 5)) * 250000;
+                                    bossBonus = BOSS_BONUSES.base + (Math.floor((streak - 101) / 5)) * BOSS_BONUSES.increment;
                                 }
                                 
                                 eventMessage += `\n${bot.emojis.cache.get(bossEmojiID)} **BOSS DEFEATED!** +${bot.emojis.cache.get(moneyEmojiID)}${bossBonus.toLocaleString()}`;
@@ -194,18 +221,9 @@ module.exports = {
 
                             // 🔥 Milestone bonuses
                             let milestoneBonus = 0;
-                            if (streak === 10) {
-                                milestoneBonus = 75000;
-                                eventMessage += `\n🔥 **10-STREAK MILESTONE!** +${bot.emojis.cache.get(moneyEmojiID)}${milestoneBonus.toLocaleString()}`;
-                            } else if (streak === 25) {
-                                milestoneBonus = 250000;
-                                eventMessage += `\n🔥 **25-STREAK MILESTONE!** +${bot.emojis.cache.get(moneyEmojiID)}${milestoneBonus.toLocaleString()}`;
-                            } else if (streak === 150) {
-                                milestoneBonus = 5000000;
-                                eventMessage += `\n🔥 **150-STREAK MILESTONE!** +${bot.emojis.cache.get(moneyEmojiID)}${milestoneBonus.toLocaleString()}`;
-                            } else if (streak === 200) {
-                                milestoneBonus = 10000000;
-                                eventMessage += `\n🔥 **200-STREAK MILESTONE!** +${bot.emojis.cache.get(moneyEmojiID)}${milestoneBonus.toLocaleString()}`;
+                            if (MILESTONE_BONUSES[streak]) {
+                                milestoneBonus = MILESTONE_BONUSES[streak];
+                                eventMessage += `\n🔥 **${streak}-STREAK MILESTONE!** +${bot.emojis.cache.get(moneyEmojiID)}${milestoneBonus.toLocaleString()}`;
                             }
 
                             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
@@ -222,16 +240,24 @@ module.exports = {
                                 });
                             }
 
-                            await message.channel.send(
-                                `**You earned ${moneyEmoji}${reward.toLocaleString()} (+${moneyEmoji}${crBonus.toLocaleString()}${bmBonus ? ` +${moneyEmoji}${bmBonus.toLocaleString()}` : ""})!**${eventMessage}`
-                            );
+                            // 📊 Clear earnings breakdown
+                            let earningsMsg = `**💰 RACE EARNINGS**\n`;
+                            earningsMsg += `Base Reward: ${moneyEmoji}${reward.toLocaleString()}\n`;
+                            if (crBonus > 0) earningsMsg += `CR Bonus: +${moneyEmoji}${crBonus.toLocaleString()}\n`;
+                            if (bmBonus > 0) earningsMsg += `BM Bonus: +${moneyEmoji}${bmBonus.toLocaleString()}\n`;
+                            earningsMsg += `**Subtotal: ${moneyEmoji}${subtotal.toLocaleString()}**`;
+                            earningsMsg += eventMessage;
+                            if (eventBonus + perfectBonus + bossBonus + milestoneBonus > 0) {
+                                earningsMsg += `\n\n**TOTAL EARNED: ${moneyEmoji}${totalEarned.toLocaleString()}** 🎉`;
+                            }
+
+                            await message.channel.send(earningsMsg);
                         } else if (result < 0) {
-                            // Loss penalty - keep more money at higher streaks
-                            let keepPercentage = 0;
-                            if (streak >= 100) keepPercentage = 0.75;
-                            else if (streak >= 50) keepPercentage = 0.60;
-                            else if (streak >= 25) keepPercentage = 0.51;
-                            else keepPercentage = 0.49;
+                            // Loss penalty - use constants for protection
+                            let keepPercentage = LOSS_PROTECTION.default;
+                            if (streak >= 100) keepPercentage = LOSS_PROTECTION[100];
+                            else if (streak >= 50) keepPercentage = LOSS_PROTECTION[50];
+                            else if (streak >= 25) keepPercentage = LOSS_PROTECTION[25];
                             
                             streak = Math.floor(streak * keepPercentage);
                             
@@ -320,55 +346,69 @@ module.exports = {
                         start: 1,
                         end: opponentCar.cr + Math.floor(Math.random() * 6) + 30
                     };
+                    
                     let reqs = ["bodyStyle", "seatCount", "modelYear"];
                     let req = reqs[Math.floor(Math.random() * reqs.length)];
-                    let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                    let reqCar;
+                    let attempts = 0;
                     
-                    if (reqCar.reference) {
+                    // Find a valid car with the required property
+                    do {
                         reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-                    }
+                        attempts++;
+                    } while (reqCar.reference && attempts < 50);
                     
-                    switch (req) {
-                        case "bodyStyle":
-                            criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
-                            break;
-                        case "seatCount":
-                            criteria[req] = { start: reqCar[req], end: reqCar[req] + 1 };
-                            break;
-                        case "modelYear":
-                            let myStart = 1960 + (Math.floor(Math.random() * 6) * 10);
-                            criteria[req] = { start: myStart, end: myStart + 10 };
-                            break;
-                        default:
-                            break;
+                    // Validate the property exists before adding requirement
+                    if (reqCar[req] !== undefined && reqCar[req] !== null) {
+                        switch (req) {
+                            case "bodyStyle":
+                                criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
+                                break;
+                            case "seatCount":
+                                criteria[req] = { start: reqCar[req], end: reqCar[req] + 1 };
+                                break;
+                            case "modelYear":
+                                let myStart = 1960 + (Math.floor(Math.random() * 6) * 10);
+                                criteria[req] = { start: myStart, end: myStart + 10 };
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 } else if (streak > 175) {
                     criteria.cr = {
                         start: 1,
                         end: opponentCar.cr + Math.floor(Math.random() * 6) + 20
                     };
+                    
                     let reqs = ["make", "modelYear", "gc", "tags"];
                     let req = reqs[Math.floor(Math.random() * reqs.length)];
-                    let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                    let reqCar;
+                    let attempts = 0;
                     
-                    if (reqCar.reference) {
+                    // Find a valid car with the required property
+                    do {
                         reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-                    }
+                        attempts++;
+                    } while (reqCar.reference && attempts < 50);
                     
-                    switch (req) {
-                        case "make":
-                        case "tags":
-                            criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
-                            break;
-                        case "gc":
-                            criteria[req] = reqCar[req].toLowerCase();
-                            break;
-                        case "modelYear":
-                            let myStart = 1960 + (Math.floor(Math.random() * 12) * 5);
-                            criteria[req] = { start: myStart, end: myStart + 5 };
-                            break;
-                        default:
-                            break;
+                    // Validate the property exists before adding requirement
+                    if (reqCar[req] !== undefined && reqCar[req] !== null) {
+                        switch (req) {
+                            case "make":
+                            case "tags":
+                                criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
+                                break;
+                            case "gc":
+                                criteria[req] = reqCar[req].toLowerCase();
+                                break;
+                            case "modelYear":
+                                let myStart = 1960 + (Math.floor(Math.random() * 12) * 5);
+                                criteria[req] = { start: myStart, end: myStart + 5 };
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }
             }
