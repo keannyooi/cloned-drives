@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 807,
+    "make": "Audi",
+    "model": "quattro concept",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 3.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [""],
+    "isPrize": false,
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.59,
+    "ola": 71.79,
+	
+    "description": "5 cylinder monster based on A5 chassis.",
+	
+"333TopSpeed": 192,
+"3330to60": 3.7,
+"333Handling": 94,
+
+"666TopSpeed": 195,
+"6660to60": 3.5,
+"666Handling": 97,
+
+"699TopSpeed": 195,
+"6990to60": 3.3,
+"699Handling": 101,
+
+"969TopSpeed": 197,
+"9690to60": 3.5,
+"969Handling": 101,
+
+"996TopSpeed": 197,
+"9960to60": 3.3,
+"996Handling": 97,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Audiquattroconcept(2010).png",
+    "creator": "Connor",
+	"hiddenTag": [""]
+}

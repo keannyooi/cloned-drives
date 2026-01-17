@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 564,
+    "make": "Audi",
+    "model": "A5 Coupe e-tron quattro prototype",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 142,
+    "0to60": 5.7,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+    "weight": 1960,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Mixed",
+    "mra": 66.33,
+    "ola": 66.66,
+	
+    "description": "",
+	
+"333TopSpeed": 146,
+"3330to60": 5.4,
+"333Handling": 82,
+
+"666TopSpeed": 149,
+"6660to60": 5.1,
+"666Handling": 84,
+
+"699TopSpeed": 149,
+"6990to60": 4.8,
+"699Handling": 88,
+
+"969TopSpeed": 153,
+"9690to60": 5.1,
+"969Handling": 88,
+
+"996TopSpeed": 153,
+"9960to60": 4.8,
+"996Handling": 84,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiA5etronquattroprototype(2011).png",
+    "creator": "Connor",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 219,
+    "make": "Mercedes-Benz",
+    "model": "A 170 Classic",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 117,
+    "0to60": 10.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.88,
+    "ola": 67.13,
+	
+    "description": "",
+	
+"333TopSpeed": 121,
+"3330to60": 10,
+"333Handling": 73,
+
+"666TopSpeed": 126,
+"6660to60": 9.5,
+"666Handling": 76,
+
+"699TopSpeed": 126,
+"6990to60": 8.9,
+"699Handling": 79,
+
+"969TopSpeed": 130,
+"9690to60": 9.5,
+"969Handling": 79,
+
+"996TopSpeed": 130,
+"9960to60": 8.9,
+"996Handling": 76,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA170Classic(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

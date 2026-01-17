@@ -1,0 +1,50 @@
+{
+    "carID": "c08249",
+    "cr": 1085,
+    "make": ["Tajima-Rimac","Rimac"],
+    "model": "E-Runner Concept_One",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 168,
+    "0to60": 2.1,
+    "handling": 104,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Full Throttle","Motorsport","Eco-Friendly","Unique"],
+    "isPrize": true,
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 110.53,
+    "ola": 76.19,
+    "description": "",
+	
+"333TopSpeed": 171,
+"3330to60": 2,
+"333Handling": 107,
+
+"666TopSpeed": 174,
+"6660to60": 1.9,
+"666Handling": 111,
+
+"699TopSpeed": 174,
+"6990to60": 1.8,
+"699Handling": 115,
+
+"969TopSpeed": 177,
+"9690to60": 1.9,
+"969Handling": 115,
+
+"996TopSpeed": 177,
+"9960to60": 1.8,
+"996Handling": 111,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/TajimaRimacERunnerConceptOne(2015).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08245",
+    "cr": 915,
+    "make": "Aston Martin",
+    "model": "V12 Vantage GT3 #007 Aston Martin Racing",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 3.3,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Full Throttle","Motorsport"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92.6,
+    "ola": 91.2,
+    "description": "",
+	
+"333TopSpeed": 193,
+"3330to60": 3.1,
+"333Handling": 104,
+
+"666TopSpeed": 195,
+"6660to60": 3,
+"666Handling": 108,
+
+"699TopSpeed": 195,
+"6990to60": 2.8,
+"699Handling": 112,
+
+"969TopSpeed": 198,
+"9690to60": 3,
+"969Handling": 112,
+
+"996TopSpeed": 198,
+"9960to60": 2.8,
+"996Handling": 108,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AstonMartinV12VantageGT3(2012).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 732,
+    "make": "Audi",
+    "model": "RS 5 Coupe TDI concept",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [""],
+    "isPrize": false,
+    "weight": 1840,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 64.06,
+    "ola": 68.29,
+	
+    "description": "World was a better place before Dieselgate, as evidenced by this concept powered by V6 TDI.",
+	
+"333TopSpeed": 177,
+"3330to60": 3.9,
+"333Handling": 90,
+
+"666TopSpeed": 180,
+"6660to60": 3.7,
+"666Handling": 93,
+
+"699TopSpeed": 180,
+"6990to60": 3.5,
+"699Handling": 97,
+
+"969TopSpeed": 183,
+"9690to60": 3.7,
+"969Handling": 97,
+
+"996TopSpeed": 183,
+"9960to60": 3.5,
+"996Handling": 93,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiRS5CoupeTDIconcept(2014).png",
+    "creator": "Connor",
+	"hiddenTag": [""]
+}

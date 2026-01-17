@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 366,
+    "make": "Mercedes-Benz",
+    "model": "A 200 Turbo Avantgarde",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 7.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1275,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.06,
+    "ola": 71.43,
+	
+    "description": "",
+	
+"333TopSpeed": 139,
+"3330to60": 7.1,
+"333Handling": 76,
+
+"666TopSpeed": 143,
+"6660to60": 6.8,
+"666Handling": 79,
+
+"699TopSpeed": 143,
+"6990to60": 6.4,
+"699Handling": 82,
+
+"969TopSpeed": 147,
+"9690to60": 6.8,
+"969Handling": 82,
+
+"996TopSpeed": 147,
+"9960to60": 6.4,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA200TurboAvantgarde(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 273,
+    "make": "Mercedes-Benz",
+    "model": "A 200 Elegance",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 9.3,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1255,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.12,
+    "ola": 69.02,
+	
+    "description": "",
+	
+"333TopSpeed": 125,
+"3330to60": 8.8,
+"333Handling": 74,
+
+"666TopSpeed": 130,
+"6660to60": 8.4,
+"666Handling": 77,
+
+"699TopSpeed": 130,
+"6990to60": 7.9,
+"699Handling": 80,
+
+"969TopSpeed": 134,
+"9690to60": 8.4,
+"969Handling": 80,
+
+"996TopSpeed": 134,
+"9960to60": 7.9,
+"996Handling": 77,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA200Elegance(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

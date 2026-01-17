@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 166,
+    "make": "Mercedes-Benz",
+    "model": "A 150 Avantgarde",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 107,
+    "0to60": 12.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1195,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.86,
+    "ola": 66.25,
+	
+    "description": "",
+	
+"333TopSpeed": 112,
+"3330to60": 11.6,
+"333Handling": 71,
+
+"666TopSpeed": 117,
+"6660to60": 11,
+"666Handling": 74,
+
+"699TopSpeed": 117,
+"6990to60": 10.4,
+"699Handling": 77,
+
+"969TopSpeed": 122,
+"9690to60": 11,
+"969Handling": 77,
+
+"996TopSpeed": 122,
+"9960to60": 10.4,
+"996Handling": 74,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA150Avantgarde(2004).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

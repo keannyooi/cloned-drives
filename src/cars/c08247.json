@@ -1,0 +1,50 @@
+{
+    "carID": "c08247",
+    "cr": 374,
+    "make": "Infiniti",
+    "model": "Q30 1.6t 150",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 8.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Full Throttle"],
+    "isPrize": false,
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50,
+    "ola": 78.26,
+    "description": "",
+	
+"333TopSpeed": 138,
+"3330to60": 8.2,
+"333Handling": 75,
+
+"666TopSpeed": 142,
+"6660to60": 7.7,
+"666Handling": 78,
+
+"699TopSpeed": 142,
+"6990to60": 7.3,
+"699Handling": 81,
+
+"969TopSpeed": 146,
+"9690to60": 7.7,
+"969Handling": 81,
+
+"996TopSpeed": 146,
+"9960to60": 7.3,
+"996Handling": 78,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/InfinitiQ301.6t150(2015).png",
+    "creator": "Scorpio",
+	"hiddenTag": [""]
+}

@@ -1,0 +1,50 @@
+{
+    "carID": "c08244",
+    "cr": 956,
+    "make": "Aston Martin",
+    "model": "Vantage AMR GT3 #14 Volante Rosso Motorsport",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 3,
+    "handling": 103,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Full Throttle","Motorsport"],
+    "isPrize": false,
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.48,
+    "ola": 91.56,
+    "description": "",
+	
+"333TopSpeed": 189,
+"3330to60": 2.8,
+"333Handling": 106,
+
+"666TopSpeed": 192,
+"6660to60": 2.7,
+"666Handling": 110,
+
+"699TopSpeed": 192,
+"6990to60": 2.5,
+"699Handling": 114,
+
+"969TopSpeed": 194,
+"9690to60": 2.7,
+"969Handling": 114,
+
+"996TopSpeed": 194,
+"9960to60": 2.5,
+"996Handling": 110,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AstonMartinVantageAMRGT3(2019).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}
