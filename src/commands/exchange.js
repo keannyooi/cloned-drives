@@ -18,7 +18,7 @@ module.exports = {
     usage: [],
     args: 0,
     category: "Gameplay",
-    description: "Exchange a duplicate prize car for another prize car you don't own (within 50 CR).",
+    description: "Exchange a duplicate prize car for another prize car you don't own (within 50 CR and same tyre type).",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
         const carFiles = getCarFiles();
@@ -53,7 +53,7 @@ module.exports = {
         // Step 3: Create dropdown with duplicate prize cars
         const options = duplicatePrizeCars.map((item, index) => ({
             label: `${carNameGen({ currentCar: item.carData, removePrizeTag: true })} (x${item.totalOwned})`,
-            description: `CR: ${item.carData.cr}`,
+            description: `CR: ${item.carData.cr} | ${item.carData.tyreType || "Standard"} tyres`,
             value: `${index}`,
             emoji: `<trophies:${trophyEmojiID}>`
         }));
@@ -88,12 +88,13 @@ module.exports = {
             const selectedDuplicate = duplicatePrizeCars[selectedIndex];
             const selectedCarData = selectedDuplicate.carData;
             const selectedGarageCar = selectedDuplicate.garageCar;
+            const selectedTyreType = selectedCarData.tyreType || "Standard";
 
             // Step 5: Ask player to type desired prize car
             const typeMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Type out the prize car you want",
-                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within ±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}).`,
+                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within ±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
                 author: message.author,
                 image: selectedCarData.racehud,
                 footer: `You have been given ${defaultWaitTime / 1000} seconds to respond.`
@@ -121,20 +122,23 @@ module.exports = {
                 }
 
                 // Step 7: Search for the prize car they want
-                // Filter car files to only include prize cars within CR range
+                // Filter car files to only include prize cars within CR range AND same tyre type
                 const validPrizeCars = carFiles.filter(file => {
                     const carId = file.endsWith('.json') ? file.slice(0, -5) : file;
                     const car = getCar(carId);
                     if (!car || car.isPrize !== true || car.reference) return false;
                     const crDiff = Math.abs(car.cr - selectedCarData.cr);
-                    return crDiff <= 50;
+                    if (crDiff > 50) return false;
+                    // Check tyre type matches
+                    const carTyreType = car.tyreType || "Standard";
+                    return carTyreType === selectedTyreType;
                 });
 
                 if (validPrizeCars.length === 0) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
                         title: "Error, no valid prize cars found.",
-                        desc: "There are no other prize cars within the CR range to exchange for.",
+                        desc: `There are no other prize cars within the CR range with **${selectedTyreType}** tyres to exchange for.`,
                         author: message.author
                     });
                     return errorMessage.sendMessage({ currentMessage });
@@ -181,6 +185,18 @@ module.exports = {
                                 channel: message.channel,
                                 title: "Error, prize car is not within CR range!",
                                 desc: `The selected car must be within ±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        // Step 10b: Double-check tyre type (should already be filtered but just in case)
+                        const desiredTyreType = desiredCar.tyreType || "Standard";
+                        if (desiredTyreType !== selectedTyreType) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, tyre types do not match!",
+                                desc: `The selected car must have the same tyre type.\nYour car: **${selectedTyreType}** tyres\nDesired car: **${desiredTyreType}** tyres`,
                                 author: message.author
                             });
                             return errorMessage.sendMessage({ currentMessage });
