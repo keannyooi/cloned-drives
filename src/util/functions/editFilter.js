@@ -1,11 +1,11 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
+const { getCarFiles, getCar } = require("./dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
 
 function editFilter(message, filter, args) {
+    const carFiles = getCarFiles();
     const criteria = format(args[0]),
         arg1 = typeof args[1] === "object" ? args[1] : args[1].toLowerCase(),
         arg2 = args[2]?.toLowerCase();
@@ -18,9 +18,9 @@ function editFilter(message, filter, args) {
 		case "hiddenTag":
             let argument = args.slice(1, args.length).join(" ").toLowerCase();
             isValid = carFiles.findIndex(function (carFile) {
-                let currentCar = require(`../../cars/${carFile}`), bmReference = currentCar;
+                let currentCar = getCar(carFile), bmReference = currentCar;
                 if (currentCar["reference"]) {
-                    bmReference = require(`../../cars/${currentCar["reference"]}`);
+                    bmReference = getCar(currentCar["reference"]);
                 }
                 if (criteria === "collection") {
                     if (!currentCar[criteria]) {
@@ -113,7 +113,7 @@ else {
         case "fuelType":
         case "gc":
             isValid = carFiles.findIndex(function (carFile) {
-                let currentCar = require(`../../cars/${carFile}`);
+                let currentCar = getCar(carFile);
                 return !currentCar["reference"] && currentCar[criteria].toLowerCase() === arg1;
             });
 
@@ -156,70 +156,49 @@ else {
                 let errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, argument provided is not a boolean.",
-                    desc: "Booleans only have 2 states, `true` or `false`.",
+                    desc: `The \`${criteria}\` filter criteria only accepts a boolean value, i.e: \`true\` or \`false\`.`,
                     author: message.author
-                }).displayClosest(arg1);
+                });
                 return errorMessage.sendMessage();
             }
             break;
         case "search":
-            let arg = args.slice(1, args.length).join(" ").toLowerCase();
-            isValid = carFiles.findIndex(function (carFile) {
-                let currentCar = require(`../../cars/${carFile}`);
-                return carNameGen({ currentCar }).toLowerCase().includes(arg);
-            });
-            if (isValid > -1) {
-                filter[criteria] = arg;
-            }
-            else {
-                let errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, keyword provided returned no results.",
-                    desc: "Maybe you have made a typo.",
-                    author: message.author
-                }).displayClosest(arg);
-                return errorMessage.sendMessage();
-            }
-
+            filter[criteria] = args.slice(1, args.length).join(" ").toLowerCase();
             successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: "Successfully modified the model name search category!",
-                author: message.author,
-                fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
+                title: `Successfully set the \`${criteria}\` criteria to \`${filter[criteria]}\`!`,
+                author: message.author
             });
             break;
         case "applyreqs":
-            if (typeof arg1 !== "object") {
-                let errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, this function is not supported for `cd-editevent`.`",
-                    desc: "This functionality is only meant for `cd-filter`.",
-                    author: message.author
-                }).displayClosest(arg);
-                return errorMessage.sendMessage();
-            }
-            else {
-                filter = {};
-                for (let [req, value] of Object.entries(arg1)) {
-                    filter[req] = value;
-                }
-
+            try {
+                filter[criteria] = JSON.parse(arg1);
                 successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: "Successfully applied random race criterias!",
+                    title: `Successfully set the \`${criteria}\` criteria to \`${arg1}\`!`,
                     author: message.author
                 });
+            }
+            catch (error) {
+                let errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, argument provided is not a boolean.",
+                    desc: `The \`${criteria}\` filter criteria only accepts a boolean value, i.e: \`true\` or \`false\`.`,
+                    author: message.author
+                });
+                return errorMessage.sendMessage();
             }
             break;
         case "disable":
         case "remove":
-            const criteria2 = format(arg1);
+            let criteria2 = format(arg1);
+            let string = args.slice(2, args.length).join(" ").toLowerCase();
             switch (criteria2) {
                 case "all":
                     filter = {};
                     successMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: "Successfully cleared all filter categories!",
+                        title: "Successfully removed all filters!",
                         author: message.author
                     });
                     break;
@@ -228,22 +207,11 @@ else {
                 case "collection":
                 case "bodyStyle":
 				case "hiddenTag":
-                    if (!arg2) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, filter criteria not provided.",
-                            desc: "You are expected to provide the name of a filter criteria after the filter category.",
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage();
-                    }
-
-                    let string = args.slice(2, args.length).join(" ").toLowerCase();
                     if (string === "all") {
                         delete filter[criteria2];
                         successMessage = new SuccessMessage({
                             channel: message.channel,
-                            title: `Successfully cleared the \`${criteria2}\` filter category!`,
+                            title: `Successfully cleared all \`${criteria2}\` criterias!`,
                             author: message.author
                         });
                     }

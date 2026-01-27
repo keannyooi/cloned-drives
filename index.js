@@ -2,7 +2,7 @@
 
 require("dotenv").config();
 const bot = require("./src/config/config.js");
-const { readdirSync, readFileSync } = require("fs");
+const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
@@ -22,7 +22,18 @@ const offerModel = require("./src/models/offerSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
-const path = require("path");
+
+// ============================================================================
+// INITIALIZE DATA MANAGER - Loads all cars, tracks, packs into memory ONCE
+// ============================================================================
+const dataManager = require("./src/util/functions/dataManager.js");
+const dataStats = dataManager.initialize("./src");
+
+// Exit if critical files failed to load
+if (dataStats.cars.failed > 0) {
+    console.error("❌ Some car files failed to load. Check errors above.");
+    process.exit(1);
+}
 
 // 🔒 Global crash protection
 process.on("unhandledRejection", (reason, promise) => {
@@ -45,39 +56,9 @@ for (let commandFile of commandFiles) {
     let command = require(`./src/commands/${commandFile}`);
     bot.commands.set(command.name, command);
 }
-// Preload all car data into memory with error tracking
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
 
-const carData = [];
-let failedFiles = 0;
-
-for (const file of carFiles) {
-    const filePath = path.join("./src/cars", file);
-    try {
-        const rawData = readFileSync(filePath, "utf8");
-        const parsed = JSON.parse(rawData);
-        carData.push(parsed);
-    } catch (err) {
-        failedFiles++;
-        console.error(`❌ Failed to load car file: ${file}`);
-        console.error(`   ↳ Error: ${err.message}`);
-    }
-}
-
-if (failedFiles > 0) {
-    console.warn(`⚠️ Loaded ${carData.length} car files, but ${failedFiles} failed. Check errors above.`);
-    process.exit(1); // Exit with error code AFTER showing warning
-} else {
-    console.log(`✅ Loaded all ${carData.length} car files successfully.`);
-}
-
-module.exports = { carData }; // Export the data for use in other modules
-
-connect(process.env.MONGO_PW, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-})
+// Database connection (removed deprecated options for Mongoose 6+)
+connect(process.env.MONGO_PW)
     .then(() => console.log("database connect successful!"))
     .catch(error => console.log(error));
 
@@ -93,13 +74,6 @@ bot.once("ready", async () => {
     members.forEach(async (user) => {
         await upsertUserRecord(user);
     });
-
-    // for updating profile model structure
-    // await profileModel.updateMany({}, {
-    //     "$set": {
-    //         "dailyStats.lastDaily": DateTime.fromISO("2021-09-10").toISO(),
-    //     }
-    // });
 
     bot.devMode ? bot.user.setActivity("around with code", { type: "PLAYING" }) : bot.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
@@ -120,17 +94,7 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
     }
 });
 
-// try me
-// process.on("uncaughtException", async error => {
-//     console.log(error.stack);
-//     const errorReport = new BotError({
-//         stack: error.stack,
-//         unknownSource: true
-//     });
-//     await errorReport.sendReport();
-// });
-
-// loop thingy
+// loop thingy - checks for expired events/offers every 3 minutes
 setInterval(async () => {
     const events = await eventModel.find({ isActive: true });
     for (let event of events) {
@@ -139,7 +103,7 @@ setInterval(async () => {
         }
     }
 	
-	    const championships = await championshipsModel.find({ isActive: true });
+    const championships = await championshipsModel.find({ isActive: true });
     for (let championship of championships) {
         if (championship.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(championship.deadline)).invalid !== null) {
             await endChampionship(championship);
@@ -218,7 +182,8 @@ async function processCommand(message) {
             }
         });
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-    if (bot.devMode && (!member._roles.includes(adminRoleID) || !member._roles.includes(testerRoleID))) return;
+    // BUG FIX: Changed || to && - previously required BOTH roles, now requires EITHER
+    if (bot.devMode && !member._roles.includes(adminRoleID) && !member._roles.includes(testerRoleID)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
@@ -248,7 +213,7 @@ async function processCommand(message) {
             if (!member.roles.cache.has(testerRoleID)) {
                 return accessDenied(message, testerRoleID);
             }
-	       break;
+           break;
         case "Sandbox":
             if (!member.roles.cache.has(sandboxRoleID)) {
                 return accessDenied(message, sandboxRoleID);
@@ -291,11 +256,6 @@ async function processCommand(message) {
     if (!bot.execList[message.author.id]) {
         try {
             bot.execList[message.author.id] = command.name;
-            setTimeout(() => {
-                if (bot.execList[message.author.id]) {
-                    delete bot.execList[message.author.id];
-                }
-            }, 30000);
             await command.execute(message, args);
         }
         catch (error) {
@@ -303,8 +263,7 @@ async function processCommand(message) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, failed to execute command.",
-                desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.
-                \`${error.stack}\``,
+                desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.`,
                 author: message.author
             });
             await errorMessage.sendMessage();
@@ -316,6 +275,10 @@ async function processCommand(message) {
                 stack: error.stack,
             });
             return errorReport.sendReport();
+        }
+        finally {
+            // BUG FIX: Always clean up execList, even if command throws
+            delete bot.execList[message.author.id];
         }
     }
     else {

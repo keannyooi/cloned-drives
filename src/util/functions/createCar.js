@@ -1,12 +1,13 @@
 "use strict";
 
+const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const unbritish = require("./unbritish.js");
 
 function createCar(currentCar, unitPreference, hideStats) {
-    let car = require(`../../cars/${currentCar.carID}.json`), bmReference = car;
+    let car = getCar(currentCar.carID), bmReference = car;
     if (car["reference"]) {
-        bmReference = require(`../../cars/${car["reference"]}.json`)
+        bmReference = getCar(car["reference"]);
     }
     const carModule = {
         cr: bmReference["cr"],

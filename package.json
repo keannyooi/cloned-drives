@@ -9,7 +9,7 @@
     "dotenv": "^10.0.0",
     "luxon": "^1.27.0",
     "mongodb": "^3.6.9",
-    "mongoose": "^5.13.14",
+    "mongoose": "^9.1.5",
     "node-cron": "^3.0.0",
     "npm": "^7.20.5",
     "string-similarity": "^4.0.4"

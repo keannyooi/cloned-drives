@@ -2,6 +2,7 @@
 
 const bot = require("../../config/config.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../consts/consts.js");
+const { getCar, getPack } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 
 function listRewards(rewards) {
@@ -22,11 +23,11 @@ function listRewards(rewards) {
                 rewardString += `${emoji}${value.toLocaleString("en")}, `;
                 break;
             case "car":
-                let currentCar = require(`../../cars/${value.carID}`);
+                let currentCar = getCar(value.carID);
                 rewardString += `${carNameGen({ currentCar, rarity: true, upgrade: value.upgrade })}, `;
                 break;
             case "pack":
-                let pack = require(`../../packs/${value}`);
+                let pack = getPack(value);
                 rewardString += `${pack["packName"]}, `;
                 break;
             default:

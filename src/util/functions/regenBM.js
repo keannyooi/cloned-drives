@@ -4,16 +4,16 @@ const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+const { getCarFiles, getCar } = require("./dataManager.js");
 const { cardPlacement, failedToLoadImageLink, dealershipChannelID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
 
 async function regenBM() {
     const catalog = [];
+    const carFiles = getCarFiles();
     const bmCars = carFiles.filter(file => {
-        let car = require(`../../cars/${file}`);
+        let car = getCar(file);
         return car["reference"] !== undefined;
     });
 
@@ -54,8 +54,8 @@ for (let i = 0; i < 8; i++) {
     }
         // Pick initial random car from bmCars
         let currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
-        let currentCar = require(`../../cars/${currentFile}`);
-        let bmReference = require(`../../cars/${currentCar["reference"]}`);
+        let currentCar = getCar(currentFile);
+        let bmReference = getCar(currentCar["reference"]);
 
         // Prevent infinite loops by limiting attempts
         let attempts = 0;
@@ -71,8 +71,8 @@ for (let i = 0; i < 8; i++) {
             attempts < maxAttempts
         ) {
             currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
-            currentCar = require(`../../cars/${currentFile}`);
-            bmReference = require(`../../cars/${currentCar["reference"]}`);
+            currentCar = getCar(currentFile);
+            bmReference = getCar(currentCar["reference"]);
             attempts++;
             // Optionally log attempts for debugging:
             // console.log(`Attempt ${attempts}: CR ${bmReference["cr"]} Range [${crStart},${crEnd}]`);
@@ -89,8 +89,8 @@ for (let i = 0; i < 8; i++) {
     // Sort catalog by price then by name
     catalog.sort(function (a, b) {
         if (a.price === b.price) {
-            const carA = require(`../../cars/${a.carID}`);
-            const carB = require(`../../cars/${b.carID}`);
+            const carA = getCar(a.carID);
+            const carB = getCar(b.carID);
             return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
         } else {
             return a.price - b.price;
@@ -109,7 +109,7 @@ for (let i = 0; i < 8; i++) {
         context.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
 
         const cards = catalog.map(car => {
-            let currentCar = require(`../../cars/${car.carID}`);
+            let currentCar = getCar(car.carID);
             return loadImage(currentCar["racehud"]);
         });
         const promises = await Promise.all(cards);

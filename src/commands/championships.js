@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { eventMakerRoleID, defaultPageLimit } = require("../util/consts/consts.js");
+const { getCar, getTrack } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -88,8 +89,8 @@ module.exports = {
                     const fields = [];
                     for (let i = 0; i < section.length; i++) {
                         let round = (page - 1) * (settings.listamount || defaultPageLimit) + i + 1;
-                     let currentCar = require(`../cars/${section[i].carID}`);
-                        let track = require(`../tracks/${section[i].track}`);
+                        let currentCar = getCar(section[i].carID);
+                        let track = getTrack(section[i].track);
 
                         fields.push({
                             name: `Round ${round} ${round < championship.playerProgress[message.author.id] ? "✅" : ""}`,

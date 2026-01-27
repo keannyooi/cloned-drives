@@ -1,9 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
+const { getCarFiles, getTrackFiles, getCar, getTrack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultWaitTime } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -23,6 +21,9 @@ module.exports = {
     cooldown: 10,
     description: "Does a quick race where you can choose the trackset and the opponent car. Great for testing out cars.",
     async execute(message, args) {
+        const carFiles = getCarFiles();
+        const trackFiles = getTrackFiles();
+        
         const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
         if (hand.carID === "") {
             return handMissingError(message);
@@ -30,7 +31,9 @@ module.exports = {
 
         let query = args.map(i => i.toLowerCase()), searchBy = "track";
         if (args[0].toLowerCase() === "random") {
-            return chooseOpponent(trackFiles[Math.floor(Math.random() * trackFiles.length)]);
+            const randomTrackFile = trackFiles[Math.floor(Math.random() * trackFiles.length)];
+            const trackId = randomTrackFile.endsWith('.json') ? randomTrackFile.slice(0, -5) : randomTrackFile;
+            return chooseOpponent(trackId);
         }
         else if (args[0].toLowerCase().startsWith("-t")) {
             query = [args[0].toLowerCase().slice(1)];
@@ -40,16 +43,19 @@ module.exports = {
         await new Promise(resolve => resolve(search(message, query, trackFiles, searchBy)))
             .then(async response => {
                 if (!Array.isArray(response)) return;
-                await chooseOpponent(...response);
+                let [result, currentMessage] = response;
+                // Result might be filename or ID, normalize it
+                const trackId = result.endsWith('.json') ? result.slice(0, -5) : result;
+                await chooseOpponent(trackId, currentMessage);
             })
             .catch(error => {
                 throw error;
             });
 
-        async function chooseOpponent(track, currentMessage) {
+        async function chooseOpponent(trackId, currentMessage) {
             const filter = response => response.author.id === message.author.id;
-            const currentTrack = require(`../tracks/${track}`);
-            const handCar = require(`../cars/${hand.carID}`);
+            const currentTrack = getTrack(trackId);
+            const handCar = getCar(hand.carID);
             const chooseMessage = new InfoMessage({
                 channel: message.channel,
                 title: `${currentTrack["trackName"]} has been chosen!`,
@@ -79,14 +85,18 @@ module.exports = {
                     }
 
                     if (query[0].toLowerCase() === "random") {
-                        selectTune(carFiles[Math.floor(Math.random() * carFiles.length)], currentTrack, currentMessage);
+                        const randomCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+                        const carId = randomCarFile.endsWith('.json') ? randomCarFile.slice(0, -5) : randomCarFile;
+                        selectTune(carId, currentTrack, currentMessage);
                     }
                     else {
                         await new Promise(resolve => resolve(search(message, query, carFiles, searchBy, currentMessage)))
                             .then(async response => {
                                 if (!Array.isArray(response)) return;
                                 let [result, currentMessage] = response;
-                                await selectTune(result, currentTrack, currentMessage);
+                                // Result might be filename or ID, normalize it
+                                const carId = result.endsWith('.json') ? result.slice(0, -5) : result;
+                                await selectTune(carId, currentTrack, currentMessage);
                             });
                     }
                 })
@@ -106,9 +116,9 @@ module.exports = {
                 });
         }
 
-        async function selectTune(opponent, currentTrack, currentMessage) {
+        async function selectTune(opponentId, currentTrack, currentMessage) {
             let chooseEverything = {
-                carID: opponent.slice(0, 6),
+                carID: opponentId,
                 upgrades: {
                     "000": 1,
                     "333": 1,
@@ -124,7 +134,7 @@ module.exports = {
                     if (!Array.isArray(response)) return;
                     let [upgrade, currentMessage] = response;
                     const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
-                    const [opponentCar, opponentList] = createCar({ carID: opponent.slice(0, 6), upgrade }, settings.unitpreference);
+                    const [opponentCar, opponentList] = createCar({ carID: opponentId, upgrade }, settings.unitpreference);
                     const intermission = new InfoMessage({
                         channel: message.channel,
                         title: "Ready to Play!",

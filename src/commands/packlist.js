@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith('.json'));
+const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const listUpdate = require("../util/functions/listUpdate.js");
@@ -15,6 +14,7 @@ module.exports = {
     category: "Info",
     description: "Shows all the packs that are available in Cloned Drives in list form. You can filter by keyword.",
     async execute(message, args) {
+        const packFiles = getPackFiles();
         const { settings } = await profileModel.findOne({ userID: message.author.id });
         let list = packFiles, page;
 
@@ -40,8 +40,9 @@ module.exports = {
         if (keyword) {
             list = list.filter(file => {
                 try {
-                    const currentPack = require(`../packs/${file}`);
-                    return currentPack["packName"] && currentPack["packName"].toLowerCase().includes(keyword);
+                    const packId = file.endsWith('.json') ? file.slice(0, -5) : file;
+                    const currentPack = getPack(packId);
+                    return currentPack && currentPack["packName"] && currentPack["packName"].toLowerCase().includes(keyword);
                 } catch (err) {
                     console.error(`Error loading file: ${file}`, err);
                     return false;
@@ -72,8 +73,10 @@ module.exports = {
             return errorMessage.sendMessage();
         }
         list.sort((a, b) => {
-            const packA = require(`../packs/${a}`)["packName"];
-            const packB = require(`../packs/${b}`)["packName"];
+            const packIdA = a.endsWith('.json') ? a.slice(0, -5) : a;
+            const packIdB = b.endsWith('.json') ? b.slice(0, -5) : b;
+            const packA = getPack(packIdA)["packName"];
+            const packB = getPack(packIdB)["packName"];
             return packA.localeCompare(packB);
         });
 
@@ -88,7 +91,8 @@ module.exports = {
             let packList = "";
             for (let i = 0; i < section.length; i++) {
                 try {
-                    let currentPack = require(`../packs/${section[i]}`);
+                    const packId = section[i].endsWith('.json') ? section[i].slice(0, -5) : section[i];
+                    let currentPack = getPack(packId);
                     packList += `**${i + 1}.** ${currentPack["packName"]} `;
                     
                     // Add green circle for packs with a "price" property

@@ -2,9 +2,7 @@
 
 const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
+const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID} = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -19,6 +17,9 @@ module.exports = {
     category: "Gameplay",
     description: "Collect your daily reward with this command!",
     async execute(message) {
+        const carFiles = getCarFiles();
+        const packFiles = getPackFiles();
+        
         let { dailyStats, money, garage } = await profileModel.findOne({ userID: message.author.id });
         let { lastDaily, streak, highestStreak } = dailyStats;
 
@@ -26,13 +27,10 @@ module.exports = {
         const lastDailyDateTime = DateTime.fromISO(lastDaily);
         const currentDateTime = DateTime.now();
 		const hoursSinceLastDaily = currentDateTime.diff(lastDailyDateTime, 'hours').hours;
-		//const minutesSinceLastDaily = currentDateTime.diff(lastDailyDateTime, 'minutes').minutes;
-		//const hoursSinceLastDaily = minutesSinceLastDaily / 60;
 		
 console.log('Hours since last daily:', hoursSinceLastDaily);
 
         if (hoursSinceLastDaily >= 24) {
-        ///testing use this///if (hoursSinceLastDaily >= 0.1) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const streakCheck = Interval.fromDateTimes(lastDailyDateTime, lastDailyDateTime.plus({ days: 1 }));
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
@@ -48,10 +46,10 @@ console.log('Hours since last daily:', hoursSinceLastDaily);
 
             if (streak % 20 === 0) {
                 let randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-                let currentPack = require(`../packs/${randomPack}`);
+                let currentPack = getPack(randomPack);
                 while (!currentPack.packName.toLowerCase().includes("elite") || currentPack.repetition > 1) {
                     randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-                    currentPack = require(`../packs/${randomPack}`);
+                    currentPack = getPack(randomPack);
                 }
                 
                 let pulledCars = await openPack({ message, currentPack });
@@ -64,11 +62,11 @@ console.log('Hours since last daily:', hoursSinceLastDaily);
             }
             else if (streak % 7 === 0) {
                 let randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-                let currentPack = require(`../packs/${randomPack}`);
+                let currentPack = getPack(randomPack);
                 let packName = currentPack.packName.toLowerCase();
                 while ((packName.includes("elite") && !guildMember.roles.cache.has("860147600459956224")) || packName.includes("booster") || currentPack.repetition > 1) {
                     randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-                    currentPack = require(`../packs/${randomPack}`);
+                    currentPack = getPack(randomPack);
                     packName = currentPack.packName.toLowerCase();
                 }
 
@@ -82,10 +80,10 @@ console.log('Hours since last daily:', hoursSinceLastDaily);
             }
             else if (streak % 5 === 0) {
                 let carID = carFiles[Math.floor(Math.random() * carFiles.length)];
-                let currentCar = require(`../cars/${carID}`);
+                let currentCar = getCar(carID);
                 while (currentCar["reference"] || currentCar["cr"] > 699 || currentCar["isPrize"] === true) {
                     carID = carFiles[Math.floor(Math.random() * carFiles.length)];
-                    currentCar = require(`../cars/${carID}`);
+                    currentCar = getCar(carID);
                 }
                 garage = addCars(garage, [{ carID: carID.slice(0, 6), upgrade: "000" }]);
                 desc = ` and you've received a free ${carNameGen({ currentCar })} as a bonus!`;

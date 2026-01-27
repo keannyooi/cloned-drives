@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { sandboxRoleID } = require("../util/consts/consts.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
@@ -69,12 +70,12 @@ module.exports = {
         async function buyCar(currentCar, amount, currentMessage) {
             const emoji = bot.emojis.cache.get(mode === "bm" ? trophyEmojiID : moneyEmojiID);
             const { money, trophies, garage } = await profileModel.findOne({ userID: message.author.id });
-            const car = require(`../cars/${currentCar.carID}`);
+            const car = getCar(currentCar.carID);
             const price = currentCar.price * amount;
             let balance = mode === "bm" ? trophies : money;
 
             if (mode === "bm" && !garage.find(c => c.carID === car["reference"])) {
-                let bmReference = require(`../cars/${car["reference"]}`);
+                let bmReference = getCar(car["reference"]);
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, unable to purchase car.",

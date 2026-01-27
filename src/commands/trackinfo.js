@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
+const { getTrackFiles, getTrack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 
@@ -13,9 +12,12 @@ module.exports = {
     category: "Info",
     description: "Shows info about a specified track.",
     async execute(message, args) {
+        const trackFiles = getTrackFiles();
         let query = args.map(i => i.toLowerCase()), searchBy = "track";
         if (args[0].toLowerCase() === "random") {
-            return displayInfo(trackFiles[Math.floor(Math.random() * trackFiles.length)]);
+            const randomFile = trackFiles[Math.floor(Math.random() * trackFiles.length)];
+            const trackId = randomFile.endsWith('.json') ? randomFile.slice(0, -5) : randomFile;
+            return displayInfo(trackId);
         }
         else if (args[0].toLowerCase().startsWith("-t")) {
             query = [args[0].toLowerCase().slice(1)];
@@ -25,18 +27,20 @@ module.exports = {
         await new Promise(resolve => resolve(search(message, query, trackFiles, searchBy)))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
-                displayInfo(...response);
+                let [result, currentMessage] = response;
+                const trackId = result.endsWith('.json') ? result.slice(0, -5) : result;
+                displayInfo(trackId, currentMessage);
             })
             .catch(error => {
                 throw error;
             })
         
-        function displayInfo(track, currentMessage) {
-            let currentTrack = require(`../tracks/${track}`);
+        function displayInfo(trackId, currentMessage) {
+            let currentTrack = getTrack(trackId);
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: currentTrack["trackName"],
-                desc: `ID: \`${track.slice(0, 6)}\``,
+                desc: `ID: \`${trackId.slice(0, 6)}\``,
                 author: message.author,
                 image: currentTrack["background"],
                 thumbnail: currentTrack["map"],

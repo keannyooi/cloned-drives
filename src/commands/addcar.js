@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
+const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
@@ -17,9 +16,11 @@ module.exports = {
     category: "Admin",
     description: "Adds a car into your garage.",
     async execute(message, args) {
+        const carFiles = getCarFiles();
+        
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
-                await getCar(message.mentions.users.first());
+                await getCarFunc(message.mentions.users.first());
             }
             else {
                 return botUserError(message);
@@ -30,14 +31,14 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-					await getCar(await message.client.users.fetch(result.user.id), currentMessage);
+					await getCarFunc(await message.client.users.fetch(result.user.id), currentMessage);
                 })
                 .catch(error => {
                     throw error;
                 });
         }
 
-        async function getCar(user, currentMessage) {
+        async function getCarFunc(user, currentMessage) {
             let carName;
             let amount = 1;
             if (isNaN(args[1]) || !args[2]) {
@@ -61,14 +62,17 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
+                    
+                    // Handle .json extension
+                    const carId = result.endsWith('.json') ? result.slice(0, -5) : result.slice(0, 6);
 
                     const { garage } = await profileModel.findOne({ userID: user.id });
-                    const currentCar = require(`../cars/${result}`);
+                    const currentCar = getCar(carId);
                     const currentName = carNameGen({ currentCar });
 
                     let addedCars = [];
                     for (let i = 0; i < amount; i++) {
-                        addedCars.push({ carID: result.slice(0, 6), upgrade: "000" });
+                        addedCars.push({ carID: carId.slice(0, 6), upgrade: "000" });
                     }
                     await profileModel.updateOne({ userID: user.id }, { garage: addCars(garage, addedCars) });
 

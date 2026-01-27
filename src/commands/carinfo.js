@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
+const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -18,6 +17,7 @@ module.exports = {
     category: "Info",
     description: "Shows info about a specified car.",
     async execute(message, args) {
+        const carFiles = getCarFiles();
         let query = args.map(i => i.toLowerCase()), searchBy = "carWithBM";
         if (args[0].toLowerCase() === "random") {
             return displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
@@ -39,9 +39,9 @@ module.exports = {
         async function displayInfo(carFile, currentMessage) {
             const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
             let description = "None", mra = "N/A", ola = "N/A", collection = "N/A";
-            let currentCar = require(`../cars/${carFile}`), bmReference = currentCar;
+            let currentCar = getCar(carFile), bmReference = currentCar;
             if (currentCar["reference"]) {
-                bmReference = require(`../cars/${currentCar["reference"]}`);
+                bmReference = getCar(currentCar["reference"]);
                 collection = currentCar["collection"].join(", ")
             }
             let topSpeed = `${bmReference.topSpeed}MPH`, accel = "N/A", weight = `${bmReference.weight.toLocaleString("en")}kg`;

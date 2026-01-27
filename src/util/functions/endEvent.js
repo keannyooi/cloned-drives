@@ -3,6 +3,7 @@
 const bot = require("../../config/config.js");
 const { InfoMessage } = require("../classes/classes.js");
 const { currentEventsChannelID } = require("../consts/consts.js");
+const { getCar, getTrack } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const listRewards = require("./listRewards.js");
 const reqDisplay = require("./reqDisplay.js");
@@ -22,8 +23,8 @@ async function endEvent(event) {
 
         const fields1 = [], fields2 = [];
         for (let i = 0; i < event.roster.length; i++) {
-            let currentCar = require(`../../cars/${event.roster[i].carID}`);
-            let track = require(`../../tracks/${event.roster[i].track}`);
+            let currentCar = getCar(event.roster[i].carID);
+            let track = getTrack(event.roster[i].track);
             let field = {
                 name: `Round ${i + 1}`,
                 value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: event.roster[i].upgrade })}

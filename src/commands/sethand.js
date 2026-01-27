@@ -1,6 +1,7 @@
 "use strict";
 
 const { SuccessMessage } = require("../util/classes/classes.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const searchGarage = require("../util/functions/searchGarage.js");
@@ -59,7 +60,7 @@ module.exports = {
         }
 
         async function setHand(currentCar, upgrade, currentMessage) {
-            const car = require(`../cars/${currentCar.carID}`);
+            const car = getCar(currentCar.carID);
             const [, attachment] = await Promise.all([
                 profileModel.updateOne({ userID: message.author.id }, {
                     hand: {

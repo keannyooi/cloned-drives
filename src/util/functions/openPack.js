@@ -1,26 +1,20 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+const { getCarFiles, getCar } = require("./dataManager.js");
 const { InfoMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
 const sortCars = require("./sortCars.js");
 
-// Preload all cars at module load time
-const carsMap = new Map();
-for (const file of carFiles) {
-  carsMap.set(file, require(`../../cars/${file}`));
-}
-
 async function openPack(args) {
   const { message, currentPack, currentMessage, test } = args;
   const cardFilter = currentPack["filter"];
+  const carFiles = getCarFiles();
   let pulledCards = "";
   let addedCars = [];
 
-  // Filter the cars once based on filterCard, using preloaded carsMap
+  // Filter the cars once based on filterCard
   const filteredCars = carFiles.filter(file => {
-    const car = carsMap.get(file);
+    const car = getCar(file);
     return filterCard(car, cardFilter);
   });
 
@@ -58,7 +52,7 @@ async function openPack(args) {
   };
 
   for (const file of filteredCars) {
-    const car = carsMap.get(file);
+    const car = getCar(file);
     const cr = car.cr;
 
     if (cr >= 1 && cr <= 99) carsByCRRange.standard.push(file);
@@ -118,7 +112,7 @@ async function openPack(args) {
 
   // Build and send embed messages in batches of 5 cards
   for (let i = 0; i < addedCars.length; i++) {
-    const currentCar = carsMap.get(`${addedCars[i].carID}.json`);
+    const currentCar = getCar(addedCars[i].carID);
     pulledCards += carNameGen({ currentCar, rarity: true });
 
     if ((i + 1) % 5 !== 0) {

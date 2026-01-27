@@ -3,8 +3,7 @@
 const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+const { getCarFiles, getCar } = require("./dataManager.js");
 const { cardPlacement, failedToLoadImageLink, dealershipChannelID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
@@ -58,6 +57,7 @@ function scaleStockByCR(cr) {
 
 async function regenDealership() {
     const catalog = [];
+    const carFiles = getCarFiles();
 
     for (let i = 0; i < 8; i++) {
         let currentFile, currentCar, crStart, crEnd, price;
@@ -66,7 +66,7 @@ async function regenDealership() {
         let valid = false;
         while (!valid) {
             currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
-            currentCar = require(`../../cars/${currentFile}`);
+            currentCar = getCar(currentFile);
             const [tempStart, tempEnd] = getRandomCRRange(i);
             const cr = currentCar["cr"];
 
@@ -94,8 +94,8 @@ async function regenDealership() {
 
     catalog.sort((a, b) => {
         if (a.price === b.price) {
-            const carA = require(`../../cars/${a.carID}`);
-            const carB = require(`../../cars/${b.carID}`);
+            const carA = getCar(a.carID);
+            const carB = getCar(b.carID);
             return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
         }
         return a.price - b.price;
@@ -110,7 +110,7 @@ async function regenDealership() {
     try {
         context.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
         const cards = catalog.map(car => {
-            let currentCar = require(`../../cars/${car.carID}`);
+            let currentCar = getCar(car.carID);
             return loadImage(currentCar["racehud"]);
         });
         promises = await Promise.all(cards);

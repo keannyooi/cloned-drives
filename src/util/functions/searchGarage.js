@@ -3,6 +3,7 @@
 const { StringSelectMenuBuilder } = require("discord.js");
 const { ErrorMessage } = require("../classes/classes.js");
 const { trophyEmojiID } = require("../consts/consts.js");
+const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js")
 const processResults = require("./corefiles/processResults.js");
@@ -12,7 +13,7 @@ async function searchGarage(args) {
     let matchList = [];
     const searchResults = garage.filter(car => {
         let matchFound, isSufficient;
-        let currentCar = require(`../../cars/${car.carID}.json`);
+        let currentCar = getCar(car.carID);
         if (restrictedMode && (currentCar["isPrize"] === true || currentCar["reference"])) {
             return false;
         }
@@ -40,7 +41,7 @@ async function searchGarage(args) {
     return processResults(message, searchResults, () => {
         const options = [];
         for (let i = 0; i < searchResults.length; i++) {
-            let currentCar = require(`../../cars/${searchResults[i].carID}.json`);
+            let currentCar = getCar(searchResults[i].carID);
             options.push({
                 label: carNameGen({ currentCar, removePrizeTag: true }),
                 value: `${i + 1}`
@@ -61,7 +62,7 @@ async function searchGarage(args) {
             if (matchList.length > 0) {
                 let list = "";
                 for (let i = 0; i < matchList.length; i++) {
-                    let currentCar = require(`../../cars/${matchList[i].carID}.json`), newLine = "";
+                    let currentCar = getCar(matchList[i].carID), newLine = "";
                     newLine = carNameGen({ currentCar, rarity: true });
                     if (!currentCar["isPrize"]) {
                         let upgList = "";
@@ -94,7 +95,7 @@ async function searchGarage(args) {
                 }
                 else {
                     list = garage.map(car => {
-                        let currentCar = require(`../../cars/${car.carID}.json`);
+                        let currentCar = getCar(car.carID);
                         return carNameGen({ currentCar, removePrizeTag: true }).toLowerCase();
                     });
                 }

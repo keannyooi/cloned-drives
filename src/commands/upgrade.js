@@ -3,6 +3,7 @@
 const bot = require("../config/config.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { carSave, defaultChoiceTime, moneyEmojiID} = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
@@ -63,9 +64,9 @@ module.exports = {
                     const [origUpgrade, currentMessage] = response;
                     try {
                         const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-                        let car = require(`../cars/${currentCar.carID}`), bmReference = car;
+                        let car = getCar(currentCar.carID), bmReference = car;
                         if (car["reference"]) {
-                            bmReference = require(`../cars/${car["reference"]}`);
+                            bmReference = getCar(car["reference"]);
                         }
 
                         const carName = carNameGen({ currentCar: car });

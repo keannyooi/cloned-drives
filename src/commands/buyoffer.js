@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
+const { getCar, getPack } = require("../util/functions/dataManager.js");
 const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const openPack = require("../util/functions/openPack.js");
@@ -66,7 +67,7 @@ module.exports = {
                         case "cars":
                             let carList = "";
                             for (let i = 0; i < value.length; i++) {
-                                let currentCar = require(`../cars/${value[i]}`);
+                                let currentCar = getCar(value[i]);
                                 value[i] = {
                                     carID: value[i],
                                     upgrade: "000"
@@ -77,7 +78,7 @@ module.exports = {
                             fields.push({ name: "Claimed Cars", value: carList, inline: true });
                             break;
                         case "pack":
-                            let currentPack = require(`../packs/${value}`);
+                            let currentPack = getPack(value);
                             let addedCars = await openPack({ message, currentPack });
                             if (!Array.isArray(addedCars)) return;
 

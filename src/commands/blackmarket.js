@@ -3,6 +3,7 @@
 const bot = require("../config/config.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { trophyEmojiID } = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const profileModel = require("../models/profileSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
@@ -20,7 +21,7 @@ module.exports = {
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
         const fields = [];
         for (let i = 0; i < bmCatalog.length; i++) {
-            let currentCar = require(`../cars/${bmCatalog[i].carID}`);
+            let currentCar = getCar(bmCatalog[i].carID);
             fields.push({
                 name: `${i + 1} - ${carNameGen({ currentCar, rarity: true, removeBMTag: true })} (ID: \`${bmCatalog[i].carID}\`)`,
                 value: `Price: ${trophyEmoji}${bmCatalog[i].price.toLocaleString("en")}\nStock Remaining: ${bmCatalog[i].stock.toLocaleString("en")}`,

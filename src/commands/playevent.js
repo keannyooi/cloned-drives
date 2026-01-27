@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { eventMakerRoleID, sandboxRoleID } = require("../util/consts/consts.js");
+const { getCar, getTrack } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const createCar = require("../util/functions/createCar.js");
 const confirm = require("../util/functions/confirm.js");
@@ -74,7 +75,7 @@ module.exports = {
             }
 
             if (!filterCheck({ car: hand, filter: event.roster[round - 1].reqs, applyOrLogic: true })) {
-                let currentCar = require(`../cars/${hand.carID}`);
+                let currentCar = getCar(hand.carID);
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, it looks like your hand does not meet the event round's requirements.",
@@ -86,7 +87,7 @@ module.exports = {
             }
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
-                const track = require(`../tracks/${event.roster[round - 1].track}.json`);
+                const track = getTrack(event.roster[round - 1].track);
                 const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
                 const [opponentCar, opponentList] = createCar(event.roster[round - 1], settings.unitpreference);
 

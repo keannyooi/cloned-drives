@@ -1,10 +1,10 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+const { getCarFiles, getCar } = require("./dataManager.js");
 const order = ["cr", "modelYear", "country", "enginePos", "driveType", "gc", "creator", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isBM", "isPrize", "make", "search"];
 
 function reqDisplay(reqs, filterLogic) {
+    const carFiles = getCarFiles();
     const action = {
         cr: arg => {
             let { start, end } = arg;
@@ -42,7 +42,7 @@ function reqDisplay(reqs, filterLogic) {
         make: makes => {
             makes = makes.map(make => {
                 let getExample = carFiles.find(carFile => {
-                    let currentCar = require(`../../cars/${carFile}`);
+                    let currentCar = getCar(carFile);
                     if (Array.isArray(currentCar["make"])) {
                         return currentCar["make"].some(tag => tag.toLowerCase() === make.toLowerCase());
                     }
@@ -51,7 +51,7 @@ function reqDisplay(reqs, filterLogic) {
                     }
                 });
                 
-                let car = require(`../../cars/${getExample}`);
+                let car = getCar(getExample);
                 if (Array.isArray(car["make"])) {
                     return car["make"].find(i => i.toLowerCase() === make.toLowerCase());
                 }

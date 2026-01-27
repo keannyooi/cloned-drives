@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
+const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -21,6 +20,7 @@ module.exports = {
     category: "Info",
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
+        const carFiles = getCarFiles();
         let list = carFiles;
         let sort = "cr";
         let page;
@@ -42,15 +42,19 @@ module.exports = {
 
         const { filter, garage, settings } = await profileModel.findOne({ userID: message.author.id });
         if (!settings.disablecarlistfilter) {
-            list = list.filter(car => filterCheck({
-                car: car.slice(0, 6),
-                filter,
-                garage,
-                applyOrLogic: settings.filterlogic === "or" ? true : false,
-            }));
+            list = list.filter(car => {
+                const carId = car.endsWith('.json') ? car.slice(0, -5) : car.slice(0, 6);
+                return filterCheck({
+                    car: carId,
+                    filter,
+                    garage,
+                    applyOrLogic: settings.filterlogic === "or" ? true : false,
+                });
+            });
         }
-        const ownedCars = list.filter(function (carID) {
-            return garage.some(part => carID.includes(part.carID));
+        const ownedCars = list.filter(function (carFile) {
+            const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
+            return garage.some(part => carId.includes(part.carID));
         });
 
         if (args[args.length - 2] === "-s") {
@@ -84,12 +88,14 @@ module.exports = {
                 carList += `**${i + 1}.** `;
                 valueList += `**${i + 1}.** `;
 
-                let currentCar = require(`../cars/${section[i]}`);
-                let findCar = garage.find(c => c.carID === section[i].slice(0, 6));
+                const carFile = section[i];
+                const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
+                let currentCar = getCar(carId);
+                let findCar = garage.find(c => c.carID === carId);
                 carList += carNameGen({ currentCar, rarity: true });
                 carList += findCar ? " ✅\n" : "\n";
                 if (currentCar["reference"]) {
-                    currentCar = require(`../cars/${currentCar["reference"]}`);
+                    currentCar = getCar(currentCar["reference"]);
                 }
 
                 if (sort === "duplicates") {

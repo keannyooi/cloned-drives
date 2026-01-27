@@ -2,6 +2,7 @@
 
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { carSave } = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
@@ -31,7 +32,7 @@ module.exports = {
 
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
-                await getCar(message.mentions.users.first());
+                await getCarFunc(message.mentions.users.first());
             }
             else {
                 return botUserError(message);
@@ -42,14 +43,14 @@ module.exports = {
                 .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    await getCar(result.user, currentMessage);
+                    await getCarFunc(result.user, currentMessage);
                 })
                 .catch(error => {
                     throw error;
                 });
         }
 
-        async function getCar(user, currentMessage) {
+        async function getCarFunc(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
             let query, searchByID = false;
             if (args[1].toLowerCase().startsWith("-c")) {
@@ -88,7 +89,7 @@ module.exports = {
                     currentCar.upgrades[origUpgrade]--;
                     updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
                     
-                    let car = require(`../cars/${currentCar.carID}`);
+                    let car = getCar(currentCar.carID);
                     const [, attachment] = await Promise.all([
                         profileModel.updateOne({ userID: user.id }, {
                             garage: playerData.garage,

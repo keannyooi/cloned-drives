@@ -3,6 +3,7 @@
 const bot = require("../../config/config.js");
 const { InfoMessage } = require("../classes/classes.js");
 const { currentOffersChannelID, moneyEmojiID, fuseEmojiID } = require("../consts/consts.js");
+const { getCar, getPack } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const offerModel = require("../../models/offerSchema.js");
 
@@ -29,13 +30,13 @@ async function endOffer(offer) {
                 case "cars":
                     let carList = "";
                     for (let i = 0; i < value.length; i++) {
-                        let currentCar = require(`../../cars/${value[i]}`);
+                        let currentCar = getCar(value[i]);
                         carList += `${carNameGen({ currentCar, rarity: true })}\n`;
                     }
                     fields.push({ name: "Cars", value: carList, inline: true });
                     break;
                 case "pack":
-                    let pack = require(`../../packs/${value}`);
+                    let pack = getPack(value);
                     fields.push({ name: "Pack", value: pack["packName"], inline: true });
                     break;
                 default:

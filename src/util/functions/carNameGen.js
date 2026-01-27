@@ -1,6 +1,7 @@
 "use strict";
 
 const bot = require("../../config/config.js");
+const { getCar } = require("./dataManager.js");
 const rarityCheck = require("./rarityCheck.js");
 
 function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag = false, removeBMTag = false }) {
@@ -15,7 +16,7 @@ function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag
 
     // Add rarity if requested
     if (rarity) {
-        const bmReference = reference ? require(`../../cars/${reference}.json`) : currentCar;
+        const bmReference = reference ? getCar(reference) : currentCar;
         const type = reference ? "bm" : null;
         currentName = `(${rarityCheck(bmReference, type)} ${bmReference.cr}) ${currentName}`;
     }

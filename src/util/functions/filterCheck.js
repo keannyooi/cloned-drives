@@ -1,5 +1,6 @@
 "use strict";
 
+const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 
@@ -16,9 +17,9 @@ function filterCheck(args) {
             "699": 0,
         }
     } : car;
-    let currentCar = require(`../../cars/${carObject.carID}`), bmReference = currentCar;
+    let currentCar = getCar(carObject.carID), bmReference = currentCar;
     if (currentCar["reference"]) {
-        bmReference = require(`../../cars/${currentCar["reference"]}`);
+        bmReference = getCar(currentCar["reference"]);
     }
 
     for (const [key, value] of Object.entries(filter)) {
@@ -69,8 +70,6 @@ function filterCheck(args) {
                 }
             }
 if (key === "seatCount") {
-    console.log('Filtering by seatcount:', value); // Log the filter value
-    console.log('Current car seatcount:', bmReference[key]); // Log the current car's seatcount
     if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
         passed = false;
     }

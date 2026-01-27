@@ -3,12 +3,13 @@
 const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
 const { ErrorMessage, InfoMessage } = require("../classes/classes.js");
 const { defaultWaitTime } = require("../consts/consts.js");
+const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 
 async function selectUpgrade(args) {
     let { message, currentCar, amount, currentMessage, targetUpgrade } = args;
     const filter = (button) => button.user.id === message.author.id && button.customId === "upgradeSelect";
-    const getCard = require(`../../cars/${currentCar.carID}.json`);
+    const getCard = getCar(currentCar.carID);
     let isOne = Object.keys(currentCar.upgrades).filter(upgrade => {
         if (targetUpgrade && (upgrade.includes("6") && upgrade.includes("9") || Number(targetUpgrade) <= Number(upgrade))) {
             return false;

@@ -1,7 +1,6 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
+const { getTrackFiles, getTrack } = require("../util/functions/dataManager.js");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const listUpdate = require("../util/functions/listUpdate.js");
@@ -15,6 +14,7 @@ module.exports = {
     category: "Info",
     description: "Shows all the tracks that are available in Cloned Drives in list form. You can filter by keyword.",
     async execute(message, args) {
+        const trackFiles = getTrackFiles();
         const { settings } = await profileModel.findOne({ userID: message.author.id });
         let list = trackFiles, page;
 		
@@ -40,8 +40,9 @@ module.exports = {
         if (keyword) {
             list = list.filter(file => {
                 try {
-                    const currentTrack = require(`../tracks/${file}`);
-                    return currentTrack["trackName"] && currentTrack["trackName"].toLowerCase().includes(keyword);
+                    const trackId = file.endsWith('.json') ? file.slice(0, -5) : file;
+                    const currentTrack = getTrack(trackId);
+                    return currentTrack && currentTrack["trackName"] && currentTrack["trackName"].toLowerCase().includes(keyword);
                 } catch (err) {
                     console.error(`Error loading file: ${file}`, err);
                     return false;
@@ -60,7 +61,7 @@ module.exports = {
 		 page = 1; // Explicitly set the page to 1 after keyword filtering
         }
 
-        // Calculate paginatio
+        // Calculate pagination
         const totalPages = Math.ceil(list.length / (settings.listamount || defaultPageLimit));
         if (page < 0 || totalPages < page) {
             const errorMessage = new ErrorMessage({
@@ -72,8 +73,10 @@ module.exports = {
             return errorMessage.sendMessage();
         }
         list.sort((a, b) => {
-            const trackA = require(`../tracks/${a}`)["trackName"];
-            const trackB = require(`../tracks/${b}`)["trackName"];
+            const trackIdA = a.endsWith('.json') ? a.slice(0, -5) : a;
+            const trackIdB = b.endsWith('.json') ? b.slice(0, -5) : b;
+            const trackA = getTrack(trackIdA)["trackName"];
+            const trackB = getTrack(trackIdB)["trackName"];
             return trackA.localeCompare(trackB);
         });
 
@@ -88,7 +91,8 @@ module.exports = {
             let trackList = "";
             for (let i = 0; i < section.length; i++) {
                 try {
-                    let currentTrack = require(`../tracks/${section[i]}`);
+                    const trackId = section[i].endsWith('.json') ? section[i].slice(0, -5) : section[i];
+                    let currentTrack = getTrack(trackId);
                     trackList += `**${i + 1}.** ${currentTrack["trackName"]} `;
                     trackList += "\n"; // New line for each Track entry
                 } catch (err) {

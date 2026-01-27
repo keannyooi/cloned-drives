@@ -2,6 +2,7 @@
 
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
+const { getCar } = require("./dataManager.js");
 
 const tyreAbbrevs = {
     "Standard": "STD",
@@ -64,7 +65,7 @@ async function generateHud(currentCar, upgrade) {
 
     // Load base model reference or fallback to currentCar
     const bmReference = currentCar["reference"] 
-        ? require(`../../cars/${currentCar["reference"]}`) 
+        ? getCar(currentCar["reference"]) 
         : currentCar;
 
     // Extract stats

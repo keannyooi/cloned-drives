@@ -1,8 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
+const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
 
@@ -14,9 +13,12 @@ module.exports = {
     category: "Miscellaneous",
     description: "Opens a pack, however the cars in said pack won't be added into your garage and you won't be charged. Perfect for those who have a gambling addiction.",
     async execute(message, args) {
+        const packFiles = getPackFiles();
         let query = args.map(i => i.toLowerCase());
         if (args[0].toLowerCase() === "random") {
-            let currentPack = require(`../packs/${packFiles[Math.floor(Math.random() * packFiles.length)]}`);
+            const randomFile = packFiles[Math.floor(Math.random() * packFiles.length)];
+            const packId = randomFile.endsWith('.json') ? randomFile.slice(0, -5) : randomFile;
+            let currentPack = getPack(packId);
             await openPack({ message, currentPack, test: true });
             return bot.deleteID(message.author.id);
         }
@@ -25,7 +27,8 @@ module.exports = {
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;
-                let currentPack = require(`../packs/${result}`);
+                const packId = result.endsWith('.json') ? result.slice(0, -5) : result;
+                let currentPack = getPack(packId);
                 await openPack({ message, currentPack, currentMessage, test: true });
                 return bot.deleteID(message.author.id);
             })

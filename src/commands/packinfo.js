@@ -1,8 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith('.json'));
+const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
@@ -15,9 +14,12 @@ module.exports = {
     category: "Configuration",
     description: "Shows info about a specified card pack.",
     async execute(message, args) {
+        const packFiles = getPackFiles();
         let query = args.map(i => i.toLowerCase()), searchBy = "pack";
         if (args[0].toLowerCase() === "random") {
-            return displayInfo(packFiles[Math.floor(Math.random() * packFiles.length)]);
+            const randomFile = packFiles[Math.floor(Math.random() * packFiles.length)];
+            const packId = randomFile.endsWith('.json') ? randomFile.slice(0, -5) : randomFile;
+            return displayInfo(packId);
         }
         else if (args[0].toLowerCase().startsWith("-p")) {
             query = [args[0].toLowerCase().slice(1)];
@@ -27,19 +29,21 @@ module.exports = {
         await new Promise(resolve => resolve(search(message, query, packFiles, searchBy)))
             .then(response => {
                 if (!Array.isArray(response)) return;
-                displayInfo(...response);
+                let [result, currentMessage] = response;
+                const packId = result.endsWith('.json') ? result.slice(0, -5) : result;
+                displayInfo(packId, currentMessage);
             })
             .catch(error => {
                 throw error;
             });
 
-        function displayInfo(pack, currentMessage) {
+        function displayInfo(packId, currentMessage) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-            let currentPack = require(`../packs/${pack}`);
+            let currentPack = getPack(packId);
             let infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: currentPack["packName"],
-                desc: `ID: \`${pack.slice(0, 6)}\``,
+                desc: `ID: \`${packId.slice(0, 6)}\``,
                 author: message.author,
                 image: currentPack["pack"],
                 fields: [

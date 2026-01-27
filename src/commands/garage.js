@@ -2,6 +2,7 @@
 
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const searchUser = require("../util/functions/searchUser.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
@@ -113,7 +114,7 @@ module.exports = {
                     valueList += `**${i + 1}.** `;
 
                     let car = section[i];
-                    let currentCar = require(`../cars/${car.carID}.json`);
+                    let currentCar = getCar(car.carID);
                     garageList += carNameGen({ currentCar, rarity: true });
 
                     for (let [upgrade, value] of Object.entries(car.upgrades)) {
@@ -131,7 +132,7 @@ module.exports = {
                     else if (sort !== "cr") {
                         let values = "";
                         if (currentCar["reference"]) {
-                            currentCar = require(`../cars/${currentCar["reference"]}`);
+                            currentCar = getCar(currentCar["reference"]);
                         }
                         if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
                             for (let [upgrade, value] of Object.entries(car.upgrades)) {

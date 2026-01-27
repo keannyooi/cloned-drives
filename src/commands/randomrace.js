@@ -2,9 +2,7 @@
 
 const bot = require("../config/config.js");
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
-const { readdirSync } = require("fs");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const tracks = readdirSync("./src/tracks").filter(file => file.endsWith(".json"));
+const { getCarFiles, getTrackFiles, getCar, getTrack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, moneyEmojiID, bossEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
@@ -52,6 +50,9 @@ module.exports = {
     category: "Gameplay",
     description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track.",
     async execute(message) {
+        const carFiles = getCarFiles();
+        const tracks = getTrackFiles();
+        
         const profile = await profileModel.findOne({ userID: message.author.id });
         if (!profile) return;
 
@@ -72,7 +73,7 @@ module.exports = {
         }
 
         const filter = (button) => button.user.id === message.author.id;
-        const track = require(`../tracks/${trackID}.json`);
+        const track = getTrack(trackID);
 
         const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
         const [opponentCar, opponentList] = createCar(opponent, settings.unitpreference);
@@ -332,8 +333,7 @@ module.exports = {
             
             do {
                 opponentCarID = carFiles[Math.floor(Math.random() * carFiles.length)];
-                opponentCar = require(`../cars/${opponentCarID}`);
-                delete require.cache[require.resolve(`../cars/${opponentCarID}`)];
+                opponentCar = getCar(opponentCarID);
             } while (smartGen(opponentCar, isBoss));
 
             // Generate requirements based on streak
@@ -354,7 +354,7 @@ module.exports = {
                     
                     // Find a valid car with the required property
                     do {
-                        reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                        reqCar = getCar(carFiles[Math.floor(Math.random() * carFiles.length)]);
                         attempts++;
                     } while (reqCar.reference && attempts < 50);
                     
@@ -388,7 +388,7 @@ module.exports = {
                     
                     // Find a valid car with the required property
                     do {
-                        reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                        reqCar = getCar(carFiles[Math.floor(Math.random() * carFiles.length)]);
                         attempts++;
                     } while (reqCar.reference && attempts < 50);
                     

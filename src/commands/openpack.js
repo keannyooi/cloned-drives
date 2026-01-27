@@ -1,8 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
+const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID } = require("../util/consts/consts.js");
 const addCars = require("../util/functions/addCars.js");
@@ -21,19 +20,22 @@ module.exports = {
     description: "Opens a pack.",
 	async execute(message, args) {
 try {
+    const packFiles = getPackFiles();
     const query = args.map(i => i.toLowerCase());
-    const packs = packFiles.filter(pack => {
-        const contents = require(`../packs/${pack}`);
-        return contents["price"];
+    const packs = packFiles.filter(packFile => {
+        const packId = packFile.endsWith('.json') ? packFile.slice(0, -5) : packFile;
+        const contents = getPack(packId);
+        return contents && contents["price"];
     });
 
     const response = await search(message, query, packs, "pack");
     if (!Array.isArray(response)) return;
-    const [result, currentMessage] = response;
+    let [result, currentMessage] = response;
+    const packId = result.endsWith('.json') ? result.slice(0, -5) : result;
 
     const { money, garage } = await profileModel.findOne({ userID: message.author.id });
     const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-    const currentPack = require(`../packs/${result}`);
+    const currentPack = getPack(packId);
 
     if (money >= currentPack["price"]) {
         const session = await mongoose.startSession();
