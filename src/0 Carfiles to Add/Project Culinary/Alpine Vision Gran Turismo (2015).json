@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 920,
+    "make": "Alpine",
+    "model": "Vision Gran Turismo",
+    "modelYear": 2015,
+    "country": "FR",
+    "topSpeed": 201,
+    "0to60": 3.2,
+    "handling": 99,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 113.47,
+    "ola": 91.07,
+	
+    "description": "It's now Alpine's turn to reveal their VGT, and it's a beautiful roadster with flapping tail lights when you brake.",
+	
+"333TopSpeed": 204,
+"3330to60": 3,
+"333Handling": 102,
+
+"666TopSpeed": 206,
+"6660to60": 2.9,
+"666Handling": 106,
+
+"699TopSpeed": 206,
+"6990to60": 2.7,
+"699Handling": 110,
+
+"969TopSpeed": 209,
+"9690to60": 2.9,
+"969Handling": 110,
+
+"996TopSpeed": 209,
+"9960to60": 2.7,
+"996Handling": 106,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlpineVisionGranTurismo(2015).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

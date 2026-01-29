@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 793,
+    "make": "MG",
+    "model": "Cyberster Dual Motor XPOWER",
+    "modelYear": 2023,
+    "country": "CN",
+    "topSpeed": 124,
+    "0to60": 3.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly","Rest of The World","Grand Tourer"],
+    "isPrize": false,
+    "weight": 2060,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 80.32,
+    "ola": 85.4,
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 2.9,
+"333Handling": 90,
+
+"666TopSpeed": 132,
+"6660to60": 2.8,
+"666Handling": 93,
+
+"699TopSpeed": 132,
+"6990to60": 2.6,
+"699Handling": 97,
+
+"969TopSpeed": 137,
+"9690to60": 2.8,
+"969Handling": 97,
+
+"996TopSpeed": 137,
+"9960to60": 2.6,
+"996Handling": 93,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MGCybersterDualMotorXPOWER(2023).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

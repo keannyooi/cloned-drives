@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 450,
+    "make": "Maserati",
+    "model": "Boomerang",
+    "modelYear": 1972,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 5.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Concept"],
+    "isPrize": true,
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.48,
+    "ola": 88.26,
+    "description": "",
+	
+"333TopSpeed": 189,
+"3330to60": 5.5,
+"333Handling": 77,
+
+"666TopSpeed": 192,
+"6660to60": 5.2,
+"666Handling": 80,
+
+"699TopSpeed": 192,
+"6990to60": 4.9,
+"699Handling": 83,
+
+"969TopSpeed": 194,
+"9690to60": 5.2,
+"969Handling": 83,
+
+"996TopSpeed": 194,
+"9960to60": 4.9,
+"996Handling": 80,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MaseratiBoomerang(1972).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

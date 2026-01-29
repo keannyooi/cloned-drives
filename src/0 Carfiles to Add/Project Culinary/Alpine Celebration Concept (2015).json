@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 611,
+    "make": "Alpine",
+    "model": "Celebration Concept",
+    "modelYear": 2015,
+    "country": "FR",
+    "topSpeed": 157,
+    "0to60": 4.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+    "weight": 1090,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70.11,
+    "ola": 82.98,
+	
+    "description": "Another first look at the future A110, and it already does look better.",
+	
+"333TopSpeed": 160,
+"3330to60": 4.7,
+"333Handling": 89,
+
+"666TopSpeed": 164,
+"6660to60": 4.4,
+"666Handling": 92,
+
+"699TopSpeed": 164,
+"6990to60": 4.2,
+"699Handling": 95,
+
+"969TopSpeed": 167,
+"9690to60": 4.4,
+"969Handling": 95,
+
+"996TopSpeed": 167,
+"9960to60": 4.2,
+"996Handling": 92,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlpineCelebrationConcept(2015).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

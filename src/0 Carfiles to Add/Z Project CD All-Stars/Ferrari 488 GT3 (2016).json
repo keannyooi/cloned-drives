@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 942,
+    "make": "Ferrari",
+    "model": "488 GT3 #88 Maranello Motorsport",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 188,
+    "0to60": 3.1,
+    "handling": 102,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Full Throttle"],
+    "isPrize": false,
+    "weight": 1260,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 95,
+    "ola": 90.58,
+    "description": "",
+	
+"333TopSpeed": 191,
+"3330to60": 2.9,
+"333Handling": 105,
+
+"666TopSpeed": 194,
+"6660to60": 2.8,
+"666Handling": 109,
+
+"699TopSpeed": 194,
+"6990to60": 2.6,
+"699Handling": 113,
+
+"969TopSpeed": 196,
+"9690to60": 2.8,
+"969Handling": 113,
+
+"996TopSpeed": 196,
+"9960to60": 2.6,
+"996Handling": 109,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ferrari488GT3(2016).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

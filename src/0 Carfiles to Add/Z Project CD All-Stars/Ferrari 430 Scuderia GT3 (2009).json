@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 902,
+    "make": "Ferrari",
+    "model": "430 Scuderia GT3 #55 CRS Racing",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 183,
+    "0to60": 3.4,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Full Throttle"],
+    "isPrize": false,
+    "weight": 1219,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.22,
+    "ola": 87.25,
+    "description": "",
+	
+"333TopSpeed": 186,
+"3330to60": 3.2,
+"333Handling": 104,
+
+"666TopSpeed": 189,
+"6660to60": 3.1,
+"666Handling": 108,
+
+"699TopSpeed": 189,
+"6990to60": 2.9,
+"699Handling": 112,
+
+"969TopSpeed": 192,
+"9690to60": 3.1,
+"969Handling": 112,
+
+"996TopSpeed": 192,
+"9960to60": 2.9,
+"996Handling": 108,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ferrari430ScuderiaGT3(2009).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

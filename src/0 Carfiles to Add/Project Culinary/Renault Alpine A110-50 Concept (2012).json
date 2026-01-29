@@ -1,0 +1,51 @@
+{
+    "carID": "c0",
+    "cr": 811,
+    "make": "Alpine",
+    "model": "A110-50 Concept",
+    "modelYear": 2012,
+    "country": "FR",
+    "topSpeed": 180,
+    "0to60": 3.6,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+    "weight": 880,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 84.21,
+    "ola": 92.04,
+	
+    "description": "The A110 revived as quite the weird-looking car, like an Hot Wheels, but drivable. Could this be a drivable lego F1 reference?",
+	
+"333TopSpeed": 183,
+"3330to60": 3.4,
+"333Handling": 96,
+
+"666TopSpeed": 186,
+"6660to60": 3.2,
+"666Handling": 99,
+
+"699TopSpeed": 186,
+"6990to60": 3.1,
+"699Handling": 103,
+
+"969TopSpeed": 189,
+"9690to60": 3.2,
+"969Handling": 103,
+
+"996TopSpeed": 189,
+"9960to60": 3.1,
+"996Handling": 99,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlpineA110-50Concept(2012).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

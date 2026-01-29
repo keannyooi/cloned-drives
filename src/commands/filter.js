@@ -63,10 +63,11 @@ module.exports = {
             }
 
             if (args[0].toLowerCase() === "applyreqs") {
+                let reqs;
                 switch (args[1].toLowerCase()) {
                     case "rr":
                     case "randomrace":
-                        args[1] = rrStats.reqs;
+                        reqs = rrStats.reqs;
                         break;
                     default:
                         const errorMessage = new ErrorMessage({
@@ -78,6 +79,40 @@ module.exports = {
                         }).displayClosest(args[1].toLowerCase());
                         return errorMessage.sendMessage();
                 }
+
+                // Directly merge requirements into filter
+                if (!reqs || Object.keys(reqs).length === 0) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, no requirements found.",
+                        desc: "There are no active requirements to apply to your filter.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+
+                Object.assign(filter, reqs);
+                await profileModel.updateOne({ userID: message.author.id }, { filter });
+
+                const fields = [];
+                for (let [key, value] of Object.entries(reqs)) {
+                    if (typeof value === "object") {
+                        if (Array.isArray(value)) {
+                            value = value.join(settings.filterlogic ? " or " : " and ");
+                        } else {
+                            value = `${value.start} ~ ${value.end}`;
+                        }
+                    }
+                    fields.push({ name: key, value: `\`${value}\``, inline: true });
+                }
+
+                infoMessage = new InfoMessage({
+                    channel: message.channel,
+                    title: "Successfully applied requirements to filter!",
+                    author: message.author,
+                    fields
+                });
+                return infoMessage.sendMessage();
             }
 
             const response = editFilter(message, filter, args);

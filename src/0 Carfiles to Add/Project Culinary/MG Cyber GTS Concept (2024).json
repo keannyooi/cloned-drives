@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 558,
+    "make": "MG",
+    "model": "Cyber GTS Concept",
+    "modelYear": 2024,
+    "country": "CN",
+    "topSpeed": 121,
+    "0to60": 4.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly","Rest of The World","Grand Tourer","Concept"],
+    "isPrize": false,
+    "weight": 1910,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 62.33,
+    "ola": 85.8,
+    "description": "",
+	
+"333TopSpeed": 125,
+"3330to60": 4.7,
+"333Handling": 89,
+
+"666TopSpeed": 130,
+"6660to60": 4.4,
+"666Handling": 92,
+
+"699TopSpeed": 130,
+"6990to60": 4.2,
+"699Handling": 95,
+
+"969TopSpeed": 134,
+"9690to60": 4.4,
+"969Handling": 95,
+
+"996TopSpeed": 134,
+"9960to60": 4.2,
+"996Handling": 92,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MGCyberGTSConcept(2024).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}

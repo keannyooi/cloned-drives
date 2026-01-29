@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 901,
+    "make": "Ferrari",
+    "model": "458 Italia Grand-Am #62 Risi Competizione",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 176,
+    "0to60": 3.4,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Full Throttle"],
+    "isPrize": false,
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 81.25,
+    "description": "",
+	
+"333TopSpeed": 179,
+"3330to60": 3.2,
+"333Handling": 104,
+
+"666TopSpeed": 182,
+"6660to60": 3.1,
+"666Handling": 108,
+
+"699TopSpeed": 182,
+"6990to60": 2.9,
+"699Handling": 112,
+
+"969TopSpeed": 185,
+"9690to60": 3.1,
+"969Handling": 112,
+
+"996TopSpeed": 185,
+"9960to60": 2.9,
+"996Handling": 108,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ferrari458ItaliaGrand-Am(2011).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

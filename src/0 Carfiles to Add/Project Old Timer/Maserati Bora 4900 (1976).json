@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 383,
+    "make": "Maserati",
+    "model": "Bora 4900",
+    "modelYear": 1976,
+    "country": "IT",
+    "topSpeed": 174,
+    "0to60": 6.2,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+    "weight": 1830,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.06,
+    "ola": 85.74,
+    "description": "",
+	
+"333TopSpeed": 177,
+"3330to60": 5.9,
+"333Handling": 76,
+
+"666TopSpeed": 180,
+"6660to60": 5.6,
+"666Handling": 79,
+
+"699TopSpeed": 180,
+"6990to60": 5.3,
+"699Handling": 82,
+
+"969TopSpeed": 183,
+"9690to60": 5.6,
+"969Handling": 82,
+
+"996TopSpeed": 183,
+"9960to60": 5.3,
+"996Handling": 79,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MaseratiBora4900(1976).png",
+    "creator": "fiero",
+	"hiddenTag": [""]
+}

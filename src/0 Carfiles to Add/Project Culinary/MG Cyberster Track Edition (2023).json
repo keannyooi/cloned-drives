@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 943,
+    "make": "MG",
+    "model": "Cyberster Track Edition",
+    "modelYear": 2023,
+    "country": "CN",
+    "topSpeed": 124,
+    "0to60": 2.9,
+    "handling": 102,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eco-Friendly","Rest of The World","Track Day"],
+    "isPrize": false,
+    "weight": 1730,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 85.77,
+    "ola": 87.65,
+    "description": "",
+	
+"333TopSpeed": 128,
+"3330to60": 2.8,
+"333Handling": 105,
+
+"666TopSpeed": 132,
+"6660to60": 2.6,
+"666Handling": 109,
+
+"699TopSpeed": 132,
+"6990to60": 2.5,
+"699Handling": 113,
+
+"969TopSpeed": 137,
+"9690to60": 2.6,
+"969Handling": 113,
+
+"996TopSpeed": 137,
+"9960to60": 2.5,
+"996Handling": 109,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MGCybersterTrackEdition(2023).png",
+    "creator": "ama4nn",
+	"hiddenTag": [""]
+}
