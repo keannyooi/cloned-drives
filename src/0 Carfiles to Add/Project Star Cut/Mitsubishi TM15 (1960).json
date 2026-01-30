@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 1,
+    "make": "Mitsubishi",
+    "model": "TM15",
+    "modelYear": 1960,
+    "country": "JP",
+    "topSpeed": 42,
+    "0to60": 99.9,
+    "handling": 43,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+    "weight": 490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 14.66,
+    "description": "",
+	
+"333TopSpeed": 51,
+"3330to60": 99.9,
+"333Handling": 44,
+
+"666TopSpeed": 59,
+"6660to60": 99.9,
+"666Handling": 46,
+
+"699TopSpeed": 59,
+"6990to60": 99.9,
+"699Handling": 48,
+
+"969TopSpeed": 68,
+"9690to60": 72.9,
+"969Handling": 48,
+
+"996TopSpeed": 68,
+"9960to60": 72.9,
+"996Handling": 46,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MitsubishiTM15(1960).png",
+    "creator": "Bnuuy",
+	"hiddenTag": [""]
+}
