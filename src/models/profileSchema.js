@@ -51,6 +51,9 @@ const profileSchema = new Schema({
     cooldowns: { type: Object, default: {} },
     filter: { type: Object, default: {} },
     settings: { type: Object, default: {} },
+    // Tracks every unique carID ever pulled from packs — used for the NEW indicator.
+    // Initialized from the player's garage on first pack opening.
+    discoveredCars: { type: Array, default: [] },
 }, { minimize: false });
 
 const profileModel = model("Profiles", profileSchema);

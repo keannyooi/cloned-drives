@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
+const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "testpack",
@@ -15,11 +16,19 @@ module.exports = {
     async execute(message, args) {
         const packFiles = getPackFiles();
         let query = args.map(i => i.toLowerCase());
+
+        // Load player data for NEW indicators (we won't persist changes)
+        const playerData = await profileModel.findOne({ userID: message.author.id });
+        let discoveredCars = playerData?.discoveredCars ? [...playerData.discoveredCars] : [];
+        if (discoveredCars.length === 0 && playerData?.garage?.length > 0) {
+            discoveredCars = playerData.garage.map(c => c.carID);
+        }
+
         if (args[0].toLowerCase() === "random") {
             const randomFile = packFiles[Math.floor(Math.random() * packFiles.length)];
             const packId = randomFile.endsWith('.json') ? randomFile.slice(0, -5) : randomFile;
             let currentPack = getPack(packId);
-            await openPack({ message, currentPack, test: true });
+            await openPack({ message, currentPack, test: true, discoveredCars });
             return bot.deleteID(message.author.id);
         }
 
@@ -29,7 +38,7 @@ module.exports = {
                 let [result, currentMessage] = response;
                 const packId = result.endsWith('.json') ? result.slice(0, -5) : result;
                 let currentPack = getPack(packId);
-                await openPack({ message, currentPack, currentMessage, test: true });
+                await openPack({ message, currentPack, currentMessage, test: true, discoveredCars });
                 return bot.deleteID(message.author.id);
             })
             .catch(error => {

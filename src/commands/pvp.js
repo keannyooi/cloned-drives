@@ -9,7 +9,7 @@ const {
     PVP_SETTINGS,
     getLeague
 } = require("../util/consts/pvpConfig.js");
-const { getCurrentSeason, getSeasonTimeRemaining } = require("../util/consts/pvpSeasons.js");
+const { getCurrentSeason, getMostRecentSeason, isSeasonActive, getSeasonTimeRemaining } = require("../util/consts/pvpSeasons.js");
 const { 
     generateDefenseDisplay, 
     getAttacksDisplay,
@@ -72,21 +72,22 @@ module.exports = {
             await notifEmbed.sendMessage({ preserve: true });
         }
         
-        const season = getCurrentSeason();
+        const season = getCurrentSeason() || getMostRecentSeason();
         const timeRemaining = getSeasonTimeRemaining();
+        const isActive = isSeasonActive();
         
         // If a specific league is provided, show detailed view
         if (args.length > 0) {
             const leagueName = args[0].toLowerCase();
-            return showLeagueDetail(message, pvpProfile, profile, leagueName, season);
+            return showLeagueDetail(message, pvpProfile, profile, leagueName, season, isActive);
         }
         
         // Show main hub
-        return showMainHub(message, pvpProfile, profile, season, timeRemaining);
+        return showMainHub(message, pvpProfile, profile, season, timeRemaining, isActive);
     }
 };
 
-async function showMainHub(message, pvpProfile, profile, season, timeRemaining) {
+async function showMainHub(message, pvpProfile, profile, season, timeRemaining, isActive) {
     const attacksInfo = getAttacksDisplay(
         pvpProfile.attacksToday, 
         PVP_SETTINGS.maxAttacksPerDay,
@@ -146,8 +147,16 @@ async function showMainHub(message, pvpProfile, profile, season, timeRemaining) 
     }
     
     // Build description
-    let desc = `**${season.name}**\n`;
-    desc += `📅 ${timeRemaining.days}d ${timeRemaining.hours}h remaining\n\n`;
+    let desc = "";
+    
+    if (!isActive) {
+        desc += `⏳ **OFF-SEASON** — Battles are paused!\n`;
+        desc += `*${season.name} has ended*\n\n`;
+    } else {
+        desc += `**${season.name}**\n`;
+        desc += `📅 ${timeRemaining.days}d ${timeRemaining.hours}h remaining\n\n`;
+    }
+    
     desc += `⚔️ **Attacks Today:** ${attacksInfo.remaining}/${attacksInfo.total}`;
     if (attacksInfo.remaining < attacksInfo.total) {
         desc += ` (resets in ${attacksInfo.resetIn})`;
@@ -221,7 +230,7 @@ async function showMainHub(message, pvpProfile, profile, season, timeRemaining) 
     });
 }
 
-async function showLeagueDetail(message, pvpProfile, profile, leagueName, season) {
+async function showLeagueDetail(message, pvpProfile, profile, leagueName, season, isActive) {
     const leagueConfig = getLeague(leagueName);
     
     if (!leagueConfig) {

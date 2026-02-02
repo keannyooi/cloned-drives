@@ -30,7 +30,8 @@ const listGen = {
     "id": item => typeof item === "string" ? item.replace(".json", "") : item.id,
     "event": item => item.name,
 	"championships": item => item.name,
-    "offer": item => item.name
+    "offer": item => item.name,
+    "calendar": item => item.name
 };
 
 async function search(message, query, searchList, type, currentMessage) {

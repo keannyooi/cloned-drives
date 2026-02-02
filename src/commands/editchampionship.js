@@ -12,6 +12,7 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
 const sortCars = require("../util/functions/sortCars.js");
 const generateHud = require("../util/functions/generateHud.js");
+const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const profileModel = require("../models/profileSchema.js");
 const championshipModel = require("../models/championshipsSchema.js");
 
@@ -178,11 +179,11 @@ module.exports = {
                 case "settune":
                     let upgrade = args[3];
                     let currentCar = getCar(currentchampionship.roster[index - 1].carID);
-                    if (upgrade !== "000" && !currentCar[`${upgrade}TopSpeed`]) {
+                    if (!isValidTune(upgrade)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, the tuning stage you requested is unavailable.",
-                            desc: "In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.",
+                            desc: `Valid tunes: ${getAvailableTunes().join(", ")}`,
                             author: message.author
                         }).displayClosest(upgrade);
                         return errorMessage.sendMessage({ currentMessage });
@@ -307,11 +308,11 @@ module.exports = {
 
                             let carName = args.slice(4, args.length - 1).map(i => i.toLowerCase());
                             let upgrade = args[args.length - 1];
-                            if (!Object.keys(carSave).includes(upgrade)) {
+                            if (!isValidTune(upgrade)) {
                                 const errorMessage = new ErrorMessage({
                                     channel: message.channel,
                                     title: "Error, invalid upgrade provided.",
-                                    desc: "Upgrades are limited to `333`, `666`, `699`, `969` and `996` for simplicity sake.",
+                                    desc: `Valid tunes: ${getAvailableTunes().join(", ")}`,
                                     author: message.author
                                 }).displayClosest(upgrade);
                                 return errorMessage.sendMessage({ currentMessage });
@@ -517,7 +518,7 @@ module.exports = {
                     }
                     opponentIDs = sortCars(opponentIDs, "cr", "ascending");
 
-                    let upgrades = ["000", "333", "666", "699", "969", "996"];
+                    let upgrades = getAvailableTunes();
                     for (let i = 0; i < currentchampionship.roster.length; i++) {
                         currentchampionship.roster[i].carID = opponentIDs[i];
                         currentchampionship.roster[i].upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];

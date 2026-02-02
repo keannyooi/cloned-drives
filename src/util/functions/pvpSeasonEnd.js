@@ -29,7 +29,7 @@ const CONFIG = {
     mongoURI: process.env.MONGO_URI || "mongodb://localhost:27017/cloneddrives",
     
     // Minimum games to qualify for rewards
-    minGamesForRewards: PVP_SETTINGS.minGamesForRewards || 5,
+    minGamesForRewards: PVP_SETTINGS.minGamesForRewards || 10,
     
     // Rating decay toward base (0.5 = 50% toward 1000)
     ratingDecayFactor: PVP_SETTINGS.ratingDecayFactor || 0.5,
@@ -68,10 +68,16 @@ async function processSeasonEnd(options = {}) {
         return { success: false, reason: "Season not ended" };
     }
     
-    // Connect to database
-    if (!dryRun) {
+    // Connect to database if not already connected
+    // When running via bot command, we're already connected
+    // When running standalone, we need to connect
+    let weConnected = false;
+    if (mongoose.connection.readyState !== 1) {
         await mongoose.connect(CONFIG.mongoURI);
+        weConnected = true;
         console.log("✅ Connected to database");
+    } else {
+        console.log("✅ Using existing database connection");
     }
     
     const results = {
@@ -124,7 +130,8 @@ async function processSeasonEnd(options = {}) {
         return { success: false, error: error.message };
         
     } finally {
-        if (!dryRun && mongoose.connection.readyState === 1) {
+        // Only disconnect if we connected ourselves (standalone mode)
+        if (weConnected && mongoose.connection.readyState === 1) {
             await mongoose.disconnect();
             console.log("✅ Disconnected from database");
         }
@@ -143,15 +150,24 @@ async function processLeague(league, season, dryRun) {
         topPlayers: []
     };
     
-    // Get all players with defenses in this league
-    const players = dryRun 
-        ? [] 
-        : await pvpModel.getLeaguePlayers(league, CONFIG.minGamesForRewards);
+    // Get all players with defenses in this league who meet minimum games requirement
+    const minGames = CONFIG.minGamesForRewards;
+    const players = await pvpModel.find({
+        [`leagueStats.${league}.defense.0`]: { $exists: true }
+    });
     
-    console.log(`  Found ${players.length} qualifying players`);
+    // Filter to players who meet minimum games requirement
+    const qualifyingPlayers = players.filter(p => {
+        const stats = p.leagueStats[league];
+        if (!stats) return false;
+        const totalGames = (stats.attackWins || 0) + (stats.attackLosses || 0);
+        return totalGames >= minGames;
+    });
+    
+    console.log(`  Found ${qualifyingPlayers.length} qualifying players (of ${players.length} with defenses)`);
     
     // Sort by rating for prize cars
-    players.sort((a, b) => {
+    qualifyingPlayers.sort((a, b) => {
         const ratingA = a.leagueStats[league]?.rating || CONFIG.baseRating;
         const ratingB = b.leagueStats[league]?.rating || CONFIG.baseRating;
         return ratingB - ratingA;
@@ -162,7 +178,7 @@ async function processLeague(league, season, dryRun) {
     const prizeSlots = season.prizeCarSlots || 3;
     
     if (prizeCar) {
-        const topPlayers = players.slice(0, prizeSlots);
+        const topPlayers = qualifyingPlayers.slice(0, prizeSlots);
         
         for (let i = 0; i < topPlayers.length; i++) {
             const player = topPlayers[i];
@@ -175,28 +191,42 @@ async function processLeague(league, season, dryRun) {
             console.log(`  🏆 Rank ${i + 1}: ${player.userID} - Rating: ${player.leagueStats[league]?.rating}`);
             
             if (!dryRun) {
-                // Add car to player's garage
-                await profileModel.updateOne(
-                    { userID: player.userID },
-                    {
-                        $push: {
-                            garage: {
-                                carID: prizeCar,
-                                upgrades: { "000": 1 },
-                                tpiBonus: 0
+                // Add car to player's garage (properly stacking if they already own it)
+                const profile = await profileModel.findOne({ userID: player.userID });
+                if (profile) {
+                    const existingCar = profile.garage.find(c => c.carID === prizeCar);
+                    
+                    if (existingCar) {
+                        // Increment existing car's 000 upgrade count
+                        await profileModel.updateOne(
+                            { userID: player.userID, "garage.carID": prizeCar },
+                            { $inc: { "garage.$.upgrades.000": 1 } }
+                        );
+                    } else {
+                        // Add new car entry
+                        await profileModel.updateOne(
+                            { userID: player.userID },
+                            {
+                                $push: {
+                                    garage: {
+                                        carID: prizeCar,
+                                        upgrades: { "000": 1 },
+                                        tpiBonus: 0
+                                    }
+                                }
                             }
-                        }
+                        );
                     }
-                );
-                result.prizeCarsAwarded++;
+                }
             }
+            result.prizeCarsAwarded++;
         }
     } else {
         console.log("  ℹ️ No prize car configured for this league");
     }
     
-    // Process each player for rating rewards and soft reset
-    for (const player of players) {
+    // Process each qualifying player for rating rewards and soft reset
+    for (const player of qualifyingPlayers) {
         const stats = player.leagueStats[league];
         if (!stats) continue;
         

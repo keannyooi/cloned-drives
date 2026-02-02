@@ -5,6 +5,7 @@ const carFiles = readdirSync('./src/cars').filter(file => file.endsWith('.json')
 const tracks = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const sortCars = require("../util/functions/sortCars.js");
+const { getAvailableTunes } = require("../util/functions/calcTune.js");
 const championshipModel = require("../models/championshipsSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 
@@ -45,7 +46,7 @@ module.exports = {
         }
 
         opponentIDs = sortCars(opponentIDs, "cr", "ascending");
-        const roster = [], upgrades = ["000", "333", "666", "699", "969", "996"];
+        const roster = [], upgrades = getAvailableTunes();
         for (let opponent of opponentIDs) {
             roster.push({
                 carID: opponent,

@@ -10,6 +10,7 @@ const updateHands = require("../util/functions/updateHands.js");
 const addCars = require("../util/functions/addCars.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
+const { getAvailableTunes } = require("../util/functions/calcTune.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -94,7 +95,7 @@ module.exports = {
             const typeMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Type out the prize car you want",
-                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within ±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
+                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within Â±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
                 author: message.author,
                 image: selectedCarData.racehud,
                 footer: `You have been given ${defaultWaitTime / 1000} seconds to respond.`
@@ -184,7 +185,7 @@ module.exports = {
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
                                 title: "Error, prize car is not within CR range!",
-                                desc: `The selected car must be within ±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
+                                desc: `The selected car must be within Â±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
                                 author: message.author
                             });
                             return errorMessage.sendMessage({ currentMessage });
@@ -217,7 +218,7 @@ module.exports = {
                         async function acceptedFunction(currentMessage) {
                             // Find the upgrade to remove (prefer stock, then lowest upgrade)
                             let upgradeToRemove = null;
-                            const upgradeOrder = ["000", "333", "666", "699", "969", "996"];
+                            const upgradeOrder = getAvailableTunes();
                             for (const upg of upgradeOrder) {
                                 if (selectedGarageCar.upgrades[upg] > 0) {
                                     upgradeToRemove = upg;
@@ -257,7 +258,7 @@ module.exports = {
                             // Success message
                             const successMessage = new SuccessMessage({
                                 channel: message.channel,
-                                title: "🎉 Congratulations! Exchange Successful!",
+                                title: "ðŸŽ‰ Congratulations! Exchange Successful!",
                                 desc: `You exchanged your ${carNameGen({ currentCar: selectedCarData, rarity: true })} for a brand new ${carNameGen({ currentCar: desiredCar, rarity: true })}!`,
                                 author: message.author,
                                 image: desiredCar.racehud

@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 529,
+    "make": ["Alfaholics","Alfa Romeo"],
+    "model": "GT 1300 Junior Fast Road",
+    "modelYear": 2024,
+    "country": "GB",
+    "topSpeed": 148,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["RestoMod"],
+    "isPrize": false,
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.09,
+    "ola": 76.92,
+    "description": "",
+	
+"333TopSpeed": 152,
+"3330to60": 4.9,
+"333Handling": 83,
+
+"666TopSpeed": 155,
+"6660to60": 4.7,
+"666Handling": 85,
+
+"699TopSpeed": 155,
+"6990to60": 4.4,
+"699Handling": 89,
+
+"969TopSpeed": 159,
+"9690to60": 4.7,
+"969Handling": 89,
+
+"996TopSpeed": 159,
+"9960to60": 4.4,
+"996Handling": 85,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlfaholicsGiuliaSuperFastRoad(2017).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

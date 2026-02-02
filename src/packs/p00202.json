@@ -1,0 +1,26 @@
+{
+    "packName": "Featured Spotlight Pack",
+    "description": "This week's featured cars have boosted drop rates! Pull one of the spotlighted rides or discover something new.",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/2015ElitePack.png",
+    "price": 5000000000,
+    "categories": ["normal", "limited"],
+    "tier": "standard",
+    "weight": 8,
+    "cardsPerPage": 3,
+    "noDuplicates": true,
+    "packSequence": [
+        {
+            "rates": { "common": 30, "uncommon": 40, "rare": 20, "epic": 10 },
+            "filter": { "modelYear": { "start": 1988, "end": 1988 } }
+        },
+        {
+            "rates": { "uncommon": 30, "rare": 40, "epic": 20, "exotic": 10 },
+            "filter": { "modelYear": { "start": 2000, "end": 2000 } }
+        },
+        {
+            "rates": { "rare": 30, "epic": 35, "exotic": 25, "legendary": 10 },
+            "filter": { "modelYear": { "start": 2024, "end": 2024 } }
+        }
+    ],
+    "repetition": 1
+}

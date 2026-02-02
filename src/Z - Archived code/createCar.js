@@ -1,7 +1,6 @@
 "use strict";
 
 const { getCar } = require("./dataManager.js");
-const { calcTune } = require("./calcTune.js");
 const carNameGen = require("./carNameGen.js");
 const unbritish = require("./unbritish.js");
 
@@ -10,30 +9,30 @@ function createCar(currentCar, unitPreference, hideStats) {
     if (car["reference"]) {
         bmReference = getCar(car["reference"]);
     }
-    
-    // Get tuned stats via calculation (handles all 6 stats)
-    const tune = currentCar.upgrade || "000";
-    const tunedStats = calcTune(bmReference, tune);
-    
     const carModule = {
         cr: bmReference["cr"],
-        topSpeed: tunedStats.topSpeed,
-        accel: tunedStats.accel,
-        handling: tunedStats.handling,
+        topSpeed: bmReference["topSpeed"],
+        accel: bmReference["0to60"],
+        handling: bmReference["handling"],
         driveType: bmReference["driveType"],
         tyreType: bmReference["tyreType"],
-        weight: tunedStats.weight,
+        weight: bmReference["weight"],
         enginePos: bmReference["enginePos"],
         gc: bmReference["gc"],
         tcs: bmReference["tcs"],
         abs: bmReference["abs"],
-        mra: tunedStats.mra,
-        ola: tunedStats.ola,
+        mra: bmReference["mra"],
+        ola: bmReference["ola"],
         racehud: car["racehud"],
         isBM: (car["reference"] !== undefined)
     };
+    if (currentCar.upgrade !== "000") {
+        carModule.topSpeed = bmReference[`${currentCar.upgrade}TopSpeed`];
+        carModule.accel = bmReference[`${currentCar.upgrade}0to60`];
+        carModule.handling = bmReference[`${currentCar.upgrade}Handling`];
+    }
 
-    let carSpecs = carNameGen({ currentCar: car, rarity: true, upgrade: tune });
+    let carSpecs = carNameGen({ currentCar: car, rarity: true, upgrade: currentCar.upgrade });
     if (!hideStats) {
         if (unitPreference === "metric") {
             carSpecs += `\nTop Speed: ${carModule.topSpeed}MPH (${unbritish(carModule.topSpeed, "topSpeed")}KM/H)\n`;
@@ -42,6 +41,7 @@ function createCar(currentCar, unitPreference, hideStats) {
             carSpecs += `\nTop Speed: ${carModule.topSpeed}MPH\n`;
         }
         if (carModule.topSpeed < 60) {
+            carModule.accel = 99.9;
             carSpecs += "0-60MPH: N/A\n";
         }
         else {
@@ -56,26 +56,27 @@ function createCar(currentCar, unitPreference, hideStats) {
         carSpecs += `Handling: ${carModule.handling}
         ${carModule.enginePos} Engine, ${carModule.driveType}
         ${carModule.tyreType} Tyres\n`;
-        
-        if (unitPreference === "imperial") {
-            const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
-            const weightLbs = carModule.weight !== undefined ? unbritish(carModule.weight, "weight").toLocaleString("en") : "N/A";
-            carSpecs += `Weight: ${weightKg}kg (${weightLbs}lbs)\n`;
-        } else {
-            const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
-            carSpecs += `Weight: ${weightKg}kg\n`;
-        }
+if (unitPreference === "imperial") {
+    const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
+    const weightLbs = carModule.weight !== undefined ? unbritish(carModule.weight, "weight").toLocaleString("en") : "N/A";
+    carSpecs += `Weight: ${weightKg}kg (${weightLbs}lbs)\n`;
+} else {
+    const weightKg = carModule.weight !== undefined ? carModule.weight.toLocaleString("en") : "N/A";
+    carSpecs += `Weight: ${weightKg}kg\n`;
+}
+
 
         carSpecs += `Ground Clearance: ${carModule.gc}
         ${carModule.tcs ? "✅" : "❌"} TCS, ${carModule.abs ? "✅" : "❌"} ABS\n`;
-        
         if (carModule.topSpeed < 100) {
+            carModule.mra = 0;
             carSpecs += "MRA: N/A\n";
         }
         else {
             carSpecs += `MRA: ${carModule.mra}\n`;
         }
         if (carModule.topSpeed < 30) {
+            carModule.ola = 0;
             carSpecs += "OLA: N/A\n";
         }
         else {

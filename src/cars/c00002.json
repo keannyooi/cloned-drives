@@ -1,10 +1,7 @@
 {
     "carID": "c00002",
     "cr": 319,
-    "make": [
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Abarth","Fiat"],
     "model": "500",
     "modelYear": 2008,
     "country": "IT",
@@ -13,9 +10,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer","OG"
-    ],
+    "tags": ["Street Racer","OG"],
     "isPrize": false,
     "weight": 1035,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 50.79,
     "ola": 70.1,
     "description": "The reintroduced Cinquecento gets injected with scorpion poison.",
-     "333TopSpeed": 131,
-    "3330to60": 6.9,
-    "333Handling": 79,
-    "666TopSpeed": 135,
-    "6660to60": 6.6,
-    "666Handling": 81,
-    "996TopSpeed": 139,
-    "9960to60": 6.2,
-    "996Handling": 81,
-    "969TopSpeed": 139,
-    "9690to60": 6.6,
-    "969Handling": 84,
-    "699TopSpeed": 135,
-    "6990to60": 6.2,
-    "699Handling": 84,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Abarth500(2008).png",
     "creator": "Havvy",
     "hiddenTag": [""]

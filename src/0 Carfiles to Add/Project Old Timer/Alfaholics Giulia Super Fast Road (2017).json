@@ -1,0 +1,50 @@
+{
+    "carID": "c0",
+    "cr": 503,
+    "make": ["Alfaholics","Alfa Romeo"],
+    "model": "Giulia Super Fast Road",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 148,
+    "0to60": 5.4,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["RestoMod"],
+    "isPrize": false,
+    "weight": 910,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.36,
+    "ola": 74.07,
+    "description": "",
+	
+"333TopSpeed": 152,
+"3330to60": 5.1,
+"333Handling": 82,
+
+"666TopSpeed": 155,
+"6660to60": 4.9,
+"666Handling": 84,
+
+"699TopSpeed": 155,
+"6990to60": 4.6,
+"699Handling": 88,
+
+"969TopSpeed": 159,
+"9690to60": 4.9,
+"969Handling": 88,
+
+"996TopSpeed": 159,
+"9960to60": 4.6,
+"996Handling": 84,
+	
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlfaholicsGiuliaSuperFastRoad(2017).png",
+    "creator": "Pfugs",
+	"hiddenTag": [""]
+}

@@ -3,7 +3,6 @@
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { getCar } = require("./dataManager.js");
-const { calcTune } = require("./calcTune.js");
 
 const tyreAbbrevs = {
     "Standard": "STD",
@@ -50,7 +49,7 @@ async function loadImageWithFallback(imagePath, timeout = 2000) {
 /**
  * Generates a race HUD image for a car.
  * @param {Object} currentCar - The car object to generate the HUD for.
- * @param {string} upgrade - The upgrade level (e.g., "333", "000", "996").
+ * @param {string} upgrade - The upgrade level (e.g., "323", "000").
  * @returns {Promise<AttachmentBuilder>} - Discord image attachment.
  */
 async function generateHud(currentCar, upgrade) {
@@ -69,16 +68,25 @@ async function generateHud(currentCar, upgrade) {
         ? getCar(currentCar["reference"]) 
         : currentCar;
 
-    // Calculate tuned stats using the new system
-    const tunedStats = calcTune(bmReference, upgrade || "000");
+    // Extract stats
+    let topSpeed = bmReference["topSpeed"];
+    let accel = bmReference["0to60"];
+    let handling = bmReference["handling"];
+
+    // Use upgraded stats if specified
+    if (upgrade !== "000") {
+        topSpeed = bmReference[`${upgrade}TopSpeed`] ?? topSpeed;
+        accel = bmReference[`${upgrade}0to60`] ?? accel;
+        handling = bmReference[`${upgrade}Handling`] ?? handling;
+    }
 
     // Format acceleration
-    const accelDisplay = tunedStats.accel === 99.9 ? "N/A" : tunedStats.accel.toFixed(1);
+    accel = accel === 99.9 ? "N/A" : accel.toFixed(1);
 
     // Draw text on HUD
-    context.fillText(tunedStats.topSpeed.toString(), 28, 109);
-    context.fillText(accelDisplay, 28, 135);
-    context.fillText(tunedStats.handling.toString(), 28, 161);
+    context.fillText(topSpeed.toString(), 28, 109);
+    context.fillText(accel, 28, 135);
+    context.fillText(handling.toString(), 28, 161);
     context.fillText(bmReference["driveType"], 28, 188);
     context.fillText(tyreAbbrevs[bmReference["tyreType"]] || "???", 28, 214);
 

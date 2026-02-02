@@ -11,6 +11,7 @@ const { getCurrentSeason } = require("../consts/pvpSeasons.js");
 const { isCarBanned, getBanReason } = require("../consts/pvpBans.js");
 const { surfaceSupportsRain } = require("../consts/pvpTracks.js");
 const carNameGen = require("./carNameGen.js");
+const { getAvailableTunes } = require("./calcTune.js");
 
 // =============================================================================
 // HAND VALIDATION
@@ -350,7 +351,7 @@ function generateGhostOpponents(league, attackerRating, count) {
             if (existingCount >= leagueConfig.maxDuplicates) continue;
             
             // Random upgrade
-            const upgrades = ["000", "333", "666", "699", "969", "996"];
+            const upgrades = getAvailableTunes();
             const upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
             
             ghostDefense.push({ carID: randomCar.carID, upgrade });

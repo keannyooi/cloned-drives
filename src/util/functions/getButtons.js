@@ -53,7 +53,7 @@ function getButtons(type, buttonStyle) {
                     .setStyle(Secondary);
                 nop = new ButtonBuilder()
                     .setCustomId("nop")
-                    .setEmoji("❎")
+                    .setEmoji("⎋")
                     .setStyle(Secondary);
                 if (type === "rr") {
                     skip = new ButtonBuilder()
@@ -116,6 +116,22 @@ function getButtons(type, buttonStyle) {
             }
 
             return { high, low, skip: skipHilo };
+
+        case "reveal":
+            let revealBtn;
+            if (buttonStyle === "classic") {
+                revealBtn = new ButtonBuilder()
+                    .setCustomId("reveal")
+                    .setEmoji("✨")
+                    .setStyle(Secondary);
+            } else {
+                revealBtn = new ButtonBuilder()
+                    .setCustomId("reveal")
+                    .setEmoji("🐉")
+                    .setLabel("Reveal Your Destiny!")
+                    .setStyle(Success);
+            }
+            return { reveal: revealBtn };
 
 default:
     throw new Error(`getButtons: Unknown button type "${type}"`);

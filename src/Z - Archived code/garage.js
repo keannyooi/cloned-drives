@@ -3,7 +3,6 @@
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
-const { calcTune } = require("../util/functions/calcTune.js");
 const searchUser = require("../util/functions/searchUser.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
@@ -14,16 +13,6 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
-
-// Map sort keys to calcTune result keys
-const tunableStats = {
-    "topSpeed": "topSpeed",
-    "0to60": "accel",
-    "handling": "handling",
-    "weight": "weight",
-    "mra": "mra",
-    "ola": "ola"
-};
 
 module.exports = {
     name: "garage",
@@ -142,29 +131,23 @@ module.exports = {
                     }
                     else if (sort !== "cr") {
                         let values = "";
-                        // Get base reference for BM cars
-                        let bmReference = currentCar;
                         if (currentCar["reference"]) {
-                            bmReference = getCar(currentCar["reference"]);
+                            currentCar = getCar(currentCar["reference"]);
                         }
-                        
-                        // Check if this is a tunable stat
-                        if (tunableStats[sort]) {
-                            const tuneKey = tunableStats[sort];
+                        if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
                             for (let [upgrade, value] of Object.entries(car.upgrades)) {
-                                if (value > 0) {
-                                    const tunedStats = calcTune(bmReference, upgrade);
-                                    const listValue = tunedStats[tuneKey];
-                                    if (!values.includes(listValue.toString())) {
-                                        values += `${listValue}, `;
-                                    }
+                                let listValue = currentCar[sort];
+                                if (upgrade !== "000") {
+                                    listValue = currentCar[`${upgrade}${sort.charAt(0).toUpperCase() + sort.slice(1)}`];
+                                }
+                                if (!values.includes(listValue) && value > 0) {
+                                    values += `${listValue}, `;
                                 }
                             }
                             values = values.slice(0, -2);
                         }
                         else {
-                            // Non-tunable stat (driveType, gc, etc.)
-                            values = bmReference[sort];
+                            values = currentCar[sort];
                         }
                         valueList += `\`${values}\`\n`;
                     }

@@ -13,9 +13,13 @@ function addCars(garage, cars) {
             // Increment upgrade count if car exists
             existingCar.upgrades[upgrade] = (existingCar.upgrades[upgrade] || 0) + 1;
         } else {
-            // Create new car entry with default upgrades
-            const upgrades = { ...carSave, [upgrade]: 1 };
-            upgrades["000"] = upgrades["000"] || 0; // Ensure "000" is initialized
+            // Create new car entry with zeroed upgrades, then set the pulled upgrade to 1
+            const upgrades = {};
+            for (const key of Object.keys(carSave)) {
+                upgrades[key] = 0;
+            }
+            upgrades[upgrade] = 1;
+
             const newCar = { carID, upgrades };
 
             // Add to both map and garage

@@ -9,6 +9,7 @@ const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const generateHud = require("../util/functions/generateHud.js");
+const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const confirm = require("../util/functions/confirm.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -20,11 +21,11 @@ module.exports = {
     category: "Gameplay",
     description: "Upgrades a car in your garage.",
     async execute(message, args) {
-        if (!Object.keys(carSave).includes(args[args.length - 1])) {
+        if (!isValidTune(args[args.length - 1])) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, invalid upgrade provided.",
-                desc: "Upgrades are limited to `333`, `666`, `699`, `969` and `996` for simplicity sake.",
+                desc: `Valid tunes: ${getAvailableTunes().join(", ")}`,
                 author: message.author
             }).displayClosest(args[args.length - 1]);
             return errorMessage.sendMessage();

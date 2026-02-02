@@ -35,6 +35,13 @@ module.exports = {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const playerData = await profileModel.findOne({ userID: message.author.id });
+
+            // Initialize discoveredCars
+            let discoveredCars = playerData.discoveredCars || [];
+            if (discoveredCars.length === 0 && playerData.garage.length > 0) {
+                discoveredCars = playerData.garage.map(c => c.carID);
+            }
+
             let amountBought = offer.purchasedPlayers[message.author.id] ?? 0;
             if (offer.isActive && offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
                 const errorMessage = new ErrorMessage({
@@ -73,13 +80,17 @@ module.exports = {
                                     upgrade: "000"
                                 }
                                 carList += `${carNameGen({ currentCar, rarity: true })}\n`;
+                                // Track discovery
+                                if (!discoveredCars.includes(value[i].carID)) {
+                                    discoveredCars.push(value[i].carID);
+                                }
                             }
                             playerData.garage = addCars(playerData.garage, value);
                             fields.push({ name: "Claimed Cars", value: carList, inline: true });
                             break;
                         case "pack":
                             let currentPack = getPack(value);
-                            let addedCars = await openPack({ message, currentPack });
+                            let addedCars = await openPack({ message, currentPack, discoveredCars });
                             if (!Array.isArray(addedCars)) return;
 
                             playerData.garage = addCars(playerData.garage, addedCars);
@@ -104,7 +115,8 @@ module.exports = {
                     profileModel.updateOne({ userID: message.author.id }, {
                         money: playerData.money,
                         fuseTokens: playerData.fuseTokens,
-                        garage: playerData.garage
+                        garage: playerData.garage,
+                        discoveredCars
                     })
                 ]);
                 return successMessage.sendMessage({ currentMessage });

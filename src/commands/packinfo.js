@@ -1,9 +1,10 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
+const { getPackFiles, getPack, getCar } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID } = require("../util/consts/consts.js");
+const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 
 module.exports = {
@@ -40,33 +41,119 @@ module.exports = {
         function displayInfo(packId, currentMessage) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             let currentPack = getPack(packId);
+            const repetition = currentPack.repetition || 1;
+
+            // === Base info ===
+            let descLines = [`ID: \`${packId.slice(0, 6)}\``];
+
+            // Categories
+            if (currentPack.categories) {
+                descLines.push(`Categories: \`${currentPack.categories.join(", ")}\``);
+            }
+            // Tier
+            if (currentPack.tier) {
+                descLines.push(`Tier: \`${currentPack.tier}\``);
+            }
+            // No duplicates
+            if (currentPack.noDuplicates) {
+                descLines.push(`No Duplicates: ✅`);
+            }
+            // Filter logic
+            if (currentPack.filterLogic && currentPack.filterLogic !== "and") {
+                descLines.push(`Filter Logic: \`${currentPack.filterLogic.toUpperCase()}\``);
+            }
+
             let infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: currentPack["packName"],
-                desc: `ID: \`${packId.slice(0, 6)}\``,
+                desc: descLines.join("\n"),
                 author: message.author,
                 image: currentPack["pack"],
                 fields: [
                     { name: "Price", value: currentPack["price"] ? `${moneyEmoji}${currentPack["price"].toLocaleString("en")}` : "Not Purchasable" },
-                    { name: "Description", value: currentPack["description"] }
+                    { name: "Description", value: currentPack["description"] || "No description." }
                 ]
             });
 
+            // === Upgrade chance ===
+            if (currentPack.upgradeChance) {
+                let upgradeStr = "";
+                for (const [upg, chance] of Object.entries(currentPack.upgradeChance)) {
+                    upgradeStr += `${upg}: ${chance}%\n`;
+                }
+                infoMessage.editEmbed({ fields: [{ name: "⬆️ Upgrade Chance", value: `\`${upgradeStr.trim()}\``, inline: true }] });
+            }
+
+            // === Bonus rewards ===
+            if (currentPack.bonusRewards) {
+                let bonusStr = "";
+                for (const [type, amount] of Object.entries(currentPack.bonusRewards)) {
+                    bonusStr += `${type}: ${amount.toLocaleString("en")}\n`;
+                }
+                infoMessage.editEmbed({ fields: [{ name: "🎁 Bonus Rewards", value: `\`${bonusStr.trim()}\``, inline: true }] });
+            }
+
+            // === Card slot drop rates ===
             const fields = [];
-            for (let i = 0; i < currentPack["packSequence"].length; i++) {
+            for (let i = 0; i < currentPack.packSequence.length; i++) {
+                const slotDef = currentPack.packSequence[i];
+                const rates = slotDef.rates || slotDef;
+                const hasSlotFilter = !!slotDef.filter;
+
                 let dropRate = "`";
-                for (let rarity of Object.keys(currentPack["packSequence"][i])) {
-                    dropRate += `${rarity}: ${currentPack["packSequence"][i][rarity]}%\n`;
+                for (const key of Object.keys(rates)) {
+                    if (key === "pool") {
+                        // Calculate total pool weight
+                        const totalPoolWeight = rates.pool.reduce((sum, e) => sum + e.weight, 0);
+                        dropRate += `pool: ${totalPoolWeight}%\n`;
+
+                        // List individual pool entries
+                        for (const entry of rates.pool) {
+                            try {
+                                const poolCar = getCar(entry.carID);
+                                const name = poolCar
+                                    ? `${Array.isArray(poolCar.make) ? poolCar.make[0] : poolCar.make} ${poolCar.model}`
+                                    : entry.carID;
+                                dropRate += `  → ${name}: ${entry.weight}%`;
+                                if (entry.upgrade && entry.upgrade !== "000") {
+                                    dropRate += ` [${entry.upgrade}]`;
+                                }
+                                dropRate += "\n";
+                            } catch {
+                                dropRate += `  → ${entry.carID}: ${entry.weight}%\n`;
+                            }
+                        }
+                    } else {
+                        dropRate += `${key}: ${rates[key]}%\n`;
+                    }
                 }
                 dropRate += "`";
-				const cardRange = currentPack["repetition"] > 1 ? `${i * currentPack["repetition"] + 1}~${(i + 1) * currentPack["repetition"]}` : (i + 1);
-				fields.push({
-				name: `Card(s) ${cardRange} Drop Rate`,
-				value: dropRate,
-				inline: true
+
+                const cardRange = repetition > 1
+                    ? `${i * repetition + 1}~${(i + 1) * repetition}`
+                    : (i + 1);
+                let fieldName = `Card(s) ${cardRange} Drop Rate`;
+                if (hasSlotFilter) fieldName += " 🔍";
+
+                fields.push({
+                    name: fieldName,
+                    value: dropRate,
+                    inline: true
                 });
             }
             infoMessage.editEmbed({ fields });
+
+            // === Total card count ===
+            const totalCards = currentPack.packSequence.length * repetition;
+            const cardsPerPage = currentPack.cardsPerPage || 5;
+            if (totalCards !== 5 || cardsPerPage !== 5) {
+                infoMessage.editEmbed({ fields: [{
+                    name: "Pack Layout",
+                    value: `Total Cards: \`${totalCards}\` | Cards Per Page: \`${cardsPerPage}\``,
+                    inline: false
+                }] });
+            }
+
             return infoMessage.sendMessage({ currentMessage });
         }
     }
