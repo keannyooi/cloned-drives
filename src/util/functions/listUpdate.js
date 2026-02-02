@@ -43,6 +43,7 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
     const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime, componentType: Button });
     collector.on("collect", async (button) => {
         try {
+            await button.deferUpdate();
             switch (button.customId) {
                 case "firstPage":
                     page = 1;
@@ -89,7 +90,6 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
             row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
             embed = listDisplay(section, page, totalPages, currentMessage);
             listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
-            await button.deferUpdate();
         }
         catch (error) {
             console.log(error);
