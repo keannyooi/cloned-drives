@@ -10,13 +10,17 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique", "Concept"],
+    "tags": [
+        "The Tyrol Tour: Remix",
+        "Hot Hatch",
+        "Unique",
+        "Concept",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1420,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +29,24 @@
     "mra": 66.67,
     "ola": 73.68,
     "description": "One of the many victims of the dieselgate budget cut. RIP.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfR400(2014).png",
     "creator": "Andu",
-
     "333TopSpeed": 177,
     "3330to60": 3.6,
     "333Handling": 93,
-    
     "666TopSpeed": 180,
     "6660to60": 3.4,
     "666Handling": 96,
-    
     "699TopSpeed": 180,
     "6990to60": 3.2,
     "699Handling": 100,
-    
     "969TopSpeed": 183,
     "9690to60": 3.4,
     "969Handling": 100,
-    
     "996TopSpeed": 183,
     "9960to60": 3.2,
     "996Handling": 96,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

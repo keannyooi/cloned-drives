@@ -10,7 +10,16 @@
     "handling": 104,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["CDCCS","Motorsport","Unique","Oddity","Eco-Friendly","Rest of The World","The Tyrol Tour"],
+    "tags": [
+        "CDCCS",
+        "Motorsport",
+        "Unique",
+        "Oddity",
+        "Eco-Friendly",
+        "Rest of The World",
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 168,
     "gc": "Low",
@@ -23,27 +32,24 @@
     "mra": 0,
     "ola": 87.14,
     "description": "With three overall wins and an average of 920 points Grimsel is AMZ’s most successful car. Furthermore with its victories in Austria and Spain it was able to achieve the two highest scores in the European history of Formula Student.",
-"333TopSpeed": 82,
-"3330to60": 1.3,
-"333Handling": 107,
-
-"666TopSpeed": 89,
-"6660to60": 1.3,
-"666Handling": 111,
-
-"699TopSpeed": 89,
-"6990to60": 1.2,
-"699Handling": 115,
-
-"969TopSpeed": 96,
-"9690to60": 1.3,
-"969Handling": 115,
-
-"996TopSpeed": 96,
-"9960to60": 1.2,
-"996Handling": 111,
-	
+    "333TopSpeed": 82,
+    "3330to60": 1.3,
+    "333Handling": 107,
+    "666TopSpeed": 89,
+    "6660to60": 1.3,
+    "666Handling": 111,
+    "699TopSpeed": 89,
+    "6990to60": 1.2,
+    "699Handling": 115,
+    "969TopSpeed": 96,
+    "9690to60": 1.3,
+    "969Handling": 115,
+    "996TopSpeed": 96,
+    "9960to60": 1.2,
+    "996Handling": 111,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZGrimsel(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

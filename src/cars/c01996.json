@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": [
-        "Motorsport"
+        "Motorsport",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1150,
@@ -25,22 +26,24 @@
     "mra": 89.67,
     "ola": 90.91,
     "description": "",
-     "333TopSpeed": 179,
+    "333TopSpeed": 179,
     "3330to60": 3.1,
     "333Handling": 107,
     "666TopSpeed": 182,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 111,
     "996TopSpeed": 185,
     "9960to60": 2.8,
     "996Handling": 111,
     "969TopSpeed": 185,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 115,
     "699TopSpeed": 182,
     "6990to60": 2.8,
     "699Handling": 115,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ4GTE(2014).png",
     "creator": "Aqo",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

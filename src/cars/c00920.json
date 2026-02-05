@@ -12,7 +12,8 @@
     "tyreType": "Performance",
     "tags": [
         "Innovative",
-        "Oddity"
+        "Oddity",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 992,
@@ -26,7 +27,7 @@
     "mra": 59.77,
     "ola": 66.92,
     "description": "A mid-engine lightweight track car with a carbon-kevlar body and a turbocharged engine? Sounds thoroughly modern, but Mosler did it in the 1980s.",
-     "333TopSpeed": 148,
+    "333TopSpeed": 148,
     "3330to60": 4.9,
     "333Handling": 83,
     "666TopSpeed": 151,
@@ -43,5 +44,7 @@
     "699Handling": 89,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MoslerConsulierGTPSport(1990).png",
     "creator": "Johnny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers"],
+    "tags": [
+        "CD Chasers",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1640,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 51.25,
     "ola": 61.4,
     "description": "",
-"333TopSpeed": 117,
-"3330to60": 6.7,
-"333Handling": 79,
-
-"666TopSpeed": 121,
-"6660to60": 6.4,
-"666Handling": 81,
-
-"699TopSpeed": 121,
-"6990to60": 6,
-"699Handling": 84,
-
-"969TopSpeed": 126,
-"9690to60": 6.4,
-"969Handling": 84,
-
-"996TopSpeed": 126,
-"9960to60": 6,
-"996Handling": 81,
+    "333TopSpeed": 117,
+    "3330to60": 6.7,
+    "333Handling": 79,
+    "666TopSpeed": 121,
+    "6660to60": 6.4,
+    "666Handling": 81,
+    "699TopSpeed": 121,
+    "6990to60": 6,
+    "699Handling": 84,
+    "969TopSpeed": 126,
+    "9690to60": 6.4,
+    "969Handling": 84,
+    "996TopSpeed": 126,
+    "9960to60": 6,
+    "996Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MitsubishiGTO(1990).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

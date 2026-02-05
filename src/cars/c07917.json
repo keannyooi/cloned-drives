@@ -10,7 +10,11 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["Liberty Showdown","Motorsport"],
+    "tags": [
+        "Liberty Showdown",
+        "Motorsport",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 51.55,
     "ola": 72.29,
     "description": "",
-"333TopSpeed": 136,
-"3330to60": 7.9,
-"333Handling": 70,
-
-"666TopSpeed": 140,
-"6660to60": 7.5,
-"666Handling": 72,
-
-"699TopSpeed": 140,
-"6990to60": 7.1,
-"699Handling": 75,
-
-"969TopSpeed": 144,
-"9690to60": 7.5,
-"969Handling": 75,
-
-"996TopSpeed": 144,
-"9960to60": 7.1,
-"996Handling": 72,
+    "333TopSpeed": 136,
+    "3330to60": 7.9,
+    "333Handling": 70,
+    "666TopSpeed": 140,
+    "6660to60": 7.5,
+    "666Handling": 72,
+    "699TopSpeed": 140,
+    "6990to60": 7.1,
+    "699Handling": 75,
+    "969TopSpeed": 144,
+    "9690to60": 7.5,
+    "969Handling": 75,
+    "996TopSpeed": 144,
+    "9960to60": 7.1,
+    "996Handling": 72,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeDaytonaProRally(1990).png",
     "creator": "DodgeDemon",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

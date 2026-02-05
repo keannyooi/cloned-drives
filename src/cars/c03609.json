@@ -10,9 +10,16 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","The Midlands Cruise","Concept","Unique","Ultra Expensive","Street Racer"],
+    "tags": [
+        "Endless Summer",
+        "The Midlands Cruise",
+        "Concept",
+        "Unique",
+        "Ultra Expensive",
+        "Street Racer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1221,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +33,22 @@
     "description": "Initially you may think that this is just ‘another’ DB4GT! Not so. In 1990, the factory decided that it might be a good idea to purchase and restore a DB4 in order to test out new ideas that could be incorporated into customers cars. UAW 707, an early DB4 in poor condition was given the designation - DP2155, then the car was extensively modified by Works Service. UAW 707 has become probably, the most developed DB4 in existence.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinDB4WorksPrototypeDP2155(1990).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 175,
-"3330to60": 6.2,
-"333Handling": 74,
-
-"666TopSpeed": 178,
-"6660to60": 5.9,
-"666Handling": 77,
-
-"699TopSpeed": 178,
-"6990to60": 5.5,
-"699Handling": 80,
-
-"969TopSpeed": 181,
-"9690to60": 5.9,
-"969Handling": 80,
-
-"996TopSpeed": 181,
-"9960to60": 5.5,
-"996Handling": 77,
-    "hiddenTag": [""]
+    "333TopSpeed": 175,
+    "3330to60": 6.2,
+    "333Handling": 74,
+    "666TopSpeed": 178,
+    "6660to60": 5.9,
+    "666Handling": 77,
+    "699TopSpeed": 178,
+    "6990to60": 5.5,
+    "699Handling": 80,
+    "969TopSpeed": 181,
+    "9690to60": 5.9,
+    "969Handling": 80,
+    "996TopSpeed": 181,
+    "9960to60": 5.5,
+    "996Handling": 77,
+    "hiddenTag": [
+        ""
+    ]
 }

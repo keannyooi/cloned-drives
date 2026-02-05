@@ -10,7 +10,10 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Liberty Showdown"],
+    "tags": [
+        "Liberty Showdown",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1970,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 52.53,
     "ola": 68.65,
     "description": "",
-"333TopSpeed": 122,
-"3330to60": 7.2,
-"333Handling": 73,
-
-"666TopSpeed": 127,
-"6660to60": 6.8,
-"666Handling": 76,
-
-"699TopSpeed": 127,
-"6990to60": 6.5,
-"699Handling": 79,
-
-"969TopSpeed": 131,
-"9690to60": 6.8,
-"969Handling": 79,
-
-"996TopSpeed": 131,
-"9960to60": 6.5,
-"996Handling": 76,
+    "333TopSpeed": 122,
+    "3330to60": 7.2,
+    "333Handling": 73,
+    "666TopSpeed": 127,
+    "6660to60": 6.8,
+    "666Handling": 76,
+    "699TopSpeed": 127,
+    "6990to60": 6.5,
+    "699Handling": 79,
+    "969TopSpeed": 131,
+    "9690to60": 6.8,
+    "969Handling": 79,
+    "996TopSpeed": 131,
+    "9960to60": 6.5,
+    "996Handling": 76,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeJourneyCrossroad3.6AWD(2014).png",
     "creator": "DodgeDemon",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

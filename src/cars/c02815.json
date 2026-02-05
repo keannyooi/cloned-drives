@@ -10,9 +10,14 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "tags": [
+        "Rest of The World",
+        "Innovative",
+        "Unique",
+        "Eco-Friendly",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 2300,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +31,22 @@
     "description": "nanoFlowcell, as the name suggests, develops flow cells that basically run on saltwater, or at least they claim to. According to them, they've created flow cells small and powerful enough to power a car. This is 1 such car and somehow it's torque figure is more than 10x its power figure. Now it's understandable for one to dismiss the car as vaporware, but this thing is registered on the road. (look at the license plate!)",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/nanoFlowcellQuante-Sportlimousine(2014).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 238, 
-    "3330to60": 2.6, 
+    "333TopSpeed": 238,
+    "3330to60": 2.6,
     "333Handling": 90,
-
-    "666TopSpeed": 240, 
-    "6660to60": 2.4, 
+    "666TopSpeed": 240,
+    "6660to60": 2.4,
     "666Handling": 93,
-
-    "699TopSpeed": 240, 
-    "6990to60": 2.3, 
+    "699TopSpeed": 240,
+    "6990to60": 2.3,
     "699Handling": 97,
-
-    "969TopSpeed": 243, 
-    "9690to60": 2.4, 
+    "969TopSpeed": 243,
+    "9690to60": 2.4,
     "969Handling": 97,
-
-    "996TopSpeed": 243, 
-    "9960to60": 2.3, 
+    "996TopSpeed": 243,
+    "9960to60": 2.3,
     "996Handling": 93,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

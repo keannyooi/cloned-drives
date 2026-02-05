@@ -1,14 +1,24 @@
 {
     "carID": "c08183",
-    "make": ["Vauxhall","Lotus"],
+    "make": [
+        "Vauxhall",
+        "Lotus"
+    ],
     "model": "Lotus Carlton (MA25)",
     "modelYear": 1990,
     "country": "GB",
     "reference": "c01492",
-    "collection": ["Multi Angle Series 2025"],
+    "collection": [
+        "Multi Angle Series 2025"
+    ],
     "description": "Witness the beauty from all angles",
-	"active" : true,
+    "active": true,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/1BM/0in/FAA-VauxhallLC.png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ],
+    "tags": [
+        "Year of the Horse"
+    ]
 }

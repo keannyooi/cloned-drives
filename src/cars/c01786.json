@@ -14,7 +14,8 @@
         "Sleeper",
         "Street Racer",
         "Silver Screen",
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1500,
@@ -28,26 +29,24 @@
     "mra": 80.36,
     "ola": 75.08,
     "description": "The fastest non-Nismo R34 to ever leave the factory.",
-"333TopSpeed": 180,
-"3330to60": 4.4,
-"333Handling": 90,
-
-"666TopSpeed": 183,
-"6660to60": 4.1,
-"666Handling": 93,
-
-"699TopSpeed": 183,
-"6990to60": 3.9,
-"699Handling": 97,
-
-"969TopSpeed": 186,
-"9690to60": 4.1,
-"969Handling": 97,
-
-"996TopSpeed": 186,
-"9960to60": 3.9,
-"996Handling": 93,
+    "333TopSpeed": 180,
+    "3330to60": 4.4,
+    "333Handling": 90,
+    "666TopSpeed": 183,
+    "6660to60": 4.1,
+    "666Handling": 93,
+    "699TopSpeed": 183,
+    "6990to60": 3.9,
+    "699Handling": 97,
+    "969TopSpeed": 186,
+    "9690to60": 4.1,
+    "969Handling": 97,
+    "996TopSpeed": 186,
+    "9960to60": 3.9,
+    "996Handling": 93,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTRVSpecIINur(R34)(2002).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,10 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Chop Shop"],
+    "tags": [
+        "Chop Shop",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1375,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 73.15,
     "ola": 78.45,
     "description": "",
-"333TopSpeed": 147,
-"3330to60": 6.5,
-"333Handling": 83,
-
-"666TopSpeed": 150,
-"6660to60": 6.1,
-"666Handling": 85,
-
-"699TopSpeed": 150,
-"6990to60": 5.8,
-"699Handling": 89,
-
-"969TopSpeed": 154,
-"9690to60": 6.1,
-"969Handling": 89,
-
-"996TopSpeed": 154,
-"9960to60": 5.8,
-"996Handling": 85,
+    "333TopSpeed": 147,
+    "3330to60": 6.5,
+    "333Handling": 83,
+    "666TopSpeed": 150,
+    "6660to60": 6.1,
+    "666Handling": 85,
+    "699TopSpeed": 150,
+    "6990to60": 5.8,
+    "699Handling": 89,
+    "969TopSpeed": 154,
+    "9690to60": 6.1,
+    "969Handling": 89,
+    "996TopSpeed": 154,
+    "9960to60": 5.8,
+    "996Handling": 85,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMW220dModernLine(2014).png",
     "creator": "Scorpio",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

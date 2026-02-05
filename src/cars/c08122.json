@@ -10,7 +10,11 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Liberty Showdown","Muscle Car"],
+    "tags": [
+        "Liberty Showdown",
+        "Muscle Car",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1520,
     "gc": "Medium",
@@ -23,28 +27,24 @@
     "mra": 32.89,
     "ola": 71.19,
     "description": "",
-	
-"333TopSpeed": 104,
-"3330to60": 11.2,
-"333Handling": 61,
-
-"666TopSpeed": 110,
-"6660to60": 10.6,
-"666Handling": 63,
-
-"699TopSpeed": 110,
-"6990to60": 10,
-"699Handling": 65,
-
-"969TopSpeed": 115,
-"9690to60": 10.6,
-"969Handling": 65,
-
-"996TopSpeed": 115,
-"9960to60": 10,
-"996Handling": 63,
-	
+    "333TopSpeed": 104,
+    "3330to60": 11.2,
+    "333Handling": 61,
+    "666TopSpeed": 110,
+    "6660to60": 10.6,
+    "666Handling": 63,
+    "699TopSpeed": 110,
+    "6990to60": 10,
+    "699Handling": 65,
+    "969TopSpeed": 115,
+    "9690to60": 10.6,
+    "969Handling": 65,
+    "996TopSpeed": 115,
+    "9960to60": 10,
+    "996Handling": 63,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PlymouthBelvedereSatelliteHardtopCoupe(1966).png",
     "creator": "DodgeDemon",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

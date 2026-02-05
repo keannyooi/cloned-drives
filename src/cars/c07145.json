@@ -10,7 +10,10 @@
     "handling": 54,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Chop Shop"],
+    "tags": [
+        "Chop Shop",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1340,
     "gc": "Medium",
@@ -22,30 +25,25 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 62.25,
-
     "description": "",
-
-"333TopSpeed": 96,
-"3330to60": 21.0,
-"333Handling": 56,
-
-"666TopSpeed": 102,
-"6660to60": 19.9,
-"666Handling": 58,
-
-"699TopSpeed": 102,
-"6990to60": 18.8,
-"699Handling": 60,
-
-"969TopSpeed": 107,
-"9690to60": 19.9,
-"969Handling": 60,
-
-"996TopSpeed": 107,
-"9960to60": 18.8,
-"996Handling": 58,
-
+    "333TopSpeed": 96,
+    "3330to60": 21,
+    "333Handling": 56,
+    "666TopSpeed": 102,
+    "6660to60": 19.9,
+    "666Handling": 58,
+    "699TopSpeed": 102,
+    "6990to60": 18.8,
+    "699Handling": 60,
+    "969TopSpeed": 107,
+    "9690to60": 19.9,
+    "969Handling": 60,
+    "996TopSpeed": 107,
+    "9960to60": 18.8,
+    "996Handling": 58,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW501B(1954).png",
     "creator": "Scorpio",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

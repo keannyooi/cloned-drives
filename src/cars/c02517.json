@@ -10,9 +10,12 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1500,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +29,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CadillacCien(2002).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 219, 
-"3330to60": 3.4, 
-"333Handling": 89,
-
-"666TopSpeed": 222, 
-"6660to60": 3.2, 
-"666Handling": 92,
-
-"699TopSpeed": 222, 
-"6990to60": 3.1, 
-"699Handling": 95,
-
-"969TopSpeed": 224, 
-"9690to60": 3.2, 
-"969Handling": 95,
-
-"996TopSpeed": 224, 
-"9960to60": 3.1, 
-"996Handling": 92,
-    "hiddenTag": [""]
+    "333TopSpeed": 219,
+    "3330to60": 3.4,
+    "333Handling": 89,
+    "666TopSpeed": 222,
+    "6660to60": 3.2,
+    "666Handling": 92,
+    "699TopSpeed": 222,
+    "6990to60": 3.1,
+    "699Handling": 95,
+    "969TopSpeed": 224,
+    "9690to60": 3.2,
+    "969Handling": 95,
+    "996TopSpeed": 224,
+    "9960to60": 3.1,
+    "996Handling": 92,
+    "hiddenTag": [
+        ""
+    ]
 }

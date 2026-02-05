@@ -10,7 +10,13 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD Contenders","Concept","Unique","Innovative"],
+    "tags": [
+        "CD Contenders",
+        "Concept",
+        "Unique",
+        "Innovative",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1420,
     "gc": "Low",
@@ -23,26 +29,24 @@
     "mra": 87.06,
     "ola": 96.45,
     "description": "",
-"333TopSpeed": 162,
-"3330to60": 4.6,
-"333Handling": 87,
-
-"666TopSpeed": 166,
-"6660to60": 4.3,
-"666Handling": 90,
-
-"699TopSpeed": 166,
-"6990to60": 4.1,
-"699Handling": 93,
-
-"969TopSpeed": 169,
-"9690to60": 4.3,
-"969Handling": 93,
-
-"996TopSpeed": 169,
-"9960to60": 4.1,
-"996Handling": 90,
+    "333TopSpeed": 162,
+    "3330to60": 4.6,
+    "333Handling": 87,
+    "666TopSpeed": 166,
+    "6660to60": 4.3,
+    "666Handling": 90,
+    "699TopSpeed": 166,
+    "6990to60": 4.1,
+    "699Handling": 93,
+    "969TopSpeed": 169,
+    "9690to60": 4.3,
+    "969Handling": 93,
+    "996TopSpeed": 169,
+    "9960to60": 4.1,
+    "996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeViperVM02(1990).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

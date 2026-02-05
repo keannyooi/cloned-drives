@@ -6,17 +6,19 @@
     "modelYear": 1990,
     "country": "DE",
     "topSpeed": 103,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": [
+        "Endless Summer",
+        "The Tyrol Tour: Remix",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 890,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +27,24 @@
     "mra": 27.71,
     "ola": 63.33,
     "description": "fashion fashion fashion fashion.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.6Moda(1990).png",
     "creator": "Andu",
-
     "333TopSpeed": 108,
     "3330to60": 11.4,
     "333Handling": 70,
-
     "666TopSpeed": 113,
-    "6660to60": 10.8, 
+    "6660to60": 10.8,
     "666Handling": 72,
-
     "996TopSpeed": 118,
     "9960to60": 10.2,
     "996Handling": 72,
-
     "969TopSpeed": 118,
     "9690to60": 10.8,
     "969Handling": 75,
-
     "699TopSpeed": 113,
     "6990to60": 10.2,
     "699Handling": 75,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

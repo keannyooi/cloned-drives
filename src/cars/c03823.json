@@ -6,13 +6,19 @@
     "modelYear": 1966,
     "country": "IT",
     "topSpeed": 168,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Unique","Ultra Expensive","The Tyrol Tour: Remix","Grand Tourer"],
+    "tags": [
+        "Endless Summer",
+        "Unique",
+        "Ultra Expensive",
+        "The Tyrol Tour: Remix",
+        "Grand Tourer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1425,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Lamborghini400GTMonza(1966).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 171,
-"3330to60": 5.7,
-"333Handling": 72,
-
-"666TopSpeed": 174,
-"6660to60": 5.4,
-"666Handling": 75,
-
-"699TopSpeed": 174,
-"6990to60": 5.1,
-"699Handling": 78,
-
-"969TopSpeed": 177,
-"9690to60": 5.4,
-"969Handling": 78,
-
-"996TopSpeed": 177,
-"9960to60": 5.1,
-"996Handling": 75,
-    "hiddenTag": [""]
+    "333TopSpeed": 171,
+    "3330to60": 5.7,
+    "333Handling": 72,
+    "666TopSpeed": 174,
+    "6660to60": 5.4,
+    "666Handling": 75,
+    "699TopSpeed": 174,
+    "6990to60": 5.1,
+    "699Handling": 78,
+    "969TopSpeed": 177,
+    "9690to60": 5.4,
+    "969Handling": 78,
+    "996TopSpeed": 177,
+    "9960to60": 5.1,
+    "996Handling": 75,
+    "hiddenTag": [
+        ""
+    ]
 }

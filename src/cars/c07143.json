@@ -10,7 +10,13 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept","Unique","Chop Shop","Oddity"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Chop Shop",
+        "Oddity",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 2100,
     "gc": "Medium",
@@ -40,5 +46,7 @@
     "996Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DeLaChapelleParcoursPC8(1990).png",
     "creator": "Kuroi",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

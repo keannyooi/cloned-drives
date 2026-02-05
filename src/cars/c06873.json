@@ -1,7 +1,10 @@
 {
     "carID": "c06873",
     "cr": 587,
-    "make": ["Mosselman", "BMW"],
+    "make": [
+        "Mosselman",
+        "BMW"
+    ],
     "model": "X6 xDrive30d Stage 1",
     "modelYear": 2014,
     "country": "NL",
@@ -10,7 +13,12 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["CDCCS","Tuner","Rest of The World"],
+    "tags": [
+        "CDCCS",
+        "Tuner",
+        "Rest of The World",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2055,
     "gc": "High",
@@ -22,30 +30,25 @@
     "fuelType": "Diesel",
     "mra": 55.74,
     "ola": 73.53,
-
     "description": "Dutch chip tuner Mosselman gets the 30d close to 35d power.",
-
-"333TopSpeed": 149,
-"3330to60": 6.5,
-"333Handling": 79,
-
-"666TopSpeed": 152,
-"6660to60": 6.1,
-"666Handling": 81,
-
-"699TopSpeed": 152,
-"6990to60": 5.8,
-"699Handling": 84,
-
-"969TopSpeed": 156,
-"9690to60": 6.1,
-"969Handling": 84,
-
-"996TopSpeed": 156,
-"9960to60": 5.8,
-"996Handling": 81,
-
+    "333TopSpeed": 149,
+    "3330to60": 6.5,
+    "333Handling": 79,
+    "666TopSpeed": 152,
+    "6660to60": 6.1,
+    "666Handling": 81,
+    "699TopSpeed": 152,
+    "6990to60": 5.8,
+    "699Handling": 84,
+    "969TopSpeed": 156,
+    "9690to60": 6.1,
+    "969Handling": 84,
+    "996TopSpeed": 156,
+    "9960to60": 5.8,
+    "996Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MosselmanX6xDrive30dStage1(2014).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,9 +10,15 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "tags": [
+        "Endless Summer",
+        "Motorsport",
+        "Unique",
+        "Ultra Expensive",
+        "The Tyrol Tour: Remix",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 670,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Maserati250F(1954).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 177,
-"3330to60": 4.1,
-"333Handling": 77,
-
-"666TopSpeed": 180,
-"6660to60": 3.9,
-"666Handling": 80,
-
-"699TopSpeed": 180,
-"6990to60": 3.7,
-"699Handling": 83,
-
-"969TopSpeed": 183,
-"9690to60": 3.9,
-"969Handling": 83,
-
-"996TopSpeed": 183,
-"9960to60": 3.7,
-"996Handling": 80,
-    "hiddenTag": [""]
+    "333TopSpeed": 177,
+    "3330to60": 4.1,
+    "333Handling": 77,
+    "666TopSpeed": 180,
+    "6660to60": 3.9,
+    "666Handling": 80,
+    "699TopSpeed": 180,
+    "6990to60": 3.7,
+    "699Handling": 83,
+    "969TopSpeed": 183,
+    "9690to60": 3.9,
+    "969Handling": 83,
+    "996TopSpeed": 183,
+    "9960to60": 3.7,
+    "996Handling": 80,
+    "hiddenTag": [
+        ""
+    ]
 }

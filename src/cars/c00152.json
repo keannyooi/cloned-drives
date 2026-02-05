@@ -10,7 +10,9 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1360,
     "gc": "Medium",
@@ -23,22 +25,24 @@
     "mra": 50.28,
     "ola": 69.66,
     "description": "Luxury and space for the kids.",
-     "333TopSpeed": 131,
+    "333TopSpeed": 131,
     "3330to60": 8.5,
     "333Handling": 73,
     "666TopSpeed": 135,
-    "6660to60": 8.0,
+    "6660to60": 8,
     "666Handling": 76,
     "996TopSpeed": 139,
     "9960to60": 7.6,
     "996Handling": 76,
     "969TopSpeed": 139,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 79,
     "699TopSpeed": 135,
     "6990to60": 7.6,
     "699Handling": 79,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW218iActiveTourerLuxuryLine(2014).png",
     "creator": "Macan",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

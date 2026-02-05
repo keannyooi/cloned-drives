@@ -10,9 +10,11 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1845,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,28 +26,24 @@
     "mra": 50.21,
     "ola": 61.54,
     "description": "To comply with that year's emission regulations, the VG35 update on November 1978 saw the addition of fuel injection. 4 years ago, original manual-transmission Centuries were phased out in favour of automatic transmissions.",
- 
-"333TopSpeed": 117,
-"3330to60": 10.9,
-"333Handling": 64,
-
-"666TopSpeed": 121,
-"6660to60": 10.3,
-"666Handling": 66,
-
-"699TopSpeed": 121,
-"6990to60": 9.8,
-"699Handling": 69,
-
-"969TopSpeed": 126,
-"9690to60": 10.3,
-"969Handling": 69,
-
-"996TopSpeed": 126,
-"9960to60": 9.8,
-"996Handling": 66,
-
+    "333TopSpeed": 117,
+    "3330to60": 10.9,
+    "333Handling": 64,
+    "666TopSpeed": 121,
+    "6660to60": 10.3,
+    "666Handling": 66,
+    "699TopSpeed": 121,
+    "6990to60": 9.8,
+    "699Handling": 69,
+    "969TopSpeed": 126,
+    "9690to60": 10.3,
+    "969Handling": 69,
+    "996TopSpeed": 126,
+    "9960to60": 9.8,
+    "996Handling": 66,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaCenturyDType(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

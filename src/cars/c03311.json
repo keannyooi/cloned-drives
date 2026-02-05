@@ -5,10 +5,17 @@
     "modelYear": 2002,
     "country": "DE",
     "reference": "c02615",
-    "collection": ["The Cutaway Collection 1"],
+    "collection": [
+        "The Cutaway Collection 1"
+    ],
     "description": "None",
-	"active" : false,
+    "active": false,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(bm)/0in/AudiA84.2quattroCutaway.png",
     "creator": "Crossfire",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ],
+    "tags": [
+        "Year of the Horse"
+    ]
 }

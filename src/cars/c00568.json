@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [
-        "Street Racer"
+        "Street Racer",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1580,
@@ -25,7 +26,7 @@
     "mra": 65.91,
     "ola": 75.86,
     "description": "While yes it was f-able and had cute tailligts, it was also a cracking car.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 81,
     "666TopSpeed": 162,
@@ -42,5 +43,7 @@
     "699Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiG35Coupe(2003).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

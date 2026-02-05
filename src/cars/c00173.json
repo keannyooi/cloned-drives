@@ -12,7 +12,9 @@
     "tyreType": "Performance",
     "tags": [
         "Eco-Friendly",
-        "Silver Screen","OG"
+        "Silver Screen",
+        "OG",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1560,
@@ -26,26 +28,24 @@
     "mra": 71.07,
     "ola": 89.53,
     "description": "There’s nothing like the i8. Its bewildering complexity stems from the need to build a new-age sustainable sports car. Never mind that, what makes it great is the multiple sides to its personality. It’ll snort along your favourite mountain road, then soften up and quieten down for the motorway. Under electric power it glides along discreet as a bicycle. If you’re stuck in dawdle, hybrid mode isn’t only hygienic, it’s fascinating in its own way. Plus the new open version adds another layer. It gives a deeper sense of the surroundings you’re travelling through – the surroundings all the i8’s complexity is trying so hard to protect.",
-"333TopSpeed": 158,
-"3330to60": 3.9,
-"333Handling": 87,
-
-"666TopSpeed": 162,
-"6660to60": 3.7,
-"666Handling": 90,
-
-"699TopSpeed": 162,
-"6990to60": 3.5,
-"699Handling": 93,
-
-"969TopSpeed": 165,
-"9690to60": 3.7,
-"969Handling": 93,
-
-"996TopSpeed": 165,
-"9960to60": 3.5,
-"996Handling": 90,
+    "333TopSpeed": 158,
+    "3330to60": 3.9,
+    "333Handling": 87,
+    "666TopSpeed": 162,
+    "6660to60": 3.7,
+    "666Handling": 90,
+    "699TopSpeed": 162,
+    "6990to60": 3.5,
+    "699Handling": 93,
+    "969TopSpeed": 165,
+    "9690to60": 3.7,
+    "969Handling": 93,
+    "996TopSpeed": 165,
+    "9960to60": 3.5,
+    "996Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWi8(2014).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,12 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer","OG","Oceanic View"],
+    "tags": [
+        "Grand Tourer",
+        "OG",
+        "Oceanic View",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1739,
     "gc": "Low",
@@ -23,7 +28,7 @@
     "mra": 76.6,
     "ola": 94.44,
     "description": "Announced in August 2014, the 2015MY Vanquish may look virtually the same as the previous model year but under the carbon coachwork the changes are most significant.  Quoted top speed rose to 201 mph and the 0 to 60 acceleration times dropped to just 3.6 seconds mostly due to a final drive ratio of 2.73:1.",
-     "333TopSpeed": 204,
+    "333TopSpeed": 204,
     "3330to60": 3.4,
     "333Handling": 90,
     "666TopSpeed": 206,
@@ -40,5 +45,7 @@
     "699Handling": 97,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinVanquish(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

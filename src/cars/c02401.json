@@ -1,18 +1,22 @@
 {
     "carID": "c02401",
     "cr": 387,
-    "make": ["MVS", "Venturi"],
+    "make": [
+        "MVS",
+        "Venturi"
+    ],
     "model": "Venturi 200 Transcup",
     "modelYear": 1990,
     "country": "FR",
     "topSpeed": 145,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1295,
     "gc": "Medium",
     "seatCount": 2,
@@ -24,28 +28,24 @@
     "mra": 58.82,
     "ola": 62.12,
     "description": "If you heard a word 'Transcup' in the naming of a car, a removable top version would most likely not to be your first thought in mind.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi200Transcup(1990).png",
     "creator": "Crossfire",
-
     "333TopSpeed": 149,
     "3330to60": 6.7,
     "333Handling": 75,
-
     "666TopSpeed": 152,
     "6660to60": 6.3,
     "666Handling": 78,
-
     "699TopSpeed": 152,
-    "6990to60": 6.0,
+    "6990to60": 6,
     "699Handling": 81,
-
     "969TopSpeed": 156,
     "9690to60": 6.3,
     "969Handling": 81,
-
     "996TopSpeed": 156,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 78,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -12,7 +12,8 @@
     "tyreType": "Performance",
     "tags": [
         "Kei Car",
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 864,
@@ -26,7 +27,7 @@
     "mra": 21.5,
     "ola": 57.63,
     "description": "The small manufacturer's proud kei car gem not only perfect in tokyo, but also in the small british towns.",
-     "333TopSpeed": 93,
+    "333TopSpeed": 93,
     "3330to60": 10.9,
     "333Handling": 72,
     "666TopSpeed": 99,
@@ -43,5 +44,7 @@
     "699Handling": 78,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DaihatsuCopen6turbo(2002).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

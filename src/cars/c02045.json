@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": [
-        "Track Day"
+        "Track Day",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1428,
@@ -25,7 +26,7 @@
     "mra": 87.1,
     "ola": 85.71,
     "description": "",
-     "333TopSpeed": 210,
+    "333TopSpeed": 210,
     "3330to60": 2.6,
     "333Handling": 99,
     "666TopSpeed": 212,
@@ -42,5 +43,7 @@
     "699Handling": 107,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

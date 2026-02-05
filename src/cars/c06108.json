@@ -1,7 +1,9 @@
 {
     "carID": "c06108",
     "cr": 342,
-    "make": ["Nissan"],
+    "make": [
+        "Nissan"
+    ],
     "model": "Maxima GXE",
     "modelYear": 1990,
     "country": "JP",
@@ -10,7 +12,10 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers"],
+    "tags": [
+        "CD Chasers",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1436,
     "gc": "Medium",
@@ -23,28 +28,24 @@
     "mra": 53,
     "ola": 71.43,
     "description": "The four door sports car.",
-    
-"333TopSpeed": 133,
-"3330to60": 8,
-"333Handling": 70,
-
-"666TopSpeed": 137,
-"6660to60": 7.6,
-"666Handling": 72,
-
-"699TopSpeed": 137,
-"6990to60": 7.1,
-"699Handling": 75,
-
-"969TopSpeed": 141,
-"9690to60": 7.6,
-"969Handling": 75,
-
-"996TopSpeed": 141,
-"9960to60": 7.1,
-"996Handling": 72,
-
+    "333TopSpeed": 133,
+    "3330to60": 8,
+    "333Handling": 70,
+    "666TopSpeed": 137,
+    "6660to60": 7.6,
+    "666Handling": 72,
+    "699TopSpeed": 137,
+    "6990to60": 7.1,
+    "699Handling": 75,
+    "969TopSpeed": 141,
+    "9690to60": 7.6,
+    "969Handling": 75,
+    "996TopSpeed": 141,
+    "9960to60": 7.1,
+    "996Handling": 72,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanMaximaGXE(1990).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

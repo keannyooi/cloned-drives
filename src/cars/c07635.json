@@ -10,7 +10,10 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Chop Shop"],
+    "tags": [
+        "Chop Shop",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1420,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 73.86,
     "ola": 80,
     "description": "",
-"333TopSpeed": 153,
-"3330to60": 5.7,
-"333Handling": 84,
-
-"666TopSpeed": 157,
-"6660to60": 5.4,
-"666Handling": 86,
-
-"699TopSpeed": 157,
-"6990to60": 5.1,
-"699Handling": 90,
-
-"969TopSpeed": 160,
-"9690to60": 5.4,
-"969Handling": 90,
-
-"996TopSpeed": 160,
-"9960to60": 5.1,
-"996Handling": 86,
+    "333TopSpeed": 153,
+    "3330to60": 5.7,
+    "333Handling": 84,
+    "666TopSpeed": 157,
+    "6660to60": 5.4,
+    "666Handling": 86,
+    "699TopSpeed": 157,
+    "6990to60": 5.1,
+    "699Handling": 90,
+    "969TopSpeed": 160,
+    "9690to60": 5.4,
+    "969Handling": 90,
+    "996TopSpeed": 160,
+    "9960to60": 5.1,
+    "996Handling": 86,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMW225dLuxuryLine(2014).png",
     "creator": "Scorpio",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

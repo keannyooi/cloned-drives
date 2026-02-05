@@ -1,7 +1,10 @@
 {
     "carID": "c04570",
     "cr": 262,
-    "make": ["Glockler-Porsche", "Porsche"],
+    "make": [
+        "Glockler-Porsche",
+        "Porsche"
+    ],
     "model": "356 Coupe",
     "modelYear": 1954,
     "country": "DE",
@@ -10,9 +13,15 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite","Track Day","Unique","Concept","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Track Day",
+        "Unique",
+        "Concept",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 640,
     "gc": "Medium",
     "seatCount": 2,
@@ -25,26 +34,23 @@
     "ola": 71.24,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Glockler-Porsche356Coupe(1954).png",
-
-"333TopSpeed": 124,
-"3330to60": 9,
-"333Handling": 61,
-
-"666TopSpeed": 129,
-"6660to60": 8.6,
-"666Handling": 63,
-
-"699TopSpeed": 129,
-"6990to60": 8.1,
-"699Handling": 65,
-
-"969TopSpeed": 133,
-"9690to60": 8.6,
-"969Handling": 65,
-
-"996TopSpeed": 133,
-"9960to60": 8.1,
-"996Handling": 63,
+    "333TopSpeed": 124,
+    "3330to60": 9,
+    "333Handling": 61,
+    "666TopSpeed": 129,
+    "6660to60": 8.6,
+    "666Handling": 63,
+    "699TopSpeed": 129,
+    "6990to60": 8.1,
+    "699Handling": 65,
+    "969TopSpeed": 133,
+    "9690to60": 8.6,
+    "969Handling": 65,
+    "996TopSpeed": 133,
+    "9960to60": 8.1,
+    "996Handling": 63,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

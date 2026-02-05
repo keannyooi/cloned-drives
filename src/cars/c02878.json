@@ -10,24 +10,27 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour"],
+    "tags": [
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1270,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 66.33,
-    "ola": 80.00,
+    "ola": 80,
     "description": "Whole new engine, similar performance, sleeker looks: top A1 trim before the S1 didn't fail to amaze.",
-     "333TopSpeed": 149,
+    "333TopSpeed": 149,
     "3330to60": 6.2,
     "333Handling": 80,
     "666TopSpeed": 152,
-    "6660to60": 5.9, 
+    "6660to60": 5.9,
     "666Handling": 82,
     "996TopSpeed": 156,
     "9960to60": 5.5,
@@ -40,5 +43,7 @@
     "699Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA1Sportback1.8TFSIStronic(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

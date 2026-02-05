@@ -10,9 +10,12 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1640,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +29,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiTTSportbackconcept(2014).png",
     "creator": "Lemon",
-
     "333TopSpeed": 158,
     "3330to60": 3.5,
     "333Handling": 92,
-
     "666TopSpeed": 162,
     "6660to60": 3.3,
     "666Handling": 95,
-
     "996TopSpeed": 165,
     "9960to60": 3.1,
     "996Handling": 95,
-
     "969TopSpeed": 165,
     "9690to60": 3.3,
     "969Handling": 99,
-
     "699TopSpeed": 162,
     "6990to60": 3.1,
     "699Handling": 99,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

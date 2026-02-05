@@ -6,11 +6,13 @@
     "modelYear": 1990,
     "country": "US",
     "topSpeed": 106,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1805,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 32.14,
     "ola": 75.56,
     "description": "",
-     "333TopSpeed": 111,
+    "333TopSpeed": 111,
     "3330to60": 8.6,
     "333Handling": 73,
     "666TopSpeed": 116,
@@ -40,5 +42,7 @@
     "699Handling": 79,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LincolnTownCarSS(1990).png",
     "creator": "Misopasko",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,12 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Liberty Showdown", "Muscle Car", "Unique"],
+    "tags": [
+        "Liberty Showdown",
+        "Muscle Car",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1460,
     "gc": "Medium",
@@ -22,30 +27,25 @@
     "fuelType": "Petrol",
     "mra": 41.71,
     "ola": 69.23,
-	
     "description": "The first AMX (American Motors Experimental) with a folding exposed rear rumble seat for two additional passengers. Under the hood is a then new 290 V8 from a '66 Rambler.",
-	
-"333TopSpeed": 114,
-"3330to60": 7.4,
-"333Handling": 68,
-
-"666TopSpeed": 119,
-"6660to60": 7,
-"666Handling": 70,
-
-"699TopSpeed": 119,
-"6990to60": 6.6,
-"699Handling": 73,
-
-"969TopSpeed": 123,
-"9690to60": 7,
-"969Handling": 73,
-
-"996TopSpeed": 123,
-"9960to60": 6.6,
-"996Handling": 70,
-	
+    "333TopSpeed": 114,
+    "3330to60": 7.4,
+    "333Handling": 68,
+    "666TopSpeed": 119,
+    "6660to60": 7,
+    "666Handling": 70,
+    "699TopSpeed": 119,
+    "6990to60": 6.6,
+    "699Handling": 73,
+    "969TopSpeed": 123,
+    "9690to60": 7,
+    "969Handling": 73,
+    "996TopSpeed": 123,
+    "9960to60": 6.6,
+    "996Handling": 70,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AMCAMXRumbleSeatPrototype(1966).png",
     "creator": "Johnny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

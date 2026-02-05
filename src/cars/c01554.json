@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1380,
@@ -25,7 +26,7 @@
     "mra": 77.53,
     "ola": 89.86,
     "description": "Senna drove this exact car. He drove an automatic NSX.",
-     "333TopSpeed": 159,
+    "333TopSpeed": 159,
     "3330to60": 6.6,
     "333Handling": 81,
     "666TopSpeed": 163,
@@ -42,5 +43,7 @@
     "699Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaNSXAutomatic(1990).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

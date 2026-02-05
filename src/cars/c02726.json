@@ -10,9 +10,12 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Rest of The World"],
+    "tags": [
+        "Supercar",
+        "Rest of The World",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-    
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -22,29 +25,26 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 91.95,
-    "ola": 87.50,
+    "ola": 87.5,
     "description": "The first ever Polish Supercar built to compete with McLaren and Ferrari. After 7 years of design and development, the company shut its door and never sold a single Hussarya to the public, like the most supercar builders that appeared out of thin air did",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ArrineraHussarya(2014).png",
     "creator": "Biszkoptowiec",
-
     "333TopSpeed": 213,
-    "3330to60": 3.0,
+    "3330to60": 3,
     "333Handling": 94,
-
     "666TopSpeed": 216,
     "6660to60": 2.9,
     "666Handling": 97,
-
     "996TopSpeed": 218,
     "9960to60": 2.7,
     "996Handling": 97,
-
     "969TopSpeed": 218,
     "9690to60": 2.9,
     "969Handling": 101,
-
     "699TopSpeed": 216,
     "6990to60": 2.7,
     "699Handling": 101,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

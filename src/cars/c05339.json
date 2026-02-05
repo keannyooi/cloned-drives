@@ -1,16 +1,24 @@
 {
     "carID": "c05339",
     "cr": 390,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "Roadster Limited Edition",
     "modelYear": 1990,
     "country": "DE",
     "topSpeed": 144,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era","Tuner","Unique"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Tuner",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -23,26 +31,24 @@
     "mra": 63.2,
     "ola": 62.25,
     "description": "",
-"333TopSpeed": 148,
-"3330to60": 6.6,
-"333Handling": 76,
-
-"666TopSpeed": 151,
-"6660to60": 6.3,
-"666Handling": 79,
-
-"699TopSpeed": 151,
-"6990to60": 6,
-"699Handling": 82,
-
-"969TopSpeed": 155,
-"9690to60": 6.3,
-"969Handling": 82,
-
-"996TopSpeed": 155,
-"9960to60": 6,
-"996Handling": 79,
+    "333TopSpeed": 148,
+    "3330to60": 6.6,
+    "333Handling": 76,
+    "666TopSpeed": 151,
+    "6660to60": 6.3,
+    "666Handling": 79,
+    "699TopSpeed": 151,
+    "6990to60": 6,
+    "699Handling": 82,
+    "969TopSpeed": 155,
+    "9690to60": 6.3,
+    "969Handling": 82,
+    "996TopSpeed": 155,
+    "9960to60": 6,
+    "996Handling": 79,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaRoadsterLimitedEdition(1991).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

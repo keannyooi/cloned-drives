@@ -10,7 +10,9 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2306,
     "gc": "High",
@@ -23,7 +25,7 @@
     "mra": 54.18,
     "ola": 67.85,
     "description": "Another case of being overshadowed by a big brother.",
-     "333TopSpeed": 126,
+    "333TopSpeed": 126,
     "3330to60": 9.4,
     "333Handling": 70,
     "666TopSpeed": 131,
@@ -40,5 +42,7 @@
     "699Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenTouareg3.2V6(2002).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

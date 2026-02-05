@@ -10,7 +10,11 @@
     "handling": 1,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["April Fools", "Oddity"],
+    "tags": [
+        "April Fools",
+        "Oddity",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 25000,
     "gc": "Low",
@@ -23,26 +27,24 @@
     "mra": 50,
     "ola": 100,
     "description": "Part of the 2024 April Fools Update!",
-"333TopSpeed": 52,
-"3330to60": 99.9,
-"333Handling": 1,
-
-"666TopSpeed": 60,
-"6660to60": 99.9,
-"666Handling": 1,
-
-"699TopSpeed": 60,
-"6990to60": 32.9,
-"699Handling": 1,
-
-"969TopSpeed": 69,
-"9690to60": 30.4,
-"969Handling": 1,
-
-"996TopSpeed": 69,
-"9960to60": 30.4,
-"996Handling": 1,
+    "333TopSpeed": 52,
+    "3330to60": 99.9,
+    "333Handling": 1,
+    "666TopSpeed": 60,
+    "6660to60": 99.9,
+    "666Handling": 1,
+    "699TopSpeed": 60,
+    "6990to60": 32.9,
+    "699Handling": 1,
+    "969TopSpeed": 69,
+    "9690to60": 30.4,
+    "969Handling": 1,
+    "996TopSpeed": 69,
+    "9960to60": 30.4,
+    "996Handling": 1,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/1Trains/(AF24)Skoda.png",
     "creator": "Crossfire",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

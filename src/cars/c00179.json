@@ -10,7 +10,10 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1455,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 78.65,
     "ola": 87.11,
     "description": "Sizzling 322bhp BMW M235i gets 1 Series-based two-door off to a flying start.",
-"333TopSpeed": 158,
-"3330to60": 4.6,
-"333Handling": 87,
-
-"666TopSpeed": 162,
-"6660to60": 4.3,
-"666Handling": 90,
-
-"699TopSpeed": 162,
-"6990to60": 4.1,
-"699Handling": 93,
-
-"969TopSpeed": 165,
-"9690to60": 4.3,
-"969Handling": 93,
-
-"996TopSpeed": 165,
-"9960to60": 4.1,
-"996Handling": 90,
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
+    "333Handling": 87,
+    "666TopSpeed": 162,
+    "6660to60": 4.3,
+    "666Handling": 90,
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 93,
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 93,
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWM235i(2014).png",
     "creator": "Tom",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

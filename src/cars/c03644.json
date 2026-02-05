@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03644",
     "cr": 750,
     "make": "Ferrari",
@@ -10,7 +10,13 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","Unique","The Tyrol Tour: Remix","Endless Summer"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "The Tyrol Tour: Remix",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1280,
     "gc": "Low",
@@ -23,7 +29,7 @@
     "mra": 92.86,
     "ola": 82.05,
     "description": "Before the BB LM there was this BB.",
-     "333TopSpeed": 196,
+    "333TopSpeed": 196,
     "3330to60": 3.7,
     "333Handling": 95,
     "666TopSpeed": 198,
@@ -40,5 +46,7 @@
     "699Handling": 102,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

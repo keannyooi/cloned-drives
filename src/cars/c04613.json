@@ -10,9 +10,12 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 940,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +29,22 @@
     "description": "A full redesign elevated the S series to the current projects we see nowadays, finally putting down the wedge series for good.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TVRS3(1990).png",
     "creator": "Based",
-
-"333TopSpeed": 140, 
-"3330to60": 6.6, 
-"333Handling": 80,
-
-"666TopSpeed": 144, 
-"6660to60": 6.2, 
-"666Handling": 82,
-
-"699TopSpeed": 144, 
-"6990to60": 5.9, 
-"699Handling": 85,
-
-"969TopSpeed": 147, 
-"9690to60": 6.2, 
-"969Handling": 85,
-
-"996TopSpeed": 147, 
-"9960to60": 5.9, 
-"996Handling": 82,
-    "hiddenTag": [""]
+    "333TopSpeed": 140,
+    "3330to60": 6.6,
+    "333Handling": 80,
+    "666TopSpeed": 144,
+    "6660to60": 6.2,
+    "666Handling": 82,
+    "699TopSpeed": 144,
+    "6990to60": 5.9,
+    "699Handling": 85,
+    "969TopSpeed": 147,
+    "9690to60": 6.2,
+    "969Handling": 85,
+    "996TopSpeed": 147,
+    "9960to60": 5.9,
+    "996Handling": 82,
+    "hiddenTag": [
+        ""
+    ]
 }

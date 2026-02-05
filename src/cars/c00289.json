@@ -10,7 +10,9 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1513,
     "gc": "Medium",
@@ -23,8 +25,8 @@
     "mra": 40.38,
     "ola": 57.14,
     "description": "The first four-door version of the GM10 chassis.",
-     "333TopSpeed": 121,
-    "3330to60": 10.0,
+    "333TopSpeed": 121,
+    "3330to60": 10,
     "333Handling": 73,
     "666TopSpeed": 126,
     "6660to60": 9.5,
@@ -40,5 +42,7 @@
     "699Handling": 79,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletLuminaEuro(1990).png",
     "creator": "Johnny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

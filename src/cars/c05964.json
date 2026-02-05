@@ -10,7 +10,11 @@
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers","Style Icon"],
+    "tags": [
+        "CD Chasers",
+        "Style Icon",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 815,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 19.14,
     "ola": 61.68,
     "description": "",
-"333TopSpeed": 108,
-"3330to60": 10.2,
-"333Handling": 62,
-
-"666TopSpeed": 113,
-"6660to60": 9.6,
-"666Handling": 64,
-
-"699TopSpeed": 113,
-"6990to60": 9.1,
-"699Handling": 67,
-
-"969TopSpeed": 118,
-"9690to60": 9.6,
-"969Handling": 67,
-
-"996TopSpeed": 118,
-"9960to60": 9.1,
-"996Handling": 64,
+    "333TopSpeed": 108,
+    "3330to60": 10.2,
+    "333Handling": 62,
+    "666TopSpeed": 113,
+    "6660to60": 9.6,
+    "666Handling": 64,
+    "699TopSpeed": 113,
+    "6990to60": 9.1,
+    "699Handling": 67,
+    "969TopSpeed": 118,
+    "9690to60": 9.6,
+    "969Handling": 67,
+    "996TopSpeed": 118,
+    "9960to60": 9.1,
+    "996Handling": 64,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ACAce90(1954).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

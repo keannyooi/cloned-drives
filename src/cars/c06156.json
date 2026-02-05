@@ -10,7 +10,12 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [ "CD Contenders","Grand Tourer","Track Day"],
+    "tags": [
+        "CD Contenders",
+        "Grand Tourer",
+        "Track Day",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2195,
     "gc": "Low",
@@ -23,26 +28,24 @@
     "mra": 83.33,
     "ola": 80,
     "description": "",
-"333TopSpeed": 192,
-"3330to60": 3.3,
-"333Handling": 90,
-
-"666TopSpeed": 195,
-"6660to60": 3.1,
-"666Handling": 93,
-
-"699TopSpeed": 195,
-"6990to60": 3,
-"699Handling": 97,
-
-"969TopSpeed": 197,
-"9690to60": 3.1,
-"969Handling": 97,
-
-"996TopSpeed": 197,
-"9960to60": 3,
-"996Handling": 93,
+    "333TopSpeed": 192,
+    "3330to60": 3.3,
+    "333Handling": 90,
+    "666TopSpeed": 195,
+    "6660to60": 3.1,
+    "666Handling": 93,
+    "699TopSpeed": 195,
+    "6990to60": 3,
+    "699Handling": 97,
+    "969TopSpeed": 197,
+    "9690to60": 3.1,
+    "969Handling": 97,
+    "996TopSpeed": 197,
+    "9960to60": 3,
+    "996Handling": 93,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyContinentalGT3R(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

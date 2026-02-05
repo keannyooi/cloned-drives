@@ -10,7 +10,11 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["CDCCS","Super Sedan"],
+    "tags": [
+        "CDCCS",
+        "Super Sedan",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2425,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 70,
     "ola": 79.85,
     "description": "",
-"333TopSpeed": 186,
-"3330to60": 4.6,
-"333Handling": 80,
-
-"666TopSpeed": 189,
-"6660to60": 4.3,
-"666Handling": 82,
-
-"699TopSpeed": 189,
-"6990to60": 4.1,
-"699Handling": 85,
-
-"969TopSpeed": 192,
-"9690to60": 4.3,
-"969Handling": 85,
-
-"996TopSpeed": 192,
-"9960to60": 4.1,
-"996Handling": 82,
+    "333TopSpeed": 186,
+    "3330to60": 4.6,
+    "333Handling": 80,
+    "666TopSpeed": 189,
+    "6660to60": 4.3,
+    "666Handling": 82,
+    "699TopSpeed": 189,
+    "6990to60": 4.1,
+    "699Handling": 85,
+    "969TopSpeed": 192,
+    "9690to60": 4.3,
+    "969Handling": 85,
+    "996TopSpeed": 192,
+    "9960to60": 4.1,
+    "996Handling": 82,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BentleyFlyingSpurV8(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

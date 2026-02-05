@@ -10,7 +10,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "All-Surface",
-    "tags": ["Liberty Showdown"],
+    "tags": [
+        "Liberty Showdown",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1720,
     "gc": "Medium",
@@ -23,28 +26,24 @@
     "mra": 59.83,
     "ola": 71.43,
     "description": "",
-	
-"333TopSpeed": 122,
-"3330to60": 6.6,
-"333Handling": 74,
-
-"666TopSpeed": 127,
-"6660to60": 6.3,
-"666Handling": 77,
-
-"699TopSpeed": 127,
-"6990to60": 6,
-"699Handling": 80,
-
-"969TopSpeed": 131,
-"9690to60": 6.3,
-"969Handling": 80,
-
-"996TopSpeed": 131,
-"9960to60": 6,
-"996Handling": 77,
-	
+    "333TopSpeed": 122,
+    "3330to60": 6.6,
+    "333Handling": 74,
+    "666TopSpeed": 127,
+    "6660to60": 6.3,
+    "666Handling": 77,
+    "699TopSpeed": 127,
+    "6990to60": 6,
+    "699Handling": 80,
+    "969TopSpeed": 131,
+    "9690to60": 6.3,
+    "969Handling": 80,
+    "996TopSpeed": 131,
+    "9960to60": 6,
+    "996Handling": 77,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/JeepCherokee3.2(2014).png",
     "creator": "DodgeDemon",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

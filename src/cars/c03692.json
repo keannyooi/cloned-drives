@@ -10,9 +10,15 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["The Midlands Cruise","Tuner","Unique","Motorsport","Endless Summer"],
+    "tags": [
+        "The Midlands Cruise",
+        "Tuner",
+        "Unique",
+        "Motorsport",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1486,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +32,22 @@
     "description": "For 1978, RHAM/1 was even more modified with and output of 800bhp assisted by twin Garret AiResearch turbos. Unfortunately, fuel consumption dropped to as little as 2.5mpg (for the 1977 race, the average speed was 5.75 mpg) so the entry to Le Mans was withdrawn with only two weeks before the race.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 208,
-"3330to60": 3.2,
-"333Handling": 88,
-
-"666TopSpeed": 210,
-"6660to60": 3.1,
-"666Handling": 91,
-
-"699TopSpeed": 210,
-"6990to60": 2.9,
-"699Handling": 94,
-
-"969TopSpeed": 213,
-"9690to60": 3.1,
-"969Handling": 94,
-
-"996TopSpeed": 213,
-"9960to60": 2.9,
-"996Handling": 91,
-    "hiddenTag": [""]
+    "333TopSpeed": 208,
+    "3330to60": 3.2,
+    "333Handling": 88,
+    "666TopSpeed": 210,
+    "6660to60": 3.1,
+    "666Handling": 91,
+    "699TopSpeed": 210,
+    "6990to60": 2.9,
+    "699Handling": 94,
+    "969TopSpeed": 213,
+    "9690to60": 3.1,
+    "969Handling": 94,
+    "996TopSpeed": 213,
+    "9960to60": 2.9,
+    "996Handling": 91,
+    "hiddenTag": [
+        ""
+    ]
 }

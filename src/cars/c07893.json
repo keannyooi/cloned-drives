@@ -10,7 +10,11 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Liberty Showdown","Muscle Car"],
+    "tags": [
+        "Liberty Showdown",
+        "Muscle Car",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 1810,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 71.4,
     "ola": 97.36,
     "description": "",
-"333TopSpeed": 134,
-"3330to60": 5.7,
-"333Handling": 68,
-
-"666TopSpeed": 138,
-"6660to60": 5.4,
-"666Handling": 70,
-
-"699TopSpeed": 138,
-"6990to60": 5.1,
-"699Handling": 73,
-
-"969TopSpeed": 142,
-"9690to60": 5.4,
-"969Handling": 73,
-
-"996TopSpeed": 142,
-"9960to60": 5.1,
-"996Handling": 70,
+    "333TopSpeed": 134,
+    "3330to60": 5.7,
+    "333Handling": 68,
+    "666TopSpeed": 138,
+    "6660to60": 5.4,
+    "666Handling": 70,
+    "699TopSpeed": 138,
+    "6990to60": 5.1,
+    "699Handling": 73,
+    "969TopSpeed": 142,
+    "9690to60": 5.4,
+    "969Handling": 73,
+    "996TopSpeed": 142,
+    "9960to60": 5.1,
+    "996Handling": 70,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeCoronet500426StreetHemiHardtopCoupe(1966).png",
     "creator": "DodgeDemon",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

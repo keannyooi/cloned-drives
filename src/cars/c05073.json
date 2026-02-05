@@ -10,9 +10,15 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite","Concept","Unique","Oddity","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Concept",
+        "Unique",
+        "Oddity",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1290,
     "gc": "Low",
     "seatCount": 4,
@@ -25,26 +31,23 @@
     "ola": 62.55,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheConceptCarType995(1978).png",
-
-"333TopSpeed": 128,
-"3330to60": 10.9,
-"333Handling": 75,
-
-"666TopSpeed": 132,
-"6660to60": 10.3,
-"666Handling": 78,
-
-"699TopSpeed": 132,
-"6990to60": 9.8,
-"699Handling": 81,
-
-"969TopSpeed": 137,
-"9690to60": 10.3,
-"969Handling": 81,
-
-"996TopSpeed": 137,
-"9960to60": 9.8,
-"996Handling": 78,
+    "333TopSpeed": 128,
+    "3330to60": 10.9,
+    "333Handling": 75,
+    "666TopSpeed": 132,
+    "6660to60": 10.3,
+    "666Handling": 78,
+    "699TopSpeed": 132,
+    "6990to60": 9.8,
+    "699Handling": 81,
+    "969TopSpeed": 137,
+    "9690to60": 10.3,
+    "969Handling": 81,
+    "996TopSpeed": 137,
+    "9960to60": 9.8,
+    "996Handling": 78,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

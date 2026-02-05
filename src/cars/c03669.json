@@ -10,9 +10,15 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Track Day","Endless Summer"],
+    "tags": [
+        "The Midlands Cruise",
+        "Unique",
+        "Ultra Expensive",
+        "Track Day",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 930,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinDB3SFHC(1954).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 153,
-"3330to60": 6.2,
-"333Handling": 69,
-
-"666TopSpeed": 157,
-"6660to60": 5.9,
-"666Handling": 71,
-
-"699TopSpeed": 157,
-"6990to60": 5.5,
-"699Handling": 74,
-
-"969TopSpeed": 160,
-"9690to60": 5.9,
-"969Handling": 74,
-
-"996TopSpeed": 160,
-"9960to60": 5.5,
-"996Handling": 71,
-    "hiddenTag": [""]
+    "333TopSpeed": 153,
+    "3330to60": 6.2,
+    "333Handling": 69,
+    "666TopSpeed": 157,
+    "6660to60": 5.9,
+    "666Handling": 71,
+    "699TopSpeed": 157,
+    "6990to60": 5.5,
+    "699Handling": 74,
+    "969TopSpeed": 160,
+    "9690to60": 5.9,
+    "969Handling": 74,
+    "996TopSpeed": 160,
+    "9960to60": 5.5,
+    "996Handling": 71,
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,9 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1734,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 72.22,
     "ola": 86.15,
     "description": "Chevy's big sedan.",
-     "333TopSpeed": 152,
+    "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 75,
     "666TopSpeed": 156,
@@ -40,5 +42,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletImpalaLTZ3.6L(2014).png",
     "creator": "Macan",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

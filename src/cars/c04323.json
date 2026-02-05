@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04323",
     "cr": 281,
     "make": "Toyota",
@@ -10,13 +10,15 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Amplification of Asia","Cloned Drives Beta: Last of"],
+    "tags": [
+        "The Amplification of Asia",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1035,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +27,24 @@
     "mra": 40.26,
     "ola": 65.73,
     "description": "Knock Knock! Who's there? 2014 Toyota Yaris!. Good.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaYaris1.4D-4DTrend(2014).png",
     "creator": "Pfugs",
-
     "333TopSpeed": 114,
     "3330to60": 10.2,
     "333Handling": 73,
-    
     "666TopSpeed": 119,
     "6660to60": 9.6,
     "666Handling": 76,
-    
     "699TopSpeed": 119,
     "6990to60": 9.1,
     "699Handling": 79,
-    
     "969TopSpeed": 123,
     "9690to60": 9.6,
     "969Handling": 79,
-    
     "996TopSpeed": 123,
-    "9960to60": 9.1, 
+    "9960to60": 9.1,
     "996Handling": 76,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

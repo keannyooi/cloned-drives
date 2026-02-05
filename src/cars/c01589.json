@@ -10,7 +10,12 @@
     "handling": 102,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","Unique","The Japanese Odyssey"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -23,26 +28,24 @@
     "mra": 97.14,
     "ola": 88.24,
     "description": "",
-"333TopSpeed": 183,
-"3330to60": 3.2,
-"333Handling": 105,
-
-"666TopSpeed": 186,
-"6660to60": 3.1,
-"666Handling": 109,
-
-"699TopSpeed": 186,
-"6990to60": 2.9,
-"699Handling": 113,
-
-"969TopSpeed": 189,
-"9690to60": 3.1,
-"969Handling": 113,
-
-"996TopSpeed": 189,
-"9960to60": 2.9,
-"996Handling": 109,
+    "333TopSpeed": 183,
+    "3330to60": 3.2,
+    "333Handling": 105,
+    "666TopSpeed": 186,
+    "6660to60": 3.1,
+    "666Handling": 109,
+    "699TopSpeed": 186,
+    "6990to60": 2.9,
+    "699Handling": 113,
+    "969TopSpeed": 189,
+    "9690to60": 3.1,
+    "969Handling": 113,
+    "996TopSpeed": 189,
+    "9960to60": 2.9,
+    "996Handling": 109,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LexusRCFGT3(2014).png",
     "creator": "Aqo",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

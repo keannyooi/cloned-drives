@@ -6,13 +6,18 @@
     "modelYear": 1978,
     "country": "DE",
     "topSpeed": 223,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Unique",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 780,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +30,23 @@
     "ola": 97.83,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-
-"333TopSpeed": 225,
-"3330to60": 2.8,
-"333Handling": 99,
-
-"666TopSpeed": 228,
-"6660to60": 2.7,
-"666Handling": 102,
-
-"699TopSpeed": 228,
-"6990to60": 2.5,
-"699Handling": 107,
-
-"969TopSpeed": 230,
-"9690to60": 2.7,
-"969Handling": 107,
-
-"996TopSpeed": 230,
-"9960to60": 2.5,
-"996Handling": 102,
+    "333TopSpeed": 225,
+    "3330to60": 2.8,
+    "333Handling": 99,
+    "666TopSpeed": 228,
+    "6660to60": 2.7,
+    "666Handling": 102,
+    "699TopSpeed": 228,
+    "6990to60": 2.5,
+    "699Handling": 107,
+    "969TopSpeed": 230,
+    "9690to60": 2.7,
+    "969Handling": 107,
+    "996TopSpeed": 230,
+    "9960to60": 2.5,
+    "996Handling": 102,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,18 +1,24 @@
 {
     "carID": "c03633",
     "cr": 388,
-    "make": ["Ram", "Dodge"],
+    "make": [
+        "Ram",
+        "Dodge"
+    ],
     "model": "1500 EcoDiesel 4x4 Crew Cab",
     "modelYear": 2014,
     "country": "US",
     "topSpeed": 106,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Americas Assault","Endless Summer"],
+    "tags": [
+        "The Americas Assault",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 2650,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +32,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram1500EcoDiesel4x4CrewCab(2014).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 111,
-"3330to60": 8.5,
-"333Handling": 67,
-
-"666TopSpeed": 116,
-"6660to60": 8.1,
-"666Handling": 69,
-
-"699TopSpeed": 116,
-"6990to60": 7.6,
-"699Handling": 72,
-
-"969TopSpeed": 121,
-"9690to60": 8.1,
-"969Handling": 72,
-
-"996TopSpeed": 121,
-"9960to60": 7.6,
-"996Handling": 69,
-    "hiddenTag": [""]
+    "333TopSpeed": 111,
+    "3330to60": 8.5,
+    "333Handling": 67,
+    "666TopSpeed": 116,
+    "6660to60": 8.1,
+    "666Handling": 69,
+    "699TopSpeed": 116,
+    "6990to60": 7.6,
+    "699Handling": 72,
+    "969TopSpeed": 121,
+    "9690to60": 8.1,
+    "969Handling": 72,
+    "996TopSpeed": 121,
+    "9960to60": 7.6,
+    "996Handling": 69,
+    "hiddenTag": [
+        ""
+    ]
 }

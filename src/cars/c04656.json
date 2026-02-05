@@ -10,9 +10,15 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Unique",
+        "Ultra Expensive",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 650,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +31,23 @@
     "ola": 94.44,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche910-6K(1966).png",
-
-"333TopSpeed": 168,
-"3330to60": 4.3,
-"333Handling": 83,
-
-"666TopSpeed": 171,
-"6660to60": 4,
-"666Handling": 85,
-
-"699TopSpeed": 171,
-"6990to60": 3.8,
-"699Handling": 89,
-
-"969TopSpeed": 174,
-"9690to60": 4,
-"969Handling": 89,
-
-"996TopSpeed": 174,
-"9960to60": 3.8,
-"996Handling": 85,
+    "333TopSpeed": 168,
+    "3330to60": 4.3,
+    "333Handling": 83,
+    "666TopSpeed": 171,
+    "6660to60": 4,
+    "666Handling": 85,
+    "699TopSpeed": 171,
+    "6990to60": 3.8,
+    "699Handling": 89,
+    "969TopSpeed": 174,
+    "9690to60": 4,
+    "969Handling": 89,
+    "996TopSpeed": 174,
+    "9960to60": 3.8,
+    "996Handling": 85,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

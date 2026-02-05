@@ -1,7 +1,11 @@
 {
-	"carID": "c08250",
+    "carID": "c08250",
     "cr": 1754,
-    "make": ["Wangan Midnight","ABR Hosoki","Nissan"],
+    "make": [
+        "Wangan Midnight",
+        "ABR Hosoki",
+        "Nissan"
+    ],
     "model": "Fairlady Z \"Devil Z\" (BOSS)",
     "modelYear": 2026,
     "country": "JP",
@@ -10,7 +14,11 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen","BOSS"],
+    "tags": [
+        "Silver Screen",
+        "BOSS",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 1150,
     "gc": "Low",
@@ -23,26 +31,24 @@
     "mra": 100,
     "ola": 94.12,
     "description": "A car that is infamous for having supernatural speed. The car has been in numerous accidents, causing the death of at least one of it's drivers, but it would always be repaired afterwards.",
-"333TopSpeed": 314,
-"3330to60": 3.2,
-"333Handling": 84,
-
-"666TopSpeed": 315,
-"6660to60": 3.1,
-"666Handling": 86,
-
-"699TopSpeed": 315,
-"6990to60": 2.9,
-"699Handling": 90,
-
-"969TopSpeed": 317,
-"9690to60": 3.1,
-"969Handling": 90,
-
-"996TopSpeed": 317,
-"9960to60": 2.9,
-"996Handling": 86,
+    "333TopSpeed": 314,
+    "3330to60": 3.2,
+    "333Handling": 84,
+    "666TopSpeed": 315,
+    "6660to60": 3.1,
+    "666Handling": 86,
+    "699TopSpeed": 315,
+    "6990to60": 2.9,
+    "699Handling": 90,
+    "969TopSpeed": 317,
+    "9690to60": 3.1,
+    "969Handling": 90,
+    "996TopSpeed": 317,
+    "9960to60": 2.9,
+    "996Handling": 86,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/WanganMidnightFairladyZDevilZ(BOSS).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -12,7 +12,8 @@
     "tyreType": "Performance",
     "tags": [
         "Rest of The World",
-        "Unique"
+        "Unique",
+        "Year of the Horse"
     ],
     "isPrize": true,
     "weight": 1720,
@@ -26,7 +27,7 @@
     "mra": 110,
     "ola": 91.89,
     "description": "Holy hell how is it so fast?",
-     "333TopSpeed": 189,
+    "333TopSpeed": 189,
     "3330to60": 3.5,
     "333Handling": 85,
     "666TopSpeed": 192,
@@ -43,5 +44,7 @@
     "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FPVGTFPoliceInterceptorbyDJR(2014).png",
     "creator": "Exist",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

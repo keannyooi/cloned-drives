@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03389",
     "cr": 302,
     "make": "Fiat",
@@ -10,13 +10,14 @@
     "handling": 69,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Tyrol Tour: Remix"],
+    "tags": [
+        "The Tyrol Tour: Remix",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1065,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +26,24 @@
     "mra": 21.04,
     "ola": 57.53,
     "description": "Oh look! The Rock! lemme just trample him real quick.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda09TwinairTurbo4x4Cross(2014).png",
     "creator": "Andu",
-
     "333TopSpeed": 107,
     "3330to60": 11.6,
     "333Handling": 71,
-    
     "666TopSpeed": 112,
     "6660to60": 11,
     "666Handling": 74,
-    
     "699TopSpeed": 112,
     "6990to60": 10.4,
     "699Handling": 77,
-    
     "969TopSpeed": 117,
     "9690to60": 11,
     "969Handling": 77,
-    
     "996TopSpeed": 117,
     "9960to60": 10.4,
     "996Handling": 74,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

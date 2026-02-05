@@ -11,7 +11,8 @@
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": [
-        "Eco-Friendly"
+        "Eco-Friendly",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 2100,
@@ -25,7 +26,7 @@
     "mra": 62.86,
     "ola": 82.73,
     "description": "As seen in the picture below, the Tesla Model S has astounding aerodynamics for a production vehicle. The Mercedes CLS-inspired design has a drag coefficient of just 0.24, better than anything else on the market. This was only later surpassed by the Model 3 with a drag coefficient of 0.23.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -42,5 +43,7 @@
     "699Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelS85D(2014).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

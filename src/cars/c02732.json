@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c02732",
     "cr": 615,
     "make": "Audi",
@@ -10,7 +10,9 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1920,
     "gc": "Low",
@@ -21,10 +23,10 @@
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 56.99,
-    "ola": 71.70,
+    "ola": 71.7,
     "description": "Just your average presidential c- * heavy V6 TDI noises *",
-     "333TopSpeed": 158,
-    "3330to60": 5.0,
+    "333TopSpeed": 158,
+    "3330to60": 5,
     "333Handling": 83,
     "666TopSpeed": 162,
     "6660to60": 4.8,
@@ -40,5 +42,7 @@
     "699Handling": 89,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA63.0TDIquattrotiptronic(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c02731",
     "cr": 585,
     "make": "Audi",
@@ -6,11 +6,13 @@
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1950,
     "gc": "Low",
@@ -21,9 +23,9 @@
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 66.67,
-    "ola": 72.00,
+    "ola": 72,
     "description": "The S6 TDI before the S6 TDI.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -40,5 +42,7 @@
     "699Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA63.0TDIquattrocompetitiontiptronic(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -6,13 +6,16 @@
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1795,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +29,22 @@
     "description": "We can kinda say Audi spoiled the 2024 Q5 back in 2014 with this.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiTToffroadconcept(2014).png",
     "creator": "Lemon",
-	
     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 85,
-
     "666TopSpeed": 162,
     "6660to60": 4.5,
     "666Handling": 87,
-
     "996TopSpeed": 165,
     "9960to60": 4.3,
     "996Handling": 87,
-
     "969TopSpeed": 165,
     "9690to60": 4.5,
     "969Handling": 91,
-
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 91,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

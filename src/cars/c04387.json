@@ -10,9 +10,17 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Eargasm", "Innovative", "Supercar", "Style Icon", "Unique","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Eargasm",
+        "Innovative",
+        "Supercar",
+        "Style Icon",
+        "Unique",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1595,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +34,22 @@
     "description": "The last hurrah for the 1st gen Audi R8. It was limited to only 99 units and even more powerful than R8 GT. It was also the first production car with laser headlights.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR8LMX(2014).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 202, 
-    "3330to60": 3.1, 
+    "333TopSpeed": 202,
+    "3330to60": 3.1,
     "333Handling": 91,
-
-    "666TopSpeed": 204, 
-    "6660to60": 3.0, 
+    "666TopSpeed": 204,
+    "6660to60": 3,
     "666Handling": 94,
-
-    "996TopSpeed": 207, 
-    "9960to60": 2.8, 
+    "996TopSpeed": 207,
+    "9960to60": 2.8,
     "996Handling": 94,
-
-    "969TopSpeed": 207, 
-    "9690to60": 3.0, 
+    "969TopSpeed": 207,
+    "9690to60": 3,
     "969Handling": 98,
-
-    "699TopSpeed": 204, 
-    "6990to60": 2.8, 
+    "699TopSpeed": 204,
+    "6990to60": 2.8,
     "699Handling": 98,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

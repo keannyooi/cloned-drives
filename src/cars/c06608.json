@@ -10,7 +10,11 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CDCCS","The Tyrol Tour"],
+    "tags": [
+        "CDCCS",
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1635,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 22.61,
     "ola": 54.91,
     "description": "",
-"333TopSpeed": 108,
-"3330to60": 17.1,
-"333Handling": 64,
-
-"666TopSpeed": 113,
-"6660to60": 16.2,
-"666Handling": 66,
-
-"699TopSpeed": 113,
-"6990to60": 15.3,
-"699Handling": 69,
-
-"969TopSpeed": 118,
-"9690to60": 16.2,
-"969Handling": 69,
-
-"996TopSpeed": 118,
-"9960to60": 15.3,
-"996Handling": 66,
+    "333TopSpeed": 108,
+    "3330to60": 17.1,
+    "333Handling": 64,
+    "666TopSpeed": 113,
+    "6660to60": 16.2,
+    "666Handling": 66,
+    "699TopSpeed": 113,
+    "6990to60": 15.3,
+    "699Handling": 69,
+    "969TopSpeed": 118,
+    "9690to60": 16.2,
+    "969Handling": 69,
+    "996TopSpeed": 118,
+    "9960to60": 15.3,
+    "996Handling": 66,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz250DLong(1990).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

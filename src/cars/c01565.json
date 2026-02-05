@@ -11,7 +11,8 @@
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1676,
@@ -25,7 +26,7 @@
     "mra": 66.55,
     "ola": 67.38,
     "description": "The Premier Japanese Luxury Sedan Now With The Same AWD System As The Skyline GT-R's.",
-     "333TopSpeed": 154,
+    "333TopSpeed": 154,
     "3330to60": 5.9,
     "333Handling": 79,
     "666TopSpeed": 158,
@@ -42,5 +43,7 @@
     "699Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InfinitiG35xSedan(2002).png",
     "creator": "Spence",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

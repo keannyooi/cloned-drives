@@ -10,9 +10,11 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1900,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +28,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaFCVConcept(2014).png",
     "creator": "Keanny",
-
-"333TopSpeed": 128,
-"3330to60": 9.6,
-"333Handling": 72,
-
-"666TopSpeed": 132,
-"6660to60": 9.1,
-"666Handling": 75,
-
-"699TopSpeed": 132,
-"6990to60": 8.6,
-"699Handling": 78,
-
-"969TopSpeed": 137,
-"9690to60": 9.1,
-"969Handling": 78,
-
-"996TopSpeed": 137,
-"9960to60": 8.6,
-"996Handling": 75,
-    "hiddenTag": [""]
+    "333TopSpeed": 128,
+    "3330to60": 9.6,
+    "333Handling": 72,
+    "666TopSpeed": 132,
+    "6660to60": 9.1,
+    "666Handling": 75,
+    "699TopSpeed": 132,
+    "6990to60": 8.6,
+    "699Handling": 78,
+    "969TopSpeed": 137,
+    "9690to60": 9.1,
+    "969Handling": 78,
+    "996TopSpeed": 137,
+    "9960to60": 8.6,
+    "996Handling": 75,
+    "hiddenTag": [
+        ""
+    ]
 }

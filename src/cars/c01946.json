@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1104,
@@ -25,7 +26,7 @@
     "mra": 34.92,
     "ola": 66.21,
     "description": "The Toyota Yaris gets cleaner, more efficient engines, but its established competition is tougher than ever.",
-     "333TopSpeed": 115,
+    "333TopSpeed": 115,
     "3330to60": 9.3,
     "333Handling": 75,
     "666TopSpeed": 119,
@@ -42,5 +43,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaYarisLE(2014).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

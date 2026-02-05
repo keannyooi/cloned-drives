@@ -10,7 +10,10 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1670,
     "gc": "Low",
@@ -23,26 +26,24 @@
     "mra": 81.17,
     "ola": 87.4,
     "description": "",
-"333TopSpeed": 193,
-"3330to60": 4.4,
-"333Handling": 88,
-
-"666TopSpeed": 195,
-"6660to60": 4.1,
-"666Handling": 91,
-
-"699TopSpeed": 195,
-"6990to60": 3.9,
-"699Handling": 94,
-
-"969TopSpeed": 198,
-"9690to60": 4.1,
-"969Handling": 94,
-
-"996TopSpeed": 198,
-"9960to60": 3.9,
-"996Handling": 91,
+    "333TopSpeed": 193,
+    "3330to60": 4.4,
+    "333Handling": 88,
+    "666TopSpeed": 195,
+    "6660to60": 4.1,
+    "666Handling": 91,
+    "699TopSpeed": 195,
+    "6990to60": 3.9,
+    "699Handling": 94,
+    "969TopSpeed": 198,
+    "9690to60": 4.1,
+    "969Handling": 94,
+    "996TopSpeed": 198,
+    "9960to60": 3.9,
+    "996Handling": 91,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AstonMartinV8VantageGTRoadster(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

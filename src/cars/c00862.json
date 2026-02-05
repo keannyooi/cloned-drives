@@ -11,7 +11,8 @@
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": [
-        "Servers Choice"
+        "Servers Choice",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1584,
@@ -25,7 +26,7 @@
     "mra": 57.94,
     "ola": 67.74,
     "description": "Cate8.",
-     "333TopSpeed": 137,
+    "333TopSpeed": 137,
     "3330to60": 5.9,
     "333Handling": 88,
     "666TopSpeed": 141,
@@ -42,5 +43,7 @@
     "699Handling": 94,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzCLA2504MATIC(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [
-        "The Tyrol Tour"
+        "The Tyrol Tour",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1510,
@@ -25,7 +26,7 @@
     "mra": 64.71,
     "ola": 84.95,
     "description": "An intelligent, cheap big car choice",
-     "333TopSpeed": 145,
+    "333TopSpeed": 145,
     "3330to60": 7.9,
     "333Handling": 72,
     "666TopSpeed": 148,
@@ -42,5 +43,7 @@
     "699Handling": 78,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo16430V6Lusso(1990).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,11 +1,8 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
 const { DateTime } = require("luxon");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith(".json"));
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
+const { getCarFiles, getTrackFiles, getPackFiles, getCar, getTrack, getPack } = require("../util/functions/dataManager.js");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
@@ -15,6 +12,7 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
 const sortCars = require("../util/functions/sortCars.js");
 const generateHud = require("../util/functions/generateHud.js");
+const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
 
@@ -33,13 +31,16 @@ module.exports = {
         "<event name> addreward <round number> pack <pack name>",
         "<event name> removereward <round number> <reward type / all>",
         "<event name> regentracks <asphalt / dirt / snow>",
-        "<event name> regenopponents <random / filter>",
-        "<event name> bulk <round number> <JSON object>"
+        "<event name> regenopponents <random / filter>"
     ],
     args: 3,
     category: "Events",
     description: "Edits an event.",
     async execute(message, args) {
+        const carFiles = getCarFiles();
+        const trackFiles = getTrackFiles();
+        const packFiles = getPackFiles();
+        
         const events = await eventModel.find();
         let query = [args[0].toLowerCase()];
         await new Promise(resolve => resolve(search(message, query, events, "event")))
@@ -54,7 +55,7 @@ module.exports = {
         async function editEvent(currentEvent, currentMessage) {
             let successMessage, operationFailed = false;
             let index, criteria = args[1].toLowerCase(), attachment = null;
-            if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set") || criteria === "bulk") {
+            if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set")) {
                 if (!args[3]) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -150,8 +151,8 @@ module.exports = {
                     });
                     break;
                 case "setcar":
-                    let query = args.slice(3, args.length).map(i => i.toLowerCase());
-                    await new Promise(resolve => resolve(search(message, query, carFiles, "carWithBM")))
+                    let carQuery = args.slice(3, args.length).map(i => i.toLowerCase());
+                    await new Promise(resolve => resolve(search(message, carQuery, carFiles, "carWithBM")))
                         .then(async (response) => {
                             if (!Array.isArray(response)) {
                                 operationFailed = true;
@@ -159,9 +160,10 @@ module.exports = {
                             else {
                                 let [carFile, currentMessage2] = response;
                                 currentMessage = currentMessage2;
-                                currentEvent.roster[index - 1].carID = carFile.slice(0, 6);
+                                const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
+                                currentEvent.roster[index - 1].carID = carId.slice(0, 6);
 
-                                let currentCar = require(`../cars/${carFile}`);
+                                let currentCar = getCar(carId);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully set the car of roster position ${index} to ${carNameGen({ currentCar, rarity: true })}!`,
@@ -176,12 +178,12 @@ module.exports = {
                     break;
                 case "settune":
                     let upgrade = args[3];
-                    let currentCar = require(`../cars/${currentEvent.roster[index - 1].carID}.json`);
-                    if (upgrade !== "000" && !currentCar[`${upgrade}TopSpeed`]) {
+                    let currentCar = getCar(currentEvent.roster[index - 1].carID);
+                    if (!isValidTune(upgrade)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, the tuning stage you requested is unavailable.",
-                            desc: "In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.",
+                            desc: `Valid tunes: ${getAvailableTunes().join(", ")}`,
                             author: message.author
                         }).displayClosest(upgrade);
                         return errorMessage.sendMessage({ currentMessage });
@@ -229,8 +231,9 @@ module.exports = {
                             else {
                                 let [trackFile, currentMessage2] = response;
                                 currentMessage = currentMessage2;
-                                currentEvent.roster[index - 1].track = trackFile.slice(0, 6);
-                                let currentTrack = require(`../tracks/${trackFile}`);
+                                const trackId = trackFile.endsWith('.json') ? trackFile.slice(0, -5) : trackFile.slice(0, 6);
+                                currentEvent.roster[index - 1].track = trackId.slice(0, 6);
+                                let currentTrack = getTrack(trackId);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully set the track of roster position ${index} to ${currentTrack["trackName"]}!`,
@@ -304,14 +307,14 @@ module.exports = {
                             }
 
                             let carName = args.slice(4, args.length - 1).map(i => i.toLowerCase());
-                            let upgrade = args[args.length - 1];
-                            if (!Object.keys(carSave).includes(upgrade)) {
+                            let carUpgrade = args[args.length - 1];
+                            if (!isValidTune(carUpgrade)) {
                                 const errorMessage = new ErrorMessage({
                                     channel: message.channel,
                                     title: "Error, invalid upgrade provided.",
-                                    desc: "Upgrades are limited to `333`, `666`, `699`, `969` and `996` for simplicity sake.",
+                                    desc: `Valid tunes: ${getAvailableTunes().join(", ")}`,
                                     author: message.author
-                                }).displayClosest(upgrade);
+                                }).displayClosest(carUpgrade);
                                 return errorMessage.sendMessage({ currentMessage });
                             }
 
@@ -323,15 +326,16 @@ module.exports = {
                                     else {
                                         let [carFile, currentMessage2] = response;
                                         currentMessage = currentMessage2;
-                                        currentEvent.roster[index - 1].rewards.car = { carID: carFile.slice(0, 6), upgrade };
+                                        const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
+                                        currentEvent.roster[index - 1].rewards.car = { carID: carId.slice(0, 6), upgrade: carUpgrade };
 
-                                        let cardThing = require(`../cars/${carFile}`);
+                                        let cardThing = getCar(carId);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
-                                            title: `Successfully added 1 ${carNameGen({ currentCar: cardThing, rarity: true, upgrade })} to the rewards for round ${index}!`,
+                                            title: `Successfully added 1 ${carNameGen({ currentCar: cardThing, rarity: true, upgrade: carUpgrade })} to the rewards for round ${index}!`,
                                             author: message.author,
                                             fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards) }],
-                                            image: cardThing[`racehud${upgrade}`]
+                                            image: cardThing[`racehud${carUpgrade}`]
                                         });
                                     }
                                 })
@@ -349,9 +353,10 @@ module.exports = {
                                     else {
                                         let [packFile, currentMessage2] = response;
                                         currentMessage = currentMessage2;
-                                        currentEvent.roster[index - 1].rewards.pack = packFile.slice(0, 6);
+                                        const packId = packFile.endsWith('.json') ? packFile.slice(0, -5) : packFile.slice(0, 6);
+                                        currentEvent.roster[index - 1].rewards.pack = packId.slice(0, 6);
 
-                                        let currentPack = require(`../packs/${packFile}`);
+                                        let currentPack = getPack(packId);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully added 1 ${currentPack["packName"]} to the rewards for round ${index}!`,
@@ -414,19 +419,22 @@ module.exports = {
                     switch (randomizeType) {
                         case "asphalt":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                const trackId = track.endsWith('.json') ? track.slice(0, -5) : track;
+                                let trackContents = getTrack(trackId);
                                 return trackContents["surface"] === "Asphalt";
                             });
                             break;
                         case "dirt":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                const trackId = track.endsWith('.json') ? track.slice(0, -5) : track;
+                                let trackContents = getTrack(trackId);
                                 return trackContents["surface"] === "Dirt" || trackContents["surface"] === "Gravel";
                             });
                             break;
                         case "snow":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                const trackId = track.endsWith('.json') ? track.slice(0, -5) : track;
+                                let trackContents = getTrack(trackId);
                                 return trackContents["surface"] === "Snow" || trackContents["surface"] === "Ice";
                             });
                             break;
@@ -443,7 +451,9 @@ module.exports = {
                             return errorMessage.sendMessage({ currentMessage });
                     }
                     for (let i = 0; i < currentEvent.roster.length; i++) {
-                        currentEvent.roster[i].track = generationPool[Math.floor(Math.random() * generationPool.length)].slice(0, 6);
+                        const randomTrack = generationPool[Math.floor(Math.random() * generationPool.length)];
+                        const trackId = randomTrack.endsWith('.json') ? randomTrack.slice(0, -5) : randomTrack;
+                        currentEvent.roster[i].track = trackId.slice(0, 6);
                     }
 
                     successMessage = new SuccessMessage({
@@ -475,18 +485,21 @@ module.exports = {
                     }
 
                     let regenPool = carFiles;
-                    regenPool = regenPool.filter(car => filterCheck({ 
-                        car: {
-                            carID: car.slice(0, 6),
-                            "000": 1,
-                            "333": 1,
-                            "666": 1,
-                            "996": 1,
-                            "969": 1,
-                            "699": 1
-                        },
-                        filter
-                    }));
+                    regenPool = regenPool.filter(car => {
+                        const carId = car.endsWith('.json') ? car.slice(0, -5) : car.slice(0, 6);
+                        return filterCheck({ 
+                            car: {
+                                carID: carId,
+                                "000": 1,
+                                "333": 1,
+                                "666": 1,
+                                "996": 1,
+                                "969": 1,
+                                "699": 1
+                            },
+                            filter
+                        });
+                    });
                     if (regenPool.length < 1) {
                         const errorMessage = new SuccessMessage({
                             channel: message.channel,
@@ -499,11 +512,13 @@ module.exports = {
 
                     let opponentIDs = [];
                     for (let i = 0; i < currentEvent.roster.length; i++) {
-                        opponentIDs[i] = regenPool[Math.floor(Math.random() * regenPool.length)].slice(0, 6);
+                        const randomCar = regenPool[Math.floor(Math.random() * regenPool.length)];
+                        const carId = randomCar.endsWith('.json') ? randomCar.slice(0, -5) : randomCar.slice(0, 6);
+                        opponentIDs[i] = carId.slice(0, 6);
                     }
                     opponentIDs = sortCars(opponentIDs, "cr", "ascending");
 
-                    let upgrades = ["000", "333", "666", "699", "969", "996"];
+                    let upgrades = getAvailableTunes();
                     for (let i = 0; i < currentEvent.roster.length; i++) {
                         currentEvent.roster[i].carID = opponentIDs[i];
                         currentEvent.roster[i].upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
@@ -512,87 +527,6 @@ module.exports = {
                     successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully regenerated opponents for the ${currentEvent.name} event!`,
-                        author: message.author
-                    });
-                    break;
-                case "bulk":
-                    let jsonString = args.slice(3).join(" ");
-                    let roundData;
-                    
-                    try {
-                        roundData = JSON.parse(jsonString);
-                    }
-                    catch (e) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, invalid JSON provided.",
-                            desc: "Make sure your JSON is properly formatted. Example:\n`{\"carID\": \"c01273\", \"upgrade\": \"996\", \"track\": \"t00006\", \"reqs\": {}, \"rewards\": {\"money\": 550000}}`",
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage({ currentMessage });
-                    }
-
-                    // Validate required fields
-                    if (!roundData.carID || !roundData.upgrade || !roundData.track) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, missing required fields.",
-                            desc: "The JSON must contain at least `carID`, `upgrade`, and `track` fields.",
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage({ currentMessage });
-                    }
-
-                    // Validate car exists
-                    let bulkCarFile = carFiles.find(file => file.startsWith(roundData.carID));
-                    if (!bulkCarFile) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, car not found.",
-                            desc: `No car found with ID \`${roundData.carID}\`.`,
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage({ currentMessage });
-                    }
-
-                    // Validate track exists
-                    let bulkTrackFile = trackFiles.find(file => file.startsWith(roundData.track));
-                    if (!bulkTrackFile) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, track not found.",
-                            desc: `No track found with ID \`${roundData.track}\`.`,
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage({ currentMessage });
-                    }
-
-                    // Validate upgrade
-                    let bulkCar = require(`../cars/${bulkCarFile}`);
-                    if (roundData.upgrade !== "000" && !bulkCar[`${roundData.upgrade}TopSpeed`]) {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, invalid upgrade.",
-                            desc: "Valid upgrades are `000`, `333`, `666`, `996`, `969`, and `699`.",
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage({ currentMessage });
-                    }
-
-                    // Apply the round data
-                    currentEvent.roster[index - 1] = {
-                        carID: roundData.carID,
-                        upgrade: roundData.upgrade,
-                        track: roundData.track,
-                        reqs: roundData.reqs || {},
-                        rewards: roundData.rewards || {}
-                    };
-
-                    let bulkTrack = require(`../tracks/${bulkTrackFile}`);
-                    successMessage = new SuccessMessage({
-                        channel: message.channel,
-                        title: `Successfully updated round ${index} of ${currentEvent.name}!`,
-                        desc: `**Car:** ${carNameGen({ currentCar: bulkCar, rarity: true, upgrade: roundData.upgrade })}\n**Track:** ${bulkTrack.trackName}\n**Rewards:** ${listRewards(roundData.rewards || {}) || "None"}`,
                         author: message.author
                     });
                     break;
@@ -611,8 +545,7 @@ module.exports = {
                             \`addreq\` - Adds a requirement to a round.
                             \`removereq\` - Removes a requirement from a round.
                             \`regentracks\` - Regenerates tracks for every single round of an event.
-                            \`regenopponents\` - Regenerates opponents for every single round of an event.
-                            \`bulk\` - Sets all round data from a JSON object.`,
+                            \`regenopponents\` - Regenerates opponents for every single round of an event.`,
                         author: message.author
                     });
                     return errorMessage.sendMessage({ currentMessage });

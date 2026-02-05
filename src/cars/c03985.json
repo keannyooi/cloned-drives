@@ -6,13 +6,19 @@
     "modelYear": 2014,
     "country": "US",
     "topSpeed": 260,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Unique","Ultra Expensive","The Americas Assault","Hypercar"],
+    "tags": [
+        "Endless Summer",
+        "Unique",
+        "Ultra Expensive",
+        "The Americas Assault",
+        "Hypercar",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1290,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HennesseyVenomGTSpyder(2014).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 262,
-"3330to60": 2.8,
-"333Handling": 94,
-
-"666TopSpeed": 264,
-"6660to60": 2.7,
-"666Handling": 97,
-
-"699TopSpeed": 264,
-"6990to60": 2.5,
-"699Handling": 101,
-
-"969TopSpeed": 266,
-"9690to60": 2.7,
-"969Handling": 101,
-
-"996TopSpeed": 266,
-"9960to60": 2.5,
-"996Handling": 97,
-    "hiddenTag": [""]
+    "333TopSpeed": 262,
+    "3330to60": 2.8,
+    "333Handling": 94,
+    "666TopSpeed": 264,
+    "6660to60": 2.7,
+    "666Handling": 97,
+    "699TopSpeed": 264,
+    "6990to60": 2.5,
+    "699Handling": 101,
+    "969TopSpeed": 266,
+    "9690to60": 2.7,
+    "969Handling": 101,
+    "996TopSpeed": 266,
+    "9960to60": 2.5,
+    "996Handling": 97,
+    "hiddenTag": [
+        ""
+    ]
 }

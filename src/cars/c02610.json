@@ -10,10 +10,10 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 2555,
     "gc": "High",
     "seatCount": 8,
@@ -27,25 +27,22 @@
     "description": "So big, it's Huge.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiQX802WD(2014).png",
     "creator": "Andu",
-
     "333TopSpeed": 139,
     "3330to60": 5.9,
     "333Handling": 69,
-
     "666TopSpeed": 143,
-    "6660to60": 5.6, 
+    "6660to60": 5.6,
     "666Handling": 71,
-
     "996TopSpeed": 147,
     "9960to60": 5.3,
     "996Handling": 71,
-
     "969TopSpeed": 147,
     "9690to60": 5.6,
     "969Handling": 74,
-
     "699TopSpeed": 143,
     "6990to60": 5.3,
     "699Handling": 74,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

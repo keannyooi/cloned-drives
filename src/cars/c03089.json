@@ -5,10 +5,17 @@
     "modelYear": 2002,
     "country": "JP",
     "reference": "c01203",
-    "collection": ["Winter Collection 2022"],
+    "collection": [
+        "Winter Collection 2022"
+    ],
     "description": "Happy Holidays from the CD team.",
-	"active" : false,
+    "active": false,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/bm/0in/SubaruWRX(W22).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ],
+    "tags": [
+        "Year of the Horse"
+    ]
 }

@@ -5,10 +5,17 @@
     "modelYear": 2014,
     "country": "IT",
     "reference": "c00657",
-    "collection": ["The Last of Beta BM Collection"],
+    "collection": [
+        "The Last of Beta BM Collection"
+    ],
     "description": "None",
-	"active" : true,
+    "active": true,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(bm)/0in/LamborghiniHuracanLP610-4Polizia.png",
     "creator": "Crossfire",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ],
+    "tags": [
+        "Year of the Horse"
+    ]
 }

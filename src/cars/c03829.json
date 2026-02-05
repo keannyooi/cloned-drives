@@ -10,9 +10,15 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Motorsport","Unique","Innovative","The Midlands Cruise"],
+    "tags": [
+        "Endless Summer",
+        "Motorsport",
+        "Unique",
+        "Innovative",
+        "The Midlands Cruise",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 835,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzW196(1954).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 189,
-"3330to60": 4,
-"333Handling": 79,
-
-"666TopSpeed": 192,
-"6660to60": 3.8,
-"666Handling": 81,
-
-"699TopSpeed": 192,
-"6990to60": 3.6,
-"699Handling": 84,
-
-"969TopSpeed": 194,
-"9690to60": 3.8,
-"969Handling": 84,
-
-"996TopSpeed": 194,
-"9960to60": 3.6,
-"996Handling": 81,
-    "hiddenTag": [""]
+    "333TopSpeed": 189,
+    "3330to60": 4,
+    "333Handling": 79,
+    "666TopSpeed": 192,
+    "6660to60": 3.8,
+    "666Handling": 81,
+    "699TopSpeed": 192,
+    "6990to60": 3.6,
+    "699Handling": 84,
+    "969TopSpeed": 194,
+    "9690to60": 3.8,
+    "969Handling": 84,
+    "996TopSpeed": 194,
+    "9960to60": 3.6,
+    "996Handling": 81,
+    "hiddenTag": [
+        ""
+    ]
 }

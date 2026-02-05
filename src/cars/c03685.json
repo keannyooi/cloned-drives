@@ -10,9 +10,14 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Unique","Endless Summer","The Midlands Cruise"],
+    "tags": [
+        "Oddity",
+        "Unique",
+        "Endless Summer",
+        "The Midlands Cruise",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-    
     "weight": 140,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +31,22 @@
     "description": "A very stupid idea perfectly executed by Honda UK.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaMeanmowerV1(2014).png",
     "creator": "c6",
-
     "333TopSpeed": 120,
     "3330to60": 3.7,
     "333Handling": 80,
-
     "666TopSpeed": 125,
     "6660to60": 3.5,
     "666Handling": 82,
-
     "996TopSpeed": 129,
     "9960to60": 3.3,
     "996Handling": 82,
-
     "969TopSpeed": 129,
     "9690to60": 3.5,
     "969Handling": 85,
-
     "699TopSpeed": 125,
     "6990to60": 3.3,
     "699Handling": 85,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,9 +10,15 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Unique",
+        "Ultra Expensive",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 617,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +31,23 @@
     "ola": 92.5,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche906KCarrera6(1966).png",
-
-"333TopSpeed": 177,
-"3330to60": 4.6,
-"333Handling": 81,
-
-"666TopSpeed": 180,
-"6660to60": 4.3,
-"666Handling": 83,
-
-"699TopSpeed": 180,
-"6990to60": 4.1,
-"699Handling": 87,
-
-"969TopSpeed": 183,
-"9690to60": 4.3,
-"969Handling": 87,
-
-"996TopSpeed": 183,
-"9960to60": 4.1,
-"996Handling": 83,
+    "333TopSpeed": 177,
+    "3330to60": 4.6,
+    "333Handling": 81,
+    "666TopSpeed": 180,
+    "6660to60": 4.3,
+    "666Handling": 83,
+    "699TopSpeed": 180,
+    "6990to60": 4.1,
+    "699Handling": 87,
+    "969TopSpeed": 183,
+    "9690to60": 4.3,
+    "969Handling": 87,
+    "996TopSpeed": 183,
+    "9960to60": 4.1,
+    "996Handling": 83,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

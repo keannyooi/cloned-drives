@@ -10,9 +10,15 @@
     "handling": 101,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite","Motorsport","Unique","Style Icon","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Unique",
+        "Style Icon",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1030,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +31,23 @@
     "ola": 93.5,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PorscheMobyDick(1978).png",
-
-"333TopSpeed": 229,
-"3330to60": 2.5,
-"333Handling": 104,
-
-"666TopSpeed": 232,
-"6660to60": 2.3,
-"666Handling": 108,
-
-"699TopSpeed": 232,
-"6990to60": 2.2,
-"699Handling": 112,
-
-"969TopSpeed": 234,
-"9690to60": 2.3,
-"969Handling": 112,
-
-"996TopSpeed": 234,
-"9960to60": 2.2,
-"996Handling": 108,
+    "333TopSpeed": 229,
+    "3330to60": 2.5,
+    "333Handling": 104,
+    "666TopSpeed": 232,
+    "6660to60": 2.3,
+    "666Handling": 108,
+    "699TopSpeed": 232,
+    "6990to60": 2.2,
+    "699Handling": 112,
+    "969TopSpeed": 234,
+    "9690to60": 2.3,
+    "969Handling": 112,
+    "996TopSpeed": 234,
+    "9960to60": 2.2,
+    "996Handling": 108,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

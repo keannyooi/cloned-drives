@@ -10,7 +10,9 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1410,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 70.61,
     "ola": 87.57,
     "description": "Launched at the Frankfurt Motor Show in 2001 and introduced in May 2002, the GTA dropped the manufacturer’s sonorous 3.2-litre V6 behind the 156’s V-shaped grille, deploying 247bhp to the front wheels.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -40,5 +42,7 @@
     "699Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo156GTA(2002).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

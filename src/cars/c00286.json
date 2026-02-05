@@ -13,7 +13,8 @@
     "tags": [
         "Eco-Friendly",
         "Unique",
-        "Concept"
+        "Concept",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1338,
@@ -27,7 +28,7 @@
     "mra": 0,
     "ola": 16.62,
     "description": "A cheap EV prototyped by General Motors that was so unfavored that it never made an appearance in any auto shows.",
-     "333TopSpeed": 62,
+    "333TopSpeed": 62,
     "3330to60": 58.9,
     "333Handling": 49,
     "666TopSpeed": 70,
@@ -44,5 +45,7 @@
     "699Handling": 52,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletElectrovette(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

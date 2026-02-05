@@ -10,9 +10,16 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Ultra Expensive","Concept","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Ultra Expensive",
+        "Concept",
+        "Unique",
+        "Track Day",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1130,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +32,23 @@
     "ola": 88.88,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheBoxsterBergspyder(2014).png",
-
-"333TopSpeed": 191,
-"3330to60": 3.9,
-"333Handling": 93,
-
-"666TopSpeed": 194,
-"6660to60": 3.7,
-"666Handling": 96,
-
-"699TopSpeed": 194,
-"6990to60": 3.5,
-"699Handling": 100,
-
-"969TopSpeed": 196,
-"9690to60": 3.7,
-"969Handling": 100,
-
-"996TopSpeed": 196,
-"9960to60": 3.5,
-"996Handling": 96,
+    "333TopSpeed": 191,
+    "3330to60": 3.9,
+    "333Handling": 93,
+    "666TopSpeed": 194,
+    "6660to60": 3.7,
+    "666Handling": 96,
+    "699TopSpeed": 194,
+    "6990to60": 3.5,
+    "699Handling": 100,
+    "969TopSpeed": 196,
+    "9690to60": 3.7,
+    "969Handling": 100,
+    "996TopSpeed": 196,
+    "9960to60": 3.5,
+    "996Handling": 96,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,7 +1,9 @@
 {
     "carID": "c06016",
     "cr": 375,
-    "make": ["Toyota"],
+    "make": [
+        "Toyota"
+    ],
     "model": "Camry 3.0 V6 Ateva",
     "modelYear": 2002,
     "country": "JP",
@@ -10,7 +12,10 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers"],
+    "tags": [
+        "CD Chasers",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1557,
     "gc": "Medium",
@@ -23,28 +28,24 @@
     "mra": 51.23,
     "ola": 70.11,
     "description": "Hello welcome to the australian countryside safari, on your left if you squint you can observe an australian spec Camry. Sensational.",
-    
-"333TopSpeed": 132,
-"3330to60": 7.7,
-"333Handling": 73,
-
-"666TopSpeed": 136,
-"6660to60": 7.3,
-"666Handling": 76,
-
-"699TopSpeed": 136,
-"6990to60": 6.9,
-"699Handling": 79,
-
-"969TopSpeed": 140,
-"9690to60": 7.3,
-"969Handling": 79,
-
-"996TopSpeed": 140,
-"9960to60": 6.9,
-"996Handling": 76,
-
+    "333TopSpeed": 132,
+    "3330to60": 7.7,
+    "333Handling": 73,
+    "666TopSpeed": 136,
+    "6660to60": 7.3,
+    "666Handling": 76,
+    "699TopSpeed": 136,
+    "6990to60": 6.9,
+    "699Handling": 79,
+    "969TopSpeed": 140,
+    "9690to60": 7.3,
+    "969Handling": 79,
+    "996TopSpeed": 140,
+    "9960to60": 6.9,
+    "996Handling": 76,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamry3.0V6Touring(2002).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

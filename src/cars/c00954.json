@@ -10,7 +10,9 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1244,
     "gc": "Low",
@@ -23,7 +25,7 @@
     "mra": 63.48,
     "ola": 71.23,
     "description": "The muscle car of pocket rockets.",
-     "333TopSpeed": 136,
+    "333TopSpeed": 136,
     "3330to60": 6.9,
     "333Handling": 80,
     "666TopSpeed": 140,
@@ -40,5 +42,7 @@
     "699Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanSentraSERSpecV(2002).png",
     "creator": "Fried",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

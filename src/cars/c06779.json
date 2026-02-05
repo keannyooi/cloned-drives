@@ -10,7 +10,12 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CDCCS","The Americas Assault","Concept"],
+    "tags": [
+        "CDCCS",
+        "The Americas Assault",
+        "Concept",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 1400,
     "gc": "Low",
@@ -23,26 +28,24 @@
     "mra": 59.12,
     "ola": 82.56,
     "description": "",
-"333TopSpeed": 134,
-"3330to60": 7.1,
-"333Handling": 85,
-
-"666TopSpeed": 138,
-"6660to60": 6.8,
-"666Handling": 87,
-
-"699TopSpeed": 138,
-"6990to60": 6.4,
-"699Handling": 91,
-
-"969TopSpeed": 142,
-"9690to60": 6.8,
-"969Handling": 91,
-
-"996TopSpeed": 142,
-"9960to60": 6.4,
-"996Handling": 87,
+    "333TopSpeed": 134,
+    "3330to60": 7.1,
+    "333Handling": 85,
+    "666TopSpeed": 138,
+    "6660to60": 6.8,
+    "666Handling": 87,
+    "699TopSpeed": 138,
+    "6990to60": 6.4,
+    "699Handling": 91,
+    "969TopSpeed": 142,
+    "9690to60": 6.8,
+    "969Handling": 91,
+    "996TopSpeed": 142,
+    "9960to60": 6.4,
+    "996Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ScionFR-ST1(2014).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

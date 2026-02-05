@@ -1,7 +1,10 @@
 {
     "carID": "c02560",
     "cr": 830,
-    "make": ["RE Amemiya", "Mazda"],
+    "make": [
+        "RE Amemiya",
+        "Mazda"
+    ],
     "model": "AsparaDrink RX-7 Super GT",
     "modelYear": 2002,
     "country": "JP",
@@ -10,9 +13,11 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1100,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +31,22 @@
     "description": "A Japanese Super GT Legend.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny",
-
-"333TopSpeed": 169, 
-"3330to60": 3.0, 
-"333Handling": 99,
-
-"666TopSpeed": 172, 
-"6660to60": 2.9, 
-"666Handling": 102,
-
-"699TopSpeed": 172, 
-"6990to60": 2.7, 
-"699Handling": 107,
-
-"969TopSpeed": 175, 
-"9690to60": 2.9, 
-"969Handling": 107,
-
-"996TopSpeed": 175, 
-"9960to60": 2.7, 
-"996Handling": 102,
-    "hiddenTag": [""]
+    "333TopSpeed": 169,
+    "3330to60": 3,
+    "333Handling": 99,
+    "666TopSpeed": 172,
+    "6660to60": 2.9,
+    "666Handling": 102,
+    "699TopSpeed": 172,
+    "6990to60": 2.7,
+    "699Handling": 107,
+    "969TopSpeed": 175,
+    "9690to60": 2.9,
+    "969Handling": 107,
+    "996TopSpeed": 175,
+    "9960to60": 2.7,
+    "996Handling": 102,
+    "hiddenTag": [
+        ""
+    ]
 }

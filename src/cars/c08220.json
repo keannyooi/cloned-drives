@@ -10,7 +10,11 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Full Throttle","Style Icon"],
+    "tags": [
+        "Full Throttle",
+        "Style Icon",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1815,
     "gc": "Medium",
@@ -22,30 +26,25 @@
     "fuelType": "Petrol",
     "mra": 68.8,
     "ola": 77.54,
-
     "description": "This is what almost 4000 people working on the development, over 450 prototypes and pretty much no budget constraints gets you for a flagship luxury sedan.",
-
-"333TopSpeed": 152,
-"3330to60": 8.4,
-"333Handling": 73,
-
-"666TopSpeed": 156,
-"6660to60": 7.9,
-"666Handling": 76,
-
-"699TopSpeed": 156,
-"6990to60": 7.5,
-"699Handling": 79,
-
-"969TopSpeed": 159,
-"9690to60": 7.9,
-"969Handling": 79,
-
-"996TopSpeed": 159,
-"9960to60": 7.5,
-"996Handling": 76,
-
+    "333TopSpeed": 152,
+    "3330to60": 8.4,
+    "333Handling": 73,
+    "666TopSpeed": 156,
+    "6660to60": 7.9,
+    "666Handling": 76,
+    "699TopSpeed": 156,
+    "6990to60": 7.5,
+    "699Handling": 79,
+    "969TopSpeed": 159,
+    "9690to60": 7.9,
+    "969Handling": 79,
+    "996TopSpeed": 159,
+    "9960to60": 7.5,
+    "996Handling": 76,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LexusLS400(1990).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

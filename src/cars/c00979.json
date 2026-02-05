@@ -10,7 +10,9 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1250,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 52.02,
     "ola": 71.11,
     "description": "A very niche version of Calibra which is estimated to be built in just under a thousand copies.",
-     "333TopSpeed": 137,
+    "333TopSpeed": 137,
     "3330to60": 8.6,
     "333Handling": 76,
     "666TopSpeed": 141,
@@ -40,5 +42,7 @@
     "699Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelCalibra20i16V4x4(1990).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

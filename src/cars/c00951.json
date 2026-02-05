@@ -12,7 +12,8 @@
     "tyreType": "Performance",
     "tags": [
         "Hot Hatch",
-        "Street Racer"
+        "Street Racer",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1188,
@@ -26,7 +27,7 @@
     "mra": 59.34,
     "ola": 70.37,
     "description": "",
-     "333TopSpeed": 146,
+    "333TopSpeed": 146,
     "3330to60": 5.1,
     "333Handling": 75,
     "666TopSpeed": 149,
@@ -43,5 +44,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanPulsarGTi-R(1990).png",
     "creator": "Thunk",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

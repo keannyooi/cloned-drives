@@ -10,7 +10,11 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1005,
     "gc": "Medium",
@@ -23,7 +27,7 @@
     "mra": 47.22,
     "ola": 65.88,
     "description": "Mazda's RX-3 replacement.",
-     "333TopSpeed": 128,
+    "333TopSpeed": 128,
     "3330to60": 8.1,
     "333Handling": 75,
     "666TopSpeed": 132,
@@ -40,5 +44,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MazdaSavannaRX7(1978).png",
     "creator": "DodgeDemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

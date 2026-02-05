@@ -17,7 +17,8 @@
     "tags": [
         "Tuner",
         "Track Day",
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1200,
@@ -31,7 +32,7 @@
     "mra": 87.27,
     "ola": 89.58,
     "description": "When you want to be a fast boi around Tsukuba but you only have a 50-year-old car to work with.",
-     "333TopSpeed": 171,
+    "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 84,
     "666TopSpeed": 174,
@@ -48,5 +49,7 @@
     "699Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/StarRoadNeoFZ(2014).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

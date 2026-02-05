@@ -5,10 +5,17 @@
     "modelYear": 2014,
     "country": "GB",
     "reference": "c00791",
-    "collection": ["Summer Collection 2023"],
+    "collection": [
+        "Summer Collection 2023"
+    ],
     "description": "Welcome to summer!",
-	"active" : false,
+    "active": false,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ],
+    "tags": [
+        "Year of the Horse"
+    ]
 }

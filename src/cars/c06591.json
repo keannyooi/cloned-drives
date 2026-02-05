@@ -10,7 +10,13 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["CDCCS", "The Amplification of Asia", "Track Day", "Super Sedan"],
+    "tags": [
+        "CDCCS",
+        "The Amplification of Asia",
+        "Track Day",
+        "Super Sedan",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1740,
     "gc": "Low",
@@ -23,26 +29,24 @@
     "mra": 81.99,
     "ola": 77.94,
     "description": "",
-"333TopSpeed": 183,
-"3330to60": 3.4,
-"333Handling": 93,
-
-"666TopSpeed": 186,
-"6660to60": 3.2,
-"666Handling": 96,
-
-"699TopSpeed": 186,
-"6990to60": 3.1,
-"699Handling": 100,
-
-"969TopSpeed": 189,
-"9690to60": 3.2,
-"969Handling": 100,
-
-"996TopSpeed": 189,
-"9960to60": 3.1,
-"996Handling": 96,
+    "333TopSpeed": 183,
+    "3330to60": 3.4,
+    "333Handling": 93,
+    "666TopSpeed": 186,
+    "6660to60": 3.2,
+    "666Handling": 96,
+    "699TopSpeed": 186,
+    "6990to60": 3.1,
+    "699Handling": 100,
+    "969TopSpeed": 189,
+    "9690to60": 3.2,
+    "969Handling": 100,
+    "996TopSpeed": 189,
+    "9960to60": 3.1,
+    "996Handling": 96,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/InfinitiQ50EauRougeConcept(2014).png",
     "creator": "GAAN",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

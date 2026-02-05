@@ -12,7 +12,9 @@
     "tyreType": "Performance",
     "tags": [
         "Style Icon",
-        "Supercar","OG"
+        "Supercar",
+        "OG",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1300,
@@ -26,7 +28,7 @@
     "mra": 70.89,
     "ola": 85.71,
     "description": "A BMW supercar, the first and (arguably) last of its kind.",
-     "333TopSpeed": 165,
+    "333TopSpeed": 165,
     "3330to60": 5.3,
     "333Handling": 74,
     "666TopSpeed": 168,
@@ -43,5 +45,7 @@
     "699Handling": 80,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM1(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

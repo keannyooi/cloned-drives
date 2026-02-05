@@ -12,7 +12,8 @@
     "tyreType": "Performance",
     "tags": [
         "Rest of The World",
-        "Sleeper"
+        "Sleeper",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1824,
@@ -26,8 +27,8 @@
     "mra": 88.05,
     "ola": 71.03,
     "description": "A supercar with a very, very, large boot.",
-     "333TopSpeed": 178,
-    "3330to60": 4.0,
+    "333TopSpeed": 178,
+    "3330to60": 4,
     "333Handling": 85,
     "666TopSpeed": 181,
     "6660to60": 3.8,
@@ -43,5 +44,7 @@
     "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HSVGTSMaloo(2014).png",
     "creator": "Exist",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

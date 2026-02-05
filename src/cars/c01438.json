@@ -11,7 +11,9 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": [
-        "Motorsport","Battle Pack"
+        "Motorsport",
+        "Battle Pack",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1190,
@@ -25,22 +27,24 @@
     "mra": 97.06,
     "ola": 90.91,
     "description": "",
-     "333TopSpeed": 181,
+    "333TopSpeed": 181,
     "3330to60": 3.1,
     "333Handling": 105,
     "666TopSpeed": 184,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 109,
     "996TopSpeed": 187,
     "9960to60": 2.8,
     "996Handling": 109,
     "969TopSpeed": 187,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 113,
     "699TopSpeed": 184,
     "6990to60": 2.8,
     "699Handling": 113,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ4GT3(2014).png",
     "creator": "Aqo",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "The Royal Collection"
+        "The Royal Collection",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1800,
@@ -25,26 +26,24 @@
     "mra": 71.25,
     "ola": 70.52,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 5,
-"333Handling": 83,
-
-"666TopSpeed": 162,
-"6660to60": 4.8,
-"666Handling": 85,
-
-"699TopSpeed": 162,
-"6990to60": 4.5,
-"699Handling": 89,
-
-"969TopSpeed": 165,
-"9690to60": 4.8,
-"969Handling": 89,
-
-"996TopSpeed": 165,
-"9960to60": 4.5,
-"996Handling": 85,
+    "333TopSpeed": 158,
+    "3330to60": 5,
+    "333Handling": 83,
+    "666TopSpeed": 162,
+    "6660to60": 4.8,
+    "666Handling": 85,
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 89,
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 89,
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarS-TypeR(2002).png",
     "creator": "Based",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

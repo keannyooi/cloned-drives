@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [
-        "Track Day"
+        "Track Day",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 997,
@@ -25,7 +26,7 @@
     "mra": 55.87,
     "ola": 90.76,
     "description": "Delivers searing performance on track but feels rather compromised on the road.",
-     "333TopSpeed": 147,
+    "333TopSpeed": 147,
     "3330to60": 5.7,
     "333Handling": 83,
     "666TopSpeed": 150,
@@ -42,5 +43,7 @@
     "699Handling": 89,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Abarth695Biposto(2014).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

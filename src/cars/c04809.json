@@ -10,9 +10,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1375,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +28,23 @@
     "ola": 80.45,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCaymanGTS(2014).png",
-
-"333TopSpeed": 180,
-"3330to60": 4.3,
-"333Handling": 91,
-
-"666TopSpeed": 183,
-"6660to60": 4,
-"666Handling": 94,
-
-"699TopSpeed": 183,
-"6990to60": 3.8,
-"699Handling": 98,
-
-"969TopSpeed": 186,
-"9690to60": 4,
-"969Handling": 98,
-
-"996TopSpeed": 186,
-"9960to60": 3.8,
-"996Handling": 94,
+    "333TopSpeed": 180,
+    "3330to60": 4.3,
+    "333Handling": 91,
+    "666TopSpeed": 183,
+    "6660to60": 4,
+    "666Handling": 94,
+    "699TopSpeed": 183,
+    "6990to60": 3.8,
+    "699Handling": 98,
+    "969TopSpeed": 186,
+    "9690to60": 4,
+    "969Handling": 98,
+    "996TopSpeed": 186,
+    "9960to60": 3.8,
+    "996Handling": 94,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

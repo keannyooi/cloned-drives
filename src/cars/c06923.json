@@ -10,7 +10,12 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CDCCS","The Royal Collection","Concept"],
+    "tags": [
+        "CDCCS",
+        "The Royal Collection",
+        "Concept",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1830,
     "gc": "Low",
@@ -22,30 +27,25 @@
     "fuelType": "Petrol",
     "mra": 73.45,
     "ola": 89.1,
-
     "description": "",
-
-"333TopSpeed": 152,
-"3330to60": 7.5,
-"333Handling": 69,
-
-"666TopSpeed": 156,
-"6660to60": 7.1,
-"666Handling": 71,
-
-"699TopSpeed": 156,
-"6990to60": 6.7,
-"699Handling": 74,
-
-"969TopSpeed": 159,
-"9690to60": 7.1,
-"969Handling": 74,
-
-"996TopSpeed": 159,
-"9960to60": 6.7,
-"996Handling": 71,
-
+    "333TopSpeed": 152,
+    "3330to60": 7.5,
+    "333Handling": 69,
+    "666TopSpeed": 156,
+    "6660to60": 7.1,
+    "666Handling": 71,
+    "699TopSpeed": 156,
+    "6990to60": 6.7,
+    "699Handling": 74,
+    "969TopSpeed": 159,
+    "9690to60": 7.1,
+    "969Handling": 74,
+    "996TopSpeed": 159,
+    "9960to60": 6.7,
+    "996Handling": 71,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarXJSpiderConcept(1978).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

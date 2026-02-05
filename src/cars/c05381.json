@@ -10,7 +10,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD 2.0: New Era"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1170,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 51.82,
     "ola": 70.58,
     "description": "",
-"333TopSpeed": 133,
-"3330to60": 8.1,
-"333Handling": 72,
-
-"666TopSpeed": 137,
-"6660to60": 7.7,
-"666Handling": 75,
-
-"699TopSpeed": 137,
-"6990to60": 7.2,
-"699Handling": 78,
-
-"969TopSpeed": 141,
-"9690to60": 7.7,
-"969Handling": 78,
-
-"996TopSpeed": 141,
-"9960to60": 7.2,
-"996Handling": 75,
+    "333TopSpeed": 133,
+    "3330to60": 8.1,
+    "333Handling": 72,
+    "666TopSpeed": 137,
+    "6660to60": 7.7,
+    "666Handling": 75,
+    "699TopSpeed": 137,
+    "6990to60": 7.2,
+    "699Handling": 78,
+    "969TopSpeed": 141,
+    "9690to60": 7.7,
+    "969Handling": 78,
+    "996TopSpeed": 141,
+    "9960to60": 7.2,
+    "996Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Audi802016V(1990).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

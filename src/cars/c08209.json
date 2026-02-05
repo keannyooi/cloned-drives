@@ -10,7 +10,10 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Full Throttle"],
+    "tags": [
+        "Full Throttle",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1275,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 61.53,
     "ola": 72.73,
     "description": "",
-"333TopSpeed": 137,
-"3330to60": 8.1,
-"333Handling": 79,
-
-"666TopSpeed": 141,
-"6660to60": 7.7,
-"666Handling": 81,
-
-"699TopSpeed": 141,
-"6990to60": 7.2,
-"699Handling": 84,
-
-"969TopSpeed": 145,
-"9690to60": 7.7,
-"969Handling": 84,
-
-"996TopSpeed": 145,
-"9960to60": 7.2,
-"996Handling": 81,
+    "333TopSpeed": 137,
+    "3330to60": 8.1,
+    "333Handling": 79,
+    "666TopSpeed": 141,
+    "6660to60": 7.7,
+    "666Handling": 81,
+    "699TopSpeed": 141,
+    "6990to60": 7.2,
+    "699Handling": 84,
+    "969TopSpeed": 145,
+    "9690to60": 7.7,
+    "969Handling": 84,
+    "996TopSpeed": 145,
+    "9960to60": 7.2,
+    "996Handling": 81,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordFocusST170Estate(2003).png",
     "creator": "Keanny",
-	"hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

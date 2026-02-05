@@ -10,9 +10,13 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer","The Tyrol Tour: Remix","Oceanic View"],
+    "tags": [
+        "Endless Summer",
+        "The Tyrol Tour: Remix",
+        "Oceanic View",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 970,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +30,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche912Targa(1966).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 114,
-"3330to60": 12.5,
-"333Handling": 67,
-
-"666TopSpeed": 119,
-"6660to60": 11.9,
-"666Handling": 69,
-
-"699TopSpeed": 119,
-"6990to60": 11.2,
-"699Handling": 72,
-
-"969TopSpeed": 123,
-"9690to60": 11.9,
-"969Handling": 72,
-
-"996TopSpeed": 123,
-"9960to60": 11.2,
-"996Handling": 69,
-    "hiddenTag": [""]
+    "333TopSpeed": 114,
+    "3330to60": 12.5,
+    "333Handling": 67,
+    "666TopSpeed": 119,
+    "6660to60": 11.9,
+    "666Handling": 69,
+    "699TopSpeed": 119,
+    "6990to60": 11.2,
+    "699Handling": 72,
+    "969TopSpeed": 123,
+    "9690to60": 11.9,
+    "969Handling": 72,
+    "996TopSpeed": 123,
+    "9960to60": 11.2,
+    "996Handling": 69,
+    "hiddenTag": [
+        ""
+    ]
 }

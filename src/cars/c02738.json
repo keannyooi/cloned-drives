@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c02738",
     "cr": 347,
     "make": "Audi",
@@ -10,7 +10,9 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1800,
     "gc": "Low",
@@ -23,7 +25,7 @@
     "mra": 62.88,
     "ola": 81.93,
     "description": "Out with the wonky multitronic, in with the S tronic, extra hp and Euro 6: Audi's answer to the evolving market was no joke.",
-     "333TopSpeed": 148,
+    "333TopSpeed": 148,
     "3330to60": 7.9,
     "333Handling": 81,
     "666TopSpeed": 151,
@@ -40,5 +42,7 @@
     "699Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA6Avant2.0TDIultraStronic(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

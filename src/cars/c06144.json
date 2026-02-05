@@ -1,7 +1,10 @@
 {
     "carID": "c06144",
     "cr": 465,
-    "make": ["AC", "Shelby"],
+    "make": [
+        "AC",
+        "Shelby"
+    ],
     "model": "289 Sports",
     "modelYear": 1966,
     "country": "GB",
@@ -10,7 +13,11 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD Contenders","Style Icon"],
+    "tags": [
+        "CD Contenders",
+        "Style Icon",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 916,
     "gc": "Medium",
@@ -23,26 +30,24 @@
     "mra": 73.41,
     "ola": 86.2,
     "description": "",
-"333TopSpeed": 139,
-"3330to60": 5.5,
-"333Handling": 72,
-
-"666TopSpeed": 143,
-"6660to60": 5.2,
-"666Handling": 75,
-
-"699TopSpeed": 143,
-"6990to60": 4.9,
-"699Handling": 78,
-
-"969TopSpeed": 147,
-"9690to60": 5.2,
-"969Handling": 78,
-
-"996TopSpeed": 147,
-"9960to60": 4.9,
-"996Handling": 75,
+    "333TopSpeed": 139,
+    "3330to60": 5.5,
+    "333Handling": 72,
+    "666TopSpeed": 143,
+    "6660to60": 5.2,
+    "666Handling": 75,
+    "699TopSpeed": 143,
+    "6990to60": 4.9,
+    "699Handling": 78,
+    "969TopSpeed": 147,
+    "9690to60": 5.2,
+    "969Handling": 78,
+    "996TopSpeed": 147,
+    "9960to60": 4.9,
+    "996Handling": 75,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AC289Sports(1966).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

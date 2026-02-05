@@ -10,7 +10,9 @@
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2310,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 71.43,
     "ola": 73.33,
     "description": "So over engineered it could run at 300kmh with 50°C weather for a whole day.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 5.7,
     "333Handling": 75,
     "666TopSpeed": 162,
@@ -40,5 +42,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenPhaeton6.0W12(2003).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

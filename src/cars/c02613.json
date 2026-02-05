@@ -10,9 +10,10 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1830,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,28 +25,24 @@
     "mra": 65.81,
     "ola": 72.73,
     "description": "The most popular of them all.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA83.0TDIquattro(2002).png",
     "creator": "Connor",
-
     "333TopSpeed": 154,
     "3330to60": 7.3,
     "333Handling": 73,
-
     "666TopSpeed": 158,
     "6660to60": 6.9,
     "666Handling": 76,
-
     "996TopSpeed": 161,
     "9960to60": 6.5,
     "996Handling": 76,
-
     "969TopSpeed": 161,
     "9690to60": 6.9,
     "969Handling": 79,
-
     "699TopSpeed": 158,
     "6990to60": 6.5,
     "699Handling": 79,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

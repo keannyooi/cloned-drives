@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "Supercar"
+        "Supercar",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1469,
@@ -25,7 +26,7 @@
     "mra": 97.08,
     "ola": 89.06,
     "description": "Drives every bit as crisply as the Coupe, but with added volume and drama.",
-     "333TopSpeed": 209,
+    "333TopSpeed": 209,
     "3330to60": 2.8,
     "333Handling": 93,
     "666TopSpeed": 211,
@@ -42,5 +43,7 @@
     "699Handling": 99,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLaren650SSpider(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,7 +10,10 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car"],
+    "tags": [
+        "Kei Car",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 755,
     "gc": "Medium",
@@ -23,26 +26,24 @@
     "mra": 12.61,
     "ola": 72.5,
     "description": "The pinnacle of the Honda S, with larger displacement and better performance.",
-"333TopSpeed": 104,
-"3330to60": 12.8,
-"333Handling": 64,
-
-"666TopSpeed": 110,
-"6660to60": 12.2,
-"666Handling": 66,
-
-"699TopSpeed": 110,
-"6990to60": 11.5,
-"699Handling": 69,
-
-"969TopSpeed": 115,
-"9690to60": 12.2,
-"969Handling": 69,
-
-"996TopSpeed": 115,
-"9960to60": 11.5,
-"996Handling": 66,
+    "333TopSpeed": 104,
+    "3330to60": 12.8,
+    "333Handling": 64,
+    "666TopSpeed": 110,
+    "6660to60": 12.2,
+    "666Handling": 66,
+    "699TopSpeed": 110,
+    "6990to60": 11.5,
+    "699Handling": 69,
+    "969TopSpeed": 115,
+    "9690to60": 12.2,
+    "969Handling": 69,
+    "996TopSpeed": 115,
+    "9960to60": 11.5,
+    "996Handling": 66,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaS800(1966).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

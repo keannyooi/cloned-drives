@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03279",
     "cr": 820,
     "make": "Tatuus",
@@ -10,7 +10,11 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["The Tyrol Tour: Remix","Motorsport"],
+    "tags": [
+        "The Tyrol Tour: Remix",
+        "Motorsport",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 570,
     "gc": "Low",
@@ -23,7 +27,7 @@
     "mra": 70.83,
     "ola": 88.24,
     "description": "future f1 champ lace strol",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 3.2,
     "333Handling": 100,
     "666TopSpeed": 162,
@@ -40,5 +44,7 @@
     "699Handling": 108,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

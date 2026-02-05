@@ -10,7 +10,10 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1500,
     "gc": "Medium",
@@ -23,7 +26,7 @@
     "mra": 57.1,
     "ola": 81.77,
     "description": "The only car in the world that has 204 hp, 24-Valve engine, a computerized 4-Speed transmission, abs brakes and the added luxury of being a Volvo.",
-     "333TopSpeed": 137,
+    "333TopSpeed": 137,
     "3330to60": 8.6,
     "333Handling": 68,
     "666TopSpeed": 141,
@@ -40,5 +43,7 @@
     "699Handling": 73,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo960(1990).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

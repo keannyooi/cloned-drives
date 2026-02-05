@@ -10,7 +10,9 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1630,
     "gc": "Medium",
@@ -23,8 +25,8 @@
     "mra": 72.41,
     "ola": 76.19,
     "description": "C&D thinks it's the best Avalon in it's 20 year history, once you get past the catfish grille ripped from the Chrysler Sebring.",
-     "333TopSpeed": 132,
-    "3330to60": 6.0,
+    "333TopSpeed": 132,
+    "3330to60": 6,
     "333Handling": 75,
     "666TopSpeed": 136,
     "6660to60": 5.7,
@@ -40,5 +42,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaAvalonV6Limited(2014).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c02744",
     "cr": 741,
     "make": "Audi",
@@ -10,7 +10,10 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Oceanic View"],
+    "tags": [
+        "Oceanic View",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2000,
     "gc": "Low",
@@ -23,7 +26,7 @@
     "mra": 80,
     "ola": 77.78,
     "description": "No V10, no problem. It's still enough to break 3/4 of relationships and love stories.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 3.4,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -40,5 +43,7 @@
     "699Handling": 92,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiRS6Avant(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

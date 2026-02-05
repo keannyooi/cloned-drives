@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1055,
@@ -25,7 +26,7 @@
     "mra": 50.54,
     "ola": 74.47,
     "description": "The handling king of the sub compacts, aussie trim.",
-     "333TopSpeed": 128,
+    "333TopSpeed": 128,
     "3330to60": 8.9,
     "333Handling": 80,
     "666TopSpeed": 132,
@@ -42,5 +43,7 @@
     "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda2Skyactiv-GGenki(2014).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

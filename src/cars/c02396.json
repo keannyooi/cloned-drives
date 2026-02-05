@@ -10,9 +10,11 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1470,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +28,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Lamborghini595Zagato(2014).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 205,
-"3330to60": 3.1,
-"333Handling": 91,
-
-"666TopSpeed": 207,
-"6660to60": 3,
-"666Handling": 94,
-
-"699TopSpeed": 207,
-"6990to60": 2.8,
-"699Handling": 98,
-
-"969TopSpeed": 210,
-"9690to60": 3,
-"969Handling": 98,
-
-"996TopSpeed": 210,
-"9960to60": 2.8,
-"996Handling": 94,
-    "hiddenTag": [""]
+    "333TopSpeed": 205,
+    "3330to60": 3.1,
+    "333Handling": 91,
+    "666TopSpeed": 207,
+    "6660to60": 3,
+    "666Handling": 94,
+    "699TopSpeed": 207,
+    "6990to60": 2.8,
+    "699Handling": 98,
+    "969TopSpeed": 210,
+    "9690to60": 3,
+    "969Handling": 98,
+    "996TopSpeed": 210,
+    "9960to60": 2.8,
+    "996Handling": 94,
+    "hiddenTag": [
+        ""
+    ]
 }

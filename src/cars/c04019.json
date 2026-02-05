@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04019",
     "cr": 30,
     "make": "Suzuki",
@@ -6,47 +6,45 @@
     "modelYear": 1990,
     "country": "JP",
     "topSpeed": 70,
-    "0to60": 34.0,
+    "0to60": 34,
     "handling": 50,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Amplification of Asia","Endless Summer"],
+    "tags": [
+        "The Amplification of Asia",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 850,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Pickup",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 54.65,
     "description": "Added 4WD for that little bit more of versatility.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SuzukiCarry6604WDCargoTruck(1990).png",
     "creator": "Andu",
-
     "333TopSpeed": 77,
     "3330to60": 32.3,
     "333Handling": 52,
-    
     "666TopSpeed": 85,
     "6660to60": 30.6,
     "666Handling": 53,
-    
     "699TopSpeed": 85,
     "6990to60": 28.9,
     "699Handling": 56,
-    
     "969TopSpeed": 92,
     "9690to60": 30.6,
     "969Handling": 56,
-    
     "996TopSpeed": 92,
     "9960to60": 28.9,
     "996Handling": 53,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

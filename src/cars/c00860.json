@@ -12,7 +12,8 @@
     "tyreType": "Standard",
     "tags": [
         "Eco-Friendly",
-        "Silver Screen"
+        "Silver Screen",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 2170,
@@ -26,7 +27,7 @@
     "mra": 48.23,
     "ola": 79.41,
     "description": "When you want a mercedes but you have a humanist family.",
-     "333TopSpeed": 105,
+    "333TopSpeed": 105,
     "3330to60": 6.5,
     "333Handling": 70,
     "666TopSpeed": 110,
@@ -43,5 +44,7 @@
     "699Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzB-ClassElectricDrive(2014).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

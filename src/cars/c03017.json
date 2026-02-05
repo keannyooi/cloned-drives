@@ -10,9 +10,12 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport","The Tyrol Tour"],
+    "tags": [
+        "Motorsport",
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1310,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +29,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-Benz300SLTouring(1954).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 165, 
-"3330to60": 7.7, 
-"333Handling": 71,
-
-"666TopSpeed": 168, 
-"6660to60": 7.3, 
-"666Handling": 74,
-
-"699TopSpeed": 168, 
-"6990to60": 6.9, 
-"699Handling": 77,
-
-"969TopSpeed": 172, 
-"9690to60": 7.3, 
-"969Handling": 77,
-
-"996TopSpeed": 172, 
-"9960to60": 6.9, 
-"996Handling": 74,
-    "hiddenTag": [""]
+    "333TopSpeed": 165,
+    "3330to60": 7.7,
+    "333Handling": 71,
+    "666TopSpeed": 168,
+    "6660to60": 7.3,
+    "666Handling": 74,
+    "699TopSpeed": 168,
+    "6990to60": 6.9,
+    "699Handling": 77,
+    "969TopSpeed": 172,
+    "9690to60": 7.3,
+    "969Handling": 77,
+    "996TopSpeed": 172,
+    "9960to60": 6.9,
+    "996Handling": 74,
+    "hiddenTag": [
+        ""
+    ]
 }

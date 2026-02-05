@@ -10,7 +10,10 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["OG"],
+    "tags": [
+        "OG",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1657,
     "gc": "High",
@@ -23,7 +26,7 @@
     "mra": 36.69,
     "ola": 62.86,
     "description": "",
-     "333TopSpeed": 113,
+    "333TopSpeed": 113,
     "3330to60": 9.7,
     "333Handling": 65,
     "666TopSpeed": 118,
@@ -40,5 +43,7 @@
     "699Handling": 70,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JeepCherokeeLaredo(1990).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

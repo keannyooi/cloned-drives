@@ -10,7 +10,11 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Liberty Showdown","Eco-Friendly"],
+    "tags": [
+        "Liberty Showdown",
+        "Eco-Friendly",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2713,
     "gc": "Medium",
@@ -22,30 +26,25 @@
     "fuelType": "Electric",
     "mra": 85.25,
     "ola": 97.96,
-
     "description": "",
-
-"333TopSpeed": 135,
-"3330to60": 3.1,
-"333Handling": 86,
-
-"666TopSpeed": 139,
-"6660to60": 3,
-"666Handling": 88,
-
-"699TopSpeed": 139,
-"6990to60": 2.8,
-"699Handling": 92,
-
-"969TopSpeed": 143,
-"9690to60": 3,
-"969Handling": 92,
-
-"996TopSpeed": 143,
-"9960to60": 2.8,
-"996Handling": 88,
-
+    "333TopSpeed": 135,
+    "3330to60": 3.1,
+    "333Handling": 86,
+    "666TopSpeed": 139,
+    "6660to60": 3,
+    "666Handling": 88,
+    "699TopSpeed": 139,
+    "6990to60": 2.8,
+    "699Handling": 92,
+    "969TopSpeed": 143,
+    "9690to60": 3,
+    "969Handling": 92,
+    "996TopSpeed": 143,
+    "9960to60": 2.8,
+    "996Handling": 88,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/CadillacLyriq-V(2026).png",
     "creator": "ama4nn",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

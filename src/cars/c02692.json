@@ -10,9 +10,12 @@
     "handling": 55,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","Concept"],
+    "tags": [
+        "Eco-Friendly",
+        "Concept",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 460,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +29,22 @@
     "description": "After experiencing a massive earthquake in 2011, a Japanese man by the name of Hideo Tsurumaki started designing a mini vehicle that could double as a boat when the roads are flooded. He ended up creating the Concept One, a car designed to allow people to escort to safety in case of a flood or a tsunami. The front wheels, along with their tyres, propel the car both on land and on water through a 5kW in-wheel motor in each wheel.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FOMMConceptOne(2014).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 40, 
-    "3330to60": 99.9, 
+    "333TopSpeed": 40,
+    "3330to60": 99.9,
     "333Handling": 57,
-
-    "666TopSpeed": 48, 
-    "6660to60": 99.9, 
+    "666TopSpeed": 48,
+    "6660to60": 99.9,
     "666Handling": 59,
-
-    "699TopSpeed": 48, 
-    "6990to60": 99.9, 
+    "699TopSpeed": 48,
+    "6990to60": 99.9,
     "699Handling": 61,
-
-    "969TopSpeed": 57, 
-    "9690to60": 99.9, 
+    "969TopSpeed": 57,
+    "9690to60": 99.9,
     "969Handling": 61,
-
-    "996TopSpeed": 57, 
-    "9960to60": 99.9, 
+    "996TopSpeed": 57,
+    "9960to60": 99.9,
     "996Handling": 59,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

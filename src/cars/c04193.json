@@ -10,9 +10,13 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite","Unique","Concept"],
+    "tags": [
+        "Eurotech Elite",
+        "Unique",
+        "Concept",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1970,
     "gc": "Low",
     "seatCount": 4,
@@ -25,26 +29,23 @@
     "ola": 89.66,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniFaenaFrua(1978).png",
-
-"333TopSpeed": 143,
-"3330to60": 8,
-"333Handling": 71,
-
-"666TopSpeed": 146,
-"6660to60": 7.6,
-"666Handling": 74,
-
-"699TopSpeed": 146,
-"6990to60": 7.1,
-"699Handling": 77,
-
-"969TopSpeed": 150,
-"9690to60": 7.6,
-"969Handling": 77,
-
-"996TopSpeed": 150,
-"9960to60": 7.1,
-"996Handling": 74,
+    "333TopSpeed": 143,
+    "3330to60": 8,
+    "333Handling": 71,
+    "666TopSpeed": 146,
+    "6660to60": 7.6,
+    "666Handling": 74,
+    "699TopSpeed": 146,
+    "6990to60": 7.1,
+    "699Handling": 77,
+    "969TopSpeed": 150,
+    "9690to60": 7.6,
+    "969Handling": 77,
+    "996TopSpeed": 150,
+    "9960to60": 7.1,
+    "996Handling": 74,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

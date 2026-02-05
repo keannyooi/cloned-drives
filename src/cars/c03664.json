@@ -10,9 +10,17 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Oddity","Tuner","Unique","The Midlands Cruise","Street Racer","Eco-Friendly"],
+    "tags": [
+        "Endless Summer",
+        "Oddity",
+        "Tuner",
+        "Unique",
+        "The Midlands Cruise",
+        "Street Racer",
+        "Eco-Friendly",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 490,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +34,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RenaultTwizyF1byOakleyDesign(2014).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 69,
-"3330to60": 26.3,
-"333Handling": 66,
-
-"666TopSpeed": 77,
-"6660to60": 24.9,
-"666Handling": 68,
-
-"699TopSpeed": 77,
-"6990to60": 23.5,
-"699Handling": 71,
-
-"969TopSpeed": 86,
-"9690to60": 24.9,
-"969Handling": 71,
-
-"996TopSpeed": 86,
-"9960to60": 23.5,
-"996Handling": 68,
-    "hiddenTag": [""]
+    "333TopSpeed": 69,
+    "3330to60": 26.3,
+    "333Handling": 66,
+    "666TopSpeed": 77,
+    "6660to60": 24.9,
+    "666Handling": 68,
+    "699TopSpeed": 77,
+    "6990to60": 23.5,
+    "699Handling": 71,
+    "969TopSpeed": 86,
+    "9690to60": 24.9,
+    "969Handling": 71,
+    "996TopSpeed": 86,
+    "9960to60": 23.5,
+    "996Handling": 68,
+    "hiddenTag": [
+        ""
+    ]
 }

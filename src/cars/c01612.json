@@ -10,7 +10,11 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1065,
     "gc": "Medium",
@@ -23,7 +27,7 @@
     "mra": 45.29,
     "ola": 68.67,
     "description": "None.",
-     "333TopSpeed": 124,
+    "333TopSpeed": 124,
     "3330to60": 8.8,
     "333Handling": 75,
     "666TopSpeed": 129,
@@ -40,5 +44,7 @@
     "699Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MazdaRX-7(1978).png",
     "creator": "DodgeDemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

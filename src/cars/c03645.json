@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03645",
     "cr": 780,
     "make": "Ferrari",
@@ -10,7 +10,13 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","Unique","The Tyrol Tour: Remix","Endless Summer"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "The Tyrol Tour: Remix",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -23,7 +29,7 @@
     "mra": 95,
     "ola": 78.95,
     "description": "W  i  d  e  .",
-     "333TopSpeed": 202,
+    "333TopSpeed": 202,
     "3330to60": 3.6,
     "333Handling": 96,
     "666TopSpeed": 204,
@@ -40,5 +46,7 @@
     "699Handling": 103,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

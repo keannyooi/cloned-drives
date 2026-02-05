@@ -10,7 +10,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1339,
     "gc": "Medium",
@@ -23,7 +26,7 @@
     "mra": 44.64,
     "ola": 65.38,
     "description": "One of the most boring cars ever.",
-     "333TopSpeed": 120,
+    "333TopSpeed": 120,
     "3330to60": 9.8,
     "333Handling": 72,
     "666TopSpeed": 125,
@@ -40,5 +43,7 @@
     "699Handling": 78,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCorolla2.0D-4DSol(2002).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -13,7 +13,8 @@
     "tags": [
         "Supercar",
         "Style Icon",
-        "Silver Screen"
+        "Silver Screen",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1576,
@@ -27,26 +28,24 @@
     "mra": 78.86,
     "ola": 104.14,
     "description": "",
-"333TopSpeed": 205,
-"3330to60": 4,
-"333Handling": 87,
-
-"666TopSpeed": 207,
-"6660to60": 3.8,
-"666Handling": 90,
-
-"699TopSpeed": 207,
-"6990to60": 3.6,
-"699Handling": 93,
-
-"969TopSpeed": 210,
-"9690to60": 3.8,
-"969Handling": 93,
-
-"996TopSpeed": 210,
-"9960to60": 3.6,
-"996Handling": 90,
+    "333TopSpeed": 205,
+    "3330to60": 4,
+    "333Handling": 87,
+    "666TopSpeed": 207,
+    "6660to60": 3.8,
+    "666Handling": 90,
+    "699TopSpeed": 207,
+    "6990to60": 3.6,
+    "699Handling": 93,
+    "969TopSpeed": 210,
+    "9690to60": 3.8,
+    "969Handling": 93,
+    "996TopSpeed": 210,
+    "9960to60": 3.6,
+    "996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LamborghiniDiablo(1990).png",
     "creator": "DodgeDemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

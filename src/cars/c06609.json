@@ -10,7 +10,11 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CDCCS","The Tyrol Tour"],
+    "tags": [
+        "CDCCS",
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1655,
     "gc": "Medium",
@@ -23,26 +27,24 @@
     "mra": 41.39,
     "ola": 66.17,
     "description": "",
-"333TopSpeed": 131,
-"3330to60": 9.9,
-"333Handling": 66,
-
-"666TopSpeed": 135,
-"6660to60": 9.4,
-"666Handling": 68,
-
-"699TopSpeed": 135,
-"6990to60": 8.8,
-"699Handling": 71,
-
-"969TopSpeed": 139,
-"9690to60": 9.4,
-"969Handling": 71,
-
-"996TopSpeed": 139,
-"9960to60": 8.8,
-"996Handling": 68,
+    "333TopSpeed": 131,
+    "3330to60": 9.9,
+    "333Handling": 66,
+    "666TopSpeed": 135,
+    "6660to60": 9.4,
+    "666Handling": 68,
+    "699TopSpeed": 135,
+    "6990to60": 8.8,
+    "699Handling": 71,
+    "969TopSpeed": 139,
+    "9690to60": 9.4,
+    "969Handling": 71,
+    "996TopSpeed": 139,
+    "9960to60": 8.8,
+    "996Handling": 68,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-Benz260ELong(1990).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

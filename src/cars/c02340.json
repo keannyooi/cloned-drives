@@ -10,9 +10,15 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Unique", "Ultra Expensive", "Eargasm", "Hypercar"],
+    "tags": [
+        "Track Day",
+        "Unique",
+        "Ultra Expensive",
+        "Eargasm",
+        "Hypercar",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1490,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +32,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniVenenoLP750-4Roadster(2014).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 223, 
-"3330to60": 2.7, 
-"333Handling": 99,
-
-"666TopSpeed": 226, 
-"6660to60": 2.5, 
-"666Handling": 102,
-
-"699TopSpeed": 226, 
-"6990to60": 2.4, 
-"699Handling": 107,
-
-"969TopSpeed": 228, 
-"9690to60": 2.5, 
-"969Handling": 107,
-
-"996TopSpeed": 228, 
-"9960to60": 2.4, 
-"996Handling": 102,
-    "hiddenTag": [""]
+    "333TopSpeed": 223,
+    "3330to60": 2.7,
+    "333Handling": 99,
+    "666TopSpeed": 226,
+    "6660to60": 2.5,
+    "666Handling": 102,
+    "699TopSpeed": 226,
+    "6990to60": 2.4,
+    "699Handling": 107,
+    "969TopSpeed": 228,
+    "9690to60": 2.5,
+    "969Handling": 107,
+    "996TopSpeed": 228,
+    "9960to60": 2.4,
+    "996Handling": 102,
+    "hiddenTag": [
+        ""
+    ]
 }

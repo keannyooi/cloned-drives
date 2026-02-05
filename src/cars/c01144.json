@@ -1,7 +1,10 @@
 {
     "carID": "c01144",
     "cr": 634,
-    "make": ["Renault Sport","Renault"],
+    "make": [
+        "Renault Sport",
+        "Renault"
+    ],
     "model": "Megane 275 Trophy-R",
     "modelYear": 2014,
     "country": "FR",
@@ -10,7 +13,11 @@
     "handling": 88,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","Track Day"],
+    "tags": [
+        "Hot Hatch",
+        "Track Day",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -23,22 +30,24 @@
     "mra": 78.87,
     "ola": 82.14,
     "description": "The most hardcore hot hatch that 3rd Gen has ever been.",
-     "333TopSpeed": 161,
+    "333TopSpeed": 161,
     "3330to60": 5.3,
     "333Handling": 91,
     "666TopSpeed": 165,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 94,
     "996TopSpeed": 168,
     "9960to60": 4.8,
     "996Handling": 94,
     "969TopSpeed": 168,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 98,
     "699TopSpeed": 165,
     "6990to60": 4.8,
     "699Handling": 98,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultSportMegane275TrophyR(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

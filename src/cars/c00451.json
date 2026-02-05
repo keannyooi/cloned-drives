@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [
-        "Hot Hatch"
+        "Hot Hatch",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1203,
@@ -25,26 +26,24 @@
     "mra": 69.1,
     "ola": 81.59,
     "description": "It may not have the straight-line speed, but it handles like a cartoon.",
-"333TopSpeed": 146,
-"3330to60": 6.1,
-"333Handling": 83,
-
-"666TopSpeed": 149,
-"6660to60": 5.8,
-"666Handling": 85,
-
-"699TopSpeed": 149,
-"6990to60": 5.4,
-"699Handling": 89,
-
-"969TopSpeed": 153,
-"9690to60": 5.8,
-"969Handling": 89,
-
-"996TopSpeed": 153,
-"9960to60": 5.4,
-"996Handling": 85,
+    "333TopSpeed": 146,
+    "3330to60": 6.1,
+    "333Handling": 83,
+    "666TopSpeed": 149,
+    "6660to60": 5.8,
+    "666Handling": 85,
+    "699TopSpeed": 149,
+    "6990to60": 5.4,
+    "699Handling": 89,
+    "969TopSpeed": 153,
+    "9690to60": 5.8,
+    "969Handling": 89,
+    "996TopSpeed": 153,
+    "9960to60": 5.4,
+    "996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordFocusRS(2002).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

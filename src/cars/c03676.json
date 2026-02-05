@@ -6,13 +6,17 @@
     "modelYear": 2014,
     "country": "CN",
     "topSpeed": 137,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer","Rest of The World","The Amplification of Asia"],
+    "tags": [
+        "Endless Summer",
+        "Rest of The World",
+        "The Amplification of Asia",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 3150,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +30,22 @@
     "description": "Behold, the pinnacle of Chinese luxury! Sporting a throwback look from the early days of Hongqi, the L5 is the antithesis to the stereotype that Chinese cars are low-quality ripoffs. In fact, the L5 is meticulously crafted with amendities comparable to a Rolls-Royce, and its asking price of 5 million yuan (USD$760,000) cements its placce as the most expensive Chinese car ever made. Even its length is deliberately set to 5,555mm to bring in all the good fortune!",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HongqiL5CA7600(2014).png",
     "creator": "Keanny",
-
     "333TopSpeed": 141,
     "3330to60": 6.6,
     "333Handling": 68,
-
     "666TopSpeed": 145,
     "6660to60": 6.3,
     "666Handling": 70,
-
     "699TopSpeed": 145,
     "6990to60": 6,
     "699Handling": 73,
-
     "969TopSpeed": 148,
     "9690to60": 6.3,
     "969Handling": 73,
-
     "996TopSpeed": 148,
     "9960to60": 6,
     "996Handling": 70,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

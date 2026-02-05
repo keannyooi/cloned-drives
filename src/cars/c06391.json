@@ -10,7 +10,13 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CDCCS","Concept","Eco-Friendly","Rest of The World"],
+    "tags": [
+        "CDCCS",
+        "Concept",
+        "Eco-Friendly",
+        "Rest of The World",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1080,
     "gc": "Medium",
@@ -23,26 +29,24 @@
     "mra": 3.69,
     "ola": 75.18,
     "description": "",
-"333TopSpeed": 87,
-"3330to60": 13.4,
-"333Handling": 72,
-
-"666TopSpeed": 94,
-"6660to60": 12.7,
-"666Handling": 75,
-
-"699TopSpeed": 94,
-"6990to60": 12,
-"699Handling": 78,
-
-"969TopSpeed": 100,
-"9690to60": 12.7,
-"969Handling": 78,
-
-"996TopSpeed": 100,
-"9960to60": 12,
-"996Handling": 75,
+    "333TopSpeed": 87,
+    "3330to60": 13.4,
+    "333Handling": 72,
+    "666TopSpeed": 94,
+    "6660to60": 12.7,
+    "666Handling": 75,
+    "699TopSpeed": 94,
+    "6990to60": 12,
+    "699Handling": 78,
+    "969TopSpeed": 100,
+    "9690to60": 12.7,
+    "969Handling": 78,
+    "996TopSpeed": 100,
+    "9960to60": 12,
+    "996Handling": 75,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MGDynamoConceptEV(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

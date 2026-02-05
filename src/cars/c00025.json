@@ -11,7 +11,9 @@
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [
-        "Hot Hatch","OG"
+        "Hot Hatch",
+        "OG",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1360,
@@ -25,7 +27,7 @@
     "mra": 71.63,
     "ola": 88.02,
     "description": "Alfa's hot hatch that feels like the Millennium Falcon's overdrive while accelerating.",
-     "333TopSpeed": 155,
+    "333TopSpeed": 155,
     "3330to60": 5.8,
     "333Handling": 84,
     "666TopSpeed": 159,
@@ -42,5 +44,7 @@
     "699Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

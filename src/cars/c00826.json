@@ -14,7 +14,8 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "Sleeper"
+        "Sleeper",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1709,
@@ -28,7 +29,7 @@
     "mra": 85.53,
     "ola": 102.6,
     "description": "With a supercharged 5.4-litre V8 calling the shots from the front end, this took performance saloons to a whole new level.",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 77,
     "666TopSpeed": 162,
@@ -45,5 +46,7 @@
     "699Handling": 83,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzE55AMG(2002).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

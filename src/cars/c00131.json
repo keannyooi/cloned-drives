@@ -15,7 +15,8 @@
     "tyreType": "Performance",
     "tags": [
         "Tuner",
-        "Hot Hatch"
+        "Hot Hatch",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1200,
@@ -29,7 +30,7 @@
     "mra": 56.14,
     "ola": 81.25,
     "description": "Want more power from your 147? Get the EVO.",
-     "333TopSpeed": 139,
+    "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 85,
     "666TopSpeed": 143,
@@ -46,5 +47,7 @@
     "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta1471.6TwinSparkJ12EVO(2002).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

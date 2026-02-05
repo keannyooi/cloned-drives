@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03868",
     "cr": 244,
     "make": "Chrysler",
@@ -10,43 +10,42 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Americas Assault", "Style Icon", "Endless Summer"],
+    "tags": [
+        "The Americas Assault",
+        "Style Icon",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1385,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 41.35,
-    "ola": 65.20,
+    "ola": 65.2,
     "description": "What to do when the EU demands a diesel? Simple; just steal one from Mercedes and you are all set!",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChryslerPTCruiser2.2CRDLimited(2002).png",
     "creator": "Andu",
-    
     "333TopSpeed": 118,
     "3330to60": 10.8,
     "333Handling": 70,
-    
     "666TopSpeed": 122,
     "6660to60": 10.3,
     "666Handling": 72,
-    
     "699TopSpeed": 122,
     "6990to60": 9.7,
     "699Handling": 75,
-    
     "969TopSpeed": 127,
     "9690to60": 10.3,
     "969Handling": 75,
-    
     "996TopSpeed": 127,
     "9960to60": 9.7,
     "996Handling": 72,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

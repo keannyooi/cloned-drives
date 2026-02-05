@@ -10,7 +10,12 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique","The Japanese Odyssey", "Super Sedan"],
+    "tags": [
+        "Unique",
+        "The Japanese Odyssey",
+        "Super Sedan",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1380,
     "gc": "Medium",
@@ -23,8 +28,8 @@
     "mra": 61.76,
     "ola": 76.19,
     "description": "None.",
-     "333TopSpeed": 163,
-    "3330to60": 4.0,
+    "333TopSpeed": 163,
+    "3330to60": 4,
     "333Handling": 91,
     "666TopSpeed": 167,
     "6660to60": 3.8,
@@ -40,5 +45,7 @@
     "699Handling": 98,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiLancerEvolutionVIIRalliarteXtreme(2002).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -1,7 +1,10 @@
 {
     "carID": "c02866",
     "cr": 612,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "D4 Bi-Turbo",
     "modelYear": 2014,
     "country": "DE",
@@ -10,9 +13,12 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","The Tyrol Tour"],
+    "tags": [
+        "Tuner",
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1720,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +32,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaD4Bi-Turbo(2014).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 176, 
-"3330to60": 4.4, 
-"333Handling": 85,
-
-"666TopSpeed": 179, 
-"6660to60": 4.1, 
-"666Handling": 87,
-
-"699TopSpeed": 179, 
-"6990to60": 3.9, 
-"699Handling": 91,
-
-"969TopSpeed": 182, 
-"9690to60": 4.1, 
-"969Handling": 91,
-
-"996TopSpeed": 182, 
-"9960to60": 3.9, 
-"996Handling": 87,
-    "hiddenTag": [""]
+    "333TopSpeed": 176,
+    "3330to60": 4.4,
+    "333Handling": 85,
+    "666TopSpeed": 179,
+    "6660to60": 4.1,
+    "666Handling": 87,
+    "699TopSpeed": 179,
+    "6990to60": 3.9,
+    "699Handling": 91,
+    "969TopSpeed": 182,
+    "9690to60": 4.1,
+    "969Handling": 91,
+    "996TopSpeed": 182,
+    "9960to60": 3.9,
+    "996Handling": 87,
+    "hiddenTag": [
+        ""
+    ]
 }

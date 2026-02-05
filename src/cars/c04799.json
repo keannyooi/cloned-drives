@@ -10,9 +10,12 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 2185,
     "gc": "High",
     "seatCount": 5,
@@ -25,26 +28,23 @@
     "ola": 71.43,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCayenneTurbo(2014).png",
-
-"333TopSpeed": 176,
-"3330to60": 4,
-"333Handling": 87,
-
-"666TopSpeed": 179,
-"6660to60": 3.8,
-"666Handling": 90,
-
-"699TopSpeed": 179,
-"6990to60": 3.6,
-"699Handling": 93,
-
-"969TopSpeed": 182,
-"9690to60": 3.8,
-"969Handling": 93,
-
-"996TopSpeed": 182,
-"9960to60": 3.6,
-"996Handling": 90,
+    "333TopSpeed": 176,
+    "3330to60": 4,
+    "333Handling": 87,
+    "666TopSpeed": 179,
+    "6660to60": 3.8,
+    "666Handling": 90,
+    "699TopSpeed": 179,
+    "6990to60": 3.6,
+    "699Handling": 93,
+    "969TopSpeed": 182,
+    "9690to60": 3.8,
+    "969Handling": 93,
+    "996TopSpeed": 182,
+    "9960to60": 3.6,
+    "996Handling": 90,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

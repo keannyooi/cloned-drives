@@ -6,15 +6,18 @@
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 123,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour"],
+    "tags": [
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1175,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,11 +26,11 @@
     "mra": 50.27,
     "ola": 64.52,
     "description": "Bigger TDI gets updated as well, making the A1 now great even for long highway trips.",
-     "333TopSpeed": 127,
+    "333TopSpeed": 127,
     "3330to60": 8.6,
     "333Handling": 79,
     "666TopSpeed": 131,
-    "6660to60": 8.1, 
+    "6660to60": 8.1,
     "666Handling": 81,
     "996TopSpeed": 136,
     "9960to60": 7.7,
@@ -40,5 +43,7 @@
     "699Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA1Sportback1.6TDI(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

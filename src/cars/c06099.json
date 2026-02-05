@@ -1,7 +1,9 @@
 {
     "carID": "c06099",
     "cr": 379,
-    "make": ["Honda"],
+    "make": [
+        "Honda"
+    ],
     "model": "Accord PHEV",
     "modelYear": 2014,
     "country": "JP",
@@ -10,7 +12,11 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers", "Eco-Friendly"],
+    "tags": [
+        "CD Chasers",
+        "Eco-Friendly",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1715,
     "gc": "Medium",
@@ -23,28 +29,24 @@
     "mra": 53.47,
     "ola": 80.52,
     "description": "Accord Hybrid v2.0 plugs in for mpg bragging rights.",
-    
-"333TopSpeed": 119,
-"3330to60": 7.3,
-"333Handling": 74,
-
-"666TopSpeed": 123,
-"6660to60": 6.9,
-"666Handling": 77,
-
-"699TopSpeed": 123,
-"6990to60": 6.5,
-"699Handling": 80,
-
-"969TopSpeed": 128,
-"9690to60": 6.9,
-"969Handling": 80,
-
-"996TopSpeed": 128,
-"9960to60": 6.5,
-"996Handling": 77,
-
+    "333TopSpeed": 119,
+    "3330to60": 7.3,
+    "333Handling": 74,
+    "666TopSpeed": 123,
+    "6660to60": 6.9,
+    "666Handling": 77,
+    "699TopSpeed": 123,
+    "6990to60": 6.5,
+    "699Handling": 80,
+    "969TopSpeed": 128,
+    "9690to60": 6.9,
+    "969Handling": 80,
+    "996TopSpeed": 128,
+    "9960to60": 6.5,
+    "996Handling": 77,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaAccordPHEV(2014).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

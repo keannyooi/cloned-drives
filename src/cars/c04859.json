@@ -1,18 +1,28 @@
 {
     "carID": "c04859",
     "cr": 1054,
-    "make": ["Porsche-March", "Porsche"],
+    "make": [
+        "Porsche-March",
+        "Porsche"
+    ],
     "model": "90P #4 Porsche Motorsports",
     "modelYear": 1990,
     "country": "DE",
     "topSpeed": 220,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 111,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of","Daily Prize"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Ultra Expensive",
+        "Unique",
+        "Cloned Drives Beta: Last of",
+        "Daily Prize",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 700,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +35,23 @@
     "ola": 73.85,
     "description": "This card is winnable from the Indycar Surprise Bonus event! For its third and final season contesting IndyCar in 1990, Porsche Motorsport commissioned a brand-new chassis from March Engineering, which was explicitly built to accept the latest 161 cid turbocharged Porsche V-8. Porsche also increased its lineup to two cars, one driven by Teo Fabi, and the other driven by John Andretti.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche90P(1990).png",
-
-"333TopSpeed": 222,
-"3330to60": 2.8,
-"333Handling": 115,
-
-"666TopSpeed": 225,
-"6660to60": 2.7,
-"666Handling": 118,
-
-"699TopSpeed": 225,
-"6990to60": 2.5,
-"699Handling": 123,
-
-"969TopSpeed": 227,
-"9690to60": 2.7,
-"969Handling": 123,
-
-"996TopSpeed": 227,
-"9960to60": 2.5,
-"996Handling": 118,
+    "333TopSpeed": 222,
+    "3330to60": 2.8,
+    "333Handling": 115,
+    "666TopSpeed": 225,
+    "6660to60": 2.7,
+    "666Handling": 118,
+    "699TopSpeed": 225,
+    "6990to60": 2.5,
+    "699Handling": 123,
+    "969TopSpeed": 227,
+    "9690to60": 2.7,
+    "969Handling": 123,
+    "996TopSpeed": 227,
+    "9960to60": 2.5,
+    "996Handling": 118,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

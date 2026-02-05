@@ -11,7 +11,8 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1516,
@@ -25,7 +26,7 @@
     "mra": 61.06,
     "ola": 78.26,
     "description": "Luxury meets sport in a leather living room.",
-     "333TopSpeed": 131,
+    "333TopSpeed": 131,
     "3330to60": 6.6,
     "333Handling": 76,
     "666TopSpeed": 135,
@@ -42,5 +43,7 @@
     "699Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiI35(2002).png",
     "creator": "Cenard",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

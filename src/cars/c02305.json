@@ -10,9 +10,15 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Motorsport", "The Royal Collection", "Ultra Expensive"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Motorsport",
+        "The Royal Collection",
+        "Ultra Expensive",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 988,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +32,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JaguarXJ13Prototype(1966).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 212, 
-"3330to60": 3.4, 
-"333Handling": 75,
-
-"666TopSpeed": 215, 
-"6660to60": 3.2, 
-"666Handling": 78,
-
-"699TopSpeed": 215, 
-"6990to60": 3.1, 
-"699Handling": 81,
-
-"969TopSpeed": 217, 
-"9690to60": 3.2, 
-"969Handling": 81,
-
-"996TopSpeed": 217, 
-"9960to60": 3.1, 
-"996Handling": 78,
-    "hiddenTag": [""]
+    "333TopSpeed": 212,
+    "3330to60": 3.4,
+    "333Handling": 75,
+    "666TopSpeed": 215,
+    "6660to60": 3.2,
+    "666Handling": 78,
+    "699TopSpeed": 215,
+    "6990to60": 3.1,
+    "699Handling": 81,
+    "969TopSpeed": 217,
+    "9690to60": 3.2,
+    "969Handling": 81,
+    "996TopSpeed": 217,
+    "9960to60": 3.1,
+    "996Handling": 78,
+    "hiddenTag": [
+        ""
+    ]
 }

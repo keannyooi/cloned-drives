@@ -11,7 +11,8 @@
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": [
-        "Style Icon"
+        "Style Icon",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 2240,
@@ -25,7 +26,7 @@
     "mra": 10,
     "ola": 60.93,
     "description": "Diesel go bbbbbrghrrfrrrfrbgrgrrrrgrbrgr.",
-     "333TopSpeed": 96,
+    "333TopSpeed": 96,
     "3330to60": 14.3,
     "333Handling": 59,
     "666TopSpeed": 102,
@@ -42,5 +43,7 @@
     "699Handling": 63,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenz350GDTurbodiesel(1990).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

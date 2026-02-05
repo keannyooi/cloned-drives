@@ -10,9 +10,10 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1470,
     "gc": "Low",
     "seatCount": 4,
@@ -25,26 +26,23 @@
     "ola": 77.59,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911Carrera4GTS(2014).png",
-
-"333TopSpeed": 191,
-"3330to60": 3.6,
-"333Handling": 92,
-
-"666TopSpeed": 194,
-"6660to60": 3.4,
-"666Handling": 95,
-
-"699TopSpeed": 194,
-"6990to60": 3.2,
-"699Handling": 99,
-
-"969TopSpeed": 196,
-"9690to60": 3.4,
-"969Handling": 99,
-
-"996TopSpeed": 196,
-"9960to60": 3.2,
-"996Handling": 95,
+    "333TopSpeed": 191,
+    "3330to60": 3.6,
+    "333Handling": 92,
+    "666TopSpeed": 194,
+    "6660to60": 3.4,
+    "666Handling": 95,
+    "699TopSpeed": 194,
+    "6990to60": 3.2,
+    "699Handling": 99,
+    "969TopSpeed": 196,
+    "9690to60": 3.4,
+    "969Handling": 99,
+    "996TopSpeed": 196,
+    "9960to60": 3.2,
+    "996Handling": 95,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

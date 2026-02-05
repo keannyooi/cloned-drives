@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c02734",
     "cr": 615,
     "make": "Audi",
@@ -10,7 +10,9 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1940,
     "gc": "Low",
@@ -23,22 +25,24 @@
     "mra": 61.04,
     "ola": 68.09,
     "description": "TFSI: * gets updated * Every Italian driver's reaction:",
-     "333TopSpeed": 158,
+    "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 84,
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 86,
     "996TopSpeed": 165,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 86,
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 90,
     "699TopSpeed": 162,
-    "6990to60": 4.0,
+    "6990to60": 4,
     "699Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA63.0TFSIquattrotiptronic(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

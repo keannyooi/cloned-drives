@@ -1,7 +1,10 @@
 {
     "carID": "c05462",
     "cr": 580,
-    "make": ["Ruf", "Porsche"],
+    "make": [
+        "Ruf",
+        "Porsche"
+    ],
     "model": "CR 3.4",
     "modelYear": 1978,
     "country": "DE",
@@ -10,7 +13,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era","Tuner"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Tuner",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1290,
     "gc": "Medium",
@@ -23,26 +30,24 @@
     "mra": 71.25,
     "ola": 76.32,
     "description": "",
-"333TopSpeed": 166,
-"3330to60": 5,
-"333Handling": 81,
-
-"666TopSpeed": 169,
-"6660to60": 4.8,
-"666Handling": 83,
-
-"699TopSpeed": 169,
-"6990to60": 4.5,
-"699Handling": 87,
-
-"969TopSpeed": 173,
-"9690to60": 4.8,
-"969Handling": 87,
-
-"996TopSpeed": 173,
-"9960to60": 4.5,
-"996Handling": 83,
+    "333TopSpeed": 166,
+    "3330to60": 5,
+    "333Handling": 81,
+    "666TopSpeed": 169,
+    "6660to60": 4.8,
+    "666Handling": 83,
+    "699TopSpeed": 169,
+    "6990to60": 4.5,
+    "699Handling": 87,
+    "969TopSpeed": 173,
+    "9690to60": 4.8,
+    "969Handling": 87,
+    "996TopSpeed": 173,
+    "9960to60": 4.5,
+    "996Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufCR3.4(1978).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

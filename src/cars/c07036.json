@@ -10,7 +10,12 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept","Unique","Chop Shop"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Chop Shop",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1370,
     "gc": "Low",
@@ -40,5 +45,7 @@
     "996Handling": 91,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MaseratiChubasco(1990).png",
     "creator": "fiero",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

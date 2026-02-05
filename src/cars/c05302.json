@@ -10,7 +10,11 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era","Track Day"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Track Day",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 535,
     "gc": "Low",
@@ -23,26 +27,24 @@
     "mra": 55.88,
     "ola": 85.2,
     "description": "",
-"333TopSpeed": 134,
-"3330to60": 4.3,
-"333Handling": 90,
-
-"666TopSpeed": 138,
-"6660to60": 4,
-"666Handling": 93,
-
-"699TopSpeed": 138,
-"6990to60": 3.8,
-"699Handling": 97,
-
-"969TopSpeed": 142,
-"9690to60": 4,
-"969Handling": 97,
-
-"996TopSpeed": 142,
-"9960to60": 3.8,
-"996Handling": 93,
+    "333TopSpeed": 134,
+    "3330to60": 4.3,
+    "333Handling": 90,
+    "666TopSpeed": 138,
+    "6660to60": 4,
+    "666Handling": 93,
+    "699TopSpeed": 138,
+    "6990to60": 3.8,
+    "699Handling": 97,
+    "969TopSpeed": 142,
+    "9690to60": 4,
+    "969Handling": 97,
+    "996TopSpeed": 142,
+    "9960to60": 3.8,
+    "996Handling": 93,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CaterhamSeven360R(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

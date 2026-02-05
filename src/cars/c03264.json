@@ -10,9 +10,13 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix","Rest of The World","Track Day"],
+    "tags": [
+        "The Tyrol Tour: Remix",
+        "Rest of The World",
+        "Track Day",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +30,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SpykerC8Double12SSpyderStageII(2002).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 193,
-"3330to60": 4,
-"333Handling": 88,
-
-"666TopSpeed": 195,
-"6660to60": 3.8,
-"666Handling": 91,
-
-"699TopSpeed": 195,
-"6990to60": 3.6,
-"699Handling": 94,
-
-"969TopSpeed": 198,
-"9690to60": 3.8,
-"969Handling": 94,
-
-"996TopSpeed": 198,
-"9960to60": 3.6,
-"996Handling": 91,
-    "hiddenTag": [""]
+    "333TopSpeed": 193,
+    "3330to60": 4,
+    "333Handling": 88,
+    "666TopSpeed": 195,
+    "6660to60": 3.8,
+    "666Handling": 91,
+    "699TopSpeed": 195,
+    "6990to60": 3.6,
+    "699Handling": 94,
+    "969TopSpeed": 198,
+    "9690to60": 3.8,
+    "969Handling": 94,
+    "996TopSpeed": 198,
+    "9960to60": 3.6,
+    "996Handling": 91,
+    "hiddenTag": [
+        ""
+    ]
 }

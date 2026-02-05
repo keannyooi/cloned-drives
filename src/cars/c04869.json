@@ -10,9 +10,12 @@
     "handling": 56,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 760,
     "gc": "Medium",
     "seatCount": 4,
@@ -25,26 +28,23 @@
     "ola": 65.29,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche3561300SuperSpeedster(1954).png",
-
-"333TopSpeed": 104,
-"3330to60": 14.1,
-"333Handling": 58,
-
-"666TopSpeed": 110,
-"6660to60": 13.3,
-"666Handling": 60,
-
-"699TopSpeed": 110,
-"6990to60": 12.6,
-"699Handling": 62,
-
-"969TopSpeed": 115,
-"9690to60": 13.3,
-"969Handling": 62,
-
-"996TopSpeed": 115,
-"9960to60": 12.6,
-"996Handling": 60,
+    "333TopSpeed": 104,
+    "3330to60": 14.1,
+    "333Handling": 58,
+    "666TopSpeed": 110,
+    "6660to60": 13.3,
+    "666Handling": 60,
+    "699TopSpeed": 110,
+    "6990to60": 12.6,
+    "699Handling": 62,
+    "969TopSpeed": 115,
+    "9690to60": 13.3,
+    "969Handling": 62,
+    "996TopSpeed": 115,
+    "9960to60": 12.6,
+    "996Handling": 60,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

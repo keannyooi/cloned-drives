@@ -10,7 +10,14 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept","Oddity","Unique","Innovative","Servers Choice"],
+    "tags": [
+        "Concept",
+        "Oddity",
+        "Unique",
+        "Innovative",
+        "Servers Choice",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1542,
     "gc": "Low",
@@ -23,7 +30,7 @@
     "mra": 105.4,
     "ola": 97.22,
     "description": "The closest thing to a mid-engine Corvette before the C8.",
-     "333TopSpeed": 227,
+    "333TopSpeed": 227,
     "3330to60": 3.4,
     "333Handling": 96,
     "666TopSpeed": 230,
@@ -40,5 +47,7 @@
     "699Handling": 103,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCERVIII(1990).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

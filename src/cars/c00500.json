@@ -10,7 +10,10 @@
     "handling": 59,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["OG"],
+    "tags": [
+        "OG",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1786,
     "gc": "High",
@@ -23,7 +26,7 @@
     "mra": 37.28,
     "ola": 61.9,
     "description": "",
-     "333TopSpeed": 107,
+    "333TopSpeed": 107,
     "3330to60": 12,
     "333Handling": 61,
     "666TopSpeed": 112,
@@ -40,5 +43,7 @@
     "699Handling": 65,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GMCS-15JimmyGLX(1990).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

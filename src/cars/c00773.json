@@ -10,7 +10,10 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["OG"],
+    "tags": [
+        "OG",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1232,
     "gc": "Medium",
@@ -23,7 +26,7 @@
     "mra": 49.73,
     "ola": 71.74,
     "description": "A Calvinist wagon.",
-     "333TopSpeed": 122,
+    "333TopSpeed": 122,
     "3330to60": 8.7,
     "333Handling": 73,
     "666TopSpeed": 127,
@@ -40,5 +43,7 @@
     "699Handling": 79,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MazdaProtege5(2001).png",
     "creator": "Based",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

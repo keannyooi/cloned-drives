@@ -10,9 +10,13 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","Visionary Road"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Visionary Road",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 920,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +30,22 @@
     "description": "The looks of a Supercar, but performance of a first gen beetle smh.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DomeZeroConcept(1978).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 141, 
-"3330to60": 6.5, 
-"333Handling": 77,
-
-"666TopSpeed": 145, 
-"6660to60": 6.1, 
-"666Handling": 80,
-
-"699TopSpeed": 145, 
-"6990to60": 5.8, 
-"699Handling": 83,
-
-"969TopSpeed": 148, 
-"9690to60": 6.1, 
-"969Handling": 83,
-
-"996TopSpeed": 148, 
-"9960to60": 5.8, 
-"996Handling": 80,
-    "hiddenTag": [""]
+    "333TopSpeed": 141,
+    "3330to60": 6.5,
+    "333Handling": 77,
+    "666TopSpeed": 145,
+    "6660to60": 6.1,
+    "666Handling": 80,
+    "699TopSpeed": 145,
+    "6990to60": 5.8,
+    "699Handling": 83,
+    "969TopSpeed": 148,
+    "9690to60": 6.1,
+    "969Handling": 83,
+    "996TopSpeed": 148,
+    "9960to60": 5.8,
+    "996Handling": 80,
+    "hiddenTag": [
+        ""
+    ]
 }

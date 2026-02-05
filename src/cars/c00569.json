@@ -10,7 +10,9 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": [
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1578,
     "gc": "Medium",
@@ -23,7 +25,7 @@
     "mra": 65.26,
     "ola": 77.42,
     "description": "Skyline in disguise.",
-     "333TopSpeed": 152,
+    "333TopSpeed": 152,
     "3330to60": 5.9,
     "333Handling": 80,
     "666TopSpeed": 156,
@@ -40,5 +42,7 @@
     "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiG35Sedan(2003).png",
     "creator": "Connor",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

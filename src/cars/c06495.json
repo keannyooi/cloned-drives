@@ -1,5 +1,5 @@
 {
-	"carID": "c06495",
+    "carID": "c06495",
     "cr": 598,
     "make": "Ford",
     "model": "GT X-1 Roadster",
@@ -10,9 +10,14 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CDCCS","The Americas Assault","Unique","Motorsport"],
+    "tags": [
+        "CDCCS",
+        "The Americas Assault",
+        "Unique",
+        "Motorsport",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1030,
     "gc": "Low",
     "seatCount": 1,
@@ -24,27 +29,24 @@
     "mra": 81.36,
     "ola": 100.06,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTX1Roadster(1966).png",
-
-"333TopSpeed": 192,
-"3330to60": 4.4,
-"333Handling": 81,
-
-"666TopSpeed": 195,
-"6660to60": 4.1,
-"666Handling": 83,
-
-"699TopSpeed": 195,
-"6990to60": 3.9,
-"699Handling": 87,
-
-"969TopSpeed": 197,
-"9690to60": 4.1,
-"969Handling": 87,
-
-"996TopSpeed": 197,
-"9960to60": 3.9,
-"996Handling": 83,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGTX1Roadster(1966).png",
+    "333TopSpeed": 192,
+    "3330to60": 4.4,
+    "333Handling": 81,
+    "666TopSpeed": 195,
+    "6660to60": 4.1,
+    "666Handling": 83,
+    "699TopSpeed": 195,
+    "6990to60": 3.9,
+    "699Handling": 87,
+    "969TopSpeed": 197,
+    "9690to60": 4.1,
+    "969Handling": 87,
+    "996TopSpeed": 197,
+    "9960to60": 3.9,
+    "996Handling": 83,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

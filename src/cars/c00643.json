@@ -10,7 +10,14 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique","Concept","Eco-Friendly","Innovative","Visionary Road"],
+    "tags": [
+        "Unique",
+        "Concept",
+        "Eco-Friendly",
+        "Innovative",
+        "Visionary Road",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1800,
     "gc": "Low",
@@ -23,7 +30,7 @@
     "mra": 74.32,
     "ola": 79.99,
     "description": "One of Lamborghini's first attempts at Phev, turned out well.",
-     "333TopSpeed": 202,
+    "333TopSpeed": 202,
     "3330to60": 2.8,
     "333Handling": 93,
     "666TopSpeed": 204,
@@ -40,5 +47,7 @@
     "699Handling": 100,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniAsterionLPI910-4(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

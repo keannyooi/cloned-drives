@@ -10,7 +10,14 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive","Hypercar","Track Day","Rest of The World","Unique"],
+    "tags": [
+        "Ultra Expensive",
+        "Hypercar",
+        "Track Day",
+        "Rest of The World",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1360,
     "gc": "Low",
@@ -23,26 +30,24 @@
     "mra": 147.65,
     "ola": 101.2,
     "description": "None.",
-"333TopSpeed": 282,
-"3330to60": 2.5,
-"333Handling": 99,
-
-"666TopSpeed": 284,
-"6660to60": 2.3,
-"666Handling": 102,
-
-"699TopSpeed": 284,
-"6990to60": 2.2,
-"699Handling": 107,
-
-"969TopSpeed": 286,
-"9690to60": 2.3,
-"969Handling": 107,
-
-"996TopSpeed": 286,
-"9960to60": 2.2,
-"996Handling": 102,
+    "333TopSpeed": 282,
+    "3330to60": 2.5,
+    "333Handling": 99,
+    "666TopSpeed": 284,
+    "6660to60": 2.3,
+    "666Handling": 102,
+    "699TopSpeed": 284,
+    "6990to60": 2.2,
+    "699Handling": 107,
+    "969TopSpeed": 286,
+    "9690to60": 2.3,
+    "969Handling": 107,
+    "996TopSpeed": 286,
+    "9960to60": 2.2,
+    "996Handling": 102,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggOne1(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

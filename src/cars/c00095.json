@@ -10,7 +10,11 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection","Grand Tourer"],
+    "tags": [
+        "The Royal Collection",
+        "Grand Tourer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1844,
     "gc": "Low",
@@ -23,7 +27,7 @@
     "mra": 73.08,
     "ola": 94.74,
     "description": "None.",
-     "333TopSpeed": 200,
+    "333TopSpeed": 200,
     "3330to60": 3.6,
     "333Handling": 89,
     "666TopSpeed": 202,
@@ -40,5 +44,7 @@
     "699Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinVanquishVolante(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

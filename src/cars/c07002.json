@@ -1,7 +1,10 @@
 {
     "carID": "c07002",
     "cr": 337,
-    "make": ["WALD", "Mercedes-Benz"],
+    "make": [
+        "WALD",
+        "Mercedes-Benz"
+    ],
     "model": "300 CE V4",
     "modelYear": 1990,
     "country": "JP",
@@ -10,7 +13,12 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CDCCS","The Amplification of Asia","Tuner"],
+    "tags": [
+        "CDCCS",
+        "The Amplification of Asia",
+        "Tuner",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1390,
     "gc": "Low",
@@ -22,30 +30,25 @@
     "fuelType": "Petrol",
     "mra": 58.21,
     "ola": 72.43,
-
     "description": "300 CE but with a small bit of Japan.",
-
-"333TopSpeed": 146,
-"3330to60": 7.1,
-"333Handling": 74,
-
-"666TopSpeed": 149,
-"6660to60": 6.8,
-"666Handling": 77,
-
-"699TopSpeed": 149,
-"6990to60": 6.4,
-"699Handling": 80,
-
-"969TopSpeed": 153,
-"9690to60": 6.8,
-"969Handling": 80,
-
-"996TopSpeed": 153,
-"9960to60": 6.4,
-"996Handling": 77,
-
+    "333TopSpeed": 146,
+    "3330to60": 7.1,
+    "333Handling": 74,
+    "666TopSpeed": 149,
+    "6660to60": 6.8,
+    "666Handling": 77,
+    "699TopSpeed": 149,
+    "6990to60": 6.4,
+    "699Handling": 80,
+    "969TopSpeed": 153,
+    "9690to60": 6.8,
+    "969Handling": 80,
+    "996TopSpeed": 153,
+    "9960to60": 6.4,
+    "996Handling": 77,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/WALD300CEV4(1990).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

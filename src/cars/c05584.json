@@ -1,16 +1,22 @@
 {
     "carID": "c05584",
     "cr": 40,
-    "make": ["Volkswagen"],
+    "make": [
+        "Volkswagen"
+    ],
     "model": "Beetle 1300",
     "modelYear": 1966,
     "country": "DE",
     "topSpeed": 76,
-    "0to60": 25.0,
+    "0to60": 25,
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers", "Style Icon"],
+    "tags": [
+        "CD Chasers",
+        "Style Icon",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 800,
     "gc": "Medium",
@@ -20,31 +26,27 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 0.00,
-    "ola": 54.40,
+    "mra": 0,
+    "ola": 54.4,
     "description": "+ 200cc.",
-
     "333TopSpeed": 83,
     "3330to60": 23.8,
     "333Handling": 61,
-    
     "666TopSpeed": 90,
     "6660to60": 22.5,
     "666Handling": 63,
-    
     "699TopSpeed": 90,
     "6990to60": 21.3,
     "699Handling": 65,
-    
     "969TopSpeed": 97,
     "9690to60": 22.5,
     "969Handling": 65,
-    
     "996TopSpeed": 97,
     "9960to60": 21.3,
     "996Handling": 63,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenBeetle1300(1966).png",
     "creator": "Andu",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

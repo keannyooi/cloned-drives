@@ -10,7 +10,10 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Chop Shop"],
+    "tags": [
+        "Chop Shop",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1735,
     "gc": "Medium",
@@ -20,8 +23,8 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 72.50,
-    "ola": 80.00,
+    "mra": 72.5,
+    "ola": 80,
     "description": "",
     "333TopSpeed": 162,
     "3330to60": 6.8,
@@ -40,5 +43,7 @@
     "996Handling": 72,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MaseratiMexico4700(1966).png",
     "creator": "Kuroi",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

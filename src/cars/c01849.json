@@ -11,7 +11,8 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [
-        "The Japanese Odyssey"
+        "The Japanese Odyssey",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 655,
@@ -25,26 +26,24 @@
     "mra": 5.63,
     "ola": 53.31,
     "description": "Nicknamed Whizzkid in the UK, also named Cervo, for its engine in the back that powers the rear wheels making it a whole lot of fun for its price.",
-"333TopSpeed": 88,
-"3330to60": 17.9,
-"333Handling": 63,
-
-"666TopSpeed": 95,
-"6660to60": 16.9,
-"666Handling": 65,
-
-"699TopSpeed": 95,
-"6990to60": 16,
-"699Handling": 68,
-
-"969TopSpeed": 101,
-"9690to60": 16.9,
-"969Handling": 68,
-
-"996TopSpeed": 101,
-"9960to60": 16,
-"996Handling": 65,
+    "333TopSpeed": 88,
+    "3330to60": 17.9,
+    "333Handling": 63,
+    "666TopSpeed": 95,
+    "6660to60": 16.9,
+    "666Handling": 65,
+    "699TopSpeed": 95,
+    "6990to60": 16,
+    "699Handling": 68,
+    "969TopSpeed": 101,
+    "9690to60": 16.9,
+    "969Handling": 68,
+    "996TopSpeed": 101,
+    "9960to60": 16,
+    "996Handling": 65,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SuzukiSC100GX(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

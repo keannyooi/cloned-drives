@@ -1,7 +1,10 @@
 {
     "carID": "c01851",
     "cr": 891,
-    "make": ["TCP Magic","Mazda"],
+    "make": [
+        "TCP Magic",
+        "Mazda"
+    ],
     "model": "RX-7 Time Attack",
     "modelYear": 2014,
     "country": "JP",
@@ -10,7 +13,12 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","Track Day","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Track Day",
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1050,
     "gc": "Low",
@@ -23,7 +31,7 @@
     "mra": 93.93,
     "ola": 83.37,
     "description": "Whats more cool than a pure Japanese time attack machine?",
-     "333TopSpeed": 201,
+    "333TopSpeed": 201,
     "3330to60": 2.9,
     "333Handling": 98,
     "666TopSpeed": 203,
@@ -40,5 +48,7 @@
     "699Handling": 105,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TCPMagicRX7TimeAttack(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

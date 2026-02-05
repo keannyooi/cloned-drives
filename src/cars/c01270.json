@@ -11,7 +11,8 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [
-        "Eco-Friendly"
+        "Eco-Friendly",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 2239,
@@ -25,7 +26,7 @@
     "mra": 57.68,
     "ola": 74.27,
     "description": "The P85D had a power output claim of 691hp, but owners discovered that the car delivered about 25% less power on the dyno. As a result, 10 Norwegian Model S owners filed a lawsuit against Tesla for misleading advertising in 2016.",
-     "333TopSpeed": 161,
+    "333TopSpeed": 161,
     "3330to60": 3,
     "333Handling": 84,
     "666TopSpeed": 165,
@@ -42,5 +43,7 @@
     "699Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSP85D(2014).png",
     "creator": "Keanny",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

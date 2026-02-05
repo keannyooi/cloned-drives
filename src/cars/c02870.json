@@ -10,11 +10,14 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour"],
+    "tags": [
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1130,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,11 +26,11 @@
     "mra": 44.08,
     "ola": 62.96,
     "description": "Smaller, more efficient, always cute and small, and especially TDI BROTHA.",
-     "333TopSpeed": 116,
+    "333TopSpeed": 116,
     "3330to60": 10.3,
     "333Handling": 77,
     "666TopSpeed": 120,
-    "6660to60": 9.7, 
+    "6660to60": 9.7,
     "666Handling": 80,
     "996TopSpeed": 125,
     "9960to60": 9.2,
@@ -40,5 +43,7 @@
     "699Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA11.4TDIultra(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

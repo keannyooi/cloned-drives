@@ -10,7 +10,11 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era","Track Day"],
+    "tags": [
+        "CD 2.0: New Era",
+        "Track Day",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 550,
     "gc": "Low",
@@ -23,26 +27,24 @@
     "mra": 76.47,
     "ola": 80,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 2.5,
-"333Handling": 98,
-
-"666TopSpeed": 162,
-"6660to60": 2.3,
-"666Handling": 101,
-
-"699TopSpeed": 162,
-"6990to60": 2.2,
-"699Handling": 105,
-
-"969TopSpeed": 165,
-"9690to60": 2.3,
-"969Handling": 105,
-
-"996TopSpeed": 165,
-"9960to60": 2.2,
-"996Handling": 101,
+    "333TopSpeed": 158,
+    "3330to60": 2.5,
+    "333Handling": 98,
+    "666TopSpeed": 162,
+    "6660to60": 2.3,
+    "666Handling": 101,
+    "699TopSpeed": 162,
+    "6990to60": 2.2,
+    "699Handling": 105,
+    "969TopSpeed": 165,
+    "9690to60": 2.3,
+    "969Handling": 105,
+    "996TopSpeed": 165,
+    "9960to60": 2.2,
+    "996Handling": 101,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ArielAtom3.5R(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -16,7 +16,8 @@
     "tags": [
         "Supercar",
         "Grand Tourer",
-        "Servers Choice"
+        "Servers Choice",
+        "Year of the Horse"
     ],
     "isPrize": false,
     "weight": 1665,
@@ -30,22 +31,24 @@
     "mra": 95.41,
     "ola": 84.62,
     "description": "S.",
-     "333TopSpeed": 196,
+    "333TopSpeed": 196,
     "3330to60": 3.3,
     "333Handling": 95,
     "666TopSpeed": 198,
     "6660to60": 3.2,
     "666Handling": 98,
     "996TopSpeed": 201,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 98,
     "969TopSpeed": 201,
     "9690to60": 3.2,
     "969Handling": 102,
     "699TopSpeed": 198,
-    "6990to60": 3.0,
+    "6990to60": 3,
     "699Handling": 102,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesAMGTS(2014).png",
     "creator": "Havvy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

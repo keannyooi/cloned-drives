@@ -10,9 +10,11 @@
     "handling": 112,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 915,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +28,22 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR18e-tronquattro(2014).png",
     "creator": "GAAN",
-
-"333TopSpeed": 208,
-"3330to60": 2.3,
-"333Handling": 116,
-
-"666TopSpeed": 210,
-"6660to60": 2.2,
-"666Handling": 119,
-
-"699TopSpeed": 210,
-"6990to60": 2,
-"699Handling": 124,
-
-"969TopSpeed": 213,
-"9690to60": 2.2,
-"969Handling": 124,
-
-"996TopSpeed": 213,
-"9960to60": 2,
-"996Handling": 119,
-    "hiddenTag": [""]
+    "333TopSpeed": 208,
+    "3330to60": 2.3,
+    "333Handling": 116,
+    "666TopSpeed": 210,
+    "6660to60": 2.2,
+    "666Handling": 119,
+    "699TopSpeed": 210,
+    "6990to60": 2,
+    "699Handling": 124,
+    "969TopSpeed": 213,
+    "9690to60": 2.2,
+    "969Handling": 124,
+    "996TopSpeed": 213,
+    "9960to60": 2,
+    "996Handling": 119,
+    "hiddenTag": [
+        ""
+    ]
 }

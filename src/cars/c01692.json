@@ -10,7 +10,12 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan","Unique","The Japanese Odyssey"],
+    "tags": [
+        "Super Sedan",
+        "Unique",
+        "The Japanese Odyssey",
+        "Year of the Horse"
+    ],
     "isPrize": true,
     "weight": 1550,
     "gc": "Medium",
@@ -23,22 +28,24 @@
     "mra": 79.75,
     "ola": 85,
     "description": "The fastest production Evo, and had the best power-per-litre till the Koenigsegg Gemera.",
-     "333TopSpeed": 189,
+    "333TopSpeed": 189,
     "3330to60": 3.1,
     "333Handling": 96,
     "666TopSpeed": 192,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 99,
     "996TopSpeed": 194,
     "9960to60": 2.8,
     "996Handling": 99,
     "969TopSpeed": 194,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 103,
     "699TopSpeed": 192,
     "6990to60": 2.8,
     "699Handling": 103,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiLancerEvolutionXFQ440MR(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

@@ -10,9 +10,14 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer","Motorsport","The Tyrol Tour: Remix","Unique"],
+    "tags": [
+        "Endless Summer",
+        "Motorsport",
+        "The Tyrol Tour: Remix",
+        "Unique",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 829,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +31,22 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzW196Streamliner(1954).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 208,
-"3330to60": 4.3,
-"333Handling": 76,
-
-"666TopSpeed": 210,
-"6660to60": 4,
-"666Handling": 79,
-
-"699TopSpeed": 210,
-"6990to60": 3.8,
-"699Handling": 82,
-
-"969TopSpeed": 213,
-"9690to60": 4,
-"969Handling": 82,
-
-"996TopSpeed": 213,
-"9960to60": 3.8,
-"996Handling": 79,
-    "hiddenTag": [""]
+    "333TopSpeed": 208,
+    "3330to60": 4.3,
+    "333Handling": 76,
+    "666TopSpeed": 210,
+    "6660to60": 4,
+    "666Handling": 79,
+    "699TopSpeed": 210,
+    "6990to60": 3.8,
+    "699Handling": 82,
+    "969TopSpeed": 213,
+    "9690to60": 4,
+    "969Handling": 82,
+    "996TopSpeed": 213,
+    "9960to60": 3.8,
+    "996Handling": 79,
+    "hiddenTag": [
+        ""
+    ]
 }

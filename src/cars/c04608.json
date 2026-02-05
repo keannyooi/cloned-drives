@@ -10,10 +10,13 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Eurotech Elite", "Concept","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Concept",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1500,
     "gc": "High",
     "seatCount": 4,
@@ -27,25 +30,22 @@
     "description": "Re-imagined Yeti built for the Worthersee tuning show.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaYetiXtreme(2014).png",
     "creator": "Connor",
-
     "333TopSpeed": 123,
     "3330to60": 8.3,
     "333Handling": 74,
-
     "666TopSpeed": 128,
-    "6660to60": 7.8, 
+    "6660to60": 7.8,
     "666Handling": 77,
-
     "996TopSpeed": 132,
     "9960to60": 7.4,
     "996Handling": 77,
-
     "969TopSpeed": 132,
     "9690to60": 7.8,
     "969Handling": 80,
-
     "699TopSpeed": 128,
     "6990to60": 7.4,
     "699Handling": 80,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

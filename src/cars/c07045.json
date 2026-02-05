@@ -6,11 +6,16 @@
     "modelYear": 2014,
     "country": "IT",
     "topSpeed": 180,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept","Chop Shop","Grand Tourer"],
+    "tags": [
+        "Concept",
+        "Chop Shop",
+        "Grand Tourer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 2050,
     "gc": "Low",
@@ -40,5 +45,7 @@
     "996Handling": 96,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MaseratiAlfieriConcept(2014).png",
     "creator": "fiero",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

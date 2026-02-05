@@ -10,11 +10,14 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour"],
+    "tags": [
+        "The Tyrol Tour",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1115,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,11 +26,11 @@
     "mra": 41.96,
     "ola": 61.68,
     "description": "Refined A1 now brings an optional crossover-looking package and new engines, including this cute little 1.0.",
-     "333TopSpeed": 121,
+    "333TopSpeed": 121,
     "3330to60": 10.2,
     "333Handling": 77,
     "666TopSpeed": 126,
-    "6660to60": 9.6, 
+    "6660to60": 9.6,
     "666Handling": 80,
     "996TopSpeed": 130,
     "9960to60": 9.1,
@@ -40,5 +43,7 @@
     "699Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA11.0TFSIultraActive(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

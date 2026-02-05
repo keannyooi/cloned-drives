@@ -10,13 +10,18 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Hot Hatch", "Unique","The Tyrol Tour: Remix","Endless Summer"],
+    "tags": [
+        "Motorsport",
+        "Hot Hatch",
+        "Unique",
+        "The Tyrol Tour: Remix",
+        "Endless Summer",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-
-
     "weight": 1103,
     "gc": "Medium",
-    "seatCount":1,
+    "seatCount": 1,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +30,24 @@
     "mra": 61.11,
     "ola": 88.64,
     "description": "The ultimate rally mk2.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfRallyeG60Gr.A(1990).png",
     "creator": "Andu",
-
     "333TopSpeed": 134,
     "3330to60": 4.2,
     "333Handling": 84,
-
     "666TopSpeed": 138,
-    "6660to60": 4.0, 
+    "6660to60": 4,
     "666Handling": 86,
-
     "996TopSpeed": 142,
     "9960to60": 3.7,
     "996Handling": 86,
-
     "969TopSpeed": 142,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 90,
-
     "699TopSpeed": 138,
     "6990to60": 3.7,
     "699Handling": 90,
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

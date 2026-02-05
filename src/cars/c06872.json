@@ -10,7 +10,12 @@
     "handling": 103,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","CDCCS","The Amplification of Asia"],
+    "tags": [
+        "Motorsport",
+        "CDCCS",
+        "The Amplification of Asia",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1320,
     "gc": "Low",
@@ -40,5 +45,7 @@
     "996Handling": 110,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LexusLFACodeX(2014).png",
     "creator": "fiero",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

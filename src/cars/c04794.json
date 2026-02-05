@@ -6,13 +6,16 @@
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 2215,
     "gc": "High",
     "seatCount": 5,
@@ -25,26 +28,23 @@
     "ola": 64,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCayenneSDiesel(2014).png",
-
-"333TopSpeed": 158,
-"3330to60": 4.8,
-"333Handling": 83,
-
-"666TopSpeed": 162,
-"6660to60": 4.5,
-"666Handling": 85,
-
-"699TopSpeed": 162,
-"6990to60": 4.3,
-"699Handling": 89,
-
-"969TopSpeed": 165,
-"9690to60": 4.5,
-"969Handling": 89,
-
-"996TopSpeed": 165,
-"9960to60": 4.3,
-"996Handling": 85,
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 83,
+    "666TopSpeed": 162,
+    "6660to60": 4.5,
+    "666Handling": 85,
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 89,
+    "969TopSpeed": 165,
+    "9690to60": 4.5,
+    "969Handling": 89,
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 85,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

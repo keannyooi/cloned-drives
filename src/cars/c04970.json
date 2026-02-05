@@ -10,9 +10,13 @@
     "handling": 104,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "tags": [
+        "Eurotech Elite",
+        "Motorsport",
+        "Cloned Drives Beta: Last of",
+        "Year of the Horse"
+    ],
     "isPrize": false,
-	
     "weight": 1250,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +29,23 @@
     "ola": 84.2,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GTAmerica(2014).png",
-
-"333TopSpeed": 192,
-"3330to60": 3.1,
-"333Handling": 107,
-
-"666TopSpeed": 195,
-"6660to60": 3,
-"666Handling": 111,
-
-"699TopSpeed": 195,
-"6990to60": 2.8,
-"699Handling": 115,
-
-"969TopSpeed": 197,
-"9690to60": 3,
-"969Handling": 115,
-
-"996TopSpeed": 197,
-"9960to60": 2.8,
-"996Handling": 111,
+    "333TopSpeed": 192,
+    "3330to60": 3.1,
+    "333Handling": 107,
+    "666TopSpeed": 195,
+    "6660to60": 3,
+    "666Handling": 111,
+    "699TopSpeed": 195,
+    "6990to60": 2.8,
+    "699Handling": 115,
+    "969TopSpeed": 197,
+    "9690to60": 3,
+    "969Handling": 115,
+    "996TopSpeed": 197,
+    "9960to60": 2.8,
+    "996Handling": 111,
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

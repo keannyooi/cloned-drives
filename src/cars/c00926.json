@@ -10,7 +10,12 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","Style Icon","Silver Screen"],
+    "tags": [
+        "Street Racer",
+        "Style Icon",
+        "Silver Screen",
+        "Year of the Horse"
+    ],
     "isPrize": false,
     "weight": 1217,
     "gc": "Low",
@@ -23,7 +28,7 @@
     "mra": 59.76,
     "ola": 60.47,
     "description": "If your looking to build a drift car, look no further.",
-     "333TopSpeed": 112,
+    "333TopSpeed": 112,
     "3330to60": 8.2,
     "333Handling": 77,
     "666TopSpeed": 117,
@@ -40,5 +45,7 @@
     "699Handling": 83,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Nissan240SXSE(S13)(1990).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [
+        ""
+    ]
 }

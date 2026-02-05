@@ -1,7 +1,10 @@
 {
     "carID": "c03120",
     "cr": 1041,
-    "make": ["Hoonigan", "Ford"],
+    "make": [
+        "Hoonigan",
+        "Ford"
+    ],
     "model": "Hoonicorn RTR",
     "modelYear": 2014,
     "country": "US",
@@ -10,9 +13,16 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "Style Icon", "Muscle Car", "Ultra Expensive", "RestoMod"],
+    "tags": [
+        "Tuner",
+        "Unique",
+        "Style Icon",
+        "Muscle Car",
+        "Ultra Expensive",
+        "RestoMod",
+        "Year of the Horse"
+    ],
     "isPrize": true,
-	
     "weight": 1360,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +36,22 @@
     "description": "Arguably the most important, iconic and recognizable car ever made for Ken Block. https://www.youtube.com/watch?v=5qanlirrRWs",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganHoonicornRTR(2014).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 173, 
-"3330to60": 1.7, 
-"333Handling": 97,
-
-"666TopSpeed": 176, 
-"6660to60": 1.6, 
-"666Handling": 100,
-
-"699TopSpeed": 176, 
-"6990to60": 1.5, 
-"699Handling": 104,
-
-"969TopSpeed": 179, 
-"9690to60": 1.6, 
-"969Handling": 104,
-
-"996TopSpeed": 179, 
-"9960to60": 1.5, 
-"996Handling": 100,
-    "hiddenTag": [""]
+    "333TopSpeed": 173,
+    "3330to60": 1.7,
+    "333Handling": 97,
+    "666TopSpeed": 176,
+    "6660to60": 1.6,
+    "666Handling": 100,
+    "699TopSpeed": 176,
+    "6990to60": 1.5,
+    "699Handling": 104,
+    "969TopSpeed": 179,
+    "9690to60": 1.6,
+    "969Handling": 104,
+    "996TopSpeed": 179,
+    "9960to60": 1.5,
+    "996Handling": 100,
+    "hiddenTag": [
+        ""
+    ]
 }
