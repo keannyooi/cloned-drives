@@ -7,11 +7,11 @@ const {
     generateGhostName,
     getLeagueTier
 } = require("../consts/pvpConfig.js");
-const { getCurrentSeason } = require("../consts/pvpSeasons.js");
+const { getCurrentSeason, getMostRecentSeason } = require("../consts/pvpSeasons.js");
 const { isCarBanned, getBanReason } = require("../consts/pvpBans.js");
 const { surfaceSupportsRain } = require("../consts/pvpTracks.js");
 const carNameGen = require("./carNameGen.js");
-const { getAvailableTunes } = require("./calcTune.js");
+const filterCheck = require("./filterCheck.js");
 
 // =============================================================================
 // HAND VALIDATION
@@ -65,6 +65,10 @@ function validatePvPHand(cars, league, seasonID) {
         return { valid: false, errors: ["Invalid league"], warnings: [], totalCR: 0, carCounts: {} };
     }
     
+    // Get season for filter check
+    const season = getCurrentSeason() || getMostRecentSeason();
+    const seasonFilter = season?.filter;
+    
     const errors = [];
     const warnings = [];
     const carCounts = {};  // Counts by BASE car ID (for duplicate detection)
@@ -86,6 +90,14 @@ function validatePvPHand(cars, league, seasonID) {
         // Get effective CR (handles BM cars with CR 0)
         const carCR = getEffectiveCR(car.carID);
         totalCR += carCR;
+        
+        // Check season filter
+        if (seasonFilter && Object.keys(seasonFilter).length > 0) {
+            if (!filterCheck({ car, filter: seasonFilter, applyOrLogic: true })) {
+                const carName = carNameGen({ currentCar: carData });
+                errors.push(`${carName} doesn't meet season requirements`);
+            }
+        }
         
         // Check minimum CR (rarity floor)
         if (carCR < leagueConfig.minCarCR) {
@@ -131,7 +143,6 @@ function validatePvPHand(cars, league, seasonID) {
     }
     
     // Analyze for season track pool warnings
-    const season = getCurrentSeason();
     if (season) {
         const tyreWarning = analyzeTyreCoverage(cars, season.trackPool.surfaces);
         if (tyreWarning) {
@@ -351,7 +362,7 @@ function generateGhostOpponents(league, attackerRating, count) {
             if (existingCount >= leagueConfig.maxDuplicates) continue;
             
             // Random upgrade
-            const upgrades = getAvailableTunes();
+            const upgrades = ["000", "333", "666", "699", "969", "996"];
             const upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
             
             ghostDefense.push({ carID: randomCar.carID, upgrade });

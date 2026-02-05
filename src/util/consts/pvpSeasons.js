@@ -29,7 +29,14 @@ const SEASONS = {
         startDate: new Date("2026-01-01T00:00:00Z"),
         endDate: new Date("2026-02-02T20:59:59Z"),
         trackPoolID: "city",
-        
+		
+        // Car filter (same format as event reqs / garage filters)
+        // Uses filterCheck - supports: make, country, driveType, tyreType, gc, 
+        // bodyStyle, enginePos, fuelType, tags, collection, cr, modelYear, seatCount,
+        // isPrize, isStock, isMaxed, isBM, search, abs, tcs
+        // Leave empty {} or omit for no restrictions
+        filter: {},
+		
         // Rating thresholds for bonus rewards (same for all leagues)
         ratingRewards: [
             { rating: 1100, money: 100000, trophies: 2 },
@@ -56,11 +63,12 @@ const SEASONS = {
     
     2: {
         id: 2,
-        name: "Season 2: Off-Road Warriors",
-        description: "Leave the pavement behind - dirt, gravel, and mud await!",
-        startDate: new Date("2027-03-01T00:00:00Z"),
-        endDate: new Date("2027-03-31T23:59:59Z"),
+        name: "Season 1: CNY: Year of the Horse",
+        description: "Trading the daily commute for 2026 horsepower. It’s time to unbridle the beast and redline into the New Year!",
+        startDate: new Date("2026-02-04T00:00:00Z"),
+        endDate: new Date("2026-03-21T23:59:59Z"),
         trackPoolID: "offroad",
+        filter: {tags: ["Year of the Horse"]},
         
         ratingRewards: [
             { rating: 1100, money: 10000, trophies: 10 },
@@ -70,7 +78,7 @@ const SEASONS = {
             { rating: 1500, money: 200000, trophies: 200 }
         ],
         
-        prizeCarSlots: 3,
+        prizeCarSlots: 5, // Top 5 get prize cars
         prizeCars: {
             epic: null,
             exotic: null,
@@ -82,12 +90,12 @@ const SEASONS = {
     
     3: {
         id: 3,
-        name: "Season 3: Winter Challenge",
-        description: "Ice and snow - only the bravest drivers survive!",
+        name: "Season 2: ",
+        description: "???",
         startDate: new Date("2027-04-01T00:00:00Z"),
         endDate: new Date("2027-04-30T23:59:59Z"),
         trackPoolID: "winter",
-        
+        filter: {},        
         ratingRewards: [
             { rating: 1100, money: 10000, trophies: 10 },
             { rating: 1200, money: 25000, trophies: 25 },
@@ -113,7 +121,7 @@ const SEASONS = {
         startDate: new Date("2027-05-01T00:00:00Z"),
         endDate: new Date("2027-05-31T23:59:59Z"),
         trackPoolID: "mixed",
-        
+        filter: {},        
         ratingRewards: [
             { rating: 1100, money: 10000, trophies: 10 },
             { rating: 1200, money: 25000, trophies: 25 },

@@ -18,6 +18,7 @@ const {
 const { getBannedCars } = require("../util/consts/pvpBans.js");
 const { getEffectiveCR } = require("../util/functions/pvpUtils.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const pvpModel = require("../models/pvpSchema.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -74,6 +75,13 @@ async function showSeasonOverview(message, season, timeRemaining, pvpProfile, is
     desc += `**🛣️ TRACK POOL: ${season.trackPool.name}**\n`;
     desc += `*${season.trackPool.description}*\n`;
     desc += `Surfaces: ${season.trackPool.surfaces.join(", ")} | Weather: ${Object.entries(season.trackPool.weatherWeights).map(([w, p]) => `${Math.round(p * 100)}% ${w}`).join(", ")}\n\n`;
+    
+    // Season filter
+    const seasonFilter = season.filter;
+    if (seasonFilter && Object.keys(seasonFilter).length > 0) {
+        desc += `**🔍 SEASON REQUIREMENTS**\n`;
+        desc += `\`${reqDisplay(seasonFilter, true)}\`\n\n`;
+    }
     
     // Banned cars summary
     let totalBans = 0;

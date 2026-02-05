@@ -10,7 +10,7 @@ const {
     PVP_SETTINGS,
     getLeague
 } = require("../util/consts/pvpConfig.js");
-const { getCurrentSeason } = require("../util/consts/pvpSeasons.js");
+const { getCurrentSeason, isSeasonActive, getMostRecentSeason } = require("../util/consts/pvpSeasons.js");
 const { isCarBanned, getBanReason } = require("../util/consts/pvpBans.js");
 const { 
     validatePvPHand,
@@ -25,6 +25,8 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const getPvPButtons = require("../util/functions/getPvPButtons.js");
+const filterCheck = require("../util/functions/filterCheck.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const pvpModel = require("../models/pvpSchema.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -152,6 +154,15 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
                 continue;
             }
             
+            // Check season filter
+            const seasonFilter = season.filter;
+            if (seasonFilter && Object.keys(seasonFilter).length > 0) {
+                if (!filterCheck({ car, filter: seasonFilter, applyOrLogic: true })) {
+                    warnings.push(`⚠️ ${carName} doesn't meet season requirements - removed`);
+                    continue;
+                }
+            }
+            
             // Check CR range
             if (carCR < leagueConfig.minCarCR || carCR > leagueConfig.maxCarCR) {
                 warnings.push(`⚠️ ${carName} (CR ${carCR}) outside CR range - removed`);
@@ -191,8 +202,15 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
         let desc = `**Rules:**\n`;
         desc += `• CR Range per car: ${minCR} - ${maxCR}\n`;
         desc += `• Max total CR: ${maxTotalCR}\n`;
-        desc += `• Max duplicates: ${leagueConfig.maxDuplicates} per car\n\n`;
+        desc += `• Max duplicates: ${leagueConfig.maxDuplicates} per car\n`;
         
+        // Show season filter if any
+        const seasonFilter = season.filter;
+        if (seasonFilter && Object.keys(seasonFilter).length > 0) {
+            desc += `• **Season Reqs:** \`${reqDisplay(seasonFilter, true)}\`\n`;
+        }
+        
+        desc += `\n`;
         desc += `**Track Pool this Season:** ${season.trackPool.surfaces.join(", ")}\n\n`;
         
         if (selectedCars.length === 0) {
@@ -485,6 +503,14 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
                 
                 // Get effective CR (handles BM cars with CR 0)
                 const carCR = getEffectiveCR(car.carID);
+                
+                // Check season filter (make, country, etc.)
+                const seasonFilter = season.filter;
+                if (seasonFilter && Object.keys(seasonFilter).length > 0) {
+                    if (!filterCheck({ car, filter: seasonFilter, applyOrLogic: true })) {
+                        return false;
+                    }
+                }
                 
                 // Check CR range for this league (min and max per car)
                 if (carCR < leagueConfig.minCarCR) {
