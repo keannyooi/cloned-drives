@@ -31,6 +31,9 @@ const searchUser = require("../util/functions/searchUser.js");
 const pvpModel = require("../models/pvpSchema.js");
 const profileModel = require("../models/profileSchema.js");
 
+// Owner ID - only this user can end seasons
+const OWNER_ID = "209038568138604546";
+
 module.exports = {
     name: "pvpadmin",
     aliases: ["pvpmanage"],
@@ -560,6 +563,17 @@ async function previewSeasonEnd(message, args) {
 // =============================================================================
 
 async function endSeason(message, args) {
+    // Owner-only check
+    if (message.author.id !== OWNER_ID) {
+        const errorEmbed = new ErrorMessage({
+            channel: message.channel,
+            title: "Permission Denied",
+            desc: "Only the bot owner can end seasons.",
+            author: message.author
+        });
+        return errorEmbed.sendMessage();
+    }
+    
     // Check if season end module is available
     if (!processSeasonEnd) {
         const errorEmbed = new ErrorMessage({
@@ -592,7 +606,7 @@ async function endSeason(message, args) {
         const warnEmbed = new ErrorMessage({
             channel: message.channel,
             title: "⚠️ Confirm Season End",
-            desc: `This will:\n• Award prize cars to top players\n• Distribute rating rewards\n• Soft reset all ratings\n• Reset win streaks\n\nUse \`--dry-run\` to preview without changes.\nUse \`--confirm\` to proceed.\n\n\`cd-pvpadmin endseason ${force ? "--force " : ""}--confirm\``,
+            desc: `This will:\n• Award prize cars to top players\n• Distribute rating rewards\n• Reset all ratings to 1000\n• Reset win streaks\n• Clear all defenses\n\nUse \`--dry-run\` to preview without changes.\nUse \`--confirm\` to proceed.\n\n\`cd-pvpadmin endseason ${force ? "--force " : ""}--confirm\``,
             author: message.author
         });
         return warnEmbed.sendMessage();

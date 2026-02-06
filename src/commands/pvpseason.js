@@ -77,7 +77,7 @@ async function showSeasonOverview(message, season, timeRemaining, pvpProfile, is
     desc += `Surfaces: ${season.trackPool.surfaces.join(", ")} | Weather: ${Object.entries(season.trackPool.weatherWeights).map(([w, p]) => `${Math.round(p * 100)}% ${w}`).join(", ")}\n\n`;
     
     // Season filter
-    const seasonFilter = season.filter;
+    const seasonFilter = season?.filter;
     if (seasonFilter && Object.keys(seasonFilter).length > 0) {
         desc += `**🔍 SEASON REQUIREMENTS**\n`;
         desc += `\`${reqDisplay(seasonFilter, true)}\`\n\n`;

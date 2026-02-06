@@ -40,6 +40,18 @@ module.exports = {
     description: "Set your defense lineup for a PvP league. Your defense protects your rating when attacked.",
     
     async execute(message, args) {
+        // Check if season is active
+        if (!isSeasonActive()) {
+            const recentSeason = getMostRecentSeason();
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "⏳ Off-Season",
+                desc: `PvP is currently between seasons!\n\n**Last Season:** ${recentSeason?.name || "None"}\n\nWait for the next season to begin, or check \`cd-pvpseason\` for updates.`,
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+        
         const leagueName = args[0].toLowerCase();
         const leagueConfig = getLeague(leagueName);
         
@@ -70,7 +82,9 @@ module.exports = {
         // Get PvP profile
         let pvpProfile = await pvpModel.findOrCreate(message.author.id);
         
+        // Get current season (we already verified it's active above)
         const season = getCurrentSeason();
+        
         const existingDefense = pvpProfile.leagueStats[leagueName]?.defense || [];
         
         // If defense exists, show it first and ask if they want to change
@@ -155,7 +169,7 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
             }
             
             // Check season filter
-            const seasonFilter = season.filter;
+            const seasonFilter = season?.filter;
             if (seasonFilter && Object.keys(seasonFilter).length > 0) {
                 if (!filterCheck({ car, filter: seasonFilter, applyOrLogic: true })) {
                     warnings.push(`⚠️ ${carName} doesn't meet season requirements - removed`);
@@ -205,13 +219,17 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
         desc += `• Max duplicates: ${leagueConfig.maxDuplicates} per car\n`;
         
         // Show season filter if any
-        const seasonFilter = season.filter;
+        const seasonFilter = season?.filter;
         if (seasonFilter && Object.keys(seasonFilter).length > 0) {
             desc += `• **Season Reqs:** \`${reqDisplay(seasonFilter, true)}\`\n`;
         }
         
         desc += `\n`;
-        desc += `**Track Pool this Season:** ${season.trackPool.surfaces.join(", ")}\n\n`;
+        if (season?.trackPool) {
+            desc += `**Track Pool this Season:** ${season.trackPool.surfaces.join(", ")}\n\n`;
+        } else {
+            desc += `\n`;
+        }
         
         if (selectedCars.length === 0) {
             desc += `**Current Selection:** (empty)\n\n`;
@@ -505,7 +523,7 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
                 const carCR = getEffectiveCR(car.carID);
                 
                 // Check season filter (make, country, etc.)
-                const seasonFilter = season.filter;
+                const seasonFilter = season?.filter;
                 if (seasonFilter && Object.keys(seasonFilter).length > 0) {
                     if (!filterCheck({ car, filter: seasonFilter, applyOrLogic: true })) {
                         return false;

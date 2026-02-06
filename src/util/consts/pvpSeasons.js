@@ -27,8 +27,9 @@ const SEASONS = {
         name: "Season 0: City Crushing (BETA)",
         description: "Classic city racing - prove your skills on the streets!",
         startDate: new Date("2026-01-01T00:00:00Z"),
-        endDate: new Date("2026-02-02T20:59:59Z"),
+        endDate: new Date("2026-02-05T20:59:59Z"),
         trackPoolID: "city",
+        filter: {},
 		
         // Car filter (same format as event reqs / garage filters)
         // Uses filterCheck - supports: make, country, driveType, tyreType, gc, 
@@ -39,25 +40,25 @@ const SEASONS = {
 		
         // Rating thresholds for bonus rewards (same for all leagues)
         ratingRewards: [
-            { rating: 1100, money: 100000, trophies: 2 },
-            { rating: 1200, money: 250000, trophies: 5 },
-            { rating: 1300, money: 500000, trophies: 10 },
-            { rating: 1400, money: 1000000, trophies: 50 },
-            { rating: 1500, money: 2000000, trophies: 50 }
+            { rating: 1100, money: 1, trophies: 1 },
+            { rating: 1200, money: 2, trophies: 1 },
+            { rating: 1300, money: 5, trophies: 1 },
+            { rating: 1400, money: 1, trophies: 1 },
+            { rating: 1500, money: 2, trophies: 1 }
         ],
         
         // Prize cars per league (top N players)
         prizeCarSlots: 3, // Top 3 get prize cars
         prizeCars: {
-            standard: "c01023",
-            common: "c06138",
-            uncommon: "c00927",
-            rare: "c08004",
-            epic: "c02762",
-            exotic: "c07422",
-            legendary: "c00212",
-            mystic: "c04967",
-            unlimited: "c05328"
+            standard: null,
+            common: null,
+            uncommon: null,
+            rare: null,
+            epic: null,
+            exotic: null,
+            legendary: null,
+            mystic: null,
+            unlimited: null
         }
     },
     
@@ -65,8 +66,8 @@ const SEASONS = {
         id: 2,
         name: "Season 1: CNY: Year of the Horse",
         description: "Trading the daily commute for 2026 horsepower. It’s time to unbridle the beast and redline into the New Year!",
-        startDate: new Date("2026-02-04T00:00:00Z"),
-        endDate: new Date("2026-03-21T23:59:59Z"),
+        startDate: new Date("2027-02-04T00:00:00Z"),
+        endDate: new Date("2027-03-21T23:59:59Z"),
         trackPoolID: "offroad",
         filter: {tags: ["Year of the Horse"]},
         

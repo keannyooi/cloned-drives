@@ -31,10 +31,7 @@ const CONFIG = {
     // Minimum games to qualify for rewards
     minGamesForRewards: PVP_SETTINGS.minGamesForRewards || 10,
     
-    // Rating decay toward base (0.5 = 50% toward 1000)
-    ratingDecayFactor: PVP_SETTINGS.ratingDecayFactor || 0.5,
-    
-    // Base rating
+    // Base rating (everyone resets to this each season)
     baseRating: PVP_SETTINGS.baseRating || 1000
 };
 
@@ -86,7 +83,8 @@ async function processSeasonEnd(options = {}) {
         totalPlayersProcessed: 0,
         totalRewardsDistributed: 0,
         totalPrizeCarsAwarded: 0,
-        ratingsReset: 0
+        ratingsReset: 0,
+        defensesCleared: 0
     };
     
     try {
@@ -102,6 +100,7 @@ async function processSeasonEnd(options = {}) {
             results.totalRewardsDistributed += leagueResult.rewardsDistributed;
             results.totalPrizeCarsAwarded += leagueResult.prizeCarsAwarded;
             results.ratingsReset += leagueResult.ratingsReset;
+            results.defensesCleared += leagueResult.defensesCleared;
         }
         
         // Increment season ID for all players
@@ -121,6 +120,7 @@ async function processSeasonEnd(options = {}) {
         console.log(`Rewards Distributed: ${results.totalRewardsDistributed}`);
         console.log(`Prize Cars Awarded: ${results.totalPrizeCarsAwarded}`);
         console.log(`Ratings Reset: ${results.ratingsReset}`);
+        console.log(`Defenses Cleared: ${results.defensesCleared}`);
         console.log();
         
         return { success: true, results };
@@ -147,6 +147,7 @@ async function processLeague(league, season, dryRun) {
         rewardsDistributed: 0,
         prizeCarsAwarded: 0,
         ratingsReset: 0,
+        defensesCleared: 0,
         topPlayers: []
     };
     
@@ -291,17 +292,13 @@ async function processLeague(league, season, dryRun) {
             }
         }
         
-        // Soft reset rating (50% toward base)
-        const newRating = Math.round(
-            CONFIG.baseRating + (currentRating - CONFIG.baseRating) * CONFIG.ratingDecayFactor
-        );
-        
+        // Full reset rating to base (everyone starts fresh each season)
         if (!dryRun) {
             await pvpModel.updateOne(
                 { userID: player.userID },
                 {
                     $set: {
-                        [`leagueStats.${league}.rating`]: newRating,
+                        [`leagueStats.${league}.rating`]: CONFIG.baseRating,
                         [`leagueStats.${league}.winStreak`]: 0
                     }
                 }
@@ -311,9 +308,23 @@ async function processLeague(league, season, dryRun) {
         result.ratingsReset++;
     }
     
+    // Clear ALL defenses in this league (including non-qualifying players)
+    // This ensures old hands don't persist into the new season with potentially different filters
+    if (!dryRun) {
+        const clearResult = await pvpModel.updateMany(
+            { [`leagueStats.${league}.defense.0`]: { $exists: true } },
+            { $set: { [`leagueStats.${league}.defense`]: [] } }
+        );
+        result.defensesCleared = clearResult.modifiedCount;
+    } else {
+        // In dry run, just count how many would be cleared
+        result.defensesCleared = players.length;
+    }
+    
     console.log(`  Processed ${result.playersProcessed} players`);
     console.log(`  Distributed rewards to ${result.rewardsDistributed} players`);
     console.log(`  Reset ${result.ratingsReset} ratings`);
+    console.log(`  Cleared ${result.defensesCleared || 0} defenses`);
     
     return result;
 }
