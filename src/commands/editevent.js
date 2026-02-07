@@ -519,7 +519,7 @@ module.exports = {
                 case "bulk":
                     let jsonString = args.slice(3).join(" ");
                     let roundData;
-                    
+
                     try {
                         roundData = JSON.parse(jsonString);
                     }
@@ -580,20 +580,184 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
-                    // Apply the round data
+                    // Validate and normalize reqs
+                    let validatedReqs = {};
+                    if (roundData.reqs && typeof roundData.reqs === "object") {
+                        const reqKeyMap = {
+                            cr: "cr", make: "make", tags: "tags", collection: "collection",
+                            bodystyle: "bodyStyle", bodyStyle: "bodyStyle", hiddenTag: "hiddenTag", hiddentag: "hiddenTag",
+                            modelyear: "modelYear", modelYear: "modelYear",
+                            seatcount: "seatCount", seatCount: "seatCount",
+                            enginepos: "enginePos", enginePos: "enginePos",
+                            drivetype: "driveType", driveType: "driveType",
+                            fueltype: "fuelType", fuelType: "fuelType",
+                            tyretype: "tyreType", tyreType: "tyreType",
+                            country: "country", gc: "gc", creator: "creator",
+                            abs: "abs", tcs: "tcs",
+                            isPrize: "isPrize", isprize: "isPrize",
+                            isStock: "isStock", isstock: "isStock",
+                            isBM: "isBM", isbm: "isBM",
+                            search: "search"
+                        };
+
+                        // Filter keys that require array values with lowercase strings
+                        const arrayKeys = ["make", "tags", "collection", "bodyStyle", "hiddenTag"];
+                        // Filter keys that require { start, end } range objects
+                        const rangeKeys = ["cr", "modelYear", "seatCount"];
+                        // Filter keys that require a single lowercase string
+                        const stringKeys = ["country", "tyreType", "driveType", "enginePos", "fuelType", "gc", "creator"];
+                        // Filter keys that require a boolean
+                        const booleanKeys = ["abs", "tcs", "isPrize", "isStock", "isBM"];
+
+                        const bulkErrors = [];
+
+                        for (const [rawKey, value] of Object.entries(roundData.reqs)) {
+                            const key = reqKeyMap[rawKey];
+                            if (!key) {
+                                bulkErrors.push(`Unknown req key: \`${rawKey}\``);
+                                continue;
+                            }
+
+                            if (arrayKeys.includes(key)) {
+                                if (!Array.isArray(value)) {
+                                    bulkErrors.push(`\`${key}\` must be an array, e.g. ["bentley"]`);
+                                    continue;
+                                }
+                                const normalized = value.map(v => String(v).toLowerCase());
+                                // Validate each value exists in car data
+                                for (const val of normalized) {
+                                    const exists = carFiles.some(file => {
+                                        const car = getCar(file);
+                                        const ref = car["reference"] ? getCar(car["reference"]) : car;
+                                        if (key === "collection") {
+                                            return Array.isArray(car[key]) && car[key].some(c => c.toLowerCase() === val);
+                                        }
+                                        if (key === "hiddenTag") {
+                                            return Array.isArray(car[key]) && car[key].some(t => t.toLowerCase() === val);
+                                        }
+                                        const field = ref[key];
+                                        if (Array.isArray(field)) return field.some(t => t.toLowerCase() === val);
+                                        return typeof field === "string" && field.toLowerCase() === val;
+                                    });
+                                    if (!exists) {
+                                        bulkErrors.push(`\`${key}\` value \`${val}\` doesn't match any car in the game`);
+                                    }
+                                }
+                                validatedReqs[key] = normalized;
+
+                            } else if (rangeKeys.includes(key)) {
+                                if (typeof value !== "object" || value.start === undefined || value.end === undefined) {
+                                    bulkErrors.push(`\`${key}\` must be an object with start and end, e.g. {"start": 0, "end": 100}`);
+                                    continue;
+                                }
+                                const start = parseInt(value.start);
+                                const end = parseInt(value.end);
+                                if (isNaN(start) || isNaN(end)) {
+                                    bulkErrors.push(`\`${key}\` start and end must be numbers`);
+                                    continue;
+                                }
+                                if (end < start) {
+                                    bulkErrors.push(`\`${key}\` end (${end}) must be >= start (${start})`);
+                                    continue;
+                                }
+                                validatedReqs[key] = { start, end };
+
+                            } else if (stringKeys.includes(key)) {
+                                const normalized = String(value).toLowerCase();
+                                const exists = carFiles.some(file => {
+                                    const car = getCar(file);
+                                    return !car["reference"] && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
+                                });
+                                if (!exists) {
+                                    bulkErrors.push(`\`${key}\` value \`${normalized}\` doesn't match any car in the game`);
+                                }
+                                validatedReqs[key] = normalized;
+
+                            } else if (booleanKeys.includes(key)) {
+                                if (typeof value !== "boolean") {
+                                    bulkErrors.push(`\`${key}\` must be true or false`);
+                                    continue;
+                                }
+                                validatedReqs[key] = value;
+
+                            } else if (key === "search") {
+                                validatedReqs[key] = String(value).toLowerCase();
+                            }
+                        }
+
+                        if (bulkErrors.length > 0) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, invalid reqs in bulk data.",
+                                desc: bulkErrors.join("\n"),
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                    }
+
+                    // Validate rewards
+                    let validatedRewards = {};
+                    if (roundData.rewards && typeof roundData.rewards === "object") {
+                        const rewardErrors = [];
+                        for (const [key, value] of Object.entries(roundData.rewards)) {
+                            switch (key) {
+                                case "money":
+                                case "fuseTokens":
+                                case "trophies":
+                                    if (isNaN(value) || parseInt(value) < 0) {
+                                        rewardErrors.push(`\`${key}\` must be a non-negative number`);
+                                    } else {
+                                        validatedRewards[key] = parseInt(value);
+                                    }
+                                    break;
+                                case "car":
+                                    if (!value.carID || !value.upgrade) {
+                                        rewardErrors.push("`car` reward must have `carID` and `upgrade` fields");
+                                    } else if (!carFiles.find(f => f.startsWith(value.carID))) {
+                                        rewardErrors.push(`Car \`${value.carID}\` not found`);
+                                    } else if (!Object.keys(carSave).includes(value.upgrade) && value.upgrade !== "000") {
+                                        rewardErrors.push(`Invalid upgrade \`${value.upgrade}\` for car reward`);
+                                    } else {
+                                        validatedRewards.car = { carID: value.carID, upgrade: value.upgrade };
+                                    }
+                                    break;
+                                case "pack":
+                                    if (!packFiles.find(f => f.startsWith(value))) {
+                                        rewardErrors.push(`Pack \`${value}\` not found`);
+                                    } else {
+                                        validatedRewards.pack = value;
+                                    }
+                                    break;
+                                default:
+                                    rewardErrors.push(`Unknown reward type: \`${key}\``);
+                            }
+                        }
+                        if (rewardErrors.length > 0) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, invalid rewards in bulk data.",
+                                desc: rewardErrors.join("\n"),
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                    }
+
+                    // Apply the round data with validated/normalized values
                     currentEvent.roster[index - 1] = {
                         carID: roundData.carID,
                         upgrade: roundData.upgrade,
                         track: roundData.track,
-                        reqs: roundData.reqs || {},
-                        rewards: roundData.rewards || {}
+                        reqs: validatedReqs,
+                        rewards: validatedRewards
                     };
 
                     let bulkTrack = getTrack(bulkTrackFile);
                     successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully updated round ${index} of ${currentEvent.name}!`,
-                        desc: `**Car:** ${carNameGen({ currentCar: bulkCar, rarity: true, upgrade: roundData.upgrade })}\n**Track:** ${bulkTrack.trackName}\n**Rewards:** ${listRewards(roundData.rewards || {}) || "None"}`,
+                        desc: `**Car:** ${carNameGen({ currentCar: bulkCar, rarity: true, upgrade: roundData.upgrade })}\n**Track:** ${bulkTrack.trackName}\n**Rewards:** ${listRewards(validatedRewards) || "None"}`,
                         author: message.author
                     });
                     break;
