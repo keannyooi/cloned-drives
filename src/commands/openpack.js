@@ -7,6 +7,7 @@ const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
+const { trackMoneySpent, trackTrophiesEarned, trackPackOpened } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -107,6 +108,18 @@ module.exports = {
                 { userID: message.author.id },
                 updateObj
             );
+
+            trackMoneySpent(currentPack.price);
+            trackPackOpened(currentPack["packName"]);
+            if (bonusTrophies > 0) trackTrophiesEarned(bonusTrophies);
+
+            // Pack Battle tracking (non-fatal — never breaks normal pack opening)
+            try {
+                const { processPackOpening } = require("../util/functions/packBattleManager.js");
+                await processPackOpening(message.author.id, packId, addedCars);
+            } catch (err) {
+                console.error("[PackBattle] Tracking failed (non-fatal):", err.message);
+            }
 
             setTimeout(() => {
                 const successMessage = new SuccessMessage({

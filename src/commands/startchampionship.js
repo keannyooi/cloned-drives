@@ -6,6 +6,7 @@ const { DateTime } = require("luxon");
 const { registerFont, loadImage, createCanvas } = require("@napi-rs/canvas");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
+const { getCar, getTrack, getPack } = require("../util/functions/dataManager.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
@@ -55,11 +56,11 @@ module.exports = {
 
                 try {
                     let hudPromises = await Promise.all(championship.roster.map(car => {
-                        let currentCar = require(`../cars/${car.carID}`);
+                        let currentCar = getCar(car.carID);
                         return loadImage(currentCar["racehud"]);
                     }));
                     let mapPromises = await Promise.all(championship.roster.map(track => {
-                        let currentTrack = require(`../tracks/${track.track}`);
+                        let currentTrack = getTrack(track.track);
                         return loadImage(currentTrack["map"]);
                     }));
                     let [moneyImage, fuseImage,
@@ -104,7 +105,7 @@ module.exports = {
                                 case "car":
                                     image = carImage
                                     value = value.carID;
-                                    let car = require(`../cars/${value}`);
+                                    let car = getCar(value);
                                     if (car["cr"] > 849) {
                                         context.fillStyle = "#ffb80d";
                                     }
@@ -129,7 +130,7 @@ module.exports = {
                                     break;
                                 case "pack":
                                     image = packImage
-                                    let pack = require(`../packs/${value}`);
+                                    let pack = getPack(value);
                                     if (pack["packName"].toLowerCase().includes("elite")) {
                                         context.fillStyle = "#ff3639";
                                     }

@@ -11,6 +11,7 @@ const addCars = require("../util/functions/addCars.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const { getAvailableTunes } = require("../util/functions/calcTune.js");
+const { trackExchange } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -254,6 +255,8 @@ module.exports = {
                                 hand: playerData.hand,
                                 decks: playerData.decks
                             });
+
+                            trackExchange();
 
                             // Success message
                             const successMessage = new SuccessMessage({

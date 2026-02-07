@@ -226,7 +226,7 @@ async function defenseSetupFlow(message, profile, pvpProfile, leagueName, league
         
         desc += `\n`;
         if (season?.trackPool) {
-            desc += `**Track Pool this Season:** ${season.trackPool.surfaces.join(", ")}\n\n`;
+            desc += `**Track Pool this Season:** ${season.trackPool.name || season.trackPool.surfaces.join(", ")}\n\n`;
         } else {
             desc += `\n`;
         }

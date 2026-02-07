@@ -4,10 +4,16 @@ const bot = require("../../config/config.js");
 const { getCar } = require("./dataManager.js");
 const rarityCheck = require("./rarityCheck.js");
 
+// L-02: Cache trophy emoji at module level (populated on first call)
+let cachedTrophyEmoji = null;
+
 function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag = false, removeBMTag = false }) {
     if (!currentCar) throw new Error("Invalid car data provided.");
-    
-    const trophyEmoji = bot.emojis.cache.get("1162882228741734520") || "🏆"; // Fallback emoji
+
+    if (!cachedTrophyEmoji) {
+        cachedTrophyEmoji = bot.emojis.cache.get("1162882228741734520") || "🏆";
+    }
+    const trophyEmoji = cachedTrophyEmoji;
     const make = Array.isArray(currentCar.make) ? currentCar.make[0] : currentCar.make;
     const { model, modelYear, isPrize, reference, active, cr } = currentCar;
 

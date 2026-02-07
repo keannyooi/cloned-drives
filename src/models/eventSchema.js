@@ -12,5 +12,8 @@ const eventSchema = new Schema({
     playerProgress: { type: Object, default: {} }
 }, { minimize: false });
 
+eventSchema.index({ isActive: 1 });
+eventSchema.index({ eventID: 1 });
+
 const eventModel = model("Events", eventSchema);
 module.exports = eventModel;

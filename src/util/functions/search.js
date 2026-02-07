@@ -31,7 +31,8 @@ const listGen = {
     "event": item => item.name,
 	"championships": item => item.name,
     "offer": item => item.name,
-    "calendar": item => item.name
+    "calendar": item => item.name,
+    "packbattle": item => item.name
 };
 
 async function search(message, query, searchList, type, currentMessage) {

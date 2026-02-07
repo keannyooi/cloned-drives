@@ -77,11 +77,8 @@ async function openPack(args) {
     const key = JSON.stringify(filter);
     if (filterCache.has(key)) return filterCache.get(key);
 
-    const filtered = carFiles.filter((file) => {
-      const car = getCar(file);
-      return filterCard(car, filter, filterLogic);
-    });
-
+    // M-09: Single pass — filter + bucket by rarity in one loop (was 2 getCar() calls per car)
+    const filtered = [];
     const byRarity = {
       standard: [],
       common: [],
@@ -93,17 +90,20 @@ async function openPack(args) {
       mystic: [],
     };
 
-    for (const file of filtered) {
+    for (const file of carFiles) {
       const car = getCar(file);
+      if (!filterCard(car, filter, filterLogic)) continue;
+
+      filtered.push(file);
       const cr = car.cr;
-      if (cr >= 1 && cr <= 99) byRarity.standard.push(file);
-      else if (cr >= 100 && cr <= 249) byRarity.common.push(file);
-      else if (cr >= 250 && cr <= 399) byRarity.uncommon.push(file);
-      else if (cr >= 400 && cr <= 549) byRarity.rare.push(file);
-      else if (cr >= 550 && cr <= 699) byRarity.epic.push(file);
-      else if (cr >= 700 && cr <= 849) byRarity.exotic.push(file);
-      else if (cr >= 850 && cr <= 999) byRarity.legendary.push(file);
-      else if (cr >= 1000) byRarity.mystic.push(file);
+      if (cr >= 1000) byRarity.mystic.push(file);
+      else if (cr >= 850) byRarity.legendary.push(file);
+      else if (cr >= 700) byRarity.exotic.push(file);
+      else if (cr >= 550) byRarity.epic.push(file);
+      else if (cr >= 400) byRarity.rare.push(file);
+      else if (cr >= 250) byRarity.uncommon.push(file);
+      else if (cr >= 100) byRarity.common.push(file);
+      else if (cr >= 1) byRarity.standard.push(file);
     }
 
     const result = { filtered, byRarity };

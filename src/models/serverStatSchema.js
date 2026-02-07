@@ -7,6 +7,7 @@ const serverStatSchema = new Schema({
 	totalChampionships: Number,
     totalOffers: Number,
     totalCalendars: { type: Number, default: 0 },
+    totalPackBattles: { type: Number, default: 0 },
     dealershipCatalog: Array,
     bmCatalog: Array,
     lastBMRefresh: String

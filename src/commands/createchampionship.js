@@ -1,11 +1,12 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const carFiles = readdirSync('./src/cars').filter(file => file.endsWith('.json'));
-const tracks = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { getCarFiles, getTrackFiles } = require("../util/functions/dataManager.js");
 const sortCars = require("../util/functions/sortCars.js");
 const { getAvailableTunes } = require("../util/functions/calcTune.js");
+
+const carFiles = getCarFiles();
+const tracks = getTrackFiles();
 const championshipModel = require("../models/championshipsSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 

@@ -86,8 +86,22 @@ module.exports = {
         }
 
         async function loop(user, page, sort, currentMessage) {
-            const { garage } = await profileModel.findOne({ userID: user.id });
-            const { settings, filter } = await profileModel.findOne({ userID: message.author.id });
+            // H-06: Parallel fetch when viewing someone else's garage, single fetch when viewing own
+            let garage, settings, filter;
+            if (user.id === message.author.id) {
+                const profile = await profileModel.findOne({ userID: user.id });
+                garage = profile.garage;
+                settings = profile.settings;
+                filter = profile.filter;
+            } else {
+                const [targetProfile, authorProfile] = await Promise.all([
+                    profileModel.findOne({ userID: user.id }),
+                    profileModel.findOne({ userID: message.author.id })
+                ]);
+                garage = targetProfile.garage;
+                settings = authorProfile.settings;
+                filter = authorProfile.filter;
+            }
             let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck({
                 car,
                 filter,

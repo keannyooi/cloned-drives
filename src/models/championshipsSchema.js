@@ -12,5 +12,8 @@ const championshipsSchema = new Schema({
     playerProgress: { type: Object, default: {} }
 }, { minimize: false });
 
+championshipsSchema.index({ isActive: 1 });
+championshipsSchema.index({ championshipID: 1 });
+
 const championshipsModel = model("Championships", championshipsSchema);
 module.exports = championshipsModel;

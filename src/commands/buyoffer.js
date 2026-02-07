@@ -9,6 +9,7 @@ const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const openPack = require("../util/functions/openPack.js");
 const search = require("../util/functions/search.js");
+const { trackMoneySpent, trackFuseTokensEarned, trackOfferBought } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const offerModel = require("../models/offerSchema.js");
 
@@ -119,6 +120,11 @@ module.exports = {
                         discoveredCars
                     })
                 ]);
+
+                trackMoneySpent(offer.price);
+                trackOfferBought();
+                if (offer.offer.fuseTokens) trackFuseTokensEarned(offer.offer.fuseTokens);
+
                 return successMessage.sendMessage({ currentMessage });
             }
             else {

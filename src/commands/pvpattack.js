@@ -25,6 +25,7 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const createCar = require("../util/functions/createCar.js");
 const race = require("../util/functions/race.js");
 const getPvPButtons = require("../util/functions/getPvPButtons.js");
+const { trackMoneySpent, trackMoneyEarned, trackTrophiesEarned, trackPvPAttack } = require("../util/functions/tracker.js");
 const pvpModel = require("../models/pvpSchema.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -306,7 +307,7 @@ async function arrangeAttackOrder(message, profile, pvpProfile, leagueName, leag
             desc += `${i + 1}. ${carName} → vs ${i + 1}\n`;
         }
         
-        desc += `\n**Track Pool:** ${season.trackPool.surfaces.join(", ")}\n`;
+        desc += `\n**Track Pool:** ${season.trackPool.name || season.trackPool.surfaces.join(", ")}\n`;
         desc += `\n💡 **Tip:** Use the dropdown to swap car positions to counter their lineup!`;
         
         if (additionalInfo) {
@@ -416,11 +417,15 @@ async function executeBattle(message, profile, pvpProfile, leagueName, leagueCon
             { userID: message.author.id },
             { $inc: { money: -leagueConfig.entryFee } }
         );
+        trackMoneySpent(leagueConfig.entryFee);
     }
     
-    // Increment attacks used
+    // Increment attacks used (use atomic update to avoid VersionError on later save)
     pvpProfile.attacksToday++;
-    await pvpProfile.save();
+    await pvpModel.updateOne(
+        { userID: pvpProfile.userID },
+        { $inc: { attacksToday: 1 } }
+    );
     
     // Select tracks for this battle
     const tracks = selectBattleTracks(PVP_SETTINGS.racesPerBattle);
@@ -633,6 +638,13 @@ async function executeBattle(message, profile, pvpProfile, leagueName, leagueCon
         }
     }
     
+    // Track PvP result
+    if (isDraw) trackPvPAttack("draw");
+    else if (attackerWon) trackPvPAttack("win");
+    else trackPvPAttack("loss");
+    if (rewards.money > 0) trackMoneyEarned(rewards.money);
+    if (rewards.trophies > 0) trackTrophiesEarned(rewards.trophies);
+
     // Add rewards to unclaimed (must be separate objects with reward type as first key)
     if (rewards.money > 0) {
         await profileModel.updateOne(

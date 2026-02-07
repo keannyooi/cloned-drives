@@ -7,6 +7,7 @@ const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/con
 const { getCar, getPack } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
+const { trackMoneyEarned, trackTrophiesEarned, trackFuseTokensEarned, trackCodeRedeemed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const codeModel = require("../models/codeSchema.js");
 
@@ -137,10 +138,15 @@ module.exports = {
             unclaimedRewards: playerData.unclaimedRewards
         });
 
-        // Record redemption
-        codeData.redeemedBy.push(message.author.id);
+        // Track redemption
+        trackCodeRedeemed();
+        if (rewards.money) trackMoneyEarned(rewards.money);
+        if (rewards.trophies) trackTrophiesEarned(rewards.trophies);
+        if (rewards.fuseTokens) trackFuseTokensEarned(rewards.fuseTokens);
+
+        // L-07: Use $addToSet instead of replacing entire array (avoids sending full array over wire)
         await codeModel.updateOne({ code: codeName }, {
-            redeemedBy: codeData.redeemedBy
+            $addToSet: { redeemedBy: message.author.id }
         });
 
         const successMessage = new SuccessMessage({

@@ -21,5 +21,7 @@ const codeSchema = new Schema({
     createdBy: { type: String, default: "" }
 }, { minimize: false });
 
+codeSchema.index({ isActive: 1 });
+
 const codeModel = model("Codes", codeSchema);
 module.exports = codeModel;

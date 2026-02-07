@@ -13,6 +13,7 @@ const reqDisplay = require("../util/functions/reqDisplay.js");
 const race = require("../util/functions/race.js");
 const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
+const { trackEventPlayed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
 
@@ -114,6 +115,7 @@ module.exports = {
                     const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
 
                     if (result > 0) {
+                        trackEventPlayed();
                         for (let [key, value] of Object.entries(event.roster[round - 1].rewards)) {
                             switch (key) {
                                 case "money":

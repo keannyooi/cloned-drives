@@ -8,6 +8,7 @@ const { moneyEmojiID} = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
+const { trackMoneyEarned } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -125,6 +126,7 @@ module.exports = {
                 moneyReward *= 1.5;
             }
             money += moneyReward;
+            trackMoneyEarned(moneyReward);
             await profileModel.updateOne({ userID: message.author.id }, {
                 "$set": {
                     "dailyStats.lastDaily": DateTime.now().toISO(),

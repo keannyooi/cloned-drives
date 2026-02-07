@@ -3,6 +3,7 @@
 //const bot = require("../config/config.js");
 //const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 //const { defaultChoiceTime, fuseEmojiID } = require("../util/consts/consts.js");
+//const { getCar } = require("../util/functions/dataManager.js");
 //const carNameGen = require("../util/functions/carNameGen.js");
 //const selectUpgrade = require("../util/functions/selectUpgrade.js");
 //const calcTotal = require("../util/functions/calcTotal.js");
@@ -71,7 +72,7 @@
    //             .then(async (response) => {
     //                if (!Array.isArray(response)) return;
     //                const [upgrade, currentMessage] = response;
-    //                const car = require(`../cars/${currentCar.carID}.json`);
+    //                const car = getCar(currentCar.carID);
     //                const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
     //                if (args[0].toLowerCase() === "all") {
     //                    amount = currentCar.upgrades[upgrade];

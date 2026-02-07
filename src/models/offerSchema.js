@@ -13,5 +13,8 @@ const offerSchema = new Schema({
     purchasedPlayers: { type: Object, default: {} }
 }, { minimize: false });
 
+offerSchema.index({ isActive: 1 });
+offerSchema.index({ offerID: 1 });
+
 const offerModel = model("Offers", offerSchema);
 module.exports = offerModel;

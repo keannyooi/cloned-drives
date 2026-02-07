@@ -5,6 +5,20 @@ const { defaultPageLimit, defaultWaitTime } = require("../consts/consts.js");
 const getButtons = require("./getButtons.js");
 const paginate = require("./paginate.js")
 
+// L-04: Extracted duplicated button state logic into a helper function
+function updateButtonStates(list, page, pageLimit, firstPage, prevPage, nextPage, lastPage) {
+    const atStart = page === 1;
+    const atEnd = list.length <= page * pageLimit;
+    const singlePage = list.length <= pageLimit;
+
+    firstPage = ButtonBuilder.from(firstPage).setDisabled(singlePage || atStart);
+    prevPage = ButtonBuilder.from(prevPage).setDisabled(singlePage || atStart);
+    nextPage = ButtonBuilder.from(nextPage).setDisabled(singlePage || atEnd);
+    lastPage = ButtonBuilder.from(lastPage).setDisabled(singlePage || atEnd);
+
+    return { firstPage, prevPage, nextPage, lastPage };
+}
+
 async function listUpdate(list, page, totalPages, listDisplay, settings, currentMessage) {
     const pageLimit = settings.listamount || defaultPageLimit;
     const filter = button => button.user.id === embed.authorID;
@@ -12,30 +26,7 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
     let { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", settings.buttonstyle);
     let embed = listDisplay(section, page, totalPages);
 
-    if (list.length <= pageLimit) {
-        firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
-        prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
-        nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
-        lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
-    }
-    else if (list.length <= page * pageLimit) {
-        firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
-        prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
-        nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
-        lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
-    }
-    else if (page === 1) {
-        firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
-        prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
-        nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
-        lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
-    }
-    else {
-        firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
-        prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
-        nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
-        lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
-    }
+    ({ firstPage, prevPage, nextPage, lastPage } = updateButtonStates(list, page, pageLimit, firstPage, prevPage, nextPage, lastPage));
 
     let row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
     let listMessage = await embed.sendMessage({ buttons: [row], currentMessage });
@@ -60,33 +51,10 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
                 default:
                     break;
             }
-    
+
             section = paginate(list, page, settings.listamount);
-            if (list.length <= pageLimit) {
-                firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
-                prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
-                nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
-                lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
-            }
-            else if (list.length <= page * pageLimit) {
-                firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
-                prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
-                nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
-                lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
-            }
-            else if (page === 1) {
-                firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
-                prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
-                nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
-                lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
-            }
-            else {
-                firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
-                prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
-                nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
-                lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
-            }
-    
+            ({ firstPage, prevPage, nextPage, lastPage } = updateButtonStates(list, page, pageLimit, firstPage, prevPage, nextPage, lastPage));
+
             row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
             embed = listDisplay(section, page, totalPages, currentMessage);
             listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });

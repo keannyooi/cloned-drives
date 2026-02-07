@@ -44,6 +44,10 @@ let carFiles = [];             // ["c00001.json", "c00002.json", ...]
 let trackFiles = [];           // ["t00001.json", "t00002.json", ...]
 let packFiles = [];            // ["p00001.json", "p00002.json", ...]
 
+// L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
+let cachedCarArray = [];
+let cachedTrackArray = [];
+
 // Initialization state
 let initialized = false;
 
@@ -125,6 +129,10 @@ function initialize(basePath = "./src") {
     }
 
     initialized = true;
+
+    // L-01: Build cached arrays once (avoids Array.from() on every getRandomCar/Track call)
+    cachedCarArray = Array.from(cars.values());
+    cachedTrackArray = Array.from(tracks.values());
 
     // Log results
     console.log(`✅ DataManager initialized:`);
@@ -370,8 +378,10 @@ function reloadAll(basePath = "./src") {
     carFiles = [];
     trackFiles = [];
     packFiles = [];
+    cachedCarArray = [];
+    cachedTrackArray = [];
     initialized = false;
-    
+
     // Reinitialize
     return initialize(basePath);
 }
@@ -386,14 +396,11 @@ function reloadAll(basePath = "./src") {
  * getRandomCar(car => car.cr < 700 && !car.isPrize);
  */
 function getRandomCar(filterFn = null) {
-    let carArray = Array.from(cars.values());
-    
-    if (filterFn) {
-        carArray = carArray.filter(filterFn);
-    }
-    
+    // L-01: Use cached array instead of Array.from() on every call
+    let carArray = filterFn ? cachedCarArray.filter(filterFn) : cachedCarArray;
+
     if (carArray.length === 0) return null;
-    
+
     return carArray[Math.floor(Math.random() * carArray.length)];
 }
 
@@ -423,9 +430,9 @@ function getRandomCarFile(filterFn = null) {
  * @returns {Object|null} Random track object
  */
 function getRandomTrack() {
-    const trackArray = Array.from(tracks.values());
-    if (trackArray.length === 0) return null;
-    return trackArray[Math.floor(Math.random() * trackArray.length)];
+    // L-01: Use cached array instead of Array.from() on every call
+    if (cachedTrackArray.length === 0) return null;
+    return cachedTrackArray[Math.floor(Math.random() * cachedTrackArray.length)];
 }
 
 /**

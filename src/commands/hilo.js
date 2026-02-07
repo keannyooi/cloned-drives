@@ -9,6 +9,7 @@ const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, hiloChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const { trackHiloGame, trackMoneyEarned } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 // 🎯 CR Range brackets for balanced gameplay
@@ -350,6 +351,8 @@ module.exports = {
         }
 
         if (!gameActive && reward > 0) {
+          trackHiloGame();
+          trackMoneyEarned(reward);
           const latestProfile = await profileModel.findOne({ userID: message.author.id });
           const { unclaimedRewards } = latestProfile;
           const index = unclaimedRewards.findIndex(e => e.origin === "Hi-Lo");

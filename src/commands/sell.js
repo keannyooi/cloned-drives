@@ -10,6 +10,7 @@ const calcTotal = require("../util/functions/calcTotal.js");
 const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const confirm = require("../util/functions/confirm.js");
+const { trackMoneyEarned, trackCarsSold } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -163,6 +164,9 @@ module.exports = {
                             hand: playerData.hand,
                             decks: playerData.decks
                         });
+
+                        trackMoneyEarned(money);
+                        trackCarsSold(amount);
 
                         const infoMessage = new SuccessMessage({
                             channel: message.channel,

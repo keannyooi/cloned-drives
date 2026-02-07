@@ -14,11 +14,14 @@ const endChampionship = require("./src/util/functions/endChampionship.js");
 const endOffer = require("./src/util/functions/endOffer.js");
 const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
+const tracker = require("./src/util/functions/tracker.js");
+const { takeSnapshot, distributePlacementRewards } = require("./src/util/functions/packBattleManager.js");
 const serverStatModel = require("./src/models/serverStatSchema.js");
 const profileModel = require("./src/models/profileSchema.js");
 const championshipsModel = require("./src/models/championshipsSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
+const packBattleModel = require("./src/models/packBattleSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -96,33 +99,55 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
 
 // loop thingy - checks for expired events/offers every 3 minutes
 setInterval(async () => {
-    const events = await eventModel.find({ isActive: true });
+    // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch)
+    const [events, championships, offers, packBattles, playerDatum] = await Promise.all([
+        eventModel.find({ isActive: true }).lean(),
+        championshipsModel.find({ isActive: true }).lean(),
+        offerModel.find({ isActive: true }).lean(),
+        packBattleModel.find({ isActive: true }).lean(),
+        profileModel.find(
+            { "settings.senddailynotifs": true, "dailyStats.notifReceived": false },
+            { userID: 1, dailyStats: 1 }  // H-02: projection — only fetch needed fields
+        ).lean()
+    ]);
+
     for (let event of events) {
         if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
             await endEvent(event);
         }
     }
-	
-    const championships = await championshipsModel.find({ isActive: true });
+
     for (let championship of championships) {
         if (championship.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(championship.deadline)).invalid !== null) {
             await endChampionship(championship);
         }
     }
 
-    const offers = await offerModel.find({ isActive: true });
     for (let offer of offers) {
         if (offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
             await endOffer(offer);
         }
     }
 
-    const playerDatum = await profileModel.find({ "settings.senddailynotifs": true, "dailyStats.notifReceived": false });
+    // Auto-expire pack battles
+    for (let battle of packBattles) {
+        if (battle.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(battle.deadline)).invalid !== null) {
+            try {
+                await distributePlacementRewards(battle);
+                await packBattleModel.deleteOne({ battleID: battle.battleID });
+                console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
+            } catch (err) {
+                console.error(`[PackBattle] Error auto-expiring ${battle.name}:`, err.message);
+            }
+        }
+    }
+
+    // L-06: Use member cache first, fall back to API fetch
     for (let { userID, dailyStats } of playerDatum) {
         let { lastDaily } = dailyStats;
         let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(lastDaily).plus({ days: 1 }));
         if (interval.invalid !== null) {
-            let user = await bot.homeGuild.members.fetch(userID)
+            let user = bot.homeGuild.members.cache.get(userID) || await bot.homeGuild.members.fetch(userID)
                 .catch(() => "unable to find user, next");
 
             if (typeof user !== "string") {
@@ -136,7 +161,25 @@ setInterval(async () => {
             }
         }
     }
+
+    // Flush tracking stats to DB every 3 minutes
+    await tracker.flush();
 }, 180000);
+
+// Snapshot active pack battle leaderboards every 30 minutes
+setInterval(async () => {
+    try {
+        // M-14: Exclude snapshots from fetch — we only need playerStats to build a new snapshot
+        const activeBattles = await packBattleModel.find({ isActive: true }, { snapshots: 0 }).lean();
+        for (const battle of activeBattles) {
+            if (Object.keys(battle.playerStats || {}).length > 0) {
+                await takeSnapshot(battle);
+            }
+        }
+    } catch (err) {
+        console.error("[PackBattle] Snapshot interval error:", err.message);
+    }
+}, 1800000);
 
 schedule("0 */12 * * *", async () => {
     let { lastBMRefresh } = await serverStatModel.findOne({});
@@ -169,18 +212,19 @@ schedule("0 */12 * * *", async () => {
 async function processCommand(message) {
     if (message.webhookId !== null || !bot.homeGuild) return; //webhooks not allowed
 
-    const member = await bot.homeGuild.members.fetch(message.author.id)
-        .catch(() => {
-            if (message.content.toLowerCase().startsWith(prefix)) {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, you are required to be in the Cloned Drives discord server to use this bot.",
-                    desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
-            }
-        });
+    const member = bot.homeGuild.members.cache.get(message.author.id)
+        || await bot.homeGuild.members.fetch(message.author.id)
+            .catch(() => {
+                if (message.content.toLowerCase().startsWith(prefix)) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, you are required to be in the Cloned Drives discord server to use this bot.",
+                        desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+            });
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
     // BUG FIX: Changed || to && - previously required BOTH roles, now requires EITHER
     if (bot.devMode && !member._roles.includes(adminRoleID) && !member._roles.includes(testerRoleID)) return;
@@ -254,11 +298,13 @@ async function processCommand(message) {
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
     if (!bot.execList[message.author.id]) {
+        tracker.trackCommand(command.name, message.author.id);
         try {
             bot.execList[message.author.id] = command.name;
             await command.execute(message, args);
         }
         catch (error) {
+            tracker.trackError();
             console.error(error.stack);
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
@@ -298,6 +344,7 @@ async function upsertUserRecord(user) {
     let hasProfile = await profileModel.exists(params);
     if (!hasProfile && !user.bot) {
         await profileModel.create(params);
+        tracker.trackNewPlayer();
         console.log(`profile created for user ${user.id}`);
     }
 }

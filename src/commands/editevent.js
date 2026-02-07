@@ -1,15 +1,16 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
 const { DateTime } = require("luxon");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith(".json"));
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { getCar, getTrack, getPack, getCarFiles, getTrackFiles, getPackFiles } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+
+const carFiles = getCarFiles();
+const trackFiles = getTrackFiles();
+const packFiles = getPackFiles();
 const editFilter = require("../util/functions/editFilter.js");
 const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -161,7 +162,7 @@ module.exports = {
                                 currentMessage = currentMessage2;
                                 currentEvent.roster[index - 1].carID = carFile.slice(0, 6);
 
-                                let currentCar = require(`../cars/${carFile}`);
+                                let currentCar = getCar(carFile);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully set the car of roster position ${index} to ${carNameGen({ currentCar, rarity: true })}!`,
@@ -176,7 +177,7 @@ module.exports = {
                     break;
                 case "settune":
                     let upgrade = args[3];
-                    let currentCar = require(`../cars/${currentEvent.roster[index - 1].carID}.json`);
+                    let currentCar = getCar(currentEvent.roster[index - 1].carID);
                     if (upgrade !== "000" && !currentCar[`${upgrade}TopSpeed`]) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -230,7 +231,7 @@ module.exports = {
                                 let [trackFile, currentMessage2] = response;
                                 currentMessage = currentMessage2;
                                 currentEvent.roster[index - 1].track = trackFile.slice(0, 6);
-                                let currentTrack = require(`../tracks/${trackFile}`);
+                                let currentTrack = getTrack(trackFile);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully set the track of roster position ${index} to ${currentTrack["trackName"]}!`,
@@ -325,7 +326,7 @@ module.exports = {
                                         currentMessage = currentMessage2;
                                         currentEvent.roster[index - 1].rewards.car = { carID: carFile.slice(0, 6), upgrade };
 
-                                        let cardThing = require(`../cars/${carFile}`);
+                                        let cardThing = getCar(carFile);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully added 1 ${carNameGen({ currentCar: cardThing, rarity: true, upgrade })} to the rewards for round ${index}!`,
@@ -351,7 +352,7 @@ module.exports = {
                                         currentMessage = currentMessage2;
                                         currentEvent.roster[index - 1].rewards.pack = packFile.slice(0, 6);
 
-                                        let currentPack = require(`../packs/${packFile}`);
+                                        let currentPack = getPack(packFile);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully added 1 ${currentPack["packName"]} to the rewards for round ${index}!`,
@@ -414,19 +415,19 @@ module.exports = {
                     switch (randomizeType) {
                         case "asphalt":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                let trackContents = getTrack(track);
                                 return trackContents["surface"] === "Asphalt";
                             });
                             break;
                         case "dirt":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                let trackContents = getTrack(track);
                                 return trackContents["surface"] === "Dirt" || trackContents["surface"] === "Gravel";
                             });
                             break;
                         case "snow":
                             generationPool = trackFiles.filter(track => {
-                                let trackContents = require(`../tracks/${track}`);
+                                let trackContents = getTrack(track);
                                 return trackContents["surface"] === "Snow" || trackContents["surface"] === "Ice";
                             });
                             break;
@@ -568,7 +569,7 @@ module.exports = {
                     }
 
                     // Validate upgrade
-                    let bulkCar = require(`../cars/${bulkCarFile}`);
+                    let bulkCar = getCar(bulkCarFile);
                     if (roundData.upgrade !== "000" && !bulkCar[`${roundData.upgrade}TopSpeed`]) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -588,7 +589,7 @@ module.exports = {
                         rewards: roundData.rewards || {}
                     };
 
-                    let bulkTrack = require(`../tracks/${bulkTrackFile}`);
+                    let bulkTrack = getTrack(bulkTrackFile);
                     successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully updated round ${index} of ${currentEvent.name}!`,

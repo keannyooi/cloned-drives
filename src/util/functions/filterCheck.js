@@ -62,7 +62,7 @@ function filterCheck(args) {
                     }
                 }
                 else if (key === "modelYear" || key === "seatCount" || key === "cr") {
-        if (value.start && value.end) {
+        if (value.start !== undefined && value.start !== null && value.end !== undefined && value.end !== null) {
             // Implement "or" logic for modelYear or rq range
             if (key === "modelYear") {
                 if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {

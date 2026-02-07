@@ -1,9 +1,10 @@
 "use strict";
 
-const { readdirSync } = require("fs");
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { getPack, getPackFiles } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
+
+const packFiles = getPackFiles();
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
@@ -50,7 +51,7 @@ module.exports = {
                             else {
                                 let [pack] = response;
                                 unclaimedRewards.push({ pack: pack.slice(0, 6), origin: message.author.tag });
-                                let currentPack = require(`../packs/${pack}`);
+                                let currentPack = getPack(pack);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully gifted 1 ${currentPack["packName"]} to ${user.username}!`,

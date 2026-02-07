@@ -1,15 +1,16 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { readdirSync } = require("fs");
 const { DateTime } = require("luxon");
-const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
+const { getCar, getPack, getCarFiles, getPackFiles } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const offerModel = require("../models/offerSchema.js");
+
+const carFiles = getCarFiles();
+const packFiles = getPackFiles();
 
 module.exports = {
     name: "editoffer",
@@ -173,7 +174,7 @@ module.exports = {
                                         currentMessage = currentMessage2;
                                         offer.offer.pack = packFile.slice(0, 6);
 
-                                        let currentPack = require(`../packs/${packFile}`);
+                                        let currentPack = getPack(packFile);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully assigned a(n) ${currentPack["packName"]} to the ${offer.name} offer!`,
@@ -205,11 +206,11 @@ module.exports = {
 
                                         let list = "";
                                         for (let i = 0; i < offer.offer.cars.length; i++) {
-                                            let car = require(`../cars/${offer.offer.cars[i]}`);
+                                            let car = getCar(offer.offer.cars[i]);
                                             list += `${carNameGen({ currentCar: car, rarity: true })}\n`;
                                         }
 
-                                        let currentCar = require(`../cars/${carFile}`);
+                                        let currentCar = getCar(carFile);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully added 1 ${carNameGen({ currentCar })} to the ${offer.name} offer!`,
@@ -283,11 +284,11 @@ module.exports = {
 
                                         let list = "";
                                         for (let i = 0; i < offer.offer.cars.length; i++) {
-                                            let car = require(`../cars/${offer.offer.cars[i]}`);
+                                            let car = getCar(offer.offer.cars[i]);
                                             list += `${carNameGen({ currentCar: car, rarity: true })}\n`;
                                         }
 
-                                        let currentCar = require(`../cars/${carFile}`);
+                                        let currentCar = getCar(carFile);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
                                             title: `Successfully removed 1 ${carNameGen({ currentCar })} from the ${offer.name} offer!`,

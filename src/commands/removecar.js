@@ -2,6 +2,7 @@
 
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime } = require("../util/consts/consts.js");
+const { getCar } = require("../util/functions/dataManager.js");
 const searchUser = require("../util/functions/searchUser.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
@@ -89,7 +90,7 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;
-                    const car = require(`../cars/${currentCar.carID}.json`);
+                    const car = getCar(currentCar.carID);
                     const currentName = carNameGen({ currentCar: car, upgrade });
                     if (args[1].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];

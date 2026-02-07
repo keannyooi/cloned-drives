@@ -97,10 +97,11 @@ module.exports = {
                 }
                 
                 // Result icon
-                const resultIcon = battle.won ? "✅" : "❌";
+                const resultIcon = battle.isDraw ? "➖" : (battle.won ? "✅" : "❌");
+                const resultText = battle.isDraw ? "Draw" : (battle.won ? "Victory" : "Defeat");
                 const roleText = battle.wasAttacker ? "⚔️ Attack" : "🛡️ Defense";
-                
-                content += `${resultIcon} **${battle.won ? "Victory" : "Defeat"}** vs ${oppName}\n`;
+
+                content += `${resultIcon} **${resultText}** vs ${oppName}\n`;
                 content += `   ${roleText} | ${leagueConfig?.name || battle.league} | ${battle.score}\n`;
                 
                 if (battle.ratingChange !== 0) {
@@ -130,18 +131,24 @@ module.exports = {
         
         // Calculate stats
         const wins = battles.filter(b => b.won).length;
-        const losses = battles.length - wins;
+        const draws = battles.filter(b => b.isDraw).length;
+        const losses = battles.length - wins - draws;
         const attackWins = battles.filter(b => b.wasAttacker && b.won).length;
-        const attackLosses = battles.filter(b => b.wasAttacker && !b.won).length;
+        const attackDraws = battles.filter(b => b.wasAttacker && b.isDraw).length;
+        const attackLosses = battles.filter(b => b.wasAttacker && !b.won && !b.isDraw).length;
         const defenseWins = battles.filter(b => !b.wasAttacker && b.won).length;
-        const defenseLosses = battles.filter(b => !b.wasAttacker && !b.won).length;
-        
+        const defenseDraws = battles.filter(b => !b.wasAttacker && b.isDraw).length;
+        const defenseLosses = battles.filter(b => !b.wasAttacker && !b.won && !b.isDraw).length;
+
         let statsLine = `**Overall:** ${wins}W - ${losses}L`;
-        if (attackWins + attackLosses > 0) {
+        if (draws > 0) statsLine += ` - ${draws}D`;
+        if (attackWins + attackLosses + attackDraws > 0) {
             statsLine += ` | ⚔️ ${attackWins}-${attackLosses}`;
+            if (attackDraws > 0) statsLine += `-${attackDraws}D`;
         }
-        if (defenseWins + defenseLosses > 0) {
+        if (defenseWins + defenseLosses + defenseDraws > 0) {
             statsLine += ` | 🛡️ ${defenseWins}-${defenseLosses}`;
+            if (defenseDraws > 0) statsLine += `-${defenseDraws}D`;
         }
         
         const title = leagueFilter 

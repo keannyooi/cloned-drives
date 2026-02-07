@@ -59,5 +59,8 @@ const calendarSchema = new Schema({
     // }
 }, { minimize: false });
 
+calendarSchema.index({ isActive: 1 });
+calendarSchema.index({ calendarID: 1 });
+
 const calendarModel = model("Calendars", calendarSchema);
 module.exports = calendarModel;

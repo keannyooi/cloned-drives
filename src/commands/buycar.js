@@ -8,6 +8,7 @@ const { getCar } = require("../util/functions/dataManager.js");
 const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
+const { trackMoneySpent, trackTrophiesSpent, trackCarsBought } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 
@@ -110,6 +111,10 @@ module.exports = {
                     profileModel.updateOne({ userID: message.author.id }, obj),
                     serverStatModel.updateOne({}, { dealershipCatalog, bmCatalog })
                 ]);
+
+                if (mode === "bm") trackTrophiesSpent(price);
+                else trackMoneySpent(price);
+                trackCarsBought(mode, amount);
 
                 const successMessage = new SuccessMessage({
                     channel: message.channel,

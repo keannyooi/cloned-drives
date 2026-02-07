@@ -134,22 +134,24 @@ module.exports = {
                             return;
                         }
 
+                        await button.deferReply({ ephemeral: true }).catch(() => {});
                         const testResult = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
-                        
+
                         let testMessage = "";
                         if (testResult > 0) {
                             testMessage = `🧪 **TEST RACE RESULT: WIN** ✅\nYou won by ${testResult} points!\n\n✨ This was a test - your streak and money are safe.`;
                         } else {
                             testMessage = `🧪 **TEST RACE RESULT: LOSS** ❌\nYou lost by ${Math.abs(testResult)} points.\n\n✨ This was a test - your streak is still ${streak}.`;
                         }
-                        
+
                         testMessage += "\n\nWhat would you like to do?\n• Click **Race** to play this race for real\n• Click **Skip** to reset your streak to 0 and get a new opponent\n• Click **Cancel** to exit without racing";
-                        
-                        await button.reply({ content: testMessage, ephemeral: true });
+
+                        await button.editReply({ content: testMessage });
                         processed = false; // Allow them to click another button
                         return;
 
                     case "yse":
+                        await button.deferUpdate().catch(() => {});
                         reactionMessage?.removeButtons();
 
                         if (!filterCheck({ car: hand, filter: reqs })) {
@@ -286,10 +288,12 @@ module.exports = {
                         return bot.deleteID(message.author.id);
 
                     case "nop":
+                        await button.deferUpdate().catch(() => {});
                         intermission.editEmbed({ title: "Action cancelled." });
                         return intermission.sendMessage({ currentMessage: reactionMessage });
 
                     case "skip":
+                        await button.deferUpdate().catch(() => {});
                         streak = 0;
                         await Promise.all([
                             randomize(),
