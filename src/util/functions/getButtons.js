@@ -53,7 +53,7 @@ function getButtons(type, buttonStyle) {
                     .setStyle(Secondary);
                 nop = new ButtonBuilder()
                     .setCustomId("nop")
-                    .setEmoji("⎋")
+                    .setEmoji("❌")
                     .setStyle(Secondary);
                 if (type === "rr") {
                     skip = new ButtonBuilder()
