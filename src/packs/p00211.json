@@ -1,0 +1,44 @@
+{
+    "packName": "Electric Stampede",
+    "description": "The future is electric. Pull from the charged-up side of Year of the Horse!",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 6,
+    "filter": {
+        "tags": ["Year of the Horse"]
+    },
+    "filterLogic": "or",
+    "noDuplicates": true,
+    "packSequence": [
+        {
+            "rates": { "standard": 30, "common": 50, "uncommon": 20 },
+            "filter": { "fuelType": "Electric" }
+        },
+        {
+            "rates": { "common": 40, "uncommon": 40, "rare": 20 },
+            "filter": { "fuelType": "Electric" }
+        },
+        {
+            "rates": { "uncommon": 40, "rare": 35, "epic": 20, "exotic": 5 },
+            "filter": { "fuelType": "Hybrid" }
+        },
+        {
+            "rates": { "rare": 30, "epic": 30, "exotic": 25, "legendary": 15 },
+            "filter": { "fuelType": "Hybrid" }
+        },
+        {
+            "pool": [
+                { "carID": "c02815", "weight": 15 },
+                { "carID": "c07773", "weight": 15 },
+                { "carID": "c00643", "weight": 15 },
+                { "carID": "c01988", "weight": 15 },
+                { "carID": "c00374", "weight": 10 },
+                { "carID": "c01270", "weight": 10 },
+                { "carID": "c01537", "weight": 10 },
+                { "carID": "c00173", "weight": 10 }
+            ]
+        }
+    ],
+    "repetition": 1
+}

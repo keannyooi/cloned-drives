@@ -1,0 +1,55 @@
+{
+    "packName": "Prancing Horse Duel",
+    "description": "Ferrari vs Lamborghini. The eternal Italian rivalry — who wins your pull?",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/BoosterPack.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 6,
+    "filter": {
+        "tags": ["Year of the Horse"]
+    },
+    "noDuplicates": true,
+    "packSequence": [
+        {
+            "rates": { "uncommon": 45, "rare": 30, "epic": 15, "exotic": 10 },
+            "filter": { "make": ["Lamborghini"] }
+        },
+        {
+            "pool": [
+                { "carID": "c00395", "weight": 20 },
+                { "carID": "c02281", "weight": 20 },
+                { "carID": "c03644", "weight": 20 },
+                { "carID": "c03645", "weight": 20 },
+                { "carID": "c02932", "weight": 10 },
+                { "carID": "c02937", "weight": 10 }
+            ]
+        },
+        {
+            "rates": { "rare": 35, "epic": 30, "exotic": 25, "legendary": 10 },
+            "filter": { "make": ["Lamborghini"] }
+        },
+        {
+            "pool": [
+                { "carID": "c02684", "weight": 20 },
+                { "carID": "c03378", "weight": 20 },
+                { "carID": "c02932", "weight": 20 },
+                { "carID": "c02937", "weight": 20 },
+                { "carID": "c03644", "weight": 10 },
+                { "carID": "c03645", "weight": 10 }
+            ]
+        },
+        {
+            "pool": [
+                { "carID": "c02340", "weight": 15 },
+                { "carID": "c02684", "weight": 12 },
+                { "carID": "c03378", "weight": 12 },
+                { "carID": "c07192", "weight": 15 },
+                { "carID": "c02973", "weight": 12 },
+                { "carID": "c00657", "weight": 12 },
+                { "carID": "c00643", "weight": 12 },
+                { "carID": "c03042", "weight": 10 }
+            ]
+        }
+    ],
+    "repetition": 1
+}

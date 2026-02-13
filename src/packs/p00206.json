@@ -1,0 +1,24 @@
+{
+    "packName": "Year of the Horse Japanese Legendary",
+    "description": "Japan takes the spotlight in this custom Year of the Horse pack!",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/east_vs_west.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 8,
+    "filter": {
+        "tags": ["Year of the Horse"]
+    },
+    "filterLogic": "or",
+    "noDuplicates": true,
+    "packSequence": [
+        { "common": 50, "uncommon": 40, "rare": 10 },
+        { "common": 50, "uncommon": 40, "rare": 10 },
+        { "common": 50, "uncommon": 40, "rare": 10 },
+		{ "common": 50, "uncommon": 40, "rare": 10 },
+        {
+            "rates": { "legendary": 100 },
+            "filter": { "country": "jp" }
+        }
+    ],
+    "repetition": 1
+}

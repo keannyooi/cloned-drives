@@ -1,0 +1,21 @@
+{
+    "packName": "4WD Stampede",
+    "description": "All-wheel grip, all-out power. Every card is a 4WD beast from Year of the Horse.",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 7,
+    "filter": {
+        "tags": ["Year of the Horse"],
+        "driveType": "4WD"
+    },
+    "noDuplicates": true,
+    "packSequence": [
+        { "common": 40, "uncommon": 45, "rare": 15 },
+        { "uncommon": 45, "rare": 40, "epic": 15 },
+        { "rare": 45, "epic": 35, "exotic": 15, "legendary": 5 },
+        { "rare": 35, "epic": 35, "exotic": 20, "legendary": 10 },
+        { "exotic": 60, "legendary": 30, "mystic": 10 }
+    ],
+    "repetition": 1
+}

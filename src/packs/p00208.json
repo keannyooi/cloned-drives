@@ -1,0 +1,32 @@
+{
+    "packName": "Stallion Stampede",
+    "description": "Italian thoroughbreds charge through! Guaranteed Legendary Italian finisher.",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 8,
+    "filter": {
+        "tags": ["Year of the Horse"],
+        "country": "IT"
+    },
+    "noDuplicates": true,
+    "packSequence": [
+        { "uncommon": 50, "rare": 40, "epic": 10 },
+        { "uncommon": 40, "rare": 40, "epic": 15, "exotic": 5 },
+        { "rare": 50, "epic": 35, "exotic": 15 },
+        { "rare": 40, "epic": 35, "exotic": 20, "legendary": 5 },
+        {
+            "pool": [
+                { "carID": "c02340", "weight": 10 },
+                { "carID": "c03042", "weight": 10 },
+                { "carID": "c02684", "weight": 15 },
+                { "carID": "c03378", "weight": 15 },
+                { "carID": "c07192", "weight": 15 },
+                { "carID": "c02973", "weight": 15 },
+                { "carID": "c00657", "weight": 10 },
+                { "carID": "c00643", "weight": 10 }
+            ]
+        }
+    ],
+    "repetition": 1
+}

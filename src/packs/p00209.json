@@ -1,0 +1,21 @@
+{
+    "packName": "Autobahn Horse Blitz",
+    "description": "German horse engineering at its finest. The last card is always an Exotic or better from Deutschland.",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 8,
+    "filter": {
+        "tags": ["Year of the Horse"],
+        "country": "DE"
+    },
+    "noDuplicates": true,
+    "packSequence": [
+        { "common": 40, "uncommon": 50, "rare": 10 },
+        { "uncommon": 50, "rare": 40, "epic": 10 },
+        { "uncommon": 40, "rare": 40, "epic": 15, "exotic": 5 },
+        { "rare": 50, "epic": 35, "exotic": 12, "legendary": 3 },
+        { "exotic": 70, "legendary": 25, "mystic": 5 }
+    ],
+    "repetition": 1
+}

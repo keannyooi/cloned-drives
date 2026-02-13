@@ -1,0 +1,21 @@
+{
+    "packName": "Horse vs Spyder",
+    "description": "The horse fears no man..but that Redback Spyder?",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 10,
+    "packSequence": [
+        { "common": 50, "uncommon": 40, "rare": 10 },
+        { "uncommon": 45, "rare": 40, "epic": 15 },
+        { "uncommon": 45, "rare": 40, "epic": 15 },
+        { "uncommon": 45, "rare": 40, "epic": 15 },
+        {
+            "pool": [
+                { "carID": "c07017", "weight": 50 },
+                { "carID": "c07018", "weight": 50 }
+            ]
+        }
+    ],
+    "repetition": 1
+}

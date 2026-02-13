@@ -1,0 +1,37 @@
+{
+    "packName": "Pony Evolution",
+    "description": "Mitsubishi Lancer Evo variants go head to head. Which Evo will you pull?",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/spotlight.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 6,
+    "filter": {
+        "tags": ["Year of the Horse"]
+    },
+    "noDuplicates": true,
+    "packSequence": [
+        { "common": 50, "uncommon": 40, "rare": 10 },
+        { "common": 40, "uncommon": 45, "rare": 15 },
+        { "uncommon": 50, "rare": 35, "epic": 15 },
+        {
+            "pool": [
+                { "carID": "c01678", "weight": 20 },
+                { "carID": "c01681", "weight": 20 },
+                { "carID": "c01676", "weight": 20 },
+                { "carID": "c03663", "weight": 15 },
+                { "carID": "c01679", "weight": 15 },
+                { "carID": "c01636", "weight": 10 }
+            ]
+        },
+        {
+            "pool": [
+                { "carID": "c03767", "weight": 25 },
+                { "carID": "c03768", "weight": 25 },
+                { "carID": "c03769", "weight": 20 },
+                { "carID": "c00887", "weight": 15 },
+                { "carID": "c05852", "weight": 15 }
+            ]
+        }
+    ],
+    "repetition": 1
+}

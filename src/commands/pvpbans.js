@@ -22,7 +22,17 @@ module.exports = {
     
     async execute(message, args) {
         const season = getCurrentSeason();
-        
+
+        if (!season) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "No Active Season",
+                desc: "There is no active PvP season right now. Check `cd-pvpseason` for updates.",
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+
         if (args.length > 0) {
             // Show bans for specific league
             const leagueName = args[0].toLowerCase();

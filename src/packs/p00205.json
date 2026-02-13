@@ -1,0 +1,77 @@
+{
+    "packName": "Year of the Horse Titan Pack",
+    "description": "5 Epic or Higher Year of the Horse cards",
+    "repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tags": ["Year of the Horse"],
+        "driveType": "None",
+        "tyreType": "None",
+        "enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+        "seatCount": "None",
+        "creator": "None",
+        "hiddenTag": "None"
+    },
+
+    "packSequence": [
+        {
+            "standard": 0,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "standard": 0,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "standard": 0,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "standard": 0,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "standard": 0,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        }
+    ]
+}
