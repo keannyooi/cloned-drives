@@ -246,11 +246,13 @@ async function takeSnapshot(battle) {
 async function distributePlacementRewards(battle) {
     // H-08: Re-fetch once for latest stats, then use returned snapshot (was 3 fetches, now 1)
     const freshBattle = await packBattleModel.findOne({ battleID: battle.battleID });
-    if (!freshBattle) return;
+    if (!freshBattle) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [] };
 
     // takeSnapshot now returns the snapshot directly — no need to re-fetch
     const finalSnapshot = await takeSnapshot(freshBattle);
-    if (!finalSnapshot) return;
+    if (!finalSnapshot) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [] };
+
+    const distributedRewards = [];
 
     for (const placement of freshBattle.placementRewards || []) {
         const leaderboard = finalSnapshot[placement.leaderboard];
@@ -270,8 +272,17 @@ async function distributePlacementRewards(battle) {
                 { userID },
                 { $push: { unclaimedRewards: rewardEntry } }
             );
+
+            distributedRewards.push({
+                userID,
+                rank: qualifyingPlayers.find(p => p.userID === userID)?.rank,
+                leaderboard: placement.leaderboard,
+                reward: rewardEntry
+            });
         }
     }
+
+    return { battle: freshBattle, finalSnapshot, distributedRewards };
 }
 
 module.exports = {

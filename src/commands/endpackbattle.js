@@ -9,6 +9,7 @@ const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const profileModel = require("../models/profileSchema.js");
 const packBattleModel = require("../models/packBattleSchema.js");
+const packBattleResultModel = require("../models/packBattleResultSchema.js");
 
 module.exports = {
     name: "endpackbattle",
@@ -49,16 +50,16 @@ module.exports = {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
 
                 // Distribute placement rewards (takes final snapshot internally)
-                await distributePlacementRewards(battle);
+                const { battle: freshBattle, finalSnapshot, distributedRewards, failedRewards } = await distributePlacementRewards(battle);
 
-                // Build results summary
-                const entries = Object.entries(battle.playerStats || {});
+                // Use freshBattle stats for results (has latest data)
+                const freshEntries = Object.entries((freshBattle || battle).playerStats || {});
                 let resultsDesc = `**${battle.name}** has ended! ${participants} player(s) participated.\n\n`;
 
-                if (entries.length > 0) {
+                if (freshEntries.length > 0) {
                     // Packs Opened top 3
                     const packsRanked = computeDenseRanking(
-                        entries.map(([uid, s]) => ({ userID: uid, value: s.packsOpened || 0 }))
+                        freshEntries.map(([uid, s]) => ({ userID: uid, value: s.packsOpened || 0 }))
                             .filter(e => e.value > 0)
                             .sort((a, b) => b.value - a.value)
                     );
@@ -76,7 +77,7 @@ module.exports = {
 
                     // Highest Pack Pull CR top 3
                     const crRanked = computeDenseRanking(
-                        entries.map(([uid, s]) => ({ userID: uid, value: s.highestPackPullCR || 0 }))
+                        freshEntries.map(([uid, s]) => ({ userID: uid, value: s.highestPackPullCR || 0 }))
                             .filter(e => e.value > 0)
                             .sort((a, b) => b.value - a.value)
                     );
@@ -92,13 +93,43 @@ module.exports = {
                     }
                 }
 
+                // Save results to database before deleting the battle
+                try {
+                    await packBattleResultModel.create({
+                        battleID: battle.battleID,
+                        battleName: battle.name,
+                        packID: battle.packID,
+                        endedAt: new Date(),
+                        endedBy: message.author.id,
+                        participants,
+                        playerStats: (freshBattle || battle).playerStats || {},
+                        finalSnapshot: finalSnapshot || null,
+                        placementRewards: battle.placementRewards || [],
+                        distributedRewards: distributedRewards || [],
+                        failedRewards: failedRewards || [],
+                        milestones: battle.milestones || []
+                    });
+                } catch (err) {
+                    console.error(`Failed to save pack battle results: ${err.message}`);
+                }
+
                 // Delete the battle document
                 await packBattleModel.deleteOne({ battleID: battle.battleID });
+
+                let successDesc = "Placement rewards have been distributed to qualifying players' unclaimed rewards.";
+                if (failedRewards && failedRewards.length > 0) {
+                    successDesc += `\n\n⚠️ **${failedRewards.length} reward(s) failed to distribute:**\n`;
+                    for (const fail of failedRewards) {
+                        const member = bot.homeGuild.members.cache.get(fail.userID);
+                        const name = member ? member.user.tag : fail.userID;
+                        successDesc += `- \`${name}\` (Rank #${fail.rank}, ${fail.leaderboard}): ${fail.reason}\n`;
+                    }
+                }
 
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully ended the ${battle.name} pack battle!`,
-                    desc: "Placement rewards have been distributed to qualifying players' unclaimed rewards.",
+                    desc: successDesc,
                     author: message.author
                 });
 
