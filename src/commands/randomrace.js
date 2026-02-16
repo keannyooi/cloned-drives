@@ -118,9 +118,11 @@ module.exports = {
         }
 
         let processed = false;
+        let raceCompleted = false;
         const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime });
 
         collector.on("collect", async (button) => {
+            if (raceCompleted) return;
             if (processed) return;
             processed = true;
 
@@ -151,6 +153,7 @@ module.exports = {
                         return;
 
                     case "yse":
+                        raceCompleted = true;
                         await button.deferUpdate().catch(() => {});
                         reactionMessage?.removeButtons();
 
@@ -285,14 +288,18 @@ module.exports = {
                             )
                         ]);
 
+                        collector.stop();
                         return bot.deleteID(message.author.id);
 
                     case "nop":
+                        raceCompleted = true;
                         await button.deferUpdate().catch(() => {});
+                        collector.stop();
                         intermission.editEmbed({ title: "Action cancelled." });
                         return intermission.sendMessage({ currentMessage: reactionMessage });
 
                     case "skip":
+                        raceCompleted = true;
                         await button.deferUpdate().catch(() => {});
                         streak = 0;
                         await Promise.all([
@@ -313,6 +320,7 @@ module.exports = {
                             author: message.author
                         });
 
+                        collector.stop();
                         return skipMessage.sendMessage({ currentMessage: reactionMessage });
                 }
             } catch (err) {
@@ -321,7 +329,7 @@ module.exports = {
         });
 
         collector.on("end", () => {
-            if (!processed) {
+            if (!raceCompleted && !processed) {
                 intermission.editEmbed({ title: "Action cancelled automatically." });
                 intermission.sendMessage({ currentMessage: reactionMessage }).catch(() => {});
             }

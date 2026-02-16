@@ -199,7 +199,13 @@ module.exports = {
             const packsRank = packsRanked.find(e => e.userID === message.author.id);
             const crRank = crRanked.find(e => e.userID === message.author.id);
 
-            const milestonesEarned = (stats.milestonesEarned || []).length;
+            const today = DateTime.now().toFormat("yyyy-MM-dd");
+            const milestonesEarned = battle.milestones.filter(m => {
+                const earnedKey = m.resetType === "daily"
+                    ? `${m.milestoneID}-${today}`
+                    : `${m.milestoneID}`;
+                return (stats.milestonesEarned || []).includes(earnedKey);
+            }).length;
             const totalMilestones = battle.milestones.length;
 
             // Build rarity breakdown string

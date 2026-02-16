@@ -8,8 +8,36 @@ const carNameGen = require("./carNameGen.js");
 const listRewards = require("./listRewards.js");
 const reqDisplay = require("./reqDisplay.js");
 const eventModel = require("../../models/eventSchema.js");
+const eventResultModel = require("../../models/eventResultSchema.js");
 
-async function endEvent(event) {
+async function endEvent(event, endedBy) {
+    // Save results to database before deleting
+    const progress = event.playerProgress || {};
+    const participants = Object.keys(progress).length;
+    const totalRounds = event.roster.length;
+    const completions = Object.values(progress).filter(r => r > totalRounds).length;
+
+    try {
+        await eventResultModel.create({
+            eventID: event.eventID,
+            eventName: event.name,
+            endedAt: new Date(),
+            endedBy: endedBy || "system",
+            wasActive: event.isActive || false,
+            totalRounds,
+            totalParticipants: participants,
+            totalCompletions: completions,
+            playerProgress: progress,
+            roster: event.roster || [],
+            eventConfig: {
+                isVIP: event.isVIP || false,
+                deadline: event.deadline || "unlimited"
+            }
+        });
+    } catch (err) {
+        console.error(`Failed to save event results: ${err.message}`);
+    }
+
     await eventModel.deleteOne({ eventID: event.eventID });
     if (event.isActive) {
         const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);

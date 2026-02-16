@@ -621,8 +621,8 @@ async function endSeason(message, args) {
     const processingMsg = await processingEmbed.sendMessage();
     
     try {
-        const result = await processSeasonEnd({ dryRun, force });
-        
+        const result = await processSeasonEnd({ dryRun, force, endedBy: message.author.id });
+
         if (!result.success) {
             const errorEmbed = new ErrorMessage({
                 channel: message.channel,
@@ -632,20 +632,30 @@ async function endSeason(message, args) {
             });
             return errorEmbed.sendMessage({ currentMessage: processingMsg });
         }
-        
+
         const { results } = result;
-        
+
         let desc = `**Season:** ${results.season.name}\n\n`;
         desc += `**Summary:**\n`;
         desc += `• Players Processed: ${results.totalPlayersProcessed}\n`;
         desc += `• Rewards Distributed: ${results.totalRewardsDistributed}\n`;
         desc += `• Prize Cars Awarded: ${results.totalPrizeCarsAwarded}\n`;
         desc += `• Ratings Reset: ${results.ratingsReset}\n`;
-        
+        desc += `• Results saved to database ✅\n`;
+
+        if (results.failedRewards && results.failedRewards.length > 0) {
+            desc += `\n⚠️ **${results.failedRewards.length} reward(s) failed to distribute:**\n`;
+            for (const fail of results.failedRewards) {
+                const member = bot.homeGuild.members.cache.get(fail.userID);
+                const name = member ? member.user.tag : fail.userID;
+                desc += `- \`${name}\` (${PVP_LEAGUES[fail.league]?.name || fail.league}, ${fail.type}): ${fail.reason}\n`;
+            }
+        }
+
         if (dryRun) {
             desc += `\n*This was a dry run - no changes were made.*`;
         }
-        
+
         const successEmbed = new SuccessMessage({
             channel: message.channel,
             title: dryRun ? "✅ Dry Run Complete" : "✅ Season End Complete",

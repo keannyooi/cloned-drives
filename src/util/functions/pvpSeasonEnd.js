@@ -17,6 +17,7 @@
 const mongoose = require("mongoose");
 const pvpModel = require("../../models/pvpSchema.js");
 const profileModel = require("../../models/profileSchema.js");
+const pvpSeasonResultModel = require("../../models/pvpSeasonResultSchema.js");
 const { PVP_LEAGUES, LEAGUE_ORDER, PVP_SETTINGS } = require("../consts/pvpConfig.js");
 const { getCurrentSeason, getMostRecentSeason, getSeason, isSeasonEnded } = require("../consts/pvpSeasons.js");
 
@@ -84,16 +85,18 @@ async function processSeasonEnd(options = {}) {
         totalRewardsDistributed: 0,
         totalPrizeCarsAwarded: 0,
         ratingsReset: 0,
-        defensesCleared: 0
+        defensesCleared: 0,
+        distributedRewards: [],
+        failedRewards: []
     };
-    
+
     try {
         // Process each league
         for (const league of LEAGUE_ORDER) {
             console.log(`\n${"─".repeat(40)}`);
             console.log(`Processing: ${PVP_LEAGUES[league].name}`);
             console.log(`${"─".repeat(40)}`);
-            
+
             const leagueResult = await processLeague(league, currentSeason, dryRun);
             results.leagueResults[league] = leagueResult;
             results.totalPlayersProcessed += leagueResult.playersProcessed;
@@ -101,8 +104,10 @@ async function processSeasonEnd(options = {}) {
             results.totalPrizeCarsAwarded += leagueResult.prizeCarsAwarded;
             results.ratingsReset += leagueResult.ratingsReset;
             results.defensesCleared += leagueResult.defensesCleared;
+            results.distributedRewards.push(...(leagueResult.distributedRewards || []));
+            results.failedRewards.push(...(leagueResult.failedRewards || []));
         }
-        
+
         // Increment season ID for all players
         if (!dryRun) {
             const nextSeasonID = currentSeason.id + 1;
@@ -112,7 +117,38 @@ async function processSeasonEnd(options = {}) {
             );
             console.log(`\n✅ Updated all players to season ${nextSeasonID}`);
         }
-        
+
+        // Save results to database
+        try {
+            await pvpSeasonResultModel.create({
+                seasonID: currentSeason.id,
+                seasonName: currentSeason.name,
+                endedAt: new Date(),
+                endedBy: options.endedBy || "system",
+                wasDryRun: dryRun,
+                totalPlayersProcessed: results.totalPlayersProcessed,
+                totalRewardsDistributed: results.totalRewardsDistributed,
+                totalPrizeCarsAwarded: results.totalPrizeCarsAwarded,
+                totalRatingsReset: results.ratingsReset,
+                totalDefensesCleared: results.defensesCleared,
+                leagueResults: results.leagueResults,
+                distributedRewards: results.distributedRewards,
+                failedRewards: results.failedRewards,
+                seasonConfig: {
+                    prizeCars: currentSeason.prizeCars || {},
+                    prizeCarSlots: currentSeason.prizeCarSlots || 3,
+                    ratingRewards: currentSeason.ratingRewards || [],
+                    trackPoolName: currentSeason.trackPool?.name || "",
+                    filter: currentSeason.filter || {},
+                    startDate: currentSeason.startDate,
+                    endDate: currentSeason.endDate
+                }
+            });
+            console.log("✅ Season results saved to database");
+        } catch (err) {
+            console.error(`Failed to save season results: ${err.message}`);
+        }
+
         console.log("\n" + "=".repeat(60));
         console.log("SEASON END SUMMARY");
         console.log("=".repeat(60));
@@ -121,8 +157,11 @@ async function processSeasonEnd(options = {}) {
         console.log(`Prize Cars Awarded: ${results.totalPrizeCarsAwarded}`);
         console.log(`Ratings Reset: ${results.ratingsReset}`);
         console.log(`Defenses Cleared: ${results.defensesCleared}`);
+        if (results.failedRewards.length > 0) {
+            console.log(`⚠️ Failed Rewards: ${results.failedRewards.length}`);
+        }
         console.log();
-        
+
         return { success: true, results };
         
     } catch (error) {
@@ -148,7 +187,9 @@ async function processLeague(league, season, dryRun) {
         prizeCarsAwarded: 0,
         ratingsReset: 0,
         defensesCleared: 0,
-        topPlayers: []
+        topPlayers: [],
+        distributedRewards: [],
+        failedRewards: []
     };
     
     // Get all players with defenses in this league who meet minimum games requirement
@@ -190,34 +231,59 @@ async function processLeague(league, season, dryRun) {
             });
             
             console.log(`  🏆 Rank ${i + 1}: ${player.userID} - Rating: ${player.leagueStats[league]?.rating}`);
-            
+
             if (!dryRun) {
-                // Add car to player's garage (properly stacking if they already own it)
-                const profile = await profileModel.findOne({ userID: player.userID });
-                if (profile) {
-                    const existingCar = profile.garage.find(c => c.carID === prizeCar);
-                    
-                    if (existingCar) {
-                        // Increment existing car's 000 upgrade count
-                        await profileModel.updateOne(
-                            { userID: player.userID, "garage.carID": prizeCar },
-                            { $inc: { "garage.$.upgrades.000": 1 } }
-                        );
-                    } else {
-                        // Add new car entry
-                        await profileModel.updateOne(
-                            { userID: player.userID },
-                            {
-                                $push: {
-                                    garage: {
-                                        carID: prizeCar,
-                                        upgrades: { "000": 1 },
-                                        tpiBonus: 0
+                try {
+                    // Add car to player's garage (properly stacking if they already own it)
+                    const profile = await profileModel.findOne({ userID: player.userID });
+                    if (profile) {
+                        const existingCar = profile.garage.find(c => c.carID === prizeCar);
+
+                        if (existingCar) {
+                            await profileModel.updateOne(
+                                { userID: player.userID, "garage.carID": prizeCar },
+                                { $inc: { "garage.$.upgrades.000": 1 } }
+                            );
+                        } else {
+                            await profileModel.updateOne(
+                                { userID: player.userID },
+                                {
+                                    $push: {
+                                        garage: {
+                                            carID: prizeCar,
+                                            upgrades: { "000": 1 },
+                                            tpiBonus: 0
+                                        }
                                     }
                                 }
-                            }
-                        );
+                            );
+                        }
+                        result.distributedRewards.push({
+                            userID: player.userID,
+                            league,
+                            type: "prizeCar",
+                            amount: prizeCar,
+                            origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`
+                        });
+                    } else {
+                        result.failedRewards.push({
+                            userID: player.userID,
+                            league,
+                            type: "prizeCar",
+                            amount: prizeCar,
+                            origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`,
+                            reason: "No profile found for user"
+                        });
                     }
+                } catch (err) {
+                    result.failedRewards.push({
+                        userID: player.userID,
+                        league,
+                        type: "prizeCar",
+                        amount: prizeCar,
+                        origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`,
+                        reason: err.message
+                    });
                 }
             }
             result.prizeCarsAwarded++;
@@ -249,46 +315,60 @@ async function processLeague(league, season, dryRun) {
         
         if (totalMoney > 0 || totalTrophies > 0) {
             result.rewardsDistributed++;
-            
+
             if (!dryRun) {
-                // Add rewards to unclaimed (separate objects with reward type first)
-                if (totalMoney > 0) {
-                    await profileModel.updateOne(
-                        { userID: player.userID },
-                        {
-                            $push: {
-                                unclaimedRewards: {
-                                    money: totalMoney,
-                                    origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`
-                                }
-                            }
-                        }
-                    );
-                }
-                
-                if (totalTrophies > 0) {
-                    await profileModel.updateOne(
-                        { userID: player.userID },
-                        {
-                            $push: {
-                                unclaimedRewards: {
-                                    trophies: totalTrophies,
-                                    origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`
-                                }
-                            }
-                        }
-                    );
-                }
-                
-                // Mark rewards as claimed
-                await pvpModel.updateOne(
-                    { userID: player.userID },
-                    {
-                        $set: {
-                            [`seasonRewardsClaimed.${season.id}.${league}`]: claimedThresholds
+                const origin = `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`;
+
+                try {
+                    if (totalMoney > 0) {
+                        const moneyResult = await profileModel.updateOne(
+                            { userID: player.userID },
+                            { $push: { unclaimedRewards: { money: totalMoney, origin } } }
+                        );
+                        if (moneyResult.matchedCount === 0) {
+                            result.failedRewards.push({
+                                userID: player.userID, league, type: "money",
+                                amount: totalMoney, origin, reason: "No profile found for user"
+                            });
+                        } else {
+                            result.distributedRewards.push({
+                                userID: player.userID, league, type: "money",
+                                amount: totalMoney, origin
+                            });
                         }
                     }
-                );
+
+                    if (totalTrophies > 0) {
+                        const trophyResult = await profileModel.updateOne(
+                            { userID: player.userID },
+                            { $push: { unclaimedRewards: { trophies: totalTrophies, origin } } }
+                        );
+                        if (trophyResult.matchedCount === 0) {
+                            result.failedRewards.push({
+                                userID: player.userID, league, type: "trophies",
+                                amount: totalTrophies, origin, reason: "No profile found for user"
+                            });
+                        } else {
+                            result.distributedRewards.push({
+                                userID: player.userID, league, type: "trophies",
+                                amount: totalTrophies, origin
+                            });
+                        }
+                    }
+
+                    // Mark rewards as claimed
+                    await pvpModel.updateOne(
+                        { userID: player.userID },
+                        { $set: { [`seasonRewardsClaimed.${season.id}.${league}`]: claimedThresholds } }
+                    );
+                } catch (err) {
+                    result.failedRewards.push({
+                        userID: player.userID, league, type: "ratingRewards",
+                        amount: { money: totalMoney, trophies: totalTrophies },
+                        origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`,
+                        reason: err.message
+                    });
+                }
             }
         }
         

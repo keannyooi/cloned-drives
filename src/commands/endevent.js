@@ -43,10 +43,17 @@ module.exports = {
 
             async function acceptedFunction(currentMessage) {
                 const endEvent = require("../util/functions/endEvent.js");
-                await endEvent(event);
+                await endEvent(event, message.author.id);
+
+                const progress = event.playerProgress || {};
+                const participants = Object.keys(progress).length;
+                const totalRounds = event.roster.length;
+                const completions = Object.values(progress).filter(r => r > totalRounds).length;
+
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully ended the ${event.name} event!`,
+                    desc: `**Participants:** ${participants}\n**Completions:** ${completions}/${participants}\n**Rounds:** ${totalRounds}\n\nResults saved to database ✅`,
                     author: message.author,
                 });
                 await successMessage.sendMessage({ currentMessage });
