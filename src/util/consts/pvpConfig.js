@@ -18,8 +18,8 @@ const PVP_LEAGUES = {
         name: "Standard League",
         minCarCR: 0,
         maxCarCR: 99,
-        maxTotalCR: 400,
-        maxDuplicates: 2,
+        maxTotalCR: 404,
+        maxDuplicates: 3,
         emoji: "standardEmojiID",
         color: 0x9E9E9E,
         minGarageSize: 10,
@@ -30,11 +30,11 @@ const PVP_LEAGUES = {
         name: "Common League",
         minCarCR: 100,
         maxCarCR: 249,
-        maxTotalCR: 1000,
-        maxDuplicates: 2,
+        maxTotalCR: 1111,
+        maxDuplicates: 3,
         emoji: "commonEmojiID",
         color: 0x8D6E63,
-        minGarageSize: 15,
+        minGarageSize: 150,
         entryFee: 0,
         baseReward: 10000
     },
@@ -42,11 +42,11 @@ const PVP_LEAGUES = {
         name: "Uncommon League",
         minCarCR: 250,
         maxCarCR: 399,
-        maxTotalCR: 1600,
-        maxDuplicates: 2,
+        maxTotalCR: 1750,
+        maxDuplicates: 3,
         emoji: "uncommonEmojiID",
         color: 0x4CAF50,
-        minGarageSize: 20,
+        minGarageSize: 200,
         entryFee: 1000,
         baseReward: 20000
     },
@@ -54,11 +54,11 @@ const PVP_LEAGUES = {
         name: "Rare League",
         minCarCR: 400,
         maxCarCR: 549,
-        maxTotalCR: 2200,
-        maxDuplicates: 2,
+        maxTotalCR: 2555,
+        maxDuplicates: 3,
         emoji: "rareEmojiID",
         color: 0x2196F3,
-        minGarageSize: 25,
+        minGarageSize: 250,
         entryFee: 2500,
         baseReward: 35000
     },
@@ -66,11 +66,11 @@ const PVP_LEAGUES = {
         name: "Epic League",
         minCarCR: 550,
         maxCarCR: 699,
-        maxTotalCR: 3000,
-        maxDuplicates: 2,
+        maxTotalCR: 3200,
+        maxDuplicates: 3,
         emoji: "epicEmojiID",
         color: 0x9C27B0,
-        minGarageSize: 30,
+        minGarageSize: 300,
         entryFee: 5000,
         baseReward: 50000
     },
@@ -78,11 +78,11 @@ const PVP_LEAGUES = {
         name: "Exotic League",
         minCarCR: 700,
         maxCarCR: 849,
-        maxTotalCR: 3600,
-        maxDuplicates: 2,
+        maxTotalCR: 3900,
+        maxDuplicates: 3,
         emoji: "exoticEmojiID",
         color: 0xFFC107,
-        minGarageSize: 35,
+        minGarageSize: 350,
         entryFee: 10000,
         baseReward: 75000
     },
@@ -90,11 +90,11 @@ const PVP_LEAGUES = {
         name: "Legendary League",
         minCarCR: 850,
         maxCarCR: 999,
-        maxTotalCR: 4200,
-        maxDuplicates: 2,
+        maxTotalCR: 4655,
+        maxDuplicates: 3,
         emoji: "legendaryEmojiID",
         color: 0xFF9800,
-        minGarageSize: 40,
+        minGarageSize: 400,
         entryFee: 25000,
         baseReward: 100000
     },
@@ -102,11 +102,11 @@ const PVP_LEAGUES = {
         name: "Mystic League",
         minCarCR: 1000,
         maxCarCR: 1500,
-        maxTotalCR: 5500,
-        maxDuplicates: 2,
+        maxTotalCR: 5141,
+        maxDuplicates: 3,
         emoji: "mysticEmojiID",
         color: 0xE91E63,
-        minGarageSize: 50,
+        minGarageSize: 700,
         entryFee: 50000,
         baseReward: 150000
     },
@@ -115,10 +115,10 @@ const PVP_LEAGUES = {
         minCarCR: 0,
         maxCarCR: Infinity,
         maxTotalCR: Infinity,
-        maxDuplicates: 2,
+        maxDuplicates: 3,
         emoji: "bossEmojiID",
         color: 0xF44336,
-        minGarageSize: 75,
+        minGarageSize: 2000,
         entryFee: 100000,
         baseReward: 250000
     }
@@ -170,7 +170,7 @@ const PVP_SETTINGS = {
     
     // Timeouts (ms)
     opponentSelectTimeout: 120000,
-    carSelectTimeout: 60000,
+    carSelectTimeout: 90000,
     
     // Season end
     ratingDecayFactor: 0.5, // Ratings decay 50% toward base between seasons
@@ -204,8 +204,8 @@ function getLeagueTier(league) {
  * Generate ghost opponent name
  */
 function generateGhostName() {
-    const prefixes = ["Shadow", "Phantom", "Ghost", "Specter", "Spirit", "Wraith", "Shade"];
-    const suffixes = ["Racer", "Driver", "Pilot", "Speedster", "Runner", "Drifter", "Champion"];
+    const prefixes = ["Shadow", "Phantom", "Ghost", "Specter", "Spirit", "Wraith", "Shade","MF Ghost", "Rich", "Hungry", "Elegant"];
+    const suffixes = ["Racer", "Driver", "Newcomer", "Speedster", "Runner", "Drifter", "Champion", "Beginner", "Rookie", "Amateur", "Guardian", "God"];
     const numbers = ["", "", "", "99", "13", "7", "42", "88"];
     
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];

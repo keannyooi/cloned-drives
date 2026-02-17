@@ -32,12 +32,12 @@ function filterCheck(args) {
                     else {
                         let checkArray = currentCar[key].map(tag => tag.toLowerCase());
                         if (applyOrLogic) {
-                            if (value.some(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                            if (value.some(tag => checkArray.findIndex(tag2 => tag.toLowerCase() === tag2) > -1) === false) {
                                 passed = false;
                             }
                         }
                         else {
-                            if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                            if (value.every(tag => checkArray.findIndex(tag2 => tag.toLowerCase() === tag2) > -1) === false) {
                                 passed = false;
                             }
                         }
@@ -51,12 +51,12 @@ function filterCheck(args) {
                     checkArray = checkArray.map(tag => tag ? tag.toLowerCase() : ""); // Check if tag is defined
 
                     if (applyOrLogic) {
-                        if (value.some(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                        if (value.some(tag => checkArray.findIndex(tag2 => tag.toLowerCase() === tag2) > -1) === false) {
                             passed = false;
                         }
                     }
                     else {
-                        if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                        if (value.every(tag => checkArray.findIndex(tag2 => tag.toLowerCase() === tag2) > -1) === false) {
                             passed = false;
                         }
                     }
