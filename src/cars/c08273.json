@@ -1,4 +1,5 @@
 {
+    "carID": "c08273",
     "make": "Mitsubishi",
     "model": "Lancer Evolution VI Tommi Makinen Edition (V26)",
     "modelYear": 2000,
@@ -7,6 +8,7 @@
     "collection": ["Valentines 2026"],
     "description": "Four championship rings in crimson glory, Tommi's legend writes the ultimate love story.",
 	"active" : false,
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/1BM/Evo26.png",
-    "creator": "Bnuuy"
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/1BM/0in/Evo26.png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
 }

@@ -1,0 +1,18 @@
+{
+	"trackName": "Beijing Chang'an Avenue Sprint (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 80,
+		"0to60": 65,
+		"handling": 30,
+		"weight": 5,
+		"mra": 75,
+		"ola": 10
+	}
+}

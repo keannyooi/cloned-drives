@@ -463,12 +463,14 @@ function selectBattleTracks(count = 5) {
     const season = getCurrentSeason();
     const trackPool = season.trackPool;
     const { surfaces, weather, weatherWeights, specificTracks } = trackPool;
-    
+
     let validTracks;
-    
+    let useTrackWeather = false;
+
     if (specificTracks && specificTracks.length > 0) {
-        // Use specific tracks defined in the pool
+        // Use specific tracks defined in the pool — respect their original weather
         validTracks = specificTracks;
+        useTrackWeather = true;
     } else {
         // Filter all tracks that match season's allowed surfaces
         const allTracks = getTrackFiles();
@@ -478,64 +480,67 @@ function selectBattleTracks(count = 5) {
             return track && surfaces.includes(track.surface);
         });
     }
-    
+
     if (validTracks.length === 0) {
         // Fallback to any tracks if no match
         console.warn("No tracks match season pool, using all tracks");
-        const allTracks = getTrackFiles();
-        return selectRandomTracks(allTracks, count, weatherWeights, weather);
+        return selectRandomTracks(allTracks, count, weatherWeights, weather, false);
     }
-    
-    return selectRandomTracks(validTracks, count, weatherWeights, weather);
+
+    return selectRandomTracks(validTracks, count, weatherWeights, weather, useTrackWeather);
 }
 
 /**
  * Select random tracks with weather
+ * @param {boolean} useTrackWeather - If true, use the track's own weather from its JSON instead of rolling
  */
-function selectRandomTracks(trackList, count, weatherWeights, weatherOptions) {
+function selectRandomTracks(trackList, count, weatherWeights, weatherOptions, useTrackWeather = false) {
     const selectedTracks = [];
     const usedTrackIDs = new Set();
-    
+
     // Shuffle track list
     const shuffled = shuffleArray([...trackList]);
-    
+
     for (const trackFile of shuffled) {
         if (selectedTracks.length >= count) break;
-        
+
         const trackID = trackFile.endsWith('.json') ? trackFile.slice(0, -5) : trackFile;
         const trackData = getTrack(trackID);
-        
+
         if (!trackData || usedTrackIDs.has(trackID)) continue;
-        
+
         usedTrackIDs.add(trackID);
-        
-        // Check if this surface can have rain (uses imported function)
-        const canHaveRain = surfaceSupportsRain(trackData.surface);
-        
-        // Default to Sunny for incompatible surfaces
-        let selectedWeather = "Sunny";
-        
-        if (canHaveRain) {
-            // This surface supports weather variation, roll for it
-            const roll = Math.random();
-            let cumulative = 0;
-            
-            for (const w of weatherOptions) {
-                cumulative += weatherWeights[w] || 0;
-                if (roll <= cumulative) {
-                    selectedWeather = w;
-                    break;
+
+        let selectedWeather;
+
+        if (useTrackWeather) {
+            // Specific tracks mode: use the track's own weather as defined in its JSON
+            selectedWeather = trackData.weather || "Sunny";
+        } else {
+            // Pool mode: roll weather based on pool weights
+            const canHaveRain = surfaceSupportsRain(trackData.surface);
+            selectedWeather = "Sunny";
+
+            if (canHaveRain) {
+                const roll = Math.random();
+                let cumulative = 0;
+
+                for (const w of weatherOptions) {
+                    cumulative += weatherWeights[w] || 0;
+                    if (roll <= cumulative) {
+                        selectedWeather = w;
+                        break;
+                    }
                 }
             }
         }
-        // For surfaces that don't support rain (Snow, Ice, Sand), always use Sunny
-        
+
         selectedTracks.push({
             trackID,
             weather: selectedWeather
         });
     }
-    
+
     return selectedTracks;
 }
 

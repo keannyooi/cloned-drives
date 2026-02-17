@@ -1,0 +1,18 @@
+{
+	"trackName": "Tianmen Mountain Road (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 1,
+		"0to60": 40,
+		"handling": 100,
+		"weight": 20,
+		"mra": 30,
+		"ola": 15
+	}
+}

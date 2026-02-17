@@ -65,27 +65,31 @@ const SEASONS = {
     2: {
         id: 2,
         name: "Season 1: CNY: Year of the Horse",
-        description: "Trading the daily commute for 2026 horsepower. It’s time to unbridle the beast and redline into the New Year!",
-        startDate: new Date("2027-02-04T00:00:00Z"),
-        endDate: new Date("2027-03-21T23:59:59Z"),
-        trackPoolID: "offroad",
+        description: "Trading the daily commute for horsepower. It’s time to unbridle the beast and redline into the New lunar Year!",
+        startDate: new Date("2026-02-17T21:00:00Z"),
+        endDate: new Date("2026-03-21T23:59:59Z"),
+        trackPoolID: "china",
         filter: {tags: ["Year of the Horse"]},
         
         ratingRewards: [
-            { rating: 1100, money: 10000, trophies: 10 },
-            { rating: 1200, money: 25000, trophies: 25 },
-            { rating: 1300, money: 50000, trophies: 50 },
-            { rating: 1400, money: 100000, trophies: 100 },
-            { rating: 1500, money: 200000, trophies: 200 }
+            { rating: 1100, money: 100000, trophies: 10 },
+            { rating: 1200, money: 250000, trophies: 25 },
+            { rating: 1300, money: 500000, trophies: 50 },
+            { rating: 1400, money: 1000000, trophies: 100 },
+            { rating: 1500, money: 2000000, trophies: 200 }
         ],
         
-        prizeCarSlots: 5, // Top 5 get prize cars
+        prizeCarSlots: 3, // Top 5 get prize cars
         prizeCars: {
-            epic: null,
-            exotic: null,
-            legendary: null,
-            mystic: null,
-            unlimited: null
+            standard: "c07714",
+            common: "c00554",
+            uncommon: "c00625",
+            rare: "c07484",
+            epic: "c00140",
+            exotic: "c06765",
+            legendary: "c01088",
+            mystic: "c05306",
+            unlimited: "c01027"
         }
     },
     

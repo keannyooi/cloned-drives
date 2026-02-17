@@ -1,0 +1,18 @@
+{
+	"trackName": "Shanghai International Circuit (Rainy)",
+	"weather": "Rainy",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 55,
+		"0to60": 60,
+		"handling": 90,
+		"weight": 20,
+		"mra": 65,
+		"ola": 25
+	}
+}

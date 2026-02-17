@@ -1,4 +1,5 @@
 {
+    "carID": "c08274",
     "make": "Subaru",
     "model": "Impreza WRX Type RA STi Version 6 Limited (V26)",
     "modelYear": 1996,
@@ -7,6 +8,7 @@
     "collection": ["Valentines 2026"],
     "description": "Blue-blooded rally royalty on golden shoes, where boxer rumble meets hearts that refuse to lose.",
 	"active" : false,
-    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/1BM/SUBAUV26.png",
-    "creator": "Bnuuy"
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/1BM/0in/SUBAUV26.png",
+    "creator": "Bnuuy",
+    "hiddenTag": [""]
 }

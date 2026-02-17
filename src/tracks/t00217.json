@@ -1,0 +1,18 @@
+{
+	"trackName": "Zhuhai International Circuit (Sunny)",
+	"weather": "Sunny",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 50,
+		"0to60": 65,
+		"handling": 75,
+		"weight": 15,
+		"mra": 60,
+		"ola": 20
+	}
+}

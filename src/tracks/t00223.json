@@ -1,0 +1,18 @@
+{
+	"trackName": "Gobi Desert Rally Stage (Rainy)",
+	"weather": "Rainy",
+	"surface": "Dirt",
+	"speedbumps": 6,
+	"humps": 5,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 10,
+		"0to60": 75,
+		"handling": 85,
+		"weight": 20,
+		"mra": 50,
+		"ola": 25
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "packName": "Battle Pack 1: Year of the Horse",
+    "description": "Year of the horse, does that 4 make you super unlucky or does the 88888 make up for it?!",
+    "price": 488888,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/packs/east_vs_west.png",
+    "categories": ["normal"],
+    "tier": "standard",
+    "weight": 8,
+    "filter": null,
+    "filterLogic": "or",
+    "noDuplicates": true,
+    "packSequence": [
+        { "standard": 50, "common": 40, "uncommon": 10 },
+        { "common": 50, "uncommon": 40, "epic": 10 },
+        { "common": 50, "rare": 40, "exotic": 10 },
+		{ "common": 50, "epic": 46, "legendary": 4 },
+        {
+            "rates": { "epic": 80, "exotic": 19, "legendary": 1 },
+            "filter": { "tags": ["Year of the Horse"] }
+        }
+    ],
+    "repetition": 1
+}

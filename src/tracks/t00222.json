@@ -1,0 +1,18 @@
+{
+	"trackName": "Gobi Desert Rally Stage (Sunny)",
+	"weather": "Sunny",
+	"surface": "Dirt",
+	"speedbumps": 6,
+	"humps": 5,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 15,
+		"0to60": 80,
+		"handling": 75,
+		"weight": 15,
+		"mra": 55,
+		"ola": 20
+	}
+}

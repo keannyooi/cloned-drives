@@ -1,0 +1,18 @@
+{
+	"trackName": "Macau Grand Prix - Guia Circuit (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 35,
+		"0to60": 70,
+		"handling": 95,
+		"weight": 10,
+		"mra": 40,
+		"ola": 15
+	}
+}

@@ -19,7 +19,6 @@ const GLOBAL_BANS = {
     // Example:
     // "c00001": "Overpowered in all conditions",
     // "c00002": "Stats glitched, pending fix"
-	"c06409": "Overpowered?"
 };
 
 /**
@@ -35,7 +34,7 @@ const SEASON_BANS = {
         // Banned in specific leagues only
         perLeague: {
             epic: [
-                // { carID: "c00020", reason: "Too strong for Epic league" }
+                // { carID: "c03693", reason: "Too strong for Epic league" }
             ],
             legendary: [],
             mystic: [],
@@ -43,12 +42,43 @@ const SEASON_BANS = {
         }
     },
     2: {
-        allLeagues: [],
+        // Banned in all leagues for this season
+        allLeagues: [
+            // { carID: "c00010", reason: "Dominates asphalt meta" }
+        ],
+        // Banned in specific leagues only
         perLeague: {
-            epic: [],
-            legendary: [],
-            mystic: [],
-            unlimited: []
+            epic: [
+			{ carID: "c03693", reason: "Unbalanced Prizecar" },
+			{ carID: "c02305", reason: "Unbalanced Prizecar" },
+			{ carID: "c03685", reason: "Unbalanced Prizecar" }
+            ],
+			exotic: [
+			{ carID: "c03279", reason: "Unbalanced Prizecar" },
+			{ carID: "c03692", reason: "Unbalanced Prizecar" },
+			{ carID: "c02145", reason: "Unbalanced Prizecar" }
+			],
+            legendary: [
+			{ carID: "c02430", reason: "Unbalanced Prizecar" }
+			],
+            mystic: [
+			{ carID: "c03120", reason: "Unbalanced Prizecar" },
+			{ carID: "c01691", reason: "Unbalanced Prizecar" },
+			{ carID: "c04859", reason: "Unbalanced Prizecar" },
+			{ carID: "c02512", reason: "Unbalanced Prizecar" },
+			{ carID: "c04176", reason: "Unbalanced Prizecar" },
+			{ carID: "c06579", reason: "Unbalanced Prizecar" },
+			{ carID: "c08250", reason: "BOSS Car" }		
+			],
+            unlimited: [
+			{ carID: "c03120", reason: "Unbalanced Prizecar" },
+			{ carID: "c01691", reason: "Unbalanced Prizecar" },
+			{ carID: "c04859", reason: "Unbalanced Prizecar" },
+			{ carID: "c02512", reason: "Unbalanced Prizecar" },
+			{ carID: "c04176", reason: "Unbalanced Prizecar" },
+			{ carID: "c06579", reason: "Unbalanced Prizecar" },
+			{ carID: "c08250", reason: "BOSS Car" }		
+			],
         }
     },
     3: {

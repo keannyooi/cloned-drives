@@ -1,0 +1,18 @@
+{
+	"trackName": "Silk Road Gravel Stage (Sunny)",
+	"weather": "Sunny",
+	"surface": "Gravel",
+	"speedbumps": 4,
+	"humps": 3,
+	"background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+	"map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+
+	"specsDistr": {
+		"topSpeed": 20,
+		"0to60": 50,
+		"handling": 85,
+		"weight": 20,
+		"mra": 30,
+		"ola": 15
+	}
+}

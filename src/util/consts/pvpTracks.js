@@ -97,18 +97,19 @@ const TRACK_POOLS = {
     },
     
     /**
-     * Wet Weather Pool - Rain focused
+     * China Pool - 2026 YOTH
      */
-    wetweather: {
-        id: "wetweather",
-        name: "Wet Weather Masters",
-        description: "Heavy rain conditions",
+    china: {
+        id: "china",
+        name: "Shanghai Showcase",
+        description: "Travel China and dominate",
         surfaces: ["Asphalt", "Track", "Gravel", "Dirt"],
-        weather: ["Rainy"],
+        weather: ["Rainy","Sunny"],
         weatherWeights: {
-            Rainy: 1.0
+            Sunny: 0.9,
+            Rainy: 0.1
         },
-        specificTracks: null
+        specificTracks: ["t00211", "t00213", "t00214", "t00215", "t00217", "t00219", "t00220", "t00222", "t00224"]
     },
     
     /**
