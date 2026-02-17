@@ -67,7 +67,7 @@ const SEASONS = {
         name: "Season 1: CNY: Year of the Horse",
         description: "Trading the daily commute for horsepower. It’s time to unbridle the beast and redline into the New lunar Year!",
         startDate: new Date("2026-02-17T21:00:00Z"),
-        endDate: new Date("2026-03-21T23:59:59Z"),
+        endDate: new Date("2026-03-19T23:59:59Z"),
         trackPoolID: "china",
         filter: {tags: ["Year of the Horse"]},
         
