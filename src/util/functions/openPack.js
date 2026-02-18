@@ -162,7 +162,7 @@ async function openPack(args) {
         check += rates[key];
         if (check > rand) {
           const { byRarity } = getFilteredPool(filter);
-          chosenCarID = pickRandomCar(byRarity[key], pulledCarIDs, noDupes);
+          chosenCarID = pickWithFallback(byRarity, key, pulledCarIDs, noDupes);
           break;
         }
       }
@@ -170,7 +170,7 @@ async function openPack(args) {
 
     if (!chosenCarID) {
       const { byRarity } = getFilteredPool(filter);
-      chosenCarID = pickRandomCar(byRarity.standard, pulledCarIDs, noDupes);
+      chosenCarID = pickWithFallback(byRarity, "standard", pulledCarIDs, noDupes);
     }
 
     if (!chosenCarID) {
@@ -438,6 +438,43 @@ function pickRandomCar(pool, pulledIDs, noDuplicates) {
   }
 
   return pool[Math.floor(Math.random() * pool.length)];
+}
+
+/** Rarity fallback order — when a bucket is empty, try adjacent rarities */
+const RARITY_FALLBACK = [
+  "mystic", "legendary", "exotic", "epic", "rare", "uncommon", "common", "standard"
+];
+
+/**
+ * Pick a car from the rolled rarity bucket, falling back to adjacent
+ * rarities if the bucket is empty for the current filter combination.
+ */
+function pickWithFallback(byRarity, rolledRarity, pulledIDs, noDuplicates) {
+  // Try the rolled rarity first
+  const result = pickRandomCar(byRarity[rolledRarity], pulledIDs, noDuplicates);
+  if (result) return result;
+
+  // Find position of rolled rarity in fallback order
+  const idx = RARITY_FALLBACK.indexOf(rolledRarity);
+
+  // Try lower rarities first (more likely to have cars), then higher
+  const lower = RARITY_FALLBACK.slice(idx + 1);
+  const higher = RARITY_FALLBACK.slice(0, idx).reverse();
+
+  // Interleave: one step down, one step up, etc.
+  const fallbackOrder = [];
+  const maxLen = Math.max(lower.length, higher.length);
+  for (let i = 0; i < maxLen; i++) {
+    if (i < lower.length) fallbackOrder.push(lower[i]);
+    if (i < higher.length) fallbackOrder.push(higher[i]);
+  }
+
+  for (const rarity of fallbackOrder) {
+    const fallback = pickRandomCar(byRarity[rarity], pulledIDs, noDuplicates);
+    if (fallback) return fallback;
+  }
+
+  return null;
 }
 
 /**
