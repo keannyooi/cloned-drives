@@ -6,6 +6,16 @@ const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
 
+/** Load an image with a timeout — rejects if it takes too long so the catch block can handle it */
+function loadImageWithTimeout(src, ms = 3000) {
+    return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error(`Image load timeout: ${src}`)), ms);
+        loadImage(src)
+            .then(img => { clearTimeout(timer); resolve(img); })
+            .catch(err => { clearTimeout(timer); reject(err); });
+    });
+}
+
 /**
  * Race Formula v2.0 - Balanced for 6-stat tune system
  * 
@@ -33,9 +43,9 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             const canvas = createCanvas(674, 379);
             const context = canvas.getContext("2d");
             const [background, playerHud, opponentHud] = await Promise.all([
-                loadImage(currentTrack["background"]),
-                loadImage(player.racehud),
-                loadImage(opponent.racehud),
+                loadImageWithTimeout(currentTrack["background"]),
+                loadImageWithTimeout(player.racehud),
+                loadImageWithTimeout(opponent.racehud),
             ]);
 
             context.drawImage(background, 0, 0, canvas.width, canvas.height);
