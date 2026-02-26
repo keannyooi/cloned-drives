@@ -1,77 +1,36 @@
 {
     "packName": "Bugatti Special Pack",
     "description": "An insane pack featuring bugatti",
-	"repetition": 1,
+    "repetition": 1,
     "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/BugattiSpecial.png",
-    
     "filter": {
-        "make": "Bugatti",
-        "modelYear": {
-            "start": 1000,
-            "end": 3000
-        },
-        "country": "None",
-        "tags": "None",
-        "driveType": "None",
-        "tyreType": "None",
-		"enginePos": "None",
-        "fuelType": "None",
-        "bodyStyle": "None",
-		"seatCount": "None",
-        "creator": "None",
-        "hiddenTag": "None"
+        "make": "Bugatti"
     },
-
     "packSequence": [
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 20,
-			"legendary": 60,
-			"mystic": 20
+            "exotic": 20,
+            "legendary": 60,
+            "mystic": 20
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 20,
-			"legendary": 60,
-			"mystic": 20
+            "exotic": 20,
+            "legendary": 60,
+            "mystic": 20
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 20,
-			"legendary": 60,
-			"mystic": 20
+            "exotic": 20,
+            "legendary": 60,
+            "mystic": 20
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 20,
-			"legendary": 60,
-			"mystic": 20
+            "exotic": 20,
+            "legendary": 60,
+            "mystic": 20
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 0,
-			"exotic": 20,
-			"legendary": 60,
-			"mystic": 20
+            "exotic": 20,
+            "legendary": 60,
+            "mystic": 20
         }
     ]
 }

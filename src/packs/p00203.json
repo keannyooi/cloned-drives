@@ -3,75 +3,31 @@
     "description": "5 low-end Year of the Horse cards",
     "repetition": 1,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/BoosterPack.png",
-
     "filter": {
-        "make": "None",
-        "modelYear": {
-            "start": 1000,
-            "end": 3000
-        },
-        "country": "None",
-        "tags": ["Year of the Horse"],
-        "driveType": "None",
-        "tyreType": "None",
-        "enginePos": "None",
-        "fuelType": "None",
-        "bodyStyle": "None",
-        "seatCount": "None",
-        "creator": "None",
-        "hiddenTag": "None"
+        "tags": [
+            "Year of the Horse"
+        ]
     },
-
     "packSequence": [
         {
             "standard": 50,
-            "common": 50,
-            "uncommon": 0,
-            "rare": 0,
-            "epic": 0,
-            "exotic": 0,
-            "legendary": 0,
-            "mystic": 0
+            "common": 50
         },
         {
             "standard": 50,
-            "common": 50,
-            "uncommon": 0,
-            "rare": 0,
-            "epic": 0,
-            "exotic": 0,
-            "legendary": 0,
-            "mystic": 0
+            "common": 50
         },
         {
             "standard": 50,
-            "common": 50,
-            "uncommon": 0,
-            "rare": 0,
-            "epic": 0,
-            "exotic": 0,
-            "legendary": 0,
-            "mystic": 0
+            "common": 50
         },
         {
-            "standard": 0,
             "common": 50,
-            "uncommon": 50,
-            "rare": 0,
-            "epic": 0,
-            "exotic": 0,
-            "legendary": 0,
-            "mystic": 0
+            "uncommon": 50
         },
         {
-            "standard": 0,
             "common": 30,
-            "uncommon": 70,
-            "rare": 0,
-            "epic": 0,
-            "exotic": 0,
-            "legendary": 0,
-            "mystic": 0
+            "uncommon": 70
         }
     ]
 }

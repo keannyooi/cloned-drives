@@ -1,77 +1,41 @@
 {
     "packName": "Japanese 5x Elite Pack",
     "description": "The normal pack of 25 Rare or Higher Japanese cards",
-	"repetition": 5,
+    "repetition": 5,
     "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
-    
     "filter": {
-        "make": "None",
-        "modelYear": {
-            "start": 1000,
-            "end": 3000
-        },
-        "country": "JP",
-        "tags": "None",
-        "driveType": "None",
-        "tyreType": "None",
-		"enginePos": "None",
-        "fuelType": "None",
-        "bodyStyle": "None",
-		"seatCount": "None",
-        "creator": "None",
-        "hiddenTag": "None"
+        "country": "JP"
     },
-
     "packSequence": [
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 73,
-			"epic": 20,
-			"exotic": 6,
-			"legendary": 1,
-			"mystic": 0
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
         }
     ]
 }

@@ -1,77 +1,41 @@
 {
     "packName": "Motorsport Titan Pack",
     "description": "The best pack in CD!",
-	"repetition": 1,
+    "repetition": 1,
     "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/MotorsportTITANPack.png",
-    
     "filter": {
-        "make": "None",
-        "modelYear": {
-            "start": 1000,
-            "end": 3000
-        },
-        "country": "None",
-        "tags": "Motorsport",
-        "driveType": "None",
-        "tyreType": "None",
-		"enginePos": "None",
-        "fuelType": "None",
-        "bodyStyle": "None",
-		"seatCount": "None",
-        "creator": "None",
-        "hiddenTag": "None"
+        "tags": "Motorsport"
     },
-
     "packSequence": [
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
         },
         {
-			"standard": 0,			
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"epic": 83,
-			"exotic": 13,
-			"legendary": 3.2,
-			"mystic": 0.8
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
         }
     ]
 }
