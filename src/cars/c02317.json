@@ -10,9 +10,8 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Ultra Expensive", "Eargasm", "Hypercar"],
+    "tags": ["Track Day","Ultra Expensive","Eargasm","Hypercar"],
     "isPrize": true,
-	
     "weight": 1240,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PaganiImola(2019).png",
     "creator": "Bnuuy",
-	
-"333TopSpeed": 242,
-"3330to60": 2.5,
-"333Handling": 100,
-
-"666TopSpeed": 244,
-"6660to60": 2.3,
-"666Handling": 103,
-
-"699TopSpeed": 244,
-"6990to60": 2.2,
-"699Handling": 108,
-
-"969TopSpeed": 247,
-"9690to60": 2.3,
-"969Handling": 108,
-
-"996TopSpeed": 247,
-"9960to60": 2.2,
-"996Handling": 103,
     "hiddenTag": [""]
 }

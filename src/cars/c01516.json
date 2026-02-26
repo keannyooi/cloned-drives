@@ -1,10 +1,7 @@
 {
     "carID": "c01516",
     "cr": 752,
-    "make": [
-        "RENNTech",
-        "Mercedes-Benz"
-    ],
+    "make": ["RENNTech","Mercedes-Benz"],
     "model": "ML60RS",
     "modelYear": 1999,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Tuner", "Year of the Rabbit"
-    ],
+    "tags": ["Tuner","Year of the Rabbit"],
     "isPrize": false,
     "weight": 2069,
     "gc": "High",
@@ -28,21 +23,6 @@
     "mra": 50.49,
     "ola": 65.38,
     "description": "",
-     "333TopSpeed": 159,
-    "3330to60": 4.9,
-    "333Handling": 80,
-    "666TopSpeed": 163,
-    "6660to60": 4.7,
-    "666Handling": 82,
-    "996TopSpeed": 166,
-    "9960to60": 4.4,
-    "996Handling": 82,
-    "969TopSpeed": 166,
-    "9690to60": 4.7,
-    "969Handling": 85,
-    "699TopSpeed": 163,
-    "6990to60": 4.4,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RENNTechML60RS(1999).png",
     "creator": "Havvy",
     "hiddenTag": [""]

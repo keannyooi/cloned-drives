@@ -1,7 +1,7 @@
 {
     "carID": "c02632",
     "cr": 502,
-    "make": ["Paxton", "Plymouth"],
+    "make": ["Paxton","Plymouth"],
     "model": "Prowler Supercharged",
     "modelYear": 2000,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1200,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Weird headlamps aside, this Prowler's punch match its promise of a factory-made hot rod.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PaxtonProwlerSupercharged(2000).png",
     "creator": "Keanny",
-
-"333TopSpeed": 149, 
-"3330to60": 4.8, 
-"333Handling": 80,
-
-"666TopSpeed": 152, 
-"6660to60": 4.6, 
-"666Handling": 82,
-
-"699TopSpeed": 152, 
-"6990to60": 4.3, 
-"699Handling": 85,
-
-"969TopSpeed": 156, 
-"9690to60": 4.6, 
-"969Handling": 85,
-
-"996TopSpeed": 156, 
-"9960to60": 4.3, 
-"996Handling": 82,
     "hiddenTag": [""]
 }

@@ -10,10 +10,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Track Day", "Year of the Rabbit"
-    ],
+    "tags": ["Street Racer","Track Day","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1295,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 71.25,
     "ola": 72.48,
     "description": "Tuned by Prodrive, it was the only 2-door Impreza that was ever offered in Europe.",
-"333TopSpeed": 158,
-"3330to60": 4.4,
-"333Handling": 88,
-
-"666TopSpeed": 162,
-"6660to60": 4.1,
-"666Handling": 91,
-
-"699TopSpeed": 162,
-"6990to60": 3.9,
-"699Handling": 94,
-
-"969TopSpeed": 165,
-"9690to60": 4.1,
-"969Handling": 94,
-
-"996TopSpeed": 165,
-"9960to60": 3.9,
-"996Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaP1(2000).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

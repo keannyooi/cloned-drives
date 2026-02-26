@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1190,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,30 +23,7 @@
     "mra": 48.98,
     "ola": 68.75,
     "description": "If you live in Europe, you could look out the window and find a Golf mk4 in this exact color and with these rims.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.8Highline(1997).png",
     "creator": "Andu",
-    
-
-    "333TopSpeed": 129,
-    "3330to60": 9.1,
-    "333Handling": 75,
-    
-    "666TopSpeed": 133,
-    "6660to60": 8.6,
-    "666Handling": 78,
-    
-    "699TopSpeed": 133,
-    "6990to60": 8.2,
-    "699Handling": 81,
-    
-    "969TopSpeed": 137,
-    "9690to60": 8.6,
-    "969Handling": 81,
-    
-    "996TopSpeed": 137,
-    "9960to60": 8.2,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

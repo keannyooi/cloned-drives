@@ -12,42 +12,18 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1217,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 25.20,
+    "mra": 25.2,
     "ola": 59.63,
     "description": "If you had no money and wanted a Golf that would take 5 years to get to 100mph and would outlive you; then this was the Golf for you!",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf2.0SDIS(2004).png",
     "creator": "Andu",
-
-    "333TopSpeed": 106,
-    "3330to60": 15.3,
-    "333Handling": 72,
-    
-    "666TopSpeed": 111,
-    "6660to60": 14.5,
-    "666Handling": 75,
-    
-    "699TopSpeed": 111,
-    "6990to60": 13.7,
-    "699Handling": 78,
-    
-    "969TopSpeed": 116,
-    "9690to60": 14.5,
-    "969Handling": 78,
-    
-    "996TopSpeed": 116,
-    "9960to60": 13.7,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

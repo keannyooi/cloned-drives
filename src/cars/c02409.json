@@ -1,7 +1,7 @@
 {
     "carID": "c02409",
     "cr": 734,
-    "make": ["AC", "Zagato"],
+    "make": ["AC","Zagato"],
     "model": "378 GT Zagato",
     "modelYear": 2012,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique"],
     "isPrize": false,
-	
     "weight": 1465,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "A modern representation of the Cobra made by Zagato ontop a 2006 Z06.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AC378GTZagato(2012).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 189, 
-"3330to60": 3.6, 
-"333Handling": 90,
-
-"666TopSpeed": 192, 
-"6660to60": 3.4, 
-"666Handling": 93,
-
-"699TopSpeed": 192, 
-"6990to60": 3.2, 
-"699Handling": 97,
-
-"969TopSpeed": 194, 
-"9690to60": 3.4, 
-"969Handling": 97,
-
-"996TopSpeed": 194, 
-"9960to60": 3.2, 
-"996Handling": 93,
     "hiddenTag": [""]
 }

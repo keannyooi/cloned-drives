@@ -1,7 +1,7 @@
 {
     "carID": "c03566",
     "cr": 557,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "392 Quick Silver Concept",
     "modelYear": 2011,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept", "Muscle Car", "The Americas Assault"],
+    "tags": ["Unique","Concept","Muscle Car","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2250,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 61.90,
+    "mra": 61.9,
     "ola": 65.38,
     "description": "The closest thing to an SRT-10 successor. This time rolling with a 470HP 392 it not only didn't hit the mark in terms of performance but didn’t hit production either.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram392QuickSilverConcept(2011).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 147,
-"3330to60": 4.9,
-"333Handling": 80,
-
-"666TopSpeed": 150,
-"6660to60": 4.7,
-"666Handling": 82,
-
-"699TopSpeed": 150,
-"6990to60": 4.4,
-"699Handling": 85,
-
-"969TopSpeed": 154,
-"9690to60": 4.7,
-"969Handling": 85,
-
-"996TopSpeed": 154,
-"9960to60": 4.4,
-"996Handling": 82,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 63,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Rest of The World"],
+    "tags": ["Eco-Friendly","Rest of The World"],
     "isPrize": false,
-	
     "weight": 991,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mahindrae2oPlusP8(2016).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 62, 
-    "3330to60": 63.6, 
-    "333Handling": 65,
-
-    "666TopSpeed": 70, 
-    "6660to60": 60.3, 
-    "666Handling": 67,
-
-    "699TopSpeed": 70, 
-    "6990to60": 57.0, 
-    "699Handling": 70,
-
-    "969TopSpeed": 79, 
-    "9690to60": 60.3, 
-    "969Handling": 70,
-
-    "996TopSpeed": 79, 
-    "9960to60": 57.0, 
-    "996Handling": 67,
     "hiddenTag": [""]
 }

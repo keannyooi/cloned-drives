@@ -6,13 +6,12 @@
     "modelYear": 2018,
     "country": "DE",
     "topSpeed": 189,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 103,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1220,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 82.55,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GT3R(2018).png",
-
-"333TopSpeed": 192,
-"3330to60": 2.8,
-"333Handling": 106,
-
-"666TopSpeed": 195,
-"6660to60": 2.7,
-"666Handling": 110,
-
-"699TopSpeed": 195,
-"6990to60": 2.5,
-"699Handling": 114,
-
-"969TopSpeed": 197,
-"9690to60": 2.7,
-"969Handling": 114,
-
-"996TopSpeed": 197,
-"9960to60": 2.5,
-"996Handling": 110,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

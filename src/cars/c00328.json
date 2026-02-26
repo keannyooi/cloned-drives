@@ -1,10 +1,7 @@
 {
     "carID": "c00328",
     "cr": 642,
-    "make": [
-        "Comptech",
-        "Acura"
-    ],
+    "make": ["Comptech","Acura"],
     "model": "NSX-T",
     "modelYear": 1999,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Unique", "Year of the Rabbit"
-    ],
+    "tags": ["Street Racer","Unique","Year of the Rabbit"],
     "isPrize": true,
     "weight": 1497,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 75.81,
     "ola": 89.36,
     "description": "An Acura NSX-T that is a widebodied, supercharged and elevated in terms of spirit.",
-     "333TopSpeed": 194,
-    "3330to60": 4.5,
-    "333Handling": 89,
-    "666TopSpeed": 196,
-    "6660to60": 4.2,
-    "666Handling": 92,
-    "996TopSpeed": 199,
-    "9960to60": 4,
-    "996Handling": 92,
-    "969TopSpeed": 199,
-    "9690to60": 4.2,
-    "969Handling": 95,
-    "699TopSpeed": 196,
-    "6990to60": 4,
-    "699Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ComptechNSX-T(1999).png",
     "creator": "Keanny",
     "hiddenTag": [""]

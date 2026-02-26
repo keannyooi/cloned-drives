@@ -1,5 +1,5 @@
 {
-	"carID": "c06459",
+    "carID": "c06459",
     "cr": 562,
     "make": "Dodge",
     "model": "Charger R/T",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 1940,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 71.04,
     "ola": 78.43,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRT2015.png",
-
-"333TopSpeed": 135,
-"3330to60": 4.8,
-"333Handling": 80,
-
-"666TopSpeed": 139,
-"6660to60": 4.6,
-"666Handling": 82,
-
-"699TopSpeed": 139,
-"6990to60": 4.3,
-"699Handling": 85,
-
-"969TopSpeed": 143,
-"9690to60": 4.6,
-"969Handling": 85,
-
-"996TopSpeed": 143,
-"9960to60": 4.3,
-"996Handling": 82,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRT2015.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

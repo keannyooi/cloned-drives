@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "Eurotech Elite"],
+    "tags": ["Innovative","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1095,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "If you weren't that interested in hypermiling, sligtly bigger and more powerful TDI was there.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA214TDI(2000).png",
     "creator": "Connor",
-
-    "333TopSpeed": 112,
-    "3330to60": 11.7,
-    "333Handling": 72,
-
-    "666TopSpeed": 117,
-    "6660to60": 11.1, 
-    "666Handling": 75,
-
-    "996TopSpeed": 122,
-    "9960to60": 10.5,
-    "996Handling": 75,
-
-    "969TopSpeed": 122,
-    "9690to60": 11.1,
-    "969Handling": 78,
-
-    "699TopSpeed": 117,
-    "6990to60": 10.5,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

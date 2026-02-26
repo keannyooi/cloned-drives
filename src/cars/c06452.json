@@ -1,5 +1,5 @@
 {
-	"carID": "c06452",
+    "carID": "c06452",
     "cr": 470,
     "make": "Dodge",
     "model": "Charger GT AWD",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 1920,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 63.18,
     "ola": 75.59,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerGTAWD2020.png",
-
-"333TopSpeed": 135,
-"3330to60": 6.1,
-"333Handling": 80,
-
-"666TopSpeed": 139,
-"6660to60": 5.8,
-"666Handling": 82,
-
-"699TopSpeed": 139,
-"6990to60": 5.4,
-"699Handling": 85,
-
-"969TopSpeed": 143,
-"9690to60": 5.8,
-"969Handling": 85,
-
-"996TopSpeed": 143,
-"9960to60": 5.4,
-"996Handling": 82,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerGTAWD2020.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

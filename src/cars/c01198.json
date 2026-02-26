@@ -10,9 +10,7 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1270,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 66.66,
     "ola": 65.21,
     "description": "Subaru launched a final edition of the first generation Impreza WRX STI as a farewell for that generation.",
-"333TopSpeed": 117,
-"3330to60": 4.3,
-"333Handling": 86,
-
-"666TopSpeed": 121,
-"6660to60": 4,
-"666Handling": 88,
-
-"699TopSpeed": 121,
-"6990to60": 3.8,
-"699Handling": 92,
-
-"969TopSpeed": 126,
-"9690to60": 4,
-"969Handling": 92,
-
-"996TopSpeed": 126,
-"9960to60": 3.8,
-"996Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaS201STi(2000).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

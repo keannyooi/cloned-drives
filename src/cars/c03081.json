@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","The Tyrol Tour"],
     "isPrize": false,
-
     "weight": 1487,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 75.58,
-    "ola": 80.00,
+    "ola": 80,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombiRS245(2017).png",
     "creator": "Connor",
-
-    "333TopSpeed": 157,
-    "3330to60": 6.2,
-    "333Handling": 85,
-
-    "666TopSpeed": 161,
-    "6660to60": 5.9, 
-    "666Handling": 87,
-
-    "996TopSpeed": 164,
-    "9960to60": 5.5,
-    "996Handling": 87,
-
-    "969TopSpeed": 164,
-    "9690to60": 5.9,
-    "969Handling": 91,
-
-    "699TopSpeed": 161,
-    "6990to60": 5.5,
-    "699Handling": 91,
     "hiddenTag": [""]
 }

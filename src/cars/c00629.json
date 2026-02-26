@@ -1,10 +1,7 @@
 {
     "carID": "c00629",
     "cr": 582,
-    "make": [
-        "Kleemann",
-        "Mercedes-Benz"
-    ],
+    "make": ["Kleemann","Mercedes-Benz"],
     "model": "CLK43K",
     "modelYear": 2001,
     "country": "DK",
@@ -13,10 +10,7 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Rest of The World"
-    ],
+    "tags": ["Tuner","Rest of The World"],
     "isPrize": false,
     "weight": 1636,
     "gc": "Medium",
@@ -29,21 +23,6 @@
     "mra": 74.24,
     "ola": 89.9,
     "description": "Danish people added a supercharger to a CLK and managed to squeeze out 433hp.",
-     "333TopSpeed": 138,
-    "3330to60": 4.7,
-    "333Handling": 79,
-    "666TopSpeed": 142,
-    "6660to60": 4.4,
-    "666Handling": 81,
-    "996TopSpeed": 146,
-    "9960to60": 4.2,
-    "996Handling": 81,
-    "969TopSpeed": 146,
-    "9690to60": 4.4,
-    "969Handling": 84,
-    "699TopSpeed": 142,
-    "6990to60": 4.2,
-    "699Handling": 84,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/KleemanCLK43K(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

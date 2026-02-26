@@ -6,13 +6,12 @@
     "modelYear": 1955,
     "country": "DE",
     "topSpeed": 108,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1170,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-Benz190SLHardtop(1955).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 113, 
-"3330to60": 13.3, 
-"333Handling": 67,
-
-"666TopSpeed": 118, 
-"6660to60": 12.6, 
-"666Handling": 69,
-
-"699TopSpeed": 118, 
-"6990to60": 11.9, 
-"699Handling": 72,
-
-"969TopSpeed": 122, 
-"9690to60": 12.6, 
-"969Handling": 72,
-
-"996TopSpeed": 122, 
-"9960to60": 11.9, 
-"996Handling": 69,
     "hiddenTag": [""]
 }

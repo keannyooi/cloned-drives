@@ -1,7 +1,7 @@
 {
     "carID": "c03049",
     "cr": 890,
-    "make": ["Pailix", "Lancia"],
+    "make": ["Pailix","Lancia"],
     "model": "Delta Evo Turbo",
     "modelYear": 2011,
     "country": "AT",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Motorsport","Tuner","Year of the Rabbit","The Tyrol Tour","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1030,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 185, 
-"3330to60": 2.7, 
-"333Handling": 95,
-
-"666TopSpeed": 188, 
-"6660to60": 2.5, 
-"666Handling": 98,
-
-"699TopSpeed": 188, 
-"6990to60": 2.4, 
-"699Handling": 102,
-
-"969TopSpeed": 191, 
-"9690to60": 2.5, 
-"969Handling": 102,
-
-"996TopSpeed": 191, 
-"9960to60": 2.4, 
-"996Handling": 98,
     "hiddenTag": [""]
 }

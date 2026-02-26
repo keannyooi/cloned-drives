@@ -10,10 +10,7 @@
     "handling": 30,
     "driveType": "4WD",
     "tyreType": "Drag",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": true,
     "weight": 2900,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 78.57,
     "ola": 90.91,
     "description": "",
- "333TopSpeed": 167,
-"3330to60": 2.1,
-"333Handling": 31,
-
-"666TopSpeed": 170,
-"6660to60": 2,
-"666Handling": 32,
-
-"699TopSpeed": 170,
-"6990to60": 1.9,
-"699Handling": 33,
-
-"969TopSpeed": 174,
-"9690to60": 2,
-"969Handling": 33,
-
-"996TopSpeed": 174,
-"9960to60": 1.9,
-"996Handling": 32,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/StapletonAutoWorksLSXcalade(2007).png",
     "creator": "Aqo",
     "hiddenTag": [""]

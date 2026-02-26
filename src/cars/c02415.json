@@ -10,9 +10,8 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
-
     "weight": 1800,
     "gc": "Medium",
     "seatCount": 4,
@@ -24,28 +23,7 @@
     "mra": 95.12,
     "ola": 97.44,
     "description": "The engine from an LMP car + engine at the back + peak extravagance and luxury all in one car = most ludicrous Peugeot ever.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Peugeot908RCConcept(2006).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 189,
-    "3330to60": 3.7,
-    "333Handling": 83,
-
-    "666TopSpeed": 192,
-    "6660to60": 3.5,
-    "666Handling": 85,
-
-    "996TopSpeed": 194,
-    "9960to60": 3.3,
-    "996Handling": 85,
-
-    "969TopSpeed": 194,
-    "9690to60": 3.5,
-    "969Handling": 89,
-
-    "699TopSpeed": 192,
-    "6990to60": 3.3,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

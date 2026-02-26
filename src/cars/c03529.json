@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Hypercar", "Unique", "Ultra Expensive","The Americas Assault"],
+    "tags": ["Concept","Hypercar","Unique","Ultra Expensive","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1338,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Hennessey's first concept for the Venom GT's wild 300mph successor.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Concept(2017).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 303,
-    "3330to60": 2.5,
-    "333Handling": 97,
-
-    "666TopSpeed": 304,
-    "6660to60": 2.3,
-    "666Handling": 100,
-
-    "996TopSpeed": 306,
-    "9960to60": 2.2,
-    "996Handling": 100,
-
-    "969TopSpeed": 306,
-    "9690to60": 2.3,
-    "969Handling": 104,
-
-    "699TopSpeed": 304,
-    "6990to60": 2.2,
-    "699Handling": 104,
     "hiddenTag": [""]
 }

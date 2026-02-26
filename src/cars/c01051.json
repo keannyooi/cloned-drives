@@ -1,10 +1,7 @@
 {
     "carID": "c01051",
     "cr": 383,
-    "make": [
-        "Pontiac",
-        "McLaren"
-    ],
+    "make": ["Pontiac","McLaren"],
     "model": "Grand Prix ASC McLaren Turbo",
     "modelYear": 1989,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1565,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 51.47,
     "ola": 71.43,
     "description": "A turbocharged W-body Grand Prix, brought to you by McLaren.",
-     "333TopSpeed": 132,
-    "3330to60": 6.7,
-    "333Handling": 77,
-    "666TopSpeed": 136,
-    "6660to60": 6.3,
-    "666Handling": 80,
-    "996TopSpeed": 140,
-    "9960to60": 6.0,
-    "996Handling": 80,
-    "969TopSpeed": 140,
-    "9690to60": 6.3,
-    "969Handling": 83,
-    "699TopSpeed": 136,
-    "6990to60": 6.0,
-    "699Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PontiacGrandPrixASCMcLarenTurbo(1989).png",
     "creator": "Johnny",
     "hiddenTag": [""]

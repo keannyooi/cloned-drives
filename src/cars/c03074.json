@@ -12,11 +12,9 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","The Tyrol Tour"],
     "isPrize": false,
-
-
     "weight": 1375,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -27,25 +25,5 @@
     "description": "First product of the RS department, featuring a 180 hp 1.8 Turbo engine.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaRS(2001).png",
     "creator": "Connor",
-
-    "333TopSpeed": 149,
-    "3330to60": 7.1,
-    "333Handling": 80,
-
-    "666TopSpeed": 152,
-    "6660to60": 6.8, 
-    "666Handling": 82,
-
-    "996TopSpeed": 156,
-    "9960to60": 6.4,
-    "996Handling": 82,
-
-    "969TopSpeed": 156,
-    "9690to60": 6.8,
-    "969Handling": 85,
-
-    "699TopSpeed": 152,
-    "6990to60": 6.4,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

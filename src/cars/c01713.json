@@ -10,9 +10,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1513,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 73.65,
     "ola": 86.18,
     "description": "One quick rental car.",
-"333TopSpeed": 152,
-"3330to60": 5.7,
-"333Handling": 77,
-
-"666TopSpeed": 155,
-"6660to60": 5.4,
-"666Handling": 80,
-
-"699TopSpeed": 155,
-"6990to60": 5.1,
-"699Handling": 83,
-
-"969TopSpeed": 159,
-"9690to60": 5.4,
-"969Handling": 83,
-
-"996TopSpeed": 159,
-"9960to60": 5.1,
-"996Handling": 80,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanAltima3.5SV(2013).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

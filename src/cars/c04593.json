@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1400,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Greenline. Hah.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombi16TDIGreenline(2009).png",
     "creator": "Connor",
-
-    "333TopSpeed": 122,
-    "3330to60": 10.3,
-    "333Handling": 74,
-
-    "666TopSpeed": 127,
-    "6660to60": 9.7, 
-    "666Handling": 77,
-
-    "996TopSpeed": 131,
-    "9960to60": 9.2,
-    "996Handling": 77,
-
-    "969TopSpeed": 131,
-    "9690to60": 9.7,
-    "969Handling": 80,
-
-    "699TopSpeed": 127,
-    "6990to60": 9.2,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

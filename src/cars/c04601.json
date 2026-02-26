@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1260,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "First gen Octavia dubbed Tour continued alongside 2nd generation Octavia as a cheaper alternative.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaTour16MPI(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 122,
-    "3330to60": 10.7,
-    "333Handling": 73,
-
-    "666TopSpeed": 127,
-    "6660to60": 10.2, 
-    "666Handling": 76,
-
-    "996TopSpeed": 131,
-    "9960to60": 9.6,
-    "996Handling": 76,
-
-    "969TopSpeed": 131,
-    "9690to60": 10.2,
-    "969Handling": 79,
-
-    "699TopSpeed": 127,
-    "6990to60": 9.6,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

@@ -6,13 +6,12 @@
     "modelYear": 1961,
     "country": "GB",
     "topSpeed": 98,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-	
     "weight": 800,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/TVRGrantura16(1961).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 103, 
-"3330to60": 11.4, 
-"333Handling": 70,
-
-"666TopSpeed": 109, 
-"6660to60": 10.8, 
-"666Handling": 72,
-
-"699TopSpeed": 109, 
-"6990to60": 10.2, 
-"699Handling": 75,
-
-"969TopSpeed": 114, 
-"9690to60": 10.8, 
-"969Handling": 75,
-
-"996TopSpeed": 114, 
-"9960to60": 10.2, 
-"996Handling": 72,
     "hiddenTag": [""]
 }

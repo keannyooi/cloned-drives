@@ -1,7 +1,7 @@
 {
     "carID": "c03849",
     "cr": 470,
-    "make": ["Auto Union", "Audi"],
+    "make": ["Auto Union","Audi"],
     "model": "Type A",
     "modelYear": 1934,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 750,
     "gc": "Low",
     "seatCount": 1,
@@ -26,26 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AutoUnionTypeA(1934).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 174,
-"3330to60": 4.8,
-"333Handling": 68,
-
-"666TopSpeed": 177,
-"6660to60": 4.6,
-"666Handling": 70,
-
-"699TopSpeed": 177,
-"6990to60": 4.3,
-"699Handling": 73,
-
-"969TopSpeed": 180,
-"9690to60": 4.6,
-"969Handling": 73,
-
-"996TopSpeed": 180,
-"9960to60": 4.3,
-"996Handling": 70,
     "hiddenTag": [""]
 }
-

@@ -1,7 +1,7 @@
 {
     "carID": "c03420",
     "cr": 986,
-    "make": ["Brabus", "Porsche"],
+    "make": ["Brabus","Porsche"],
     "model": "820 Cabriolet",
     "modelYear": 2022,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix","Tuner","Supercar"],
     "isPrize": false,
-	
     "weight": 1690,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Brabus820Cabriolet(2022).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 213,
-"3330to60": 2.2,
-"333Handling": 95,
-
-"666TopSpeed": 216,
-"6660to60": 2.1,
-"666Handling": 98,
-
-"699TopSpeed": 216,
-"6990to60": 2,
-"699Handling": 102,
-
-"969TopSpeed": 218,
-"9690to60": 2.1,
-"969Handling": 102,
-
-"996TopSpeed": 218,
-"9960to60": 2,
-"996Handling": 98,
     "hiddenTag": [""]
 }

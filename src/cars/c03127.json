@@ -1,7 +1,7 @@
 {
     "carID": "c03127",
     "cr": 611,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "wifeyBronco",
     "modelYear": 2018,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner", "Unique", "Extreme Juggernaut", "RestoMod"],
+    "tags": ["Tuner","Unique","Extreme Juggernaut","RestoMod"],
     "isPrize": false,
-	
     "weight": 1681,
     "gc": "High",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Fully frame-off restored by NSB Performance in Edgewater, Florida, Block’s wife’s Bronco (aka: wifeybronco) isn’t your normal 1974 model. It features a slew of upgrades including a Ford Performance supplied 5.0l Coyote crate V8 and transmission, many replacement panels supplied by National Parts Depot, and fifteen52 wheels with Toyo Tires.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganWifeybronco(2018).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 141, 
-"3330to60": 6.5, 
-"333Handling": 67,
-
-"666TopSpeed": 145, 
-"6660to60": 6.1, 
-"666Handling": 69,
-
-"699TopSpeed": 145, 
-"6990to60": 5.8, 
-"699Handling": 72,
-
-"969TopSpeed": 148, 
-"9690to60": 6.1, 
-"969Handling": 72,
-
-"996TopSpeed": 148, 
-"9960to60": 5.8, 
-"996Handling": 69,
     "hiddenTag": [""]
 }

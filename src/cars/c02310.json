@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon", "Supercar"],
+    "tags": ["Style Icon","Supercar"],
     "isPrize": true,
-
     "weight": 1130,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 85.42,
     "ola": 93.62,
     "description": "The birth of a legendary supercar. This one was recreated in 2021 alogside the launch of the new Countach LPI to celebrate the supercar's sweet 50th.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniCountachLP500Prototipo(1971).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 189,
-    "3330to60": 4.5,
-    "333Handling": 77,
-
-    "666TopSpeed": 192,
-    "6660to60": 4.2,
-    "666Handling": 80,
-
-    "996TopSpeed": 194,
-    "9960to60": 4.0,
-    "996Handling": 80,
-
-    "969TopSpeed": 194,
-    "9690to60": 4.2,
-    "969Handling": 83,
-
-    "699TopSpeed": 192,
-    "6990to60": 4.0,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

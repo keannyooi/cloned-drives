@@ -6,7 +6,7 @@
     "modelYear": 1998,
     "country": "YU",
     "topSpeed": 93,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 59,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -20,31 +20,9 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 10.00,
+    "mra": 10,
     "ola": 66.66,
-	
     "description": "Malcolm Bricklin thought the Yugo was such a huge sucess, it deserved to return to the US of A once again.",
-	
-"333TopSpeed": 99,
-"3330to60": 11.4,
-"333Handling": 61,
-
-"666TopSpeed": 104,
-"6660to60": 10.8,
-"666Handling": 63,
-
-"699TopSpeed": 104,
-"6990to60": 10.2,
-"699Handling": 65,
-
-"969TopSpeed": 110,
-"9690to60": 10.8,
-"969Handling": 65,
-
-"996TopSpeed": 110,
-"9960to60": 10.2,
-"996Handling": 63,
-	
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaYugoEuroConcept(1998).png",
     "creator": "Connor",
     "hiddenTag": [""]

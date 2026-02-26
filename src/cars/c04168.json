@@ -10,10 +10,8 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [ "The Americas Assault", "Concept","Silver Screen"],
+    "tags": ["The Americas Assault","Concept","Silver Screen"],
     "isPrize": false,
-
-
     "weight": 1030,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "This thing previewed the Spark. Oh and it was in the Transformers.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletBeatConcept(2007).png",
     "creator": "Connor",
-
-    "333TopSpeed": 121,
-    "3330to60": 8.8,
-    "333Handling": 76,
-
-    "666TopSpeed": 126,
-    "6660to60": 8.4, 
-    "666Handling": 79,
-
-    "996TopSpeed": 130,
-    "9960to60": 7.9,
-    "996Handling": 79,
-
-    "969TopSpeed": 130,
-    "9690to60": 8.4,
-    "969Handling": 82,
-
-    "699TopSpeed": 126,
-    "6990to60": 7.9,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

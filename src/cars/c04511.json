@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1290,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Underpowered",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30081.6BlueHDi100(2016).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 113,
-    "3330to60": 12.1,
-    "333Handling": 73,
-
-    "666TopSpeed": 118,
-    "6660to60": 11.4,
-    "666Handling": 76,
-
-    "699TopSpeed": 118,
-    "6990to60": 10.8,
-    "699Handling": 79,
-
-    "969TopSpeed": 122,
-    "9690to60": 11.4,
-    "969Handling": 79,
-
-    "996TopSpeed": 122,
-    "9960to60": 10.8,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

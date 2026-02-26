@@ -1,7 +1,7 @@
 {
     "carID": "c01153",
     "cr": 572,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "3400 S",
     "modelYear": 1999,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 63.51,
     "ola": 85.11,
     "description": "Ruf technicians performed a heart transplant by substituting the stock powerplant with a Ruf massaged 3.4L flat 6 sourced from the roadster's big brother.",
-"333TopSpeed": 176,
-"3330to60": 4.8,
-"333Handling": 86,
-
-"666TopSpeed": 179,
-"6660to60": 4.6,
-"666Handling": 88,
-
-"699TopSpeed": 179,
-"6990to60": 4.3,
-"699Handling": 92,
-
-"969TopSpeed": 182,
-"9690to60": 4.6,
-"969Handling": 92,
-
-"996TopSpeed": 182,
-"9960to60": 4.3,
-"996Handling": 88,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ruf3400S(1999).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

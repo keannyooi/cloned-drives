@@ -10,10 +10,7 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "Concept",
-        "Unique"
-    ],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
     "weight": 1890,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 79.15,
     "ola": 86.42,
     "description": "If W16 wasn't good enough, add two more cylinders instead.",
-"333TopSpeed": 202,
-"3330to60": 3.9,
-"333Handling": 85,
-
-"666TopSpeed": 204,
-"6660to60": 3.7,
-"666Handling": 87,
-
-"699TopSpeed": 204,
-"6990to60": 3.5,
-"699Handling": 91,
-
-"969TopSpeed": 207,
-"9690to60": 3.7,
-"969Handling": 91,
-
-"996TopSpeed": 207,
-"9960to60": 3.5,
-"996Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BugattiEB118Prototype(1998).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

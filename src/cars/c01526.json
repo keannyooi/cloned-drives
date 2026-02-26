@@ -10,11 +10,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Kei Car",
-        "The Japanese Odyssey",
-        "Year of the Horse"
-    ],
+    "tags": ["Kei Car","The Japanese Odyssey","Year of the Horse"],
     "isPrize": false,
     "weight": 850,
     "gc": "Low",
@@ -27,24 +23,7 @@
     "mra": 21,
     "ola": 62.81,
     "description": "Most if not all Peroduas are rebadged Daihatsu, why didn’t they bring this over to Malaysia?",
-    "333TopSpeed": 93,
-    "3330to60": 11.5,
-    "333Handling": 74,
-    "666TopSpeed": 99,
-    "6660to60": 10.9,
-    "666Handling": 77,
-    "996TopSpeed": 105,
-    "9960to60": 10.3,
-    "996Handling": 77,
-    "969TopSpeed": 105,
-    "9690to60": 10.9,
-    "969Handling": 80,
-    "699TopSpeed": 99,
-    "6990to60": 10.3,
-    "699Handling": 80,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DaihatsuCopenRobe(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1770,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.69,
-    "ola": 72.00,
+    "ola": 72,
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumSXT(2005).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 119,
-"3330to60": 7.1,
-"333Handling": 69,
-
-"666TopSpeed": 123,
-"6660to60": 6.8,
-"666Handling": 71,
-
-"699TopSpeed": 123,
-"6990to60": 6.4,
-"699Handling": 74,
-
-"969TopSpeed": 128,
-"9690to60": 6.8,
-"969Handling": 74,
-
-"996TopSpeed": 128,
-"9960to60": 6.4,
-"996Handling": 71,
     "hiddenTag": [""]
 }

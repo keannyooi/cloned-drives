@@ -10,13 +10,11 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Unique","Endless Summer","The Tyrol Tour: Remix"],
+    "tags": ["Hot Hatch","Unique","Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1275,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -25,30 +23,7 @@
     "mra": 57.89,
     "ola": 66.67,
     "description": "The original Golf R.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfLimited(1989).png",
     "creator": "Andu",
-
-
-    "333TopSpeed": 146,
-    "3330to60": 6.3,
-    "333Handling": 76,
-
-    "666TopSpeed": 149,
-    "6660to60": 5.9, 
-    "666Handling": 79,
-
-    "996TopSpeed": 153,
-    "9960to60": 5.6,
-    "996Handling": 79,
-
-    "969TopSpeed": 153,
-    "9690to60": 5.9,
-    "969Handling": 82,
-
-    "699TopSpeed": 149,
-    "6990to60": 5.6,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

@@ -10,13 +10,11 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 991,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 26.49,
     "ola": 63.67,
     "description": "Busting through the scene the second gen Golf drops the rabbit name in the USA.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.8GL(1987).png",
     "creator": "Andu",
-
-    "333TopSpeed": 114,
-    "3330to60": 9.9,
-    "333Handling": 70,
-
-    "666TopSpeed": 119,
-    "6660to60": 9.4, 
-    "666Handling": 72,
-
-    "996TopSpeed": 124,
-    "9960to60": 8.8,
-    "996Handling": 72,
-
-    "969TopSpeed": 124,
-    "9690to60": 9.4,
-    "969Handling": 75,
-
-    "699TopSpeed": 119,
-    "6990to60": 8.8,
-    "699Handling": 75,
     "hiddenTag": [""]
 }

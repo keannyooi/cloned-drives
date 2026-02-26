@@ -47,8 +47,6 @@ const REQUIRED_FIELDS = [
     "tcs", "abs", "enginePos", "fuelType", "mra", "ola"
 ];
 
-const TUNE_PREFIXES = ["333", "666", "699", "969", "996"];
-const TUNE_STATS = ["TopSpeed", "0to60", "Handling"];
 
 // ============================================================================
 // VALIDATION
@@ -177,28 +175,6 @@ for (const file of files) {
         }
     }
 
-    // --- Tune stats ---
-    for (const prefix of TUNE_PREFIXES) {
-        for (const stat of TUNE_STATS) {
-            const key = `${prefix}${stat}`;
-            if (car[key] !== undefined && typeof car[key] !== "number") {
-                error(file, `${key} should be a number, got ${typeof car[key]}: ${car[key]}`);
-            }
-        }
-    }
-
-    // --- Check tune stats exist (all or none) ---
-    const hasTunes = TUNE_PREFIXES.some(p => car[`${p}TopSpeed`] !== undefined);
-    if (hasTunes) {
-        for (const prefix of TUNE_PREFIXES) {
-            for (const stat of TUNE_STATS) {
-                const key = `${prefix}${stat}`;
-                if (car[key] === undefined) {
-                    warn(file, `Has some tune stats but missing: ${key}`);
-                }
-            }
-        }
-    }
 
     // --- String fields shouldn't have leading/trailing whitespace ---
     for (const field of ["make", "model", "driveType", "tyreType", "enginePos", "bodyStyle", "gc", "fuelType", "country"]) {

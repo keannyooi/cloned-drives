@@ -10,13 +10,11 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "The Tyrol Tour: Remix","Endless Summer"],
+    "tags": ["Motorsport","The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1230,
     "gc": "High",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "SUV",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 67.21,
     "ola": 73.17,
     "description": "Who knew making a rally version of a car could make said car much much much much much cooler?",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat500XR4MilanoRacing(2019).png",
     "creator": "Andu",
-
-    "333TopSpeed": 134,
-    "3330to60": 3.9,
-    "333Handling": 94,
-    
-    "666TopSpeed": 138,
-    "6660to60": 3.7,
-    "666Handling": 97,
-    
-    "699TopSpeed": 138,
-    "6990to60": 3.5,
-    "699Handling": 101,
-    
-    "969TopSpeed": 142,
-    "9690to60": 3.7,
-    "969Handling": 101,
-    
-    "996TopSpeed": 142,
-    "9960to60": 3.5,
-    "996Handling": 97,
     "hiddenTag": [""]
 }

@@ -6,14 +6,12 @@
     "modelYear": 2006,
     "country": "SE",
     "topSpeed": 137,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World", "Eurotech Elite"],
+    "tags": ["Rest of The World","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1382,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.14,
-    "ola": 75.00,
+    "ola": 75,
     "description": "Mid range C30 with naturally aspirated inline 5.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolvoC302.4Summum(2006).png",
     "creator": "Connor",
-
-    "333TopSpeed": 141,
-    "3330to60": 7.6,
-    "333Handling": 75,
-
-    "666TopSpeed": 145,
-    "6660to60": 7.2, 
-    "666Handling": 78,
-
-    "996TopSpeed": 148,
-    "9960to60": 6.8,
-    "996Handling": 78,
-
-    "969TopSpeed": 148,
-    "9690to60": 7.2,
-    "969Handling": 81,
-
-    "699TopSpeed": 145,
-    "6990to60": 6.8,
-    "699Handling": 81,
     "hiddenTag": [""]
 }

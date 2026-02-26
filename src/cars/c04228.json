@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 912,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Czech up!.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaCitigo10MPI(2011).png",
     "creator": "Connor",
-
-    "333TopSpeed": 104,
-    "3330to60": 13.9,
-    "333Handling": 73,
-
-    "666TopSpeed": 110,
-    "6660to60": 13.9, 
-    "666Handling": 73,
-
-    "996TopSpeed": 115,
-    "9960to60": 12.4,
-    "996Handling": 76,
-
-    "969TopSpeed": 115,
-    "9690to60": 13.1,
-    "969Handling": 79,
-
-    "699TopSpeed": 110,
-    "6990to60": 12.4,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

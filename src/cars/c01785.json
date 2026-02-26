@@ -10,11 +10,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Track Day","Unique","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1400,
     "gc": "Medium",
@@ -27,25 +23,6 @@
     "mra": 81.54,
     "ola": 75,
     "description": "",
-"333TopSpeed": 182,
-"3330to60": 4.2,
-"333Handling": 91,
-
-"666TopSpeed": 185,
-"6660to60": 4,
-"666Handling": 94,
-
-"699TopSpeed": 185,
-"6990to60": 3.7,
-"699Handling": 98,
-
-"969TopSpeed": 188,
-"9690to60": 4,
-"969Handling": 98,
-
-"996TopSpeed": 188,
-"9960to60": 3.7,
-"996Handling": 94,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTRVSpecN1(R34)(2000).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

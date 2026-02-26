@@ -1,7 +1,7 @@
 {
     "carID": "c07061",
     "cr": 705,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "CLA 45 4MATIC Shooting Brake",
     "modelYear": 2015,
     "country": "DE",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 74.11,
     "ola": 82.69,
-
     "description": "",
-
-"333TopSpeed": 158,
-"3330to60": 3.9,
-"333Handling": 87,
-
-"666TopSpeed": 162,
-"6660to60": 3.7,
-"666Handling": 90,
-
-"699TopSpeed": 162,
-"6990to60": 3.5,
-"699Handling": 93,
-
-"969TopSpeed": 165,
-"9690to60": 3.7,
-"969Handling": 93,
-
-"996TopSpeed": 165,
-"9960to60": 3.5,
-"996Handling": 90,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-AMGCLA454MATICShootingBrake(2015).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

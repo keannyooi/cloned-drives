@@ -6,13 +6,12 @@
     "modelYear": 1973,
     "country": "DE",
     "topSpeed": 112,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 950,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 65,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche9141.8(1973).png",
-
-"333TopSpeed": 117,
-"3330to60": 11.4,
-"333Handling": 71,
-
-"666TopSpeed": 121,
-"6660to60": 10.8,
-"666Handling": 74,
-
-"699TopSpeed": 121,
-"6990to60": 10.2,
-"699Handling": 77,
-
-"969TopSpeed": 126,
-"9690to60": 10.8,
-"969Handling": 77,
-
-"996TopSpeed": 126,
-"9960to60": 10.2,
-"996Handling": 74,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

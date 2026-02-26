@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Rest of The World"],
     "isPrize": false,
-	
     "weight": 635,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The infamous Tata Nano holds the record for the cheapest car ever made, second to none. It was initially priced at 100k rupees (around USD$1k at the time of its release), leagues lower than the original Mini and Volkswagen Beetle. A study at the time projected that the Nano could expand India's automobile market by approximately 65%, all of which consisting of India's dirt-poor working class. Perhaps unsurprisingly, its extreme cost-cutting led to many problems including fire incidents and image problems, which didn't appeal to as many people as Tata had hoped.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TataNanoLX(2008).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 73, 
-    "3330to60": 24.5, 
-    "333Handling": 61,
-
-    "666TopSpeed": 81, 
-    "6660to60": 23.2, 
-    "666Handling": 63,
-
-    "699TopSpeed": 81, 
-    "6990to60": 21.9, 
-    "699Handling": 65,
-
-    "969TopSpeed": 89, 
-    "9690to60": 23.2, 
-    "969Handling": 65,
-
-    "996TopSpeed": 89, 
-    "9960to60": 21.9, 
-    "996Handling": 63,
     "hiddenTag": [""]
 }

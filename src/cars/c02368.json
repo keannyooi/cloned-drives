@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Motorsport","Rest of The World"],
     "isPrize": false,
-
     "weight": 1130,
     "gc": "Low",
     "seatCount": 1,
@@ -24,28 +23,7 @@
     "mra": 117.86,
     "ola": 81.82,
     "description": "A further evolution of the 600 LM that featured subtle changed and 50 more hp.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-    "333TopSpeed": 212,
-    "3330to60": 3.1,
-    "333Handling": 98,
-
-    "666TopSpeed": 215,
-    "6660to60": 3.0,
-    "666Handling": 101,
-
-    "699TopSpeed": 215,
-    "6990to60": 2.8,
-    "699Handling": 105,
-
-    "969TopSpeed": 217,
-    "9690to60": 3.0,
-    "969Handling": 105,
-
-    "996TopSpeed": 217,
-    "9960to60": 2.8,
-    "996Handling": 101,
     "hiddenTag": [""]
 }

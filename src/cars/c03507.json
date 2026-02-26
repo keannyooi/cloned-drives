@@ -1,7 +1,7 @@
 {
     "carID": "c03507",
     "cr": 830,
-    "make": ["RS Performance", "Caterham"],
+    "make": ["RS Performance","Caterham"],
     "model": "21 GTO V8",
     "modelYear": 2010,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["The Midlands Cruise","Unique","Track Day","Tuner"],
     "isPrize": false,
-	
     "weight": 663,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 153,
-"3330to60": 2.8,
-"333Handling": 93,
-
-"666TopSpeed": 157,
-"6660to60": 2.6,
-"666Handling": 96,
-
-"699TopSpeed": 157,
-"6990to60": 2.5,
-"699Handling": 100,
-
-"969TopSpeed": 160,
-"9690to60": 2.6,
-"969Handling": 100,
-
-"996TopSpeed": 160,
-"9960to60": 2.5,
-"996Handling": 96,
     "hiddenTag": [""]
 }

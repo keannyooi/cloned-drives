@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","The Tyrol Tour"],
     "isPrize": false,
-
-
     "weight": 1448,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaRS245(2017).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 6.1,
-    "333Handling": 85,
-
-    "666TopSpeed": 162,
-    "6660to60": 5.8, 
-    "666Handling": 87,
-
-    "996TopSpeed": 165,
-    "9960to60": 5.4,
-    "996Handling": 87,
-
-    "969TopSpeed": 165,
-    "9690to60": 5.8,
-    "969Handling": 91,
-
-    "699TopSpeed": 162,
-    "6990to60": 5.4,
-    "699Handling": 91,
     "hiddenTag": [""]
 }

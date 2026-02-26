@@ -1,5 +1,5 @@
 {
-	"carID": "c06405",
+    "carID": "c06405",
     "cr": 987,
     "make": "Chevrolet",
     "model": "Corvette ZR1",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Hypercar"],
     "isPrize": false,
-	
     "weight": 1660,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 103.56,
     "ola": 80,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZR1(2024).png",
-
-"333TopSpeed": 235,
-"3330to60": 2.1,
-"333Handling": 97,
-
-"666TopSpeed": 237,
-"6660to60": 2,
-"666Handling": 100,
-
-"699TopSpeed": 237,
-"6990to60": 1.9,
-"699Handling": 104,
-
-"969TopSpeed": 240,
-"9690to60": 2,
-"969Handling": 104,
-
-"996TopSpeed": 240,
-"9960to60": 1.9,
-"996Handling": 100,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZR1(2024).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

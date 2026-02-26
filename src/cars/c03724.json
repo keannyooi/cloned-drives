@@ -1,7 +1,7 @@
 {
     "carID": "c03724",
     "cr": 99,
-    "make": ["Prince", "Nissan"],
+    "make": ["Prince","Nissan"],
     "model": "Skyline 1500 S50",
     "modelYear": 1963,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Endless Summer","The Amplification of Asia"],
     "isPrize": false,
-	
     "weight": 960,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceSkyline1500S50(1963).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 90,
-"3330to60": 15.4,
-"333Handling": 61,
-
-"666TopSpeed": 96,
-"6660to60": 14.6,
-"666Handling": 63,
-
-"699TopSpeed": 96,
-"6990to60": 13.8,
-"699Handling": 65,
-
-"969TopSpeed": 103,
-"9690to60": 14.6,
-"969Handling": 65,
-
-"996TopSpeed": 103,
-"9960to60": 13.8,
-"996Handling": 63,
     "hiddenTag": [""]
 }

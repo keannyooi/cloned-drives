@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Endless Summer", "Extreme Juggernaut", "The Americas Assault"],
+    "tags": ["Endless Summer","Extreme Juggernaut","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2200,
     "gc": "High",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The G.O.A.T.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordBronco2.72-Door(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 111,
-"3330to60": 6,
-"333Handling": 67,
-
-"666TopSpeed": 116,
-"6660to60": 5.7,
-"666Handling": 69,
-
-"699TopSpeed": 116,
-"6990to60": 5.4,
-"699Handling": 72,
-
-"969TopSpeed": 121,
-"9690to60": 5.7,
-"969Handling": 72,
-
-"996TopSpeed": 121,
-"9960to60": 5.4,
-"996Handling": 69,
     "hiddenTag": [""]
 }

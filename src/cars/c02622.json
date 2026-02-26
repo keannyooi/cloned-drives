@@ -10,9 +10,8 @@
     "handling": 50,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["Oddity", "Concept", "Eco-Friendly"],
+    "tags": ["Oddity","Concept","Eco-Friendly"],
     "isPrize": false,
-
     "weight": 485,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 0,
     "ola": 33.33,
     "description": "Hard beech buggy (quadricycle).",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CitroenMyAmiBuggyConcept(2021).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 37,
-    "3330to60": 99.9,
-    "333Handling": 52,
-
-    "666TopSpeed": 45,
-    "6660to60": 99.9,
-    "666Handling": 53,
-
-    "996TopSpeed": 54,
-    "9960to60": 99.9,
-    "996Handling": 53,
-
-    "969TopSpeed": 54,
-    "9690to60": 99.9,
-    "969Handling": 56,
-
-    "699TopSpeed": 45,
-    "6990to60": 99.9,
-    "699Handling": 56,
     "hiddenTag": [""]
 }

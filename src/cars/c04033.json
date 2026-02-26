@@ -10,9 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "tags": ["Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1473,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Volvo-gen but wagon.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo850Estate2.5TDI(1996).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 128, 
-    "3330to60": 9.3, 
-    "333Handling": 72,
-
-    "666TopSpeed": 132, 
-    "6660to60": 8.8, 
-    "666Handling": 75,
-
-    "996TopSpeed": 137, 
-    "9960to60": 8.3, 
-    "996Handling": 75,
-
-    "969TopSpeed": 137, 
-    "9690to60": 8.8, 
-    "969Handling": 78,
-
-    "699TopSpeed": 132, 
-    "6990to60": 8.3, 
-    "699Handling": 78,
     "hiddenTag": [""]
 }

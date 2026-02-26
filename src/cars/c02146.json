@@ -1,10 +1,7 @@
 {
     "carID": "c02146",
     "cr": 600,
-    "make": [
-        "Hartge",
-        "BMW"
-    ],
+    "make": ["Hartge","BMW"],
     "model": "H50 V8",
     "modelYear": 2001,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1530,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 83.99,
     "ola": 90.65,
     "description": "How do you get eight into three? You crib the answer from Herbert Hartge.",
-     "333TopSpeed": 173,
-    "3330to60": 4.4,
-    "333Handling": 83,
-    "666TopSpeed": 176,
-    "6660to60": 4.1,
-    "666Handling": 85,
-    "996TopSpeed": 179,
-    "9960to60": 3.9,
-    "996Handling": 85,
-    "969TopSpeed": 179,
-    "9690to60": 4.1,
-    "969Handling": 89,
-    "699TopSpeed": 176,
-    "6990to60": 3.9,
-    "699Handling": 89,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HartgeH50V8(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

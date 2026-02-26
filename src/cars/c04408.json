@@ -10,9 +10,8 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Muscle Car", "The Americas Assault","Cloned Drives Beta: Last of"],
+    "tags": ["Muscle Car","The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1880,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 66.30,
+    "mra": 66.3,
     "ola": 75.41,
     "description": "Muscle meet function.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumRT(2005).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 130,
-"3330to60": 5.8,
-"333Handling": 70,
-
-"666TopSpeed": 134,
-"6660to60": 5.5,
-"666Handling": 72,
-
-"699TopSpeed": 134,
-"6990to60": 5.2,
-"699Handling": 75,
-
-"969TopSpeed": 138,
-"9690to60": 5.5,
-"969Handling": 75,
-
-"996TopSpeed": 138,
-"9960to60": 5.2,
-"996Handling": 72,
     "hiddenTag": [""]
 }

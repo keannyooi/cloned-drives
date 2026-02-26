@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1578,
     "gc": "Low",
     "seatCount": 5,
@@ -22,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 63.30,
+    "mra": 63.3,
     "ola": 60.86,
     "description": "quattro.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA3Sportback20TFSIquattroSportline(2004).png",
     "creator": "Connor",
-
-    "333TopSpeed": 149,
-    "3330to60": 6.6,
-    "333Handling": 82,
-
-    "666TopSpeed": 152,
-    "6660to60": 6.2, 
-    "666Handling": 84,
-
-    "996TopSpeed": 156,
-    "9960to60": 5.9,
-    "996Handling": 84,
-
-    "969TopSpeed": 156,
-    "9690to60": 6.2,
-    "969Handling": 88,
-
-    "699TopSpeed": 152,
-    "6990to60": 5.9,
-    "699Handling": 88,
     "hiddenTag": [""]
 }

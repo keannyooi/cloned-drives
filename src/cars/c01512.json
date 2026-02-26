@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-    
     "weight": 2085,
     "gc": "High",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 70,
     "ola": 72,
     "description": "",
- 
-    "333TopSpeed": 162,
-    "3330to60": 5.3,
-    "333Handling": 85,
-
-    "666TopSpeed": 166,
-    "6660to60": 5,
-    "666Handling": 87,
-
-    "699TopSpeed": 166,
-    "6990to60": 4.8,
-    "699Handling": 91,
-
-    "969TopSpeed": 169,
-    "9690to60": 5,
-    "969Handling": 91,
-
-    "996TopSpeed": 169,
-    "9960to60": 4.8,
-    "996Handling": 87,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCayenneGTS(2010).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1085,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 37.91,
     "ola": 62.55,
     "description": "The humble beginnings of a legendary engine.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.9TDIGL(1993).png",
     "creator": "Andu",
-
-    "333TopSpeed": 116,
-    "3330to60": 11.6,
-    "333Handling": 71,
-    
-    "666TopSpeed": 120,
-    "6660to60": 11,
-    "666Handling": 74,
-    
-    "699TopSpeed": 120,
-    "6990to60": 10.4,
-    "699Handling": 77,
-    
-    "969TopSpeed": 125,
-    "9690to60": 11,
-    "969Handling": 77,
-    
-    "996TopSpeed": 125,
-    "9960to60": 10.4,
-    "996Handling": 74,
     "hiddenTag": [""]
 }

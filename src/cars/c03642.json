@@ -6,17 +6,15 @@
     "modelYear": 2006,
     "country": "BR",
     "topSpeed": 120,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique","Rest of The World","The Americas Assault","Endless Summer","Visionary Road"],
+    "tags": ["Concept","Unique","Rest of The World","The Americas Assault","Endless Summer","Visionary Road"],
     "isPrize": false,
-
-
     "weight": 1500,
     "gc": "High",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 48.13,
     "ola": 68.89,
     "description": "Crazy to think this concept preceded the coupe SUV craze, and it did it with a inline 5 straight from the Abarth Stilo.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatFCCAdventure(2006).png",
     "creator": "Andu",
-
-    "333TopSpeed": 134,
-    "3330to60": 8.5,
-    "333Handling": 72,
-    
-    "666TopSpeed": 138,
-    "6660to60": 8.1,
-    "666Handling": 75,
-    
-    "699TopSpeed": 138,
-    "6990to60": 7.6,
-    "699Handling": 78,
-    
-    "969TopSpeed": 142,
-    "9690to60": 8.1,
-    "969Handling": 78,
-    
-    "996TopSpeed": 142,
-    "9960to60": 7.6,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

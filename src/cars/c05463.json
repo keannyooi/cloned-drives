@@ -1,7 +1,7 @@
 {
     "carID": "c05463",
     "cr": 562,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "Goldfinger 3.4",
     "modelYear": 2019,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 70,
     "ola": 78.51,
     "description": "",
-"333TopSpeed": 164,
-"3330to60": 4.9,
-"333Handling": 87,
-
-"666TopSpeed": 167,
-"6660to60": 4.7,
-"666Handling": 90,
-
-"699TopSpeed": 167,
-"6990to60": 4.4,
-"699Handling": 93,
-
-"969TopSpeed": 171,
-"9690to60": 4.7,
-"969Handling": 93,
-
-"996TopSpeed": 171,
-"9960to60": 4.4,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufGoldfinger3.4(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

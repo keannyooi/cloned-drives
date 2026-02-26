@@ -1,7 +1,7 @@
 {
     "carID": "c03723",
     "cr": 256,
-    "make": ["Prince", "Nissan"],
+    "make": ["Prince","Nissan"],
     "model": "Gloria Super 6 T-VI JGP (S41D)",
     "modelYear": 1964,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Endless Summer","Motorsport","Unique","The Amplification of Asia"],
     "isPrize": false,
-	
     "weight": 1320,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceGloriaSuper6T-VIJGPS41(1964).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 120,
-"3330to60": 7.8,
-"333Handling": 69,
-
-"666TopSpeed": 124,
-"6660to60": 7.4,
-"666Handling": 71,
-
-"699TopSpeed": 124,
-"6990to60": 7,
-"699Handling": 74,
-
-"969TopSpeed": 129,
-"9690to60": 7.4,
-"969Handling": 74,
-
-"996TopSpeed": 129,
-"9960to60": 7,
-"996Handling": 71,
     "hiddenTag": [""]
 }

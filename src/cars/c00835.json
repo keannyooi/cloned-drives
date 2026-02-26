@@ -1,10 +1,7 @@
 {
     "carID": "c00835",
     "cr": 835,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "GT R",
     "modelYear": 2017,
     "country": "DE",
@@ -13,11 +10,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Grand Tourer",
-        "Silver Screen","OG"
-    ],
+    "tags": ["Supercar","Grand Tourer","Silver Screen","OG"],
     "isPrize": false,
     "weight": 1630,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 91.3,
     "ola": 93.23,
     "description": "",
-     "333TopSpeed": 201,
-    "3330to60": 3.1,
-    "333Handling": 96,
-    "666TopSpeed": 203,
-    "6660to60": 3,
-    "666Handling": 99,
-    "996TopSpeed": 206,
-    "9960to60": 2.8,
-    "996Handling": 99,
-    "969TopSpeed": 206,
-    "9690to60": 3,
-    "969Handling": 103,
-    "699TopSpeed": 203,
-    "6990to60": 2.8,
-    "699Handling": 103,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesAMGGTR(2017).png",
     "creator": "Havvy",
     "hiddenTag": [""]

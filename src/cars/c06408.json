@@ -1,5 +1,5 @@
 {
-	"carID": "c06408",
+    "carID": "c06408",
     "cr": 1013,
     "make": "Chevrolet",
     "model": "Corvette E-Ray ZER",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1770,
     "gc": "Medium",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 73.08,
     "ola": 71.05,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteE-RayZER2024.png",
-
-"333TopSpeed": 186,
-"3330to60": 2.4,
-"333Handling": 96,
-
-"666TopSpeed": 189,
-"6660to60": 2.3,
-"666Handling": 99,
-
-"699TopSpeed": 189,
-"6990to60": 2.1,
-"699Handling": 103,
-
-"969TopSpeed": 192,
-"9690to60": 2.3,
-"969Handling": 103,
-
-"996TopSpeed": 192,
-"9960to60": 2.1,
-"996Handling": 99,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteE-RayZER2024.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

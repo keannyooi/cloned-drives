@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1002,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 37.79,
     "ola": 66.67,
     "description": "The better value up! GTI.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volkswagenhighup!1.0TSI(2016).png",
     "creator": "Andu",
-
-    "333TopSpeed": 118,
-    "3330to60": 9.4,
-    "333Handling": 77,
-    
-    "666TopSpeed": 122,
-    "6660to60": 8.9,
-    "666Handling": 80,
-    
-    "699TopSpeed": 122,
-    "6990to60": 8.4,
-    "699Handling": 83,
-    
-    "969TopSpeed": 127,
-    "9690to60": 8.9,
-    "969Handling": 83,
-    
-    "996TopSpeed": 127,
-    "9960to60": 8.4,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

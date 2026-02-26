@@ -12,11 +12,9 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1630,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 69.23,
     "ola": 71.11,
     "description": "Everything convincing about the regular hatchback is here, just with a bigger booty.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfRVariant(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.3,
-    "333Handling": 89,
-    
-    "666TopSpeed": 162,
-    "6660to60": 4,
-    "666Handling": 92,
-    
-    "699TopSpeed": 162,
-    "6990to60": 3.8,
-    "699Handling": 95,
-    
-    "969TopSpeed": 165,
-    "9690to60": 4,
-    "969Handling": 95,
-    
-    "996TopSpeed": 165,
-    "9960to60": 3.8,
-    "996Handling": 92,
     "hiddenTag": [""]
 }

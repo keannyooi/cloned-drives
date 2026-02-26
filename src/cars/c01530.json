@@ -1,10 +1,7 @@
 {
     "carID": "c01530",
     "cr": 224,
-    "make": [
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["Datsun","Nissan"],
     "model": "280ZX",
     "modelYear": 1978,
     "country": "JP",
@@ -13,12 +10,7 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Style Icon",
-        "The Japanese Odyssey",
-        "Year of the Horse"
-    ],
+    "tags": ["Street Racer","Style Icon","The Japanese Odyssey","Year of the Horse"],
     "isPrize": false,
     "weight": 1281,
     "gc": "Medium",
@@ -31,24 +23,7 @@
     "mra": 44.93,
     "ola": 65.7,
     "description": "The 2nd generation Z-car that was lackluster in terms of performance.",
-    "333TopSpeed": 123,
-    "3330to60": 8.8,
-    "333Handling": 70,
-    "666TopSpeed": 128,
-    "6660to60": 8.4,
-    "666Handling": 72,
-    "996TopSpeed": 132,
-    "9960to60": 7.9,
-    "996Handling": 72,
-    "969TopSpeed": 132,
-    "9690to60": 8.4,
-    "969Handling": 75,
-    "699TopSpeed": 128,
-    "6990to60": 7.9,
-    "699Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280ZX(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

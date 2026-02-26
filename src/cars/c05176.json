@@ -10,10 +10,10 @@
     "handling": 1,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["April Fools", "Oddity"],
+    "tags": ["April Fools","Oddity"],
     "isPrize": true,
     "weight": 25000,
-	"gc": "Low",
+    "gc": "Low",
     "seatCount": 145,
     "bodyStyle": "Other",
     "tcs": false,
@@ -23,25 +23,6 @@
     "mra": 90,
     "ola": 110,
     "description": "Part of the 2024 April Fools Update!",
-"333TopSpeed": 313,
-"3330to60": 2.4,
-"333Handling": 1,
-
-"666TopSpeed": 314,
-"6660to60": 2.3,
-"666Handling": 1,
-
-"699TopSpeed": 314,
-"6990to60": 2.1,
-"699Handling": 1,
-
-"969TopSpeed": 316,
-"9690to60": 2.3,
-"969Handling": 1,
-
-"996TopSpeed": 316,
-"9960to60": 2.1,
-"996Handling": 1,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/1Trains/(AF24)Mitsubishi",
     "creator": "Bnuuy",
     "hiddenTag": [""]

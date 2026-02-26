@@ -1,7 +1,7 @@
 {
     "carID": "c02812",
     "cr": 584,
-    "make": ["Mercedes-Maybach", "Maybach", "Mercedes-Benz"],
+    "make": ["Mercedes-Maybach","Maybach","Mercedes-Benz"],
     "model": "G 650 Landaulet",
     "modelYear": 2017,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Unique","Extreme Juggernaut","Ultra Expensive"],
     "isPrize": true,
-
     "weight": 3330,
     "gc": "High",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 72.5,
     "ola": 62.07,
     "description": "Peak ludicrous: a Maybach-ified G-wagen.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesMaybachG650Landaulet(2017).png",
     "creator": "Havvy",
-
-    "333TopSpeed": 117,
-    "3330to60": 5.5,
-    "333Handling": 65,
-
-    "666TopSpeed": 121,
-    "6660to60": 5.2,
-    "666Handling": 67,
-
-    "996TopSpeed": 126,
-    "9960to60": 4.9,
-    "996Handling": 67,
-
-    "969TopSpeed": 126,
-    "9690to60": 5.2,
-    "969Handling": 70,
-
-    "699TopSpeed": 121,
-    "6990to60": 4.9,
-    "699Handling": 70,
     "hiddenTag": [""]
 }

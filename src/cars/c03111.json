@@ -1,7 +1,7 @@
 {
     "carID": "c03111",
     "cr": 953,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Fiesta GYM3",
     "modelYear": 2010,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1150,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "The first purpose built Gymkhana car made for Ken Block. https://www.youtube.com/watch?v=4TshFWSsrn8",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganFiestaGYM3(2010).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 134, 
-    "3330to60": 1.8, 
-    "333Handling": 94,
-
-    "666TopSpeed": 138, 
-    "6660to60": 1.7, 
-    "666Handling": 97,
-
-    "699TopSpeed": 138, 
-    "6990to60": 1.6, 
-    "699Handling": 101,
-
-    "969TopSpeed": 142, 
-    "9690to60": 1.7, 
-    "969Handling": 101,
-
-    "996TopSpeed": 142, 
-    "9960to60": 1.6, 
-    "996Handling": 97,
     "hiddenTag": [""]
 }

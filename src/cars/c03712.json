@@ -1,7 +1,7 @@
 {
     "carID": "c03712",
     "cr": 744,
-    "make": ["AVUS Performance", "Audi"],
+    "make": ["AVUS Performance","Audi"],
     "model": "RS 6 Avant",
     "modelYear": 2009,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Endless Summer","The Tyrol Tour: Remix","Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 2025,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Initially called the RS 6 White Power. I wonder why they changed it.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AVUSPerformanceRS6Avant(2009).png",
     "creator": "Exist",
-
-"333TopSpeed": 213,
-"3330to60": 3.7,
-"333Handling": 84,
-
-"666TopSpeed": 216,
-"6660to60": 3.5,
-"666Handling": 86,
-
-"699TopSpeed": 216,
-"6990to60": 3.3,
-"699Handling": 90,
-
-"969TopSpeed": 218,
-"9690to60": 3.5,
-"969Handling": 90,
-
-"996TopSpeed": 218,
-"9960to60": 3.3,
-"996Handling": 86,
     "hiddenTag": [""]
 }

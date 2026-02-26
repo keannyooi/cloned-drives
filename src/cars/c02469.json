@@ -10,9 +10,8 @@
     "handling": 99,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Track Day", "Ultra Expensive"],
+    "tags": ["Hypercar","Track Day","Ultra Expensive"],
     "isPrize": true,
-    
     "weight": 1180,
     "gc": "Low",
     "seatCount": 2,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 103.70,
+    "mra": 103.7,
     "ola": 78.57,
     "description": "The ultimate (barely) road-legal race car, no homologation, just insanity",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GlickenhausSCG003CS(2016).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 213,
-    "3330to60": 2.7,
-    "333Handling": 102,
-
-    "666TopSpeed": 216,
-    "6660to60": 2.5,
-    "666Handling": 106,
-
-    "996TopSpeed": 218,
-    "9960to60": 2.4,
-    "996Handling": 106,
-
-    "969TopSpeed": 218,
-    "9690to60": 2.5,
-    "969Handling": 110,
-
-    "699TopSpeed": 216,
-    "6990to60": 2.4,
-    "699Handling": 110,
     "hiddenTag": [""]
 }

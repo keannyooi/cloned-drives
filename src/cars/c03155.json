@@ -1,7 +1,7 @@
 {
     "carID": "c03155",
     "cr": 367,
-    "make": ["Vanetta", "Volkswagen"],
+    "make": ["Vanetta","Volkswagen"],
     "model": "Golf Chergui",
     "modelYear": 1984,
     "country": "DE",
@@ -10,13 +10,11 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Unique", "Tuner","The Tyrol Tour: Remix"],
+    "tags": ["Hot Hatch","Unique","Tuner","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1100,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 73.03,
     "ola": 83.08,
     "description": "Early tuning adding the spice.",
-
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VanettaGolfChergui(1984).png",
     "creator": "Andu",
-
-    "333TopSpeed": 144,
-    "3330to60": 6.2,
-    "333Handling": 77,
-
-    "666TopSpeed": 147,
-    "6660to60": 5.9, 
-    "666Handling": 80,
-
-    "996TopSpeed": 151,
-    "9960to60": 5.5,
-    "996Handling": 80,
-
-    "969TopSpeed": 151,
-    "9690to60": 5.9,
-    "969Handling": 83,
-
-    "699TopSpeed": 147,
-    "6990to60": 5.5,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

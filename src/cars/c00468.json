@@ -10,14 +10,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Style Icon",
-        "Ultra Expensive",
-        "Supercar",
-        "Unique",
-        "Year of the Horse"
-    ],
+    "tags": ["Motorsport","Style Icon","Ultra Expensive","Supercar","Unique","Year of the Horse"],
     "isPrize": true,
     "weight": 1217,
     "gc": "Low",
@@ -30,24 +23,7 @@
     "mra": 94.62,
     "ola": 107.69,
     "description": "Ford's Ferrari win streak breaker.",
-    "333TopSpeed": 208,
-    "3330to60": 4,
-    "333Handling": 82,
-    "666TopSpeed": 210,
-    "6660to60": 3.8,
-    "666Handling": 84,
-    "699TopSpeed": 210,
-    "6990to60": 3.6,
-    "699Handling": 88,
-    "969TopSpeed": 213,
-    "9690to60": 3.8,
-    "969Handling": 88,
-    "996TopSpeed": 213,
-    "9960to60": 3.6,
-    "996Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT140MkII(1966).png",
     "creator": "Havvy",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

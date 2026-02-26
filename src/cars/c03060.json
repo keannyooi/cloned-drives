@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour","Year of the Rabbit"],
     "isPrize": false,
-    
     "weight": 1570,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche928S4(1987).png",
     "creator": "c6",
-
-    "333TopSpeed": 169,
-    "3330to60": 5.6,
-    "333Handling": 77,
-
-    "666TopSpeed": 172,
-    "6660to60": 5.3,
-    "666Handling": 80,
-
-    "996TopSpeed": 175,
-    "9960to60": 5.0,
-    "996Handling": 80,
-
-    "969TopSpeed": 175,
-    "9690to60": 5.3,
-    "969Handling": 83,
-
-    "699TopSpeed": 172,
-    "6990to60": 5.0,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

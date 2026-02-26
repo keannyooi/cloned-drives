@@ -1,7 +1,7 @@
 {
     "carID": "c02721",
     "cr": 683,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "G 55 Kompressor",
     "modelYear": 2008,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2445,
     "gc": "High",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 69.33,
     "ola": 61.54,
     "description": "You can source spares from Grandma's E-class and effect repairs with a hammer.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzG55KompressorAMG(2008).png",
     "creator": "Havvy",
-
-    "333TopSpeed": 135,
-    "3330to60": 4.9,
-    "333Handling": 69,
-
-    "666TopSpeed": 139,
-    "6660to60": 4.7,
-    "666Handling": 71,
-
-    "996TopSpeed": 143,
-    "9960to60": 4.4,
-    "996Handling": 71,
-
-    "969TopSpeed": 143,
-    "9690to60": 4.7,
-    "969Handling": 74,
-
-    "699TopSpeed": 139,
-    "6990to60": 4.4,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

@@ -1,10 +1,7 @@
 {
     "carID": "c02234",
     "cr": 664,
-    "make": [
-        "RENNTech",
-        "Mercedes-Benz"
-    ],
+    "make": ["RENNTech","Mercedes-Benz"],
     "model": "E 60 4MATIC Wagon",
     "modelYear": 2001,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1899,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 61.04,
     "ola": 85.11,
     "description": "Mr. Feyhl's executive jet for kids.",
-     "333TopSpeed": 158,
-    "3330to60": 4.5,
-    "333Handling": 82,
-    "666TopSpeed": 162,
-    "6660to60": 4.2,
-    "666Handling": 84,
-    "996TopSpeed": 165,
-    "9960to60": 4.0,
-    "996Handling": 84,
-    "969TopSpeed": 165,
-    "9690to60": 4.2,
-    "969Handling": 88,
-    "699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RENNTechE604MATICWagon(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

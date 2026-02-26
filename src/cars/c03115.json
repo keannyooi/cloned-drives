@@ -1,18 +1,17 @@
 {
     "carID": "c03115",
     "cr": 1072,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Fiesta ST RX43",
     "modelYear": 2013,
     "country": "US",
     "topSpeed": 149,
-    "0to60": 2.0,
+    "0to60": 2,
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1290,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "https://youtu.be/WUO-lPubXeI",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganFiestaSTRX43(2013).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 152, 
-"3330to60": 1.9, 
-"333Handling": 95,
-
-"666TopSpeed": 156, 
-"6660to60": 1.8, 
-"666Handling": 98,
-
-"699TopSpeed": 156, 
-"6990to60": 1.7, 
-"699Handling": 102,
-
-"969TopSpeed": 159, 
-"9690to60": 1.8, 
-"969Handling": 102,
-
-"996TopSpeed": 159, 
-"9960to60": 1.7, 
-"996Handling": 98,
     "hiddenTag": [""]
 }

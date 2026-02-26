@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["Eco-Friendly","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 980,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 19.21,
     "ola": 53.42,
     "description": "Just nod and smile.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat500FireflyHybridCult(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 106,
-    "3330to60": 13.9,
-    "333Handling": 72,
-
-    "666TopSpeed": 111,
-    "6660to60": 13.1,
-    "666Handling": 75,
-
-    "699TopSpeed": 111,
-    "6990to60": 12.4,
-    "699Handling": 78,
-
-    "969TopSpeed": 116,
-    "9690to60": 13.1,
-    "969Handling": 78,
-
-    "996TopSpeed": 116,
-    "9960to60": 12.4,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

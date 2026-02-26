@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 830,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 25.25,
     "ola": 58.11,
     "description": "50 horsepower to get your heartbeat pumping!",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenScirocco1.3CL(1982).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 102,
-    "3330to60": 14.1,
-    "333Handling": 69,
-    
-    "666TopSpeed": 108,
-    "6660to60": 13.3,
-    "666Handling": 71,
-    
-    "699TopSpeed": 108,
-    "6990to60": 12.6,
-    "699Handling": 74,
-    
-    "969TopSpeed": 113,
-    "9690to60": 13.3,
-    "969Handling": 74,
-    
-    "996TopSpeed": 113,
-    "9960to60": 12.6,
-    "996Handling": 71,
     "hiddenTag": [""]
 }

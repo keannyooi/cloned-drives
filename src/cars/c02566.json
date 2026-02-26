@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1280,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "At first glance, this car looks... alien. Unlike anything on the road. And that's what Isami Amemiya was going for when the NA Super-7 first showed up in 2012. As the name suggests, the 13B rotary engine was kept naturally aspirated, a strange move for a Japanese tuner since they love adding turbochargers to engines. With such bodywork, it's no surprise that the car won the Best Build award at the Tokyo Auto Salon.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REAmemiyaNASuper-7(2012).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 168, 
-    "3330to60": 4.6, 
-    "333Handling": 93,
-
-    "666TopSpeed": 171, 
-    "6660to60": 4.3, 
-    "666Handling": 96,
-
-    "699TopSpeed": 171, 
-    "6990to60": 4.1, 
-    "699Handling": 100,
-
-    "969TopSpeed": 174, 
-    "9690to60": 4.3, 
-    "969Handling": 100,
-
-    "996TopSpeed": 174, 
-    "9960to60": 4.1, 
-    "996Handling": 96,
     "hiddenTag": [""]
 }

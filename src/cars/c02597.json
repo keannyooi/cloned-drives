@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2500,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "Entry level engine for ultra luxury.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanPatrolSEPlatinumCityV6(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 128,
-    "3330to60": 10.5,
-    "333Handling": 65,
-
-    "666TopSpeed": 132,
-    "6660to60": 10.0, 
-    "666Handling": 67,
-
-    "996TopSpeed": 137,
-    "9960to60": 9.4,
-    "996Handling": 67,
-
-    "969TopSpeed": 137,
-    "9690to60": 10.0,
-    "969Handling": 70,
-
-    "699TopSpeed": 132,
-    "6990to60": 9.4,
-    "699Handling": 70,
     "hiddenTag": [""]
 }

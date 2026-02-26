@@ -1,7 +1,7 @@
 {
     "carID": "c03828",
     "cr": 512,
-    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "make": ["Mercedes-Benz","Mercedes-AMG"],
     "model": "G 63 AMG 6x6",
     "modelYear": 2013,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Endless Summer","Ultra Expensive","Unique","Extreme Juggernaut","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 4105,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzG63AMG6x6(2013).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 105,
-"3330to60": 7.4,
-"333Handling": 65,
-
-"666TopSpeed": 110,
-"6660to60": 7,
-"666Handling": 67,
-
-"699TopSpeed": 110,
-"6990to60": 6.6,
-"699Handling": 70,
-
-"969TopSpeed": 116,
-"9690to60": 7,
-"969Handling": 70,
-
-"996TopSpeed": 116,
-"9960to60": 6.6,
-"996Handling": 67,
     "hiddenTag": [""]
 }

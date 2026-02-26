@@ -1,7 +1,7 @@
 {
     "carID": "c04142",
     "cr": 758,
-    "make": ["Alpine", "Renault"],
+    "make": ["Alpine","Renault"],
     "model": "A110 R Le Mans",
     "modelYear": 2023,
     "country": "FR",
@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Track Day"],
+    "tags": ["The Tyrol Tour: Remix","Track Day"],
     "isPrize": false,
-	
     "weight": 1082,
     "gc": "Low",
     "seatCount": 2,
@@ -23,28 +22,8 @@
     "fuelType": "Petrol",
     "mra": 81.82,
     "ola": 81.74,
-    "description": "This package isn't just for show, as the suspension gets extra attention, making the car stiffer and lower. But is it worth spending an extra 50 thousand for some suspension work and fancy stripes?", 
+    "description": "This package isn't just for show, as the suspension gets extra attention, making the car stiffer and lower. But is it worth spending an extra 50 thousand for some suspension work and fancy stripes?",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpineA110RLeMans(2023).png",
     "creator": "Fried",
-
-"333TopSpeed": 180, 
-"3330to60": 3.7, 
-"333Handling": 93,
-
-"666TopSpeed": 183, 
-"6660to60": 3.5, 
-"666Handling": 96,
-
-"699TopSpeed": 183, 
-"6990to60": 3.3, 
-"699Handling": 100,
-
-"969TopSpeed": 186, 
-"9690to60": 3.5, 
-"969Handling": 100,
-
-"996TopSpeed": 186, 
-"9960to60": 3.3, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

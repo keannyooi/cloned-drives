@@ -1,10 +1,7 @@
 {
     "carID": "c01828",
     "cr": 522,
-    "make": [
-        "Stillen",
-        "Nissan"
-    ],
+    "make": ["Stillen","Nissan"],
     "model": "300ZX Twin Turbo SMZ",
     "modelYear": 1995,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1622,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 65.44,
     "ola": 93.63,
     "description": "None.",
-     "333TopSpeed": 158,
-    "3330to60": 5,
-    "333Handling": 86,
-    "666TopSpeed": 162,
-    "6660to60": 4.8,
-    "666Handling": 88,
-    "996TopSpeed": 165,
-    "9960to60": 4.5,
-    "996Handling": 88,
-    "969TopSpeed": 165,
-    "9690to60": 4.8,
-    "969Handling": 92,
-    "699TopSpeed": 162,
-    "6990to60": 4.5,
-    "699Handling": 92,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Stillen300ZXTwinTurboSMZ(1995).png",
     "creator": "Keanny",
     "hiddenTag": [""]

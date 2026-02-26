@@ -6,13 +6,12 @@
     "modelYear": 1967,
     "country": "DE",
     "topSpeed": 131,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1020,
     "gc": "Medium",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 77.52,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911E2.0(1967).png",
-
-"333TopSpeed": 135,
-"3330to60": 7.6,
-"333Handling": 72,
-
-"666TopSpeed": 139,
-"6660to60": 7.2,
-"666Handling": 75,
-
-"699TopSpeed": 139,
-"6990to60": 6.8,
-"699Handling": 78,
-
-"969TopSpeed": 143,
-"9690to60": 7.2,
-"969Handling": 78,
-
-"996TopSpeed": 143,
-"9960to60": 6.8,
-"996Handling": 75,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

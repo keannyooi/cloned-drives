@@ -1,7 +1,7 @@
 {
     "carID": "c07288",
     "cr": 791,
-    "make": ["Mini", "X-Raid"],
+    "make": ["Mini","X-Raid"],
     "model": "JCW Rally 3.0i",
     "modelYear": 2024,
     "country": "DE",
@@ -10,7 +10,7 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Chop Shop", "Motorsport"],
+    "tags": ["Chop Shop","Motorsport"],
     "isPrize": false,
     "weight": 2020,
     "gc": "High",
@@ -23,25 +23,6 @@
     "mra": 78.11,
     "ola": 70.43,
     "description": "Now with petrol power™",
-"333TopSpeed": 111,
-"3330to60": 5.1,
-"333Handling": 83,
-
-"666TopSpeed": 116,
-"6660to60": 4.9,
-"666Handling": 85,
-
-"699TopSpeed": 116,
-"6990to60": 4.6,
-"699Handling": 89,
-
-"969TopSpeed": 121,
-"9690to60": 4.9,
-"969Handling": 89,
-
-"996TopSpeed": 121,
-"9960to60": 4.6,
-"996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MiniJCWRally3.0i(2024).png",
     "creator": "Hastur",
     "hiddenTag": [""]

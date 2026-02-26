@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Extreme Juggernaut","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 2485,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "760 NM of torque from an inline-six engine, pretty impressive if you ask me.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX7M50d(2019).png",
     "creator": "c6",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.8,
-    "333Handling": 79,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.6,
-    "666Handling": 81,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.3,
-    "996Handling": 81,
-
-    "969TopSpeed": 165,
-    "9690to60": 4.6,
-    "969Handling": 84,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.3,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

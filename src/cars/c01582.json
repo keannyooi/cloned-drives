@@ -1,10 +1,7 @@
 {
     "carID": "c01582",
     "cr": 825,
-    "make": [
-        "JUN AUTO",
-        "Toyota"
-    ],
+    "make": ["JUN AUTO","Toyota"],
     "model": "Akira Supra",
     "modelYear": 2001,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 25,
     "driveType": "RWD",
     "tyreType": "Drag",
-    "tags": [
-        "Tuner",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Unique","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1520,
     "gc": "Low",
@@ -30,25 +23,6 @@
     "mra": 116.67,
     "ola": 114.29,
     "description": "The heart of the beast is this fully reworked 2JZ engine.",
- "333TopSpeed": 251,
-"3330to60": 2.7,
-"333Handling": 26,
-
-"666TopSpeed": 253,
-"6660to60": 2.5,
-"666Handling": 27,
-
-"699TopSpeed": 253,
-"6990to60": 2.4,
-"699Handling": 28,
-
-"969TopSpeed": 255,
-"9690to60": 2.5,
-"969Handling": 28,
-
-"996TopSpeed": 255,
-"9960to60": 2.4,
-"996Handling": 27,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JUNAUTOAkiraSupra(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

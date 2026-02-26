@@ -1,7 +1,7 @@
 {
     "carID": "c02516",
     "cr": 439,
-    "make": ["Brabus", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-Benz"],
     "model": "R 6.1 S",
     "modelYear": 2006,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 2285,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BrabusR6.1S(2006).png",
     "creator": "Keanny",
-
-"333TopSpeed": 167, 
-"3330to60": 5.4, 
-"333Handling": 72,
-
-"666TopSpeed": 170, 
-"6660to60": 5.1, 
-"666Handling": 75,
-
-"699TopSpeed": 170, 
-"6990to60": 4.8, 
-"699Handling": 78,
-
-"969TopSpeed": 174, 
-"9690to60": 5.1, 
-"969Handling": 78,
-
-"996TopSpeed": 174, 
-"9960to60": 4.8, 
-"996Handling": 75 ,
     "hiddenTag": [""]
 }

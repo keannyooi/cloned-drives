@@ -1,10 +1,7 @@
 {
     "carID": "c00924",
     "cr": 488,
-    "make": [
-        "Mugen",
-        "Honda"
-    ],
+    "make": ["Mugen","Honda"],
     "model": "Civic Type-R (FN2)",
     "modelYear": 2009,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 84,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Street Racer"],
     "isPrize": false,
     "weight": 1233,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 65.75,
     "ola": 80.67,
     "description": "moogen ufo.",
-     "333TopSpeed": 153,
-    "3330to60": 5.7,
-    "333Handling": 87,
-    "666TopSpeed": 157,
-    "6660to60": 5.4,
-    "666Handling": 90,
-    "996TopSpeed": 160,
-    "9960to60": 5.1,
-    "996Handling": 90,
-    "969TopSpeed": 160,
-    "9690to60": 5.4,
-    "969Handling": 93,
-    "699TopSpeed": 157,
-    "6990to60": 5.1,
-    "699Handling": 93,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MugenCivicTypeR(FN2)(2009).png",
     "creator": "Havvy",
     "hiddenTag": [""]

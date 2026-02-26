@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1298,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Very good engine yes yes.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA3Sportback14TFSI(2008).png",
     "creator": "Connor",
-
-    "333TopSpeed": 129,
-    "3330to60": 8.8,
-    "333Handling": 77,
-
-    "666TopSpeed": 133,
-    "6660to60": 8.4, 
-    "666Handling": 80,
-
-    "996TopSpeed": 137,
-    "9960to60": 7.9,
-    "996Handling": 80,
-
-    "969TopSpeed": 137,
-    "9690to60": 8.4,
-    "969Handling": 83,
-
-    "699TopSpeed": 133,
-    "6990to60": 7.9,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

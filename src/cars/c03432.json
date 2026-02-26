@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 559,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,29 +21,9 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 0,
-    "ola": 46.20,
+    "ola": 46.2,
     "description": "Replacement for the Prinz I, featuring styling inspired by the Chevy Corvair",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NSUPrinz4(1961).png",
     "creator": "Connor",
-
-    "333TopSpeed": 84,
-    "3330to60": 26.3,
-    "333Handling": 57,
-
-    "666TopSpeed": 91,
-    "6660to60": 24.9, 
-    "666Handling": 59,
-
-    "996TopSpeed": 97,
-    "9960to60": 23.5,
-    "996Handling": 59,
-
-    "969TopSpeed": 97,
-    "9690to60": 24.9,
-    "969Handling": 61,
-
-    "699TopSpeed": 91,
-    "6990to60": 23.5,
-    "699Handling": 61,
     "hiddenTag": [""]
 }

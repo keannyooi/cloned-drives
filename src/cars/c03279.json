@@ -10,11 +10,7 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "The Tyrol Tour: Remix",
-        "Motorsport",
-        "Year of the Horse"
-    ],
+    "tags": ["The Tyrol Tour: Remix","Motorsport","Year of the Horse"],
     "isPrize": true,
     "weight": 570,
     "gc": "Low",
@@ -27,24 +23,7 @@
     "mra": 70.83,
     "ola": 88.24,
     "description": "future f1 champ lace strol",
-    "333TopSpeed": 158,
-    "3330to60": 3.2,
-    "333Handling": 100,
-    "666TopSpeed": 162,
-    "6660to60": 3.1,
-    "666Handling": 103,
-    "996TopSpeed": 165,
-    "9960to60": 2.9,
-    "996Handling": 103,
-    "969TopSpeed": 165,
-    "9690to60": 3.1,
-    "969Handling": 108,
-    "699TopSpeed": 162,
-    "6990to60": 2.9,
-    "699Handling": 108,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

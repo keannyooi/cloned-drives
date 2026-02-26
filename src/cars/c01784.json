@@ -10,10 +10,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1540,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 80,
     "ola": 74.49,
     "description": "",
-"333TopSpeed": 170,
-"3330to60": 4.5,
-"333Handling": 89,
-
-"666TopSpeed": 173,
-"6660to60": 4.2,
-"666Handling": 92,
-
-"699TopSpeed": 173,
-"6990to60": 4,
-"699Handling": 95,
-
-"969TopSpeed": 176,
-"9690to60": 4.2,
-"969Handling": 95,
-
-"996TopSpeed": 176,
-"9960to60": 4,
-"996Handling": 92,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTRVSpecII(R34)(2000).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

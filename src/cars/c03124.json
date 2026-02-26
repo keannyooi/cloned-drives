@@ -1,18 +1,17 @@
 {
     "carID": "c03124",
     "cr": 866,
-    "make": ["Hoonigan", "Subaru"],
+    "make": ["Hoonigan","Subaru"],
     "model": "Impreza WRX STI",
     "modelYear": 2009,
     "country": "US",
     "topSpeed": 156,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1390,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "The Infomercial. https://www.youtube.com/watch?v=HQ7R_buZPSo",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganImprezaWRXSTI(2009).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 159, 
-"3330to60": 2.8, 
-"333Handling": 93,
-
-"666TopSpeed": 163, 
-"6660to60": 2.7, 
-"666Handling": 96,
-
-"699TopSpeed": 163, 
-"6990to60": 2.6, 
-"699Handling": 100,
-
-"969TopSpeed": 166, 
-"9690to60": 2.7, 
-"969Handling": 100,
-
-"996TopSpeed": 166, 
-"9960to60": 2.6, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

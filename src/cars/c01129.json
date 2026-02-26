@@ -6,16 +6,11 @@
     "modelYear": 2017,
     "country": "US",
     "topSpeed": 240,
-    "0to60": 2.0,
+    "0to60": 2,
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Eco-Friendly",
-        "Hypercar",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Eco-Friendly","Hypercar","Unique","Ultra Expensive"],
     "isPrize": false,
     "weight": 1338,
     "gc": "Low",
@@ -26,27 +21,8 @@
     "enginePos": "Middle",
     "fuelType": "Electric",
     "mra": 105.26,
-    "ola": 95.00,
+    "ola": 95,
     "description": "An electric fighter jet on wheels.",
-"333TopSpeed": 242,
-"3330to60": 1.9,
-"333Handling": 99,
-
-"666TopSpeed": 244,
-"6660to60": 1.8,
-"666Handling": 102,
-
-"699TopSpeed": 244,
-"6990to60": 1.7,
-"699Handling": 107,
-
-"969TopSpeed": 247,
-"9690to60": 1.8,
-"969Handling": 107,
-
-"996TopSpeed": 247,
-"9960to60": 1.7,
-"996Handling": 102,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RAESRTachyonSpeed(2017).png",
     "creator": "Keanny",
     "hiddenTag": [""]

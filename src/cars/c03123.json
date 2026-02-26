@@ -1,7 +1,7 @@
 {
     "carID": "c03123",
     "cr": 804,
-    "make": ["Hoonigan", "Subaru"],
+    "make": ["Hoonigan","Subaru"],
     "model": "Impreza WRX STI",
     "modelYear": 2008,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1400,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The car that started the Gymkhana series. https://www.youtube.com/watch?v=rs-jAImScms",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganImprezaWRXSTI(2008).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 163, 
-"3330to60": 3.3, 
-"333Handling": 91,
-
-"666TopSpeed": 166, 
-"6660to60": 3.1, 
-"666Handling": 94,
-
-"699TopSpeed": 166, 
-"6990to60": 3.0, 
-"699Handling": 98,
-
-"969TopSpeed": 170, 
-"9690to60": 3.1, 
-"969Handling": 98,
-
-"996TopSpeed": 170, 
-"9960to60": 3.0, 
-"996Handling": 94,
     "hiddenTag": [""]
 }

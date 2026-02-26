@@ -10,9 +10,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer","Oceanic View"
-    ],
+    "tags": ["Street Racer","Oceanic View"],
     "isPrize": false,
     "weight": 1510,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 65.25,
     "ola": 75,
     "description": "From the last generation WRX that can outrun the STI of the same generation, here is the newest generation WRX that can outturn the STI of the same generation.",
-"333TopSpeed": 149,
-"3330to60": 5,
-"333Handling": 88,
-
-"666TopSpeed": 152,
-"6660to60": 4.8,
-"666Handling": 91,
-
-"699TopSpeed": 152,
-"6990to60": 4.5,
-"699Handling": 94,
-
-"969TopSpeed": 156,
-"9690to60": 4.8,
-"969Handling": 94,
-
-"996TopSpeed": 156,
-"9960to60": 4.5,
-"996Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruWRX(2015).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

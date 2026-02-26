@@ -1,7 +1,7 @@
 {
     "carID": "c04326",
     "cr": 895,
-    "make": ["BISIMOTO", "Porsche"],
+    "make": ["BISIMOTO","Porsche"],
     "model": "911 Twin Turbo",
     "modelYear": 2012,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Americas Assault","Unique","Tuner","Ultra Expensive","Street Racer","RestoMod","Cloned Drives Beta: Last of"],
     "isPrize": true,
-	
     "weight": 1090,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 103.45,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BISIMOTO911TwinTurbo(2012).png",
-
-"333TopSpeed": 239,
-"3330to60": 2.8,
-"333Handling": 92,
-
-"666TopSpeed": 241,
-"6660to60": 2.6,
-"666Handling": 95,
-
-"699TopSpeed": 241,
-"6990to60": 2.5,
-"699Handling": 99,
-
-"969TopSpeed": 244,
-"9690to60": 2.6,
-"969Handling": 99,
-
-"996TopSpeed": 244,
-"9960to60": 2.5,
-"996Handling": 95,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

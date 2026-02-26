@@ -6,13 +6,12 @@
     "modelYear": 1967,
     "country": "DE",
     "topSpeed": 174,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 675,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 92.55,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche910-8(1967).png",
-
-"333TopSpeed": 177,
-"3330to60": 3.8,
-"333Handling": 83,
-
-"666TopSpeed": 180,
-"6660to60": 3.6,
-"666Handling": 85,
-
-"699TopSpeed": 180,
-"6990to60": 3.4,
-"699Handling": 89,
-
-"969TopSpeed": 183,
-"9690to60": 3.6,
-"969Handling": 89,
-
-"996TopSpeed": 183,
-"9960to60": 3.4,
-"996Handling": 85,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

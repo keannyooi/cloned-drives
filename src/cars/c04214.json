@@ -1,7 +1,7 @@
 {
     "carID": "c04214",
     "cr": 201,
-    "make": ["Novitec", "Fiat"],
+    "make": ["Novitec","Fiat"],
     "model": "Panda",
     "modelYear": 2012,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Hot Hatch","Eurotech Elite","Tuner"],
     "isPrize": false,
-	
     "weight": 1050,
     "gc": "Low",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 37.40,
+    "mra": 37.4,
     "ola": 65.31,
-    "description": "Just when you thought the Germans could do no wrong with Pandas, they pull an Italy and give this one 99hp! These damn Germans...", 
+    "description": "Just when you thought the Germans could do no wrong with Pandas, they pull an Italy and give this one 99hp! These damn Germans...",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NovitecPanda(2012).png",
     "creator": "Fried",
-
-"333TopSpeed": 121, 
-"3330to60": 9.3, 
-"333Handling": 77,
-
-"666TopSpeed": 126, 
-"6660to60": 8.8, 
-"666Handling": 80,
-
-"699TopSpeed": 126, 
-"6990to60": 8.3, 
-"699Handling": 83,
-
-"969TopSpeed": 130, 
-"9690to60": 8.8, 
-"969Handling": 83,
-
-"996TopSpeed": 130, 
-"9960to60": 8.3, 
-"996Handling": 80,
     "hiddenTag": [""]
 }

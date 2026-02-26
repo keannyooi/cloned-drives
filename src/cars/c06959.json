@@ -1,7 +1,7 @@
 {
     "carID": "c06959",
     "cr": 479,
-    "make": ["Lotec", "Mercedes-Benz"],
+    "make": ["Lotec","Mercedes-Benz"],
     "model": "300 CE Turbo Breitbau",
     "modelYear": 1989,
     "country": "DE",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 73.08,
     "ola": 87.72,
-
     "description": "",
-
-"333TopSpeed": 175,
-"3330to60": 5.4,
-"333Handling": 82,
-
-"666TopSpeed": 178,
-"6660to60": 5.1,
-"666Handling": 84,
-
-"699TopSpeed": 178,
-"6990to60": 4.8,
-"699Handling": 88,
-
-"969TopSpeed": 181,
-"9690to60": 5.1,
-"969Handling": 88,
-
-"996TopSpeed": 181,
-"9960to60": 4.8,
-"996Handling": 84,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Lotec300CETurboBreitbau(1989).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

@@ -1,7 +1,7 @@
 {
     "carID": "c02633",
     "cr": 485,
-    "make": ["Pettit Racing", "Mazda"],
+    "make": ["Pettit Racing","Mazda"],
     "model": "RX-8",
     "modelYear": 2004,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1360,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Worst quality image in cd.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PetitRacingRX8(2004).png",
     "creator": "Keanny",
-
-"333TopSpeed": 161, 
-"3330to60": 5.4, 
-"333Handling": 83,
-
-"666TopSpeed": 165, 
-"6660to60": 5.1, 
-"666Handling": 85,
-
-"699TopSpeed": 165, 
-"6990to60": 4.8, 
-"699Handling": 89,
-
-"969TopSpeed": 168, 
-"9690to60": 5.1, 
-"969Handling": 89,
-
-"996TopSpeed": 168, 
-"9960to60": 4.8, 
-"996Handling": 85,
     "hiddenTag": [""]
 }

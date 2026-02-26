@@ -1,7 +1,7 @@
 {
     "carID": "c03192",
     "cr": 60,
-    "make": ["Prince", "Nissan"],
+    "make": ["Prince","Nissan"],
     "model": "Skyline 1500 Estate W50",
     "modelYear": 1965,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Amplification of Asia"],
     "isPrize": false,
-	
     "weight": 1050,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceSkyline1500EstateW50(1965).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 87,
-"3330to60": 17.2,
-"333Handling": 59,
-
-"666TopSpeed": 94,
-"6660to60": 16.3,
-"666Handling": 61,
-
-"699TopSpeed": 94,
-"6990to60": 15.4,
-"699Handling": 63,
-
-"969TopSpeed": 100,
-"9690to60": 16.3,
-"969Handling": 63,
-
-"996TopSpeed": 100,
-"9960to60": 15.4,
-"996Handling": 61,
     "hiddenTag": [""]
 }

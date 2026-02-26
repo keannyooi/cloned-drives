@@ -1,7 +1,7 @@
-{  
+{
     "carID": "c04486",
     "cr": 833,
-    "make": ["HGP", "Volkswagen"],
+    "make": ["HGP","Volkswagen"],
     "model": "Golf R36 Bi-Turbo",
     "modelYear": 2008,
     "country": "DE",
@@ -10,13 +10,11 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Tuner","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1608,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,27 +23,7 @@
     "mra": 72.34,
     "ola": 85.29,
     "description": "Here's what happens when you cram in the Passat's 3.6l VR6 in the Golf and stack on 2 turbos.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HGPGolfR36Bi-Turbo(2008).png",
     "creator": "Andu",
-    "333TopSpeed": 210,
-    "3330to60": 3.2,
-    "333Handling": 91,
-    
-    "666TopSpeed": 212,
-    "6660to60": 3.1,
-    "666Handling": 94,
-    
-    "699TopSpeed": 212,
-    "6990to60": 2.9,
-    "699Handling": 98,
-    
-    "969TopSpeed": 215,
-    "9690to60": 3.1,
-    "969Handling": 98,
-    
-    "996TopSpeed": 215,
-    "9960to60": 2.9,
-    "996Handling": 94,
     "hiddenTag": [""]
 }

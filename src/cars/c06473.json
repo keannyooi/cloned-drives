@@ -1,5 +1,5 @@
 {
-	"carID": "c06473",
+    "carID": "c06473",
     "cr": 1112,
     "make": "Xiaomi",
     "model": "SU7 Ultra Prototype",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Rest of The World","Eco-Friendly","Track Day","Concept"],
     "isPrize": true,
-	
     "weight": 1900,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 105.51,
     "ola": 75.61,
     "description": "",
-	"racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/XiaomiSU7UltraPrototype(2024).png",
-
-"333TopSpeed": 219,
-"3330to60": 1.7,
-"333Handling": 103,
-
-"666TopSpeed": 222,
-"6660to60": 1.6,
-"666Handling": 107,
-
-"699TopSpeed": 222,
-"6990to60": 1.5,
-"699Handling": 111,
-
-"969TopSpeed": 224,
-"9690to60": 1.6,
-"969Handling": 111,
-
-"996TopSpeed": 224,
-"9960to60": 1.5,
-"996Handling": 107,
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/XiaomiSU7UltraPrototype(2024).png",
     "creator": "Crayola",
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c02693",
     "cr": 920,
-    "make": ["HBB Motorsport", "Lancia"],
+    "make": ["HBB Motorsport","Lancia"],
     "model": "Delta HF Evo",
     "modelYear": 2021,
     "country": "SI",
@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Rest of The World"],
+    "tags": ["Motorsport","Rest of The World"],
     "isPrize": false,
-	
     "weight": 920,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 191, 
-"3330to60": 2.7, 
-"333Handling": 97,
-
-"666TopSpeed": 194, 
-"6660to60": 2.5, 
-"666Handling": 100,
-
-"699TopSpeed": 194, 
-"6990to60": 2.4, 
-"699Handling": 104,
-
-"969TopSpeed": 196, 
-"9690to60": 2.5, 
-"969Handling": 104,
-
-"996TopSpeed": 196, 
-"9960to60": 2.4, 
-"996Handling": 100,
     "hiddenTag": [""]
 }

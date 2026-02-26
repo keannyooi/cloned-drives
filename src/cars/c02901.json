@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Concept","Eco-Friendly","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 2530,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "The first appearance of BMW's big boy.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX7iperf(2017).png",
     "creator": "c6",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.0,
-    "333Handling": 79,
-
-    "666TopSpeed": 162,
-    "6660to60": 3.8,
-    "666Handling": 81,
-
-    "996TopSpeed": 165,
-    "9960to60": 3.6,
-    "996Handling": 81,
-
-    "969TopSpeed": 165,
-    "9690to60": 3.8,
-    "969Handling": 84,
-
-    "699TopSpeed": 162,
-    "6990to60": 3.6,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

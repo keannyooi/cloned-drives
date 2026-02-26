@@ -1,10 +1,7 @@
 {
     "carID": "c01539",
     "cr": 845,
-    "make": [
-        "HKS",
-        "Nissan"
-    ],
+    "make": ["HKS","Nissan"],
     "model": "Patrol Turbo T51R 1000 H.P FoRRtune",
     "modelYear": 2010,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 2230,
     "gc": "High",
@@ -29,21 +23,6 @@
     "mra": 120,
     "ola": 88.88,
     "description": "",
-     "333TopSpeed": 182,
-    "3330to60": 3.4,
-    "333Handling": 81,
-    "666TopSpeed": 185,
-    "6660to60": 3.2,
-    "666Handling": 83,
-    "996TopSpeed": 188,
-    "9960to60": 3.1,
-    "996Handling": 83,
-    "969TopSpeed": 188,
-    "9690to60": 3.2,
-    "969Handling": 87,
-    "699TopSpeed": 185,
-    "6990to60": 3.1,
-    "699Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HKSPatrolTurboT51R1000HPFoRRtune(2010).png",
     "creator": "Aqo",
     "hiddenTag": [""]

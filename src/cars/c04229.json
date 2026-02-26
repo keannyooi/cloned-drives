@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 935,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Not exactly sure what it's got to do with Monte Carlo.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaCitigo10MPIMonteCarlo(2017).png",
     "creator": "Connor",
-
-    "333TopSpeed": 112,
-    "3330to60": 12.6,
-    "333Handling": 75,
-
-    "666TopSpeed": 117,
-    "6660to60": 12.0, 
-    "666Handling": 78,
-
-    "996TopSpeed": 122,
-    "9960to60": 11.3,
-    "996Handling": 78,
-
-    "969TopSpeed": 122,
-    "9690to60": 12.0,
-    "969Handling": 81,
-
-    "699TopSpeed": 117,
-    "6990to60": 11.3,
-    "699Handling": 81,
     "hiddenTag": [""]
 }

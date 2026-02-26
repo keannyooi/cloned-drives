@@ -10,9 +10,8 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Unique"],
+    "tags": ["Motorsport","Unique"],
     "isPrize": false,
-	
     "weight": 700,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoTipo33Stradale(1967).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 165, 
-"3330to60": 5.4, 
-"333Handling": 81,
-
-"666TopSpeed": 168, 
-"6660to60": 5.1, 
-"666Handling": 83,
-
-"699TopSpeed": 168, 
-"6990to60": 4.8, 
-"699Handling": 87,
-
-"969TopSpeed": 172, 
-"9690to60": 5.1, 
-"969Handling": 87,
-
-"996TopSpeed": 172, 
-"9960to60": 4.8, 
-"996Handling": 83,
     "hiddenTag": [""]
 }

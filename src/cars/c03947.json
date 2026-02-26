@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1244,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Also available as a meh coupe.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCobaltCoupeLT(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 132,
-    "3330to60": 7.8,
-    "333Handling": 72,
-
-    "666TopSpeed": 136,
-    "6660to60": 7.4, 
-    "666Handling": 75,
-
-    "996TopSpeed": 140,
-    "9960to60": 7.0,
-    "996Handling": 75,
-
-    "969TopSpeed": 140,
-    "9690to60": 7.4,
-    "969Handling": 78,
-
-    "699TopSpeed": 136,
-    "6990to60": 7.0,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

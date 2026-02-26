@@ -1,7 +1,7 @@
 {
     "carID": "c03117",
     "cr": 734,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Focus RS",
     "modelYear": 2016,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "Street Racer"],
+    "tags": ["Tuner","Unique","Street Racer"],
     "isPrize": false,
-	
     "weight": 1540,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Ken Block's newest daily driver is his 2016 Ford Focus RS. Equipped with fifteen52 Turbomacs and Toyo R1R tires, it's the ideal around-town ride for Block when he's home in Park City, Utah, and is in the mood to drive something a bit more nimble than his Ford F-150 Raptor.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganFocusRS(2016).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 172, 
-"3330to60": 4.2, 
-"333Handling": 94,
-
-"666TopSpeed": 175, 
-"6660to60": 4.0, 
-"666Handling": 97,
-
-"699TopSpeed": 175, 
-"6990to60": 3.7, 
-"699Handling": 101,
-
-"969TopSpeed": 178, 
-"9690to60": 4.0, 
-"969Handling": 101,
-
-"996TopSpeed": 178, 
-"9960to60": 3.7, 
-"996Handling": 97,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1632,
     "gc": "High",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 56.50,
+    "mra": 56.5,
     "ola": 63.85,
-    "description": "I'll help you out: the facelifted Kadjars were submitted somewhere around the 26th of September, 2022!", 
+    "description": "I'll help you out: the facelifted Kadjars were submitted somewhere around the 26th of September, 2022!",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultKadjar1.7dCI1504x4(2018).png",
     "creator": "Fried",
-
-"333TopSpeed": 125, 
-"3330to60": 10.2, 
-"333Handling": 75,
-
-"666TopSpeed": 130, 
-"6660to60": 9.6, 
-"666Handling": 78,
-
-"699TopSpeed": 130, 
-"6990to60": 9.1, 
-"699Handling": 81,
-
-"969TopSpeed": 134, 
-"9690to60": 9.6, 
-"969Handling": 81,
-
-"996TopSpeed": 134, 
-"9960to60": 9.1, 
-"996Handling": 78,
     "hiddenTag": [""]
 }

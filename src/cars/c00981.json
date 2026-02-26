@@ -10,9 +10,7 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Year of the Horse"
-    ],
+    "tags": ["Year of the Horse"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Medium",
@@ -25,24 +23,7 @@
     "mra": 57.43,
     "ola": 72.94,
     "description": "A more powerful Calibra with a cd of 0.29 due to changes in cooling system, underbody, use of spoked wheels and glass detail.",
-    "333TopSpeed": 142,
-    "3330to60": 8.1,
-    "333Handling": 77,
-    "666TopSpeed": 146,
-    "6660to60": 7.7,
-    "666Handling": 80,
-    "996TopSpeed": 149,
-    "9960to60": 7.2,
-    "996Handling": 80,
-    "969TopSpeed": 149,
-    "9690to60": 7.7,
-    "969Handling": 83,
-    "699TopSpeed": 146,
-    "6990to60": 7.2,
-    "699Handling": 83,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelCalibra20i16V(1989).png",
     "creator": "Connor",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

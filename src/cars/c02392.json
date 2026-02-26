@@ -1,7 +1,7 @@
 {
     "carID": "c02392",
     "cr": 910,
-    "make": ["HBB Motorsport", "Lancia"],
+    "make": ["HBB Motorsport","Lancia"],
     "model": "Delta HF Evo",
     "modelYear": 2017,
     "country": "SI",
@@ -10,9 +10,8 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Tuner", "Motorsport", "Unique", "Rest of The World"],
+    "tags": ["Tuner","Motorsport","Unique","Rest of The World"],
     "isPrize": false,
-	
     "weight": 950,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 186, 
-"3330to60": 2.7, 
-"333Handling": 96,
-
-"666TopSpeed": 189, 
-"6660to60": 2.5, 
-"666Handling": 99,
-
-"699TopSpeed": 189, 
-"6990to60": 2.4, 
-"699Handling": 103,
-
-"969TopSpeed": 192, 
-"9690to60": 2.5, 
-"969Handling": 103,
-
-"996TopSpeed": 192, 
-"9960to60": 2.4, 
-"996Handling": 99,
     "hiddenTag": [""]
 }

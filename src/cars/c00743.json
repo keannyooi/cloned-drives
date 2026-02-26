@@ -10,10 +10,7 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Year of the Horse"
-    ],
+    "tags": ["The Royal Collection","Year of the Horse"],
     "isPrize": false,
     "weight": 1300,
     "gc": "Medium",
@@ -26,24 +23,7 @@
     "mra": 61.84,
     "ola": 76.6,
     "description": "This might be the strangest Lotus to ever exist, based on stats alone.",
-    "333TopSpeed": 166,
-    "3330to60": 4.5,
-    "333Handling": 74,
-    "666TopSpeed": 169,
-    "6660to60": 4.2,
-    "666Handling": 77,
-    "996TopSpeed": 173,
-    "9960to60": 4,
-    "996Handling": 77,
-    "969TopSpeed": 173,
-    "9690to60": 4.2,
-    "969Handling": 80,
-    "699TopSpeed": 169,
-    "6990to60": 4,
-    "699Handling": 80,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LotusEspritTurboSE(1990).png",
     "creator": "Based",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

@@ -1,4 +1,4 @@
- {
+{
     "carID": "c07583",
     "cr": 333,
     "make": "Saturn",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 42.25,
     "ola": 71.11,
-	
     "description": "None",
-	
-"333TopSpeed": 106,
-"3330to60": 8.5,
-"333Handling": 76,
-
-"666TopSpeed": 111,
-"6660to60": 8.1,
-"666Handling": 79,
-
-"699TopSpeed": 111,
-"6990to60": 7.6,
-"699Handling": 82,
-
-"969TopSpeed": 116,
-"9690to60": 8.1,
-"969Handling": 82,
-
-"996TopSpeed": 116,
-"9960to60": 7.6,
-"996Handling": 79,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnFlextremeConcept(2008).png",
     "creator": "GAAN",
     "hiddenTag": [""]

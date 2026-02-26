@@ -1,7 +1,7 @@
 {
     "carID": "c03651",
     "cr": 943,
-    "make": ["Hennessey", "Ram", "Dodge"],
+    "make": ["Hennessey","Ram","Dodge"],
     "model": "Mammoth 900 TRX",
     "modelYear": 2021,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner", "Extreme Juggernaut", "The Americas Assault","Endless Summer"],
+    "tags": ["Tuner","Extreme Juggernaut","The Americas Assault","Endless Summer"],
     "isPrize": false,
-	
     "weight": 2930,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyMammoth900TRX(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 132,
-"3330to60": 3.2,
-"333Handling": 73,
-
-"666TopSpeed": 136,
-"6660to60": 3.1,
-"666Handling": 76,
-
-"699TopSpeed": 136,
-"6990to60": 2.9,
-"699Handling": 79,
-
-"969TopSpeed": 140,
-"9690to60": 3.1,
-"969Handling": 79,
-
-"996TopSpeed": 140,
-"9960to60": 2.9,
-"996Handling": 76,
     "hiddenTag": [""]
 }

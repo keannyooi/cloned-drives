@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","Street Racer"],
     "isPrize": false,
-
-
     "weight": 1351,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "And in 08 supercharged was replaced with a turbo and that made it one of the best cheap performance cars in the US.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCobaltCoupeSSTurbo(2008).png",
     "creator": "Connor",
-
-    "333TopSpeed": 150,
-    "3330to60": 5.3,
-    "333Handling": 84,
-
-    "666TopSpeed": 153,
-    "6660to60": 5.0, 
-    "666Handling": 86,
-
-    "996TopSpeed": 157,
-    "9960to60": 4.8,
-    "996Handling": 86,
-
-    "969TopSpeed": 157,
-    "9690to60": 5.0,
-    "969Handling": 90,
-
-    "699TopSpeed": 153,
-    "6990to60": 4.8,
-    "699Handling": 90,
     "hiddenTag": [""]
 }

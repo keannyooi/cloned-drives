@@ -1,7 +1,7 @@
 {
     "carID": "c03799",
     "cr": 770,
-    "make": ["BNelco", "Fiat"],
+    "make": ["BNelco","Fiat"],
     "model": "X1/9 Supercharged TSX",
     "modelYear": 2017,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Endless Summer","Unique","Tuner","Track Day","The Americas Assault","RestoMod"],
     "isPrize": false,
-	
     "weight": 846,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 162,
-"3330to60": 3.3,
-"333Handling": 93,
-
-"666TopSpeed": 166,
-"6660to60": 3.1,
-"666Handling": 96,
-
-"699TopSpeed": 166,
-"6990to60": 3,
-"699Handling": 100,
-
-"969TopSpeed": 169,
-"9690to60": 3.1,
-"969Handling": 100,
-
-"996TopSpeed": 169,
-"9960to60": 3,
-"996Handling": 96,
     "hiddenTag": [""]
 }

@@ -10,13 +10,11 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch", "Unique","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Unique","Cloned Drives Beta: Last of"],
     "isPrize": true,
-
-
     "weight": 1088,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 60.56,
     "ola": 69.77,
     "description": "Double the engines, Quadruple the fun.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenSciroccoBi-Motor3604(1983).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 183,
-    "3330to60": 4.1,
-    "333Handling": 83,
-    
-    "666TopSpeed": 186,
-    "6660to60": 3.9,
-    "666Handling": 85,
-    
-    "699TopSpeed": 186,
-    "6990to60": 3.7,
-    "699Handling": 89,
-    
-    "969TopSpeed": 189,
-    "9690to60": 3.9,
-    "969Handling": 89,
-    
-    "996TopSpeed": 189,
-    "9960to60": 3.7,
-    "996Handling": 85,
     "hiddenTag": [""]
 }

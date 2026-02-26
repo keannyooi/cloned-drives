@@ -1,7 +1,7 @@
 {
     "carID": "c03525",
     "cr": 446,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 Sport Hemi 4x2 Regular Cab",
     "modelYear": 2003,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2180,
     "gc": "High",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "A Hemi powered sport truck to compete with Chevrolet.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRam1500SportHemi4x2RegularCab(2003).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 110,
-"3330to60": 6.5,
-"333Handling": 74,
-
-"666TopSpeed": 115,
-"6660to60": 6.1,
-"666Handling": 77,
-
-"699TopSpeed": 115,
-"6990to60": 5.8,
-"699Handling": 80,
-
-"969TopSpeed": 120,
-"9690to60": 6.1,
-"969Handling": 80,
-
-"996TopSpeed": 120,
-"9960to60": 5.8,
-"996Handling": 77,
     "hiddenTag": [""]
 }

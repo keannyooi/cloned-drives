@@ -1,5 +1,5 @@
 {
-	"carID": "c06407",
+    "carID": "c06407",
     "cr": 986,
     "make": "Chevrolet",
     "model": "Corvette ZR1 ZTK Package",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Hypercar","Track Day"],
     "isPrize": false,
-	
     "weight": 1669,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 105.98,
     "ola": 83.18,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZR1ZTKPackage(2024).png",
-
-"333TopSpeed": 214,
-"3330to60": 2.1,
-"333Handling": 99,
-
-"666TopSpeed": 217,
-"6660to60": 2,
-"666Handling": 102,
-
-"699TopSpeed": 217,
-"6990to60": 1.9,
-"699Handling": 107,
-
-"969TopSpeed": 219,
-"9690to60": 2,
-"969Handling": 107,
-
-"996TopSpeed": 219,
-"9960to60": 1.9,
-"996Handling": 102,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZR1ZTKPackage(2024).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1425,
     "gc": "Medium",
     "seatCount": 7,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 40.11,
-    "ola": 62.50,
+    "ola": 62.5,
     "description": "Developped alongside the 3008 as a more practical alternative that can carry 2 more people (if you wish). Also sure about what it is with a more MPV-like appearence.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot50081.6VTi120(2009).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 120,
-    "3330to60": 11.1,
-    "333Handling": 73,
-
-    "666TopSpeed": 124,
-    "6660to60": 10.5,
-    "666Handling": 76,
-
-    "699TopSpeed": 124,
-    "6990to60": 9.9,
-    "699Handling": 79,
-
-    "969TopSpeed": 129,
-    "9690to60": 10.5,
-    "969Handling": 79,
-
-    "996TopSpeed": 129,
-    "9960to60": 9.9,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c03694",
     "cr": 44,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "2 Litre Speed (C Type)",
     "modelYear": 1938,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Midlands Cruise","Unique","Track Day","Endless Summer"],
     "isPrize": false,
-	
     "weight": 1205,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "By the middle of 1938, a number of the 1936 Speed Model chassis were left unsold. In an effort to sell on these remaining chassis and also to get more speed, the emerging science of aerodynamics was used to produce a new 'modern'  all enveloping streamlined body.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartin2LitreSpeed(CType)(1938).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 117,
-"3330to60": 17.6,
-"333Handling": 54,
-
-"666TopSpeed": 121,
-"6660to60": 16.7,
-"666Handling": 55,
-
-"699TopSpeed": 121,
-"6990to60": 15.7,
-"699Handling": 58,
-
-"969TopSpeed": 126,
-"9690to60": 16.7,
-"969Handling": 58,
-
-"996TopSpeed": 126,
-"9960to60": 15.7,
-"996Handling": 55,
     "hiddenTag": [""]
 }

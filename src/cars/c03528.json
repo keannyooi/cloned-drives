@@ -1,7 +1,7 @@
 {
     "carID": "c03528",
     "cr": 569,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram SRT-10",
     "modelYear": 2004,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Muscle Car", "The Americas Assault"],
+    "tags": ["Sleeper","Muscle Car","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2313,
     "gc": "Medium",
     "seatCount": 3,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 73.60,
+    "mra": 73.6,
     "ola": 77.97,
     "description": "Stealing Ford’s thunder.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRamSRT-10(2004).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 158,
-"3330to60": 4.8,
-"333Handling": 80,
-
-"666TopSpeed": 162,
-"6660to60": 4.6,
-"666Handling": 82,
-
-"699TopSpeed": 162,
-"6990to60": 4.3,
-"699Handling": 85,
-
-"969TopSpeed": 165,
-"9690to60": 4.6,
-"969Handling": 85,
-
-"996TopSpeed": 165,
-"9960to60": 4.3,
-"996Handling": 82,
     "hiddenTag": [""]
 }

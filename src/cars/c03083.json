@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","The Tyrol Tour"],
     "isPrize": false,
-
     "weight": 1487,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 62.50,
+    "mra": 62.5,
     "ola": 77.33,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombiRSTDI(2013).png",
     "creator": "Connor",
-
-    "333TopSpeed": 146,
-    "3330to60": 7.1,
-    "333Handling": 83,
-
-    "666TopSpeed": 149,
-    "6660to60": 6.8, 
-    "666Handling": 85,
-
-    "996TopSpeed": 153,
-    "9960to60": 6.4,
-    "996Handling": 85,
-
-    "969TopSpeed": 153,
-    "9690to60": 6.8,
-    "969Handling": 89,
-
-    "699TopSpeed": 149,
-    "6990to60": 6.4,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "tags": ["Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1545,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo850EstateR(1996).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 158, 
-    "3330to60": 6.4, 
-    "333Handling": 77,
-
-    "666TopSpeed": 162, 
-    "6660to60": 6.0, 
-    "666Handling": 80,
-
-    "996TopSpeed": 165, 
-    "9960to60": 5.7, 
-    "996Handling": 80,
-
-    "969TopSpeed": 165, 
-    "9690to60": 6.0, 
-    "969Handling": 83,
-
-    "699TopSpeed": 162, 
-    "6990to60": 5.7, 
-    "699Handling": 83,
     "hiddenTag": [""]
 }

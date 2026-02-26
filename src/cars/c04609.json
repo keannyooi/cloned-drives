@@ -1,7 +1,7 @@
 {
     "carID": "c04609",
     "cr": 636,
-    "make": ["Sportec", "Volkswagen"],
+    "make": ["Sportec","Volkswagen"],
     "model": "SC350",
     "modelYear": 2009,
     "country": "CH",
@@ -10,13 +10,11 @@
     "handling": 86,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch", "Tuner","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Tuner","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1300,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 90.74,
     "ola": 83.67,
     "description": "Super Cool 350.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SportecSC350(2009).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 177,
-    "3330to60": 4.7,
-    "333Handling": 89,
-    
-    "666TopSpeed": 180,
-    "6660to60": 4.4,
-    "666Handling": 92,
-    
-    "699TopSpeed": 180,
-    "6990to60": 4.2,
-    "699Handling": 95,
-    
-    "969TopSpeed": 183,
-    "9690to60": 4.4,
-    "969Handling": 95,
-    
-    "996TopSpeed": 183,
-    "9960to60": 4.2,
-    "996Handling": 92,
     "hiddenTag": [""]
 }

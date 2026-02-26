@@ -1,10 +1,7 @@
 {
     "carID": "c02074",
     "cr": 697,
-    "make": [
-        "ABT",
-        "Audi"
-    ],
+    "make": ["ABT","Audi"],
     "model": "Q8 50 TDI quattro",
     "modelYear": 2018,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 2145,
     "gc": "High",
@@ -28,21 +23,6 @@
     "mra": 52.73,
     "ola": 68.97,
     "description": "",
-     "333TopSpeed": 158,
-    "3330to60": 5.5,
-    "333Handling": 81,
-    "666TopSpeed": 162,
-    "6660to60": 5.2,
-    "666Handling": 83,
-    "996TopSpeed": 165,
-    "9960to60": 4.9,
-    "996Handling": 83,
-    "969TopSpeed": 165,
-    "9690to60": 5.2,
-    "969Handling": 87,
-    "699TopSpeed": 162,
-    "6990to60": 4.9,
-    "699Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ABTQ850TDIquattro(2018).png",
     "creator": "Macan",
     "hiddenTag": [""]

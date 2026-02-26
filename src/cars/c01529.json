@@ -1,10 +1,7 @@
 {
     "carID": "c01529",
     "cr": 265,
-    "make": [
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["Datsun","Nissan"],
     "model": "280Z",
     "modelYear": 1975,
     "country": "JP",
@@ -13,12 +10,7 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Style Icon",
-        "The Japanese Odyssey",
-        "Silver Screen", "Year of the Rabbit"
-    ],
+    "tags": ["Street Racer","Style Icon","The Japanese Odyssey","Silver Screen","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1304,
     "gc": "Medium",
@@ -31,21 +23,6 @@
     "mra": 54.23,
     "ola": 76.8,
     "description": "The 280Z took the 260Z's place after a brief 1 year of sales and production to cope with increasingly strict US regulations.",
-     "333TopSpeed": 129,
-    "3330to60": 7.9,
-    "333Handling": 70,
-    "666TopSpeed": 133,
-    "6660to60": 7.5,
-    "666Handling": 72,
-    "996TopSpeed": 137,
-    "9960to60": 7.1,
-    "996Handling": 72,
-    "969TopSpeed": 137,
-    "9690to60": 7.5,
-    "969Handling": 75,
-    "699TopSpeed": 133,
-    "6990to60": 7.1,
-    "699Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280Z(1975).png",
     "creator": "Keanny",
     "hiddenTag": [""]

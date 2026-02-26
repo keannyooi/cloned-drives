@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 900,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 20.55,
     "ola": 59.02,
     "description": "The cute little up! box is trendy and economical, but that ASG automatic gearbox is not a selling point.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volkswagenmoveup!1.0MPIASG(2014).png",
     "creator": "Andu",
-
-    "333TopSpeed": 103,
-    "3330to60": 14.5,
-    "333Handling": 73,
-    
-    "666TopSpeed": 109,
-    "6660to60": 13.8,
-    "666Handling": 76,
-    
-    "699TopSpeed": 109,
-    "6990to60": 13,
-    "699Handling": 79,
-    
-    "969TopSpeed": 114,
-    "9690to60": 13.8,
-    "969Handling": 79,
-    
-    "996TopSpeed": 114,
-    "9960to60": 13,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

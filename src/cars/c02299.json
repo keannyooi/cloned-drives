@@ -1,7 +1,7 @@
 {
     "carID": "c02299",
     "cr": 299,
-    "make": ["Datsun-Nissan", "Nissan", "Datsun"],
+    "make": ["Datsun-Nissan","Nissan","Datsun"],
     "model": "2400 GT",
     "modelYear": 1971,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1090,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "One of the more unique Gen 3 Skylines.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun-Nissan2400GT(1971).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 122, 
-"3330to60": 8.8, 
-"333Handling": 69,
-
-"666TopSpeed": 127, 
-"6660to60": 8.4, 
-"666Handling": 71,
-
-"699TopSpeed": 127, 
-"6990to60": 7.9, 
-"699Handling": 74,
-
-"969TopSpeed": 131, 
-"9690to60": 8.4, 
-"969Handling": 74,
-
-"996TopSpeed": 131, 
-"9960to60": 7.9, 
-"996Handling": 71,
     "hiddenTag": [""]
 }

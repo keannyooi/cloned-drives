@@ -1,7 +1,7 @@
 {
     "carID": "c03524",
     "cr": 416,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 5.7 TRX4 Off-Road Quad Cab",
     "modelYear": 2006,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2400,
     "gc": "High",
     "seatCount": 6,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 48.00,
-    "ola": 74.00,
+    "mra": 48,
+    "ola": 74,
     "description": "The original TRX, with a much less wild powertrain.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRam15005.7TRX4Off-RoadQuadCab(2006).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 110,
-"3330to60": 9.2,
-"333Handling": 63,
-
-"666TopSpeed": 115,
-"6660to60": 8.7,
-"666Handling": 65,
-
-"699TopSpeed": 115,
-"6990to60": 8.2,
-"699Handling": 68,
-
-"969TopSpeed": 120,
-"9690to60": 8.7,
-"969Handling": 68,
-
-"996TopSpeed": 120,
-"9960to60": 8.2,
-"996Handling": 65,
     "hiddenTag": [""]
 }

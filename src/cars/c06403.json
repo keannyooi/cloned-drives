@@ -1,5 +1,5 @@
 {
-	"carID": "c06403",
+    "carID": "c06403",
     "cr": 969,
     "make": "Chevrolet",
     "model": "Corvette C8.R #4 Corvette Racing",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["CDCCS","The Americas Assault","Motorsport"],
     "isPrize": false,
-	
     "weight": 1245,
     "gc": "Low",
     "seatCount": 1,
@@ -24,27 +23,7 @@
     "mra": 95.69,
     "ola": 88.25,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteC8R(2020).png",
-
-"333TopSpeed": 191,
-"3330to60": 2.8,
-"333Handling": 108,
-
-"666TopSpeed": 194,
-"6660to60": 2.7,
-"666Handling": 112,
-
-"699TopSpeed": 194,
-"6990to60": 2.5,
-"699Handling": 117,
-
-"969TopSpeed": 196,
-"9690to60": 2.7,
-"969Handling": 117,
-
-"996TopSpeed": 196,
-"9960to60": 2.5,
-"996Handling": 112,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteC8R(2020).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

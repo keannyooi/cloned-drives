@@ -1,7 +1,7 @@
 {
     "carID": "c03628",
     "cr": 477,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "1500 3.6 4x4 Off-Road Crew Cab",
     "modelYear": 2019,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["The Americas Assault","Endless Summer"],
     "isPrize": false,
-	
     "weight": 2370,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Off-roading on a budget.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram15003.64x4OffRoadCrewCab(2019).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 112,
-"3330to60": 8.1,
-"333Handling": 66,
-
-"666TopSpeed": 117,
-"6660to60": 7.7,
-"666Handling": 68,
-
-"699TopSpeed": 117,
-"6990to60": 7.2,
-"699Handling": 71,
-
-"969TopSpeed": 122,
-"9690to60": 7.7,
-"969Handling": 71,
-
-"996TopSpeed": 122,
-"9960to60": 7.2,
-"996Handling": 68,
     "hiddenTag": [""]
 }

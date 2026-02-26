@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour","Rest of The World"],
     "isPrize": false,
-
-
     "weight": 920,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Octavia TS continued Skodas engagement in rally, securing numerous victories at international rallies in the 60s.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaSuperTS1200(1962).png",
     "creator": "Connor",
-
-    "333TopSpeed": 93,
-    "3330to60": 25.6,
-    "333Handling": 56,
-
-    "666TopSpeed": 99,
-    "6660to60": 24.2, 
-    "666Handling": 58,
-
-    "996TopSpeed": 105,
-    "9960to60": 22.9,
-    "996Handling": 58,
-
-    "969TopSpeed": 105,
-    "9690to60": 24.2,
-    "969Handling": 60,
-
-    "699TopSpeed": 99,
-    "6990to60": 22.9,
-    "699Handling": 60,
     "hiddenTag": [""]
 }

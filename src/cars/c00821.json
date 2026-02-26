@@ -1,10 +1,7 @@
 {
     "carID": "c00821",
     "cr": 671,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "A 35 4MATIC Sedan",
     "modelYear": 2019,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan"
-    ],
+    "tags": ["Super Sedan"],
     "isPrize": false,
     "weight": 1520,
     "gc": "Low",
@@ -28,25 +23,6 @@
     "mra": 72.14,
     "ola": 84.28,
     "description": "A sedan variant of the Hatchback.",
-"333TopSpeed": 158,
-"3330to60": 4.3,
-"333Handling": 88,
-
-"666TopSpeed": 162,
-"6660to60": 4,
-"666Handling": 91,
-
-"699TopSpeed": 162,
-"6990to60": 3.8,
-"699Handling": 94,
-
-"969TopSpeed": 165,
-"9690to60": 4,
-"969Handling": 94,
-
-"996TopSpeed": 165,
-"9960to60": 3.8,
-"996Handling": 91,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-AMGA354MATICSedan(2019).png",
     "creator": "Havvy",
     "hiddenTag": [""]

@@ -10,7 +10,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Motorsport"],
+    "tags": ["Muscle Car","Motorsport"],
     "isPrize": false,
     "weight": 1157,
     "gc": "Low",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 80.77,
     "ola": 82.05,
-
     "description": "The acid dipped car.",
-
-"333TopSpeed": 153,
-"3330to60": 4,
-"333Handling": 87,
-
-"666TopSpeed": 157,
-"6660to60": 3.8,
-"666Handling": 90,
-
-"699TopSpeed": 157,
-"6990to60": 3.6,
-"699Handling": 93,
-
-"969TopSpeed": 160,
-"9690to60": 3.8,
-"969Handling": 93,
-
-"996TopSpeed": 160,
-"9960to60": 3.6,
-"996Handling": 90,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletPenCamZ28TransTheLightweight(1967).png",
     "creator": "Johnny",
     "hiddenTag": [""]

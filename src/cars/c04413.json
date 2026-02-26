@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1540,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "This was DS' first model after the seperation from Citroen, and it was (mostly) exclusive to the Chinese market.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DS61.8THP200(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 134,
-    "3330to60": 8.0,
-    "333Handling": 76,
-
-    "666TopSpeed": 138,
-    "6660to60": 7.6,
-    "666Handling": 79,
-
-    "699TopSpeed": 138,
-    "6990to60": 7.1,
-    "699Handling": 82,
-
-    "969TopSpeed": 142,
-    "9690to60": 7.6,
-    "969Handling": 82,
-
-    "996TopSpeed": 142,
-    "9960to60": 7.1,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

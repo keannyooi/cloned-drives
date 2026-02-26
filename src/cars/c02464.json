@@ -6,13 +6,12 @@
     "modelYear": 2011,
     "country": "US",
     "topSpeed": 234,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 25,
     "driveType": "RWD",
     "tyreType": "Drag",
-    "tags": ["Motorsport", "Unique", "Tuner"],
+    "tags": ["Motorsport","Unique","Tuner"],
     "isPrize": false,
-    
     "weight": 1293,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Thats what 1114 hp does to a 928 if it doesn't have an aero kit.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/928Motorsports928TheMeg(2011).png",
     "creator": "c6",
-
-"333TopSpeed": 236,
-"3330to60": 2.8,
-"333Handling": 26,
-
-"666TopSpeed": 238,
-"6660to60": 2.7,
-"666Handling": 27,
-
-"699TopSpeed": 238,
-"6990to60": 2.5,
-"699Handling": 28,
-
-"969TopSpeed": 241,
-"9690to60": 2.7,
-"969Handling": 28,
-
-"996TopSpeed": 241,
-"9960to60": 2.5,
-"996Handling": 27,
     "hiddenTag": [""]
 }

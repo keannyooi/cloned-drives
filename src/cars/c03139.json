@@ -1,7 +1,7 @@
 {
     "carID": "c03139",
     "cr": 1001,
-    "make": ["Hennessey", "McLaren"],
+    "make": ["Hennessey","McLaren"],
     "model": "765LT HPE1000",
     "modelYear": 2021,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","Track Day", "The Americas Assault"],
+    "tags": ["Tuner","Track Day","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1229,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Stupidly fast as we're used to from them, this 765LT from Hennessey rocketships you into tomorrow.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Hennessey765LTHPE1000(2021).png",
     "creator": "c6",
-
-    "333TopSpeed": 227,
-    "3330to60": 2.0,
-    "333Handling": 96,
-
-    "666TopSpeed": 230,
-    "6660to60": 1.9,
-    "666Handling": 99,
-
-    "996TopSpeed": 232,
-    "9960to60": 1.8,
-    "996Handling": 99,
-
-    "969TopSpeed": 232,
-    "9690to60": 1.9,
-    "969Handling": 103,
-
-    "699TopSpeed": 230,
-    "6990to60": 1.8,
-    "699Handling": 103,
     "hiddenTag": [""]
 }

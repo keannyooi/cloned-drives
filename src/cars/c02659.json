@@ -10,9 +10,8 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Style Icon", "Unique"],
+    "tags": ["Motorsport","Style Icon","Unique"],
     "isPrize": false,
-	
     "weight": 635,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Very succesful at rally, just ask Montecarlo.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MiniCooperS1300Group2(1964).png",
     "creator": "Havvy",
-
-"333TopSpeed": 116, 
-"3330to60": 8.2, 
-"333Handling": 69,
-
-"666TopSpeed": 120, 
-"6660to60": 7.7, 
-"666Handling": 71,
-
-"699TopSpeed": 120, 
-"6990to60": 7.3, 
-"699Handling": 74,
-
-"969TopSpeed": 125, 
-"9690to60": 7.7, 
-"969Handling": 74,
-
-"996TopSpeed": 125, 
-"9960to60": 7.3, 
-"996Handling": 71,
     "hiddenTag": [""]
 }

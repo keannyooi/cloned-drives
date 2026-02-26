@@ -1,18 +1,17 @@
 {
     "carID": "c02436",
     "cr": 622,
-    "make": ["Clemens Motorsport", "Peugeot"],
+    "make": ["Clemens Motorsport","Peugeot"],
     "model": "308 GTI",
     "modelYear": 2018,
     "country": "DE",
     "topSpeed": 162,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 87,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner"],
+    "tags": ["Hot Hatch","Tuner"],
     "isPrize": false,
-
     "weight": 1205,
     "gc": "Low",
     "seatCount": 5,
@@ -22,30 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 84.75,
-    "ola": 88.00,
+    "ola": 88,
     "description": "Wanna compete with the Civic Type R with your already hot Peugeot? Clemens Motorsports will help you with 310 hp.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ClemensMotorsports308GTi(2018).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 165,
-    "3330to60": 4.8,
-    "333Handling": 90,
-
-    "666TopSpeed": 168,
-    "6660to60": 4.5,
-    "666Handling": 93,
-
-    "996TopSpeed": 172,
-    "9960to60": 4.3,
-    "996Handling": 93,
-
-    "969TopSpeed": 172,
-    "9690to60": 4.5,
-    "969Handling": 97,
-
-    "699TopSpeed": 168,
-    "6990to60": 4.3,
-    "699Handling": 97,
     "hiddenTag": [""]
 }

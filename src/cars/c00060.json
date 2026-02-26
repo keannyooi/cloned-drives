@@ -10,13 +10,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Silver Screen",
-        "Ultra Expensive",
-        "Concept",
-        "Unique",
-        "Year of the Horse"
-    ],
+    "tags": ["Silver Screen","Ultra Expensive","Concept","Unique","Year of the Horse"],
     "isPrize": false,
     "weight": 1550,
     "gc": "Low",
@@ -29,24 +23,7 @@
     "mra": 87.5,
     "ola": 89,
     "description": "50 years of Aston Martin Bond cars.",
-    "333TopSpeed": 200,
-    "3330to60": 4,
-    "333Handling": 92,
-    "666TopSpeed": 202,
-    "6660to60": 3.8,
-    "666Handling": 95,
-    "996TopSpeed": 205,
-    "9960to60": 3.6,
-    "996Handling": 96,
-    "969TopSpeed": 205,
-    "9690to60": 3.8,
-    "969Handling": 99,
-    "699TopSpeed": 202,
-    "6990to60": 3.6,
-    "699Handling": 99,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinDB10(2014).png",
     "creator": "Bnuuy",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

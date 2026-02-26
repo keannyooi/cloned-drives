@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [ "The Americas Assault","Cloned Drives Beta: Last of"],
+    "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1027,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "India only yeah.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletBeat10TCDILT(2011).png",
     "creator": "Connor",
-
-    "333TopSpeed": 100,
-    "3330to60": 17.3,
-    "333Handling": 72,
-
-    "666TopSpeed": 105,
-    "6660to60": 16.4, 
-    "666Handling": 75,
-
-    "996TopSpeed": 111,
-    "9960to60": 15.5,
-    "996Handling": 75,
-
-    "969TopSpeed": 111,
-    "9690to60": 16.4,
-    "969Handling": 78,
-
-    "699TopSpeed": 105,
-    "6990to60": 15.5,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

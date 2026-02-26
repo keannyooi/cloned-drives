@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
-
     "weight": 1100,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 103.7,
     "ola": 92.86,
     "description": "A diesel-electric car with its body made out of copper sounds crazy right? wait till you see the beauty and monster within.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotOnyxConcept(2012).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 222,
-    "3330to60": 2.7,
-    "333Handling": 95,
-
-    "666TopSpeed": 225,
-    "6660to60": 2.5,
-    "666Handling": 98,
-
-    "996TopSpeed": 227,
-    "9960to60": 2.4,
-    "996Handling": 98,
-
-    "969TopSpeed": 227,
-    "9690to60": 2.5,
-    "969Handling": 102,
-
-    "699TopSpeed": 225,
-    "6990to60": 2.4,
-    "699Handling": 102,
     "hiddenTag": [""]
 }

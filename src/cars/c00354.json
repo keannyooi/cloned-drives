@@ -10,9 +10,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car", "Year of the Rabbit"
-    ],
+    "tags": ["Muscle Car","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1890,
     "gc": "Low",
@@ -25,25 +23,6 @@
     "mra": 76.17,
     "ola": 79.3,
     "description": "SRT8 by with mo powa baby.",
-"333TopSpeed": 178,
-"3330to60": 4.3,
-"333Handling": 83,
-
-"666TopSpeed": 181,
-"6660to60": 4,
-"666Handling": 85,
-
-"699TopSpeed": 181,
-"6990to60": 3.8,
-"699Handling": 89,
-
-"969TopSpeed": 184,
-"9690to60": 4,
-"969Handling": 89,
-
-"996TopSpeed": 184,
-"9960to60": 3.8,
-"996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRT83922011.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

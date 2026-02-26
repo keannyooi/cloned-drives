@@ -1,10 +1,7 @@
 {
     "carID": "c01821",
     "cr": 82,
-    "make": [
-        "Prince",
-        "Nissan"
-    ],
+    "make": ["Prince","Nissan"],
     "model": "Skyline Super S21",
     "modelYear": 1962,
     "country": "JP",
@@ -13,9 +10,7 @@
     "handling": 54,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1365,
     "gc": "High",
@@ -28,21 +23,6 @@
     "mra": 2.67,
     "ola": 61.62,
     "description": "",
-     "333TopSpeed": 93,
-    "3330to60": 16.3,
-    "333Handling": 56,
-    "666TopSpeed": 99,
-    "6660to60": 15.5,
-    "666Handling": 58,
-    "996TopSpeed": 105,
-    "9960to60": 14.6,
-    "996Handling": 58,
-    "969TopSpeed": 105,
-    "9690to60": 15.5,
-    "969Handling": 60,
-    "699TopSpeed": 99,
-    "6990to60": 14.6,
-    "699Handling": 60,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceSkylineSuperS21(1962).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

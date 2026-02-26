@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Supercar","Track Day"],
     "isPrize": false,
-    
     "weight": 1592,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The track-focused 812 which can also be driven on the street.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Ferrari812Competizione(2021).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 214,
-    "3330to60": 2.7,
-    "333Handling": 96,
-
-    "666TopSpeed": 217,
-    "6660to60": 2.5,
-    "666Handling": 99,
-
-    "996TopSpeed": 219,
-    "9960to60": 2.4,
-    "996Handling": 99,
-
-    "969TopSpeed": 219,
-    "9690to60": 2.5,
-    "969Handling": 103,
-
-    "699TopSpeed": 217,
-    "6990to60": 2.4,
-    "699Handling": 103,
     "hiddenTag": [""]
 }

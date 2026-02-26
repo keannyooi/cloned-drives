@@ -1,18 +1,17 @@
 {
     "carID": "c03519",
     "cr": 221,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 3.9 4x2 Regular Cab",
     "modelYear": 1994,
     "country": "US",
     "topSpeed": 103,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 63,
     "driveType": "RWD",
     "tyreType": "All-Surface",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1830,
     "gc": "Medium",
     "seatCount": 3,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 40.24,
-    "ola": 65.00,
+    "ola": 65,
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRam15003.94x2RegularCab(1994).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 108,
-"3330to60": 11.4,
-"333Handling": 65,
-
-"666TopSpeed": 113,
-"6660to60": 10.8,
-"666Handling": 67,
-
-"699TopSpeed": 113,
-"6990to60": 10.2,
-"699Handling": 70,
-
-"969TopSpeed": 118,
-"9690to60": 10.8,
-"969Handling": 70,
-
-"996TopSpeed": 118,
-"9960to60": 10.2,
-"996Handling": 67,
     "hiddenTag": [""]
 }

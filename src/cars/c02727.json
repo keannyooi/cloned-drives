@@ -10,9 +10,8 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Supercar", "Track Day", "Rest of The World"],
+    "tags": ["Supercar","Track Day","Rest of The World"],
     "isPrize": false,
-    
     "weight": 1250,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Now imagine this. A brand has a financial crissis and struggles with producing their car even in the smallest amounts. What should they do? Of course build a GT3-styled track car, and send it straight to the Goodwood!",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Biszkoptowiec",
-
-    "333TopSpeed": 202,
-    "3330to60": 3.1,
-    "333Handling": 99,
-
-    "666TopSpeed": 204,
-    "6660to60": 3.0,
-    "666Handling": 102,
-
-    "996TopSpeed": 207,
-    "9960to60": 2.8,
-    "996Handling": 102,
-
-    "969TopSpeed": 207,
-    "9690to60": 3.0,
-    "969Handling": 107,
-
-    "699TopSpeed": 204,
-    "6990to60": 2.8,
-    "699Handling": 107,
     "hiddenTag": [""]
 }

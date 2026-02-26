@@ -12,8 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1495,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 48.00,
+    "mra": 48,
     "ola": 64.58,
     "description": "Scouting..",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaScout20TDI4x4(2007).png",
     "creator": "Connor",
-
-    "333TopSpeed": 126,
-    "3330to60": 9.1,
-    "333Handling": 74,
-
-    "666TopSpeed": 131,
-    "6660to60": 8.6, 
-    "666Handling": 77,
-
-    "996TopSpeed": 135,
-    "9960to60": 8.2,
-    "996Handling": 77,
-
-    "969TopSpeed": 135,
-    "9690to60": 8.6,
-    "969Handling": 80,
-
-    "699TopSpeed": 131,
-    "6990to60": 8.2,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04402",
     "cr": 294,
     "make": "Chevrolet",
@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1585,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 43.33,
     "ola": 62.26,
     "description": "Red for filth. Are you red-y for this?",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCruze20VCDiLS(2010).png",
     "creator": "Andu",
-
-    "333TopSpeed": 127,
-    "3330to60": 10.1,
-    "333Handling": 75,
-    
-    "666TopSpeed": 131,
-    "6660to60": 9.5,
-    "666Handling": 78,
-    
-    "699TopSpeed": 131,
-    "6990to60": 9,
-    "699Handling": 81,
-    
-    "969TopSpeed": 136,
-    "9690to60": 9.5,
-    "969Handling": 81,
-    
-    "996TopSpeed": 136,
-    "9960to60": 9,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

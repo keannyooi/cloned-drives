@@ -10,13 +10,11 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1070,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 28.24,
     "ola": 64.86,
     "description": "The new syncro system is now a part of the Golf family.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.8GTSyncro(1986).png",
     "creator": "Andu",
-
-    "333TopSpeed": 114,
-    "3330to60": 10.5,
-    "333Handling": 69,
-
-    "666TopSpeed": 119,
-    "6660to60": 10.0, 
-    "666Handling": 71,
-
-    "996TopSpeed": 123,
-    "9960to60": 9.4,
-    "996Handling": 71,
-
-    "969TopSpeed": 123,
-    "9690to60": 10.0,
-    "969Handling": 74,
-
-    "699TopSpeed": 119,
-    "6990to60": 9.4,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

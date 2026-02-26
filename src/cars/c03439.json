@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 530,
     "gc": "Medium",
     "seatCount": 2,
@@ -27,25 +25,5 @@
     "description": "Sport Prinz is nothing more than a Prinz I with a slight power boost and a beautiful body.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NSUSportPrinzI(1958).png",
     "creator": "Connor",
-
-    "333TopSpeed": 87,
-    "3330to60": 22.6,
-    "333Handling": 58,
-
-    "666TopSpeed": 94,
-    "6660to60": 21.4, 
-    "666Handling": 60,
-
-    "996TopSpeed": 100,
-    "9960to60": 20.2,
-    "996Handling": 60,
-
-    "969TopSpeed": 100,
-    "9690to60": 21.4,
-    "969Handling": 62,
-
-    "699TopSpeed": 94,
-    "6990to60": 20.2,
-    "699Handling": 62,
     "hiddenTag": [""]
 }

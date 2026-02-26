@@ -1,7 +1,7 @@
 {
     "carID": "c02995",
     "cr": 881,
-    "make": ["Mansory", "Ferrari"],
+    "make": ["Mansory","Ferrari"],
     "model": "812 Softkit",
     "modelYear": 2020,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1670,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "A less radical bodykit than Mansory usually tends to go with.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mansory812Softkit(2020).png",
     "creator": "c6",
-
-    "333TopSpeed": 216,
-    "3330to60": 2.7,
-    "333Handling": 94,
-
-    "666TopSpeed": 219,
-    "6660to60": 2.5,
-    "666Handling": 97,
-
-    "996TopSpeed": 221,
-    "9960to60": 2.4,
-    "996Handling": 97,
-
-    "969TopSpeed": 221,
-    "9690to60": 2.5,
-    "969Handling": 101,
-
-    "699TopSpeed": 219,
-    "6990to60": 2.4,
-    "699Handling": 101,
     "hiddenTag": [""]
 }

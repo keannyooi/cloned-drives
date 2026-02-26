@@ -1,10 +1,7 @@
 {
     "carID": "c00045",
     "cr": 489,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "B8 4.6 Cabrio",
     "modelYear": 1995,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
     "weight": 1650,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 70,
     "ola": 78.57,
     "description": "Only 23 B8 4.6 Cabrios were made, as opposed to 221 Limousines.",
-     "333TopSpeed": 173,
-    "3330to60": 5.3,
-    "333Handling": 82,
-    "666TopSpeed": 176,
-    "6660to60": 5.0,
-    "666Handling": 84,
-    "996TopSpeed": 179,
-    "9960to60": 4.8,
-    "996Handling": 84,
-    "969TopSpeed": 179,
-    "9690to60": 5.0,
-    "969Handling": 88,
-    "699TopSpeed": 176,
-    "6990to60": 4.8,
-    "699Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaB84.6Cabrio(1995).png",
     "creator": "Havvy",
     "hiddenTag": [""]

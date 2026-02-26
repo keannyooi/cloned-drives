@@ -1,7 +1,7 @@
 {
     "carID": "c04414",
     "cr": 700,
-    "make": ["Aston Engineering", "Aston Martin"],
+    "make": ["Aston Engineering","Aston Martin"],
     "model": "DB6 Lightweight Racer A.M.O.C",
     "modelYear": 1999,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["The Midlands Cruise","Grand Tourer","Motorsport","Tuner","RestoMod","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1100,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 82.05,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-
-"333TopSpeed": 202,
-"3330to60": 3.7,
-"333Handling": 85,
-
-"666TopSpeed": 204,
-"6660to60": 3.5,
-"666Handling": 87,
-
-"699TopSpeed": 204,
-"6990to60": 3.3,
-"699Handling": 91,
-
-"969TopSpeed": 207,
-"9690to60": 3.5,
-"969Handling": 91,
-
-"996TopSpeed": 207,
-"9960to60": 3.3,
-"996Handling": 87,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

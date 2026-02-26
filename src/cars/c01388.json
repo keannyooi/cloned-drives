@@ -6,7 +6,7 @@
     "modelYear": 1999,
     "country": "DE",
     "topSpeed": 105,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -21,29 +21,8 @@
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 37.85,
-    "ola": 65.00,
+    "ola": 65,
     "description": "Frugal diesel for the true wolf in you.",
-   
-"333TopSpeed": 110,
-"3330to60": 11.4,
-"333Handling": 71,
-
-"666TopSpeed": 115,
-"6660to60": 10.8,
-"666Handling": 74,
-
-"699TopSpeed": 115,
-"6990to60": 10.2,
-"699Handling": 77,
-
-"969TopSpeed": 120,
-"9690to60": 10.8,
-"969Handling": 77,
-
-"996TopSpeed": 120,
-"9960to60": 10.2,
-"996Handling": 74,
-    
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenLupo1.4TDIHighline(1999).png",
     "creator": "Andu",
     "hiddenTag": [""]

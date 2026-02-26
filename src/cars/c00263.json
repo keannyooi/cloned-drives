@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","Street Racer"],
     "isPrize": false,
-
-
     "weight": 1362,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "The meh coupe also had a unique supercharged setup.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCobaltCoupeSSSupercharged(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 148,
-    "3330to60": 5.8,
-    "333Handling": 83,
-
-    "666TopSpeed": 151,
-    "6660to60": 5.5, 
-    "666Handling": 85,
-
-    "996TopSpeed": 155,
-    "9960to60": 5.2,
-    "996Handling": 85,
-
-    "969TopSpeed": 155,
-    "9690to60": 5.5,
-    "969Handling": 89,
-
-    "699TopSpeed": 151,
-    "6990to60": 5.2,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

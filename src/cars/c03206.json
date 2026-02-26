@@ -10,9 +10,8 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Unique", "Concept", "The Midlands Cruise"],
+    "tags": ["Unique","Concept","The Midlands Cruise"],
     "isPrize": false,
-	
     "weight": 2000,
     "gc": "High",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinDBXConcept(2015).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 158, 
-"3330to60": 6.2, 
-"333Handling": 84,
-
-"666TopSpeed": 162, 
-"6660to60": 5.9, 
-"666Handling": 86,
-
-"699TopSpeed": 162, 
-"6990to60": 5.5, 
-"699Handling": 90,
-
-"969TopSpeed": 165, 
-"9690to60": 5.9, 
-"969Handling": 90,
-
-"996TopSpeed": 165, 
-"9960to60": 5.5, 
-"996Handling": 86,
     "hiddenTag": [""]
 }

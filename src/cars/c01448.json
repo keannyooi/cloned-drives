@@ -1,7 +1,7 @@
 {
     "carID": "c01448",
     "cr": 887,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "CTR Anniversary",
     "modelYear": 2019,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 97.14,
     "ola": 82.35,
     "description": "None.",
-"333TopSpeed": 227,
-"3330to60": 2.9,
-"333Handling": 95,
-
-"666TopSpeed": 230,
-"6660to60": 2.8,
-"666Handling": 98,
-
-"699TopSpeed": 230,
-"6990to60": 2.6,
-"699Handling": 102,
-
-"969TopSpeed": 232,
-"9690to60": 2.8,
-"969Handling": 102,
-
-"996TopSpeed": 232,
-"9960to60": 2.6,
-"996Handling": 98,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RufCTRAnniversary(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

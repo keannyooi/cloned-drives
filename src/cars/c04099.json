@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1121,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 25.61,
     "ola": 59.04,
     "description": "This is the Golf mk4 that you find as a gift in your bag of chips.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.9SDITrendline(1997).png",
     "creator": "Andu",
-
-    "333TopSpeed": 104,
-    "3330to60": 15.8,
-    "333Handling": 70,
-    
-    "666TopSpeed": 110,
-    "6660to60": 14.9,
-    "666Handling": 72,
-    
-    "699TopSpeed": 110,
-    "6990to60": 14.1,
-    "699Handling": 75,
-    
-    "969TopSpeed": 115,
-    "9690to60": 14.9,
-    "969Handling": 75,
-    
-    "996TopSpeed": 115,
-    "9960to60": 14.1,
-    "996Handling": 72,
     "hiddenTag": [""]
 }

@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 864,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Spark plugs.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletSpark10LT(2009).png",
     "creator": "Connor",
-
-    "333TopSpeed": 102,
-    "3330to60": 13.8,
-    "333Handling": 73,
-
-    "666TopSpeed": 108,
-    "6660to60": 13.1, 
-    "666Handling": 76,
-
-    "996TopSpeed": 113,
-    "9960to60": 12.3,
-    "996Handling": 76,
-
-    "969TopSpeed": 113,
-    "9690to60": 13.1,
-    "969Handling": 79,
-
-    "699TopSpeed": 108,
-    "6990to60": 12.3,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

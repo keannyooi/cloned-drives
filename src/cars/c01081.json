@@ -6,13 +6,12 @@
     "modelYear": 2015,
     "country": "DE",
     "topSpeed": 193,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Track Day"],
     "isPrize": false,
-	
     "weight": 1420,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 80,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GT3RS(2015).png",
-
-"333TopSpeed": 196,
-"3330to60": 2.8,
-"333Handling": 97,
-
-"666TopSpeed": 198,
-"6660to60": 2.7,
-"666Handling": 100,
-
-"699TopSpeed": 198,
-"6990to60": 2.5,
-"699Handling": 104,
-
-"969TopSpeed": 201,
-"9690to60": 2.7,
-"969Handling": 104,
-
-"996TopSpeed": 201,
-"9960to60": 2.5,
-"996Handling": 100,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

@@ -6,17 +6,15 @@
     "modelYear": 1988,
     "country": "DE",
     "topSpeed": 135,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": ["Hot Hatch","Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1015,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,30 +23,7 @@
     "mra": 60.92,
     "ola": 70.44,
     "description": "Strap on a supercharger and fly!.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfGTIG60(1988).png",
     "creator": "Andu",
-
-
-    "333TopSpeed": 139,
-    "3330to60": 7.6,
-    "333Handling": 76,
-
-    "666TopSpeed": 143,
-    "6660to60": 7.2, 
-    "666Handling": 79,
-
-    "996TopSpeed": 147,
-    "9960to60": 6.8,
-    "996Handling": 79,
-
-    "969TopSpeed": 147,
-    "9690to60": 7.2,
-    "969Handling": 82,
-
-    "699TopSpeed": 143,
-    "6990to60": 6.8,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

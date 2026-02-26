@@ -10,9 +10,8 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Rest of The World", "Eco-Friendly"],
+    "tags": ["Concept","Unique","Rest of The World","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1470,
     "gc": "Low",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "Environmental sustainability back then was viewed as lame, however there were a few attempts in busting that myth. Meet the Volvo 3CC, a sleek electric coupe with 3-seat layout, an uncommon sight in cars, with a driver seat at the front and 2 passenger seats at the back in tandem. It's so light Volvo didn't see the need to give it ABS and runs on supercar tyres, which I personally think is kinda pushing it.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo3CC(2004).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 91, 
-    "3330to60": 9.2, 
-    "333Handling": 76,
-
-    "666TopSpeed": 97, 
-    "6660to60": 8.7, 
-    "666Handling": 79,
-
-    "699TopSpeed": 97, 
-    "6990to60": 8.2, 
-    "699Handling": 82,
-
-    "969TopSpeed": 103, 
-    "9690to60": 8.7, 
-    "969Handling": 82,
-
-    "996TopSpeed": 103, 
-    "9960to60": 8.2, 
-    "996Handling": 79,
     "hiddenTag": [""]
 }

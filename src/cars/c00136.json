@@ -1,7 +1,7 @@
 {
     "carID": "c00136",
     "cr": 643,
-    "make": ["Autodelta", "Alfa Romeo"],
+    "make": ["Autodelta","Alfa Romeo"],
     "model": "147 GTA AM 3.7 Super",
     "modelYear": 2007,
     "country": "GB",
@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner", "Sleeper"],
+    "tags": ["Hot Hatch","Tuner","Sleeper"],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 78.33,
     "ola": 93.62,
     "description": "Autodelta really has no chill. After releasing their 405hp Alfa GT, they decided to give the 147 GTA yet another boost in power, this time to an unholy 422hp.",
- 
-    "333TopSpeed": 186,
-    "3330to60": 4.5,
-    "333Handling": 88,
-
-    "666TopSpeed": 189,
-    "6660to60": 4.2,
-    "666Handling": 91,
-
-    "996TopSpeed": 192,
-    "9960to60": 4,
-    "996Handling": 91,
-
-    "969TopSpeed": 192,
-    "9690to60": 4.2,
-    "969Handling": 94,
-
-    "699TopSpeed": 189,
-    "6990to60": 4,
-    "699Handling": 94,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta147GTAAM3.7Super(2007).png",
     "creator": "Keanny",
     "hiddenTag": [""]

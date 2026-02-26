@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1957,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Twin of the Isuzu Trooper, was sold on the US until 2001. The first entry on the SUV market didn't go well for Acura, since these models had a tendacy to roll over and thus consumer reviews went down. Isuzu tried to plead a defamation case, didn't work out either. Sales were poor and the reputation quickly vanished, being later replaced by the MDX.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraSLX(1996).png",
     "creator": "Based",
-
-"333TopSpeed": 108, 
-"3330to60": 10.2, 
-"333Handling": 64,
-
-"666TopSpeed": 113, 
-"6660to60": 9.6, 
-"666Handling": 66,
-
-"699TopSpeed": 113, 
-"6990to60": 9.1, 
-"699Handling": 69,
-
-"969TopSpeed": 118, 
-"9690to60": 9.6, 
-"969Handling": 69,
-
-"996TopSpeed": 118, 
-"9960to60": 9.1, 
-"996Handling": 66,
     "hiddenTag": [""]
 }

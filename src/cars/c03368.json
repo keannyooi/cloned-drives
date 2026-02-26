@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "The Americas Assault", "Track Day"],
+    "tags": ["Oddity","The Americas Assault","Track Day"],
     "isPrize": false,
-    
     "weight": 791,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Unconventional fun.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PolarisSlingshotSL(2015).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 134,
-    "3330to60": 5.6,
-    "333Handling": 77,
-
-    "666TopSpeed": 138,
-    "6660to60": 5.3,
-    "666Handling": 80,
-
-    "699TopSpeed": 138,
-    "6990to60": 5.0,
-    "699Handling": 83,
-
-    "969TopSpeed": 142,
-    "9690to60": 5.3,
-    "969Handling": 83,
-
-    "996TopSpeed": 142,
-    "9960to60": 5.0,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

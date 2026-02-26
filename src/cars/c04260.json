@@ -10,10 +10,8 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch","Concept","Unique"],
+    "tags": ["Eurotech Elite","Hot Hatch","Concept","Unique"],
     "isPrize": false,
-
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -27,25 +25,5 @@
     "description": "Racing TDI machine.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA3TDIClubsportquattroConcept(2008).png",
     "creator": "Connor",
-
-    "333TopSpeed": 152,
-    "3330to60": 6.1,
-    "333Handling": 84,
-
-    "666TopSpeed": 156,
-    "6660to60": 5.8, 
-    "666Handling": 86,
-
-    "996TopSpeed": 159,
-    "9960to60": 5.4,
-    "996Handling": 86,
-
-    "969TopSpeed": 159,
-    "9690to60": 5.8,
-    "969Handling": 90,
-
-    "699TopSpeed": 156,
-    "6990to60": 5.4,
-    "699Handling": 90,
     "hiddenTag": [""]
 }

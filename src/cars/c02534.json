@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Rest of The World", "Unique"],
+    "tags": ["Oddity","Rest of The World","Unique"],
     "isPrize": false,
-	
     "weight": 1588,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The Lotus Carlton's (or Opel Omega if you're German) long lost and sacrilegious Brazilian brother. In 1998, possibly as a promotional stunt, the flagship Emme visited Europe and got bullied by the local motoring press for its looks. What didn't help much was the Lotus Esprit engine, which came to Brazil as scrap metal and only had a 20% chance of being in working condition. Currency devaluation was the final nail in the coffin and the Emme was scrapped in 1999 after sinking in over 200 million USD.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/EmmeLotus422T(1997).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 173, 
-    "3330to60": 4.6, 
-    "333Handling": 80,
-
-    "666TopSpeed": 176, 
-    "6660to60": 4.3, 
-    "666Handling": 82,
-
-    "699TopSpeed": 176, 
-    "6990to60": 4.1, 
-    "699Handling": 85,
-
-    "969TopSpeed": 179, 
-    "9690to60": 4.3, 
-    "969Handling": 85,
-
-    "996TopSpeed": 179, 
-    "9960to60": 4.1, 
-    "996Handling": 82,
     "hiddenTag": [""]
 }

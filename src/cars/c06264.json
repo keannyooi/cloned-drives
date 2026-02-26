@@ -1,12 +1,12 @@
 {
     "carID": "c06264",
     "cr": 605,
-    "make": ["AMG", "Mercedes-Benz","Mercedes-AMG"],
+    "make": ["AMG","Mercedes-Benz","Mercedes-AMG"],
     "model": "E 5.6 V8 Hammer",
     "modelYear": 1986,
     "country": "DE",
     "topSpeed": 180,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -21,27 +21,8 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 71.43,
-    "ola": 88.00,
+    "ola": 88,
     "description": "",
-"333TopSpeed": 183,
-"3330to60": 4.8,
-"333Handling": 81,
-
-"666TopSpeed": 186,
-"6660to60": 4.5,
-"666Handling": 83,
-
-"699TopSpeed": 186,
-"6990to60": 4.3,
-"699Handling": 87,
-
-"969TopSpeed": 189,
-"9690to60": 4.5,
-"969Handling": 87,
-
-"996TopSpeed": 189,
-"9960to60": 4.3,
-"996Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMGE56V8Hammer(1986).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

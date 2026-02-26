@@ -1,7 +1,7 @@
 {
     "carID": "c03800",
     "cr": 928,
-    "make": ["Boba Motoring", "Volkswagen"],
+    "make": ["Boba Motoring","Volkswagen"],
     "model": "Golf",
     "modelYear": 2018,
     "country": "DE",
@@ -12,11 +12,9 @@
     "tyreType": "Drag",
     "tags": ["Hot Hatch","Unique","Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": true,
-
-
     "weight": 1180,
     "gc": "Low",
-    "seatCount":1,
+    "seatCount": 1,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 106.67,
     "ola": 98.75,
     "description": "Very slow.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BobaMotoringGolf(2018).png",
     "creator": "Andu",
-
-    "333TopSpeed": 214,
-    "3330to60": 1.5,
-    "333Handling": 31,
-    
-    "666TopSpeed": 217,
-    "6660to60": 1.4,
-    "666Handling": 32,
-    
-    "699TopSpeed": 217,
-    "6990to60": 1.4,
-    "699Handling": 33,
-    
-    "969TopSpeed": 219,
-    "9690to60": 1.4,
-    "969Handling": 33,
-    
-    "996TopSpeed": 219,
-    "9960to60": 1.4,
-    "996Handling": 32,
     "hiddenTag": [""]
 }

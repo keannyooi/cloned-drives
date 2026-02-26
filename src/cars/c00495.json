@@ -10,13 +10,7 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Concept",
-        "Eco-Friendly",
-        "Innovative",
-        "Unique",
-        "Year of the Horse"
-    ],
+    "tags": ["Concept","Eco-Friendly","Innovative","Unique","Year of the Horse"],
     "isPrize": false,
     "weight": 998,
     "gc": "Low",
@@ -29,24 +23,7 @@
     "mra": 39.02,
     "ola": 72.5,
     "description": "Created by AeroVironment using design ideas from the 1987 SunRaycer that won the World Solar Challenge of the same year, the Impact left a huge impact in the motoring world. California was so impressed with the Impact, it placed its hopes on it alongside six other EVs developed by other manufacturers in the US to improve its horrible air quality. This car would later develop into the EV1, the world's first production EV.",
-    "333TopSpeed": 105,
-    "3330to60": 7.6,
-    "333Handling": 70,
-    "666TopSpeed": 110,
-    "6660to60": 7.2,
-    "666Handling": 72,
-    "996TopSpeed": 116,
-    "9960to60": 6.8,
-    "996Handling": 72,
-    "969TopSpeed": 116,
-    "9690to60": 7.2,
-    "969Handling": 75,
-    "699TopSpeed": 110,
-    "6990to60": 6.8,
-    "699Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GeneralMotorsImpactConcept(1990).png",
     "creator": "Keanny",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "The Americas Assault"],
+    "tags": ["Muscle Car","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1930,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Not just a muscle wagon. THE muscle wagon.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumSRT8(2006).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 172,
-"3330to60": 4.8,
-"333Handling": 82,
-
-"666TopSpeed": 175,
-"6660to60": 4.6,
-"666Handling": 84,
-
-"699TopSpeed": 175,
-"6990to60": 4.3,
-"699Handling": 88,
-
-"969TopSpeed": 178,
-"9690to60": 4.6,
-"969Handling": 88,
-
-"996TopSpeed": 178,
-"9960to60": 4.3,
-"996Handling": 84,
     "hiddenTag": [""]
 }

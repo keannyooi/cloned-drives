@@ -10,9 +10,8 @@
     "handling": 95,
     "driveType": "FWD",
     "tyreType": "Slick",
-    "tags": ["The Rest of the Best: 2023", "Rest of The World", "Motorsport"],
+    "tags": ["The Rest of the Best: 2023","Rest of The World","Motorsport"],
     "isPrize": false,
-	
     "weight": 950,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Taking a wagon to Touring Car Championships.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Volvo850EstateBTCC%2315Volvo850Racing(1994).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 165, 
-    "3330to60": 4.4, 
-    "333Handling": 98,
-
-    "666TopSpeed": 168, 
-    "6660to60": 4.1, 
-    "666Handling": 101,
-
-    "996TopSpeed": 172, 
-    "9960to60": 3.9, 
-    "996Handling": 101,
-
-    "969TopSpeed": 172, 
-    "9690to60": 4.1, 
-    "969Handling": 105,
-
-    "699TopSpeed": 168, 
-    "6990to60": 3.9, 
-    "699Handling": 105,
     "hiddenTag": [""]
 }

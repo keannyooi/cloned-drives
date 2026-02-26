@@ -10,9 +10,8 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Eco-Friendly", "The Japanese Odyssey"],
+    "tags": ["Concept","Unique","Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
-
     "weight": 2046,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 53.77,
     "ola": 73.68,
     "description": "Nissan was playing around with their e-4ORCE powertrain made for the then soon-to-be-launched Ariya with this test mule based on the Leaf, the other EV Nissan was selling at the time. The powertrain took elements from the GT-R's torque-split system and the Patrol's 4WD system. At the time, many people wanted this technology directly on the Leaf, but alas it stayed as only a testing vehicle.",
- 
-    "333TopSpeed": 120,
-    "3330to60": 5.4,
-    "333Handling": 72,
-
-    "666TopSpeed": 125,
-    "6660to60": 5.1,
-    "666Handling": 75,
-
-    "996TopSpeed": 129,
-    "9960to60": 4.8,
-    "996Handling": 75,
-
-    "969TopSpeed": 129,
-    "9690to60": 5.1,
-    "969Handling": 78,
-
-    "699TopSpeed": 125,
-    "6990to60": 4.8,
-    "699Handling": 78,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanLeafAll-Wheel-ControlTestCar(2019).png",
     "creator": "Keanny",
     "hiddenTag": [""]

@@ -6,13 +6,12 @@
     "modelYear": 2019,
     "country": "US",
     "topSpeed": 180,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 103,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "tags": ["Endless Summer","Motorsport","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1250,
     "gc": "Low",
     "seatCount": 1,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 92.50,
+    "mra": 92.5,
     "ola": 87.55,
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AcuraNSXGT3Evo(2019).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 183,
-"3330to60": 2.8,
-"333Handling": 106,
-
-"666TopSpeed": 186,
-"6660to60": 2.7,
-"666Handling": 110,
-
-"699TopSpeed": 186,
-"6990to60": 2.5,
-"699Handling": 114,
-
-"969TopSpeed": 189,
-"9690to60": 2.7,
-"969Handling": 114,
-
-"996TopSpeed": 189,
-"9960to60": 2.5,
-"996Handling": 110,
     "hiddenTag": [""]
 }

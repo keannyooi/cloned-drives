@@ -1,7 +1,7 @@
 {
     "carID": "c03593",
     "cr": 485,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "1500 Rebel EcoDiesel 4x4 Crew Cab",
     "modelYear": 2020,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 62,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Extreme Juggernaut", "The Americas Assault","Endless Summer"],
+    "tags": ["Extreme Juggernaut","The Americas Assault","Endless Summer"],
     "isPrize": false,
-	
     "weight": 2620,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Ram's class-leading diesel gets the wild Rebel treatment.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram1500RebelEcoDiesel4x4CrewCab(2020).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 113,
-"3330to60": 7.7,
-"333Handling": 64,
-
-"666TopSpeed": 118,
-"6660to60": 7.3,
-"666Handling": 66,
-
-"699TopSpeed": 118,
-"6990to60": 6.9,
-"699Handling": 69,
-
-"969TopSpeed": 122,
-"9690to60": 7.3,
-"969Handling": 69,
-
-"996TopSpeed": 122,
-"9960to60": 6.9,
-"996Handling": 66,
     "hiddenTag": [""]
 }

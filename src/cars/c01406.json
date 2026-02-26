@@ -10,9 +10,7 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Year of the Horse"
-    ],
+    "tags": ["Year of the Horse"],
     "isPrize": false,
     "weight": 2317,
     "gc": "High",
@@ -25,24 +23,7 @@
     "mra": 58.57,
     "ola": 64.77,
     "description": "Just what you didn't expect from the Beetle company, a really fearless SUV.",
-    "333TopSpeed": 138,
-    "3330to60": 7.3,
-    "333Handling": 74,
-    "666TopSpeed": 142,
-    "6660to60": 6.9,
-    "666Handling": 77,
-    "996TopSpeed": 146,
-    "9960to60": 6.5,
-    "996Handling": 77,
-    "969TopSpeed": 146,
-    "9690to60": 6.9,
-    "969Handling": 80,
-    "699TopSpeed": 142,
-    "6990to60": 6.5,
-    "699Handling": 80,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenTouareg4.2FSIV8(2002).png",
     "creator": "Andu",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

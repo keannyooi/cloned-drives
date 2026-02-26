@@ -10,9 +10,8 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Eco-Friendly","Visionary Road"],
+    "tags": ["Concept","Unique","Eco-Friendly","Visionary Road"],
     "isPrize": false,
-
     "weight": 1425,
     "gc": "Low",
     "seatCount": 4,
@@ -24,28 +23,7 @@
     "mra": 53.16,
     "ola": 71.43,
     "description": "The 4-Door Hybrid coupe version of the RC Spades.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotRCHYbrid4Concept(2008).png",
     "creator": "Crossfire",
-	
-    "333TopSpeed": 186,
-    "3330to60": 4.0,
-    "333Handling": 86,
-
-    "666TopSpeed": 189,
-    "6660to60": 3.8,
-    "666Handling": 88,
-
-    "996TopSpeed": 192,
-    "9960to60": 3.6,
-    "996Handling": 88,
-
-    "969TopSpeed": 192,
-    "9690to60": 3.8,
-    "969Handling": 92,
-
-    "699TopSpeed": 189,
-    "6990to60": 3.6,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

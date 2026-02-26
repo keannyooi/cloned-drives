@@ -1,10 +1,7 @@
 {
     "carID": "c01532",
     "cr": 317,
-    "make": [
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["Datsun","Nissan"],
     "model": "280ZX Turbo T-Roof",
     "modelYear": 1981,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1333,
     "gc": "Medium",
@@ -29,21 +23,6 @@
     "mra": 56.52,
     "ola": 74.92,
     "description": "Integrating forced induction for power compensation.",
-     "333TopSpeed": 134,
-    "3330to60": 7.1,
-    "333Handling": 73,
-    "666TopSpeed": 138,
-    "6660to60": 6.8,
-    "666Handling": 76,
-    "996TopSpeed": 142,
-    "9960to60": 6.4,
-    "996Handling": 76,
-    "969TopSpeed": 142,
-    "9690to60": 6.8,
-    "969Handling": 79,
-    "699TopSpeed": 138,
-    "6990to60": 6.4,
-    "699Handling": 79,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280ZXTurboT-Roof(1981).png",
     "creator": "Keanny",
     "hiddenTag": [""]

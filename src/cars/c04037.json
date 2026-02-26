@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "tags": ["Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1490,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 67.30,
+    "mra": 67.3,
     "ola": 82.62,
     "description": "Yes, 850 T-5R was so cool, but this is even cooler. Practicality of the Swedish wagon combined with the good performance definetly made this one of the most iconic and loved wagon ever and definetly more desirable and popular than the saloon version.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo850EstateT-5R(1995).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 154, 
-    "3330to60": 6.5, 
-    "333Handling": 77,
-
-    "666TopSpeed": 158, 
-    "6660to60": 6.1, 
-    "666Handling": 80,
-
-    "996TopSpeed": 161, 
-    "9960to60": 5.8, 
-    "996Handling": 80,
-
-    "969TopSpeed": 161, 
-    "9690to60": 6.1, 
-    "969Handling": 83,
-
-    "699TopSpeed": 158, 
-    "6990to60": 5.8, 
-    "699Handling": 83,
     "hiddenTag": [""]
 }

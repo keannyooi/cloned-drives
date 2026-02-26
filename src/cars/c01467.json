@@ -1,10 +1,7 @@
 {
     "carID": "c01467",
     "cr": 752,
-    "make": [
-        "TechArt",
-        "Porsche"
-    ],
+    "make": ["TechArt","Porsche"],
     "model": "GT Street XL",
     "modelYear": 2001,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1580,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 88.99,
     "ola": 84.21,
     "description": "",
-     "333TopSpeed": 204,
-    "3330to60": 3.6,
-    "333Handling": 90,
-    "666TopSpeed": 206,
-    "6660to60": 3.4,
-    "666Handling": 93,
-    "996TopSpeed": 209,
-    "9960to60": 3.2,
-    "996Handling": 93,
-    "969TopSpeed": 209,
-    "9690to60": 3.4,
-    "969Handling": 97,
-    "699TopSpeed": 206,
-    "6990to60": 3.2,
-    "699Handling": 97,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TechArtGTStreetXL(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

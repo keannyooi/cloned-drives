@@ -1,7 +1,7 @@
 {
     "carID": "c05913",
     "cr": 679,
-    "make": ["Range Rover", "Land Rover"],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar P340 MHEV",
     "modelYear": 2020,
     "country": "GB",
@@ -23,25 +23,6 @@
     "mra": 59.88,
     "ola": 73.44,
     "description": "",
-"333TopSpeed": 152,
-"3330to60": 5.6,
-"333Handling": 80,
-
-"666TopSpeed": 156,
-"6660to60": 5.3,
-"666Handling": 82,
-
-"699TopSpeed": 156,
-"6990to60": 5,
-"699Handling": 85,
-
-"969TopSpeed": 159,
-"9690to60": 5.3,
-"969Handling": 85,
-
-"996TopSpeed": 159,
-"9960to60": 5,
-"996Handling": 82,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RangeRoverVelarP340MHEV(2020).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

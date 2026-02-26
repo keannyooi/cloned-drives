@@ -6,13 +6,12 @@
     "modelYear": 2018,
     "country": "DE",
     "topSpeed": 194,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "OG"],
+    "tags": ["Track Day","OG"],
     "isPrize": false,
-	
     "weight": 1430,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 81.22,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche911GT3RS(2018).png",
-
-"333TopSpeed": 197,
-"3330to60": 2.8,
-"333Handling": 98,
-
-"666TopSpeed": 199,
-"6660to60": 2.7,
-"666Handling": 101,
-
-"699TopSpeed": 199,
-"6990to60": 2.5,
-"699Handling": 105,
-
-"969TopSpeed": 202,
-"9690to60": 2.7,
-"969Handling": 105,
-
-"996TopSpeed": 202,
-"9960to60": 2.5,
-"996Handling": 101,
     "creator": "Macan",
     "hiddenTag": [""]
 }

@@ -1,5 +1,5 @@
 {
-	"carID": "c06467",
+    "carID": "c06467",
     "cr": 401,
     "make": "Dodge",
     "model": "Charger SE",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 1800,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 60.51,
     "ola": 75,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSE2011.png",
-
-"333TopSpeed": 119,
-"3330to60": 6.8,
-"333Handling": 74,
-
-"666TopSpeed": 123,
-"6660to60": 6.5,
-"666Handling": 77,
-
-"699TopSpeed": 123,
-"6990to60": 6.1,
-"699Handling": 80,
-
-"969TopSpeed": 128,
-"9690to60": 6.5,
-"969Handling": 80,
-
-"996TopSpeed": 128,
-"9960to60": 6.1,
-"996Handling": 77,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSE2011.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

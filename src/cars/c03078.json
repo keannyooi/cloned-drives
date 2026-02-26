@@ -12,40 +12,18 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","The Tyrol Tour"],
     "isPrize": false,
-
-
     "weight": 1415,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 71.30,
+    "mra": 71.3,
     "ola": 75.32,
     "description": "Family friendly sport.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombiRS(2001).png",
     "creator": "Connor",
-
-    "333TopSpeed": 148,
-    "3330to60": 7.3,
-    "333Handling": 79,
-
-    "666TopSpeed": 151,
-    "6660to60": 6.9, 
-    "666Handling": 81,
-
-    "996TopSpeed": 155,
-    "9960to60": 6.5,
-    "996Handling": 81,
-
-    "969TopSpeed": 155,
-    "9690to60": 6.9,
-    "969Handling": 84,
-
-    "699TopSpeed": 151,
-    "6990to60": 6.5,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

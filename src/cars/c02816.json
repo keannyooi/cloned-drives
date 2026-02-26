@@ -10,9 +10,8 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "tags": ["Rest of The World","Innovative","Unique","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 2300,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Continuing with the theme of black magic flow cell fuckery, the Quant F is shown in the 2015 Geneva Motor Show as the new \"production vehicle\" while the e-Sportlimousine retires into a \"research vehicle\". Apparently, their flow cells store more power than lithium-ion batteries, doesn't go up in flames and are miles cheaper to produce, all while lasting longer.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/nanoFlowcellQuantF(2015).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 189, 
-    "3330to60": 2.6, 
-    "333Handling": 91,
-
-    "666TopSpeed": 192, 
-    "6660to60": 2.4, 
-    "666Handling": 94,
-
-    "699TopSpeed": 192, 
-    "6990to60": 2.3, 
-    "699Handling": 98,
-
-    "969TopSpeed": 194, 
-    "9690to60": 2.4, 
-    "969Handling": 98,
-
-    "996TopSpeed": 194, 
-    "9960to60": 2.3, 
-    "996Handling": 94,
     "hiddenTag": [""]
 }

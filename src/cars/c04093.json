@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 957,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 42.86,
     "ola": 69.63,
     "description": "Characterful high-riding supermini is neither fast nor roomy, but it is fun to drive and satisfyingly frugal.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volkswagencrossup!1.0MPI(2013).png",
     "creator": "Andu",
-
-    "333TopSpeed": 109,
-    "3330to60": 12.8,
-    "333Handling": 75,
-    
-    "666TopSpeed": 114,
-    "6660to60": 12.2,
-    "666Handling": 78,
-    
-    "699TopSpeed": 114,
-    "6990to60": 11.5,
-    "699Handling": 81,
-    
-    "969TopSpeed": 119,
-    "9690to60": 12.2,
-    "969Handling": 81,
-    
-    "996TopSpeed": 119,
-    "9960to60": 11.5,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

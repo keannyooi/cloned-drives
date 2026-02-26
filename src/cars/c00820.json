@@ -1,10 +1,7 @@
 {
     "carID": "c00820",
     "cr": 534,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "A 32 K",
     "modelYear": 2001,
     "country": "DE",
@@ -13,11 +10,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Oddity",
-        "Unique"
-    ],
+    "tags": ["Hot Hatch","Oddity","Unique"],
     "isPrize": false,
     "weight": 1665,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 70,
     "ola": 81.63,
     "description": "The goal was to produce the most discreet supercar.",
-     "333TopSpeed": 158,
-    "3330to60": 4.7,
-    "333Handling": 80,
-    "666TopSpeed": 162,
-    "6660to60": 4.4,
-    "666Handling": 82,
-    "996TopSpeed": 165,
-    "9960to60": 4.2,
-    "996Handling": 82,
-    "969TopSpeed": 165,
-    "9690to60": 4.4,
-    "969Handling": 85,
-    "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-AMGA32K(2001).png",
     "creator": "Andu",
     "hiddenTag": [""]

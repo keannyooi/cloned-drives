@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Extreme Juggernaut","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 2675,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "This time they really took advice from Clarkson himself and went POWAAHHHHH",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMWX7M60ixDrive(2022).png",
     "creator": "c6",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.4,
-    "333Handling": 80,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.1,
-    "666Handling": 82,
-
-    "996TopSpeed": 165,
-    "9960to60": 3.9,
-    "996Handling": 82,
-
-    "969TopSpeed": 165,
-    "9690to60": 4.1,
-    "969Handling": 85,
-
-    "699TopSpeed": 162,
-    "6990to60": 3.9,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

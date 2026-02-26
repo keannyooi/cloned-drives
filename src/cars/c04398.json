@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04398",
     "cr": 280,
     "make": "Chevrolet",
@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1380,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 49.78,
     "ola": 60.87,
     "description": "A nice value proposition, if you ignore the Skoda Octavia.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCruze16LTHatchback(2011).png",
     "creator": "Andu",
-
-    "333TopSpeed": 122,
-    "3330to60": 10.9,
-    "333Handling": 75,
-    
-    "666TopSpeed": 127,
-    "6660to60": 10.3,
-    "666Handling": 78,
-    
-    "699TopSpeed": 127,
-    "6990to60": 9.8,
-    "699Handling": 81,
-    
-    "969TopSpeed": 131,
-    "9690to60": 10.3,
-    "969Handling": 81,
-    
-    "996TopSpeed": 131,
-    "9960to60": 9.8,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

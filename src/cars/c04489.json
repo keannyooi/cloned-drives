@@ -1,7 +1,7 @@
 {
     "carID": "c04489",
     "cr": 823,
-    "make": ["Manhart", "BMW"],
+    "make": ["Manhart","BMW"],
     "model": "MHX7 650",
     "modelYear": 2022,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Tuner","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 2560,
     "gc": "High",
     "seatCount": 7,
@@ -25,26 +24,6 @@
     "ola": 78.94,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ManhartMHX7650(2022).png",
-
-"333TopSpeed": 183,
-"3330to60": 3.6,
-"333Handling": 83,
-
-"666TopSpeed": 186,
-"6660to60": 3.4,
-"666Handling": 85,
-
-"699TopSpeed": 186,
-"6990to60": 3.2,
-"699Handling": 89,
-
-"969TopSpeed": 189,
-"9690to60": 3.4,
-"969Handling": 89,
-
-"996TopSpeed": 189,
-"9960to60": 3.2,
-"996Handling": 85,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

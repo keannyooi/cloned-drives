@@ -1,7 +1,7 @@
 {
     "carID": "c00466",
     "cr": 890,
-    "make": ["Matech Racing", "Ford"],
+    "make": ["Matech Racing","Ford"],
     "model": "GT1",
     "modelYear": 2009,
     "country": "CH",
@@ -10,9 +10,8 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Rest of The World"],
+    "tags": ["Motorsport","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1226,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 208, 
-"3330to60": 2.8, 
-"333Handling": 99,
-
-"666TopSpeed": 210, 
-"6660to60": 2.6, 
-"666Handling": 102,
-
-"699TopSpeed": 210, 
-"6990to60": 2.5, 
-"699Handling": 107,
-
-"969TopSpeed": 213, 
-"9690to60": 2.6, 
-"969Handling": 107,
-
-"996TopSpeed": 213, 
-"9960to60": 2.5, 
-"996Handling": 102,
     "hiddenTag": [""]
 }

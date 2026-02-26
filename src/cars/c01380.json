@@ -10,9 +10,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Servers Choice"
-    ],
+    "tags": ["Servers Choice"],
     "isPrize": false,
     "weight": 1010,
     "gc": "Medium",
@@ -22,29 +20,9 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 58.40,
-    "ola": 66.10,
+    "mra": 58.4,
+    "ola": 66.1,
     "description": "The Golf mk2 GTI just in an american flavor.",
-    
-"333TopSpeed": 127,
-"3330to60": 8.4,
-"333Handling": 75,
-
-"666TopSpeed": 131,
-"6660to60": 7.9,
-"666Handling": 78,
-
-"699TopSpeed": 131,
-"6990to60": 7.5,
-"699Handling": 81,
-
-"969TopSpeed": 136,
-"9690to60": 7.9,
-"969Handling": 81,
-
-"996TopSpeed": 136,
-"9960to60": 7.5,
-"996Handling": 78,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenJettaGLI1.816V(1986).png",
     "creator": "Andu",
     "hiddenTag": [""]

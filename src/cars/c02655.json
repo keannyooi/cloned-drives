@@ -1,18 +1,17 @@
 {
     "carID": "c02655",
     "cr": 703,
-    "make": ["Lumma", "BMW"],
+    "make": ["Lumma","BMW"],
     "model": "CLR 730 RS",
     "modelYear": 2009,
     "country": "DE",
     "topSpeed": 228,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": true,
-	
     "weight": 1870,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "A very aerodynamically unstable thing",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LummaCLR730RS(2009).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 230, 
-"3330to60": 3.8, 
-"333Handling": 84,
-
-"666TopSpeed": 233, 
-"6660to60": 3.6, 
-"666Handling": 86,
-
-"699TopSpeed": 233, 
-"6990to60": 3.4, 
-"699Handling": 90,
-
-"969TopSpeed": 235, 
-"9690to60": 3.6, 
-"969Handling": 90,
-
-"996TopSpeed": 235, 
-"9960to60": 3.4, 
-"996Handling": 86,
     "hiddenTag": [""]
 }

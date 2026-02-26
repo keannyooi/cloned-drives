@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "tags": ["Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1379,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 67.59,
-    "ola": 80.30,
+    "ola": 80.3,
     "description": "Turbo in a brick.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volvo850Turbo(1994).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 152, 
-    "3330to60": 6.7, 
-    "333Handling": 80,
-
-    "666TopSpeed": 156, 
-    "6660to60": 6.4, 
-    "666Handling": 82,
-
-    "996TopSpeed": 159, 
-    "9960to60": 6.0, 
-    "996Handling": 82,
-
-    "969TopSpeed": 159, 
-    "9690to60": 6.4, 
-    "969Handling": 85,
-
-    "699TopSpeed": 156, 
-    "6990to60": 6.0, 
-    "699Handling": 85,
     "hiddenTag": [""]
 }

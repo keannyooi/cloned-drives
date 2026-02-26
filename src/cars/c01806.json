@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["The Japanese Odyssey"],
     "isPrize": false,
-
     "weight": 3112,
     "gc": "High",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 54.37,
     "ola": 68.75,
     "description": "This is the top-of-the-line trim for the funny Titan.",
- 
-    "333TopSpeed": 115,
-    "3330to60": 7.1,
-    "333Handling": 70,
-
-    "666TopSpeed": 119,
-    "6660to60": 6.8,
-    "666Handling": 72,
-
-    "996TopSpeed": 124,
-    "9960to60": 6.4,
-    "996Handling": 72,
-
-    "969TopSpeed": 124,
-    "9690to60": 6.8,
-    "969Handling": 75,
-
-    "699TopSpeed": 119,
-    "6990to60": 6.4,
-    "699Handling": 75,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanTitanXDPR4x4CC(2020).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -1,5 +1,5 @@
 {
-	"carID": "c06474",
+    "carID": "c06474",
     "cr": 752,
     "make": "Dodge",
     "model": "Charger SRT Hellcat Widebody \"Daytona 50th Anniversary\"",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car","Super Sedan"],
     "isPrize": true,
-	
     "weight": 2080,
     "gc": "Low",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 92.31,
     "ola": 94.44,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcatWidebodyDaytona50thAnniversary2020.png",
-
-"333TopSpeed": 199,
-"3330to60": 3.4,
-"333Handling": 90,
-
-"666TopSpeed": 201,
-"6660to60": 3.2,
-"666Handling": 93,
-
-"699TopSpeed": 201,
-"6990to60": 3.1,
-"699Handling": 97,
-
-"969TopSpeed": 204,
-"9690to60": 3.2,
-"969Handling": 97,
-
-"996TopSpeed": 204,
-"9960to60": 3.1,
-"996Handling": 93,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcatWidebodyDaytona50thAnniversary2020.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

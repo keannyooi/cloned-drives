@@ -10,9 +10,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1500,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 73.45,
     "ola": 74.99,
     "description": "Lightweight WRX STI for the STI's 30th anniversary of its establishment.",
-"333TopSpeed": 163,
-"3330to60": 4.5,
-"333Handling": 91,
-
-"666TopSpeed": 167,
-"6660to60": 4.2,
-"666Handling": 94,
-
-"699TopSpeed": 167,
-"6990to60": 4,
-"699Handling": 98,
-
-"969TopSpeed": 170,
-"9690to60": 4.2,
-"969Handling": 98,
-
-"996TopSpeed": 170,
-"9960to60": 4,
-"996Handling": 94,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruWRXSTITypeRA-R(2018).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

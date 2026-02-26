@@ -12,8 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1345,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Officially Skoda's first crossover, unofficially the second.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaYeti12TSIL%26K(2013).png",
     "creator": "Connor",
-
-    "333TopSpeed": 114,
-    "3330to60": 10.5,
-    "333Handling": 73,
-
-    "666TopSpeed": 119,
-    "6660to60": 10.0, 
-    "666Handling": 76,
-
-    "996TopSpeed": 123,
-    "9960to60": 9.4,
-    "996Handling": 76,
-
-    "969TopSpeed": 123,
-    "9690to60": 10.0,
-    "969Handling": 79,
-
-    "699TopSpeed": 119,
-    "6990to60": 9.4,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

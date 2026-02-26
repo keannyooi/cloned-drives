@@ -6,7 +6,7 @@
     "modelYear": 2008,
     "country": "JP",
     "topSpeed": 115,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "All-Surface",
@@ -21,30 +21,8 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 41.88,
-    "ola": 82.50,
-
+    "ola": 82.5,
     "description": "",
-
-"333TopSpeed": 120,
-"3330to60": 7.6,
-"333Handling": 72,
-
-"666TopSpeed": 124,
-"6660to60": 7.2,
-"666Handling": 75,
-
-"699TopSpeed": 124,
-"6990to60": 6.8,
-"699Handling": 78,
-
-"969TopSpeed":129 ,
-"9690to60": 7.2,
-"969Handling": 78,
-
-"996TopSpeed": 129,
-"9960to60": 6.8,
-"996Handling": 75,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanRogueS(2008).png",
     "creator": "Scorpio",
     "hiddenTag": [""]

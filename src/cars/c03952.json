@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1539,
     "gc": "Medium",
     "seatCount": 7,
@@ -22,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 47.70,
+    "mra": 47.7,
     "ola": 65.38,
     "description": "Korean built Chevy MPV for Europe.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletOrlando14TLT(2012).png",
     "creator": "Connor",
-
-    "333TopSpeed": 128,
-    "3330to60": 9.9,
-    "333Handling": 73,
-
-    "666TopSpeed": 132,
-    "6660to60": 9.4, 
-    "666Handling": 76,
-
-    "996TopSpeed": 137,
-    "9960to60": 8.8,
-    "996Handling": 76,
-
-    "969TopSpeed": 137,
-    "9690to60": 9.4,
-    "969Handling": 79,
-
-    "699TopSpeed": 132,
-    "6990to60": 8.8,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

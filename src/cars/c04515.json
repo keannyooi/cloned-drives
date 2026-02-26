@@ -6,13 +6,12 @@
     "modelYear": 2020,
     "country": "FR",
     "topSpeed": 138,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1429,
     "gc": "High",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 62.20,
+    "mra": 62.2,
     "ola": 77.39,
     "description": "Midlife facelift bringing an even bolder front fascia and cool LED running lights to match rest of the lineup.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30081.6PureTech180(2020).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 142,
-    "3330to60": 7.6,
-    "333Handling": 79,
-
-    "666TopSpeed": 146,
-    "6660to60": 7.2,
-    "666Handling": 81,
-
-    "699TopSpeed": 146,
-    "6990to60": 6.8,
-    "699Handling": 84,
-
-    "969TopSpeed": 149,
-    "9690to60": 7.2,
-    "969Handling": 84,
-
-    "996TopSpeed": 149,
-    "9960to60": 6.8,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

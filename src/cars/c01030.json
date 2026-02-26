@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1265,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Peugeot3081.6THP205(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 149, 
-    "3330to60": 7.1, 
-    "333Handling": 85,
-
-    "666TopSpeed": 152, 
-    "6660to60": 6.8, 
-    "666Handling": 87,
-
-    "699TopSpeed": 152, 
-    "6990to60": 6.4, 
-    "699Handling": 91,
-
-    "969TopSpeed": 156, 
-    "9690to60": 6.8, 
-    "969Handling": 91,
-
-    "996TopSpeed": 156, 
-    "9960to60": 6.4, 
-    "996Handling": 87,
     "hiddenTag": [""]
 }

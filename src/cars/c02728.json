@@ -10,9 +10,8 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique"],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
-
     "weight": 1280,
     "gc": "Low",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 53.96,
     "ola": 66.67,
     "description": "",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA1metroprojectquattro(2007).png",
     "creator": "Lemon",
-
-    "333TopSpeed": 129,
-    "3330to60": 7.1,
-    "333Handling": 79,
-
-    "666TopSpeed": 133,
-    "6660to60": 6.8,
-    "666Handling": 81,
-
-    "996TopSpeed": 137,
-    "9960to60": 6.4,
-    "996Handling": 81,
-
-    "969TopSpeed": 137,
-    "9690to60": 6.8,
-    "969Handling": 84,
-
-    "699TopSpeed": 133,
-    "6990to60": 6.4,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

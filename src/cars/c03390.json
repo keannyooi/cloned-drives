@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03390",
     "cr": 272,
     "make": "Fiat",
@@ -12,41 +12,18 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 960,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 28.70,
+    "mra": 28.7,
     "ola": 63.68,
     "description": "New 2 cylinder engine to get your heart pumping.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda09TwinairTurboLounge(2011).png",
     "creator": "Andu",
-
-    "333TopSpeed": 114,
-    "3330to60": 10.6,
-    "333Handling": 74,
-    
-    "666TopSpeed": 119,
-    "6660to60": 10.1,
-    "666Handling": 77,
-    
-    "699TopSpeed": 119,
-    "6990to60": 9.5,
-    "699Handling": 80,
-    
-    "969TopSpeed": 123,
-    "9690to60": 10.1,
-    "969Handling": 80,
-    
-    "996TopSpeed": 123,
-    "9960to60": 9.5,
-    "996Handling": 77,
     "hiddenTag": [""]
 }

@@ -10,11 +10,7 @@
     "handling": 25,
     "driveType": "FWD",
     "tyreType": "Drag",
-    "tags": [
-        "Eco-Friendly",
-        "Innovative",
-        "Unique"
-    ],
+    "tags": ["Eco-Friendly","Innovative","Unique"],
     "isPrize": false,
     "weight": 955,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 39.78,
     "ola": 75.68,
     "description": "In 1994, a modified GM Impact concept car broke an electric production car land speed record by reaching 183mph, a figure that still stands well 25 years on and counting. The insanely aerodynamic body shell with a drag coefficient of 0.19 definitely helped here.",
- "333TopSpeed": 186,
-"3330to60": 7,
-"333Handling": 26,
-
-"666TopSpeed": 189,
-"6660to60": 6.7,
-"666Handling": 27,
-
-"699TopSpeed": 189,
-"6990to60": 6.3,
-"699Handling": 28,
-
-"969TopSpeed": 192,
-"9690to60": 6.7,
-"969Handling": 28,
-
-"996TopSpeed": 192,
-"9960to60": 6.3,
-"996Handling": 27,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GeneralMotorsImpactLandSPeedRecord(1994).png",
     "creator": "Keanny",
     "hiddenTag": [""]

@@ -6,13 +6,12 @@
     "modelYear": 1968,
     "country": "DE",
     "topSpeed": 137,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1075,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911S2.0TargaSportomatic(1968).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 141,
-"3330to60": 7.6,
-"333Handling": 72,
-
-"666TopSpeed": 145,
-"6660to60": 7.2,
-"666Handling": 75,
-
-"699TopSpeed": 145,
-"6990to60": 6.8,
-"699Handling": 78,
-
-"969TopSpeed": 148,
-"9690to60": 7.2,
-"969Handling": 78,
-
-"996TopSpeed": 148,
-"9960to60": 6.8,
-"996Handling": 75,
     "hiddenTag": [""]
 }

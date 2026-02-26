@@ -1,18 +1,17 @@
 {
     "carID": "c02431",
     "cr": 549,
-    "make": ["AC Schnitzer", "BMW"],
+    "make": ["AC Schnitzer","BMW"],
     "model": "ACS3 3.0d",
     "modelYear": 2004,
     "country": "DE",
     "topSpeed": 135,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1820,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ACSchnitzerACS33.0d(2004).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 139, 
-"3330to60": 6.6, 
-"333Handling": 80,
-
-"666TopSpeed": 143, 
-"6660to60": 6.3, 
-"666Handling": 82,
-
-"699TopSpeed": 143, 
-"6990to60": 6.0, 
-"699Handling": 85,
-
-"969TopSpeed": 147, 
-"9690to60": 6.3, 
-"969Handling": 85,
-
-"996TopSpeed": 147, 
-"9960to60": 6.0, 
-"996Handling": 82 ,
     "hiddenTag": [""]
 }

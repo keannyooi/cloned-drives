@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eco-Friendly", "Unique","Visionary Road"],
+    "tags": ["Concept","Eco-Friendly","Unique","Visionary Road"],
     "isPrize": false,
-
     "weight": 1000,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 52.66,
     "ola": 77.15,
     "description": "It sets the fastest EV lap time record at the Nurburgring at the time, and the claimed 2.24 0-100km/h is a lie!",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotEX1Concept(2010).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 164,
-    "3330to60": 3.2,
-    "333Handling": 95,
-
-    "666TopSpeed": 167,
-    "6660to60": 3.1,
-    "666Handling": 98,
-
-    "996TopSpeed": 171,
-    "9960to60": 2.9,
-    "996Handling": 98,
-
-    "969TopSpeed": 171,
-    "9690to60": 3.1,
-    "969Handling": 102,
-
-    "699TopSpeed": 167,
-    "6990to60": 2.9,
-    "699Handling": 102,
     "hiddenTag": [""]
 }

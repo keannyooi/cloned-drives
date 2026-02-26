@@ -10,9 +10,8 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Oddity", "Unique"],
+    "tags": ["Concept","Oddity","Unique"],
     "isPrize": true,
-
     "weight": 580,
     "gc": "Low",
     "seatCount": 2,
@@ -24,29 +23,7 @@
     "mra": 47.67,
     "ola": 69.57,
     "description": "You would think this futuristic Peugeot can be very quick but then you find out it has 88 horespower.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotAsphalteConcept(1996).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 128,
-    "3330to60": 8.7,
-    "333Handling": 84,
-
-    "666TopSpeed": 132,
-    "6660to60": 8.3,
-    "666Handling": 86,
-
-    "969TopSpeed": 137,
-    "9690to60": 8.3,
-    "969Handling": 90,
-	
-	"996TopSpeed": 137,
-	"9960to60": 7.8,
-	"996Handling": 86,
-	
-	"699TopSpeed": 132,
-	"6990to60": 7.8,
-	"699Handling": 90
-	,
     "hiddenTag": [""]
 }

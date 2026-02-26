@@ -6,13 +6,12 @@
     "modelYear": 1979,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["OG"],
     "isPrize": false,
-    
     "weight": 1515,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "A weird departure from Porsche that turned out great.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche928S(1979).png",
     "creator": "c6",
-
-    "333TopSpeed": 158,
-    "3330to60": 6.7,
-    "333Handling": 76,
-
-    "666TopSpeed": 162,
-    "6660to60": 6.3,
-    "666Handling": 79,
-
-    "996TopSpeed": 165,
-    "9960to60": 6.0,
-    "996Handling": 79,
-
-    "969TopSpeed": 165,
-    "9690to60": 6.3,
-    "969Handling": 82,
-
-    "699TopSpeed": 162,
-    "6990to60": 6.0,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

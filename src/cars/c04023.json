@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04023",
     "cr": 437,
     "make": "Volkswagen",
@@ -10,13 +10,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer","Oceanic View"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly","Endless Summer","Oceanic View"],
     "isPrize": false,
-
-
     "weight": 1812,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 52.42,
     "ola": 70.92,
     "description": "If only this was as good as the first Golf or Beetle.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenID.31stProPerformance(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 6.7,
-    "333Handling": 81,
-    
-    "666TopSpeed": 110,
-    "6660to60": 6.4,
-    "666Handling": 83,
-    
-    "699TopSpeed": 110,
-    "6990to60": 6,
-    "699Handling": 87,
-    
-    "969TopSpeed": 116,
-    "9690to60": 6.4,
-    "969Handling": 87,
-    
-    "996TopSpeed": 116,
-    "9960to60": 6,
-    "996Handling": 83,
     "hiddenTag": [""]
 }

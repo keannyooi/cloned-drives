@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04324",
     "cr": 444,
     "make": "Volkswagen",
@@ -6,17 +6,15 @@
     "modelYear": 2023,
     "country": "DE",
     "topSpeed": 101,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1815,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 53.85,
     "ola": 71.43,
     "description": "Happy new Year! it's 2023! you know what that means, middle life crisis facelift!",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenID.3ProPerformance(2023).png",
     "creator": "Hastur",
-
-    "333TopSpeed": 106,
-    "3330to60": 6.6,
-    "333Handling": 81,
-    
-    "666TopSpeed": 111,
-    "6660to60": 6.3,
-    "666Handling": 83,
-    
-    "699TopSpeed": 111,
-    "6990to60": 5.9,
-    "699Handling": 87,
-    
-    "969TopSpeed": 117,
-    "9690to60": 6.3,
-    "969Handling": 87,
-    
-    "996TopSpeed": 117,
-    "9960to60": 5.9,
-    "996Handling": 83,
     "hiddenTag": [""]
 }

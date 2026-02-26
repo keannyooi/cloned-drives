@@ -10,9 +10,8 @@
     "handling": 52,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite", "Eco-Friendly", "Oddity","Cloned Drives Beta: Last of","Rest of The World"],
+    "tags": ["Eurotech Elite","Eco-Friendly","Oddity","Cloned Drives Beta: Last of","Rest of The World"],
     "isPrize": false,
-	
     "weight": 497,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Refined version of the 1.0 first shown in 2018. Its got some design changes like the front and rear lightbar, 2 additional horsepower which now totals at 17 hp, new software and new batteries that now offers range between 91 and 230 km's. But most importantly, it made it into production this time, and it can take on cars like Citroen Ami.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MicroMicrolino2.0(2018).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 65, 
-    "3330to60": 58.7, 
-    "333Handling": 54,
-
-    "666TopSpeed": 73, 
-    "6660to60": 55.7, 
-    "666Handling": 55,
-
-    "996TopSpeed": 82, 
-    "9960to60": 52.8, 
-    "996Handling": 55,
-
-    "969TopSpeed": 82, 
-    "9690to60": 55.7, 
-    "969Handling": 58,
-
-    "699TopSpeed": 73, 
-    "6990to60": 52.8, 
-    "699Handling": 55,
     "hiddenTag": [""]
 }

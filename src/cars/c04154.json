@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1746,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 66.20,
+    "mra": 66.2,
     "ola": 68.09,
-    "description": "Essentially a raised up Golf R.", 
+    "description": "Essentially a raised up Golf R.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenTiguanR(2021).png",
     "creator": "Fried",
-
-"333TopSpeed": 158, 
-"3330to60": 4.5, 
-"333Handling": 86,
-
-"666TopSpeed": 162, 
-"6660to60": 4.2, 
-"666Handling": 88,
-
-"699TopSpeed": 162, 
-"6990to60": 4.0, 
-"699Handling": 92,
-
-"969TopSpeed": 165, 
-"9690to60": 4.2, 
-"969Handling": 92,
-
-"996TopSpeed": 165, 
-"9960to60": 4.0, 
-"996Handling": 88,
     "hiddenTag": [""]
 }

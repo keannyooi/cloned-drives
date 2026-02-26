@@ -1,7 +1,7 @@
 {
     "carID": "c06875",
     "cr": 677,
-    "make": ["Sportec", "BMW"],
+    "make": ["Sportec","BMW"],
     "model": "SP6 X",
     "modelYear": 2013,
     "country": "CH",
@@ -22,29 +22,7 @@
     "fuelType": "Diesel",
     "mra": 68.92,
     "ola": 76.47,
-
     "description": "M Stripes on a Diesel. How original.",
-
-"333TopSpeed": 166,
-"3330to60": 4.9,
-"333Handling": 84,
-
-"666TopSpeed": 169,
-"6660to60": 4.7,
-"666Handling": 86,
-
-"699TopSpeed": 169,
-"6990to60": 4.4,
-"699Handling": 90,
-
-"969TopSpeed": 173,
-"9690to60": 4.7,
-"969Handling": 90,
-
-"996TopSpeed": 173,
-"9960to60": 4.4,
-"996Handling": 86,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SportecSP6X(2013).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

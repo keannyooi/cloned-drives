@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04020",
     "cr": 27,
     "make": "Suzuki",
@@ -6,47 +6,24 @@
     "modelYear": 2016,
     "country": "JP",
     "topSpeed": 80,
-    "0to60": 20.0,
+    "0to60": 20,
     "handling": 52,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["The Amplification of Asia","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 740,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Other",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 0.00,
-    "ola": 56.00,
+    "mra": 0,
+    "ola": 56,
     "description": "When it works, it works; so why change it?",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SuzukiSuperCarry1.2CargoTruck(2016).png",
     "creator": "Andu",
-
-    "333TopSpeed": 87,
-    "3330to60": 19,
-    "333Handling": 54,
-    
-    "666TopSpeed": 93,
-    "6660to60": 18,
-    "666Handling": 55,
-    
-    "699TopSpeed": 93,
-    "6990to60": 17,
-    "699Handling": 58,
-    
-    "969TopSpeed": 100,
-    "9690to60": 18,
-    "969Handling": 58,
-    
-    "996TopSpeed": 100,
-    "9960to60": 17,
-    "996Handling": 55,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 97,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Endless Summer", "Motorsport", "Supercar", "The Americas Assault"],
+    "tags": ["Endless Summer","Motorsport","Supercar","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1680,
     "gc": "Low",
     "seatCount": 1,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 92.50,
-    "ola": 85.00,
+    "mra": 92.5,
+    "ola": 85,
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AcuraNSXTimeAttackPikesPeak(2022).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 198,
-"3330to60": 2.9,
-"333Handling": 100,
-
-"666TopSpeed": 200,
-"6660to60": 2.8,
-"666Handling": 103,
-
-"699TopSpeed": 200,
-"6990to60": 2.6,
-"699Handling": 108,
-
-"969TopSpeed": 203,
-"9690to60": 2.8,
-"969Handling": 108,
-
-"996TopSpeed": 203,
-"9960to60": 2.6,
-"996Handling": 103,
     "hiddenTag": [""]
 }

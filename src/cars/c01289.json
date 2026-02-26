@@ -1,10 +1,7 @@
 {
     "carID": "c01289",
     "cr": 285,
-    "make": [
-        "Top Fuel",
-        "Honda"
-    ],
+    "make": ["Top Fuel","Honda"],
     "model": "S660 Type RR",
     "modelYear": 2017,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Kei Car"
-    ],
+    "tags": ["Tuner","Kei Car"],
     "isPrize": false,
     "weight": 807,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 61.82,
     "ola": 75.29,
     "description": "Track-serious S660 by Japanese tuners with an astronomical power output... for an S660.",
-     "333TopSpeed": 130,
-    "3330to60": 8.1,
-    "333Handling": 82,
-    "666TopSpeed": 134,
-    "6660to60": 7.7,
-    "666Handling": 84,
-    "996TopSpeed": 138,
-    "9960to60": 7.2,
-    "996Handling": 84,
-    "969TopSpeed": 138,
-    "9690to60": 7.7,
-    "969Handling": 88,
-    "699TopSpeed": 134,
-    "6990to60": 7.2,
-    "699Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TopFuelS660TypeRR(2017).png",
     "creator": "Keanny",
     "hiddenTag": [""]

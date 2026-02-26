@@ -1,7 +1,7 @@
 {
     "carID": "c03071",
     "cr": 613,
-    "make": ["Rinspeed", "Nissan"],
+    "make": ["Rinspeed","Nissan"],
     "model": "Speed-Art",
     "modelYear": 1992,
     "country": "CH",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Rest of The World","Tuner","Unique","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1575,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "This car has 420 horses, both figuratively and literally. No, seriously go count them for yourself.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RinspeedSPeed-art(1992).png",
     "creator": "Keanny",
-
-"333TopSpeed": 189,
-"3330to60": 4.5,
-"333Handling": 87,
-
-"666TopSpeed": 192,
-"6660to60": 4.2,
-"666Handling": 90,
-
-"699TopSpeed": 192,
-"6990to60": 4.0,
-"699Handling": 93,
-
-"969TopSpeed": 194,
-"9690to60": 4.2,
-"969Handling": 93,
-
-"996TopSpeed": 194,
-"9960to60": 4.0,
-"996Handling": 90,
     "hiddenTag": [""]
 }

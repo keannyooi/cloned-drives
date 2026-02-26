@@ -1,7 +1,7 @@
 {
     "carID": "c04135",
     "cr": 847,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "GT 63 4MATIC+ 4-Door Coupe",
     "modelYear": 2018,
     "country": "DE",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Grand Tourer", "Super Sedan"],
+    "tags": ["The Tyrol Tour: Remix","Grand Tourer","Super Sedan"],
     "isPrize": false,
-	
     "weight": 2072,
     "gc": "Low",
     "seatCount": 4,
@@ -26,26 +25,5 @@
     "description": "V8 in true AMG fashion.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-AMGGT634MATIC%2B4-DoorCoupe(2018).png",
     "creator": "Crossfire",
-
-
-    "333TopSpeed": 196, 
-    "3330to60": 3.1, 
-    "333Handling": 94,
-
-    "666TopSpeed": 198, 
-    "6660to60": 3.0, 
-    "666Handling": 97,
-
-    "996TopSpeed": 201, 
-    "9960to60": 2.8, 
-    "996Handling": 97,
-
-    "969TopSpeed": 201, 
-    "9690to60": 3.0, 
-    "969Handling": 101,
-
-    "699TopSpeed": 198, 
-    "6990to60": 2.8, 
-    "699Handling": 101,
     "hiddenTag": [""]
 }

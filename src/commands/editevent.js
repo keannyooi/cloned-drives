@@ -178,7 +178,8 @@ module.exports = {
                 case "settune":
                     let upgrade = args[3];
                     let currentCar = getCar(currentEvent.roster[index - 1].carID);
-                    if (upgrade !== "000" && !currentCar[`${upgrade}TopSpeed`]) {
+                    const validTunes = ["000", "333", "666", "699", "969", "996"];
+                    if (!validTunes.includes(upgrade)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, the tuning stage you requested is unavailable.",
@@ -570,7 +571,8 @@ module.exports = {
 
                     // Validate upgrade
                     let bulkCar = getCar(bulkCarFile);
-                    if (roundData.upgrade !== "000" && !bulkCar[`${roundData.upgrade}TopSpeed`]) {
+                    const validBulkTunes = ["000", "333", "666", "699", "969", "996"];
+                    if (!validBulkTunes.includes(roundData.upgrade)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, invalid upgrade.",

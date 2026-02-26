@@ -1,10 +1,7 @@
 {
     "carID": "c00149",
     "cr": 190,
-    "make": [
-        "Blitz",
-        "Honda"
-    ],
+    "make": ["Blitz","Honda"],
     "model": "S660 Spec C",
     "modelYear": 2016,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Kei Car"
-    ],
+    "tags": ["Tuner","Kei Car"],
     "isPrize": false,
     "weight": 830,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 43.81,
     "ola": 71.71,
     "description": "JDM style speedyness... is that a word?",
-     "333TopSpeed": 106,
-    "3330to60": 9.4,
-    "333Handling": 79,
-    "666TopSpeed": 111,
-    "6660to60": 8.9,
-    "666Handling": 81,
-    "996TopSpeed": 114,
-    "9960to60": 8.4,
-    "996Handling": 81,
-    "969TopSpeed": 114,
-    "9690to60": 8.9,
-    "969Handling": 84,
-    "699TopSpeed": 111,
-    "6990to60": 8.4,
-    "699Handling": 84,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BlitzS660SpecC(2016).png",
     "creator": "Keanny",
     "hiddenTag": [""]

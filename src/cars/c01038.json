@@ -1,11 +1,7 @@
 {
     "carID": "c01038",
     "cr": 616,
-    "make": [
-        "Pogea Racing",
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Pogea Racing","Abarth","Fiat"],
     "model": "Blue Wonder",
     "modelYear": 2015,
     "country": "DE",
@@ -14,11 +10,7 @@
     "handling": 82,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Hot Hatch",
-        "Tuner"
-    ],
+    "tags": ["Street Racer","Hot Hatch","Tuner"],
     "isPrize": false,
     "weight": 964,
     "gc": "Low",
@@ -31,21 +23,6 @@
     "mra": 76.19,
     "ola": 81.25,
     "description": "Pogea Racing's second attempt at tuning a 500, this time throwing out the rear seats and featuring other extensive weight saving techniques. Engine power also boosted to a solid 331 hp.",
-     "333TopSpeed": 166,
-    "3330to60": 4.6,
-    "333Handling": 85,
-    "666TopSpeed": 169,
-    "6660to60": 4.3,
-    "666Handling": 87,
-    "996TopSpeed": 173,
-    "9960to60": 4.1,
-    "996Handling": 87,
-    "969TopSpeed": 173,
-    "9690to60": 4.3,
-    "969Handling": 91,
-    "699TopSpeed": 169,
-    "6990to60": 4.1,
-    "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PogeaRacingBlueWonder(2015).png",
     "creator": "Havvy",
     "hiddenTag": [""]

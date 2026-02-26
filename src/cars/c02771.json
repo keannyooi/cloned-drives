@@ -1,7 +1,7 @@
 {
     "carID": "c02771",
     "cr": 744,
-    "make": ["Hennessey", "Chevrolet"],
+    "make": ["Hennessey","Chevrolet"],
     "model": "Camaro SS HPE700 LS9",
     "modelYear": 2010,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1783,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyCamaroSSHPE700LS9(2010).png",
     "creator": "Keanny",
-
-"333TopSpeed": 204, 
-"3330to60": 3.6, 
-"333Handling": 90,
-
-"666TopSpeed": 206, 
-"6660to60": 3.4, 
-"666Handling": 93,
-
-"699TopSpeed": 206, 
-"6990to60": 3.2, 
-"699Handling": 97,
-
-"969TopSpeed": 209, 
-"9690to60": 3.4, 
-"969Handling": 97,
-
-"996TopSpeed": 209, 
-"9960to60": 3.2, 
-"996Handling": 93,
     "hiddenTag": [""]
 }

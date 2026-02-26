@@ -6,14 +6,11 @@
     "modelYear": 1977,
     "country": "US",
     "topSpeed": 113,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Silver Screen"
-    ],
+    "tags": ["Muscle Car","Silver Screen"],
     "isPrize": false,
     "weight": 1737,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 44.33,
     "ola": 66.67,
     "description": "None.",
-"333TopSpeed": 118,
-"3330to60": 8.5,
-"333Handling": 74,
-
-"666TopSpeed": 122,
-"6660to60": 8.1,
-"666Handling": 77,
-
-"699TopSpeed": 122,
-"6990to60": 7.6,
-"699Handling": 80,
-
-"969TopSpeed": 127,
-"9690to60": 8.1,
-"969Handling": 80,
-
-"996TopSpeed": 127,
-"9960to60": 7.6,
-"996Handling": 77,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PontiacFirebirdTransAmW72400T-A6.6(1977).png",
     "creator": "Johnny",
     "hiddenTag": [""]

@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "The Americas Assault", "Track Day"],
+    "tags": ["Oddity","The Americas Assault","Track Day"],
     "isPrize": false,
-    
     "weight": 771,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Now with added roof!",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PolarisSLingshotGrandTouringLE(2020).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 129,
-    "3330to60": 5.1,
-    "333Handling": 80,
-
-    "666TopSpeed": 133,
-    "6660to60": 4.9,
-    "666Handling": 82,
-
-    "699TopSpeed": 133,
-    "6990to60": 4.6,
-    "699Handling": 85,
-
-    "969TopSpeed": 137,
-    "9690to60": 4.9,
-    "969Handling": 85,
-
-    "996TopSpeed": 137,
-    "9960to60": 4.6,
-    "996Handling": 82,
     "hiddenTag": [""]
 }

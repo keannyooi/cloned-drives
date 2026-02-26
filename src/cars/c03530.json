@@ -1,7 +1,7 @@
 {
     "carID": "c03530",
     "cr": 607,
-    "make": ["Militem", "Ram", "Dodge"],
+    "make": ["Militem","Ram","Dodge"],
     "model": "Magnum",
     "modelYear": 2019,
     "country": "IT",
@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner", "Extreme Juggernaut", "The Americas Assault"],
+    "tags": ["Tuner","Extreme Juggernaut","The Americas Assault"],
     "isPrize": true,
-	
     "weight": 2720,
     "gc": "High",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 57.80,
+    "mra": 57.8,
     "ola": 73.02,
     "description": "American power with a touch of Italian craftsmanship.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MilitemMagnum(2019).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 117,
-"3330to60": 6.0,
-"333Handling": 67,
-
-"666TopSpeed": 122,
-"6660to60": 5.7,
-"666Handling": 69,
-
-"699TopSpeed": 122,
-"6990to60": 5.4,
-"699Handling": 72,
-
-"969TopSpeed": 126,
-"9690to60": 5.7,
-"969Handling": 72,
-
-"996TopSpeed": 126,
-"9960to60": 5.4,
-"996Handling": 69,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Supercar","Track Day"],
+    "tags": ["Concept","Unique","Supercar","Track Day"],
     "isPrize": false,
-	
     "weight": 1021,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Designed to compete with the McLaren F1, ended up being completely scrapped due to being deemed unsafe by TVR owner Peter Wheeler himself. All the prototypes were destroyed in order to support the GT1 and GT2 racer versions. Wasn't the end of road for the Speed 12 monster though...",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TVRProject712(1996).png",
     "creator": "Based",
-
-"333TopSpeed": 242,
-"3330to60": 2.8,
-"333Handling": 91,
-
-"666TopSpeed": 244,
-"6660to60": 2.6,
-"666Handling": 94,
-
-"699TopSpeed": 244,
-"6990to60": 2.5,
-"699Handling": 98,
-
-"969TopSpeed": 247,
-"9690to60": 2.6,
-"969Handling": 98,
-
-"996TopSpeed": 247,
-"9960to60": 2.5,
-"996Handling": 94,
     "hiddenTag": [""]
 }

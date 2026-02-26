@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1270,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,6 @@
     "mra": 40.46,
     "ola": 67.61,
     "description": "A 90's production intepretation of a hotrod by Chrysler.",
- 
-    "333TopSpeed": 121,
-    "3330to60": 6.7,
-    "333Handling": 81,
-
-    "666TopSpeed": 126,
-    "6660to60": 6.4,
-    "666Handling": 83,
-
-    "996TopSpeed": 130,
-    "9960to60": 6,
-    "996Handling": 83,
-
-    "969TopSpeed": 130,
-    "9690to60": 6.4,
-    "969Handling": 87,
-
-    "699TopSpeed": 126,
-    "6990to60": 6,
-    "699Handling": 87,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PlymouthProwler(1997).png",
     "creator": "Spence",
     "hiddenTag": [""]

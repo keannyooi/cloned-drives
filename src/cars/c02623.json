@@ -1,7 +1,7 @@
 {
     "carID": "c02623",
     "cr": 660,
-    "make": ["D3 Cadillac", "Cadillac"],
+    "make": ["D3 Cadillac","Cadillac"],
     "model": "XLR-V Stage 2",
     "modelYear": 2008,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1751,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Yes, a Cadillac tuner, and not the kind of car that your grandfather would drive because it's too extreme for his spine.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/D3CadillacXLRVStage2(2008).png",
     "creator": "Keanny",
-
-"333TopSpeed": 172, 
-"3330to60": 4.0, 
-"333Handling": 76,
-
-"666TopSpeed": 175, 
-"6660to60": 3.8, 
-"666Handling": 79,
-
-"699TopSpeed": 175, 
-"6990to60": 3.6, 
-"699Handling": 82,
-
-"969TopSpeed": 178, 
-"9690to60": 3.8, 
-"969Handling": 82,
-
-"996TopSpeed": 178, 
-"9960to60": 3.6, 
-"996Handling": 79,
     "hiddenTag": [""]
 }

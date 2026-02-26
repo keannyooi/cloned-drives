@@ -1,7 +1,7 @@
 {
     "carID": "c05457",
     "cr": 647,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "Turbo 3.3",
     "modelYear": 1977,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 82.5,
     "ola": 82.56,
     "description": "",
-"333TopSpeed": 179,
-"3330to60": 4.6,
-"333Handling": 82,
-
-"666TopSpeed": 182,
-"6660to60": 4.3,
-"666Handling": 84,
-
-"699TopSpeed": 182,
-"6990to60": 4.1,
-"699Handling": 88,
-
-"969TopSpeed": 185,
-"9690to60": 4.3,
-"969Handling": 88,
-
-"996TopSpeed": 185,
-"9960to60": 4.1,
-"996Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufTurbo3.3(1977).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

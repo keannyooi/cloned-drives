@@ -1,7 +1,7 @@
 {
     "carID": "c03521",
     "cr": 374,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 5.2 4x4 Regular Cab",
     "modelYear": 1994,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2050,
     "gc": "High",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRam15005.24x4RegularCab(1994).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 118,
-"3330to60": 9.0,
-"333Handling": 66,
-
-"666TopSpeed": 122,
-"6660to60": 8.6,
-"666Handling": 68,
-
-"699TopSpeed": 122,
-"6990to60": 8.1,
-"699Handling": 71,
-
-"969TopSpeed": 127,
-"9690to60": 8.6,
-"969Handling": 71,
-
-"996TopSpeed": 127,
-"9960to60": 8.1,
-"996Handling": 68,
     "hiddenTag": [""]
 }

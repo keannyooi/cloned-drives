@@ -10,11 +10,7 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Oddity",
-        "Street Racer",
-        "Grand Tourer"
-    ],
+    "tags": ["Oddity","Street Racer","Grand Tourer"],
     "isPrize": false,
     "weight": 1095,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 38.71,
     "ola": 63.33,
     "description": "This is the first Porsche with the FR layout ever made.",
- "333TopSpeed": 124,
-"3330to60": 9.1,
-"333Handling": 72,
-
-"666TopSpeed": 129,
-"6660to60": 8.6,
-"666Handling": 75,
-
-"699TopSpeed": 129,
-"6990to60": 8.2,
-"699Handling": 78,
-
-"969TopSpeed": 133,
-"9690to60": 8.6,
-"969Handling": 78,
-
-"996TopSpeed": 133,
-"9960to60": 8.2,
-"996Handling": 75,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche924(1976).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

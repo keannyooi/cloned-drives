@@ -1,7 +1,7 @@
 {
     "carID": "c02772",
     "cr": 680,
-    "make": ["Hennessey", "Dodge"],
+    "make": ["Hennessey","Dodge"],
     "model": "Challenger SRT8 HPE600 Turbo",
     "modelYear": 2009,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Muscle Car"],
+    "tags": ["Tuner","Muscle Car"],
     "isPrize": false,
-	
     "weight": 1890,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Add 195 Turbocharged horsies to a Challenger SRT8, then notify Houston control.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyChallengerSRT8HPE600Turbo(2009).png",
     "creator": "Keanny",
-
-"333TopSpeed": 193,
-"3330to60": 3.7,
-"333Handling": 84,
-
-"666TopSpeed": 195,
-"6660to60": 3.5,
-"666Handling": 86,
-
-"699TopSpeed": 195,
-"6990to60": 3.3,
-"699Handling": 90,
-
-"969TopSpeed": 198,
-"9690to60": 3.5,
-"969Handling": 90,
-
-"996TopSpeed": 198,
-"9960to60": 3.3,
-"996Handling": 86,
     "hiddenTag": [""]
 }

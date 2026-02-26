@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Street Racer"],
     "isPrize": false,
-
     "weight": 1382,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,6 @@
     "mra": 68.5,
     "ola": 90,
     "description": "the Taylor Swift edition.",
- 
-    "333TopSpeed": 171,
-    "3330to60": 5.7,
-    "333Handling": 84,
-
-    "666TopSpeed": 174,
-    "6660to60": 5.4,
-    "666Handling": 86,
-
-    "996TopSpeed": 177,
-    "9960to60": 5.1,
-    "996Handling": 86,
-
-    "969TopSpeed": 177,
-    "9690to60": 5.4,
-    "969Handling": 90,
-
-    "699TopSpeed": 174,
-    "6990to60": 5.1,
-    "699Handling": 90,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Ferrari348TS(1991).png",
     "creator": "AK1",
     "hiddenTag": [""]

@@ -10,11 +10,7 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique",
-        "Servers Choice", "Year of the Rabbit"
-    ],
+    "tags": ["Concept","Unique","Servers Choice","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1920,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 91.5,
     "ola": 99.64,
     "description": "This is the Bugatti Chiron in the 90s.",
-"333TopSpeed": 217,
-"3330to60": 3.6,
-"333Handling": 87,
-
-"666TopSpeed": 220,
-"6660to60": 3.4,
-"666Handling": 90,
-
-"699TopSpeed": 220,
-"6990to60": 3.2,
-"699Handling": 93,
-
-"969TopSpeed": 222,
-"9690to60": 3.4,
-"969Handling": 93,
-
-"996TopSpeed": 222,
-"9960to60": 3.2,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BugattiEB183ChironConcept(1999).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

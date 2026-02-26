@@ -1,7 +1,7 @@
 {
     "carID": "c02773",
     "cr": 971,
-    "make": ["Hennessey", "Ram", "Dodge"],
+    "make": ["Hennessey","Ram","Dodge"],
     "model": "Mammoth 1000 TRX",
     "modelYear": 2021,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Tuner","Extreme Juggernaut"],
     "isPrize": true,
-	
     "weight": 2950,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HennesseyMammoth1000TRX(2021).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 134,
-"3330to60": 3,
-"333Handling": 74,
-
-"666TopSpeed": 138,
-"6660to60": 2.9,
-"666Handling": 77,
-
-"699TopSpeed": 138,
-"6990to60": 2.7,
-"699Handling": 80,
-
-"969TopSpeed": 142,
-"9690to60": 2.9,
-"969Handling": 80,
-
-"996TopSpeed": 142,
-"9960to60": 2.7,
-"996Handling": 77,
     "hiddenTag": [""]
 }

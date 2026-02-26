@@ -1,10 +1,7 @@
 {
     "carID": "c00919",
     "cr": 719,
-    "make": [
-        "Mopar",
-        "Dodge"
-    ],
+    "make": ["Mopar","Dodge"],
     "model": "Avenger Rally Spec",
     "modelYear": 2011,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "Unique", "Year of the Rabbit"
-    ],
+    "tags": ["Motorsport","Unique","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1428,
     "gc": "Medium",
@@ -29,21 +23,6 @@
     "mra": 80.9,
     "ola": 90.91,
     "description": "",
-     "333TopSpeed": 125,
-    "3330to60": 5.2,
-    "333Handling": 80,
-    "666TopSpeed": 130,
-    "6660to60": 5.0,
-    "666Handling": 82,
-    "996TopSpeed": 134,
-    "9960to60": 4.7,
-    "996Handling": 82,
-    "969TopSpeed": 134,
-    "9690to60": 5.0,
-    "969Handling": 85,
-    "699TopSpeed": 130,
-    "6990to60": 4.7,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MoparAvengerRallySpec(2011).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

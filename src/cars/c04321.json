@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04321",
     "cr": 206,
     "make": "smart",
@@ -6,47 +6,24 @@
     "modelYear": 2003,
     "country": "DE",
     "topSpeed": 108,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 820,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 41.10,
+    "mra": 41.1,
     "ola": 52.89,
     "description": "A sprite amongst giants.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/smartroadsterpassion(2003).png",
     "creator": "Hastur",
-
-    "333TopSpeed": 112,
-    "3330to60": 10.5,
-    "333Handling": 85,
-    
-    "666TopSpeed": 118,
-    "6660to60": 9.9,
-    "666Handling": 87,
-    
-    "699TopSpeed": 118,
-    "6990to60": 9.4,
-    "699Handling": 91,
-    
-    "969TopSpeed": 122,
-    "9690to60": 9.9,
-    "969Handling": 91,
-    
-    "996TopSpeed": 122,
-    "9960to60": 9.4,
-    "996Handling": 87,
     "hiddenTag": [""]
 }

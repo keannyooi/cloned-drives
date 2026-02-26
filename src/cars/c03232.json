@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 820,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 10.01,
     "ola": 58.15,
     "description": "First facelift brings the mk1 in the 80s.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1100GL(1982).png",
     "creator": "Andu",
-
-    "333TopSpeed": 96,
-    "3330to60": 14.9,
-    "333Handling": 66,
-
-    "666TopSpeed": 102,
-    "6660to60": 14.1, 
-    "666Handling": 68,
-
-    "996TopSpeed": 107,
-    "9960to60": 13.3,
-    "996Handling": 68,
-
-    "969TopSpeed": 107,
-    "9690to60": 14.1,
-    "969Handling": 71,
-
-    "699TopSpeed": 102,
-    "6990to60": 13.3,
-    "699Handling": 71,
     "hiddenTag": [""]
 }

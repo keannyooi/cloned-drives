@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1455,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot6072.216v160(1999).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 141, 
-    "3330to60": 8.7, 
-    "333Handling": 73,
-
-    "666TopSpeed": 145, 
-    "6660to60": 8.3, 
-    "666Handling": 76,
-
-    "996TopSpeed": 148, 
-    "9960to60": 7.8, 
-    "996Handling": 76,
-
-    "969TopSpeed": 148, 
-    "9690to60": 8.3, 
-    "969Handling": 79,
-
-    "699TopSpeed": 145, 
-    "6990to60": 7.8, 
-    "699Handling": 79,
     "hiddenTag": [""]
 }

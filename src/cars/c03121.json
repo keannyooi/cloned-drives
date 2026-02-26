@@ -1,7 +1,7 @@
 {
     "carID": "c03121",
     "cr": 1079,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Hoonicorn V2",
     "modelYear": 2017,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "Style Icon", "Muscle Car", "Ultra Expensive", "RestoMod"],
+    "tags": ["Tuner","Unique","Style Icon","Muscle Car","Ultra Expensive","RestoMod"],
     "isPrize": true,
-	
     "weight": 1310,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "When 900hp wasnt enough, they upped it to 1400hp. Gymkhana 10 https://www.youtube.com/watch?v=m_KBvP0_8Tc and Climbkhana https://www.youtube.com/watch?v=Hg6L_7qLIEQ",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganHoonicornV2(2017).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 193, 
-"3330to60": 1.6, 
-"333Handling": 98,
-
-"666TopSpeed": 195, 
-"6660to60": 1.5, 
-"666Handling": 101,
-
-"699TopSpeed": 195, 
-"6990to60": 1.4, 
-"699Handling": 105,
-
-"969TopSpeed": 198, 
-"9690to60": 1.5, 
-"969Handling": 105,
-
-"996TopSpeed": 198, 
-"9960to60": 1.4, 
-"996Handling": 101,
     "hiddenTag": [""]
 }

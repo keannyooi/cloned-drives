@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Eco-Friendly", "Unique"],
+    "tags": ["Concept","Eco-Friendly","Unique"],
     "isPrize": true,
-	
     "weight": 2100,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheMissionECrossTurismoConcept(2018).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 158, 
-"3330to60": 3.1, 
-"333Handling": 88,
-
-"666TopSpeed": 162, 
-"6660to60": 3.0, 
-"666Handling": 91,
-
-"699TopSpeed": 162, 
-"6990to60": 2.8, 
-"699Handling": 94,
-
-"969TopSpeed": 165, 
-"9690to60": 3.0, 
-"969Handling": 94,
-
-"996TopSpeed": 165, 
-"9960to60": 2.8, 
-"996Handling": 91,
     "hiddenTag": [""]
 }

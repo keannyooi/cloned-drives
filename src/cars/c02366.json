@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Motorsport","Rest of The World"],
     "isPrize": false,
-
     "weight": 1130,
     "gc": "Low",
     "seatCount": 1,
@@ -24,28 +23,7 @@
     "mra": 92.11,
     "ola": 80,
     "description": "A French GT race car that raced in championship with somewhat competitive pace in 93-94.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-    "333TopSpeed": 196,
-    "3330to60": 3.3,
-    "333Handling": 97,
-
-    "666TopSpeed": 198,
-    "6660to60": 3.2,
-    "666Handling": 100,
-
-    "699TopSpeed": 198,
-    "6990to60": 3.0,
-    "699Handling": 104,
-
-    "969TopSpeed": 201,
-    "9690to60": 3.2,
-    "969Handling": 104,
-
-    "996TopSpeed": 201,
-    "9960to60": 3.0,
-    "996Handling": 100,
     "hiddenTag": [""]
 }

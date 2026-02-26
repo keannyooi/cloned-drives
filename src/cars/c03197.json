@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Oceanic View"],
     "isPrize": false,
-
-
     "weight": 940,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 24.54,
     "ola": 59.81,
     "description": "The 2 cylinders wonder.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat50009TwinairTurboLounge(2013).png",
     "creator": "Andu",
-
-    "333TopSpeed": 119,
-    "3330to60": 10.2,
-    "333Handling": 76,
-
-    "666TopSpeed": 123,
-    "6660to60": 9.6,
-    "666Handling": 79,
-
-    "699TopSpeed": 123,
-    "6990to60": 9.1,
-    "699Handling": 82,
-
-    "969TopSpeed": 128,
-    "9690to60": 9.6,
-    "969Handling": 82,
-
-    "996TopSpeed": 128,
-    "9960to60": 9.1,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

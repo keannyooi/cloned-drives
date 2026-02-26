@@ -1,7 +1,7 @@
 {
     "carID": "c03466",
     "cr": 466,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram VTS Concept",
     "modelYear": 1996,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept", "Muscle Car", "The Americas Assault"],
+    "tags": ["Unique","Concept","Muscle Car","The Americas Assault"],
     "isPrize": true,
-	
     "weight": 2000,
     "gc": "Medium",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "The SRT-10’s lesser known older sibling.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRamVTSConcept(1996).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 141,
-"3330to60": 5.6,
-"333Handling": 77,
-
-"666TopSpeed": 145,
-"6660to60": 5.3,
-"666Handling": 80,
-
-"699TopSpeed": 145,
-"6990to60": 5.0,
-"699Handling": 83,
-
-"969TopSpeed": 148,
-"9690to60": 5.3,
-"969Handling": 83,
-
-"996TopSpeed": 148,
-"9960to60": 5.0,
-"996Handling": 80,
     "hiddenTag": [""]
 }

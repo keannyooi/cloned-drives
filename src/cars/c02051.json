@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eco-Friendly"],
     "isPrize": false,
-
     "weight": 985,
     "gc": "Medium",
     "seatCount": 4,
@@ -24,27 +23,6 @@
     "mra": 0,
     "ola": 73.68,
     "description": "Toyota/Scion was ready for an EV city vehicle, but their customers were not.",
- 
-    "333TopSpeed": 85,
-    "3330to60": 12.6,
-    "333Handling": 69,
-
-    "666TopSpeed": 91,
-    "6660to60": 12,
-    "666Handling": 71,
-
-    "996TopSpeed": 98,
-    "9960to60": 11.3,
-    "996Handling": 71,
-
-    "969TopSpeed": 98,
-    "9690to60": 12,
-    "969Handling": 74,
-
-    "699TopSpeed": 91,
-    "6990to60": 11.3,
-    "699Handling": 74,
-    
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ScionIQEV(2013).png",
     "creator": "Keanny",
     "hiddenTag": [""]

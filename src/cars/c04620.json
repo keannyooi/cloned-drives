@@ -6,48 +6,24 @@
     "modelYear": 1992,
     "country": "DE",
     "topSpeed": 140,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1115,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 61.54,
-    "ola": 70.00,
+    "ola": 70,
     "description": "GTI minus TI plus 60.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenCorradoG6016V(1992).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 144,
-    "3330to60": 7.6,
-    "333Handling": 77,
-    
-    "666TopSpeed": 147,
-    "6660to60": 7.2,
-    "666Handling": 80,
-    
-    "699TopSpeed": 147,
-    "6990to60": 6.8,
-    "699Handling": 83,
-    
-    "969TopSpeed": 151,
-    "9690to60": 7.2,
-    "969Handling": 83,
-    
-    "996TopSpeed": 151,
-    "9960to60": 6.8,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

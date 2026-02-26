@@ -1,7 +1,7 @@
 {
     "carID": "c03474",
     "cr": 839,
-    "make": ["RSL Racing", "Ferrari"],
+    "make": ["RSL Racing","Ferrari"],
     "model": "Enzo MM",
     "modelYear": 2010,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Drag",
     "tags": ["The Americas Assault","Ultra Expensive","Tuner","Unique","Oddity","Motorsport"],
     "isPrize": false,
-	
     "weight": 1255,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RSLRacingEnzoMM(2010).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 241,
-"3330to60": 2.6,
-"333Handling": 26,
-
-"666TopSpeed": 243,
-"6660to60": 2.4,
-"666Handling": 27,
-
-"699TopSpeed": 243,
-"6990to60": 2.3,
-"699Handling": 28,
-
-"969TopSpeed": 246,
-"9690to60": 2.4,
-"969Handling": 28,
-
-"996TopSpeed": 246,
-"9960to60": 2.3,
-"996Handling": 27,
     "hiddenTag": [""]
 }

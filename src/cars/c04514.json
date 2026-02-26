@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1425,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30081.6HDiFAP110(2009).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 119,
-    "3330to60": 11.5,
-    "333Handling": 73,
-
-    "666TopSpeed": 123,
-    "6660to60": 10.9,
-    "666Handling": 76,
-
-    "996TopSpeed": 128,
-    "9960to60": 10.3,
-    "996Handling": 76,
-
-    "969TopSpeed": 128,
-    "9690to60": 10.9,
-    "969Handling": 79,
-
-    "699TopSpeed": 123,
-    "6990to60": 10.3,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

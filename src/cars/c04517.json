@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1300,
     "gc": "High",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 54.20,
+    "mra": 54.2,
     "ola": 77.36,
     "description": "2nd generation 3008 finally gaining an idenity as a crossover that can compete in the growing market of crossovers and SUV's. Became Peugeot's one of the most successful cars, and won Car of the Year award in 2017.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30081.6THP165(2016).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 132,
-    "3330to60": 8.4,
-    "333Handling": 77,
-
-    "666TopSpeed": 136,
-    "6660to60": 7.9,
-    "666Handling": 80,
-
-    "699TopSpeed": 136,
-    "6990to60": 7.5,
-    "699Handling": 83,
-
-    "969TopSpeed": 140,
-    "9690to60": 7.9,
-    "969Handling": 83,
-
-    "996TopSpeed": 140,
-    "9960to60": 7.5,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

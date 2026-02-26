@@ -10,9 +10,8 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Hot Hatch", "Eco-Friendly","Visionary Road"],
+    "tags": ["Concept","Hot Hatch","Eco-Friendly","Visionary Road"],
     "isPrize": false,
-	
     "weight": 1300,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The modern day 2CV which also gave birth to the Survolt.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CitroenREVOLTe(2009).png",
     "creator": "Keanny",
-
-"333TopSpeed": 144, 
-"3330to60": 5.3, 
-"333Handling": 82,
-
-"666TopSpeed": 147, 
-"6660to60": 5.0, 
-"666Handling": 84,
-
-"699TopSpeed": 147, 
-"6990to60": 4.8, 
-"699Handling": 88,
-
-"969TopSpeed": 151, 
-"9690to60": 5.0, 
-"969Handling": 88,
-
-"996TopSpeed": 151, 
-"9960to60": 4.8, 
-"996Handling": 84,
     "hiddenTag": [""]
 }

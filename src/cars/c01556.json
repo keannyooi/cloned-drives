@@ -10,11 +10,7 @@
     "handling": 58,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Kei Car",
-        "Concept",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","Concept","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 690,
     "gc": "Medium",
@@ -27,25 +23,6 @@
     "mra": 0,
     "ola": 47.69,
     "description": "The starting foundation of a Honda sports car.",
-"333TopSpeed": 75,
-"3330to60": 21.4,
-"333Handling": 60,
-
-"666TopSpeed": 83,
-"6660to60": 20.3,
-"666Handling": 62,
-
-"699TopSpeed": 83,
-"6990to60": 19.1,
-"699Handling": 64,
-
-"969TopSpeed": 90,
-"9690to60": 20.3,
-"969Handling": 64,
-
-"996TopSpeed": 90,
-"9960to60": 19.1,
-"996Handling": 62,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaSports360Prototype(1962).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

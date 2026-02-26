@@ -10,10 +10,7 @@
     "handling": 99,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Unique"],
     "isPrize": false,
     "weight": 1150,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 92.68,
     "ola": 83.33,
     "description": "None.",
-"333TopSpeed": 173,
-"3330to60": 3.6,
-"333Handling": 102,
-
-"666TopSpeed": 176,
-"6660to60": 3.4,
-"666Handling": 106,
-
-"699TopSpeed": 176,
-"6990to60": 3.2,
-"699Handling": 110,
-
-"969TopSpeed": 179,
-"9690to60": 3.4,
-"969Handling": 110,
-
-"996TopSpeed": 179,
-"9960to60": 3.2,
-"996Handling": 106,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MaseratiGranSportLightGT3(2006).png",
     "creator": "Aqo",
     "hiddenTag": [""]

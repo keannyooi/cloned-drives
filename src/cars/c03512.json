@@ -10,9 +10,8 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Americas Assault", "Street Racer"],
+    "tags": ["The Americas Assault","Street Racer"],
     "isPrize": false,
-	
     "weight": 1241,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Now THIS looks cool. And it's faster too, with upgraded handling and aero mods. The perfect street racer car.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraRSXType-SFactoryPerformance(2003).png",
     "creator": "Based",
-
-"333TopSpeed": 146, 
-"3330to60": 6.2, 
-"333Handling": 82,
-
-"666TopSpeed": 149, 
-"6660to60": 5.9, 
-"666Handling": 84,
-
-"699TopSpeed": 149, 
-"6990to60": 5.5, 
-"699Handling": 88,
-
-"969TopSpeed": 153, 
-"9690to60": 5.9, 
-"969Handling": 88,
-
-"996TopSpeed": 153, 
-"9960to60": 5.5, 
-"996Handling": 84,
     "hiddenTag": [""]
 }

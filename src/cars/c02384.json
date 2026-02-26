@@ -6,13 +6,12 @@
     "modelYear": 1996,
     "country": "FR",
     "topSpeed": 202,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Unique", "Track Day", "Ultra Expensive"],
+    "tags": ["Unique","Track Day","Ultra Expensive"],
     "isPrize": true,
-	
     "weight": 1218,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The EB110 returned to racing with some upgrades compared to LM, however it was not enough to qualify at Le Mans.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-"333TopSpeed": 205, 
-"3330to60": 2.8, 
-"333Handling": 99,
-
-"666TopSpeed": 207, 
-"6660to60": 2.7, 
-"666Handling": 102,
-
-"699TopSpeed": 207, 
-"6990to60": 2.6, 
-"699Handling": 107,
-
-"969TopSpeed": 210, 
-"9690to60": 2.7, 
-"969Handling": 107,
-
-"996TopSpeed": 210, 
-"9960to60": 2.6, 
-"996Handling": 102,
     "hiddenTag": [""]
 }

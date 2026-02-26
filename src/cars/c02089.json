@@ -1,10 +1,7 @@
 {
     "carID": "c02089",
     "cr": 890,
-    "make": [
-        "Ai Design",
-        "Audi"
-    ],
+    "make": ["Ai Design","Audi"],
     "model": "RS 4 Avant Safari",
     "modelYear": 2020,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Tuner",
-        "Oddity"
-    ],
+    "tags": ["Tuner","Oddity"],
     "isPrize": false,
     "weight": 1630,
     "gc": "High",
@@ -29,21 +23,6 @@
     "mra": 72.73,
     "ola": 66.67,
     "description": "Whats better than a Wagon? a Wagon that can do a Safari.",
-     "333TopSpeed": 158,
-    "3330to60": 4.6,
-    "333Handling": 81,
-    "666TopSpeed": 162,
-    "6660to60": 4.3,
-    "666Handling": 83,
-    "996TopSpeed": 165,
-    "9960to60": 4.1,
-    "996Handling": 83,
-    "969TopSpeed": 165,
-    "9690to60": 4.3,
-    "969Handling": 87,
-    "699TopSpeed": 162,
-    "6990to60": 4.1,
-    "699Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AiDesignRS4AvantSafari(2020).png",
     "creator": "Exist",
     "hiddenTag": [""]

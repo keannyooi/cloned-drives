@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Style Icon", "Silver Screen", "Sleeper", "The Japanese Odyssey", "Year of the Rabbit"],
+    "tags": ["Street Racer","Style Icon","Silver Screen","Sleeper","The Japanese Odyssey","Year of the Rabbit"],
     "isPrize": false,
-    
     "weight": 1540,
     "gc": "Medium",
     "seatCount": 4,
@@ -24,27 +23,6 @@
     "mra": 76.5,
     "ola": 77.89,
     "description": "Godzilla.",
- 
-"333TopSpeed": 117,
-"3330to60": 4.8,
-"333Handling": 88,
-
-"666TopSpeed": 121,
-"6660to60": 4.5,
-"666Handling": 91,
-
-"699TopSpeed": 121,
-"6990to60": 4.3,
-"699Handling": 94,
-
-"969TopSpeed": 126,
-"9690to60": 4.5,
-"969Handling": 94,
-
-"996TopSpeed": 126,
-"9960to60": 4.3,
-"996Handling": 91,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTR(R34)(1999).png",
     "creator": "Havvy",
     "hiddenTag": [""]

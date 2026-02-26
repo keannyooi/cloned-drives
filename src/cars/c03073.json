@@ -12,40 +12,18 @@
     "tyreType": "Off-Road",
     "tags": ["Motorsport","The Tyrol Tour","Rest of The World"],
     "isPrize": false,
-
-
     "weight": 960,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 70.00,
+    "mra": 70,
     "ola": 85.71,
     "description": ".",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaKitCar(1997).png",
     "creator": "Connor",
-
-    "333TopSpeed": 135,
-    "3330to60": 4.7,
-    "333Handling": 89,
-
-    "666TopSpeed": 139,
-    "6660to60": 4.4, 
-    "666Handling": 92,
-
-    "996TopSpeed": 143,
-    "9960to60": 4.2,
-    "996Handling": 92,
-
-    "969TopSpeed": 143,
-    "9690to60": 4.4,
-    "969Handling": 95,
-
-    "699TopSpeed": 139,
-    "6990to60": 4.2,
-    "699Handling": 95,
     "hiddenTag": [""]
 }

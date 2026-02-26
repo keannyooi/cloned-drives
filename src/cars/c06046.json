@@ -1,7 +1,7 @@
 {
     "carID": "c06046",
     "cr": 981,
-    "make": ["Edit Automotive", "Porsche"],
+    "make": ["Edit Automotive","Porsche"],
     "model": "g11G",
     "modelYear": 2024,
     "country": "CZ",
@@ -10,7 +10,7 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [ "CD Chasers","Tuner","Unique","Rest of The World"],
+    "tags": ["CD Chasers","Tuner","Unique","Rest of The World"],
     "isPrize": false,
     "weight": 1620,
     "gc": "High",
@@ -23,25 +23,6 @@
     "mra": 75.31,
     "ola": 81.36,
     "description": "",
-"333TopSpeed": 168,
-"3330to60": 4.3,
-"333Handling": 90,
-
-"666TopSpeed": 171,
-"6660to60": 4,
-"666Handling": 93,
-
-"699TopSpeed": 171,
-"6990to60": 3.8,
-"699Handling": 97,
-
-"969TopSpeed": 174,
-"9690to60": 4,
-"969Handling": 97,
-
-"996TopSpeed": 174,
-"9960to60": 3.8,
-"996Handling": 93,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/EditAutomotiveg11G(2024).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

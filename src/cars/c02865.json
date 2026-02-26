@@ -1,7 +1,7 @@
 {
     "carID": "c02865",
     "cr": 751,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "B4 S Bi-Turbo Allrad Edition 99",
     "modelYear": 2018,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1750,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaB4SBi-TurboAllradEdition99(2018).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 191, 
-"3330to60": 3.7, 
-"333Handling": 87,
-
-"666TopSpeed": 194, 
-"6660to60": 3.5, 
-"666Handling": 90,
-
-"699TopSpeed": 194, 
-"6990to60": 3.3, 
-"699Handling": 93,
-
-"969TopSpeed": 196, 
-"9690to60": 3.5, 
-"969Handling": 93,
-
-"996TopSpeed": 196, 
-"9960to60": 3.3, 
-"996Handling": 90,
     "hiddenTag": [""]
 }

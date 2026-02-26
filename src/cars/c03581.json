@@ -1,7 +1,7 @@
 {
     "carID": "c03581",
     "cr": 736,
-    "make": ["Car Craft", "Ford"],
+    "make": ["Car Craft","Ford"],
     "model": "Cobra 200",
     "modelYear": 1993,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","The Americas Assault","Muscle Car","Endless Summer"],
     "isPrize": false,
-	
     "weight": 1476,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Car Craft Magazine had a goal: Reach 200 MPH in a domestic street-legal car. This supercharged 5.0 liter monster putting out 740 HP and revving to 7,200 RPM is the result.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CarCraftCobra200(1993).png",
     "creator": "Preston",
-
-"333TopSpeed": 205,
-"3330to60": 3.3,
-"333Handling": 84,
-
-"666TopSpeed": 207,
-"6660to60": 3.1,
-"666Handling": 86,
-
-"699TopSpeed": 207,
-"6990to60": 3,
-"699Handling": 90,
-
-"969TopSpeed": 210,
-"9690to60": 3.1,
-"969Handling": 90,
-
-"996TopSpeed": 210,
-"9960to60": 3,
-"996Handling": 86,
     "hiddenTag": [""]
 }

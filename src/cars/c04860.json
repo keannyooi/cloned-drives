@@ -1,7 +1,7 @@
 {
     "carID": "c04860",
     "cr": 98,
-    "make": ["Porsche-Studebaker", "Porsche", "Studebaker"],
+    "make": ["Porsche-Studebaker","Porsche","Studebaker"],
     "model": "Type 542",
     "modelYear": 1952,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Concept","Unique","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1450,
     "gc": "Medium",
     "seatCount": 5,
@@ -25,26 +24,6 @@
     "ola": 59.15,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheStudebakerType542(1952).png",
-
-"333TopSpeed": 88,
-"3330to60": 14.7,
-"333Handling": 62,
-
-"666TopSpeed": 95,
-"6660to60": 14,
-"666Handling": 64,
-
-"699TopSpeed": 95,
-"6990to60": 13.2,
-"699Handling": 67,
-
-"969TopSpeed": 101,
-"9690to60": 14,
-"969Handling": 67,
-
-"996TopSpeed": 101,
-"9960to60": 13.2,
-"996Handling": 64,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

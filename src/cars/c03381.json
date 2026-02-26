@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Unique", "Track Day"],
+    "tags": ["The Tyrol Tour: Remix","Unique","Track Day"],
     "isPrize": false,
-	
     "weight": 1390,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FerrariFX(2001).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 212,
-"3330to60": 3.1,
-"333Handling": 93,
-
-"666TopSpeed": 215,
-"6660to60": 3,
-"666Handling": 96,
-
-"699TopSpeed": 215,
-"6990to60": 2.8,
-"699Handling": 100,
-
-"969TopSpeed": 217,
-"9690to60": 3,
-"969Handling": 100,
-
-"996TopSpeed": 217,
-"9960to60": 2.8,
-"996Handling": 96,
     "hiddenTag": [""]
 }

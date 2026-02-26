@@ -1,10 +1,7 @@
 {
     "carID": "c00341",
     "cr": 833,
-    "make": [
-        "delta4x4",
-        "Tesla"
-    ],
+    "make": ["delta4x4","Tesla"],
     "model": "Model 3 Dual Motor Long Range Off-Road Pack",
     "modelYear": 2020,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Eco-Friendly",
-        "Tuner"
-    ],
+    "tags": ["Eco-Friendly","Tuner"],
     "isPrize": false,
     "weight": 1855,
     "gc": "Medium",
@@ -29,21 +23,6 @@
     "mra": 77.86,
     "ola": 88.19,
     "description": "A customer wanted to cope better with Norwegian terrain in his Tesla. So delta4x4 built this.",
-     "333TopSpeed": 149,
-    "3330to60": 4,
-    "333Handling": 83,
-    "666TopSpeed": 152,
-    "6660to60": 3.8,
-    "666Handling": 85,
-    "996TopSpeed": 151,
-    "9960to60": 3.6,
-    "996Handling": 85,
-    "969TopSpeed": 156,
-    "9690to60": 3.8,
-    "969Handling": 89,
-    "699TopSpeed": 152,
-    "6990to60": 3.6,
-    "699Handling": 89,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/delta4x4Model3DualModelLongRangeOff-RoadPack(2020).png",
     "creator": "Keanny",
     "hiddenTag": [""]

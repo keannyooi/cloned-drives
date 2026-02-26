@@ -10,13 +10,11 @@
     "handling": 65,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 890,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 10.11,
     "ola": 56.15,
     "description": "Barebones basic served to a T.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.6DieselMatch(1985).png",
     "creator": "Andu",
-
-    "333TopSpeed": 97,
-    "3330to60": 17.3,
-    "333Handling": 67,
-
-    "666TopSpeed": 102,
-    "6660to60": 16.4, 
-    "666Handling": 69,
-
-    "996TopSpeed": 108,
-    "9960to60": 15.5,
-    "996Handling": 69,
-
-    "969TopSpeed": 108,
-    "9690to60": 16.4,
-    "969Handling": 72,
-
-    "699TopSpeed": 102,
-    "6990to60": 15.5,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

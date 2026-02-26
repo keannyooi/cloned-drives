@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1750,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.69,
-    "ola": 72.00,
+    "ola": 72,
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumSE(2005).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 119,
-"3330to60": 9.1,
-"333Handling": 67,
-
-"666TopSpeed": 123,
-"6660to60": 8.6,
-"666Handling": 69,
-
-"699TopSpeed": 123,
-"6990to60": 8.2,
-"699Handling": 72,
-
-"969TopSpeed": 128,
-"9690to60": 8.6,
-"969Handling": 72,
-
-"996TopSpeed": 128,
-"9960to60": 8.2,
-"996Handling": 69,
     "hiddenTag": [""]
 }

@@ -6,13 +6,12 @@
     "modelYear": 2017,
     "country": "FR",
     "topSpeed": 124,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","Oceanic View"],
+    "tags": ["Concept","Unique","Oceanic View"],
     "isPrize": false,
-
     "weight": 1800,
     "gc": "Low",
     "seatCount": 4,
@@ -24,28 +23,7 @@
     "mra": 59.62,
     "ola": 76,
     "description": "A Peugeot shooting brake with autonomous technology that was designed for 2025.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotInstinctConcept(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 128,
-    "3330to60": 4.8,
-    "333Handling": 83,
-
-    "666TopSpeed": 132,
-    "6660to60": 4.5,
-    "666Handling": 85,
-
-    "996TopSpeed": 137,
-    "9960to60": 4.3,
-    "996Handling": 85,
-
-    "969TopSpeed": 137,
-    "9690to60": 4.5,
-    "969Handling": 89,
-
-    "699TopSpeed": 132,
-    "6990to60": 4.3,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

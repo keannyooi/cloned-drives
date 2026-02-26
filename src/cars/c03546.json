@@ -6,13 +6,12 @@
     "modelYear": 2012,
     "country": "GB",
     "topSpeed": 127,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Track Day","The Midlands Cruise"],
     "isPrize": false,
-	
     "weight": 887,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LotusEliseClubRacer(2012).png",
     "creator": "Tom",
-
-"333TopSpeed": 131,
-"3330to60": 6.6,
-"333Handling": 91,
-
-"666TopSpeed": 135,
-"6660to60": 6.3,
-"666Handling": 94,
-
-"699TopSpeed": 135,
-"6990to60": 6,
-"699Handling": 98,
-
-"969TopSpeed": 139,
-"9690to60": 6.3,
-"969Handling": 98,
-
-"996TopSpeed": 139,
-"9960to60": 6,
-"996Handling": 94,
     "hiddenTag": [""]
 }

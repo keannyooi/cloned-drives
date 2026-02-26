@@ -22,30 +22,8 @@
     "fuelType": "Petrol",
     "mra": 50.75,
     "ola": 82.18,
-	
     "description": "The first of many Wienermobiles to be built off an Isuzu Elf frame.",
-	
-"333TopSpeed": 105,
-"3330to60": 19.2,
-"333Handling": 50,
-
-"666TopSpeed": 110,
-"6660to60": 18.2,
-"666Handling": 51,
-
-"699TopSpeed": 110,
-"6990to60": 17.2,
-"699Handling": 53,
-
-"969TopSpeed": 116,
-"9690to60": 18.2,
-"969Handling": 53,
-
-"996TopSpeed": 116,
-"9960to60": 17.2,
-"996Handling": 51,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1995).png",
     "creator": "GAAN",
-	"hiddenTag": [""]
+    "hiddenTag": [""]
 }

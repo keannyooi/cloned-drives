@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1230,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Machine.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctavia1416VAmbiente(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 111,
-    "3330to60": 14.1,
-    "333Handling": 72,
-
-    "666TopSpeed": 116,
-    "6660to60": 13.3, 
-    "666Handling": 75,
-
-    "996TopSpeed": 121,
-    "9960to60": 12.6,
-    "996Handling": 75,
-
-    "969TopSpeed": 121,
-    "9690to60": 13.3,
-    "969Handling": 78,
-
-    "699TopSpeed": 116,
-    "6990to60": 12.6,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

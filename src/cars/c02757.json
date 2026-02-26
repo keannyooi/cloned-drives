@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1359,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "As GM's first production EV since the EV1, the Spark EV was conceived just to comply with US policies like the car that came before it. Initially only available in California and Oregon, it operated under the a leasing system too, though this time there was no waitlist and car crusing. LiFePO batteries made by A123 Systems power the car's 97kW motor to produce a surprising 542Nm of torque.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletSparkEV(2013).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 96, 
-    "3330to60": 7.3, 
-    "333Handling": 73,
-
-    "666TopSpeed": 102, 
-    "6660to60": 6.9, 
-    "666Handling": 76,
-
-    "699TopSpeed": 102, 
-    "6990to60": 6.5, 
-    "699Handling": 79,
-
-    "969TopSpeed": 107, 
-    "9690to60": 6.9, 
-    "969Handling": 79,
-
-    "996TopSpeed": 107, 
-    "9960to60": 6.5, 
-    "996Handling": 76,
     "hiddenTag": [""]
 }

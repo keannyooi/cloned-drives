@@ -10,10 +10,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Servers Choice",
-        "OG", "Year of the Rabbit"
-    ],
+    "tags": ["Servers Choice","OG","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1417,
     "gc": "Medium",
@@ -23,28 +20,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 54.70,
+    "mra": 54.7,
     "ola": 62.98,
     "description": "The Cloned Drives Staple.",
-  "333TopSpeed": 118,
-"3330to60": 8.3,
-"333Handling": 79,
-
-"666TopSpeed": 122,
-"6660to60": 7.8,
-"666Handling": 81,
-
-"699TopSpeed": 122,
-"6990to60": 7.4,
-"699Handling": 84,
-
-"969TopSpeed": 127,
-"9690to60": 7.8,
-"969Handling": 84,
-
-"996TopSpeed": 127,
-"9960to60": 7.4,
-"996Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenBeetle2.5(2011).png",
     "creator": "Andu",
     "hiddenTag": [""]

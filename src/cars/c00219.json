@@ -10,11 +10,7 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Supercar",
-        "Unique", "Year of the Rabbit"
-    ],
+    "tags": ["Concept","Supercar","Unique","Year of the Rabbit"],
     "isPrize": true,
     "weight": 1990,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 99.51,
     "ola": 92.3,
     "description": "This is the development study version of the Veyron that we've known today.",
-"333TopSpeed": 213,
-"3330to60": 3.5,
-"333Handling": 87,
-
-"666TopSpeed": 216,
-"6660to60": 3.3,
-"666Handling": 90,
-
-"699TopSpeed": 216,
-"6990to60": 3.1,
-"699Handling": 93,
-
-"969TopSpeed": 218,
-"9690to60": 3.3,
-"969Handling": 93,
-
-"996TopSpeed": 218,
-"9960to60": 3.1,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BugattiEB184VeyronConcept(1999).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -10,9 +10,8 @@
     "handling": 52,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite", "Eco-Friendly", "Oddity", "Unique","Cloned Drives Beta: Last of","Rest of The World"],
+    "tags": ["Eurotech Elite","Eco-Friendly","Oddity","Unique","Cloned Drives Beta: Last of","Rest of The World"],
     "isPrize": false,
-	
     "weight": 513,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Modern interpretation of the BMW/Iso Isetta from the 50's as an small electric \"quadricycle\" by a Swiss company called Micro. It offers between 120 and 200 km's of range depending on the battery and it produces a whopping 15 hp. Unfortunately, this version never made it into production.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MicroMicrolino1.0(2018).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 65, 
-    "3330to60": 58.7, 
-    "333Handling": 54,
-
-    "666TopSpeed": 73, 
-    "6660to60": 55.7, 
-    "666Handling": 55,
-
-    "996TopSpeed": 82, 
-    "9960to60": 52.8, 
-    "996Handling": 55,
-
-    "969TopSpeed": 82, 
-    "9690to60": 55.7, 
-    "969Handling": 58,
-
-    "699TopSpeed": 73, 
-    "6990to60": 52.8, 
-    "699Handling": 55,
     "hiddenTag": [""]
 }

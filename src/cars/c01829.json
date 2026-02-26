@@ -1,10 +1,7 @@
 {
     "carID": "c01829",
     "cr": 608,
-    "make": [
-        "Strosek",
-        "Nissan"
-    ],
+    "make": ["Strosek","Nissan"],
     "model": "350Z-R Kompressor",
     "modelYear": 2005,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1560,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 79.96,
     "ola": 84.05,
     "description": "German Tuner Strosek enters Japan with the Z, ends up gaining popularity outside Japan as well.",
-     "333TopSpeed": 184,
-    "3330to60": 4.8,
-    "333Handling": 89,
-    "666TopSpeed": 187,
-    "6660to60": 4.5,
-    "666Handling": 92,
-    "996TopSpeed": 190,
-    "9960to60": 4.3,
-    "996Handling": 92,
-    "969TopSpeed": 190,
-    "9690to60": 4.5,
-    "969Handling": 95,
-    "699TopSpeed": 187,
-    "6990to60": 4.3,
-    "699Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Strosek350Z-RKompressor(2005).png",
     "creator": "Keanny",
     "hiddenTag": [""]

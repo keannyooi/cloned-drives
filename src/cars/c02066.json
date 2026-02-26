@@ -1,10 +1,7 @@
 {
     "carID": "c02066",
     "cr": 478,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "C 43",
     "modelYear": 1997,
     "country": "DE",
@@ -26,21 +23,6 @@
     "mra": 68.8,
     "ola": 82.59,
     "description": "The real Original Merc AMG.",
-     "333TopSpeed": 158,
-    "3330to60": 5.9,
-    "333Handling": 80,
-    "666TopSpeed": 162,
-    "6660to60": 5.6,
-    "666Handling": 82,
-    "996TopSpeed": 165,
-    "9960to60": 5.3,
-    "996Handling": 82,
-    "969TopSpeed": 165,
-    "9690to60": 5.6,
-    "969Handling": 85,
-    "699TopSpeed": 162,
-    "6990to60": 5.3,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzC43AMG(1997).png",
     "creator": "Havvy",
     "hiddenTag": [""]

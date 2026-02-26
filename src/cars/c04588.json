@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1286,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Impossible to imagine Octavia without TDI.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctavia19TDISLX(1996).png",
     "creator": "Connor",
-
-    "333TopSpeed": 116,
-    "3330to60": 12.4,
-    "333Handling": 72,
-
-    "666TopSpeed": 120,
-    "6660to60": 11.8, 
-    "666Handling": 75,
-
-    "996TopSpeed": 125,
-    "9960to60": 11.1,
-    "996Handling": 75,
-
-    "969TopSpeed": 125,
-    "9690to60": 11.8,
-    "969Handling": 78,
-
-    "699TopSpeed": 120,
-    "6990to60": 11.1,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c03422",
     "cr": 940,
-    "make": ["Edo Competition", "Maserati"],
+    "make": ["Edo Competition","Maserati"],
     "model": "MC12 Versione Corsa",
     "modelYear": 2007,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Unique","Ultra Expensive","Track Day","Tuner","The Tyrol Tour: Remix"],
     "isPrize": true,
-	
     "weight": 1150,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 244,
-"3330to60": 2.7,
-"333Handling": 100,
-
-"666TopSpeed": 246,
-"6660to60": 2.5,
-"666Handling": 103,
-
-"699TopSpeed": 246,
-"6990to60": 2.4,
-"699Handling": 108,
-
-"969TopSpeed": 248,
-"9690to60": 2.5,
-"969Handling": 108,
-
-"996TopSpeed": 248,
-"9960to60": 2.4,
-"996Handling": 103,
     "hiddenTag": [""]
 }

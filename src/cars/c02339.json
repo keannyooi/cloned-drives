@@ -10,9 +10,8 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Unique", "Ultra Expensive", "Eargasm", "Hypercar"],
+    "tags": ["Track Day","Unique","Ultra Expensive","Eargasm","Hypercar"],
     "isPrize": true,
-	
     "weight": 1450,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniVenenoLP750-4(2013).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 223, 
-"3330to60": 2.6, 
-"333Handling": 99,
-
-"666TopSpeed": 226, 
-"6660to60": 2.4, 
-"666Handling": 102,
-
-"699TopSpeed": 226, 
-"6990to60": 2.3, 
-"699Handling": 107,
-
-"969TopSpeed": 228, 
-"9690to60": 2.4, 
-"969Handling": 107,
-
-"996TopSpeed": 228, 
-"9960to60": 2.3, 
-"996Handling": 102,
     "hiddenTag": [""]
 }

@@ -22,30 +22,8 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 0,
-	
     "description": "The original Wienermobile, now with a glass window!",
-	
-"333TopSpeed": 56,
-"3330to60": 99.9,
-"333Handling": 43,
-
-"666TopSpeed": 64,
-"6660to60": 89.9,
-"666Handling": 45,
-
-"699TopSpeed": 64,
-"6990to60": 84.9,
-"699Handling": 47,
-
-"969TopSpeed": 73,
-"9690to60": 89.9,
-"969Handling": 47,
-
-"996TopSpeed": 73,
-"9960to60": 84.9,
-"996Handling": 45,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1940).png",
     "creator": "GAAN",
-	"hiddenTag": [""]
+    "hiddenTag": [""]
 }

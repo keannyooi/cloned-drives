@@ -10,7 +10,7 @@
     "handling": 50,
     "driveType": "AWD",
     "tyreType": "Drag",
-    "tags": ["CDCCS", "BOSS"],
+    "tags": ["CDCCS","BOSS"],
     "isPrize": true,
     "weight": 25890,
     "gc": "Low",
@@ -23,25 +23,6 @@
     "mra": 170,
     "ola": 77.77,
     "description": "",
-"333TopSpeed": 332,
-"3330to60": 1.6,
-"333Handling": 52,
-
-"666TopSpeed": 333,
-"6660to60": 1.5,
-"666Handling": 53,
-
-"699TopSpeed": 333,
-"6990to60": 1.4,
-"699Handling": 56,
-
-"969TopSpeed": 335,
-"9690to60": 1.5,
-"969Handling": 56,
-
-"996TopSpeed": 335,
-"9960to60": 1.4,
-"996Handling": 53,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/(BOSS)optimusprime.png",
     "creator": "Yapper",
     "hiddenTag": [""]

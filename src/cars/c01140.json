@@ -6,13 +6,11 @@
     "modelYear": 2010,
     "country": "FR",
     "topSpeed": 112,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept", "Eco-Friendly"
-    ],
+    "tags": ["Concept","Eco-Friendly"],
     "isPrize": false,
     "weight": 830,
     "gc": "Low",
@@ -25,27 +23,6 @@
     "mra": 51,
     "ola": 65.2,
     "description": "As the first project led by Laurens van de Acker after leaving Mazda for Renault, the DeZir is the first in a series of show cars under Renault's new styling movement, with each car signifying a stage in a \"life cycle\". It's symbolistic of love and passion inside and out with its bright red colour and super flowy body lines. Despite being powered by electricity, it has none of the chunkiness of conventional EVs thanks to its lightweight Kevlar body and underpinnings derived from the Megane Trophy.",
- 
-    "333TopSpeed": 117,
-    "3330to60": 4.8,
-    "333Handling": 93,
-
-    "666TopSpeed": 121,
-    "6660to60": 4.5,
-    "666Handling": 96,
-
-    "996TopSpeed": 126,
-    "9960to60": 4.3,
-    "996Handling": 96,
-
-    "969TopSpeed": 126,
-    "9690to60": 4.5,
-    "969Handling": 100,
-
-    "699TopSpeed": 121,
-    "6990to60": 4.3,
-    "699Handling": 100,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RenaultDeZir(2010).png",
     "creator": "Keanny",
     "hiddenTag": [""]

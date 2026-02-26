@@ -1,7 +1,7 @@
 {
     "carID": "c05629",
     "cr": 59,
-    "make": ["Gordon Murray Design", "Gordon Murray Automotive"],
+    "make": ["Gordon Murray Design","Gordon Murray Automotive"],
     "model": "T.27 Concept",
     "modelYear": 2011,
     "country": "GB",
@@ -23,25 +23,6 @@
     "mra": 0,
     "ola": 44.36,
     "description": "",
-"333TopSpeed": 73,
-"3330to60": 13.2,
-"333Handling": 57,
-
-"666TopSpeed": 81,
-"6660to60": 12.5,
-"666Handling": 59,
-
-"699TopSpeed": 81,
-"6990to60": 11.8,
-"699Handling": 61,
-
-"969TopSpeed": 89,
-"9690to60": 12.5,
-"969Handling": 61,
-
-"996TopSpeed": 89,
-"9960to60": 11.8,
-"996Handling": 59,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GMDT27Concept(2011).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

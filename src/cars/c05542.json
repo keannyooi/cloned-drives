@@ -6,7 +6,7 @@
     "modelYear": 2007,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -23,25 +23,6 @@
     "mra": 65.75,
     "ola": 76.42,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 4.8,
-"333Handling": 86,
-
-"666TopSpeed": 162,
-"6660to60": 4.5,
-"666Handling": 88,
-
-"699TopSpeed": 162,
-"6990to60": 4.3,
-"699Handling": 92,
-
-"969TopSpeed": 165,
-"9690to60": 4.5,
-"969Handling": 92,
-
-"996TopSpeed": 165,
-"9960to60": 4.3,
-"996Handling": 88,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BMW135iCoupe(2007).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

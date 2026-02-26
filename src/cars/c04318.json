@@ -1,7 +1,7 @@
-{  
+{
     "carID": "c04318",
     "cr": 303,
-    "make": ["Milltek", "Volkswagen"],
+    "make": ["Milltek","Volkswagen"],
     "model": "up! GTI",
     "modelYear": 2019,
     "country": "DE",
@@ -10,13 +10,11 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Tuner","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1070,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 52.03,
     "ola": 83.12,
     "description": "A genuine laugh out loud tiny tuned terror.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Milltekup!GTI(2019).png",
     "creator": "void",
-
-    "333TopSpeed": 129,
-    "3330to60": 7.3,
-    "333Handling": 81,
-    
-    "666TopSpeed": 133,
-    "6660to60": 6.9,
-    "666Handling": 83,
-    
-    "699TopSpeed": 133,
-    "6990to60": 6.5,
-    "699Handling": 87,
-    
-    "969TopSpeed": 137,
-    "9690to60": 6.9,
-    "969Handling": 87,
-    
-    "996TopSpeed": 137,
-    "9960to60": 6.5,
-    "996Handling": 83,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c03196",
     "cr": 885,
-    "make": ["Edo Competition", "Maserati"],
+    "make": ["Edo Competition","Maserati"],
     "model": "MC12 Corsa SL",
     "modelYear": 2005,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Track Day","Unique","Tuner","Ultra Expensive","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1160,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/EdoCompetitionMC12CorsaSL(2005).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 212,
-"3330to60": 2.9,
-"333Handling": 97,
-
-"666TopSpeed": 215,
-"6660to60": 2.8,
-"666Handling": 100,
-
-"699TopSpeed": 215,
-"6990to60": 2.6,
-"699Handling": 104,
-
-"969TopSpeed": 217,
-"9690to60": 2.8,
-"969Handling": 104,
-
-"996TopSpeed": 217,
-"9960to60": 2.6,
-"996Handling": 100,
     "hiddenTag": [""]
 }

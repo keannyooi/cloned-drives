@@ -1,7 +1,7 @@
 {
     "carID": "c00135",
     "cr": 631,
-    "make": ["Autodelta", "Alfa Romeo"],
+    "make": ["Autodelta","Alfa Romeo"],
     "model": "147 GTA AM 3.7 Super",
     "modelYear": 2005,
     "country": "GB",
@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner", "Sleeper"],
+    "tags": ["Hot Hatch","Tuner","Sleeper"],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 76.19,
     "ola": 91.67,
     "description": "After breaking out on Top Gear, the Londoners decided to push the limits of the GTA's engine furhter. The GTA AM (short for Autodelta Maggiorata) now has a custom Rotrex supercharger added on top of the bored engine as well as many all-around powertrain upgrades. This gives a boosted horsepower figure of 400hp, which rightfully sounds scary.",
- 
-    "333TopSpeed": 183,
-    "3330to60": 4.6,
-    "333Handling": 88,
-
-    "666TopSpeed": 186,
-    "6660to60": 4.3,
-    "666Handling": 91,
-
-    "996TopSpeed": 189,
-    "9960to60": 4.1,
-    "996Handling": 91,
-
-    "969TopSpeed": 189,
-    "9690to60": 4.3,
-    "969Handling": 94,
-
-    "699TopSpeed": 186,
-    "6990to60": 4.1,
-    "699Handling": 94,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta147GTAAM3.7Super(2005).png",
     "creator": "Keanny",
     "hiddenTag": [""]

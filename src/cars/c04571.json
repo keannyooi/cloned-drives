@@ -1,7 +1,7 @@
 {
     "carID": "c04571",
     "cr": 199,
-    "make": ["Glockler-Porsche", "Porsche"],
+    "make": ["Glockler-Porsche","Porsche"],
     "model": "356 Weidenhausen Roadster",
     "modelYear": 1951,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 514,
     "gc": "Medium",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 72.14,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Glockler-Porsche356WeidenhausenRoadster(1951).png",
-
-"333TopSpeed": 120,
-"3330to60": 9.3,
-"333Handling": 65,
-
-"666TopSpeed": 124,
-"6660to60": 8.8,
-"666Handling": 67,
-
-"699TopSpeed": 124,
-"6990to60": 8.3,
-"699Handling": 70,
-
-"969TopSpeed": 129,
-"9690to60": 8.8,
-"969Handling": 70,
-
-"996TopSpeed": 129,
-"9960to60": 8.3,
-"996Handling": 67,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

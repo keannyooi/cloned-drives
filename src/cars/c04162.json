@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1440,
     "gc": "Medium",
     "seatCount": 4,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 53.18,
-    "ola": 61.40,
+    "ola": 61.4,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/odgeStealthES(1991).png",
     "creator": "DodgeDemon",
-	
-"333TopSpeed": 155,
-"3330to60": 6.7,
-"333Handling": 77,
-
-"666TopSpeed": 159,
-"6660to60": 6.4,
-"666Handling": 80,
-
-"699TopSpeed": 159,
-"6990to60": 6.0,
-"699Handling": 83,
-
-"969TopSpeed": 162,
-"9690to60": 6.4,
-"969Handling": 83,
-
-"996TopSpeed": 162,
-"9960to60": 6.0,
-"996Handling": 80,
     "hiddenTag": [""]
 }

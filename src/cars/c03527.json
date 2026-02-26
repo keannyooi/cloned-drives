@@ -1,7 +1,7 @@
 {
     "carID": "c03527",
     "cr": 264,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 SS/T",
     "modelYear": 1997,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Americas Assault"],
     "isPrize": true,
-	
     "weight": 1920,
     "gc": "Medium",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "Not your ordinary sport truck, this is a super sport truck.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Dodgeram1500SST(1997).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 115,
-"3330to60": 8.0,
-"333Handling": 75,
-
-"666TopSpeed": 119,
-"6660to60": 7.6,
-"666Handling": 78,
-
-"699TopSpeed": 119,
-"6990to60": 7.1,
-"699Handling": 81,
-
-"969TopSpeed": 124,
-"9690to60": 7.6,
-"969Handling": 81,
-
-"996TopSpeed": 124,
-"9960to60": 7.1,
-"996Handling": 78,
     "hiddenTag": [""]
 }

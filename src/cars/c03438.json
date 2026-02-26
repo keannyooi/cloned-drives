@@ -10,10 +10,8 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "The Tyrol Tour: Remix","Visionary Road"],
+    "tags": ["Innovative","The Tyrol Tour: Remix","Visionary Road"],
     "isPrize": false,
-
-
     "weight": 700,
     "gc": "Medium",
     "seatCount": 2,
@@ -27,25 +25,5 @@
     "description": "First Rotary powered production car.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NSUSpiderWankel(1963).png",
     "creator": "Connor",
-
-    "333TopSpeed": 100,
-    "3330to60": 14.3,
-    "333Handling": 61,
-
-    "666TopSpeed": 106,
-    "6660to60": 13.6, 
-    "666Handling": 63,
-
-    "996TopSpeed": 111,
-    "9960to60": 12.8,
-    "996Handling": 63,
-
-    "969TopSpeed": 111,
-    "9690to60": 13.6,
-    "969Handling": 65,
-
-    "699TopSpeed": 106,
-    "6990to60": 12.8,
-    "699Handling": 65,
     "hiddenTag": [""]
 }

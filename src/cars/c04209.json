@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 2205,
     "gc": "High",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 51.60,
+    "mra": 51.6,
     "ola": 67.57,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiLevanteDiesel(2016).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 148, 
-    "3330to60": 6.5, 
-    "333Handling": 80,
-
-    "666TopSpeed": 151, 
-    "6660to60": 6.1, 
-    "666Handling": 82,
-
-    "996TopSpeed": 155, 
-    "9960to60": 5.8, 
-    "996Handling": 82,
-
-    "969TopSpeed": 155, 
-    "9690to60": 6.1, 
-    "969Handling": 85,
-
-    "699TopSpeed": 151, 
-    "6990to60": 5.8, 
-    "699Handling": 85,
     "hiddenTag": [""]
 }

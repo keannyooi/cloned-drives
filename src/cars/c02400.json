@@ -1,18 +1,17 @@
 {
     "carID": "c02400",
     "cr": 582,
-    "make": ["Mopar", "Dodge"],
+    "make": ["Mopar","Dodge"],
     "model": "Neon SRT-4 Stage 1",
     "modelYear": 2006,
     "country": "US",
     "topSpeed": 161,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 1327,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MoparNeonSRT4Stage1(2006).png",
     "creator": "Keanny",
-
-"333TopSpeed": 164, 
-"3330to60": 4.8, 
-"333Handling": 86,
-
-"666TopSpeed": 167, 
-"6660to60": 4.5, 
-"666Handling": 88,
-
-"699TopSpeed": 167, 
-"6990to60": 4.3, 
-"699Handling": 92,
-
-"969TopSpeed": 171, 
-"9690to60": 4.5, 
-"969Handling": 92,
-
-"996TopSpeed": 171, 
-"9960to60": 4.3, 
-"996Handling": 88,
     "hiddenTag": [""]
 }

@@ -1,10 +1,7 @@
 {
     "carID": "c01452",
     "cr": 642,
-    "make": [
-        "Dinan",
-        "BMW"
-    ],
+    "make": ["Dinan","BMW"],
     "model": "S2-M3",
     "modelYear": 2003,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1578,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 65.71,
     "ola": 91.11,
     "description": "Can the brilliant M3 be made even better?",
-     "333TopSpeed": 192,
-    "3330to60": 4.4,
-    "333Handling": 89,
-    "666TopSpeed": 195,
-    "6660to60": 4.1,
-    "666Handling": 92,
-    "996TopSpeed": 197,
-    "9960to60": 3.9,
-    "996Handling": 92,
-    "969TopSpeed": 197,
-    "9690to60": 4.1,
-    "969Handling": 95,
-    "699TopSpeed": 195,
-    "6990to60": 3.9,
-    "699Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DinanS2M3(2003).png",
     "creator": "Havvy",
     "hiddenTag": [""]

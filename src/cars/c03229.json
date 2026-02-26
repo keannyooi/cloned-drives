@@ -1,7 +1,7 @@
 {
     "carID": "c03229",
     "cr": 436,
-    "make": ["Sbarro", "Volkswagen"],
+    "make": ["Sbarro","Volkswagen"],
     "model": "Golf Turbo",
     "modelYear": 1983,
     "country": "CH",
@@ -10,13 +10,11 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner", "Oddity", "Unique", "Rest of The World","The Tyrol Tour: Remix"],
+    "tags": ["Hot Hatch","Tuner","Oddity","Unique","Rest of The World","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1100,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 81.94,
     "ola": 84.75,
     "description": "You know the 80s were crazy when this exists.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SbarroGolfTurbo(1981).png",
     "creator": "Andu",
-
-    "333TopSpeed": 165,
-    "3330to60": 5.6,
-    "333Handling": 77,
-
-    "666TopSpeed": 168,
-    "6660to60": 5.3, 
-    "666Handling": 80,
-
-    "996TopSpeed": 172,
-    "9960to60": 5.0,
-    "996Handling": 80,
-
-    "969TopSpeed": 172,
-    "9690to60": 5.3,
-    "969Handling": 83,
-
-    "699TopSpeed": 168,
-    "6990to60": 5.0,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

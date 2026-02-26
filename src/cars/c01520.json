@@ -1,7 +1,7 @@
 {
     "carID": "c01520",
     "cr": 754,
-    "make": ["ABR Hosoki", "Nissan"],
+    "make": ["ABR Hosoki","Nissan"],
     "model": "Fairlady Z \"Devil Z\"",
     "modelYear": 1994,
     "country": "JP",
@@ -10,9 +10,8 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Street Racer", "Tuner", "Silver Screen", "The Japanese Odyssey"],
+    "tags": ["Unique","Street Racer","Tuner","Silver Screen","The Japanese Odyssey"],
     "isPrize": true,
-
     "weight": 1150,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "A legendary speed demon owned by a member of the infamous Mid Night Club. After taking the car to ABR Hosoki Engineering for a complete reconstruction, the car came out with over 600hp under the hood, a part combination selected specifically for maintaining maximum velocity at Japanese highways and the capability of lapping Route C1 in less than 5 minutes. It's the main source of inspiration for the S30 Devil Z in Wangan Midnight.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ABRHosokiFairladyZDevilZ(1994).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 214,
-    "3330to60": 3.2,
-    "333Handling": 84,
-
-    "666TopSpeed": 217,
-    "6660to60": 3.1,
-    "666Handling": 86,
-
-    "996TopSpeed": 219,
-    "9960to60": 2.9,
-    "996Handling": 86,
-
-    "969TopSpeed": 219,
-    "9690to60": 3.1,
-    "969Handling": 90,
-
-    "699TopSpeed": 217,
-    "6990to60": 2.9,
-    "699Handling": 90,
     "hiddenTag": [""]
 }

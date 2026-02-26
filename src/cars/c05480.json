@@ -1,12 +1,12 @@
 {
     "carID": "c05480",
     "cr": 737,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "CTR Lightweight",
     "modelYear": 1989,
     "country": "DE",
     "topSpeed": 215,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -23,25 +23,6 @@
     "mra": 117.92,
     "ola": 84.9,
     "description": "",
-"333TopSpeed": 217,
-"3330to60": 3.8,
-"333Handling": 87,
-
-"666TopSpeed": 220,
-"6660to60": 3.6,
-"666Handling": 90,
-
-"699TopSpeed": 220,
-"6990to60": 3.4,
-"699Handling": 93,
-
-"969TopSpeed": 222,
-"9690to60": 3.6,
-"969Handling": 93,
-
-"996TopSpeed": 222,
-"9960to60": 3.4,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufCTRLightweight(1989).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

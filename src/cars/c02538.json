@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Unique", "Ultra Expensive" ],
+    "tags": ["Supercar","Unique","Ultra Expensive"],
     "isPrize": false,
-	
     "weight": 1620,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Only a few people got to get one of these Twin-Turbo'd GT Speedsters.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FordGTX1TT(2005).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 221, 
-"3330to60": 2.7, 
-"333Handling": 93,
-
-"666TopSpeed": 224, 
-"6660to60": 2.5, 
-"666Handling": 96,
-
-"699TopSpeed": 224, 
-"6990to60": 2.4, 
-"699Handling": 100,
-
-"969TopSpeed": 226, 
-"9690to60": 2.5, 
-"969Handling": 100,
-
-"996TopSpeed": 226, 
-"9960to60": 2.4, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

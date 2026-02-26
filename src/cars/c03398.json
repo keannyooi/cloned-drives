@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03398",
     "cr": 318,
     "make": "Fiat",
@@ -10,13 +10,11 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Slick",
-    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
     "isPrize": false,
-
-
     "weight": 780,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 45.57,
     "ola": 69.44,
     "description": "Bites like a scorpion.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda12Rally(2006).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 126,
-    "3330to60": 6.8,
-    "333Handling": 82,
-    
-    "666TopSpeed": 131,
-    "6660to60": 6.5,
-    "666Handling": 84,
-    
-    "699TopSpeed": 131,
-    "6990to60": 6.1,
-    "699Handling": 88,
-    
-    "969TopSpeed": 135,
-    "9690to60": 6.5,
-    "969Handling": 88,
-    
-    "996TopSpeed": 135,
-    "9960to60": 6.1,
-    "996Handling": 84,
     "hiddenTag": [""]
 }

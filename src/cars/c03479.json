@@ -10,9 +10,8 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Oddity", "Unique","The Americas Assault"],
+    "tags": ["Supercar","Oddity","Unique","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1620,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The Only Car to Out-Countach the Countach.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VectorAvtechWX3(1993).png",
     "creator": "Biszkoptowiec",
-
-    "333TopSpeed": 223,
-    "3330to60": 3.5,
-    "333Handling": 86,
-
-    "666TopSpeed": 226,
-    "6660to60": 3.3,
-    "666Handling": 88,
-
-    "996TopSpeed": 228,
-    "9960to60": 3.1,
-    "996Handling": 88,
-
-    "969TopSpeed": 228,
-    "9690to60": 3.3,
-    "969Handling": 92,
-
-    "699TopSpeed": 226,
-    "6990to60": 3.1,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

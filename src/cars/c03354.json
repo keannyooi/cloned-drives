@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1480,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Tailoring for America.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeDart1.4T(2013).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 123,
-    "3330to60": 7.8,
-    "333Handling": 77,
-
-    "666TopSpeed": 128,
-    "6660to60": 7.4,
-    "666Handling": 80,
-
-    "996TopSpeed": 132,
-    "9960to60": 7.0,
-    "996Handling": 80,
-
-    "969TopSpeed": 132,
-    "9690to60": 7.4,
-    "969Handling": 83,
-
-    "699TopSpeed": 128,
-    "6990to60": 7.0,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

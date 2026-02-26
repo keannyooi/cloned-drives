@@ -1,7 +1,7 @@
 {
     "carID": "c03851",
     "cr": 506,
-    "make": ["Auto Union", "Audi"],
+    "make": ["Auto Union","Audi"],
     "model": "Type B Streamliner",
     "modelYear": 1935,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 940,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AutoUnionTypeBStreamliner(1935).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 202,
-"3330to60": 4.6,
-"333Handling": 66,
-
-"666TopSpeed": 204,
-"6660to60": 4.3,
-"666Handling": 68,
-
-"699TopSpeed": 204,
-"6990to60": 4.1,
-"699Handling": 71,
-
-"969TopSpeed": 207,
-"9690to60": 4.3,
-"969Handling": 71,
-
-"996TopSpeed": 207,
-"9960to60": 4.1,
-"996Handling": 68,
     "hiddenTag": [""]
 }

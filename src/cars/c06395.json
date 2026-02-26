@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["CDCCS","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2140,
     "gc": "High",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 53.34,
     "ola": 68.12,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JeepGladiatorOverland(2020).png",
-
-"333TopSpeed": 115,
-"3330to60": 6.9,
-"333Handling": 69,
-
-"666TopSpeed": 119,
-"6660to60": 6.6,
-"666Handling": 71,
-
-"699TopSpeed": 119,
-"6990to60": 6.2,
-"699Handling": 74,
-
-"969TopSpeed": 124,
-"9690to60": 6.6,
-"969Handling": 74,
-
-"996TopSpeed": 124,
-"9960to60": 6.2,
-"996Handling": 71,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JeepGladiatorOverland(2020).png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

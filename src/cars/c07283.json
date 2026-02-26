@@ -1,10 +1,7 @@
 {
     "carID": "c07283",
     "cr": 805,
-    "make": [
-        "X-Raid",
-        "Mini"
-    ],
+    "make": ["X-Raid","Mini"],
     "model": "CBRA Buggy",
     "modelYear": 2014,
     "country": "DE",
@@ -13,11 +10,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Chop Shop",
-        "Motorsport",
-        "Year of the Horse"
-    ],
+    "tags": ["Chop Shop","Motorsport","Year of the Horse"],
     "isPrize": false,
     "weight": 1750,
     "gc": "High",
@@ -30,24 +23,7 @@
     "mra": 81.43,
     "ola": 84.28,
     "description": "Can't really be asked - Guerlain Chicherit probably.",
-    "333TopSpeed": 128,
-    "3330to60": 4.8,
-    "333Handling": 83,
-    "666TopSpeed": 132,
-    "6660to60": 4.5,
-    "666Handling": 85,
-    "699TopSpeed": 132,
-    "6990to60": 4.3,
-    "699Handling": 89,
-    "969TopSpeed": 137,
-    "9690to60": 4.5,
-    "969Handling": 89,
-    "996TopSpeed": 137,
-    "9960to60": 4.3,
-    "996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/X-RaidCBRABuggy(2014).png",
     "creator": "Hastur",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

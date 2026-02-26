@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03872",
     "cr": 397,
     "make": "Chrysler",
@@ -10,13 +10,11 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Americas Assault", "Style Icon", "Endless Summer"],
+    "tags": ["The Americas Assault","Style Icon","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1585,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 58.31,
     "ola": 81.45,
     "description": "Cute and quick are words that rarely come together when describing an automobile.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChryslerPTCruiserGTConvertible(2004).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 124,
-    "3330to60": 7,
-    "333Handling": 73,
-    
-    "666TopSpeed": 129,
-    "6660to60": 6.7,
-    "666Handling": 76,
-    
-    "699TopSpeed": 129,
-    "6990to60": 6.3,
-    "699Handling": 79,
-    
-    "969TopSpeed": 133,
-    "9690to60": 6.7,
-    "969Handling": 79,
-    
-    "996TopSpeed": 133,
-    "9960to60": 6.3,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

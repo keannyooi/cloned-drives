@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04018",
     "cr": 1,
     "make": "Suzuki",
@@ -12,42 +12,18 @@
     "tyreType": "Standard",
     "tags": ["The Amplification of Asia","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 760,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Pickup",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 54.65,
     "description": "The perfect run around daily work vehicle for the average british worker in the early 90s.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SuzukiSuperCarry1.0TXPickup(1986).png",
     "creator": "Andu",
-
-
-    "333TopSpeed": 76,
-    "3330to60": 33.7,
-    "333Handling": 52,
-    
-    "666TopSpeed": 83,
-    "6660to60": 31.9,
-    "666Handling": 53,
-    
-    "699TopSpeed": 83,
-    "6990to60": 30.2,
-    "699Handling": 56,
-    
-    "969TopSpeed": 91,
-    "9690to60": 31.9,
-    "969Handling": 56,
-    
-    "996TopSpeed": 91,
-    "9960to60": 30.2,
-    "996Handling": 53,
     "hiddenTag": [""]
 }

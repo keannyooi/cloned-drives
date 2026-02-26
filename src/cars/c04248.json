@@ -6,14 +6,12 @@
     "modelYear": 1996,
     "country": "DE",
     "topSpeed": 117,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1127,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "First small Audi since the Audi 50, based on the Golf MK4.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA316Attraction(1996).png",
     "creator": "Connor",
-
-    "333TopSpeed": 121,
-    "3330to60": 10.5,
-    "333Handling": 74,
-
-    "666TopSpeed": 126,
-    "6660to60": 9.9, 
-    "666Handling": 77,
-
-    "996TopSpeed": 130,
-    "9960to60": 9.4,
-    "996Handling": 77,
-
-    "969TopSpeed": 130,
-    "9690to60": 9.9,
-    "969Handling": 80,
-
-    "699TopSpeed": 126,
-    "6990to60": 9.4,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

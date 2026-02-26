@@ -1,10 +1,7 @@
 {
     "carID": "c01987",
     "cr": 879,
-    "make": [
-        "9ff",
-        "Porsche"
-    ],
+    "make": ["9ff","Porsche"],
     "model": "V400",
     "modelYear": 2004,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Tuner"
-    ],
+    "tags": ["Unique","Tuner"],
     "isPrize": true,
     "weight": 1297,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 126.92,
     "ola": 90.91,
     "description": ":fastcate:",
-     "333TopSpeed": 243,
-    "3330to60": 3.1,
-    "333Handling": 94,
-    "666TopSpeed": 245,
-    "6660to60": 3.0,
-    "666Handling": 97,
-    "996TopSpeed": 247,
-    "9960to60": 2.8,
-    "996Handling": 97,
-    "969TopSpeed": 247,
-    "9690to60": 3.0,
-    "969Handling": 101,
-    "699TopSpeed": 245,
-    "6990to60": 2.8,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/9ffV400(2004).png",
     "creator": "Havvy",
     "hiddenTag": [""]

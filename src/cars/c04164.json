@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1721,
     "gc": "Medium",
     "seatCount": 4,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 63.85,
-    "ola": 70.00,
+    "ola": 70,
     "description": "An unlikely collaboration between Chrysler and Mitsubishi resulted in an impressive twin turbocharged sports car of the '90s.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeStealthRTTwinTurbo(1991).png",
     "creator": "DodgeDemon",
-	
-"333TopSpeed": 158,
-"3330to60": 5.3,
-"333Handling": 84,
-
-"666TopSpeed": 162,
-"6660to60": 5.0,
-"666Handling": 86,
-
-"699TopSpeed": 162,
-"6990to60": 4.8,
-"699Handling": 90,
-
-"969TopSpeed": 165,
-"9690to60": 5.0,
-"969Handling": 90,
-
-"996TopSpeed": 165,
-"9960to60": 4.8,
-"996Handling": 86,
     "hiddenTag": [""]
 }

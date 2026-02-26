@@ -10,9 +10,8 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Muscle Car", "The Americas Assault"],
+    "tags": ["Concept","Muscle Car","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1810,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "A new hope for the modern musclecar, and it was headed for production.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumSRT8Concept(2003).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 173,
-"3330to60": 4.4,
-"333Handling": 83,
-
-"666TopSpeed": 176,
-"6660to60": 4.1,
-"666Handling": 85,
-
-"699TopSpeed": 176,
-"6990to60": 3.9,
-"699Handling": 89,
-
-"969TopSpeed": 179,
-"9690to60": 4.1,
-"969Handling": 89,
-
-"996TopSpeed": 179,
-"9960to60": 3.9,
-"996Handling": 85,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1500,
     "gc": "Medium",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot50081.6BlueHDi120(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 118,
-    "3330to60": 11.5,
-    "333Handling": 72,
-
-    "666TopSpeed": 122,
-    "6660to60": 10.9,
-    "666Handling": 75,
-
-    "699TopSpeed": 122,
-    "6990to60": 10.3,
-    "699Handling": 78,
-
-    "969TopSpeed": 127,
-    "9690to60": 10.9,
-    "969Handling": 78,
-
-    "996TopSpeed": 127,
-    "9960to60": 10.3,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

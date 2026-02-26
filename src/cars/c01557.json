@@ -10,10 +10,7 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Kei Car",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 745,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 0,
     "ola": 58.32,
     "description": "The first Honda sports car ever made, and it can even rev up to 9500 rpm.",
-"333TopSpeed": 85,
-"3330to60": 18.7,
-"333Handling": 61,
-
-"666TopSpeed": 91,
-"6660to60": 17.7,
-"666Handling": 63,
-
-"699TopSpeed": 91,
-"6990to60": 16.7,
-"699Handling": 65,
-
-"969TopSpeed": 98,
-"9690to60": 17.7,
-"969Handling": 65,
-
-"996TopSpeed": 98,
-"9960to60": 16.7,
-"996Handling": 63,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaS500(1963).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

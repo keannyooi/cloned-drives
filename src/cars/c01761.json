@@ -10,11 +10,7 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey",
-        "Year of the Horse"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey","Year of the Horse"],
     "isPrize": false,
     "weight": 1170,
     "gc": "Medium",
@@ -27,24 +23,7 @@
     "mra": 55.24,
     "ola": 78.48,
     "description": "Downlow Performance.",
-    "333TopSpeed": 117,
-    "3330to60": 7.5,
-    "333Handling": 76,
-    "666TopSpeed": 121,
-    "6660to60": 7.1,
-    "666Handling": 79,
-    "996TopSpeed": 126,
-    "9960to60": 6.7,
-    "996Handling": 79,
-    "969TopSpeed": 126,
-    "9690to60": 7.1,
-    "969Handling": 82,
-    "699TopSpeed": 121,
-    "6990to60": 6.7,
-    "699Handling": 80,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanPrimera2.0Te(1990).png",
     "creator": "Havvy",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

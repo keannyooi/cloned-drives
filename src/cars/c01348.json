@@ -6,13 +6,12 @@
     "modelYear": 1992,
     "country": "US",
     "topSpeed": 218,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Unique"],
+    "tags": ["Supercar","Unique"],
     "isPrize": false,
-    
     "weight": 1644,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The Vector brand underdelivered a lot of the things that it promised, but even that did not stop this car from becoming an icon of the 90's",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VectorW8TwinTurbo(1992).png",
     "creator": "Biszkoptowiec",
-
-    "333TopSpeed": 220,
-    "3330to60": 3.8,
-    "333Handling": 85,
-
-    "666TopSpeed": 223,
-    "6660to60": 3.6,
-    "666Handling": 87,
-
-    "996TopSpeed": 225,
-    "9960to60": 3.4,
-    "996Handling": 87,
-
-    "969TopSpeed": 225,
-    "9690to60": 3.6,
-    "969Handling": 91,
-
-    "699TopSpeed": 223,
-    "6990to60": 3.4,
-    "699Handling": 91,
     "hiddenTag": [""]
 }

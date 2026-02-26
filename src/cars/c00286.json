@@ -10,12 +10,7 @@
     "handling": 47,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "Unique",
-        "Concept",
-        "Year of the Horse"
-    ],
+    "tags": ["Eco-Friendly","Unique","Concept","Year of the Horse"],
     "isPrize": false,
     "weight": 1338,
     "gc": "Medium",
@@ -28,24 +23,7 @@
     "mra": 0,
     "ola": 16.62,
     "description": "A cheap EV prototyped by General Motors that was so unfavored that it never made an appearance in any auto shows.",
-    "333TopSpeed": 62,
-    "3330to60": 58.9,
-    "333Handling": 49,
-    "666TopSpeed": 70,
-    "6660to60": 55.8,
-    "666Handling": 50,
-    "996TopSpeed": 79,
-    "9960to60": 52.7,
-    "996Handling": 50,
-    "969TopSpeed": 79,
-    "9690to60": 55.8,
-    "969Handling": 52,
-    "699TopSpeed": 70,
-    "6990to60": 52.7,
-    "699Handling": 52,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletElectrovette(1978).png",
     "creator": "Keanny",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

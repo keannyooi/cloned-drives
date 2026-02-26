@@ -10,9 +10,8 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eco-Friendly", "Innovative", "Motorsport"],
+    "tags": ["Eco-Friendly","Innovative","Motorsport"],
     "isPrize": false,
-	
     "weight": 1240,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "After having noted issues with lithium ion batteries within the context of racing, GreenGT decided to invest in hydrogen fuel cell technology for its zero-emission race car. The car ended up getting a spot in Garage 56 (which is reserved for experimental racers) for the 2013 24h of Le Mans. Complications in the car's development, however, meant that GreenGT had to pull out, and it would be 3 more years until the car would finally be ready.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GreenGTH2(2012).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 189, 
-    "3330to60": 3.7, 
-    "333Handling": 98,
-
-    "666TopSpeed": 192, 
-    "6660to60": 3.5, 
-    "666Handling": 101,
-
-    "699TopSpeed": 192, 
-    "6990to60": 3.3, 
-    "699Handling": 105,
-
-    "969TopSpeed": 194, 
-    "9690to60": 3.5, 
-    "969Handling": 105,
-
-    "996TopSpeed": 194, 
-    "9960to60": 3.3, 
-    "996Handling": 101,
     "hiddenTag": [""]
 }

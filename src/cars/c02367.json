@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Motorsport","Rest of The World"],
     "isPrize": false,
-
     "weight": 1130,
     "gc": "Low",
     "seatCount": 1,
@@ -24,28 +23,7 @@
     "mra": 109.68,
     "ola": 79.41,
     "description": "A much better Venturi race car made for 1994 FIA GT1 season and performed decently successful.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-    "333TopSpeed": 208,
-    "3330to60": 3.2,
-    "333Handling": 98,
-
-    "666TopSpeed": 210,
-    "6660to60": 3.1,
-    "666Handling": 101,
-
-    "699TopSpeed": 210,
-    "6990to60": 2.9,
-    "699Handling": 105,
-
-    "969TopSpeed": 213,
-    "9690to60": 3.1,
-    "969Handling": 105,
-
-    "996TopSpeed": 213,
-    "9960to60": 2.9,
-    "996Handling": 101,
     "hiddenTag": [""]
 }

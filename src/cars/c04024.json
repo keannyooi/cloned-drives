@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04024",
     "cr": 346,
     "make": "Volkswagen",
@@ -10,13 +10,11 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1772,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 48.89,
     "ola": 65.91,
     "description": "The cheapest version for the replacement of the almighty Golf. We'll see how this turns out...",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenID.3LifePurePerformance.png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 8.4,
-    "333Handling": 79,
-    
-    "666TopSpeed": 110,
-    "6660to60": 7.9,
-    "666Handling": 81,
-    
-    "699TopSpeed": 110,
-    "6990to60": 7.5,
-    "699Handling": 84,
-    
-    "969TopSpeed": 116,
-    "9690to60": 7.9,
-    "969Handling": 84,
-    
-    "996TopSpeed": 116,
-    "9960to60": 7.5,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-    
     "weight": 1355,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Higher-spec Solstice, lower-spec handling.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PontiacSolsticeGXP(2007).png",
     "creator": "Biszkoptowiec",
-
-    "333TopSpeed": 146,
-    "3330to60": 5.4,
-    "333Handling": 80,
-
-    "666TopSpeed": 149,
-    "6660to60": 5.1,
-    "666Handling": 82,
-
-    "996TopSpeed": 153,
-    "9960to60": 4.8,
-    "996Handling": 82,
-
-    "969TopSpeed": 153,
-    "9690to60": 5.1,
-    "969Handling": 85,
-
-    "699TopSpeed": 149,
-    "6990to60": 4.8,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

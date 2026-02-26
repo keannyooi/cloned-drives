@@ -1,7 +1,7 @@
 {
     "carID": "c05912",
     "cr": 645,
-    "make": ["Range Rover", "Land Rover"],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar D300 MHEV",
     "modelYear": 2020,
     "country": "GB",
@@ -23,25 +23,6 @@
     "mra": 57.61,
     "ola": 77.61,
     "description": "",
-"333TopSpeed": 147,
-"3330to60": 5.8,
-"333Handling": 79,
-
-"666TopSpeed": 150,
-"6660to60": 5.5,
-"666Handling": 81,
-
-"699TopSpeed": 150,
-"6990to60": 5.2,
-"699Handling": 84,
-
-"969TopSpeed": 154,
-"9690to60": 5.5,
-"969Handling": 84,
-
-"996TopSpeed": 154,
-"9960to60": 5.2,
-"996Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RangeRoverVelarD300MHEV(2020).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

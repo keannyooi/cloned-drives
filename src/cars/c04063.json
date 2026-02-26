@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1020,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 41.09,
     "ola": 60.09,
     "description": "Nothing says Grand Tourer like a majestic 1.8 Golf.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.8GT(1991).png",
     "creator": "Andu",
-
-    "333TopSpeed": 117,
-    "3330to60": 11.1,
-    "333Handling": 72,
-    
-    "666TopSpeed": 121,
-    "6660to60": 10.5,
-    "666Handling": 75,
-    
-    "699TopSpeed": 121,
-    "6990to60": 9.9,
-    "699Handling": 78,
-    
-    "969TopSpeed": 126,
-    "9690to60": 10.5,
-    "969Handling": 78,
-    
-    "996TopSpeed": 126,
-    "9960to60": 9.9,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

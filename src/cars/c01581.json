@@ -1,10 +1,7 @@
 {
     "carID": "c01581",
     "cr": 638,
-    "make": [
-        "JIC Magic",
-        "Nissan"
-    ],
+    "make": ["JIC Magic","Nissan"],
     "model": "350Z Nismo D1GP",
     "modelYear": 2004,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Motorsport","Tuner","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1347,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 83.33,
     "ola": 84,
     "description": "Yes, this is a D1GP car in the US.",
-     "333TopSpeed": 183,
-    "3330to60": 4.8,
-    "333Handling": 94,
-    "666TopSpeed": 186,
-    "6660to60": 4.5,
-    "666Handling": 97,
-    "996TopSpeed": 189,
-    "9960to60": 4.3,
-    "996Handling": 97,
-    "969TopSpeed": 189,
-    "9690to60": 4.5,
-    "969Handling": 101,
-    "699TopSpeed": 186,
-    "6990to60": 4.3,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JICMagic350ZNismoD1GP(2004).png",
     "creator": "Keanny",
     "hiddenTag": [""]

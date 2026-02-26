@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1445,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Alongside the 1.2 PureTech, Peugeot also added this engine to the lineup. And also like the 1.2 PureTech, this engine got used in the next generation's of both cars.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30081.6BlueHDi120(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 120, 
-    "3330to60": 11.2, 
-    "333Handling": 73,
-
-    "666TopSpeed": 124,
-    "6660to60": 10.6,
-    "666Handling": 76,
-
-    "996TopSpeed": 129,
-    "9960to60": 10.0,
-    "996Handling": 76,
-
-    "969TopSpeed": 129,
-    "9690to60": 10.6,
-    "969Handling": 79,
-
-    "699TopSpeed": 124,
-    "6990to60": 10.0,
-    "699Handling": 79,
     "hiddenTag": [""]
 }

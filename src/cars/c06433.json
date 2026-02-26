@@ -1,5 +1,5 @@
 {
-	"carID": "c06433",
+    "carID": "c06433",
     "cr": 619,
     "make": "Dodge",
     "model": "Challenger SRT8 ACR Concept",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car","Concept"],
     "isPrize": true,
-	
     "weight": 1880,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 76.17,
     "ola": 79.3,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRT8ACRConcept2011.png",
-
-"333TopSpeed": 178,
-"3330to60": 4.3,
-"333Handling": 85,
-
-"666TopSpeed": 181,
-"6660to60": 4,
-"666Handling": 87,
-
-"699TopSpeed": 181,
-"6990to60": 3.8,
-"699Handling": 91,
-
-"969TopSpeed": 184,
-"9690to60": 4,
-"969Handling": 91,
-
-"996TopSpeed": 184,
-"9960to60": 3.8,
-"996Handling": 87,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRT8ACRConcept2011.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

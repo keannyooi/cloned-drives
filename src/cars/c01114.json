@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Extreme Juggernaut"],
     "isPrize": false,
-    
     "weight": 2200,
     "gc": "High",
     "seatCount": 5,
@@ -22,29 +21,8 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 74.47,
-    "ola": 80.00,
+    "ola": 80,
     "description": "A Fire-Breathing SUV with Fashion Sense.",
- 
-    "333TopSpeed": 180,
-    "3330to60": 3.3,
-    "333Handling": 90,
-
-    "666TopSpeed": 183,
-    "6660to60": 3.1,
-    "666Handling": 93,
-
-    "699TopSpeed": 183,
-    "6990to60": 3,
-    "699Handling": 97,
-
-    "969TopSpeed": 186,
-    "9690to60": 3.1,
-    "969Handling": 97,
-
-    "996TopSpeed": 186,
-    "9960to60": 3,
-    "996Handling": 93,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCayenneTurboCoupe(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

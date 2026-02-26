@@ -10,13 +10,11 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique", "Tuner","Endless Summer"],
+    "tags": ["The Tyrol Tour: Remix","Hot Hatch","Unique","Tuner","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1220,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -25,30 +23,7 @@
     "mra": 65.09,
     "ola": 81.16,
     "description": "Adding that classic Nothelle touch",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NothelleGolfVR6(1992).png",
     "creator": "Andu",
-
-    "333TopSpeed": 149,
-    "3330to60": 6.6,
-    "333Handling": 79,
-    
-    "666TopSpeed": 152,
-    "6660to60": 6.2,
-    "666Handling": 81,
-    
-    "699TopSpeed": 152,
-    "6990to60": 5.9,
-    "699Handling": 84,
-    
-    "969TopSpeed": 156,
-    "9690to60": 6.2,
-    "969Handling": 84,
-    
-    "996TopSpeed": 156,
-    "9960to60": 5.9,
-    "996Handling": 81
-    ,
     "hiddenTag": [""]
 }

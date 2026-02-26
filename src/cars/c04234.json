@@ -10,10 +10,8 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch"],
+    "tags": ["Eurotech Elite","Hot Hatch"],
     "isPrize": false,
-
-
     "weight": 1543,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Sportback 5 doors car.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiS3Sportback(2008).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 5.4,
-    "333Handling": 86,
-
-    "666TopSpeed": 162,
-    "6660to60": 5.1, 
-    "666Handling": 88,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.8,
-    "996Handling": 88,
-
-    "969TopSpeed": 165,
-    "9690to60": 5.1,
-    "969Handling": 92,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.8,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

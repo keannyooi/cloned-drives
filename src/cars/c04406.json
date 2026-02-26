@@ -1,7 +1,7 @@
 {
     "carID": "c04406",
     "cr": 900,
-    "make": ["David Ellis Motorsport", "Aston Martin"],
+    "make": ["David Ellis Motorsport","Aston Martin"],
     "model": "V8 GT700R",
     "modelYear": 2000,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["The Midlands Cruise","Motorsport","Ultra Expensive","Tuner","Unique","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 850,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 89.65,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-
-"333TopSpeed": 212,
-"3330to60": 2.8,
-"333Handling": 98,
-
-"666TopSpeed": 215,
-"6660to60": 2.6,
-"666Handling": 101,
-
-"699TopSpeed": 215,
-"6990to60": 2.5,
-"699Handling": 105,
-
-"969TopSpeed": 217,
-"9690to60": 2.6,
-"969Handling": 105,
-
-"996TopSpeed": 217,
-"9960to60": 2.5,
-"996Handling": 101,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

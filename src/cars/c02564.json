@@ -1,7 +1,7 @@
 {
     "carID": "c02564",
     "cr": 463,
-    "make": ["RE Amemiya", "Mazda"],
+    "make": ["RE Amemiya","Mazda"],
     "model": "Chantez Turbo 12A",
     "modelYear": 1980,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 800,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Mazda, being the loyal rotary fanboys they were (and still are to an extent), originally wanted their Chantez kei car to sport a rotary engine, but that was too big of a hack in the eyes of their competitors so they had to give up on that idea. Fast forward to 1980 and a certain Amemiya-san made Mazda's rotary kei car dreams come true and proceeded to terrorize the Wangan with it.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REAmemiyaChantezTurbo12A(1980).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 152, 
-    "3330to60": 5.1, 
-    "333Handling": 75,
-
-    "666TopSpeed": 156, 
-    "6660to60": 4.9, 
-    "666Handling": 78,
-
-    "699TopSpeed": 156, 
-    "6990to60": 4.6, 
-    "699Handling": 81,
-
-    "969TopSpeed": 159, 
-    "9690to60": 4.9, 
-    "969Handling": 81,
-
-    "996TopSpeed": 159, 
-    "9960to60": 4.6, 
-    "996Handling": 78,
     "hiddenTag": [""]
 }

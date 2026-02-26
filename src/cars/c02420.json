@@ -10,9 +10,8 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Oddity", "Supercar", "Unique"],
+    "tags": ["Concept","Oddity","Supercar","Unique"],
     "isPrize": false,
-
     "weight": 1080,
     "gc": "Low",
     "seatCount": 4,
@@ -24,29 +23,7 @@
     "mra": 80.56,
     "ola": 75.86,
     "description": "A Peugeot concept that features technology that was very ahead of its time, even the 959 can't compete with it.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotProximaConcept(1986).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 218,
-    "3330to60": 2.8,
-    "333Handling": 91,
-
-    "666TopSpeed": 221,
-    "6660to60": 2.6,
-    "666Handling": 94,
-
-    "969TopSpeed": 223,
-    "9690to60": 2.6,
-    "969Handling": 98,
-	
-	"996TopSpeed": 223,
-	"9960to60": 2.5,
-	"996Handling": 94,
-	
-	"699TopSpeed": 221,
-	"6990to60": 2.5,
-	"699Handling": 98
-	,
     "hiddenTag": [""]
 }

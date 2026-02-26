@@ -10,44 +10,20 @@
     "handling": 52,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","Unique","Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Eco-Friendly","Unique","Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1510,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 17.64,
     "description": "Second gen showing its electric muscles",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfCitySTROMer(1984).png",
     "creator": "Andu",
-
-    "333TopSpeed": 68,
-    "3330to60": 58.5,
-    "333Handling": 54,
-
-    "666TopSpeed": 76,
-    "6660to60": 55.6, 
-    "666Handling": 55,
-
-    "996TopSpeed": 85,
-    "9960to60": 52.7,
-    "996Handling": 55,
-
-    "969TopSpeed": 85,
-    "9690to60": 55.6,
-    "969Handling": 58,
-
-    "699TopSpeed": 76,
-    "6990to60": 52.7,
-    "699Handling": 58,
     "hiddenTag": [""]
 }

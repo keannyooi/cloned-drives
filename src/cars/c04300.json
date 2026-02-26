@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1310,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 52.29,
     "ola": 71.47,
     "description": "Volkswagen accepts all lifestyles! Especially the Golf one.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf2.0TDILifestyle(2004).png",
     "creator": "Andu",
-
-    "333TopSpeed": 131,
-    "3330to60": 8.3,
-    "333Handling": 77,
-    
-    "666TopSpeed": 135,
-    "6660to60": 7.8,
-    "666Handling": 80,
-    
-    "699TopSpeed": 135,
-    "6990to60": 7.4,
-    "699Handling": 83,
-    
-    "969TopSpeed": 139,
-    "9690to60": 7.8,
-    "969Handling": 83,
-    
-    "996TopSpeed": 139,
-    "9960to60": 7.4,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

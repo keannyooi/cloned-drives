@@ -1,7 +1,7 @@
 {
     "carID": "c01162",
     "cr": 475,
-    "make": ["Saleen", "Ford"],
+    "make": ["Saleen","Ford"],
     "model": "S121 N2O",
     "modelYear": 2005,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner"],
+    "tags": ["Hot Hatch","Tuner"],
     "isPrize": false,
-
     "weight": 1188,
     "gc": "Low",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 71.6,
     "ola": 85.95,
     "description": "The N2O Focus' biggest selling point is the fact that it comes with a 10-pound nitrous bottle built-in, so any buyer can Need For Speed their way straight out of the dealership. Its racing credentials can't be overlooked even when the car needs to have some downtime in terms of its performance - it's built just like any other Saleen, even if it's a hatchback. And it's got that WRC drip.",
-
-     "333TopSpeed": 152,
-    "3330to60": 5.8,
-    "333Handling": 88,
-
-    "666TopSpeed": 156,
-    "6660to60": 5.5,
-    "666Handling": 91,
-
-    "996TopSpeed": 159,
-    "9960to60": 5.2,
-    "996Handling": 91,
-
-    "969TopSpeed": 159,
-    "9690to60": 5.5,
-    "969Handling": 94,
-
-    "699TopSpeed": 156,
-    "6990to60": 5.2,
-    "699Handling": 94,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SaleenS121N2O(2005).png",
     "creator": "Keanny",
     "hiddenTag": [""]

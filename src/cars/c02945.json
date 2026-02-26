@@ -1,7 +1,7 @@
 {
     "carID": "c02945",
     "cr": 754,
-    "make": ["Hartge", "BMW"],
+    "make": ["Hartge","BMW"],
     "model": "Hunter 3.0sd",
     "modelYear": 2007,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Extreme Juggernaut","Tuner","Unique","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1890,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HartgeHunter3.0sd(2007).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 134, 
-"3330to60": 5.4, 
-"333Handling": 77,
-
-"666TopSpeed": 138, 
-"6660to60": 5.1, 
-"666Handling": 80,
-
-"699TopSpeed": 138, 
-"6990to60": 4.8, 
-"699Handling": 83,
-
-"969TopSpeed": 142, 
-"9690to60": 5.1, 
-"969Handling": 83,
-
-"996TopSpeed": 142, 
-"9960to60": 4.8, 
-"996Handling": 80,
     "hiddenTag": [""]
 }

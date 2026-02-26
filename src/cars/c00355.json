@@ -10,12 +10,7 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Silver Screen",
-        "Style Icon",
-        "Servers Choice","OG"
-    ],
+    "tags": ["Muscle Car","Silver Screen","Style Icon","Servers Choice","OG"],
     "isPrize": false,
     "weight": 1800,
     "gc": "Medium",
@@ -28,25 +23,6 @@
     "mra": 68.35,
     "ola": 87.1,
     "description": "The ultra-popular model of the 1st generation Charger, powered by a 440 ci Magnum V8.",
-"333TopSpeed": 129,
-"3330to60": 5.9,
-"333Handling": 69,
-
-"666TopSpeed": 133,
-"6660to60": 5.6,
-"666Handling": 71,
-
-"699TopSpeed": 133,
-"6990to60": 5.3,
-"699Handling": 74,
-
-"969TopSpeed": 137,
-"9690to60": 5.6,
-"969Handling": 74,
-
-"996TopSpeed": 137,
-"9960to60": 5.3,
-"996Handling": 71,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerRT(1969).png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

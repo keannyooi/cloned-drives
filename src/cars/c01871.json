@@ -10,9 +10,7 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1610,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 64.96,
     "ola": 66.42,
     "description": "The cheapest way to get into a AWD Camry.",
-"333TopSpeed": 134,
-"3330to60": 7.2,
-"333Handling": 77,
-
-"666TopSpeed": 138,
-"6660to60": 6.8,
-"666Handling": 80,
-
-"699TopSpeed": 138,
-"6990to60": 6.5,
-"699Handling": 83,
-
-"969TopSpeed": 142,
-"9690to60": 6.8,
-"969Handling": 83,
-
-"996TopSpeed": 142,
-"9960to60": 6.5,
-"996Handling": 80,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryXLEAWD(2018).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

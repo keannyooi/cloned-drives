@@ -10,14 +10,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Innovative",
-        "Style Icon",
-        "Silver Screen",
-        "Visionary Road",
-        "Year of the Horse"
-    ],
+    "tags": ["Supercar","Innovative","Style Icon","Silver Screen","Visionary Road","Year of the Horse"],
     "isPrize": false,
     "weight": 1100,
     "gc": "Low",
@@ -30,24 +23,7 @@
     "mra": 78.85,
     "ola": 82.54,
     "description": "Fashion legend icon.",
-    "333TopSpeed": 177,
-    "3330to60": 6,
-    "333Handling": 75,
-    "666TopSpeed": 180,
-    "6660to60": 5.7,
-    "666Handling": 78,
-    "996TopSpeed": 183,
-    "9960to60": 5.4,
-    "996Handling": 78,
-    "969TopSpeed": 183,
-    "9690to60": 5.7,
-    "969Handling": 81,
-    "699TopSpeed": 180,
-    "6990to60": 5.4,
-    "699Handling": 81,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniMiuraP400(1966).png",
     "creator": "Based",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

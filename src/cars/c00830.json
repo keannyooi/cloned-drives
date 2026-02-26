@@ -1,10 +1,7 @@
 {
     "carID": "c00830",
     "cr": 797,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "GLE 63 S 4MATIC",
     "modelYear": 2015,
     "country": "DE",
@@ -26,21 +23,6 @@
     "mra": 79.59,
     "ola": 76.92,
     "description": "Mercedes’s SUV puts on them big boots cause it ain’t here to play.",
-     "333TopSpeed": 158,
-    "3330to60": 3.7,
-    "333Handling": 89,
-    "666TopSpeed": 162,
-    "6660to60": 3.5,
-    "666Handling": 92,
-    "996TopSpeed": 165,
-    "9960to60": 3.3,
-    "996Handling": 92,
-    "969TopSpeed": 165,
-    "9690to60": 3.5,
-    "969Handling": 95,
-    "699TopSpeed": 162,
-    "6990to60": 3.3,
-    "699Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesAMGGLE63S4MATIC(2014).png",
     "creator": "Exist",
     "hiddenTag": [""]

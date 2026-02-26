@@ -1,7 +1,7 @@
 {
     "carID": "c01130",
     "cr": 852,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "1500 TRX",
     "modelYear": 2021,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Extreme Juggernaut","Battle Pack"],
     "isPrize": false,
-	
     "weight": 2900,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Makes mountains very scared indeed.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram1500TRX(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 122,
-"3330to60": 3.9,
-"333Handling": 71,
-
-"666TopSpeed": 127,
-"6660to60": 3.7,
-"666Handling": 74,
-
-"699TopSpeed": 127,
-"6990to60": 3.5,
-"699Handling": 77,
-
-"969TopSpeed": 131,
-"9690to60": 3.7,
-"969Handling": 77,
-
-"996TopSpeed": 131,
-"9960to60": 3.5,
-"996Handling": 74,
     "hiddenTag": [""]
 }

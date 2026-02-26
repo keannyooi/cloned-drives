@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 785,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "First transverse fwd Audi, killed off months later after it was rebadged as VW Polo.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Audi50GL(1974).png",
     "creator": "Connor",
-
-    "333TopSpeed": 100,
-    "3330to60": 12.1,
-    "333Handling": 67,
-
-    "666TopSpeed": 105,
-    "6660to60": 11.4, 
-    "666Handling": 69,
-
-    "996TopSpeed": 111,
-    "9960to60": 10.8,
-    "996Handling": 69,
-
-    "969TopSpeed": 111,
-    "9690to60": 11.4,
-    "969Handling": 72,
-
-    "699TopSpeed": 105,
-    "6990to60": 10.8,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

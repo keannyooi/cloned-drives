@@ -1,7 +1,7 @@
 {
     "carID": "c03559",
     "cr": 1,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "Single Seat Team Car \"Razor Blade\"",
     "modelYear": 1923,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Motorsport","Unique","The Midlands Cruise","Innovative"],
     "isPrize": false,
-	
     "weight": 750,
     "gc": "Medium",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Many Aston-Martins have names, This particular example of a Bamford and Martin car, chassis number 1915 was called Razor Blade and it's easy to see why with its slim single seater body, only 47 cm across at it's widest point. It has been claimed that the Razor Blade is indeed the narrowest racing car in the world. ",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinSingleSeatTeamCarRazorBlade(1923).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 103,
-"3330to60": 21.1,
-"333Handling": 57,
-
-"666TopSpeed": 109,
-"6660to60": 20,
-"666Handling": 59,
-
-"699TopSpeed": 109,
-"6990to60": 18.9,
-"699Handling": 61,
-
-"969TopSpeed": 114,
-"9690to60": 20,
-"969Handling": 61,
-
-"996TopSpeed": 114,
-"9960to60": 18.9,
-"996Handling": 59,
     "hiddenTag": [""]
 }

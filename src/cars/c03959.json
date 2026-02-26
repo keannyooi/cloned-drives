@@ -10,9 +10,8 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "Extreme Juggernaut", "The Americas Assault"],
+    "tags": ["Endless Summer","Extreme Juggernaut","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2040,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Just your basic Chonco Bronco, void of expensive options or heavy off-road bits, and ready for modification.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordBroncoBase2.34-Door(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 111,
-"3330to60": 6.3,
-"333Handling": 73,
-
-"666TopSpeed": 116,
-"6660to60": 5.9,
-"666Handling": 76,
-
-"699TopSpeed": 116,
-"6990to60": 5.6,
-"699Handling": 79,
-
-"969TopSpeed": 121,
-"9690to60": 5.9,
-"969Handling": 79,
-
-"996TopSpeed": 121,
-"9960to60": 5.6,
-"996Handling": 76,
     "hiddenTag": [""]
 }

@@ -10,7 +10,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Chop Shop", "Eco-Friendly", "Motorsport"],
+    "tags": ["Chop Shop","Eco-Friendly","Motorsport"],
     "isPrize": true,
     "weight": 1030,
     "gc": "Low",
@@ -22,30 +22,8 @@
     "fuelType": "Electric",
     "mra": 64.15,
     "ola": 83.35,
-
     "description": "",
-    
-"333TopSpeed": 105,
-"3330to60": 3.2,
-"333Handling": 91,
-
-"666TopSpeed": 110,
-"6660to60": 3.1,
-"666Handling": 94,
-
-"699TopSpeed": 110,
-"6990to60": 2.9,
-"699Handling": 98,
-
-"969TopSpeed": 116,
-"9690to60": 3.1,
-"969Handling": 98,
-
-"996TopSpeed": 116,
-"9960to60": 2.9,
-"996Handling": 94,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoeIce(2019).png",
     "creator": "Hastur",
     "hiddenTag": [""]
-} 
+}

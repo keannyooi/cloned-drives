@@ -10,9 +10,8 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "Extreme Juggernaut", "The Americas Assault"],
+    "tags": ["Endless Summer","Extreme Juggernaut","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1960,
     "gc": "High",
     "seatCount": 4,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 50.39,
-    "ola": 69.70,
+    "ola": 69.7,
     "description": "Just your basic Bronco, void of expensive options or heavy off-road bits, and ready for modification.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordBroncoBase2.32-Door(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 111,
-"3330to60": 6.1,
-"333Handling": 74,
-
-"666TopSpeed": 116,
-"6660to60": 5.8,
-"666Handling": 77,
-
-"699TopSpeed": 116,
-"6990to60": 5.4,
-"699Handling": 80,
-
-"969TopSpeed": 121,
-"9690to60": 5.8,
-"969Handling": 80,
-
-"996TopSpeed": 121,
-"9960to60": 5.4,
-"996Handling": 77,
     "hiddenTag": [""]
 }

@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour","Rest of The World"],
     "isPrize": false,
-
-
     "weight": 940,
     "gc": "High",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "It was also avaliable as a practical wagon, available long after the sedan was phased out.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombi(1960).png",
     "creator": "Connor",
-
-    "333TopSpeed": 83,
-    "3330to60": 31.2,
-    "333Handling": 53,
-
-    "666TopSpeed": 90,
-    "6660to60": 29.5, 
-    "666Handling": 54,
-
-    "996TopSpeed": 98,
-    "9960to60": 27.9,
-    "996Handling": 54,
-
-    "969TopSpeed": 97,
-    "9690to60": 29.5,
-    "969Handling": 57,
-
-    "699TopSpeed": 90,
-    "6990to60": 27.9,
-    "699Handling": 57,
     "hiddenTag": [""]
 }

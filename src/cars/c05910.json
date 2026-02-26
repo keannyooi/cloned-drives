@@ -1,7 +1,7 @@
 {
     "carID": "c05910",
     "cr": 807,
-    "make": ["Range Rover", "Land Rover"],
+    "make": ["Range Rover","Land Rover"],
     "model": "Sport P550e PHEV",
     "modelYear": 2023,
     "country": "GB",
@@ -23,25 +23,6 @@
     "mra": 52.22,
     "ola": 69.99,
     "description": "",
-"333TopSpeed": 153,
-"3330to60": 4.5,
-"333Handling": 83,
-
-"666TopSpeed": 157,
-"6660to60": 4.2,
-"666Handling": 85,
-
-"699TopSpeed": 157,
-"6990to60": 4,
-"699Handling": 89,
-
-"969TopSpeed": 160,
-"9690to60": 4.2,
-"969Handling": 89,
-
-"996TopSpeed": 160,
-"9960to60": 4,
-"996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RangeRoverSportP550ePHEV(2023).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

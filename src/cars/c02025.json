@@ -10,12 +10,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Rest of The World",
-        "Unique",
-        "Ultra Expensive",
-        "Hypercar"
-    ],
+    "tags": ["Rest of The World","Unique","Ultra Expensive","Hypercar"],
     "isPrize": false,
     "weight": 1395,
     "gc": "Low",
@@ -28,25 +23,6 @@
     "mra": 152.24,
     "ola": 106,
     "description": "The Koenigsegg Agera RS could be optionally upgraded with a 1-megawatt package, increasing its power output from 1,160 hp to 1,341 hp (1 MW). This upgrade transformed the Agera RS into a \"megacar\". The upgrade was an optional extra, costing an additional $270,000. ",
-"333TopSpeed": 282,
-"3330to60": 2.5,
-"333Handling": 97,
-
-"666TopSpeed": 284,
-"6660to60": 2.3,
-"666Handling": 100,
-
-"699TopSpeed": 284,
-"6990to60": 2.2,
-"699Handling": 104,
-
-"969TopSpeed": 286,
-"9690to60": 2.3,
-"969Handling": 104,
-
-"996TopSpeed": 286,
-"9960to60": 2.2,
-"996Handling": 100,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggAgeraRS1MW(2017).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

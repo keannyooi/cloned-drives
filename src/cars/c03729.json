@@ -10,45 +10,20 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Endless Summer", "The Rest of the Best: 2023","Rest of The World"],
+    "tags": ["Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-
-
     "weight": 869,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 13.91,
-    "ola": 66.10,
+    "ola": 66.1,
     "description": "First facelift brings a much better interior copied and pasted from the then new Fabia.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenCitiGolf1.4Life(2003).png",
     "creator": "Andu",
-
-
-    "333TopSpeed": 102,
-    "3330to60": 11.2,
-    "333Handling": 68,
-
-    "666TopSpeed": 108,
-    "6660to60": 10.6, 
-    "666Handling": 70,
-
-    "996TopSpeed": 113,
-    "9960to60": 10.0,
-    "996Handling": 73,
-
-    "969TopSpeed": 113,
-    "9690to60": 10.6,
-    "969Handling": 73,
-
-    "699TopSpeed": 108,
-    "6990to60": 10.0,
-    "699Handling": 73,
     "hiddenTag": [""]
 }

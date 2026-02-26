@@ -10,9 +10,8 @@
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","Visionary Road"],
+    "tags": ["Concept","Unique","Visionary Road"],
     "isPrize": false,
-
     "weight": 900,
     "gc": "Low",
     "seatCount": 2,
@@ -24,29 +23,7 @@
     "mra": 59.15,
     "ola": 77.14,
     "description": "A Peugeot concept that uses carbon fibre body technology with a V6 in front.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot607FelineConcept(2000).png",
     "creator": "Crossfire",
-
-"333TopSpeed": 159,
-"3330to60": 5.5,
-"333Handling": 86,
-
-"666TopSpeed": 163,
-"6660to60": 5.2,
-"666Handling": 88,
-
-"699TopSpeed": 163,
-"6990to60": 4.9,
-"699Handling": 92,
-
-"969TopSpeed": 166,
-"9690to60": 5.2,
-"969Handling": 92,
-
-"996TopSpeed": 166,
-"9960to60": 4.9,
-"996Handling": 88
-	,
     "hiddenTag": [""]
 }

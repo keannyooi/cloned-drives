@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04021",
     "cr": 623,
     "make": "VinFast",
@@ -10,13 +10,11 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "The Rest of the Best: 2023","Rest of The World","Endless Summer"],
+    "tags": ["Eco-Friendly","The Rest of the Best: 2023","Rest of The World","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 2671,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 55.69,
     "ola": 79.24,
     "description": "Ready or not, the Vietnamese upstart carmaker plunges into the U.S. market with an electric SUV.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VinfastVF8PlusCityEdition(2023).png",
     "creator": "Hastur",
-
-    "333TopSpeed": 128,
-    "3330to60": 5,
-    "333Handling": 79,
-    
-    "666TopSpeed": 132,
-    "6660to60": 4.8,
-    "666Handling": 81,
-    
-    "699TopSpeed": 132,
-    "6990to60": 4.5,
-    "699Handling": 84,
-    
-    "969TopSpeed": 137,
-    "9690to60": 4.8,
-    "969Handling": 84,
-    
-    "996TopSpeed": 137,
-    "9960to60": 4.5,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

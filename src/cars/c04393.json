@@ -10,9 +10,8 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite", "Motorsport","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1260,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "After over 100 successful races Audi decided to race in the U.S. It was specially homologated with reduced engine power and lower downforce.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 172, 
-    "3330to60": 3.3, 
-    "333Handling": 98,
-
-    "666TopSpeed": 175, 
-    "6660to60": 3.1, 
-    "666Handling": 101,
-
-    "996TopSpeed": 178, 
-    "9960to60": 3.0, 
-    "996Handling": 101,
-
-    "969TopSpeed": 178, 
-    "9690to60": 3.1, 
-    "969Handling": 105,
-
-    "699TopSpeed": 175, 
-    "6990to60": 3.0, 
-    "699Handling": 105,
     "hiddenTag": [""]
 }

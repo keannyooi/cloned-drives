@@ -6,13 +6,12 @@
     "modelYear": 2013,
     "country": "DE",
     "topSpeed": 174,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1710,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The final sendoff of Mercedes-Benz's naturally aspirated V8 engines.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzC63AMGCoupeEdition507(2013).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 177, 
-    "3330to60": 3.8, 
-    "333Handling": 87,
-
-    "666TopSpeed": 180, 
-    "6660to60": 3.6, 
-    "666Handling": 90,
-
-    "699TopSpeed": 180, 
-    "6990to60": 3.4, 
-    "699Handling": 93,
-
-    "969TopSpeed": 183, 
-    "9690to60": 3.6, 
-    "969Handling": 93,
-
-    "996TopSpeed": 183, 
-    "9960to60": 3.4, 
-    "996Handling": 90,
     "hiddenTag": [""]
 }

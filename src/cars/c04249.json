@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1273,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "1.6 supremacy.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA316Attraction(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 120,
-    "3330to60": 10.9,
-    "333Handling": 76,
-
-    "666TopSpeed": 124,
-    "6660to60": 10.4, 
-    "666Handling": 79,
-
-    "996TopSpeed": 129,
-    "9960to60": 9.8,
-    "996Handling": 79,
-
-    "969TopSpeed": 129,
-    "9690to60": 10.4,
-    "969Handling": 82,
-
-    "699TopSpeed": 124,
-    "6990to60": 9.8,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c02007",
     "cr": 496,
-    "make": ["Mopar", "Ram", "Dodge"],
+    "make": ["Mopar","Ram","Dodge"],
     "model": "Ram Runner",
     "modelYear": 2011,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 61,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Extreme Juggernaut","Motorsport", "Year of the Rabbit"],
+    "tags": ["Extreme Juggernaut","Motorsport","Year of the Rabbit"],
     "isPrize": false,
-	
     "weight": 2690,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The Mopar Raptor.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MoparRamRunner(2011).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 105,
-"3330to60": 7.0,
-"333Handling": 63,
-
-"666TopSpeed": 110,
-"6660to60": 6.7,
-"666Handling": 65,
-
-"699TopSpeed": 110,
-"6990to60": 6.3,
-"699Handling": 68,
-
-"969TopSpeed": 116,
-"9690to60": 6.7,
-"969Handling": 68,
-
-"996TopSpeed": 116,
-"9960to60": 6.3,
-"996Handling": 65,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Style Icon","The Tyrol Tour: Remix"],
+    "tags": ["Unique","Style Icon","The Tyrol Tour: Remix"],
     "isPrize": false,
-    
     "weight": 1515,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "When German sports car combines with Italian design.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZagatoCoupe(2012).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.9,
-    "333Handling": 89,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.7,
-    "666Handling": 92,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.4,
-    "996Handling": 92,
-
-    "969TopSpeed": 165,
-    "9690to60": 4.7,
-    "969Handling": 95,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.4,
-    "699Handling": 95,
     "hiddenTag": [""]
 }

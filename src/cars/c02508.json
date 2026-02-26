@@ -1,7 +1,7 @@
 {
     "carID": "c02508",
     "cr": 702,
-    "make": ["AGP Turbo", "Dodge"],
+    "make": ["AGP Turbo","Dodge"],
     "model": "Neon SRT-4 Project Car",
     "modelYear": 2004,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 82,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1315,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AGPTurboSRT4NeonProjectCar(2004).png",
     "creator": "Keanny",
-
-"333TopSpeed": 189, 
-"3330to60": 3.7, 
-"333Handling": 85,
-
-"666TopSpeed": 192, 
-"6660to60": 3.5, 
-"666Handling": 87,
-
-"699TopSpeed": 192, 
-"6990to60": 3.3, 
-"699Handling": 91,
-
-"969TopSpeed": 194, 
-"9690to60": 3.5, 
-"969Handling": 91,
-
-"996TopSpeed": 194, 
-"9960to60": 3.3, 
-"996Handling": 87,
     "hiddenTag": [""]
 }

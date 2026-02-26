@@ -10,9 +10,8 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","Ultra Expensive","Visionary Road"],
+    "tags": ["Concept","Unique","Ultra Expensive","Visionary Road"],
     "isPrize": false,
-	
     "weight": 1955,
     "gc": "Low",
     "seatCount": 4,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 73.84,
-    "ola": 87.50,
+    "ola": 87.5,
     "description": "Out-shined by the Jet 2+2 Concept, but cooler.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinBertoneJet2(2004).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 183,
-    "3330to60": 4.6,
-    "333Handling": 81,
-
-    "666TopSpeed": 186,
-    "6660to60": 4.3,
-    "666Handling": 83,
-
-    "996TopSpeed": 189,
-    "9960to60": 4.1,
-    "996Handling": 83,
-
-    "969TopSpeed": 189,
-    "9690to60": 4.3,
-    "969Handling": 87,
-
-    "699TopSpeed": 186,
-    "6990to60": 4.1,
-    "699Handling": 87,
     "hiddenTag": [""]
 }

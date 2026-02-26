@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03408",
     "cr": 148,
     "make": "Fiat",
@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 650,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Other",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 10.55,
     "ola": 54.16,
     "description": "For the working girls, the working boys and the working thems!",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda1100BusinessVan(2000).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 93,
-    "3330to60": 14.7,
-    "333Handling": 65,
-    
-    "666TopSpeed": 99,
-    "6660to60": 14,
-    "666Handling": 67,
-    
-    "699TopSpeed": 99,
-    "6990to60": 13.2,
-    "699Handling": 70,
-    
-    "969TopSpeed": 105,
-    "9690to60": 14,
-    "969Handling": 70,
-    
-    "996TopSpeed": 105,
-    "9960to60": 13.2,
-    "996Handling": 67,
     "hiddenTag": [""]
 }

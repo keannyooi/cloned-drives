@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Concept","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1549,
     "gc": "Low",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Second of the three 2003 Audi concepts was powered by a TFSI V10 engine and it previewed the A5 Coupe.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiNuvolariquattroConcept(2003).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 3.9,
-    "333Handling": 87,
-
-    "666TopSpeed": 162,
-    "6660to60": 3.7, 
-    "666Handling": 90,
-
-    "996TopSpeed": 165,
-    "9960to60": 3.5,
-    "996Handling": 90,
-
-    "969TopSpeed": 165,
-    "9690to60": 3.7,
-    "969Handling": 93,
-
-    "699TopSpeed": 162,
-    "6990to60": 3.5,
-    "699Handling": 93,
     "hiddenTag": [""]
 }

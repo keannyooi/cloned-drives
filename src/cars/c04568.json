@@ -1,7 +1,7 @@
 {
     "carID": "c04568",
     "cr": 693,
-    "make": ["Elva-Porsche", "Porsche", "Elva"],
+    "make": ["Elva-Porsche","Porsche","Elva"],
     "model": "MK VII",
     "modelYear": 1963,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 442,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 89.54,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ElvaPorscheMKVII(1963).png",
-
-"333TopSpeed": 159,
-"3330to60": 3.6,
-"333Handling": 84,
-
-"666TopSpeed": 163,
-"6660to60": 3.4,
-"666Handling": 86,
-
-"699TopSpeed": 163,
-"6990to60": 3.2,
-"699Handling": 90,
-
-"969TopSpeed": 166,
-"9690to60": 3.4,
-"969Handling": 90,
-
-"996TopSpeed": 166,
-"9960to60": 3.2,
-"996Handling": 86,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

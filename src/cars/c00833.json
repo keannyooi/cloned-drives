@@ -1,10 +1,7 @@
 {
     "carID": "c00833",
     "cr": 809,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "GT C",
     "modelYear": 2017,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Grand Tourer"
-    ],
+    "tags": ["Supercar","Grand Tourer"],
     "isPrize": false,
     "weight": 1760,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 94.59,
     "ola": 85.71,
     "description": "A toned down AMG GT R.",
-     "333TopSpeed": 200,
-    "3330to60": 3.3,
-    "333Handling": 95,
-    "666TopSpeed": 202,
-    "6660to60": 3.2,
-    "666Handling": 98,
-    "996TopSpeed": 205,
-    "9960to60": 3.0,
-    "996Handling": 98,
-    "969TopSpeed": 205,
-    "9690to60": 3.2,
-    "969Handling": 102,
-    "699TopSpeed": 202,
-    "6990to60": 3.0,
-    "699Handling": 102,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesAMGTC(2017).png",
     "creator": "Havvy",
     "hiddenTag": [""]

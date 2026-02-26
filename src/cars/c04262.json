@@ -6,14 +6,12 @@
     "modelYear": 2000,
     "country": "DE",
     "topSpeed": 124,
-    "0to60": 10.0,
+    "0to60": 10,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1204,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 66.22,
-    "ola": 70.00,
+    "ola": 70,
     "description": "Few years after a five door Sportback model was made available which ultimately proved much more popular.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA3Sportback185V(2000).png",
     "creator": "Connor",
-
-    "333TopSpeed": 128,
-    "3330to60": 9.5,
-    "333Handling": 74,
-
-    "666TopSpeed": 132,
-    "6660to60": 9.0, 
-    "666Handling": 77,
-
-    "996TopSpeed": 137,
-    "9960to60": 8.5,
-    "996Handling": 77,
-
-    "969TopSpeed": 137,
-    "9690to60": 9.0,
-    "969Handling": 80,
-
-    "699TopSpeed": 132,
-    "6990to60": 8.5,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c03425",
     "cr": 963,
-    "make": ["Edo Competition", "Ferrari"],
+    "make": ["Edo Competition","Ferrari"],
     "model": "XX Evolution",
     "modelYear": 2009,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix","Unique","Tuner","Ultra Expensive","Supercar","Track Day"],
     "isPrize": false,
-	
     "weight": 1210,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/EdoCompetitionXXEvolution(2009).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 247,
-"3330to60": 2.5,
-"333Handling": 97,
-
-"666TopSpeed": 249,
-"6660to60": 2.3,
-"666Handling": 100,
-
-"699TopSpeed": 249,
-"6990to60": 2.2,
-"699Handling": 104,
-
-"969TopSpeed": 251,
-"9690to60": 2.3,
-"969Handling": 104,
-
-"996TopSpeed": 251,
-"9960to60": 2.2,
-"996Handling": 100,
     "hiddenTag": [""]
 }

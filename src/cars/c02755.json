@@ -6,13 +6,12 @@
     "modelYear": 2006,
     "country": "US",
     "topSpeed": 112,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1455,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "In a time where everything automotive is all about retro styling.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletHHRLT(2006).png",
     "creator": "Keanny",
-
-"333TopSpeed": 117, 
-"3330to60": 8.5, 
-"333Handling": 70,
-
-"666TopSpeed": 121, 
-"6660to60": 8.1, 
-"666Handling": 72,
-
-"699TopSpeed": 121, 
-"6990to60": 7.7, 
-"699Handling": 75,
-
-"969TopSpeed": 126, 
-"9690to60": 8.1, 
-"969Handling": 75,
-
-"996TopSpeed": 126, 
-"9960to60": 7.7, 
-"996Handling": 72,
     "hiddenTag": [""]
 }

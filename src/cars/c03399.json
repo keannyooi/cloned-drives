@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03399",
     "cr": 265,
     "make": "Fiat",
@@ -6,17 +6,15 @@
     "modelYear": 2017,
     "country": "IT",
     "topSpeed": 99,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1085,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 17.77,
     "ola": 55.71,
     "description": "A good diesel basic offroader.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda13MJT4x42017).png",
     "creator": "Andu",
-
-    "333TopSpeed": 104,
-    "3330to60": 13.3,
-    "333Handling": 70,
-    
-    "666TopSpeed": 110,
-    "6660to60": 12.6,
-    "666Handling": 72,
-    
-    "699TopSpeed": 110,
-    "6990to60": 11.9,
-    "699Handling": 75,
-    
-    "969TopSpeed": 115,
-    "9690to60": 12.6,
-    "969Handling": 75,
-    
-    "996TopSpeed": 115,
-    "9960to60": 11.9,
-    "996Handling": 72,
     "hiddenTag": [""]
 }

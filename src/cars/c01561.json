@@ -10,11 +10,7 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Kei Car",
-        "Motorsport",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","Motorsport","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 685,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 47.31,
     "ola": 75,
     "description": "An S800 race car that was established by Honda's racing firm, RSC that famously won 12 hours of Suzuka in its class and finished 3rd overall, ahead of the much powerful cars and behind the Toyota 7s.",
-"333TopSpeed": 121,
-"3330to60": 6.6,
-"333Handling": 72,
-
-"666TopSpeed": 126,
-"6660to60": 6.2,
-"666Handling": 75,
-
-"699TopSpeed": 126,
-"6990to60": 5.9,
-"699Handling": 78,
-
-"969TopSpeed": 130,
-"9690to60": 6.2,
-"969Handling": 78,
-
-"996TopSpeed": 130,
-"9960to60": 5.9,
-"996Handling": 75,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaS800RSC(1968).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

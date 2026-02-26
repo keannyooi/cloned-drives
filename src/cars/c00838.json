@@ -1,10 +1,7 @@
 {
     "carID": "c00838",
     "cr": 612,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "SLK 32 AMG",
     "modelYear": 2001,
     "country": "DE",
@@ -26,21 +23,6 @@
     "mra": 70.4,
     "ola": 76,
     "description": "One of the top 2000s roadster choices. Card by Cenard",
-     "333TopSpeed": 158,
-    "3330to60": 4.7,
-    "333Handling": 80,
-    "666TopSpeed": 162,
-    "6660to60": 4.4,
-    "666Handling": 82,
-    "996TopSpeed": 165,
-    "9960to60": 4.2,
-    "996Handling": 82,
-    "969TopSpeed": 165,
-    "9690to60": 4.4,
-    "969Handling": 85,
-    "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzSLK32AMG(2001).png",
     "creator": "Cenard",
     "hiddenTag": [""]

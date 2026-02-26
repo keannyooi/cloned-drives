@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [ "The Americas Assault", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "tags": ["The Americas Assault","Eco-Friendly","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 929,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "LPG, gas, fuel.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletSpark10LSBiFuel(2010).png",
     "creator": "Connor",
-
-    "333TopSpeed": 98,
-    "3330to60": 16.3,
-    "333Handling": 72,
-
-    "666TopSpeed": 103,
-    "6660to60": 15.5, 
-    "666Handling": 75,
-
-    "996TopSpeed": 109,
-    "9960to60": 14.6,
-    "996Handling": 75,
-
-    "969TopSpeed": 109,
-    "9690to60": 15.5,
-    "969Handling": 78,
-
-    "699TopSpeed": 103,
-    "6990to60": 14.6,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

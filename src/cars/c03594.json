@@ -1,7 +1,7 @@
 {
     "carID": "c03594",
     "cr": 507,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "1500 Special Service",
     "modelYear": 2013,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["The Americas Assault","Endless Summer"],
     "isPrize": true,
-	
     "weight": 2600,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "It’s the law. Ram Law.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram1500SpecialService(2013).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 113,
-"3330to60": 7.1,
-"333Handling": 65,
-
-"666TopSpeed": 118,
-"6660to60": 6.8,
-"666Handling": 67,
-
-"699TopSpeed": 118,
-"6990to60": 6.4,
-"699Handling": 70,
-
-"969TopSpeed": 122,
-"9690to60": 6.8,
-"969Handling": 70,
-
-"996TopSpeed": 122,
-"9960to60": 6.4,
-"996Handling": 67,
     "hiddenTag": [""]
 }

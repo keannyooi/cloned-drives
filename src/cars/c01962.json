@@ -6,14 +6,11 @@
     "modelYear": 2010,
     "country": "JP",
     "topSpeed": 201,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 104,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "The Japanese Odyssey",
-        "Motorsport"
-    ],
+    "tags": ["The Japanese Odyssey","Motorsport"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 95.87,
     "ola": 85.71,
     "description": "",
-"333TopSpeed": 204,
-"3330to60": 2.8,
-"333Handling": 107,
-
-"666TopSpeed": 206,
-"6660to60": 2.7,
-"666Handling": 111,
-
-"699TopSpeed": 206,
-"6990to60": 2.5,
-"699Handling": 115,
-
-"969TopSpeed": 209,
-"9690to60": 2.7,
-"969Handling": 115,
-
-"996TopSpeed": 209,
-"9960to60": 2.5,
-"996Handling": 111,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanGTRNismoGT1(2010).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

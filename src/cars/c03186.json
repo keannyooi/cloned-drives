@@ -10,9 +10,8 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly", "The Americas Assault"],
+    "tags": ["Eco-Friendly","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1679,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The first pickup in America with a standard full-hybrid powertrain.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMaverickHybrid(2022).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 115,
-    "3330to60": 7.3,
-    "333Handling": 75,
-
-    "666TopSpeed": 119,
-    "6660to60": 6.9,
-    "666Handling": 78,
-
-    "699TopSpeed": 119,
-    "6990to60": 6.5,
-    "699Handling": 81,
-
-    "969TopSpeed": 124,
-    "9690to60": 6.9,
-    "969Handling": 81,
-
-    "996TopSpeed": 124,
-    "9960to60": 6.5,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

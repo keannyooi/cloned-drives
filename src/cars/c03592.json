@@ -1,7 +1,7 @@
 {
     "carID": "c03592",
     "cr": 599,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "1500 Rebel 5.7 4x4 Quad Cab",
     "modelYear": 2019,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Extreme Juggernaut", "The Americas Assault","Endless Summer"],
+    "tags": ["Extreme Juggernaut","The Americas Assault","Endless Summer"],
     "isPrize": false,
-	
     "weight": 2530,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram1500Rebel5.74x4QuadCab(2019).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 113,
-"3330to60": 6.1,
-"333Handling": 67,
-
-"666TopSpeed": 118,
-"6660to60": 5.8,
-"666Handling": 69,
-
-"699TopSpeed": 118,
-"6990to60": 5.4,
-"699Handling": 72,
-
-"969TopSpeed": 122,
-"9690to60": 5.8,
-"969Handling": 72,
-
-"996TopSpeed": 122,
-"9960to60": 5.4,
-"996Handling": 69,
     "hiddenTag": [""]
 }

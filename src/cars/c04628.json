@@ -10,13 +10,11 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1271,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 66.67,
     "ola": 71.05,
     "description": "Smart, sporty bodykit and a twincharged engine is an exquisite combination.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenScirocco1.4TSIR-Line(2009).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 141,
-    "3330to60": 7.2,
-    "333Handling": 84,
-    
-    "666TopSpeed": 145,
-    "6660to60": 6.8,
-    "666Handling": 86,
-    
-    "699TopSpeed": 145,
-    "6990to60": 6.5,
-    "699Handling": 90,
-    
-    "969TopSpeed": 148,
-    "9690to60": 6.8,
-    "969Handling": 90,
-    
-    "996TopSpeed": 148,
-    "9960to60": 6.5,
-    "996Handling": 86,
-	"hiddenTag": [""]
-	}
+    "hiddenTag": [""]
+}

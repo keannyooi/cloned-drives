@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1745,
     "gc": "High",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 54.37,
-    "ola": 63.10,
+    "ola": 63.1,
     "description": "Ti trim level making its debut in Europe.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.2TDQ4(190)(2018).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 135, 
-    "3330to60": 6.9, 
-    "333Handling": 80,
-
-    "666TopSpeed": 139, 
-    "6660to60": 6.6, 
-    "666Handling": 82,
-
-    "996TopSpeed": 143, 
-    "9960to60": 6.2, 
-    "996Handling": 82,
-
-    "969TopSpeed": 143, 
-    "9690to60": 6.6, 
-    "969Handling": 85,
-
-    "699TopSpeed": 139, 
-    "6990to60": 6.2, 
-    "699Handling": 85,
     "hiddenTag": [""]
 }

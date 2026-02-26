@@ -10,9 +10,7 @@
     "handling": 100,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport"
-    ],
+    "tags": ["Motorsport"],
     "isPrize": false,
     "weight": 1402,
     "gc": "Low",
@@ -25,25 +23,6 @@
     "mra": 85,
     "ola": 94.12,
     "description": "The next best thing to being airborne.",
-"333TopSpeed": 176,
-"3330to60": 3.2,
-"333Handling": 103,
-
-"666TopSpeed": 179,
-"6660to60": 3.1,
-"666Handling": 107,
-
-"699TopSpeed": 179,
-"6990to60": 2.9,
-"699Handling": 111,
-
-"969TopSpeed": 182,
-"9690to60": 3.1,
-"969Handling": 111,
-
-"996TopSpeed": 182,
-"9960to60": 2.9,
-"996Handling": 107,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeViperSRT10CompetitionCoupe%2303PVO(2003).png",
     "creator": "Johnny",
     "hiddenTag": [""]

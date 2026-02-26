@@ -1,7 +1,7 @@
 {
     "carID": "c06964",
     "cr": 430,
-    "make": ["Turbo Technics", "Mercedes-Benz"],
+    "make": ["Turbo Technics","Mercedes-Benz"],
     "model": "E 320",
     "modelYear": 1993,
     "country": "GB",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 77.01,
     "ola": 74.63,
-
     "description": "No visual modifications, but never judge a book by it's cover.",
-
-"333TopSpeed": 158,
-"3330to60": 6.4,
-"333Handling": 79,
-
-"666TopSpeed": 162,
-"6660to60": 6,
-"666Handling": 81,
-
-"699TopSpeed": 162,
-"6990to60": 5.7,
-"699Handling": 84,
-
-"969TopSpeed": 165,
-"9690to60": 6,
-"969Handling": 84,
-
-"996TopSpeed": 165,
-"9960to60": 5.7,
-"996Handling": 81,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/TurboTechnicsE320(1993).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

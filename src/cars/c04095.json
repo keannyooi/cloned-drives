@@ -10,44 +10,20 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly"],
     "isPrize": false,
-
-
     "weight": 1203,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 5.00,
+    "mra": 5,
     "ola": 60.18,
     "description": "Forget about your big EV SUVs, get your money back and buy this; what modern EVs should be.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volkswagene-up!(2019).png",
     "creator": "Andu",
-
-    "333TopSpeed": 87,
-    "3330to60": 10.7,
-    "333Handling": 74,
-    
-    "666TopSpeed": 94,
-    "6660to60": 10.2,
-    "666Handling": 77,
-    
-    "699TopSpeed": 94,
-    "6990to60": 9.6,
-    "699Handling": 80,
-    
-    "969TopSpeed": 100,
-    "9690to60": 10.2,
-    "969Handling": 80,
-    
-    "996TopSpeed": 100,
-    "9960to60": 9.6,
-    "996Handling": 77,
     "hiddenTag": [""]
 }

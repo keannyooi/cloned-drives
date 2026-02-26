@@ -10,9 +10,8 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eurotech Elite", "Eco-Friendly", "Innovative","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Eco-Friendly","Innovative","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1660,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Mixed",
     "fuelType": "Hybrid",
     "mra": 56.52,
-    "ola": 76.80,
+    "ola": 76.8,
     "description": "Peugeot's first hybrid car, as well as world's first diesel-hybrid car. Providing more power, four-wheel drive and some electric range.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot3008HYbrid4(2011).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 123,
-    "3330to60": 8.2,
-    "333Handling": 76,
-
-    "666TopSpeed": 128,
-    "6660to60": 7.7,
-    "666Handling": 79,
-
-    "699TopSpeed": 128,
-    "6990to60": 7.3,
-    "699Handling": 82,
-
-    "969TopSpeed": 132,
-    "9690to60": 7.7,
-    "969Handling": 82,
-
-    "996TopSpeed": 132,
-    "9960to60": 7.3,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

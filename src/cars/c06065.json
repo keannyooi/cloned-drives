@@ -1,7 +1,7 @@
 {
     "carID": "c06065",
     "cr": 866,
-    "make": ["Nissan", "Nismo"],
+    "make": ["Nissan","Nismo"],
     "model": "Skyline GT-R Nismo Clubman Race Spec (R34)",
     "modelYear": 2023,
     "country": "JP",
@@ -10,7 +10,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [ "CD Contenders","Supercar","Tuner","RestoMod"],
+    "tags": ["CD Contenders","Supercar","Tuner","RestoMod"],
     "isPrize": false,
     "weight": 1490,
     "gc": "Medium",
@@ -23,25 +23,6 @@
     "mra": 93.25,
     "ola": 76.95,
     "description": "",
-"333TopSpeed": 193,
-"3330to60": 3.7,
-"333Handling": 92,
-
-"666TopSpeed": 195,
-"6660to60": 3.5,
-"666Handling": 95,
-
-"699TopSpeed": 195,
-"6990to60": 3.3,
-"699Handling": 99,
-
-"969TopSpeed": 198,
-"9690to60": 3.5,
-"969Handling": 99,
-
-"996TopSpeed": 198,
-"9960to60": 3.3,
-"996Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTRNismoClubmanRaceSpec(R34)(2023).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

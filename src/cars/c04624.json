@@ -10,13 +10,11 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch", "Unique", "Concept","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Unique","Concept","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1465,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 116.13,
     "ola": 98.89,
     "description": "Talk about legendary: with a 641bhp twin-turbo W12 mounted midships and driving the rear wheels, This VAG leftover bin Golf is one very hot and scary hatch",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfGTIW12650(2007).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 205,
-    "3330to60": 3.4,
-    "333Handling": 87,
-    
-    "666TopSpeed": 207,
-    "6660to60": 3.2,
-    "666Handling": 90,
-    
-    "699TopSpeed": 207,
-    "6990to60": 3.1,
-    "699Handling": 93,
-    
-    "969TopSpeed": 210,
-    "9690to60": 3.2,
-    "969Handling": 93,
-    
-    "996TopSpeed": 210,
-    "9960to60": 3.1,
-    "996Handling": 90,
     "hiddenTag": [""]
 }

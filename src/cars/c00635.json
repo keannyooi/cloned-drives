@@ -10,11 +10,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Hypercar",
-        "Rest of The World"
-    ],
+    "tags": ["Unique","Hypercar","Rest of The World"],
     "isPrize": false,
     "weight": 1280,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 122.02,
     "ola": 97.14,
     "description": "One of the few cars The Stig couldnt tame.",
-"333TopSpeed": 247,
-"3330to60": 3.2,
-"333Handling": 93,
-
-"666TopSpeed": 249,
-"6660to60": 3.1,
-"666Handling": 96,
-
-"699TopSpeed": 249,
-"6990to60": 2.9,
-"699Handling": 100,
-
-"969TopSpeed": 251,
-"9690to60": 3.1,
-"969Handling": 100,
-
-"996TopSpeed": 251,
-"9960to60": 2.9,
-"996Handling": 96,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggCCX(2006).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

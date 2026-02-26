@@ -6,14 +6,12 @@
     "modelYear": 2019,
     "country": "CZ",
     "topSpeed": 81,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["Eco-Friendly","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1235,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Batteries!",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaCitigo-eiV(2019).png",
     "creator": "Connor",
-
-    "333TopSpeed": 87,
-    "3330to60": 10.5,
-    "333Handling": 74,
-
-    "666TopSpeed": 94,
-    "6660to60": 9.9, 
-    "666Handling": 77,
-
-    "996TopSpeed": 100,
-    "9960to60": 9.4,
-    "996Handling": 77,
-
-    "969TopSpeed": 100,
-    "9690to60": 9.9,
-    "969Handling": 80,
-
-    "699TopSpeed": 94,
-    "6990to60": 9.4,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

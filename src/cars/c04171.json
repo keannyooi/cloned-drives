@@ -1,7 +1,7 @@
 {
     "carID": "c04171",
     "cr": 836,
-    "make": ["Evolve", "Volvo"],
+    "make": ["Evolve","Volvo"],
     "model": "C30 Concept",
     "modelYear": 2006,
     "country": "US",
@@ -10,10 +10,8 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Tuner","The Americas Assault"],
+    "tags": ["Concept","Tuner","The Americas Assault"],
     "isPrize": false,
-
-
     "weight": 1340,
     "gc": "Low",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "For SEMA 2006 American Volvo tuner Evolve, made the craziest C30 ever.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/EvolveC30Concept(2006).png",
     "creator": "Connor",
-
-    "333TopSpeed": 196,
-    "3330to60": 3.2,
-    "333Handling": 91,
-
-    "666TopSpeed": 198,
-    "6660to60": 3.1, 
-    "666Handling": 94,
-
-    "996TopSpeed": 201,
-    "9960to60": 2.9,
-    "996Handling": 94,
-
-    "969TopSpeed": 201,
-    "9690to60": 3.1,
-    "969Handling": 98,
-
-    "699TopSpeed": 198,
-    "6990to60": 2.9,
-    "699Handling": 98,
     "hiddenTag": [""]
 }

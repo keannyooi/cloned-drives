@@ -1,7 +1,7 @@
 {
     "carID": "c02557",
     "cr": 114,
-    "make": ["Prince", "Nissan"],
+    "make": ["Prince","Nissan"],
     "model": "Skyline 1900 BLSI-3",
     "modelYear": 1961,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1330,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceSkyline1900BLSI3(1961).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 93, 
-"3330to60": 15.6, 
-"333Handling": 57,
-
-"666TopSpeed": 99, 
-"6660to60": 14.8, 
-"666Handling": 59,
-
-"699TopSpeed": 99, 
-"6990to60": 13.9, 
-"699Handling": 61,
-
-"969TopSpeed": 105, 
-"9690to60": 14.8, 
-"969Handling": 61,
-
-"996TopSpeed": 105, 
-"9960to60": 13.9, 
-"996Handling": 59,
     "hiddenTag": [""]
 }

@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1035,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Generic box but diesel",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelAgila13CDTICosmo(2003).png",
     "creator": "Connor",
-
-    "333TopSpeed": 100,
-    "3330to60": 13.7,
-    "333Handling": 67,
-
-    "666TopSpeed": 106,
-    "6660to60": 13.0, 
-    "666Handling": 69,
-
-    "996TopSpeed": 111,
-    "9960to60": 12.2,
-    "996Handling": 69,
-
-    "969TopSpeed": 111,
-    "9690to60": 13.0,
-    "969Handling": 72,
-
-    "699TopSpeed": 106,
-    "6990to60": 12.2,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 865,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 12.65,
     "ola": 57.99,
     "description": "The start of a diesel icon.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfGTD(1982).png",
     "creator": "Andu",
-
-    "333TopSpeed": 103,
-    "3330to60": 12.8,
-    "333Handling": 67,
-
-    "666TopSpeed": 109,
-    "6660to60": 12.2, 
-    "666Handling": 69,
-
-    "996TopSpeed": 114,
-    "9960to60": 11.5,
-    "996Handling": 69,
-
-    "969TopSpeed": 114,
-    "9690to60": 12.2,
-    "969Handling": 72,
-
-    "699TopSpeed": 109,
-    "6990to60": 11.5,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

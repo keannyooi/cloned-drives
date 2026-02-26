@@ -10,10 +10,7 @@
     "handling": 58,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Style Icon",
-        "Year of the Horse"
-    ],
+    "tags": ["Style Icon","Year of the Horse"],
     "isPrize": false,
     "weight": 2220,
     "gc": "High",
@@ -26,24 +23,7 @@
     "mra": 25.98,
     "ola": 63.64,
     "description": "The first major update of the iconic Gelandewagen since 1979, featuring an extensively updated chassis and a revised front end.",
-    "333TopSpeed": 109,
-    "3330to60": 12.5,
-    "333Handling": 60,
-    "666TopSpeed": 114,
-    "6660to60": 11.9,
-    "666Handling": 62,
-    "996TopSpeed": 119,
-    "9960to60": 11.2,
-    "996Handling": 62,
-    "969TopSpeed": 119,
-    "9690to60": 11.9,
-    "969Handling": 64,
-    "699TopSpeed": 114,
-    "6990to60": 11.2,
-    "699Handling": 64,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenz300GE(1990).png",
     "creator": "Havvy",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

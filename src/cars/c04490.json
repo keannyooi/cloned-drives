@@ -1,18 +1,17 @@
 {
     "carID": "c04490",
     "cr": 926,
-    "make": ["Manhart", "BMW"],
+    "make": ["Manhart","BMW"],
     "model": "MHX7 650 Dirt Edition",
     "modelYear": 2022,
     "country": "DE",
     "topSpeed": 130,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": ["Eurotech Elite","Tuner","Extreme Juggernaut","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 2670,
     "gc": "High",
     "seatCount": 7,
@@ -25,26 +24,6 @@
     "ola": 70,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ManhartMHX7650DirtEdition(2022).png",
-
-"333TopSpeed": 134,
-"3330to60": 3.8,
-"333Handling": 80,
-
-"666TopSpeed": 138,
-"6660to60": 3.6,
-"666Handling": 82,
-
-"699TopSpeed": 138,
-"6990to60": 3.4,
-"699Handling": 85,
-
-"969TopSpeed": 142,
-"9690to60": 3.6,
-"969Handling": 85,
-
-"996TopSpeed": 142,
-"9960to60": 3.4,
-"996Handling": 82,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

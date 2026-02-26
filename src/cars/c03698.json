@@ -1,7 +1,7 @@
 {
     "carID": "c03698",
     "cr": 26,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "15/98 2/4 Seater",
     "modelYear": 1937,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Unique","The Midlands Cruise","Endless Summer"],
     "isPrize": false,
-	
     "weight": 1045,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "After the decision to reduce the number of 2 litre saloons to be built from 100 to just 50 was made, Gordon Sutherland had to introduce a revised model to take up the production capacity. So a short chassis (8' 6'') was introduced with the standard wet sump engine with the intention that the cars were to be more sporty than the 2 litre saloon and tourers built on the long chassis but not out-and-out sportscars as such.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartin159824Seater(1937).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 96,
-"3330to60": 18.2,
-"333Handling": 55,
-
-"666TopSpeed": 102,
-"6660to60": 17.3,
-"666Handling": 56,
-
-"699TopSpeed": 102,
-"6990to60": 16.3,
-"699Handling": 59,
-
-"969TopSpeed": 107,
-"9690to60": 17.3,
-"969Handling": 59,
-
-"996TopSpeed": 107,
-"9960to60": 16.3,
-"996Handling": 56,
     "hiddenTag": [""]
 }

@@ -10,12 +10,7 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport",
-        "Eco-Friendly",
-        "OG",
-        "Year of the Horse"
-    ],
+    "tags": ["Motorsport","Eco-Friendly","OG","Year of the Horse"],
     "isPrize": true,
     "weight": 1463,
     "gc": "Low",
@@ -28,24 +23,7 @@
     "mra": 93.1,
     "ola": 96.3,
     "description": "For purple mountain, majesties… wEEEo—wEEEo … wEEE—wEEEo…wEEEo—wEEEo.",
-    "333TopSpeed": 189,
-    "3330to60": 2.6,
-    "333Handling": 99,
-    "666TopSpeed": 192,
-    "6660to60": 2.4,
-    "666Handling": 102,
-    "699TopSpeed": 192,
-    "6990to60": 2.3,
-    "699Handling": 107,
-    "969TopSpeed": 194,
-    "9690to60": 2.4,
-    "969Handling": 107,
-    "996TopSpeed": 194,
-    "9960to60": 2.3,
-    "996Handling": 102,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiMiEVEvolutionIII(2014).png",
     "creator": "Keanny",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

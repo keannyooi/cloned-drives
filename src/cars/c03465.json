@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Supercar","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1650,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The Florida boomermobile enters its next open top evolution, but don't worry you won't be sacrificing any room for those golf clubs.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteStingrayConvertible(2020).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 197,
-    "3330to60": 3.1,
-    "333Handling": 92,
-
-    "666TopSpeed": 199,
-    "6660to60": 3.0,
-    "666Handling": 95,
-
-    "699TopSpeed": 199,
-    "6990to60": 2.8,
-    "699Handling": 99,
-
-    "969TopSpeed": 202,
-    "9690to60": 3,
-    "969Handling": 99,
-
-    "996TopSpeed": 202,
-    "9960to60": 2.8,
-    "996Handling": 95,
     "hiddenTag": [""]
 }

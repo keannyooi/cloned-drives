@@ -10,11 +10,8 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
-
     "weight": 1145,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +23,6 @@
     "mra": 55.89,
     "ola": 75.18,
     "description": "The homologated special edition 205 with AWD and engine at the middle was built with Group B rally car DNA.",
-"333TopSpeed": 135,
-"3330to60": 5.7,
-"333Handling": 80,
-
-"666TopSpeed": 139,
-"6660to60": 5.4,
-"666Handling": 82,
-
-"699TopSpeed": 139,
-"6990to60": 5.1,
-"699Handling": 85,
-
-"969TopSpeed": 143,
-"9690to60": 5.4,
-"969Handling": 85,
-
-"996TopSpeed": 143,
-"9960to60": 5.1,
-"996Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot205Turbo16(1984).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

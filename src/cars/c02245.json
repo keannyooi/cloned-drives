@@ -1,7 +1,7 @@
 {
     "carID": "c02245",
     "cr": 683,
-    "make": ["Mallett", "Pontiac"],
+    "make": ["Mallett","Pontiac"],
     "model": "V8 Solstice",
     "modelYear": 2006,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer"],
+    "tags": ["Tuner","Street Racer"],
     "isPrize": false,
-    
     "weight": 1403,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "V8 Witchcraft.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MallettV8Solstice(2006).png",
     "creator": "Biszkoptowiec",
-
-    "333TopSpeed": 149,
-    "3330to60": 4.2,
-    "333Handling": 94,
-
-    "666TopSpeed": 152,
-    "6660to60": 4.0,
-    "666Handling": 97,
-
-    "996TopSpeed": 156,
-    "9960to60": 3.7,
-    "996Handling": 97,
-
-    "969TopSpeed": 156,
-    "9690to60": 4.0,
-    "969Handling": 101,
-
-    "699TopSpeed": 152,
-    "6990to60": 3.7,
-    "699Handling": 101,
     "hiddenTag": [""]
 }

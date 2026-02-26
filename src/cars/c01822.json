@@ -1,11 +1,7 @@
 {
     "carID": "c01822",
     "cr": 333,
-    "make": [
-        "Samuri",
-        "Nissan",
-        "Datsun"
-    ],
+    "make": ["Samuri","Nissan","Datsun"],
     "model": "240Z Super Samuri",
     "modelYear": 1973,
     "country": "GB",
@@ -14,10 +10,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1000,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 53.6,
     "ola": 65.67,
     "description": "A British racing icon, despite originally being a Japanese car.",
-     "333TopSpeed": 144,
-    "3330to60": 6.4,
-    "333Handling": 75,
-    "666TopSpeed": 147,
-    "6660to60": 6,
-    "666Handling": 78,
-    "996TopSpeed": 151,
-    "9960to60": 5.7,
-    "996Handling": 78,
-    "969TopSpeed": 151,
-    "9690to60": 6,
-    "969Handling": 81,
-    "699TopSpeed": 147,
-    "6990to60": 5.7,
-    "699Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Samuri240zSuperSamuri(1973).png",
     "creator": "Keanny",
     "hiddenTag": [""]

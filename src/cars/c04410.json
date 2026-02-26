@@ -10,9 +10,8 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "The Americas Assault","Cloned Drives Beta: Last of"],
+    "tags": ["Muscle Car","The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1880,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The ulitarian muscle wagon gets added brawn.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeMagnumRTRTPP(2008).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 146,
-"3330to60": 5.5,
-"333Handling": 76,
-
-"666TopSpeed": 149,
-"6660to60": 5.2,
-"666Handling": 79,
-
-"699TopSpeed": 149,
-"6990to60": 4.9,
-"699Handling": 82,
-
-"969TopSpeed": 153,
-"9690to60": 5.2,
-"969Handling": 82,
-
-"996TopSpeed": 153,
-"9960to60": 4.9,
-"996Handling": 79,
     "hiddenTag": [""]
 }

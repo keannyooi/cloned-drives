@@ -10,10 +10,7 @@
     "handling": 61,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Kei Car",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 745,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 20.12,
     "ola": 67.91,
     "description": "Cute car.",
-"333TopSpeed": 96,
-"3330to60": 15.7,
-"333Handling": 63,
-
-"666TopSpeed": 102,
-"6660to60": 14.8,
-"666Handling": 65,
-
-"699TopSpeed": 102,
-"6990to60": 14,
-"699Handling": 68,
-
-"969TopSpeed": 107,
-"9690to60": 14.8,
-"969Handling": 68,
-
-"996TopSpeed": 107,
-"9960to60": 14,
-"996Handling": 65,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaS600Coupe(1965).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

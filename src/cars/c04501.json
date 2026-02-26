@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1505,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot6072.0HDiFAP110(2004).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 122, 
-    "3330to60": 12.3, 
-    "333Handling": 72,
-
-    "666TopSpeed": 127, 
-    "6660to60": 11.6, 
-    "666Handling": 75,
-
-    "996TopSpeed": 131, 
-    "9960to60": 11.0, 
-    "996Handling": 75,
-
-    "969TopSpeed": 131, 
-    "9690to60": 11.6, 
-    "969Handling": 78,
-
-    "699TopSpeed": 127, 
-    "6990to60": 11.0, 
-    "699Handling": 78,
     "hiddenTag": [""]
 }

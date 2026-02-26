@@ -1,10 +1,7 @@
 {
     "carID": "c02101",
     "cr": 755,
-    "make": [
-        "Banks Power",
-        "GMC"
-    ],
+    "make": ["Banks Power","GMC"],
     "model": "Syclone Land Speed Record",
     "modelYear": 1991,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 25,
     "driveType": "4WD",
     "tyreType": "Drag",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
     "weight": 1590,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 91.43,
     "ola": 84.38,
     "description": "\"I believe in speed and power. Power and speed solves many things.\" - Jeremy Clarkson.",
-     "333TopSpeed": 207,
-    "3330to60": 3,
-    "333Handling": 26,
-    "666TopSpeed": 209,
-    "6660to60": 2.9,
-    "666Handling": 27,
-    "996TopSpeed": 212,
-    "9960to60": 2.7,
-    "996Handling": 27,
-    "969TopSpeed": 212,
-    "9690to60": 2.9,
-    "969Handling": 28,
-    "699TopSpeed": 209,
-    "6990to60": 2.7,
-    "699Handling": 28,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BanksPowerSycloneLandSpeedRecord(1991).png",
     "creator": "Keanny",
     "hiddenTag": [""]

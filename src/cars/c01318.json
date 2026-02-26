@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c01318",
     "cr": 383,
     "make": "Toyota",
@@ -23,21 +23,6 @@
     "mra": 46.61,
     "ola": 71.83,
     "description": "Front-motor and front-wheel-drive are out and rear-motor and rear-wheel drive is in as the Mirai takes a step up in quality over the hideous first generation.",
-     "333TopSpeed": 120,
-    "3330to60": 7.7,
-    "333Handling": 80,
-    "666TopSpeed": 125,
-    "6660to60": 7.3,
-    "666Handling": 82,
-    "996TopSpeed": 129,
-    "9960to60": 6.9,
-    "996Handling": 82,
-    "969TopSpeed": 129,
-    "9690to60": 7.3,
-    "969Handling": 85,
-    "699TopSpeed": 125,
-    "6990to60": 6.9,
-    "699Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaMiraiHigh%2B(2020).png",
     "creator": "Macan",
     "hiddenTag": [""]

@@ -1,10 +1,7 @@
 {
     "carID": "c01345",
     "cr": 859,
-    "make": [
-        "Unplugged Performance",
-        "Tesla"
-    ],
+    "make": ["Unplugged Performance","Tesla"],
     "model": "Model 3 Performance XPO Sales",
     "modelYear": 2020,
     "country": "US",
@@ -13,11 +10,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Eco-Friendly",
-        "Motorsport",
-        "Tuner"
-    ],
+    "tags": ["Eco-Friendly","Motorsport","Tuner"],
     "isPrize": false,
     "weight": 1760,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 61.86,
     "ola": 86.67,
     "description": "This car, raced by XPO, set a supercar-shredding time of 1:54.6 at the Buttonwillow racetrack on the day before Track Mode 2.0 was released.",
-     "333TopSpeed": 165,
-    "3330to60": 2.9,
-    "333Handling": 92,
-    "666TopSpeed": 168,
-    "6660to60": 2.7,
-    "666Handling": 95,
-    "996TopSpeed": 172,
-    "9960to60": 2.6,
-    "996Handling": 95,
-    "969TopSpeed": 172,
-    "9690to60": 2.7,
-    "969Handling": 99,
-    "699TopSpeed": 168,
-    "6990to60": 2.6,
-    "699Handling": 99,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/UnpluggedPerformanceModel3PerformanceXPOSales(2020).png",
     "creator": "Keanny",
     "hiddenTag": [""]

@@ -6,13 +6,12 @@
     "modelYear": 2006,
     "country": "DE",
     "topSpeed": 168,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Extreme Juggernaut"],
     "isPrize": false,
-	
     "weight": 2369,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheCayenneTurboS(2006).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 171, 
-"3330to60": 4.8, 
-"333Handling": 81,
-
-"666TopSpeed": 174, 
-"6660to60": 4.5, 
-"666Handling": 83,
-
-"699TopSpeed": 174, 
-"6990to60": 4.3, 
-"699Handling": 87,
-
-"969TopSpeed": 177, 
-"9690to60": 4.5, 
-"969Handling": 87,
-
-"996TopSpeed": 177, 
-"9960to60": 4.3, 
-"996Handling": 83,
     "hiddenTag": [""]
 }

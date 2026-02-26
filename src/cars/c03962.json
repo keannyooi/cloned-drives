@@ -10,9 +10,8 @@
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Endless Summer", "Unique", "Concept", "Motorsport", "The Americas Assault","Visionary Road"],
+    "tags": ["Endless Summer","Unique","Concept","Motorsport","The Americas Assault","Visionary Road"],
     "isPrize": true,
-	
     "weight": 2200,
     "gc": "High",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Back in the saddle for Baja 1000.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordBroncoRRacePrototype(2019).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 111,
-"3330to60": 5.8,
-"333Handling": 68,
-
-"666TopSpeed": 116,
-"6660to60": 5.5,
-"666Handling": 70,
-
-"699TopSpeed": 116,
-"6990to60": 5.2,
-"699Handling": 73,
-
-"969TopSpeed": 121,
-"9690to60": 5.5,
-"969Handling": 73,
-
-"996TopSpeed": 121,
-"9960to60": 5.2,
-"996Handling": 70,
     "hiddenTag": [""]
 }

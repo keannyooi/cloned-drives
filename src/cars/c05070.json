@@ -1,7 +1,7 @@
 {
     "carID": "c05070",
     "cr": 336,
-    "make": ["Porsche", "Volkswagen"],
+    "make": ["Porsche","Volkswagen"],
     "model": "B32",
     "modelYear": 1985,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Unique","Concept","Oddity","Tuner","Cloned Drives Beta: Last of"],
     "isPrize": true,
-	
     "weight": 1860,
     "gc": "Medium",
     "seatCount": 6,
@@ -25,26 +24,6 @@
     "ola": 51.66,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheB32(1982).png",
-
-"333TopSpeed": 126,
-"3330to60": 7.8,
-"333Handling": 71,
-
-"666TopSpeed": 131,
-"6660to60": 7.4,
-"666Handling": 74,
-
-"699TopSpeed": 131,
-"6990to60": 7,
-"699Handling": 77,
-
-"969TopSpeed": 135,
-"9690to60": 7.4,
-"969Handling": 77,
-
-"996TopSpeed": 135,
-"9960to60": 7,
-"996Handling": 74,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

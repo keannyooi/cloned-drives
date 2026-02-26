@@ -1,10 +1,7 @@
 {
     "carID": "c02082",
     "cr": 908,
-    "make": [
-        "ABT",
-        "Audi"
-    ],
+    "make": ["ABT","Audi"],
     "model": "SQ8 TFSI quattro",
     "modelYear": 2020,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 2270,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 66.07,
     "ola": 75.68,
     "description": "",
-     "333TopSpeed": 158,
-    "3330to60": 3.5,
-    "333Handling": 87,
-    "666TopSpeed": 162,
-    "6660to60": 3.3,
-    "666Handling": 90,
-    "996TopSpeed": 165,
-    "9960to60": 3.1,
-    "996Handling": 90,
-    "969TopSpeed": 165,
-    "9690to60": 3.3,
-    "969Handling": 93,
-    "699TopSpeed": 162,
-    "6990to60": 3.1,
-    "699Handling": 93,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ABTRSQ8TFSIquattro(2020).png",
     "creator": "Macan",
     "hiddenTag": [""]

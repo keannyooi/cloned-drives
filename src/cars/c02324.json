@@ -6,13 +6,12 @@
     "modelYear": 2021,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Eco-Friendly"],
     "isPrize": false,
-
     "weight": 2387,
     "gc": "Low",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 76.92,
     "ola": 93.33,
     "description": "None.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiRSe-tronGT(2021).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 158,
-    "3330to60": 2.9,
-    "333Handling": 88,
-
-    "666TopSpeed": 162,
-    "6660to60": 2.7,
-    "666Handling": 91,
-
-    "996TopSpeed": 165,
-    "9960to60": 2.6,
-    "996Handling": 91,
-
-    "969TopSpeed": 165,
-    "9690to60": 2.7,
-    "969Handling": 94,
-
-    "699TopSpeed": 162,
-    "6990to60": 2.6,
-    "699Handling": 94,
     "hiddenTag": [""]
 }

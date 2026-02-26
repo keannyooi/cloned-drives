@@ -10,11 +10,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Super Sedan",
-        "Silver Screen"
-    ],
+    "tags": ["Muscle Car","Super Sedan","Silver Screen"],
     "isPrize": false,
     "weight": 2080,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 88.1,
     "ola": 91.89,
     "description": "The W I D E B O I.",
-"333TopSpeed": 199,
-"3330to60": 3.5,
-"333Handling": 90,
-
-"666TopSpeed": 201,
-"6660to60": 3.3,
-"666Handling": 93,
-
-"699TopSpeed": 201,
-"6990to60": 3.1,
-"699Handling": 97,
-
-"969TopSpeed": 204,
-"9690to60": 3.3,
-"969Handling": 97,
-
-"996TopSpeed": 204,
-"9960to60": 3.1,
-"996Handling": 93,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcatWidebody2020.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

@@ -1,7 +1,7 @@
 {
     "carID": "c02506",
     "cr": 647,
-    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "make": ["Mercedes-Benz","Mercedes-AMG"],
     "model": "C 63 AMG Coupe",
     "modelYear": 2011,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Year of the Rabbit"],
     "isPrize": false,
-	
     "weight": 1710,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzC63AMGCoupe(2011).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 158, 
-"3330to60": 4.0, 
-"333Handling": 86,
-
-"666TopSpeed": 162, 
-"6660to60": 3.8, 
-"666Handling": 88,
-
-"699TopSpeed": 162, 
-"6990to60": 3.6, 
-"699Handling": 92,
-
-"969TopSpeed": 165, 
-"9690to60": 3.8, 
-"969Handling": 92,
-
-"996TopSpeed": 165, 
-"9960to60": 3.6, 
-"996Handling": 88,
     "hiddenTag": [""]
 }

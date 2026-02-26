@@ -10,7 +10,7 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["CD Contenders", "Style Icon"],
+    "tags": ["CD Contenders","Style Icon"],
     "isPrize": false,
     "weight": 1600,
     "gc": "Low",
@@ -23,27 +23,6 @@
     "mra": 60.71,
     "ola": 70.59,
     "description": "Back when VW produced any single idea it came to its mind.",
-
-    "333TopSpeed": 141,
-    "3330to60": 6.5,
-    "333Handling": 81,
-    
-    "666TopSpeed": 145,
-    "6660to60": 6.1,
-    "666Handling": 83,
-    
-    "699TopSpeed": 145,
-    "6990to60": 5.8,
-    "699Handling": 87,
-    
-    "969TopSpeed": 148,
-    "9690to60": 6.1,
-    "969Handling": 87,
-    
-    "996TopSpeed": 148,
-    "9960to60": 5.8,
-    "996Handling": 83,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetleCabrioletRSi(2003).png",
     "creator": "Andu",
     "hiddenTag": [""]

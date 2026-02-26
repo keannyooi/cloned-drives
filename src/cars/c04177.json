@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1660,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.0TQ4(200)(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 137, 
-    "3330to60": 6.7, 
-    "333Handling": 81,
-
-    "666TopSpeed": 141, 
-    "6660to60": 6.4, 
-    "666Handling": 83,
-
-    "996TopSpeed": 145, 
-    "9960to60": 6.0, 
-    "996Handling": 83,
-
-    "969TopSpeed": 145, 
-    "9690to60": 6.4, 
-    "969Handling": 87,
-
-    "699TopSpeed": 141, 
-    "6990to60": 6.0, 
-    "699Handling": 87,
     "hiddenTag": [""]
 }

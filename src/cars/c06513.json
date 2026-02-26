@@ -1,5 +1,5 @@
 {
-	"carID": "c06513",
+    "carID": "c06513",
     "cr": 952,
     "make": "Ford",
     "model": "Mustang Mach-E 1400",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Eco-Friendly","Track Day","Unique","Oddity","Daily Prize"],
     "isPrize": true,
-	
     "weight": 2250,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 121.68,
     "ola": 103.46,
     "description": "This card is winnable from the Endurance Slog Bonus event!  Mustang Mach-E 1400, an all-electric road rocket that shows just how much performance can be harnessed without using a drop of fuel. Coming hot on the heels of the 1,400-horsepower all-electric Mustang Cobra Jet 1400, this one-off Mustang Mach-E with its seven electric motors and high downforce is ready for the track, drag strip or gymkhana course",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-E1400(2020).png",
-
-"333TopSpeed": 163,
-"3330to60": 2,
-"333Handling": 94,
-
-"666TopSpeed": 167,
-"6660to60": 1.9,
-"666Handling": 97,
-
-"699TopSpeed": 167,
-"6990to60": 1.8,
-"699Handling": 101,
-
-"969TopSpeed": 170,
-"9690to60": 1.9,
-"969Handling": 101,
-
-"996TopSpeed": 170,
-"9960to60": 1.8,
-"996Handling": 97,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-E1400(2020).png",
     "creator": "ama4nn",
     "hiddenTag": [""]
 }

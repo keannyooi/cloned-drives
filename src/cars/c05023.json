@@ -6,13 +6,12 @@
     "modelYear": 2003,
     "country": "DE",
     "topSpeed": 191,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Supercar","Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1660,
     "gc": "Low",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 78.65,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911TurboSCabriolet(2003).png",
-
-"333TopSpeed": 194,
-"3330to60": 3.8,
-"333Handling": 89,
-
-"666TopSpeed": 196,
-"6660to60": 3.6,
-"666Handling": 92,
-
-"699TopSpeed": 196,
-"6990to60": 3.4,
-"699Handling": 95,
-
-"969TopSpeed": 199,
-"9690to60": 3.6,
-"969Handling": 95,
-
-"996TopSpeed": 199,
-"9960to60": 3.4,
-"996Handling": 92,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

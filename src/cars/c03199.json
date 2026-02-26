@@ -12,42 +12,18 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 940,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 19.81,
-    "ola": 62.50,
+    "ola": 62.5,
     "description": "La mimosa e un simbolo della donna, forte e resistente.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat50012Mimosa(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 12.2,
-    "333Handling": 74,
-
-    "666TopSpeed": 110,
-    "6660to60": 11.5,
-    "666Handling": 77,
-
-    "699TopSpeed": 110,
-    "6990to60": 10.9,
-    "699Handling": 80,
-
-    "969TopSpeed": 116,
-    "9690to60": 11.5,
-    "969Handling": 80,
-
-    "996TopSpeed": 116,
-    "9960to60": 10.9,
-    "996Handling": 77,
     "hiddenTag": [""]
 }

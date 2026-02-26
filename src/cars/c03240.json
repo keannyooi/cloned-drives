@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Concept","The Tyrol Tour: Remix","Visionary Road"],
     "isPrize": false,
-
-
     "weight": 1900,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 71.83,
-    "ola": 74.50,
+    "ola": 74.5,
     "description": "Luxurious wagon previewing the D3 A8.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiAvantissimoConcept(2001).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.8,
-    "333Handling": 77,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.6, 
-    "666Handling": 80,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.3,
-    "996Handling": 80,
-
-    "969TopSpeed": 165,
-    "9690to60": 4.6,
-    "969Handling": 83,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.3,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

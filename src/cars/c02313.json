@@ -10,9 +10,8 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon", "Supercar"],
+    "tags": ["Style Icon","Supercar"],
     "isPrize": false,
-
     "weight": 1490,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 77.62,
     "ola": 87.59,
     "description": "The fourth evolution of the Countach, now fitted with four valves per cylinder, hence the name.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniCountachLP5000SQuattrovalvole(1985).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 198,
-    "3330to60": 4.4,
-    "333Handling": 82,
-
-    "666TopSpeed": 200,
-    "6660to60": 4.1,
-    "666Handling": 84,
-
-    "996TopSpeed": 203,
-    "9960to60": 3.9,
-    "996Handling": 84,
-
-    "969TopSpeed": 203,
-    "9690to60": 4.1,
-    "969Handling": 88,
-
-    "699TopSpeed": 200,
-    "6990to60": 3.9,
-    "699Handling": 88,
     "hiddenTag": [""]
 }

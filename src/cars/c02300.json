@@ -6,13 +6,12 @@
     "modelYear": 2020,
     "country": "IT",
     "topSpeed": 213,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Unique"],
     "isPrize": true,
-	
     "weight": 1100,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "A German chassis, Italian brand, American engine and owned by Chinese company",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DeTomasoP72(2020).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 215, 
-"3330to60": 2.8, 
-"333Handling": 100,
-
-"666TopSpeed": 218, 
-"6660to60": 2.7, 
-"666Handling": 103,
-
-"699TopSpeed": 218, 
-"6990to60": 2.6, 
-"699Handling": 108,
-
-"969TopSpeed": 220, 
-"9690to60": 2.7, 
-"969Handling": 108,
-
-"996TopSpeed": 220, 
-"9960to60": 2.6, 
-"996Handling": 103 ,
     "hiddenTag": [""]
 }

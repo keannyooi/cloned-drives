@@ -1,10 +1,7 @@
 {
     "carID": "c01245",
     "cr": 600,
-    "make": [
-        "TAMO",
-        "Tata"
-    ],
+    "make": ["TAMO","Tata"],
     "model": "Racemo",
     "modelYear": 2017,
     "country": "IN",
@@ -13,9 +10,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Rest of The World","Unique"
-    ],
+    "tags": ["Rest of The World","Unique"],
     "isPrize": false,
     "weight": 800,
     "gc": "Medium",
@@ -28,25 +23,6 @@
     "mra": 51.49,
     "ola": 67.55,
     "description": "India's take on a sports car that was so good it got into Forza.",
- "333TopSpeed": 134,
-"3330to60": 5.4,
-"333Handling": 80,
-
-"666TopSpeed": 138,
-"6660to60": 5.1,
-"666Handling": 82,
-
-"699TopSpeed": 138,
-"6990to60": 4.8,
-"699Handling": 85,
-
-"969TopSpeed": 142,
-"9690to60": 5.1,
-"969Handling": 85,
-
-"996TopSpeed": 142,
-"9960to60": 4.8,
-"996Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TAMORacemo(2017).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

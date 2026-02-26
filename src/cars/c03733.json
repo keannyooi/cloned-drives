@@ -10,13 +10,11 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Style Icon","Endless Summer", "The Rest of the Best: 2023","Rest of The World"],
+    "tags": ["Style Icon","Endless Summer","The Rest of the Best: 2023","Rest of The World"],
     "isPrize": false,
-
-
     "weight": 836,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 20.71,
     "ola": 67.31,
     "description": "The start of a South African icon.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenCitiGolfSport(1985).png",
     "creator": "Andu",
-
-    "333TopSpeed": 109,
-    "3330to60": 9.9,
-    "333Handling": 69,
-
-    "666TopSpeed": 114,
-    "6660to60": 9.4, 
-    "666Handling": 71,
-
-    "996TopSpeed": 119,
-    "9960to60": 8.8,
-    "996Handling": 71,
-
-    "969TopSpeed": 119,
-    "9690to60": 9.4,
-    "969Handling": 74,
-
-    "699TopSpeed": 114,
-    "6990to60": 8.8,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

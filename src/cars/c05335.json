@@ -1,7 +1,7 @@
 {
     "carID": "c05335",
     "cr": 859,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "XD4 Allrad",
     "modelYear": 2019,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 71.25,
     "ola": 82.5,
     "description": "",
-"333TopSpeed": 169,
-"3330to60": 4.3,
-"333Handling": 84,
-
-"666TopSpeed": 172,
-"6660to60": 4,
-"666Handling": 86,
-
-"699TopSpeed": 172,
-"6990to60": 3.8,
-"699Handling": 90,
-
-"969TopSpeed": 175,
-"9690to60": 4,
-"969Handling": 90,
-
-"996TopSpeed": 175,
-"9960to60": 3.8,
-"996Handling": 86,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaXD4Allrad(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

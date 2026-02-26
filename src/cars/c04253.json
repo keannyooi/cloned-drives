@@ -12,8 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1495,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Most powerful TDI of them all with whopping 170 ps.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA3Sportback20TDISline(2006).png",
     "creator": "Connor",
-
-    "333TopSpeed": 142,
-    "3330to60": 7.4,
-    "333Handling": 82,
-
-    "666TopSpeed": 146,
-    "6660to60": 7.0, 
-    "666Handling": 84,
-
-    "996TopSpeed": 149,
-    "9960to60": 6.6,
-    "996Handling": 84,
-
-    "969TopSpeed": 149,
-    "9690to60": 7.0,
-    "969Handling": 88,
-
-    "699TopSpeed": 146,
-    "6990to60": 6.6,
-    "699Handling": 88,
     "hiddenTag": [""]
 }

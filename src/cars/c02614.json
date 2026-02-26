@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 1825,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 63.89,
     "ola": 75.36,
     "description": "Audi's flagship made on the so called Audi Space Frame made of aluminum which made the A8 much lighter than its competitors.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA84.2quattro(1999).png",
     "creator": "Connor",
-	
-    "333TopSpeed": 158,
-    "3330to60": 6.6,
-    "333Handling": 74,
-
-    "666TopSpeed": 162,
-    "6660to60": 6.2,
-    "666Handling": 77,
-
-    "996TopSpeed": 165,
-    "9960to60": 5.9,
-    "996Handling": 77,
-
-    "969TopSpeed": 165,
-    "9690to60": 6.2,
-    "969Handling": 80,
-
-    "699TopSpeed": 162,
-    "6990to60": 5.9,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

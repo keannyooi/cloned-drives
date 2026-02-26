@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04399",
     "cr": 314,
     "make": "Chevrolet",
@@ -6,47 +6,24 @@
     "modelYear": 2012,
     "country": "US",
     "topSpeed": 124,
-    "0to60": 10.0,
+    "0to60": 10,
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1600,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 41.67,
-    "ola": 62.00,
+    "ola": 62,
     "description": "Economical diesel, economical dreams of reaching the top.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCruze1.7VCDiLTStationWagon(2012).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 128,
-    "3330to60": 9.5,
-    "333Handling": 75,
-    
-    "666TopSpeed": 132,
-    "6660to60": 9,
-    "666Handling": 78,
-    
-    "699TopSpeed": 132,
-    "6990to60": 8.5,
-    "699Handling": 81,
-    
-    "969TopSpeed": 137,
-    "9690to60": 9,
-    "969Handling": 81,
-    
-    "996TopSpeed": 137,
-    "9960to60": 8.5,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1696,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.2TD(190)(2018).png",
     "creator": "Crossfire",
-
-"333TopSpeed": 134,
-"3330to60": 7,
-"333Handling": 80,
-
-"666TopSpeed": 138,
-"6660to60": 6.7,
-"666Handling": 82,
-
-"699TopSpeed": 138,
-"6990to60": 6.3,
-"699Handling": 85,
-
-"969TopSpeed": 142,
-"9690to60": 6.7,
-"969Handling": 85,
-
-"996TopSpeed": 142,
-"9960to60": 6.3,
-"996Handling": 82,
     "hiddenTag": [""]
 }

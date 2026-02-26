@@ -10,10 +10,7 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Super Sedan"
-    ],
+    "tags": ["Muscle Car","Super Sedan"],
     "isPrize": false,
     "weight": 2090,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 95.65,
     "ola": 94.44,
     "description": "Ah yes, America's chase for more power knows no limits.",
-"333TopSpeed": 206,
-"3330to60": 3.4,
-"333Handling": 91,
-
-"666TopSpeed": 208,
-"6660to60": 3.2,
-"666Handling": 94,
-
-"699TopSpeed": 208,
-"6990to60": 3.1,
-"699Handling": 98,
-
-"969TopSpeed": 211,
-"9690to60": 3.2,
-"969Handling": 98,
-
-"996TopSpeed": 211,
-"9960to60": 3.1,
-"996Handling": 94,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcatRedeye2021.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

@@ -10,10 +10,8 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1264,
     "gc": "Low",
     "seatCount": 4,
@@ -22,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 59.50,
-    "ola": 75.00,
+    "mra": 59.5,
+    "ola": 75,
     "description": "Medium level TT.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiTTCoupe18T5VSportline(1998).png",
     "creator": "Connor",
-
-    "333TopSpeed": 145,
-    "3330to60": 6.8,
-    "333Handling": 83,
-
-    "666TopSpeed": 148,
-    "6660to60": 6.5, 
-    "666Handling": 85,
-
-    "996TopSpeed": 152,
-    "9960to60": 6.1,
-    "996Handling": 85,
-
-    "969TopSpeed": 152,
-    "9690to60": 6.5,
-    "969Handling": 89,
-
-    "699TopSpeed": 148,
-    "6990to60": 6.1,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

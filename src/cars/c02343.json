@@ -1,7 +1,7 @@
 {
     "carID": "c02343",
     "cr": 422,
-    "make": ["MVS", "Venturi"],
+    "make": ["MVS","Venturi"],
     "model": "Venturi 200",
     "modelYear": 1987,
     "country": "FR",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 1218,
     "gc": "Medium",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 61.56,
     "ola": 61.14,
     "description": "Before it became Venturi and became a Monegasque company, it was a French company called MVS and this is their first automobile ever made.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi200(1987).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 155,
-    "3330to60": 6.4,
-    "333Handling": 76,
-
-    "666TopSpeed": 159,
-    "6660to60": 6.0,
-    "666Handling": 79,
-
-    "699TopSpeed": 159,
-    "6990to60": 5.7,
-    "699Handling": 82,
-
-    "969TopSpeed": 162,
-    "9690to60": 6.0,
-    "969Handling": 82,
-
-    "996TopSpeed": 162,
-    "9960to60": 5.7,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

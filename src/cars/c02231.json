@@ -1,10 +1,7 @@
 {
     "carID": "c02231",
     "cr": 508,
-    "make": [
-        "RE Amemiya",
-        "Mazda"
-    ],
+    "make": ["RE Amemiya","Mazda"],
     "model": "Street Blast 8 III",
     "modelYear": 2017,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Street Racer"],
     "isPrize": false,
     "weight": 1355,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 63.64,
     "ola": 71.43,
     "description": "None.",
-     "333TopSpeed": 158,
-    "3330to60": 5.3,
-    "333Handling": 85,
-    "666TopSpeed": 162,
-    "6660to60": 5,
-    "666Handling": 87,
-    "996TopSpeed": 165,
-    "9960to60": 4.8,
-    "996Handling": 87,
-    "969TopSpeed": 165,
-    "9690to60": 5,
-    "969Handling": 91,
-    "699TopSpeed": 162,
-    "6990to60": 4.8,
-    "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REAmemiyaStreetBlast8III(2017).png",
     "creator": "Keanny",
     "hiddenTag": [""]

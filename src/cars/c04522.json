@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "All-Surface",
-    "tags": ["Eurotech Elite", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1761,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Lower Hybrid trim with still good amount of power. (And yes, 80 mra in a Peugeot crossover)",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot3008HYBRID225(2020).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 144,
-    "3330to60": 8,
-    "333Handling": 77,
-
-    "666TopSpeed": 147,
-    "6660to60": 7.6,
-    "666Handling": 80,
-
-    "699TopSpeed": 147,
-    "6990to60": 7.1,
-    "699Handling": 83,
-
-    "969TopSpeed": 151,
-    "9690to60": 7.6,
-    "969Handling": 83,
-
-    "996TopSpeed": 151,
-    "9960to60": 7.1,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Rest of The World", "Hypercar", "Ultra Expensive"],
+    "tags": ["Unique","Rest of The World","Hypercar","Ultra Expensive"],
     "isPrize": false,
-	
     "weight": 1580,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZenvoTS1GT(2016).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 235,
-    "3330to60": 2.8,
-    "333Handling": 96,
-
-    "666TopSpeed": 237,
-    "6660to60": 2.6,
-    "666Handling": 99,
-
-    "996TopSpeed": 240,
-    "9960to60": 2.5,
-    "996Handling": 99,
-
-    "969TopSpeed": 240,
-    "9690to60": 2.6,
-    "969Handling": 103,
-
-    "699TopSpeed": 237,
-    "6990to60": 2.5,
-    "699Handling": 103,
     "hiddenTag": [""]
 }

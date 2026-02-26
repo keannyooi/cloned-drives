@@ -1,10 +1,7 @@
 {
     "carID": "c02430",
     "cr": 880,
-    "make": [
-        "Renault Sport",
-        "Renault"
-    ],
+    "make": ["Renault Sport","Renault"],
     "model": "R.S. 01",
     "modelYear": 2014,
     "country": "FR",
@@ -13,11 +10,7 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "Year of the Horse"
-    ],
+    "tags": ["Motorsport","Unique","Year of the Horse"],
     "isPrize": true,
     "weight": 1100,
     "gc": "Low",
@@ -32,22 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-    "333TopSpeed": 189,
-    "3330to60": 2.9,
-    "333Handling": 101,
-    "666TopSpeed": 192,
-    "6660to60": 2.7,
-    "666Handling": 104,
-    "996TopSpeed": 194,
-    "9960to60": 2.6,
-    "996Handling": 104,
-    "969TopSpeed": 194,
-    "9690to60": 2.7,
-    "969Handling": 109,
-    "699TopSpeed": 192,
-    "6990to60": 2.6,
-    "699Handling": 109,
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

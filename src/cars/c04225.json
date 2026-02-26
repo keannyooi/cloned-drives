@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 958,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Skoda CNG Record Tour.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaCitigo10GTecActive(2013).png",
     "creator": "Connor",
-
-    "333TopSpeed": 107,
-    "3330to60": 15.0,
-    "333Handling": 72,
-
-    "666TopSpeed": 112,
-    "6660to60": 14.2, 
-    "666Handling": 75,
-
-    "996TopSpeed": 117,
-    "9960to60": 13.4,
-    "996Handling": 75,
-
-    "969TopSpeed": 117,
-    "9690to60": 14.2,
-    "969Handling": 78,
-
-    "699TopSpeed": 112,
-    "6990to60": 13.4,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

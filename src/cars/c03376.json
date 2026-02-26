@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1080,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The 110 PS 911 T was launched in 1967 and effectively replaced the beloved 912 by becoming the entry level 911.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911T2.0(1967).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 128,
-"3330to60": 9.9,
-"333Handling": 70,
-
-"666TopSpeed": 132,
-"6660to60": 9.4,
-"666Handling": 72,
-
-"699TopSpeed": 132,
-"6990to60": 8.8,
-"699Handling": 75,
-
-"969TopSpeed": 137,
-"9690to60": 9.4,
-"969Handling": 75,
-
-"996TopSpeed": 137,
-"9960to60": 8.8,
-"996Handling": 72,
     "hiddenTag": [""]
 }

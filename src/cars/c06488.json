@@ -1,5 +1,5 @@
 {
-	"carID": "c06488",
+    "carID": "c06488",
     "cr": 628,
     "make": "Ford",
     "model": "GT40 Mk I",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Unique","Motorsport"],
     "isPrize": false,
-	
     "weight": 1005,
     "gc": "Low",
     "seatCount": 1,
@@ -24,27 +23,7 @@
     "mra": 90,
     "ola": 103.54,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT140MkI(1965).png",
-
-"333TopSpeed": 202,
-"3330to60": 4.2,
-"333Handling": 81,
-
-"666TopSpeed": 204,
-"6660to60": 4,
-"666Handling": 83,
-
-"699TopSpeed": 204,
-"6990to60": 3.7,
-"699Handling": 87,
-
-"969TopSpeed": 207,
-"9690to60": 4,
-"969Handling": 87,
-
-"996TopSpeed": 207,
-"9960to60": 3.7,
-"996Handling": 83,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT140MkI(1965).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

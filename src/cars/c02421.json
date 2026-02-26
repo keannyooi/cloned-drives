@@ -10,9 +10,8 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
-
     "weight": 900,
     "gc": "Low",
     "seatCount": 2,
@@ -24,29 +23,7 @@
     "mra": 77.48,
     "ola": 78.57,
     "description": "Underneath of the supercar body of this Peugeot Concept is a Peugeot 205 Group B Rally Car.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotQuasarConcept(1984).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 165,
-    "3330to60": 2.7,
-    "333Handling": 90,
-
-    "666TopSpeed": 168,
-    "6660to60": 2.5,
-    "666Handling": 93,
-
-    "969TopSpeed": 172,
-    "9690to60": 2.5,
-    "969Handling": 97,
-	
-    "996TopSpeed": 172,
-    "9960to60": 2.4,
-    "996Handling": 93,
-	
-    "699TopSpeed": 168,
-    "6990to60": 2.4,
-    "699Handling": 97
-	,
     "hiddenTag": [""]
 }

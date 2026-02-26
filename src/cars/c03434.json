@@ -6,14 +6,12 @@
     "modelYear": 1965,
     "country": "DE",
     "topSpeed": 91,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 640,
     "gc": "Medium",
     "seatCount": 4,
@@ -22,30 +20,10 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 14.20,
+    "mra": 14.2,
     "ola": 71.42,
     "description": "Car which inspired the Audi TT 30 years later.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NSUPrinz1000TT(1965).png",
     "creator": "Connor",
-
-    "333TopSpeed": 97,
-    "3330to60": 13.3,
-    "333Handling": 61,
-
-    "666TopSpeed": 102,
-    "6660to60": 12.6, 
-    "666Handling": 63,
-
-    "996TopSpeed": 108,
-    "9960to60": 11.9,
-    "996Handling": 63,
-
-    "969TopSpeed": 108,
-    "9690to60": 12.6,
-    "969Handling": 65,
-
-    "699TopSpeed": 102,
-    "6990to60": 11.9,
-    "699Handling": 65,
     "hiddenTag": [""]
 }

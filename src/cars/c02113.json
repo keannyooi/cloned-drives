@@ -10,11 +10,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Oceanic View",
-        "Year of the Horse"
-    ],
+    "tags": ["Street Racer","Oceanic View","Year of the Horse"],
     "isPrize": false,
     "weight": 1635,
     "gc": "Low",
@@ -27,24 +23,7 @@
     "mra": 81.63,
     "ola": 90,
     "description": "The F80 M3 ditched the E92's V8 for a return to straight-six power. To compensate for the loss of two cylinders, BMW's signature straight-six gained twin turbochargers to produce 425 horsepower and 550 newton-meters of torque; 11 horsepower and 150 newton-meters more than the 4.0-liter S58 V8. In the quest for better performance, this is the first M3 not to use natural aspiration.",
-    "333TopSpeed": 162,
-    "3330to60": 3.8,
-    "333Handling": 92,
-    "666TopSpeed": 166,
-    "6660to60": 3.6,
-    "666Handling": 95,
-    "996TopSpeed": 169,
-    "9960to60": 3.4,
-    "996Handling": 95,
-    "969TopSpeed": 169,
-    "9690to60": 3.6,
-    "969Handling": 99,
-    "699TopSpeed": 166,
-    "6990to60": 3.3,
-    "699Handling": 99,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM3(2014).png",
     "creator": "Macan",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

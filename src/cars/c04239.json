@@ -10,10 +10,8 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Eurotech Elite"],
+    "tags": ["Eco-Friendly","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 2305,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Most powerful Q4.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiQ450etronquattroSline(2021).png",
     "creator": "Connor",
-
-    "333TopSpeed": 118,
-    "3330to60": 5.5,
-    "333Handling": 76,
-
-    "666TopSpeed": 122,
-    "6660to60": 5.2, 
-    "666Handling": 79,
-
-    "996TopSpeed": 127,
-    "9960to60": 4.9,
-    "996Handling": 79,
-
-    "969TopSpeed": 127,
-    "9690to60": 5.2,
-    "969Handling": 82,
-
-    "699TopSpeed": 122,
-    "6990to60": 4.9,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

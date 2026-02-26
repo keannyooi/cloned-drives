@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1030,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 30.48,
     "ola": 59.87,
     "description": "Eco like no others, offering the in house VAG classic 1.0 TGI without the T.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Volkswagenecomoveup!(2018).png",
     "creator": "Andu",
-
-    "333TopSpeed": 107,
-    "3330to60": 14.9,
-    "333Handling": 72,
-    
-    "666TopSpeed": 112,
-    "6660to60": 14.1,
-    "666Handling": 75,
-    
-    "699TopSpeed": 112,
-    "6990to60": 13.3,
-    "699Handling": 78,
-    
-    "969TopSpeed": 117,
-    "9690to60": 14.1,
-    "969Handling": 78,
-    
-    "996TopSpeed": 117,
-    "9960to60": 13.3,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Unique", "Eco-Friendly"],
+    "tags": ["Motorsport","Unique","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 900,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Porsches top end Formula E",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche99XElectric(2019).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 177, 
-    "3330to60": 2.6, 
-    "333Handling": 101,
-
-	"666TopSpeed": 180, 
-	"6660to60": 2.4, 
-	"666Handling": 104,
-
-	"699TopSpeed": 180, 
-	"6990to60": 2.3, 
-	"699Handling": 109,
-
-	"969TopSpeed": 183, 
-	"9690to60": 2.4, 
-	"969Handling": 109,
-
-	"996TopSpeed": 183, 
-	"9960to60": 2.3, 
-	"996Handling": 104,
     "hiddenTag": [""]
 }

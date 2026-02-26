@@ -1,7 +1,7 @@
 {
     "carID": "c06260",
     "cr": 444,
-    "make": ["AMG", "Mercedes-Benz","Mercedes-AMG"],
+    "make": ["AMG","Mercedes-Benz","Mercedes-AMG"],
     "model": "300 E 3.4",
     "modelYear": 1991,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 70,
     "ola": 91.82,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 6,
-"333Handling": 79,
-
-"666TopSpeed": 162,
-"6660to60": 5.7,
-"666Handling": 81,
-
-"699TopSpeed": 162,
-"6990to60": 5.4,
-"699Handling": 84,
-
-"969TopSpeed": 165,
-"9690to60": 5.7,
-"969Handling": 84,
-
-"996TopSpeed": 165,
-"9960to60": 5.4,
-"996Handling": 81,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMG300E34(1991).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

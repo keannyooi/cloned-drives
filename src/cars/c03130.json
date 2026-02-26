@@ -6,13 +6,12 @@
     "modelYear": 1975,
     "country": "US",
     "topSpeed": 91,
-    "0to60": 16.0,
+    "0to60": 16,
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1554,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The world's biggest smallest car.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AMCPacerX(1975).png",
     "creator": "Johnny",
-
-    "333TopSpeed": 97, 
-    "3330to60": 15.2, 
-    "333Handling": 61,
-
-    "666TopSpeed": 102, 
-    "6660to60": 14.4, 
-    "666Handling": 63,
-
-    "996TopSpeed": 108, 
-    "9960to60": 13.6, 
-    "996Handling": 63,
-
-    "969TopSpeed": 108, 
-    "9690to60": 14.4, 
-    "969Handling": 65,
-
-    "699TopSpeed": 102, 
-    "6990to60": 13.6, 
-    "699Handling": 65 ,
     "hiddenTag": [""]
 }

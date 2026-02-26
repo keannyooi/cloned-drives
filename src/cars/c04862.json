@@ -6,13 +6,12 @@
     "modelYear": 1950,
     "country": "DE",
     "topSpeed": 87,
-    "0to60": 21.0,
+    "0to60": 21,
     "handling": 55,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 760,
     "gc": "Medium",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 65.47,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche3561100(1950).png",
-
-"333TopSpeed": 93,
-"3330to60": 19.9,
-"333Handling": 57,
-
-"666TopSpeed": 99,
-"6660to60": 18.9,
-"666Handling": 59,
-
-"699TopSpeed": 99,
-"6990to60": 17.8,
-"699Handling": 61,
-
-"969TopSpeed": 105,
-"9690to60": 18.9,
-"969Handling": 61,
-
-"996TopSpeed": 105,
-"9960to60": 17.8,
-"996Handling": 59,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

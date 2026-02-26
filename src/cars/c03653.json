@@ -1,7 +1,7 @@
 {
     "carID": "c03653",
     "cr": 920,
-    "make": ["Sauber", "Mercedes-Benz"],
+    "make": ["Sauber","Mercedes-Benz"],
     "model": "C9",
     "modelYear": 1987,
     "country": "CH",
@@ -10,10 +10,8 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Year of the Rabbit", "Ultra Expensive", "Unique","Endless Summer","The Tyrol Tour: Remix"],
+    "tags": ["Motorsport","Year of the Rabbit","Ultra Expensive","Unique","Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": true,
-
-
     "weight": 905,
     "gc": "Low",
     "seatCount": 1,
@@ -25,34 +23,7 @@
     "mra": 120,
     "ola": 113.33,
     "description": "A Dominant and iconic Group C race car which led Mercedes-Sauber to win at Le Mans in 1989",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Sutzi",
-
-
-    "333TopSpeed": 250,
-    "3330to60": 2.8,
-    "333Handling": 99,
-
-
-    "666TopSpeed": 252,
-    "6660to60": 2.6,
-    "666Handling": 102,
-
-
-    "996TopSpeed": 254,
-    "9960to60": 2.5,
-    "996Handling": 102,
-
-
-    "969TopSpeed": 254,
-    "9690to60": 2.6,
-    "969Handling": 107,
-
-
-    "699TopSpeed": 252,
-    "6990to60": 2.5,
-    "699Handling": 107,
     "hiddenTag": [""]
 }

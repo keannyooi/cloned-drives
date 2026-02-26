@@ -1,10 +1,7 @@
 {
     "carID": "c00375",
     "cr": 98,
-    "make": [
-        "Electric Car Corporation",
-        "Citroen"
-    ],
+    "make": ["Electric Car Corporation","Citroen"],
     "model": "C1 ev'ie",
     "modelYear": 2009,
     "country": "GB",
@@ -13,9 +10,7 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 890,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 0,
     "ola": 61.54,
     "description": "The ev'ie was a Citroen C1 that some fellows at Flitwick chucked lithium batteries into, locked the gearbox into 3rd gear and sold for £19860 from 2009 to 2011. This was a time when the only other options available included the infamously unattractive G-Whiz, so it was fairly well received by some journalists. After ECC dissolved in 2012, ev-support.co.uk took up the responsibility of keeping these cars on the road.",
-     "333TopSpeed": 69,
-    "3330to60": 18.5,
-    "333Handling": 69,
-    "666TopSpeed": 77,
-    "6660to60": 17.6,
-    "666Handling": 71,
-    "996TopSpeed": 86,
-    "9960to60": 16.6,
-    "996Handling": 71,
-    "969TopSpeed": 86,
-    "9690to60": 17.6,
-    "969Handling": 74,
-    "699TopSpeed": 77,
-    "6990to60": 16.6,
-    "699Handling": 74,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ElectricCarCorporationC1ev'ie(2009).png",
     "creator": "Keanny",
     "hiddenTag": [""]

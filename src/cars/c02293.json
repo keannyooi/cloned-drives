@@ -10,9 +10,8 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Concept", "Unique", "Ultra Expensive"],
+    "tags": ["Hypercar","Concept","Unique","Ultra Expensive"],
     "isPrize": true,
-	
     "weight": 1250,
     "gc": "Low",
     "seatCount": 2,
@@ -22,29 +21,9 @@
     "enginePos": "Middle",
     "fuelType": "Alternative",
     "mra": 104,
-    "ola": 100.00,
+    "ola": 100,
     "description": "Something French to take on Apollo or De Tomaso.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Vision1789Prototype(2022).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 238, 
-"3330to60": 2.5, 
-"333Handling": 101,
-
-"666TopSpeed": 240, 
-"6660to60": 2.3, 
-"666Handling": 104,
-
-"699TopSpeed": 240, 
-"6990to60": 2.2, 
-"699Handling": 109,
-
-"969TopSpeed": 243, 
-"9690to60": 2.3, 
-"969Handling": 109,
-
-"996TopSpeed": 243, 
-"9960to60": 2.2, 
-"996Handling": 104,
     "hiddenTag": [""]
 }

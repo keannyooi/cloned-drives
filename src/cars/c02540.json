@@ -1,7 +1,7 @@
 {
     "carID": "c02540",
     "cr": 865,
-    "make": ["Galpin Ford", "Ford"],
+    "make": ["Galpin Ford","Ford"],
     "model": "GTR1",
     "modelYear": 2013,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept", "Supercar"],
+    "tags": ["Unique","Concept","Supercar"],
     "isPrize": false,
-	
     "weight": 1360,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The final \"Evolution\" of the 2005 GT.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GalpinFordGTR1(2013).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 227, 
-"3330to60": 2.9, 
-"333Handling": 94,
-
-"666TopSpeed": 230, 
-"6660to60": 2.8, 
-"666Handling": 97,
-
-"699TopSpeed": 230, 
-"6990to60": 2.6, 
-"699Handling": 101,
-
-"969TopSpeed": 232, 
-"9690to60": 2.8, 
-"969Handling": 101,
-
-"996TopSpeed": 232, 
-"9960to60": 2.6, 
-"996Handling": 97,
     "hiddenTag": [""]
 }

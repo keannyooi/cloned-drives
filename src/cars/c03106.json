@@ -1,7 +1,7 @@
 {
     "carID": "c03106",
     "cr": 943,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Escort Cossie V2",
     "modelYear": 2019,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "RestoMod"],
+    "tags": ["Tuner","Unique","RestoMod"],
     "isPrize": false,
-	
     "weight": 1280,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Used as part of Ken Blocks Cossie World Tour 2020.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganEscortCossieV2(2019).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 155, 
-"3330to60": 2.8, 
-"333Handling": 93,
-
-"666TopSpeed": 159, 
-"6660to60": 2.6, 
-"666Handling": 96,
-
-"699TopSpeed": 159, 
-"6990to60": 2.5, 
-"699Handling": 100,
-
-"969TopSpeed": 162, 
-"9690to60": 2.6, 
-"969Handling": 100,
-
-"996TopSpeed": 162, 
-"9960to60": 2.5, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c04499",
     "cr": 347,
-    "make": ["Oettinger", "Volkswagen"],
+    "make": ["Oettinger","Volkswagen"],
     "model": "Scirocco 2000 E/16",
     "modelYear": 1982,
     "country": "DE",
@@ -10,13 +10,11 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch", "Tuner","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Tuner","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 895,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 51.13,
     "ola": 82.34,
     "description": "O to the R, tune to the big big B, tune to the big big B.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OettingerScirocco2000E16(1982).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 140,
-    "3330to60": 6.5,
-    "333Handling": 79,
-    
-    "666TopSpeed": 144,
-    "6660to60": 6.1,
-    "666Handling": 81,
-    
-    "699TopSpeed": 144,
-    "6990to60": 5.8,
-    "699Handling": 84,
-    
-    "969TopSpeed": 147,
-    "9690to60": 6.1,
-    "969Handling": 84,
-    
-    "996TopSpeed": 147,
-    "9960to60": 5.8,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

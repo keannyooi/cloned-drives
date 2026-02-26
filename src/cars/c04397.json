@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04397",
     "cr": 416,
     "make": "Chevrolet",
@@ -12,41 +12,18 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1400,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 52.73,
-    "ola": 62.20,
+    "ola": 62.2,
     "description": "Less weight and more value make the Eco the pick of the Cruze litter.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletCruze14TEco(2010).png",
     "creator": "Andu",
-
-    "333TopSpeed": 136,
-    "3330to60": 7.8,
-    "333Handling": 79,
-    
-    "666TopSpeed": 140,
-    "6660to60": 7.4,
-    "666Handling": 81,
-    
-    "699TopSpeed": 140,
-    "6990to60": 7,
-    "699Handling": 84,
-    
-    "969TopSpeed": 144,
-    "9690to60": 7.4,
-    "969Handling": 84,
-    
-    "996TopSpeed": 144,
-    "9960to60": 7,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

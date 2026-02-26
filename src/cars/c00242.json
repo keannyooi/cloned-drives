@@ -1,10 +1,7 @@
 {
     "carID": "c00242",
     "cr": 256,
-    "make": [
-        "Callaway",
-        "Volkswagen"
-    ],
+    "make": ["Callaway","Volkswagen"],
     "model": "Scirocco Turbo",
     "modelYear": 1982,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Tuner"
-    ],
+    "tags": ["Hot Hatch","Tuner"],
     "isPrize": false,
     "weight": 1043,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 45.56,
     "ola": 60.51,
     "description": "When an American tuner meets a fun German coupe.",
-     "333TopSpeed": 130,
-    "3330to60": 7.3,
-    "333Handling": 73,
-    "666TopSpeed": 134,
-    "6660to60": 6.9,
-    "666Handling": 76,
-    "996TopSpeed": 138,
-    "9960to60": 6.5,
-    "996Handling": 76,
-    "969TopSpeed": 138,
-    "9690to60": 6.9,
-    "969Handling": 79,
-    "699TopSpeed": 134,
-    "6990to60": 6.5,
-    "699Handling": 79,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CallawaySciroccoTurbo(1982).png",
     "creator": "Andu",
     "hiddenTag": [""]

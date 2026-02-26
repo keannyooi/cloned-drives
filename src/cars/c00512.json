@@ -1,10 +1,7 @@
 {
     "carID": "c00512",
     "cr": 167,
-    "make": [
-        "HKS",
-        "Honda"
-    ],
+    "make": ["HKS","Honda"],
     "model": "S660 GT100R",
     "modelYear": 2015,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Kei Car",
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Kei Car","Street Racer"],
     "isPrize": false,
     "weight": 839,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 50.12,
     "ola": 73.58,
     "description": "The bread and butter of Honda S660 tuning.",
-     "333TopSpeed": 122,
-    "3330to60": 10.1,
-    "333Handling": 76,
-    "666TopSpeed": 127,
-    "6660to60": 9.5,
-    "666Handling": 79,
-    "996TopSpeed": 131,
-    "9960to60": 9,
-    "996Handling": 79,
-    "969TopSpeed": 131,
-    "9690to60": 9.5,
-    "969Handling": 82,
-    "699TopSpeed": 127,
-    "6990to60": 9,
-    "699Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HKSS660GT100R(2015).png",
     "creator": "Keanny",
     "hiddenTag": [""]

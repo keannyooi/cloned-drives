@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1298,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 54.54,
-    "ola": 73.80,
+    "ola": 73.8,
     "description": "Laurin Klement nameplate returned 75 years after it was bought by Skoda Works, this time being used as a luxury trim on Skoda models.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctavia18T20VL%26K(2001).png",
     "creator": "Connor",
-
-    "333TopSpeed": 139,
-    "3330to60": 8.0,
-    "333Handling": 77,
-
-    "666TopSpeed": 143,
-    "6660to60": 7.6, 
-    "666Handling": 80,
-
-    "996TopSpeed": 147,
-    "9960to60": 7.1,
-    "996Handling": 80,
-
-    "969TopSpeed": 147,
-    "9690to60": 7.6,
-    "969Handling": 83,
-
-    "699TopSpeed": 143,
-    "6990to60": 7.1,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

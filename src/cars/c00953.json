@@ -1,7 +1,7 @@
 {
     "carID": "c00953",
     "cr": 417,
-    "make": ["Nissan", "Nismo"],
+    "make": ["Nissan","Nismo"],
     "model": "Sentra Nismo",
     "modelYear": 2017,
     "country": "JP",
@@ -10,11 +10,8 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Servers Choice","OG"
-    ],
+    "tags": ["Servers Choice","OG"],
     "isPrize": false,
-
     "weight": 1378,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,27 +23,6 @@
     "mra": 69.08,
     "ola": 72.72,
     "description": "The Sentra finally gets a sporty trim, but compared to its competitors it can seem inferior.",
- 
-    "333TopSpeed": 135,
-    "3330to60": 6.8,
-    "333Handling": 82,
-
-    "666TopSpeed": 139,
-    "6660to60": 6.5,
-    "666Handling": 84,
-
-    "996TopSpeed": 143,
-    "9960to60": 6.1,
-    "996Handling": 84,
-    
-    "969TopSpeed": 143,
-    "9690to60": 6.5,
-    "969Handling": 88,
-
-    "699TopSpeed": 139,
-    "6990to60": 6.1,
-    "699Handling": 88,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSentraNismo(2017).png",
     "creator": "Keanny",
     "hiddenTag": [""]

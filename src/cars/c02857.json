@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour"],
     "isPrize": false,
-
-
     "weight": 1476,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -27,25 +25,5 @@
     "description": "TD... Top Drives... Turbo Diesel... Touch Down... Tower Defense...",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo16425TDSuper(1994).png",
     "creator": "Andu",
-
-    "333TopSpeed": 128,
-    "3330to60": 10.4,
-    "333Handling": 70,
-
-    "666TopSpeed": 132,
-    "6660to60": 9.8, 
-    "666Handling": 72,
-
-    "996TopSpeed": 137,
-    "9960to60": 9.3,
-    "996Handling": 72,
-
-    "969TopSpeed": 137,
-    "9690to60": 9.8,
-    "969Handling": 75,
-
-    "699TopSpeed": 132,
-    "6990to60": 9.3,
-    "699Handling": 75,
     "hiddenTag": [""]
 }

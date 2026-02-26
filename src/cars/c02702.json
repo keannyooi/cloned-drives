@@ -10,9 +10,8 @@
     "handling": 52,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Kei Car", "Eco-Friendly"],
+    "tags": ["Kei Car","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 620,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The finished One amphibious car was launched in Thailand four years after the initial concept was revealed and 3 subsequent design revisions were made. There were 2 reasons why FOMM decided to produce and sell the car in Thailand: the country has a flood problem and the local government was incentivising EV production.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FOMMOne(2018).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 62, 
-    "3330to60": 69.3, 
-    "333Handling": 54,
-
-    "666TopSpeed": 70, 
-    "6660to60": 65.7, 
-    "666Handling": 55,
-
-    "699TopSpeed": 70, 
-    "6990to60": 62.1, 
-    "699Handling": 58,
-
-    "969TopSpeed": 79, 
-    "9690to60": 65.7, 
-    "969Handling": 58,
-
-    "996TopSpeed": 79, 
-    "9960to60": 62.1, 
-    "996Handling": 55,
     "hiddenTag": [""]
 }

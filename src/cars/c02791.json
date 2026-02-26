@@ -1,7 +1,7 @@
 {
     "carID": "c02791",
     "cr": 626,
-    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "make": ["Mercedes-Benz","Mercedes-AMG"],
     "model": "R 63 AMG 4MATIC",
     "modelYear": 2007,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Sleeper"],
     "isPrize": false,
-	
     "weight": 2375,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The closest we've got to a fast food secret menu order of the automotive world. Why this was made is beyond all of us, but hey, we ain't complaining.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzR63AMG4MATIC(2007).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 158, 
-    "3330to60": 4.5, 
-    "333Handling": 75,
-
-    "666TopSpeed": 162, 
-    "6660to60": 4.2, 
-    "666Handling": 78,
-
-    "699TopSpeed": 162, 
-    "6990to60": 4.0, 
-    "699Handling": 81,
-
-    "969TopSpeed": 165, 
-    "9690to60": 4.2, 
-    "969Handling": 81,
-
-    "996TopSpeed": 165, 
-    "9960to60": 4.0, 
-    "996Handling": 78,
     "hiddenTag": [""]
 }

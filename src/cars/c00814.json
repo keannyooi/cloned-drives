@@ -10,13 +10,7 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Ultra Expensive",
-        "Track Day",
-        "Hypercar",
-        "Unique"
-    ],
+    "tags": ["The Royal Collection","Ultra Expensive","Track Day","Hypercar","Unique"],
     "isPrize": false,
     "weight": 1380,
     "gc": "Low",
@@ -29,25 +23,6 @@
     "mra": 119.29,
     "ola": 83.07,
     "description": "A road-legal P1 GTR based on the legendary F1 LM.",
-"333TopSpeed": 216,
-"3330to60": 2.2,
-"333Handling": 101,
-
-"666TopSpeed": 219,
-"6660to60": 2.1,
-"666Handling": 104,
-
-"699TopSpeed": 219,
-"6990to60": 2,
-"699Handling": 109,
-
-"969TopSpeed": 221,
-"9690to60": 2.1,
-"969Handling": 109,
-
-"996TopSpeed": 221,
-"9960to60": 2,
-"996Handling": 104,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLarenP1LMbyLanzante(2016).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Kei Car"],
     "isPrize": false,
-
     "weight": 840,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,6 @@
     "mra": 27.27,
     "ola": 70.33,
     "description": "The epitome of driving a slow car fast.",
- 
-    "333TopSpeed": 93,
-    "3330to60": 12.1,
-    "333Handling": 74,
-    
-    "666TopSpeed": 99,
-    "6660to60": 11.4,
-    "666Handling": 77,
-
-    "996TopSpeed": 105,
-    "9960to60": 10.8,
-    "996Handling": 77,
-
-    "969TopSpeed": 105,
-    "9690to60": 11.4,
-    "969Handling": 80,
-
-    "699TopSpeed": 99,
-    "6990to60": 10.8,
-    "699Handling": 80,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaS660(2015)).png",
     "creator": "Keanny",
     "hiddenTag": [""]

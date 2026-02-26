@@ -1,7 +1,7 @@
 {
     "carID": "c03586",
     "cr": 896,
-    "make": ["HKS", "Nissan"],
+    "make": ["HKS","Nissan"],
     "model": "RB28 GT-R Driving Performer",
     "modelYear": 2003,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique","Tuner","The Amplification of Asia","Street Racer","Endless Summer"],
     "isPrize": false,
-	
     "weight": 1430,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HKSRB28GTRDrivingPerformer(2003).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 214,
-"3330to60": 2.9,
-"333Handling": 94,
-
-"666TopSpeed": 217,
-"6660to60": 2.8,
-"666Handling": 97,
-
-"699TopSpeed": 217,
-"6990to60": 2.6,
-"699Handling": 101,
-
-"969TopSpeed": 219,
-"9690to60": 2.8,
-"969Handling": 101,
-
-"996TopSpeed": 219,
-"9960to60": 2.6,
-"996Handling": 97,
     "hiddenTag": [""]
 }

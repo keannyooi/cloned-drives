@@ -1,7 +1,7 @@
 {
     "carID": "c02944",
     "cr": 737,
-    "make": ["G-Power", "BMW"],
+    "make": ["G-Power","BMW"],
     "model": "G1 V8 Hurricane RS",
     "modelYear": 2012,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1490,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GPowerG1V8HurricaneRS(2012).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 208, 
-"3330to60": 4.0, 
-"333Handling": 93,
-
-"666TopSpeed": 210, 
-"6660to60": 3.8, 
-"666Handling": 96,
-
-"699TopSpeed": 210, 
-"6990to60": 3.6, 
-"699Handling": 100,
-
-"969TopSpeed": 213, 
-"9690to60": 3.8, 
-"969Handling": 100,
-
-"996TopSpeed": 213, 
-"9960to60": 3.6, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

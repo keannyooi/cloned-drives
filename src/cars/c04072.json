@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1085,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 15.55,
     "ola": 58.14,
     "description": "A granny with start&stop, you could say this was the first ever BluEmotion VW.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfCLEcomatic(1994).png",
     "creator": "Andu",
-
-    "333TopSpeed": 102,
-    "3330to60": 16.3,
-    "333Handling": 67,
-    
-    "666TopSpeed": 108,
-    "6660to60": 15.5,
-    "666Handling": 69,
-    
-    "699TopSpeed": 108,
-    "6990to60": 14.6,
-    "699Handling": 72,
-    
-    "969TopSpeed": 113,
-    "9690to60": 15.5,
-    "969Handling": 72,
-    
-    "996TopSpeed": 113,
-    "9960to60": 14.6,
-    "996Handling": 69,
     "hiddenTag": [""]
 }

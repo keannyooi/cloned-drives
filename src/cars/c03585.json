@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Unique", "Ultra Expensive","Endless Summer","The Americas Assault"],
+    "tags": ["Hypercar","Unique","Ultra Expensive","Endless Summer","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1405,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "America's Hyper Roadster.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/HennesseyVenomF5Roadster(2022).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 313,
-    "3330to60": 2.4,
-    "333Handling": 97,
-
-    "666TopSpeed": 314,
-    "6660to60": 2.3,
-    "666Handling": 100,
-
-    "996TopSpeed": 316,
-    "9960to60": 2.1,
-    "996Handling": 100,
-
-    "969TopSpeed": 316,
-    "9690to60": 2.3,
-    "969Handling": 104,
-
-    "699TopSpeed": 314,
-    "6990to60": 2.1,
-    "699Handling": 104,
     "hiddenTag": [""]
 }

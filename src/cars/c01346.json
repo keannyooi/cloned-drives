@@ -1,10 +1,7 @@
 {
     "carID": "c01346",
     "cr": 570,
-    "make": [
-        "Unplugged Performance",
-        "Tesla"
-    ],
+    "make": ["Unplugged Performance","Tesla"],
     "model": "Model X 90D \"SpaceX\"",
     "modelYear": 2016,
     "country": "US",
@@ -13,10 +10,7 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Eco-Friendly",
-        "Tuner"
-    ],
+    "tags": ["Eco-Friendly","Tuner"],
     "isPrize": false,
     "weight": 2336,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 70,
     "ola": 87.76,
     "description": "Unplugged Performance is an aftermarket Tesla specialist located next to Tesla's design studio. This Model X, shown in SEMA 2016, features UP's full catalog of parts, from 22-inch aerospace-grade aluminum wheels to a whole aerodynamic package.",
-     "333TopSpeed": 158,
-    "3330to60": 4.7,
-    "333Handling": 82,
-    "666TopSpeed": 162,
-    "6660to60": 4.4,
-    "666Handling": 84,
-    "996TopSpeed": 165,
-    "9960to60": 4.2,
-    "996Handling": 84,
-    "969TopSpeed": 165,
-    "9690to60": 4.4,
-    "969Handling": 88,
-    "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 88,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/UnpluggedPerformanceModelX90DSpaceX(2016).png",
     "creator": "Keanny",
     "hiddenTag": [""]

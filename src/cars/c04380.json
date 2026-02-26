@@ -10,10 +10,8 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1415,
     "gc": "Low",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Most powerful TT with 250 ps.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiTTCoupequattroSport(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 5.5,
-    "333Handling": 84,
-
-    "666TopSpeed": 162,
-    "6660to60": 5.2, 
-    "666Handling": 86,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.9,
-    "996Handling": 86,
-
-    "969TopSpeed": 165,
-    "9690to60": 5.2,
-    "969Handling": 90,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.9,
-    "699Handling": 90,
     "hiddenTag": [""]
 }

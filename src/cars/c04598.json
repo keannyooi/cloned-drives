@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1425,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "TDI but TDI.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombi20TDI(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 133,
-    "3330to60": 8.8,
-    "333Handling": 76,
-
-    "666TopSpeed": 137,
-    "6660to60": 8.4, 
-    "666Handling": 79,
-
-    "996TopSpeed": 141,
-    "9960to60": 7.9,
-    "996Handling": 79,
-
-    "969TopSpeed": 141,
-    "9690to60": 8.4,
-    "969Handling": 82,
-
-    "699TopSpeed": 137,
-    "6990to60": 7.9,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

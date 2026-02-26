@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 2016,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Maserati's new SUV getting the Trofeo treatment as well, but this time from a 3-liter V6 found in the MC20 and the new GranTurismo as well.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiGrecaleTrofeo(2022).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 180, 
-    "3330to60": 3.5, 
-    "333Handling": 87,
-
-    "666TopSpeed": 183, 
-    "6660to60": 3.3, 
-    "666Handling": 90,
-
-    "996TopSpeed": 186, 
-    "9960to60": 3.1,
-    "996Handling": 90,
-
-    "969TopSpeed": 186, 
-    "9690to60": 3.3, 
-    "969Handling": 93,
-
-    "699TopSpeed": 183, 
-    "6990to60": 3.1, 
-    "699Handling": 93,
     "hiddenTag": [""]
 }

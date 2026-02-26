@@ -6,13 +6,12 @@
     "modelYear": 1987,
     "country": "IT",
     "topSpeed": 205,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Style Icon", "Supercar", "Unique", "Year of the Rabbit"],
+    "tags": ["Concept","Style Icon","Supercar","Unique","Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 980,
     "gc": "Low",
     "seatCount": 2,
@@ -22,30 +21,9 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 67.44,
-    "ola": 85.00,
+    "ola": 85,
     "description": "The ultimate Countach that never was, essentially used as a test bed for the later Countachs & Diablos. Sadly though, it was destroyed in a crash test.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniCountachEvoluzionePrototipo(1987).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 208,
-    "3330to60": 3.8,
-    "333Handling": 85,
-
-    "666TopSpeed": 210,
-    "6660to60": 3.6,
-    "666Handling": 87,
-
-    "996TopSpeed": 213,
-    "9960to60": 3.4,
-    "996Handling": 87,
-
-    "969TopSpeed": 213,
-    "9690to60": 3.6,
-    "969Handling": 91,
-
-    "699TopSpeed": 210,
-    "6990to60": 3.4,
-    "699Handling": 91,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Concept", "Eco-Friendly", "Oddity", "Silver Screen", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Concept","Eco-Friendly","Oddity","Silver Screen","Supercar","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1780,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "After the e-tron concept from 2009, in 2010 Audi began the development of the electric R8 to produce in limited numbers. Lots of tests and several prototypes were made till 2013 when Audi decided to put the project on hold due to slow advancement in battery technology and limited range. This car also famously featured in Asphalt 8 racing game and 3rd Iron Man movie.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR8e-tronprototype(2012).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 128, 
-    "3330to60": 3.9, 
-    "333Handling": 88,
-
-    "666TopSpeed": 132, 
-    "6660to60": 3.7, 
-    "666Handling": 91,
-
-    "996TopSpeed": 137, 
-    "9960to60": 3.5, 
-    "996Handling": 91,
-
-    "969TopSpeed": 137, 
-    "9690to60": 3.7, 
-    "969Handling": 94,
-
-    "699TopSpeed": 132, 
-    "6990to60": 3.5, 
-    "699Handling": 94,
     "hiddenTag": [""]
 }

@@ -1,5 +1,5 @@
 {
-	"carID": "c06508",
+    "carID": "c06508",
     "cr": 488,
     "make": "Ford",
     "model": "Mustang Mach-E California Route 1",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 2010,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 54.1,
     "ola": 93.94,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-ECaliforniaRoute1(2020).png",
-
-"333TopSpeed": 117,
-"3330to60": 6.3,
-"333Handling": 85,
-
-"666TopSpeed": 121,
-"6660to60": 5.9,
-"666Handling": 87,
-
-"699TopSpeed": 121,
-"6990to60": 5.6,
-"699Handling": 91,
-
-"969TopSpeed": 126,
-"9690to60": 5.9,
-"969Handling": 91,
-
-"996TopSpeed": 126,
-"9960to60": 5.6,
-"996Handling": 87,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-ECaliforniaRoute1(2020).png",
     "creator": "ama4nn",
     "hiddenTag": [""]
 }

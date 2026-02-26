@@ -6,13 +6,12 @@
     "modelYear": 2013,
     "country": "US",
     "topSpeed": 119,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1510,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Laggy turbo and a clumsy gearbox frustrate in Dodge's new compact.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/DodgeDart1.4TDDCT(2013).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 123,
-    "3330to60": 8.6,
-    "333Handling": 77,
-
-    "666TopSpeed": 128,
-    "6660to60": 8.1,
-    "666Handling": 80,
-
-    "996TopSpeed": 132,
-    "9960to60": 7.7,
-    "996Handling": 80,
-
-    "969TopSpeed": 132,
-    "9690to60": 8.1,
-    "969Handling": 83,
-
-    "699TopSpeed": 128,
-    "6990to60": 7.7,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

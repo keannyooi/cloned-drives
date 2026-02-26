@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly","Visionary Road"],
+    "tags": ["Rest of The World","Innovative","Unique","Eco-Friendly","Visionary Road"],
     "isPrize": false,
-	
     "weight": 1820,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Later nanoFlowcell showcase cars (they consider themselves a tech company and not a car manufacturer) such as the Quantino and this car uses \"bi-Ion\" fuel cells with both organic and inorganic ions, a technology that NASA tried out and declared unviable in the 1970s. It was at around this time when the CEO of nanoFlowcell was accused of buying his PhD and scamming an old lady by investing in his previous non-existent solar panel technology, so that gave the tech a bad name.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/nanoFlowcellQuant48Volt(2018).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 189, 
-    "3330to60": 2.2, 
-    "333Handling": 95,
-
-    "666TopSpeed": 192, 
-    "6660to60": 2.1, 
-    "666Handling": 98,
-
-    "699TopSpeed": 192, 
-    "6990to60": 2.0, 
-    "699Handling": 102,
-
-    "969TopSpeed": 194, 
-    "9690to60": 2.1, 
-    "969Handling": 102,
-
-    "996TopSpeed": 194, 
-    "9960to60": 2.0, 
-    "996Handling": 98,
     "hiddenTag": [""]
 }

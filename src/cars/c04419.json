@@ -6,13 +6,12 @@
     "modelYear": 1998,
     "country": "GB",
     "topSpeed": 202,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["The Midlands Cruise","Concept","Unique","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1550,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 95,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinProjectVantage(1998).png",
-
-"333TopSpeed": 205,
-"3330to60": 3.8,
-"333Handling": 86,
-
-"666TopSpeed": 207,
-"6660to60": 3.6,
-"666Handling": 88,
-
-"699TopSpeed": 207,
-"6990to60": 3.4,
-"699Handling": 92,
-
-"969TopSpeed": 210,
-"9690to60": 3.6,
-"969Handling": 92,
-
-"996TopSpeed": 210,
-"9960to60": 3.4,
-"996Handling": 88,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

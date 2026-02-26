@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03871",
     "cr": 407,
     "make": "Chrysler",
@@ -10,13 +10,11 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Americas Assault", "Style Icon", "Hot Hatch", "Endless Summer","Oceanic View"],
+    "tags": ["The Americas Assault","Style Icon","Hot Hatch","Endless Summer","Oceanic View"],
     "isPrize": false,
-
-
     "weight": 1527,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 60.71,
     "ola": 79.41,
     "description": "New Stout 230hp Turbo engine gives a kick to the new facelift, bringing it closer to an actual hot hatch.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChryslerPTCruiserGT(2006).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 129,
-    "3330to60": 6.5,
-    "333Handling": 79,
-    
-    "666TopSpeed": 133,
-    "6660to60": 6.1,
-    "666Handling": 81,
-    
-    "699TopSpeed": 133,
-    "6990to60": 5.8,
-    "699Handling": 84,
-    
-    "969TopSpeed": 137,
-    "9690to60": 6.1,
-    "969Handling": 84,
-    
-    "996TopSpeed": 137,
-    "9960to60": 5.8,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

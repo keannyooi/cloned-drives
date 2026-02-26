@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1604,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Let me guess: You probably weren't searching for this Stelvio but you ended up with this because you couldn't figure out the one you were searching.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.2TD(180)(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 131, 
-    "3330to60": 7.4, 
-    "333Handling": 79,
-
-    "666TopSpeed": 135, 
-    "6660to60": 7.0, 
-    "666Handling": 81,
-
-    "996TopSpeed": 139, 
-    "9960to60": 6.6, 
-    "996Handling": 81,
-
-    "969TopSpeed": 139, 
-    "9690to60": 7.0, 
-    "969Handling": 84,
-
-    "699TopSpeed": 135, 
-    "6990to60": 6.6, 
-    "699Handling": 84,
     "hiddenTag": [""]
 }

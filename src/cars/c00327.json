@@ -1,10 +1,7 @@
 {
     "carID": "c00327",
     "cr": 480,
-    "make": [
-        "Comptech",
-        "Acura"
-    ],
+    "make": ["Comptech","Acura"],
     "model": "CL Type-S",
     "modelYear": 2003,
     "country": "US",
@@ -13,11 +10,7 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer",
-        "Sleeper"
-    ],
+    "tags": ["Tuner","Street Racer","Sleeper"],
     "isPrize": false,
     "weight": 1578,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 76,
     "ola": 88.43,
     "description": "What happens when you throw an additional 100 horsepower at a CL via a supercharger? An Acura that could've dispatched muscle cars of the time.",
-     "333TopSpeed": 150,
-    "3330to60": 5.4,
-    "333Handling": 83,
-    "666TopSpeed": 153,
-    "6660to60": 5.1,
-    "666Handling": 85,
-    "996TopSpeed": 157,
-    "9960to60": 4.8,
-    "996Handling": 85,
-    "969TopSpeed": 157,
-    "9690to60": 5.1,
-    "969Handling": 89,
-    "699TopSpeed": 153,
-    "6990to60": 4.8,
-    "699Handling": 89,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ComptechCLType-S(2003).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

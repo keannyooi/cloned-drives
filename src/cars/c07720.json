@@ -22,30 +22,8 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 0,
-	
     "description": "The original Wienermobile.",
-	
-"333TopSpeed": 59,
-"3330to60": 99.9,
-"333Handling": 43,
-
-"666TopSpeed": 67,
-"6660to60": 89.9,
-"666Handling": 45,
-
-"699TopSpeed": 67,
-"6990to60": 84.9,
-"699Handling": 47,
-
-"969TopSpeed": 76,
-"9690to60": 89.9,
-"969Handling": 47,
-
-"996TopSpeed": 76,
-"9960to60": 84.9,
-"996Handling": 45,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/OscarMayerWienermobile(1936).png",
     "creator": "GAAN",
-	"hiddenTag": [""]
+    "hiddenTag": [""]
 }

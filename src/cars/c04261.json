@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "Concept", "Eurotech Elite"],
+    "tags": ["Innovative","Concept","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 810,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "All aluminium preview for the smallest Audi.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiAl2Concept(1997).png",
     "creator": "Connor",
-
-    "333TopSpeed": 111,
-    "3330to60": 11.0,
-    "333Handling": 72,
-
-    "666TopSpeed": 116,
-    "6660to60": 10.4, 
-    "666Handling": 75,
-
-    "996TopSpeed": 121,
-    "9960to60": 9.9,
-    "996Handling": 75,
-
-    "969TopSpeed": 121,
-    "9690to60": 10.4,
-    "969Handling": 78,
-
-    "699TopSpeed": 116,
-    "6990to60": 9.9,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

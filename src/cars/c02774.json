@@ -1,7 +1,7 @@
 {
     "carID": "c02774",
     "cr": 590,
-    "make": ["Hennessey", "Plymouth"],
+    "make": ["Hennessey","Plymouth"],
     "model": "Prowler GTX",
     "modelYear": 2004,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 1295,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The car was so straight line focused MotorTrend didn't even bother testing its handling capabilites.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyProwlerGTX(2004).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 152, 
-    "3330to60": 4.3, 
-    "333Handling": 83,
-
-    "666TopSpeed": 155, 
-    "6660to60": 4.0, 
-    "666Handling": 85,
-
-    "699TopSpeed": 155, 
-    "6990to60": 3.8, 
-    "699Handling": 89,
-
-    "969TopSpeed": 159, 
-    "9690to60": 4.0, 
-    "969Handling": 89,
-
-    "996TopSpeed": 159, 
-    "9960to60": 3.8, 
-    "996Handling": 85,
     "hiddenTag": [""]
 }

@@ -6,13 +6,12 @@
     "modelYear": 1971,
     "country": "DE",
     "topSpeed": 170,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 930,
     "gc": "Medium",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 80,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911ST2.5(1971).png",
-
-"333TopSpeed": 173,
-"3330to60": 4.8,
-"333Handling": 81,
-
-"666TopSpeed": 176,
-"6660to60": 4.5,
-"666Handling": 83,
-
-"699TopSpeed": 176,
-"6990to60": 4.3,
-"699Handling": 87,
-
-"969TopSpeed": 179,
-"9690to60": 4.5,
-"969Handling": 87,
-
-"996TopSpeed": 179,
-"9960to60": 4.3,
-"996Handling": 83,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

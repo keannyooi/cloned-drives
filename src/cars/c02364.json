@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Supercar"],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 86.67,
     "ola": 82.75,
     "description": "A Ferrari F40 knockoff from France.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Venturi400GT(1994).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 183,
-    "3330to60": 4.0,
-    "333Handling": 91,
-
-    "666TopSpeed": 186,
-    "6660to60": 3.8,
-    "666Handling": 94,
-
-    "699TopSpeed": 186,
-    "6990to60": 3.6,
-    "699Handling": 98,
-
-    "969TopSpeed": 189,
-    "9690to60": 3.8,
-    "969Handling": 98,
-
-    "996TopSpeed": 189,
-    "9960to60": 3.6,
-    "996Handling": 94,
     "hiddenTag": [""]
 }

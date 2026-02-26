@@ -12,43 +12,18 @@
     "tyreType": "Off-Road",
     "tags": ["The Amplification of Asia","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 2123,
     "gc": "High",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Pickup",
     "tcs": false,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 20.00,
+    "mra": 20,
     "ola": 82.35,
     "description": "Bare bones utility verion of the patrol. the series 4 GU ute launched in 2007 for the australian market and remained virtually unchanged until its discontinuation in 2016. The series 4 facelifted utes had 3 litre 4 banger in place of the old td42 inline 6, which made slightly more power at the cost of reliability.",
-
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanPatrolSTCabChassis(2007).png",
     "creator": "NissanLover89",
-
-    "333TopSpeed": 104,
-    "3330to60": 15.6,
-    "333Handling": 62,
-    
-    "666TopSpeed": 110,
-    "6660to60": 14.8,
-    "666Handling": 64,
-    
-    "699TopSpeed": 110,
-    "6990to60": 13.9,
-    "699Handling": 67,
-    
-    "969TopSpeed": 115,
-    "9690to60": 14.8,
-    "969Handling": 67,
-    
-    "996TopSpeed": 115,
-    "9960to60": 13.9,
-    "996Handling": 64
-    ,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1549,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche928S2(1984).png",
     "creator": "c6",
-
-    "333TopSpeed": 159,
-    "3330to60": 6.2,
-    "333Handling": 77,
-
-    "666TopSpeed": 163,
-    "6660to60": 5.9,
-    "666Handling": 80,
-
-    "996TopSpeed": 166,
-    "9960to60": 5.5,
-    "996Handling": 80,
-
-    "969TopSpeed": 166,
-    "9690to60": 5.9,
-    "969Handling": 83,
-
-    "699TopSpeed": 163,
-    "6990to60": 5.5,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

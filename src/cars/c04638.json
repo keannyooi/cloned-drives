@@ -10,44 +10,20 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 805,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 41.84,
-    "ola": 67.80,
+    "ola": 67.8,
     "description": "Get your wallets out! This is the car to have if you need german power served on an italian plate!",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenSciroccoGTIStorm(1981).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 120,
-    "3330to60": 8.5,
-    "333Handling": 74,
-    
-    "666TopSpeed": 124,
-    "6660to60": 8,
-    "666Handling": 77,
-    
-    "699TopSpeed": 124,
-    "6990to60": 7.6,
-    "699Handling": 80,
-    
-    "969TopSpeed": 129,
-    "9690to60": 8,
-    "969Handling": 80,
-    
-    "996TopSpeed": 129,
-    "9960to60": 7.6,
-    "996Handling": 77,
     "hiddenTag": [""]
 }

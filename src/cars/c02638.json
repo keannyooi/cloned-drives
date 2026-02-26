@@ -1,7 +1,7 @@
 {
     "carID": "c02638",
     "cr": 477,
-    "make": ["Racing Solutions", "Chevrolet"],
+    "make": ["Racing Solutions","Chevrolet"],
     "model": "SSR Z500",
     "modelYear": 2004,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 2165,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "A Corvette-powered weird pickup truck-hot rod thingy. Now this is peak America.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RacingSolutionsSSRZ500(2004).png",
     "creator": "Keanny",
-
-"333TopSpeed": 124, 
-"3330to60": 5.6, 
-"333Handling": 82,
-
-"666TopSpeed": 129, 
-"6660to60": 5.3, 
-"666Handling": 84,
-
-"699TopSpeed": 129, 
-"6990to60": 5.0, 
-"699Handling": 88,
-
-"969TopSpeed": 133, 
-"9690to60": 5.3, 
-"969Handling": 88,
-
-"996TopSpeed": 133, 
-"9960to60": 5.0, 
-"996Handling": 84,
     "hiddenTag": [""]
 }

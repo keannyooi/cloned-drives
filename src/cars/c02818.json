@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Unique"],
+    "tags": ["Supercar","Unique"],
     "isPrize": false,
-	
     "weight": 1210,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PaganiZonda760RS(2012).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 220,
-"3330to60": 2.6,
-"333Handling": 97,
-
-"666TopSpeed": 223,
-"6660to60": 2.4,
-"666Handling": 100,
-
-"699TopSpeed": 223,
-"6990to60": 2.3,
-"699Handling": 104,
-
-"969TopSpeed": 225,
-"9690to60": 2.4,
-"969Handling": 104,
-
-"996TopSpeed": 225,
-"9960to60": 2.3,
-"996Handling": 100,
     "hiddenTag": [""]
 }

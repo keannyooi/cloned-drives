@@ -1,7 +1,7 @@
 {
     "carID": "c03224",
     "cr": 313,
-    "make": ["Nothelle", "Audi"],
+    "make": ["Nothelle","Audi"],
     "model": "Audi 50 Group 2",
     "modelYear": 1975,
     "country": "DE",
@@ -10,10 +10,8 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Year of the Rabbit", "Tuner","The Tyrol Tour: Remix"],
+    "tags": ["Motorsport","Year of the Rabbit","Tuner","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 700,
     "gc": "Low",
     "seatCount": 2,
@@ -22,30 +20,10 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 60.50,
+    "mra": 60.5,
     "ola": 69.44,
     "description": "A number of fifties were modified to race in Group 2 class by tuning house Nothelle.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NothelleAudi50Group2(1975).png",
     "creator": "Connor",
-
-    "333TopSpeed": 124,
-    "3330to60": 6.8,
-    "333Handling": 80,
-
-    "666TopSpeed": 129,
-    "6660to60": 6.5, 
-    "666Handling": 82,
-
-    "996TopSpeed": 133,
-    "9960to60": 6.1,
-    "996Handling": 82,
-
-    "969TopSpeed": 133,
-    "9690to60": 6.5,
-    "969Handling": 85,
-
-    "699TopSpeed": 129,
-    "6990to60": 6.1,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

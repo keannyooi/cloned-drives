@@ -10,9 +10,8 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "tags": ["Concept","Unique","Eco-Friendly"],
     "isPrize": true,
-	
     "weight": 2050,
     "gc": "Medium",
     "seatCount": 6,
@@ -26,25 +25,5 @@
     "description": "If you thought the Icona NEO was a radical enough design for an EV, may I introduce you to a moving lounge on 4 wheels that not only take you to your destination, but *is* your destination too. Described by Icona's CEO as \"the car after tomorrow\" and designed by 90 designers from 21 countries, the Icona Nucleus lets you chill and do stuff (presumably business related) while on the go in a luxurious space which Icona compares to a 5-star hotel. It won the 2019 German Design Award for not only passenger cars, but also universal design for \"outstanding design quality\" by the German Design Council.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/IconaNucleus(2018).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 128, 
-    "3330to60": 3.2, 
-    "333Handling": 83,
-
-    "666TopSpeed": 132, 
-    "6660to60": 3.1, 
-    "666Handling": 85,
-
-    "699TopSpeed": 132, 
-    "6990to60": 2.9, 
-    "699Handling": 89,
-
-    "969TopSpeed": 137, 
-    "9690to60": 3.1, 
-    "969Handling": 89,
-
-    "996TopSpeed": 137, 
-    "9960to60": 2.9, 
-    "996Handling": 85,
     "hiddenTag": [""]
 }

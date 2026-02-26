@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "The Americas Assault"],
+    "tags": ["Endless Summer","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1947,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Chevrolet revived the legendary Blazer name, but not in the way it used to be. It's not that rugged boxy off-road machine it used to be, instead it's the Camaro of the SUV world with the mean look, interior that looks like straight out of Camaro with other design clues from Camaro, and a powerful engine. It disappointed many, and could have been more successful especially when the rugged boxy off-roaders made a comeback with new Bronco and Defender, but there is no doubt that this is still cool.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletBlazer3.6LV6RSAWD(2019).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 134, 
-    "3330to60": 6.0, 
-    "333Handling": 80,
-
-    "666TopSpeed": 138, 
-    "6660to60": 5.7, 
-    "666Handling": 82,
-
-    "996TopSpeed": 142, 
-    "9960to60": 5.4, 
-    "996Handling": 82,
-
-    "969TopSpeed": 142, 
-    "9690to60": 5.7, 
-    "969Handling": 85,
-
-    "699TopSpeed": 138, 
-    "6990to60": 5.4, 
-    "699Handling": 85,
     "hiddenTag": [""]
 }

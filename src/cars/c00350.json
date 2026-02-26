@@ -10,11 +10,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Silver Screen",
-        "Supercar","OG"
-    ],
+    "tags": ["Muscle Car","Silver Screen","Supercar","OG"],
     "isPrize": false,
     "weight": 1941,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 87.88,
     "ola": 86.96,
     "description": "*(proceeds to wheelie off the production line)*",
-"333TopSpeed": 171,
-"3330to60": 2.2,
-"333Handling": 90,
-
-"666TopSpeed": 174,
-"6660to60": 2.1,
-"666Handling": 93,
-
-"699TopSpeed": 174,
-"6990to60": 2,
-"699Handling": 97,
-
-"969TopSpeed": 177,
-"9690to60": 2.1,
-"969Handling": 97,
-
-"996TopSpeed": 177,
-"9960to60": 2,
-"996Handling": 93,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTDemon2018.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

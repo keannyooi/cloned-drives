@@ -1,11 +1,7 @@
 {
     "carID": "c01037",
     "cr": 662,
-    "make": [
-        "Pogea Racing",
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Pogea Racing","Abarth","Fiat"],
     "model": "Ares",
     "modelYear": 2017,
     "country": "DE",
@@ -14,12 +10,7 @@
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Hot Hatch",
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Street Racer","Hot Hatch","Tuner","Unique"],
     "isPrize": false,
     "weight": 1052,
     "gc": "Low",
@@ -32,21 +23,6 @@
     "mra": 81.82,
     "ola": 84.44,
     "description": "The most insane Fiat 500 ever made features 404 hp and a pricetag of $76,300. Only 5 examples were ever made.",
-     "333TopSpeed": 182,
-    "3330to60": 4.3,
-    "333Handling": 86,
-    "666TopSpeed": 185,
-    "6660to60": 4.1,
-    "666Handling": 88,
-    "996TopSpeed": 188,
-    "9960to60": 3.8,
-    "996Handling": 88,
-    "969TopSpeed": 188,
-    "9690to60": 4.1,
-    "969Handling": 92,
-    "699TopSpeed": 185,
-    "6990to60": 3.8,
-    "699Handling": 92,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PogeaRacingAres(2017).png",
     "creator": "Havvy",
     "hiddenTag": [""]

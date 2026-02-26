@@ -10,11 +10,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Servers Choice",
-        "Super Sedan","OG"
-    ],
+    "tags": ["Muscle Car","Servers Choice","Super Sedan","OG"],
     "isPrize": false,
     "weight": 2060,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 95.12,
     "ola": 92.31,
     "description": "The ultimate muscle sedan of the modern era.",
-"333TopSpeed": 207,
-"3330to60": 3.7,
-"333Handling": 87,
-
-"666TopSpeed": 209,
-"6660to60": 3.5,
-"666Handling": 90,
-
-"699TopSpeed": 209,
-"6990to60": 3.3,
-"699Handling": 93,
-
-"969TopSpeed": 212,
-"9690to60": 3.5,
-"969Handling": 93,
-
-"996TopSpeed": 212,
-"9960to60": 3.3,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChargerSRTHellcat2015.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]

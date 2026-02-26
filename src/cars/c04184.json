@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1525,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Hybrid",
     "mra": 53.82,
-    "ola": 81.00,
+    "ola": 81,
     "description": "After 3 years since the concept car and few more delays its finally here. Also it's not 'Toenail' smh.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoTonale1.5MHEVVeloce(2022).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 134, 
-    "3330to60": 8.2, 
-    "333Handling": 79,
-
-    "666TopSpeed": 138, 
-    "6660to60": 7.7, 
-    "666Handling": 81,
-
-    "996TopSpeed": 142, 
-    "9960to60": 7.3, 
-    "996Handling": 81,
-
-    "969TopSpeed": 142, 
-    "9690to60": 7.7, 
-    "969Handling": 84,
-
-    "699TopSpeed": 138, 
-    "6990to60": 7.3, 
-    "699Handling": 84,
     "hiddenTag": [""]
 }

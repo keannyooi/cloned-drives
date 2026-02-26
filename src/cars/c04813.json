@@ -6,13 +6,12 @@
     "modelYear": 2010,
     "country": "DE",
     "topSpeed": 162,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1805,
     "gc": "Medium",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 70,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorschePanamera(2010).png",
-
-"333TopSpeed": 165,
-"3330to60": 5.7,
-"333Handling": 83,
-
-"666TopSpeed": 168,
-"6660to60": 5.4,
-"666Handling": 85,
-
-"699TopSpeed": 168,
-"6990to60": 5.1,
-"699Handling": 89,
-
-"969TopSpeed": 172,
-"9690to60": 5.4,
-"969Handling": 89,
-
-"996TopSpeed": 172,
-"9960to60": 5.1,
-"996Handling": 85,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

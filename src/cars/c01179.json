@@ -1,7 +1,7 @@
 {
     "carID": "c01179",
     "cr": 595,
-    "make": ["SMS Supercars", "Saleen", "Dodge"],
+    "make": ["SMS Supercars","Saleen","Dodge"],
     "model": "570 Challenger",
     "modelYear": 2009,
     "country": "US",
@@ -10,10 +10,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car",
-        "Tuner"
-    ],
+    "tags": ["Muscle Car","Tuner"],
     "isPrize": false,
     "weight": 1910,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 72.33,
     "ola": 75,
     "description": "Is this a Saleen?",
-     "333TopSpeed": 189,
-"3330to60": 4.4,
-"333Handling": 82,
-
-"666TopSpeed": 192,
-"6660to60": 4.1,
-"666Handling": 84,
-
-"699TopSpeed": 192,
-"6990to60": 3.9,
-"699Handling": 88,
-
-"969TopSpeed": 194,
-"9690to60": 4.1,
-"969Handling": 88,
-
-"996TopSpeed": 194,
-"9960to60": 3.9,
-"996Handling": 84,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SMSSupercars570Challenger(2009).png",
     "creator": "Keanny",
     "hiddenTag": [""]

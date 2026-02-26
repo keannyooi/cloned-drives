@@ -10,10 +10,7 @@
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Kei Car",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Kei Car","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 725,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 11.45,
     "ola": 68.5,
     "description": "A classic S kei sports car with a 606 cc engine.",
-"333TopSpeed": 93,
-"3330to60": 16,
-"333Handling": 62,
-
-"666TopSpeed": 99,
-"6660to60": 15.1,
-"666Handling": 64,
-
-"699TopSpeed": 99,
-"6990to60": 14.3,
-"699Handling": 67,
-
-"969TopSpeed": 105,
-"9690to60": 15.1,
-"969Handling": 67,
-
-"996TopSpeed": 105,
-"9960to60": 14.3,
-"996Handling": 64,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HondaS600(1964).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

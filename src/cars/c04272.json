@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1313,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "TDIIIIII",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA319TDIAmbition(2003).png",
     "creator": "Connor",
-
-    "333TopSpeed": 123,
-    "3330to60": 10.3,
-    "333Handling": 76,
-
-    "666TopSpeed": 128,
-    "6660to60": 9.7, 
-    "666Handling": 79,
-
-    "996TopSpeed": 132,
-    "9960to60": 9.2,
-    "996Handling": 79,
-
-    "969TopSpeed": 132,
-    "9690to60": 9.7,
-    "969Handling": 82,
-
-    "699TopSpeed": 128,
-    "6990to60": 9.2,
-    "699Handling": 82,
     "hiddenTag": [""]
 }

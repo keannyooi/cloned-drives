@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1515,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Fun fact, this one-off was bought of a private collector after being shown the 928 production facility.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche928S4GTE(1989).png",
     "creator": "c6",
-
-    "333TopSpeed": 185,
-    "3330to60": 5.1,
-    "333Handling": 79,
-
-    "666TopSpeed": 188,
-    "6660to60": 4.9,
-    "666Handling": 81,
-
-    "996TopSpeed": 191,
-    "9960to60": 4.6,
-    "996Handling": 81,
-
-    "969TopSpeed": 191,
-    "9690to60": 4.9,
-    "969Handling": 84,
-
-    "699TopSpeed": 188,
-    "6990to60": 4.6,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

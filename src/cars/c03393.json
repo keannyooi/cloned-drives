@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03393",
     "cr": 176,
     "make": "Fiat",
@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 840,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 15.15,
     "ola": 56.55,
     "description": "Barebones basic contessa.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda11Active(2003).png",
     "creator": "Andu",
-
-    "333TopSpeed": 93,
-    "3330to60": 13.8,
-    "333Handling": 69,
-    
-    "666TopSpeed": 99,
-    "6660to60": 13.1,
-    "666Handling": 71,
-    
-    "699TopSpeed": 99,
-    "6990to60": 12.3,
-    "699Handling": 74,
-    
-    "969TopSpeed": 105,
-    "9690to60": 13.1,
-    "969Handling": 74,
-    
-    "996TopSpeed": 105,
-    "9960to60": 12.3,
-    "996Handling": 71,
     "hiddenTag": [""]
 }

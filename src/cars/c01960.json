@@ -10,9 +10,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1800,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 61.28,
     "ola": 72.08,
     "description": "Modern Infiniti coupe with all-wheel drive system.",
-"333TopSpeed": 158,
-"3330to60": 5,
-"333Handling": 84,
-
-"666TopSpeed": 162,
-"6660to60": 4.8,
-"666Handling": 86,
-
-"699TopSpeed": 162,
-"6990to60": 4.5,
-"699Handling": 90,
-
-"969TopSpeed": 165,
-"9690to60": 4.8,
-"969Handling": 90,
-
-"996TopSpeed": 165,
-"9960to60": 4.5,
-"996Handling": 86,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiQ603.0tAWD(2016).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -10,9 +10,8 @@
     "handling": 61,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique"],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
-	
     "weight": 350,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AixamScoutyR(2008).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 37, 
-"3330to60": 99.9, 
-"333Handling": 63,
-
-"666TopSpeed": 45, 
-"6660to60": 99.9, 
-"666Handling": 65,
-
-"699TopSpeed": 45, 
-"6990to60": 99.9, 
-"699Handling": 68,
-
-"969TopSpeed": 54, 
-"9690to60": 99.9, 
-"969Handling": 68,
-
-"996TopSpeed": 54, 
-"9960to60": 99.9, 
-"996Handling": 65,
     "hiddenTag": [""]
 }

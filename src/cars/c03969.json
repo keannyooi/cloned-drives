@@ -6,13 +6,12 @@
     "modelYear": 2023,
     "country": "US",
     "topSpeed": 215,
-    "0to60": 1.0,
+    "0to60": 1,
     "handling": 10,
     "driveType": "RWD",
     "tyreType": "Drag",
     "tags": ["Endless Summer","Motorsport","Unique","The Americas Assault","Muscle Car","Eco-Friendly"],
     "isPrize": true,
-	
     "weight": 1842,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FordMustangCobraJet1800(2023).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 217,
-"3330to60": 0.9,
-"333Handling": 10,
-
-"666TopSpeed": 220,
-"6660to60": 0.9,
-"666Handling": 11,
-
-"699TopSpeed": 220,
-"6990to60": 0.8,
-"699Handling": 11,
-
-"969TopSpeed": 222,
-"9690to60": 0.9,
-"969Handling": 11,
-
-"996TopSpeed": 222,
-"9960to60": 0.8,
-"996Handling": 11,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c04495",
     "cr": 578,
-    "make": ["MTM", "Audi"],
+    "make": ["MTM","Audi"],
     "model": "Audi S3 Sportback",
     "modelYear": 2009,
     "country": "DE",
@@ -10,10 +10,8 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Tuner","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1530,
     "gc": "Low",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "US only pack 'converting' your regular 2.0 TFSI A3 into S3.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MTMS3Sportback(2009).png",
     "creator": "Connor",
-
-    "333TopSpeed": 161,
-    "3330to60": 5.1,
-    "333Handling": 86,
-
-    "666TopSpeed": 165,
-    "6660to60": 4.9, 
-    "666Handling": 88,
-
-    "996TopSpeed": 168,
-    "9960to60": 4.6,
-    "996Handling": 88,
-
-    "969TopSpeed": 168,
-    "9690to60": 4.9,
-    "969Handling": 92,
-
-    "699TopSpeed": 165,
-    "6990to60": 4.6,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

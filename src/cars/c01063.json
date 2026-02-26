@@ -6,13 +6,12 @@
     "modelYear": 1998,
     "country": "DE",
     "topSpeed": 174,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1440,
     "gc": "Low",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 70.65,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911Carrera4(1998).png",
-
-"333TopSpeed": 177,
-"3330to60": 4.8,
-"333Handling": 87,
-
-"666TopSpeed": 180,
-"6660to60": 4.5,
-"666Handling": 90,
-
-"699TopSpeed": 180,
-"6990to60": 4.3,
-"699Handling": 93,
-
-"969TopSpeed": 183,
-"9690to60": 4.5,
-"969Handling": 93,
-
-"996TopSpeed": 183,
-"9960to60": 4.3,
-"996Handling": 90,
     "creator": "Havvy",
     "hiddenTag": [""]
 }

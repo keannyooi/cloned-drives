@@ -6,7 +6,7 @@
     "modelYear": 1969,
     "country": "FR",
     "topSpeed": 99,
-    "0to60": 15.0,
+    "0to60": 15,
     "handling": 61,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -21,29 +21,8 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 13.55,
-    "ola": 64.00,
+    "ola": 64,
     "description": "A great IDea.",
-    
-"333TopSpeed": 104,
-"3330to60": 14.3,
-"333Handling": 63,
-
-"666TopSpeed": 110,
-"6660to60": 13.5,
-"666Handling": 65,
-
-"699TopSpeed": 110,
-"6990to60": 12.8,
-"699Handling": 68,
-
-"969TopSpeed": 115,
-"9690to60": 13.5,
-"969Handling": 68,
-
-"996TopSpeed": 115,
-"9960to60": 12.8,
-"996Handling": 65,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/CitroenID20Break(1969).png",
     "creator": "Andu",
     "hiddenTag": [""]

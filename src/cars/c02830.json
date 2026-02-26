@@ -1,7 +1,7 @@
 {
     "carID": "c02830",
     "cr": 357,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "eRuf Model A",
     "modelYear": 2008,
     "country": "DE",
@@ -10,9 +10,8 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "tags": ["Concept","Unique","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1910,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The Porsche Boxster E may be Porsche (the company - it's a different story if we're talking about the man)'s first attempt at an EV, but Ruf had already taken a go at producing Porsche EVs some 3 years before. UQM Technologies' PowerPhase 150 gave the car 201hp and 469Nm of torque while iron-phosphate lithium-ion batteries charges it.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RufeRufModelA(2008).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 144, 
-    "3330to60": 6.5, 
-    "333Handling": 84,
-
-    "666TopSpeed": 147, 
-    "6660to60": 6.1, 
-    "666Handling": 86,
-
-    "699TopSpeed": 147, 
-    "6990to60": 5.8, 
-    "699Handling": 90,
-
-    "969TopSpeed": 151, 
-    "9690to60": 6.1, 
-    "969Handling": 90,
-
-    "996TopSpeed": 151, 
-    "9960to60": 5.8, 
-    "996Handling": 86,
     "hiddenTag": [""]
 }

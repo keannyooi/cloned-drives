@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Grand Tourer", "Unique", "Ultra Expensive"],
+    "tags": ["Hypercar","Grand Tourer","Unique","Ultra Expensive"],
     "isPrize": false,
-
     "weight": 2046,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 108.33,
     "ola": 92.3,
     "description": "A very unique 1 of 1 Bugatti.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BugattiLaVoitureNoire(2021).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 240,
-"3330to60": 2.3,
-"333Handling": 94,
-
-"666TopSpeed": 242,
-"6660to60": 2.2,
-"666Handling": 97,
-
-"699TopSpeed": 242,
-"6990to60": 2,
-"699Handling": 101,
-
-"969TopSpeed": 245,
-"9690to60": 2.2,
-"969Handling": 101,
-
-"996TopSpeed": 245,
-"9960to60": 2,
-"996Handling": 97,
     "hiddenTag": [""]
 }

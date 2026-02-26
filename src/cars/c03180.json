@@ -1,7 +1,7 @@
 {
     "carID": "c03180",
     "cr": 12,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "15/98 2 Door Tourer",
     "modelYear": 1936,
     "country": "GB",
@@ -10,9 +10,8 @@
     "handling": 52,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Midlands Cruise", "Grand Tourer"],
+    "tags": ["The Midlands Cruise","Grand Tourer"],
     "isPrize": false,
-	
     "weight": 1117,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartin15982DoorTourer(1936).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 87,
-"3330to60": 18.5,
-"333Handling": 54,
-
-"666TopSpeed": 93,
-"6660to60": 17.6,
-"666Handling": 55,
-
-"699TopSpeed": 93,
-"6990to60": 16.6,
-"699Handling": 58,
-
-"969TopSpeed": 100,
-"9690to60": 17.6,
-"969Handling": 58,
-
-"996TopSpeed": 100,
-"9960to60": 16.6,
-"996Handling": 55,
     "hiddenTag": [""]
 }

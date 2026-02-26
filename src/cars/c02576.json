@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Rest of The World", "Motorsport"],
+    "tags": ["Rest of The World","Motorsport"],
     "isPrize": false,
-	
     "weight": 1100,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "In 2003, Seat revealed to the world what would be the key to spicing up the brand's image - a 500hp GT race car concept. Seat's motorsport division (which would later be known as Cupra Racing) and the Seat Design Center joined forces to design and engineer the machine with hopes that it would race in that year's Spanish GT Championship.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SeatCupraGT(2003).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 186, 
-    "3330to60": 3.9, 
-    "333Handling": 94,
-
-    "666TopSpeed": 189, 
-    "6660to60": 3.7, 
-    "666Handling": 97,
-
-    "699TopSpeed": 189, 
-    "6990to60": 3.5, 
-    "699Handling": 101,
-
-    "969TopSpeed": 192, 
-    "9690to60": 3.7, 
-    "969Handling": 101,
-
-    "996TopSpeed": 192, 
-    "9960to60": 3.5, 
-    "996Handling": 97,
     "hiddenTag": [""]
 }

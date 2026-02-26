@@ -1,10 +1,7 @@
 {
     "carID": "c00869",
     "cr": 763,
-    "make": [
-        "Mercedes-Benz",
-        "McLaren"
-    ],
+    "make": ["Mercedes-Benz","McLaren"],
     "model": "SLR McLaren",
     "modelYear": 2003,
     "country": "DE",
@@ -13,10 +10,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon","OG"
-    ],
+    "tags": ["Supercar","Style Icon","OG"],
     "isPrize": false,
     "weight": 1750,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 90,
     "ola": 100,
     "description": "Weight saving measures for the car didn't stop it to be one heavy boi.",
-     "333TopSpeed": 210,
-    "3330to60": 3.4,
-    "333Handling": 90,
-    "666TopSpeed": 212,
-    "6660to60": 3.2,
-    "666Handling": 93,
-    "996TopSpeed": 215,
-    "9960to60": 3.1,
-    "996Handling": 93,
-    "969TopSpeed": 215,
-    "9690to60": 3.2,
-    "969Handling": 97,
-    "699TopSpeed": 212,
-    "6990to60": 3.1,
-    "699Handling": 97,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzSLRMcLaren(2003).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

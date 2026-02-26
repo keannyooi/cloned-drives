@@ -12,10 +12,9 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2234,
     "gc": "High",
-    "seatCount":8,
+    "seatCount": 8,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -26,25 +25,5 @@
     "description": "So big you'll feel like you're in a tank.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanArmadaSEOff-Road4x2(2004).png",
     "creator": "Andu",
-
-    "333TopSpeed": 123,
-    "3330to60": 6.6,
-    "333Handling": 68,
-
-    "666TopSpeed": 128,
-    "6660to60": 6.2, 
-    "666Handling": 70,
-
-    "996TopSpeed": 132,
-    "9960to60": 5.9,
-    "996Handling": 70,
-
-    "969TopSpeed": 132,
-    "9690to60": 6.2,
-    "969Handling": 70,
-
-    "699TopSpeed": 128,
-    "6990to60": 5.9,
-    "699Handling": 73,
     "hiddenTag": [""]
 }

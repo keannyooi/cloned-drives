@@ -10,7 +10,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD Chasers", "Style Icon"],
+    "tags": ["CD Chasers","Style Icon"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Medium",
@@ -20,30 +20,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 43.40,
+    "mra": 43.4,
     "ola": 66.09,
     "description": "The prowess of the TDI reached the Beetle.",
-
-"333TopSpeed": 113,
-"3330to60": 10.9,
-"333Handling": 74,
-
-"666TopSpeed": 118,
-"6660to60": 10.3,
-"666Handling": 77,
-
-"699TopSpeed": 118,
-"6990to60": 9.8,
-"699Handling": 80,
-
-"969TopSpeed": 122,
-"9690to60": 10.3,
-"969Handling": 80,
-
-"996TopSpeed": 122,
-"9960to60": 9.8,
-"996Handling": 77,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenNewBeetle1.9TDI(1998).png",
     "creator": "Andu",
     "hiddenTag": [""]

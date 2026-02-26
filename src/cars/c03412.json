@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03412",
     "cr": 570,
     "make": "Fiat",
@@ -10,13 +10,11 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
     "isPrize": false,
-
-
     "weight": 1400,
     "gc": "High",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 58.14,
     "ola": 58.67,
     "description": "More powerful, more better, more Panda.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanDAKAR(2017).png",
     "creator": "Andu",
-  
-    "333TopSpeed": 124,
-    "3330to60": 7.1,
-    "333Handling": 72,
-    
-    "666TopSpeed": 129,
-    "6660to60": 6.8,
-    "666Handling": 75,
-    
-    "699TopSpeed": 129,
-    "6990to60": 6.4,
-    "699Handling": 78,
-    
-    "969TopSpeed": 133,
-    "9690to60": 6.8,
-    "969Handling": 78,
-    
-    "996TopSpeed": 133,
-    "9960to60": 6.4,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

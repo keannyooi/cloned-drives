@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Endless Summer","Rest of The World","The Amplification of Asia"],
     "isPrize": false,
-	
     "weight": 3100,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Two years after the V12 variant's release, Hongqi announced a slightly cheaper V8 variant that makes 381hp. Now even the 408hp V12 isn't really enough to make this 3-ton unit go fast, but that's beside the point, because to quote Ed's Auto Reviews: \"It doesn't accelerate, it advances.\" Chinese millionaires would still want to throw their money on something like this, regardless of the specs.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HongqiL5CA7400(2016).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 122,
-    "3330to60": 6.9,
-    "333Handling": 67,
-
-    "666TopSpeed": 127,
-    "6660to60": 6.6,
-    "666Handling": 69,
-
-    "699TopSpeed": 127,
-    "6990to60": 6.2,
-    "699Handling": 72,
-
-    "969TopSpeed": 131,
-    "9690to60": 6.6,
-    "969Handling": 72,
-
-    "996TopSpeed": 131,
-    "9960to60": 6.2,
-    "996Handling": 69,
     "hiddenTag": [""]
 }

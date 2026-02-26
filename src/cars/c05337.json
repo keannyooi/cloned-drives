@@ -1,7 +1,7 @@
 {
     "carID": "c05337",
     "cr": 852,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "XD3 Allrad",
     "modelYear": 2019,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 70.16,
     "ola": 81.22,
     "description": "",
-"333TopSpeed": 168,
-"3330to60": 4.3,
-"333Handling": 83,
-
-"666TopSpeed": 171,
-"6660to60": 4,
-"666Handling": 85,
-
-"699TopSpeed": 171,
-"6990to60": 3.8,
-"699Handling": 89,
-
-"969TopSpeed": 174,
-"9690to60": 4,
-"969Handling": 89,
-
-"996TopSpeed": 174,
-"9960to60": 3.8,
-"996Handling": 85,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaXD3Allrad(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

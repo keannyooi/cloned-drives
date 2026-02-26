@@ -6,13 +6,12 @@
     "modelYear": 1989,
     "country": "GB",
     "topSpeed": 157,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
     "isPrize": false,
-	
     "weight": 800,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-"333TopSpeed": 160, 
-"3330to60": 3.8, 
-"333Handling": 92,
-
-"666TopSpeed": 164, 
-"6660to60": 3.6, 
-"666Handling": 95,
-
-"699TopSpeed": 164, 
-"6990to60": 3.4, 
-"699Handling": 99,
-
-"969TopSpeed": 167, 
-"9690to60": 3.6, 
-"969Handling": 99,
-
-"996TopSpeed": 167, 
-"9960to60": 3.4, 
-"996Handling": 95,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c03786",
     "cr": 701,
-    "make": ["Auto Union", "Audi"],
+    "make": ["Auto Union","Audi"],
     "model": "Rekordwagen Type D",
     "modelYear": 1938,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Drag",
     "tags": ["Endless Summer","Unique","Track Day","The Tyrol Tour: Remix","Oddity"],
     "isPrize": true,
-	
     "weight": 1000,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AutoUnionRekordwagenTypeD(1938).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 272,
-"3330to60": 4,
-"333Handling": 26,
-
-"666TopSpeed": 274,
-"6660to60": 3.8,
-"666Handling": 27,
-
-"699TopSpeed": 274,
-"6990to60": 3.6,
-"699Handling": 28,
-
-"969TopSpeed": 276,
-"9690to60": 3.8,
-"969Handling": 28,
-
-"996TopSpeed": 276,
-"9960to60": 3.6,
-"996Handling": 27,
     "hiddenTag": [""]
 }

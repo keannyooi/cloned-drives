@@ -10,9 +10,8 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Track Day", "Ultra Expensive"],
+    "tags": ["Hypercar","Track Day","Ultra Expensive"],
     "isPrize": false,
-    
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The ultimate road-legal luxury GT race car.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GlickenhausSCG003S(2015).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 232,
-    "3330to60": 2.8,
-    "333Handling": 101,
-
-    "666TopSpeed": 235,
-    "6660to60": 2.6,
-    "666Handling": 104,
-
-    "996TopSpeed": 237,
-    "9960to60": 2.5,
-    "996Handling": 104,
-
-    "969TopSpeed": 237,
-    "9690to60": 2.6,
-    "969Handling": 109,
-
-    "699TopSpeed": 235,
-    "6990to60": 2.5,
-    "699Handling": 109,
     "hiddenTag": [""]
 }

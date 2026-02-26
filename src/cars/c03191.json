@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1010,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Generic box with one more cylinder",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelAgila1216VEssentia(2000).png",
     "creator": "Connor",
-
-    "333TopSpeed": 103,
-    "3330to60": 12.9,
-    "333Handling": 67,
-
-    "666TopSpeed": 109,
-    "6660to60": 12.2, 
-    "666Handling": 69,
-
-    "996TopSpeed": 114,
-    "9960to60": 11.6,
-    "996Handling": 69,
-
-    "969TopSpeed": 114,
-    "9690to60": 12.2,
-    "969Handling": 72,
-
-    "699TopSpeed": 109,
-    "6990to60": 11.6,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

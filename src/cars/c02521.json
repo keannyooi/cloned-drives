@@ -6,13 +6,12 @@
     "modelYear": 2019,
     "country": "US",
     "topSpeed": 130,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eco-Friendly", "RestoMod"],
+    "tags": ["Concept","Eco-Friendly","RestoMod"],
     "isPrize": false,
-	
     "weight": 2722,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "If you're wondering whether or not the cargo bed is functional, the only cargo you're going to haul is a bunch of batteries. Not like that matters anyways, because this 450hp retro-fitted electric hot-rod (is this an oxymoron?) is made for the drag strip, not that strip of land your uncle Jim left behind for you.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChevroletE-10PerformanceConcept(2019).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 134, 
-    "3330to60": 4.8, 
-    "333Handling": 71,
-
-    "666TopSpeed": 138, 
-    "6660to60": 4.5, 
-    "666Handling": 74,
-
-    "699TopSpeed": 138, 
-    "6990to60": 4.3, 
-    "699Handling": 77,
-
-    "969TopSpeed": 142, 
-    "9690to60": 4.5, 
-    "969Handling": 77,
-
-    "996TopSpeed": 142, 
-    "9960to60": 4.3, 
-    "996Handling": 74,
     "hiddenTag": [""]
 }

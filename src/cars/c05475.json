@@ -1,7 +1,7 @@
 {
     "carID": "c05475",
     "cr": 822,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "935 RSR",
     "modelYear": 1984,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 110.67,
     "ola": 101.55,
     "description": "Based on 1984 chassis this car was converted in the period by the original U.S. RUF importer to RUF BTR specifications. In order to build the ultimate 930, it was sent off to Alan Johnson Racing, who is well known for his involvement in racing and high-quality slantnose conversions. The all-metal body panels were transformed by Alan Johnson to resemble the record-setting 935.",
-"333TopSpeed": 217,
-"3330to60": 2.9,
-"333Handling": 88,
-
-"666TopSpeed": 220,
-"6660to60": 2.8,
-"666Handling": 91,
-
-"699TopSpeed": 220,
-"6990to60": 2.6,
-"699Handling": 94,
-
-"969TopSpeed": 222,
-"9690to60": 2.8,
-"969Handling": 94,
-
-"996TopSpeed": 222,
-"9960to60": 2.6,
-"996Handling": 91,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ruf935RSR(1984).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

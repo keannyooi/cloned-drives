@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Concept","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1700,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Don't mistake it with a soccer ball, each of them are equally round.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/OpelAntaraGTCConcept(2005).png",
     "creator": "c6",
-
-    "333TopSpeed": 135,
-    "3330to60": 7.2,
-    "333Handling": 72,
-
-    "666TopSpeed": 139,
-    "6660to60": 6.8,
-    "666Handling": 75,
-
-    "996TopSpeed": 143,
-    "9960to60": 6.5,
-    "996Handling": 75,
-
-    "969TopSpeed": 143,
-    "9690to60": 6.8,
-    "969Handling": 78,
-
-    "699TopSpeed": 139,
-    "6990to60": 6.5,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

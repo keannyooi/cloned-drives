@@ -1,5 +1,5 @@
 {
-	"carID": "c06512",
+    "carID": "c06512",
     "cr": 947,
     "make": "Ford",
     "model": "Mustang Mach-E Rally",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["CDCCS","The Americas Assault","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 2230,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 66.67,
     "ola": 97.18,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-ERally(2023).png",
-
-"333TopSpeed": 132,
-"3330to60": 3.2,
-"333Handling": 82,
-
-"666TopSpeed": 136,
-"6660to60": 3.1,
-"666Handling": 84,
-
-"699TopSpeed": 136,
-"6990to60": 2.9,
-"699Handling": 88,
-
-"969TopSpeed": 140,
-"9690to60": 3.1,
-"969Handling": 88,
-
-"996TopSpeed": 140,
-"9960to60": 2.9,
-"996Handling": 84,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangMach-ERally(2023).png",
     "creator": "ama4nn",
     "hiddenTag": [""]
 }

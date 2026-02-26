@@ -1,7 +1,7 @@
 {
     "carID": "c05365",
     "cr": 717,
-    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "make": ["Mercedes-Benz","Mercedes-AMG"],
     "model": "SLS AMG E-Cell Prototype",
     "modelYear": 2011,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 75.26,
     "ola": 100,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 3.7,
-"333Handling": 89,
-
-"666TopSpeed": 162,
-"6660to60": 3.5,
-"666Handling": 92,
-
-"699TopSpeed": 162,
-"6990to60": 3.3,
-"699Handling": 95,
-
-"969TopSpeed": 165,
-"9690to60": 3.5,
-"969Handling": 95,
-
-"996TopSpeed": 165,
-"9960to60": 3.3,
-"996Handling": 92,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzSLSAMGE-CellPrototype(2011).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

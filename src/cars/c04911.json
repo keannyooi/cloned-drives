@@ -6,13 +6,12 @@
     "modelYear": 1963,
     "country": "DE",
     "topSpeed": 124,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1010,
     "gc": "Medium",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 73.45,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche356CCarrera2(1963).png",
-
-"333TopSpeed": 128,
-"3330to60": 7.6,
-"333Handling": 71,
-
-"666TopSpeed": 132,
-"6660to60": 7.2,
-"666Handling": 74,
-
-"699TopSpeed": 132,
-"6990to60": 6.8,
-"699Handling": 77,
-
-"969TopSpeed": 137,
-"9690to60": 7.2,
-"969Handling": 77,
-
-"996TopSpeed": 137,
-"9960to60": 6.8,
-"996Handling": 74,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

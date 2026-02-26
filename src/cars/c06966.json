@@ -1,7 +1,7 @@
 {
     "carID": "c06966",
     "cr": 435,
-    "make": ["Brabus", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-Benz"],
     "model": "300 CE 3.6",
     "modelYear": 1987,
     "country": "DE",
@@ -22,29 +22,7 @@
     "fuelType": "Petrol",
     "mra": 68.04,
     "ola": 79.79,
-
     "description": "The Bottrop Bullett.",
-
-"333TopSpeed": 161,
-"3330to60": 6.3,
-"333Handling": 79,
-
-"666TopSpeed": 165,
-"6660to60": 5.9,
-"666Handling": 81,
-
-"699TopSpeed": 165,
-"6990to60": 5.6,
-"699Handling": 84,
-
-"969TopSpeed": 168,
-"9690to60": 5.9,
-"969Handling": 84,
-
-"996TopSpeed": 168,
-"9960to60": 5.6,
-"996Handling": 81,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Brabus300CE3.6(1987).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

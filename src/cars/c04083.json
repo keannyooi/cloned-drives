@@ -6,13 +6,12 @@
     "modelYear": 1981,
     "country": "DE",
     "topSpeed": 195,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport","Unique","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 964,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 81.49,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-
-"333TopSpeed": 198,
-"3330to60": 3.8,
-"333Handling": 90,
-
-"666TopSpeed": 200,
-"6660to60": 3.6,
-"666Handling": 93,
-
-"699TopSpeed": 200,
-"6990to60": 3.4,
-"699Handling": 97,
-
-"969TopSpeed": 203,
-"9690to60": 3.6,
-"969Handling": 97,
-
-"996TopSpeed": 203,
-"9960to60": 3.4,
-"996Handling": 93,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

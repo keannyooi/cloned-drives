@@ -1,7 +1,7 @@
 {
     "carID": "c05646",
     "cr": 725,
-    "make": ["Range Rover", "Land Rover"],
+    "make": ["Range Rover","Land Rover"],
     "model": "Sport P460e PHEV",
     "modelYear": 2023,
     "country": "GB",
@@ -23,25 +23,6 @@
     "mra": 50,
     "ola": 68.5,
     "description": "",
-"333TopSpeed": 144,
-"3330to60": 5.1,
-"333Handling": 82,
-
-"666TopSpeed": 147,
-"6660to60": 4.9,
-"666Handling": 84,
-
-"699TopSpeed": 147,
-"6990to60": 4.6,
-"699Handling": 88,
-
-"969TopSpeed": 151,
-"9690to60": 4.9,
-"969Handling": 88,
-
-"996TopSpeed": 151,
-"9960to60": 4.6,
-"996Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RangeRoverSportP460ePHEV(2023).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

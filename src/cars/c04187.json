@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Hot Hatch","Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 975,
     "gc": "Low",
     "seatCount": 5,
@@ -23,28 +22,8 @@
     "fuelType": "Petrol",
     "mra": 38.59,
     "ola": 66.67,
-    "description": "You'd think you can now enjoy a Panda with triple digit horsepower, but this little thing actually only has 99! These damn Italians...", 
+    "description": "You'd think you can now enjoy a Panda with triple digit horsepower, but this little thing actually only has 99! These damn Italians...",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FiatPanda100hp(2006).png",
     "creator": "Fried",
-
-"333TopSpeed": 117, 
-"3330to60": 8.8, 
-"333Handling": 75,
-
-"666TopSpeed": 121, 
-"6660to60": 8.4, 
-"666Handling": 78,
-
-"699TopSpeed": 121, 
-"6990to60": 7.9, 
-"699Handling": 81,
-
-"969TopSpeed": 126, 
-"9690to60": 8.4, 
-"969Handling": 81,
-
-"996TopSpeed": 126, 
-"9960to60": 7.9, 
-"996Handling": 78,
     "hiddenTag": [""]
 }

@@ -10,9 +10,8 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Americas Assault", "Year of the Rabbit"],
+    "tags": ["The Americas Assault","Year of the Rabbit"],
     "isPrize": false,
-    
     "weight": 1727,
     "gc": "High",
     "seatCount": 5,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 51.02,
-    "ola": 73.60,
+    "ola": 73.6,
     "description": "A small but mighty compact pickup to meet all your off-road needs.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMaverickTremor(2023).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 114,
-    "3330to60": 6.0,
-    "333Handling": 73,
-
-    "666TopSpeed": 119,
-    "6660to60": 5.7,
-    "666Handling": 76,
-
-    "699TopSpeed": 119,
-    "6990to60": 5.4,
-    "699Handling": 79,
-
-    "969TopSpeed": 123,
-    "9690to60": 5.7,
-    "969Handling": 79,
-
-    "996TopSpeed": 123,
-    "9960to60": 5.4,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

@@ -1,7 +1,7 @@
 {
     "carID": "c04565",
     "cr": 548,
-    "make": ["Behra-Porsche", "Porsche"],
+    "make": ["Behra-Porsche","Porsche"],
     "model": "718 Monoposto",
     "modelYear": 1958,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 440,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 72.69,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BehraPorsche718Monoposto(1958).png",
-
-"333TopSpeed": 152,
-"3330to60": 4.7,
-"333Handling": 79,
-
-"666TopSpeed": 156,
-"6660to60": 4.4,
-"666Handling": 81,
-
-"699TopSpeed": 156,
-"6990to60": 4.2,
-"699Handling": 84,
-
-"969TopSpeed": 159,
-"9690to60": 4.4,
-"969Handling": 84,
-
-"996TopSpeed": 159,
-"9960to60": 4.2,
-"996Handling": 81,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

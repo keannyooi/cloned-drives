@@ -10,9 +10,8 @@
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique", "Ultra Expensive"],
+    "tags": ["Motorsport","Unique","Ultra Expensive"],
     "isPrize": false,
-	
     "weight": 1280,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Bugatti is back at Le Mans after almost 60 years of absence in 1994. Despite being competitive, the car retired very early on.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
-
-"333TopSpeed": 196, 
-"3330to60": 2.9, 
-"333Handling": 98,
-
-"666TopSpeed": 198, 
-"6660to60": 2.8, 
-"666Handling": 101,
-
-"699TopSpeed": 198, 
-"6990to60": 2.6, 
-"699Handling": 105,
-
-"969TopSpeed": 201, 
-"9690to60": 2.8, 
-"969Handling": 105,
-
-"996TopSpeed": 201, 
-"9960to60": 2.6, 
-"996Handling": 101,
     "hiddenTag": [""]
 }

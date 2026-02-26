@@ -1,7 +1,7 @@
 {
     "carID": "c04310",
     "cr": 881,
-    "make": ["Bussink", "Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Bussink","Mercedes-AMG","Mercedes-Benz"],
     "model": "GT R Speedlegend",
     "modelYear": 2021,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique","Tuner","Track Day","Eurotech Elite","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1530,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 96.55,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BussinkGTRSpeedlegend(2021).png",
-
-"333TopSpeed": 193,
-"3330to60": 2.8,
-"333Handling": 96,
-
-"666TopSpeed": 195,
-"6660to60": 2.6,
-"666Handling": 99,
-
-"699TopSpeed": 195,
-"6990to60": 2.5,
-"699Handling": 103,
-
-"969TopSpeed": 198,
-"9690to60": 2.6,
-"969Handling": 103,
-
-"996TopSpeed": 198,
-"9960to60": 2.5,
-"996Handling": 99,
     "creator": "fiero",
     "hiddenTag": [""]
 }

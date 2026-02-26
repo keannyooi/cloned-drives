@@ -10,9 +10,8 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "tags": ["Concept","Unique","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 1833,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The Metropolis is a moving depiction of the rise of a metropolis (referring to many cities in China) by Citroen's China-based design team. Showcased at the 2010 Shanghai World Fair, this car is a proper landyacht in many ways, from the suicide doors, the sheer girth to its V8 engine so environmentally clean it'd make Americans wonder if there's some kind of black magic going on under the hood.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CitroenMetropolis(2010).png",
     "creator": "Keanny",
-
-"333TopSpeed": 187, 
-"3330to60": 5.6, 
-"333Handling": 77,
-
-"666TopSpeed": 190, 
-"6660to60": 5.3, 
-"666Handling": 80,
-
-"699TopSpeed": 190, 
-"6990to60": 5.0, 
-"699Handling": 83,
-
-"969TopSpeed": 192, 
-"9690to60": 5.3, 
-"969Handling": 83,
-
-"996TopSpeed": 192, 
-"9960to60": 5.0, 
-"996Handling": 80,
     "hiddenTag": [""]
 }

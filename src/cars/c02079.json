@@ -1,10 +1,7 @@
 {
     "carID": "c02079",
     "cr": 894,
-    "make": [
-        "ABT",
-        "Audi"
-    ],
+    "make": ["ABT","Audi"],
     "model": "RS Q8-S",
     "modelYear": 2021,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 2135,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 68,
     "ola": 76.47,
     "description": "",
-     "333TopSpeed": 193,
-    "3330to60": 3.2,
-    "333Handling": 93,
-    "666TopSpeed": 195,
-    "6660to60": 3.1,
-    "666Handling": 96,
-    "996TopSpeed": 198,
-    "9960to60": 2.9,
-    "996Handling": 96,
-    "969TopSpeed": 198,
-    "9690to60": 3.1,
-    "969Handling": 100,
-    "699TopSpeed": 195,
-    "6990to60": 2.9,
-    "699Handling": 100,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ABTRSQ8S(2021).png",
     "creator": "Macan",
     "hiddenTag": [""]

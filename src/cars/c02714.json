@@ -1,7 +1,7 @@
 {
     "carID": "c02714",
     "cr": 918,
-    "make": ["Hennessey", "Jeep"],
+    "make": ["Hennessey","Jeep"],
     "model": "Gladiator Maximus 1000",
     "modelYear": 2020,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner", "Extreme Juggernaut"],
+    "tags": ["Tuner","Extreme Juggernaut"],
     "isPrize": false,
-	
     "weight": 2500,
     "gc": "High",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "sorry.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyGladiatorMaximus1000(2020).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 134,
-"3330to60": 3.7,
-"333Handling": 76,
-
-"666TopSpeed": 138,
-"6660to60": 3.5,
-"666Handling": 79,
-
-"699TopSpeed": 138,
-"6990to60": 3.3,
-"699Handling": 82,
-
-"969TopSpeed": 142,
-"9690to60": 3.5,
-"969Handling": 82,
-
-"996TopSpeed": 142,
-"9960to60": 3.3,
-"996Handling": 79,
     "hiddenTag": [""]
 }

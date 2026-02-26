@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Americas Assault", "Ultra Expensive", "Concept", "Hypercar", "Unique"],
+    "tags": ["The Americas Assault","Ultra Expensive","Concept","Hypercar","Unique"],
     "isPrize": false,
-	
     "weight": 1230,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "This was SSC's first publically shown car. A prototype for the Aero and Ultimate Aero, it featured a 911HP LS1 V8 and had very impressive performance for the time.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SSCAeroSC8T1(2004).png",
     "creator": "Preston",
-
-"333TopSpeed": 251, 
-"3330to60": 2.8, 
-"333Handling": 93,
-
-"666TopSpeed": 253, 
-"6660to60": 2.6, 
-"666Handling": 96,
-
-"699TopSpeed": 253, 
-"6990to60": 2.5, 
-"699Handling": 100,
-
-"969TopSpeed": 255, 
-"9690to60": 2.6, 
-"969Handling": 100,
-
-"996TopSpeed": 255, 
-"9960to60": 2.5, 
-"996Handling": 96,
     "hiddenTag": [""]
 }

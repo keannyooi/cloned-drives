@@ -1,7 +1,7 @@
 {
     "carID": "c06045",
     "cr": 909,
-    "make": ["Edit Automotive", "Porsche"],
+    "make": ["Edit Automotive","Porsche"],
     "model": "g11T",
     "modelYear": 2024,
     "country": "CZ",
@@ -10,7 +10,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [ "CD Contenders","Tuner","Unique","Rest of The World"],
+    "tags": ["CD Contenders","Tuner","Unique","Rest of The World"],
     "isPrize": false,
     "weight": 1600,
     "gc": "Low",
@@ -23,25 +23,6 @@
     "mra": 93.65,
     "ola": 87.21,
     "description": "",
-"333TopSpeed": 205,
-"3330to60": 2.8,
-"333Handling": 94,
-
-"666TopSpeed": 207,
-"6660to60": 2.6,
-"666Handling": 97,
-
-"699TopSpeed": 207,
-"6990to60": 2.5,
-"699Handling": 101,
-
-"969TopSpeed": 210,
-"9690to60": 2.6,
-"969Handling": 101,
-
-"996TopSpeed": 210,
-"9960to60": 2.5,
-"996Handling": 97,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/EditAutomotiveg11T(2024).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

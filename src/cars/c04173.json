@@ -1,7 +1,7 @@
 {
     "carID": "c04173",
     "cr": 628,
-    "make": ["IPD", "Volvo"],
+    "make": ["IPD","Volvo"],
     "model": "C30 Concept",
     "modelYear": 2006,
     "country": "US",
@@ -10,10 +10,8 @@
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Tuner","The Americas Assault"],
+    "tags": ["Concept","Tuner","The Americas Assault"],
     "isPrize": false,
-
-
     "weight": 1330,
     "gc": "Low",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "In a sharp contrast compared to the Evolve, IPD's SEMA car was relativley normal featuring totally normal two NOS bottles and a twincharged inline 5.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/IPDC30Concept(2006).png",
     "creator": "Connor",
-
-    "333TopSpeed": 169,
-    "3330to60": 4.5,
-    "333Handling": 86,
-
-    "666TopSpeed": 172,
-    "6660to60": 4.2, 
-    "666Handling": 88,
-
-    "996TopSpeed": 175,
-    "9960to60": 4.0,
-    "996Handling": 88,
-
-    "969TopSpeed": 175,
-    "9690to60": 4.2,
-    "969Handling": 92,
-
-    "699TopSpeed": 172,
-    "6990to60": 4.0,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

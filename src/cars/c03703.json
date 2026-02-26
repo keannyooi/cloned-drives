@@ -1,18 +1,17 @@
 {
     "carID": "c03703",
     "cr": 1,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "Side Valve by Albany",
     "modelYear": 1924,
     "country": "GB",
     "topSpeed": 72,
-    "0to60": 25.0,
+    "0to60": 25,
     "handling": 48,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Unique","The Midlands Cruise","Endless Summer"],
     "isPrize": false,
-	
     "weight": 750,
     "gc": "Medium",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "Coachwork by the Albany Carriage Company. This particular car was one of the very last built before Bamford & Martin sadly went into receivership in late 1925.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinSideValvebyAlbany(1924).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 79,
-"3330to60": 23.8,
-"333Handling": 50,
-
-"666TopSpeed": 86,
-"6660to60": 22.5,
-"666Handling": 51,
-
-"699TopSpeed": 86,
-"6990to60": 21.3,
-"699Handling": 53,
-
-"969TopSpeed": 94,
-"9690to60": 22.5,
-"969Handling": 53,
-
-"996TopSpeed": 94,
-"9960to60": 21.3,
-"996Handling": 51,
     "hiddenTag": [""]
 }

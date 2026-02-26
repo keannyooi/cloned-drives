@@ -10,9 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day"
-    ],
+    "tags": ["Track Day"],
     "isPrize": true,
     "weight": 1238,
     "gc": "Low",
@@ -27,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LotusExigeSport390FinalEdition(2021).png",
     "creator": "Tom",
-
-    "333TopSpeed": 175,
-    "3330to60": 3.6,
-    "333Handling": 94,
-
-    "666TopSpeed": 178,
-    "6660to60": 3.4,
-    "666Handling": 97,
-
-    "996TopSpeed": 181,
-    "9960to60": 3.2,
-    "996Handling": 97,
-
-    "969TopSpeed": 181,
-    "9690to60": 3.4,
-    "969Handling": 101,
-    
-    "699TopSpeed": 178,
-    "6990to60": 3.2,
-    "699Handling": 101,
     "hiddenTag": [""]
 }

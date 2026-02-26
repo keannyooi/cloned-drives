@@ -1,10 +1,7 @@
 {
     "carID": "c02210",
     "cr": 829,
-    "make": [
-        "MAT",
-        "Lancia"
-    ],
+    "make": ["MAT","Lancia"],
     "model": "New Stratos",
     "modelYear": 2018,
     "country": "IT",
@@ -13,10 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
     "weight": 1247,
     "gc": "Low",
@@ -29,21 +23,6 @@
     "mra": 79.49,
     "ola": 90.32,
     "description": "Dirt and Asphalt: every turn becomes special when you are driving Paolo Garrela's creature.",
-     "333TopSpeed": 173,
-    "3330to60": 2.9,
-    "333Handling": 94,
-    "666TopSpeed": 176,
-    "6660to60": 2.8,
-    "666Handling": 97,
-    "996TopSpeed": 179,
-    "9960to60": 2.6,
-    "996Handling": 97,
-    "969TopSpeed": 179,
-    "9690to60": 2.8,
-    "969Handling": 101,
-    "699TopSpeed": 176,
-    "6990to60": 2.6,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MATNewStratos(2018).png",
     "creator": "Exist",
     "hiddenTag": [""]

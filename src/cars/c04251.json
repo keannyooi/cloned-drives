@@ -10,10 +10,8 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch"],
+    "tags": ["Eurotech Elite","Hot Hatch"],
     "isPrize": false,
-
-
     "weight": 1323,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "1.8 Turbo quattro masterrace.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA318T5VquattroAmbition(1998).png",
     "creator": "Connor",
-
-    "333TopSpeed": 143,
-    "3330to60": 6.8,
-    "333Handling": 80,
-
-    "666TopSpeed": 146,
-    "6660to60": 6.5, 
-    "666Handling": 82,
-
-    "996TopSpeed": 150,
-    "9960to60": 6.1,
-    "996Handling": 82,
-
-    "969TopSpeed": 150,
-    "9690to60": 6.5,
-    "969Handling": 85,
-
-    "699TopSpeed": 146,
-    "6990to60": 6.1,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

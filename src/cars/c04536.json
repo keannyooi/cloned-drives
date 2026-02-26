@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1490,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot50082.0BlueHDi150(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 129,
-    "3330to60": 9.1,
-    "333Handling": 75,
-
-    "666TopSpeed": 133,
-    "6660to60": 8.6,
-    "666Handling": 78,
-
-    "699TopSpeed": 133,
-    "6990to60": 8.2,
-    "699Handling": 81,
-
-    "969TopSpeed": 137,
-    "9690to60": 8.6,
-    "969Handling": 81,
-
-    "996TopSpeed": 137,
-    "9960to60": 8.2,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

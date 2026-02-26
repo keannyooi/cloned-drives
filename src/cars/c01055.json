@@ -6,13 +6,12 @@
     "modelYear": 2020,
     "country": "DE",
     "topSpeed": 182,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-	
     "weight": 1415,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 81,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche718BoxsterGTS4.0(2020).png",
-
-"333TopSpeed": 185,
-"3330to60": 3.8,
-"333Handling": 93,
-
-"666TopSpeed": 188,
-"6660to60": 3.6,
-"666Handling": 96,
-
-"699TopSpeed": 188,
-"6990to60": 3.4,
-"699Handling": 100,
-
-"969TopSpeed": 191,
-"9690to60": 3.6,
-"969Handling": 100,
-
-"996TopSpeed": 191,
-"9960to60": 3.4,
-"996Handling": 96,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

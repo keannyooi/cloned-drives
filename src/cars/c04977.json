@@ -6,13 +6,12 @@
     "modelYear": 1999,
     "country": "DE",
     "topSpeed": 188,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport","Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1180,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 80,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-
-"333TopSpeed": 191,
-"3330to60": 3.8,
-"333Handling": 98,
-
-"666TopSpeed": 194,
-"6660to60": 3.6,
-"666Handling": 101,
-
-"699TopSpeed": 194,
-"6990to60": 3.4,
-"699Handling": 105,
-
-"969TopSpeed": 196,
-"9690to60": 3.6,
-"969Handling": 105,
-
-"996TopSpeed": 196,
-"9960to60": 3.4,
-"996Handling": 101,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

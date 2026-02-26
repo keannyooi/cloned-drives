@@ -10,9 +10,8 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Rest of The World", "Hypercar", "Ultra Expensive"],
+    "tags": ["Unique","Rest of The World","Hypercar","Ultra Expensive"],
     "isPrize": true,
-	
     "weight": 1710,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZenvoTS1GT10AS(2017).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 252,
-    "3330to60": 2.6,
-    "333Handling": 96,
-
-    "666TopSpeed": 254,
-    "6660to60": 2.4,
-    "666Handling": 99,
-
-    "996TopSpeed": 256,
-    "9960to60": 2.3,
-    "996Handling": 99,
-
-    "969TopSpeed": 256,
-    "9690to60": 2.4,
-    "969Handling": 103,
-
-    "699TopSpeed": 254,
-    "6990to60": 2.3,
-    "699Handling": 103,
     "hiddenTag": [""]
 }

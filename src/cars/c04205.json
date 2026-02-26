@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1795,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "A new Maserati in the form of a luxury crossover to take on the Porsche Macan, but it sure does have more luxuries and a higher price tag.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiGrecaleGT(2022).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 152, 
-    "3330to60": 5.2, 
-    "333Handling": 83,
-
-    "666TopSpeed": 156, 
-    "6660to60": 5.0, 
-    "666Handling": 85,
-
-    "996TopSpeed": 159, 
-    "9960to60": 4.7, 
-    "996Handling": 85,
-
-    "969TopSpeed": 159, 
-    "9690to60": 5.0, 
-    "969Handling": 89,
-
-    "699TopSpeed": 156, 
-    "6990to60": 4.7, 
-    "699Handling": 89,
     "hiddenTag": [""]
 }

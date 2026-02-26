@@ -1,5 +1,5 @@
 {
-	"carID": "c06441",
+    "carID": "c06441",
     "cr": 764,
     "make": "Dodge",
     "model": "Challenger SRT Super Stock",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 2000,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 94.52,
     "ola": 96.97,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTSuperStock2020.png",
-
-"333TopSpeed": 171,
-"3330to60": 3.1,
-"333Handling": 90,
-
-"666TopSpeed": 174,
-"6660to60": 3,
-"666Handling": 93,
-
-"699TopSpeed": 174,
-"6990to60": 2.8,
-"699Handling": 97,
-
-"969TopSpeed": 177,
-"9690to60": 3,
-"969Handling": 97,
-
-"996TopSpeed": 177,
-"9960to60": 2.8,
-"996Handling": 93,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTSuperStock2020.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

@@ -6,13 +6,12 @@
     "modelYear": 1957,
     "country": "DE",
     "topSpeed": 65,
-    "0to60": 30.0,
+    "0to60": 30,
     "handling": 51,
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": ["Extreme Juggernaut","Unique","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1040,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche597-3Jagdwagen(1957).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 73, 
-"3330to60": 28.5, 
-"333Handling": 53,
-
-"666TopSpeed": 81, 
-"6660to60": 27.0, 
-"666Handling": 54,
-
-"699TopSpeed": 81, 
-"6990to60": 25.5, 
-"699Handling": 57,
-
-"969TopSpeed": 89, 
-"9690to60": 27.0, 
-"969Handling": 57,
-
-"996TopSpeed": 89, 
-"9960to60": 25.5, 
-"996Handling": 54,
     "hiddenTag": [""]
 }

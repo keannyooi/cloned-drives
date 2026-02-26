@@ -10,9 +10,8 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Supercar","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1742,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "V8 became available in Spyder configuration after two years the Spyder version came out. This is also the slowest production R8.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR8Spyder4.2FSIquattro(2011).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 188, 
-    "3330to60": 4.2, 
-    "333Handling": 87,
-
-    "666TopSpeed": 191, 
-    "6660to60": 4.0, 
-    "666Handling": 90,
-
-    "996TopSpeed": 193, 
-    "9960to60": 3.7, 
-    "996Handling": 90,
-
-    "969TopSpeed": 193, 
-    "9690to60": 4.0, 
-    "969Handling": 93,
-
-    "699TopSpeed": 191, 
-    "6990to60": 3.7, 
-    "699Handling": 93,
     "hiddenTag": [""]
 }

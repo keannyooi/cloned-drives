@@ -10,9 +10,8 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly", "The Tyrol Tour: Remix"],
+    "tags": ["Eco-Friendly","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 2568,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Shockingly ugly that got its name among the ugliest cars ever made.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWiXxDrive50(2021).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 128, 
-    "3330to60": 4.0, 
-    "333Handling": 80,
-
-    "666TopSpeed": 132, 
-    "6660to60": 3.8, 
-    "666Handling": 82,
-
-    "996TopSpeed": 137, 
-    "9960to60": 3.6, 
-    "996Handling": 82,
-
-    "969TopSpeed": 137, 
-    "9690to60": 3.8, 
-    "969Handling": 85,
-
-    "699TopSpeed": 132, 
-    "6990to60": 3.6, 
-    "699Handling": 85,
     "hiddenTag": [""]
 }

@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1242,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "1.8 Turbo masterrace.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA318T5VAttraction(1996).png",
     "creator": "Connor",
-
-    "333TopSpeed": 138,
-    "3330to60": 7.4,
-    "333Handling": 79,
-
-    "666TopSpeed": 142,
-    "6660to60": 7.0, 
-    "666Handling": 81,
-
-    "996TopSpeed": 146,
-    "9960to60": 6.6,
-    "996Handling": 81,
-
-    "969TopSpeed": 146,
-    "9690to60": 7.0,
-    "969Handling": 84,
-
-    "699TopSpeed": 142,
-    "6990to60": 6.6,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

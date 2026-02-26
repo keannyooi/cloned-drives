@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eco-Friendly"],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 17.22,
     "ola": 84.54,
     "description": "Coda Automitve was a joint venture between Miles Automotive, Hafei and Qingyuan Electric Vehicle, and it was named that way to signalize the end of the ICE era. This electric sedan, based on the Hafei Saibao, was their only offering and it was only sold in California. The car was proven to be dated and unreliable (I mean what do you expect, it was made in China), so no one wanted to buy them. In the end, only 117 Codas were built before the company had to file for bankrupcy.",
- 
-    "333TopSpeed": 91,
-    "3330to60": 8.7,
-    "333Handling": 70,
-
-    "666TopSpeed": 97,
-    "6660to60": 8.3,
-    "666Handling": 72,
-
-    "996TopSpeed": 103,
-    "9960to60": 7.8,
-    "996Handling": 72,
-
-    "969TopSpeed": 103,
-    "9690to60": 8.3,
-    "969Handling": 75,
-
-    "699TopSpeed": 97,
-    "6990to60": 7.8,
-    "699Handling": 75,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CODAEV(2012).png",
     "creator": "Keanny",
     "hiddenTag": [""]

@@ -1,7 +1,7 @@
 {
     "carID": "c03801",
     "cr": 539,
-    "make": ["Brabus","Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-AMG","Mercedes-Benz"],
     "model": "G 63 6x6 700",
     "modelYear": 2013,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Endless Summer","Unique","Ultra Expensive","Extreme Juggernaut","The Tyrol Tour: Remix","Tuner"],
     "isPrize": false,
-	
     "weight": 4155,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BrabusG636x6700(2013).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 105,
-"3330to60": 6.9,
-"333Handling": 66,
-
-"666TopSpeed": 110,
-"6660to60": 6.6,
-"666Handling": 68,
-
-"699TopSpeed": 110,
-"6990to60": 6.2,
-"699Handling": 71,
-
-"969TopSpeed": 116,
-"9690to60": 6.6,
-"969Handling": 71,
-
-"996TopSpeed": 116,
-"9960to60": 6.2,
-"996Handling": 68,
     "hiddenTag": [""]
 }

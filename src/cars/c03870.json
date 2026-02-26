@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03870",
     "cr": 330,
     "make": "Chrysler",
@@ -10,13 +10,11 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Americas Assault", "Style Icon", "Endless Summer"],
+    "tags": ["The Americas Assault","Style Icon","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1432,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 46.07,
     "ola": 62.05,
     "description": "One of those silly acronyms that make a redundant distinction. It stands for personal transportation. Well, no kidding. As distinct from what? Public transportation? Puh-leeze.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChryslerPTCruiser2.4Touring(2001).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 118,
-    "3330to60": 8.4,
-    "333Handling": 72,
-    
-    "666TopSpeed": 122,
-    "6660to60": 7.9,
-    "666Handling": 75,
-    
-    "699TopSpeed": 122,
-    "6990to60": 7.5,
-    "699Handling": 78,
-    
-    "969TopSpeed": 127,
-    "9690to60": 7.9,
-    "969Handling": 78,
-    
-    "996TopSpeed": 127,
-    "9960to60": 7.5,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

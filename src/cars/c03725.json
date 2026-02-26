@@ -1,7 +1,7 @@
 {
     "carID": "c03725",
     "cr": 190,
-    "make": ["Prince", "Nissan"],
+    "make": ["Prince","Nissan"],
     "model": "Skyline 1500 S57",
     "modelYear": 1967,
     "country": "JP",
@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Endless Summer","The Amplification of Asia"],
     "isPrize": false,
-	
     "weight": 920,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceSkyline1500S57(1967).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 104,
-"3330to60": 11.1,
-"333Handling": 66,
-
-"666TopSpeed": 110,
-"6660to60": 10.5,
-"666Handling": 68,
-
-"699TopSpeed": 110,
-"6990to60": 9.9,
-"699Handling": 71,
-
-"969TopSpeed": 115,
-"9690to60": 10.5,
-"969Handling": 71,
-
-"996TopSpeed": 115,
-"9960to60": 9.9,
-"996Handling": 68,
     "hiddenTag": [""]
 }

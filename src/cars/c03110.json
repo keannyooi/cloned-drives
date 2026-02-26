@@ -1,7 +1,7 @@
 {
     "carID": "c03110",
     "cr": 756,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "F-150 RAPTORTRAX",
     "modelYear": 2019,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner", "Unique", "Extreme Juggernaut"],
+    "tags": ["Tuner","Unique","Extreme Juggernaut"],
     "isPrize": false,
-	
     "weight": 2730,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "https://www.youtube.com/watch?v=5aeKdmw9W50",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganF150RAPTORTRAX(2019).png",
     "creator": "Bnuuy",
-
-    "333TopSpeed": 105, 
-    "3330to60": 4.6, 
-    "333Handling": 67,
-
-    "666TopSpeed": 110, 
-    "6660to60": 4.3, 
-    "666Handling": 69,
-
-    "699TopSpeed": 110, 
-    "6990to60": 4.1, 
-    "699Handling": 72,
-
-    "969TopSpeed": 116, 
-    "9690to60": 4.3, 
-    "969Handling": 72,
-
-    "996TopSpeed": 116, 
-    "9960to60": 4.1, 
-    "996Handling": 69,
     "hiddenTag": [""]
 }

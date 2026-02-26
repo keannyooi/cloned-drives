@@ -1,10 +1,7 @@
 {
     "carID": "c00509",
     "cr": 695,
-    "make": [
-        "Hennessey",
-        "Dodge"
-    ],
+    "make": ["Hennessey","Dodge"],
     "model": "Viper Venom RT/10 550",
     "modelYear": 1995,
     "country": "US",
@@ -13,11 +10,7 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Supercar",
-        "Unique"
-    ],
+    "tags": ["Tuner","Supercar","Unique"],
     "isPrize": false,
     "weight": 1605,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 82.83,
     "ola": 87.8,
     "description": "If you thought the 92 Dodge Viper couldn't be more dangerous than it is, Hennessey will keep that up a notch.",
-     "333TopSpeed": 177,
-    "3330to60": 3.9,
-    "333Handling": 91,
-    "666TopSpeed": 180,
-    "6660to60": 3.7,
-    "666Handling": 94,
-    "996TopSpeed": 183,
-    "9960to60": 3.5,
-    "996Handling": 94,
-    "969TopSpeed": 183,
-    "9690to60": 3.7,
-    "969Handling": 98,
-    "699TopSpeed": 180,
-    "6990to60": 3.5,
-    "699Handling": 98,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyViperVenomRT10550(1995).png",
     "creator": "Spence",
     "hiddenTag": [""]

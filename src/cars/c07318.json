@@ -20,31 +20,9 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 10.00,
+    "mra": 10,
     "ola": 66.11,
-	
     "description": "If you want to survive a 30 kmh crash, then Yugo Cabrio is not for you.",
-	
-"333TopSpeed": 99,
-"3330to60": 11.5,
-"333Handling": 61,
-
-"666TopSpeed": 104,
-"6660to60": 10.9,
-"666Handling": 63,
-
-"699TopSpeed": 104,
-"6990to60": 10.3,
-"699Handling": 65,
-
-"969TopSpeed": 110,
-"9690to60": 10.9,
-"969Handling": 65,
-
-"996TopSpeed": 110,
-"9960to60": 10.3,
-"996Handling": 63,
-	
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ZastavaYugoCabrio1.3EFI(1989).png",
     "creator": "Connor",
     "hiddenTag": [""]

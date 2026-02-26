@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03409",
     "cr": 71,
     "make": "Fiat",
@@ -6,17 +6,15 @@
     "modelYear": 1986,
     "country": "IT",
     "topSpeed": 81,
-    "0to60": 24.0,
+    "0to60": 24,
     "handling": 61,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 710,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 1.55,
     "ola": 41.67,
     "description": "Contessa Dieselina.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda1300Diesel(1986).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 87,
-    "3330to60": 22.8,
-    "333Handling": 63,
-    
-    "666TopSpeed": 94,
-    "6660to60": 21.6,
-    "666Handling": 65,
-    
-    "699TopSpeed": 94,
-    "6990to60": 20.4,
-    "699Handling": 68,
-    
-    "969TopSpeed": 100,
-    "9690to60": 21.6,
-    "969Handling": 68,
-    
-    "996TopSpeed": 100,
-    "9960to60": 20.4,
-    "996Handling": 65,
     "hiddenTag": [""]
 }

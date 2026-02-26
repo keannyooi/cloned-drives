@@ -1,7 +1,7 @@
 {
     "carID": "c02565",
     "cr": 834,
-    "make": ["RE Amemiya", "Mazda"],
+    "make": ["RE Amemiya","Mazda"],
     "model": "Furin Kazan LW-7",
     "modelYear": 2020,
     "country": "JP",
@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Track Day"],
+    "tags": ["Tuner","Track Day"],
     "isPrize": false,
-	
     "weight": 978,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Dont ask me how they were able to achieve such weight savings. And don't ask me how the car did a sub-57 second lap on Tsukuba.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REAmemiyaFurinKazanLW-7(2020).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 173, 
-    "3330to60": 3.1, 
-    "333Handling": 97,
-
-    "666TopSpeed": 176, 
-    "6660to60": 3.0, 
-    "666Handling": 100,
-
-    "699TopSpeed": 176, 
-    "6990to60": 2.8, 
-    "699Handling": 104,
-
-    "969TopSpeed": 179, 
-    "9690to60": 3.0, 
-    "969Handling": 104,
-
-    "996TopSpeed": 179, 
-    "9960to60": 2.8, 
-    "996Handling": 100,
     "hiddenTag": [""]
 }

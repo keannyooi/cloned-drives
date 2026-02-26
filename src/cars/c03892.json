@@ -6,13 +6,12 @@
     "modelYear": 2022,
     "country": "GB",
     "topSpeed": 117,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": ["Endless Summer","The Midlands Cruise"],
     "isPrize": false,
-	
     "weight": 2507,
     "gc": "High",
     "seatCount": 8,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LandRoverDefender130P300(2022).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 121,
-"3330to60": 7.6,
-"333Handling": 65,
-
-"666TopSpeed": 126,
-"6660to60": 7.2,
-"666Handling": 67,
-
-"699TopSpeed": 126,
-"6990to60": 6.8,
-"699Handling": 70,
-
-"969TopSpeed": 130,
-"9690to60": 7.2,
-"969Handling": 70,
-
-"996TopSpeed": 130,
-"9960to60": 6.8,
-"996Handling": 67,
     "hiddenTag": [""]
 }

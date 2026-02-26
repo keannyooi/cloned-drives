@@ -1,11 +1,7 @@
 {
     "carID": "c01823",
     "cr": 452,
-    "make": [
-        "Scarab",
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["Scarab","Datsun","Nissan"],
     "model": "240Z Stage 2",
     "modelYear": 1971,
     "country": "US",
@@ -14,11 +10,7 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1269,
     "gc": "Medium",
@@ -31,21 +23,6 @@
     "mra": 72.09,
     "ola": 82.26,
     "description": "Yes, a car re-engineered by a speedboat company. While I was researching about this car, I accidentally ran into a murder case.",
-     "333TopSpeed": 153,
-    "3330to60": 5.9,
-    "333Handling": 76,
-    "666TopSpeed": 157,
-    "6660to60": 5.6,
-    "666Handling": 79,
-    "996TopSpeed": 160,
-    "9960to60": 5.3,
-    "996Handling": 79,
-    "969TopSpeed": 160,
-    "9690to60": 5.6,
-    "969Handling": 82,
-    "699TopSpeed": 157,
-    "6990to60": 5.3,
-    "699Handling": 82,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Scarab240ZStage2(1971).png",
     "creator": "Keanny",
     "hiddenTag": [""]

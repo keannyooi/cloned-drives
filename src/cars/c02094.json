@@ -1,7 +1,7 @@
 {
     "carID": "c02094",
     "cr": 652,
-    "make": ["Assist", "BMW"],
+    "make": ["Assist","BMW"],
     "model": "Z4 sDrive20i M Sport",
     "modelYear": 2021,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-
     "weight": 1400,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,6 @@
     "mra": 69.01,
     "ola": 77.55,
     "description": "If you'd like to experience the fun of driving a Z4 M40i, but only have an sDrive20i, Assist has got you covered. A new intake and exhaust as well as custom ECU tuning gets you 100 more horsepower from the stock 197hp.",
- 
-    "333TopSpeed": 171,
-    "3330to60": 4.7,
-    "333Handling": 95,
-
-    "666TopSpeed": 174,
-    "6660to60": 4.4,
-    "666Handling": 98,
-
-    "996TopSpeed": 177,
-    "9960to60": 4.2,
-    "996Handling": 98,
-
-    "969TopSpeed": 177,
-    "9690to60": 4.4,
-    "969Handling": 102,
-
-    "699TopSpeed": 174,
-    "6990to60": 4.2,
-    "699Handling": 102,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AssistZ4sDrive20iMSport(2021).png",
     "creator": "Keanny",
     "hiddenTag": [""]

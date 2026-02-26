@@ -10,10 +10,8 @@
     "handling": 63,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "The Tyrol Tour: Remix"],
+    "tags": ["Innovative","The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1289,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Innovative and advanced Ro80 ultimately spelled the end for the NSU brand.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NSURo80(1967).png",
     "creator": "Connor",
-
-    "333TopSpeed": 115,
-    "3330to60": 12.4,
-    "333Handling": 65,
-
-    "666TopSpeed": 119,
-    "6660to60": 11.8, 
-    "666Handling": 67,
-
-    "996TopSpeed": 124,
-    "9960to60": 11.1,
-    "996Handling": 67,
-
-    "969TopSpeed": 124,
-    "9690to60": 11.8,
-    "969Handling": 70,
-
-    "699TopSpeed": 119,
-    "6990to60": 11.1,
-    "699Handling": 70,
     "hiddenTag": [""]
 }

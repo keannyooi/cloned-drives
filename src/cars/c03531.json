@@ -1,7 +1,7 @@
 {
     "carID": "c03531",
     "cr": 763,
-    "make": ["Ram", "Dodge"],
+    "make": ["Ram","Dodge"],
     "model": "Rebel TRX Concept",
     "modelYear": 2016,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Extreme Juggernaut", "The Americas Assault"],
+    "tags": ["Concept","Extreme Juggernaut","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2800,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The not so original TRX, but it served as a precursor to the wild production model.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RamRebelTRXConcept(2016).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 120,
-"3330to60": 4.7,
-"333Handling": 69,
-
-"666TopSpeed": 125,
-"6660to60": 4.4,
-"666Handling": 71,
-
-"699TopSpeed": 125,
-"6990to60": 4.2,
-"699Handling": 74,
-
-"969TopSpeed": 129,
-"9690to60": 4.4,
-"969Handling": 74,
-
-"996TopSpeed": 129,
-"9960to60": 4.2,
-"996Handling": 71,
     "hiddenTag": [""]
 }

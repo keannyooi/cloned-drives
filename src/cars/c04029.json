@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04029",
     "cr": 537,
     "make": "Volkswagen",
@@ -10,13 +10,11 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 2380,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 65.22,
     "ola": 83.33,
     "description": "It promises much, but is held back by a lack of thrills from behind the wheel.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenID.5GTX(2022).png",
     "creator": "Andu",
-
-    "333TopSpeed": 117,
-    "3330to60": 5.7,
-    "333Handling": 76,
-    
-    "666TopSpeed": 121,
-    "6660to60": 5.4,
-    "666Handling": 79,
-    
-    "699TopSpeed": 121,
-    "6990to60": 5.1,
-    "699Handling": 82,
-    
-    "969TopSpeed": 126,
-    "9690to60": 5.4,
-    "969Handling": 82,
-    
-    "996TopSpeed": 126,
-    "9960to60": 5.1,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique"],
     "isPrize": false,
-	
     "weight": 1471,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "This one-off roadster based on the 1994 Corvette was the result of more than 13,000 man-hours of work from a team of automotive designers who all wanted to try designing a car entirely by themselves. featuring 2,000+ components unique to the car, it was sold to John O'Quinn, who is the perfect customer given his collection of unique cars. The team was supposedly working on another GDT Speedster afterwards, but that was over a decade ago and we haven't heard from them since.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GDTSpeedster(2006).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 173, 
-    "3330to60": 5.4, 
-    "333Handling": 82,
-
-    "666TopSpeed": 176, 
-    "6660to60": 5.1, 
-    "666Handling": 84,
-
-    "699TopSpeed": 176, 
-    "6990to60": 4.8, 
-    "699Handling": 88,
-
-    "969TopSpeed": 179, 
-    "9690to60": 5.1, 
-    "969Handling": 88,
-
-    "996TopSpeed": 179, 
-    "9960to60": 4.8, 
-    "996Handling": 84,
     "hiddenTag": [""]
 }

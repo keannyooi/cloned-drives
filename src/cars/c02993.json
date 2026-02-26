@@ -1,7 +1,7 @@
 {
     "carID": "c02993",
     "cr": 908,
-    "make": ["Mansory", "Ferrari"],
+    "make": ["Mansory","Ferrari"],
     "model": "Stallone 812",
     "modelYear": 2018,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1630,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "One of the ugliest things to ever exist.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MansoryStallone812(2018).png",
     "creator": "c6",
-
-    "333TopSpeed": 218,
-    "3330to60": 2.6,
-    "333Handling": 96,
-
-    "666TopSpeed": 221,
-    "6660to60": 2.4,
-    "666Handling": 99,
-
-    "996TopSpeed": 223,
-    "9960to60": 2.3,
-    "996Handling": 99,
-
-    "969TopSpeed": 223,
-    "9690to60": 2.4,
-    "969Handling": 103,
-
-    "699TopSpeed": 221,
-    "6990to60": 2.4,
-    "699Handling": 103,
     "hiddenTag": [""]
 }

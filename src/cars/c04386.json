@@ -10,9 +10,8 @@
     "handling": 101,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Eurotech Elite", "Motorsport","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1340,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiR8LMSEvolution%2322UnitedAutosports(2010).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 194, 
-    "3330to60": 3.2, 
-    "333Handling": 104,
-
-    "666TopSpeed": 196, 
-    "6660to60": 3.1, 
-    "666Handling": 108,
-
-    "996TopSpeed": 199, 
-    "9960to60": 2.9, 
-    "996Handling": 108,
-
-    "969TopSpeed": 199, 
-    "9690to60": 3.1, 
-    "969Handling": 112,
-
-    "699TopSpeed": 196, 
-    "6990to60": 2.9, 
-    "699Handling": 112,
     "hiddenTag": [""]
 }

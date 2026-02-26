@@ -10,7 +10,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Chop Shop", "Concept", "Eco-Friendly", "Hot Hatch", "Oddity"],
+    "tags": ["Chop Shop","Concept","Eco-Friendly","Hot Hatch","Oddity"],
     "isPrize": true,
     "weight": 1400,
     "gc": "Low",
@@ -22,30 +22,8 @@
     "fuelType": "Electric",
     "mra": 113.19,
     "ola": 91.91,
-
     "description": "Sometimes even Greta Thunberg is late to work.",
-    
-"333TopSpeed": 134,
-"3330to60": 2.9,
-"333Handling": 91,
-
-"666TopSpeed": 138,
-"6660to60": 2.8,
-"666Handling": 94,
-
-"699TopSpeed": 138,
-"6990to60": 2.6,
-"699Handling": 98,
-
-"969TopSpeed": 142,
-"9690to60": 2.8,
-"969Handling": 98,
-
-"996TopSpeed": 142,
-"9960to60": 2.6,
-"996Handling": 94,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultZoee-Sport(2017).png",
     "creator": "Fried",
     "hiddenTag": [""]
-} 
+}

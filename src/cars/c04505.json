@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1725,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 61.20,
+    "mra": 61.2,
     "ola": 76.62,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot6072.7V6HDiFAP205(2004).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 147, 
-    "3330to60": 8.0, 
-    "333Handling": 74,
-
-    "666TopSpeed": 150, 
-    "6660to60": 7.6, 
-    "666Handling": 77,
-
-    "996TopSpeed": 154, 
-    "9960to60": 7.1, 
-    "996Handling": 77,
-
-    "969TopSpeed": 154, 
-    "9690to60": 7.6, 
-    "969Handling": 80,
-
-    "699TopSpeed": 150, 
-    "6990to60": 7.1, 
-    "699Handling": 80,
     "hiddenTag": [""]
 }

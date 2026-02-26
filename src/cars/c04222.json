@@ -10,10 +10,8 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Eurotech Elite","Hot Hatch"],
+    "tags": ["Rest of The World","Eurotech Elite","Hot Hatch"],
     "isPrize": false,
-
-
     "weight": 1480,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,25 +25,5 @@
     "description": "Hottest diesel C30 also featured an inline 5 engine.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolvoC30D5R-Design(2006).png",
     "creator": "Connor",
-
-    "333TopSpeed": 141,
-    "3330to60": 7.3,
-    "333Handling": 79,
-
-    "666TopSpeed": 145,
-    "6660to60": 6.9, 
-    "666Handling": 81,
-
-    "996TopSpeed": 148,
-    "9960to60": 6.5,
-    "996Handling": 81,
-
-    "969TopSpeed": 148,
-    "9690to60": 6.9,
-    "969Handling": 84,
-
-    "699TopSpeed": 145,
-    "6990to60": 6.5,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

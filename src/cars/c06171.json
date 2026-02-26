@@ -1,7 +1,7 @@
 {
     "carID": "c06171",
     "cr": 687,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "B6 S",
     "modelYear": 2007,
     "country": "DE",
@@ -10,7 +10,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [ "CD Contenders","Tuner"],
+    "tags": ["CD Contenders","Tuner"],
     "isPrize": false,
     "weight": 1720,
     "gc": "Low",
@@ -23,25 +23,6 @@
     "mra": 99.26,
     "ola": 91.56,
     "description": "",
-"333TopSpeed": 201,
-"3330to60": 4,
-"333Handling": 87,
-
-"666TopSpeed": 203,
-"6660to60": 3.8,
-"666Handling": 90,
-
-"699TopSpeed": 203,
-"6990to60": 3.6,
-"699Handling": 93,
-
-"969TopSpeed": 206,
-"9690to60": 3.8,
-"969Handling": 93,
-
-"996TopSpeed": 206,
-"9960to60": 3.6,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AlpinaB6S(2007).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

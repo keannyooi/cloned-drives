@@ -1,11 +1,7 @@
 {
     "carID": "c01428",
     "cr": 430,
-    "make": [
-        "Zender",
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Zender","Abarth","Fiat"],
     "model": "500 Corsa Stradale Concept",
     "modelYear": 2013,
     "country": "DE",
@@ -14,12 +10,7 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Hot Hatch",
-        "Tuner",
-        "Concept"
-    ],
+    "tags": ["Street Racer","Hot Hatch","Tuner","Concept"],
     "isPrize": false,
     "weight": 1055,
     "gc": "Low",
@@ -32,21 +23,6 @@
     "mra": 61.39,
     "ola": 74.19,
     "description": "Aggressive looking bodykit, 18-inch alloys, and an additional 77 hp.",
-     "333TopSpeed": 148,
-    "3330to60": 5.9,
-    "333Handling": 81,
-    "666TopSpeed": 151,
-    "6660to60": 5.6,
-    "666Handling": 83,
-    "996TopSpeed": 155,
-    "9960to60": 5.3,
-    "996Handling": 83,
-    "969TopSpeed": 155,
-    "9690to60": 5.6,
-    "969Handling": 87,
-    "699TopSpeed": 151,
-    "6990to60": 5.3,
-    "699Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Zender500CorsaStradaleConcept(2013).png",
     "creator": "Havvy",
     "hiddenTag": [""]

@@ -10,9 +10,8 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Eargasm", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Eargasm","Supercar","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1570,
     "gc": "Low",
     "seatCount": 2,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 88.40,
+    "mra": 88.4,
     "ola": 83.39,
     "description": "High performance variant of the R8 with aero bits and a bit more power over the plus model.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR8GT(2010).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 202, 
-    "3330to60": 3.3, 
-    "333Handling": 91,
-
-    "666TopSpeed": 204, 
-    "6660to60": 3.1, 
-    "666Handling": 94,
-
-    "996TopSpeed": 207, 
-    "9960to60": 3.0, 
-    "996Handling": 94,
-
-    "969TopSpeed": 207, 
-    "9690to60": 3.1, 
-    "969Handling": 98,
-
-    "699TopSpeed": 204, 
-    "6990to60": 3.0, 
-    "699Handling": 98,
     "hiddenTag": [""]
 }

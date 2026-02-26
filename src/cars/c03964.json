@@ -10,9 +10,8 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "The Americas Assault"],
+    "tags": ["Endless Summer","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1625,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The baby Bronco, but don't let it fool you its got some kick.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordBroncoSport(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 129,
-"3330to60": 8.2,
-"333Handling": 72,
-
-"666TopSpeed": 133,
-"6660to60": 7.7,
-"666Handling": 75,
-
-"699TopSpeed": 133,
-"6990to60": 7.3,
-"699Handling": 78,
-
-"969TopSpeed": 137,
-"9690to60": 7.7,
-"969Handling": 78,
-
-"996TopSpeed": 137,
-"9960to60": 7.3,
-"996Handling": 75,
     "hiddenTag": [""]
 }

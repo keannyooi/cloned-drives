@@ -10,9 +10,8 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "The Americas Assault","Unique","Endless Summer"],
+    "tags": ["Supercar","The Americas Assault","Unique","Endless Summer"],
     "isPrize": false,
-	
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "GM engine, paired with a Porsche PDK and looking like a ferrari?",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ExoticRidesW70(2016).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 203,
-"3330to60": 3.3,
-"333Handling": 93,
-
-"666TopSpeed": 205,
-"6660to60": 3.1,
-"666Handling": 96,
-
-"699TopSpeed": 205,
-"6990to60": 3,
-"699Handling": 100,
-
-"969TopSpeed": 208,
-"9690to60": 3.1,
-"969Handling": 100,
-
-"996TopSpeed": 208,
-"9960to60": 3,
-"996Handling": 96,
     "hiddenTag": [""]
 }

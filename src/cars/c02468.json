@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Motorsport"],
     "isPrize": false,
-    
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 186,
-    "3330to60": 2.8,
-    "333Handling": 103,
-
-    "666TopSpeed": 189,
-    "6660to60": 2.6,
-    "666Handling": 107,
-
-    "996TopSpeed": 192,
-    "9960to60": 2.5,
-    "996Handling": 107,
-
-    "969TopSpeed": 192,
-    "9690to60": 2.6,
-    "969Handling": 111,
-
-    "699TopSpeed": 189,
-    "6990to60": 2.5,
-    "699Handling": 111,
     "hiddenTag": [""]
 }

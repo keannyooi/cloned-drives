@@ -1,7 +1,7 @@
 {
     "carID": "c01167",
     "cr": 268,
-    "make": ["Sbarro", "Citroen"],
+    "make": ["Sbarro","Citroen"],
     "model": "GT-C1",
     "modelYear": 2006,
     "country": "CH",
@@ -10,7 +10,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Rest of The World"],
+    "tags": ["Tuner","Rest of The World"],
     "isPrize": false,
     "weight": 900,
     "gc": "Low",
@@ -23,27 +23,6 @@
     "mra": 51.18,
     "ola": 71.26,
     "description": "Meet the Picasso Cup's little brother. Built by Franco Sbarro's disciples in 6 months, the GT-C1 is possibly the smallest car to feature gull-wing doors. Unfortunately, its engine, which came from the Citroen C2 VTR, was comparatively weak and didn't give as much performance as its looks would suggest.",
- 
-    "333TopSpeed": 131,
-    "3330to60": 8.3,
-    "333Handling": 80,
-
-    "666TopSpeed": 135,
-    "6660to60": 7.8,
-    "666Handling": 82,
-
-    "996TopSpeed": 139,
-    "9960to60": 7.4,
-    "996Handling": 82,
-
-    "969TopSpeed": 139,
-    "9690to60": 7.8,
-    "969Handling": 85,
-
-    "699TopSpeed": 135,
-    "6990to60": 7.4,
-    "699Handling": 85,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SbarroGT-C1(2006).png",
     "creator": "Keanny",
     "hiddenTag": [""]

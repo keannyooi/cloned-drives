@@ -10,9 +10,8 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1745,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Alfa's SUV with a diesel heart.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.2TDQ4(210)(2023).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 138, 
-    "3330to60": 6.3, 
-    "333Handling": 81,
-
-    "666TopSpeed": 142, 
-    "6660to60": 5.9, 
-    "666Handling": 83,
-
-    "996TopSpeed": 146, 
-    "9960to60": 5.6, 
-    "996Handling": 83,
-
-    "969TopSpeed": 146, 
-    "9690to60": 5.9, 
-    "969Handling": 87,
-
-    "699TopSpeed": 142, 
-    "6990to60": 5.6, 
-    "699Handling": 87,
     "hiddenTag": [""]
 }

@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1112,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 16.43,
     "ola": 61.42,
     "description": "Pop Pop Pop Pop Pop.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat500C12Pop(2009).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 12.1,
-    "333Handling": 74,
-
-    "666TopSpeed": 110,
-    "6660to60": 11.4, 
-    "666Handling": 77,
-
-    "996TopSpeed": 116,
-    "9960to60": 10.8,
-    "996Handling": 77,
-
-    "969TopSpeed": 116,
-    "9690to60": 11.4,
-    "969Handling": 80,
-
-    "699TopSpeed": 110,
-    "6990to60": 10.8,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

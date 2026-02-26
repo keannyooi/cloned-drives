@@ -1,7 +1,7 @@
 {
     "carID": "c03526",
     "cr": 574,
-    "make": ["Dodge", "Ram"],
+    "make": ["Dodge","Ram"],
     "model": "Ram 1500 Sport R/T",
     "modelYear": 2009,
     "country": "US",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-	
     "weight": 2160,
     "gc": "High",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Ram’s spicy secret menu item, but doesn't quite hit like the SRT-10.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeRam1500SportRT(2009).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 113,
-"3330to60": 5.4,
-"333Handling": 70,
-
-"666TopSpeed": 118,
-"6660to60": 5.1,
-"666Handling": 72,
-
-"699TopSpeed": 118,
-"6990to60": 4.8,
-"699Handling": 75,
-
-"969TopSpeed": 122,
-"9690to60": 5.1,
-"969Handling": 75,
-
-"996TopSpeed": 122,
-"9960to60": 4.8,
-"996Handling": 72,
     "hiddenTag": [""]
 }

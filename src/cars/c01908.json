@@ -10,11 +10,7 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique",
-        "The Japanese Odyssey","Visionary Road"
-    ],
+    "tags": ["Concept","Unique","The Japanese Odyssey","Visionary Road"],
     "isPrize": false,
     "weight": 1890,
     "gc": "Low",
@@ -27,27 +23,6 @@
     "mra": 39.07,
     "ola": 67.42,
     "description": "At the end of the first Back to the Future movie, Doc Brown brought back a Mr. Fusion reactor that could convert trash into energy from the future. Toyota wanted to prove a point - that the Mirai had achieved what the Mr Reactor did, so in collaboration with a custom shop called MV Designs and Mark Wu they created an homage to the original time-travelling Delorean, complete with gullwing doors and a Mr Fusion unit in the trunk.",
- 
-    "333TopSpeed": 115,
-    "3330to60": 8.7,
-    "333Handling": 70,
-
-    "666TopSpeed": 119,
-    "6660to60": 8.3,
-    "666Handling": 72,
-
-    "996TopSpeed": 124,
-    "9960to60": 7.8,
-    "996Handling": 72,
-
-    "969TopSpeed": 124,
-    "9690to60": 8.3,
-    "969Handling": 75,
-
-    "699TopSpeed": 119,
-    "6990to60": 7.8,
-    "699Handling": 75,
-    
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaMiraiBackToTheFutureConcept(2015).png",
     "creator": "Keanny",
     "hiddenTag": [""]

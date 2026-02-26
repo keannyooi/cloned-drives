@@ -1,7 +1,7 @@
 {
     "carID": "c04231",
     "cr": 395,
-    "make": ["Treser", "Audi"],
+    "make": ["Treser","Audi"],
     "model": "Audi quattro Roadster",
     "modelYear": 1984,
     "country": "DE",
@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Innovative", "Unique", "Eurotech Elite","Tuner"],
+    "tags": ["Innovative","Unique","Eurotech Elite","Tuner"],
     "isPrize": false,
-
-
     "weight": 1560,
     "gc": "Medium",
     "seatCount": 4,
@@ -22,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 50.00,
+    "mra": 50,
     "ola": 63.77,
     "description": "Ur-quattro Roadster never went beyond concept phase but, tuning house Treser would hapilly chop off the roof of your own quattro. Its estimated only 39 were ever made.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TreserAudiquattroRoadster(1983).png",
     "creator": "Connor",
-
-    "333TopSpeed": 141,
-    "3330to60": 6.6,
-    "333Handling": 72,
-
-    "666TopSpeed": 145,
-    "6660to60": 6.2, 
-    "666Handling": 75,
-
-    "996TopSpeed": 148,
-    "9960to60": 5.9,
-    "996Handling": 75,
-
-    "969TopSpeed": 148,
-    "9690to60": 6.2,
-    "969Handling": 78,
-
-    "699TopSpeed": 145,
-    "6990to60": 5.9,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

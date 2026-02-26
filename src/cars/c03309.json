@@ -6,13 +6,12 @@
     "modelYear": 2015,
     "country": "DE",
     "topSpeed": 170,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1925,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheMacanTurboPerformancePackage(2015).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 173,
-"3330to60": 3.8,
-"333Handling": 87,
-
-"666TopSpeed": 176,
-"6660to60": 3.6,
-"666Handling": 90,
-
-"699TopSpeed": 176,
-"6990to60": 3.4,
-"699Handling": 93,
-
-"969TopSpeed": 179,
-"9690to60": 3.6,
-"969Handling": 93,
-
-"996TopSpeed": 179,
-"9960to60": 3.4,
-"996Handling": 90,
     "hiddenTag": [""]
 }

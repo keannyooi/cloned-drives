@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1468,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FerrariSP275RWCompetizione.png",
     "creator": "c6",
-
-    "333TopSpeed": 213,
-    "3330to60": 2.7,
-    "333Handling": 95,
-
-    "666TopSpeed": 216,
-    "6660to60": 2.5,
-    "666Handling": 98,
-
-    "996TopSpeed": 218,
-    "9960to60": 2.4,
-    "996Handling": 98,
-
-    "969TopSpeed": 218,
-    "9690to60": 2.5,
-    "969Handling": 102,
-
-    "699TopSpeed": 216,
-    "6990to60": 2.4,
-    "699Handling": 102,
     "hiddenTag": [""]
 }

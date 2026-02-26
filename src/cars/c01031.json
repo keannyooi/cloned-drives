@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Sleeper"],
     "isPrize": false,
-	
     "weight": 1263,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Peugeot308GTi270(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 158, 
-    "3330to60": 5.8, 
-    "333Handling": 89,
-
-    "666TopSpeed": 162, 
-    "6660to60": 5.5, 
-    "666Handling": 92,
-
-    "699TopSpeed": 162, 
-    "6990to60": 5.2, 
-    "699Handling": 95,
-
-    "969TopSpeed": 165, 
-    "9690to60": 5.5, 
-    "969Handling": 95,
-
-    "996TopSpeed": 165, 
-    "9960to60": 5.2, 
-    "996Handling": 92,
     "hiddenTag": [""]
 }

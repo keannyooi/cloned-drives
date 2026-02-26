@@ -1,10 +1,7 @@
 {
     "carID": "c00513",
     "cr": 317,
-    "make": [
-        "HKS",
-        "Honda"
-    ],
+    "make": ["HKS","Honda"],
     "model": "Turbocharged Accord Coupe V6",
     "modelYear": 1997,
     "country": "JP",
@@ -13,10 +10,7 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Tuner"
-    ],
+    "tags": ["Street Racer","Tuner"],
     "isPrize": false,
     "weight": 1520,
     "gc": "Low",
@@ -29,25 +23,6 @@
     "mra": 65.55,
     "ola": 76.06,
     "description": "The legitimate turbo Accord so many J-series fans wanted.",
-"333TopSpeed": 149,
-"3330to60": 6.7,
-"333Handling": 76,
-
-"666TopSpeed": 152,
-"6660to60": 6.4,
-"666Handling": 79,
-
-"699TopSpeed": 152,
-"6990to60": 6,
-"699Handling": 82,
-
-"969TopSpeed": 156,
-"9690to60": 6.4,
-"969Handling": 82,
-
-"996TopSpeed": 156,
-"9960to60": 6,
-"996Handling": 79,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HKSTurbochargedAccordCoupeV6(1997).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

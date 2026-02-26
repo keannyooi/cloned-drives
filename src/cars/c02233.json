@@ -1,10 +1,7 @@
 {
     "carID": "c02233",
     "cr": 565,
-    "make": [
-        "RENNTech",
-        "Mercedes-Benz"
-    ],
+    "make": ["RENNTech","Mercedes-Benz"],
     "model": "600E",
     "modelYear": 1992,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1682,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 70,
     "ola": 77.55,
     "description": "Wallet Alert: each aluminium rim costs 1300 dollars.",
-     "333TopSpeed": 158,
-    "3330to60": 4.7,
-    "333Handling": 73,
-    "666TopSpeed": 162,
-    "6660to60": 4.4,
-    "666Handling": 76,
-    "996TopSpeed": 165,
-    "9960to60": 4.2,
-    "996Handling": 76,
-    "969TopSpeed": 165,
-    "9690to60": 4.4,
-    "969Handling": 79,
-    "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 79,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RENNtech600E(1992).png",
     "creator": "Havvy",
     "hiddenTag": [""]

@@ -10,9 +10,8 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "The Royal Collection", "Street Racer"],
+    "tags": ["Hot Hatch","The Royal Collection","Street Racer"],
     "isPrize": false,
-
     "weight": 1331,
     "gc": "Low",
     "seatCount": 4,
@@ -24,27 +23,6 @@
     "mra": 58.59,
     "ola": 79.31,
     "description": "If the top fast Fords were picked on visual impact alone, then the Escort RS Cosworth would be a clear winner. With its bulging wheelarches, aggressive nose and wild rear wing, it looks like nothing else on the road.",
- 
-    "333TopSpeed": 145,
-    "3330to60": 5.5,
-    "333Handling": 87,
-
-    "666TopSpeed": 148,
-    "6660to60": 5.2,
-    "666Handling": 90,
-
-    "996TopSpeed": 152,
-    "9960to60": 4.9,
-    "996Handling": 90,
-
-    "969TopSpeed": 152,
-    "9690to60": 5.2,
-    "969Handling": 93,
-
-    "699TopSpeed": 148,
-    "6990to60": 4.9,
-    "699Handling": 93,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FordEscortRSCosworth(1992).png",
     "creator": "Thunk",
     "hiddenTag": [""]

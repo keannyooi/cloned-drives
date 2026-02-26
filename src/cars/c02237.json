@@ -1,10 +1,7 @@
 {
     "carID": "c02237",
     "cr": 452,
-    "make": [
-        "RENNTech",
-        "Mercedes-Benz"
-    ],
+    "make": ["RENNTech","Mercedes-Benz"],
     "model": "SLK",
     "modelYear": 1998,
     "country": "US",
@@ -13,9 +10,7 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1415,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 58.82,
     "ola": 76.67,
     "description": "",
-     "333TopSpeed": 154,
-    "3330to60": 5.7,
-    "333Handling": 84,
-    "666TopSpeed": 158,
-    "6660to60": 5.4,
-    "666Handling": 86,
-    "996TopSpeed": 161,
-    "9960to60": 5.1,
-    "996Handling": 86,
-    "969TopSpeed": 161,
-    "9690to60": 5.4,
-    "969Handling": 90,
-    "699TopSpeed": 158,
-    "6990to60": 5.1,
-    "699Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RENNTechSLK(1998).png",
     "creator": "Havvy",
     "hiddenTag": [""]

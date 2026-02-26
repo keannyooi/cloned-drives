@@ -10,9 +10,8 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": ["Motorsport", "Unique", "Tuner","Cloned Drives Beta: Last of"],
+    "tags": ["Motorsport","Unique","Tuner","Cloned Drives Beta: Last of"],
     "isPrize": false,
-    
     "weight": 1293,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "Thats what 1114 hp does to a 928 if it does have an aero kit.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/928Motorsports928TRCHillclimbRacer(1984).png",
     "creator": "c6",
-
-    "333TopSpeed": 155,
-    "3330to60": 2.9,
-    "333Handling": 99,
-
-    "666TopSpeed": 159,
-    "6660to60": 2.8,
-    "666Handling": 102,
-
-    "996TopSpeed": 162,
-    "9960to60": 2.6,
-    "996Handling": 102,
-
-    "969TopSpeed": 162,
-    "9690to60": 2.8,
-    "969Handling": 107,
-
-    "699TopSpeed": 159,
-    "6990to60": 2.6,
-    "699Handling": 107,
     "hiddenTag": [""]
 }

@@ -1,10 +1,7 @@
 {
     "carID": "c00628",
     "cr": 442,
-    "make": [
-        "Kleemann",
-        "Mercedes-Benz"
-    ],
+    "make": ["Kleemann","Mercedes-Benz"],
     "model": "C32K",
     "modelYear": 2001,
     "country": "DK",
@@ -13,10 +10,7 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Rest of The World"
-    ],
+    "tags": ["Tuner","Rest of The World"],
     "isPrize": false,
     "weight": 1681,
     "gc": "Medium",
@@ -29,21 +23,6 @@
     "mra": 63.83,
     "ola": 83.33,
     "description": "Speaking German with a Scandinavian accent.",
-     "333TopSpeed": 138,
-    "3330to60": 5.7,
-    "333Handling": 74,
-    "666TopSpeed": 142,
-    "6660to60": 5.4,
-    "666Handling": 77,
-    "996TopSpeed": 146,
-    "9960to60": 5.1,
-    "996Handling": 77,
-    "969TopSpeed": 146,
-    "9690to60": 5.4,
-    "969Handling": 80,
-    "699TopSpeed": 142,
-    "6990to60": 5.1,
-    "699Handling": 80,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/KleemannC32K(2001).png",
     "creator": "Havvy",
     "hiddenTag": [""]

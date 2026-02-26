@@ -1,10 +1,7 @@
 {
     "carID": "c01702",
     "cr": 524,
-    "make": [
-        "Nismo",
-        "Nissan"
-    ],
+    "make": ["Nismo","Nissan"],
     "model": "270R",
     "modelYear": 1994,
     "country": "JP",
@@ -13,9 +10,8 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "The Japanese Odyssey", "Unique"],
+    "tags": ["Tuner","The Japanese Odyssey","Unique"],
     "isPrize": false,
-    
     "weight": 1275,
     "gc": "Medium",
     "seatCount": 4,
@@ -27,27 +23,6 @@
     "mra": 66.27,
     "ola": 72.73,
     "description": "Based on the S14 Silvia, the 270 in its name referred to the power output of its engine. Nismo increased the power of the engine, not by installing larger turbos, but incorporating custom cams, an intercooler and a revised ECU. All 270Rs were painted black, with a white stripe down the side of the body.",
- 
-    "333TopSpeed": 117,
-    "3330to60": 5.2,
-    "333Handling": 80,
-
-    "666TopSpeed": 121,
-    "6660to60": 5.0,
-    "666Handling": 82,
-
-    "996TopSpeed": 126,
-    "9960to60": 4.7,
-    "996Handling": 82,
-
-    "969TopSpeed": 126,
-    "9690to60": 5.0,
-    "969Handling": 85,
-
-    "699TopSpeed": 121,
-    "6990to60": 4.7,
-    "699Handling": 85,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Nismo270R(1994).png",
     "creator": "Havvy",
     "hiddenTag": [""]

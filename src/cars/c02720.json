@@ -1,7 +1,7 @@
 {
     "carID": "c02720",
     "cr": 647,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "G 55 Kompressor",
     "modelYear": 2004,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2475,
     "gc": "High",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 60.23,
     "ola": 71.7,
     "description": "25 Years Of Germany’s Jeep: Anyone For Bracket Racing?",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzG55KompressorAMG(2004).png",
     "creator": "Havvy",
-
-    "333TopSpeed": 135,
-    "3330to60": 5.0,
-    "333Handling": 69,
-
-    "666TopSpeed": 139,
-    "6660to60": 4.8,
-    "666Handling": 71,
-
-    "996TopSpeed": 143,
-    "9960to60": 4.5,
-    "996Handling": 71,
-
-    "969TopSpeed": 143,
-    "9690to60": 4.8,
-    "969Handling": 74,
-
-    "699TopSpeed": 139,
-    "6990to60": 4.5,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

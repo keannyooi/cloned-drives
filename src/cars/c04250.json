@@ -10,10 +10,8 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Hot Hatch"],
+    "tags": ["Eurotech Elite","Hot Hatch"],
     "isPrize": false,
-
-
     "weight": 1255,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "1.8 Turbo masterrace.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA318T5VAmbition(1998).png",
     "creator": "Connor",
-
-    "333TopSpeed": 145,
-    "3330to60": 6.9,
-    "333Handling": 81,
-
-    "666TopSpeed": 148,
-    "6660to60": 6.6, 
-    "666Handling": 83,
-
-    "996TopSpeed": 152,
-    "9960to60": 6.2,
-    "996Handling": 83,
-
-    "969TopSpeed": 152,
-    "9690to60": 6.6,
-    "969Handling": 87,
-
-    "699TopSpeed": 148,
-    "6990to60": 6.2,
-    "699Handling": 87,
     "hiddenTag": [""]
 }

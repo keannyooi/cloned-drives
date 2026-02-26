@@ -1,7 +1,7 @@
 {
     "carID": "c03873",
     "cr": 746,
-    "make": ["Defender", "Land Rover"],
+    "make": ["Defender","Land Rover"],
     "model": "130 V8 P500",
     "modelYear": 2023,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Off-Road",
     "tags": ["Endless Summer","Extreme Juggernaut","The Midlands Cruise"],
     "isPrize": false,
-	
     "weight": 2745,
     "gc": "High",
     "seatCount": 8,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Defender130V8P500(2023).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 152,
-"3330to60": 5.1,
-"333Handling": 71,
-
-"666TopSpeed": 156,
-"6660to60": 4.9,
-"666Handling": 74,
-
-"699TopSpeed": 156,
-"6990to60": 4.6,
-"699Handling": 77,
-
-"969TopSpeed": 159,
-"9690to60": 4.9,
-"969Handling": 77,
-
-"996TopSpeed": 159,
-"9960to60": 4.6,
-"996Handling": 74,
     "hiddenTag": [""]
 }

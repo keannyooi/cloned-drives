@@ -1,18 +1,17 @@
 {
     "carID": "c02562",
     "cr": 317,
-    "make": ["RE Amemiya", "Mazda"],
+    "make": ["RE Amemiya","Mazda"],
     "model": "Carol (GF-HA12S)",
     "modelYear": 2004,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": ["Tuner"],
     "isPrize": false,
-	
     "weight": 710,
     "gc": "Medium",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Something that the owner of RE Amemiya made just for fun, featuring 100% custom fenders and a little spoiler at the top because why not. Interestingly, this car is legally registered on the road as a regular vehicle instead of a kei car like the original Carol/Alto because the modified engine makes more horsepower than the limit imposed for kei cars.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REAmemiyaCarol(GF-HA12S)(2004).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 117, 
-    "3330to60": 7.6, 
-    "333Handling": 73,
-
-    "666TopSpeed": 121, 
-    "6660to60": 7.2, 
-    "666Handling": 76,
-
-    "699TopSpeed": 121, 
-    "6990to60": 6.8, 
-    "699Handling": 79,
-
-    "969TopSpeed": 126, 
-    "9690to60": 7.2, 
-    "969Handling": 79,
-
-    "996TopSpeed": 126, 
-    "9960to60": 6.8, 
-    "996Handling": 76,
     "hiddenTag": [""]
 }

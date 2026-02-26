@@ -6,13 +6,12 @@
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 224,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Unique","The Midlands Cruise","Ultra Expensive","Tuner","Track Day"],
     "isPrize": false,
-	
     "weight": 1362,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinVulcanbyRMLGroup(2017).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 226, 
-"3330to60": 2.8, 
-"333Handling": 99,
-
-"666TopSpeed": 229, 
-"6660to60": 2.7, 
-"666Handling": 102,
-
-"699TopSpeed": 229, 
-"6990to60": 2.6, 
-"699Handling": 107,
-
-"969TopSpeed": 231, 
-"9690to60": 2.7, 
-"969Handling": 107,
-
-"996TopSpeed": 231, 
-"9960to60": 2.6, 
-"996Handling": 102,
     "hiddenTag": [""]
 }

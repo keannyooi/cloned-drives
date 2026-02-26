@@ -6,13 +6,12 @@
     "modelYear": 2006,
     "country": "US",
     "topSpeed": 150,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "The Americas Assault","Cloned Drives Beta: Last of"],
+    "tags": ["Muscle Car","The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": true,
-	
     "weight": 1880,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 62.50,
-    "ola": 80.00,
+    "mra": 62.5,
+    "ola": 80,
     "description": "Oh oh better run away from this police breadvan.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumPoliceHemi(2006).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 153,
-"3330to60": 5.7,
-"333Handling": 75,
-
-"666TopSpeed": 157,
-"6660to60": 5.4,
-"666Handling": 78,
-
-"699TopSpeed": 157,
-"6990to60": 5.1,
-"699Handling": 81,
-
-"969TopSpeed": 160,
-"9690to60": 5.4,
-"969Handling": 81,
-
-"996TopSpeed": 160,
-"9960to60": 5.1,
-"996Handling": 78,
     "hiddenTag": [""]
 }

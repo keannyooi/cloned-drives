@@ -10,10 +10,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Silver Screen"
-    ],
+    "tags": ["Supercar","Silver Screen"],
     "isPrize": false,
     "weight": 1434,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 106.48,
     "ola": 91.73,
     "description": "McLaren's Ferrari killer.",
-"333TopSpeed": 214,
-"3330to60": 2.6,
-"333Handling": 95,
-
-"666TopSpeed": 217,
-"6660to60": 2.4,
-"666Handling": 98,
-
-"699TopSpeed": 217,
-"6990to60": 2.3,
-"699Handling": 102,
-
-"969TopSpeed": 219,
-"9690to60": 2.4,
-"969Handling": 102,
-
-"996TopSpeed": 219,
-"9960to60": 2.3,
-"996Handling": 98,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLaren720S(2017).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

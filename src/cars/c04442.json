@@ -6,13 +6,12 @@
     "modelYear": 1951,
     "country": "GB",
     "topSpeed": 106,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 56,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["The Midlands Cruise","Unique","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1208,
     "gc": "High",
     "seatCount": 4,
@@ -25,26 +24,6 @@
     "ola": 75,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinDB2VantageDropheadCoupe(1951).png",
-
-"333TopSpeed": 111,
-"3330to60": 11.4,
-"333Handling": 58,
-
-"666TopSpeed": 116,
-"6660to60": 10.8,
-"666Handling": 60,
-
-"699TopSpeed": 116,
-"6990to60": 10.2,
-"699Handling": 62,
-
-"969TopSpeed": 121,
-"9690to60": 10.8,
-"969Handling": 62,
-
-"996TopSpeed": 121,
-"9960to60": 10.2,
-"996Handling": 60,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

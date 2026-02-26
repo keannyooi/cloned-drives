@@ -10,10 +10,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Tyrol Tour",
-        "Year of the Horse"
-    ],
+    "tags": ["The Tyrol Tour","Year of the Horse"],
     "isPrize": false,
     "weight": 1170,
     "gc": "Low",
@@ -26,24 +23,7 @@
     "mra": 54.55,
     "ola": 71.79,
     "description": "Cylinder on demand technology, now with +10 hp and slightly better performance.",
-    "333TopSpeed": 138,
-    "3330to60": 7.4,
-    "333Handling": 79,
-    "666TopSpeed": 142,
-    "6660to60": 7,
-    "666Handling": 81,
-    "996TopSpeed": 146,
-    "9960to60": 6.6,
-    "996Handling": 81,
-    "969TopSpeed": 146,
-    "9690to60": 7,
-    "969Handling": 84,
-    "699TopSpeed": 142,
-    "6990to60": 6.6,
-    "699Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA1Sportback1.4TFSIc.o.d(2014).png",
     "creator": "Lemon",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

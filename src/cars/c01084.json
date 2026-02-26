@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Supercar"],
     "isPrize": true,
-	
     "weight": 1370,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 80,
     "description": "On paper the Porsche 911 R is a GT3 with a manual gearbox, the GT3 RS’s engine and no wing. However, the philosophy behind the car is a little more involved than that. This is meant to be a really pure, emotive 911, a car that is about driver involvement on the road rather than the track.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911R(2016).png",
-
-"333TopSpeed": 204,
-"3330to60": 3.3,
-"333Handling": 96,
-
-"666TopSpeed": 206,
-"6660to60": 3.1,
-"666Handling": 99,
-
-"699TopSpeed": 206,
-"6990to60": 3,
-"699Handling": 103,
-
-"969TopSpeed": 209,
-"9690to60": 3.1,
-"969Handling": 103,
-
-"996TopSpeed": 209,
-"9960to60": 3,
-"996Handling": 99,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

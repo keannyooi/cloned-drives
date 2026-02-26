@@ -4,7 +4,7 @@
     "make": "Audi",
     "model": "Q7 2.0 TFSI quattro",
     "modelYear": 2017,
-	"country": "DE",
+    "country": "DE",
     "topSpeed": 145,
     "0to60": 6.9,
     "handling": 76,
@@ -12,8 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 2130,
     "gc": "High",
     "seatCount": 7,
@@ -27,25 +25,5 @@
     "description": "EA888 supremacy, this model is just for markets where taxes are significantly higher for cars over 2 liter displacement.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiQ720TFSIquattro(2017).png",
     "creator": "Connor",
-
-    "333TopSpeed": 149,
-    "3330to60": 6.6,
-    "333Handling": 79,
-
-    "666TopSpeed": 152,
-    "6660to60": 6.2, 
-    "666Handling": 81,
-
-    "996TopSpeed": 156,
-    "9960to60": 5.9,
-    "996Handling": 81,
-
-    "969TopSpeed": 156,
-    "9690to60": 6.2,
-    "969Handling": 84,
-
-    "699TopSpeed": 152,
-    "6990to60": 5.9,
-    "699Handling": 84,
     "hiddenTag": [""]
 }

@@ -1,18 +1,17 @@
 {
     "carID": "c03814",
     "cr": 738,
-    "make": ["Hangout Customs", "Fiat"],
+    "make": ["Hangout Customs","Fiat"],
     "model": "X1/9 SW20",
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 169,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Endless Summer","Tuner","Unique","Street Racer","The Amplification of Asia","RestoMod"],
     "isPrize": false,
-	
     "weight": 720,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HangoutCustomsX19SW20(2009).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 172,
-"3330to60": 3.8,
-"333Handling": 91,
-
-"666TopSpeed": 175,
-"6660to60": 3.6,
-"666Handling": 94,
-
-"699TopSpeed": 175,
-"6990to60": 3.4,
-"699Handling": 98,
-
-"969TopSpeed": 178,
-"9690to60": 3.6,
-"969Handling": 98,
-
-"996TopSpeed": 178,
-"9960to60": 3.4,
-"996Handling": 94,
     "hiddenTag": [""]
 }

@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1690,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 60.31,
     "ola": 76.31,
     "description": "Seemingly useless engine-powertrain combination is quite appealing to fleet managers of big firms.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA82.8FSI(2007).png",
     "creator": "Connor",
-	
-    "333TopSpeed": 152,
-    "3330to60": 7.2,
-    "333Handling": 74,
-
-    "666TopSpeed": 155,
-    "6660to60": 6.8,
-    "666Handling": 77,
-
-    "996TopSpeed": 159,
-    "9960to60": 6.5,
-    "996Handling": 77,
-
-    "969TopSpeed": 159,
-    "9690to60": 6.8,
-    "969Handling": 80,
-
-    "699TopSpeed": 155,
-    "6990to60": 6.5,
-    "699Handling": 80,
     "hiddenTag": [""]
 }

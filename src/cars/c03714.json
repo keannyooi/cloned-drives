@@ -1,7 +1,7 @@
 {
     "carID": "c03714",
     "cr": 880,
-    "make": ["Cheetah-Aston Martin", "Aston Martin"],
+    "make": ["Cheetah-Aston Martin","Aston Martin"],
     "model": "G604",
     "modelYear": 1984,
     "country": "GB",
@@ -12,7 +12,6 @@
     "tyreType": "Slick",
     "tags": ["Endless Summer","Motorsport","Ultra Expensive","Unique","The Midlands Cruise"],
     "isPrize": false,
-	
     "weight": 870,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 218,
-"3330to60": 2.9,
-"333Handling": 98,
-
-"666TopSpeed": 221,
-"6660to60": 2.8,
-"666Handling": 101,
-
-"699TopSpeed": 221,
-"6990to60": 2.6,
-"699Handling": 105,
-
-"969TopSpeed": 223,
-"9690to60": 2.8,
-"969Handling": 105,
-
-"996TopSpeed": 223,
-"9960to60": 2.6,
-"996Handling": 101,
     "hiddenTag": [""]
 }

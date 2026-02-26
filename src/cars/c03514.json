@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Supercar","The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1709,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 79.10,
+    "mra": 79.1,
     "ola": 79.25,
     "description": "When you want an even higher performance Vette but can't be bothered to manually remove your roof.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletCorvetteZ06Convertible(2023).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 198,
-    "3330to60": 2.6,
-    "333Handling": 96,
-
-    "666TopSpeed": 200,
-    "6660to60": 2.4,
-    "666Handling": 99,
-
-    "699TopSpeed": 200,
-    "6990to60": 2.3,
-    "699Handling": 103,
-
-    "969TopSpeed": 203,
-    "9690to60": 2.4,
-    "969Handling": 103,
-
-    "996TopSpeed": 203,
-    "9960to60": 2.3,
-    "996Handling": 99,
     "hiddenTag": [""]
 }

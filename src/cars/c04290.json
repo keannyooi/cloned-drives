@@ -1,7 +1,7 @@
 {
     "carID": "c04290",
     "cr": 510,
-    "make": ["Sportec", "Volkswagen"],
+    "make": ["Sportec","Volkswagen"],
     "model": "RS240",
     "modelYear": 2006,
     "country": "CH",
@@ -10,44 +10,20 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch"],
+    "tags": ["Eurotech Elite","Tuner","Hot Hatch"],
     "isPrize": false,
-
-
     "weight": 1375,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 78.08,
-    "ola": 80.70,
+    "ola": 80.7,
     "description": "Classic all black sportec look, classic understated power.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SportecRS240(2006).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 168,
-    "3330to60": 5.4,
-    "333Handling": 84,
-    
-    "666TopSpeed": 171,
-    "6660to60": 5.1,
-    "666Handling": 86,
-    
-    "699TopSpeed": 171,
-    "6990to60": 4.8,
-    "699Handling": 90,
-    
-    "969TopSpeed": 174,
-    "9690to60": 5.1,
-    "969Handling": 90,
-    
-    "996TopSpeed": 174,
-    "9960to60": 4.8,
-    "996Handling": 86,
     "hiddenTag": [""]
 }

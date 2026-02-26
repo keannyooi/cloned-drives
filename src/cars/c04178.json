@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1604,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The most basic Stelvio with only 150 horsepower.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.2TD(150)(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 127, 
-    "3330to60": 8.1, 
-    "333Handling": 77,
-
-    "666TopSpeed": 131, 
-    "6660to60": 7.7, 
-    "666Handling": 80,
-
-    "996TopSpeed": 136, 
-    "9960to60": 7.2, 
-    "996Handling": 80,
-
-    "969TopSpeed": 136, 
-    "9690to60": 7.7, 
-    "969Handling": 83,
-
-    "699TopSpeed": 131, 
-    "6990to60": 7.2, 
-    "699Handling": 83,
     "hiddenTag": [""]
 }

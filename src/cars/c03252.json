@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1016,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Second generation of the box, this time a bit less boxy but still Japanese",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelAgila10Enjoy(2008).png",
     "creator": "Connor",
-
-    "333TopSpeed": 105,
-    "3330to60": 13.6,
-    "333Handling": 69,
-
-    "666TopSpeed": 110,
-    "6660to60": 12.9, 
-    "666Handling": 71,
-
-    "996TopSpeed": 116,
-    "9960to60": 12.2,
-    "996Handling": 71,
-
-    "969TopSpeed": 116,
-    "9690to60": 12.9,
-    "969Handling": 74,
-
-    "699TopSpeed": 110,
-    "6990to60": 12.2,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

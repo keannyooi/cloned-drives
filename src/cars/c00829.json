@@ -1,10 +1,7 @@
 {
     "carID": "c00829",
     "cr": 684,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "G 63 AMG",
     "modelYear": 2012,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Style Icon"
-    ],
+    "tags": ["Style Icon"],
     "isPrize": false,
     "weight": 2550,
     "gc": "High",
@@ -28,21 +23,6 @@
     "mra": 74.33,
     "ola": 82.08,
     "description": "Boxy.",
-     "333TopSpeed": 135,
-    "3330to60": 4.8,
-    "333Handling": 69,
-    "666TopSpeed": 139,
-    "6660to60": 4.6,
-    "666Handling": 71,
-    "996TopSpeed": 143,
-    "9960to60": 4.3,
-    "996Handling": 71,
-    "969TopSpeed": 143,
-    "9690to60": 4.6,
-    "969Handling": 74,
-    "699TopSpeed": 139,
-    "6990to60": 4.3,
-    "699Handling": 74,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzG63AMG(2012).png",
     "creator": "Havvy",
     "hiddenTag": [""]

@@ -6,13 +6,12 @@
     "modelYear": 2020,
     "country": "GB",
     "topSpeed": 119,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "Off-Road",
     "tags": ["Servers Choice","Silver Screen"],
     "isPrize": false,
-	
     "weight": 2263,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "Land Rover gets tough again with the resusication of the Defender.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LandRoverDefender110P300(2020).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 123,
-"3330to60": 6.6,
-"333Handling": 66,
-
-"666TopSpeed": 128,
-"6660to60": 6.3,
-"666Handling": 68,
-
-"699TopSpeed": 128,
-"6990to60": 6,
-"699Handling": 71,
-
-"969TopSpeed": 132,
-"9690to60": 6.3,
-"969Handling": 71,
-
-"996TopSpeed": 132,
-"9960to60": 6,
-"996Handling": 68,
     "hiddenTag": [""]
 }

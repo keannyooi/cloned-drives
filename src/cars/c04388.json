@@ -4,7 +4,7 @@
     "make": "Audi",
     "model": "SQ7 TDI quattro",
     "modelYear": 2017,
-	"country": "DE",
+    "country": "DE",
     "topSpeed": 155,
     "0to60": 4.7,
     "handling": 80,
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
     "weight": 2392,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "Ultimate diesel SUV.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiSQ7TDIquattro(2017).png",
     "creator": "Connor",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.5,
-    "333Handling": 83,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.2, 
-    "666Handling": 85,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.0,
-    "996Handling": 85,
-
-    "969TopSpeed": 155,
-    "9690to60": 4.2,
-    "969Handling": 89,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

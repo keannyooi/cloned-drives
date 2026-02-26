@@ -10,7 +10,7 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["CD 2.0: New Era", "Hot Hatch", "Concept"],
+    "tags": ["CD 2.0: New Era","Hot Hatch","Concept"],
     "isPrize": false,
     "weight": 1310,
     "gc": "Low",
@@ -20,28 +20,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 87.50,
+    "mra": 87.5,
     "ola": 81.63,
     "description": "Early days of what now the EA888 achieves.",
-"333TopSpeed": 182,
-"3330to60": 4.7,
-"333Handling": 88,
-
-"666TopSpeed": 185,
-"6660to60": 4.4,
-"666Handling": 91,
-
-"699TopSpeed": 185,
-"6990to60": 4.2,
-"699Handling": 94,
-
-"969TopSpeed": 188,
-"9690to60": 4.4,
-"969Handling": 94,
-
-"996TopSpeed": 188,
-"9960to60": 4.2,
-"996Handling": 91,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenGolfGTIReifnitz(2011).png",
     "creator": "Andu",
     "hiddenTag": [""]

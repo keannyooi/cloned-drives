@@ -6,13 +6,12 @@
     "modelYear": 1967,
     "country": "DE",
     "topSpeed": 177,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 600,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 95.48,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche907K(1967).png",
-
-"333TopSpeed": 180,
-"3330to60": 3.8,
-"333Handling": 84,
-
-"666TopSpeed": 183,
-"6660to60": 3.6,
-"666Handling": 86,
-
-"699TopSpeed": 183,
-"6990to60": 3.4,
-"699Handling": 90,
-
-"969TopSpeed": 186,
-"9690to60": 3.6,
-"969Handling": 90,
-
-"996TopSpeed": 186,
-"9960to60": 3.4,
-"996Handling": 86,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "TSSI",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctavia12TSI(2009).png",
     "creator": "Connor",
-
-    "333TopSpeed": 123,
-    "3330to60": 9.9,
-    "333Handling": 75,
-
-    "666TopSpeed": 128,
-    "6660to60": 9.4, 
-    "666Handling": 78,
-
-    "996TopSpeed": 132,
-    "9960to60": 8.8,
-    "996Handling": 78,
-
-    "969TopSpeed": 132,
-    "9690to60": 9.4,
-    "969Handling": 81,
-
-    "699TopSpeed": 128,
-    "6990to60": 8.8,
-    "699Handling": 81,
     "hiddenTag": [""]
 }

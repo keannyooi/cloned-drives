@@ -1,7 +1,7 @@
 {
     "carID": "c00818",
     "cr": 751,
-    "make": ["McLaren", "Ultima"],
+    "make": ["McLaren","Ultima"],
     "model": "Ultima Mk3 \"Albert\" Prototype",
     "modelYear": 1991,
     "country": "GB",
@@ -10,12 +10,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Ultra Expensive",
-        "The Royal Collection",
-        "Unique"
-    ],
+    "tags": ["Concept","Ultra Expensive","The Royal Collection","Unique"],
     "isPrize": false,
     "weight": 990,
     "gc": "Low",
@@ -28,25 +23,6 @@
     "mra": 84.44,
     "ola": 93.71,
     "description": "",
-"333TopSpeed": 188,
-"3330to60": 3.5,
-"333Handling": 90,
-
-"666TopSpeed": 191,
-"6660to60": 3.3,
-"666Handling": 93,
-
-"699TopSpeed": 191,
-"6990to60": 3.1,
-"699Handling": 97,
-
-"969TopSpeed": 193,
-"9690to60": 3.3,
-"969Handling": 97,
-
-"996TopSpeed": 193,
-"9960to60": 3.1,
-"996Handling": 93,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLarenUltimaMk3AlbertPrototype(1991).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

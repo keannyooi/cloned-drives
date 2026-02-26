@@ -1,10 +1,7 @@
 {
     "carID": "c02130",
     "cr": 799,
-    "make": [
-        "Edo Competition",
-        "Porsche"
-    ],
+    "make": ["Edo Competition","Porsche"],
     "model": "GT2 R",
     "modelYear": 2005,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner","Oceanic View"
-    ],
+    "tags": ["Tuner","Oceanic View"],
     "isPrize": false,
     "weight": 1360,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 81.82,
     "ola": 77.78,
     "description": "Dubbed the GT2 R, the regular GT2 was given a series of enhancements in the areas of brakes, suspension, engine, transmission, aerodynamics, exhaust system, interior and wheels. The complete bodykit, giving the car a very 997 look, is made entirely of carbon-fiber and consists of a new widebody.",
-     "333TopSpeed": 196,
-    "3330to60": 3.4,
-    "333Handling": 94,
-    "666TopSpeed": 198,
-    "6660to60": 3.2,
-    "666Handling": 97,
-    "996TopSpeed": 201,
-    "9960to60": 3.1,
-    "996Handling": 97,
-    "969TopSpeed": 201,
-    "9690to60": 3.2,
-    "969Handling": 101,
-    "699TopSpeed": 198,
-    "6990to60": 3.1,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/EdoCompetitionGT2R(2005).png",
     "creator": "Havvy",
     "hiddenTag": [""]

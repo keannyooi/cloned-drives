@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault"],
     "isPrize": false,
-    
     "weight": 1500,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Some things never change.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DodgeDart2.4(2014).png",
     "creator": "DodgeDemon",
-
-    "333TopSpeed": 131,
-    "3330to60": 7.8,
-    "333Handling": 77,
-
-    "666TopSpeed": 135,
-    "6660to60": 7.4,
-    "666Handling": 80,
-
-    "996TopSpeed": 139,
-    "9960to60": 7.0,
-    "996Handling": 80,
-
-    "969TopSpeed": 139,
-    "9690to60": 7.4,
-    "969Handling": 83,
-
-    "699TopSpeed": 135,
-    "6990to60": 7.0,
-    "699Handling": 83,
     "hiddenTag": [""]
 }

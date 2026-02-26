@@ -12,11 +12,9 @@
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1612,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
@@ -25,29 +23,7 @@
     "mra": 68.06,
     "ola": 73.47,
     "description": "The extremely sensible family machine.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfRVariant(2015).png",
     "creator": "Andu",
-
-    "333TopSpeed": 158,
-    "3330to60": 4.7,
-    "333Handling": 88,
-    
-    "666TopSpeed": 162,
-    "6660to60": 4.4,
-    "666Handling": 91,
-    
-    "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 94,
-    
-    "969TopSpeed": 165,
-    "9690to60": 4.4,
-    "969Handling": 94,
-    
-    "996TopSpeed": 165,
-    "9960to60": 4.2,
-    "996Handling": 91,
     "hiddenTag": [""]
 }

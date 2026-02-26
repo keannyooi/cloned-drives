@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "All-Surface",
     "tags": ["The Japanese Odyssey"],
-    
     "isPrize": false,
     "weight": 2610,
     "gc": "High",
@@ -24,27 +23,6 @@
     "mra": 57.14,
     "ola": 80,
     "description": "A petrol Titan with a physical impediment of not having any power sent to the front wheels.",
- 
-    "333TopSpeed": 120,
-    "3330to60": 6.1,
-    "333Handling": 67,
-
-    "666TopSpeed": 124,
-    "6660to60": 5.8,
-    "666Handling": 69,
-
-    "996TopSpeed": 129,
-    "9960to60": 5.4,
-    "996Handling": 69,
-
-    "969TopSpeed": 129,
-    "9690to60": 5.8,
-    "969Handling": 72,
-
-    "699TopSpeed": 124,
-    "6990to60": 5.4,
-    "699Handling": 72,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanTitanSL4x2CC(2017).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -1,7 +1,7 @@
 {
     "carID": "c02763",
     "cr": 820,
-    "make": ["Cupra", "Seat"],
+    "make": ["Cupra","Seat"],
     "model": "Leon E-Racer",
     "modelYear": 2020,
     "country": "ES",
@@ -10,9 +10,8 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Eco-Friendly","Rest of The World"],
+    "tags": ["Motorsport","Eco-Friendly","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1750,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "One of the first ETCR cars.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 172, 
-"3330to60": 2.9, 
-"333Handling": 97,
-
-"666TopSpeed": 175, 
-"6660to60": 2.8, 
-"666Handling": 100,
-
-"699TopSpeed": 175, 
-"6990to60": 2.6, 
-"699Handling": 104,
-
-"969TopSpeed": 178, 
-"9690to60": 2.8, 
-"969Handling": 104,
-
-"996TopSpeed": 178, 
-"9960to60": 2.6, 
-"996Handling": 100,
     "hiddenTag": [""]
 }

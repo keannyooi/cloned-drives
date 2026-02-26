@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1430,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Four by four is eight.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombi20FSI4x4(2005).png",
     "creator": "Connor",
-
-    "333TopSpeed": 130,
-    "3330to60": 8.7,
-    "333Handling": 75,
-
-    "666TopSpeed": 134,
-    "6660to60": 8.3, 
-    "666Handling": 78,
-
-    "996TopSpeed": 138,
-    "9960to60": 7.8,
-    "996Handling": 78,
-
-    "969TopSpeed": 138,
-    "9690to60": 8.3,
-    "969Handling": 81,
-
-    "699TopSpeed": 134,
-    "6990to60": 7.8,
-    "699Handling": 81,
     "hiddenTag": [""]
 }

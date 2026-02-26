@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 2186,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiLevanteQ4(2016).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 159, 
-    "3330to60": 5.5, 
-    "333Handling": 82,
-
-    "666TopSpeed": 163, 
-    "6660to60": 5.2, 
-    "666Handling": 84,
-
-    "996TopSpeed": 166, 
-    "9960to60": 4.9, 
-    "996Handling": 84,
-
-    "969TopSpeed": 166, 
-    "9690to60": 5.2, 
-    "969Handling": 88,
-
-    "699TopSpeed": 163, 
-    "6990to60": 4.9, 
-    "699Handling": 88,
     "hiddenTag": [""]
 }

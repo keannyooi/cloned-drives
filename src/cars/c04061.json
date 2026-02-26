@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1005,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 20.99,
     "ola": 59.87,
     "description": "This Golf is literally a blank slate, you get a body, engine and a gearbox.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.4L(1994).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 14.9,
-    "333Handling": 69,
-    
-    "666TopSpeed": 110,
-    "6660to60": 14.1,
-    "666Handling": 71,
-    
-    "699TopSpeed": 110,
-    "6990to60": 13.3,
-    "699Handling": 74,
-    
-    "969TopSpeed": 116,
-    "9690to60": 14.1,
-    "969Handling": 74,
-    
-    "996TopSpeed": 116,
-    "9960to60": 13.3,
-    "996Handling": 71,
     "hiddenTag": [""]
 }

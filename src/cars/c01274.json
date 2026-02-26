@@ -10,10 +10,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Eco-Friendly",
-        "Super Sedan","Oceanic View"
-    ],
+    "tags": ["Eco-Friendly","Super Sedan","Oceanic View"],
     "isPrize": false,
     "weight": 2161,
     "gc": "Low",
@@ -26,25 +23,6 @@
     "mra": 92.39,
     "ola": 89.1,
     "description": "The 2021 Palladium refresh brought the Plaid, the equivalent of an electric Dodge Challenger SRT Demon in terms of performance, price and getting banned from drag strips by the NHRA. Tesla claimed a 0-60 time in under 2 seconds and while MotorTrend has proven the claim, it was done on a drag strip with a lot of wax. Still, it's one of the quickest cars ever made and the closest thing to the new Tesla Roadster we can get for now.",
-"333TopSpeed": 203,
-"3330to60": 2,
-"333Handling": 95,
-
-"666TopSpeed": 205,
-"6660to60": 1.9,
-"666Handling": 98,
-
-"699TopSpeed": 205,
-"6990to60": 1.8,
-"699Handling": 102,
-
-"969TopSpeed": 208,
-"9690to60": 1.9,
-"969Handling": 102,
-
-"996TopSpeed": 208,
-"9960to60": 1.8,
-"996Handling": 98,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSPlaid(2021).png",
     "creator": "Keanny",
     "hiddenTag": [""]

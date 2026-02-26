@@ -1,5 +1,5 @@
 {
-	"carID": "c06501",
+    "carID": "c06501",
     "cr": 645,
     "make": "Ford",
     "model": "Mustang EcoBoost Convertible",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 1697,
     "gc": "Medium",
     "seatCount": 4,
@@ -24,27 +23,7 @@
     "mra": 47.89,
     "ola": 75,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangEcoBoostConvertible(2023).png",
-	
-"333TopSpeed": 149,
-"3330to60": 4.8,
-"333Handling": 90,
-
-"666TopSpeed": 152,
-"6660to60": 4.5,
-"666Handling": 93,
-
-"699TopSpeed": 152,
-"6990to60": 4.3,
-"699Handling": 97,
-
-"969TopSpeed": 156,
-"9690to60": 4.5,
-"969Handling": 97,
-
-"996TopSpeed": 156,
-"9960to60": 4.3,
-"996Handling": 93,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordMustangEcoBoostConvertible(2023).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

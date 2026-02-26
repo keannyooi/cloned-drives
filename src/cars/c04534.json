@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1365,
     "gc": "High",
     "seatCount": 7,
@@ -22,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 53.15,
-    "ola": 76.40,
+    "ola": 76.4,
     "description": "Unlike the 1st generation which has really clear differences from 3008, 2nd generation 5008 was just an elongated version of the 3008 for more interior space or to accomodate 2 more passengers (if you wish).",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot50081.6THP165(2017).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 132,
-    "3330to60": 8.5,
-    "333Handling": 76,
-
-    "666TopSpeed": 136,
-    "6660to60": 8.0,
-    "666Handling": 79,
-
-    "699TopSpeed": 136,
-    "6990to60": 7.6,
-    "699Handling": 82,
-
-    "969TopSpeed": 140,
-    "9690to60": 8.0,
-    "969Handling": 82,
-
-    "996TopSpeed": 140,
-    "9960to60": 7.6,
-    "996Handling": 79,
     "hiddenTag": [""]
 }

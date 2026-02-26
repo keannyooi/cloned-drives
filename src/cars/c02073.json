@@ -1,10 +1,7 @@
 {
     "carID": "c02073",
     "cr": 678,
-    "make": [
-        "ABT",
-        "Audi"
-    ],
+    "make": ["ABT","Audi"],
     "model": "AS400",
     "modelYear": 2004,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1500,
     "gc": "Low",
@@ -28,21 +23,6 @@
     "mra": 83.08,
     "ola": 74.92,
     "description": "Audi didn't make a b6 rs 4, so ABT stepped in and made this.",
-     "333TopSpeed": 183,
-    "3330to60": 4.3,
-    "333Handling": 85,
-    "666TopSpeed": 186,
-    "6660to60": 4.1,
-    "666Handling": 87,
-    "996TopSpeed": 189,
-    "9960to60": 3.8,
-    "996Handling": 87,
-    "969TopSpeed": 189,
-    "9690to60": 4.1,
-    "969Handling": 91,
-    "699TopSpeed": 186,
-    "6990to60": 3.8,
-    "699Handling": 91,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ABTAS400(2004).png",
     "creator": "Exist",
     "hiddenTag": [""]

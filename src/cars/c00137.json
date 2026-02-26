@@ -1,10 +1,7 @@
 {
     "carID": "c00137",
     "cr": 665,
-    "make": [
-        "Autodelta",
-        "Alfa Romeo"
-    ],
+    "make": ["Autodelta","Alfa Romeo"],
     "model": "156 GTA AM 3.7 V6",
     "modelYear": 2004,
     "country": "GB",
@@ -13,11 +10,7 @@
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Sleeper",
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Sleeper","Street Racer"],
     "isPrize": false,
     "weight": 1460,
     "gc": "Medium",
@@ -30,21 +23,6 @@
     "mra": 76.92,
     "ola": 84,
     "description": "The people at Autodelta sat down one day and created the ultimate 156 with a 333-horsepower 3.7 litre V6 and a Ferrari-derived throttle body.",
-     "333TopSpeed": 178,
-    "3330to60": 4.8,
-    "333Handling": 86,
-    "666TopSpeed": 181,
-    "6660to60": 4.5,
-    "666Handling": 88,
-    "996TopSpeed": 184,
-    "9960to60": 4.3,
-    "996Handling": 88,
-    "969TopSpeed": 184,
-    "9690to60": 4.5,
-    "969Handling": 92,
-    "699TopSpeed": 181,
-    "6990to60": 4.3,
-    "699Handling": 92,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta156GTAAM3.7V6(2004).png",
     "creator": "Havvy",
     "hiddenTag": [""]

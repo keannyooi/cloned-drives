@@ -1,10 +1,7 @@
 {
     "carID": "c01535",
     "cr": 277,
-    "make": [
-        "Gazoo Racing",
-        "Lexus"
-    ],
+    "make": ["Gazoo Racing","Lexus"],
     "model": "CT 200h VLN Race Car",
     "modelYear": 2011,
     "country": "JP",
@@ -13,12 +10,7 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Tuner",
-        "Eco-Friendly",
-        "The Japanese Odyssey", "Year of the Rabbit"
-    ],
+    "tags": ["Motorsport","Tuner","Eco-Friendly","The Japanese Odyssey","Year of the Rabbit"],
     "isPrize": false,
     "weight": 1370,
     "gc": "Low",
@@ -31,21 +23,6 @@
     "mra": 57.89,
     "ola": 81.81,
     "description": "",
-     "333TopSpeed": 133,
-    "3330to60": 8.4,
-    "333Handling": 84,
-    "666TopSpeed": 137,
-    "6660to60": 7.9,
-    "666Handling": 86,
-    "996TopSpeed": 141,
-    "9960to60": 7.5,
-    "996Handling": 86,
-    "969TopSpeed": 141,
-    "9690to60": 7.9,
-    "969Handling": 90,
-    "699TopSpeed": 137,
-    "6990to60": 7.5,
-    "699Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GazooRacingCT200hVLNRaceCar(2011).png",
     "creator": "Aqo",
     "hiddenTag": [""]

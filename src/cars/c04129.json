@@ -1,7 +1,7 @@
 {
     "carID": "c04129",
     "cr": 921,
-    "make": ["Brabus", "Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-AMG","Mercedes-Benz"],
     "model": "Rocket 900 \"One of Ten\"",
     "modelYear": 2020,
     "country": "DE",
@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Grand Tourer", "Tuner", "Unique"],
+    "tags": ["The Tyrol Tour: Remix","Grand Tourer","Tuner","Unique"],
     "isPrize": false,
-	
     "weight": 2120,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "Top notch of Brabus magic. Bigger fender flares, massive front splitter, carbon fiber everywhere you look from wheels to spoiler and a fully customized interior. Plus the engine tuned to make 900 hp as the name suggests.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BrabusRocket900OneofTen(2020).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 208, 
-    "3330to60": 2.6, 
-    "333Handling": 95,
-
-    "666TopSpeed": 210, 
-    "6660to60": 2.4, 
-    "666Handling": 98,
-
-    "996TopSpeed": 213, 
-    "9960to60": 2.3, 
-    "996Handling": 98,
-
-    "969TopSpeed": 213, 
-    "9690to60": 2.4, 
-    "969Handling": 102,
-
-    "699TopSpeed": 210, 
-    "6990to60": 2.3,
-    "699Handling": 102,
     "hiddenTag": [""]
 }

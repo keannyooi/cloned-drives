@@ -1,7 +1,7 @@
 {
     "carID": "c06040",
     "cr": 851,
-    "make": ["Brabus", "Mercedes-AMG", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-AMG","Mercedes-Benz"],
     "model": "900 XLP \"One of Ten\"",
     "modelYear": 2022,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 67.81,
     "ola": 66.66,
     "description": "",
-"333TopSpeed": 134,
-"3330to60": 4,
-"333Handling": 71,
-
-"666TopSpeed": 138,
-"6660to60": 3.8,
-"666Handling": 74,
-
-"699TopSpeed": 138,
-"6990to60": 3.6,
-"699Handling": 77,
-
-"969TopSpeed": 142,
-"9690to60": 3.8,
-"969Handling": 77,
-
-"996TopSpeed": 142,
-"9960to60": 3.6,
-"996Handling": 74,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Brabus900XLPOneofTen(2022).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

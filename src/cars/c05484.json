@@ -1,7 +1,7 @@
 {
     "carID": "c05484",
     "cr": 675,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "BTR III Flachbau",
     "modelYear": 1986,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 90.25,
     "ola": 77.56,
     "description": "",
-"333TopSpeed": 199,
-"3330to60": 4,
-"333Handling": 85,
-
-"666TopSpeed": 201,
-"6660to60": 3.8,
-"666Handling": 87,
-
-"699TopSpeed": 201,
-"6990to60": 3.6,
-"699Handling": 91,
-
-"969TopSpeed": 204,
-"9690to60": 3.8,
-"969Handling": 91,
-
-"996TopSpeed": 204,
-"9960to60": 3.6,
-"996Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufBTRIIIFlachbau(1986).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

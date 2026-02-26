@@ -6,13 +6,12 @@
     "modelYear": 1999,
     "country": "DE",
     "topSpeed": 188,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Endless Summer","Unique","Ultra Expensive","The Tyrol Tour: Remix","RestoMod"],
     "isPrize": false,
-	
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche959Cabriolet(1985).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 191,
-"3330to60": 3.8,
-"333Handling": 83,
-
-"666TopSpeed": 194,
-"6660to60": 3.6,
-"666Handling": 85,
-
-"699TopSpeed": 194,
-"6990to60": 3.4,
-"699Handling": 89,
-
-"969TopSpeed": 196,
-"9690to60": 3.6,
-"969Handling": 89,
-
-"996TopSpeed": 196,
-"9960to60": 3.4,
-"996Handling": 85,
     "hiddenTag": [""]
 }

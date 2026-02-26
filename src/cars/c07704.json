@@ -22,30 +22,8 @@
     "fuelType": "Petrol",
     "mra": 83.87,
     "ola": 96.37,
-	
     "description": "A souped up Saturn SC2 capable of taking the fight to faster sports cars of its day.",
-	
-"333TopSpeed": 134,
-"3330to60": 4.9,
-"333Handling": 83,
-
-"666TopSpeed": 138,
-"6660to60": 4.7,
-"666Handling": 85,
-
-"699TopSpeed": 138,
-"6990to60": 4.4,
-"699Handling": 89,
-
-"969TopSpeed": 142,
-"9690to60": 4.7,
-"969Handling": 89,
-
-"996TopSpeed": 142,
-"9960to60": 4.4,
-"996Handling": 85,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SaturnSC2Turbo(2001).png",
     "creator": "GAAN",
-	"hiddenTag": [""]
+    "hiddenTag": [""]
 }

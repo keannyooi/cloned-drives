@@ -10,9 +10,7 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan","OG"
-    ],
+    "tags": ["Super Sedan","OG"],
     "isPrize": false,
     "weight": 1900,
     "gc": "Low",
@@ -25,25 +23,6 @@
     "mra": 80.43,
     "ola": 85.25,
     "description": "Can this Italian sedan make you forget it has four doors?",
-"333TopSpeed": 192,
-"3330to60": 4.3,
-"333Handling": 85,
-
-"666TopSpeed": 195,
-"6660to60": 4,
-"666Handling": 87,
-
-"699TopSpeed": 195,
-"6990to60": 3.8,
-"699Handling": 91,
-
-"969TopSpeed": 197,
-"9690to60": 4,
-"969Handling": 91,
-
-"996TopSpeed": 197,
-"9960to60": 3.8,
-"996Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiQuattroporteGTS(2013).png",
     "creator": "Crossfire",
     "hiddenTag": [""]

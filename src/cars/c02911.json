@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Unique","Ultra Expensive","The Tyrol Tour"],
+    "tags": ["Hypercar","Unique","Ultra Expensive","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 2015,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BugattiW16Mistral(2022).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 263, 
-"3330to60": 2.2, 
-"333Handling": 95,
-
-"666TopSpeed": 265, 
-"6660to60": 2.1, 
-"666Handling": 98,
-
-"699TopSpeed": 265, 
-"6990to60": 2.0, 
-"699Handling": 102,
-
-"969TopSpeed": 267, 
-"9690to60": 2.1, 
-"969Handling": 102,
-
-"996TopSpeed": 267, 
-"9960to60": 2.0, 
-"996Handling": 98,
     "hiddenTag": [""]
 }

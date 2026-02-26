@@ -12,7 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-	
     "weight": 1620,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 48.10,
+    "mra": 48.1,
     "ola": 75.82,
     "description": "Does not look like a car that does 0-60 in over 10 seconds, but thats how much you can get from a 130 hp diesel engine.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoTonale1.6VGT-DTi(2022).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 122, 
-    "3330to60": 10.3, 
-    "333Handling": 76,
-
-    "666TopSpeed": 127, 
-    "6660to60": 9.7, 
-    "666Handling": 79,
-
-    "996TopSpeed": 131, 
-    "9960to60": 9.2, 
-    "996Handling": 79,
-
-    "969TopSpeed": 131, 
-    "9690to60": 9.7, 
-    "969Handling": 82,
-
-    "699TopSpeed": 127, 
-    "6990to60": 9.2, 
-    "699Handling": 82,
     "hiddenTag": [""]
 }

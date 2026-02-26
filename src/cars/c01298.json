@@ -10,9 +10,7 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan"
-    ],
+    "tags": ["Super Sedan"],
     "isPrize": false,
     "weight": 1620,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 69.51,
     "ola": 77.19,
     "description": "Not your grandfather's 1998 Camry.",
-"333TopSpeed": 140,
-"3330to60": 5.4,
-"333Handling": 84,
-
-"666TopSpeed": 144,
-"6660to60": 5.1,
-"666Handling": 86,
-
-"699TopSpeed": 144,
-"6990to60": 4.8,
-"699Handling": 90,
-
-"969TopSpeed": 147,
-"9690to60": 5.1,
-"969Handling": 90,
-
-"996TopSpeed": 147,
-"9960to60": 4.8,
-"996Handling": 86,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ToyotaCamryTRD(2020).png",
     "creator": "McNuggets",
     "hiddenTag": [""]

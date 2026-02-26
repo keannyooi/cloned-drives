@@ -1,7 +1,7 @@
 {
     "carID": "c03105",
     "cr": 926,
-    "make": ["Hoonigan", "Ford"],
+    "make": ["Hoonigan","Ford"],
     "model": "Escort Cossie",
     "modelYear": 2017,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "RestoMod"],
+    "tags": ["Tuner","Unique","RestoMod"],
     "isPrize": false,
-	
     "weight": 1220,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "Unfortunately this Cossie didnt last long as it got burnt. https://www.youtube.com/watch?v=m_KBvP0_8Tc",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HooniganEscortCossie(2017).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 165, 
-"3330to60": 2.4, 
-"333Handling": 94,
-
-"666TopSpeed": 168, 
-"6660to60": 2.2, 
-"666Handling": 97,
-
-"699TopSpeed": 168, 
-"6990to60": 2.1, 
-"699Handling": 101,
-
-"969TopSpeed": 172, 
-"9690to60": 2.2, 
-"969Handling": 101,
-
-"996TopSpeed": 172, 
-"9960to60": 2.1, 
-"996Handling": 97,
     "hiddenTag": [""]
 }

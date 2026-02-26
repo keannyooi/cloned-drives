@@ -1,7 +1,7 @@
 {
     "carID": "c03853",
     "cr": 582,
-    "make": ["Auto Union", "Audi"],
+    "make": ["Auto Union","Audi"],
     "model": "Type C Streamliner",
     "modelYear": 1937,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
     "isPrize": true,
-	
     "weight": 970,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AutoUnionTypeCStreamliner(1937).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 256,
-"3330to60": 4.3,
-"333Handling": 67,
-
-"666TopSpeed": 258,
-"6660to60": 4,
-"666Handling": 69,
-
-"699TopSpeed": 258,
-"6990to60": 3.8,
-"699Handling": 72,
-
-"969TopSpeed": 260,
-"9690to60": 4,
-"969Handling": 72,
-
-"996TopSpeed": 260,
-"9960to60": 3.8,
-"996Handling": 69,
     "hiddenTag": [""]
 }

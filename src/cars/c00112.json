@@ -6,13 +6,12 @@
     "modelYear": 1994,
     "country": "DE",
     "topSpeed": 163,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eargasm", "Innovative"],
+    "tags": ["Eargasm","Innovative"],
     "isPrize": true,
-
     "weight": 1657,
     "gc": "Low",
     "seatCount": 5,
@@ -21,30 +20,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 62.50,
-    "ola": 68.00,
+    "mra": 62.5,
+    "ola": 68,
     "description": "The wagon which started the RS family, engineered by Porsche.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiRS2Avant(1994).png",
     "creator": "Connor",
-
-    "333TopSpeed": 166,
-    "3330to60": 4.8,
-    "333Handling": 82,
-
-    "666TopSpeed": 169,
-    "6660to60": 4.5, 
-    "666Handling": 84,
-
-    "996TopSpeed": 173,
-    "9960to60": 4.3,
-    "996Handling": 84,
-
-    "969TopSpeed": 173,
-    "9690to60": 4.5,
-    "969Handling": 88,
-
-    "699TopSpeed": 169,
-    "6990to60": 4.3,
-    "699Handling": 88,
     "hiddenTag": [""]
 }

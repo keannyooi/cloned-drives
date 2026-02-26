@@ -10,13 +10,11 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Slick",
-    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Motorsport"],
+    "tags": ["The Tyrol Tour: Remix","Hot Hatch","Motorsport"],
     "isPrize": false,
-
-
     "weight": 1148,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 65.43,
     "ola": 85.66,
     "description": "The first and last time a diesel Golf R existed.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
-
-    "333TopSpeed": 158,
-    "3330to60": 5,
-    "333Handling": 88,
-    
-    "666TopSpeed": 162,
-    "6660to60": 4.8,
-    "666Handling": 91,
-    
-    "699TopSpeed": 162,
-    "6990to60": 4.5,
-    "699Handling": 94,
-    
-    "969TopSpeed": 165,
-    "9690to60": 4.8,
-    "969Handling": 94,
-    
-    "996TopSpeed": 165,
-    "9960to60": 4.5,
-    "996Handling": 91,
     "hiddenTag": [""]
 }

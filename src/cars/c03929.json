@@ -10,9 +10,8 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Endless Summer", "Eco-Friendly", "Concept", "The Americas Assault","Visionary Road"],
+    "tags": ["Endless Summer","Eco-Friendly","Concept","The Americas Assault","Visionary Road"],
     "isPrize": false,
-	
     "weight": 1890,
     "gc": "Low",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "The 4-Door NSX that wouldn't come to be.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AcuraPrecisionConcept(2016).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 182,
-"3330to60": 5.0,
-"333Handling": 85,
-
-"666TopSpeed": 185,
-"6660to60": 4.8,
-"666Handling": 87,
-
-"699TopSpeed": 185,
-"6990to60": 4.5,
-"699Handling": 91,
-
-"969TopSpeed": 188,
-"9690to60": 4.8,
-"969Handling": 91,
-
-"996TopSpeed": 188,
-"9960to60": 4.5,
-"996Handling": 87,
     "hiddenTag": [""]
 }

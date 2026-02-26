@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03402",
     "cr": 418,
     "make": "Fiat",
@@ -10,13 +10,11 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Slick",
-    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
     "isPrize": true,
-
-
     "weight": 780,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 57.94,
     "ola": 71.61,
     "description": "Ay! You bit my tongue off!.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPandaRally14Evoluzione(2007).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 134,
-    "3330to60": 5.9,
-    "333Handling": 84,
-    
-    "666TopSpeed": 138,
-    "6660to60": 5.6,
-    "666Handling": 86,
-    
-    "699TopSpeed": 138,
-    "6990to60": 5.3,
-    "699Handling": 90,
-    
-    "969TopSpeed": 142,
-    "9690to60": 5.6,
-    "969Handling": 90,
-    
-    "996TopSpeed": 142,
-    "9960to60": 5.3,
-    "996Handling": 86,
     "hiddenTag": [""]
 }

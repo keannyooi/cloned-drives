@@ -1,18 +1,17 @@
 {
     "carID": "c02861",
     "cr": 728,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "B4 Bi-Turbo Allrad",
     "modelYear": 2013,
     "country": "DE",
     "topSpeed": 188,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1765,
     "gc": "Low",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaB4SBi-TurboAllrad(2013).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 191, 
-"3330to60": 3.8, 
-"333Handling": 86,
-
-"666TopSpeed": 194, 
-"6660to60": 3.6, 
-"666Handling": 88,
-
-"699TopSpeed": 194, 
-"6990to60": 3.4, 
-"699Handling": 92,
-
-"969TopSpeed": 196, 
-"9690to60": 3.6, 
-"969Handling": 92,
-
-"996TopSpeed": 196, 
-"9960to60": 3.4, 
-"996Handling": 88,
     "hiddenTag": [""]
 }

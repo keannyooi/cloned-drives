@@ -1,5 +1,5 @@
 {
-	"carID": "c06491",
+    "carID": "c06491",
     "cr": 546,
     "make": "Ford",
     "model": "GT40 Mk I Road Car",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Unique","Track Day"],
     "isPrize": false,
-	
     "weight": 1080,
     "gc": "Low",
     "seatCount": 2,
@@ -24,27 +23,7 @@
     "mra": 77.26,
     "ola": 103.82,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT40MkIRoadCar(1965).png",
-
-"333TopSpeed": 178,
-"3330to60": 4.7,
-"333Handling": 80,
-
-"666TopSpeed": 181,
-"6660to60": 4.4,
-"666Handling": 82,
-
-"699TopSpeed": 181,
-"6990to60": 4.2,
-"699Handling": 85,
-
-"969TopSpeed": 184,
-"9690to60": 4.4,
-"969Handling": 85,
-
-"996TopSpeed": 184,
-"9960to60": 4.2,
-"996Handling": 82,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordGT40MkIRoadCar(1965).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

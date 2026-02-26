@@ -10,9 +10,8 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Eco-Friendly", "Year of the Rabbit","Visionary Road"],
+    "tags": ["Concept","Unique","Eco-Friendly","Year of the Rabbit","Visionary Road"],
     "isPrize": false,
-	
     "weight": 480,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The Urban Concept is what Audi claims to be a completely new species of car, even though we can probably classify it as a Lotus 7 with a roof. I don't mean to shun on its design, however - it looks like the perfect car for a young person living in the city who wants to drive something exciting. It manages to be Caterham levels of light while being powered by electricity - an impressive technological feat.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiUrbanConcept(2011).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 70, 
-    "3330to60": 15.5, 
-    "333Handling": 70,
-
-    "666TopSpeed": 79, 
-    "6660to60": 14.7, 
-    "666Handling": 72,
-
-    "699TopSpeed": 79, 
-    "6990to60": 13.9, 
-    "699Handling": 75,
-
-    "969TopSpeed": 87, 
-    "9690to60": 14.7, 
-    "969Handling": 75,
-
-    "996TopSpeed": 87, 
-    "9960to60": 13.9, 
-    "996Handling": 72,
     "hiddenTag": [""]
 }

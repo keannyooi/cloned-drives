@@ -10,9 +10,8 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eurotech Elite", "Eargasm", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "tags": ["Eurotech Elite","Eargasm","Supercar","Style Icon","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1640,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The most powerful 1st gen Spyder model.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiR8GTSpyder(2010).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 200, 
-    "3330to60": 3.5, 
-    "333Handling": 90,
-
-    "666TopSpeed": 202, 
-    "6660to60": 3.3, 
-    "666Handling": 93,
-
-    "996TopSpeed": 205, 
-    "9960to60": 3.1, 
-    "996Handling": 93,
-
-    "969TopSpeed": 205, 
-    "9690to60": 3.3, 
-    "969Handling": 97,
-
-    "699TopSpeed": 202, 
-    "6990to60": 3.1, 
-    "699Handling": 97,
     "hiddenTag": [""]
 }

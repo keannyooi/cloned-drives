@@ -10,9 +10,8 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Eco-Friendly", "Year of the Rabbit", "Rest of The World"],
+    "tags": ["Oddity","Eco-Friendly","Year of the Rabbit","Rest of The World"],
     "isPrize": false,
-	
     "weight": 1100,
     "gc": "Low",
     "seatCount": 3,
@@ -26,25 +25,5 @@
     "description": "To the dismay of whoever's reading this, the XD is not named after an emoticon - the X comes from the shape of its tail lights (as shown here) and the D comes from the company name, DOK-ING (which usually produces unmanned terrestrial vehicles). It's body is made from kevlar and carbon fiber - an unusual choice for a city car, but understandable since the car is going after the premium market segment and it's designed to go quite fast, for some reason. To the dismay of the people at DOK-ING, the car never entered mass production due to funding issues.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DOK-INGXD2(2011).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 87, 
-    "3330to60": 7.0, 
-    "333Handling": 75,
-
-    "666TopSpeed": 94, 
-    "6660to60": 6.7, 
-    "666Handling": 78,
-
-    "699TopSpeed": 94, 
-    "6990to60": 6.3, 
-    "699Handling": 81,
-
-    "969TopSpeed": 100, 
-    "9690to60": 6.7, 
-    "969Handling": 81,
-
-    "996TopSpeed": 100, 
-    "9960to60": 6.3, 
-    "996Handling": 78,
     "hiddenTag": [""]
 }

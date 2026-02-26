@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03394",
     "cr": 211,
     "make": "Fiat",
@@ -10,13 +10,11 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly"],
     "isPrize": false,
-
-
     "weight": 1050,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 12.22,
     "ola": 53.87,
     "description": "Natural Power, Flowers and Gardens, Trees and Greta.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda124x4CrossNaturalPower(2008).png",
     "creator": "Andu",
-   
-    "333TopSpeed": 98,
-    "3330to60": 15.6,
-    "333Handling": 67,
-    
-    "666TopSpeed": 103,
-    "6660to60": 14.8,
-    "666Handling": 69,
-    
-    "699TopSpeed": 103,
-    "6990to60": 13.9,
-    "699Handling": 72,
-    
-    "969TopSpeed": 109,
-    "9690to60": 14.8,
-    "969Handling": 72,
-    
-    "996TopSpeed": 109,
-    "9960to60": 13.9,
-    "996Handling": 69,
     "hiddenTag": [""]
 }

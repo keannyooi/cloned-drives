@@ -10,9 +10,8 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Unique", "The Japanese Odyssey","Visionary Road"],
+    "tags": ["Concept","Unique","The Japanese Odyssey","Visionary Road"],
     "isPrize": false,
-
     "weight": 3169,
     "gc": "High",
     "seatCount": 6,
@@ -24,27 +23,6 @@
     "mra": 48.07,
     "ola": 72.75,
     "description": "Play this in any Forza Horizon. Fit it with wheels, size it up and now it weighs more than the Buckingham Palace.",
- 
-    "333TopSpeed": 135,
-    "3330to60": 8.7,
-    "333Handling": 67,
-
-    "666TopSpeed": 139,
-    "6660to60": 8.3,
-    "666Handling": 69,
-
-    "996TopSpeed": 143,
-    "9960to60": 7.8,
-    "996Handling": 69,
-
-    "969TopSpeed": 143,
-    "9690to60": 8.3,
-    "969Handling": 72,
-
-    "699TopSpeed": 139,
-    "6990to60": 7.8,
-    "699Handling": 72,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanTitanWC(2016).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

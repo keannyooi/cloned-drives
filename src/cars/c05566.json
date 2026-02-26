@@ -10,7 +10,7 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["CD 2.0: New Era", "Eco-Friendly", "Concept"],
+    "tags": ["CD 2.0: New Era","Eco-Friendly","Concept"],
     "isPrize": false,
     "weight": 1583,
     "gc": "Medium",
@@ -23,25 +23,6 @@
     "mra": 5.66,
     "ola": 62.61,
     "description": "After taking a break for 2 gens, the EV Golf is back! kinda.",
-    "333TopSpeed": 93,
-    "3330to60": 10.9,
-    "333Handling": 73,
-    
-    "666TopSpeed": 99,
-    "6660to60": 10.3,
-    "666Handling": 76,
-    
-    "699TopSpeed": 99,
-    "6990to60": 9.8,
-    "699Handling": 79,
-    
-    "969TopSpeed": 105,
-    "9690to60": 10.3,
-    "969Handling": 79,
-    
-    "996TopSpeed": 105,
-    "9960to60": 9.8,
-    "996Handling": 76,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VolkswagenGolfBlue-e-motionPrototype(2010).png",
     "creator": "Andu",
     "hiddenTag": [""]

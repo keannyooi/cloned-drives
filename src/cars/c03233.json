@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 844,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 14.05,
     "ola": 53.66,
     "description": "The top of the line standard Golf of the 70s.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1600LS(1975).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 11.7,
-    "333Handling": 68,
-
-    "666TopSpeed": 110,
-    "6660to60": 11.1, 
-    "666Handling": 70,
-
-    "996TopSpeed": 116,
-    "9960to60": 10.5,
-    "996Handling": 70,
-
-    "969TopSpeed": 116,
-    "9690to60": 11.1,
-    "969Handling": 73,
-
-    "699TopSpeed": 110,
-    "6990to60": 10.5,
-    "699Handling": 73,
     "hiddenTag": [""]
 }

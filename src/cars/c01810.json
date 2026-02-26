@@ -1,10 +1,7 @@
 {
     "carID": "c01810",
     "cr": 642,
-    "make": [
-        "Opera Performance",
-        "Nissan"
-    ],
+    "make": ["Opera Performance","Nissan"],
     "model": "350Z",
     "modelYear": 2004,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Unique","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1340,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 72.73,
     "ola": 83.33,
     "description": "Not to be confused with the one you can buy in the Polyphony Digital dealership in Gran Turismo.",
-     "333TopSpeed": 181,
-    "3330to60": 4.6,
-    "333Handling": 91,
-    "666TopSpeed": 184,
-    "6660to60": 4.3,
-    "666Handling": 94,
-    "996TopSpeed": 187,
-    "9960to60": 4.1,
-    "996Handling": 94,
-    "969TopSpeed": 187,
-    "9690to60": 4.3,
-    "969Handling": 98,
-    "699TopSpeed": 184,
-    "6990to60": 4.1,
-    "699Handling": 98,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OperaPerformance350Z(2004).png",
     "creator": "Keanny",
     "hiddenTag": [""]

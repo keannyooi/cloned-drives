@@ -10,9 +10,8 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Muscle Car", "The Americas Assault","Cloned Drives Beta: Last of"],
+    "tags": ["Muscle Car","The Americas Assault","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1970,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Name a better combo.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeMagnumRTAWD(2005).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 130,
-"3330to60": 5.6,
-"333Handling": 69,
-
-"666TopSpeed": 134,
-"6660to60": 5.3,
-"666Handling": 71,
-
-"699TopSpeed": 134,
-"6990to60": 5.0,
-"699Handling": 74,
-
-"969TopSpeed": 138,
-"9690to60": 5.3,
-"969Handling": 74,
-
-"996TopSpeed": 138,
-"9960to60": 5.0,
-"996Handling": 71,
     "hiddenTag": [""]
 }

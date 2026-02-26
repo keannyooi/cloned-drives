@@ -1,10 +1,7 @@
 {
     "carID": "c00508",
     "cr": 788,
-    "make": [
-        "Hennessey",
-        "Dodge"
-    ],
+    "make": ["Hennessey","Dodge"],
     "model": "Viper Venom 600 GTS",
     "modelYear": 1997,
     "country": "US",
@@ -13,11 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique",
-        "Supercar"
-    ],
+    "tags": ["Tuner","Unique","Supercar"],
     "isPrize": true,
     "weight": 1474,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 100,
     "ola": 86.49,
     "description": "A tuned Viper by Hennessey that adds 150 more hp to the original Viper GTS.",
-     "333TopSpeed": 208,
-    "3330to60": 3.5,
-    "333Handling": 94,
-    "666TopSpeed": 210,
-    "6660to60": 3.3,
-    "666Handling": 97,
-    "969TopSpeed": 213,
-    "9690to60": 3.3,
-    "969Handling": 101,
-    "996TopSpeed": 213,
-    "9960to60": 3.1,
-    "996Handling": 97,
-    "699TopSpeed": 210,
-    "6990to60": 3.1,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyViperVenom600GTS(1997).png",
     "creator": "Spence",
     "hiddenTag": [""]

@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c04025",
     "cr": 393,
     "make": "Volkswagen",
@@ -10,13 +10,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer"],
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1928,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,28 +23,7 @@
     "mra": 51.01,
     "ola": 73.68,
     "description": "Do you remember the days where a Hatchback weighed almost nothing? Good times.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenID.3TourProS(2020).png",
     "creator": "Andu",
-
-    "333TopSpeed": 105,
-    "3330to60": 7.2,
-    "333Handling": 80,
-    
-    "666TopSpeed": 110,
-    "6660to60": 6.8,
-    "666Handling": 82,
-    
-    "699TopSpeed": 110,
-    "6990to60": 6.5,
-    "699Handling": 85,
-    
-    "969TopSpeed": 116,
-    "9690to60": 6.8,
-    "969Handling": 85,
-    
-    "996TopSpeed": 116,
-    "9960to60": 6.5,
-    "996Handling": 82,
     "hiddenTag": [""]
 }

@@ -1,18 +1,17 @@
 {
     "carID": "c03423",
     "cr": 914,
-    "make": ["Edo Competition", "Maserati"],
+    "make": ["Edo Competition","Maserati"],
     "model": "MC12 XX",
     "modelYear": 2007,
     "country": "DE",
     "topSpeed": 236,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Ultra Expensive","Unique","Tuner","Track Day","The Tyrol Tour: Remix"],
     "isPrize": false,
-	
     "weight": 1235,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/EdoCompetitionMC12XX(2007).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 238,
-"3330to60": 2.8,
-"333Handling": 97,
-
-"666TopSpeed": 240,
-"6660to60": 2.7,
-"666Handling": 100,
-
-"699TopSpeed": 240,
-"6990to60": 2.5,
-"699Handling": 104,
-
-"969TopSpeed": 243,
-"9690to60": 2.7,
-"969Handling": 104,
-
-"996TopSpeed": 243,
-"9960to60": 2.5,
-"996Handling": 100,
     "hiddenTag": [""]
 }

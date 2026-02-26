@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1159,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,29 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 31.16,
-    "ola": 58.20,
+    "ola": 58.2,
     "description": "Second generation of the box, this time a bit less boxy but still Japanese and diesel",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OpelAgila13CDTIecoFLEX(2009).png",
     "creator": "Connor",
-
-    "333TopSpeed": 108,
-    "3330to60": 12.7,
-    "333Handling": 69,
-
-    "666TopSpeed": 113,
-    "6660to60": 12.1, 
-    "666Handling": 71,
-
-    "996TopSpeed": 118,
-    "9960to60": 11.4,
-    "996Handling": 71,
-
-    "969TopSpeed": 118,
-    "9690to60": 12.1,
-    "969Handling": 74,
-
-    "699TopSpeed": 113,
-    "6990to60": 11.4,
-    "699Handling": 74,
     "hiddenTag": [""]
 }

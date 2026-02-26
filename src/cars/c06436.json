@@ -1,5 +1,5 @@
 {
-	"carID": "c06436",
+    "carID": "c06436",
     "cr": 725,
     "make": "Dodge",
     "model": "Challenger SRT Hellcat",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["CDCCS","The Americas Assault","Muscle Car"],
     "isPrize": false,
-	
     "weight": 2020,
     "gc": "Low",
     "seatCount": 5,
@@ -24,27 +23,7 @@
     "mra": 92.31,
     "ola": 100,
     "description": "",
-	"racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTHellcat2019.png",
-
-"333TopSpeed": 202,
-"3330to60": 3.4,
-"333Handling": 86,
-
-"666TopSpeed": 204,
-"6660to60": 3.2,
-"666Handling": 88,
-
-"699TopSpeed": 204,
-"6990to60": 3.1,
-"699Handling": 92,
-
-"969TopSpeed": 207,
-"9690to60": 3.2,
-"969Handling": 92,
-
-"996TopSpeed": 207,
-"9960to60": 3.1,
-"996Handling": 88,
+    "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSRTHellcat2019.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""]
 }

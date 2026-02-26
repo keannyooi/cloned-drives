@@ -10,9 +10,8 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Concept", "The Americas Assault"],
+    "tags": ["Concept","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1885,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "S'more?",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeHornetRTGLHConcept(2023).png",
     "creator": "DodgeDemon",
-	
-"333TopSpeed": 132,
-"3330to60": 5.3,
-"333Handling": 83,
-
-"666TopSpeed": 136,
-"6660to60": 5.0,
-"666Handling": 85,
-
-"699TopSpeed": 136,
-"6990to60": 4.8,
-"699Handling": 89,
-
-"969TopSpeed": 140,
-"9690to60": 5.0,
-"969Handling": 89,
-
-"996TopSpeed": 140,
-"9960to60": 4.8,
-"996Handling": 85,
     "hiddenTag": [""]
 }

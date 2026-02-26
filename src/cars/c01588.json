@@ -6,13 +6,11 @@
     "modelYear": 2008,
     "country": "JP",
     "topSpeed": 125,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 2803,
     "gc": "High",
@@ -25,25 +23,6 @@
     "mra": 62.74,
     "ola": 67.57,
     "description": "The Japanese Range Rover is a wonderfully lavish lug.",
-"333TopSpeed": 129,
-"3330to60": 6.6,
-"333Handling": 69,
-
-"666TopSpeed": 133,
-"6660to60": 6.3,
-"666Handling": 71,
-
-"699TopSpeed": 133,
-"6990to60": 6,
-"699Handling": 74,
-
-"969TopSpeed": 137,
-"9690to60": 6.3,
-"969Handling": 74,
-
-"996TopSpeed": 137,
-"9960to60": 6,
-"996Handling": 71,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LexusLX570(2008).png",
     "creator": "AK1",
     "hiddenTag": [""]

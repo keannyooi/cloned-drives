@@ -6,13 +6,12 @@
     "modelYear": 2019,
     "country": "DE",
     "topSpeed": 124,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
     "weight": 2414,
     "gc": "High",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 39.55,
     "ola": 62.86,
     "description": "The Mercedes G 350 d might be £50,000 cheaper than the V8 AMG G-Class, but does it offer better value for money?",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-BenzG350d(2019).png",
     "creator": "Havvy",
-
-    "333TopSpeed": 128,
-    "3330to60": 6.7,
-    "333Handling": 67,
-
-    "666TopSpeed": 132,
-    "6660to60": 6.3,
-    "666Handling": 69,
-
-    "996TopSpeed": 137,
-    "9960to60": 6.0,
-    "996Handling": 69,
-
-    "969TopSpeed": 137,
-    "9690to60": 6.3,
-    "969Handling": 72,
-
-    "699TopSpeed": 132,
-    "6990to60": 6.0,
-    "699Handling": 72,
     "hiddenTag": [""]
 }

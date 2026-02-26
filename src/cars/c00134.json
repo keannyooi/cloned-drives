@@ -1,10 +1,7 @@
 {
     "carID": "c00134",
     "cr": 619,
-    "make": [
-        "Autodelta",
-        "Alfa Romeo"
-    ],
+    "make": ["Autodelta","Alfa Romeo"],
     "model": "147 GTA AM 3.2 Super",
     "modelYear": 2007,
     "country": "GB",
@@ -13,11 +10,7 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Tuner",
-        "Sleeper"
-    ],
+    "tags": ["Hot Hatch","Tuner","Sleeper"],
     "isPrize": false,
     "weight": 1360,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 75.38,
     "ola": 89.8,
     "description": "A lower performance variant to complement with the updated 422hp 3.7 Super.",
-     "333TopSpeed": 180,
-    "3330to60": 4.7,
-    "333Handling": 88,
-    "666TopSpeed": 183,
-    "6660to60": 4.4,
-    "666Handling": 91,
-    "996TopSpeed": 186,
-    "9960to60": 4.2,
-    "996Handling": 91,
-    "969TopSpeed": 186,
-    "9690to60": 4.4,
-    "969Handling": 94,
-    "699TopSpeed": 183,
-    "6990to60": 4.2,
-    "699Handling": 94,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta147GTAAM3.2Super(2007).png",
     "creator": "Keanny",
     "hiddenTag": [""]

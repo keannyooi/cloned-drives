@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eco-Friendly"],
     "isPrize": false,
-
     "weight": 2125,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,28 +23,7 @@
     "mra": 79.69,
     "ola": 78.43,
     "description": "Entry-level Taycan with RWD only.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PorscheTaycanBase(2021).png",
     "creator": "Connor",
-
-    "333TopSpeed": 147,
-    "3330to60": 4.8,
-    "333Handling": 83,
-
-    "666TopSpeed": 150,
-    "6660to60": 4.6,
-    "666Handling": 85,
-
-    "996TopSpeed": 154,
-    "9960to60": 4.3,
-    "996Handling": 85,
-
-    "969TopSpeed": 154,
-    "9690to60": 4.6,
-    "969Handling": 89,
-
-    "699TopSpeed": 150,
-    "6990to60": 4.3,
-    "699Handling": 89,
     "hiddenTag": [""]
 }

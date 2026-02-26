@@ -1,7 +1,7 @@
 {
     "carID": "c06265",
     "cr": 647,
-    "make": ["AMG", "Mercedes-Benz","Mercedes-AMG"],
+    "make": ["AMG","Mercedes-Benz","Mercedes-AMG"],
     "model": "E 6.0 V8 Hammer",
     "modelYear": 1987,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 75.36,
     "ola": 91.2,
     "description": "",
-"333TopSpeed": 191,
-"3330to60": 4.5,
-"333Handling": 82,
-
-"666TopSpeed": 194,
-"6660to60": 4.2,
-"666Handling": 84,
-
-"699TopSpeed": 194,
-"6990to60": 4,
-"699Handling": 88,
-
-"969TopSpeed": 196,
-"9690to60": 4.2,
-"969Handling": 88,
-
-"996TopSpeed": 196,
-"9960to60": 4,
-"996Handling": 84,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMGE60V8Hammer(1987).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

@@ -1,10 +1,7 @@
 {
     "carID": "c01627",
     "cr": 418,
-    "make": [
-        "Mazdaspeed",
-        "Mazda"
-    ],
+    "make": ["Mazdaspeed","Mazda"],
     "model": "Protege",
     "modelYear": 2003,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1290,
     "gc": "Medium",
@@ -30,21 +23,6 @@
     "mra": 60.68,
     "ola": 67.61,
     "description": "Remember the MP3? Here's the sequel. Better buckle up.",
-     "333TopSpeed": 134,
-    "3330to60": 6.7,
-    "333Handling": 82,
-    "666TopSpeed": 138,
-    "6660to60": 6.4,
-    "666Handling": 84,
-    "996TopSpeed": 142,
-    "9960to60": 6,
-    "996Handling": 84,
-    "969TopSpeed": 142,
-    "9690to60": 6.4,
-    "969Handling": 88,
-    "699TopSpeed": 138,
-    "6990to60": 6,
-    "699Handling": 88,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MazdaspeedProtege(2003).png",
     "creator": "Based",
     "hiddenTag": [""]

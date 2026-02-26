@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 1473,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Biggest engine ever put in a 3008.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot30082.0BlueHDi180(2016).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 133,
-    "3330to60": 8.3,
-    "333Handling": 77,
-
-    "666TopSpeed": 137,
-    "6660to60": 7.8,
-    "666Handling": 80,
-
-    "699TopSpeed": 137,
-    "6990to60": 7.4,
-    "699Handling": 83,
-
-    "969TopSpeed": 141,
-    "9690to60": 7.8,
-    "969Handling": 83,
-
-    "996TopSpeed": 141,
-    "9960to60": 7.4,
-    "996Handling": 80,
     "hiddenTag": [""]
 }

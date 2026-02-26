@@ -1,7 +1,7 @@
 {
     "carID": "c03755",
     "cr": 918,
-    "make": ["Alpina", "BMW"],
+    "make": ["Alpina","BMW"],
     "model": "XB7",
     "modelYear": 2023,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Endless Summer","Tuner","The Tyrol Tour: Remix","Extreme Juggernaut"],
     "isPrize": false,
-	
     "weight": 2670,
     "gc": "High",
     "seatCount": 7,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaXB7(2023).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 183,
-"3330to60": 3.7,
-"333Handling": 83,
-
-"666TopSpeed": 186,
-"6660to60": 3.5,
-"666Handling": 85,
-
-"699TopSpeed": 186,
-"6990to60": 3.3,
-"699Handling": 89,
-
-"969TopSpeed": 189,
-"9690to60": 3.5,
-"969Handling": 89,
-
-"996TopSpeed": 189,
-"9960to60": 3.3,
-"996Handling": 85,
     "hiddenTag": [""]
 }

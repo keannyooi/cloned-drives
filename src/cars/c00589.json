@@ -10,9 +10,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Grand Tourer"
-    ],
+    "tags": ["Grand Tourer"],
     "isPrize": false,
     "weight": 1730,
     "gc": "Low",
@@ -25,25 +23,6 @@
     "mra": 80,
     "ola": 80,
     "description": "AWD variant of a quick cat.",
-"333TopSpeed": 189,
-"3330to60": 3.6,
-"333Handling": 92,
-
-"666TopSpeed": 192,
-"6660to60": 3.4,
-"666Handling": 95,
-
-"699TopSpeed": 192,
-"6990to60": 3.2,
-"699Handling": 99,
-
-"969TopSpeed": 194,
-"9690to60": 3.4,
-"969Handling": 99,
-
-"996TopSpeed": 194,
-"9960to60": 3.2,
-"996Handling": 95,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarF-TypeRAWD(2015).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

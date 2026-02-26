@@ -10,9 +10,8 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "tags": ["Hypercar","Unique","Ultra Expensive"],
     "isPrize": true,
-	
     "weight": 1525,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniSC18Alston(2018).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 212, 
-"3330to60": 2.6, 
-"333Handling": 99,
-
-"666TopSpeed": 215, 
-"6660to60": 2.4, 
-"666Handling": 102,
-
-"699TopSpeed": 215, 
-"6990to60": 2.3, 
-"699Handling": 107,
-
-"969TopSpeed": 217, 
-"9690to60": 2.4, 
-"969Handling": 107,
-
-"996TopSpeed": 217, 
-"9960to60": 2.3, 
-"996Handling": 102,
     "hiddenTag": [""]
 }

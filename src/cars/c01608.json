@@ -10,10 +10,7 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey",
-        "Year of the Horse"
-    ],
+    "tags": ["The Japanese Odyssey","Year of the Horse"],
     "isPrize": false,
     "weight": 1083,
     "gc": "Medium",
@@ -26,24 +23,7 @@
     "mra": 33.33,
     "ola": 78.65,
     "description": "A very promising car that got eclipsed by its japanese cousins.",
-    "333TopSpeed": 116,
-    "3330to60": 8.5,
-    "333Handling": 68,
-    "666TopSpeed": 120,
-    "6660to60": 8,
-    "666Handling": 70,
-    "996TopSpeed": 125,
-    "9960to60": 7.6,
-    "996Handling": 70,
-    "969TopSpeed": 125,
-    "9690to60": 8,
-    "969Handling": 73,
-    "699TopSpeed": 120,
-    "6990to60": 7.6,
-    "699Handling": 73,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MazdaProtegeDX(1990).png",
     "creator": "Based",
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

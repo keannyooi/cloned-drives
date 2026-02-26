@@ -6,7 +6,7 @@
     "modelYear": 2000,
     "country": "DE",
     "topSpeed": 148,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Standard",
@@ -20,31 +20,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 56.00,
+    "mra": 56,
     "ola": 71.42,
-
     "description": "The fifth ultimate under 35k sedan for Car and Driver.",
-
-"333TopSpeed": 152,
-"3330to60": 6.6,
-"333Handling": 77,
-
-"666TopSpeed": 155,
-"6660to60": 6.3,
-"666Handling": 80,
-
-"699TopSpeed": 155,
-"6990to60": 6,
-"699Handling": 83,
-
-"969TopSpeed": 159,
-"9690to60": 6.3,
-"969Handling": 83,
-
-"996TopSpeed": 159,
-"9960to60": 6,
-"996Handling": 80,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA430V6quattro(2000).png",
     "creator": "Connor",
     "hiddenTag": [""]

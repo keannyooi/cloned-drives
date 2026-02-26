@@ -6,13 +6,12 @@
     "modelYear": 2020,
     "country": "IT",
     "topSpeed": 152,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eurotech Elite", "Eco-Friendly"],
+    "tags": ["Eurotech Elite","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 2090,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "Hybrid version added to the Levante lineup as a more efficient alternative. Uses 2-liter 4-cylinder unlike all other Levante's that uses either V6 or V8.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiLevanteHybrid(2020).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 155, 
-    "3330to60": 5.7, 
-    "333Handling": 82,
-
-    "666TopSpeed": 159, 
-    "6660to60": 5.4, 
-    "666Handling": 84,
-
-    "996TopSpeed": 162, 
-    "9960to60": 5.1, 
-    "996Handling": 84,
-
-    "969TopSpeed": 162, 
-    "9690to60": 5.4, 
-    "969Handling": 88,
-
-    "699TopSpeed": 159, 
-    "6990to60": 5.1, 
-    "699Handling": 88,
     "hiddenTag": [""]
 }

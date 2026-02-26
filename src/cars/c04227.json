@@ -10,10 +10,8 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Innovative", "Motorsport", "Eurotech Elite"],
+    "tags": ["Innovative","Motorsport","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1100,
     "gc": "Medium",
     "seatCount": 2,
@@ -22,30 +20,10 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 75.00,
+    "mra": 75,
     "ola": 76.74,
     "description": "Shortened version of the quattro started rallying during the 1984 season, rallying alongside regular quattro.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiquattroS1GroupB(1984).png",
     "creator": "Connor",
-
-    "333TopSpeed": 141,
-    "3330to60": 3.1,
-    "333Handling": 88,
-
-    "666TopSpeed": 145,
-    "6660to60": 3.0, 
-    "666Handling": 91,
-
-    "996TopSpeed": 148,
-    "9960to60": 2.8,
-    "996Handling": 91,
-
-    "969TopSpeed": 148,
-    "9690to60": 3.0,
-    "969Handling": 94,
-
-    "699TopSpeed": 145,
-    "6990to60": 2.8,
-    "699Handling": 94,
     "hiddenTag": [""]
 }

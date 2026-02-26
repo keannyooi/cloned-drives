@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "Eurotech Elite"],
+    "tags": ["Innovative","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 899,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "With its quirky looks and space france aluminium bodyshell, A2 was the first premium supermini.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA214MPI(2000).png",
     "creator": "Connor",
-
-    "333TopSpeed": 113,
-    "3330to60": 11.2,
-    "333Handling": 72,
-
-    "666TopSpeed": 118,
-    "6660to60": 10.6, 
-    "666Handling": 75,
-
-    "996TopSpeed": 122,
-    "9960to60": 10.0,
-    "996Handling": 75,
-
-    "969TopSpeed": 122,
-    "9690to60": 10.6,
-    "969Handling": 78,
-
-    "699TopSpeed": 118,
-    "6990to60": 10.0,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

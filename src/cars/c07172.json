@@ -1,7 +1,7 @@
 {
     "carID": "c07172",
     "cr": 271,
-    "make": ["Brabus", "Mercedes-Benz"],
+    "make": ["Brabus","Mercedes-Benz"],
     "model": "PowerXtra D3",
     "modelYear": 2004,
     "country": "DE",
@@ -22,29 +22,7 @@
     "fuelType": "Diesel",
     "mra": 62.45,
     "ola": 74.64,
-
     "description": "Diesel, Brabus and B-Class are 3 words that probably should not have been together.",
-
-"333TopSpeed": 137,
-"3330to60": 7.7,
-"333Handling": 77,
-
-"666TopSpeed": 141,
-"6660to60": 7.3,
-"666Handling": 80,
-
-"699TopSpeed": 141,
-"6990to60": 6.9,
-"699Handling": 83,
-
-"969TopSpeed": 145,
-"9690to60": 7.3,
-"969Handling": 83,
-
-"996TopSpeed": 145,
-"9960to60": 6.9,
-"996Handling": 80,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BrabusPowerXtraD3(2004).png",
     "creator": "Pfugs",
     "hiddenTag": [""]

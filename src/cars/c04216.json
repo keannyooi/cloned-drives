@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Concept","Eurotech Elite","Unique"],
     "isPrize": true,
-
     "weight": 750,
     "gc": "Low",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The Pininfarina Enjoy was a pure-bred barchetta racer made to celebrate the famous design firm's 75th anniversary. Mechanically similar to the Lotus Elise and featuring the same engine found in the Elise 135R, the car's wing panels were notably removable, revealing a secret open-wheel design. Interestingly, it was rebadged as the Hafei Saibao when it was shown in Shanghai later that year and it was trapped there afterwards due to the SARS pandemic.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PininfarinaEnjoyConcept(2003).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 128,
-    "3330to60": 5.1,
-    "333Handling": 93,
-
-    "666TopSpeed": 132,
-    "6660to60": 4.9,
-    "666Handling": 96,
-
-    "699TopSpeed": 132,
-    "6990to60": 4.6,
-    "699Handling": 100,
-
-    "969TopSpeed": 137,
-    "9690to60": 4.9,
-    "969Handling": 100,
-
-    "996TopSpeed": 137,
-    "9960to60": 4.6,
-    "996Handling": 96,
     "hiddenTag": [""]
 }

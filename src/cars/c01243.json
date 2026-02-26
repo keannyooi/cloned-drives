@@ -10,9 +10,7 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Oddity"
-    ],
+    "tags": ["Oddity"],
     "isPrize": false,
     "weight": 1100,
     "gc": "Medium",
@@ -25,25 +23,6 @@
     "mra": 36.43,
     "ola": 73.17,
     "description": "You have been visited by a random child. Say hi to him or else he will feel sad.",
-"333TopSpeed": 99,
-"3330to60": 11.2,
-"333Handling": 65,
-
-"666TopSpeed": 104,
-"6660to60": 10.6,
-"666Handling": 67,
-
-"699TopSpeed": 104,
-"6990to60": 10,
-"699Handling": 70,
-
-"969TopSpeed": 110,
-"9690to60": 10.6,
-"969Handling": 70,
-
-"996TopSpeed": 110,
-"9960to60": 10,
-"996Handling": 67,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SuzukiX-90(1995).png",
     "creator": "Keanny",
     "hiddenTag": [""]

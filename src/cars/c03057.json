@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique","The Tyrol Tour"],
     "isPrize": false,
-    
     "weight": 1350,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "One of the rare race versions of the 928.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Porsche928SRennversionTrigema(1981).png",
     "creator": "c6",
-
-    "333TopSpeed": 171,
-    "3330to60": 5.5,
-    "333Handling": 80,
-
-    "666TopSpeed": 174,
-    "6660to60": 5.2,
-    "666Handling": 82,
-
-    "996TopSpeed": 177,
-    "9960to60": 4.9,
-    "996Handling": 82,
-
-    "969TopSpeed": 177,
-    "9690to60": 5.2,
-    "969Handling": 85,
-
-    "699TopSpeed": 174,
-    "6990to60": 4.9,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

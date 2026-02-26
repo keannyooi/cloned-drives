@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 1411,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "TDI.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SkodaOctaviaCombi19TDI4x4LX(1999).png",
     "creator": "Connor",
-
-    "333TopSpeed": 113,
-    "3330to60": 13.7,
-    "333Handling": 71,
-
-    "666TopSpeed": 118,
-    "6660to60": 13.0, 
-    "666Handling": 74,
-
-    "996TopSpeed": 122,
-    "9960to60": 12.2,
-    "996Handling": 74,
-
-    "969TopSpeed": 122,
-    "9690to60": 13.0,
-    "969Handling": 77,
-
-    "699TopSpeed": 118,
-    "6990to60": 12.2,
-    "699Handling": 77,
     "hiddenTag": [""]
 }

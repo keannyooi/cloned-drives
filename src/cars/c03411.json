@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03411",
     "cr": 418,
     "make": "Fiat",
@@ -10,13 +10,11 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
     "isPrize": false,
-
-
     "weight": 1400,
     "gc": "High",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 19.27,
     "ola": 49.52,
     "description": "The cutest little Dakar thing.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanDAKAR(2007).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 114,
-    "3330to60": 10,
-    "333Handling": 67,
-    
-    "666TopSpeed": 119,
-    "6660to60": 9.5,
-    "666Handling": 69,
-    
-    "699TopSpeed": 119,
-    "6990to60": 8.9,
-    "699Handling": 72,
-    
-    "969TopSpeed": 123,
-    "9690to60": 9.5,
-    "969Handling": 72,
-    
-    "996TopSpeed": 123,
-    "9960to60": 8.9,
-    "996Handling": 69,
     "hiddenTag": [""]
 }

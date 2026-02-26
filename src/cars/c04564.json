@@ -1,7 +1,7 @@
 {
     "carID": "c04564",
     "cr": 424,
-    "make": ["Artz", "Porsche"],
+    "make": ["Artz","Porsche"],
     "model": "Nordstadt Carrera Beetle",
     "modelYear": 1973,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Eurotech Elite","Tuner","Unique","Concept","Oddity","Hot Hatch","Cloned Drives Beta: Last of"],
     "isPrize": false,
-	
     "weight": 890,
     "gc": "Low",
     "seatCount": 2,
@@ -25,26 +24,6 @@
     "ola": 76.49,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ArtzNordstadtCarreraBeetle(1973).png",
-
-"333TopSpeed": 152,
-"3330to60": 5.6,
-"333Handling": 76,
-
-"666TopSpeed": 156,
-"6660to60": 5.3,
-"666Handling": 79,
-
-"699TopSpeed": 156,
-"6990to60": 5,
-"699Handling": 82,
-
-"969TopSpeed": 159,
-"9690to60": 5.3,
-"969Handling": 82,
-
-"996TopSpeed": 159,
-"9960to60": 5,
-"996Handling": 79,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

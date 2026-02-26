@@ -12,42 +12,18 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 1215,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
     "mra": 16.48,
-    "ola": 62.50,
+    "ola": 62.5,
     "description": "Bodacious Red.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat500L13MultijetPopStar(2013).png",
     "creator": "Andu",
-
-    "333TopSpeed": 108,
-    "3330to60": 13.7,
-    "333Handling": 70,
-
-    "666TopSpeed": 113,
-    "6660to60": 13,
-    "666Handling": 72,
-
-    "699TopSpeed": 113,
-    "6990to60": 12.2,
-    "699Handling": 75,
-
-    "969TopSpeed": 118,
-    "9690to60": 13,
-    "969Handling": 75,
-
-    "996TopSpeed": 118,
-    "9960to60": 12.2,
-    "996Handling": 72,
     "hiddenTag": [""]
 }

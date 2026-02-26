@@ -10,13 +10,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique",
-        "Sleeper",
-        "Visionary Road",
-        "Year of the Horse"
-    ],
+    "tags": ["Concept","Unique","Sleeper","Visionary Road","Year of the Horse"],
     "isPrize": false,
     "weight": 1610,
     "gc": "Low",
@@ -31,22 +25,5 @@
     "description": "The Peugeot sports sedan concept that can potentially challenge the BMW M3 at the time.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Peugeot607PescaroloConcept(2002).png",
     "creator": "Crossfire",
-    "333TopSpeed": 186,
-    "3330to60": 4.5,
-    "333Handling": 80,
-    "666TopSpeed": 189,
-    "6660to60": 4.2,
-    "666Handling": 82,
-    "969TopSpeed": 192,
-    "9690to60": 4.2,
-    "969Handling": 85,
-    "996TopSpeed": 192,
-    "9960to60": 4,
-    "996Handling": 82,
-    "699TopSpeed": 189,
-    "6990to60": 4,
-    "699Handling": 85,
-    "hiddenTag": [
-        ""
-    ]
+    "hiddenTag": [""]
 }

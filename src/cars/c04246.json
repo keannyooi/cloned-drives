@@ -10,10 +10,8 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "Unique", "Eurotech Elite"],
+    "tags": ["Innovative","Unique","Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1160,
     "gc": "Medium",
     "seatCount": 2,
@@ -27,25 +25,5 @@
     "description": "This A2 was converted by trainees at Audi Neckarsulm plant.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiA2Caddy(2004).png",
     "creator": "Connor",
-
-    "333TopSpeed": 112,
-    "3330to60": 12.3,
-    "333Handling": 72,
-
-    "666TopSpeed": 117,
-    "6660to60": 11.6, 
-    "666Handling": 75,
-
-    "996TopSpeed": 122,
-    "9960to60": 11.0,
-    "996Handling": 75,
-
-    "969TopSpeed": 122,
-    "9690to60": 11.6,
-    "969Handling": 78,
-
-    "699TopSpeed": 117,
-    "6990to60": 11.0,
-    "699Handling": 78,
     "hiddenTag": [""]
 }

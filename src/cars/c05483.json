@@ -1,7 +1,7 @@
 {
     "carID": "c05483",
     "cr": 674,
-    "make": ["Ruf", "Porsche"],
+    "make": ["Ruf","Porsche"],
     "model": "BTR III",
     "modelYear": 1986,
     "country": "DE",
@@ -23,25 +23,6 @@
     "mra": 89.97,
     "ola": 77.28,
     "description": "",
-"333TopSpeed": 198,
-"3330to60": 4,
-"333Handling": 85,
-
-"666TopSpeed": 200,
-"6660to60": 3.8,
-"666Handling": 87,
-
-"699TopSpeed": 200,
-"6990to60": 3.6,
-"699Handling": 91,
-
-"969TopSpeed": 203,
-"9690to60": 3.8,
-"969Handling": 91,
-
-"996TopSpeed": 203,
-"9960to60": 3.6,
-"996Handling": 87,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RufBTRIII(1986).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

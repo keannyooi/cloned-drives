@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 831,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 12.31,
     "ola": 63.81,
     "description": "Named Rabbit for it's small and nimble shape.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenRabbit1.5(1976).png",
     "creator": "Andu",
-
-    "333TopSpeed": 102,
-    "3330to60": 12.3,
-    "333Handling": 68,
-
-    "666TopSpeed": 108,
-    "6660to60": 11.6, 
-    "666Handling": 70,
-
-    "996TopSpeed": 113,
-    "9960to60": 11.0,
-    "996Handling": 70,
-
-    "969TopSpeed": 113,
-    "9690to60": 11.6,
-    "969Handling": 73,
-
-    "699TopSpeed": 108,
-    "6990to60": 11.0,
-    "699Handling": 73,
     "hiddenTag": [""]
 }

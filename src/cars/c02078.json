@@ -1,10 +1,7 @@
 {
     "carID": "c02078",
     "cr": 909,
-    "make": [
-        "ABT",
-        "Audi"
-    ],
+    "make": ["ABT","Audi"],
     "model": "RS Q8-R",
     "modelYear": 2020,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 2315,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 66,
     "ola": 78.79,
     "description": "None.",
-     "333TopSpeed": 198,
-    "3330to60": 3.1,
-    "333Handling": 94,
-    "666TopSpeed": 200,
-    "6660to60": 3.0,
-    "666Handling": 97,
-    "996TopSpeed": 203,
-    "9960to60": 2.8,
-    "996Handling": 97,
-    "969TopSpeed": 203,
-    "9690to60": 3.0,
-    "969Handling": 101,
-    "699TopSpeed": 200,
-    "6990to60": 2.8,
-    "699Handling": 101,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ABTRSQ8R(2020).png",
     "creator": "Macan",
     "hiddenTag": [""]

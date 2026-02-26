@@ -10,9 +10,8 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Eco-Friendly", "Rest of The World","The Amplification of Asia"],
+    "tags": ["Concept","Eco-Friendly","Rest of The World","The Amplification of Asia"],
     "isPrize": false,
-
     "weight": 1600,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "The neora was Luxgen's first foray into making a sedan and an EV. Its design language, which would go on to become the basis of the upcoming 5 sedan's styling, was made \"to transform the cold and rigid industrial product into one of the emotional kind\", quoting the automaker. its interior adopted eco-friendliess as a design motif, featuring recycled wood trim and earthen colours for the seats.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Luxgenneora(2011).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 99,
-    "3330to60": 6,
-    "333Handling": 79,
-    
-    "666TopSpeed": 104,
-    "6660to60": 5.7,
-    "666Handling": 81,
-    
-    "699TopSpeed": 104,
-    "6990to60": 5.4,
-    "699Handling": 84,
-    
-    "969TopSpeed": 110,
-    "9690to60": 5.7,
-    "969Handling": 84,
-    
-    "996TopSpeed": 110,
-    "9960to60": 5.4,
-    "996Handling": 81,
     "hiddenTag": [""]
 }

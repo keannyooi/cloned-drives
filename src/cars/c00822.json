@@ -1,10 +1,7 @@
 {
     "carID": "c00822",
     "cr": 480,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "A 38",
     "modelYear": 2000,
     "country": "DE",
@@ -13,11 +10,7 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Oddity",
-        "Unique"
-    ],
+    "tags": ["Hot Hatch","Oddity","Unique"],
     "isPrize": false,
     "weight": 1365,
     "gc": "Low",
@@ -30,21 +23,6 @@
     "mra": 72.15,
     "ola": 77.19,
     "description": "Conceived as a gift for Mika Häkkinen, but the crazy boffins at AMG deemed it an excellent idea to simply stick another engine in the rear, mounted under the boot floor like a Smart ForTwo.",
-     "333TopSpeed": 134,
-    "3330to60": 5.4,
-    "333Handling": 79,
-    "666TopSpeed": 138,
-    "6660to60": 5.1,
-    "666Handling": 81,
-    "996TopSpeed": 142,
-    "9960to60": 4.8,
-    "996Handling": 81,
-    "969TopSpeed": 142,
-    "9690to60": 5.1,
-    "969Handling": 84,
-    "699TopSpeed": 138,
-    "6990to60": 4.8,
-    "699Handling": 84,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-AMGA38(2000).png",
     "creator": "Andu",
     "hiddenTag": [""]

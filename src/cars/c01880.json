@@ -10,9 +10,8 @@
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Eco-Friendly", "The Japanese Odyssey", "Year of the Rabbit"],
+    "tags": ["Concept","Unique","Eco-Friendly","The Japanese Odyssey","Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 2120,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 22.59,
     "ola": 56.18,
     "description": "Toyota started R&D on hybrid powertrains since as early as 1965, but it took a decade for a prototype to hit the showroom floors. They chose to use the top-of-the-line Century for this technological showcase simply because the engine bay was big enough to fit the GT45 turbine engine, which wasn't used to directly power the car, Instead, the engine was used to charge a bank of batteries that powered 2 motors connected to the front wheels.",
- 
-"333TopSpeed": 104,
-"3330to60": 16.1,
-"333Handling": 59,
-
-"666TopSpeed": 110,
-"6660to60": 15.2,
-"666Handling": 61,
-
-"699TopSpeed": 110,
-"6990to60": 14.4,
-"699Handling": 63,
-
-"969TopSpeed": 115,
-"9690to60": 15.2,
-"969Handling": 63,
-
-"996TopSpeed": 115,
-"9960to60": 14.4,
-"996Handling": 61,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaCenturyGasTurbineHybridPrototype(1975).png",
     "creator": "Keanny",
     "hiddenTag": [""]

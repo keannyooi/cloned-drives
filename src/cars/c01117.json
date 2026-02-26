@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Battle Pack"],
     "isPrize": false,
-    
     "weight": 1910,
     "gc": "High",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 65.63,
     "ola": 75,
     "description": "",
- 
-    "333TopSpeed": 167,
-    "3330to60": 4.0,
-    "333Handling": 87,
-
-    "666TopSpeed": 170,
-    "6660to60": 3.8,
-    "666Handling": 90,
-
-    "699TopSpeed": 170,
-    "6990to60": 3.6,
-    "699Handling": 93,
-
-    "969TopSpeed": 174,
-    "9690to60": 3.8,
-    "969Handling": 93,
-
-    "996TopSpeed": 174,
-    "9960to60": 3.6,
-    "996Handling": 90,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PorscheMacanGTS(2019).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

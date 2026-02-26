@@ -1,7 +1,7 @@
 {
     "carID": "c02946",
     "cr": 668,
-    "make": ["Hartge", "BMW"],
+    "make": ["Hartge","BMW"],
     "model": "X3 3.0i Kompressor",
     "modelYear": 2006,
     "country": "DE",
@@ -12,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Tuner","The Tyrol Tour"],
     "isPrize": false,
-	
     "weight": 1760,
     "gc": "High",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HartgeX33.0iKompressor(2006).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 147, 
-"3330to60": 6.0, 
-"333Handling": 82,
-
-"666TopSpeed": 150, 
-"6660to60": 5.7, 
-"666Handling": 84,
-
-"699TopSpeed": 150, 
-"6990to60": 5.4, 
-"699Handling": 88,
-
-"969TopSpeed": 154, 
-"9690to60": 5.7, 
-"969Handling": 88,
-
-"996TopSpeed": 154, 
-"9960to60": 5.4, 
-"996Handling": 84,
     "hiddenTag": [""]
 }

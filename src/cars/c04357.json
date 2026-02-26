@@ -12,8 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
-
     "weight": 2280,
     "gc": "High",
     "seatCount": 7,
@@ -27,25 +25,5 @@
     "description": "No this one is not a 5.0 TDI unfortunately.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AudiQ750TDIquattro(2020).png",
     "creator": "Connor",
-
-    "333TopSpeed": 152,
-    "3330to60": 5.8,
-    "333Handling": 80,
-
-    "666TopSpeed": 155,
-    "6660to60": 5.5, 
-    "666Handling": 82,
-
-    "996TopSpeed": 159,
-    "9960to60": 5.2,
-    "996Handling": 82,
-
-    "969TopSpeed": 159,
-    "9690to60": 5.5,
-    "969Handling": 85,
-
-    "699TopSpeed": 155,
-    "6990to60": 5.2,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

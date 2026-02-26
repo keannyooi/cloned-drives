@@ -1,7 +1,7 @@
-{  
+{
     "carID": "c03417",
     "cr": 777,
-    "make": ["M-Sport", "Fiat"],
+    "make": ["M-Sport","Fiat"],
     "model": "\"Pandamonium\"",
     "modelYear": 2021,
     "country": "GB",
@@ -10,10 +10,8 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Tuner", "Unique","Track Day"],
+    "tags": ["The Tyrol Tour: Remix","Hot Hatch","Tuner","Unique","Track Day"],
     "isPrize": false,
-
-
     "weight": 1230,
     "gc": "Low",
     "seatCount": 2,
@@ -23,30 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 63.64,
-    "ola": 80.00,
+    "ola": 80,
     "description": "IT'S THE END OF THE WORLD! THE END OF THE WORLD! THERE'S A PANDAMONIUM OUT THERE!!!",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MSportPandamonium(2021).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 124,
-    "3330to60": 3.3,
-    "333Handling": 93,
-    
-    "666TopSpeed": 129,
-    "6660to60": 3.1,
-    "666Handling": 96,
-    
-    "699TopSpeed": 129,
-    "6990to60": 3,
-    "699Handling": 100,
-    
-    "969TopSpeed": 133,
-    "9690to60": 3.1,
-    "969Handling": 100,
-    
-    "996TopSpeed": 133,
-    "9960to60": 3,
-    "996Handling": 96,
     "hiddenTag": [""]
 }

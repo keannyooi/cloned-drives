@@ -10,10 +10,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Track Day"
-    ],
+    "tags": ["Street Racer","Track Day"],
     "isPrize": false,
     "weight": 1510,
     "gc": "Medium",
@@ -26,25 +23,6 @@
     "mra": 75,
     "ola": 74.22,
     "description": "Basically, an S207 NBR Challenge Package but with 1 more hp and 1 more lb-ft.",
-"333TopSpeed": 158,
-"3330to60": 4.4,
-"333Handling": 92,
-
-"666TopSpeed": 162,
-"6660to60": 4.1,
-"666Handling": 95,
-
-"699TopSpeed": 162,
-"6990to60": 3.9,
-"699Handling": 99,
-
-"969TopSpeed": 165,
-"9690to60": 4.1,
-"969Handling": 99,
-
-"996TopSpeed": 165,
-"9960to60": 3.9,
-"996Handling": 95,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruWRXSTIS207(2015).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

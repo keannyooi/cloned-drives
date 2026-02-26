@@ -10,9 +10,8 @@
     "handling": 110,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "tags": ["Endless Summer","Motorsport","The Americas Assault"],
     "isPrize": false,
-	
     "weight": 1050,
     "gc": "Low",
     "seatCount": 1,
@@ -26,25 +25,5 @@
     "description": "After sitting the bench for decades Glickenhaus aims to return the United States to the Le Mans podium, and their proven 007 hypercar platform is just getting started...",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/GlickenhausSCG007LMH(2021).png",
     "creator": "DodgeDemon",
-
-"333TopSpeed": 208,
-"3330to60": 2.3,
-"333Handling": 113,
-
-"666TopSpeed": 210,
-"6660to60": 2.2,
-"666Handling": 117,
-
-"699TopSpeed": 210,
-"6990to60": 2.0,
-"699Handling": 122,
-
-"969TopSpeed": 213,
-"9690to60": 2.2,
-"969Handling": 122,
-
-"996TopSpeed": 213,
-"9960to60": 2.0,
-"996Handling": 117,
     "hiddenTag": [""]
 }

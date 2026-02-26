@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix","Endless Summer"],
     "isPrize": true,
-
-
     "weight": 1015,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,29 +23,7 @@
     "mra": 41.22,
     "ola": 61.11,
     "description": "This car is extremely important to me. I was born in it, i grew up in it, i had fights in it, i had great moments in it and it was the one that made me become a VW fan. GJ you'll always be incredible.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.6Movie(1996).png",
     "creator": "Andu",
-
-    "333TopSpeed": 121,
-    "3330to60": 10.3,
-    "333Handling": 72,
-    
-    "666TopSpeed": 126,
-    "6660to60": 9.7,
-    "666Handling": 75,
-    
-    "699TopSpeed": 126,
-    "6990to60": 9.2,
-    "699Handling": 78,
-    
-    "969TopSpeed": 130,
-    "9690to60": 9.7,
-    "969Handling": 78,
-    
-    "996TopSpeed": 130,
-    "9960to60": 9.2,
-    "996Handling": 75,
     "hiddenTag": [""]
 }

@@ -1,4 +1,4 @@
-{  
+{
     "carID": "c03407",
     "cr": 150,
     "make": "Fiat",
@@ -12,11 +12,9 @@
     "tyreType": "Standard",
     "tags": ["The Tyrol Tour: Remix"],
     "isPrize": false,
-
-
     "weight": 690,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -25,28 +23,7 @@
     "mra": 10.55,
     "ola": 54.78,
     "description": "Add a little bit of spice.",
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatPanda1000S(1986).png",
     "creator": "Andu",
- 
-    "333TopSpeed": 93,
-    "3330to60": 14.5,
-    "333Handling": 65,
-    
-    "666TopSpeed": 99,
-    "6660to60": 13.8,
-    "666Handling": 67,
-    
-    "699TopSpeed": 99,
-    "6990to60": 13,
-    "699Handling": 70,
-    
-    "969TopSpeed": 105,
-    "9690to60": 13.8,
-    "969Handling": 70,
-    
-    "996TopSpeed": 105,
-    "9960to60": 13,
-    "996Handling": 67,
     "hiddenTag": [""]
 }

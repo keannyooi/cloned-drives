@@ -1,10 +1,7 @@
 {
     "carID": "c01997",
     "cr": 569,
-    "make": [
-        "Brabus",
-        "Mercedes-Benz"
-    ],
+    "make": ["Brabus","Mercedes-Benz"],
     "model": "C V8",
     "modelYear": 1995,
     "country": "DE",
@@ -13,9 +10,7 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1605,
     "gc": "Medium",
@@ -28,21 +23,6 @@
     "mra": 77.14,
     "ola": 92.59,
     "description": "Just one word: Crazy.",
-     "333TopSpeed": 171,
-    "3330to60": 5.1,
-    "333Handling": 81,
-    "666TopSpeed": 174,
-    "6660to60": 4.9,
-    "666Handling": 83,
-    "996TopSpeed": 177,
-    "9960to60": 4.6,
-    "996Handling": 83,
-    "969TopSpeed": 177,
-    "9690to60": 4.9,
-    "969Handling": 87,
-    "699TopSpeed": 174,
-    "6990to60": 4.6,
-    "699Handling": 87,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BrabusCV8(1995).png",
     "creator": "Havvy",
     "hiddenTag": [""]

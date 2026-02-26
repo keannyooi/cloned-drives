@@ -1,10 +1,7 @@
 {
     "carID": "c00507",
     "cr": 882,
-    "make": [
-        "Hennessey",
-        "Dodge"
-    ],
+    "make": ["Hennessey","Dodge"],
     "model": "Viper Venom 1000TT",
     "modelYear": 2006,
     "country": "US",
@@ -13,12 +10,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Supercar",
-        "Unique",
-        "Track Day"
-    ],
+    "tags": ["Tuner","Supercar","Unique","Track Day"],
     "isPrize": false,
     "weight": 1574,
     "gc": "Low",
@@ -31,21 +23,6 @@
     "mra": 114.81,
     "ola": 100,
     "description": "Viper but with double fat twin turbos pushing 1000 hursprs.",
-     "333TopSpeed": 233,
-    "3330to60": 2.9,
-    "333Handling": 96,
-    "666TopSpeed": 236,
-    "6660to60": 2.8,
-    "666Handling": 99,
-    "996TopSpeed": 238,
-    "9960to60": 2.6,
-    "996Handling": 99,
-    "969TopSpeed": 238,
-    "9690to60": 2.8,
-    "969Handling": 103,
-    "699TopSpeed": 236,
-    "6990to60": 2.6,
-    "699Handling": 103,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/HennesseyViperVenom1000TT(2006).png",
     "creator": "Preston",
     "hiddenTag": [""]

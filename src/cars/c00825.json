@@ -1,10 +1,7 @@
 {
     "carID": "c00825",
     "cr": 532,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "CLK 55",
     "modelYear": 1999,
     "country": "DE",
@@ -26,21 +23,6 @@
     "mra": 76.34,
     "ola": 80.51,
     "description": "The naturally aspirated AMG days.",
-     "333TopSpeed": 158,
-    "3330to60": 4.9,
-    "333Handling": 83,
-    "666TopSpeed": 162,
-    "6660to60": 4.7,
-    "666Handling": 85,
-    "996TopSpeed": 165,
-    "9960to60": 4.4,
-    "996Handling": 85,
-    "969TopSpeed": 165,
-    "9690to60": 4.7,
-    "969Handling": 89,
-    "699TopSpeed": 162,
-    "6990to60": 4.4,
-    "699Handling": 89,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzCLK55AMG(1999).png",
     "creator": "Havvy",
     "hiddenTag": [""]

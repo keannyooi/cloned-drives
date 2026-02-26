@@ -1,7 +1,7 @@
 {
     "carID": "c02342",
     "cr": 289,
-    "make": ["MVS", "Venturi"],
+    "make": ["MVS","Venturi"],
     "model": "Venturi 160",
     "modelYear": 1987,
     "country": "FR",
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 1295,
     "gc": "Medium",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 50.3,
     "ola": 69.88,
     "description": "A catalyzed naturally-aspirated version of the normal 200 meant to be made for the Japanese market.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MVSVenturi160(1989).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 133,
-    "3330to60": 7.9,
-    "333Handling": 73,
-
-    "666TopSpeed": 137,
-    "6660to60": 7.5,
-    "666Handling": 76,
-
-    "699TopSpeed": 137,
-    "6990to60": 7.1,
-    "699Handling": 79,
-
-    "969TopSpeed": 141,
-    "9690to60": 7.5,
-    "969Handling": 79,
-
-    "996TopSpeed": 141,
-    "9960to60": 7.1,
-    "996Handling": 76,
     "hiddenTag": [""]
 }

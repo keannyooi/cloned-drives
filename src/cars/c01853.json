@@ -1,7 +1,7 @@
 {
     "carID": "c01853",
     "cr": 686,
-    "make": ["Tommykaira", "Nissan"],
+    "make": ["Tommykaira","Nissan"],
     "model": "M30Z",
     "modelYear": 1991,
     "country": "JP",
@@ -10,9 +10,8 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "The Japanese Odyssey", "Unique"],
+    "tags": ["Tuner","The Japanese Odyssey","Unique"],
     "isPrize": false,
-
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,25 +25,5 @@
     "description": "The \"gentleman's agreement\" between Japanese automobile manufacturers state that all cars need to have their power outputs limited to 280ps. Tommykaira's M30Z was the first technically street-legal Japanese car to exceed this limit with 350ps, which Tommykaira took advantage of in their marketing. Although largely forgotten today, this car made waves in automotive media both within and outside Japan back when it was released. It is believed that 43 of them were made in total.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/TommykairaM30Z(1991).png",
     "creator": "Keanny",
-    
-    "333TopSpeed": 171,
-    "3330to60": 4.3,
-    "333Handling": 86,
-
-    "666TopSpeed": 174,
-    "6660to60": 4.1,
-    "666Handling": 88,
-
-    "996TopSpeed": 177,
-    "9960to60": 3.8,
-    "996Handling": 88,
-
-    "969TopSpeed": 177,
-    "9690to60": 4.1,
-    "969Handling": 92,
-
-    "699TopSpeed": 174,
-    "6990to60": 3.8,
-    "699Handling": 92,
     "hiddenTag": [""]
 }

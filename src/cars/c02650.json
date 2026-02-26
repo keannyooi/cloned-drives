@@ -10,9 +10,8 @@
     "handling": 56,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "tags": ["Concept","Unique","Eco-Friendly"],
     "isPrize": false,
-	
     "weight": 2739,
     "gc": "High",
     "seatCount": 4,
@@ -26,25 +25,5 @@
     "description": "A collaboration between GM and the US army to test the viability of a hydrogen fuel-cell off-roading vehicle would perform in military tasks.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/ChevroletColoradoZH2(2016).png",
     "creator": "Keanny",
-
-    "333TopSpeed": 73, 
-    "3330to60": 11.3, 
-    "333Handling": 58,
-
-    "666TopSpeed": 81, 
-    "6660to60": 10.7, 
-    "666Handling": 60,
-
-    "699TopSpeed": 81, 
-    "6990to60": 10.1, 
-    "699Handling": 62,
-
-    "969TopSpeed": 89, 
-    "9690to60": 10.7, 
-    "969Handling": 62,
-
-    "996TopSpeed": 89, 
-    "9960to60": 10.1, 
-    "996Handling": 60,
     "hiddenTag": [""]
 }

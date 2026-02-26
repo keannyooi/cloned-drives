@@ -1,10 +1,7 @@
 {
     "carID": "c00332",
     "cr": 264,
-    "make": [
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["Datsun","Nissan"],
     "model": "240Z",
     "modelYear": 1969,
     "country": "JP",
@@ -13,13 +10,7 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Servers Choice",
-        "Style Icon",
-        "Innovative",
-        "Street Racer",
-        "Silver Screen","OG"
-    ],
+    "tags": ["Servers Choice","Style Icon","Innovative","Street Racer","Silver Screen","OG"],
     "isPrize": false,
     "weight": 1068,
     "gc": "Medium",
@@ -32,21 +23,6 @@
     "mra": 52.12,
     "ola": 67.71,
     "description": "The original Z.",
-     "333TopSpeed": 124,
-    "3330to60": 8.2,
-    "333Handling": 71,
-    "666TopSpeed": 129,
-    "6660to60": 7.7,
-    "666Handling": 74,
-    "996TopSpeed": 133,
-    "9960to60": 7.3,
-    "996Handling": 74,
-    "969TopSpeed": 133,
-    "9690to60": 7.7,
-    "969Handling": 77,
-    "699TopSpeed": 129,
-    "6990to60": 7.3,
-    "699Handling": 77,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun240Z(1969).png",
     "creator": "Keanny",
     "hiddenTag": [""]

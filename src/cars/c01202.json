@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Street Racer"],
     "isPrize": false,
-
     "weight": 1200,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,27 +23,6 @@
     "mra": 60,
     "ola": 70,
     "description": "The First WRX ever made.",
- 
-"333TopSpeed": 140,
-"3330to60": 5.1,
-"333Handling": 80,
-
-"666TopSpeed": 144,
-"6660to60": 4.9,
-"666Handling": 82,
-
-"699TopSpeed": 144,
-"6990to60": 4.6,
-"699Handling": 85,
-
-"969TopSpeed": 147,
-"9690to60": 4.9,
-"969Handling": 85,
-
-"996TopSpeed": 147,
-"9960to60": 4.6,
-"996Handling": 82,
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaWRX(1992).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

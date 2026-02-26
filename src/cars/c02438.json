@@ -1,7 +1,7 @@
 {
     "carID": "c02438",
     "cr": 988,
-    "make": ["Hennessey", "Lamborghini"],
+    "make": ["Hennessey","Lamborghini"],
     "model": "Urus HPE750",
     "modelYear": 2019,
     "country": "US",
@@ -10,9 +10,8 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Supercar"],
+    "tags": ["Tuner","Supercar"],
     "isPrize": false,
-	
     "weight": 2190,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,25 +25,5 @@
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HennesseyUrusHPE750(2019).png",
     "creator": "Bnuuy",
-
-"333TopSpeed": 203, 
-"3330to60": 2.6, 
-"333Handling": 95,
-
-"666TopSpeed": 205, 
-"6660to60": 2.4, 
-"666Handling": 98,
-
-"699TopSpeed": 205, 
-"6990to60": 2.3, 
-"699Handling": 102,
-
-"969TopSpeed": 208, 
-"9690to60": 2.4, 
-"969Handling": 102,
-
-"996TopSpeed": 208, 
-"9960to60": 2.3, 
-"996Handling": 98,
     "hiddenTag": [""]
 }

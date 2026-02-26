@@ -1,10 +1,7 @@
 {
     "carID": "c01463",
     "cr": 573,
-    "make": [
-        "Rinspeed",
-        "Porsche"
-    ],
+    "make": ["Rinspeed","Porsche"],
     "model": "Bedouin",
     "modelYear": 2003,
     "country": "CH",
@@ -13,11 +10,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Oddity",
-        "Tuner",
-        "Rest of The World"
-    ],
+    "tags": ["Oddity","Tuner","Rest of The World"],
     "isPrize": false,
     "weight": 1640,
     "gc": "Medium",
@@ -30,21 +23,6 @@
     "mra": 66.29,
     "ola": 74.58,
     "description": "how.",
-     "333TopSpeed": 158,
-    "3330to60": 5.6,
-    "333Handling": 84,
-    "666TopSpeed": 162,
-    "6660to60": 5.3,
-    "666Handling": 86,
-    "996TopSpeed": 165,
-    "9960to60": 5.0,
-    "996Handling": 86,
-    "969TopSpeed": 165,
-    "9690to60": 5.3,
-    "969Handling": 90,
-    "699TopSpeed": 162,
-    "6990to60": 5.0,
-    "699Handling": 90,
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Rinspeededouin(2003).png",
     "creator": "Havvy",
     "hiddenTag": [""]

@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Year of the Rabbit"],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Medium",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 71.36,
     "ola": 76.75,
     "description": "Add another turbo and you get 30 more hp and smoother power delivery.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/VenturiAtlantique300Biturbo(1999).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 172,
-    "3330to60": 4.4,
-    "333Handling": 84,
-
-    "666TopSpeed": 175,
-    "6660to60": 4.1,
-    "666Handling": 86,
-
-    "699TopSpeed": 175,
-    "6990to60": 3.9,
-    "699Handling": 90,
-
-    "969TopSpeed": 178,
-    "9690to60": 4.1,
-    "969Handling": 90,
-
-    "996TopSpeed": 178,
-    "9960to60": 3.9,
-    "996Handling": 86,
     "hiddenTag": [""]
 }

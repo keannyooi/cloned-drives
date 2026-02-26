@@ -6,13 +6,12 @@
     "modelYear": 1998,
     "country": "DE",
     "topSpeed": 205,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 108,
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
     "isPrize": true,
-	
     "weight": 950,
     "gc": "Low",
     "seatCount": 1,
@@ -25,26 +24,6 @@
     "ola": 96.97,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GT198(1998).png",
-
-"333TopSpeed": 208,
-"3330to60": 2.8,
-"333Handling": 112,
-
-"666TopSpeed": 210,
-"6660to60": 2.7,
-"666Handling": 115,
-
-"699TopSpeed": 210,
-"6990to60": 2.5,
-"699Handling": 120,
-
-"969TopSpeed": 213,
-"9690to60": 2.7,
-"969Handling": 120,
-
-"996TopSpeed": 213,
-"9960to60": 2.5,
-"996Handling": 115,
     "creator": "Bnuuy",
     "hiddenTag": [""]
 }

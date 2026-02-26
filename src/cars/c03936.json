@@ -12,8 +12,6 @@
     "tyreType": "Standard",
     "tags": ["The Americas Assault","Sleeper","Endless Summer"],
     "isPrize": false,
-
-
     "weight": 1570,
     "gc": "Medium",
     "seatCount": 5,
@@ -27,25 +25,5 @@
     "description": "Too fast for average Buick customer.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BuickVerano2.0TPremium(2012).png",
     "creator": "Connor",
-
-    "333TopSpeed": 134,
-    "3330to60": 6.3,
-    "333Handling": 80,
-
-    "666TopSpeed": 138,
-    "6660to60": 5.9, 
-    "666Handling": 82,
-
-    "996TopSpeed": 142,
-    "9960to60": 5.6,
-    "996Handling": 82,
-
-    "969TopSpeed": 142,
-    "9690to60": 5.9,
-    "969Handling": 85,
-
-    "699TopSpeed": 138,
-    "6990to60": 5.6,
-    "699Handling": 85,
     "hiddenTag": [""]
 }

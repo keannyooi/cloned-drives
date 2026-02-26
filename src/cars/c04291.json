@@ -12,42 +12,18 @@
     "tyreType": "Standard",
     "tags": ["Eurotech Elite"],
     "isPrize": false,
-
-
     "weight": 1189,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 34.44,
-    "ola": 60.80,
+    "ola": 60.8,
     "description": "Screeching down the country lanes, the new 1.4 FSI engine debuting on the Golf mk5.",
-
-
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolf1.416VFSITrendline(2003).png",
     "creator": "Andu",
-    
-    "333TopSpeed": 113,
-    "3330to60": 11.9,
-    "333Handling": 75,
-    
-    "666TopSpeed": 118,
-    "6660to60": 11.3,
-    "666Handling": 78,
-    
-    "699TopSpeed": 118,
-    "6990to60": 10.6,
-    "699Handling": 81,
-    
-    "969TopSpeed": 122,
-    "9690to60": 11.3,
-    "969Handling": 81,
-    
-    "996TopSpeed": 122,
-    "9960to60": 10.6,
-    "996Handling": 78,
     "hiddenTag": [""]
 }

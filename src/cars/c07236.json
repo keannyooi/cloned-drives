@@ -10,7 +10,7 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Hot Hatch","Chop Shop"],
+    "tags": ["Eco-Friendly","Hot Hatch","Chop Shop"],
     "isPrize": false,
     "weight": 1450,
     "gc": "Low",
@@ -22,29 +22,7 @@
     "fuelType": "Electric",
     "mra": 73.41,
     "ola": 82.39,
-
     "description": "Remember that one R5 Turbo 3E concept? Well, this is a production version of it, but now made blander.",
-
-"333TopSpeed": 171,
-"3330to60": 3.2,
-"333Handling": 91,
-
-"666TopSpeed": 174,
-"6660to60": 3.1,
-"666Handling": 94,
-
-"699TopSpeed": 174,
-"6990to60": 2.9,
-"699Handling": 98,
-
-"969TopSpeed": 177,
-"9690to60": 3.1,
-"969Handling": 98,
-
-"996TopSpeed": 177,
-"9960to60": 2.9,
-"996Handling": 94,
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/RenaultR5Turbo3E(2024).png",
     "creator": "ama4nn",
     "hiddenTag": [""]

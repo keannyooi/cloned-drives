@@ -10,11 +10,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Unique",
-        "Concept",
-        "Motorsport"
-    ],
+    "tags": ["Unique","Concept","Motorsport"],
     "isPrize": false,
     "weight": 930,
     "gc": "Low",
@@ -27,25 +23,6 @@
     "mra": 61.05,
     "ola": 90.9,
     "description": "A unicorn car rebuilt in 2010.",
-"333TopSpeed": 144,
-"3330to60": 2.3,
-"333Handling": 95,
-
-"666TopSpeed": 147,
-"6660to60": 2.2,
-"666Handling": 98,
-
-"699TopSpeed": 147,
-"6990to60": 2,
-"699Handling": 102,
-
-"969TopSpeed": 151,
-"9690to60": 2.2,
-"969Handling": 102,
-
-"996TopSpeed": 151,
-"9960to60": 2,
-"996Handling": 98,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/LanciaECV(1986).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]

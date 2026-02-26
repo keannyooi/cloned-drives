@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique"],
     "isPrize": false,
-
     "weight": 1315,
     "gc": "Low",
     "seatCount": 2,
@@ -24,28 +23,7 @@
     "mra": 82.81,
     "ola": 90.57,
     "description": "Collaborating with an Italian bike company Bimoto, this is a one-off 300 hp FWD Peugeot.",
-
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/PeugeotRCZRBimota(2015).png",
     "creator": "Crossfire",
-
-    "333TopSpeed": 158,
-    "3330to60": 5.0,
-    "333Handling": 88,
-
-    "666TopSpeed": 162,
-    "6660to60": 4.8,
-    "666Handling": 91,
-
-    "996TopSpeed": 165,
-    "9960to60": 4.5,
-    "996Handling": 91,
-
-    "969TopSpeed": 165,
-    "9690to60": 4.8,
-    "969Handling": 94,
-
-    "699TopSpeed": 162,
-    "6990to60": 4.5,
-    "699Handling": 94,
     "hiddenTag": [""]
 }

@@ -10,12 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Rest of The World",
-        "Unique",
-        "Ultra Expensive",
-        "Hypercar"
-    ],
+    "tags": ["Rest of The World","Unique","Ultra Expensive","Hypercar"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -28,25 +23,6 @@
     "mra": 118.6,
     "ola": 96.58,
     "description": "",
-"333TopSpeed": 244,
-"3330to60": 3.2,
-"333Handling": 94,
-
-"666TopSpeed": 246,
-"6660to60": 3.1,
-"666Handling": 97,
-
-"699TopSpeed": 246,
-"6990to60": 2.9,
-"699Handling": 101,
-
-"969TopSpeed": 248,
-"9690to60": 3.1,
-"969Handling": 101,
-
-"996TopSpeed": 248,
-"9960to60": 2.9,
-"996Handling": 97,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/KoenigseggCCXGhost(2017).png",
     "creator": "Bnuuy",
     "hiddenTag": [""]
