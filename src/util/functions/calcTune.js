@@ -16,6 +16,10 @@
  * v2.1 Changes:
  * - MRA and OLA now preserve 2 decimal places
  * - Cars that upgrade past 60 mph now get valid 0-60 times
+ *
+ * v2.2 Changes:
+ * - Fixed sub-60 cars crossing 60mph threshold getting unrealistically fast 0-60 times (was 3.6s)
+ * - Now scales from ~70s (barely over 60) to ~30s (max tuned speed) before engine multiplier
  */
 
 const upgradeLevels = {
@@ -108,11 +112,12 @@ function calcTune(car, tune) {
         accel = 99.9;
     } else if (baseTS < 60 && topSpeed >= 60) {
         // Car upgraded PAST 60 mph threshold!
-        // Calculate a 0-60 time based on how much over 60 it is
-        // Formula: Start at 60 seconds at exactly 60 mph, decrease as top speed increases
-        // Every 1 mph over 60 = roughly -2.5 seconds (with floor at 4.0s)
+        // These are slow cars (golf carts, lawnmowers, etc.) that got tuned past 60 mph.
+        // Scale from ~70s (barely over 60) down to ~30s (max tuned speed ~85mph).
+        // Higher base top speed = higher tuned speed = faster 0-60 (rewarding faster base cars).
+        // The 1.6 factor maps the 0-25 mph-over-60 range to a 70-30s accel range.
         const mphOver60 = topSpeed - 60;
-        const estimatedAccel = Math.max(4.0, 60 - (mphOver60 * 2.5));
+        const estimatedAccel = Math.max(30, 70 - (mphOver60 * 1.6));
         accel = Number((estimatedAccel * engine.accelMult).toFixed(1));
     } else {
         // Normal car - apply multiplier to base 0-60

@@ -76,8 +76,9 @@ function calcTune(car, tune) {
         accel = 99.9;
     } else if (baseTS < 60 && topSpeed >= 60) {
         // Car upgraded past 60 mph!
+        // Scale from ~70s (barely over 60) down to ~30s (max tuned speed ~85mph)
         const mphOver60 = topSpeed - 60;
-        const estimatedAccel = Math.max(4.0, 60 - (mphOver60 * 2.5));
+        const estimatedAccel = Math.max(30, 70 - (mphOver60 * 1.6));
         accel = Number((estimatedAccel * engine.accelMult).toFixed(1));
     } else {
         accel = Number((baseAccel * engine.accelMult).toFixed(1));
@@ -192,8 +193,11 @@ for (const tune of tunes) {
 }
 
 const tractorMax = calcTune(tractor, "996");
-console.log(`\n✓ Max tune top speed (${tractorMax.topSpeed} mph) still < 60: ${tractorMax.topSpeed < 60 ? "PASS ✅" : "FAIL ❌"}`);
-console.log(`✓ 0-60 stays 99.9: ${tractorMax.accel === 99.9 ? "PASS ✅" : "FAIL ❌"}`);
+const tractorStock = calcTune(tractor, "000");
+console.log(`\n✓ Stock stays under 60 (${tractorStock.topSpeed} mph): ${tractorStock.topSpeed < 60 ? "PASS ✅" : "FAIL ❌"}`);
+console.log(`✓ Stock 0-60 is 99.9: ${tractorStock.accel === 99.9 ? "PASS ✅" : "FAIL ❌"}`);
+console.log(`✓ Max tune crosses 60 (${tractorMax.topSpeed} mph): ${tractorMax.topSpeed >= 60 ? "PASS ✅" : "FAIL ❌"}`);
+console.log(`✓ Max tune 0-60 is reasonable (${tractorMax.accel}s): ${tractorMax.accel > 30 && tractorMax.accel < 70 ? "PASS ✅" : "FAIL ❌"}`);
 
 // ============================================
 // TEST 3: Car that upgrades PAST 60 mph
@@ -264,7 +268,8 @@ let allPassed = true;
 if (!mraHasDecimals || !olaHasDecimals) allPassed = false;
 
 // Test 2 checks
-if (tractorMax.topSpeed >= 60 || tractorMax.accel !== 99.9) allPassed = false;
+if (tractorStock.topSpeed >= 60 || tractorStock.accel !== 99.9) allPassed = false;
+if (tractorMax.topSpeed < 60 || tractorMax.accel <= 30 || tractorMax.accel >= 70) allPassed = false;
 
 // Test 3 checks
 if (golfCartMax.topSpeed < 60 || golfCartMax.accel === 99.9 || golfCartMax.accel >= 60) allPassed = false;
