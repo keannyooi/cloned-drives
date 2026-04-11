@@ -141,12 +141,13 @@ cd-editevent <event> regenopponents <random/filter>
 - `random` = picks any car
 - `filter` = uses your current filter settings
 
-**Bulk edit a single round (JSON):**
+**Bulk edit rounds (JSON) — single or multiple at once:**
 ```
 cd-editevent <event> bulk <round> <JSON>
+cd-editevent <event> bulk <round> <JSON> <round> <JSON> <round> <JSON>
 ```
 
-JSON format:
+JSON format per round:
 ```json
 {
   "carID": "c01273",
@@ -156,6 +157,14 @@ JSON format:
   "rewards": {"money": 50000}
 }
 ```
+
+Multi-round example:
+```
+cd-editevent Spring Sprint bulk 1 {"carID":"c05650","upgrade":"996","track":"t00064","reqs":{"cr":{"start":100,"end":172}},"rewards":{"money":80000}} 2 {"carID":"c05827","upgrade":"699","track":"t00045","reqs":{"cr":{"start":160,"end":232}},"rewards":{"money":110000}} 3 {"carID":"c07948","upgrade":"996","track":"t00170","reqs":{"cr":{"start":220,"end":292}},"rewards":{"money":140000}}
+```
+
+Note: For array requirements like `bodyStyle`, `make`, `tags` — both string and array formats work:
+- `"bodyStyle": "Open Air"` and `"bodyStyle": ["Open Air"]` are both valid
 
 ---
 

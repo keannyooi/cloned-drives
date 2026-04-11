@@ -64,7 +64,9 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
         }
     });
     collector.on("end", () => {
-        return listMessage.removeButtons();
+        if (listMessage) {
+            return listMessage.removeButtons();
+        }
     });
 }
 
