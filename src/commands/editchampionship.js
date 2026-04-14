@@ -31,7 +31,8 @@ module.exports = {
         "<championship name> addreward <round number> pack <pack name>",
         "<championship name> removereward <round number> <reward type / all>",
         "<championship name> regentracks <asphalt / dirt / snow>",
-        "<championship name> regenopponents <random / filter>"
+        "<championship name> regenopponents <random / filter>",
+        "<championship name> bulk <round number> <JSON object> [<round number> <JSON object> ...]"
     ],
     args: 3,
     category: "Admin",
@@ -55,7 +56,7 @@ module.exports = {
         async function editchampionship(currentchampionship, currentMessage) {
             let successMessage, operationFailed = false;
             let index, criteria = args[1].toLowerCase(), attachment = null;
-            if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set")) {
+            if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set") || criteria === "bulk") {
                 if (!args[3]) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -530,22 +531,356 @@ module.exports = {
                         author: message.author
                     });
                     break;
+                case "bulk":
+                    // ---- Shared validation constants ----
+                    const reqKeyMap = {
+                        cr: "cr", make: "make", tags: "tags", collection: "collection",
+                        bodystyle: "bodyStyle", bodyStyle: "bodyStyle", hiddenTag: "hiddenTag", hiddentag: "hiddenTag",
+                        modelyear: "modelYear", modelYear: "modelYear",
+                        seatcount: "seatCount", seatCount: "seatCount",
+                        enginepos: "enginePos", enginePos: "enginePos",
+                        drivetype: "driveType", driveType: "driveType",
+                        fueltype: "fuelType", fuelType: "fuelType",
+                        tyretype: "tyreType", tyreType: "tyreType",
+                        country: "country", gc: "gc", creator: "creator",
+                        abs: "abs", tcs: "tcs",
+                        isPrize: "isPrize", isprize: "isPrize",
+                        isStock: "isStock", isstock: "isStock",
+                        isBM: "isBM", isbm: "isBM",
+                        search: "search"
+                    };
+                    const arrayKeys = ["make", "tags", "collection", "bodyStyle", "hiddenTag"];
+                    const rangeKeys = ["cr", "modelYear", "seatCount"];
+                    const stringKeys = ["country", "tyreType", "driveType", "enginePos", "fuelType", "gc", "creator"];
+                    const booleanKeys = ["abs", "tcs", "isPrize", "isStock", "isBM"];
+                    const validBulkTunes = ["000", "333", "666", "699", "969", "996"];
+
+                    // ---- Parse round/JSON pairs from the raw input ----
+                    const rawBulk = args.slice(2).join(" ");
+                    const bulkRounds = [];
+                    let parseIdx = 0;
+
+                    while (parseIdx < rawBulk.length) {
+                        while (parseIdx < rawBulk.length && rawBulk[parseIdx] === " ") parseIdx++;
+                        if (parseIdx >= rawBulk.length) break;
+
+                        let numStr = "";
+                        while (parseIdx < rawBulk.length && rawBulk[parseIdx] >= "0" && rawBulk[parseIdx] <= "9") {
+                            numStr += rawBulk[parseIdx];
+                            parseIdx++;
+                        }
+                        if (!numStr) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, expected a round number.",
+                                desc: `Parsing failed near position ${parseIdx}. Format: \`bulk <round> <JSON> [<round> <JSON> ...]\``,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        while (parseIdx < rawBulk.length && rawBulk[parseIdx] === " ") parseIdx++;
+
+                        if (parseIdx >= rawBulk.length || rawBulk[parseIdx] !== "{") {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, expected a JSON object after round number.",
+                                desc: `Expected \`{\` after round ${numStr}. Format: \`bulk <round> <JSON> [<round> <JSON> ...]\``,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        let depth = 0, jsonStart = parseIdx;
+                        while (parseIdx < rawBulk.length) {
+                            if (rawBulk[parseIdx] === "{") depth++;
+                            else if (rawBulk[parseIdx] === "}") depth--;
+                            parseIdx++;
+                            if (depth === 0) break;
+                        }
+
+                        if (depth !== 0) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, unmatched braces in JSON.",
+                                desc: `The JSON for round ${numStr} has unmatched \`{\` or \`}\`. Check your formatting.`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        bulkRounds.push({ roundNum: parseInt(numStr), jsonStr: rawBulk.slice(jsonStart, parseIdx) });
+                    }
+
+                    if (bulkRounds.length === 0) {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, no round data provided.",
+                            desc: "Format: `bulk <round> <JSON>` or `bulk <round> <JSON> <round> <JSON> ...`",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage({ currentMessage });
+                    }
+
+                    // ---- Validate all rounds before applying any ----
+                    const validatedBulkRounds = [];
+                    for (const entry of bulkRounds) {
+                        const roundLabel = `Round ${entry.roundNum}`;
+
+                        if (entry.roundNum < 1 || entry.roundNum > currentchampionship.roster.length) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, invalid round number in bulk data.`,
+                                desc: `${roundLabel}: must be between 1 and ${currentchampionship.roster.length}.`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        let roundData;
+                        try {
+                            roundData = JSON.parse(entry.jsonStr);
+                        } catch (e) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, invalid JSON for ${roundLabel}.`,
+                                desc: `\`${e.message}\`\nMake sure your JSON is properly formatted.`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        if (!roundData.carID || !roundData.upgrade || !roundData.track) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, missing required fields in ${roundLabel}.`,
+                                desc: "Each round JSON must contain at least `carID`, `upgrade`, and `track`.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        let bulkCarFile = carFiles.find(file => file.startsWith(roundData.carID));
+                        if (!bulkCarFile) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, car not found in ${roundLabel}.`,
+                                desc: `No car found with ID \`${roundData.carID}\`.`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        let bulkTrackFile = trackFiles.find(file => file.startsWith(roundData.track));
+                        if (!bulkTrackFile) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, track not found in ${roundLabel}.`,
+                                desc: `No track found with ID \`${roundData.track}\`.`,
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        if (!validBulkTunes.includes(roundData.upgrade)) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, invalid upgrade in ${roundLabel}.`,
+                                desc: "Valid upgrades are `000`, `333`, `666`, `996`, `969`, and `699`.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        // Validate and normalize reqs
+                        let validatedReqs = {};
+                        if (roundData.reqs && typeof roundData.reqs === "object") {
+                            const bulkErrors = [];
+                            for (const [rawKey, value] of Object.entries(roundData.reqs)) {
+                                const key = reqKeyMap[rawKey];
+                                if (!key) {
+                                    bulkErrors.push(`Unknown req key: \`${rawKey}\``);
+                                    continue;
+                                }
+
+                                if (arrayKeys.includes(key)) {
+                                    const arrayValue = Array.isArray(value) ? value : [value];
+                                    const normalized = arrayValue.map(v => String(v).toLowerCase());
+                                    for (const val of normalized) {
+                                        const exists = carFiles.some(file => {
+                                            const car = getCar(file);
+                                            const ref = car["reference"] ? getCar(car["reference"]) : car;
+                                            if (key === "collection") {
+                                                return Array.isArray(car[key]) && car[key].some(c => c.toLowerCase() === val);
+                                            }
+                                            if (key === "hiddenTag") {
+                                                return Array.isArray(car[key]) && car[key].some(t => t.toLowerCase() === val);
+                                            }
+                                            const field = ref[key];
+                                            if (Array.isArray(field)) return field.some(t => t.toLowerCase() === val);
+                                            return typeof field === "string" && field.toLowerCase() === val;
+                                        });
+                                        if (!exists) {
+                                            bulkErrors.push(`\`${key}\` value \`${val}\` doesn't match any car in the game`);
+                                        }
+                                    }
+                                    validatedReqs[key] = normalized;
+                                } else if (rangeKeys.includes(key)) {
+                                    if (typeof value !== "object" || value.start === undefined || value.end === undefined) {
+                                        bulkErrors.push(`\`${key}\` must be an object with start and end, e.g. {"start": 0, "end": 100}`);
+                                        continue;
+                                    }
+                                    const start = parseInt(value.start);
+                                    const end = parseInt(value.end);
+                                    if (isNaN(start) || isNaN(end)) {
+                                        bulkErrors.push(`\`${key}\` start and end must be numbers`);
+                                        continue;
+                                    }
+                                    if (end < start) {
+                                        bulkErrors.push(`\`${key}\` end (${end}) must be >= start (${start})`);
+                                        continue;
+                                    }
+                                    validatedReqs[key] = { start, end };
+                                } else if (stringKeys.includes(key)) {
+                                    const normalized = String(value).toLowerCase();
+                                    const exists = carFiles.some(file => {
+                                        const car = getCar(file);
+                                        return !car["reference"] && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
+                                    });
+                                    if (!exists) {
+                                        bulkErrors.push(`\`${key}\` value \`${normalized}\` doesn't match any car in the game`);
+                                    }
+                                    validatedReqs[key] = normalized;
+                                } else if (booleanKeys.includes(key)) {
+                                    if (typeof value !== "boolean") {
+                                        bulkErrors.push(`\`${key}\` must be true or false`);
+                                        continue;
+                                    }
+                                    validatedReqs[key] = value;
+                                } else if (key === "search") {
+                                    validatedReqs[key] = String(value).toLowerCase();
+                                }
+                            }
+
+                            if (bulkErrors.length > 0) {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: `Error, invalid reqs in ${roundLabel}.`,
+                                    desc: bulkErrors.join("\n"),
+                                    author: message.author
+                                });
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+                        }
+
+                        // Validate rewards
+                        let validatedRewards = {};
+                        if (roundData.rewards && typeof roundData.rewards === "object") {
+                            const rewardErrors = [];
+                            for (const [key, value] of Object.entries(roundData.rewards)) {
+                                switch (key) {
+                                    case "money":
+                                    case "fuseTokens":
+                                    case "trophies":
+                                        if (isNaN(value) || parseInt(value) < 0) {
+                                            rewardErrors.push(`\`${key}\` must be a non-negative number`);
+                                        } else {
+                                            validatedRewards[key] = parseInt(value);
+                                        }
+                                        break;
+                                    case "car":
+                                        let carReward = typeof value === "string" ? { carID: value, upgrade: "000" } : value;
+                                        if (!carReward.carID) {
+                                            rewardErrors.push("`car` reward must have a `carID` field (or just a car ID string)");
+                                        } else if (!carFiles.find(f => f.startsWith(carReward.carID))) {
+                                            rewardErrors.push(`Car \`${carReward.carID}\` not found`);
+                                        } else if (!validBulkTunes.includes(carReward.upgrade || "000")) {
+                                            rewardErrors.push(`Invalid upgrade \`${carReward.upgrade}\` for car reward`);
+                                        } else {
+                                            validatedRewards.car = { carID: carReward.carID, upgrade: carReward.upgrade || "000" };
+                                        }
+                                        break;
+                                    case "pack":
+                                        if (!packFiles.find(f => f.startsWith(value))) {
+                                            rewardErrors.push(`Pack \`${value}\` not found`);
+                                        } else {
+                                            validatedRewards.pack = value;
+                                        }
+                                        break;
+                                    default:
+                                        rewardErrors.push(`Unknown reward type: \`${key}\``);
+                                }
+                            }
+                            if (rewardErrors.length > 0) {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: `Error, invalid rewards in ${roundLabel}.`,
+                                    desc: rewardErrors.join("\n"),
+                                    author: message.author
+                                });
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+                        }
+
+                        validatedBulkRounds.push({
+                            roundNum: entry.roundNum,
+                            data: {
+                                carID: roundData.carID,
+                                upgrade: roundData.upgrade,
+                                track: roundData.track,
+                                reqs: validatedReqs,
+                                rewards: validatedRewards
+                            },
+                            carFile: bulkCarFile,
+                            trackFile: bulkTrackFile
+                        });
+                    }
+
+                    // ---- All rounds validated — apply them all ----
+                    const roundSummaries = [];
+                    for (const round of validatedBulkRounds) {
+                        currentchampionship.roster[round.roundNum - 1] = round.data;
+                        let bulkCar = getCar(round.carFile);
+                        let bulkTrack = getTrack(round.trackFile);
+                        roundSummaries.push(`**Round ${round.roundNum}:** ${carNameGen({ currentCar: bulkCar, rarity: true, upgrade: round.data.upgrade })} on ${bulkTrack.trackName}`);
+                    }
+
+                    if (validatedBulkRounds.length === 1) {
+                        let r = validatedBulkRounds[0];
+                        let singleCar = getCar(r.carFile);
+                        let singleTrack = getTrack(r.trackFile);
+                        successMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully updated round ${r.roundNum} of ${currentchampionship.name}!`,
+                            desc: `**Car:** ${carNameGen({ currentCar: singleCar, rarity: true, upgrade: r.data.upgrade })}\n**Track:** ${singleTrack.trackName}\n**Rewards:** ${listRewards(r.data.rewards) || "None"}`,
+                            author: message.author
+                        });
+                    } else {
+                        successMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully updated ${validatedBulkRounds.length} rounds of ${currentchampionship.name}!`,
+                            desc: roundSummaries.join("\n"),
+                            author: message.author
+                        });
+                    }
+                    break;
                 default:
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
                         title: "Error, championship editing criteria not found.",
-                        desc: `Here is a list of championship editing criterias. 
-                            \`name\` - The name of the championship. 
-                            \`duration\` - How long an championship is going to last for (in days). 
-                            \`extend\` - How long an championship is going to be extended by (in hours). 
+                        desc: `Here is a list of championship editing criterias.
+                            \`name\` - The name of the championship.
+                            \`duration\` - How long an championship is going to last for (in days).
+                            \`extend\` - How long an championship is going to be extended by (in hours).
                             \`setcar\` - Sets the opponent's car.
                             \`addreward\` - Adds a reward of a round.
                             \`removereward\` - Removes a reward from a round.
                             \`settune\` - Sets the tune for the opponent's car.
                             \`addreq\` - Adds a requirement to a round.
                             \`removereq\` - Removes a requirement from a round.
-                            \`regentracks\` - Regenerates tracks for every single round of an championship.
-                            \`regenopponents\` - Regenerates opponents for every single round of an championship.`,
+                            \`regentracks\` - Regenerates tracks for every single round of a championship.
+                            \`regenopponents\` - Regenerates opponents for every single round of a championship.
+                            \`bulk\` - Sets all round data from JSON. Supports multiple rounds at once.`,
                         author: message.author
                     });
                     return errorMessage.sendMessage({ currentMessage });
