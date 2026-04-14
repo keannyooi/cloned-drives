@@ -31,6 +31,7 @@ const listGen = {
     "event": item => item.name,
 	"championships": item => item.name,
     "offer": item => item.name,
+    "offerTemplate": item => item.offerName,
     "calendar": item => item.name,
     "packbattle": item => item.name
 };

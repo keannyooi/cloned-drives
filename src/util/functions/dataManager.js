@@ -38,11 +38,13 @@ const path = require("path");
 const cars = new Map();        // carID (without .json) -> car data object
 const tracks = new Map();      // trackID (without .json) -> track data object
 const packs = new Map();       // packID (without .json) -> pack data object
+const offerTemplates = new Map(); // templateID (without .json) -> template data object
 
 // File lists (equivalent to readdirSync results)
 let carFiles = [];             // ["c00001.json", "c00002.json", ...]
 let trackFiles = [];           // ["t00001.json", "t00002.json", ...]
 let packFiles = [];            // ["p00001.json", "p00002.json", ...]
+let offerTemplateFiles = [];   // ["o00001.json", "o00002.json", ...]
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
 let cachedCarArray = [];
@@ -71,7 +73,8 @@ function initialize(basePath = "./src") {
     const stats = {
         cars: { loaded: 0, failed: 0, errors: [] },
         tracks: { loaded: 0, failed: 0, errors: [] },
-        packs: { loaded: 0, failed: 0, errors: [] }
+        packs: { loaded: 0, failed: 0, errors: [] },
+        offerTemplates: { loaded: 0, failed: 0, errors: [] }
     };
 
     // Load Cars
@@ -128,6 +131,28 @@ function initialize(basePath = "./src") {
         }
     }
 
+    // Load Offer Templates
+    const offersPath = path.join(basePath, "offers");
+    try {
+        offerTemplateFiles = readdirSync(offersPath).filter(file => file.endsWith(".json"));
+        for (const file of offerTemplateFiles) {
+            try {
+                const filePath = path.join(offersPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const templateID = file.slice(0, -5);
+                offerTemplates.set(templateID, parsed);
+                stats.offerTemplates.loaded++;
+            } catch (err) {
+                stats.offerTemplates.failed++;
+                stats.offerTemplates.errors.push({ file, error: err.message });
+            }
+        }
+    } catch (err) {
+        // offers/ directory may not exist yet — that's fine
+        console.log(`   Offer Templates: directory not found, skipping`);
+    }
+
     initialized = true;
 
     // L-01: Build cached arrays once (avoids Array.from() on every getRandomCar/Track call)
@@ -139,12 +164,14 @@ function initialize(basePath = "./src") {
     console.log(`   Cars: ${stats.cars.loaded} loaded, ${stats.cars.failed} failed`);
     console.log(`   Tracks: ${stats.tracks.loaded} loaded, ${stats.tracks.failed} failed`);
     console.log(`   Packs: ${stats.packs.loaded} loaded, ${stats.packs.failed} failed`);
+    console.log(`   Offer Templates: ${stats.offerTemplates.loaded} loaded, ${stats.offerTemplates.failed} failed`);
 
-    if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0) {
+    if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0) {
         console.error("❌ Some files failed to load:");
         stats.cars.errors.forEach(e => console.error(`   Car: ${e.file} - ${e.error}`));
         stats.tracks.errors.forEach(e => console.error(`   Track: ${e.file} - ${e.error}`));
         stats.packs.errors.forEach(e => console.error(`   Pack: ${e.file} - ${e.error}`));
+        stats.offerTemplates.errors.forEach(e => console.error(`   Offer Template: ${e.file} - ${e.error}`));
     }
 
     return stats;
@@ -217,7 +244,7 @@ function getTrack(trackID) {
  */
 function getPack(packID) {
     if (!packID) return null;
-    
+
     let cleanID = packID;
     if (cleanID.includes("/")) {
         cleanID = cleanID.split("/").pop();
@@ -225,13 +252,37 @@ function getPack(packID) {
     if (cleanID.endsWith(".json")) {
         cleanID = cleanID.slice(0, -5);
     }
-    
+
     const pack = packs.get(cleanID);
     if (!pack) {
         console.warn(`⚠️ Pack not found: ${packID} (cleaned: ${cleanID})`);
         return null;
     }
     return pack;
+}
+
+/**
+ * Get offer template data by ID
+ * @param {string} templateID - Template ID with or without .json extension
+ * @returns {Object|null} Template data object or null if not found
+ */
+function getOfferTemplate(templateID) {
+    if (!templateID) return null;
+
+    let cleanID = templateID;
+    if (cleanID.includes("/")) {
+        cleanID = cleanID.split("/").pop();
+    }
+    if (cleanID.endsWith(".json")) {
+        cleanID = cleanID.slice(0, -5);
+    }
+
+    const template = offerTemplates.get(cleanID);
+    if (!template) {
+        console.warn(`⚠️ Offer template not found: ${templateID} (cleaned: ${cleanID})`);
+        return null;
+    }
+    return template;
 }
 
 // ============================================================================
@@ -262,6 +313,14 @@ function getPackFiles() {
     return packFiles;
 }
 
+/**
+ * Get list of all offer template files
+ * @returns {string[]} Array of offer template filenames
+ */
+function getOfferTemplateFiles() {
+    return offerTemplateFiles;
+}
+
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
@@ -288,6 +347,14 @@ function getAllTracks() {
  */
 function getAllPacks() {
     return Array.from(packs.values());
+}
+
+/**
+ * Get all offer templates as an array
+ * @returns {Object[]} Array of all offer template objects
+ */
+function getAllOfferTemplates() {
+    return Array.from(offerTemplates.values());
 }
 
 /**
@@ -324,6 +391,17 @@ function packExists(packID) {
 }
 
 /**
+ * Check if an offer template exists
+ * @param {string} templateID - Template ID to check
+ * @returns {boolean}
+ */
+function offerTemplateExists(templateID) {
+    let cleanID = templateID;
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    return offerTemplates.has(cleanID);
+}
+
+/**
  * Get memory usage statistics
  * @returns {Object} Statistics about the data manager
  */
@@ -333,12 +411,14 @@ function getStats() {
         counts: {
             cars: cars.size,
             tracks: tracks.size,
-            packs: packs.size
+            packs: packs.size,
+            offerTemplates: offerTemplates.size
         },
         fileCounts: {
             cars: carFiles.length,
             tracks: trackFiles.length,
-            packs: packFiles.length
+            packs: packFiles.length,
+            offerTemplates: offerTemplateFiles.length
         }
     };
 }
@@ -375,9 +455,11 @@ function reloadAll(basePath = "./src") {
     cars.clear();
     tracks.clear();
     packs.clear();
+    offerTemplates.clear();
     carFiles = [];
     trackFiles = [];
     packFiles = [];
+    offerTemplateFiles = [];
     cachedCarArray = [];
     cachedTrackArray = [];
     initialized = false;
@@ -500,27 +582,31 @@ module.exports = {
     initialize,
     reloadAll,
     reloadCar,
-    
+
     // Getters (replace require())
     getCar,
     getTrack,
     getPack,
-    
+    getOfferTemplate,
+
     // File lists (replace readdirSync())
     getCarFiles,
     getTrackFiles,
     getPackFiles,
-    
+    getOfferTemplateFiles,
+
     // Bulk getters
     getAllCars,
     getAllTracks,
     getAllPacks,
-    
+    getAllOfferTemplates,
+
     // Existence checks
     carExists,
     trackExists,
     packExists,
-    
+    offerTemplateExists,
+
     // Utilities
     getStats,
     getRandomCar,

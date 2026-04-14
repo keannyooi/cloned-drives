@@ -1,0 +1,11 @@
+{
+    "offerName": "Legendary Bundle",
+    "price": 500000,
+    "stock": 5,
+    "duration": "7d",
+    "offer": {
+        "cars": ["c00001", "c00002"],
+        "fuseTokens": 1000,
+        "pack": "p00070"
+    }
+}
