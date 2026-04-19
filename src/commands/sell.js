@@ -69,6 +69,19 @@ module.exports = {
             });
 
         async function sell(currentCar, amount, playerData, currentMessage) {
+            // Diamond cars cannot be sold (sell/fuse protected by design).
+            // Players can only part with them via `cd-diamondexchange` for another diamond.
+            const carData = getCar(currentCar.carID);
+            if (carData && carData.diamond === true) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: `Error, ${carNameGen({ currentCar: carData })} is a Diamond car and cannot be sold.`,
+                    desc: "Diamond cars are sell- and fuse-protected. If you own duplicates, use `cd-diamondexchange` to trade one for a different Diamond car.",
+                    author: message.author
+                });
+                return errorMessage.sendMessage({ currentMessage });
+            }
+
             await new Promise(resolve => resolve(selectUpgrade({ message, currentCar, amount, currentMessage, targetUpgrade: "699" })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;

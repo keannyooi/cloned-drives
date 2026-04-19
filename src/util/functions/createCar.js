@@ -30,7 +30,8 @@ function createCar(currentCar, unitPreference, hideStats) {
         mra: tunedStats.mra,
         ola: tunedStats.ola,
         racehud: car["racehud"],
-        isBM: (car["reference"] !== undefined)
+        isBM: (car["reference"] !== undefined),
+        isDiamond: (car["diamond"] === true)
     };
 
     let carSpecs = carNameGen({ currentCar: car, rarity: true, upgrade: tune });

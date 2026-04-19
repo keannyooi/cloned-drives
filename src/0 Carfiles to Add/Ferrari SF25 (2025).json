@@ -1,0 +1,37 @@
+{
+    "carID": "c0",
+    "cr": 1402,
+    "make": [
+        "Ferrari"
+    ],
+    "model": "SF-25",
+    "modelYear": 2025,
+    "country": "IT",
+    "topSpeed": 222,
+    "0to60": 1.6,
+    "handling": 139,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": [
+        "Motorsport",
+        "Eco-Friendly",
+        "Ultra Expensive"
+    ],
+    "isPrize": true,
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 171.02,
+    "ola": 91.99,
+    "description": "",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FerrariSF25(2025).png",
+    "creator": "Bnuuy",
+    "hiddenTag": [
+        "F1"
+    ]
+}

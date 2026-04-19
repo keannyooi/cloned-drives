@@ -2,7 +2,7 @@
 
 const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { defaultWaitTime, defaultChoiceTime, trophyEmojiID } = require("../util/consts/consts.js");
+const { defaultWaitTime, defaultChoiceTime, diamondEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
@@ -15,25 +15,35 @@ const { trackExchange } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
-    name: "exchange",
-    aliases: ["ex", "prizeexchange"],
+    name: "diamondexchange",
+    aliases: ["dx", "diamondex"],
     usage: [],
     args: 0,
     category: "Gameplay",
-    description: "Exchange a duplicate prize car for another prize car you don't own (within 50 CR and same tyre type).",
+    description: "Exchange a duplicate Diamond car for another Diamond car you don't own (within 50 CR and same tyre type).",
     async execute(message, args) {
+        // Feature is paused until diamond cars are designed.
+        if (!DIAMONDS_ENABLED) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Diamond Exchange is not available yet.",
+                desc: "Diamond cars haven't launched in Cloned Drives yet. Stay tuned!",
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+
         const playerData = await profileModel.findOne({ userID: message.author.id });
         const carFiles = getCarFiles();
 
-        // Step 1: Find all duplicate prize cars (prize cars where player owns more than 1)
-        const duplicatePrizeCars = [];
+        // Step 1: Find all duplicate Diamond cars (diamonds where player owns more than 1)
+        const duplicateDiamondCars = [];
         for (const garageCar of playerData.garage) {
             const carData = getCar(garageCar.carID);
-            // Exclude diamond cars — they have their own exchange (cd-diamondexchange)
-            if (carData.isPrize === true && !carData.reference && !carData.diamond) {
+            if (carData && carData.diamond === true && !carData.reference) {
                 const totalOwned = calcTotal(garageCar);
                 if (totalOwned > 1) {
-                    duplicatePrizeCars.push({
+                    duplicateDiamondCars.push({
                         garageCar,
                         carData,
                         totalOwned
@@ -42,43 +52,43 @@ module.exports = {
             }
         }
 
-        // Step 2: Check if player has any duplicate prize cars
-        if (duplicatePrizeCars.length === 0) {
+        // Step 2: Check if player has any duplicate Diamond cars
+        if (duplicateDiamondCars.length === 0) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
-                title: "Error, you do not own any duplicate prize cars.",
-                desc: "You need to own more than one of a prize car to exchange it.",
+                title: "Error, you do not own any duplicate Diamond cars.",
+                desc: "You need to own more than one of a Diamond car to exchange it. Diamond cars are sell- and fuse-protected, so exchanging is the only way to part with a duplicate.",
                 author: message.author
             });
             return errorMessage.sendMessage();
         }
 
-        // Step 3: Create dropdown with duplicate prize cars
-        const options = duplicatePrizeCars.map((item, index) => ({
-            label: `${carNameGen({ currentCar: item.carData, removePrizeTag: true })} (x${item.totalOwned})`,
+        // Step 3: Create dropdown with duplicate Diamond cars
+        const options = duplicateDiamondCars.map((item, index) => ({
+            label: `${carNameGen({ currentCar: item.carData, removeDiamondTag: true })} (x${item.totalOwned})`,
             description: `CR: ${item.carData.cr} | ${item.carData.tyreType || "Standard"} tyres`,
             value: `${index}`,
-            emoji: `<trophies:${trophyEmojiID}>`
+            emoji: `<:Chips:${diamondEmojiID}>`
         }));
 
         const dropdownList = new StringSelectMenuBuilder()
-            .setCustomId("exchangeSelect")
-            .setPlaceholder("Select a duplicate prize car to exchange...")
+            .setCustomId("diamondExchangeSelect")
+            .setPlaceholder("Select a duplicate Diamond car to exchange...")
             .addOptions(...options);
         const row = new ActionRowBuilder().addComponents(dropdownList);
 
         const selectMessage = new InfoMessage({
             channel: message.channel,
-            title: "Prize Car Exchange",
-            desc: "Select a duplicate prize car you want to exchange.",
+            title: "💎 Diamond Car Exchange",
+            desc: "Select a duplicate Diamond car you want to exchange.",
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to select.`
         });
         let currentMessage = await selectMessage.sendMessage({ buttons: [row], preserve: true });
 
         // Step 4: Wait for selection
-        const filter = (interaction) => interaction.user.id === message.author.id && interaction.customId === "exchangeSelect";
-        
+        const filter = (interaction) => interaction.user.id === message.author.id && interaction.customId === "diamondExchangeSelect";
+
         try {
             const selection = await message.channel.awaitMessageComponent({
                 filter,
@@ -88,16 +98,16 @@ module.exports = {
             await currentMessage.removeButtons();
 
             const selectedIndex = parseInt(selection.values[0]);
-            const selectedDuplicate = duplicatePrizeCars[selectedIndex];
+            const selectedDuplicate = duplicateDiamondCars[selectedIndex];
             const selectedCarData = selectedDuplicate.carData;
             const selectedGarageCar = selectedDuplicate.garageCar;
             const selectedTyreType = selectedCarData.tyreType || "Standard";
 
-            // Step 5: Ask player to type desired prize car
+            // Step 5: Ask player to type desired Diamond car
             const typeMessage = new InfoMessage({
                 channel: message.channel,
-                title: "Type out the prize car you want",
-                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within Â±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
+                title: "Type out the Diamond car you want",
+                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the Diamond car you want to receive.\nIt must be within ±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
                 author: message.author,
                 image: selectedCarData.racehud,
                 footer: `You have been given ${defaultWaitTime / 1000} seconds to respond.`
@@ -106,7 +116,7 @@ module.exports = {
 
             // Step 6: Wait for player to type car name
             const messageFilter = (m) => m.author.id === message.author.id;
-            
+
             try {
                 const collected = await message.channel.awaitMessages({
                     filter: messageFilter,
@@ -116,7 +126,7 @@ module.exports = {
                 });
 
                 const userInput = collected.first().content.toLowerCase().split(" ");
-                
+
                 // Try to delete the user's message to keep chat clean
                 try {
                     await collected.first().delete();
@@ -124,31 +134,31 @@ module.exports = {
                     // Ignore if we can't delete
                 }
 
-                // Step 7: Search for the prize car they want
-                // Filter car files to only include prize cars within CR range AND same tyre type
-                const validPrizeCars = carFiles.filter(file => {
+                // Step 7: Filter car files to ACTIVE Diamond cars within CR range AND same tyre type.
+                // Inactive (limited-time / retired) diamonds cannot be exchanged TO, only FROM.
+                const validDiamondCars = carFiles.filter(file => {
                     const carId = file.endsWith('.json') ? file.slice(0, -5) : file;
                     const car = getCar(carId);
-                    if (!car || car.isPrize !== true || car.reference) return false;
+                    if (!car || car.diamond !== true || car.reference) return false;
+                    if (car.active === false) return false;
                     const crDiff = Math.abs(car.cr - selectedCarData.cr);
                     if (crDiff > 50) return false;
-                    // Check tyre type matches
                     const carTyreType = car.tyreType || "Standard";
                     return carTyreType === selectedTyreType;
                 });
 
-                if (validPrizeCars.length === 0) {
+                if (validDiamondCars.length === 0) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
-                        title: "Error, no valid prize cars found.",
-                        desc: `There are no other prize cars within the CR range with **${selectedTyreType}** tyres to exchange for.`,
+                        title: "Error, no valid Diamond cars found.",
+                        desc: `There are no other Diamond cars within the CR range with **${selectedTyreType}** tyres to exchange for.`,
                         author: message.author
                     });
                     return errorMessage.sendMessage({ currentMessage });
                 }
 
                 // Search for the car
-                await new Promise(resolve => resolve(search(message, userInput, validPrizeCars, "car", currentMessage)))
+                await new Promise(resolve => resolve(search(message, userInput, validDiamondCars, "car", currentMessage)))
                     .then(async (response) => {
                         if (!Array.isArray(response)) return;
                         let [carFile, currentMessage2] = response;
@@ -162,7 +172,7 @@ module.exports = {
                         if (alreadyOwns && calcTotal(alreadyOwns) > 0) {
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
-                                title: "Sorry, you can't trade for a prize car you already own!",
+                                title: "Sorry, you can't trade for a Diamond car you already own!",
                                 desc: `You already own the ${carNameGen({ currentCar: desiredCar, rarity: true })}.`,
                                 author: message.author,
                                 image: desiredCar.racehud
@@ -175,7 +185,7 @@ module.exports = {
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
                                 title: "Error, you can't exchange a car for itself!",
-                                desc: "Please choose a different prize car.",
+                                desc: "Please choose a different Diamond car.",
                                 author: message.author
                             });
                             return errorMessage.sendMessage({ currentMessage });
@@ -186,14 +196,14 @@ module.exports = {
                         if (crDiff > 50) {
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
-                                title: "Error, prize car is not within CR range!",
-                                desc: `The selected car must be within Â±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
+                                title: "Error, Diamond car is not within CR range!",
+                                desc: `The selected car must be within ±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
                                 author: message.author
                             });
                             return errorMessage.sendMessage({ currentMessage });
                         }
 
-                        // Step 10b: Double-check tyre type (should already be filtered but just in case)
+                        // Step 10b: Double-check tyre type
                         const desiredTyreType = desiredCar.tyreType || "Standard";
                         if (desiredTyreType !== selectedTyreType) {
                             const errorMessage = new ErrorMessage({
@@ -208,7 +218,7 @@ module.exports = {
                         // Step 11: Confirmation
                         const confirmationMessage = new InfoMessage({
                             channel: message.channel,
-                            title: "Confirm Prize Car Exchange",
+                            title: "💎 Confirm Diamond Car Exchange",
                             desc: `Are you sure you want to exchange:\n\n**Giving:** ${carNameGen({ currentCar: selectedCarData, rarity: true })}\n**Receiving:** ${carNameGen({ currentCar: desiredCar, rarity: true })}`,
                             author: message.author,
                             image: desiredCar.racehud,
@@ -238,16 +248,16 @@ module.exports = {
                                 return errorMessage.sendMessage({ currentMessage });
                             }
 
-                            // Remove one of the duplicate prize cars
+                            // Remove one of the duplicate Diamond cars
                             updateHands(playerData, selectedGarageCar.carID, upgradeToRemove, "remove");
                             selectedGarageCar.upgrades[upgradeToRemove] -= 1;
-                            
+
                             // If no more of this car, remove from garage
                             if (calcTotal(selectedGarageCar) === 0) {
                                 playerData.garage.splice(playerData.garage.indexOf(selectedGarageCar), 1);
                             }
 
-                            // Add the new prize car (stock upgrade)
+                            // Add the new Diamond car (stock upgrade)
                             playerData.garage = addCars(playerData.garage, [{ carID: desiredCarID.slice(0, 6), upgrade: "000" }]);
 
                             // Save to database
@@ -262,7 +272,7 @@ module.exports = {
                             // Success message
                             const successMessage = new SuccessMessage({
                                 channel: message.channel,
-                                title: "ðŸŽ‰ Congratulations! Exchange Successful!",
+                                title: "💎 Congratulations! Diamond Exchange Successful!",
                                 desc: `You exchanged your ${carNameGen({ currentCar: selectedCarData, rarity: true })} for a brand new ${carNameGen({ currentCar: desiredCar, rarity: true })}!`,
                                 author: message.author,
                                 image: desiredCar.racehud

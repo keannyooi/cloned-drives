@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { getCarFiles, getTrackFiles, getCar, getTrack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
-const { defaultChoiceTime, moneyEmojiID, bossEmojiID } = require("../util/consts/consts.js");
+const { defaultChoiceTime, moneyEmojiID, bossEmojiID, diamondEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const race = require("../util/functions/race.js");
@@ -167,7 +167,7 @@ module.exports = {
                         if (result > 0) {
                             streak++;
 
-                            let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0, bossBonus = 0;
+                            let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0, diamondBonus = 0, bossBonus = 0;
 
                             if (streak <= 49) {
                                 reward = streak * 375 + 15000;
@@ -190,11 +190,19 @@ module.exports = {
                                 crBonus = (opponentCar.cr - playerCar.cr + 40) * crBonusBase;
                             }
 
-                            // BM Bonus
-                            const subtotal = reward + crBonus;
+                            // BM / Diamond bonuses computed off base (reward + crBonus).
+                            // BM bonus displays after subtotal (legacy behaviour).
+                            // Diamond bonus is folded INTO the subtotal so the 2x multiplier
+                            // is clearly visible in the subtotal line.
+                            const baseSubtotal = reward + crBonus;
                             if (playerCar.isBM) {
-                                bmBonus = Math.round(subtotal / 4);
+                                bmBonus = Math.round(baseSubtotal / 4);
                             }
+                            // Diamond bonus only applies when the feature is enabled.
+                            if (DIAMONDS_ENABLED && playerCar.isDiamond) {
+                                diamondBonus = baseSubtotal; // doubles earnings (2x)
+                            }
+                            const subtotal = baseSubtotal + diamondBonus;
 
                             // 🎲 Random event bonuses (5% chance)
                             let eventBonus = 0;
@@ -233,6 +241,7 @@ module.exports = {
                             }
 
                             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+                            // Note: diamondBonus is already baked into subtotal, don't re-add.
                             const totalEarned = subtotal + bmBonus + eventBonus + perfectBonus + bossBonus + milestoneBonus;
                             
                             const index = unclaimedRewards.findIndex(e => e.origin === "Random Races");
@@ -251,9 +260,14 @@ module.exports = {
                             earningsMsg += `Base Reward: ${moneyEmoji}${reward.toLocaleString()}\n`;
                             if (crBonus > 0) earningsMsg += `CR Bonus: +${moneyEmoji}${crBonus.toLocaleString()}\n`;
                             if (bmBonus > 0) earningsMsg += `BM Bonus: +${moneyEmoji}${bmBonus.toLocaleString()}\n`;
+                            if (diamondBonus > 0) {
+                                const diamondEmoji = bot.emojis.cache.get(diamondEmojiID) || "💎";
+                                earningsMsg += `${diamondEmoji} Diamond Bonus (2x): +${moneyEmoji}${diamondBonus.toLocaleString()}\n`;
+                            }
                             earningsMsg += `**Subtotal: ${moneyEmoji}${subtotal.toLocaleString()}**`;
                             earningsMsg += eventMessage;
-                            if (eventBonus + perfectBonus + bossBonus + milestoneBonus > 0) {
+                            // Diamond is part of subtotal now, so it no longer triggers this line by itself.
+                            if (eventBonus + perfectBonus + bossBonus + milestoneBonus + bmBonus > 0) {
                                 earningsMsg += `\n\n**TOTAL EARNED: ${moneyEmoji}${totalEarned.toLocaleString()}** 🎉`;
                             }
 

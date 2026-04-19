@@ -3,6 +3,7 @@
 const { ActionRowBuilder, ComponentType: { Button } } = require("discord.js");
 const { getCarFiles, getCar } = require("./dataManager.js");
 const { InfoMessage, ErrorMessage } = require("../classes/classes.js");
+const { DIAMONDS_ENABLED } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const sortCars = require("./sortCars.js");
 const getButtons = require("./getButtons.js");
@@ -12,6 +13,11 @@ const NEW_EMOJI = "✨";
 
 // Jackpot reveal timeout (ms)
 const JACKPOT_REVEAL_TIME = 15000;
+
+// Baseline diamond pull chance per slot (% — 0.001 = 1 in 100,000).
+// Packs can override per slot by including `"diamond": X` in the slot's rates.
+// Set to 0 in a slot's rates to disable diamond pulls for that slot.
+const DIAMOND_BASELINE_CHANCE = 0.001;
 
 /**
  * Opens a pack and returns the array of pulled cars.
@@ -88,10 +94,27 @@ async function openPack(args) {
       exotic: [],
       legendary: [],
       mystic: [],
+      diamond: [],
     };
 
     for (const file of carFiles) {
       const car = getCar(file);
+
+      // Diamond cars live EXCLUSIVELY in the diamond bucket — never pullable
+      // via normal rarity slots. They bypass the isPrize filter rejection
+      // so a car can be both prize AND diamond; BM variants and INACTIVE
+      // diamonds are excluded from the packable pool.
+      if (car.diamond === true) {
+        if (car.reference) continue;
+        if (car.active === false) continue; // limited-time / retired diamonds
+        // Temporarily treat as non-prize so filterCard only evaluates the rest
+        const carForDiamondFilter = car.isPrize ? { ...car, isPrize: false } : car;
+        if (filterCard(carForDiamondFilter, filter, filterLogic)) {
+          byRarity.diamond.push(file);
+        }
+        continue;
+      }
+
       if (!filterCard(car, filter, filterLogic)) continue;
 
       filtered.push(file);
@@ -136,34 +159,57 @@ async function openPack(args) {
   // === Roll cards ===
   let addedCars = [];
   const pulledCarIDs = new Set();
+  let diamondPulled = false; // hard cap: max 1 diamond per pack opening
 
   for (let i = 0; i < totalCards; i++) {
     const { rates, filter } = slots[i];
 
-    let rand = Math.floor(Math.random() * 1000) / 10;
-    let check = 0;
     let chosenCarID = null;
     let chosenUpgrade = "000";
     let fromPool = false;
 
-    for (const key of Object.keys(rates)) {
-      if (key === "pool") {
-        for (const entry of rates.pool) {
-          check += entry.weight;
+    // === Diamond pre-roll (independent of the normal rarity roll) ===
+    // Uses full Math.random() precision (not the 0.1-granular rand below)
+    // so very small baselines like 0.001% work correctly.
+    // Only one diamond per pack — subsequent slots skip this check.
+    // Gated by DIAMONDS_ENABLED (consts.js) — skipped entirely when feature is off.
+    if (DIAMONDS_ENABLED) {
+      const diamondChance = (rates.diamond !== undefined) ? rates.diamond : DIAMOND_BASELINE_CHANCE;
+      if (!diamondPulled && diamondChance > 0 && Math.random() * 100 < diamondChance) {
+        const { byRarity: br } = getFilteredPool(filter);
+        if (br.diamond && br.diamond.length > 0) {
+          chosenCarID = pickRandomCar(br.diamond, pulledCarIDs, noDupes);
+          if (chosenCarID) diamondPulled = true;
+        }
+        // If no diamonds match the filter, fall through to normal roll
+      }
+    }
+
+    // === Normal rarity roll (only if diamond didn't hit) ===
+    let rand = Math.floor(Math.random() * 1000) / 10;
+    let check = 0;
+
+    if (!chosenCarID) {
+      for (const key of Object.keys(rates)) {
+        if (key === "diamond") continue; // handled by pre-roll above
+        if (key === "pool") {
+          for (const entry of rates.pool) {
+            check += entry.weight;
+            if (check > rand) {
+              chosenCarID = entry.carID;
+              chosenUpgrade = entry.upgrade || "000";
+              fromPool = true;
+              break;
+            }
+          }
+          if (chosenCarID) break;
+        } else {
+          check += rates[key];
           if (check > rand) {
-            chosenCarID = entry.carID;
-            chosenUpgrade = entry.upgrade || "000";
-            fromPool = true;
+            const { byRarity } = getFilteredPool(filter);
+            chosenCarID = pickWithFallback(byRarity, key, pulledCarIDs, noDupes);
             break;
           }
-        }
-        if (chosenCarID) break;
-      } else {
-        check += rates[key];
-        if (check > rand) {
-          const { byRarity } = getFilteredPool(filter);
-          chosenCarID = pickWithFallback(byRarity, key, pulledCarIDs, noDupes);
-          break;
         }
       }
     }
@@ -203,6 +249,18 @@ async function openPack(args) {
   // Sort pulled cards by CR ascending (best card last)
   addedCars = sortCars(addedCars, "cr", "ascending");
 
+  // Force any diamond pull to the very end of the reveal sequence.
+  // Diamonds are the rarest pulls in the game — they deserve the grand-finale slot,
+  // regardless of their CR. (Only one diamond can exist in addedCars by design.)
+  const diamondIdx = addedCars.findIndex(c => {
+    const cData = getCar(c.carID);
+    return cData && cData.diamond === true;
+  });
+  if (diamondIdx >= 0 && diamondIdx < addedCars.length - 1) {
+    const [diamondCard] = addedCars.splice(diamondIdx, 1);
+    addedCars.push(diamondCard);
+  }
+
   // === Pre-calculate NEW status for all cards BEFORE display ===
   // (So we know which are new before we start adding them to discoveredCars)
   const newStatus = addedCars.map((car) => {
@@ -217,6 +275,7 @@ async function openPack(args) {
     const currentCar = getCar(addedCars[i].carID);
     const isNew = newStatus[i];
     const isMystic = currentCar.cr >= 1000;
+    const isDiamond = currentCar.diamond === true;
     const isLastOnPage = (i + 1) % cardsPerPage === 0;
     const isLastCard = i === addedCars.length - 1;
     const isFeaturedCard = isLastOnPage || isLastCard;
@@ -226,8 +285,8 @@ async function openPack(args) {
       discoveredCars.push(addedCars[i].carID);
     }
 
-    // === JACKPOT REVEAL: NEW Mystic on a featured slot ===
-    if (isNew && isMystic && isFeaturedCard) {
+    // === JACKPOT REVEAL: NEW Mystic or NEW Diamond on a featured slot ===
+    if (isNew && (isMystic || isDiamond) && isFeaturedCard) {
       // First, display any cards accumulated before this one on the same page
       if (pulledCards.length > 0) {
         // Show the teaser with previous cards listed but the mystic hidden
@@ -261,6 +320,11 @@ async function openPack(args) {
         // Wait for reveal button or timeout
         await waitForReveal(message, teaserMessage, JACKPOT_REVEAL_TIME);
 
+        // Diamond-only buildup animation (multi-frame edit on the teaser)
+        if (isDiamond) {
+          await playDiamondBuildup(teaserMessage, currentPack["packName"]);
+        }
+
         // Now show the actual card - rebuild pulledCards from scratch for this page
         pulledCards = "";
         // Re-add the previous cards on this page
@@ -282,11 +346,13 @@ async function openPack(args) {
           pulledCards += ` ⬆️ **(${addedCars[i].upgrade})**`;
         }
       } else {
-        // Mystic is the only/first card on this page — full dramatic reveal
+        // Mystic/Diamond is the only/first card on this page — full dramatic reveal
         const teaserEmbed = new InfoMessage({
           channel: message.channel,
           title: `Opening ${currentPack["packName"]}...`,
-          desc: "🌟 **The pack trembles with power...** 🌟\n\n*An ancient force stirs within. A card of mythical rarity awaits!*",
+          desc: isDiamond
+            ? "💎 **The pack gleams with unearthly brilliance...** 💎\n\n*A diamond-tier card hides within. This is beyond rare!*"
+            : "🌟 **The pack trembles with power...** 🌟\n\n*An ancient force stirs within. A card of mythical rarity awaits!*",
           author: message.author,
           image: currentPack["pack"],
           thumbnail: currentPack["pack"],
@@ -308,6 +374,11 @@ async function openPack(args) {
         // Wait for reveal button or timeout
         await waitForReveal(message, teaserMessage, JACKPOT_REVEAL_TIME);
 
+        // Diamond-only buildup animation (multi-frame edit on the teaser)
+        if (isDiamond) {
+          await playDiamondBuildup(teaserMessage, currentPack["packName"]);
+        }
+
         // Build the reveal string
         pulledCards = carNameGen({ currentCar, rarity: true }) + ` ${NEW_EMOJI}`;
         if (addedCars[i].upgrade !== "000") {
@@ -318,8 +389,10 @@ async function openPack(args) {
       // Now show the full reveal
       const revealEmbed = new InfoMessage({
         channel: message.channel,
-        title: `🎉 JACKPOT! 🎉`,
-        desc: "✨ **A NEW MYSTIC CARD!** ✨",
+        title: isDiamond ? `💎 DIAMOND JACKPOT! 💎` : `🎉 JACKPOT! 🎉`,
+        desc: isDiamond
+          ? "💎 **A NEW DIAMOND CARD!** 💎\n*One in a hundred thousand.*"
+          : "✨ **A NEW MYSTIC CARD!** ✨",
         author: message.author,
         image: currentCar["racehud"],
         thumbnail: currentPack["pack"],
@@ -407,6 +480,45 @@ async function waitForReveal(message, teaserMessage, timeout) {
       resolve();
     });
   });
+}
+
+/**
+ * Plays a 4-frame buildup animation on the teaser message for Diamond pulls.
+ * Each frame edits the teaser in place, creating a crescendo before the reveal.
+ * Silently bails out if any edit fails (e.g. message was deleted).
+ */
+async function playDiamondBuildup(teaserMessage, packName) {
+  if (!teaserMessage || !teaserMessage.message || !teaserMessage.embed) return;
+
+  const frames = [
+    {
+      title: `💠 Opening ${packName}...`,
+      desc: "💠 **A crack forms in the pack's surface...**\n\n*Something is trying to break through.*"
+    },
+    {
+      title: `💎 Opening ${packName}...`,
+      desc: "💎 **Diamond pressure building...** 💎\n\n*The energy is overwhelming.*"
+    },
+    {
+      title: `💎💎 Opening ${packName}... 💎💎`,
+      desc: "💎💎 **THE PACK CANNOT HOLD** 💎💎\n\n*Brace for impact...*"
+    },
+    {
+      title: `💎💎💎 BREACH IMMINENT 💎💎💎`,
+      desc: "💎💎💎 **DIAMOND INCOMING** 💎💎💎\n\n*One in a hundred thousand.*"
+    }
+  ];
+
+  for (const frame of frames) {
+    teaserMessage.embed.title = frame.title;
+    teaserMessage.embed.description = frame.desc;
+    try {
+      await teaserMessage.message.edit({ embeds: [teaserMessage.embed], components: [] });
+    } catch (err) {
+      return; // Message gone or edit failed — abandon animation gracefully
+    }
+    await new Promise(r => setTimeout(r, 1200));
+  }
 }
 
 /** Shallow-merge two filter objects (override takes precedence). */

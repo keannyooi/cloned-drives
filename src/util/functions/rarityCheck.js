@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { blackMarketEmojiID, bossEmojiID, mysticEmojiID, legendaryEmojiID, epicEmojiID, exoticEmojiID, standardEmojiID,
+const { blackMarketEmojiID, diamondEmojiID, bossEmojiID, mysticEmojiID, legendaryEmojiID, epicEmojiID, exoticEmojiID, standardEmojiID,
     rareEmojiID, uncommonEmojiID, commonEmojiID } = require("../consts/consts.js");
 
 // L-02: Cache emoji lookups at module level (populated on first call, stays in memory)
@@ -11,6 +11,7 @@ function getEmojiCache() {
     if (emojiCache) return emojiCache;
     emojiCache = {
         bm: bot.emojis.cache.get(blackMarketEmojiID),
+        diamond: bot.emojis.cache.get(diamondEmojiID),
         boss: bot.emojis.cache.get(bossEmojiID),
         mystic: bot.emojis.cache.get(mysticEmojiID),
         legendary: bot.emojis.cache.get(legendaryEmojiID),
@@ -28,6 +29,7 @@ function rarityCheck(car, type) {
     const emojis = getEmojiCache();
 
     if (type === "bm") return emojis.bm;
+    else if (type === "diamond" || car["diamond"] === true) return emojis.diamond;
     else if (car["cr"] > 1500) return emojis.boss;
     else if (car["cr"] > 999) return emojis.mystic;
     else if (car["cr"] > 849) return emojis.legendary;

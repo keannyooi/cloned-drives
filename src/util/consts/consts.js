@@ -309,6 +309,14 @@ const consts = {
     glofEmojiID: "967031943222923335",
     packEmojiID: "966972920687652885",
     blackMarketEmojiID: "1162936880048898059",
+    diamondEmojiID: "1162881990937280604",
+    // Master switch for the Diamond-rarity feature. When false:
+    //   - Packs never pull diamond cards (pre-roll skipped entirely)
+    //   - The diamondexchange command refuses with a "not available" message
+    //   - The 2x RR bonus for diamond cars is not applied
+    //   - The 🟢/🔴 name indicator for diamond cars is hidden
+    // Flip to true when diamond cars are designed and ready to ship.
+    DIAMONDS_ENABLED: false,
     bossEmojiID: "1162881924453371935",
     mysticEmojiID: "1162882081005764668",
     legendaryEmojiID: "1162882065017081897",

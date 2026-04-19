@@ -1,6 +1,6 @@
 "use strict";
 
-const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
 const searchUser = require("../util/functions/searchUser.js");
@@ -48,6 +48,15 @@ module.exports = {
 
         async function getCar(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
+            if (!playerData) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: `Error, ${user.username} has no profile.`,
+                    desc: "This user has never used the bot, so they have no garage to remove cars from.",
+                    author: message.author
+                });
+                return errorMessage.sendMessage({ currentMessage });
+            }
             let query, amount = 1, startFrom, searchByID = false;
             if (args[1].toLowerCase() === "all" && args[2]) {
                 startFrom = 2;
