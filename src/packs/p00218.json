@@ -1,0 +1,31 @@
+{
+    "packName": "4WD Booster Pack",
+    "description": "Boost your 4WD garage in CD!",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderG1.png",
+    "filter": {
+        "driveType": "4WD"
+    },
+    "packSequence": [
+        {
+            "standard": 50,
+            "common": 50
+        },
+        {
+            "standard": 50,
+            "common": 50
+        },
+        {
+            "standard": 50,
+            "common": 50
+        },
+        {
+            "common": 50,
+            "uncommon": 50
+        },
+        {
+            "common": 30,
+            "uncommon": 70
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "packName": "4WD Titan Pack",
+    "description": "The best 4WD pack in CD!",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderT1.png",
+    "filter": {
+        "driveType": "4WD"
+    },
+    "packSequence": [
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        }
+    ]
+}
