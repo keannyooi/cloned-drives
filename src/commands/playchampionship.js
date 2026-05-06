@@ -170,7 +170,7 @@ module.exports = {
                     desc: `The championship you are trying to view is not active currently. You may only view this championship if you're an <@&${eventMakerRoleID}>.`,
                     author: message.author,
                 });
-                return message.channel.send(errorMessage);
+                return errorMessage.sendMessage({ currentMessage });
             }
         }
     }
