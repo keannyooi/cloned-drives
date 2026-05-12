@@ -1,16 +1,16 @@
 "use strict";
 
-const bot = require("../config/config.js");
+const bot = require("../../config/config.js");
 const { ActionRowBuilder } = require("discord.js");
-const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { InfoMessage, ErrorMessage } = require("../../util/classes/classes.js");
+const { moneyEmojiID, trophyEmojiID } = require("../../util/consts/consts.js");
 const { 
     PVP_LEAGUES, 
     LEAGUE_ORDER,
     getLeague
-} = require("../util/consts/pvpConfig.js");
-const getPvPButtons = require("../util/functions/getPvPButtons.js");
-const pvpModel = require("../models/pvpSchema.js");
+} = require("../../util/consts/pvpConfig.js");
+const getPvPButtons = require("../../util/functions/getPvPButtons.js");
+const pvpModel = require("../../models/pvpSchema.js");
 
 module.exports = {
     name: "pvphistory",

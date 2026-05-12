@@ -1,17 +1,17 @@
 "use strict";
 
-const bot = require("../config/config.js");
+const bot = require("../../config/config.js");
 const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
-const { InfoMessage, ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
-const { getCar, getTrack } = require("../util/functions/dataManager.js");
-const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { InfoMessage, ErrorMessage, SuccessMessage } = require("../../util/classes/classes.js");
+const { getCar, getTrack } = require("../../util/functions/dataManager.js");
+const { moneyEmojiID, trophyEmojiID } = require("../../util/consts/consts.js");
 const { 
     PVP_LEAGUES, 
     LEAGUE_ORDER, 
     PVP_SETTINGS,
     getLeague
-} = require("../util/consts/pvpConfig.js");
-const { getCurrentSeason, isSeasonActive, getMostRecentSeason } = require("../util/consts/pvpSeasons.js");
+} = require("../../util/consts/pvpConfig.js");
+const { getCurrentSeason, isSeasonActive, getMostRecentSeason } = require("../../util/consts/pvpSeasons.js");
 const { 
     findOpponents,
     calculateRatingChange,
@@ -20,14 +20,14 @@ const {
     generateDefenseDisplay,
     getAttacksDisplay,
     getWinRate
-} = require("../util/functions/pvpUtils.js");
-const carNameGen = require("../util/functions/carNameGen.js");
-const createCar = require("../util/functions/createCar.js");
-const race = require("../util/functions/race.js");
-const getPvPButtons = require("../util/functions/getPvPButtons.js");
-const { trackMoneySpent, trackMoneyEarned, trackTrophiesEarned, trackPvPAttack } = require("../util/functions/tracker.js");
-const pvpModel = require("../models/pvpSchema.js");
-const profileModel = require("../models/profileSchema.js");
+} = require("../../util/functions/pvpUtils.js");
+const carNameGen = require("../../util/functions/carNameGen.js");
+const createCar = require("../../util/functions/createCar.js");
+const race = require("../../util/functions/race.js");
+const getPvPButtons = require("../../util/functions/getPvPButtons.js");
+const { trackMoneySpent, trackMoneyEarned, trackTrophiesEarned, trackPvPAttack } = require("../../util/functions/tracker.js");
+const pvpModel = require("../../models/pvpSchema.js");
+const profileModel = require("../../models/profileSchema.js");
 
 module.exports = {
     name: "pvpattack",

@@ -1,15 +1,15 @@
 "use strict";
 
-const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { getCar } = require("../util/functions/dataManager.js");
+const { InfoMessage, ErrorMessage } = require("../../util/classes/classes.js");
+const { getCar } = require("../../util/functions/dataManager.js");
 const { 
     PVP_LEAGUES, 
     LEAGUE_ORDER,
     getLeague
-} = require("../util/consts/pvpConfig.js");
-const { getCurrentSeason } = require("../util/consts/pvpSeasons.js");
-const { getBannedCars, getBanReason, GLOBAL_BANS, SEASON_BANS } = require("../util/consts/pvpBans.js");
-const carNameGen = require("../util/functions/carNameGen.js");
+} = require("../../util/consts/pvpConfig.js");
+const { getCurrentSeason } = require("../../util/consts/pvpSeasons.js");
+const { getBannedCars, getBanReason, GLOBAL_BANS, SEASON_BANS } = require("../../util/consts/pvpBans.js");
+const carNameGen = require("../../util/functions/carNameGen.js");
 
 module.exports = {
     name: "pvpbans",

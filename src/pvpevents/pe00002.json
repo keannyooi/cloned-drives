@@ -1,0 +1,186 @@
+{
+    "name": "American Muscle Showdown",
+    "duration": "5d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 2000,
+    "reqs": {
+        "country": [
+            "US"
+        ],
+        "modelYear": {
+            "start": 1965,
+            "end": 1995
+        },
+        "driveType": [
+            "RWD"
+        ]
+    },
+    "tracksets": [
+        [
+            "t00055",
+            "t00016",
+            "t00008",
+            "t00033",
+            "t00034"
+        ],
+        [
+            "t00055",
+            "t00016",
+            "t00033",
+            "t00034",
+            "t00038"
+        ],
+        [
+            "t00021",
+            "t00023",
+            "t00033",
+            "t00088",
+            "t00038"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Big Block Bandit",
+                "deck": [
+                    "c07882",
+                    "c07799",
+                    "c07866",
+                    "c07817",
+                    "c07757"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Detroit Iron",
+                "deck": [
+                    "c07764",
+                    "c01470",
+                    "c01034",
+                    "c00285",
+                    "c00254"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Speedway Slugger",
+                "deck": [
+                    "c08124",
+                    "c07999",
+                    "c07900",
+                    "c07521",
+                    "c08109"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Bourbon Bandit",
+                "deck": [
+                    "c07521",
+                    "c07896",
+                    "c00047",
+                    "c00254",
+                    "c00261"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Boulevard Bruiser",
+                "deck": [
+                    "c07477",
+                    "c03517",
+                    "c06495",
+                    "c03130",
+                    "c07904"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Hemi Hauler",
+                "deck": [
+                    "c00475",
+                    "c08109",
+                    "c08115",
+                    "c06490",
+                    "c06483"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25
+        },
+        {
+            "topPercent": 10,
+            "money": 75000
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

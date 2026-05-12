@@ -1,0 +1,184 @@
+{
+    "name": "Eco-Friendly Cup",
+    "duration": "5d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 0,
+    "reqs": {
+        "fuelType": [
+            "Hybrid",
+            "Electric"
+        ],
+        "modelYear": {
+            "start": 2010,
+            "end": 2025
+        }
+    },
+    "tracksets": [
+        [
+            "t00021",
+            "t00023",
+            "t00027",
+            "t00029",
+            "t00163"
+        ],
+        [
+            "t00163",
+            "t00023",
+            "t00021",
+            "t00038",
+            "t00100"
+        ],
+        [
+            "t00064",
+            "t00100",
+            "t00031",
+            "t00038",
+            "t00163"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Silent Streaker",
+                "deck": [
+                    "c07296",
+                    "c05531",
+                    "c05629",
+                    "c05514",
+                    "c05646"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Volt Voyager",
+                "deck": [
+                    "c03877",
+                    "c06201",
+                    "c06417",
+                    "c05818",
+                    "c06319"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Watt Warrior",
+                "deck": [
+                    "c07352",
+                    "c04782",
+                    "c00906",
+                    "c00171",
+                    "c00449"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Charge Champion",
+                "deck": [
+                    "c04796",
+                    "c06319",
+                    "c02837",
+                    "c01282",
+                    "c02815"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Regen Racer",
+                "deck": [
+                    "c00449",
+                    "c06306",
+                    "c02018",
+                    "c02854",
+                    "c01345"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            },
+            {
+                "name": "Battery Banshee",
+                "deck": [
+                    "c01845",
+                    "c02827",
+                    "c03067",
+                    "c00717",
+                    "c02837"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25
+        },
+        {
+            "topPercent": 10,
+            "money": 75000
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

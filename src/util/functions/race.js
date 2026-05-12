@@ -33,7 +33,7 @@ function loadImageWithTimeout(src, ms = 3000) {
  * - 699 (Twisty): Wins on high handling + weight tracks
  */
 
-async function race(message, player, opponent, currentTrack, disablegraphics) {
+async function race(message, player, opponent, currentTrack, disablegraphics, silentResult) {
     message.channel.sendTyping();
     const { tcsPen, absPen, drivePen, tyrePen } = weatherVars[`${currentTrack["weather"]} ${currentTrack["surface"]}`];
     let attachment;
@@ -105,7 +105,12 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         });
     }
 
-    await resultMessage.sendMessage({ attachment, preserve: true });
+    // PvP runs many races back-to-back and only wants the final summary embed,
+    // not per-race spam. When silentResult is true, skip posting the result
+    // message and just return the score.
+    if (!silentResult) {
+        await resultMessage.sendMessage({ attachment, preserve: true });
+    }
     return result;
 
     function compare(player, opponent, playerWon) {

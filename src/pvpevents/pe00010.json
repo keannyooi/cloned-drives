@@ -1,0 +1,184 @@
+{
+    "name": "Off-Road Rampage",
+    "duration": "5d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 0,
+    "reqs": {
+        "tyreType": [
+            "All-Surface",
+            "Off-Road"
+        ],
+        "driveType": [
+            "AWD",
+            "4WD"
+        ]
+    },
+    "tracksets": [
+        [
+            "t00000",
+            "t00009",
+            "t00035",
+            "t00049",
+            "t00120"
+        ],
+        [
+            "t00007",
+            "t00015",
+            "t00028",
+            "t00046",
+            "t00003"
+        ],
+        [
+            "t00004",
+            "t00012",
+            "t00036",
+            "t00120",
+            "t00124"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Dust Devil",
+                "deck": [
+                    "c05762",
+                    "c05647",
+                    "c00682",
+                    "c02227",
+                    "c05334"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Gravel Grinder",
+                "deck": [
+                    "c01575",
+                    "c03087",
+                    "c03459",
+                    "c03456",
+                    "c02905"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Snow Slider",
+                "deck": [
+                    "c03431",
+                    "c06526",
+                    "c01841",
+                    "c03308",
+                    "c03087"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Ice Tracker",
+                "deck": [
+                    "c01666",
+                    "c02585",
+                    "c02162",
+                    "c05337",
+                    "c02789"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Mud Slinger",
+                "deck": [
+                    "c01398",
+                    "c01906",
+                    "c00241",
+                    "c04798",
+                    "c03456"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Marsh Monster",
+                "deck": [
+                    "c05886",
+                    "c00143",
+                    "c06786",
+                    "c03803",
+                    "c06512"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25
+        },
+        {
+            "topPercent": 10,
+            "money": 75000
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "name": "Drag Strip Domination",
+    "duration": "5d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 0,
+    "reqs": {
+        "tyreType": [
+            "Drag",
+            "Slick",
+            "Performance"
+        ],
+        "cr": {
+            "start": 400,
+            "end": 999
+        }
+    },
+    "tracksets": [
+        [
+            "t00008",
+            "t00055",
+            "t00016",
+            "t00038",
+            "t00033"
+        ],
+        [
+            "t00006",
+            "t00053",
+            "t00014",
+            "t00038",
+            "t00088"
+        ],
+        [
+            "t00055",
+            "t00016",
+            "t00008",
+            "t00055",
+            "t00016"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Quarter-Mile King",
+                "deck": [
+                    "c04825",
+                    "c00359",
+                    "c02356",
+                    "c01229",
+                    "c01000"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Christmas Tree",
+                "deck": [
+                    "c02083",
+                    "c05329",
+                    "c03005",
+                    "c01467",
+                    "c01982"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Wet Strip Wizard",
+                "deck": [
+                    "c02314",
+                    "c06517",
+                    "c01246",
+                    "c02762",
+                    "c00026"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Tire Heater",
+                "deck": [
+                    "c02400",
+                    "c04279",
+                    "c05023",
+                    "c05741",
+                    "c05017"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Burnout Boss",
+                "deck": [
+                    "c00698",
+                    "c06978",
+                    "c00711",
+                    "c00596",
+                    "c00778"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Launch Control",
+                "deck": [
+                    "c04656",
+                    "c02858",
+                    "c03648",
+                    "c02829",
+                    "c02933"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25
+        },
+        {
+            "topPercent": 10,
+            "money": 75000
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

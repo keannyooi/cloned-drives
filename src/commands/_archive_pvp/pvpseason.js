@@ -1,26 +1,26 @@
 "use strict";
 
-const bot = require("../config/config.js");
+const bot = require("../../config/config.js");
 const { ActionRowBuilder } = require("discord.js");
-const { InfoMessage } = require("../util/classes/classes.js");
-const { getCar } = require("../util/functions/dataManager.js");
-const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { InfoMessage } = require("../../util/classes/classes.js");
+const { getCar } = require("../../util/functions/dataManager.js");
+const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../../util/consts/consts.js");
 const { 
     PVP_LEAGUES, 
     LEAGUE_ORDER
-} = require("../util/consts/pvpConfig.js");
+} = require("../../util/consts/pvpConfig.js");
 const { 
     getCurrentSeason, 
     getMostRecentSeason,
     isSeasonActive,
     getSeasonTimeRemaining 
-} = require("../util/consts/pvpSeasons.js");
-const { getBannedCars } = require("../util/consts/pvpBans.js");
-const { getEffectiveCR } = require("../util/functions/pvpUtils.js");
-const carNameGen = require("../util/functions/carNameGen.js");
-const reqDisplay = require("../util/functions/reqDisplay.js");
-const pvpModel = require("../models/pvpSchema.js");
-const profileModel = require("../models/profileSchema.js");
+} = require("../../util/consts/pvpSeasons.js");
+const { getBannedCars } = require("../../util/consts/pvpBans.js");
+const { getEffectiveCR } = require("../../util/functions/pvpUtils.js");
+const carNameGen = require("../../util/functions/carNameGen.js");
+const reqDisplay = require("../../util/functions/reqDisplay.js");
+const pvpModel = require("../../models/pvpSchema.js");
+const profileModel = require("../../models/profileSchema.js");
 
 module.exports = {
     name: "pvpseason",

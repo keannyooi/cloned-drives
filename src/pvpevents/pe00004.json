@@ -1,0 +1,186 @@
+{
+    "name": "Hot Hatch Heroes",
+    "duration": "5d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 1800,
+    "reqs": {
+        "bodyStyle": [
+            "Hatchback"
+        ],
+        "driveType": [
+            "FWD"
+        ],
+        "cr": {
+            "start": 200,
+            "end": 480
+        }
+    },
+    "tracksets": [
+        [
+            "t00100",
+            "t00064",
+            "t00031",
+            "t00039",
+            "t00219"
+        ],
+        [
+            "t00021",
+            "t00023",
+            "t00027",
+            "t00029",
+            "t00038"
+        ],
+        [
+            "t00064",
+            "t00100",
+            "t00021",
+            "t00023",
+            "t00038"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Pocket Rocket",
+                "deck": [
+                    "c05901",
+                    "c00330",
+                    "c00407",
+                    "c00131",
+                    "c04308"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            },
+            {
+                "name": "Tyre Smoker",
+                "deck": [
+                    "c01316",
+                    "c05704",
+                    "c00762",
+                    "c01025",
+                    "c01942"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Boulevard Cruiser",
+                "deck": [
+                    "c03400",
+                    "c04499",
+                    "c04262",
+                    "c06994",
+                    "c04630"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            },
+            {
+                "name": "Lane Splitter",
+                "deck": [
+                    "c07600",
+                    "c04222",
+                    "c04243",
+                    "c03390",
+                    "c03684"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Daily Demon",
+                "deck": [
+                    "c00908",
+                    "c00530",
+                    "c01167",
+                    "c00950",
+                    "c00442"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Backstreet Bullet",
+                "deck": [
+                    "c07601",
+                    "c01308",
+                    "c00330",
+                    "c01006",
+                    "c01337"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25
+        },
+        {
+            "topPercent": 10,
+            "money": 75000
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

@@ -1,17 +1,17 @@
 "use strict";
 
-const bot = require("../config/config.js");
+const bot = require("../../config/config.js");
 const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
-const { InfoMessage, ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
-const { getCar } = require("../util/functions/dataManager.js");
+const { InfoMessage, ErrorMessage, SuccessMessage } = require("../../util/classes/classes.js");
+const { getCar } = require("../../util/functions/dataManager.js");
 const { 
     PVP_LEAGUES, 
     LEAGUE_ORDER, 
     PVP_SETTINGS,
     getLeague
-} = require("../util/consts/pvpConfig.js");
-const { getCurrentSeason, isSeasonActive, getMostRecentSeason } = require("../util/consts/pvpSeasons.js");
-const { isCarBanned, getBanReason } = require("../util/consts/pvpBans.js");
+} = require("../../util/consts/pvpConfig.js");
+const { getCurrentSeason, isSeasonActive, getMostRecentSeason } = require("../../util/consts/pvpSeasons.js");
+const { isCarBanned, getBanReason } = require("../../util/consts/pvpBans.js");
 const { 
     validatePvPHand,
     getMaxAllowedCR,
@@ -20,15 +20,15 @@ const {
     calculateTotalCR,
     generateDefenseDisplay,
     validateCarOwnership
-} = require("../util/functions/pvpUtils.js");
-const carNameGen = require("../util/functions/carNameGen.js");
-const searchGarage = require("../util/functions/searchGarage.js");
-const selectUpgrade = require("../util/functions/selectUpgrade.js");
-const getPvPButtons = require("../util/functions/getPvPButtons.js");
-const filterCheck = require("../util/functions/filterCheck.js");
-const reqDisplay = require("../util/functions/reqDisplay.js");
-const pvpModel = require("../models/pvpSchema.js");
-const profileModel = require("../models/profileSchema.js");
+} = require("../../util/functions/pvpUtils.js");
+const carNameGen = require("../../util/functions/carNameGen.js");
+const searchGarage = require("../../util/functions/searchGarage.js");
+const selectUpgrade = require("../../util/functions/selectUpgrade.js");
+const getPvPButtons = require("../../util/functions/getPvPButtons.js");
+const filterCheck = require("../../util/functions/filterCheck.js");
+const reqDisplay = require("../../util/functions/reqDisplay.js");
+const pvpModel = require("../../models/pvpSchema.js");
+const profileModel = require("../../models/profileSchema.js");
 
 module.exports = {
     name: "pvpdefense",

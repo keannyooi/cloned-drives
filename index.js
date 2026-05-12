@@ -12,6 +12,7 @@ const { adminRoleID, eventMakerRoleID, testerRoleID, sandboxRoleID } = require("
 const endEvent = require("./src/util/functions/endEvent.js");
 const endChampionship = require("./src/util/functions/endChampionship.js");
 const endOffer = require("./src/util/functions/endOffer.js");
+const endPvpEvent = require("./src/util/functions/endPvpEvent.js");
 const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
 const tracker = require("./src/util/functions/tracker.js");
@@ -22,6 +23,7 @@ const championshipsModel = require("./src/models/championshipsSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
 const packBattleModel = require("./src/models/packBattleSchema.js");
+const pvpEventModel = require("./src/models/pvpEventSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -100,11 +102,12 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
 // loop thingy - checks for expired events/offers every 3 minutes
 setInterval(async () => {
     // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch)
-    const [events, championships, offers, packBattles, playerDatum] = await Promise.all([
+    const [events, championships, offers, packBattles, pvpEvents, playerDatum] = await Promise.all([
         eventModel.find({ isActive: true }).lean(),
         championshipsModel.find({ isActive: true }).lean(),
         offerModel.find({ isActive: true }).lean(),
         packBattleModel.find({ isActive: true }).lean(),
+        pvpEventModel.find({ isActive: true }).lean(),
         profileModel.find(
             { "settings.senddailynotifs": true, "dailyStats.notifReceived": false },
             { userID: 1, dailyStats: 1 }  // H-02: projection — only fetch needed fields
@@ -138,6 +141,18 @@ setInterval(async () => {
                 console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
             } catch (err) {
                 console.error(`[PackBattle] Error auto-expiring ${battle.name}:`, err.message);
+            }
+        }
+    }
+
+    // Auto-expire PvP events — endPvpEvent() handles leaderboard archival + reward distribution
+    for (let pvpEvent of pvpEvents) {
+        if (pvpEvent.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(pvpEvent.deadline)).invalid !== null) {
+            try {
+                await endPvpEvent(pvpEvent);
+                console.log(`[PvP] Auto-expired and ended: ${pvpEvent.name}`);
+            } catch (err) {
+                console.error(`[PvP] Error auto-expiring ${pvpEvent.name}:`, err.message);
             }
         }
     }

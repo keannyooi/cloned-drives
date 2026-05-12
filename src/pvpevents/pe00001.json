@@ -1,0 +1,92 @@
+{
+    "name": "Tuner Tournament",
+    "duration": "1h",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "reqs": {
+        "country": ["JP"],
+        "cr": { "start": 250, "end": 380 }
+    },
+    "tracksets": [
+        ["t00055", "t00016", "t00008", "t00033", "t00038"],
+        ["t00073", "t00100", "t00064", "t00031", "t00017"],
+        ["t00088", "t00120", "t00041", "t00007", "t00029"]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Sokudo (Drag Specialist)",
+                "deck": ["c00777", "c00513", "c00766", "c00770", "c00332"],
+                "upgrades": ["996", "996", "996", "996", "996"]
+            },
+            {
+                "name": "Kaidō Express",
+                "deck": ["c00691", "c00777", "c00513", "c00692", "c00766"],
+                "upgrades": ["996", "996", "996", "996", "996"]
+            }
+        ],
+        "1": [
+            {
+                "name": "Mountain Master",
+                "deck": ["c00767", "c00535", "c00524", "c00777", "c00332"],
+                "upgrades": ["699", "699", "699", "699", "699"]
+            },
+            {
+                "name": "Apex Hunter",
+                "deck": ["c00770", "c00777", "c00767", "c00535", "c00692"],
+                "upgrades": ["699", "699", "699", "699", "699"]
+            }
+        ],
+        "2": [
+            {
+                "name": "Banpei (All-Surface)",
+                "deck": ["c00691", "c00777", "c00770", "c00513", "c00332"],
+                "upgrades": ["969", "969", "969", "969", "969"]
+            },
+            {
+                "name": "Touge Veteran",
+                "deck": ["c00692", "c00766", "c00767", "c00535", "c00513"],
+                "upgrades": ["969", "969", "969", "969", "969"]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rank": 1,
+            "money": 500000,
+            "trophies": 100,
+            "car": { "carID": "c00181", "upgrade": "996" },
+            "pack": "p00001"
+        },
+        {
+            "rank": 2,
+            "money": 250000,
+            "trophies": 50,
+            "car": { "carID": "c00075", "upgrade": "333" }
+        },
+        {
+            "rank": 3,
+            "money": 125000,
+            "trophies": 25,
+            "car": { "carID": "c00026", "upgrade": "000" }
+        },
+        {
+            "topPercent": 10,
+            "money": 75000,
+            "pack": "p00001"
+        },
+        {
+            "topPercent": 25,
+            "money": 40000
+        },
+        {
+            "topPercent": 50,
+            "money": 20000
+        },
+        {
+            "topPercent": 100,
+            "money": 5000
+        }
+    ]
+}

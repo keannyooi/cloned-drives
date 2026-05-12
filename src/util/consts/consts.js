@@ -310,6 +310,9 @@ const consts = {
     packEmojiID: "966972920687652885",
     blackMarketEmojiID: "1162936880048898059",
     diamondEmojiID: "1162881990937280604",
+    // Bot owner — used for owner-only admin commands (e.g., PvP ticket grants).
+    OWNER_ID: "209038568138604546",
+
     // Master switch for the Diamond-rarity feature. When false:
     //   - Packs never pull diamond cards (pre-roll skipped entirely)
     //   - The diamondexchange command refuses with a "not available" message

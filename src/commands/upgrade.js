@@ -10,6 +10,7 @@ const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const generateHud = require("../util/functions/generateHud.js");
 const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
+const { upgradeCost } = require("../util/functions/upgradePrice.js");
 const confirm = require("../util/functions/confirm.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -71,7 +72,7 @@ module.exports = {
                         }
 
                         const carName = carNameGen({ currentCar: car });
-                        let [moneyLimit] = definePrice(bmReference["cr"], upgrade, origUpgrade);
+                        const moneyLimit = upgradeCost(bmReference["cr"], origUpgrade, upgrade);
                         if (playerData.money >= moneyLimit) {
                             const confirmationMessage = new InfoMessage({
                                 channel: message.channel,
@@ -133,65 +134,5 @@ module.exports = {
                 });
         }
 
-        function definePrice(cr, upgrade, origUpgrade) {
-            let a = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
-            let b = parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]);
-            let moneyMultiplier = 0;
-            if (cr > 1245) { //BOSS 1245+
-                moneyMultiplier = 20000000;
-            }
-			else if (cr > 1130 && cr <= 1245) { //1130-1245
-				moneyMultiplier = 350000;
-            }
-			else if (cr > 1100 && cr <= 1130) { //1100-1129
-				moneyMultiplier = 300000;
-            }
-            else if (cr > 1050 && cr <= 1100) { //1050-1099
-                moneyMultiplier = 175000;
-            }
-            else if (cr > 1000 && cr <= 1050) { //1000-1049
-                moneyMultiplier = 135000;
-            }
-            else if (cr > 950 && cr <= 1000) { //950-999
-                moneyMultiplier = 80000;
-            }
-            else if (cr > 900 && cr <= 950) { //900-949
-                moneyMultiplier = 50000;
-            }
-			else if (cr > 850 && cr <= 900) { //850-899
-				moneyMultiplier = 37500;
-            }
-            else if (cr > 800 && cr <= 850) { //800-849
-                moneyMultiplier = 22500;
-            }
-            else if (cr > 750 && cr <= 800) { //750-799
-                moneyMultiplier = 15000;
-            }
-            else if (cr > 700 && cr <= 750) { //700-749
-                moneyMultiplier = 10000;
-            }
-            else if (cr > 600 && cr <= 700) { //600-699
-                moneyMultiplier = 9000;
-            }
-            else if (cr > 500 && cr <= 600) { //500-599
-                moneyMultiplier = 5000;
-            }
-            else if (cr > 400 && cr <= 500) { //400-499
-                moneyMultiplier = 3750;
-            }
-            else if (cr > 300 && cr <= 400) { //300-399
-                moneyMultiplier = 2000;
-            }
-            else if (cr > 200 && cr <= 300) { //200-299
-                moneyMultiplier = 1500;
-            }
-            else if (cr > 100 && cr <= 200) { //100-199
-                moneyMultiplier = 750;
-            }
-            else { //001-099
-                moneyMultiplier = 500;
-            }
-            return [moneyMultiplier * (a - b)];
-        }
     }
 };

@@ -39,12 +39,14 @@ const cars = new Map();        // carID (without .json) -> car data object
 const tracks = new Map();      // trackID (without .json) -> track data object
 const packs = new Map();       // packID (without .json) -> pack data object
 const offerTemplates = new Map(); // templateID (without .json) -> template data object
+const pvpEventTemplates = new Map(); // templateID (without .json) -> pvp event template data
 
 // File lists (equivalent to readdirSync results)
-let carFiles = [];             // ["c00001.json", "c00002.json", ...]
-let trackFiles = [];           // ["t00001.json", "t00002.json", ...]
-let packFiles = [];            // ["p00001.json", "p00002.json", ...]
-let offerTemplateFiles = [];   // ["o00001.json", "o00002.json", ...]
+let carFiles = [];                // ["c00001.json", "c00002.json", ...]
+let trackFiles = [];              // ["t00001.json", "t00002.json", ...]
+let packFiles = [];               // ["p00001.json", "p00002.json", ...]
+let offerTemplateFiles = [];      // ["o00001.json", "o00002.json", ...]
+let pvpEventTemplateFiles = [];   // ["pe00001.json", "pe00002.json", ...]
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
 let cachedCarArray = [];
@@ -74,7 +76,8 @@ function initialize(basePath = "./src") {
         cars: { loaded: 0, failed: 0, errors: [] },
         tracks: { loaded: 0, failed: 0, errors: [] },
         packs: { loaded: 0, failed: 0, errors: [] },
-        offerTemplates: { loaded: 0, failed: 0, errors: [] }
+        offerTemplates: { loaded: 0, failed: 0, errors: [] },
+        pvpEventTemplates: { loaded: 0, failed: 0, errors: [] }
     };
 
     // Load Cars
@@ -153,6 +156,28 @@ function initialize(basePath = "./src") {
         console.log(`   Offer Templates: directory not found, skipping`);
     }
 
+    // Load PvP Event Templates
+    const pvpEventsPath = path.join(basePath, "pvpevents");
+    try {
+        pvpEventTemplateFiles = readdirSync(pvpEventsPath).filter(file => file.endsWith(".json"));
+        for (const file of pvpEventTemplateFiles) {
+            try {
+                const filePath = path.join(pvpEventsPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const templateID = file.slice(0, -5);
+                pvpEventTemplates.set(templateID, parsed);
+                stats.pvpEventTemplates.loaded++;
+            } catch (err) {
+                stats.pvpEventTemplates.failed++;
+                stats.pvpEventTemplates.errors.push({ file, error: err.message });
+            }
+        }
+    } catch (err) {
+        // pvpevents/ directory may not exist yet — that's fine
+        console.log(`   PvP Event Templates: directory not found, skipping`);
+    }
+
     initialized = true;
 
     // L-01: Build cached arrays once (avoids Array.from() on every getRandomCar/Track call)
@@ -165,13 +190,15 @@ function initialize(basePath = "./src") {
     console.log(`   Tracks: ${stats.tracks.loaded} loaded, ${stats.tracks.failed} failed`);
     console.log(`   Packs: ${stats.packs.loaded} loaded, ${stats.packs.failed} failed`);
     console.log(`   Offer Templates: ${stats.offerTemplates.loaded} loaded, ${stats.offerTemplates.failed} failed`);
+    console.log(`   PvP Event Templates: ${stats.pvpEventTemplates.loaded} loaded, ${stats.pvpEventTemplates.failed} failed`);
 
-    if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0) {
+    if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0 || stats.pvpEventTemplates.failed > 0) {
         console.error("❌ Some files failed to load:");
         stats.cars.errors.forEach(e => console.error(`   Car: ${e.file} - ${e.error}`));
         stats.tracks.errors.forEach(e => console.error(`   Track: ${e.file} - ${e.error}`));
         stats.packs.errors.forEach(e => console.error(`   Pack: ${e.file} - ${e.error}`));
         stats.offerTemplates.errors.forEach(e => console.error(`   Offer Template: ${e.file} - ${e.error}`));
+        stats.pvpEventTemplates.errors.forEach(e => console.error(`   PvP Event Template: ${e.file} - ${e.error}`));
     }
 
     return stats;
@@ -285,6 +312,30 @@ function getOfferTemplate(templateID) {
     return template;
 }
 
+/**
+ * Get PvP event template data by ID
+ * @param {string} templateID - Template ID with or without .json extension
+ * @returns {Object|null} Template data object or null if not found
+ */
+function getPvpEventTemplate(templateID) {
+    if (!templateID) return null;
+
+    let cleanID = templateID;
+    if (cleanID.includes("/")) {
+        cleanID = cleanID.split("/").pop();
+    }
+    if (cleanID.endsWith(".json")) {
+        cleanID = cleanID.slice(0, -5);
+    }
+
+    const template = pvpEventTemplates.get(cleanID);
+    if (!template) {
+        console.warn(`⚠️ PvP event template not found: ${templateID} (cleaned: ${cleanID})`);
+        return null;
+    }
+    return template;
+}
+
 // ============================================================================
 // FILE LIST GETTERS - Use these instead of readdirSync()
 // ============================================================================
@@ -321,6 +372,14 @@ function getOfferTemplateFiles() {
     return offerTemplateFiles;
 }
 
+/**
+ * Get list of all PvP event template files
+ * @returns {string[]} Array of PvP event template filenames
+ */
+function getPvpEventTemplateFiles() {
+    return pvpEventTemplateFiles;
+}
+
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
@@ -355,6 +414,14 @@ function getAllPacks() {
  */
 function getAllOfferTemplates() {
     return Array.from(offerTemplates.values());
+}
+
+/**
+ * Get all PvP event templates as an array
+ * @returns {Object[]} Array of all PvP event template objects
+ */
+function getAllPvpEventTemplates() {
+    return Array.from(pvpEventTemplates.values());
 }
 
 /**
@@ -402,6 +469,17 @@ function offerTemplateExists(templateID) {
 }
 
 /**
+ * Check if a PvP event template exists
+ * @param {string} templateID - Template ID to check
+ * @returns {boolean}
+ */
+function pvpEventTemplateExists(templateID) {
+    let cleanID = templateID;
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    return pvpEventTemplates.has(cleanID);
+}
+
+/**
  * Get memory usage statistics
  * @returns {Object} Statistics about the data manager
  */
@@ -412,13 +490,15 @@ function getStats() {
             cars: cars.size,
             tracks: tracks.size,
             packs: packs.size,
-            offerTemplates: offerTemplates.size
+            offerTemplates: offerTemplates.size,
+            pvpEventTemplates: pvpEventTemplates.size
         },
         fileCounts: {
             cars: carFiles.length,
             tracks: trackFiles.length,
             packs: packFiles.length,
-            offerTemplates: offerTemplateFiles.length
+            offerTemplates: offerTemplateFiles.length,
+            pvpEventTemplates: pvpEventTemplateFiles.length
         }
     };
 }
@@ -456,10 +536,12 @@ function reloadAll(basePath = "./src") {
     tracks.clear();
     packs.clear();
     offerTemplates.clear();
+    pvpEventTemplates.clear();
     carFiles = [];
     trackFiles = [];
     packFiles = [];
     offerTemplateFiles = [];
+    pvpEventTemplateFiles = [];
     cachedCarArray = [];
     cachedTrackArray = [];
     initialized = false;
@@ -588,24 +670,28 @@ module.exports = {
     getTrack,
     getPack,
     getOfferTemplate,
+    getPvpEventTemplate,
 
     // File lists (replace readdirSync())
     getCarFiles,
     getTrackFiles,
     getPackFiles,
     getOfferTemplateFiles,
+    getPvpEventTemplateFiles,
 
     // Bulk getters
     getAllCars,
     getAllTracks,
     getAllPacks,
     getAllOfferTemplates,
+    getAllPvpEventTemplates,
 
     // Existence checks
     carExists,
     trackExists,
     packExists,
     offerTemplateExists,
+    pvpEventTemplateExists,
 
     // Utilities
     getStats,
