@@ -1,0 +1,36 @@
+{
+    "packName": "Slipstream Tuner Pack",
+    "description": "5 US Coupes with rising rarity per slot — the last slot drops the Epic tier entirely (Exotic or Legendary only).",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderX1.png",
+    "filter": {
+        "country": "US",
+        "bodyStyle": "Coupe"
+    },
+    "packSequence": [
+        {
+            "epic": 75,
+            "exotic": 22,
+            "legendary": 3
+        },
+        {
+            "epic": 70,
+            "exotic": 25,
+            "legendary": 5
+        },
+        {
+            "epic": 60,
+            "exotic": 32,
+            "legendary": 8
+        },
+        {
+            "epic": 50,
+            "exotic": 40,
+            "legendary": 10
+        },
+        {
+            "exotic": 75,
+            "legendary": 25
+        }
+    ]
+}

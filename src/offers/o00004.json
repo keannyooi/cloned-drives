@@ -1,0 +1,10 @@
+{
+    "offerName": "Slipstream Race-Ready Deck",
+    "price": 2000000,
+    "stock": 2,
+    "duration": "14d",
+    "offer": {
+        "cars": ["c07725", "c05724", "c02770", "c00347", "c07975"],
+        "pack": "p00099"
+    }
+}

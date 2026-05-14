@@ -1,0 +1,27 @@
+{
+    "packName": "Slipstream Starter Pack",
+    "description": "A foot in the door of the Slipstream event — 3 US Coupes, mostly Epic, with a slowly improving 3rd slot.",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderX1.png",
+    "filter": {
+        "country": "US",
+        "bodyStyle": "Coupe"
+    },
+    "packSequence": [
+        {
+            "epic": 85,
+            "exotic": 13,
+            "legendary": 2
+        },
+        {
+            "epic": 80,
+            "exotic": 17,
+            "legendary": 3
+        },
+        {
+            "epic": 65,
+            "exotic": 30,
+            "legendary": 5
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "packName": "Slipstream Elite Pack",
+    "description": "5 US Coupes built to compete — slots 1-4 climb in rarity, and the final slot is a guaranteed Legendary.",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderX1.png",
+    "filter": {
+        "country": "US",
+        "bodyStyle": "Coupe"
+    },
+    "packSequence": [
+        {
+            "epic": 50,
+            "exotic": 40,
+            "legendary": 10
+        },
+        {
+            "epic": 35,
+            "exotic": 50,
+            "legendary": 15
+        },
+        {
+            "epic": 15,
+            "exotic": 60,
+            "legendary": 25
+        },
+        {
+            "exotic": 65,
+            "legendary": 35
+        },
+        {
+            "legendary": 100
+        }
+    ]
+}
