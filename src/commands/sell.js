@@ -26,13 +26,14 @@ module.exports = {
         "[amount / 'all'] | <car name goes here>",
         "[amount / 'all'] | -<car ID>",
         "dupes                         — bulk-sell stock dupes, keep 3 of each (default)",
-        "dupes <N>                     — keep N stock copies (override)",
-        "dupes under <CR>              — only cars below this CR",
-        "dupes make <name>             — only this manufacturer (substring)",
-        "dupes country <code>          — only this country (e.g. JP, US, DE)",
-        "dupes tag <tag>               — only cars with a tag containing this (substring)",
-        "dupes rarity <name>           — only this rarity (standard/common/uncommon/rare/epic/exotic/legendary/mystic)",
-        "(filters compose: dupes 2 country US tag muscle under 700)"
+        "dupes <N>                     — keep N stock copies (override default of 3)",
+        "Filter compose with AND. All optional:",
+        "  Ranges:  cr 500-800  |  modelyear 1990-2000  |  seatcount 2  |  under <CR> (cr shorthand)",
+        "  Exact:   country JP  |  driveType RWD  |  tyreType Performance  |  gc Low  |  enginePos Front  |  fuelType Petrol  |  creator <name>",
+        "  Tags:    make Honda  |  tags Muscle  |  collection Daily  |  bodystyle Coupe  |  hiddentag <name>",
+        "  Bools:   abs true  |  tcs false",
+        "  Custom:  rarity Epic  |  search Mustang",
+        "(example: dupes 2 country US tags muscle cr 400-700)"
     ],
     description: "Sells cars from your garage. Supports bulk-sell with filters; upgraded cars are protected from bulk.",
     args: 1,
@@ -216,68 +217,207 @@ function rarityNameOf(car) {
     return "standard";
 }
 
+// ─── Filter definitions (mirrors editFilter.js / filter.js criteria) ────────
+//
+// Each filter has a keyword that maps to a car-data field + a value type:
+//   range       — numeric range, syntax: `cr 500-800` (range) or `cr 500` (exact)
+//   exact       — single-value exact match, case-insensitive
+//   arrayMatch  — substring match on a field that can be string OR array of strings
+//   bool        — true/false
+//
+// Filters that filter.js supports but bulk-sell skips intentionally:
+//   isPrize    — prize cars are always protected from bulk-sell anyway
+//   isOwned    — meaningless (we're iterating the garage already)
+//   isBM       — BM cars are always protected from bulk-sell anyway
+//   isStock    — by definition we only sell stock copies
+//   isUpgraded — by definition we never sell upgraded copies
+//   isMaxed    — meaningless for stock-only sells
+
+const RANGE_FILTERS = {
+    cr:        "cr",
+    modelyear: "modelYear",
+    seatcount: "seatCount"
+};
+const EXACT_FILTERS = {
+    country:   "country",
+    creator:   "creator",
+    tyretype:  "tyreType",
+    drivetype: "driveType",
+    enginepos: "enginePos",
+    fueltype:  "fuelType",
+    gc:        "gc"
+};
+const ARRAY_FILTERS = {
+    make:       "make",
+    tags:       "tags",
+    tag:        "tags",       // alias for tags (singular feels natural)
+    collection: "collection",
+    bodystyle:  "bodyStyle",
+    hiddentag:  "hiddenTag"
+};
+const BOOL_FILTERS = {
+    abs:       "abs",
+    tcs:       "tcs"
+};
+
+/** Build a human-readable summary of active filters for the confirm/error embeds. */
+function describeFilters(f) {
+    const parts = [];
+    for (const [field, r] of Object.entries(f.range)) {
+        if (r.min === r.max) parts.push(`${field} = ${r.min}`);
+        else if (r.min === 1) parts.push(`${field} < ${r.max + 1}`);
+        else parts.push(`${field} ${r.min}-${r.max}`);
+    }
+    for (const [field, val] of Object.entries(f.exact)) parts.push(`${field} = ${val}`);
+    for (const [field, val] of Object.entries(f.array)) parts.push(`${field} ~ ${val}`);
+    for (const [field, val] of Object.entries(f.bool))  parts.push(`${field} = ${val}`);
+    if (f.rarity) parts.push(`rarity = ${f.rarity}`);
+    if (f.search) parts.push(`search ~ ${f.search}`);
+    return parts.join(" • ");
+}
+
+/** Parse a range value like "500-800" or "500" into { min, max }, or null if invalid. */
+function parseRangeValue(str) {
+    if (!str) return null;
+    if (String(str).includes("-")) {
+        const parts = String(str).split("-").map(s => parseInt(s.trim(), 10));
+        if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1]) && parts[0] <= parts[1]) {
+            return { min: parts[0], max: parts[1] };
+        }
+        return null;
+    }
+    const v = parseInt(str, 10);
+    return isNaN(v) ? null : { min: v, max: v };
+}
+
 /** Test a car against a parsed filter set. All filters AND together. */
-function carMatchesFilters(car, filters) {
-    if (filters.crCap !== null && car.cr >= filters.crCap) return false;
-    if (filters.make) {
-        const makes = Array.isArray(car.make) ? car.make : [car.make];
-        if (!makes.some(m => String(m).toLowerCase().includes(filters.make))) return false;
+function carMatchesFilters(car, f) {
+    // Range filters
+    for (const [field, range] of Object.entries(f.range)) {
+        const v = car[field];
+        if (typeof v !== "number") return false;
+        if (v < range.min || v > range.max) return false;
     }
-    if (filters.country) {
-        if (String(car.country || "").toLowerCase() !== filters.country) return false;
+    // Exact filters
+    for (const [field, val] of Object.entries(f.exact)) {
+        if (String(car[field] || "").toLowerCase() !== val) return false;
     }
-    if (filters.tag) {
-        const tags = car.tags || [];
-        if (!tags.some(t => String(t).toLowerCase().includes(filters.tag))) return false;
+    // Array-or-string substring filters
+    for (const [field, val] of Object.entries(f.array)) {
+        const fv = car[field];
+        if (fv === undefined || fv === null) return false;
+        const list = Array.isArray(fv) ? fv : [fv];
+        if (!list.some(item => String(item).toLowerCase().includes(val))) return false;
     }
-    if (filters.rarity) {
-        if (rarityNameOf(car) !== filters.rarity) return false;
+    // Boolean filters
+    for (const [field, val] of Object.entries(f.bool)) {
+        if (car[field] !== val) return false;
+    }
+    // Rarity (custom — computed from CR + flags)
+    if (f.rarity && rarityNameOf(car) !== f.rarity) return false;
+    // Search — substring across make + model
+    if (f.search) {
+        const makeStr = Array.isArray(car.make) ? car.make.join(" ") : (car.make || "");
+        const name = `${makeStr} ${car.model || ""}`.toLowerCase();
+        if (!name.includes(f.search)) return false;
     }
     return true;
 }
 
 /**
- * cd-sell dupes [N] [under <CR>] [make X] [country Y] [tag Z] [rarity W]
+ * cd-sell dupes [N] [filter <value>] [filter <value>] ...
  *
  * Bulk-sells STOCK (000) duplicate copies of cars in the garage.
  *   - Default: keep 3 stock per car. Override with `cd-sell dupes <N>`.
  *   - Upgraded copies (333/666/699/969/996) are NEVER sold (protected).
  *   - Skips prize / diamond / BM cars entirely.
- *   - Filters compose with AND: `dupes 2 country US tag Muscle under 700` works.
+ *   - Filters compose with AND. See FILTER_DEFS above for all supported keys.
  *   - Safety net: a car with no upgraded copies always retains ≥ 1 stock,
  *     even if `keep 0` was requested.
+ *
+ * Filter syntax (all optional, all stack):
+ *   Ranges:  cr 500-800  |  modelyear 1990-2000  |  seatcount 2  |  under 500 (shorthand for cr <N)
+ *   Exact:   country JP  |  driveType RWD  |  tyreType Performance  |  gc Low  |  enginePos Front  |  fuelType Petrol  |  creator <name>
+ *   Tags:    make Honda  |  tags Muscle  |  collection Daily  |  bodystyle Coupe  |  hiddentag <name>
+ *   Bools:   abs true    |  tcs false
+ *   Custom:  rarity Epic  |  search Mustang
  */
 async function bulkSellDupes(message, playerData, args) {
     const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
 
     // Parse flags. Order-independent. Each filter keyword consumes the next token.
-    const filters = { crCap: null, make: null, country: null, tag: null, rarity: null };
+    const filters = { range: {}, exact: {}, array: {}, bool: {}, rarity: null, search: null };
     let keepStock = DEFAULT_KEEP_STOCK;
     let keepExplicit = false;
+    const unrecognised = [];
 
     for (let i = 0; i < args.length; i++) {
         const tok = args[i].toLowerCase();
         const next = args[i + 1];
-        const consumeNext = () => { i++; };
 
-        if (tok === "under" || tok === "below") {
-            const v = parseInt(next, 10);
-            if (!isNaN(v) && v >= 1) filters.crCap = v;
-            consumeNext();
-        }
-        else if (tok === "keep") {
+        // Keep count keyword
+        if (tok === "keep") {
             const v = parseInt(next, 10);
             if (!isNaN(v) && v >= 0) { keepStock = v; keepExplicit = true; }
-            consumeNext();
+            i++; continue;
         }
-        else if (tok === "make"    && next) { filters.make    = next.toLowerCase(); consumeNext(); }
-        else if (tok === "country" && next) { filters.country = next.toLowerCase(); consumeNext(); }
-        else if (tok === "tag"     && next) { filters.tag     = next.toLowerCase(); consumeNext(); }
-        else if (tok === "rarity"  && next) { filters.rarity  = next.toLowerCase(); consumeNext(); }
-        else if (!isNaN(tok)) {
+
+        // CR shorthand
+        if (tok === "under" || tok === "below") {
+            const v = parseInt(next, 10);
+            if (!isNaN(v) && v >= 1) filters.range.cr = { min: 1, max: v - 1 };
+            i++; continue;
+        }
+
+        // Rarity / search (custom one-off filters)
+        if (tok === "rarity" && next) { filters.rarity = next.toLowerCase(); i++; continue; }
+        if (tok === "search" && next) { filters.search = next.toLowerCase(); i++; continue; }
+
+        // Range filters (cr / modelyear / seatcount)
+        if (RANGE_FILTERS[tok] && next !== undefined) {
+            const r = parseRangeValue(next);
+            if (r) filters.range[RANGE_FILTERS[tok]] = r;
+            i++; continue;
+        }
+
+        // Exact filters
+        if (EXACT_FILTERS[tok] && next) {
+            filters.exact[EXACT_FILTERS[tok]] = next.toLowerCase();
+            i++; continue;
+        }
+
+        // Array filters
+        if (ARRAY_FILTERS[tok] && next) {
+            filters.array[ARRAY_FILTERS[tok]] = next.toLowerCase();
+            i++; continue;
+        }
+
+        // Boolean filters
+        if (BOOL_FILTERS[tok] && next) {
+            const v = next.toLowerCase();
+            if (v === "true" || v === "false") filters.bool[BOOL_FILTERS[tok]] = (v === "true");
+            i++; continue;
+        }
+
+        // Bare number → keep count override
+        if (!isNaN(tok)) {
             const v = parseInt(tok, 10);
             if (v >= 0 && v <= 1000) { keepStock = v; keepExplicit = true; }
+            continue;
         }
+
+        // Anything else — track for the "did you mean" hint in the error path
+        unrecognised.push(tok);
+    }
+
+    // Surface unrecognised filter keywords up-front so users aren't surprised
+    if (unrecognised.length > 0) {
+        return new ErrorMessage({
+            channel: message.channel,
+            title: "Error, unknown filter keyword(s).",
+            desc: `Didn't recognise: ${unrecognised.map(t => `\`${t}\``).join(", ")}.\n\nRun \`cd-help sell\` to see the full list of supported filters.`,
+            author: message.author
+        }).sendMessage();
     }
 
     // ─── Build the to-sell list ─────────────────────────────────────────────
@@ -325,13 +465,7 @@ async function bulkSellDupes(message, playerData, args) {
     }
 
     if (toSell.length === 0) {
-        const filterParts = [];
-        if (filters.crCap !== null) filterParts.push(`under CR ${filters.crCap}`);
-        if (filters.make)    filterParts.push(`make=${filters.make}`);
-        if (filters.country) filterParts.push(`country=${filters.country.toUpperCase()}`);
-        if (filters.tag)     filterParts.push(`tag~${filters.tag}`);
-        if (filters.rarity)  filterParts.push(`rarity=${filters.rarity}`);
-        const filterDesc = filterParts.length ? ` (${filterParts.join(", ")})` : "";
+        const filterDesc = describeFilters(filters) ? ` (${describeFilters(filters)})` : "";
         return new InfoMessage({
             channel: message.channel,
             title: `Nothing to sell — keeping ${keepStock} stock of each${filterDesc}.`,
@@ -354,13 +488,7 @@ async function bulkSellDupes(message, playerData, args) {
         : "";
 
     // ─── Confirm ────────────────────────────────────────────────────────────
-    const filterParts = [];
-    if (filters.crCap !== null) filterParts.push(`under CR ${filters.crCap}`);
-    if (filters.make)    filterParts.push(`make ~ ${filters.make}`);
-    if (filters.country) filterParts.push(`country = ${filters.country.toUpperCase()}`);
-    if (filters.tag)     filterParts.push(`tag ~ ${filters.tag}`);
-    if (filters.rarity)  filterParts.push(`rarity = ${filters.rarity}`);
-    const filterTag = filterParts.length ? ` • ${filterParts.join(" • ")}` : "";
+    const filterTag = describeFilters(filters) ? ` • ${describeFilters(filters)}` : "";
     const safetyNote = modelsSafetyKept > 0
         ? `\n\n_⚠️ ${modelsSafetyKept} model(s) had no upgraded copies and were kept at 1 stock as a safety net._`
         : "";
