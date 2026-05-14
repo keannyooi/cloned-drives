@@ -573,16 +573,28 @@ async function loadSavedDeck(message, playerData, deckName, reqs, deckCrCap, cur
         return null;
     }
 
-    // Validate each car still owned + meets reqs
+    // Validate each car still owned + meets reqs.
+    // Ownership is checked CUMULATIVELY — if a deck has 2 slots of the same (carID,tune),
+    // the player must own ≥2 of that combo. Otherwise a deck saved when the player had
+    // multiple copies could still be played after they sold down to one.
+    const deckUsage = new Map(); // key: "carID|tune" → count of slots using it
+    for (const s of deck.hand) {
+        const key = `${s.carID}|${s.upgrade}`;
+        deckUsage.set(key, (deckUsage.get(key) || 0) + 1);
+    }
     let totalCR = 0;
     for (let i = 0; i < SLOT_COUNT; i++) {
         const slot = deck.hand[i];
         const garageCar = playerData.garage.find(g => g.carID === slot.carID);
-        if (!garageCar || (garageCar.upgrades?.[slot.upgrade] || 0) < 1) {
+        const owned = garageCar?.upgrades?.[slot.upgrade] || 0;
+        const needed = deckUsage.get(`${slot.carID}|${slot.upgrade}`) || 1;
+        if (owned < needed) {
+            const car = getCar(slot.carID);
+            const carName = car ? carNameGen({ currentCar: car, rarity: true, upgrade: slot.upgrade }) : `${slot.carID} (tune ${slot.upgrade})`;
             await new ErrorMessage({
                 channel: message.channel,
-                title: `Error, you no longer own slot ${i + 1}.`,
-                desc: `"${deck.name}" needs a ${getCar(slot.carID)?.model || slot.carID} at tune ${slot.upgrade}, which you don't have. Edit the deck with \`cd-deck setslot\`.`,
+                title: `Error, not enough copies for slot ${i + 1}.`,
+                desc: `"${deck.name}" uses **${needed}× ${carName}** but you only own **${owned}×**. Edit the deck with \`cd-deck setslot\` to swap that slot out.`,
                 author: message.author
             }).sendMessage({ currentMessage });
             return null;

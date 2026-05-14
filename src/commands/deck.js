@@ -356,6 +356,24 @@ async function setSlot(message, playerData, rest) {
                     const car = getCar(garageCar.carID);
                     const carName = carNameGen({ currentCar: car, rarity: true, upgrade });
 
+                    // Ownership check — accounting for copies already used in OTHER slots of this deck.
+                    // Without this, a player with 1× Civic at 996 could put it in 5 slots since each
+                    // slot independently sees "owned: 1 ≥ 1 ✓". Count the other slots first.
+                    const owned = garageCar.upgrades?.[upgrade] || 0;
+                    const usedInOtherSlots = deck.hand.reduce((sum, s, idx) => {
+                        if (idx === slot - 1) return sum; // skip the slot being replaced
+                        if (s && s.carID === garageCar.carID && s.upgrade === upgrade) return sum + 1;
+                        return sum;
+                    }, 0);
+                    if (owned < usedInOtherSlots + 1) {
+                        return new ErrorMessage({
+                            channel: message.channel,
+                            title: `Error, you don't own enough copies.`,
+                            desc: `You own **${owned}× ${carName}** but **${usedInOtherSlots}** is already used in other slot${usedInOtherSlots === 1 ? "" : "s"} of "${deck.name}". You'd need at least **${usedInOtherSlots + 1}** to place another.`,
+                            author: message.author
+                        }).sendMessage({ currentMessage: currentMessage2 });
+                    }
+
                     // Lock-aware validation
                     if (lockedEvent) {
                         // Per-car reqs check
