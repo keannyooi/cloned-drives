@@ -647,14 +647,33 @@ function evaluateDeckForEvent(deck, event, garage) {
         return { ok: false, issues: [`Wrong slot count`], totalCR: 0 };
     }
 
+    // Pre-count how many slots use each unique (carID, tune) combo, so we can do
+    // CUMULATIVE ownership checks instead of per-slot. Otherwise a deck with 3×
+    // CERV III at 996 would qualify even if the player only owns 1.
+    const deckUsage = new Map();
+    for (const s of deck.hand) {
+        if (!s) continue;
+        const key = `${s.carID}|${s.upgrade}`;
+        deckUsage.set(key, (deckUsage.get(key) || 0) + 1);
+    }
+    const flaggedKeys = new Set(); // dedupe — only flag each (carID,tune) once
+
     for (let i = 0; i < SLOT_COUNT; i++) {
         const slot = deck.hand[i];
         if (!slot) { issues.push(`Slot ${i + 1} empty`); continue; }
 
-        // Ownership
+        // Cumulative ownership: total copies needed across the deck for this combo
+        const key = `${slot.carID}|${slot.upgrade}`;
+        const needed = deckUsage.get(key) || 1;
         const garageCar = garage.find(g => g.carID === slot.carID);
-        if (!garageCar || (garageCar.upgrades?.[slot.upgrade] || 0) < 1) {
-            issues.push(`Slot ${i + 1}: no longer owned at tune ${slot.upgrade}`);
+        const owned = garageCar?.upgrades?.[slot.upgrade] || 0;
+        if (owned < needed) {
+            if (!flaggedKeys.has(key)) {
+                flaggedKeys.add(key);
+                const car = getCar(slot.carID);
+                const carLabel = car?.model || slot.carID;
+                issues.push(`Need ${needed}× ${carLabel} (tune ${slot.upgrade}) — only own ${owned}`);
+            }
             continue;
         }
 
