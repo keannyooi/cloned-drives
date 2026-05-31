@@ -1,0 +1,42 @@
+{
+    "name": "Quick Booster Rush",
+    "packID": "p00005",
+    "duration": "7d",
+    "milestones": [
+        {
+            "stat": "totalCRPulled",
+            "threshold": 1000,
+            "resetType": "cumulative",
+            "reward": { "money": 50000 },
+            "hint": "Pull a total of 1,000 CR from Booster Packs."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 5000,
+            "resetType": "cumulative",
+            "reward": { "money": 200000, "trophies": 20 },
+            "hint": "Reach 5,000 CR pulled."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 25000,
+            "resetType": "cumulative",
+            "reward": { "money": 500000, "trophies": 50 },
+            "hint": "Reach 25,000 CR pulled."
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 500000, "trophies": 100 }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 3,
+            "reward": { "money": 200000, "trophies": 50 }
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "name": "Prancing Horse Cup",
+    "duration": "7d",
+    "ticketCap": 5,
+    "ticketRegenMinutes": 30,
+    "matchCooldownSeconds": 30,
+    "deckCrCap": 4200,
+    "cancelPenalty": 25,
+    "reqs": {
+        "make": [
+            "Ferrari"
+        ],
+        "cr": {
+            "start": 500,
+            "end": 999
+        }
+    },
+    "tracksets": [
+        [
+            "t00055",
+            "t00016",
+            "t00008",
+            "t00033",
+            "t00038"
+        ],
+        [
+            "t00068",
+            "t00073",
+            "t00100",
+            "t00064",
+            "t00031"
+        ],
+        [
+            "t00072",
+            "t00099",
+            "t00064",
+            "t00030",
+            "t00018"
+        ]
+    ],
+    "ghostDecks": {
+        "0": [
+            {
+                "name": "Stuttgart Strike",
+                "deck": [
+                    "c00385",
+                    "c08303",
+                    "c03379",
+                    "c00382",
+                    "c05117"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            },
+            {
+                "name": "Modena Bullet",
+                "deck": [
+                    "c05927",
+                    "c00385",
+                    "c02281",
+                    "c03381",
+                    "c03645"
+                ],
+                "upgrades": [
+                    "996",
+                    "996",
+                    "996",
+                    "996",
+                    "996"
+                ]
+            }
+        ],
+        "1": [
+            {
+                "name": "Mille Miglia Master",
+                "deck": [
+                    "c02302",
+                    "c02937",
+                    "c03220",
+                    "c02131",
+                    "c03645"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            },
+            {
+                "name": "Apex Italiano",
+                "deck": [
+                    "c02933",
+                    "c03220",
+                    "c00389",
+                    "c00382",
+                    "c02685"
+                ],
+                "upgrades": [
+                    "699",
+                    "699",
+                    "699",
+                    "699",
+                    "699"
+                ]
+            }
+        ],
+        "2": [
+            {
+                "name": "Storm Stallion",
+                "deck": [
+                    "c00390",
+                    "c03382",
+                    "c03645",
+                    "c02939",
+                    "c03646"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            },
+            {
+                "name": "Rain Maestro",
+                "deck": [
+                    "c02932",
+                    "c02921",
+                    "c00382",
+                    "c02689",
+                    "c02688"
+                ],
+                "upgrades": [
+                    "969",
+                    "969",
+                    "969",
+                    "969",
+                    "969"
+                ]
+            }
+        ]
+    },
+    "rewards": [
+        {
+            "rankRange": [
+                1,
+                10
+            ],
+            "money": 2000000,
+            "trophies": 500,
+            "car": {
+                "carID": "c00010",
+                "upgrade": "000"
+            }
+        },
+        {
+            "rankRange": [
+                11,
+                25
+            ],
+            "money": 750000,
+            "trophies": 150,
+            "car": {
+                "carID": "c03220",
+                "upgrade": "996"
+            },
+            "pack": "p00004"
+        },
+        {
+            "rankRange": [
+                26,
+                50
+            ],
+            "money": 400000,
+            "trophies": 75,
+            "car": {
+                "carID": "c00385",
+                "upgrade": "000"
+            },
+            "pack": "p00001"
+        },
+        {
+            "rankRange": [
+                51,
+                100
+            ],
+            "money": 200000,
+            "trophies": 30
+        },
+        {
+            "topPercent": 100,
+            "money": 50000,
+            "trophies": 15
+        }
+    ]
+}

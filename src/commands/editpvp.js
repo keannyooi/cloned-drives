@@ -11,6 +11,7 @@
  *   ticketregen <minutes>
  *   cooldown <seconds>
  *   deckcrcap <number>             ← total CR sum cap on player + ghost decks. 0 = disabled.
+ *   cancelpenalty <number>         ← LB points deducted if a player cancels mid-match. Default 25.
  *
  * Reqs (mirrors event reqs format):
  *   reqs <field> <value>         e.g. reqs cr 400-600, reqs make Ferrari, reqs isPrize false
@@ -69,6 +70,7 @@ module.exports = {
         "<name> ticketregen <minutes>",
         "<name> cooldown <seconds>",
         "<name> deckcrcap <number>",
+        "<name> cancelpenalty <number>",
         "<name> reqs <field> <value>",
         "<name> reqs clear [<field>]",
         "<name> trackset add <t1> <t2> <t3> <t4> <t5>",
@@ -99,7 +101,7 @@ module.exports = {
 
         // Find the event by fuzzy-matching the leading args until we hit a known subcommand
         const subcommandKeywords = new Set([
-            "name", "duration", "extend", "ticketcap", "ticketregen", "cooldown", "deckcrcap",
+            "name", "duration", "extend", "ticketcap", "ticketregen", "cooldown", "deckcrcap", "cancelpenalty",
             "reqs", "trackset", "ghost", "reward", "bulk", "reset"
         ]);
         let splitIdx = -1;
@@ -146,6 +148,7 @@ async function dispatch(message, pvpEvent, subcmd, args, currentMessage) {
             case "ticketregen":   return editNumber(message, pvpEvent, "ticketRegenMinutes", args, currentMessage, { min: 1, max: 1440, label: "Ticket regen (minutes)" });
             case "cooldown":      return editNumber(message, pvpEvent, "matchCooldownSeconds", args, currentMessage, { min: 0, max: 3600, label: "Match cooldown (seconds)" });
             case "deckcrcap":     return editNumber(message, pvpEvent, "deckCrCap", args, currentMessage, { min: 0, max: 9999, label: "Deck CR cap (0 = no cap)" });
+            case "cancelpenalty": return editNumber(message, pvpEvent, "cancelPenalty", args, currentMessage, { min: 0, max: 9999, label: "Cancel LB penalty (0 = disabled)" });
             case "reqs":          return editReqs(message, pvpEvent, args, currentMessage);
             case "trackset":      return editTrackset(message, pvpEvent, args, currentMessage);
             case "ghost":         return editGhost(message, pvpEvent, args, currentMessage);
@@ -527,6 +530,10 @@ async function editBulk(message, pvpEvent, args, currentMessage) {
     if (parsed.deckCrCap !== undefined) {
         if (typeof parsed.deckCrCap !== "number" || parsed.deckCrCap < 0) issues.push("`deckCrCap` must be ≥ 0 (0 = no cap).");
         else updates.deckCrCap = parsed.deckCrCap;
+    }
+    if (parsed.cancelPenalty !== undefined) {
+        if (typeof parsed.cancelPenalty !== "number" || parsed.cancelPenalty < 0) issues.push("`cancelPenalty` must be ≥ 0 (0 = disabled).");
+        else updates.cancelPenalty = parsed.cancelPenalty;
     }
     if (parsed.reqs !== undefined) {
         if (typeof parsed.reqs !== "object" || parsed.reqs === null) issues.push("`reqs` must be an object.");

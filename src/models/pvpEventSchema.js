@@ -45,6 +45,11 @@ const pvpEventSchema = new Schema({
     // This is an additional constraint on top of per-car `reqs.cr` range.
     deckCrCap: { type: Number, default: 0 },
 
+    // Leaderboard penalty applied when a player cancels mid-match (either via the
+    // Cancel button or by letting any UI step time out). Deters "cancel-to-scout"
+    // exploits. Set to 0 to disable. Default 25 (~5-10% of a typical match's LB gain).
+    cancelPenalty: { type: Number, default: 25 },
+
     // Reward tier list — fully admin-configurable mix of absolute ranks and percentages.
     // Each player gets ONLY the highest tier they qualify for (no stacking).
     // Shape: [

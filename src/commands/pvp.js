@@ -194,6 +194,10 @@ async function showDetails(message, pvpEvent, currentMessage) {
     if (pvpEvent.deckCrCap > 0) {
         settingsLines.push(`💎 Deck CR cap: **${pvpEvent.deckCrCap}** _(sum of all 5 cars' CR)_`);
     }
+    const cancelPenalty = typeof pvpEvent.cancelPenalty === "number" ? pvpEvent.cancelPenalty : 25;
+    if (cancelPenalty > 0) {
+        settingsLines.push(`⚠️ Cancel penalty: **-${cancelPenalty} LB points** _(applied if a match is cancelled or times out)_`);
+    }
     fields.push({ name: "Settings", value: settingsLines.join("\n"), inline: false });
 
     // ── Reqs ───────────────────────────────────────────────────────────

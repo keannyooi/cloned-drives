@@ -124,6 +124,7 @@ module.exports = {
             if (template.ticketRegenMinutes !== undefined) newEvent.ticketRegenMinutes = template.ticketRegenMinutes;
             if (template.matchCooldownSeconds !== undefined) newEvent.matchCooldownSeconds = template.matchCooldownSeconds;
             if (template.deckCrCap !== undefined) newEvent.deckCrCap = template.deckCrCap;
+            if (template.cancelPenalty !== undefined) newEvent.cancelPenalty = template.cancelPenalty;
             if (template.reqs) newEvent.reqs = { ...template.reqs };
             if (Array.isArray(template.tracksets)) newEvent.tracksets = JSON.parse(JSON.stringify(template.tracksets));
             if (template.ghostDecks) newEvent.ghostDecks = JSON.parse(JSON.stringify(template.ghostDecks));

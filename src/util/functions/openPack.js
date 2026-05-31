@@ -57,20 +57,30 @@ async function openPack(args) {
   const slots = [];
   for (let i = 0; i < currentPack.packSequence.length; i++) {
     const slotDef = currentPack.packSequence[i];
-    let rates, slotFilter;
+    let rates, slotFilter, rarityFilters = {};
 
     if (slotDef.rates) {
       rates = slotDef.rates;
       slotFilter = slotDef.filter
         ? mergeFilters(packFilter, slotDef.filter)
         : packFilter;
+      // OPTIONAL: per-rarity filter overrides. E.g. a slot could have:
+      //   { rates: {epic:83, exotic:13, legendary:3.2, mystic:0.8},
+      //     rarityFilters: { legendary: {make:"Ferrari"}, mystic: {make:"Ferrari"} } }
+      // → epic/exotic pulls use the slot/pack filter (no override),
+      //   legendary/mystic pulls force Ferrari only.
+      if (slotDef.rarityFilters && typeof slotDef.rarityFilters === "object") {
+        for (const [rarity, override] of Object.entries(slotDef.rarityFilters)) {
+          rarityFilters[rarity] = mergeFilters(slotFilter, override);
+        }
+      }
     } else {
       rates = { ...slotDef };
       slotFilter = packFilter;
     }
 
     for (let r = 0; r < repetition; r++) {
-      slots.push({ rates, filter: slotFilter });
+      slots.push({ rates, filter: slotFilter, rarityFilters });
     }
   }
 
@@ -162,7 +172,7 @@ async function openPack(args) {
   let diamondPulled = false; // hard cap: max 1 diamond per pack opening
 
   for (let i = 0; i < totalCards; i++) {
-    const { rates, filter } = slots[i];
+    const { rates, filter, rarityFilters } = slots[i];
 
     let chosenCarID = null;
     let chosenUpgrade = "000";
@@ -206,7 +216,11 @@ async function openPack(args) {
         } else {
           check += rates[key];
           if (check > rand) {
-            const { byRarity } = getFilteredPool(filter);
+            // Per-rarity filter override: when this rarity has a special filter
+            // (e.g. "legendary must be Ferrari"), use that pool instead of the
+            // slot's default. Falls back to the slot filter if no override.
+            const effectiveFilter = (rarityFilters && rarityFilters[key]) || filter;
+            const { byRarity } = getFilteredPool(effectiveFilter);
             chosenCarID = pickWithFallback(byRarity, key, pulledCarIDs, noDupes);
             break;
           }

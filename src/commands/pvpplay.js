@@ -51,6 +51,12 @@ const {
 const SLOT_COUNT = 5;
 const RANK_DISTANCE_MULTIPLIER = 0.05;
 const PER_RACE_MIN_MAGNITUDE = 10;
+// Timer for deck picker + opponent picker. Longer than `defaultChoiceTime` (typically 30s)
+// so players have time to think; the cancel penalty deters scouting abuse.
+const UI_TIMEOUT_MS = 160 * 1000;
+// Match review is more involved (slot swaps, planning around the opponent's deck),
+// so give it more time.
+const REVIEW_TIMEOUT_MS = 5 * 60 * 1000;
 
 module.exports = {
     name: "pvpplay",
@@ -184,7 +190,7 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
         }
     }
 
-    // 4. Roll a random trackset
+    // 4. Validate event has tracksets configured (we'll roll one AFTER deck commit)
     if (!Array.isArray(pvpEvent.tracksets) || pvpEvent.tracksets.length === 0) {
         return new ErrorMessage({
             channel: message.channel,
@@ -193,53 +199,38 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
             author: message.author
         }).sendMessage({ currentMessage });
     }
-    const tracksetIdx = Math.floor(Math.random() * pvpEvent.tracksets.length);
-    const trackset = pvpEvent.tracksets[tracksetIdx];
 
-    // 5. Build opponent pool
-    const opponents = buildOpponentPool(pvpEvent, message.author.id, tracksetIdx);
-    if (opponents.length === 0) {
-        // Should be impossible if startpvp validation passed (every trackset has ≥1 ghost)
-        return new ErrorMessage({
-            channel: message.channel,
-            title: "Error, no opponents available.",
-            desc: "No real player snapshots and no ghost decks for this trackset. Tell an admin to add ghost decks.",
-            author: message.author
-        }).sendMessage({ currentMessage });
-    }
-
-    // 6. Show opponent picker
-    const opponentSelection = await pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents, currentMessage);
-    if (!opponentSelection) return; // cancelled / timed out — no ticket spent
-    const { chosenOpponent, currentMessage: cm2 } = opponentSelection;
-
-    // 7. Pick a saved deck — either by name (power-user shortcut) or via dropdown of qualifying decks
+    // 5. Pre-flight: figure out the player's qualifying decks BEFORE spending a ticket.
+    // If they have no qualifying decks, we want to error out clean without charging anything.
+    // (The `savedDeckName` shortcut path validates the named deck here too.)
     const deckCrCap = pvpEvent.deckCrCap || 0;
-    let playerDeck;
     if (savedDeckName) {
-        playerDeck = await loadSavedDeck(message, playerData, savedDeckName, pvpEvent.reqs, deckCrCap, cm2);
-        if (!playerDeck) return; // error already shown
+        const previewDeck = await loadSavedDeck(message, playerData, savedDeckName, pvpEvent.reqs, deckCrCap, currentMessage);
+        if (!previewDeck) return; // error already shown, no ticket spent
     }
     else {
-        playerDeck = await pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, cm2);
-        if (!playerDeck) return; // no qualifying / cancelled / timed out
+        // Just confirm at least one qualifying deck exists; the actual picker runs after ticket spend
+        const qualifyingPreview = countQualifyingDecks(playerData, pvpEvent);
+        if (qualifyingPreview.errorTitle) {
+            return new ErrorMessage({
+                channel: message.channel,
+                title: qualifyingPreview.errorTitle,
+                desc: qualifyingPreview.errorDesc,
+                author: message.author
+            }).sendMessage({ currentMessage });
+        }
     }
 
-    // 8. Slot assignment review (swap + confirm) — pass everything so the embed
-    // can show opponent + trackset alongside the player's deck.
-    const finalDeck = await reviewAndConfirm(message, playerDeck, pvpEvent.name, deckCrCap, chosenOpponent, trackset, tracksetIdx, pvpEvent.tracksets.length);
-    if (!finalDeck) return; // cancelled — no ticket spent
-
-    // 9. Spend ticket atomically — write the post-regen entry as a whole, but
-    // protect against concurrent ticket spends by requiring tickets >= 1 in the filter.
-    // (Bot.execList already prevents the SAME user from running two pvpplay calls at once,
-    // but cd-pvpadmin grant from owner runs as a different user with no lock collision.)
+    // 6. Spend ticket atomically — the moment we commit to the flow. Cancelling at ANY
+    // later UI step costs the ticket AND applies a leaderboard penalty.
+    // Why now (before deck pick): the player has decided to play. The penalty deters
+    // "cancel-to-scout" loops; we want the cost applied immediately, not at the final confirm.
+    const cancelPenalty = typeof pvpEvent.cancelPenalty === "number" ? pvpEvent.cancelPenalty : 25;
     spendTicket(entry);
     const postSpendEntry = JSON.parse(JSON.stringify(entry));
     const spendResult = await pvpEventModel.findOneAndUpdate(
         {
             pvpEventID: pvpEvent.pvpEventID,
-            // Either the player has no entry yet (first match) OR they have ≥1 ticket
             $or: [
                 { [`entries.${message.author.id}`]: { $exists: false } },
                 { [`entries.${message.author.id}.tickets`]: { $gte: 1 } }
@@ -253,8 +244,94 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
             title: "Error, ticket spend failed.",
             desc: "Something raced ahead of you on this event. Try again in a moment.",
             author: message.author
-        }).sendMessage();
+        }).sendMessage({ currentMessage });
     }
+
+    // Helper to apply the LB penalty + show the cancel message when a UI step bails out.
+    // Returns nothing — caller should just `return` after calling this.
+    async function applyCancelPenalty(reason, currentMessageForReply) {
+        try {
+            await pvpEventModel.updateOne(
+                { pvpEventID: pvpEvent.pvpEventID },
+                { "$inc": { [`entries.${message.author.id}.score`]: -cancelPenalty } }
+            );
+        } catch (err) {
+            console.error(`[PvP] Failed to apply cancel penalty for ${message.author.id}: ${err.message}`);
+        }
+        const titleByReason = {
+            cancelled: "Match cancelled.",
+            timedOut:  "Timed out — match cancelled.",
+            default:   "Match cancelled."
+        };
+        await new ErrorMessage({
+            channel: message.channel,
+            title: titleByReason[reason] || titleByReason.default,
+            desc: `Your ticket has been spent and **${cancelPenalty} leaderboard points** were deducted. Cancellation incurs a penalty so players can't scout trackset/opponent info for free — see \`cd-help pvpplay\` for details.`,
+            author: message.author
+        }).sendMessage({ currentMessage: currentMessageForReply });
+    }
+
+    // 7. Pick a saved deck — either by name (power-user shortcut) or via dropdown of qualifying decks.
+    // The deck is committed BEFORE the trackset + opponents are revealed, so the player can't
+    // pre-stash 3 themed decks and pick the right one after seeing the trackset.
+    let playerDeck;
+    let deckCurrentMessage = currentMessage;
+    if (savedDeckName) {
+        playerDeck = await loadSavedDeck(message, playerData, savedDeckName, pvpEvent.reqs, deckCrCap, currentMessage);
+        if (!playerDeck) {
+            // Shouldn't normally happen since pre-flight validated, but defensive
+            await applyCancelPenalty("cancelled", currentMessage);
+            return;
+        }
+    }
+    else {
+        const pickResult = await pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, currentMessage, cancelPenalty);
+        if (!pickResult || pickResult.cancelled) {
+            if (pickResult?.reason) await applyCancelPenalty(pickResult.reason, pickResult.currentMessage || currentMessage);
+            return;
+        }
+        playerDeck = pickResult.deck;
+        deckCurrentMessage = pickResult.currentMessage || currentMessage;
+    }
+
+    // 8. NOW roll the trackset (after deck commit) and build the opponent pool
+    const tracksetIdx = Math.floor(Math.random() * pvpEvent.tracksets.length);
+    const trackset = pvpEvent.tracksets[tracksetIdx];
+
+    const opponents = buildOpponentPool(pvpEvent, message.author.id, tracksetIdx);
+    if (opponents.length === 0) {
+        // Should be impossible if startpvp validation passed (every trackset has ≥1 ghost).
+        // But if it does happen, refund the ticket since this is a system fault.
+        try {
+            await pvpEventModel.updateOne(
+                { pvpEventID: pvpEvent.pvpEventID },
+                { "$inc": { [`entries.${message.author.id}.tickets`]: 1 } }
+            );
+        } catch {}
+        return new ErrorMessage({
+            channel: message.channel,
+            title: "Error, no opponents available.",
+            desc: "Ticket refunded. Tell an admin — no real player snapshots and no ghost decks for the rolled trackset.",
+            author: message.author
+        }).sendMessage({ currentMessage: deckCurrentMessage });
+    }
+
+    // 9. Show opponent picker (160s)
+    const opponentResult = await pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents, deckCurrentMessage, cancelPenalty);
+    if (!opponentResult || opponentResult.cancelled) {
+        if (opponentResult?.reason) await applyCancelPenalty(opponentResult.reason, opponentResult.currentMessage || deckCurrentMessage);
+        return;
+    }
+    const chosenOpponent = opponentResult.opponent;
+    const cm2 = opponentResult.currentMessage || deckCurrentMessage;
+
+    // 10. Match review (5 min — most complex step, slot swaps to plan around opponent)
+    const reviewResult = await reviewAndConfirm(message, playerDeck, pvpEvent.name, deckCrCap, chosenOpponent, trackset, tracksetIdx, pvpEvent.tracksets.length, cancelPenalty);
+    if (!reviewResult || reviewResult.cancelled) {
+        if (reviewResult?.reason) await applyCancelPenalty(reviewResult.reason, reviewResult.currentMessage || cm2);
+        return;
+    }
+    const finalDeck = reviewResult.deck;
 
     // 10. Run the 5 races. If any race throws (image timeout, network glitch),
     // refund the ticket so the player isn't out a play for nothing.
@@ -446,7 +523,7 @@ function buildOpponentPool(pvpEvent, viewerID, tracksetIdx) {
 // Opponent picker UI
 // ============================================================================
 
-async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents, currentMessage) {
+async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents, currentMessage, cancelPenalty = 25) {
     // Build trackset preview
     const trackPreview = trackset.map((tid, i) => `${i + 1}. ${getTrack(tid)?.trackName || tid}`).join("\n");
 
@@ -492,9 +569,9 @@ async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents,
     const teaser = new InfoMessage({
         channel: message.channel,
         title: `${pvpEvent.name} — Pick your opponent`,
-        desc: `${trackSummary}\n\n${oppSummary}`,
+        desc: `${trackSummary}\n\n${oppSummary}\n\n⚠️ _Cancelling or timing out now will cost **${cancelPenalty} leaderboard points** (your ticket is already spent)._`,
         author: message.author,
-        footer: `${defaultChoiceTime / 1000} seconds to choose. Picking nothing won't spend a ticket.`
+        footer: `${UI_TIMEOUT_MS / 1000}s to choose.`
     });
 
     const sentMessage = await teaser.sendMessage({
@@ -506,7 +583,7 @@ async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents,
     return new Promise((resolve) => {
         const collector = sentMessage.message.createMessageComponentCollector({
             filter: i => i.user.id === message.author.id,
-            time: defaultChoiceTime
+            time: UI_TIMEOUT_MS
         });
         collector.on("collect", async (interaction) => {
             try {
@@ -518,31 +595,14 @@ async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents,
                 if (interaction.customId === "pvp_opponent_pick") {
                     const idx = parseInt(interaction.values[0], 10);
                     collector.stop("picked");
-                    resolve({ chosenOpponent: opponents[idx], currentMessage: sentMessage });
+                    resolve({ opponent: opponents[idx], currentMessage: sentMessage });
                 }
             } catch (err) { console.error("opponent pick error:", err.message); }
         });
         collector.on("end", async (_, reason) => {
             if (reason === "picked") return;
             try { await sentMessage.removeButtons(); } catch {}
-            if (reason !== "cancelled") {
-                // timed out
-                await new InfoMessage({
-                    channel: message.channel,
-                    title: "Timed out — no opponent chosen.",
-                    desc: "Your ticket was not spent.",
-                    author: message.author
-                }).sendMessage();
-            }
-            else {
-                await new InfoMessage({
-                    channel: message.channel,
-                    title: "Match cancelled.",
-                    desc: "Your ticket was not spent.",
-                    author: message.author
-                }).sendMessage();
-            }
-            resolve(null);
+            resolve({ cancelled: true, reason: reason === "cancelled" ? "cancelled" : "timedOut", currentMessage: sentMessage });
         });
     });
 }
@@ -693,48 +753,49 @@ function evaluateDeckForEvent(deck, event, garage) {
     return { ok: issues.length === 0, issues, totalCR };
 }
 
-async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, currentMessage) {
+/**
+ * Pre-flight count of qualifying decks. Returns either { count } (≥1 qualifying)
+ * or { errorTitle, errorDesc } so the caller can render the message with proper context.
+ * Used BEFORE ticket spend so we can fail-fast with no charge.
+ */
+function countQualifyingDecks(playerData, pvpEvent) {
     const allDecks = Array.isArray(playerData.decks) ? playerData.decks : [];
-
-    // ── 0. Player has no decks at all ────────────────────────────────────
     if (allDecks.length === 0) {
-        await new ErrorMessage({
-            channel: message.channel,
-            title: "Error, no saved decks.",
-            desc: `You need a saved deck to play PvP.\n\nQuick start (locks a new deck to this event so it'll always qualify):\n\`\`\`\ncd-deck create MyDeck | ${pvpEvent.name}\ncd-deck setslot MyDeck 1 <car name>\ncd-deck setslot MyDeck 2 <car name>\ncd-deck setslot MyDeck 3 <car name>\ncd-deck setslot MyDeck 4 <car name>\ncd-deck setslot MyDeck 5 <car name>\n\`\`\``,
-            author: message.author
-        }).sendMessage({ currentMessage });
-        return null;
+        return {
+            errorTitle: "Error, no saved decks.",
+            errorDesc: `You need a saved deck to play PvP. Quick start:\n\`\`\`\ncd-deck create MyDeck | ${pvpEvent.name}\ncd-deck setslot MyDeck 1 <car>\n...\n\`\`\``
+        };
     }
+    let qualifying = 0;
+    for (const deck of allDecks) {
+        const v = evaluateDeckForEvent(deck, pvpEvent, playerData.garage);
+        if (v.ok) qualifying++;
+    }
+    if (qualifying === 0) {
+        return {
+            errorTitle: "Error, none of your decks qualify for this event.",
+            errorDesc: `Build a deck locked to this event:\n\`cd-deck create <name> | ${pvpEvent.name}\``
+        };
+    }
+    return { count: qualifying };
+}
 
-    // ── 1. Evaluate each deck against this event ─────────────────────────
+async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, currentMessage, cancelPenalty = 25) {
+    // Re-evaluate decks now (we already pre-flighted in runMatchFlow, but the data could have
+    // shifted in micro-seconds between then and now — defensive). All return shapes use
+    // { deck, currentMessage } on success, { cancelled: true, reason, currentMessage } on cancel.
+    const allDecks = Array.isArray(playerData.decks) ? playerData.decks : [];
     const qualifying = [];
-    const rejected = [];
     for (const deck of allDecks) {
         const verdict = evaluateDeckForEvent(deck, pvpEvent, playerData.garage);
         if (verdict.ok) qualifying.push({ deck, totalCR: verdict.totalCR });
-        else rejected.push({ deck, issues: verdict.issues });
     }
-
-    // ── 2. None qualify — explain why ────────────────────────────────────
+    // Shouldn't be 0 here (pre-flight handles it), but guard anyway
     if (qualifying.length === 0) {
-        const sample = rejected.slice(0, 3)
-            .map(r => `**${r.deck.name}** — ${r.issues.slice(0, 2).join("; ")}`)
-            .join("\n");
-        const reqsLine = (pvpEvent.reqs && Object.keys(pvpEvent.reqs).length > 0)
-            ? `**Reqs:** ${reqDisplay(pvpEvent.reqs) || "(invalid)"}`
-            : "**Reqs:** _none_";
-        const capLine = pvpEvent.deckCrCap > 0 ? `\n**Deck CR cap:** ${pvpEvent.deckCrCap}` : "";
-        await new ErrorMessage({
-            channel: message.channel,
-            title: "Error, none of your decks qualify for this event.",
-            desc: `${reqsLine}${capLine}\n\n**Issues with your decks:**\n${sample}${rejected.length > 3 ? `\n_(+${rejected.length - 3} more)_` : ""}\n\nFix one or build a new deck locked to this event:\n\`cd-deck create <name> | ${pvpEvent.name}\``,
-            author: message.author
-        }).sendMessage({ currentMessage });
-        return null;
+        return { cancelled: true, reason: "cancelled", currentMessage };
     }
 
-    // ── 3. Exactly one qualifies — auto-use, no dropdown ─────────────────
+    // Exactly one qualifies — auto-use, no dropdown
     if (qualifying.length === 1) {
         await new InfoMessage({
             channel: message.channel,
@@ -742,11 +803,10 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
             desc: `_(Only one of your decks qualifies for **${pvpEvent.name}**.)_`,
             author: message.author
         }).sendMessage({ currentMessage });
-        return qualifying[0].deck.hand.map(s => ({ carID: s.carID, upgrade: s.upgrade }));
+        return { deck: qualifying[0].deck.hand.map(s => ({ carID: s.carID, upgrade: s.upgrade })), currentMessage };
     }
 
-    // ── 4. Multiple qualify — show dropdown ──────────────────────────────
-    // Discord caps select-menu options at 25
+    // Multiple qualify — show dropdown (Discord caps select-menu options at 25)
     const shown = qualifying.slice(0, 25);
     const options = shown.map(({ deck, totalCR }) => {
         const capStr = deckCrCap > 0 ? `${totalCR}/${deckCrCap}` : `${totalCR}`;
@@ -765,9 +825,9 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
     const teaser = new InfoMessage({
         channel: message.channel,
         title: `Pick a deck for ${pvpEvent.name}`,
-        desc: `**${qualifying.length}** of your saved decks qualify${qualifying.length > 25 ? " _(showing first 25)_" : ""}.`,
+        desc: `**${qualifying.length}** of your saved decks qualify${qualifying.length > 25 ? " _(showing first 25)_" : ""}.\n\n🔒 _You're picking blind — the trackset and opponents are revealed AFTER you commit. Choose a deck that's versatile across all of this event's tracksets._\n\n⚠️ _Cancelling or timing out costs **${cancelPenalty} leaderboard points** (ticket already spent)._`,
         author: message.author,
-        footer: `${defaultChoiceTime / 1000}s to choose. Cancelling won't spend a ticket.`
+        footer: `${UI_TIMEOUT_MS / 1000}s to choose.`
     });
 
     const sentMessage = await teaser.sendMessage({
@@ -779,7 +839,7 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
     return new Promise((resolve) => {
         const collector = sentMessage.message.createMessageComponentCollector({
             filter: i => i.user.id === message.author.id,
-            time: defaultChoiceTime
+            time: UI_TIMEOUT_MS
         });
         collector.on("collect", async (interaction) => {
             try {
@@ -792,20 +852,17 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
                     const picked = qualifying.find(q => q.deck.name === interaction.values[0]);
                     if (!picked) { collector.stop("invalid"); return; }
                     collector.stop("picked");
-                    resolve(picked.deck.hand.map(s => ({ carID: s.carID, upgrade: s.upgrade })));
+                    resolve({
+                        deck: picked.deck.hand.map(s => ({ carID: s.carID, upgrade: s.upgrade })),
+                        currentMessage: sentMessage
+                    });
                 }
             } catch (err) { console.error("deck pick error:", err.message); }
         });
         collector.on("end", async (_, reason) => {
             if (reason === "picked") return;
             try { await sentMessage.removeButtons(); } catch {}
-            await new InfoMessage({
-                channel: message.channel,
-                title: reason === "cancelled" ? "Match cancelled." : "Timed out — no deck chosen.",
-                desc: "Your ticket was not spent.",
-                author: message.author
-            }).sendMessage();
-            resolve(null);
+            resolve({ cancelled: true, reason: reason === "cancelled" ? "cancelled" : "timedOut", currentMessage: sentMessage });
         });
     });
 }
@@ -814,7 +871,7 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
 // Slot assignment review (swap + confirm)
 // ============================================================================
 
-async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOpponent, trackset, tracksetIdx, totalTracksets) {
+async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOpponent, trackset, tracksetIdx, totalTracksets, cancelPenalty = 25) {
     // Build the 10 swap pair options (1↔2, 1↔3, ..., 4↔5)
     const swapOptions = [];
     for (let a = 1; a < SLOT_COUNT; a++) {
@@ -864,7 +921,7 @@ async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOppon
     const reviewEmbed = new InfoMessage({
         channel: message.channel,
         title: `${eventName} — Match Review`,
-        desc: `**Opponent:** ${opponentLabel}\n**Trackset:** ${tracksetIdx + 1} of ${totalTracksets}\n​\n${describePairings(deck)}`,
+        desc: `**Opponent:** ${opponentLabel}\n**Trackset:** ${tracksetIdx + 1} of ${totalTracksets}\n​\n${describePairings(deck)}\n\n⚠️ _Cancelling or timing out costs **${cancelPenalty} leaderboard points**. ${Math.floor(REVIEW_TIMEOUT_MS / 60000)} minutes to plan your slot order._`,
         author: message.author,
         footer: "Swap any pair to change which of YOUR cars races each slot. Confirm to start."
     });
@@ -877,7 +934,7 @@ async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOppon
     return new Promise((resolve) => {
         const collector = sent.message.createMessageComponentCollector({
             filter: i => i.user.id === message.author.id,
-            time: defaultChoiceTime
+            time: REVIEW_TIMEOUT_MS
         });
         collector.on("collect", async (interaction) => {
             try {
@@ -893,21 +950,15 @@ async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOppon
                     const a = parseInt(aStr, 10) - 1;
                     const b = parseInt(bStr, 10) - 1;
                     [deck[a], deck[b]] = [deck[b], deck[a]];
-                    sent.embed.description = `**Opponent:** ${opponentLabel}\n**Trackset:** ${tracksetIdx + 1} of ${totalTracksets}\n​\n${describePairings(deck)}`;
+                    sent.embed.description = `**Opponent:** ${opponentLabel}\n**Trackset:** ${tracksetIdx + 1} of ${totalTracksets}\n​\n${describePairings(deck)}\n\n⚠️ _Cancelling or timing out costs **${cancelPenalty} leaderboard points**. ${Math.floor(REVIEW_TIMEOUT_MS / 60000)} minutes to plan your slot order._`;
                     await sent.message.edit({ embeds: [sent.embed] });
                 }
             } catch (err) { console.error("review error:", err.message); }
         });
         collector.on("end", async (_, reason) => {
             try { await sent.removeButtons(); } catch {}
-            if (reason === "confirmed") return resolve(deck);
-            await new InfoMessage({
-                channel: message.channel,
-                title: reason === "cancelled" ? "Match cancelled." : "Timed out — no confirmation received.",
-                desc: "Your ticket was not spent.",
-                author: message.author
-            }).sendMessage();
-            resolve(null);
+            if (reason === "confirmed") return resolve({ deck, currentMessage: sent });
+            resolve({ cancelled: true, reason: reason === "cancelled" ? "cancelled" : "timedOut", currentMessage: sent });
         });
     });
 }
