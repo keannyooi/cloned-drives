@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { SuccessMessage, ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { getAllCars, getCar, getPack, getPackFiles } = require("../util/functions/dataManager.js");
 const {
-    getBaseType, getCardTypes, hasType,
+    getBaseType, getCardTypes, hasType, deriveLegacyTypes,
     isPackable, isDiamondCar, isDiamondRollable, inBMRotation, inDealershipPool, inDailyGiftPool,
     rrOpponentClass, isSellProtected, exchangePool, isPrizeLike, isBMCar, usesReferenceStats,
     sellValueMult, modifiedBase, effectiveStats, validateCardModifiers, TYPE_NAMES
@@ -62,8 +62,11 @@ module.exports = {
         });
 
         // ─── 2. Predicate ↔ flag equivalence (per the agreed matrix) ────────
-        // Cars with an explicit cardType field are post-migration and skipped —
-        // these formulas reconstruct intent from the LEGACY flags only.
+        // While cars still carry legacy flags, the predicates (which read the
+        // explicit cardType when present) must agree with what the flags say —
+        // this catches both bad flag combos AND a hand-edited cardType that
+        // disagrees with its flags. Cars with no legacy flags at all are
+        // post-flag-era and skipped.
         const anomalies = {};
         function expect(car, name, actual, expected) {
             if (actual !== expected) {
@@ -73,7 +76,12 @@ module.exports = {
         }
         check("predicates match legacy flags (data linter)", () => {
             for (const car of allCars) {
-                if (car.cardType) continue;
+                const hasLegacyFlags = car.isPrize !== undefined || car.reference !== undefined
+                    || car.diamond !== undefined || car.active !== undefined;
+                if (!hasLegacyFlags) continue;
+                if (car.cardType) {
+                    expect(car, "cardType≡flags", getBaseType(car), deriveLegacyTypes(car)[0]);
+                }
                 const ref = !!car.reference, prize = car.isPrize === true,
                     dia = car.diamond === true, bossCR = (car.cr || 0) > 1500;
                 expect(car, "isPackable", isPackable(car), !(ref || prize || dia));
