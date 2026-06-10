@@ -4,6 +4,7 @@ const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { getCarFiles, getCar } = require("./dataManager.js");
+const { inDealershipPool } = require("./cardType.js");
 const { cardPlacement, failedToLoadImageLink, dealershipChannelID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
@@ -71,8 +72,7 @@ async function regenDealership() {
             const cr = currentCar["cr"];
 
             if (
-                !currentCar["reference"] &&
-                !currentCar["isPrize"] &&
+                inDealershipPool(currentCar) &&
                 !catalog.find(car => currentFile.includes(car.carID)) &&
                 cr >= tempStart && cr <= tempEnd
             ) {

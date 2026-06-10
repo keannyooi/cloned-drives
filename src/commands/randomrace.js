@@ -5,6 +5,7 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { getCarFiles, getTrackFiles, getCar, getTrack } = require("../util/functions/dataManager.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, moneyEmojiID, bossEmojiID, diamondEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
+const { rrOpponentClass, usesReferenceStats } = require("../util/functions/cardType.js");
 const getButtons = require("../util/functions/getButtons.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const race = require("../util/functions/race.js");
@@ -382,8 +383,8 @@ module.exports = {
                     do {
                         reqCar = getCar(carFiles[Math.floor(Math.random() * carFiles.length)]);
                         attempts++;
-                    } while (reqCar.reference && attempts < 50);
-                    
+                    } while (usesReferenceStats(reqCar) && attempts < 50);
+
                     // Validate the property exists before adding requirement
                     if (reqCar[req] !== undefined && reqCar[req] !== null) {
                         switch (req) {
@@ -416,8 +417,8 @@ module.exports = {
                     do {
                         reqCar = getCar(carFiles[Math.floor(Math.random() * carFiles.length)]);
                         attempts++;
-                    } while (reqCar.reference && attempts < 50);
-                    
+                    } while (usesReferenceStats(reqCar) && attempts < 50);
+
                     // Validate the property exists before adding requirement
                     if (reqCar[req] !== undefined && reqCar[req] !== null) {
                         switch (req) {
@@ -479,16 +480,18 @@ module.exports = {
         }
 
         function smartGen(car, isBoss) {
-            // Reject reference/BM cars
-            if (car.reference) return true;
-            
+            const oppClass = rrOpponentClass(car);
+
+            // Boss rounds: boss-class cars only
+            if (isBoss) {
+                return oppClass !== "boss";
+            }
+            // Regular rounds: reject anything that isn't a normal opponent
+            // (BM cards, boss cars, diamonds)
+            if (oppClass !== "normal") return true;
+
             // Get actual CR (handle missing CR values)
             const carCR = car.cr || 0;
-            
-            // Boss rounds: only allow CR 1500+ cars
-            if (isBoss) {
-                return carCR < 1500;
-            }
             
             // Regular difficulty scaling
             if (streak <= 5) {

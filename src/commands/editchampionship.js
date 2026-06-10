@@ -7,6 +7,7 @@ const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const { modifiedBase, usesReferenceStats } = require("../util/functions/cardType.js");
 const editFilter = require("../util/functions/editFilter.js");
 const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -709,7 +710,7 @@ module.exports = {
                                     for (const val of normalized) {
                                         const exists = carFiles.some(file => {
                                             const car = getCar(file);
-                                            const ref = car["reference"] ? getCar(car["reference"]) : car;
+                                            const ref = modifiedBase(car);
                                             if (key === "collection") {
                                                 return Array.isArray(car[key]) && car[key].some(c => c.toLowerCase() === val);
                                             }
@@ -745,7 +746,7 @@ module.exports = {
                                     const normalized = String(value).toLowerCase();
                                     const exists = carFiles.some(file => {
                                         const car = getCar(file);
-                                        return !car["reference"] && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
+                                        return !usesReferenceStats(car) && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
                                     });
                                     if (!exists) {
                                         bulkErrors.push(`\`${key}\` value \`${normalized}\` doesn't match any car in the game`);

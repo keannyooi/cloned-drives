@@ -3,6 +3,7 @@
 const { getCarFiles, getCar } = require("./dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
+const { modifiedBase, usesReferenceStats } = require("./cardType.js");
 
 function editFilter(message, filter, args) {
     const carFiles = getCarFiles();
@@ -18,10 +19,7 @@ function editFilter(message, filter, args) {
 		case "hiddenTag":
             let argument = args.slice(1, args.length).join(" ").toLowerCase();
             isValid = carFiles.findIndex(function (carFile) {
-                let currentCar = getCar(carFile), bmReference = currentCar;
-                if (currentCar["reference"]) {
-                    bmReference = getCar(currentCar["reference"]);
-                }
+                let currentCar = getCar(carFile), bmReference = modifiedBase(currentCar);
                 if (criteria === "collection") {
                     if (!currentCar[criteria]) {
                         return false;
@@ -114,7 +112,7 @@ else {
         case "gc":
             isValid = carFiles.findIndex(function (carFile) {
                 let currentCar = getCar(carFile);
-                return !currentCar["reference"] && currentCar[criteria].toLowerCase() === arg1;
+                return !usesReferenceStats(currentCar) && currentCar[criteria].toLowerCase() === arg1;
             });
 
             if (isValid > -1) {

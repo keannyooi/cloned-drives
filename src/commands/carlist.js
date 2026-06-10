@@ -1,6 +1,7 @@
 "use strict";
 
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { modifiedBase } = require("../util/functions/cardType.js");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -94,9 +95,7 @@ module.exports = {
                 let findCar = garage.find(c => c.carID === carId);
                 carList += carNameGen({ currentCar, rarity: true });
                 carList += findCar ? " ✅\n" : "\n";
-                if (currentCar["reference"]) {
-                    currentCar = getCar(currentCar["reference"]);
-                }
+                currentCar = modifiedBase(currentCar);
 
                 if (sort === "duplicates") {
                     valueList += `\`${calcTotal(findCar)}\`\n`;

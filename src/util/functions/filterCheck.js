@@ -3,6 +3,7 @@
 const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
+const { modifiedBase, isBMCar, isPrizeLike } = require("./cardType.js");
 
 function filterCheck(args) {
     let { car, filter, garage, applyOrLogic } = args;
@@ -17,16 +18,13 @@ function filterCheck(args) {
             "699": 0,
         }
     } : car;
-    let currentCar = getCar(carObject.carID), bmReference = currentCar;
-    if (currentCar["reference"]) {
-        bmReference = getCar(currentCar["reference"]);
-    }
+    let currentCar = getCar(carObject.carID), bmReference = modifiedBase(currentCar);
 
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
                 if (key === "collection") {
-                    if (!currentCar["reference"]) {
+                    if (!isBMCar(currentCar)) {
                         passed = false;
                     }
                     else {
@@ -106,6 +104,10 @@ if (key === "seatCount") {
             case "boolean":
                 switch (key) {
                     case "isPrize":
+                        if (isPrizeLike(currentCar) !== value) {
+                            passed = false;
+                        }
+                        break;
                     case "abs":
                     case "tcs":
                         if (bmReference[key] !== value) {
@@ -128,7 +130,7 @@ if (key === "seatCount") {
                         }
                         break;
                     case "isBM":
-                        if ((currentCar["reference"] !== undefined) !== value) {
+                        if (isBMCar(currentCar) !== value) {
                             passed = false;
                         }
                         break;

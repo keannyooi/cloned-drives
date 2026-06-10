@@ -4,6 +4,7 @@ const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultWaitTime, defaultChoiceTime, trophyEmojiID } = require("../util/consts/consts.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { exchangePool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
 const updateHands = require("../util/functions/updateHands.js");
@@ -29,8 +30,9 @@ module.exports = {
         const duplicatePrizeCars = [];
         for (const garageCar of playerData.garage) {
             const carData = getCar(garageCar.carID);
-            // Exclude diamond cars — they have their own exchange (cd-diamondexchange)
-            if (carData.isPrize === true && !carData.reference && !carData.diamond) {
+            // Prize-pool cards only — diamonds have their own exchange
+            // (cd-diamondexchange) and BOSS cars are exchange-locked.
+            if (exchangePool(carData) === "prize") {
                 const totalOwned = calcTotal(garageCar);
                 if (totalOwned > 1) {
                     duplicatePrizeCars.push({
@@ -129,7 +131,7 @@ module.exports = {
                 const validPrizeCars = carFiles.filter(file => {
                     const carId = file.endsWith('.json') ? file.slice(0, -5) : file;
                     const car = getCar(carId);
-                    if (!car || car.isPrize !== true || car.reference) return false;
+                    if (!car || exchangePool(car) !== "prize") return false;
                     const crDiff = Math.abs(car.cr - selectedCarData.cr);
                     if (crDiff > 50) return false;
                     // Check tyre type matches

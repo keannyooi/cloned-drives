@@ -12,6 +12,7 @@ const { isCarBanned, getBanReason } = require("../consts/pvpBans.js");
 const { surfaceSupportsRain } = require("../consts/pvpTracks.js");
 const carNameGen = require("./carNameGen.js");
 const filterCheck = require("./filterCheck.js");
+const { usesReferenceStats, modifiedBase } = require("./cardType.js");
 
 // =============================================================================
 // HAND VALIDATION
@@ -24,13 +25,10 @@ const filterCheck = require("./filterCheck.js");
 function getBaseCarID(carID) {
     const carData = getCar(carID);
     if (!carData) return carID;
-    
-    // If car has a reference, use the reference (base car) for duplicate counting
-    if (carData.reference) {
-        return carData.reference;
-    }
-    
-    return carID;
+
+    // BM-style cards count duplicates together with their base (referenced) car
+    const base = modifiedBase(carData);
+    return base === carData ? carID : base.carID;
 }
 
 /**
@@ -40,16 +38,9 @@ function getBaseCarID(carID) {
 function getEffectiveCR(carID) {
     const carData = getCar(carID);
     if (!carData) return 0;
-    
-    // If car has a reference and CR is 0 or missing, use the reference's CR
-    if (carData.reference) {
-        const baseCarData = getCar(carData.reference);
-        if (baseCarData) {
-            return baseCarData.cr || 0;
-        }
-    }
-    
-    return carData.cr || 0;
+
+    // BM-style cards race with their referenced base car's stats, so use its CR
+    return modifiedBase(carData).cr || 0;
 }
 
 /**
@@ -330,7 +321,7 @@ function generateGhostOpponents(league, attackerRating, count) {
         const carID = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile;
         const car = getCar(carID);
         
-        if (!car || car.reference) continue;
+        if (!car || usesReferenceStats(car)) continue;
         
         const carCR = car.cr || 0;
         

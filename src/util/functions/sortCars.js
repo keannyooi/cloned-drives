@@ -2,6 +2,7 @@
 
 const { getCar } = require("./dataManager.js");
 const { calcTune } = require("./calcTune.js");
+const { modifiedBase } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 
@@ -25,8 +26,8 @@ function sortCars(list, sort, order, garage) {
         let carB = getCar(carIdB);
         
         // Get base reference for BM cars
-        let bmRefA = carA["reference"] ? getCar(carA["reference"]) : carA;
-        let bmRefB = carB["reference"] ? getCar(carB["reference"]) : carB;
+        let bmRefA = modifiedBase(carA);
+        let bmRefB = modifiedBase(carB);
 
         let critA, critB;
         

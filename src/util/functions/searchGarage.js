@@ -4,6 +4,7 @@ const { StringSelectMenuBuilder } = require("discord.js");
 const { ErrorMessage } = require("../classes/classes.js");
 const { trophyEmojiID } = require("../consts/consts.js");
 const { getCar } = require("./dataManager.js");
+const { isSellProtected, isPrizeLike } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js")
 const processResults = require("./corefiles/processResults.js");
@@ -14,7 +15,7 @@ async function searchGarage(args) {
     const searchResults = garage.filter(car => {
         let matchFound, isSufficient;
         let currentCar = getCar(car.carID);
-        if (restrictedMode && (currentCar["isPrize"] === true || currentCar["reference"])) {
+        if (restrictedMode && isSellProtected(currentCar)) {
             return false;
         }
 
@@ -46,7 +47,7 @@ async function searchGarage(args) {
                 label: carNameGen({ currentCar, removePrizeTag: true }),
                 value: `${i + 1}`
             });
-            if (currentCar["isPrize"]) {
+            if (isPrizeLike(currentCar)) {
                 options.emoji = `<trophies:${trophyEmojiID}>`;
             }
         }
@@ -64,7 +65,7 @@ async function searchGarage(args) {
                 for (let i = 0; i < matchList.length; i++) {
                     let currentCar = getCar(matchList[i].carID), newLine = "";
                     newLine = carNameGen({ currentCar, rarity: true });
-                    if (!currentCar["isPrize"]) {
+                    if (!isPrizeLike(currentCar)) {
                         let upgList = "";
                         for (let [key, value] of Object.entries(matchList[i].upgrades)) {
                             if (value !== 0) upgList += `${value}x ${key}, `;

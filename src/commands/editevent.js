@@ -7,6 +7,7 @@ const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/c
 const { getCar, getTrack, getPack, getCarFiles, getTrackFiles, getPackFiles } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const { modifiedBase, usesReferenceStats } = require("../util/functions/cardType.js");
 
 const carFiles = getCarFiles();
 const trackFiles = getTrackFiles();
@@ -706,7 +707,7 @@ module.exports = {
                                     for (const val of normalized) {
                                         const exists = carFiles.some(file => {
                                             const car = getCar(file);
-                                            const ref = car["reference"] ? getCar(car["reference"]) : car;
+                                            const ref = modifiedBase(car);
                                             if (key === "collection") {
                                                 return Array.isArray(car[key]) && car[key].some(c => c.toLowerCase() === val);
                                             }
@@ -742,7 +743,7 @@ module.exports = {
                                     const normalized = String(value).toLowerCase();
                                     const exists = carFiles.some(file => {
                                         const car = getCar(file);
-                                        return !car["reference"] && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
+                                        return !usesReferenceStats(car) && typeof car[key] === "string" && car[key].toLowerCase() === normalized;
                                     });
                                     if (!exists) {
                                         bulkErrors.push(`\`${key}\` value \`${normalized}\` doesn't match any car in the game`);

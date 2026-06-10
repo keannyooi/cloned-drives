@@ -5,6 +5,7 @@ const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
 const { getCarFiles, getCar } = require("./dataManager.js");
+const { isBMCar, inBMRotation, isPrizeLike, modifiedBase } = require("./cardType.js");
 const { cardPlacement, failedToLoadImageLink, dealershipChannelID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
@@ -14,7 +15,7 @@ async function regenBM() {
     const carFiles = getCarFiles();
     const bmCars = carFiles.filter(file => {
         let car = getCar(file);
-        return car["reference"] !== undefined;
+        return isBMCar(car);
     });
 
 for (let i = 0; i < 8; i++) {
@@ -55,24 +56,23 @@ for (let i = 0; i < 8; i++) {
         // Pick initial random car from bmCars
         let currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
         let currentCar = getCar(currentFile);
-        let bmReference = getCar(currentCar["reference"]);
+        let bmReference = modifiedBase(currentCar);
 
         // Prevent infinite loops by limiting attempts
         let attempts = 0;
         const maxAttempts = 2500;
 
         while (
-            (!currentCar["reference"] ||
+            (!inBMRotation(currentCar) ||
             catalog.some(car => currentFile.slice(0, 6) === car.carID) || // Check duplicates precisely
-            bmReference["isPrize"] ||
+            isPrizeLike(bmReference) ||
             bmReference["cr"] > crEnd ||
-            bmReference["cr"] < crStart ||
-            !currentCar["active"]) &&
+            bmReference["cr"] < crStart) &&
             attempts < maxAttempts
         ) {
             currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
             currentCar = getCar(currentFile);
-            bmReference = getCar(currentCar["reference"]);
+            bmReference = modifiedBase(currentCar);
             attempts++;
             // Optionally log attempts for debugging:
             // console.log(`Attempt ${attempts}: CR ${bmReference["cr"]} Range [${crStart},${crEnd}]`);

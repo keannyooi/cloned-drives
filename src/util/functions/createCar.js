@@ -2,15 +2,16 @@
 
 const { getCar } = require("./dataManager.js");
 const { calcTune } = require("./calcTune.js");
+const { modifiedBase, isBMCar, isDiamondCar } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const unbritish = require("./unbritish.js");
 
 function createCar(currentCar, unitPreference, hideStats) {
-    let car = getCar(currentCar.carID), bmReference = car;
-    if (car["reference"]) {
-        bmReference = getCar(car["reference"]);
-    }
-    
+    let car = getCar(currentCar.carID);
+    // The card's stat identity: its reference car (BM/editions) with any
+    // per-card modifiers applied, or itself for standalone cars.
+    const bmReference = modifiedBase(car);
+
     // Get tuned stats via calculation (handles all 6 stats)
     const tune = currentCar.upgrade || "000";
     const tunedStats = calcTune(bmReference, tune);
@@ -30,8 +31,8 @@ function createCar(currentCar, unitPreference, hideStats) {
         mra: tunedStats.mra,
         ola: tunedStats.ola,
         racehud: car["racehud"],
-        isBM: (car["reference"] !== undefined),
-        isDiamond: (car["diamond"] === true)
+        isBM: isBMCar(car),
+        isDiamond: isDiamondCar(car)
     };
 
     let carSpecs = carNameGen({ currentCar: car, rarity: true, upgrade: tune });

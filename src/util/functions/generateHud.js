@@ -2,8 +2,8 @@
 
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
-const { getCar } = require("./dataManager.js");
 const { calcTune } = require("./calcTune.js");
+const { modifiedBase } = require("./cardType.js");
 
 const tyreAbbrevs = {
     "Standard": "STD",
@@ -65,9 +65,7 @@ async function generateHud(currentCar, upgrade) {
     context.drawImage(hud, 0, 0, 500, 312);
 
     // Load base model reference or fallback to currentCar
-    const bmReference = currentCar["reference"] 
-        ? getCar(currentCar["reference"]) 
-        : currentCar;
+    const bmReference = modifiedBase(currentCar);
 
     // Calculate tuned stats using the new system
     const tunedStats = calcTune(bmReference, upgrade || "000");

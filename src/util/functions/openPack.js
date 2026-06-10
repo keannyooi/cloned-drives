@@ -2,6 +2,7 @@
 
 const { ActionRowBuilder, ComponentType: { Button } } = require("discord.js");
 const { getCarFiles, getCar } = require("./dataManager.js");
+const { isPackable, isDiamondCar, isDiamondRollable } = require("./cardType.js");
 const { InfoMessage, ErrorMessage } = require("../classes/classes.js");
 const { DIAMONDS_ENABLED } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
@@ -110,21 +111,18 @@ async function openPack(args) {
     for (const file of carFiles) {
       const car = getCar(file);
 
-      // Diamond cars live EXCLUSIVELY in the diamond bucket — never pullable
-      // via normal rarity slots. They bypass the isPrize filter rejection
-      // so a car can be both prize AND diamond; BM variants and INACTIVE
-      // diamonds are excluded from the packable pool.
-      if (car.diamond === true) {
-        if (car.reference) continue;
-        if (car.active === false) continue; // limited-time / retired diamonds
-        // Temporarily treat as non-prize so filterCard only evaluates the rest
-        const carForDiamondFilter = car.isPrize ? { ...car, isPrize: false } : car;
-        if (filterCard(carForDiamondFilter, filter, filterLogic)) {
+      // Diamond cards live EXCLUSIVELY in the diamond bucket — never pullable
+      // via normal rarity slots. Only rollable diamonds enter the bucket
+      // (retired / event-only diamond types are excluded by the matrix).
+      if (isDiamondCar(car)) {
+        if (!isDiamondRollable(car)) continue;
+        if (filterCard(car, filter, filterLogic)) {
           byRarity.diamond.push(file);
         }
         continue;
       }
 
+      if (!isPackable(car)) continue;
       if (!filterCard(car, filter, filterLogic)) continue;
 
       filtered.push(file);
@@ -268,7 +266,7 @@ async function openPack(args) {
   // regardless of their CR. (Only one diamond can exist in addedCars by design.)
   const diamondIdx = addedCars.findIndex(c => {
     const cData = getCar(c.carID);
-    return cData && cData.diamond === true;
+    return cData && isDiamondCar(cData);
   });
   if (diamondIdx >= 0 && diamondIdx < addedCars.length - 1) {
     const [diamondCard] = addedCars.splice(diamondIdx, 1);
@@ -289,7 +287,7 @@ async function openPack(args) {
     const currentCar = getCar(addedCars[i].carID);
     const isNew = newStatus[i];
     const isMystic = currentCar.cr >= 1000;
-    const isDiamond = currentCar.diamond === true;
+    const isDiamond = isDiamondCar(currentCar);
     const isLastOnPage = (i + 1) % cardsPerPage === 0;
     const isLastCard = i === addedCars.length - 1;
     const isFeaturedCard = isLastOnPage || isLastCard;
@@ -607,8 +605,8 @@ function pickWithFallback(byRarity, rolledRarity, pulledIDs, noDuplicates) {
  * Determines whether a car passes the pack's filter.
  */
 function filterCard(currentCard, filter, filterLogic) {
-  if (currentCard["reference"] || currentCard["isPrize"] === true) return false;
-
+  // Obtainability is enforced by the caller (isPackable / diamond-rollable
+  // gates in getFilteredPool) — this function only evaluates the criteria.
   const useOrLogic = filterLogic === "or";
 
   for (const criteria in filter) {

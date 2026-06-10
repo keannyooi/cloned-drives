@@ -1,6 +1,7 @@
 "use strict";
 
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { isBMCar, modifiedBase } = require("../util/functions/cardType.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -39,9 +40,9 @@ module.exports = {
         async function displayInfo(carFile, currentMessage) {
             const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
             let description = "None", mra = "N/A", ola = "N/A", collection = "N/A";
-            let currentCar = getCar(carFile), bmReference = currentCar;
-            if (currentCar["reference"]) {
-                bmReference = getCar(currentCar["reference"]);
+            let currentCar = getCar(carFile);
+            const bmReference = modifiedBase(currentCar);
+            if (isBMCar(currentCar)) {
                 collection = currentCar["collection"].join(", ")
             }
             let topSpeed = `${bmReference.topSpeed}MPH`, accel = "N/A", weight = `${bmReference.weight.toLocaleString("en")}kg`;

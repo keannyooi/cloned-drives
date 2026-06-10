@@ -1,8 +1,8 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { getCar } = require("./dataManager.js");
 const { DIAMONDS_ENABLED } = require("../consts/consts.js");
+const { modifiedBase, isBMCar, isDiamondCar, isPrizeLike, inBMRotation, isDiamondRollable } = require("./cardType.js");
 const rarityCheck = require("./rarityCheck.js");
 
 // L-02: Cache trophy emoji at module level (populated on first call)
@@ -16,16 +16,16 @@ function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag
     }
     const trophyEmoji = cachedTrophyEmoji;
     const make = Array.isArray(currentCar.make) ? currentCar.make[0] : currentCar.make;
-    const { model, modelYear, isPrize, reference, active, cr, diamond } = currentCar;
+    const { model, modelYear } = currentCar;
 
     // Determine base name
     let currentName = `${make} ${model} (${modelYear})`;
 
     // Add rarity if requested
     if (rarity) {
-        const bmReference = reference ? getCar(reference) : currentCar;
-        // Precedence: BM reference > diamond flag > CR-based
-        const type = reference ? "bm" : (bmReference.diamond === true ? "diamond" : null);
+        const bmReference = modifiedBase(currentCar);
+        // Precedence: BM > diamond > CR-based
+        const type = isBMCar(currentCar) ? "bm" : (isDiamondCar(currentCar) ? "diamond" : null);
         currentName = `(${rarityCheck(bmReference, type)} ${bmReference.cr}) ${currentName}`;
     }
 
@@ -33,21 +33,19 @@ function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag
     if (upgrade) currentName += ` [${upgrade}]`;
 
     // Add prize tag unless explicitly removed
-    if (!removePrizeTag && isPrize) currentName += ` ${trophyEmoji}`;
+    if (!removePrizeTag && isPrizeLike(currentCar)) currentName += ` ${trophyEmoji}`;
 
     // Add BM (benchmark) tag unless explicitly removed
-    if (!removeBMTag && reference) {
-        currentName += active ? `🟢` : `🔴`;
+    if (!removeBMTag && isBMCar(currentCar)) {
+        currentName += inBMRotation(currentCar) ? `🟢` : `🔴`;
     }
 
     // Add diamond active-state indicator (parallels the BM 🟢/🔴 pattern).
     // The rarity icon already identifies the car as Diamond, so no extra diamond
-    // emoji is added. active=true → 🟢, active=false → 🔴, undefined → no tag.
-    // (Safe to reuse `active` — diamond cars have no `reference` so can't be BM.)
+    // emoji is added. Rollable → 🟢, retired/event-only → 🔴.
     // Gated by DIAMONDS_ENABLED — indicator hidden while the feature is paused.
-    if (DIAMONDS_ENABLED && !removeDiamondTag && diamond === true) {
-        if (active === true) currentName += `🟢`;
-        else if (active === false) currentName += `🔴`;
+    if (DIAMONDS_ENABLED && !removeDiamondTag && isDiamondCar(currentCar)) {
+        currentName += isDiamondRollable(currentCar) ? `🟢` : `🔴`;
     }
 
     return currentName;

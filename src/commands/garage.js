@@ -4,6 +4,7 @@ const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
 const { calcTune } = require("../util/functions/calcTune.js");
+const { modifiedBase } = require("../util/functions/cardType.js");
 const searchUser = require("../util/functions/searchUser.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
@@ -157,11 +158,8 @@ module.exports = {
                     else if (sort !== "cr") {
                         let values = "";
                         // Get base reference for BM cars
-                        let bmReference = currentCar;
-                        if (currentCar["reference"]) {
-                            bmReference = getCar(currentCar["reference"]);
-                        }
-                        
+                        const bmReference = modifiedBase(currentCar);
+
                         // Check if this is a tunable stat
                         if (tunableStats[sort]) {
                             const tuneKey = tunableStats[sort];

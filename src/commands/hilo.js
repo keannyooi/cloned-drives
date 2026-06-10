@@ -5,6 +5,7 @@ console.log("🔥 hilo.js loaded");
 const bot = require("../config/config.js");
 const { ActionRowBuilder } = require("discord.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { modifiedBase } = require("../util/functions/cardType.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, hiloChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
@@ -40,11 +41,7 @@ module.exports = {
 
     // Helper functions defined inside execute() so they have access to carFiles
     function getCarCR(car) {
-      if (car.reference) {
-        const bmCar = getCar(car.reference);
-        return bmCar ? bmCar.cr || 0 : 0;
-      }
-      return car.cr || 0;
+      return modifiedBase(car).cr || 0;
     }
 
     function randomCar() {

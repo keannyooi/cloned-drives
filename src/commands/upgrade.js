@@ -11,6 +11,7 @@ const searchGarage = require("../util/functions/searchGarage.js");
 const generateHud = require("../util/functions/generateHud.js");
 const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const { upgradeCost } = require("../util/functions/upgradePrice.js");
+const { modifiedBase } = require("../util/functions/cardType.js");
 const confirm = require("../util/functions/confirm.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -66,10 +67,8 @@ module.exports = {
                     const [origUpgrade, currentMessage] = response;
                     try {
                         const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-                        let car = getCar(currentCar.carID), bmReference = car;
-                        if (car["reference"]) {
-                            bmReference = getCar(car["reference"]);
-                        }
+                        let car = getCar(currentCar.carID);
+                        const bmReference = modifiedBase(car);
 
                         const carName = carNameGen({ currentCar: car });
                         const moneyLimit = upgradeCost(bmReference["cr"], origUpgrade, upgrade);

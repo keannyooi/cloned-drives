@@ -3,13 +3,14 @@
 const { StringSelectMenuBuilder } = require("discord.js");
 const { trophyEmojiID } = require("../consts/consts.js");
 const { getCar, getTrack, getPack } = require("./dataManager.js");
+const { isBMCar, isPrizeLike } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const processResults = require("./corefiles/processResults.js");
 
 const listGen = {
     "car": item => {
         let currentCar = getCar(item);
-        return currentCar["reference"] ? "jowhdgeuwrljoehfujbek" : carNameGen({ currentCar, removePrizeTag: true }); //this may be the dirtiest hack of all time but eh, it works
+        return isBMCar(currentCar) ? "jowhdgeuwrljoehfujbek" : carNameGen({ currentCar, removePrizeTag: true }); //this may be the dirtiest hack of all time but eh, it works
     },
     "carWithBM": item => {
         let currentCar = getCar(item);
@@ -54,12 +55,12 @@ async function search(message, query, searchList, type, currentMessage) {
     return processResults(message, searchResults, () => {
         const options = [];
         for (let i = 0; i < searchResults.length; i++) {
-            let isPrize = (type === "car" || type === "carWithBM") ? getCar(searchResults[i]) : {};
+            let searchedCar = (type === "car" || type === "carWithBM") ? getCar(searchResults[i]) : {};
             options.push({
                 label: listGen[type](searchResults[i]),
                 value: `${i + 1}`
             });
-            if (isPrize["isPrize"] === true) {
+            if (isPrizeLike(searchedCar)) {
                 options[i].emoji = `<trophies:${trophyEmojiID}>`;
             }
         }

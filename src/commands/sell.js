@@ -11,6 +11,7 @@ const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const confirm = require("../util/functions/confirm.js");
 const { costFromStock, getSellPrice } = require("../util/functions/upgradePrice.js");
+const { isDiamondCar, isSellProtected, sellValueMult, hasType } = require("../util/functions/cardType.js");
 const { trackMoneyEarned, trackCarsSold } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -102,7 +103,7 @@ module.exports = {
             // Diamond cars cannot be sold (sell/fuse protected by design).
             // Players can only part with them via `cd-diamondexchange` for another diamond.
             const carData = getCar(currentCar.carID);
-            if (carData && carData.diamond === true) {
+            if (carData && isDiamondCar(carData)) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: `Error, ${carNameGen({ currentCar: carData })} is a Diamond car and cannot be sold.`,
@@ -124,7 +125,7 @@ module.exports = {
                         amount = currentCar.upgrades[upgrade];
                     }
 
-                    let money = getSellPrice(car["cr"]);
+                    let money = Math.round(getSellPrice(car["cr"]) * sellValueMult(car));
                     const basePerCar = money;
 
                     // Upgrade refund — partial recovery of the cost the player paid to reach
@@ -205,8 +206,8 @@ const UPGRADED_TUNES = ["333", "666", "699", "969", "996"];
 
 /** Map a car to its rarity NAME (string), mirroring rarityCheck.js's bracket logic. */
 function rarityNameOf(car) {
-    if (car.diamond === true) return "diamond";
-    if (car.cr > 1500) return "boss";
+    if (isDiamondCar(car)) return "diamond";
+    if (hasType(car, "BOSS")) return "boss";
     if (car.cr > 999)  return "mystic";
     if (car.cr > 849)  return "legendary";
     if (car.cr > 699)  return "exotic";
@@ -431,9 +432,7 @@ async function bulkSellDupes(message, playerData, args) {
     for (const garageCar of playerData.garage) {
         const car = getCar(garageCar.carID);
         if (!car) continue;
-        if (car.isPrize) continue;
-        if (car.diamond === true) continue;
-        if (car.reference) continue;
+        if (isSellProtected(car)) continue;
 
         if (!carMatchesFilters(car, filters)) continue;
 
@@ -456,7 +455,7 @@ async function bulkSellDupes(message, playerData, args) {
         const stockToSell = stockOwned - effectiveKeep;
         if (stockToSell <= 0) continue;
 
-        const basePerCar = getSellPrice(car.cr);
+        const basePerCar = Math.round(getSellPrice(car.cr) * sellValueMult(car));
         toSell.push({ carID: garageCar.carID, count: stockToSell, basePerCar });
         totalCount += stockToSell;
         totalMoney += basePerCar * stockToSell;

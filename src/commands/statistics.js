@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
+const { isBMCar } = require("../util/functions/cardType.js");
 const searchUser = require("../util/functions/searchUser.js");
 const calcTotal = require("../util/functions/calcTotal.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
@@ -64,7 +65,7 @@ module.exports = {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);
                 totalCars += calcTotal(car);
                 let currentCar = getCar(car.carID);
-                if (currentCar["reference"]) {
+                if (isBMCar(currentCar)) {
                     totalBMCars += calcTotal(car);
                 }
             }

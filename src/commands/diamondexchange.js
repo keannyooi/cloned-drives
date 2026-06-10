@@ -4,6 +4,7 @@ const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultWaitTime, defaultChoiceTime, diamondEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { isDiamondCar, isDiamondRollable, exchangePool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
 const updateHands = require("../util/functions/updateHands.js");
@@ -40,7 +41,7 @@ module.exports = {
         const duplicateDiamondCars = [];
         for (const garageCar of playerData.garage) {
             const carData = getCar(garageCar.carID);
-            if (carData && carData.diamond === true && !carData.reference) {
+            if (carData && exchangePool(carData) === "diamond") {
                 const totalOwned = calcTotal(garageCar);
                 if (totalOwned > 1) {
                     duplicateDiamondCars.push({
@@ -139,8 +140,8 @@ module.exports = {
                 const validDiamondCars = carFiles.filter(file => {
                     const carId = file.endsWith('.json') ? file.slice(0, -5) : file;
                     const car = getCar(carId);
-                    if (!car || car.diamond !== true || car.reference) return false;
-                    if (car.active === false) return false;
+                    if (!car || !isDiamondCar(car)) return false;
+                    if (!isDiamondRollable(car)) return false;
                     const crDiff = Math.abs(car.cr - selectedCarData.cr);
                     if (crDiff > 50) return false;
                     const carTyreType = car.tyreType || "Standard";

@@ -5,6 +5,7 @@ const { DateTime, Interval } = require("luxon");
 const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID} = require("../util/consts/consts.js");
+const { inDailyGiftPool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
@@ -107,7 +108,7 @@ module.exports = {
             else if (streak % 5 === 0) {
                 let carID = carFiles[Math.floor(Math.random() * carFiles.length)];
                 let currentCar = getCar(carID);
-                while (currentCar["reference"] || currentCar["cr"] > 699 || currentCar["isPrize"] === true) {
+                while (!inDailyGiftPool(currentCar) || currentCar["cr"] > 699) {
                     carID = carFiles[Math.floor(Math.random() * carFiles.length)];
                     currentCar = getCar(carID);
                 }
