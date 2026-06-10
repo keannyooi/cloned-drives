@@ -3,7 +3,7 @@
 const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
-const { modifiedBase, isBMCar, isPrizeLike } = require("./cardType.js");
+const { modifiedBase, isBMCar, isPrizeLike, hasType } = require("./cardType.js");
 
 function filterCheck(args) {
     let { car, filter, garage, applyOrLogic } = args;
@@ -23,7 +23,16 @@ function filterCheck(args) {
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
-                if (key === "collection") {
+                if (key === "cardType") {
+                    // A card has exactly one base type, so multi-value cardType
+                    // filters are always OR ("abm or ibm") regardless of filterlogic.
+                    // Checked on the card ITSELF, never its reference (an ABM card's
+                    // base car is usually Normal).
+                    if (!value.some(t => hasType(currentCar, t))) {
+                        passed = false;
+                    }
+                }
+                else if (key === "collection") {
                     if (!isBMCar(currentCar)) {
                         passed = false;
                     }

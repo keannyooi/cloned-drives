@@ -177,6 +177,9 @@ module.exports = {
                 if (!filterCheck({ car: { carID: bm.carID }, filter: { isBM: true } })) problems.push("BM failed isBM:true");
                 const baseCr = getCar(bm.reference).cr;
                 if (!filterCheck({ car: { carID: bm.carID }, filter: { cr: { start: baseCr, end: baseCr } } })) problems.push("BM cr-range not using base CR");
+                const bmType = getBaseType(getCar(bm.carID)).toLowerCase();
+                if (!filterCheck({ car: { carID: bm.carID }, filter: { cardType: [bmType] } })) problems.push(`BM failed cardType:[${bmType}]`);
+                if (filterCheck({ car: { carID: norm.carID }, filter: { cardType: [bmType] } })) problems.push("normal matched a BM cardType filter");
             }
             if (problems.length) return problems.join(" | ");
         });

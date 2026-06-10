@@ -3,7 +3,7 @@
 const { getCarFiles, getCar } = require("./dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
-const { modifiedBase, usesReferenceStats } = require("./cardType.js");
+const { modifiedBase, usesReferenceStats, normalizeTypeName, TYPE_NAMES } = require("./cardType.js");
 
 function editFilter(message, filter, args) {
     const carFiles = getCarFiles();
@@ -12,6 +12,34 @@ function editFilter(message, filter, args) {
         arg2 = args[2]?.toLowerCase();
     let successMessage, isValid;
     switch (criteria) {
+        case "cardType": {
+            const argument = args.slice(1, args.length).join(" ");
+            const canonical = normalizeTypeName(argument);
+            if (!canonical) {
+                let errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, card type provided doesn't exist.",
+                    desc: `Valid card types: \`${TYPE_NAMES.join("`, `")}\``,
+                    author: message.author
+                }).displayClosest(argument);
+                return errorMessage.sendMessage();
+            }
+            // stored lowercase like the other multi-value categories
+            const stored = canonical.toLowerCase();
+            if (!filter[criteria]) {
+                filter[criteria] = [stored];
+            }
+            else if (!filter[criteria].some(c => c === stored)) {
+                filter[criteria].push(stored);
+            }
+            successMessage = new SuccessMessage({
+                channel: message.channel,
+                title: `Successfully modified the \`${criteria}\` filter category!`,
+                author: message.author,
+                fields: [{ name: "Current Value(s)", value: `\`${filter[criteria].join(", ")}\`` }]
+            });
+            break;
+        }
         case "make":
         case "tags":
         case "collection":
@@ -205,6 +233,7 @@ else {
                 case "collection":
                 case "bodyStyle":
 				case "hiddenTag":
+                case "cardType":
                     if (string === "all") {
                         delete filter[criteria2];
                         successMessage = new SuccessMessage({
@@ -287,6 +316,7 @@ else {
                                 \`ismaxed\` - Filter maxed cars.
                                 \`isowned\` - Filter cars that you own.
                                 \`isbm\` - Filter black market cars.
+                                \`cardtype\` - Filter by card type. Provide the card type that you want to remove, or type \`all\` to remove all criterias in this category.
                                 \`tags\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
                                 \`collection\` - Filter by collection. Provide a valid collection after that.
 								\`creator\` - Filter by creator. Provide a valid creator after that.
@@ -321,6 +351,7 @@ else {
                         \`ismaxed\` - Filter maxed cars. Provide a boolean value (\`true\` or \`false\`) after that.
                         \`isowned\` - Filter cars that you own. Provide a boolean value (\`true\` or \`false\`) after that.
                         \`isbm\` - Filter black market cars. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`cardtype\` - Filter by card type. Provide a card type (\`normal\`, \`prize\`, \`abm\`, \`boss\`, etc.) after that; repeat the command to add more types (matches any).
                         \`tags\` - Filter by tag. Provide a valid tag after that.
                         \`collection\` - Filter by collection. Provide a valid collection after that.
 						\`creator\` - Filter by creator. Provide a valid creator after that.
@@ -353,6 +384,7 @@ function format(input) {
         ismaxed: "isMaxed",
         isowned: "isOwned",
         isbm: "isBM",
+        cardtype: "cardType",
         abs: "abs",
         tcs: "tcs",
         gc: "gc",

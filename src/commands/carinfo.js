@@ -1,7 +1,7 @@
 "use strict";
 
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
-const { isBMCar, modifiedBase } = require("../util/functions/cardType.js");
+const { isBMCar, modifiedBase, getCardTypes } = require("../util/functions/cardType.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -98,6 +98,7 @@ module.exports = {
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
                     { name: "Creator", value: currentCar.creator ?? "None", inline: true },
+                    { name: "Card Type", value: getCardTypes(currentCar).join(", "), inline: true },
                     { name: "Description", value: description }
                 ]
             });

@@ -1,7 +1,8 @@
 "use strict";
 
 const { getCarFiles, getCar } = require("./dataManager.js");
-const order = ["cr", "modelYear", "country", "enginePos", "driveType", "gc", "creator", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isBM", "isPrize", "make", "search"];
+const { normalizeTypeName } = require("./cardType.js");
+const order = ["cr", "modelYear", "country", "enginePos", "driveType", "gc", "creator", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isBM", "isPrize", "cardType", "make", "search"];
 
 function reqDisplay(reqs, filterLogic) {
     const carFiles = getCarFiles();
@@ -45,6 +46,7 @@ function reqDisplay(reqs, filterLogic) {
         isMaxed: isMaxed => `${isMaxed === false ? "Non-Maxed" : "Maxed"} `,
         isOwned: isOwned => `${isOwned === false ? "Unowned" : "Owned"} `,
         isBM: isBM => `${isBM === false ? "Non-BM" : "BM"} `,
+        cardType: types => `${arr(types).map(t => normalizeTypeName(String(t)) || String(t)).join("/")} `,
         make: makes => {
             makes = makes.map(make => {
                 let getExample = carFiles.find(carFile => {

@@ -14,7 +14,7 @@
  *   cancelpenalty <number>         ← LB points deducted if a player cancels mid-match. Default 25.
  *
  * Reqs (mirrors event reqs format):
- *   reqs <field> <value>         e.g. reqs cr 400-600, reqs make Ferrari, reqs isPrize false
+ *   reqs <field> <value>         e.g. reqs cr 400-600, reqs make Ferrari, reqs isPrize false, reqs cardType abm,ibm
  *   reqs clear <field>           remove a req
  *   reqs clear                   wipe all reqs
  *
@@ -54,8 +54,10 @@ const pvpEventModel = require("../models/pvpEventSchema.js");
 
 const VALID_TUNES = ["000", "333", "666", "699", "969", "996"];
 
+const { normalizeTypeName, TYPE_NAMES } = require("../util/functions/cardType.js");
+
 const REQ_RANGE_KEYS = ["cr", "modelYear", "topSpeed", "0to60", "handling", "weight"];
-const REQ_ARRAY_KEYS = ["make", "country", "bodyStyle", "tyreType", "driveType", "fuelType", "enginePos", "gc", "tags", "collection", "hiddenTag"];
+const REQ_ARRAY_KEYS = ["make", "country", "bodyStyle", "tyreType", "driveType", "fuelType", "enginePos", "gc", "tags", "collection", "hiddenTag", "cardType"];
 const REQ_BOOL_KEYS = ["isPrize"];
 const REQ_STRING_KEYS = []; // (none right now, but future-proof)
 
@@ -254,7 +256,13 @@ function parseReqValue(field, raw) {
         return { start: Number(m[1]), end: Number(m[2]) };
     }
     if (REQ_ARRAY_KEYS.includes(field)) {
-        return raw.split(",").map(s => s.trim()).filter(Boolean);
+        const values = raw.split(",").map(s => s.trim()).filter(Boolean);
+        if (field === "cardType") {
+            for (const v of values) {
+                if (!normalizeTypeName(v)) throw new Error(`"${v}" isn't a valid card type. Valid: ${TYPE_NAMES.join(", ")}.`);
+            }
+        }
+        return values;
     }
     if (REQ_BOOL_KEYS.includes(field)) {
         const lc = raw.toLowerCase();

@@ -7,7 +7,7 @@ const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
-const { modifiedBase, usesReferenceStats } = require("../util/functions/cardType.js");
+const { modifiedBase, usesReferenceStats, normalizeTypeName, TYPE_NAMES } = require("../util/functions/cardType.js");
 const editFilter = require("../util/functions/editFilter.js");
 const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -548,6 +548,7 @@ module.exports = {
                         isPrize: "isPrize", isprize: "isPrize",
                         isStock: "isStock", isstock: "isStock",
                         isBM: "isBM", isbm: "isBM",
+                        cardType: "cardType", cardtype: "cardType",
                         search: "search"
                     };
                     const arrayKeys = ["make", "tags", "collection", "bodyStyle", "hiddenTag"];
@@ -704,7 +705,20 @@ module.exports = {
                                     continue;
                                 }
 
-                                if (arrayKeys.includes(key)) {
+                                if (key === "cardType") {
+                                    const arrayValue = Array.isArray(value) ? value : [value];
+                                    const normalized = [];
+                                    for (const val of arrayValue) {
+                                        const canonical = normalizeTypeName(String(val));
+                                        if (!canonical) {
+                                            bulkErrors.push(`\`cardType\` value \`${val}\` isn't a valid card type (valid: ${TYPE_NAMES.join(", ")})`);
+                                        }
+                                        else {
+                                            normalized.push(canonical.toLowerCase());
+                                        }
+                                    }
+                                    validatedReqs[key] = normalized;
+                                } else if (arrayKeys.includes(key)) {
                                     const arrayValue = Array.isArray(value) ? value : [value];
                                     const normalized = arrayValue.map(v => String(v).toLowerCase());
                                     for (const val of normalized) {
