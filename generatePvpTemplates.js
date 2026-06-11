@@ -16,14 +16,15 @@
 const fs = require("fs");
 const path = require("path");
 const { initialize, getAllCars, getCar } = require("./src/util/functions/dataManager.js");
+const { usesReferenceStats, isPrizeLike } = require("./src/util/functions/cardType.js");
 
 initialize("./src");
 
 const all = getAllCars();
 // Filter helper — checks a car against a reqs object (the same shape startpvp validates)
 function matchesReqs(car, reqs) {
-    if (car.reference) return false;            // skip BM variants — diamond/standalone only
-    if (car.isPrize) return false;              // skip prize cars (most are unobtainable normally)
+    if (usesReferenceStats(car)) return false;  // skip BM variants — diamond/standalone only
+    if (isPrizeLike(car)) return false;         // skip prize cars (most are unobtainable normally)
     if (!reqs) return true;
     for (const [key, val] of Object.entries(reqs)) {
         if (key === "cr" || key === "modelYear" || key === "weight" || key === "topSpeed" || key === "0to60" || key === "handling") {

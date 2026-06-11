@@ -76,9 +76,21 @@ module.exports = {
         }
         check("predicates match legacy flags (data linter)", () => {
             for (const car of allCars) {
-                const hasLegacyFlags = car.isPrize !== undefined || car.reference !== undefined
-                    || car.diamond !== undefined || car.active !== undefined;
-                if (!hasLegacyFlags) continue;
+                // Structural lint — valid with or without legacy flags
+                expect(car, "ref-pointer matches type", !!car.reference, usesReferenceStats(car));
+                if (usesReferenceStats(car) && car.reference) {
+                    const refCar = getCar(car.reference);
+                    if (!refCar) expect(car, "reference resolves", false, true);
+                    else {
+                        expect(car, "reference target standalone", usesReferenceStats(refCar), false);
+                        if (inBMRotation(car)) expect(car, "ABM reference not prize-like", isPrizeLike(refCar), false);
+                    }
+                }
+                expect(car, "sellValueMult=1", sellValueMult(car), 1);
+
+                // Legacy cross-check — only while this car still carries old flags
+                const hasStrippableFlags = car.isPrize !== undefined || car.active !== undefined || car.diamond !== undefined;
+                if (!hasStrippableFlags) continue;
                 if (car.cardType) {
                     expect(car, "cardType≡flags", getBaseType(car), deriveLegacyTypes(car)[0]);
                 }
@@ -96,7 +108,6 @@ module.exports = {
                 expect(car, "rr:boss", rrOpponentClass(car) === "boss", prize && bossCR);
                 expect(car, "rr:normal", rrOpponentClass(car) === "normal", !ref && !dia && !(prize && bossCR));
                 expect(car, "isPrizeLike", isPrizeLike(car), prize);
-                expect(car, "sellValueMult=1", sellValueMult(car), 1);
             }
             const broken = Object.entries(anomalies);
             if (broken.length) {

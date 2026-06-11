@@ -704,12 +704,15 @@ function searchCars(criteria = {}) {
         
         // Is Prize
         if (criteria.isPrize !== undefined) {
-            if (car.isPrize !== criteria.isPrize) matches = false;
+            // lazy require: cardType sits above this module in the layer stack
+            const { isPrizeLike } = require("./cardType.js");
+            if (isPrizeLike(car) !== criteria.isPrize) matches = false;
         }
-        
+
         // Is Reference (BM car)
         if (criteria.isReference !== undefined) {
-            if ((car.reference !== undefined) !== criteria.isReference) matches = false;
+            const { isBMCar } = require("./cardType.js");
+            if (isBMCar(car) !== criteria.isReference) matches = false;
         }
         
         // Drive type

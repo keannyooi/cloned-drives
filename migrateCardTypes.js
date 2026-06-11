@@ -18,11 +18,15 @@
  * before anything is written.
  *
  * Usage:
- *   node migrateCardTypes.js          → dry run (report only, writes nothing)
- *   node migrateCardTypes.js --write  → stamp the files
+ *   node migrateCardTypes.js                  → dry run (report only, writes nothing)
+ *   node migrateCardTypes.js --write          → stamp the files
+ *   node migrateCardTypes.js --strip          → Phase 4 dry run: report legacy-flag removal
+ *   node migrateCardTypes.js --strip --write  → remove isPrize/active/diamond lines
  *
- * Idempotent: files that already carry cardType are skipped (and verified
- * against the derivation — a mismatch is reported as an error).
+ * Idempotent: files that already carry cardType are skipped in stamp mode (and,
+ * while their legacy flags still exist, verified against the derivation).
+ * Strip mode refuses any file whose cardType disagrees with its flags, and
+ * never touches `reference` (the stats pointer) or `cardType` itself.
  */
 
 const fs = require("fs");
@@ -30,7 +34,9 @@ const path = require("path");
 const { deriveLegacyTypes } = require("./src/util/functions/cardType.js");
 
 const WRITE = process.argv.includes("--write");
+const STRIP = process.argv.includes("--strip");
 const CARS_DIR = "./src/cars";
+const STRIP_KEYS = ["isPrize", "active", "diamond"];
 
 const files = fs.readdirSync(CARS_DIR).filter(f => f.endsWith(".json"));
 const typeCounts = {};
@@ -50,11 +56,59 @@ for (const file of files) {
         continue;
     }
 
+    // ── Strip mode: remove legacy flag lines from already-stamped files ──
+    if (STRIP) {
+        if (car.cardType === undefined) {
+            errors.push(`${file}: no cardType — stamp it first (refusing to strip flags)`);
+            continue;
+        }
+        const present = STRIP_KEYS.filter(k => car[k] !== undefined);
+        if (present.length === 0) {
+            skipped++;
+            continue;
+        }
+        // Safety: while flags exist they must agree with the stamp — once
+        // stripped there is nothing left to re-derive from.
+        if (JSON.stringify(car.cardType) !== JSON.stringify(deriveLegacyTypes(car))) {
+            errors.push(`${file}: cardType ${JSON.stringify(car.cardType)} disagrees with flags ${JSON.stringify(deriveLegacyTypes(car))} — resolve before stripping`);
+            continue;
+        }
+
+        let newRaw = raw;
+        for (const k of present) {
+            newRaw = newRaw.replace(new RegExp(`^[ \\t]*"${k}"[ \\t]*:[^\\r\\n]*\\r?\\n`, "m"), "");
+        }
+
+        let reparsed;
+        try {
+            reparsed = JSON.parse(newRaw);
+        } catch (err) {
+            errors.push(`${file}: strip produced invalid JSON — ${err.message}`);
+            continue;
+        }
+        const expected = { ...car };
+        for (const k of STRIP_KEYS) delete expected[k];
+        if (JSON.stringify(reparsed) !== JSON.stringify(expected)) {
+            errors.push(`${file}: strip altered more than the legacy flags — refusing`);
+            continue;
+        }
+
+        for (const k of present) typeCounts[k] = (typeCounts[k] || 0) + 1;
+        stamped++;
+        if (!samplePreview) {
+            samplePreview = newRaw.split(/\r?\n/).slice(0, 4).join("\n");
+        }
+        if (WRITE) fs.writeFileSync(fullPath, newRaw);
+        continue;
+    }
+
     const types = deriveLegacyTypes(car);
 
     if (car.cardType !== undefined) {
         skipped++;
-        if (JSON.stringify(car.cardType) !== JSON.stringify(types)) {
+        // Agreement check only meaningful while the legacy flags still exist
+        const hasFlags = STRIP_KEYS.some(k => car[k] !== undefined);
+        if (hasFlags && JSON.stringify(car.cardType) !== JSON.stringify(types)) {
             errors.push(`${file}: existing cardType ${JSON.stringify(car.cardType)} disagrees with derived ${JSON.stringify(types)}`);
         }
         continue;
@@ -102,10 +156,11 @@ for (const file of files) {
     }
 }
 
-console.log(`\n${WRITE ? "STAMPED" : "DRY RUN"} — ${files.length} car files scanned`);
-console.log(`  ${WRITE ? "written" : "would stamp"}: ${stamped}`);
-console.log(`  already stamped (skipped): ${skipped}`);
-console.log(`  per type: ${Object.entries(typeCounts).map(([k, v]) => `${k} ${v}`).join(" | ")}`);
+const MODE = STRIP ? "strip" : "stamp";
+console.log(`\n${WRITE ? (STRIP ? "STRIPPED" : "STAMPED") : "DRY RUN (" + MODE + ")"} — ${files.length} car files scanned`);
+console.log(`  ${WRITE ? "written" : "would " + MODE}: ${stamped}`);
+console.log(`  ${STRIP ? "nothing to strip (skipped)" : "already stamped (skipped)"}: ${skipped}`);
+console.log(`  ${STRIP ? "flags removed" : "per type"}: ${Object.entries(typeCounts).map(([k, v]) => `${k} ${v}`).join(" | ")}`);
 if (samplePreview) {
     console.log(`\n  sample file tail after stamping:\n${samplePreview.split("\n").map(l => "  │ " + l).join("\n")}`);
 }

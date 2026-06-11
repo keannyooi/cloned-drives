@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { normalizeTypeName, TYPE_NAMES, usesReferenceStats } = require("./src/util/functions/cardType.js");
 
 const carsDir = path.join(__dirname, "src", "cars");
 
@@ -43,7 +44,7 @@ const VALID = {
 const REQUIRED_FIELDS = [
     "carID", "cr", "make", "model", "modelYear", "country",
     "topSpeed", "0to60", "handling", "driveType", "tyreType",
-    "isPrize", "weight", "gc", "seatCount", "bodyStyle",
+    "cardType", "weight", "gc", "seatCount", "bodyStyle",
     "tcs", "abs", "enginePos", "fuelType", "mra", "ola"
 ];
 
@@ -60,6 +61,35 @@ function error(file, msg) {
 
 function warn(file, msg) {
     warnings.push(`WARN   ${file}: ${msg}`);
+}
+
+// Card type validation — applies to every card file, BM variants and stubs included.
+const BM_FAMILY = ["ABM", "IBM", "PBM"];
+function checkCardType(file, car) {
+    if (car.cardType === undefined) {
+        warn(file, `missing cardType — run \`node migrateCardTypes.js --write\` to stamp it`);
+        return;
+    }
+    if (!Array.isArray(car.cardType) || car.cardType.length === 0) {
+        error(file, `cardType must be a non-empty array`);
+        return;
+    }
+    for (const t of car.cardType) {
+        if (!normalizeTypeName(String(t))) {
+            error(file, `Unknown cardType "${t}" (valid: ${TYPE_NAMES.join(", ")})`);
+        }
+    }
+    const base = normalizeTypeName(String(car.cardType[0]));
+    if (BM_FAMILY.includes(base) && car.reference === undefined) {
+        error(file, `cardType ${base} requires a "reference" field`);
+    }
+    if (base && !usesReferenceStats(car) && car.reference !== undefined) {
+        warn(file, `has "reference" but cardType ${base} does not use it`);
+    }
+    // Legacy flags are superseded by cardType — flag leftovers
+    if (car.isPrize !== undefined) warn(file, `legacy flag "isPrize" present — cardType is the source of truth, remove it`);
+    if (car.active !== undefined) warn(file, `legacy flag "active" present — ABM/IBM cardType encodes rotation, remove it`);
+    if (car.diamond !== undefined) warn(file, `legacy flag "diamond" present — Diamond cardType encodes it, remove it`);
 }
 
 const files = fs.readdirSync(carsDir).filter(f => f.endsWith(".json"));
@@ -80,6 +110,8 @@ for (const file of files) {
     }
 
     const expectedID = file.replace(".json", "");
+
+    checkCardType(file, car);
 
     // Black Market variant detection — these only have reference + metadata
     const isBMVariant = car.reference !== undefined;
@@ -162,7 +194,7 @@ for (const file of files) {
     }
 
     // --- Boolean fields ---
-    for (const field of ["isPrize", "tcs", "abs"]) {
+    for (const field of ["tcs", "abs"]) {
         if (car[field] !== undefined && typeof car[field] !== "boolean") {
             error(file, `${field} should be boolean, got ${typeof car[field]}: ${car[field]}`);
         }
