@@ -1,0 +1,28 @@
+{
+    "name": "Black Market Mayhem",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "spawnDay": "wednesday",
+    "durationDays": 5,
+    "rounds": 10,
+    "difficulty": { "start": 2, "end": 8 },
+    "entryFee": 5000000,
+    "uniqueSolutionThreshold": 25,
+    "subtitles": [],
+    "theme": {
+        "name": "Black Market Mayhem",
+        "baseReqs": { "cardType": ["abm", "ibm", "pbm"] },
+        "universe": "bm"
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": [],
+        "packPool": [],
+        "milestones": {
+            "5": { "trophies": 50 },
+            "10": { "trophies": 150 }
+        }
+    }
+}

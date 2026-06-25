@@ -1,0 +1,68 @@
+{
+    "name": "Slipstream Pack Battle",
+    "packID": "p00219",
+    "duration": "14d",
+    "milestones": [
+        {
+            "stat": "totalCRPulled",
+            "threshold": 5000,
+            "resetType": "cumulative",
+            "reward": { "money": 250000 },
+            "hint": "Reach 5,000 CR from Slipstream Starter Packs."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 25000,
+            "resetType": "cumulative",
+            "reward": { "money": 750000, "trophies": 50 },
+            "hint": "Reach 25,000 CR pulled."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 100000,
+            "resetType": "cumulative",
+            "reward": { "money": 2000000, "trophies": 150 },
+            "hint": "Reach 100,000 CR pulled."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 900,
+            "resetType": "cumulative",
+            "reward": { "money": 500000, "trophies": 100 },
+            "hint": "Pull a CR 900+ car from a Slipstream Starter Pack."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "cumulative",
+            "reward": { "money": 1000000, "trophies": 200, "pack": "p00220" },
+            "hint": "Pull a CR 950+ car from a Slipstream Starter Pack."
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 3000000, "trophies": 500, "car": { "carID": "c00430", "upgrade": "996" } }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 5,
+            "reward": { "money": 1000000, "trophies": 200, "pack": "p00221" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 6,
+            "maxRank": 15,
+            "reward": { "money": 300000, "trophies": 50 }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 500000, "trophies": 100, "pack": "p00220" }
+        }
+    ]
+}

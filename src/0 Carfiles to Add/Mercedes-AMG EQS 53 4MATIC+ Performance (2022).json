@@ -10,8 +10,7 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Super Sedan"],
-    "isPrize": false,
+    "tags": ["Eco-Friendly","Super Sedan"],
     "weight": 2655,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 80,
     "ola": 100,
     "description": "",
-"333TopSpeed": 152,
-"3330to60": 3.1,
-"333Handling": 87,
-
-"666TopSpeed": 156,
-"6660to60": 3,
-"666Handling": 90,
-
-"699TopSpeed": 156,
-"6990to60": 2.8,
-"699Handling": 93,
-
-"969TopSpeed": 159,
-"9690to60": 3,
-"969Handling": 93,
-
-"996TopSpeed": 159,
-"9960to60": 2.8,
-"996Handling": 90,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Mercedes-AMGEQS534MATICPerf(2022).png",
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

@@ -31,7 +31,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { deriveLegacyTypes } = require("./src/util/functions/cardType.js");
+const { deriveLegacyTypes } = require("../src/util/functions/cardType.js");
 
 const WRITE = process.argv.includes("--write");
 const STRIP = process.argv.includes("--strip");

@@ -1,0 +1,25 @@
+{
+    "//about": "Free-entry weekend casual event — easy curve, small money, a booster-ish pack at the end. The welcome mat for players scared off by the flagship's fee.",
+    "name": "Sunday Cruise",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "spawnDay": "sunday",
+    "durationDays": 2,
+    "rounds": 8,
+    "difficulty": { "start": 1, "end": 4 },
+    "entryFee": 0,
+    "uniqueSolutionThreshold": 0,
+    "subtitles": ["Lazy Laps", "Coffee Run", "Backroads", "Scenic Route"],
+    "theme": "none",
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 1500000,
+        "moneyCurve": "flat",
+        "carPool": [],
+        "packPool": ["p00005", "p00002", "p00094"],
+        "milestones": {
+            "4": { "money": "$BUDGET" },
+            "8": { "money": "$BUDGET", "trophies": 5, "pack": "$PACKPOOL" }
+        }
+    }
+}

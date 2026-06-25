@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
-    "isPrize": false,
     "weight": 1280,
     "gc": "Low",
     "seatCount": 1,
@@ -23,26 +22,8 @@
     "mra": 89.13,
     "ola": 87.8,
     "description": "A BTCC car with RWD instead of FWD, but based on an AWD car...",
-"333TopSpeed": 163,
-"3330to60": 3.9,
-"333Handling": 102,
-
-"666TopSpeed": 167,
-"6660to60": 3.7,
-"666Handling": 106,
-
-"699TopSpeed": 167,
-"6990to60": 3.5,
-"699Handling": 110,
-
-"969TopSpeed": 170,
-"9690to60": 3.7,
-"969Handling": 110,
-
-"996TopSpeed": 170,
-"9960to60": 3.5,
-"996Handling": 106,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SubaruLevorgSportsTourerBTCC%234SilverlineSubaruBMRRacing(2016).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

@@ -1,0 +1,31 @@
+{
+    "//about": "The pack-shower: three pack rewards drawn distinctly from a four-pack pool, auto-themed by make or country only (collection flavor). For players who open packs for a living.",
+    "name": "Collector's Circuit",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 10,
+    "durationDays": 7,
+    "rounds": 12,
+    "difficulty": { "start": 1, "end": 8 },
+    "entryFee": 8000000,
+    "uniqueSolutionThreshold": 30,
+    "subtitles": ["Gotta Catch Em All", "Shelf Space", "The Archive"],
+    "theme": "auto",
+    "themeRecipes": {
+        "none": { "weight": 2 },
+        "make": { "weight": 3, "minCars": 120 },
+        "country": { "weight": 3 }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": [],
+        "packPool": ["p00001", "p00033", "p00076", "p00160"],
+        "milestones": {
+            "4": { "pack": "$PACKPOOL" },
+            "8": { "pack": "$PACKPOOL" },
+            "12": { "trophies": 50, "pack": "$PACKPOOL" }
+        }
+    }
+}

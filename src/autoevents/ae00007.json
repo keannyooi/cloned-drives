@@ -1,0 +1,28 @@
+{
+    "//about": "Weekly tag-themed flavor event — muscle cars only (the 'Muscle Car' tag, 507 cars), American Basic Pack as the thematic finale reward. Cheap ticket, short run.",
+    "name": "Muscle Car Monday",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "spawnDay": "monday",
+    "durationDays": 3,
+    "rounds": 10,
+    "difficulty": { "start": 2, "end": 7 },
+    "entryFee": 2500000,
+    "uniqueSolutionThreshold": 25,
+    "subtitles": [],
+    "theme": {
+        "name": "Muscle Car Monday",
+        "baseReqs": { "tags": ["muscle car"] }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": [],
+        "packPool": ["p00160"],
+        "milestones": {
+            "5": { "trophies": 25 },
+            "10": { "trophies": 75, "pack": "$PACKPOOL" }
+        }
+    }
+}

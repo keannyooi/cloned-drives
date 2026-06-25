@@ -1,0 +1,75 @@
+{
+    "name": "Legendary Pursuit",
+    "packID": "p00099",
+    "duration": "10d",
+    "milestones": [
+        {
+            "stat": "totalCRPulled",
+            "threshold": 5000,
+            "resetType": "cumulative",
+            "reward": { "money": 500000 },
+            "hint": "Pull 5,000 total CR from Legendary Packs."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 25000,
+            "resetType": "cumulative",
+            "reward": { "money": 1500000, "trophies": 100 },
+            "hint": "Pull 25,000 total CR."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 900,
+            "resetType": "cumulative",
+            "reward": { "money": 800000, "trophies": 100 },
+            "hint": "Pull a CR 900+ legendary."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "cumulative",
+            "reward": { "money": 1500000, "trophies": 200, "pack": "p00001" },
+            "hint": "Pull a CR 950+ legendary."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 999,
+            "resetType": "cumulative",
+            "reward": { "money": 3000000, "trophies": 400, "pack": "p00099" },
+            "hint": "Pull the highest-tier legendary (CR 999)."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 5000,
+            "resetType": "daily",
+            "reward": { "money": 250000, "trophies": 25 },
+            "hint": "Daily: Pull 5,000 CR in a single day."
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 5000000, "trophies": 750, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 3,
+            "reward": { "money": 2000000, "trophies": 300, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 4,
+            "maxRank": 10,
+            "reward": { "money": 750000, "trophies": 100, "pack": "p00099" }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 1500000, "trophies": 200, "pack": "p00100" }
+        }
+    ]
+}

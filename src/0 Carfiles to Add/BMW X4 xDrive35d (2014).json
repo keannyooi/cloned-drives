@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Full Throttle"],
-    "isPrize": false,
     "weight": 1860,
     "gc": "High",
     "seatCount": 5,
@@ -23,28 +22,8 @@
     "mra": 67.44,
     "ola": 71.58,
     "description": "",
-	
-"333TopSpeed": 157,
-"3330to60": 4.8,
-"333Handling": 82,
-
-"666TopSpeed": 161,
-"6660to60": 4.6,
-"666Handling": 84,
-
-"699TopSpeed": 161,
-"6990to60": 4.3,
-"699Handling": 88,
-
-"969TopSpeed": 164,
-"9690to60": 4.6,
-"969Handling": 88,
-
-"996TopSpeed": 164,
-"9960to60": 4.3,
-"996Handling": 84,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMWX4xDrive35dxLine(2014).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

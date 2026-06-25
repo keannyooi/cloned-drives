@@ -24,7 +24,7 @@ const fs = require("fs");
 const path = require("path");
 
 // ⚙️ CONFIG
-const CARS_DIR = path.join(__dirname, "src", "cars");
+const CARS_DIR = path.join(__dirname, "..", "src", "cars");
 const DRY_RUN = false; // set true to just preview
 
 if (!fs.existsSync(CARS_DIR)) {

@@ -1,9 +1,7 @@
 {
     "carID": "c0",
     "cr": 1402,
-    "make": [
-        "Ferrari"
-    ],
+    "make": ["Ferrari"],
     "model": "SF-25",
     "modelYear": 2025,
     "country": "IT",
@@ -12,12 +10,7 @@
     "handling": 139,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport",
-        "Eco-Friendly",
-        "Ultra Expensive"
-    ],
-    "isPrize": true,
+    "tags": ["Motorsport","Eco-Friendly","Ultra Expensive"],
     "weight": 800,
     "gc": "Low",
     "seatCount": 1,
@@ -31,7 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FerrariSF25(2025).png",
     "creator": "Bnuuy",
-    "hiddenTag": [
-        "F1"
-    ]
+    "hiddenTag": ["F1"],
+    "cardType": ["Prize"]
 }

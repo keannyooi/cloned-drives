@@ -1,0 +1,28 @@
+{
+    "//about": "Tri-weekly EV-only event (fuelType electric, 557 cars) — proof that any car-data field can carry a fixed theme. Mid difficulty, trophies + a 5x booster.",
+    "name": "Electric Avenue",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 21,
+    "durationDays": 5,
+    "rounds": 10,
+    "difficulty": { "start": 2, "end": 8 },
+    "entryFee": 5000000,
+    "uniqueSolutionThreshold": 25,
+    "subtitles": [],
+    "theme": {
+        "name": "Electric Avenue",
+        "baseReqs": { "fuelType": "electric" }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": [],
+        "packPool": ["p00033"],
+        "milestones": {
+            "5": { "trophies": 30 },
+            "10": { "trophies": 60, "pack": "$PACKPOOL" }
+        }
+    }
+}

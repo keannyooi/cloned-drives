@@ -313,13 +313,13 @@ const filterChecks = {
 
     // Prize status (cardType-driven; legacy isPrize flag no longer consulted)
     isPrize: (car, carID, value) => {
-        const { isPrizeLike } = require("./src/util/functions/cardType.js");
+        const { isPrizeLike } = require("../src/util/functions/cardType.js");
         return value ? isPrizeLike(car) : !isPrizeLike(car);
     },
 
     // BM status (cardType-driven)
     isBM: (car, carID, value) => {
-        const { isBMCar } = require("./src/util/functions/cardType.js");
+        const { isBMCar } = require("../src/util/functions/cardType.js");
         return value ? isBMCar(car) : !isBMCar(car);
     },
 

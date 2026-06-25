@@ -1,0 +1,63 @@
+{
+    "name": "Mystic Hunter",
+    "packID": "p00095",
+    "duration": "14d",
+    "milestones": [
+        {
+            "stat": "totalCRPulled",
+            "threshold": 3000,
+            "resetType": "cumulative",
+            "reward": { "money": 1000000 },
+            "hint": "Pull your first big chunk of Mystic-tier CR (3,000)."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 15000,
+            "resetType": "cumulative",
+            "reward": { "money": 3000000, "trophies": 200 },
+            "hint": "Pull 15,000 total CR — that's a lot of Mystics."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1000,
+            "resetType": "cumulative",
+            "reward": { "money": 2000000, "trophies": 300 },
+            "hint": "Confirm a Mystic pull (any CR 1000+)."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1200,
+            "resetType": "cumulative",
+            "reward": { "money": 5000000, "trophies": 500, "pack": "p00099" },
+            "hint": "Pull a high-tier Mystic (CR 1200+)."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1400,
+            "resetType": "cumulative",
+            "reward": { "money": 10000000, "trophies": 1000, "pack": "p00100" },
+            "isSecret": true,
+            "hint": "???"
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 15000000, "trophies": 2000, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 3,
+            "reward": { "money": 5000000, "trophies": 500, "pack": "p00099" }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 3000000, "trophies": 300, "pack": "p00100" }
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "name": "Grand Cosmo Championship",
+    "packID": "p00047",
+    "duration": "30d",
+    "milestones": [
+        {
+            "stat": "totalCRPulled",
+            "threshold": 5000,
+            "resetType": "cumulative",
+            "reward": { "money": 500000, "trophies": 50 },
+            "hint": "Pull 5,000 CR to get rolling."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 25000,
+            "resetType": "cumulative",
+            "reward": { "money": 1500000, "trophies": 100 },
+            "hint": "Hit 25,000 CR pulled."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 100000,
+            "resetType": "cumulative",
+            "reward": { "money": 5000000, "trophies": 250 },
+            "hint": "Hit 100,000 CR pulled."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 250000,
+            "resetType": "cumulative",
+            "reward": { "money": 10000000, "trophies": 500, "pack": "p00099" },
+            "hint": "Hit 250,000 CR pulled. Mid-event milestone."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 500000,
+            "resetType": "cumulative",
+            "reward": { "money": 20000000, "trophies": 1000, "pack": "p00100" },
+            "hint": "Hit 500,000 CR pulled. Half-million club."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 1000000,
+            "resetType": "cumulative",
+            "reward": { "money": 40000000, "trophies": 2000, "pack": "p00100" },
+            "isSecret": true,
+            "hint": "???"
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 900,
+            "resetType": "cumulative",
+            "reward": { "money": 1000000, "trophies": 100 },
+            "hint": "Pull a CR 900+ card."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "cumulative",
+            "reward": { "money": 2000000, "trophies": 200 },
+            "hint": "Pull a CR 950+ card."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1000,
+            "resetType": "cumulative",
+            "reward": { "money": 5000000, "trophies": 400, "pack": "p00099" },
+            "hint": "Pull a Mystic (CR 1000+)."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1100,
+            "resetType": "cumulative",
+            "reward": { "money": 10000000, "trophies": 750, "pack": "p00100" },
+            "hint": "Pull a high-tier Mystic (CR 1100+)."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1200,
+            "resetType": "cumulative",
+            "reward": { "money": 20000000, "trophies": 1500, "pack": "p00096" },
+            "isSecret": true,
+            "hint": "???"
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 25000,
+            "resetType": "daily",
+            "reward": { "money": 200000, "trophies": 30 },
+            "hint": "Daily: 25,000 CR pulled in 24h."
+        },
+        {
+            "stat": "totalCRPulled",
+            "threshold": 100000,
+            "resetType": "daily",
+            "reward": { "money": 1000000, "trophies": 100 },
+            "hint": "Daily: 100,000 CR pulled in 24h. Grinder reward."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "daily",
+            "reward": { "money": 500000, "trophies": 50 },
+            "hint": "Daily: Pull a CR 950+ card today."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1200,
+            "resetType": "daily",
+            "reward": { "money": 5000000, "trophies": 500, "pack": "p00099" },
+            "hint": "Daily JACKPOT: pull a CR 1200+ today."
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 50000000, "trophies": 5000, "car": { "carID": "c00430", "upgrade": "996" } }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 3,
+            "reward": { "money": 20000000, "trophies": 2000, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 4,
+            "maxRank": 10,
+            "reward": { "money": 10000000, "trophies": 1000, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 11,
+            "maxRank": 25,
+            "reward": { "money": 5000000, "trophies": 500, "pack": "p00099" }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 26,
+            "maxRank": 50,
+            "reward": { "money": 2000000, "trophies": 200 }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 15000000, "trophies": 1500, "pack": "p00100" }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 2,
+            "maxRank": 5,
+            "reward": { "money": 5000000, "trophies": 500, "pack": "p00099" }
+        }
+    ]
+}

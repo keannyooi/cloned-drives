@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Unique","Concept"],
-    "isPrize": false,
     "weight": 87,
     "gc": "Low",
     "seatCount": 1,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PeelP50Prototype(1962).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

@@ -30,6 +30,10 @@ module.exports = {
 
         if (playerData.unclaimedRewards.length > 0) {
             let rewardLog = "", line = "", limitExceeded = false;
+            // Rewards we couldn't grant this run (e.g. a pack that failed to open) are
+            // kept here so the rest of the batch still persists and the player can retry
+            // just the failed ones — instead of the whole batch getting stuck.
+            const remainingRewards = [];
             for (let reward of playerData.unclaimedRewards) {
                 let { origin } = reward;
                 switch (Object.keys(reward)[0]) {
@@ -57,7 +61,12 @@ module.exports = {
                     case "pack":
                         let currentPack = getPack(reward.pack);
                         let addedCars = await openPack({ message, currentPack, discoveredCars });
-                        if (!Array.isArray(addedCars)) return;
+                        if (!Array.isArray(addedCars)) {
+                            // Pack couldn't be opened — keep it unclaimed and move on so
+                            // the rest of the batch is still granted and persisted.
+                            remainingRewards.push(reward);
+                            continue;
+                        }
 
                         playerData.garage = addCars(playerData.garage, addedCars);
                         line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
@@ -81,7 +90,7 @@ module.exports = {
                 trophies: playerData.trophies,
                 garage: playerData.garage,
                 discoveredCars,
-                unclaimedRewards: []
+                unclaimedRewards: remainingRewards
             });
 
             const successMessage = new SuccessMessage({

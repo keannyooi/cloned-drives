@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [],
-    "isPrize": false,
     "weight": 1120,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 0,
     "ola": 50,
     "description": "",
-"333TopSpeed": 84,
-"3330to60": 24.3,
-"333Handling": 52,
-
-"666TopSpeed": 91,
-"6660to60": 23,
-"666Handling": 53,
-
-"699TopSpeed": 91,
-"6990to60": 21.8,
-"699Handling": 56,
-
-"969TopSpeed": 97,
-"9690to60": 23,
-"969Handling": 56,
-
-"996TopSpeed": 97,
-"9960to60": 21.8,
-"996Handling": 53,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Wolseley15-60(1958).png",
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

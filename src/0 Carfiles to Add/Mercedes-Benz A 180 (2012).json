@@ -11,7 +11,6 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
-    "isPrize": false,
     "weight": 1295,
     "gc": "Medium",
     "seatCount": 5,
@@ -22,30 +21,9 @@
     "fuelType": "Petrol",
     "mra": 42.95,
     "ola": 71.25,
-
     "description": "",
-
-"333TopSpeed": 130,
-"3330to60": 8.4,
-"333Handling": 76,
-
-"666TopSpeed": 134,
-"6660to60": 7.9,
-"666Handling": 79,
-
-"699TopSpeed": 134,
-"6990to60": 7.5,
-"699Handling": 82,
-
-"969TopSpeed": 138,
-"9690to60": 7.9,
-"969Handling": 82,
-
-"996TopSpeed": 138,
-"9960to60": 7.5,
-"996Handling": 79,
-
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Mercedes-BenzA180BlueEFFICIENCYStyle(2012).png",
     "creator": "Pfugs",
-    "hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

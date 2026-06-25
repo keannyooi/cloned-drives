@@ -11,7 +11,6 @@
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [],
-    "isPrize": false,
     "weight": 1295,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 65.12,
     "ola": 74.29,
     "description": "",
-"333TopSpeed": 144,
-"3330to60": 6.6,
-"333Handling": 81,
-
-"666TopSpeed": 147,
-"6660to60": 6.3,
-"666Handling": 83,
-
-"699TopSpeed": 147,
-"6990to60": 6,
-"699Handling": 87,
-
-"969TopSpeed": 151,
-"9690to60": 6.3,
-"969Handling": 87,
-
-"996TopSpeed": 151,
-"9960to60": 6,
-"996Handling": 83,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MiniCooperSConvertible(2010).png",
-    "creator": "GAAN"
+    "creator": "GAAN",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

@@ -1,0 +1,43 @@
+{
+    "packName": "Ultra Expensive Elite Pack",
+    "description": "5 Rare or Higher Ultra Expensive cards",
+    "repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
+    "filter": {
+        "tags": [
+            "Ultra Expensive"
+        ]
+    },
+    "packSequence": [
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        }
+    ]
+}

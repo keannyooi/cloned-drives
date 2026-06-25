@@ -1,0 +1,28 @@
+{
+    "//about": "The endgame short-form brutal: mystics only, 8 rounds, starts mid-difficulty and ends at the absolute 1-5-car finale. Highest fee, mystic-range prize pool.",
+    "name": "Mystic Trials",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 30,
+    "durationDays": 7,
+    "rounds": 8,
+    "difficulty": { "start": 5, "end": 10 },
+    "entryFee": 25000000,
+    "uniqueSolutionThreshold": 40,
+    "subtitles": [],
+    "theme": {
+        "name": "Mystic Trials",
+        "baseReqs": { "cr": { "start": 1000, "end": 1500 } }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": ["c00119", "c00391", "c00556"],
+        "packPool": [],
+        "milestones": {
+            "4": { "trophies": 100 },
+            "8": { "trophies": 200, "car": "$CARPOOL" }
+        }
+    }
+}

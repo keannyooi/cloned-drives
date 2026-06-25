@@ -8,7 +8,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const CARS_DIR = path.join(__dirname, "src", "cars");
+const CARS_DIR = path.join(__dirname, "..", "src", "cars");
 
 // ============================================================
 // LOAD ALL CAR DATA

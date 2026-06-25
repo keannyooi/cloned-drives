@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const packsDir = path.join(__dirname, "src", "packs");
+const packsDir = path.join(__dirname, "..", "src", "packs");
 const files = fs.readdirSync(packsDir).filter(f => f.endsWith(".json"));
 
 const RARITY_KEYS = ["standard", "common", "uncommon", "rare", "epic", "exotic", "legendary", "mystic"];

@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const carsDir = path.join(__dirname, "src", "cars");
+const carsDir = path.join(__dirname, "..", "src", "cars");
 const files = fs.readdirSync(carsDir).filter(f => f.endsWith(".json"));
 
 const TUNE_PREFIXES = ["333", "666", "699", "969", "996"];

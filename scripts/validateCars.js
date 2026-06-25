@@ -2,9 +2,9 @@
 
 const fs = require("fs");
 const path = require("path");
-const { normalizeTypeName, TYPE_NAMES, usesReferenceStats } = require("./src/util/functions/cardType.js");
+const { normalizeTypeName, TYPE_NAMES, usesReferenceStats } = require("../src/util/functions/cardType.js");
 
-const carsDir = path.join(__dirname, "src", "cars");
+const carsDir = path.join(__dirname, "..", "src", "cars");
 
 // ============================================================================
 // VALID VALUES — update these lists when adding new legitimate values

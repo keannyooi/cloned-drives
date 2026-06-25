@@ -15,6 +15,7 @@ const endOffer = require("./src/util/functions/endOffer.js");
 const endPvpEvent = require("./src/util/functions/endPvpEvent.js");
 const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
+const { checkAutoEvents } = require("./src/util/functions/autoEvents.js");
 const tracker = require("./src/util/functions/tracker.js");
 const { takeSnapshot, distributePlacementRewards } = require("./src/util/functions/packBattleManager.js");
 const serverStatModel = require("./src/models/serverStatSchema.js");
@@ -195,6 +196,12 @@ setInterval(async () => {
         console.error("[PackBattle] Snapshot interval error:", err.message);
     }
 }, 1800000);
+
+// Auto-events — daily check spawns any template (src/autoevents/) whose
+// cadence or spawn day is due. Proving Grounds and friends live here.
+schedule("0 0 * * *", async () => {
+    await checkAutoEvents();
+});
 
 schedule("0 */12 * * *", async () => {
     let { lastBMRefresh } = await serverStatModel.findOne({});

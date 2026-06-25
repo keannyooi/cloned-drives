@@ -19,7 +19,6 @@ module.exports = {
     description: "Creates an event with the name of your choice.",
     async execute(message, args) {
         const events = await eventModel.find();
-        const { totalEvents } = await serverStatModel.findOne({});
         const eventName = args.splice(1, args.length).join(" ");
         if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 50) {
             const errorMessage = new ErrorMessage({
@@ -57,12 +56,14 @@ module.exports = {
                 rewards: {}
             });
         }
+        // Reserve the event number atomically so a concurrent createevent / auto-event
+        // spawn can't read the same totalEvents and mint a duplicate eventID.
+        const { totalEvents } = await serverStatModel.findOneAndUpdate({}, { "$inc": { totalEvents: 1 } }, { new: true });
         await eventModel.create({
-            eventID: `evnt${totalEvents + 1}`,
+            eventID: `evnt${totalEvents}`,
             name: eventName,
             roster
         });
-        await serverStatModel.updateOne({}, { "$inc": { totalEvents: 1 } });
 
         const successMessage = new SuccessMessage({
             channel: message.channel,

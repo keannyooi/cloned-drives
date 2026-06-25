@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Eco-Friendly"],
-    "isPrize": false,
     "weight": 2575,
     "gc": "High",
     "seatCount": 5,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LotusEletreX(2026).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

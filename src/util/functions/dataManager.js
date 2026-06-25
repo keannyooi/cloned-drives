@@ -41,6 +41,7 @@ const packs = new Map();       // packID (without .json) -> pack data object
 const offerTemplates = new Map(); // templateID (without .json) -> template data object
 const pvpEventTemplates = new Map(); // templateID (without .json) -> pvp event template data
 const packBattleTemplates = new Map(); // templateID (without .json) -> pack battle template data
+const autoEventTemplates = new Map(); // templateID (without .json) -> auto-event template data
 
 // File lists (equivalent to readdirSync results)
 let carFiles = [];                // ["c00001.json", "c00002.json", ...]
@@ -49,6 +50,7 @@ let packFiles = [];               // ["p00001.json", "p00002.json", ...]
 let offerTemplateFiles = [];      // ["o00001.json", "o00002.json", ...]
 let pvpEventTemplateFiles = [];   // ["pe00001.json", "pe00002.json", ...]
 let packBattleTemplateFiles = []; // ["pb00001.json", "pb00002.json", ...]
+let autoEventTemplateFiles = [];  // ["ae00001.json", ...] ("_"-prefixed files are skipped)
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
 let cachedCarArray = [];
@@ -80,7 +82,8 @@ function initialize(basePath = "./src") {
         packs: { loaded: 0, failed: 0, errors: [] },
         offerTemplates: { loaded: 0, failed: 0, errors: [] },
         pvpEventTemplates: { loaded: 0, failed: 0, errors: [] },
-        packBattleTemplates: { loaded: 0, failed: 0, errors: [] }
+        packBattleTemplates: { loaded: 0, failed: 0, errors: [] },
+        autoEventTemplates: { loaded: 0, failed: 0, errors: [] }
     };
 
     // Load Cars
@@ -203,6 +206,28 @@ function initialize(basePath = "./src") {
         console.log(`   Pack Battle Templates: directory not found, skipping`);
     }
 
+    // Load Auto-Event Templates ("_"-prefixed files are documentation, not templates)
+    const autoEventsPath = path.join(basePath, "autoevents");
+    try {
+        autoEventTemplateFiles = readdirSync(autoEventsPath).filter(file => file.endsWith(".json") && !file.startsWith("_"));
+        for (const file of autoEventTemplateFiles) {
+            try {
+                const filePath = path.join(autoEventsPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const templateID = file.slice(0, -5);
+                autoEventTemplates.set(templateID, parsed);
+                stats.autoEventTemplates.loaded++;
+            } catch (err) {
+                stats.autoEventTemplates.failed++;
+                stats.autoEventTemplates.errors.push({ file, error: err.message });
+            }
+        }
+    } catch (err) {
+        // autoevents/ directory may not exist yet — that's fine
+        console.log(`   Auto-Event Templates: directory not found, skipping`);
+    }
+
     initialized = true;
 
     // L-01: Build cached arrays once (avoids Array.from() on every getRandomCar/Track call)
@@ -217,6 +242,7 @@ function initialize(basePath = "./src") {
     console.log(`   Offer Templates: ${stats.offerTemplates.loaded} loaded, ${stats.offerTemplates.failed} failed`);
     console.log(`   PvP Event Templates: ${stats.pvpEventTemplates.loaded} loaded, ${stats.pvpEventTemplates.failed} failed`);
     console.log(`   Pack Battle Templates: ${stats.packBattleTemplates.loaded} loaded, ${stats.packBattleTemplates.failed} failed`);
+    console.log(`   Auto-Event Templates: ${stats.autoEventTemplates.loaded} loaded, ${stats.autoEventTemplates.failed} failed`);
 
     if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0 || stats.pvpEventTemplates.failed > 0) {
         console.error("❌ Some files failed to load:");
@@ -381,6 +407,24 @@ function getPackBattleTemplate(templateID) {
     return template;
 }
 
+/**
+ * Get auto-event template data by ID
+ * @param {string} templateID - Template ID with or without .json extension
+ * @returns {Object|null} Template data object or null if not found
+ */
+function getAutoEventTemplate(templateID) {
+    if (!templateID) return null;
+    let cleanID = templateID;
+    if (cleanID.includes("/")) cleanID = cleanID.split("/").pop();
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    const template = autoEventTemplates.get(cleanID);
+    if (!template) {
+        console.warn(`⚠️ Auto-event template not found: ${templateID} (cleaned: ${cleanID})`);
+        return null;
+    }
+    return template;
+}
+
 // ============================================================================
 // FILE LIST GETTERS - Use these instead of readdirSync()
 // ============================================================================
@@ -431,6 +475,14 @@ function getPvpEventTemplateFiles() {
  */
 function getPackBattleTemplateFiles() {
     return packBattleTemplateFiles;
+}
+
+/**
+ * Get list of all auto-event template files
+ * @returns {string[]} Array of auto-event template filenames
+ */
+function getAutoEventTemplateFiles() {
+    return autoEventTemplateFiles;
 }
 
 // ============================================================================
@@ -750,6 +802,7 @@ module.exports = {
     getOfferTemplate,
     getPvpEventTemplate,
     getPackBattleTemplate,
+    getAutoEventTemplate,
 
     // File lists (replace readdirSync())
     getCarFiles,
@@ -758,6 +811,7 @@ module.exports = {
     getOfferTemplateFiles,
     getPvpEventTemplateFiles,
     getPackBattleTemplateFiles,
+    getAutoEventTemplateFiles,
 
     // Bulk getters
     getAllCars,

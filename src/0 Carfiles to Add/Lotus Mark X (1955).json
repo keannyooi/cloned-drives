@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Motorsport","Unique"],
-    "isPrize": true,
     "weight": 560,
     "gc": "Low",
     "seatCount": 2,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LotusMarkX(1955).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Prize"]
 }

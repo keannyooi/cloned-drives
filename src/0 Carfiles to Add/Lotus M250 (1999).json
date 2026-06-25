@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Concept"],
-    "isPrize": false,
     "weight": 990,
     "gc": "Low",
     "seatCount": 2,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LotusM250(1999).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

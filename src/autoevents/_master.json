@@ -1,0 +1,77 @@
+{
+    "//": "════════════════════════════════════════════════════════════════════",
+    "// ABOUT THIS FILE": "Master reference for auto-event templates. Files starting with '_' are NEVER loaded as templates — this one exists purely as documentation. Copy a real example (ae00001) to make a new template; every option below is explained by the '//key' line above it.",
+    "// HOW IT WORKS": "The daily midnight cron checks every enabled template; if its cadence/spawn day is due and it has no live event, it generates one, verifies every round is beatable, creates a normal event (played via cd-pe), and announces it. Admins: cd-ae list / cd-ae spawn <id>.",
+
+    "//name": "Base event name. Spawns are named '<name> <roman numeral>[: <subtitle>]' — e.g. 'Proving Grounds XIV: Trial by Fire'. The numeral comes from this template's lifetime spawn counter.",
+    "name": "Master Example",
+
+    "//enabled": "Master switch. false = the cron and cd-ae spawn both refuse it. Ship new templates disabled, test with cd-ae spawn after enabling.",
+    "enabled": false,
+
+    "//generator": "Which generator builds the roster. Registered generators live in autoEvents.js — currently only 'provinggrounds' (solvability-verified gauntlet). Future generators plug in there.",
+    "generator": "provinggrounds",
+
+    "//cadenceDays": "Spawn every N days (measured from the last spawn, checked daily at midnight). Ignored if spawnDay is set. A template never spawns while its previous event is still active.",
+    "cadenceDays": 14,
+
+    "//spawnDay": "Alternative to cadenceDays: spawn on this weekday (e.g. 'wednesday'). null = use cadenceDays. Good for themed weeklies like a BM-only Wednesday.",
+    "spawnDay": null,
+
+    "//durationDays": "How long the spawned event stays active (its deadline). Shorter than the cadence = a gap between runs (scarcity); equal = back-to-back.",
+    "durationDays": 10,
+
+    "//rounds": "Rounds in the gauntlet, 1-30 (event system limit). Difficulty interpolates across them.",
+    "rounds": 20,
+
+    "//difficulty": "Difficulty curve from first to last round, each 1-10. 1 ≈ 12% of the theme universe can win; 10 ≈ a handful. If end ≥ 9, the FINAL round is forced to an absolute 1-5 solver cars ('do you own THE answer'). A gentler event might use {start: 1, end: 6}.",
+    "difficulty": { "start": 1, "end": 10 },
+
+    "//entryFee": "One-time money fee charged at a player's first race of the event (0 = free). Shown in the race confirm before charging.",
+    "entryFee": 10000000,
+
+    "//uniqueSolutionThreshold": "Rounds whose solver count is at or below this get pairwise-DISJOINT solutions — no single car can clear two of them, so deep runs require genuinely distinct answers. 0 disables.",
+    "uniqueSolutionThreshold": 50,
+
+    "//subtitles": "Random subtitle pool for unthemed spawns (themed spawns use the theme's own name). Empty array = no subtitle.",
+    "subtitles": ["Trial by Fire", "Iron Garage", "The Long Road"],
+
+    "//theme": "null/'none' = never themed. 'auto' = roll from themeRecipes each spawn. Or a FIXED object: { \"name\": \"Black Market Mayhem\", \"baseReqs\": { \"cardType\": [\"abm\", \"ibm\", \"pbm\"] }, \"universe\": \"bm\" } — baseReqs are merged into every round; 'universe': 'bm' switches the solvability universe to BM cards (only for deliberate BM-only events; omit otherwise).",
+    "theme": "auto",
+
+    "//themeRecipes": "Used when theme = 'auto'. Weighted roll per spawn; 'none' weight keeps most spawns unthemed. Each recipe samples a concrete value from real car data and validates at least minCars (default 100) match before committing. Kinds: rarity (CR bracket, 'Legendary Gauntlet'), make ('Mazda Showcase'), country ('Made in JP'), decade ('1980s Throwback'), cardType (player-side restriction, e.g. normal-only 'No Crutches' — values is a list of cardType arrays to choose from).",
+    "themeRecipes": {
+        "none": { "weight": 4 },
+        "rarity": { "weight": 3 },
+        "make": { "weight": 2, "minCars": 120 },
+        "country": { "weight": 2 },
+        "decade": { "weight": 1 },
+        "cardType": { "weight": 1, "values": [["normal"]] }
+    },
+
+    "//themeOpponents": "true (default) = property-themed spawns also draw OPPONENTS from the theme when viable (fight legendaries WITH legendaries). cardType/BM themes always use the open opponent pool.",
+    "themeOpponents": true,
+
+    "//rewards": "Everything below. All rewards are delivered through cd-rewards with the event's name as origin, once per round per player (first clear).",
+    "rewards": {
+        "//moneyBudget": "HARD CAP on total money this event can pay one player. 0 = a pure no-money event (any money in milestones then fails the spawn — purity guard). If milestones use \"$BUDGET\" money, the remaining budget is split across those slots by moneyCurve.",
+        "moneyBudget": 0,
+
+        "//moneyCurve": "How \"$BUDGET\" money spreads across its slots: 'flat' (even), 'quadratic' (later rounds pay more), 'finale' (everything on the last budget slot).",
+        "moneyCurve": "finale",
+
+        "//carPool": "Cars the \"$CARPOOL\" sentinel draws from (avoids repeating the previous spawn's pick; distinct within one event). Entries must exist; non-Prize entries log a warning. The drawn car is featured in the spawn announcement.",
+        "carPool": [],
+
+        "//packPool": "Same idea for \"$PACKPOOL\" pack rewards.",
+        "packPool": [],
+
+        "//milestones": "roundNumber → reward object. Keys: money (number or \"$BUDGET\"), trophies, fuseTokens, car (carID or \"$CARPOOL\"), pack (packID or \"$PACKPOOL\"). Rounds without an entry pay nothing — the climb itself is the content.",
+        "milestones": {
+            "5": { "trophies": 25 },
+            "10": { "trophies": 50 },
+            "15": { "trophies": 75 },
+            "20": { "trophies": 100, "car": "$CARPOOL" }
+        }
+    }
+}

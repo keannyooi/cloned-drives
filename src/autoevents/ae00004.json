@@ -1,0 +1,28 @@
+{
+    "//about": "Premium monthly rarity event — legendaries only, fought WITH legendaries. Prize pool is itself legendary-range, so the reward matches the theme.",
+    "name": "Legendary Gauntlet",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 30,
+    "durationDays": 7,
+    "rounds": 12,
+    "difficulty": { "start": 3, "end": 10 },
+    "entryFee": 20000000,
+    "uniqueSolutionThreshold": 30,
+    "subtitles": [],
+    "theme": {
+        "name": "Legendary Gauntlet",
+        "baseReqs": { "cr": { "start": 850, "end": 999 } }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 0,
+        "moneyCurve": "finale",
+        "carPool": ["c00480", "c00511", "c00294"],
+        "packPool": [],
+        "milestones": {
+            "6": { "trophies": 50 },
+            "12": { "trophies": 100, "car": "$CARPOOL" }
+        }
+    }
+}

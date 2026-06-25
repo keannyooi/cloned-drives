@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
-    "isPrize": false,
     "weight": 1263,
     "gc": "Low",
     "seatCount": 1,
@@ -23,26 +22,8 @@
     "mra": 88.89,
     "ola": 89,
     "description": "",
-"333TopSpeed": 166,
-"3330to60": 3.8,
-"333Handling": 103,
-
-"666TopSpeed": 169,
-"6660to60": 3.6,
-"666Handling": 107,
-
-"699TopSpeed": 169,
-"6990to60": 3.4,
-"699Handling": 111,
-
-"969TopSpeed": 173,
-"9690to60": 3.6,
-"969Handling": 111,
-
-"996TopSpeed": 173,
-"9960to60": 3.4,
-"996Handling": 107,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SubaruLevorgSportsTourerBTCC%23116AdrianFluxSubaruRacing(2019).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

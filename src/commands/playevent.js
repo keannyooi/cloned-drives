@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
-const { eventMakerRoleID, sandboxRoleID } = require("../util/consts/consts.js");
+const { eventMakerRoleID, sandboxRoleID, moneyEmojiID } = require("../util/consts/consts.js");
 const { getCar, getTrack } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const createCar = require("../util/functions/createCar.js");
@@ -88,6 +88,13 @@ module.exports = {
             }
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
+                // One-time entry fee — charged when the player commits to their
+                // first race of this event (not on viewing it).
+                const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+                const unpaidFee = (event.entryFee || 0) > 0 && !(event.paidPlayers ?? {})[message.author.id]
+                    ? event.entryFee
+                    : 0;
+
                 const track = getTrack(event.roster[round - 1].track);
                 const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
                 const [opponentCar, opponentList] = createCar(event.roster[round - 1], settings.unitpreference);
@@ -95,7 +102,7 @@ module.exports = {
                 const intermission = new InfoMessage({
                     channel: message.channel,
                     title: "Ready to Play?",
-                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs, settings.filterlogic)}\``,
+                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs, settings.filterlogic)}\`${unpaidFee > 0 ? `\n⚠️ **This event has a one-time entry fee of ${moneyEmoji}${unpaidFee.toLocaleString("en")}, charged when you accept this race.**` : ""}`,
                     author: message.author,
                     thumbnail: track["map"],
                     fields: [
@@ -110,6 +117,35 @@ module.exports = {
                     if (event.isActive && event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
                         intermission.editEmbed({ title: "Looks like this event just ended.", desc: "That's just sad." });
                         return intermission.sendMessage({ currentMessage });
+                    }
+                    if (unpaidFee > 0) {
+                        // The per-user command lock is already released by the time this
+                        // accept handler runs (confirm() returns before the button click),
+                        // so a money value read at command start would be stale. Charge
+                        // atomically: claim the "paid" slot first (so a concurrent accept
+                        // can't double-charge), then $inc the balance behind a $gte guard.
+                        const feeKey = `paidPlayers.${message.author.id}`;
+                        const claim = await eventModel.findOneAndUpdate(
+                            { eventID: event.eventID, [feeKey]: { $ne: true } },
+                            { "$set": { [feeKey]: true } }
+                        );
+                        if (claim) {
+                            const debit = await profileModel.findOneAndUpdate(
+                                { userID: message.author.id, money: { $gte: unpaidFee } },
+                                { "$inc": { money: -unpaidFee } }
+                            );
+                            if (!debit) {
+                                // Couldn't afford it — release the claim so they can pay later.
+                                await eventModel.updateOne({ eventID: event.eventID }, { "$unset": { [feeKey]: "" } });
+                                const fresh = await profileModel.findOne({ userID: message.author.id });
+                                intermission.editEmbed({
+                                    title: "Error, you can't afford this event's entry fee.",
+                                    desc: `Entry costs ${moneyEmoji}${unpaidFee.toLocaleString("en")}; you have ${moneyEmoji}${fresh.money.toLocaleString("en")}.`
+                                });
+                                return intermission.sendMessage({ currentMessage });
+                            }
+                            message.channel.send(`**Entry fee of ${moneyEmoji}${unpaidFee.toLocaleString("en")} paid — you're in for the rest of this event. Good luck!**`);
+                        }
                     }
                     currentMessage.removeButtons();
                     const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);

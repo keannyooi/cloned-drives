@@ -11,7 +11,6 @@
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [],
-    "isPrize": false,
     "weight": 1325,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 68,
     "ola": 83.58,
     "description": "",
-"333TopSpeed": 147,
-"3330to60": 6.3,
-"333Handling": 83,
-
-"666TopSpeed": 150,
-"6660to60": 5.9,
-"666Handling": 85,
-
-"699TopSpeed": 150,
-"6990to60": 5.6,
-"699Handling": 89,
-
-"969TopSpeed": 154,
-"9690to60": 5.9,
-"969Handling": 89,
-
-"996TopSpeed": 154,
-"9960to60": 5.6,
-"996Handling": 85,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MiniCooperSConvertible(2022).png",
-    "creator": "GAAN"
+    "creator": "GAAN",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

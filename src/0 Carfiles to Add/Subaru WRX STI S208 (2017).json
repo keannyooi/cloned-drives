@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Track Day"],
-    "isPrize": false,
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 78.91,
     "ola": 74.11,
     "description": "",
-"333TopSpeed": 158,
-"3330to60": 4.3,
-"333Handling": 93,
-
-"666TopSpeed": 162,
-"6660to60": 4,
-"666Handling": 96,
-
-"699TopSpeed": 162,
-"6990to60": 3.8,
-"699Handling": 100,
-
-"969TopSpeed": 165,
-"9690to60": 4,
-"969Handling": 100,
-
-"996TopSpeed": 165,
-"9960to60": 3.8,
-"996Handling": 96,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SubaruWRXSTIS208(2017).png",
-    "creator": "Bnuuy"
+    "creator": "Bnuuy",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

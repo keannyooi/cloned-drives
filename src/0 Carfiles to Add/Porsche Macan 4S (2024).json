@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Eco-Friendly"],
-    "isPrize": false,
     "weight": 2345,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,28 +22,8 @@
     "mra": 75,
     "ola": 77.25,
     "description": "",
-	
-"333TopSpeed": 152,
-"3330to60": 3.7,
-"333Handling": 92,
-
-"666TopSpeed": 156,
-"6660to60": 3.5,
-"666Handling": 95,
-
-"699TopSpeed": 156,
-"6990to60": 3.3,
-"699Handling": 99,
-
-"969TopSpeed": 159,
-"9690to60": 3.5,
-"969Handling": 99,
-
-"996TopSpeed": 159,
-"9960to60": 3.3,
-"996Handling": 95,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PorscheMacan4S(2024).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

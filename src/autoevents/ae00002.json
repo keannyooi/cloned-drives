@@ -1,0 +1,29 @@
+{
+    "name": "Daily Drive",
+    "enabled": true,
+    "generator": "provinggrounds",
+    "cadenceDays": 1,
+    "durationDays": 1,
+    "rounds": 5,
+    "difficulty": { "start": 1, "end": 5 },
+    "entryFee": 0,
+    "uniqueSolutionThreshold": 0,
+    "subtitles": ["Morning Commute", "Rush Hour", "The Short Haul", "Quick Spin"],
+    "theme": "auto",
+    "themeRecipes": {
+        "none": { "weight": 5 },
+        "country": { "weight": 2 },
+        "decade": { "weight": 2 }
+    },
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 250000,
+        "moneyCurve": "flat",
+        "carPool": [],
+        "packPool": [],
+        "milestones": {
+            "3": { "money": "$BUDGET" },
+            "5": { "money": "$BUDGET", "trophies": 10 }
+        }
+    }
+}

@@ -17,7 +17,7 @@
 const { readdirSync, readFileSync } = require("fs");
 const path = require("path");
 
-const CARS_DIR = path.join(__dirname, "src", "cars");
+const CARS_DIR = path.join(__dirname, "..", "src", "cars");
 
 // ============================================================================
 // 1. Read all car files and extract their carIDs

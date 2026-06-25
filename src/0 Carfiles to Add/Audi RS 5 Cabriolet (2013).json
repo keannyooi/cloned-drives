@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [""],
-    "isPrize": false,
     "weight": 1920,
     "gc": "Low",
     "seatCount": 4,
@@ -21,31 +20,10 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 72.58,
-    "ola": 80.00,
-	
+    "ola": 80,
     "description": "Open top V8 machine.",
-	
-"333TopSpeed": 158,
-"3330to60": 4.3,
-"333Handling": 89,
-
-"666TopSpeed": 162,
-"6660to60": 4,
-"666Handling": 92,
-
-"699TopSpeed": 162,
-"6990to60": 3.8,
-"699Handling": 95,
-
-"969TopSpeed": 165,
-"9690to60": 4,
-"969Handling": 95,
-
-"996TopSpeed": 165,
-"9960to60": 3.8,
-"996Handling": 92,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AudiRS5Cabriolet(2013).png",
     "creator": "Connor",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

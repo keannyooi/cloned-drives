@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Tuner","Unique"],
-    "isPrize": false,
     "weight": 1330,
     "gc": "Low",
     "seatCount": 2,
@@ -25,5 +24,6 @@
     "description": "What happens when you get a 500hp 911 engine and a lightened 3400 k chassis? this monster",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Ruf3400KCoupeLight(2016).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

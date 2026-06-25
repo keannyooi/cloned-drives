@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["RestoMod","Motorsport"],
-    "isPrize": false,
     "weight": 745,
     "gc": "Low",
     "seatCount": 1,
@@ -23,28 +22,8 @@
     "mra": 54.55,
     "ola": 63.33,
     "description": "",
-	
-"333TopSpeed": 136,
-"3330to60": 5.7,
-"333Handling": 79,
-
-"666TopSpeed": 140,
-"6660to60": 5.4,
-"666Handling": 81,
-
-"699TopSpeed": 140,
-"6990to60": 5.1,
-"699Handling": 84,
-
-"969TopSpeed": 144,
-"9690to60": 5.4,
-"969Handling": 84,
-
-"996TopSpeed": 144,
-"9960to60": 5.1,
-"996Handling": 81,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlfaholicsGTA1600CorsaAppendixK(2011).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

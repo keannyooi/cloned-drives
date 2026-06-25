@@ -1,0 +1,24 @@
+{
+    "//about": "The coin-flip: $1M entry, 3 rounds, $2.5M on the finale — clear it and you're up $1.5M, stall and the house keeps your ticket. Spawns every 3 days, lives for 1.",
+    "name": "Payday Sprint",
+    "enabled": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 3,
+    "durationDays": 1,
+    "rounds": 3,
+    "difficulty": { "start": 2, "end": 6 },
+    "entryFee": 1000000,
+    "uniqueSolutionThreshold": 0,
+    "subtitles": ["Double or Nothing", "Quick Buck", "The Hustle", "Easy Money?"],
+    "theme": "none",
+    "themeOpponents": true,
+    "rewards": {
+        "moneyBudget": 2500000,
+        "moneyCurve": "finale",
+        "carPool": [],
+        "packPool": [],
+        "milestones": {
+            "3": { "money": "$BUDGET" }
+        }
+    }
+}

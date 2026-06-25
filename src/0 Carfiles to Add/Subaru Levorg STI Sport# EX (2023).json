@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [""],
-    "isPrize": false,
     "weight": 1595,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,26 +22,8 @@
     "mra": 62.64,
     "ola": 82.81,
     "description": "",
-"333TopSpeed": 117,
-"3330to60": 5.4,
-"333Handling": 87,
-
-"666TopSpeed": 121,
-"6660to60": 5.1,
-"666Handling": 90,
-
-"699TopSpeed": 121,
-"6990to60": 4.8,
-"699Handling": 93,
-
-"969TopSpeed": 126,
-"9690to60": 5.1,
-"969Handling": 93,
-
-"996TopSpeed": 126,
-"9960to60": 4.8,
-"996Handling": 90,
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/SubaruLevorgSTISport%23EX(2023).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

@@ -1,0 +1,43 @@
+{
+    "packName": "Ultra Expensive Titan Pack",
+    "description": "5 Epic or Higher Ultra Expensive cards",
+    "repetition": 1,
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/TITANPack.png",
+    "filter": {
+        "tags": [
+            "Ultra Expensive"
+        ]
+    },
+    "packSequence": [
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        },
+        {
+            "epic": 83,
+            "exotic": 13,
+            "legendary": 3.2,
+            "mystic": 0.8
+        }
+    ]
+}

@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [],
-    "isPrize": false,
     "weight": 2080,
     "gc": "Medium",
     "seatCount": 5,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DeTomasoDeauvilleStationWagon(1985).png",
     "creator": "fiero",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

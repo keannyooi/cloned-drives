@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Unique","Innovative"],
-    "isPrize": false,
     "weight": 445,
     "gc": "Medium",
     "seatCount": 2,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/LotusMarkII(1949).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

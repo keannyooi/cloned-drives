@@ -11,7 +11,6 @@
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": ["Full Throttle"],
-    "isPrize": false,
     "weight": 1755,
     "gc": "High",
     "seatCount": 5,
@@ -23,28 +22,8 @@
     "mra": 53.92,
     "ola": 70.25,
     "description": "",
-	
-"333TopSpeed": 147,
-"3330to60": 6.1,
-"333Handling": 82,
-
-"666TopSpeed": 150,
-"6660to60": 5.8,
-"666Handling": 84,
-
-"699TopSpeed": 150,
-"6990to60": 5.4,
-"699Handling": 88,
-
-"969TopSpeed": 154,
-"9690to60": 5.8,
-"969Handling": 88,
-
-"996TopSpeed": 154,
-"9960to60": 5.4,
-"996Handling": 84,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/BMWX4xDrive25d(2018).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

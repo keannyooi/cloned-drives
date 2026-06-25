@@ -11,7 +11,6 @@
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
-    "isPrize": false,
     "weight": 1265,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,25 +22,8 @@
     "mra": 44.29,
     "ola": 63.26,
     "description": "",
-"333TopSpeed": 126,
-"3330to60": 9.2,
-"333Handling": 77,
-
-"666TopSpeed": 131,
-"6660to60": 8.7,
-"666Handling": 80,
-
-"699TopSpeed": 131,
-"6990to60": 8.2,
-"699Handling": 83,
-
-"969TopSpeed": 135,
-"9690to60": 8.7,
-"969Handling": 83,
-
-"996TopSpeed": 135,
-"9960to60": 8.2,
-"996Handling": 80,
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MiniCooperDCabriolet(2015).png",
-    "creator": "GAAN"
+    "creator": "GAAN",
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

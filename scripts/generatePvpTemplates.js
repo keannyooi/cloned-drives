@@ -15,8 +15,8 @@
 
 const fs = require("fs");
 const path = require("path");
-const { initialize, getAllCars, getCar } = require("./src/util/functions/dataManager.js");
-const { usesReferenceStats, isPrizeLike } = require("./src/util/functions/cardType.js");
+const { initialize, getAllCars, getCar } = require("../src/util/functions/dataManager.js");
+const { usesReferenceStats, isPrizeLike } = require("../src/util/functions/cardType.js");
 
 initialize("./src");
 
@@ -299,7 +299,7 @@ function rewardsFor(durationDays, special) {
 // BUILD + WRITE
 // ============================================================================
 
-const outDir = path.join(__dirname, "src", "pvpevents");
+const outDir = path.join(__dirname, "..", "src", "pvpevents");
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 const summary = [];

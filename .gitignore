@@ -5,3 +5,8 @@ node_modules/
 dump/
 mongodump.exe
 .claude/
+
+# dev/sim script outputs (generated artifacts, kept out of the repo)
+scripts/*.csv
+scripts/handling-audit-report.md
+scripts/provingGrounds.json

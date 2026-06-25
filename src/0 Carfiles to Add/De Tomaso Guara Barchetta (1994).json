@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
-    "isPrize": false,
     "weight": 1050,
     "gc": "Low",
     "seatCount": 2,
@@ -25,5 +24,6 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DeTomasoGuaraBarchetta(1994).png",
     "creator": "Pfugs",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }

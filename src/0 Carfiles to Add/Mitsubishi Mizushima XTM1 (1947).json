@@ -11,7 +11,6 @@
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [],
-    "isPrize": false,
     "weight": 590,
     "gc": "Low",
     "seatCount": 1,
@@ -23,28 +22,8 @@
     "mra": 0,
     "ola": 12.59,
     "description": "",
-	
-"333TopSpeed": 42,
-"3330to60": 99.9,
-"333Handling": 40,
-
-"666TopSpeed": 50,
-"6660to60": 99.9,
-"666Handling": 42,
-
-"699TopSpeed": 50,
-"6990to60": 99.9,
-"699Handling": 43,
-
-"969TopSpeed": 59,
-"9690to60": 99.9,
-"969Handling": 43,
-
-"996TopSpeed": 59,
-"9960to60": 99.9,
-"996Handling": 42,
-	
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MitsubishiMizushimaXTM1(1947).png",
     "creator": "Bnuuy",
-	"hiddenTag": [""]
+    "hiddenTag": [""],
+    "cardType": ["Normal"]
 }
