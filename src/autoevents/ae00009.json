@@ -2,6 +2,7 @@
     "//about": "The coin-flip: $1M entry, 3 rounds, $2.5M on the finale — clear it and you're up $1.5M, stall and the house keeps your ticket. Spawns every 3 days, lives for 1.",
     "name": "Payday Sprint",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 3,
     "durationDays": 1,

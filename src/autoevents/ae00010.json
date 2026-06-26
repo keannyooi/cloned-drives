@@ -2,6 +2,7 @@
     "//about": "The pack-shower: three pack rewards drawn distinctly from a four-pack pool, auto-themed by make or country only (collection flavor). For players who open packs for a living.",
     "name": "Collector's Circuit",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 10,
     "durationDays": 7,

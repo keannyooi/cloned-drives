@@ -2,6 +2,7 @@
     "//about": "Tri-weekly EV-only event (fuelType electric, 557 cars) — proof that any car-data field can carry a fixed theme. Mid difficulty, trophies + a 5x booster.",
     "name": "Electric Avenue",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 21,
     "durationDays": 5,

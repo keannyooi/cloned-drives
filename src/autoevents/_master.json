@@ -52,6 +52,9 @@
     "//themeOpponents": "true (default) = property-themed spawns also draw OPPONENTS from the theme when viable (fight legendaries WITH legendaries). cardType/BM themes always use the open opponent pool.",
     "themeOpponents": true,
 
+    "//announceDMs": "false (default) = the spawn posts the event-board graphic to the events channel but does NOT DM players. true = also DM every player who opted into event notifications (like cd-startevent). Leave OFF for high-frequency templates (e.g. dailies) so players aren't spammed every spawn; turn ON for flagship/occasional events.",
+    "announceDMs": false,
+
     "//rewards": "Everything below. All rewards are delivered through cd-rewards with the event's name as origin, once per round per player (first clear).",
     "rewards": {
         "//moneyBudget": "HARD CAP on total money this event can pay one player. 0 = a pure no-money event (any money in milestones then fails the spawn — purity guard). If milestones use \"$BUDGET\" money, the remaining budget is split across those slots by moneyCurve.",

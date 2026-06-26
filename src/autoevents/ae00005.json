@@ -2,6 +2,7 @@
     "//about": "Free-entry weekend casual event — easy curve, small money, a booster-ish pack at the end. The welcome mat for players scared off by the flagship's fee.",
     "name": "Sunday Cruise",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "spawnDay": "sunday",
     "durationDays": 2,

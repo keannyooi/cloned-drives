@@ -2,6 +2,7 @@
     "//about": "The endgame short-form brutal: mystics only, 8 rounds, starts mid-difficulty and ends at the absolute 1-5-car finale. Highest fee, mystic-range prize pool.",
     "name": "Mystic Trials",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 30,
     "durationDays": 7,

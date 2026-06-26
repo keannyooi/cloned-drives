@@ -8,6 +8,7 @@
     "difficulty": { "start": 1, "end": 10 },
     "entryFee": 10000000,
     "uniqueSolutionThreshold": 50,
+    "announceDMs": false,
     "subtitles": ["Trial by Fire", "Iron Garage", "The Long Road", "Steel and Asphalt", "The Crucible"],
     "theme": "auto",
     "themeRecipes": {

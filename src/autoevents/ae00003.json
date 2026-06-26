@@ -1,6 +1,7 @@
 {
     "name": "Black Market Mayhem",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "spawnDay": "wednesday",
     "durationDays": 5,

@@ -1,6 +1,7 @@
 {
     "name": "Daily Drive",
     "enabled": true,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 1,
     "durationDays": 1,

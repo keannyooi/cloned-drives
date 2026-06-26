@@ -17,6 +17,8 @@ const { DateTime } = require("luxon");
 const { getAutoEventTemplate, getAutoEventTemplateFiles, getCar } = require("./dataManager.js");
 const { currentEventsChannelID, moneyEmojiID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
+const generateEventGraphic = require("./eventGraphic.js");
+const notifyEventStart = require("./notifyEventStart.js");
 const eventModel = require("../../models/eventSchema.js");
 const serverStatModel = require("../../models/serverStatSchema.js");
 
@@ -144,7 +146,16 @@ async function spawnFromTemplate(templateID) {
             carReward ? `Final reward: **${carReward}**!` : null,
             `Ends <t:${Math.round(DateTime.fromISO(deadline).toSeconds())}:R> — play with \`cd-pe ${template.name.toLowerCase()}\`.`
         ].filter(Boolean);
-        await channel.send(lines.join("\n"));
+        // Same event-board graphic admin events get via cd-startevent.
+        const attachment = await generateEventGraphic({ roster: result.roster });
+        await channel.send({ content: lines.join("\n"), files: [attachment] });
+
+        // Per-template DM blast — OFF by default; opt in with `announceDMs: true`
+        // in the template (keep it off for high-frequency templates like dailies
+        // to avoid spamming every player every spawn). Fire-and-forget.
+        if (template.announceDMs === true) {
+            notifyEventStart(result.name).catch(err => console.error(`[AutoEvents] DM notifications failed: ${err.message}`));
+        }
     } catch (error) {
         console.log(`[AutoEvents] announce failed (event is live regardless): ${error.message}`);
     }

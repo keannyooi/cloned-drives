@@ -2,6 +2,7 @@
     "//about": "Weekly tag-themed flavor event — muscle cars only (the 'Muscle Car' tag, 507 cars), American Basic Pack as the thematic finale reward. Cheap ticket, short run.",
     "name": "Muscle Car Monday",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "spawnDay": "monday",
     "durationDays": 3,

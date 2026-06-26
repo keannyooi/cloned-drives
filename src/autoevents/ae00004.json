@@ -2,6 +2,7 @@
     "//about": "Premium monthly rarity event — legendaries only, fought WITH legendaries. Prize pool is itself legendary-range, so the reward matches the theme.",
     "name": "Legendary Gauntlet",
     "enabled": false,
+    "announceDMs": false,
     "generator": "provinggrounds",
     "cadenceDays": 30,
     "durationDays": 7,
