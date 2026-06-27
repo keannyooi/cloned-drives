@@ -1,0 +1,41 @@
+{
+    "packName": "Cloned Drives Beta: Last of Elite Pack",
+    "description": "The normal pack of 5 Rare or Higher cards",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderE1.png",
+    "filter": {
+        "tags": "Cloned Drives Beta: Last of"
+    },
+    "packSequence": [
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        },
+        {
+            "rare": 73,
+            "epic": 20,
+            "exotic": 6,
+            "legendary": 1
+        }
+    ]
+}
