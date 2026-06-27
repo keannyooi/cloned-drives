@@ -2,6 +2,7 @@
 
 const { Client, Collection, GatewayIntentBits, Partials } = require("discord.js");
 const { join } = require("path");
+const { readFileSync } = require("fs");
 const { DateTime } = require("luxon");
 const { GlobalFonts, loadImage } = require("@napi-rs/canvas");
 const { spawn } = require("child_process");
@@ -27,18 +28,30 @@ class Bot extends Client {
     }
 
     async loadGraphics() {
-        GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "RobotoCondensed-Regular.ttf"), "Roboto Condensed");
-        GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "Rubik-BoldItalic.ttf"), "Rubik");
+        try {
+            GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "RobotoCondensed-Regular.ttf"), "Roboto Condensed");
+            GlobalFonts.registerFromPath(join(__dirname, "..", "fonts", "Rubik-BoldItalic.ttf"), "Rubik");
+        } catch (err) {
+            console.error(`[graphics] font registration failed: ${err.message}`);
+        }
 
-        await Promise.all([
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/race_template_thing.png"),
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/zecardsandbids.png"),
-            loadImage("https://file.garden/ZSrBMiDRyR84aPJp/voWCtQc.png")
-        ])
-            .then(loaded => {
-                let [raceTemp, dealerTemp, eventTemp] = loaded;
-                this.graphics = { raceTemp, dealerTemp, eventTemp }
-            });
+        // Template overlays for the HUD/board renderers. Bundled in the repo
+        // (src/graphics) and read from disk — no network dependency, so a blip to
+        // the image host can't leave bot.graphics empty and silently break every
+        // drawImage the way fetching these at startup did.
+        const dir = join(__dirname, "..", "graphics");
+        const sources = {
+            raceTemp: "race_template_thing.png",
+            dealerTemp: "zecardsandbids.png",
+            eventTemp: "voWCtQc.png"
+        };
+        for (const [key, file] of Object.entries(sources)) {
+            try {
+                this.graphics[key] = await loadImage(readFileSync(join(dir, file)));
+            } catch (err) {
+                console.error(`[graphics] failed to load ${key} (${file}): ${err.message}`);
+            }
+        }
     }
 }
 
@@ -54,7 +67,7 @@ const bot = new Bot({
     devMode: process.argv[2]?.toLowerCase() === "dev" ? true : false
 });
 
-bot.loadGraphics();
+bot.loadGraphics().catch(err => console.error("[graphics] loadGraphics crashed:", err));
 
 if (bot.devMode) {
     schedule("30 * * * *", () => {
