@@ -87,8 +87,15 @@ module.exports = {
             // === Bonus rewards ===
             if (currentPack.bonusRewards) {
                 let bonusStr = "";
-                for (const [type, amount] of Object.entries(currentPack.bonusRewards)) {
-                    bonusStr += `${type}: ${amount.toLocaleString("en")}\n`;
+                for (const [type, reward] of Object.entries(currentPack.bonusRewards)) {
+                    if (reward && typeof reward === "object") {
+                        // Chance-based: { chance, amount }
+                        const amount = (reward.amount || 0).toLocaleString("en");
+                        const chance = (typeof reward.chance === "number") ? reward.chance : 100;
+                        bonusStr += `${type}: ${amount} (${chance}% chance)\n`;
+                    } else {
+                        bonusStr += `${type}: ${reward.toLocaleString("en")}\n`;
+                    }
                 }
                 infoMessage.editEmbed({ fields: [{ name: "🎁 Bonus Rewards", value: `\`${bonusStr.trim()}\``, inline: true }] });
             }

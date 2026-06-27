@@ -73,19 +73,21 @@ module.exports = {
             let bonusTrophies = 0;
 
             if (currentPack.bonusRewards) {
-                if (currentPack.bonusRewards.money) {
-                    balance += currentPack.bonusRewards.money;
+                const bonusMoney = resolveBonusReward(currentPack.bonusRewards.money);
+                if (bonusMoney > 0) {
+                    balance += bonusMoney;
                     successFields.push({
                         name: "Bonus Money",
-                        value: `${moneyEmoji}${currentPack.bonusRewards.money.toLocaleString("en")}`,
+                        value: `${moneyEmoji}${bonusMoney.toLocaleString("en")}`,
                         inline: true
                     });
                     // Update balance field
                     successFields[0].value = `${moneyEmoji}${balance.toLocaleString("en")}`;
                 }
-                if (currentPack.bonusRewards.trophies) {
+                const bonusTrophyReward = resolveBonusReward(currentPack.bonusRewards.trophies);
+                if (bonusTrophyReward > 0) {
                     const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
-                    bonusTrophies = currentPack.bonusRewards.trophies;
+                    bonusTrophies = bonusTrophyReward;
                     successFields.push({
                         name: "Bonus Trophies",
                         value: `${trophyEmoji}${bonusTrophies.toLocaleString("en")}`,
@@ -145,4 +147,21 @@ function getPackCategories(pack) {
     if (pack.price) cats.push("normal");
     cats.push("daily", "event", "limited", "reward", "calendar");
     return cats;
+}
+
+/**
+ * Resolve a bonus reward value that may be flat or chance-based.
+ *   • number             → always granted, returned as-is.
+ *   • { chance, amount } → `amount` granted with `chance`% probability, else 0.
+ *                          `chance` defaults to 100 (always) if omitted.
+ * Returns the amount to grant for this opening (0 if the roll missed / no reward).
+ */
+function resolveBonusReward(val) {
+    if (!val) return 0;
+    if (typeof val === "number") return val;
+    if (typeof val === "object" && typeof val.amount === "number") {
+        const chance = (typeof val.chance === "number") ? val.chance : 100;
+        return (Math.random() * 100 < chance) ? val.amount : 0;
+    }
+    return 0;
 }

@@ -1,0 +1,263 @@
+// ============================================================================
+//  MASTERPACK — annotated reference of EVERY pack option the bot supports
+// ----------------------------------------------------------------------------
+//  This file is a TEMPLATE / DOCUMENTATION artifact, not a live pack. It is a
+//  `.jsonc` (JSON-with-comments) so every field can carry a descriptor inline.
+//  dataManager only loads `*.json` from src/packs, so this file is never picked
+//  up as a real pack. To make a working pack: copy the bits you need into a
+//  `pXXXXX.json` in src/packs and DELETE every comment (real JSON has none).
+//
+//  WHO READS WHAT (so you know which fields actually do anything, and where):
+//    • Roll engine — src/util/functions/openPack.js — reads: filter, filterLogic,
+//      noDuplicates, repetition, cardsPerPage, packSequence (+ rates/pool/
+//      rarityFilters/diamond/per-slot filter), upgradeChance.
+//    • Shop command — src/commands/openpack.js — reads: price, categories
+//      ("normal" gate), bonusRewards. Only buyable packs ever see these.
+//    • Distribution — src/commands/daily.js, packlist.js, packinfo.js — read:
+//      categories, tier, weight.
+//  A field is simply ignored by any layer that doesn't list it.
+// ============================================================================
+{
+  // ── IDENTITY (every pack needs these three) ───────────────────────────────
+
+  // packName  (string, REQUIRED) — display name. Also used to GUESS the tier
+  //   when `tier` is omitted: a name containing "elite" → elite, "booster" →
+  //   booster, otherwise → standard. Pack names must be unique-ish (search/
+  //   buy commands fuzzy-match on this).
+  "packName": "Masterpack (Reference)",
+
+  // description (string, REQUIRED) — flavour text shown in cd-packinfo.
+  "description": "Every supported pack option in one place, for reference.",
+
+  // pack (string URL, REQUIRED) — pack art. Used as the embed image/thumbnail
+  //   during the opening reveal and in cd-packinfo.
+  "pack": "https://file.garden/your-id/packart/Masterpack.png",
+
+  // ── WHAT KIND OF PACK / WHERE IT SHOWS UP ─────────────────────────────────
+
+  // price (number, OPTIONAL) — cost in money to buy via cd-openpack.
+  //   • A pack is only BUYABLE if it has BOTH a price AND the "normal" category.
+  //   • Omit price entirely for packs handed out for free (daily/event/reward).
+  "price": 5000000,
+
+  // categories (string[], OPTIONAL) — the distribution channels this pack may
+  //   appear in. If omitted, a legacy default is inferred:
+  //     ["normal" (only if price set), "daily", "event", "limited", "reward", "calendar"]
+  //   Setting it EXPLICITLY overrides that default. Known channels:
+  //     "normal"   → buyable in the cd-openpack shop (needs price too)
+  //     "daily"    → eligible for the free daily-streak bonus pack pool
+  //     "event"    → handed out by events
+  //     "limited"  → limited-time offers
+  //     "reward"   → generic reward grants
+  //     "calendar" → advent / calendar style giveaways
+  "categories": ["normal", "daily"],
+
+  // tier (string, OPTIONAL) — "standard" | "elite" | "booster".
+  //   Gates the DAILY free-pack pool and adds a badge in cd-packlist:
+  //     • elite   → only granted at daily streak multiples of 20 (or to patrons
+  //                 at streak multiples of 7). Shown 🔴 in packlist.
+  //     • booster → excluded from the daily pool entirely. Shown 🟡 in packlist.
+  //     • standard→ normal eligibility. (Buyable packs show 🟢 regardless.)
+  //   If omitted, it is inferred from packName (see packName note above).
+  "tier": "standard",
+
+  // weight (number, OPTIONAL, default 10) — relative odds of being picked from
+  //   the weighted random DAILY pack pool. Higher = more likely. Only matters
+  //   among packs eligible for a given daily roll.
+  "weight": 10,
+
+  // ── HOW THE WHOLE PACK BEHAVES ────────────────────────────────────────────
+
+  // repetition (number, OPTIONAL, default 1) — repeats the ENTIRE packSequence
+  //   this many times. Total cards pulled = packSequence.length × repetition.
+  //   (e.g. 5 slots × repetition 10 = a 50-card pack.)
+  "repetition": 1,
+
+  // filterLogic (string, OPTIONAL, default "and") — how the MULTIPLE VALUES
+  //   *within a single criterion* combine for each car:
+  //     "and" = car must match ALL listed values of that criterion
+  //     "or"  = car must match ANY ONE of them
+  //   Different criteria are ALWAYS AND-ed together regardless (a car must pass
+  //   every criterion you list). This setting is GLOBAL — it applies to every
+  //   multi-value criterion in the filter, you can't set it per-criterion.
+  //   GOTCHA: single-valued car fields (country, driveType, tyreType, gc,
+  //   enginePos, fuelType, creator) hold ONE value each, so "and" + an array
+  //   like ["DE","IT"] matches NOTHING (no car is both). Use "or" for those.
+  "filterLogic": "and",
+
+  // noDuplicates (boolean, OPTIONAL, default false) — best-effort avoid pulling
+  //   the same carID twice in one opening. Falls back to allowing a dupe if the
+  //   eligible pool is exhausted. (Pool slots with explicit carIDs can still
+  //   repeat if you list the same car.)
+  "noDuplicates": false,
+
+  // cardsPerPage (number, OPTIONAL, default 5) — how many cards are shown per
+  //   page of the reveal animation. Display only; does not affect odds.
+  "cardsPerPage": 5,
+
+  // ── POOL FILTER — which cars are eligible at all ──────────────────────────
+  // The pack-wide filter. Every rarity bucket is drawn ONLY from cars passing
+  // this filter (further narrowed by any per-slot / per-rarity filter below).
+  // Each car is also auto-gated by obtainability (must be packable; retired /
+  // event-only / diamond-locked types are excluded by the cardType matrix).
+  //
+  // Cars are bucketed into rarities by CR:
+  //     standard 1–99 · common 100–249 · uncommon 250–399 · rare 400–549
+  //     epic 550–699 · exotic 700–849 · legendary 850–999 · mystic 1000+
+  //
+  // FILTER VOCABULARY (any value of "None" is skipped; all string compares are
+  // case-insensitive). Set only the keys you want — an empty {} means "all":
+  "filter": {
+    // — Range filters: { "start": N, "end": N } (inclusive) —
+    //   The engine range-filters ANY top-level numeric car field, not just the
+    //   three the in-Discord filter editor exposes. STOCK stats only (the base
+    //   "000" values on the car file) — tuned variants are not considered.
+    "cr":         { "start": 550, "end": 1200 },  // car rating range  (editor-exposed)
+    "modelYear":  { "start": 1990, "end": 2026 }, // model year range  (editor-exposed)
+    "seatCount":  { "start": 2, "end": 5 },       // number of seats   (editor-exposed)
+    "weight":     { "start": 1500, "end": 3000 }, // kg          (JSON-only, stock stat)
+    "topSpeed":   { "start": 200, "end": 260 },   // mph         (JSON-only, stock stat)
+    "handling":   { "start": 80, "end": 100 },    //             (JSON-only, stock stat)
+    "0to60":      { "start": 0, "end": 3.5 },     // seconds     (JSON-only, stock stat)
+    "mra":        { "start": 90, "end": 130 },    // mid-range accel (JSON-only, stock)
+    "ola":        { "start": 70, "end": 110 },    // off-line accel  (JSON-only, stock)
+
+    // — Multi-value filters: array; combine via filterLogic (any/all) —
+    "make":       ["Ferrari", "Lamborghini"],     // manufacturer(s)
+    "tags":       ["Supercar"],                    // car tag(s)
+    "collection": ["Community Collection 2"],      // collection membership
+    "bodyStyle":  ["coupe"],                        // body style(s)
+    "hiddenTag":  ["someHiddenTag"],               // internal/hidden tag(s)
+    "cardType":   ["normal"],                       // card type(s); see cardType.js
+
+    // — Single-value exact-match filters —
+    //   Each accepts a STRING (exact match) OR an ARRAY of strings meaning
+    //   "any of these" — but a multi-value array only works with
+    //   filterLogic:"or" (see the GOTCHA note on filterLogic above). Cars have
+    //   one value for each of these fields, so arrays under "and" match nothing.
+    //   Examples of the array form are shown on the right.
+    "country":    "IT",          // origin code        — or ["DE","IT"]  (logic:"or")
+    "creator":    "Bnuuy",       // card creator       — or ["Bnuuy","SomeoneElse"]
+    "tyreType":   "Performance", //                    — or ["Performance","Sport"]
+    "driveType":  "RWD",         //                    — or ["RWD","AWD"]
+    "enginePos":  "Middle",      //                    — or ["Front","Middle"]
+    "fuelType":   "Petrol",      //                    — or ["Petrol","Electric"]
+    "gc":         "Low",         // ground clearance   — or ["Low","Medium"]
+
+    // — Boolean filters (car-intrinsic; useful in packs) —
+    "abs":        true,        // has ABS
+    "tcs":        true,        // has traction control
+    "isPrize":    false,       // prize card
+    "isStock":    false,       // stock (untunable) card
+    "isBM":       true,        // black-market card
+
+    // — Keyword filter — substring match inside the car's generated name —
+    "search":     "spider"
+
+    // NOTE: the filter EDITOR also accepts player-state criteria (isOwned,
+    // isMaxed, isUpgraded). Those describe a player's copy, not a car file, so
+    // they are meaningless / counterproductive in a pack pool — don't use them
+    // here. The 19 keys above are the pack-relevant ones.
+  },
+
+  // ── UPGRADE CHANCE — pull cards pre-tuned instead of stock ────────────────
+  // OPTIONAL. Chance to upgrade a freshly-pulled card. Keys are tune codes,
+  // values are percentages walked CUMULATIVELY (first match wins); the leftover
+  // probability stays "000" (stock). Does NOT apply to cars pulled from a pool
+  // slot (those carry their own explicit upgrade). Valid tune codes:
+  //     "000" stock · "333" · "666" · "699" · "969" · "996" (max)
+  "upgradeChance": {
+    "333": 10,   // 10% → tuned to 333
+    "666": 5,    //  5% → tuned to 666
+    "996": 1     //  1% → tuned to max; remaining 84% stay stock
+  },
+
+  // ── BONUS REWARDS — extras paid out on BUY (cd-openpack only) ─────────────
+  // OPTIONAL. Only granted when the pack is purchased via the shop; ignored on
+  // free/daily/event opens. Each reward type (money / trophies) may be either:
+  //   • a flat NUMBER          → always granted        (e.g. "money": 100000)
+  //   • a { chance, amount }   → `amount` granted with `chance`% probability;
+  //                              chance defaults to 100 if omitted. Each type is
+  //                              rolled INDEPENDENTLY.
+  "bonusRewards": {
+    // flat form is still valid:  "money": 100000  → always granted
+    "money":    { "chance": 20, "amount": 250000 }, // 20% chance → 250k back
+    "trophies": { "chance": 5,  "amount": 10 }       //  5% chance → 10 trophies
+  },
+
+  // ── PACK SEQUENCE — one entry per card, in reveal order ───────────────────
+  // REQUIRED. Each entry is ONE card. The four slot formats below are all the
+  // shapes the engine understands — a real pack would pick whichever it needs.
+  "packSequence": [
+
+    // FORMAT 1 — Simple rarity rates.
+    //   Keys are rarity buckets, values are percentages walked cumulatively.
+    //   • If the rates sum to < 100, the leftover "leaks" into a fallback pick.
+    //   • If they sum to > 100, tail keys past 100 are never reached.
+    //   • If a rolled bucket is empty for the current filter, the engine falls
+    //     back to the nearest non-empty rarity (down first, then up).
+    { "epic": 55, "exotic": 35, "legendary": 7, "mystic": 3 },
+
+    // FORMAT 1b — Same, plus a per-slot DIAMOND chance.
+    //   "diamond" is rolled SEPARATELY before the rarity walk, at full
+    //   precision (so tiny values like 0.001 work). Overrides the global
+    //   baseline of 0.001% for this slot; set 0 to disable diamonds here.
+    //   Max ONE diamond per whole opening; it's always revealed last.
+    //   (Only fires when DIAMONDS_ENABLED is on in consts.js.)
+    { "epic": 60, "exotic": 30, "legendary": 8, "mystic": 2, "diamond": 0.5 },
+
+    // FORMAT 2 — Extended slot: rates + a per-slot filter + per-rarity filters.
+    //   • "rates"        — same rarity/diamond keys as above.
+    //   • "filter"       — merged OVER the pack filter (slot keys win) and
+    //                      applied to this slot only.
+    //   • "rarityFilters"— narrow the pool for SPECIFIC rarities in this slot.
+    //                      OBJECT form (deterministic) — one filter per rarity.
+    //                      Classic use: "any epic/exotic, but a legendary or
+    //                      mystic MUST be a Ferrari."
+    {
+      "rates": { "epic": 83, "exotic": 13, "legendary": 3.2, "mystic": 0.8 },
+      "filter": { "modelYear": { "start": 2015, "end": 2026 } },
+      "rarityFilters": {
+        "legendary": { "make": "Ferrari" },
+        "mystic":    { "make": "Ferrari" }
+      }
+    },
+
+    // FORMAT 2b — Weighted rarityFilters (ARRAY form): several filters COMPETE
+    //   for the SAME rarity, each with a "weight". The rarity rate still decides
+    //   the rarity; the weights decide WHICH filtered pool within it. Here every
+    //   card is an epic, but 70% German / 30% Italian. (Weights normalize within
+    //   each rarity group; an entry may key more than one rarity.)
+    {
+      "rates": { "epic": 100 },
+      "rarityFilters": [
+        { "epic": { "country": "DE" }, "weight": 70 },
+        { "epic": { "country": "IT" }, "weight": 30 }
+      ]
+    },
+
+    // FORMAT 3 — Pool slot: pick a SPECIFIC car by weight.
+    //   "pool" is a list of { carID, weight, upgrade? }. A weighted pick chooses
+    //   one carID. "upgrade" is optional (defaults "000"). Pool entries bypass
+    //   the rarity buckets, the pack filter, AND upgradeChance entirely — you
+    //   are naming exact cars. Great for guaranteed/spotlight cards.
+    {
+      "pool": [
+        { "carID": "c07017", "weight": 50 },
+        { "carID": "c07018", "weight": 50, "upgrade": "666" }
+      ]
+    },
+
+    // FORMAT 3b — Mixed slot: rarities AND a pool in the same entry.
+    //   Keys are walked in order; here a 90% chance of a normal exotic/legendary
+    //   roll, and a 10% pool window for two specific featured cars.
+    {
+      "exotic": 60,
+      "legendary": 30,
+      "pool": [
+        { "carID": "c08301", "weight": 5 },
+        { "carID": "c08304", "weight": 5 }
+      ]
+    }
+  ]
+}

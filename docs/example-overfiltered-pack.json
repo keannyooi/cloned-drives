@@ -1,0 +1,85 @@
+{
+    "packName": "The Connoisseur's Conundrum",
+    "description": "Hand-picked 2-seat, low-slung, ABS+TCS, Performance/Sport-shod German/Italian/Japanese/British petrol-or-hybrid Supercars between 1,100–1,650 kg. Good luck.",
+    "pack": "https://file.garden/your-id/packart/Conundrum.png",
+    "price": 25000000,
+    "categories": ["normal"],
+    "tier": "elite",
+    "weight": 2,
+    "repetition": 1,
+    "filterLogic": "or",
+    "noDuplicates": true,
+    "cardsPerPage": 3,
+    "filter": {
+        "cr": { "start": 650, "end": 1100 },
+        "modelYear": { "start": 2008, "end": 2023 },
+        "seatCount": { "start": 2, "end": 2 },
+        "weight": { "start": 1100, "end": 1650 },
+        "topSpeed": { "start": 185, "end": 255 },
+        "handling": { "start": 72, "end": 100 },
+        "0to60": { "start": 0, "end": 4.2 },
+        "country": ["DE", "IT", "JP", "GB"],
+        "driveType": ["RWD", "AWD"],
+        "tyreType": ["Performance", "Sport"],
+        "fuelType": ["Petrol", "Hybrid"],
+        "tags": ["Supercar"],
+        "gc": "Low",
+        "abs": true,
+        "tcs": true
+    },
+    "upgradeChance": { "333": 15, "666": 7, "996": 2 },
+    "bonusRewards": {
+        "money": { "chance": 25, "amount": 1000000 },
+        "trophies": { "chance": 5, "amount": 25 }
+    },
+    "packSequence": [
+        {
+            "rates": { "exotic": 55, "legendary": 40, "mystic": 5 },
+            "filter": { "make": ["Ferrari", "Lamborghini", "McLaren"] },
+            "rarityFilters": { "legendary": { "make": "Ferrari" }, "mystic": { "country": "IT" } }
+        },
+        {
+            "rates": { "legendary": 100 },
+            "rarityFilters": [
+                { "legendary": { "country": "IT" }, "weight": 65 },
+                { "legendary": { "country": "GB" }, "weight": 30 },
+                { "legendary": { "country": "JP" }, "weight": 5 }
+            ]
+        },
+        {
+            "diamond": 1.5,
+            "pool": [
+                { "carID": "c00386", "weight": 60, "upgrade": "666" },
+                { "carID": "c00701", "weight": 40 }
+            ]
+        },
+        {
+            "rates": {
+                "exotic": 70,
+                "legendary": 25,
+                "pool": [{ "carID": "c00089", "weight": 5, "upgrade": "996" }]
+            },
+            "filter": { "topSpeed": { "start": 195, "end": 230 } }
+        },
+        {
+            "rates": { "exotic": 40, "legendary": 55, "mystic": 5 },
+            "filter": {
+                "weight": { "start": 1200, "end": 1500 },
+                "0to60": { "start": 0, "end": 3.5 }
+            },
+            "rarityFilters": [
+                {
+                    "legendary": { "make": "Ferrari" },
+                    "exotic": { "make": "McLaren" },
+                    "weight": 50
+                },
+                {
+                    "legendary": { "country": "GB" },
+                    "exotic": { "country": "IT" },
+                    "weight": 50
+                }
+            ],
+            "diamond": 0.5
+        }
+    ]
+}

@@ -26,6 +26,26 @@ const generators = {
     provinggrounds: require("./pgGenerator.js").generate
 };
 
+// An existing instance blocks a new spawn ONLY while it still has meaningful time
+// left. For a same-cadence template (e.g. a daily with durationDays == cadenceDays)
+// the previous instance's deadline lands within ~seconds of the next spawn-cron
+// tick, and the 3-minute expiry sweep hasn't deleted it yet — so a strict
+// `isActive` check treats that just-expiring instance as "live" and skips the
+// respawn, making a "daily" actually fire every other day. The grace treats an
+// instance in its final few minutes (or already past its deadline) as finished.
+const RESPAWN_GRACE_MS = 5 * 60 * 1000;
+
+async function liveInstance(state) {
+    if (!state || !state.currentEventID) return null;
+    const current = await eventModel.findOne({ eventID: state.currentEventID });
+    if (!current || !current.isActive) return null;
+    if (current.deadline && current.deadline !== "unlimited") {
+        const msLeft = DateTime.fromISO(current.deadline).diff(DateTime.now()).milliseconds;
+        if (msLeft <= RESPAWN_GRACE_MS) return null;   // at/near its deadline — treat as finished
+    }
+    return current;
+}
+
 /**
  * Daily tick: spawn every enabled template that is due and has no active
  * instance. Failures are logged per template and never block the others.
@@ -45,11 +65,9 @@ async function checkAutoEvents() {
             const stat = await serverStatModel.findOne({});
             const state = (stat.autoEventState || {})[templateID] || {};
 
-            // never two live instances of the same template
-            if (state.currentEventID) {
-                const current = await eventModel.findOne({ eventID: state.currentEventID });
-                if (current && current.isActive) continue;
-            }
+            // never two live instances of the same template (deadline-aware so a
+            // same-cadence daily isn't blocked by its own just-expiring instance)
+            if (await liveInstance(state)) continue;
 
             const now = DateTime.now();
             let due;
@@ -86,11 +104,9 @@ async function spawnFromTemplate(templateID) {
     // Never two live instances of the same template. checkAutoEvents pre-checks
     // this, but cd-ae spawn calls us directly — guard here so a force-spawn can't
     // create a duplicate live event and orphan the previous one's state.
-    if (state.currentEventID) {
-        const current = await eventModel.findOne({ eventID: state.currentEventID });
-        if (current && current.isActive) {
-            throw new Error(`"${template.name}" already has a live instance (${state.currentEventID}); end it before spawning another.`);
-        }
+    const live = await liveInstance(state);
+    if (live) {
+        throw new Error(`"${template.name}" already has a live instance (${live.eventID}); end it before spawning another.`);
     }
 
     const result = generate(template, {

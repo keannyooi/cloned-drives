@@ -65,16 +65,22 @@ async function openPack(args) {
       slotFilter = slotDef.filter
         ? mergeFilters(packFilter, slotDef.filter)
         : packFilter;
-      // OPTIONAL: per-rarity filter overrides. E.g. a slot could have:
-      //   { rates: {epic:83, exotic:13, legendary:3.2, mystic:0.8},
-      //     rarityFilters: { legendary: {make:"Ferrari"}, mystic: {make:"Ferrari"} } }
-      // → epic/exotic pulls use the slot/pack filter (no override),
-      //   legendary/mystic pulls force Ferrari only.
-      if (slotDef.rarityFilters && typeof slotDef.rarityFilters === "object") {
-        for (const [rarity, override] of Object.entries(slotDef.rarityFilters)) {
-          rarityFilters[rarity] = mergeFilters(slotFilter, override);
-        }
-      }
+      // OPTIONAL: per-rarity filter overrides. Two shapes are supported:
+      //
+      //   OBJECT (deterministic) — one filter per rarity:
+      //     rarityFilters: { legendary: {make:"Ferrari"}, mystic: {make:"Ferrari"} }
+      //     → a rolled legendary/mystic is forced to Ferrari; other rarities use
+      //       the slot/pack filter.
+      //
+      //   ARRAY (weighted) — several filters compete for the SAME rarity, each
+      //   with a `weight`; one is chosen by weight when that rarity is rolled:
+      //     rarityFilters: [ { epic: {country:"DE"}, weight: 70 },
+      //                      { epic: {country:"IT"}, weight: 30 } ]
+      //     → a rolled epic is 70% German / 30% Italian. (An entry may key more
+      //       than one rarity; weights normalize within each rarity group.)
+      //
+      // Both shapes normalize into rarityFilters[rarity] = [{ filter, weight }].
+      rarityFilters = buildRarityFilters(slotDef.rarityFilters, slotFilter);
     } else {
       rates = { ...slotDef };
       slotFilter = packFilter;
@@ -214,10 +220,10 @@ async function openPack(args) {
         } else {
           check += rates[key];
           if (check > rand) {
-            // Per-rarity filter override: when this rarity has a special filter
-            // (e.g. "legendary must be Ferrari"), use that pool instead of the
-            // slot's default. Falls back to the slot filter if no override.
-            const effectiveFilter = (rarityFilters && rarityFilters[key]) || filter;
+            // Per-rarity filter override: when this rarity has special filter(s)
+            // — one deterministic filter, or several weighted ones — resolve to
+            // the pool to draw from. Falls back to the slot filter if none apply.
+            const effectiveFilter = resolveRarityFilter(rarityFilters, key, filter);
             const { byRarity } = getFilteredPool(effectiveFilter);
             chosenCarID = pickWithFallback(byRarity, key, pulledCarIDs, noDupes);
             break;
@@ -540,6 +546,53 @@ function mergeFilters(base, override) {
     merged[key] = value;
   }
   return merged;
+}
+
+/**
+ * Normalize a slot's rarityFilters (object OR weighted-array form) into a map
+ * of rarity -> [{ filter, weight }]. Each override filter is merged over the
+ * slot filter. Returns {} when there are no rarity filters.
+ *
+ * Object form  { legendary: {…} }                       → legendary: [{filter, weight:1}]
+ * Array form   [ { epic:{…}, weight:70 }, { epic:{…}, weight:30 } ]
+ *                                                        → epic: [{filter,70},{filter,30}]
+ */
+function buildRarityFilters(raw, slotFilter) {
+  const map = {};
+  if (!raw) return map;
+  if (Array.isArray(raw)) {
+    for (const entry of raw) {
+      const weight = (typeof entry.weight === "number") ? entry.weight : 1;
+      for (const [rarity, override] of Object.entries(entry)) {
+        if (rarity === "weight") continue;
+        if (!map[rarity]) map[rarity] = [];
+        map[rarity].push({ filter: mergeFilters(slotFilter, override), weight });
+      }
+    }
+  } else if (typeof raw === "object") {
+    for (const [rarity, override] of Object.entries(raw)) {
+      map[rarity] = [{ filter: mergeFilters(slotFilter, override), weight: 1 }];
+    }
+  }
+  return map;
+}
+
+/**
+ * Pick the effective filter for a rolled rarity from the normalized
+ * rarityFilters map. One entry → that filter; several → weighted random pick;
+ * none → the provided fallback (slot/pack) filter.
+ */
+function resolveRarityFilter(map, rarity, fallback) {
+  const entries = map && map[rarity];
+  if (!entries || entries.length === 0) return fallback;
+  if (entries.length === 1) return entries[0].filter;
+  const total = entries.reduce((sum, e) => sum + e.weight, 0);
+  let roll = Math.random() * total;
+  for (const e of entries) {
+    roll -= e.weight;
+    if (roll < 0) return e.filter;
+  }
+  return entries[entries.length - 1].filter;
 }
 
 /** Check whether any slot in the list uses a pool. */
