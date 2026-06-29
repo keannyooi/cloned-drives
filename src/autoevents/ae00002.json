@@ -5,6 +5,7 @@
     "generator": "provinggrounds",
     "cadenceDays": 1,
     "durationDays": 1,
+    "ignoreDupe": true,
     "rounds": 5,
     "difficulty": { "start": 1, "end": 5 },
     "entryFee": 0,

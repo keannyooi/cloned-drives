@@ -26,24 +26,38 @@ const generators = {
     provinggrounds: require("./pgGenerator.js").generate
 };
 
-// An existing instance blocks a new spawn ONLY while it still has meaningful time
-// left. For a same-cadence template (e.g. a daily with durationDays == cadenceDays)
-// the previous instance's deadline lands within ~seconds of the next spawn-cron
-// tick, and the 3-minute expiry sweep hasn't deleted it yet — so a strict
-// `isActive` check treats that just-expiring instance as "live" and skips the
-// respawn, making a "daily" actually fire every other day. The grace treats an
-// instance in its final few minutes (or already past its deadline) as finished.
-const RESPAWN_GRACE_MS = 5 * 60 * 1000;
+// Spawns are gated by two checks:
+//  (1) DUE — enough CALENDAR days have rolled since the last spawn, compared by
+//      start-of-day rather than an exact 24h span. A spawn runs a second or two
+//      after midnight, so a strict ">= 1 day" diff falls just short the next
+//      midnight and skips it — that bug made the "daily" fire every other day.
+//  (2) DUPLICATE PROTECTION — skip only if a previous instance is still genuinely
+//      running (more than DUPE_GUARD_MS left). Near-end-of-life instances don't
+//      block, so a same-cadence daily rolls over cleanly. A template opts out of
+//      this entirely with "ignoreDupe": true. Either way, name-uniqueness
+//      (enforced in spawnFromTemplate) is the invariant that always holds.
+const WEEKDAYS = { monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6, sunday: 7 };
+const DUPE_GUARD_MS = 2 * 60 * 60 * 1000;   // only block a respawn while the live instance has >2h left
 
-async function liveInstance(state) {
-    if (!state || !state.currentEventID) return null;
-    const current = await eventModel.findOne({ eventID: state.currentEventID });
-    if (!current || !current.isActive) return null;
-    if (current.deadline && current.deadline !== "unlimited") {
-        const msLeft = DateTime.fromISO(current.deadline).diff(DateTime.now()).milliseconds;
-        if (msLeft <= RESPAWN_GRACE_MS) return null;   // at/near its deadline — treat as finished
+function isDue(template, state, now) {
+    if (template.spawnDay) {
+        // now.weekday is locale-independent (1=Mon..7=Sun) — weekdayLong was not
+        const wanted = WEEKDAYS[String(template.spawnDay).toLowerCase()];
+        const alreadyToday = state.lastSpawn && DateTime.fromISO(state.lastSpawn).toISODate() === now.toISODate();
+        return wanted === now.weekday && !alreadyToday;
     }
-    return current;
+    const cadence = template.cadenceDays || 14;
+    if (!state.lastSpawn) return true;
+    const daysSince = Math.round(now.startOf("day").diff(DateTime.fromISO(state.lastSpawn).startOf("day"), "days").days);
+    return daysSince >= cadence;
+}
+
+async function hasRunningInstance(state) {
+    if (!state || !state.currentEventID) return false;
+    const current = await eventModel.findOne({ eventID: state.currentEventID });
+    if (!current || !current.isActive) return false;
+    if (!current.deadline || current.deadline === "unlimited") return true;   // never-ending → always blocks
+    return DateTime.fromISO(current.deadline).diff(DateTime.now()).milliseconds > DUPE_GUARD_MS;
 }
 
 /**
@@ -65,21 +79,10 @@ async function checkAutoEvents() {
             const stat = await serverStatModel.findOne({});
             const state = (stat.autoEventState || {})[templateID] || {};
 
-            // never two live instances of the same template (deadline-aware so a
-            // same-cadence daily isn't blocked by its own just-expiring instance)
-            if (await liveInstance(state)) continue;
-
-            const now = DateTime.now();
-            let due;
-            if (template.spawnDay) {
-                const isDay = now.weekdayLong.toLowerCase() === String(template.spawnDay).toLowerCase();
-                const alreadyToday = state.lastSpawn && DateTime.fromISO(state.lastSpawn).toISODate() === now.toISODate();
-                due = isDay && !alreadyToday;
-            } else {
-                const cadence = template.cadenceDays || 14;
-                due = !state.lastSpawn || now.diff(DateTime.fromISO(state.lastSpawn), "days").days >= cadence;
-            }
-            if (!due) continue;
+            // Spawn when due, unless a previous instance is still genuinely running
+            // (and the template hasn't opted out of duplicate protection).
+            if (!isDue(template, state, DateTime.now())) continue;
+            if (!template.ignoreDupe && await hasRunningInstance(state)) continue;
 
             await spawnFromTemplate(templateID);
         } catch (error) {
@@ -101,19 +104,21 @@ async function spawnFromTemplate(templateID) {
     const stat = await serverStatModel.findOne({});
     const state = (stat.autoEventState || {})[templateID] || {};
 
-    // Never two live instances of the same template. checkAutoEvents pre-checks
-    // this, but cd-ae spawn calls us directly — guard here so a force-spawn can't
-    // create a duplicate live event and orphan the previous one's state.
-    const live = await liveInstance(state);
-    if (live) {
-        throw new Error(`"${template.name}" already has a live instance (${live.eventID}); end it before spawning another.`);
-    }
-
     const result = generate(template, {
         counter: state.counter || 0,
         lastCarPick: state.lastCarPick,
         lastPackPick: state.lastPackPick
     });
+
+    // The one hard invariant: never two events sharing a name (that breaks cd-pe's
+    // name search / disambiguation). Generated names carry an incrementing roman
+    // numeral so they differ each spawn — this is the safety net behind the
+    // (optional) duplicate protection. Multiple DIFFERENTLY-named live instances of
+    // a template are allowed (see the ignoreDupe toggle).
+    const nameClash = await eventModel.findOne({ name: result.name });
+    if (nameClash) {
+        throw new Error(`an event named "${result.name}" already exists (${nameClash.eventID}); skipping to avoid a duplicate name.`);
+    }
 
     // Reserve the event number atomically. A read-then-$inc would race a concurrent
     // cd-createevent / second spawn and mint a duplicate eventID (the eventID index
