@@ -61,15 +61,18 @@ module.exports = {
                     author: message.author,
                 });
 
-                await currentEventsChannel.send({
-                    content: `**The ${event.name} event has officially started!**`,
-                    files: [attachment]
-                });
+                const startedText = `**The ${event.name} event has officially started!**`;
+                try {
+                    await currentEventsChannel.send(attachment ? { content: startedText, files: [attachment] } : startedText);
+                } catch (sendErr) {
+                    console.log(`[startevent] send with graphic failed (${sendErr.message}); posting text only`);
+                    await currentEventsChannel.send(startedText);
+                }
 
                 await eventModel.updateOne({ eventID: event.eventID }, event);
 
                 // ✅ Send success message IMMEDIATELY
-                await successMessage.sendMessage({ attachment, currentMessage });
+                await successMessage.sendMessage(attachment ? { attachment, currentMessage } : { currentMessage });
 
                 // 🔕 Send DM notifications in background (non-blocking)
                 if (!DEV_MODE) {

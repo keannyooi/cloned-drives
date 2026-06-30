@@ -167,9 +167,19 @@ async function spawnFromTemplate(templateID) {
             carReward ? `Final reward: **${carReward}**!` : null,
             `Ends <t:${Math.round(DateTime.fromISO(deadline).toSeconds())}:R> — play with \`cd-pe ${template.name.toLowerCase()}\`.`
         ].filter(Boolean);
-        // Same event-board graphic admin events get via cd-startevent.
+        // The text announce must ALWAYS post — it's how players learn the event
+        // exists. The board graphic is best-effort: attach it only if it rendered,
+        // and if the send still chokes on the attachment, fall back to text-only.
+        // (A graphic failure must never swallow the announcement, as it did when
+        // the board and text shared one send.)
+        const text = lines.join("\n");
         const attachment = await generateEventGraphic({ roster: result.roster });
-        await channel.send({ content: lines.join("\n"), files: [attachment] });
+        try {
+            await channel.send(attachment ? { content: text, files: [attachment] } : text);
+        } catch (sendErr) {
+            console.log(`[AutoEvents] send with graphic failed (${sendErr.message}); posting text only`);
+            await channel.send(text);
+        }
 
         // Per-template DM blast — OFF by default; opt in with `announceDMs: true`
         // in the template (keep it off for high-frequency templates like dailies

@@ -13,7 +13,7 @@
 const bot = require("../../config/config.js");
 const { AttachmentBuilder } = require("discord.js");
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
-const { failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../consts/consts.js");
+const { moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../consts/consts.js");
 const { getCar, getTrack, getPack } = require("./dataManager.js");
 const reqDisplay = require("./reqDisplay.js");
 
@@ -25,8 +25,8 @@ function adjustSize(image) {
 /**
  * @param {Object} event - an event document (needs a `roster` array; each round
  *   carries carID, upgrade, track, reqs, rewards).
- * @returns {Promise<AttachmentBuilder>} the board as "event.jpeg" (falls back to
- *   the broken-image link on any failure — never throws).
+ * @returns {Promise<AttachmentBuilder|null>} the board as "event.jpeg", or null
+ *   if it couldn't render (callers post text-only) — never throws.
  */
 async function generateEventGraphic(event) {
     const canvas = createCanvas(903 * Math.ceil(event.roster.length / 5), 299 * (event.roster.length <= 5 ? event.roster.length : 5));
@@ -139,8 +139,12 @@ async function generateEventGraphic(event) {
             context.fillText(line, baseX + 533, baseY + 77 + rowY);
         }
     } catch (error) {
-        console.log("[eventGraphic] failed to render board:", error);
-        return new AttachmentBuilder(failedToLoadImageLink, { name: "event.jpeg" });
+        // Return null rather than a fallback attachment: the fallback image is a
+        // remote URL, so during the very network blip that breaks the board it
+        // would ALSO fail to send and take the whole message down with it. Callers
+        // post text-only when this is null.
+        console.log("[eventGraphic] failed to render board:", error.message);
+        return null;
     }
 
     return new AttachmentBuilder(await canvas.encode("jpeg"), { name: "event.jpeg" });
