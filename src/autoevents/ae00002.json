@@ -10,7 +10,7 @@
     "difficulty": { "start": 1, "end": 5 },
     "entryFee": 0,
     "uniqueSolutionThreshold": 0,
-    "subtitles": ["Morning Commute", "Rush Hour", "The Short Haul", "Quick Spin"],
+    "subtitles": ["Morning Commute", "Rush Hour", "The Short Haul", "Quick Spin","Rush Duel","Undercover","Sprint Bash","Mad Race"],
     "theme": "auto",
     "themeRecipes": {
         "none": { "weight": 5 },
@@ -19,13 +19,16 @@
     },
     "themeOpponents": true,
     "rewards": {
-        "moneyBudget": 250000,
+        "moneyBudget": 1000000,
         "moneyCurve": "flat",
-        "carPool": [],
+        "carPool": ["c07526","c05503","c04976","c05443","c00484","c05018","c07658","c05310","c05104","c07207","c07773","c00465","c05262","c00676","c06039","c05819","c03124","c04969","c05343","c07851","c02687","c06410","c05632","c01733","c03838","c00222","c01653","c02396","c05928","c00201","c02965","c05233","c06383","c05012","c06266"],
         "packPool": [],
         "milestones": {
+			"1": { "trophies": 10 },
+			"2": { "money": "$BUDGET" },
             "3": { "money": "$BUDGET" },
-            "5": { "money": "$BUDGET", "trophies": 10 }
+			"4": { "money": "$BUDGET" },
+            "5": { "money": "$BUDGET", "trophies": 30, "car": "$CARPOOL" }
         }
     }
 }
