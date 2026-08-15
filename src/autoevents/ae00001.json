@@ -1,6 +1,6 @@
 {
     "name": "Proving Grounds",
-    "enabled": false,
+    "enabled": true,
     "generator": "provinggrounds",
     "cadenceDays": 14,
     "durationDays": 10,

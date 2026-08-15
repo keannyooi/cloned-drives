@@ -171,7 +171,7 @@ async function generateEventGraphic(event) {
                         image = driverImage;
                         const driver = getDriver(value);
                         value = driver
-                            ? `${driver.name}${driver.variant ? ` (${driver.variant})` : ""} (${driver.year})`
+                            ? `${driver.name}${driver.variant ? ` (${driver.variant})` : ""}`
                             : value;
                         context.fillStyle = "#37cdff";
                         break;

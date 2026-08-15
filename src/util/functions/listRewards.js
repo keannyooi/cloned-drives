@@ -35,7 +35,7 @@ function listRewards(rewards) {
                 // falls back to the raw ID if the driver file isn't loaded.
                 let driver = getDriver(value);
                 let driverName = driver
-                    ? (driver.variant ? `${driver.name} (${driver.variant}) (${driver.year})` : `${driver.name} (${driver.year})`)
+                    ? (driver.variant ? `${driver.name} (${driver.variant})` : driver.name)
                     : value;
                 rewardString += `${driverName} (Driver), `;
                 break;

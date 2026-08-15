@@ -76,7 +76,7 @@ function rollPrizeCar(pool) {
 
 // Canonical driver display name: Name (Variant) (Year), variant omitted when empty.
 function driverDisplayName(driver) {
-    return `${driver.name}${driver.variant ? ` (${driver.variant})` : ""} (${driver.year})`;
+    return `${driver.name}${driver.variant ? ` (${driver.variant})` : ""}`;
 }
 
 // Rarity system v3 legacy mapping (design doc §5): driver JSONs written before
@@ -243,7 +243,7 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
     switch (rung.kind) {
         case "car": {
             const pooledCar = pick(rungCfg.carPool, validPrizeCar, "carID");
-            const prize = { car: { carID: pooledCar || rollPrizeCar(PRIZE_POOLS.car[rung.wins]) } };
+            const prize = { car: { carID: pooledCar || rollPrizeCar(PRIZE_POOLS.car[rung.wins]), upgrade: "000" } };
             if (rung.exclusive) {
                 const pooledDriver = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
                 const driverID = pooledDriver || rollSecretDriver();
@@ -262,7 +262,7 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
             // rungs are normal races (never boss gates).
             const prize = {};
             const carID = pick(rungCfg.carPool, validPrizeCar, "carID");
-            if (carID) prize.car = { carID };
+            if (carID) prize.car = { carID, upgrade: "000" };
             const driverID = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
             if (driverID) prize.driver = driverID;
             const packID = pick(rungCfg.packPool, validPrizePack, "packID");
@@ -303,7 +303,7 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
 /**
  * Build a full prizes map (rung string → prize object) for the week containing
  * `dt`. Shapes follow the raceWeekState contract:
- * { pack: "pXXXXX" } | { money } | { car: { carID } } | { driver }
+ * { pack: "pXXXXX" } | { money } | { car: { carID, upgrade } } | { driver }
  * The exclusive 1000 rung carries BOTH keys: { car: { carID }, driver } —
  * the weekly exclusive car plus a secret-rarity driver.
  */
@@ -661,7 +661,7 @@ function computeThresholdAwards(prevWins, newWins, claimedThresholds, prizes) {
         const exclusive = !!(LADDER.find(rung => rung.wins === wins) || {}).exclusive;
 
         if (prize.car && prize.car.carID) {
-            entries.push({ car: { carID: prize.car.carID }, origin: REWARD_ORIGIN, rid: makeRewardID() });
+            entries.push({ car: { carID: prize.car.carID, upgrade: "000" }, origin: REWARD_ORIGIN, rid: makeRewardID() });
             lines.push(`${rwEmoji("winner")} **${wins} wins!** Prize car earned: **${safeCarName(prize.car.carID)}**${exclusive ? " — this week's exclusive!" : ""}`);
         }
         if (prize.driver) {

@@ -14,7 +14,7 @@ const { rarityEmoji } = require("../util/functions/rwEmoji.js");
 
 // Display name convention (design doc §5): Name (Variant) (Year), variant omitted when empty.
 function driverNameGen(driver, rarity = false) {
-    let currentName = `${driver.name}${driver.variant ? ` (${driver.variant})` : ""} (${driver.year})`;
+    let currentName = `${driver.name}${driver.variant ? ` (${driver.variant})` : ""}`;
     if (rarity) {
         currentName = `${rarityEmoji(driver.rarity)} ${currentName}`;
     }

@@ -6,7 +6,13 @@ function addCars(garage, cars) {
     // Create a map for quick lookups by carID
     const garageMap = new Map(garage.map(car => [car.carID, car]));
 
-    for (const { carID, upgrade } of cars) {
+    for (const { carID, upgrade: rawUpgrade } of cars) {
+        // A caller that omits `upgrade` used to file the car under the literal
+        // key "undefined" — the player owned it, but in a tune slot that does
+        // not exist, so it could not be raced, sold or filtered. Default to
+        // stock instead. (Race Week rung prizes shipped without an upgrade;
+        // every other reward source sets "000" explicitly.)
+        const upgrade = Object.keys(carSave).includes(rawUpgrade) ? rawUpgrade : "000";
         const existingCar = garageMap.get(carID);
 
         if (existingCar) {

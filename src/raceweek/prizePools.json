@@ -12,6 +12,13 @@
         "weeks": "PRE-PROGRAMMED WEEKS. Two key forms: \"2026-W44\" fires that exact week once, \"44\" fires week 44 of EVERY year. Exact beats recurring. Inside a week, any rung key overrides that rung's pools for that week only - every rung you DON'T list falls back to \"rungs\" below exactly as normal, so you only script what you care about. Meta keys: _label (shown in the announcement title), _description (replaces the default blurb), _color (hex, themes the embed). Any key starting with _ is ignored by the prize resolver. Scheduled weeks are resolved at the Monday roll, so edits land at the next rollover or immediately via cd-raceweekprizes reroll all."
     },
     "weeks": {
+        "2026-W35": {
+            "_comment": "FAST & FURIOUS WEEK — Mon 24 Aug to Sun 30 Aug 2026, marking 25 years of the first film. Meta only for now: NO rung keys are set, so every rung runs on its normal pool from \"rungs\" below. Add rung keys ONLY when you have the prize picked — see _howToAddPrizes.",
+            "_howToAddPrizes": "A rung key here REPLACES that rung's normal config for the week, wholesale. So \"1000\": { \"carPool\": [] } does NOT mean 'leave it alone' — an empty pool falls back to the AUTOMATIC rule and you lose the curated prize. Either give the rung a real pool, or leave the key out entirely. Shape to copy: \"1000\": { \"carPool\": [\"cXXXXX\"], \"driverPool\": [\"dXXXXX\"] } · \"50\": { \"carPool\": [\"cXXXXX\"] } · \"200\": { \"packPool\": [\"pXXXXX\"] } · \"25\": { \"money\": 500000 }",
+            "_label": "Fast & Furious",
+            "_color": "#00a8e8",
+            "_description": "Twenty-five years since a green Eclipse and an orange Supra taught everyone what a quarter mile is. It's not about the prizes. It's about family."
+        },
         "_example": {
             "_comment": "Keys starting with _ are ignored. Copy this shape, rename to \"2026-W44\" (one-off) or \"44\" (every year), and it goes live at the next roll.",
             "_label": "Halloween",
