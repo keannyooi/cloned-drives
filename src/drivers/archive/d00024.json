@@ -1,0 +1,35 @@
+{
+    "driverID": "d00024",
+    "name": "Gilles Villeneuve",
+    "variant": "",
+    "description": "Six wins, zero compromises. The most loved driver never to win a title — flat-out in anything, anywhere, in any weather.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+4% handling in the rain — the 1979 Watkins Glen wet lap, 11 seconds clear of everyone.",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"handling": 1.04}}
+        },
+        {
+            "description": "+3% core stats in any Ferrari.",
+            "cond": {"make": ["ferrari"]},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "The price of total commitment: -2% handling on plain Asphalt.",
+            "cond": {"surface": ["Asphalt"]},
+            "minLevel": 3,
+            "effects": {"mult": {"handling": 0.98}}
+        },
+        {
+            "description": "+4% everything when outgunned — he never noticed the odds.",
+            "cond": {"underdog": true},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 1.04}}
+        }
+    ]
+}

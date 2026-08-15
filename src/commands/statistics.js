@@ -59,7 +59,6 @@ module.exports = {
             const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
             const playerData = await profileModel.findOne({ userID: user.id });
-            console.log(playerData);
             let totalCars = 0, maxedCars = 0, totalBMCars = 0;
             for (let car of playerData.garage) {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);
@@ -71,6 +70,13 @@ module.exports = {
             }
 
             const MCpercentage = maxedCars / totalCars * 100;
+            // raceWeekStats is lazy-initialized — old profiles may lack it entirely or have partial objects
+            const raceWeekStats = playerData.raceWeekStats ?? {};
+            const weeklyWins = raceWeekStats.weeklyWins ?? 0;
+            const weeklyLosses = raceWeekStats.weeklyLosses ?? 0;
+            const bestWeek = raceWeekStats.bestWeek ?? 0;
+            // unmigrated profiles keep their old rr streak under rrStats.highestStreak
+            const legacyHighestStreak = raceWeekStats.legacyHighestStreak ?? playerData.rrStats?.highestStreak ?? 0;
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: `Stats of ${user.tag}`,
@@ -85,7 +91,9 @@ module.exports = {
                     { name: "Total Black Market Cars in Garage", value: totalBMCars.toLocaleString("en"), inline: true },
                     { name: "Total Maxed Cars in Garage", value: maxedCars.toLocaleString("en"), inline: true },
                     { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true },
-                    { name: "Highest Random Race Streak", value: playerData.rrStats.highestStreak.toLocaleString("en"), inline: true },
+                    { name: "Race Week (This Week)", value: `${weeklyWins.toLocaleString("en")}W - ${weeklyLosses.toLocaleString("en")}L`, inline: true },
+                    { name: "Best Race Week", value: `${bestWeek.toLocaleString("en")} wins`, inline: true },
+                    { name: "Legacy Highest Streak", value: legacyHighestStreak.toLocaleString("en"), inline: true },
                     { name: "Highest Daily Reward Streak", value: playerData.dailyStats.highestStreak.toLocaleString("en"), inline: true },
                     { name: "About Me", value: playerData.settings.bio ?? "None" }
                 ]

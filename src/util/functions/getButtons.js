@@ -74,7 +74,7 @@ function getButtons(type, buttonStyle) {
                 if (type === "rr") {
                     skip = new ButtonBuilder()
                         .setCustomId("skip")
-                        .setLabel("I give up. (Skips and resets streak)")
+                        .setLabel("Skip (new opponent)")
                         .setStyle(Primary);
                 }
             }

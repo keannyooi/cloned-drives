@@ -5,7 +5,7 @@
     "cadenceDays": 14,
     "durationDays": 10,
     "rounds": 20,
-    "difficulty": { "start": 1, "end": 10 },
+    "difficulty": { "start": 4, "end": 10 },
     "entryFee": 10000000,
     "uniqueSolutionThreshold": 50,
     "announceDMs": false,
@@ -21,9 +21,9 @@
     },
     "themeOpponents": true,
     "rewards": {
-        "moneyBudget": 0,
-        "moneyCurve": "finale",
-        "carPool": ["c00048", "c00050", "c00216", "c00228", "c00280"],
+        "moneyBudget": 3250000,
+        "moneyCurve": "quadratic",
+        "carPool": ["c03098", "c03538", "c03337", "c07165", "c04282"],
         "packPool": [],
         "milestones": {
             "5": { "trophies": 25 },

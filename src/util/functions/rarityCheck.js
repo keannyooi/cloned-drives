@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { blackMarketEmojiID, diamondEmojiID, bossEmojiID, mysticEmojiID, legendaryEmojiID, epicEmojiID, exoticEmojiID, standardEmojiID,
+const { blackMarketEmojiID, diamondEmojiID, crDiamondEmojiID, bossEmojiID, mysticEmojiID, legendaryEmojiID, epicEmojiID, exoticEmojiID, standardEmojiID,
     rareEmojiID, uncommonEmojiID, commonEmojiID } = require("../consts/consts.js");
 const { isDiamondCar, hasType } = require("./cardType.js");
 
@@ -12,7 +12,10 @@ function getEmojiCache() {
     if (emojiCache) return emojiCache;
     emojiCache = {
         bm: bot.emojis.cache.get(blackMarketEmojiID),
-        diamond: bot.emojis.cache.get(diamondEmojiID),
+        // Diamond cars replace their CR icon with the dedicated CR-style
+        // diamond emote, exactly as BM cards replace theirs. (diamondEmojiID
+        // remains the currency-style icon used in payout messages.)
+        diamond: bot.emojis.cache.get(crDiamondEmojiID) || bot.emojis.cache.get(diamondEmojiID),
         boss: bot.emojis.cache.get(bossEmojiID),
         mystic: bot.emojis.cache.get(mysticEmojiID),
         legendary: bot.emojis.cache.get(legendaryEmojiID),

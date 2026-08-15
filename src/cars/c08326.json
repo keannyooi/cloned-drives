@@ -1,0 +1,36 @@
+{
+    "carID": "c08326",
+    "cr": 325,
+    "make": "Alfa Romeo",
+    "model": "Junior Elettrica",
+    "modelYear": 2024,
+    "country": "IT",
+    "topSpeed": 93,
+    "0to60": 8.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [
+        "Eco-Friendly",
+        "Trophy Tour 26"
+    ],
+    "weight": 1545,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 41.56,
+    "ola": 79.36,
+    "description": "",
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/AlfaRomeoJuniorElettrica(2024).png",
+    "creator": "Crossfire",
+    "hiddenTag": [
+        ""
+    ],
+    "cardType": [
+        "Normal"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "driverID": "d00003",
+    "name": "Lewis Hamilton",
+    "variant": "",
+    "description": "New colors, same wet-weather wizardry. Two decades of rain races mean the puddles hold no secrets.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/LewisHamilton.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2% handling in the Rain",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"handling": 1.02}}
+        },
+        {
+            "description": "+2 mra in the Rain — reads the standing water a lap early",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"add": {"mra": 2}},
+            "minLevel": 2
+        },
+        {
+            "description": "+2 handling in any Ferrari",
+            "cond": {"make": ["ferrari"]},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 3
+        },
+        {
+            "description": "+3% 0-60 in the Rain — nobody gets off the line better when it's wet",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"accel": 0.97}},
+            "minLevel": 4
+        }
+    ]
+}

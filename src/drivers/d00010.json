@@ -1,0 +1,36 @@
+{
+    "driverID": "d00010",
+    "name": "Pip Featherstone",
+    "variant": "",
+    "description": "Launch specialist for anything under a tonne. Believes horsepower is a rumor and weight is the only truth worth engineering.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/PipFeatherstone.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "recruitPrice": 4000000,
+    "bonuses": [
+        {
+            "description": "-4% 0-60 in cars weighing 1000kg or less",
+            "cond": {"statMax": {"weight": 1000}},
+            "effects": {"mult": {"accel": 0.96}}
+        },
+        {
+            "description": "+4 mra in cars weighing 1000kg or less",
+            "cond": {"statMax": {"weight": 1000}},
+            "effects": {"add": {"mra": 4}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling under 800kg — barely a car at all, and all the better for it",
+            "cond": {"statMax": {"weight": 800}},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "-6% 0-60 in the Caterham Seven — simplify, then add lightness",
+            "cond": {"carID": ["c00243", "c00244", "c00245", "c00246", "c00247"]},
+            "effects": {"mult": {"accel": 0.94}},
+            "minLevel": 4
+        }
+    ]
+}

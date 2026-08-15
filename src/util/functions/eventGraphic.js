@@ -15,7 +15,7 @@ const { existsSync } = require("fs");
 const path = require("path");
 const { AttachmentBuilder } = require("discord.js");
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
-const { moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../consts/consts.js");
+const { moneyEmojiID, fuseEmojiID, trophyEmojiID, raceWeekEmojiIDs } = require("../consts/consts.js");
 const { getCar, getTrack, getPack, getDriver } = require("./dataManager.js");
 const reqDisplay = require("./reqDisplay.js");
 
@@ -80,12 +80,15 @@ async function generateEventGraphic(event) {
             mapImages.push(...mapBatch);
         }
 
-        let [moneyImage, fuseImage, trophyImage, carImage, packImage] = await Promise.all([
+        let [moneyImage, fuseImage, trophyImage, carImage, packImage, driverImage] = await Promise.all([
             loadImage(bot.emojis.cache.get(moneyEmojiID).url),
             loadImage(bot.emojis.cache.get(fuseEmojiID).url),
             loadImage(bot.emojis.cache.get(trophyEmojiID).url),
-            loadImage(bot.emojis.cache.get(glofEmojiID).url),
-            loadImage(bot.emojis.cache.get(packEmojiID).url)
+            // Dedicated reward-type icons (shared with cd-rrprizes) rather than
+            // the old glof/pack stand-ins — drivers get their own too.
+            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.car).url),
+            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.pack).url),
+            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.driver).url)
         ]);
 
         context.fillStyle = "#ffffff";
@@ -164,8 +167,8 @@ async function generateEventGraphic(event) {
                         break;
                     }
                     case "driver": {
-                        // Race Week driver reward — car icon + display name
-                        image = carImage;
+                        // Race Week driver reward — its own icon + display name
+                        image = driverImage;
                         const driver = getDriver(value);
                         value = driver
                             ? `${driver.name}${driver.variant ? ` (${driver.variant})` : ""} (${driver.year})`

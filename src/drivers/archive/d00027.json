@@ -1,0 +1,34 @@
+{
+    "driverID": "d00027",
+    "name": "Stirling Moss",
+    "variant": "",
+    "description": "The Mille Miglia in 10 hours 7 minutes — a thousand miles of public road at an average of 98mph. The greatest never to win the championship.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "Road racer supreme: +4% top speed & MRA on OnRoad surfaces.",
+            "cond": {"surface": ["OnRoad"]},
+            "effects": {"mult": {"topSpeed": 1.04, "mra": 1.04}}
+        },
+        {
+            "description": "+3% core stats in anything built before 1965.",
+            "cond": {"modelYear": {"start": 1800, "end": 1964}},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "+3% core stats in any Mercedes-Benz.",
+            "cond": {"make": ["mercedes-benz"]},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "Pace notes from Jenkinson: +3% MRA & OLA everywhere.",
+            "minLevel": 7,
+            "effects": {"mult": {"mra": 1.03, "ola": 1.03}}
+        }
+    ]
+}

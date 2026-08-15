@@ -1,7 +1,9 @@
 "use strict";
 
 const { DateTime } = require("luxon");
-const { getCar } = require("./dataManager.js");
+const { getCar, getDriver } = require("./dataManager.js");
+const { rarityOf } = require("./raceWeekEvents.js");
+const makeRewardID = require("./rewardID.js");
 const packBattleModel = require("../../models/packBattleSchema.js");
 const profileModel = require("../../models/profileSchema.js");
 
@@ -187,11 +189,15 @@ async function checkMilestones(battle, userID, stats) {
             { $push: { [`playerStats.${userID}.milestonesEarned`]: { $each: pushKeys } } }
         );
 
-        // Push rewards to player's unclaimedRewards
-        const rewards = newlyEarned.map(e => ({
-            ...e.milestone.reward,
-            origin: `${battle.name} Milestone`
-        }));
+        // Push rewards to player's unclaimedRewards (rid on non-numeric
+        // entries → exact-entry removal at claim time)
+        const rewards = newlyEarned.map(e => {
+            const entry = { ...e.milestone.reward, origin: `${battle.name} Milestone` };
+            if (entry.money === undefined && entry.fuseTokens === undefined && entry.trophies === undefined) {
+                entry.rid = makeRewardID();
+            }
+            return entry;
+        });
 
         await profileModel.updateOne(
             { userID },
@@ -246,13 +252,14 @@ async function takeSnapshot(battle) {
 async function distributePlacementRewards(battle) {
     // H-08: Re-fetch once for latest stats, then use returned snapshot (was 3 fetches, now 1)
     const freshBattle = await packBattleModel.findOne({ battleID: battle.battleID });
-    if (!freshBattle) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [] };
+    if (!freshBattle) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [], failedRewards: [] };
 
     // takeSnapshot now returns the snapshot directly — no need to re-fetch
     const finalSnapshot = await takeSnapshot(freshBattle);
-    if (!finalSnapshot) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [] };
+    if (!finalSnapshot) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [], failedRewards: [] };
 
     const distributedRewards = [];
+    const failedRewards = [];
 
     for (const placement of freshBattle.placementRewards || []) {
         const leaderboard = finalSnapshot[placement.leaderboard];
@@ -262,11 +269,37 @@ async function distributePlacementRewards(battle) {
             entry => entry.rank >= placement.minRank && entry.rank <= placement.maxRank
         );
 
-        for (const { userID } of qualifyingPlayers) {
+        // Drivers v2: a driver placement reward is { driver: "dXXXXX" } — validate the
+        // ID against the loaded driver files once per placement so a typo'd/unloaded
+        // driver fails loudly here instead of silently dropping at claim time.
+        const wantsDriver = placement.reward && placement.reward.driver !== undefined;
+        const driverInvalid = wantsDriver && !getDriver(placement.reward.driver);
+        // Serialised drivers are mint-capped and can never be awarded as rewards
+        // (same rule as events/championships/givereward/PvP).
+        const driverSerialised = wantsDriver && !driverInvalid && rarityOf(getDriver(placement.reward.driver)) === "serialised";
+
+        for (const { userID, rank } of qualifyingPlayers) {
+            if (driverInvalid || driverSerialised) {
+                failedRewards.push({
+                    userID,
+                    rank,
+                    leaderboard: placement.leaderboard,
+                    reason: driverSerialised
+                        ? `serialised drivers cannot be awarded ("${placement.reward.driver}")`
+                        : `unknown driver ID "${placement.reward.driver}"`
+                });
+                continue;
+            }
+
+            // Reward-entry contract: one reward key per entry, reward key first,
+            // origin second (rewards.js switches on Object.keys(reward)[0]).
             const rewardEntry = {
                 ...placement.reward,
                 origin: `${freshBattle.name} (#${placement.minRank}${placement.minRank !== placement.maxRank ? `-${placement.maxRank}` : ""} ${placement.leaderboard})`
             };
+            if (rewardEntry.money === undefined && rewardEntry.fuseTokens === undefined && rewardEntry.trophies === undefined) {
+                rewardEntry.rid = makeRewardID();
+            }
 
             await profileModel.updateOne(
                 { userID },
@@ -275,14 +308,14 @@ async function distributePlacementRewards(battle) {
 
             distributedRewards.push({
                 userID,
-                rank: qualifyingPlayers.find(p => p.userID === userID)?.rank,
+                rank,
                 leaderboard: placement.leaderboard,
                 reward: rewardEntry
             });
         }
     }
 
-    return { battle: freshBattle, finalSnapshot, distributedRewards };
+    return { battle: freshBattle, finalSnapshot, distributedRewards, failedRewards };
 }
 
 module.exports = {

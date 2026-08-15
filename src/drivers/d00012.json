@@ -1,0 +1,35 @@
+{
+    "driverID": "d00012",
+    "name": "Ragnar Voss",
+    "variant": "",
+    "description": "Only shows up for the big fights. Rumor says he keeps a list of every boss who beat him — it's been blank for years.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/RagnarVoss.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+2.5% to every stat in boss races",
+            "cond": {"bossRace": true},
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 1.025}}
+        },
+        {
+            "description": "+3 handling when you're the underdog",
+            "cond": {"underdog": true},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "+4 mra in boss races — he's seen this one before",
+            "cond": {"bossRace": true},
+            "effects": {"add": {"mra": 4}},
+            "minLevel": 3
+        },
+        {
+            "description": "+4% top speed in boss races. The list stays blank",
+            "cond": {"bossRace": true},
+            "effects": {"mult": {"topSpeed": 1.04}},
+            "minLevel": 4
+        }
+    ]
+}

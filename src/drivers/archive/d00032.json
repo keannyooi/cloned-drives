@@ -1,0 +1,27 @@
+{
+    "driverID": "d00032",
+    "name": "Lewis Hamilton",
+    "variant": "",
+    "description": "The record-equalling seventh title and the 92nd win, sealed in a season like no other. Ten numbered copies exist — that's all there will ever be.",
+    "image": "",
+    "rarity": "serialised",
+    "serialCap": 10,
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+4% everything in any Mercedes.",
+            "cond": {"make": ["mercedes-benz"]},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 1.04}}
+        },
+        {
+            "description": "Still I Rise: +4% everything in the rain.",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 1.04}}
+        },
+        {
+            "description": "Champion's cut: +5% money on every win.",
+            "effects": {"moneyMult": 1.05}
+        }
+    ]
+}

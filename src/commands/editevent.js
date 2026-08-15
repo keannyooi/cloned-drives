@@ -4,10 +4,11 @@ const bot = require("../config/config.js");
 const { DateTime } = require("luxon");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCar, getTrack, getPack, getCarFiles, getTrackFiles, getPackFiles } = require("../util/functions/dataManager.js");
+const { getCar, getTrack, getPack, getCarFiles, getTrackFiles, getPackFiles, getDriver, getAllDrivers } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const { modifiedBase, usesReferenceStats, normalizeTypeName, TYPE_NAMES } = require("../util/functions/cardType.js");
+const { driverDisplayName, rarityOf } = require("../util/functions/raceWeekEvents.js");
 
 const carFiles = getCarFiles();
 const trackFiles = getTrackFiles();
@@ -33,6 +34,7 @@ module.exports = {
         "<event name> addreward <round number> <money/fusetokens/trophies> <amount>",
         "<event name> addreward <round number> car <car name> <upgrade>",
         "<event name> addreward <round number> pack <pack name>",
+        "<event name> addreward <round number> driver <driver ID>",
         "<event name> removereward <round number> <reward type / all>",
         "<event name> regentracks <asphalt / dirt / snow>",
         "<event name> regenopponents <random / filter>",
@@ -368,22 +370,64 @@ module.exports = {
                                     throw error;
                                 });
                             break;
+                        case "driver":
+                            let driverID = (args[4] || "").toLowerCase();
+                            let rewardDriver = getDriver(driverID);
+                            if (!rewardDriver) {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: "Error, driver ID provided invalid.",
+                                    desc: `Valid driver IDs: \`${getAllDrivers().map(d => d.driverID).sort().join("`, `")}\``,
+                                    author: message.author
+                                }).displayClosest(driverID);
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+                            if (rarityOf(rewardDriver) === "serialised") {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: "Error, serialised drivers cannot be awarded.",
+                                    desc: "Serialised drivers are mint-capped and can only drop from their dedicated sources (Driver Scout / pack driver drops).",
+                                    author: message.author
+                                });
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+                            if (rewardDriver.recruitExclusive === true) {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: "Error, recruit-exclusive drivers cannot be awarded.",
+                                    desc: "This driver is only obtainable from the recruitment shop (`cd-recruit`) or a limited offer.",
+                                    author: message.author
+                                });
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+
+                            currentEvent.roster[index - 1].rewards.driver = driverID;
+                            successMessage = new SuccessMessage({
+                                channel: message.channel,
+                                title: `Successfully added driver ${driverDisplayName(rewardDriver)} to the rewards for round ${index}!`,
+                                author: message.author,
+                                fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards), inline: true }]
+                            });
+                            break;
                         default:
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
                                 title: "Error, reward criteria not found.",
-                                desc: `Here is a list of reward criterias. 
+                                desc: `Here is a list of reward criterias.
                                 \`money\` - Awards the player money. Provide the amount of money after that.
                                 \`fusetokens\` - Awards the player fuse tokens. Provide the amount of fuse tokens after that.
                                 \`trophies\` - Awards the player trophies. Provide the amount of trophies after that.
                                 \`car\` - Awards the player a car. Provide the name of a car after that.
-                                \`pack\` - Awards the player a pack. Provide the name of a pack after that.`,
+                                \`pack\` - Awards the player a pack. Provide the name of a pack after that.
+                                \`driver\` - Awards the player a Race Week driver. Provide the driver ID after that.`,
                                 author: message.author
                             }).displayClosest(rewardType);
                             return errorMessage.sendMessage({ currentMessage });
                     }
                     break;
                 case "removereward":
+                    // replace("token", "Token") maps "fusetokens" → "fuseTokens"; single-word
+                    // types ("driver", "money", ...) pass through unchanged.
                     let type = args[3].toLowerCase().replace("token", "Token");
                     if (type === "all") {
                         currentEvent.roster[index - 1].rewards = {};
@@ -818,6 +862,17 @@ module.exports = {
                                             rewardErrors.push(`Pack \`${value}\` not found`);
                                         } else {
                                             validatedRewards.pack = value;
+                                        }
+                                        break;
+                                    case "driver":
+                                        if (typeof value !== "string" || !getDriver(value.toLowerCase())) {
+                                            rewardErrors.push(`Driver \`${value}\` not found`);
+                                        } else if (rarityOf(value.toLowerCase()) === "serialised") {
+                                            rewardErrors.push(`Driver \`${value}\` is serialised — serialised drivers cannot be awarded`);
+                                        } else if (getDriver(value.toLowerCase()).recruitExclusive === true) {
+                                            rewardErrors.push(`Driver \`${value}\` is recruit-exclusive — only obtainable from \`cd-recruit\` or an offer`);
+                                        } else {
+                                            validatedRewards.driver = value.toLowerCase();
                                         }
                                         break;
                                     default:

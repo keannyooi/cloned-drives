@@ -1,0 +1,29 @@
+{
+    "driverID": "d00019",
+    "name": "Walter Röhrl",
+    "variant": "",
+    "description": "Two rally world titles, the 1987 Pikes Peak record in the Sport quattro S1, and decades as Porsche's most feared test driver.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "Precision: +3% handling on Asphalt and Track.",
+            "cond": {"surface": ["Asphalt", "Track"]},
+            "effects": {"mult": {"handling": 1.03}}
+        },
+        {
+            "description": "+2.5% core stats in any Audi or Porsche.",
+            "cond": {"make": ["audi", "porsche"]},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025}}
+        },
+        {
+            "description": "Signature: the Sport quattro S1 E2 he took up the mountain — +8% everything.",
+            "cond": {"carID": ["c00119"]},
+            "minLevel": 6,
+            "effects": {"mult": {"topSpeed": 1.08, "accel": 0.92, "handling": 1.08, "mra": 1.08, "ola": 1.08}}
+        }
+    ]
+}

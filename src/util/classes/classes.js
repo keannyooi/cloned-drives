@@ -101,6 +101,9 @@ class BotMessage {
                 case "footer":
                     this.embed.footer.text = value;
                     break;
+                case "color":
+                    this.embed.color = value;
+                    break;
                 default:
                     break;
             }

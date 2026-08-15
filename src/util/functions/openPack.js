@@ -33,6 +33,9 @@ const DIAMOND_BASELINE_CHANCE = 0.001;
  *   - `cardsPerPage` for flexible display batching
  *   - NEW indicator via `discoveredCars`
  *   - Jackpot reveal for NEW mystic cards
+ *   - OPT-IN driver drops via the pack's `driverDrops` config (drivers v2) —
+ *     ONLY active when the caller passes `allowDriverDrops: true`; callers that
+ *     don't pass the flag keep pure-car behaviour regardless of pack JSON.
  *
  * @param {Object} args
  * @param {Object}  args.message        - Discord message object
@@ -41,10 +44,19 @@ const DIAMOND_BASELINE_CHANCE = 0.001;
  * @param {boolean} [args.test]         - Test mode (display only, no garage changes)
  * @param {Array}   [args.discoveredCars] - Player's discovered carIDs (mutated in-place)
  * @param {string}  [args.buttonStyle]  - User's button style preference
- * @returns {Array|undefined} Array of { carID, upgrade } on success, undefined on error
+ * @param {boolean} [args.allowDriverDrops] - Enable the pack's `driverDrops` config
+ *                                       (caller must know how to grant drivers)
+ * @param {string[]} [args.ownedDriverIDs] - Player's owned driverIDs — used ONLY to
+ *                                       exclude serialised drivers the player
+ *                                       already owns (can never be received twice)
+ * @returns {Array|undefined} Array of { carID, upgrade } entries — plus, when
+ *                            allowDriverDrops is set, { driverDrop: "<driverID>" }
+ *                            entries for slots that yielded a driver — on success,
+ *                            undefined on error
  */
 async function openPack(args) {
-  const { message, currentPack, currentMessage, test, discoveredCars, buttonStyle } = args;
+  const { message, currentPack, currentMessage, test, discoveredCars, buttonStyle,
+          allowDriverDrops, ownedDriverIDs } = args;
   const carFiles = getCarFiles();
 
   // === Pack configuration (all optional, with backward-compatible defaults) ===
@@ -53,6 +65,22 @@ async function openPack(args) {
   const packFilter = currentPack.filter || {};
   const noDupes = currentPack.noDuplicates || false;
   const repetition = currentPack.repetition || 1;
+
+  // === Driver drops (drivers v2, opt-in per pack JSON) ===
+  // driverDrops: [{ slot, chance (percent), rarities: {tier: weight},
+  //                 filter: { driverIDs?, collection?, variants?, noVariants? } }]
+  // `slot` is the 1-BASED index into packSequence. With `repetition` > 1 every
+  // repetition of that sequence slot rolls the chance independently.
+  // ONLY consulted when the caller passes allowDriverDrops: true.
+  const driverDropBySlot = new Map();
+  if (allowDriverDrops === true && Array.isArray(currentPack.driverDrops)) {
+    for (const drop of currentPack.driverDrops) {
+      if (drop && typeof drop.slot === "number" && typeof drop.chance === "number"
+          && drop.rarities && typeof drop.rarities === "object") {
+        driverDropBySlot.set(drop.slot, drop);
+      }
+    }
+  }
 
   // === Build the flat slot list ===
   const slots = [];
@@ -87,7 +115,7 @@ async function openPack(args) {
     }
 
     for (let r = 0; r < repetition; r++) {
-      slots.push({ rates, filter: slotFilter, rarityFilters });
+      slots.push({ rates, filter: slotFilter, rarityFilters, driverDrop: driverDropBySlot.get(i + 1) || null });
     }
   }
 
@@ -157,7 +185,10 @@ async function openPack(args) {
       desc: "Adjust your filter or choose a different pack.",
       author: message.author,
     });
-    return errorMessage.sendMessage({ currentMessage });
+    // preserve: true — without it this send releases the caller's command lock
+    // mid-flow (classes.js deleteID side effect), leaving e.g. the rest of a
+    // cd-rewards batch running unlocked.
+    return errorMessage.sendMessage({ currentMessage, preserve: true });
   }
 
   if (mainFiltered.length < totalCards && !hasAnyPool(slots)) {
@@ -167,16 +198,33 @@ async function openPack(args) {
       desc: "Consider reducing repetitions or adjusting the filter.",
       author: message.author,
     });
-    return errorMessage.sendMessage({ currentMessage });
+    // preserve: true — without it this send releases the caller's command lock
+    // mid-flow (classes.js deleteID side effect), leaving e.g. the rest of a
+    // cd-rewards batch running unlocked.
+    return errorMessage.sendMessage({ currentMessage, preserve: true });
   }
 
   // === Roll cards ===
   let addedCars = [];
+  const driverPulls = [];              // { driverDrop: "<driverID>" } entries (drivers v2)
+  const droppedSerialisedIDs = new Set(); // same serialised driver can't drop twice in one opening
   const pulledCarIDs = new Set();
   let diamondPulled = false; // hard cap: max 1 diamond per pack opening
 
   for (let i = 0; i < totalCards; i++) {
-    const { rates, filter, rarityFilters } = slots[i];
+    const { rates, filter, rarityFilters, driverDrop } = slots[i];
+
+    // === Driver-drop pre-roll (opt-in, drivers v2) ===
+    // chance% for this slot to yield a DRIVER instead of a car. An empty pool
+    // (filter matches nothing / serialised mints exhausted) falls through to
+    // the normal car roll so the slot is never wasted.
+    if (driverDrop && Math.random() * 100 < driverDrop.chance) {
+      const droppedID = await rollDriverDrop(driverDrop, ownedDriverIDs || [], droppedSerialisedIDs);
+      if (droppedID) {
+        driverPulls.push({ driverDrop: droppedID });
+        continue; // this slot yielded a driver instead of a car
+      }
+    }
 
     let chosenCarID = null;
     let chosenUpgrade = "000";
@@ -244,7 +292,10 @@ async function openPack(args) {
         desc: "Consider adjusting the filter or pack settings.",
         author: message.author,
       });
-      return errorMessage.sendMessage({ currentMessage });
+      // preserve: true — without it this send releases the caller's command lock
+    // mid-flow (classes.js deleteID side effect), leaving e.g. the rest of a
+    // cd-rewards batch running unlocked.
+    return errorMessage.sendMessage({ currentMessage, preserve: true });
     }
 
     if (!fromPool && chosenUpgrade === "000" && currentPack.upgradeChance) {
@@ -459,7 +510,45 @@ async function openPack(args) {
     }
   }
 
-  return addedCars;
+  // === Display driver drops (each driver card gets its own reveal page) ===
+  if (driverPulls.length > 0) {
+    // Lazy requires — only pack openings that actually dropped a driver pay
+    // for the race-week module graph.
+    const { getDriver } = require("./dataManager.js");
+    const { rarityOf, driverDisplayName } = require("./raceWeekEvents.js");
+
+    for (const pull of driverPulls) {
+      const driver = getDriver(pull.driverDrop);
+      const rarity = driver ? rarityOf(driver) : "base";
+      const line = `🏁 **DRIVER CARD** — ${driverDisplayName(driver || pull.driverDrop)} **[${rarity}]**`;
+
+      const embedOpts = {
+        channel: message.channel,
+        title: "🏁 DRIVER CARD! 🏁",
+        desc: "A driver emerges from this pack!",
+        author: message.author,
+        thumbnail: currentPack["pack"],
+        fields: [{ name: "Driver Pulled", value: line }],
+        footer: test
+          ? "This is a test pack — this driver won't join your paddock."
+          : null,
+      };
+      if (driver && driver.image) {
+        embedOpts.image = driver.image;
+      }
+
+      const driverEmbed = new InfoMessage(embedOpts);
+      await driverEmbed.sendMessage({
+        currentMessage: isFirstPage ? currentMessage : null,
+        preserve: true,
+      });
+      isFirstPage = false;
+    }
+  }
+
+  // Driver-drop entries ride along at the end of the returned array — callers
+  // that opted in split on the `driverDrop` key; everyone else never sees them.
+  return [...addedCars, ...driverPulls];
 }
 
 // ============================================================
@@ -537,6 +626,110 @@ async function playDiamondBuildup(teaserMessage, packName) {
     }
     await new Promise(r => setTimeout(r, 1200));
   }
+}
+
+/**
+ * Roll a driver from a pack's driverDrops slot config (drivers v2).
+ *
+ * Pool = all loaded drivers matching the drop's filter, bucketed by canon
+ * rarity (rarityOf handles legacy rarity strings in both driver JSONs and the
+ * config's weight keys). The rarity is rolled by weight over the tiers that
+ * actually have candidates — an empty configured tier never wastes the drop.
+ * Serialised candidates respect the global mint (isSerialAvailable), the
+ * player's ownership (never receivable twice), and same-opening uniqueness.
+ *
+ * @param {Object}   dropConfig           - { chance, rarities: {tier: weight}, filter? }
+ * @param {string[]} ownedDriverIDs       - Player's owned driverIDs (serialised exclusion only)
+ * @param {Set}      droppedSerialisedIDs - Serialised IDs already dropped this opening (mutated)
+ * @returns {Promise<string|null>} driverID, or null when no candidate exists
+ */
+async function rollDriverDrop(dropConfig, ownedDriverIDs, droppedSerialisedIDs) {
+  // Lazy requires keep openPack dependency-light for pure-car callers.
+  const { getAllDrivers } = require("./dataManager.js");
+  const { rarityOf } = require("./raceWeekEvents.js");
+  const { isSerialAvailable } = require("./raceWeekManager.js");
+
+  const dropFilter = dropConfig.filter || {};
+
+  // Bucket matching drivers by canon rarity
+  const byRarity = {};
+  for (const driver of getAllDrivers()) {
+    // Recruit-exclusive drivers are shop/offer purchases — never pack drops.
+    if (driver.recruitExclusive === true) continue;
+    if (!driverMatchesDropFilter(driver, dropFilter)) continue;
+    const rarity = rarityOf(driver);
+    if (!byRarity[rarity]) byRarity[rarity] = [];
+    byRarity[rarity].push(driver);
+  }
+
+  // Serialised entries: drop the ones the player owns, the ones already
+  // dropped in this opening, and the ones whose global mint is exhausted.
+  if (byRarity.serialised) {
+    const available = [];
+    for (const driver of byRarity.serialised) {
+      if (ownedDriverIDs.includes(driver.driverID)) continue;
+      if (droppedSerialisedIDs.has(driver.driverID)) continue;
+      if (await isSerialAvailable(driver.driverID)) available.push(driver);
+    }
+    byRarity.serialised = available;
+  }
+
+  // Normalize config weight keys to canon tiers (legacy keys merge by summing)
+  const weights = {};
+  for (const [tier, weight] of Object.entries(dropConfig.rarities)) {
+    if (typeof weight !== "number" || weight <= 0) continue;
+    const canonTier = rarityOf(tier);
+    weights[canonTier] = (weights[canonTier] || 0) + weight;
+  }
+
+  // Weighted roll over tiers with at least one candidate
+  const tiers = Object.entries(weights)
+    .filter(([tier]) => byRarity[tier] && byRarity[tier].length > 0);
+  if (tiers.length === 0) return null;
+
+  const totalWeight = tiers.reduce((sum, [, w]) => sum + w, 0);
+  let roll = Math.random() * totalWeight;
+  let chosenTier = tiers[tiers.length - 1][0];
+  for (const [tier, weight] of tiers) {
+    roll -= weight;
+    if (roll < 0) {
+      chosenTier = tier;
+      break;
+    }
+  }
+
+  const pool = byRarity[chosenTier];
+  const driver = pool[Math.floor(Math.random() * pool.length)];
+  if (chosenTier === "serialised") droppedSerialisedIDs.add(driver.driverID);
+  return driver.driverID;
+}
+
+/**
+ * Driver-drop filter matcher. Supported keys (all optional):
+ *   driverIDs  - array: driver must be one of these IDs
+ *   collection - string: case-insensitive match on driver.collection
+ *   variants   - array: case-insensitive match on driver.variant
+ *   noVariants - true: only drivers WITHOUT a variant
+ */
+function driverMatchesDropFilter(driver, filter) {
+  if (Array.isArray(filter.driverIDs) && !filter.driverIDs.includes(driver.driverID)) {
+    return false;
+  }
+  if (typeof filter.collection === "string") {
+    if (typeof driver.collection !== "string"
+        || driver.collection.toLowerCase() !== filter.collection.toLowerCase()) {
+      return false;
+    }
+  }
+  if (filter.noVariants && driver.variant) {
+    return false;
+  }
+  if (Array.isArray(filter.variants)) {
+    if (typeof driver.variant !== "string") return false;
+    const wanted = filter.variants.map((v) => String(v).toLowerCase());
+    if (!wanted.includes(driver.variant.toLowerCase())) return false;
+  }
+  return true;
 }
 
 /** Shallow-merge two filter objects (override takes precedence). */

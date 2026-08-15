@@ -2,7 +2,7 @@
 
 const bot = require("../../config/config.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../consts/consts.js");
-const { getCar, getPack } = require("./dataManager.js");
+const { getCar, getPack, getDriver } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 
 function listRewards(rewards) {
@@ -29,6 +29,15 @@ function listRewards(rewards) {
             case "pack":
                 let pack = getPack(value);
                 rewardString += `${pack["packName"]}, `;
+                break;
+            case "driver":
+                // Display convention: Name (Variant) (Year), variant omitted when empty;
+                // falls back to the raw ID if the driver file isn't loaded.
+                let driver = getDriver(value);
+                let driverName = driver
+                    ? (driver.variant ? `${driver.name} (${driver.variant}) (${driver.year})` : `${driver.name} (${driver.year})`)
+                    : value;
+                rewardString += `${driverName} (Driver), `;
                 break;
             default:
                 break;

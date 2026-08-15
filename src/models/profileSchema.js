@@ -30,6 +30,37 @@ const profileSchema = new Schema({
             reqs: {}
         }
     },
+    // Race Week (replaces cd-rr's use of rrStats; rrStats kept for legacy data).
+    // Default applies only at doc creation — old profiles rely on lazy init in code.
+    raceWeekStats: {
+        type: Object,
+        default: {
+            weeklyWins: 0,
+            weeklyLosses: 0,
+            weeklyMargin: 0,
+            claimedThresholds: [],
+            dailySkips: 0,
+            lastPlayedDay: "",
+            opponent: {
+                carID: "",
+                upgrade: "000"
+            },
+            trackID: "",
+            reqs: {},
+            activeDriver: "d00000",
+            ownedDrivers: ["d00000"],
+            // { "<driverID>": { dupes: N, level: N } } — level 1 (owned) needs
+            // no entry; an entry appears on a driver's first duplicate.
+            driverXP: {},
+            // Unique carIDs raced this week (showcase event ring; reset weekly).
+            usedCars: [],
+            packShards: 0,
+            recentLosses: [],
+            activeEvent: null,
+            bestWeek: 0,
+            legacyHighestStreak: 0
+        }
+    },
     dailyStats: {
         type: Object,
         default: {

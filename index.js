@@ -16,6 +16,18 @@ const endPvpEvent = require("./src/util/functions/endPvpEvent.js");
 const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
 const { checkAutoEvents } = require("./src/util/functions/autoEvents.js");
+const { checkRaceWeekRollover } = require("./src/util/functions/raceWeekManager.js");
+const { handleSelfRoleInteraction } = require("./src/util/functions/handleSelfRole.js");
+
+/**
+ * The weekly rollover resets EVERY player's week, so a devMode bot — which
+ * shares the production database — must not run it by accident. Set
+ * RACEWEEK_DEV_ROLLOVER=true in .env to deliberately test it on dev; the
+ * announcement is printed to the console there instead of the live channel.
+ */
+function allowRaceWeekRollover() {
+    return !bot.devMode || process.env.RACEWEEK_DEV_ROLLOVER === "true";
+}
 const tracker = require("./src/util/functions/tracker.js");
 const { takeSnapshot, distributePlacementRewards } = require("./src/util/functions/packBattleManager.js");
 const serverStatModel = require("./src/models/serverStatSchema.js");
@@ -76,6 +88,9 @@ bot.once("ready", async () => {
     bot.awakenTime = DateTime.now();
 
     await bot.fetchHomeGuild();
+    // devMode shares the production DB — a dev bot must never run (or announce)
+    // the live Monday rollover. Test rollovers manually instead.
+    if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] startup check failed: ${error.message}`));
     const members = await bot.homeGuild.members.fetch();
     members.forEach(async (user) => {
         await upsertUserRecord(user);
@@ -94,6 +109,18 @@ bot.on("guildMemberAdd", async (member) => {
     }
 });
 
+// Persistent component buttons (the #auto-assign-roles panel). Every other
+// button in the bot runs on a per-message collector; these have to survive
+// restarts, so they route through here instead.
+bot.on("interactionCreate", async (interaction) => {
+    try {
+        await handleSelfRoleInteraction(interaction);
+    }
+    catch (error) {
+        console.log(`[interactionCreate] unhandled: ${error.stack}`);
+    }
+});
+
 bot.on("messageUpdate", (oldMessage, newMessage) => {
     if (bot.awakenTime < oldMessage.createdTimestamp) {
         processCommand(newMessage);
@@ -102,6 +129,10 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
 
 // loop thingy - checks for expired events/offers every 3 minutes
 setInterval(async () => {
+    // Race Week rollover check — idempotent, fire-and-forget (never in devMode:
+    // shared prod DB, see the ready-hook note)
+    if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] rollover check failed: ${error.message}`));
+
     // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch)
     const [events, championships, offers, packBattles, pvpEvents, playerDatum] = await Promise.all([
         eventModel.find({ isActive: true }).lean(),

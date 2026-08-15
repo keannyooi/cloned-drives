@@ -1,0 +1,29 @@
+{
+    "driverID": "d00020",
+    "name": "Michèle Mouton",
+    "variant": "",
+    "description": "Four WRC wins in the Audi quattro and the outright Pikes Peak record in 1985 — still the fastest woman in rallying history.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3% core stats on Gravel and OffRoad.",
+            "cond": {"surface": ["Gravel", "OffRoad"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "+3% acceleration in any 4WD car.",
+            "cond": {"driveType": ["4wd"]},
+            "minLevel": 3,
+            "effects": {"mult": {"accel": 0.97}}
+        },
+        {
+            "description": "Signature: the S1 E2 — Pikes Peak, no guardrails — +6% everything.",
+            "cond": {"carID": ["c00119"]},
+            "minLevel": 6,
+            "effects": {"mult": {"topSpeed": 1.06, "accel": 0.94, "handling": 1.06, "mra": 1.06, "ola": 1.06}}
+        }
+    ]
+}

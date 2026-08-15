@@ -10,6 +10,16 @@ function addCars(garage, cars) {
         const existingCar = garageMap.get(carID);
 
         if (existingCar) {
+            // Heal corrupt legacy entries (missing/invalid upgrades object) —
+            // an unguarded dereference here used to throw AFTER a pack's
+            // reveal, silently voiding the whole opening.
+            if (!existingCar.upgrades || typeof existingCar.upgrades !== "object") {
+                const healed = {};
+                for (const key of Object.keys(carSave)) {
+                    healed[key] = 0;
+                }
+                existingCar.upgrades = healed;
+            }
             // Increment upgrade count if car exists
             existingCar.upgrades[upgrade] = (existingCar.upgrades[upgrade] || 0) + 1;
         } else {

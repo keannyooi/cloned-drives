@@ -2,6 +2,7 @@
 .env
 .vscode/
 node_modules/
+docs/
 dump/
 mongodump.exe
 .claude/
@@ -10,3 +11,10 @@ mongodump.exe
 scripts/*.csv
 scripts/handling-audit-report.md
 scripts/provingGrounds.json
+economy_sim.csv
+scripts/raceweek_tuning.json
+preview-serial.png
+
+# creator submissions — operational data mirrored out of Mongo, not game data.
+# Mongo is the source of truth; these files are the local recovery copy.
+src/submissions/

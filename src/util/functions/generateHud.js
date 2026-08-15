@@ -48,40 +48,57 @@ async function loadImageWithFallback(imagePath, timeout = 2000) {
 }
 
 /**
- * Generates a race HUD image for a car.
- * @param {Object} currentCar - The car object to generate the HUD for.
- * @param {string} upgrade - The upgrade level (e.g., "333", "000", "996").
- * @returns {Promise<AttachmentBuilder>} - Discord image attachment.
+ * Renders a 500x312 HUD canvas: the racehud art with the GIVEN stat values
+ * printed on. Values are taken as-is (no tune recomputation), so callers can
+ * pass driver-boosted race modules and the printed numbers match what the
+ * race engine actually uses.
+ * @param {Object} spec - { racehud, topSpeed, accel, handling, driveType, tyreType }
+ * @returns {Promise<Canvas>} - the composed canvas (draw it or encode it).
  */
-async function generateHud(currentCar, upgrade) {
+async function renderHudCanvas(spec) {
     const canvas = createCanvas(500, 312);
     const context = canvas.getContext("2d");
     context.textAlign = "center";
     context.fillStyle = "#ffffff";
     context.font = "bold italic 17px Rubik";
 
-    // Load HUD background image with fallback
-    const hud = await loadImageWithFallback(currentCar["racehud"]);
+    const hud = await loadImageWithFallback(spec["racehud"]);
     context.drawImage(hud, 0, 0, 500, 312);
 
+    const accelDisplay = spec.accel === 99.9 ? "N/A" : Number(spec.accel).toFixed(1);
+    context.fillText(String(spec.topSpeed), 28, 109);
+    context.fillText(accelDisplay, 28, 135);
+    context.fillText(String(spec.handling), 28, 161);
+    context.fillText(spec["driveType"], 28, 188);
+    context.fillText(tyreAbbrevs[spec["tyreType"]] || "???", 28, 214);
+    return canvas;
+}
+
+/**
+ * Generates a race HUD image for a car.
+ * @param {Object} currentCar - The car object to generate the HUD for.
+ * @param {string} upgrade - The upgrade level (e.g., "333", "000", "996").
+ * @returns {Promise<AttachmentBuilder>} - Discord image attachment.
+ */
+async function generateHud(currentCar, upgrade) {
     // Load base model reference or fallback to currentCar
     const bmReference = modifiedBase(currentCar);
 
     // Calculate tuned stats using the new system
     const tunedStats = calcTune(bmReference, upgrade || "000");
 
-    // Format acceleration
-    const accelDisplay = tunedStats.accel === 99.9 ? "N/A" : tunedStats.accel.toFixed(1);
-
-    // Draw text on HUD
-    context.fillText(tunedStats.topSpeed.toString(), 28, 109);
-    context.fillText(accelDisplay, 28, 135);
-    context.fillText(tunedStats.handling.toString(), 28, 161);
-    context.fillText(bmReference["driveType"], 28, 188);
-    context.fillText(tyreAbbrevs[bmReference["tyreType"]] || "???", 28, 214);
+    const canvas = await renderHudCanvas({
+        racehud: currentCar["racehud"],
+        topSpeed: tunedStats.topSpeed,
+        accel: tunedStats.accel,
+        handling: tunedStats.handling,
+        driveType: bmReference["driveType"],
+        tyreType: bmReference["tyreType"]
+    });
 
     // Return the image as a Discord attachment
     return new AttachmentBuilder(await canvas.encode("jpeg"), { name: "hud.jpeg" });
 }
 
 module.exports = generateHud;
+module.exports.renderHudCanvas = renderHudCanvas;

@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
-const { moneyEmojiID} = require("../util/consts/consts.js");
+const { moneyEmojiID, patronRoleID } = require("../util/consts/consts.js");
 const { inDailyGiftPool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
@@ -78,6 +78,10 @@ module.exports = {
             }
             else if (streak % 7 === 0) {
                 // === Streak 7: Random non-elite, non-booster daily pack ===
+                // NOTE: this role ID does not exist on the server, so isPatron is
+                // ALWAYS false and the widened streak-7 pack pool never applies.
+                // Left as-is deliberately — the pool isn't meant to widen today.
+                // Point it at patronRoleID if that ever changes.
                 const isPatron = guildMember.roles.cache.has("860147600459956224");
                 const eligiblePacks = packFiles.filter(f => {
                     const pack = getPack(f);
@@ -123,7 +127,7 @@ module.exports = {
             }
 
             let moneyReward = 7500 + ((streak - 1) * 4000);
-            if (guildMember.roles.cache.has("860144481109016607")) {
+            if (guildMember.roles.cache.has(patronRoleID)) {
                 moneyReward *= 1.5;
             }
             money += moneyReward;
@@ -150,7 +154,7 @@ module.exports = {
                     { name: "Current Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
                 ]
             });
-            if (guildMember.roles.cache.has("860144481109016607")) {
+            if (guildMember.roles.cache.has(patronRoleID)) {
                 infoMessage.editEmbed({ footer: "As a token of appreciation for becoming a Cloned Drives patron, you now enjoy a x1.5 multiplier for your money daily rewards!" });
             }
             return infoMessage.sendMessage();

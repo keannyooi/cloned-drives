@@ -1,7 +1,8 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { getPack, getPackFiles } = require("../util/functions/dataManager.js");
+const { getPack, getPackFiles, getDriver, getAllDrivers } = require("../util/functions/dataManager.js");
+const { driverDisplayName, rarityOf } = require("../util/functions/raceWeekEvents.js");
 const search = require("../util/functions/search.js");
 
 const packFiles = getPackFiles();
@@ -12,10 +13,10 @@ const offerModel = require("../models/offerSchema.js");
 
 module.exports = {
     name: "givereward",
-    usage: ["<username> pack <pack name>", "<username> offer <offer name>"],
+    usage: ["<username> pack <pack name>", "<username> driver <driver ID>", "<username> offer <offer name>"],
     args: 3,
     category: "Admin",
-    description: "Gifts someone a pack or offer. Those who are given a pack/offer via this command can claim them through cd-rewards.",
+    description: "Gifts someone a pack, driver or offer. Those who are given a reward via this command can claim them through cd-rewards.",
     async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
@@ -38,7 +39,9 @@ module.exports = {
         }
 
         async function addStuff(user, currentMessage) {
-            const { unclaimedRewards } = await profileModel.findOne({ userID: user.id });
+            // New entries are collected here and $pushed atomically at the end —
+            // never a full-array $set that could clobber concurrent grants.
+            const newRewards = [];
             let successMessage, operationFailed = false;
             switch (args[1].toLowerCase()) {
                 case "pack":
@@ -50,7 +53,7 @@ module.exports = {
                             }
                             else {
                                 let [pack] = response;
-                                unclaimedRewards.push({ pack: pack.slice(0, 6), origin: message.author.tag });
+                                newRewards.push({ pack: pack.slice(0, 6), origin: message.author.tag });
                                 let currentPack = getPack(pack);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
@@ -63,6 +66,48 @@ module.exports = {
                         .catch(error => {
                             throw error;
                         });
+                    break;
+                case "driver":
+                    let driverID = args[2].toLowerCase();
+                    let giftDriver = getDriver(driverID);
+                    if (!giftDriver) {
+                        operationFailed = true;
+                        const driverError = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, driver ID provided invalid.",
+                            desc: `Valid driver IDs: \`${getAllDrivers().map(d => d.driverID).sort().join("`, `")}\``,
+                            author: message.author
+                        }).displayClosest(driverID);
+                        await driverError.sendMessage({ currentMessage });
+                    }
+                    else if (rarityOf(giftDriver) === "serialised") {
+                        operationFailed = true;
+                        const serialisedError = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, serialised drivers cannot be awarded.",
+                            desc: "Serialised drivers are mint-capped and can only drop from their dedicated sources (Driver Scout / pack driver drops).",
+                            author: message.author
+                        });
+                        await serialisedError.sendMessage({ currentMessage });
+                    }
+                    else if (giftDriver.recruitExclusive === true) {
+                        operationFailed = true;
+                        const recruitError = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, recruit-exclusive drivers cannot be awarded.",
+                            desc: "This driver is only obtainable from the recruitment shop (`cd-recruit`) or a limited offer.",
+                            author: message.author
+                        });
+                        await recruitError.sendMessage({ currentMessage });
+                    }
+                    else {
+                        newRewards.push({ driver: driverID, origin: message.author.tag });
+                        successMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully gifted driver ${driverDisplayName(giftDriver)} to ${user.username}!`,
+                            author: message.author
+                        });
+                    }
                     break;
                 case "offer":
                     const offers = await offerModel.find();
@@ -81,11 +126,11 @@ module.exports = {
                                             let template = {};
                                             template[key] = value;
                                             template.origin = message.author.tag;
-                                            unclaimedRewards.push(template);
+                                            newRewards.push(template);
                                             break;
                                         case "cars":
                                             for (let carID of value) {
-                                                unclaimedRewards.push({
+                                                newRewards.push({
                                                     car: {
                                                         carID,
                                                         upgrade: "000"
@@ -95,7 +140,7 @@ module.exports = {
                                             }
                                             break;
                                         case "pack":
-                                            unclaimedRewards.push({
+                                            newRewards.push({
                                                 pack: value.slice(0, 6),
                                                 origin: message.author.tag
                                             });
@@ -121,14 +166,19 @@ module.exports = {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
                         title: `Error, I don't know the kind of thing you want to gift to ${user.username}.`,
-                        desc: "FYI, you can either gift a `pack` or an `offer`.",
+                        desc: "FYI, you can either gift a `pack`, a `driver` or an `offer`.",
                         author: message.author,
                     }).displayClosest(args[1].toLowerCase());
                     await errorMessage.sendMessage({ currentMessage });
             }
 
             if (!operationFailed) {
-                await profileModel.updateOne({ userID: user.id }, { unclaimedRewards });
+                if (newRewards.length > 0) {
+                    await profileModel.updateOne(
+                        { userID: user.id },
+                        { "$push": { unclaimedRewards: { "$each": newRewards } } }
+                    );
+                }
                 return successMessage.sendMessage({ currentMessage });
             }
         }

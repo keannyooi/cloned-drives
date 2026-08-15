@@ -1,0 +1,23 @@
+{
+    "driverID": "d00004",
+    "name": "Gordon Murray",
+    "variant": "",
+    "description": "The design genius behind the fastest car of its era. Anything built to chase 240mph gets a little extra from the man who drew it.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "All cars with over 240mph top speed gain 5mph",
+            "cond": {"statMin": {"topSpeed": 240}},
+            "effects": {"add": {"topSpeed": 5}}
+        },
+        {
+            "description": "+6 handling and +5 MRA in the McLaren F1 (1993) — his masterpiece",
+            "cond": {"carID": ["c00800"]},
+            "effects": {"add": {"handling": 6, "mra": 5}},
+            "minLevel": 3
+        }
+    ]
+}

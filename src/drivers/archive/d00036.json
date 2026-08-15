@@ -1,0 +1,27 @@
+{
+    "driverID": "d00036",
+    "name": "\"Big Daddy\" Don Garlits",
+    "variant": "",
+    "description": "Father of the rear-engined dragster. Straight lines only — corners are for people with time to waste.",
+    "image": "",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+5 flat top speed and +8 OLA on Drag strips.",
+            "cond": {"surface": ["Drag"]},
+            "effects": {"add": {"topSpeed": 5, "ola": 8}}
+        },
+        {
+            "description": "-0.3s off the 0-60 in RWD cars.",
+            "cond": {"driveType": ["rwd"]},
+            "minLevel": 3,
+            "effects": {"add": {"accel": -0.3}}
+        },
+        {
+            "description": "Dragsters don't turn: -4 flat handling, everywhere.",
+            "effects": {"add": {"handling": -4}}
+        }
+    ]
+}

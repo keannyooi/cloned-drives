@@ -229,11 +229,26 @@ module.exports = {
                         await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                         async function acceptedFunction(currentMessage) {
+                            // Re-fetch the profile so the write is built from FRESH data —
+                            // another writer may have touched the garage while the dialog was open.
+                            const freshData = await profileModel.findOne({ userID: message.author.id });
+                            const freshGarageCar = freshData.garage.find(c => c.carID === selectedGarageCar.carID);
+                            const freshDesired = freshData.garage.find(c => c.carID === desiredCarID.slice(0, 6));
+                            if (!freshGarageCar || calcTotal(freshGarageCar) < 2 || (freshDesired && calcTotal(freshDesired) > 0)) {
+                                const errorMessage = new ErrorMessage({
+                                    channel: message.channel,
+                                    title: "Error, your garage changed while you were deciding.",
+                                    desc: "You no longer own a duplicate of the selected Diamond car, or you now own the desired car. Please run the command again.",
+                                    author: message.author
+                                });
+                                return errorMessage.sendMessage({ currentMessage });
+                            }
+
                             // Find the upgrade to remove (prefer stock, then lowest upgrade)
                             let upgradeToRemove = null;
                             const upgradeOrder = getAvailableTunes();
                             for (const upg of upgradeOrder) {
-                                if (selectedGarageCar.upgrades[upg] > 0) {
+                                if (freshGarageCar.upgrades[upg] > 0) {
                                     upgradeToRemove = upg;
                                     break;
                                 }
@@ -250,22 +265,22 @@ module.exports = {
                             }
 
                             // Remove one of the duplicate Diamond cars
-                            updateHands(playerData, selectedGarageCar.carID, upgradeToRemove, "remove");
-                            selectedGarageCar.upgrades[upgradeToRemove] -= 1;
+                            updateHands(freshData, freshGarageCar.carID, upgradeToRemove, "remove");
+                            freshGarageCar.upgrades[upgradeToRemove] -= 1;
 
                             // If no more of this car, remove from garage
-                            if (calcTotal(selectedGarageCar) === 0) {
-                                playerData.garage.splice(playerData.garage.indexOf(selectedGarageCar), 1);
+                            if (calcTotal(freshGarageCar) === 0) {
+                                freshData.garage.splice(freshData.garage.indexOf(freshGarageCar), 1);
                             }
 
                             // Add the new Diamond car (stock upgrade)
-                            playerData.garage = addCars(playerData.garage, [{ carID: desiredCarID.slice(0, 6), upgrade: "000" }]);
+                            freshData.garage = addCars(freshData.garage, [{ carID: desiredCarID.slice(0, 6), upgrade: "000" }]);
 
                             // Save to database
                             await profileModel.updateOne({ userID: message.author.id }, {
-                                garage: playerData.garage,
-                                hand: playerData.hand,
-                                decks: playerData.decks
+                                garage: freshData.garage,
+                                hand: freshData.hand,
+                                decks: freshData.decks
                             });
 
                             trackExchange();

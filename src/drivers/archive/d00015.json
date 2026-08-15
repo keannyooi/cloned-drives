@@ -1,0 +1,35 @@
+{
+    "driverID": "d00015",
+    "name": "Michael Schumacher",
+    "variant": "",
+    "description": "Seven world titles, five in a row with Ferrari — the most complete race-craft of his era, and a development driver without equal.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3% core stats in any Ferrari.",
+            "cond": {"make": ["ferrari"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "+2% top speed & MRA on Track and Asphalt.",
+            "cond": {"surface": ["Track", "Asphalt"]},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.02, "mra": 1.02}}
+        },
+        {
+            "description": "Regenmeister: +3% everything in the rain.",
+            "cond": {"weather": ["Rainy"]},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        },
+        {
+            "description": "Signature: the halo Ferraris he shaped — +6% everything.",
+            "cond": {"carID": ["c00395", "c02654", "c00397"]},
+            "minLevel": 6,
+            "effects": {"mult": {"topSpeed": 1.06, "accel": 0.94, "handling": 1.06, "mra": 1.06, "ola": 1.06}}
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "driverID": "d00002",
+    "name": "Lewis Hamilton",
+    "variant": "Champion",
+    "description": "Peak of his powers — qualifying laps that made engineers double-check the telemetry. The car with his own F1 power unit answers only to him.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/LewisHamiltonChampion.png",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+5 handling in any Mercedes",
+            "cond": {"make": ["mercedes-benz"]},
+            "effects": {"add": {"handling": 5}}
+        },
+        {
+            "description": "+4% to every stat when you're the underdog. He has been here before",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 1.04}},
+            "minLevel": 2
+        },
+        {
+            "description": "+6 handling and +3 mra in boss races",
+            "cond": {"bossRace": true},
+            "effects": {"add": {"handling": 6, "mra": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "+8 handling and +4mph top speed in the Mercedes-AMG ONE (2022)",
+            "cond": {"carID": ["c05439"]},
+            "effects": {"add": {"handling": 8, "topSpeed": 4}},
+            "minLevel": 4
+        },
+        {
+            "description": "+5 mra in anything over 900 CR — the sharp end is where he lives",
+            "cond": {"cr": {"start": 900, "end": 9999}},
+            "effects": {"add": {"mra": 5}},
+            "minLevel": 5
+        },
+        {
+            "description": "8% bonus income. Champions get paid",
+            "effects": {"moneyMult": 1.08},
+            "minLevel": 6
+        },
+        {
+            "description": "+7% to every stat of the star cars of this driver!",
+            "cond": {"carID": ["c05439", "c05440", "c00841", "c03829", "c00871"]},
+            "effects": {"mult": {"topSpeed": 1.07, "accel": 0.93, "handling": 1.07, "mra": 1.07, "ola": 1.07}},
+            "minLevel": 7
+        }
+    ]
+}

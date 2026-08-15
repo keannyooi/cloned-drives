@@ -4,7 +4,8 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
-const { getCar, getPack } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { driverDisplayName, levelFromDupes, rarityOf } = require("../util/functions/raceWeekEvents.js");
 const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const openPack = require("../util/functions/openPack.js");
@@ -65,6 +66,7 @@ module.exports = {
 
             if (playerData.money >= offer.price) {
                 const fields = [];
+                let driverGrant = null;   // set by a "driver" entry, applied atomically below
                 playerData.money -= offer.price;
                 for (let [key, value] of Object.entries(offer.offer)) {
                     switch (key) {
@@ -97,6 +99,18 @@ module.exports = {
                             playerData.garage = addCars(playerData.garage, addedCars);
                             fields.push({ name: "Claimed Pack", value: currentPack["packName"], inline: true });
                             break;
+                        case "driver": {
+                            // Offers are one of only two routes for a
+                            // recruit-exclusive driver (the other is cd-recruit).
+                            const offerDriver = getDriver(value);
+                            if (!offerDriver) {
+                                console.log(`buyoffer: unknown driver ID "${value}" in offer ${offer.offerID}, skipping`);
+                                break;
+                            }
+                            driverGrant = { driverID: value, driver: offerDriver };
+                            fields.push({ name: "Claimed Driver", value: driverDisplayName(offerDriver), inline: true });
+                            break;
+                        }
                         default:
                             break;
                     }
@@ -111,14 +125,36 @@ module.exports = {
 
                 const set = {};
                 set[`purchasedPlayers.${message.author.id}`] = amountBought + 1;
-                await Promise.all([
-                    offerModel.updateOne({ offerID: offer.offerID }, { "$set": set }),
-                    profileModel.updateOne({ userID: message.author.id }, {
+                const profileUpdate = {
+                    "$set": {
                         money: playerData.money,
                         fuseTokens: playerData.fuseTokens,
                         garage: playerData.garage,
                         discoveredCars
-                    })
+                    }
+                };
+                // Driver grants use atomic dotted paths so they can't clobber a
+                // concurrent Race Week write with this command's stale snapshot.
+                if (driverGrant) {
+                    const owned = Array.isArray(playerData.raceWeekStats?.ownedDrivers)
+                        ? playerData.raceWeekStats.ownedDrivers : [];
+                    if (!owned.includes(driverGrant.driverID)) {
+                        profileUpdate["$addToSet"] = {
+                            "raceWeekStats.ownedDrivers": { "$each": ["d00000", driverGrant.driverID] }
+                        };
+                    }
+                    else {
+                        const xp = playerData.raceWeekStats?.driverXP?.[driverGrant.driverID];
+                        const dupes = ((xp && typeof xp.dupes === "number") ? xp.dupes : 0) + 1;
+                        profileUpdate["$set"][`raceWeekStats.driverXP.${driverGrant.driverID}`] = {
+                            dupes,
+                            level: levelFromDupes(dupes, rarityOf(driverGrant.driver))
+                        };
+                    }
+                }
+                await Promise.all([
+                    offerModel.updateOne({ offerID: offer.offerID }, { "$set": set }),
+                    profileModel.updateOne({ userID: message.author.id }, profileUpdate)
                 ]);
 
                 trackMoneySpent(offer.price);

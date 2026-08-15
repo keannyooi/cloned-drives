@@ -157,17 +157,31 @@ module.exports = {
                     }
 
                     async function acceptedFunction(currentMessage) {
-                        let balance = playerData.money + money;
-                        updateHands(playerData, currentCar.carID, upgrade, "remove");
-                        currentCar.upgrades[upgrade] -= amount;
-                        if (calcTotal(currentCar) === 0) {
-                            playerData.garage.splice(playerData.garage.indexOf(currentCar), 1);
+                        // Re-fetch the profile so the write is built from FRESH data —
+                        // another writer may have touched the garage while the dialog was open.
+                        const freshData = await profileModel.findOne({ userID: message.author.id });
+                        const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
+                        if (!freshCar || (freshCar.upgrades[upgrade] || 0) < amount) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, your garage changed while you were deciding.",
+                                desc: "You no longer own enough copies of this car at this tune. Please run the command again.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        let balance = freshData.money + money;
+                        updateHands(freshData, freshCar.carID, upgrade, "remove");
+                        freshCar.upgrades[upgrade] -= amount;
+                        if (calcTotal(freshCar) === 0) {
+                            freshData.garage.splice(freshData.garage.indexOf(freshCar), 1);
                         }
                         await profileModel.updateOne({ userID: message.author.id }, {
                             money: balance,
-                            garage: playerData.garage,
-                            hand: playerData.hand,
-                            decks: playerData.decks
+                            garage: freshData.garage,
+                            hand: freshData.hand,
+                            decks: freshData.decks
                         });
 
                         trackMoneyEarned(money);
@@ -456,7 +470,7 @@ async function bulkSellDupes(message, playerData, args) {
         if (stockToSell <= 0) continue;
 
         const basePerCar = Math.round(getSellPrice(car.cr) * sellValueMult(car));
-        toSell.push({ carID: garageCar.carID, count: stockToSell, basePerCar });
+        toSell.push({ carID: garageCar.carID, count: stockToSell, basePerCar, effectiveKeep });
         totalCount += stockToSell;
         totalMoney += basePerCar * stockToSell;
         perModelCount.set(garageCar.carID, stockToSell);
@@ -502,38 +516,51 @@ async function bulkSellDupes(message, playerData, args) {
     try {
         await confirm(message, confirmationMessage, async (currentMessage) => {
             // ─── Apply ──────────────────────────────────────────────────────
+            // Re-fetch the profile so the write is built from FRESH data —
+            // another writer may have touched the garage while the dialog was open.
+            // Each op is re-clamped against fresh stock so the keep guarantee holds
+            // and we never sell more than what was previewed in the confirm embed.
+            const freshData = await profileModel.findOne({ userID: message.author.id });
+            let actualCount = 0;
+            let actualMoney = 0;
+            let actualModels = 0;
             for (const op of toSell) {
-                const garageCar = playerData.garage.find(g => g.carID === op.carID);
+                const garageCar = freshData.garage.find(g => g.carID === op.carID);
                 if (!garageCar) continue;
-                garageCar.upgrades["000"] = (garageCar.upgrades["000"] || 0) - op.count;
+                const stockOwned = garageCar.upgrades?.["000"] || 0;
+                const sellCount = Math.min(op.count, Math.max(stockOwned - op.effectiveKeep, 0));
+                if (sellCount <= 0) continue;
+                garageCar.upgrades["000"] = stockOwned - sellCount;
                 // Only clear hand/decks for tune 000 if it fully zeroed out.
                 if ((garageCar.upgrades["000"] || 0) === 0) {
-                    updateHands(playerData, op.carID, "000", "remove");
+                    updateHands(freshData, op.carID, "000", "remove");
                 }
+                actualCount += sellCount;
+                actualMoney += op.basePerCar * sellCount;
+                actualModels++;
             }
             // Drop garage entries that have 0 across all tunes (rare — only if
             // the safety net was bypassed, which currently can't happen)
-            playerData.garage = playerData.garage.filter(g => calcTotal(g) > 0);
-            const newBalance = playerData.money + totalMoney;
-            playerData.money = newBalance;
+            freshData.garage = freshData.garage.filter(g => calcTotal(g) > 0);
+            const newBalance = freshData.money + actualMoney;
 
             await profileModel.updateOne({ userID: message.author.id }, {
                 money: newBalance,
-                garage: playerData.garage,
-                hand: playerData.hand,
-                decks: playerData.decks
+                garage: freshData.garage,
+                hand: freshData.hand,
+                decks: freshData.decks
             });
 
-            trackMoneyEarned(totalMoney);
-            trackCarsSold(totalCount);
+            trackMoneyEarned(actualMoney);
+            trackCarsSold(actualCount);
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Sold ${totalCount.toLocaleString()} stock duplicate(s)!`,
-                desc: `You earned **${moneyEmoji}${totalMoney.toLocaleString("en")}**.\n\n_All upgraded copies (333+) were preserved._`,
+                title: `Sold ${actualCount.toLocaleString()} stock duplicate(s)!`,
+                desc: `You earned **${moneyEmoji}${actualMoney.toLocaleString("en")}**.\n\n_All upgraded copies (333+) were preserved._`,
                 author: message.author,
                 fields: [
-                    { name: "Models touched", value: modelsTouched.toLocaleString(), inline: true },
+                    { name: "Models touched", value: actualModels.toLocaleString(), inline: true },
                     { name: "Stock kept", value: `${keepStock} of each`, inline: true },
                     { name: "New balance", value: `${moneyEmoji}${newBalance.toLocaleString("en")}`, inline: true }
                 ]

@@ -19,7 +19,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets up a filter for garages and car lists.",
     async execute(message, args) {
-        let { filter, rrStats, settings } = await profileModel.findOne({ userID: message.author.id });
+        let { filter, raceWeekStats, settings } = await profileModel.findOne({ userID: message.author.id });
         let infoMessage;
 
         if (!args[0]) {
@@ -67,7 +67,8 @@ module.exports = {
                 switch (args[1].toLowerCase()) {
                     case "rr":
                     case "randomrace":
-                        reqs = rrStats.reqs;
+                        // raceWeekStats is lazy-initialized; old profiles may lack it entirely
+                        reqs = raceWeekStats?.reqs ?? {};
                         break;
                     default:
                         const errorMessage = new ErrorMessage({

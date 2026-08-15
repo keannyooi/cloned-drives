@@ -1,0 +1,41 @@
+{
+    "driverID": "d00034",
+    "name": "Sabine Schmitz",
+    "variant": "",
+    "description": "Queen of the Nürburgring — 20,000+ laps of the Green Hell, and yes, she really did chase supercars in a van.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/SabineSchmitz.png",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2 handling on Track surfaces",
+            "cond": {"surface": ["Track"]},
+            "effects": {"add": {"handling": 2}}
+        },
+        {
+            "description": "+3 mra on Track surfaces — 20,000 laps of knowing what's next",
+            "cond": {"surface": ["Track"]},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "+2% handling in the Rain on Track. The Green Hell doesn't care about weather",
+            "cond": {"surface": ["Track"], "weather": ["Rainy"]},
+            "effects": {"mult": {"handling": 1.02}},
+            "minLevel": 3
+        },
+        {
+            "description": "The Transit lap: +6 handling in SUVs and Pickups",
+            "cond": {"bodyStyle": ["suv", "pickup"]},
+            "effects": {"add": {"handling": 6}},
+            "minLevel": 4
+        },
+        {
+            "description": "+4 handling in the Porsche 911 GT3 and the Transit SuperVan. Yes, really the van",
+            "cond": {"carID": ["c01078", "c01077", "c02060", "c02061"]},
+            "effects": {"add": {"handling": 4}},
+            "minLevel": 5
+        }
+    ]
+}

@@ -15,7 +15,34 @@ const race = require("../util/functions/race.js");
 const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const profileModel = require("../models/profileSchema.js");
+const makeRewardID = require("../util/functions/rewardID.js");
 const calendarModel = require("../models/calendarSchema.js");
+
+/**
+ * Atomically persist reward entries to unclaimedRewards: money/fuseTokens/
+ * trophies aggregate into the matching same-origin entry via the elemMatch
+ * positional $inc (falling back to a fresh entry), everything else is $pushed
+ * with $each. Never $sets the whole array, so concurrent grants (e.g. Race
+ * Week threshold prizes) can't be clobbered.
+ */
+async function persistRewards(userID, aggregates, entries) {
+    // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
+    const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
+    for (const { key, value, origin } of aggregates) {
+        const res = await profileModel.updateOne(
+            { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
+            { "$inc": { [`unclaimedRewards.$.${key}`]: value } }
+        );
+        const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
+        if (!modified) pushes.push({ [key]: value, origin });
+    }
+    if (pushes.length > 0) {
+        await profileModel.updateOne(
+            { userID },
+            { "$push": { unclaimedRewards: { "$each": pushes } } }
+        );
+    }
+}
 
 module.exports = {
     name: "playcalendar",
@@ -27,7 +54,7 @@ module.exports = {
     description: "Play a calendar event day. Plays the next incomplete unlocked day, or specify a day number.",
     async execute(message, args) {
         const calendars = await calendarModel.find();
-        const { hand, unclaimedRewards, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
         
         if (hand.carID === "") {
             return handMissingError(message);
@@ -268,27 +295,18 @@ module.exports = {
                     
                     const newLongestStreak = Math.max(progress.longestStreak || 0, newStreak);
                     
-                    // Process rewards
+                    // Process rewards (collected here, persisted atomically below)
+                    const aggregateRewards = [], newRewards = [];
                     const rewards = dayData.rewards || {};
                     for (const [key, value] of Object.entries(rewards)) {
                         switch (key) {
                             case "money":
                             case "fuseTokens":
                             case "trophies":
-                                let hasEntry = unclaimedRewards.findIndex(entry => 
-                                    entry.origin === `${calendar.name} (Day ${dayToPlay})` && entry[key] !== undefined
-                                );
-                                if (hasEntry > -1) {
-                                    unclaimedRewards[hasEntry][key] += value;
-                                } else {
-                                    let template = {};
-                                    template[key] = value;
-                                    template.origin = `${calendar.name} (Day ${dayToPlay})`;
-                                    unclaimedRewards.push(template);
-                                }
+                                aggregateRewards.push({ key, value, origin: `${calendar.name} (Day ${dayToPlay})` });
                                 break;
                             case "car":
-                                unclaimedRewards.push({
+                                newRewards.push({
                                     car: {
                                         carID: value.carID.slice(0, 6),
                                         upgrade: value.upgrade
@@ -297,8 +315,14 @@ module.exports = {
                                 });
                                 break;
                             case "pack":
-                                unclaimedRewards.push({
+                                newRewards.push({
                                     pack: value.slice(0, 6),
+                                    origin: `${calendar.name} (Day ${dayToPlay})`
+                                });
+                                break;
+                            case "driver":
+                                newRewards.push({
+                                    driver: value,
                                     origin: `${calendar.name} (Day ${dayToPlay})`
                                 });
                                 break;
@@ -310,17 +334,7 @@ module.exports = {
                         const streakRewards = calendar.streakBonus.rewards || {};
                         for (const [key, value] of Object.entries(streakRewards)) {
                             if (["money", "fuseTokens", "trophies"].includes(key)) {
-                                let hasEntry = unclaimedRewards.findIndex(entry => 
-                                    entry.origin === `${calendar.name} (${calendar.streakBonus.interval}-Day Streak)` && entry[key] !== undefined
-                                );
-                                if (hasEntry > -1) {
-                                    unclaimedRewards[hasEntry][key] += value;
-                                } else {
-                                    let template = {};
-                                    template[key] = value;
-                                    template.origin = `${calendar.name} (${calendar.streakBonus.interval}-Day Streak)`;
-                                    unclaimedRewards.push(template);
-                                }
+                                aggregateRewards.push({ key, value, origin: `${calendar.name} (${calendar.streakBonus.interval}-Day Streak)` });
                             }
                         }
                         message.channel.send(`🔥 **${calendar.streakBonus.interval}-Day Streak Bonus!** Claim your reward with \`cd-rewards\`!`);
@@ -334,13 +348,14 @@ module.exports = {
                                 case "money":
                                 case "fuseTokens":
                                 case "trophies":
-                                    unclaimedRewards.push({
+                                    // Completion bonus is a one-off — always its own entry (matches prior behavior).
+                                    newRewards.push({
                                         [key]: value,
                                         origin: `${calendar.name} (Completion Bonus)`
                                     });
                                     break;
                                 case "car":
-                                    unclaimedRewards.push({
+                                    newRewards.push({
                                         car: {
                                             carID: value.carID.slice(0, 6),
                                             upgrade: value.upgrade
@@ -349,8 +364,14 @@ module.exports = {
                                     });
                                     break;
                                 case "pack":
-                                    unclaimedRewards.push({
+                                    newRewards.push({
                                         pack: value.slice(0, 6),
+                                        origin: `${calendar.name} (Completion Bonus)`
+                                    });
+                                    break;
+                                case "driver":
+                                    newRewards.push({
+                                        driver: value,
                                         origin: `${calendar.name} (Completion Bonus)`
                                     });
                                     break;
@@ -373,7 +394,7 @@ module.exports = {
                     
                     await Promise.all([
                         calendarModel.updateOne({ calendarID: calendar.calendarID }, { "$set": set }),
-                        profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards })
+                        persistRewards(message.author.id, aggregateRewards, newRewards)
                     ]);
                     
                     let victoryMsg = `**Day ${dayToPlay} complete!**`;

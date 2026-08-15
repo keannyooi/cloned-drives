@@ -1,0 +1,40 @@
+{
+    "driverID": "d00005",
+    "name": "Bobby \"Big Block\" Duke",
+    "variant": "",
+    "description": "Lives for V8 thunder — American iron runs harder with him aboard. Just don't hand him anything on slicks; subtlety was never in the toolbox.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/BobbyBigBlockDuke.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2.5% top speed and MRA in American cars",
+            "cond": {"country": ["us"]},
+            "effects": {"mult": {"topSpeed": 1.025, "mra": 1.025}}
+        },
+        {
+            "description": "-3% handling in Slick-tyre cars. Subtlety was never in the toolbox",
+            "cond": {"tyreType": ["slick"]},
+            "effects": {"mult": {"handling": 0.97}}
+        },
+        {
+            "description": "+5 mra and ola in American cars — that's a big-block launch",
+            "cond": {"country": ["us"]},
+            "effects": {"add": {"ola": 5, "mra": 5}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3% top speed in American cars over 1600kg. Heavy is fine. Heavy is the point",
+            "cond": {"country": ["us"], "statMin": {"weight": 1600}},
+            "effects": {"mult": {"topSpeed": 1.03}},
+            "minLevel": 3
+        },
+        {
+            "description": "+6 mra in the Camaro ZL1 1LE, Z/28 and Challenger",
+            "cond": {"carID": ["c00257", "c00256", "c00347"]},
+            "effects": {"add": {"mra": 6}},
+            "minLevel": 4
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "driverID": "d00001",
+    "name": "Lewis Hamilton",
+    "variant": "Prime",
+    "description": "Six titles deep and still finding tenths. Anything wearing the three-pointed star corners like it owes him a championship.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/LewisHamiltonPrime.png",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3 handling in any Mercedes",
+            "cond": {"make": ["mercedes-benz"]},
+            "effects": {"add": {"handling": 3}}
+        },
+        {
+            "description": "+3 Top Speed in any 2017-2020 coupe",
+            "cond": {"modelYear": {"start": 2017, "end": 2020}, "bodyStyle": ["Coupe"]},
+            "effects": {"add": {"topSpeed": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling in the Mercedes-AMG Project ONE (2017)",
+            "cond": {"carID": ["c05440"]},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+		{
+            "description": "+6 mra in any 2019 car",
+            "cond": {"modelYear": {"start": 2019, "end": 2019}},
+            "effects": {"add": {"mra": 6}},
+            "minLevel": 4
+        },
+		{
+            "description": "5% bonus income when using this driver",
+            "effects": {"moneyMult": 1.05},
+            "minLevel": 5
+        },
+		{
+            "description": "+5% to every stat of the star cars of this driver!",
+            "cond": {"carID": ["c05440","c05439","c05510","c05678","c02999","c05518"]},
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 1.05}},
+            "minLevel": 6
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "driverID": "d00009",
+    "name": "Torsten Fjeld",
+    "variant": "",
+    "description": "At home where the tarmac ends — a flying Norseman who reads gravel notes like scripture and treats snowbanks as apex markers.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3% top speed, 0-60 and handling on Dirt and Snow surfaces",
+            "cond": {"surface": ["Dirt", "Snow"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        }
+    ]
+}

@@ -84,17 +84,31 @@ module.exports = {
                             await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                             async function acceptedFunction(currentMessage) {
-                                currentCar.upgrades[upgrade]++;
-                                currentCar.upgrades[origUpgrade]--;
-                                updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
+                                // Re-fetch the profile so the write is built from FRESH data —
+                                // another writer may have touched the garage while the dialog was open.
+                                const freshData = await profileModel.findOne({ userID: message.author.id });
+                                const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
+                                if (!freshCar || (freshCar.upgrades[origUpgrade] || 0) < 1 || freshData.money < moneyLimit) {
+                                    const errorMessage = new ErrorMessage({
+                                        channel: message.channel,
+                                        title: "Error, your garage or balance changed while you were deciding.",
+                                        desc: "You no longer own this car at the selected tune, or you can no longer afford this upgrade. Please run the command again.",
+                                        author: message.author
+                                    });
+                                    return errorMessage.sendMessage({ currentMessage });
+                                }
 
-                                let moneyBalance = playerData.money - moneyLimit;
+                                freshCar.upgrades[upgrade]++;
+                                freshCar.upgrades[origUpgrade]--;
+                                updateHands(freshData, freshCar.carID, origUpgrade, upgrade);
+
+                                let moneyBalance = freshData.money - moneyLimit;
                                 const [, attachment] = await Promise.all([
                                     profileModel.updateOne({ userID: message.author.id }, {
                                         money: moneyBalance,
-                                        garage: playerData.garage,
-                                        hand: playerData.hand,
-                                        decks: playerData.decks
+                                        garage: freshData.garage,
+                                        hand: freshData.hand,
+                                        decks: freshData.decks
                                     }),
                                     generateHud(car, upgrade)
                                 ]);

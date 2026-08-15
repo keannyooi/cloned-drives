@@ -1,0 +1,29 @@
+{
+    "driverID": "d00037",
+    "name": "Colin Chapman",
+    "variant": "",
+    "description": "Simplify, then add lightness. The engineering mind that made small cars beat big ones.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "Added lightness: -60 kg in cars under 1,200 kg.",
+            "cond": {"statMax": {"weight": 1200}},
+            "effects": {"add": {"weight": -60}}
+        },
+        {
+            "description": "-0.2s off the 0-60 in RWD cars.",
+            "cond": {"driveType": ["rwd"]},
+            "minLevel": 4,
+            "effects": {"add": {"accel": -0.2}}
+        },
+        {
+            "description": "Ground-effect wizardry: +5 flat handling in any Lotus.",
+            "cond": {"make": ["lotus"]},
+            "minLevel": 6,
+            "effects": {"add": {"handling": 5}}
+        }
+    ]
+}

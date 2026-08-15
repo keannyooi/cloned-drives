@@ -1,0 +1,29 @@
+{
+    "driverID": "d00033",
+    "name": "Ken Miles",
+    "variant": "",
+    "description": "The development driver who made the GT40 a winner — give him a flawed car and he hands you back a better one.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "Development magic: +4 flat handling in cars up to 500 CR.",
+            "cond": {"cr": {"start": 1, "end": 500}},
+            "effects": {"add": {"handling": 4}}
+        },
+        {
+            "description": "-0.2s off the 0-60 in any Ford.",
+            "cond": {"make": ["ford"]},
+            "minLevel": 3,
+            "effects": {"add": {"accel": -0.2}}
+        },
+        {
+            "description": "7,000+ RPM, all day: +6 MRA in cars up to 500 CR.",
+            "cond": {"cr": {"start": 1, "end": 500}},
+            "minLevel": 5,
+            "effects": {"add": {"mra": 6}}
+        }
+    ]
+}

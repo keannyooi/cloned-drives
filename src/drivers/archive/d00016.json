@@ -1,0 +1,35 @@
+{
+    "driverID": "d00016",
+    "name": "Sébastien Loeb",
+    "variant": "",
+    "description": "Nine consecutive World Rally Championships with Citroën. Nobody has ever been better at everything at once.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3.5% core stats on Dirt and Gravel.",
+            "cond": {"surface": ["Dirt", "Gravel"]},
+            "effects": {"mult": {"topSpeed": 1.035, "accel": 0.965, "handling": 1.035}}
+        },
+        {
+            "description": "+2.5% handling on Snow and Ice (Monte Carlo master).",
+            "cond": {"surface": ["Snow", "Ice"]},
+            "minLevel": 3,
+            "effects": {"mult": {"handling": 1.025}}
+        },
+        {
+            "description": "+2% core stats in any Citroën.",
+            "cond": {"make": ["citroen"]},
+            "minLevel": 4,
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02}}
+        },
+        {
+            "description": "Signature: the Xantia Activa — the only car to beat the moose test — +7 flat handling.",
+            "cond": {"carID": ["c00322"]},
+            "minLevel": 6,
+            "effects": {"add": {"handling": 7}}
+        }
+    ]
+}

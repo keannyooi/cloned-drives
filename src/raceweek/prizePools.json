@@ -1,0 +1,42 @@
+{
+    "_comment": "Race Week configurable prize pools. Read FRESH at every Monday roll and by cd-raceweekprizes reroll - edit any time, no restart needed. An empty/missing pool falls back to the automatic rule (CR band for car rungs, pack tier for pack rungs, base/rare rotation for 250, random secret driver for 1000). Invalid IDs are skipped with a console warning. Serialised drivers are never valid ladder prizes.",
+    "_rules": {
+        "carPool": "list of carIDs - ANY car is allowed (BM/reference cards, bosses, anything that exists)",
+        "packPool": "list of packIDs",
+        "driverPool": "list of driverIDs (serialised drivers are never valid ladder prizes)",
+        "ordered": "true on any rung = its pools cycle by ISO week number IN LIST ORDER instead of random; the same week index is used across all pools in that rung, so equal-length carPool+driverPool lists pair up for themed weeks (rung 1000 ships ordered)",
+        "money": "money amount for the rung (25-rung override, or part of a custom rung)",
+        "custom_rungs": "add ANY numeric key (e.g. \"20\") with at least one pool/money to create a new threshold rung - applies at the next Monday roll, or immediately via cd-raceweekprizes reroll all. Custom rungs are normal races (never boss gates). Remove the key + reroll all to retire it. Players already past the rung's win count that week won't retro-claim it.",
+        "rung_250": "driverPool list order IS the weekly rotation order (always ordered)",
+        "events": "curated packPool per pack-granting in-race event (packshards / goldenopponent), read fresh at EVERY event resolution - no reroll needed, edits apply to the next drop. Empty pool = automatic roll across every standard-tier pack (event/limited packs included, so curate these once you care)",
+        "weeks": "PRE-PROGRAMMED WEEKS. Two key forms: \"2026-W44\" fires that exact week once, \"44\" fires week 44 of EVERY year. Exact beats recurring. Inside a week, any rung key overrides that rung's pools for that week only - every rung you DON'T list falls back to \"rungs\" below exactly as normal, so you only script what you care about. Meta keys: _label (shown in the announcement title), _description (replaces the default blurb), _color (hex, themes the embed). Any key starting with _ is ignored by the prize resolver. Scheduled weeks are resolved at the Monday roll, so edits land at the next rollover or immediately via cd-raceweekprizes reroll all."
+    },
+    "weeks": {
+        "_example": {
+            "_comment": "Keys starting with _ are ignored. Copy this shape, rename to \"2026-W44\" (one-off) or \"44\" (every year), and it goes live at the next roll.",
+            "_label": "Halloween",
+            "_description": "The lights are off at the circuit and something out there is running quicker lap times than it has any right to.",
+            "_color": "#ff6a00",
+            "1000": { "carPool": ["c01234"], "driverPool": ["d00007"] },
+            "500": { "packPool": ["p00099"] }
+        }
+    },
+    "events": {
+        "packshards": { "packPool": [] },
+        "goldenopponent": { "packPool": [] }
+    },
+    "rungs": {
+        "10": { "packPool": ["p00105"] },
+        "25": { "money": 500000 },
+        "50": { "carPool": ["c07710","c06779"], "ordered": true },
+        "100": { "carPool": ["c06489"], "ordered": true },
+        "150": { "carPool": ["c00840"], "ordered": true },
+        "200": { "packPool": ["p00125"] },
+        "250": { "driverPool": ["d00003"], "ordered": true },
+        "300": { "packPool": ["p00125"] },
+        "500": { "packPool": ["p00154"] },
+        "700": { "packPool": ["p00158"] },
+        "888": { "packPool": ["p00097"] },
+        "1000": { "carPool": ["c03652"], "driverPool": ["d00001"], "ordered": true }
+    }
+}

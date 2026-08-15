@@ -1,0 +1,36 @@
+{
+    "driverID": "d00006",
+    "name": "Aoki Amemiya",
+    "variant": "",
+    "description": "They say she learned car control on flooded mountain passes with the wipers off. Sees the racing line in the puddles when the sky opens.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/AokiAmemiya.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "recruitPrice": 4000000,
+    "bonuses": [
+        {
+            "description": "+3% handling in the Rain",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"handling": 1.03}}
+        },
+        {
+            "description": "+2 handling on Asphalt — the touge never left her",
+            "cond": {"surface": ["Asphalt"]},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling in cars under 1100kg",
+            "cond": {"statMax": {"weight": 1100}},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "+4 handling in the Mazda MX-5 — the car she grew up sideways in",
+            "cond": {"carID": ["c00767", "c00768", "c00769", "c00770"]},
+            "effects": {"add": {"handling": 4}},
+            "minLevel": 4
+        }
+    ]
+}

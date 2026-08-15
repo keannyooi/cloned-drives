@@ -1,0 +1,34 @@
+{
+    "driverID": "d00017",
+    "name": "Colin McRae",
+    "variant": "",
+    "description": "Youngest-ever WRC champion. If in doubt, flat out.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+4% core stats on Dirt and Gravel.",
+            "cond": {"surface": ["Dirt", "Gravel"]},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04}}
+        },
+        {
+            "description": "Flat out, everywhere: +2% top speed.",
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.02}}
+        },
+        {
+            "description": "The price of commitment: -2% handling on Asphalt.",
+            "cond": {"surface": ["Asphalt"]},
+            "minLevel": 3,
+            "effects": {"mult": {"handling": 0.98}}
+        },
+        {
+            "description": "Signature: the 22B, the P1, the Turbo 2000 — +6% everything.",
+            "cond": {"carID": ["c01192", "c01195", "c01197"]},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.06, "accel": 0.94, "handling": 1.06, "mra": 1.06, "ola": 1.06}}
+        }
+    ]
+}

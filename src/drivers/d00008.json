@@ -1,0 +1,36 @@
+{
+    "driverID": "d00008",
+    "name": "Matteo Schneider",
+    "variant": "",
+    "description": "Treats corners as a suggestion and grip as a negotiation. RWD cars stick harder mid-drift with him at the wheel.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/MatteoSchneider.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "recruitPrice": 4000000,
+    "bonuses": [
+        {
+            "description": "+3% handling in RWD cars",
+            "cond": {"driveType": ["rwd"]},
+            "effects": {"mult": {"handling": 1.03}}
+        },
+        {
+            "description": "+2 ola in RWD cars — grip is a negotiation, not a rule",
+            "cond": {"driveType": ["rwd"]},
+            "effects": {"add": {"ola": 2}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling in RWD coupes",
+            "cond": {"driveType": ["rwd"], "bodyStyle": ["Coupe"]},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "+25 top speed and +5 handling in the BMW Z4 M — his car, and it shows",
+            "cond": {"carID": ["c02123", "c05533"]},
+            "effects": {"add": {"topSpeed": 25, "handling": 5}},
+            "minLevel": 4
+        }
+    ]
+}

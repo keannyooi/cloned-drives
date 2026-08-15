@@ -1,0 +1,35 @@
+{
+    "driverID": "d00021",
+    "name": "Max Verstappen",
+    "variant": "",
+    "description": "19 wins from 22 races in 2023 — the most dominant single season in Formula 1 history.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+2.5% top speed & off-the-line in modern machinery (2010+).",
+            "cond": {"modelYear": {"start": 2010, "end": 9999}},
+            "effects": {"mult": {"topSpeed": 1.025, "ola": 1.025}}
+        },
+        {
+            "description": "Brazil 2016: +3% everything in the rain.",
+            "cond": {"weather": ["Rainy"]},
+            "minLevel": 4,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        },
+        {
+            "description": "+3% everything in boss races — title deciders.",
+            "cond": {"bossRace": true},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        },
+        {
+            "description": "Signature: the Red Bull X2010 — the sim racer's dream — +10% everything.",
+            "cond": {"carID": ["c07110"]},
+            "minLevel": 6,
+            "effects": {"mult": {"topSpeed": 1.1, "accel": 0.9, "handling": 1.1, "mra": 1.1, "ola": 1.1}}
+        }
+    ]
+}

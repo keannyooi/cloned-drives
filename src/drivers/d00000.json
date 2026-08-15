@@ -1,0 +1,32 @@
+{
+    "driverID": "d00000",
+    "name": "The Rookie",
+    "variant": "",
+    "description": "Fresh out of driving school with a borrowed helmet and a full tank of optimism. No bonuses, no complaints — everyone starts somewhere.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/driver1.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+1 handling in anything. Everyone starts somewhere",
+            "effects": {"add": {"handling": 1}}
+        },
+        {
+            "description": "+1 mra — learning to carry speed between the corners",
+            "effects": {"add": {"mra": 1}},
+            "minLevel": 2
+        },
+        {
+            "description": "+2 handling in cars under 350 CR — the stuff you learn on",
+            "cond": {"cr": {"start": 0, "end": 349}},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 3
+        },
+        {
+            "description": "+1 ola — finally getting the launch right",
+            "effects": {"add": {"ola": 1}},
+            "minLevel": 4
+        }
+    ]
+}

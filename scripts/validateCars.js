@@ -35,7 +35,7 @@ const VALID = {
         "Supercar", "The Americas Assault", "The Amplification of Asia",
         "The Japanese Odyssey", "The Midlands Cruise", "The Rest of the Best: 2023",
         "The Royal Collection", "The Tyrol Tour", "The Tyrol Tour: Remix", "Token",
-        "Track Day", "Tradable", "Tuner", "Ultra Expensive", "Unique",
+        "Track Day", "Tradable", "Trophy Tour 26", "Tuner", "Ultra Expensive", "Unique",
         "Visionary Road", "Year of the Horse", "Year of the Rabbit"
     ]
 };

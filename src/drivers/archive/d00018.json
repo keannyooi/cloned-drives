@@ -1,0 +1,23 @@
+{
+    "driverID": "d00018",
+    "name": "Tommi Mäkinen",
+    "variant": "",
+    "description": "Four consecutive drivers' titles, all in the Lancer Evolution. They named the car after him.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3% core stats on Snow and Gravel.",
+            "cond": {"surface": ["Snow", "Gravel"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "Signature: the Evo VI — including HIS edition — +5% everything.",
+            "cond": {"carID": ["c00892", "c00893"]},
+            "minLevel": 4,
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 1.05}}
+        }
+    ]
+}

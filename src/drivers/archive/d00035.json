@@ -1,0 +1,28 @@
+{
+    "driverID": "d00035",
+    "name": "Richard Petty",
+    "variant": "",
+    "description": "The King. 27 wins in a single season, 200 in a career — records that will outlive the sport.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "Superspeedway draft: +5 flat top speed in American cars.",
+            "cond": {"country": ["us"]},
+            "effects": {"add": {"topSpeed": 5}}
+        },
+        {
+            "description": "+8 MRA in American cars — the 43 pulls away.",
+            "cond": {"country": ["us"]},
+            "minLevel": 3,
+            "effects": {"add": {"mra": 8}}
+        },
+        {
+            "description": "+3 flat handling everywhere — 200 wins teach you where the wall is.",
+            "minLevel": 5,
+            "effects": {"add": {"handling": 3}}
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "driverID": "d00025",
+    "name": "Sébastien Ogier",
+    "variant": "",
+    "description": "Eight world rally titles across three different marques — the calculating heir to the Loeb dynasty.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3% core stats on Dirt and Gravel.",
+            "cond": {"surface": ["Dirt", "Gravel"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "+2.5% everything in 4WD machinery.",
+            "cond": {"driveType": ["4wd"]},
+            "minLevel": 4,
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 1.025}}
+        },
+        {
+            "description": "Monte Carlo master: +3.5% core stats on Snow and Ice.",
+            "cond": {"surface": ["Snow", "Ice"]},
+            "minLevel": 6,
+            "effects": {"mult": {"topSpeed": 1.035, "accel": 0.965, "handling": 1.035}}
+        }
+    ]
+}

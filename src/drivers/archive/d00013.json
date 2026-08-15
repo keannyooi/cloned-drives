@@ -1,0 +1,16 @@
+{
+    "driverID": "d00013",
+    "name": "Vincent \"The Closer\" Marlowe",
+    "variant": "",
+    "description": "Never races for free. Reads the fine print, shakes the right hands, and somehow every purse pays out five percent heavier.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+5% money on every win",
+            "effects": {"moneyMult": 1.05}
+        }
+    ]
+}

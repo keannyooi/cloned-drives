@@ -20,6 +20,8 @@ const bot = require("../../config/config.js");
 const { InfoMessage } = require("../classes/classes.js");
 const { currentEventsChannelID } = require("../consts/consts.js");
 const { getTrack } = require("./dataManager.js");
+const { rarityOf } = require("./raceWeekEvents.js");
+const makeRewardID = require("./rewardID.js");
 const profileModel = require("../../models/profileSchema.js");
 const pvpEventModel = require("../../models/pvpEventSchema.js");
 const pvpEventResultModel = require("../../models/pvpEventResultSchema.js");
@@ -92,6 +94,7 @@ async function grantTierToPlayer(userID, tier, eventName, finalRank) {
     const origin = `PvP Event: ${eventName} (Rank #${finalRank})`;
     const stripped = stripTierMeta(tier);
     const entries = [];
+    const blockedSerialised = [];
 
     for (const [key, value] of Object.entries(stripped)) {
         switch (key) {
@@ -114,17 +117,39 @@ async function grantTierToPlayer(userID, tier, eventName, finalRank) {
             case "pack":
                 if (typeof value === "string") entries.push({ pack: value, origin });
                 break;
+            case "driver":
+                // Race Week driver ID string — cd-rewards validates against the roster on claim.
+                // Serialised drivers are mint-capped and can never be awarded as rewards.
+                if (typeof value === "string") {
+                    if (rarityOf(value) === "serialised") blockedSerialised.push(value);
+                    else entries.push({ driver: value, origin });
+                }
+                break;
             default:
                 break;
         }
     }
 
-    if (entries.length === 0) return { success: false, error: "no valid reward fields in tier" };
+    if (blockedSerialised.length > 0) {
+        console.error(`[PvP] Blocked serialised driver reward(s) ${blockedSerialised.join(", ")} for ${userID} — serialised drivers cannot be awarded`);
+    }
+    if (entries.length === 0) {
+        return {
+            success: false,
+            error: blockedSerialised.length > 0
+                ? "serialised drivers cannot be awarded"
+                : "no valid reward fields in tier"
+        };
+    }
 
     try {
+        // rid on non-numeric entries → exact-entry removal at claim time.
+        const stamped = entries.map(entry =>
+            (entry.money !== undefined || entry.fuseTokens !== undefined || entry.trophies !== undefined || entry.rid)
+                ? entry : { ...entry, rid: makeRewardID() });
         await profileModel.updateOne(
             { userID },
-            { "$push": { unclaimedRewards: { "$each": entries } } }
+            { "$push": { unclaimedRewards: { "$each": stamped } } }
         );
         return { success: true };
     } catch (err) {

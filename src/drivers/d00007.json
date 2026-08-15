@@ -1,0 +1,35 @@
+{
+    "driverID": "d00007",
+    "name": "Margot LaSalle",
+    "variant": "",
+    "description": "Classics whisperer — pre-1980 machines drive like they just rolled off the line for her. Carburetors confess their sins on the first lap.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/MargotLaSalle.png",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2.5% top speed, 0-60 and handling in pre-1980 cars",
+            "cond": {"modelYear": {"start": 1800, "end": 1979}},
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025}}
+        },
+        {
+            "description": "+3 mra in pre-1980 cars — carburettors confess on lap one",
+            "cond": {"modelYear": {"start": 1800, "end": 1979}},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "+2 handling in anything pre-1960",
+            "cond": {"modelYear": {"start": 1800, "end": 1959}},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 3
+        },
+        {
+            "description": "+5 handling in the Ford GT40 Mk II (1966) and Ferrari 512 S (1970)",
+            "cond": {"carID": ["c00468", "c00387"]},
+            "effects": {"add": {"handling": 5}},
+            "minLevel": 4
+        }
+    ]
+}

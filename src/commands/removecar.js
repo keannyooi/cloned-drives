@@ -116,15 +116,29 @@ module.exports = {
                     await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                     async function acceptedFunction(currentMessage) {
-                        updateHands(playerData, currentCar.carID, upgrade, "remove");
-                        currentCar.upgrades[upgrade] -= amount;
-                        if (calcTotal(currentCar) === 0) {
-                            playerData.garage.splice(playerData.garage.indexOf(currentCar), 1);
+                        // Re-fetch the target's profile so the write is built from FRESH data —
+                        // another writer may have touched their garage while the dialog was open.
+                        const freshData = await profileModel.findOne({ userID: user.id });
+                        const freshCar = freshData ? freshData.garage.find(c => c.carID === currentCar.carID) : null;
+                        if (!freshData || !freshCar || (freshCar.upgrades[upgrade] || 0) < amount) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: `Error, ${user.username}'s garage changed while you were deciding.`,
+                                desc: "They no longer own enough copies of this car at this tune. Please run the command again.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+
+                        updateHands(freshData, freshCar.carID, upgrade, "remove");
+                        freshCar.upgrades[upgrade] -= amount;
+                        if (calcTotal(freshCar) === 0) {
+                            freshData.garage.splice(freshData.garage.indexOf(freshCar), 1);
                         }
                         await profileModel.updateOne({ userID: user.id }, {
-                            garage: playerData.garage,
-                            hand: playerData.hand,
-                            decks: playerData.decks
+                            garage: freshData.garage,
+                            hand: freshData.hand,
+                            decks: freshData.decks
                         });
 
                         const successMessage = new SuccessMessage({

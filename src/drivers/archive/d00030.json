@@ -1,0 +1,27 @@
+{
+    "driverID": "d00030",
+    "name": "Tazio Nuvolari",
+    "variant": "",
+    "description": "Beat the Silver Arrows at their own Nürburgring in an outdated Alfa — the single greatest upset in motorsport history. The Flying Mantuan.",
+    "image": "",
+    "rarity": "icon",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "The impossible win: +4.5% everything when outgunned.",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.045, "accel": 0.955, "handling": 1.045, "mra": 1.045, "ola": 1.045}}
+        },
+        {
+            "description": "+3% core stats in cars under 1,100 kg — throw it, catch it.",
+            "cond": {"statMax": {"weight": 1100}},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "Full opposite lock: +2.5% handling in RWD cars.",
+            "cond": {"driveType": ["rwd"]},
+            "effects": {"mult": {"handling": 1.025}}
+        }
+    ]
+}

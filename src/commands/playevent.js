@@ -15,7 +15,34 @@ const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const { trackEventPlayed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const makeRewardID = require("../util/functions/rewardID.js");
 const eventModel = require("../models/eventSchema.js");
+
+/**
+ * Atomically persist reward entries to unclaimedRewards: money/fuseTokens/
+ * trophies aggregate into the matching same-origin entry via the elemMatch
+ * positional $inc (falling back to a fresh entry), everything else is $pushed
+ * with $each. Never $sets the whole array, so concurrent grants (e.g. Race
+ * Week threshold prizes) can't be clobbered.
+ */
+async function persistRewards(userID, aggregates, entries) {
+    // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
+    const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
+    for (const { key, value, origin } of aggregates) {
+        const res = await profileModel.updateOne(
+            { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
+            { "$inc": { [`unclaimedRewards.$.${key}`]: value } }
+        );
+        const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
+        if (!modified) pushes.push({ [key]: value, origin });
+    }
+    if (pushes.length > 0) {
+        await profileModel.updateOne(
+            { userID },
+            { "$push": { unclaimedRewards: { "$each": pushes } } }
+        );
+    }
+}
 
 module.exports = {
     name: "playevent",
@@ -37,7 +64,7 @@ module.exports = {
        // } - Play DM Only
 
         const events = await eventModel.find();
-        const { hand, unclaimedRewards, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
         if (hand.carID === "") {
             return handMissingError(message);
         }
@@ -119,9 +146,9 @@ module.exports = {
                         return intermission.sendMessage({ currentMessage });
                     }
                     if (unpaidFee > 0) {
-                        // The per-user command lock is already released by the time this
-                        // accept handler runs (confirm() returns before the button click),
-                        // so a money value read at command start would be stale. Charge
+                        // confirm() is awaited, so the per-user command lock now spans this
+                        // accept handler — but a money value read at command start could
+                        // still be stale (cross-writer, e.g. givereward). Charge
                         // atomically: claim the "paid" slot first (so a concurrent accept
                         // can't double-charge), then $inc the balance behind a $gte guard.
                         const feeKey = `paidPlayers.${message.author.id}`;
@@ -152,24 +179,16 @@ module.exports = {
 
                     if (result > 0) {
                         trackEventPlayed();
+                        const aggregateRewards = [], newRewards = [];
                         for (let [key, value] of Object.entries(event.roster[round - 1].rewards)) {
                             switch (key) {
                                 case "money":
                                 case "fuseTokens":
                                 case "trophies":
-                                    let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === event.name && entry[key] !== undefined);
-                                    if (hasEntry > -1) {
-                                        unclaimedRewards[hasEntry][key] += value;
-                                    }
-                                    else {
-                                        let template = {};
-                                        template[key] = value;
-                                        template.origin = event.name;
-                                        unclaimedRewards.push(template);
-                                    }
+                                    aggregateRewards.push({ key, value, origin: event.name });
                                     break;
                                 case "car":
-                                    unclaimedRewards.push({
+                                    newRewards.push({
                                         car: {
                                             carID: value.carID.slice(0, 6),
                                             upgrade: value.upgrade
@@ -178,8 +197,14 @@ module.exports = {
                                     });
                                     break;
                                 case "pack":
-                                    unclaimedRewards.push({
+                                    newRewards.push({
                                         pack: value.slice(0, 6),
+                                        origin: event.name
+                                    });
+                                    break;
+                                case "driver":
+                                    newRewards.push({
+                                        driver: value,
                                         origin: event.name
                                     });
                                     break;
@@ -193,7 +218,7 @@ module.exports = {
                         set[`playerProgress.${message.author.id}`] = round + 1;
                         await Promise.all([
                             eventModel.updateOne({ eventID: event.eventID }, { "$set": set }),
-                            profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards })
+                            persistRewards(message.author.id, aggregateRewards, newRewards)
                         ]);
                     }
                     return bot.deleteID(message.author.id);

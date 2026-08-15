@@ -1,0 +1,26 @@
+{
+    "driverID": "d00031",
+    "name": "Ayrton Senna",
+    "variant": "",
+    "description": "Signed after Donington. Five wet-weather passes on the opening lap — the greatest lap ever driven, in ink.",
+    "image": "",
+    "rarity": "autograph",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "The Lap of the Gods: +5% everything in the rain.",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 1.05}}
+        },
+        {
+            "description": "+3% handling, everywhere, always.",
+            "effects": {"mult": {"handling": 1.03}}
+        },
+        {
+            "description": "Qualifying trance: +3.5% everything in boss races.",
+            "cond": {"bossRace": true},
+            "effects": {"mult": {"topSpeed": 1.035, "accel": 0.965, "handling": 1.035, "mra": 1.035, "ola": 1.035}}
+        }
+    ]
+}

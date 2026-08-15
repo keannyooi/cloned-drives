@@ -1,0 +1,17 @@
+{
+    "driverID": "d00011",
+    "name": "Marisol \"La Garra\" Vega",
+    "variant": "",
+    "description": "Fights hardest when outgunned — the claw comes out whenever the other garage brought more car than manners.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3% to every stat when your car's CR trails the opponent's",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        }
+    ]
+}

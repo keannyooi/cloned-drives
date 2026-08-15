@@ -1,0 +1,35 @@
+{
+    "driverID": "d00014",
+    "name": "Ayrton Senna",
+    "variant": "",
+    "description": "Three-time world champion, widely held to be the greatest wet-weather driver who ever lived — and the man who fine-tuned the original NSX at Suzuka.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+4% handling in the rain (Donington 1993, lap one).",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"mult": {"handling": 1.04}}
+        },
+        {
+            "description": "+2% core stats in any Honda or Acura.",
+            "cond": {"make": ["honda", "acura"]},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02}}
+        },
+        {
+            "description": "+2.5% everything in boss races — qualifying mode.",
+            "cond": {"bossRace": true},
+            "minLevel": 4,
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 1.025}}
+        },
+        {
+            "description": "Signature: the NSX he helped create — +8% handling, +4% top speed.",
+            "cond": {"carID": ["c01554", "c01555", "c00016"]},
+            "minLevel": 6,
+            "effects": {"mult": {"handling": 1.08, "topSpeed": 1.04}}
+        }
+    ]
+}

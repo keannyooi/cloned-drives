@@ -26,7 +26,13 @@ function carNameGen({ currentCar, rarity = false, upgrade = null, removePrizeTag
         const bmReference = modifiedBase(currentCar);
         // Precedence: BM > diamond > CR-based
         const type = isBMCar(currentCar) ? "bm" : (isDiamondCar(currentCar) ? "diamond" : null);
-        currentName = `(${rarityCheck(bmReference, type)} ${bmReference.cr}) ${currentName}`;
+        // rarityCheck reads bot.emojis.cache, which is empty before the gateway
+        // is up and can miss an emote the bot has lost access to. Without this
+        // guard the name renders literally as "(undefined 825) Ford GT40".
+        const icon = rarityCheck(bmReference, type);
+        currentName = icon
+            ? `(${icon} ${bmReference.cr}) ${currentName}`
+            : `(${bmReference.cr}) ${currentName}`;
     }
 
     // Add upgrade tag if provided

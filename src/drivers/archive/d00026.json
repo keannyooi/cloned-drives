@@ -1,0 +1,34 @@
+{
+    "driverID": "d00026",
+    "name": "Niki Lauda",
+    "variant": "",
+    "description": "Returned 42 days after the fire and took the title back the following year. Precision, courage, and the coldest arithmetic in racing.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3% core stats in any Ferrari.",
+            "cond": {"make": ["ferrari"]},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03}}
+        },
+        {
+            "description": "The comeback: +3% everything in boss races.",
+            "cond": {"bossRace": true},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        },
+        {
+            "description": "Setup perfectionist: +2.5% handling on Track surfaces.",
+            "cond": {"surface": ["Track"]},
+            "minLevel": 5,
+            "effects": {"mult": {"handling": 1.025}}
+        },
+        {
+            "description": "The Rat's ledger: +2% everything, everywhere — risk priced to the decimal.",
+            "minLevel": 7,
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02, "mra": 1.02, "ola": 1.02}}
+        }
+    ]
+}

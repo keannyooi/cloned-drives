@@ -25,7 +25,8 @@ const path = require("path");
 
 // ⚙️ CONFIG
 const CARS_DIR = path.join(__dirname, "..", "src", "cars");
-const DRY_RUN = false; // set true to just preview
+// Preview with `node scripts/renameNewCarfiles.js --dry` — no code edit needed.
+const DRY_RUN = process.argv.includes("--dry");
 
 if (!fs.existsSync(CARS_DIR)) {
     console.error(`❌ Cars folder not found: ${CARS_DIR}`);
@@ -104,8 +105,23 @@ for (const file of nonStandard) {
         continue;
     }
 
-    const num = nextFreeNumber();
-    const newID = `c${String(num).padStart(5, "0")}`;
+    // A file arriving from staging may ALREADY carry a real carID, assigned by
+    // assignStagingIDs.js so the artwork queue had something stable to point
+    // at. Minting a fresh one here would silently break every reference to it,
+    // so an existing valid ID is honoured and the file is simply renamed to
+    // match. Only genuinely unassigned files ("c0" / missing) draw a new number.
+    const existing = String(data.carID || "");
+    let newID;
+    if (/^c\d{5}$/.test(existing) && !usedNumbers.has(parseInt(existing.slice(1), 10))) {
+        newID = existing;
+        usedNumbers.add(parseInt(existing.slice(1), 10));   // reserve it
+    }
+    else {
+        if (/^c\d{5}$/.test(existing)) {
+            console.log(`⚠️  ${file} — carID ${existing} is already taken, assigning a new one.`);
+        }
+        newID = `c${String(nextFreeNumber()).padStart(5, "0")}`;
+    }
     const newName = `${newID}.json`;
     const newPath = path.join(CARS_DIR, newName);
 
@@ -140,8 +156,8 @@ for (const entry of plan) {
 console.log("─────────────────────────────────────────────────────────────\n");
 
 if (DRY_RUN) {
-    console.log("🧪 DRY_RUN = true — no files were modified.");
-    console.log("   Flip DRY_RUN to false in the script to actually rename.");
+    console.log("🧪 Dry run — no files were modified.");
+    console.log("   Re-run without --dry to actually rename.");
     process.exit(0);
 }
 

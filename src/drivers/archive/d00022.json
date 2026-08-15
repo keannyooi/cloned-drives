@@ -1,0 +1,29 @@
+{
+    "driverID": "d00022",
+    "name": "Jutta Kleinschmidt",
+    "variant": "",
+    "description": "The first — and still only — woman to win the Dakar Rally outright.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3.5% core stats on Sand and OffRoad.",
+            "cond": {"surface": ["Sand", "OffRoad"]},
+            "effects": {"mult": {"topSpeed": 1.035, "accel": 0.965, "handling": 1.035}}
+        },
+        {
+            "description": "Heavy-metal endurance: -3% weight in cars over 1,800 kg.",
+            "cond": {"statMin": {"weight": 1800}},
+            "minLevel": 3,
+            "effects": {"mult": {"weight": 0.97}}
+        },
+        {
+            "description": "Signature: the Touareg family — +5% everything.",
+            "cond": {"carID": ["c01405", "c01407", "c01403"]},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 1.05}}
+        }
+    ]
+}

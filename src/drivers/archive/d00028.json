@@ -1,0 +1,35 @@
+{
+    "driverID": "d00028",
+    "name": "Mario Andretti",
+    "variant": "",
+    "description": "F1 champion, Indy 500 winner, Daytona 500 winner, sprint-car king. If it had wheels, he won in it.",
+    "image": "",
+    "rarity": "divine",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "Versatility: +2.5% core stats on Asphalt, Track and Dirt alike.",
+            "cond": {"surface": ["Asphalt", "Track", "Dirt"]},
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025}}
+        },
+        {
+            "description": "+2.5% core stats in American machinery.",
+            "cond": {"country": ["us"]},
+            "minLevel": 3,
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025}}
+        },
+        {
+            "description": "Oval pace: +3% top speed in cars already over 200mph.",
+            "cond": {"statMin": {"topSpeed": 200}},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.03}}
+        },
+        {
+            "description": "\"If everything seems under control, you're not going fast enough\" — +2.5% everything at boss gates.",
+            "cond": {"bossRace": true},
+            "minLevel": 7,
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 1.025}}
+        }
+    ]
+}

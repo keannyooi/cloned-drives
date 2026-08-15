@@ -297,11 +297,70 @@ const consts = {
     eventMakerRoleID: "917685033995751435",
     testerRoleID: "915846116656959538",
     sandboxRoleID: "1102267061796880384",
-    
+    // "Official Patron" — ×1.5 on daily money (src/commands/daily.js).
+    patronRoleID: "860144481109016607",
+    // "Verified Creator" — the gate on every kind of submission, BM and artwork
+    // alike. Submissions run in DMs, so a role is the only gate there is.
+    verifiedCreatorRoleID: "809447750583975936",
+
+    // Granted by the Monday rollover to the previous week's #1, revoked from
+    // the outgoing holder in the same pass. Purely cosmetic prestige.
+    raceWeekChampionRoleID: "1263581572532277278",
+    // Opt-in ping for the weekly announcement (self-assignable, see below).
+    raceWeekUpdatesRoleID: "1263581571559198782",
+
     bugReportsChannelID: "750304569422250064",
     currentEventsChannelID: "955467202138620014",
     currentOffersChannelID: "969786587191849011",
     dealershipChannelID: "995938671209500702",
+    raceWeekChannelID: "1535693244665569390",
+    autoAssignRolesChannelID: "775236011113971724",
+
+    /**
+     * CREATOR SUBMISSIONS. Both must be filled in before `cd-submit` will run —
+     * it refuses with a clear error rather than posting somewhere unintended.
+     * - submissionsChannelID: where creators run cd-submit (role-gate the
+     *   channel itself in Discord; the command only checks it is the right one)
+     * - submissionArchiveChannelID: PRIVATE. The bot re-posts every submitted
+     *   image here so it has a permanent copy — submitters should not have
+     *   access, and it should never be cleared.
+     */
+    submissionsChannelID: "1536466966062170282",
+    submissionArchiveChannelID: "1536467107645096026",
+    /**
+     * Submissions are gated by ROLE, not by channel — they can be made in DMs
+     * so creators aren't all crowding one channel. Both kinds use the same
+     * role: if you're trusted to design a BM card, you're trusted to draw one.
+     */
+    artSubmitterRoleID: "809447750583975936",
+
+    /**
+     * Roles players may toggle themselves from the panel in
+     * #auto-assign-roles (posted by `cd-rolepanel`). This list is the
+     * WHITELIST — the button handler in index.js refuses any role ID that
+     * isn't in here, so a spoofed customId can never grant something else.
+     * Adding a role here and re-running `cd-rolepanel` is all that's needed.
+     */
+    selfAssignRoles: [
+        {
+            roleID: "852169955670753300",
+            label: "Giveaways",
+            emoji: "🎁",
+            description: "Gift codes, free packs and giveaways"
+        },
+        {
+            roleID: "1164587151929917531",
+            label: "CD2 Follower",
+            emoji: "📢",
+            description: "Updates to cars, code and anything else"
+        },
+        {
+            roleID: "1263581571559198782",
+            label: "Race Week Updates",
+            emoji: "🏁",
+            description: "Pinged when a new Race Week begins"
+        }
+    ],
     
     moneyEmojiID: "1162881967738601502",
     fuseEmojiID: "1162882165109964892",
@@ -310,6 +369,66 @@ const consts = {
     packEmojiID: "966972920687652885",
     blackMarketEmojiID: "1162936880048898059",
     diamondEmojiID: "1162881990937280604",
+    // CR-slot icon for diamond cars — replaces the CR emote the way the
+    // black-market icon does. (diamondEmojiID stays the currency-style one.)
+    crDiamondEmojiID: "1530926174228709447",
+
+    /**
+     * RACE WEEK / DRIVERS emoji set. Grouped rather than flattened into 30-odd
+     * loose consts — resolve them through util/functions/rwEmoji.js, which
+     * falls back to unicode if an emote is missing from the cache.
+     */
+    raceWeekEmojiIDs: {
+        // driver rarity tiers (rarity v3)
+        base: "1530918834276536444",
+        rare: "1530918874235797627",
+        secret: "1530918895228026930",
+        divine: "1530918852400255087",
+        icon: "1535343310623866886",
+        autograph: "1530918814043078799",
+        serialised: "1530918915658743859",
+
+        // driver state on the race intermission
+        driverActive: "1530926045640003805",
+        driverIdle: "1530926063646015518",
+
+        // levelling / duplicates
+        levelLocked: "1530926226028630201",
+        levelUnlocked: "1530926245678678097",
+        levelUp: "1530926263651401900",
+        progress: "1530926330957402174",
+        maxed: "1530926282253013152",
+        serial: "1530926668946870504",
+
+        // mode furniture
+        raceweek: "1530926350029033582",
+        winner: "1530926704980262973",
+        rotation: "1530926370161688696",
+        exclusive: "1530926081740242994",
+        unique: "1530926687653593279",
+        bossSlayer: "1530926117932761158",
+
+        // prize-type tags
+        car: "1530926147825565716",
+        pack: "1530926303845421067",
+        driver: "1530927433283539098",
+
+        // in-race events
+        photofinish: "1530926483173015602",
+        cashvein: "1530926628442603582",
+        skiptoken: "1530926608037318686",
+        packshards: "1530926536616710185",
+        driverscout: "1530926520451858632",
+        doubleornothing: "1530926446153826434",
+        cursedrace: "1530926408845492435",
+        convoy: "1530926391187476701",
+        underdogoffer: "1530926646868050141",
+        showcase: "1530926580665155644",
+        goldenopponent: "1530926558879940710",
+        revengematch: "1530926503049695442",
+        lucky: "1530926463606325290",
+        domination: "1530926427069874278"
+    },
     // Bot owner — used for owner-only admin commands (e.g., PvP ticket grants).
     OWNER_ID: "209038568138604546",
 

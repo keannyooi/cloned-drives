@@ -42,6 +42,7 @@ const offerTemplates = new Map(); // templateID (without .json) -> template data
 const pvpEventTemplates = new Map(); // templateID (without .json) -> pvp event template data
 const packBattleTemplates = new Map(); // templateID (without .json) -> pack battle template data
 const autoEventTemplates = new Map(); // templateID (without .json) -> auto-event template data
+const drivers = new Map();     // driverID (without .json) -> driver data object
 
 // File lists (equivalent to readdirSync results)
 let carFiles = [];                // ["c00001.json", "c00002.json", ...]
@@ -51,6 +52,7 @@ let offerTemplateFiles = [];      // ["o00001.json", "o00002.json", ...]
 let pvpEventTemplateFiles = [];   // ["pe00001.json", "pe00002.json", ...]
 let packBattleTemplateFiles = []; // ["pb00001.json", "pb00002.json", ...]
 let autoEventTemplateFiles = [];  // ["ae00001.json", ...] ("_"-prefixed files are skipped)
+let driverFiles = [];             // ["d00000.json", ...] (only files that passed validation)
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
 let cachedCarArray = [];
@@ -58,6 +60,188 @@ let cachedTrackArray = [];
 
 // Initialization state
 let initialized = false;
+
+// ============================================================================
+// DRIVER VALIDATION (rarity system v3 — see docs/race-week-design.md §5)
+// ============================================================================
+
+const DRIVER_RARITIES = ["base", "rare", "secret", "divine", "icon", "autograph", "serialised"];
+// Max attainable level per rarity. LEVELS ARE 1-BASED: recruiting a card is
+// Level 1 and each duplicate threshold adds one, so a base driver runs 1→4.
+// icon/autograph/serialised cap at 0 — ALL bonus entries are active regardless
+// of minLevel, so minLevel is legal but ignored on those tiers.
+const DRIVER_MAX_LEVELS = { base: 4, rare: 5, secret: 6, divine: 7, icon: 0, autograph: 0, serialised: 0 };
+const DRIVER_EFFECT_STATS = ["topSpeed", "accel", "handling", "weight", "mra", "ola"];
+// Race-context / stat-threshold cond keys resolved by the race engine.
+const DRIVER_COND_SPECIAL_KEYS = ["statMin", "statMax", "carID", "weather", "surface", "bossRace", "underdog"];
+// filterCheck car criteria documented for driver bonus conds.
+const DRIVER_COND_FILTER_KEYS = [
+    "make", "model", "country", "tags", "search", "bodyStyle", "gc", "driveType",
+    "tyreType", "seatCount", "isPrize", "cr", "modelYear", "fuelType", "enginePos",
+    "tcs", "abs", "cardType", "collection", "hiddenTag", "isBM"
+];
+
+/**
+ * Validate a parsed driver JSON against the rarity system v3 schema.
+ * @param {Object} driver - Parsed driver JSON
+ * @param {string} expectedID - Driver ID derived from the filename
+ * @returns {string|null} Failure reason, or null when valid
+ */
+function validateDriver(driver, expectedID) {
+    if (!driver || typeof driver !== "object" || Array.isArray(driver)) {
+        return "not a JSON object";
+    }
+    if (typeof driver.driverID !== "string" || driver.driverID !== expectedID) {
+        return `driverID must be "${expectedID}" (matching the filename)`;
+    }
+    if (typeof driver.name !== "string" || driver.name.trim() === "") {
+        return "missing/empty name";
+    }
+    if (typeof driver.description !== "string") {
+        return "missing description";
+    }
+    if (!DRIVER_RARITIES.includes(driver.rarity)) {
+        return `rarity must be one of ${DRIVER_RARITIES.join("/")} (got "${driver.rarity}")`;
+    }
+    if (driver.rarity === "serialised") {
+        if (!Number.isInteger(driver.serialCap) || driver.serialCap <= 0) {
+            return "serialised drivers require serialCap (positive integer)";
+        }
+    }
+    else if (driver.serialCap !== undefined) {
+        return `serialCap is only allowed on serialised drivers (rarity is "${driver.rarity}")`;
+    }
+    if (driver.collection !== undefined) {
+        if (typeof driver.collection !== "string" || driver.collection.trim() === "") {
+            return "collection must be a non-empty string when present";
+        }
+    }
+    // Optional recruitment-shop fields (cd-recruit). recruitPrice's presence is
+    // what puts a driver in the shop; recruitExclusive locks it to shop/offers.
+    if (driver.recruitPrice !== undefined) {
+        if (!Number.isInteger(driver.recruitPrice) || driver.recruitPrice <= 0) {
+            return "recruitPrice must be a positive integer";
+        }
+    }
+    if (driver.recruitMultiplier !== undefined) {
+        if (typeof driver.recruitMultiplier !== "number" || driver.recruitMultiplier < 1) {
+            return "recruitMultiplier must be a number >= 1";
+        }
+    }
+    if (driver.recruitExclusive !== undefined) {
+        if (typeof driver.recruitExclusive !== "boolean") {
+            return "recruitExclusive must be a boolean";
+        }
+        if (driver.recruitExclusive && driver.recruitPrice === undefined) {
+            return "recruitExclusive drivers need a recruitPrice (they're otherwise unobtainable)";
+        }
+    }
+    // Optional per-card serial-stamp placement (full-art serialised cards are
+    // each composed differently, so they can move/plate the printed number).
+    if (driver.serialStamp !== undefined) {
+        if (typeof driver.serialStamp !== "object" || driver.serialStamp === null || Array.isArray(driver.serialStamp)) {
+            return "serialStamp must be an object when present";
+        }
+        for (const key of ["rightFrac", "topFrac", "fontFrac", "strokeFrac"]) {
+            const value = driver.serialStamp[key];
+            if (value !== undefined && (typeof value !== "number" || value < 0 || value > 1)) {
+                return `serialStamp.${key} must be a number between 0 and 1`;
+            }
+        }
+        if (driver.serialStamp.plate !== undefined && typeof driver.serialStamp.plate !== "boolean") {
+            return "serialStamp.plate must be a boolean";
+        }
+    }
+    if (typeof driver.inRotation !== "boolean") {
+        return "missing/non-boolean inRotation";
+    }
+    if (!Array.isArray(driver.bonuses)) {
+        return "bonuses must be an array";
+    }
+
+    for (let i = 0; i < driver.bonuses.length; i++) {
+        const bonus = driver.bonuses[i], label = `bonuses[${i}]`;
+        if (!bonus || typeof bonus !== "object" || Array.isArray(bonus)) {
+            return `${label} is not an object`;
+        }
+        if (!bonus.effects || typeof bonus.effects !== "object" || Array.isArray(bonus.effects)) {
+            return `${label} has no effects object`;
+        }
+        const effectKeys = Object.keys(bonus.effects);
+        if (effectKeys.length === 0) {
+            return `${label} effects is empty`;
+        }
+        for (const key of effectKeys) {
+            if (key === "moneyMult") {
+                if (typeof bonus.effects.moneyMult !== "number") {
+                    return `${label} effects.moneyMult must be a number`;
+                }
+            }
+            else if (key === "add" || key === "mult" || key === "set") {
+                // set = ABSOLUTE stat override applied after add/mult (misprints)
+                const block = bonus.effects[key];
+                if (!block || typeof block !== "object" || Array.isArray(block)) {
+                    return `${label} effects.${key} must be an object`;
+                }
+                for (const [stat, value] of Object.entries(block)) {
+                    if (!DRIVER_EFFECT_STATS.includes(stat)) {
+                        return `${label} effects.${key} has unknown stat "${stat}"`;
+                    }
+                    if (typeof value !== "number") {
+                        return `${label} effects.${key}.${stat} must be a number`;
+                    }
+                }
+            }
+            else {
+                return `${label} effects has unknown key "${key}" (allowed: add, mult, set, moneyMult)`;
+            }
+        }
+        if (bonus.minLevel !== undefined) {
+            const maxLevel = DRIVER_MAX_LEVELS[driver.rarity];
+            // Level 1 is ownership itself, so a gate there is meaningless —
+            // omit minLevel instead of setting it to 1.
+            if (!Number.isInteger(bonus.minLevel) || bonus.minLevel < 2) {
+                return `${label} minLevel must be an integer of 2 or more (Level 1 = ownership; omit minLevel for always-active bonuses)`;
+            }
+            // Leveling rarities can't gate past their max level; level-0 rarities
+            // (icon/autograph/serialised) ignore minLevel at runtime, so any value passes.
+            if (maxLevel > 0 && bonus.minLevel > maxLevel) {
+                return `${label} minLevel ${bonus.minLevel} exceeds max level ${maxLevel} for ${driver.rarity} rarity`;
+            }
+        }
+        if (bonus.cond !== undefined && bonus.cond !== null) {
+            if (typeof bonus.cond !== "object" || Array.isArray(bonus.cond)) {
+                return `${label} cond must be an object`;
+            }
+            for (const key of Object.keys(bonus.cond)) {
+                if (!DRIVER_COND_SPECIAL_KEYS.includes(key) && !DRIVER_COND_FILTER_KEYS.includes(key)) {
+                    return `${label} cond has undocumented key "${key}"`;
+                }
+            }
+            for (const statKey of ["statMin", "statMax"]) {
+                if (bonus.cond[statKey] !== undefined) {
+                    const block = bonus.cond[statKey];
+                    if (!block || typeof block !== "object" || Array.isArray(block)) {
+                        return `${label} cond.${statKey} must be an object`;
+                    }
+                    for (const [stat, value] of Object.entries(block)) {
+                        if (!DRIVER_EFFECT_STATS.includes(stat)) {
+                            return `${label} cond.${statKey} has unknown stat "${stat}"`;
+                        }
+                        if (typeof value !== "number") {
+                            return `${label} cond.${statKey}.${stat} must be a number`;
+                        }
+                    }
+                }
+            }
+            if (bonus.cond.carID !== undefined && (!Array.isArray(bonus.cond.carID) || bonus.cond.carID.some(id => typeof id !== "string"))) {
+                return `${label} cond.carID must be an array of car ID strings`;
+            }
+        }
+    }
+
+    return null;
+}
 
 // ============================================================================
 // INITIALIZATION
@@ -83,7 +267,8 @@ function initialize(basePath = "./src") {
         offerTemplates: { loaded: 0, failed: 0, errors: [] },
         pvpEventTemplates: { loaded: 0, failed: 0, errors: [] },
         packBattleTemplates: { loaded: 0, failed: 0, errors: [] },
-        autoEventTemplates: { loaded: 0, failed: 0, errors: [] }
+        autoEventTemplates: { loaded: 0, failed: 0, errors: [] },
+        drivers: { loaded: 0, failed: 0, errors: [] }
     };
 
     // Load Cars
@@ -228,6 +413,58 @@ function initialize(basePath = "./src") {
         console.log(`   Auto-Event Templates: directory not found, skipping`);
     }
 
+    // Load Drivers (rarity system v3 — validated at startup; invalid files are logged
+    // and skipped, NEVER fatal: drivers are non-critical collectibles)
+    const driversPath = path.join(basePath, "drivers");
+    try {
+        const driverFileNames = readdirSync(driversPath).filter(file => file.endsWith(".json"));
+        for (const file of driverFileNames) {
+            try {
+                const filePath = path.join(driversPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const driverID = file.slice(0, -5);
+                const invalidReason = validateDriver(parsed, driverID);
+                if (invalidReason) {
+                    throw new Error(invalidReason);
+                }
+                drivers.set(driverID, parsed);
+                driverFiles.push(file);
+                stats.drivers.loaded++;
+            } catch (err) {
+                stats.drivers.failed++;
+                stats.drivers.errors.push({ file, error: err.message });
+                console.warn(`⚠️ Driver file skipped: ${file} - ${err.message}`);
+            }
+        }
+    } catch (err) {
+        // drivers/ directory may not exist yet — that's fine
+        console.log(`   Drivers: directory not found, skipping`);
+    }
+
+    /**
+     * A driver's identity to a player is name + variant + rarity — that's what
+     * every list, card and search shows. Nothing enforces it structurally
+     * (driverID is the real key), so two drivers sharing all three would look
+     * identical in cd-driverlist with no way to tell them apart.
+     *
+     * This used to be covered incidentally by `year`. With that field gone,
+     * the check has to be explicit — otherwise adding a second "Lewis Hamilton
+     * (Prime)" at secret rarity fails silently and confusingly, in the UI,
+     * rather than loudly here at boot.
+     */
+    const identities = new Map();
+    for (const [driverID, driver] of drivers) {
+        const identity = `${driver.name}|${driver.variant || ""}|${driver.rarity}`.toLowerCase();
+        if (identities.has(identity)) {
+            console.warn(`⚠️ Driver identity clash: ${driverID} and ${identities.get(identity)} are both `
+                + `"${driver.name}${driver.variant ? ` (${driver.variant})` : ""}" at ${driver.rarity} rarity. `
+                + "Give one a variant — players cannot tell them apart.");
+            stats.drivers.errors.push({ file: `${driverID}.json`, error: "identity clash with " + identities.get(identity) });
+        }
+        else identities.set(identity, driverID);
+    }
+
     initialized = true;
 
     // L-01: Build cached arrays once (avoids Array.from() on every getRandomCar/Track call)
@@ -243,6 +480,7 @@ function initialize(basePath = "./src") {
     console.log(`   PvP Event Templates: ${stats.pvpEventTemplates.loaded} loaded, ${stats.pvpEventTemplates.failed} failed`);
     console.log(`   Pack Battle Templates: ${stats.packBattleTemplates.loaded} loaded, ${stats.packBattleTemplates.failed} failed`);
     console.log(`   Auto-Event Templates: ${stats.autoEventTemplates.loaded} loaded, ${stats.autoEventTemplates.failed} failed`);
+    console.log(`   Drivers: ${stats.drivers.loaded} loaded, ${stats.drivers.failed} failed`);
 
     if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0 || stats.pvpEventTemplates.failed > 0) {
         console.error("❌ Some files failed to load:");
@@ -425,6 +663,24 @@ function getAutoEventTemplate(templateID) {
     return template;
 }
 
+/**
+ * Get driver data by ID (drivers v2)
+ * @param {string} driverID - Driver ID with or without .json extension
+ * @returns {Object|null} Driver data object or null if not found
+ */
+function getDriver(driverID) {
+    if (!driverID) return null;
+    let cleanID = driverID;
+    if (cleanID.includes("/")) cleanID = cleanID.split("/").pop();
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    const driver = drivers.get(cleanID);
+    if (!driver) {
+        console.warn(`⚠️ Driver not found: ${driverID} (cleaned: ${cleanID})`);
+        return null;
+    }
+    return driver;
+}
+
 // ============================================================================
 // FILE LIST GETTERS - Use these instead of readdirSync()
 // ============================================================================
@@ -485,6 +741,14 @@ function getAutoEventTemplateFiles() {
     return autoEventTemplateFiles;
 }
 
+/**
+ * Get list of all driver files that passed validation
+ * @returns {string[]} Array of driver filenames (e.g., ["d00000.json", ...])
+ */
+function getDriverFiles() {
+    return driverFiles;
+}
+
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
@@ -511,6 +775,14 @@ function getAllTracks() {
  */
 function getAllPacks() {
     return Array.from(packs.values());
+}
+
+/**
+ * Get all drivers as an array (drivers v2)
+ * @returns {Object[]} Array of all driver objects
+ */
+function getAllDrivers() {
+    return Array.from(drivers.values());
 }
 
 /**
@@ -604,6 +876,18 @@ function packBattleTemplateExists(templateID) {
 }
 
 /**
+ * Check if a driver exists (drivers v2)
+ * @param {string} driverID - Driver ID to check
+ * @returns {boolean}
+ */
+function driverExists(driverID) {
+    if (!driverID) return false;
+    let cleanID = driverID;
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    return drivers.has(cleanID);
+}
+
+/**
  * Get memory usage statistics
  * @returns {Object} Statistics about the data manager
  */
@@ -616,14 +900,16 @@ function getStats() {
             packs: packs.size,
             offerTemplates: offerTemplates.size,
             pvpEventTemplates: pvpEventTemplates.size,
-            packBattleTemplates: packBattleTemplates.size
+            packBattleTemplates: packBattleTemplates.size,
+            drivers: drivers.size
         },
         fileCounts: {
             cars: carFiles.length,
             tracks: trackFiles.length,
             packs: packFiles.length,
             offerTemplates: offerTemplateFiles.length,
-            pvpEventTemplates: pvpEventTemplateFiles.length
+            pvpEventTemplates: pvpEventTemplateFiles.length,
+            drivers: driverFiles.length
         }
     };
 }
@@ -663,12 +949,14 @@ function reloadAll(basePath = "./src") {
     offerTemplates.clear();
     pvpEventTemplates.clear();
     packBattleTemplates.clear();
+    drivers.clear();
     carFiles = [];
     trackFiles = [];
     packFiles = [];
     offerTemplateFiles = [];
     pvpEventTemplateFiles = [];
     packBattleTemplateFiles = [];
+    driverFiles = [];
     cachedCarArray = [];
     cachedTrackArray = [];
     initialized = false;
@@ -803,6 +1091,7 @@ module.exports = {
     getPvpEventTemplate,
     getPackBattleTemplate,
     getAutoEventTemplate,
+    getDriver,
 
     // File lists (replace readdirSync())
     getCarFiles,
@@ -812,6 +1101,7 @@ module.exports = {
     getPvpEventTemplateFiles,
     getPackBattleTemplateFiles,
     getAutoEventTemplateFiles,
+    getDriverFiles,
 
     // Bulk getters
     getAllCars,
@@ -820,6 +1110,7 @@ module.exports = {
     getAllOfferTemplates,
     getAllPvpEventTemplates,
     getAllPackBattleTemplates,
+    getAllDrivers,
 
     // Existence checks
     carExists,
@@ -828,6 +1119,7 @@ module.exports = {
     offerTemplateExists,
     pvpEventTemplateExists,
     packBattleTemplateExists,
+    driverExists,
 
     // Utilities
     getStats,

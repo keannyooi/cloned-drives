@@ -5,6 +5,7 @@ const { createCanvas, loadImage } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
+const { renderHudCanvas } = require("./generateHud.js");
 
 /** Load an image with a timeout — rejects if it takes too long so the catch block can handle it */
 function loadImageWithTimeout(src, ms = 3000) {
@@ -42,10 +43,13 @@ async function race(message, player, opponent, currentTrack, disablegraphics, si
         try {
             const canvas = createCanvas(674, 379);
             const context = canvas.getContext("2d");
+            // HUDs are composed via renderHudCanvas so the printed stats are the
+            // EXACT values this race runs on — including driver-boosted player
+            // stats (Race Week) and the opponent's tuned stats.
             const [background, playerHud, opponentHud] = await Promise.all([
                 loadImageWithTimeout(currentTrack["background"]),
-                loadImageWithTimeout(player.racehud),
-                loadImageWithTimeout(opponent.racehud),
+                renderHudCanvas(player),
+                renderHudCanvas(opponent),
             ]);
 
             context.drawImage(background, 0, 0, canvas.width, canvas.height);

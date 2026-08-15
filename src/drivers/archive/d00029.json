@@ -1,0 +1,26 @@
+{
+    "driverID": "d00029",
+    "name": "Juan Manuel Fangio",
+    "variant": "",
+    "description": "Five world titles with four different teams and a 46% win rate — numbers no one has touched since. El Maestro.",
+    "image": "",
+    "rarity": "icon",
+    "creator": "bnuuy",
+    "inRotation": false,
+    "bonuses": [
+        {
+            "description": "+3.5% everything in cars built before 1960.",
+            "cond": {"modelYear": {"start": 1800, "end": 1959}},
+            "effects": {"mult": {"topSpeed": 1.035, "accel": 0.965, "handling": 1.035, "mra": 1.035, "ola": 1.035}}
+        },
+        {
+            "description": "The Nürburgring 1957 chase: +3% everything when outgunned.",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 1.03}}
+        },
+        {
+            "description": "El Maestro reads the race: +2% handling & MRA everywhere.",
+            "effects": {"mult": {"handling": 1.02, "mra": 1.02}}
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "driverID": "d00023",
+    "name": "Jim Clark",
+    "variant": "",
+    "description": "Two world titles, the Indy 500, and a strike rate nobody has matched since. The natural.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2.5% core stats in anything built before 1975.",
+            "cond": {"modelYear": {"start": 1800, "end": 1974}},
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025}}
+        },
+        {
+            "description": "+2.5% handling in RWD cars.",
+            "cond": {"driveType": ["rwd"]},
+            "minLevel": 3,
+            "effects": {"mult": {"handling": 1.025}}
+        },
+        {
+            "description": "Featherweight touch: +2% everything in cars under 900 kg.",
+            "cond": {"statMax": {"weight": 900}},
+            "minLevel": 5,
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02, "mra": 1.02, "ola": 1.02}}
+        }
+    ]
+}
