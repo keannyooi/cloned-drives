@@ -575,4 +575,7 @@ function generate(template, context = {}) {
     };
 }
 
-module.exports = { generate };
+// evalScore/getTuned are exported for the Race Week feasibility check, which
+// must score a candidate hand EXACTLY as a real race would — a second copy of
+// the formula would drift and start passing unwinnable rounds.
+module.exports = { generate, evalScore, getTuned };

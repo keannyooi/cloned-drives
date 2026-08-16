@@ -28,6 +28,7 @@ const bot = require("../config/config.js");
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { DateTime } = require("luxon");
 const { getCarFiles, getTrackFiles, getCar, getTrack, getPack, getDriver, driverExists } = require("../util/functions/dataManager.js");
+const { isWinnable } = require("../util/functions/raceWeekFeasibility.js");
 const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, moneyEmojiID, bossEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
 const { ECON, LADDER, BOSS_GATES, DIFFICULTY, REQ_POOLS, DUPE_DRIVER_MONEY, BOSS_SLAYER_DRIVER_ID } = require("../util/consts/raceWeek.js");
@@ -188,13 +189,17 @@ function grantDriver(stats, driverID, opts) {
 
 // ─── Opponent / requirement generation ───────────────────────────────────────
 
-function rejectOpponent(car, band, isBossGate) {
+// `window` overrides the band's CR range — used to pair the opponent to a
+// crMax twist's hand cap, which sits far below the band's own floor.
+function rejectOpponent(car, band, isBossGate, window) {
     const oppClass = rrOpponentClass(car);
     // Boss gates: boss-class cars only. Non-gate rounds NEVER roll boss-class.
     if (isBossGate) return oppClass !== "boss";
     if (oppClass !== "normal") return true;
     const carCR = car.cr || 0;
-    return carCR < band.oppCrMin || carCR > band.oppCrMax;
+    const min = window ? window.min : band.oppCrMin;
+    const max = window ? window.max : band.oppCrMax;
+    return carCR < min || carCR > max;
 }
 
 // Sample one criteria property off a random (non-reference) car — same value
@@ -249,27 +254,39 @@ function addPropertyReq(criteria, pool, wideYears) {
  */
 function generateReqs(band, opponentCar) {
     const criteria = {};
-    if (band.reqMode === "none") return criteria;
+    // crMaxCap is the flat hand cap when a crMax twist fires, else null. The
+    // caller needs this reported EXPLICITLY: on late bands crCapSlack is
+    // negative, so "cap sits below the opponent's CR" no longer identifies the
+    // twist — it is true of every normal round there too.
+    const out = (crMaxCap = null) => ({ reqs: criteria, crMaxCap });
+
+    if (band.reqMode === "none") return out();
 
     if (band.crCapSlack !== null) {
-        criteria.cr = { start: 1, end: opponentCar.cr + Math.floor(Math.random() * 6) + band.crCapSlack };
+        // A NEGATIVE crCapSlack is the late-ladder difficulty lever: the hand is
+        // capped BELOW the opponent's CR, so the player has to beat a stronger
+        // car by picking for the track instead of bringing their biggest.
+        // Measured at 300 wins — "best eligible car wins": +20 -> 61%,
+        // -60 -> 53%, -90 -> 45%. Rounds that become unwinnable (3-6% at those
+        // values) are caught by the feasibility check and re-rolled.
+        criteria.cr = { start: 1, end: Math.max(1, opponentCar.cr + Math.floor(Math.random() * 6) + band.crCapSlack) };
     }
-    if (band.reqMode === "crCap") return criteria;
+    if (band.reqMode === "crCap") return out();
 
     if (band.reqMode === "twist") {
         const twist = REQ_POOLS.twist[Math.floor(Math.random() * REQ_POOLS.twist.length)];
         if (twist.type === "crMax") {
-            criteria.cr = { start: 1, end: twist.values[Math.floor(Math.random() * twist.values.length)] };
+            const cap = twist.values[Math.floor(Math.random() * twist.values.length)];
+            criteria.cr = { start: 1, end: cap };
+            return out(cap);
         }
-        else {
-            addPropertyReq(criteria, twist.pool, false);
-        }
-        return criteria;
+        addPropertyReq(criteria, twist.pool, false);
+        return out();
     }
 
     // "soft" / "hard"
     addPropertyReq(criteria, REQ_POOLS[band.reqMode], band.reqMode === "soft");
-    return criteria;
+    return out();
 }
 
 /**
@@ -277,14 +294,19 @@ function generateReqs(band, opponentCar) {
  * the caller persists opponent/trackID/reqs (single updateOne per resolution).
  * Returns { opponent: { carID, upgrade }, trackID, reqs, isBossGate }.
  */
-function generateMatchup(weeklyWins) {
+// A crMax twist caps the HAND at 350/400/450 while the twist bands' own
+// opponent floor is 799+. The two were rolled independently, so the round could
+// demand a 400 CR car beat a 901 CR one — provably unwinnable. Re-pairing the
+// opponent to the cap preserves the twist's "make cheap cars useful" intent as
+// a genuine low-CR duel. Tune these two to taste.
+const CRMAX_OPP_CEILING_SLACK = 20;    // opponent may edge just above the hand cap
+const CRMAX_OPP_FLOOR_DROP = 120;      // ...but must not be a pushover
+
+// Re-rolls before falling back to a requirement-free round.
+const MATCHUP_ATTEMPTS = 8;
+
+function pickOpponent(band, isBossGate, window) {
     const carFiles = getCarFiles();
-    const trackFiles = getTrackFiles();
-    const isBossGate = BOSS_GATES.includes(weeklyWins + 1);
-    const band = DIFFICULTY.find(b => weeklyWins >= b.min && weeklyWins <= b.max) || DIFFICULTY[DIFFICULTY.length - 1];
-
-    const trackID = trackFiles[Math.floor(Math.random() * trackFiles.length)].slice(0, 6);
-
     let opponentCarID, opponentCar, attempts = 0;
     do {
         opponentCarID = carFiles[Math.floor(Math.random() * carFiles.length)];
@@ -295,11 +317,79 @@ function generateMatchup(weeklyWins) {
             console.log(`[RaceWeek] generateMatchup: band ${band.min}-${band.max} unmatched after 25k samples — widened to any ${isBossGate ? "boss" : "normal"} car`);
             break;
         }
-    } while (rejectOpponent(opponentCar, band, isBossGate));
+    } while (rejectOpponent(opponentCar, band, isBossGate, window));
+    return { opponentCarID, opponentCar };
+}
 
-    const reqs = isBossGate ? {} : generateReqs(band, opponentCar);
+function rollMatchup(weeklyWins) {
+    const trackFiles = getTrackFiles();
+    const isBossGate = BOSS_GATES.includes(weeklyWins + 1);
+    const band = DIFFICULTY.find(b => weeklyWins >= b.min && weeklyWins <= b.max) || DIFFICULTY[DIFFICULTY.length - 1];
+
+    const trackID = trackFiles[Math.floor(Math.random() * trackFiles.length)].slice(0, 6);
+
+    let { opponentCarID, opponentCar } = pickOpponent(band, isBossGate, null);
+    const rolled = isBossGate ? { reqs: {}, crMaxCap: null } : generateReqs(band, opponentCar);
+    const reqs = rolled.reqs;
+
+    // Only re-pair on a genuine crMax twist. The late bands legitimately cap the
+    // hand below the opponent's CR (negative crCapSlack) and MUST NOT have their
+    // opponent dragged back down to the cap — that would undo the difficulty.
+    if (!isBossGate && rolled.crMaxCap !== null) {
+        const cap = rolled.crMaxCap;
+        const repaired = pickOpponent(band, isBossGate, {
+            min: Math.max(1, cap - CRMAX_OPP_FLOOR_DROP),
+            max: cap + CRMAX_OPP_CEILING_SLACK
+        });
+        opponentCarID = repaired.opponentCarID;
+        opponentCar = repaired.opponentCar;
+    }
+
     const upgrade = OPPONENT_UPGRADES[Math.floor(Math.random() * OPPONENT_UPGRADES.length)];
     return { opponent: { carID: opponentCarID.slice(0, 6), upgrade }, trackID, reqs, isBossGate };
+}
+
+/**
+ * Roll a matchup that is provably winnable — some car in the game, at some
+ * tune, satisfies the requirements AND beats the opponent on the track. See
+ * raceWeekFeasibility.js. Falls back to a requirement-free round rather than
+ * ever handing out an impossible one.
+ */
+function generateMatchup(weeklyWins) {
+    let candidate;
+    for (let attempt = 1; attempt <= MATCHUP_ATTEMPTS; attempt++) {
+        candidate = rollMatchup(weeklyWins);
+        if (isWinnable({ opponent: candidate.opponent, track: getTrack(candidate.trackID), reqs: candidate.reqs })) {
+            return candidate;
+        }
+        console.log(`[RaceWeek] matchup rejected as unwinnable (attempt ${attempt}/${MATCHUP_ATTEMPTS}): opponent ${candidate.opponent.carID} [${candidate.opponent.upgrade}] on ${candidate.trackID}, reqs ${JSON.stringify(candidate.reqs)}`);
+    }
+
+    // Every attempt failed — almost certainly a track/opponent pairing no
+    // requirement survives. Drop the requirements: the whole roster becomes
+    // eligible, which is the widest possible pool for beating this opponent.
+    console.log(`[RaceWeek] matchup: ${MATCHUP_ATTEMPTS} unwinnable rolls, falling back to a requirement-free round`);
+    candidate.reqs = {};
+    if (isWinnable({ opponent: candidate.opponent, track: getTrack(candidate.trackID), reqs: {} })) {
+        return candidate;
+    }
+
+    // Even unrestricted this opponent cannot be beaten here (a boss on a track
+    // that suits it perfectly). Re-roll the opponent until one can be.
+    for (let attempt = 1; attempt <= MATCHUP_ATTEMPTS; attempt++) {
+        const band = DIFFICULTY.find(b => weeklyWins >= b.min && weeklyWins <= b.max) || DIFFICULTY[DIFFICULTY.length - 1];
+        const { opponentCarID } = pickOpponent(band, candidate.isBossGate, null);
+        candidate.opponent = {
+            carID: opponentCarID.slice(0, 6),
+            upgrade: OPPONENT_UPGRADES[Math.floor(Math.random() * OPPONENT_UPGRADES.length)]
+        };
+        if (isWinnable({ opponent: candidate.opponent, track: getTrack(candidate.trackID), reqs: {} })) {
+            return candidate;
+        }
+    }
+
+    console.log(`[RaceWeek] matchup: could not construct a winnable round for ${weeklyWins} wins — serving unrestricted and letting the player skip`);
+    return candidate;
 }
 
 const bandFor = (wins) => DIFFICULTY.find(b => wins >= b.min && wins <= b.max) || DIFFICULTY[DIFFICULTY.length - 1];
@@ -329,8 +419,25 @@ function settleNextEvent({ stats, matchup, wins, survivor, usedSkipsToday, today
     }
 
     if (rolled.id === "revengematch" && rolled.opponent && getCar(rolled.opponent.carID)) {
+        // This override lands AFTER generateMatchup's feasibility check, so it
+        // has to re-check its own work or it reintroduces impossible rounds.
+        // The rival itself is fixed (that is the whole point of a revenge
+        // match), so only the requirements can give: re-roll them, then drop
+        // them entirely rather than serve a round nobody can win.
         matchup.opponent = { carID: rolled.opponent.carID, upgrade: rolled.opponent.upgrade };
-        matchup.reqs = generateReqs(bandFor(wins), getCar(rolled.opponent.carID));
+        const track = getTrack(matchup.trackID);
+        let reqs = {};
+        for (let attempt = 1; attempt <= 4; attempt++) {
+            const candidate = generateReqs(bandFor(wins), getCar(rolled.opponent.carID)).reqs;
+            if (isWinnable({ opponent: matchup.opponent, track, reqs: candidate })) {
+                reqs = candidate;
+                break;
+            }
+            if (attempt === 4) {
+                console.log(`[RaceWeek] revenge match vs ${matchup.opponent.carID}: no winnable requirement set in 4 rolls, running unrestricted`);
+            }
+        }
+        matchup.reqs = reqs;
     }
     outcome.active = rolled;
     return outcome;
@@ -1099,3 +1206,7 @@ module.exports = {
         return bot.deleteID(message.author.id);
     }
 };
+
+// Exposed for the matchup test harness. The command loader only reads
+// `command.name`, so extra keys on the export are inert at runtime.
+module.exports._internals = { generateMatchup, rollMatchup, generateReqs, pickOpponent };
