@@ -45,6 +45,7 @@ const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(
 // INITIALIZE DATA MANAGER - Loads all cars, tracks, packs into memory ONCE
 // ============================================================================
 const dataManager = require("./src/util/functions/dataManager.js");
+const { startImageLinkRefresh } = require("./src/util/functions/discordImageLinks.js");
 const dataStats = dataManager.initialize("./src");
 
 // Exit if critical files failed to load
@@ -88,6 +89,10 @@ bot.once("ready", async () => {
     bot.awakenTime = DateTime.now();
 
     await bot.fetchHomeGuild();
+
+    // Art hosted as Discord message links resolves to a signed URL that expires
+    // in ~24h, so it is refreshed here and every 12h after. Needs the gateway up.
+    startImageLinkRefresh();
     // devMode shares the production DB — a dev bot must never run (or announce)
     // the live Monday rollover. Test rollovers manually instead.
     if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] startup check failed: ${error.message}`));

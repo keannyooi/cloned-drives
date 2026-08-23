@@ -51,11 +51,42 @@ const LADDER = [
     { wins: 200, kind: "pack" },
     { wins: 250, kind: "driver" },
     { wins: 300, kind: "pack" },
-    { wins: 500, kind: "pack" },
-    { wins: 700, kind: "pack" },
-    { wins: 888, kind: "pack" },
-    { wins: 1000, kind: "car", exclusive: true }
+    // Retuned 2026-08-23: the old 500/700/888/1000 top was dead weight — across a
+    // full week the best player reached 573, so 700/888/1000 were claimed by
+    // NOBODY and 500 by one player. Compressed to 350/400/450/500 so every rung
+    // is live, with the exclusive at 400 (2 of 19 players reached it) and pack
+    // rungs continuing above it as a tail for the top of the board. Side effect: BOSS_GATES is
+    // derived from the car rungs, so the fourth gate moves 1000 -> 400, which
+    // finally makes the Boss Slayer driver (d00012) obtainable.
+    { wins: 350, kind: "pack" },
+    { wins: 400, kind: "car", exclusive: true }
 ];
+
+/**
+ * ENDLESS LADDER — past the fixed ladder above, a rung lands every `step`
+ * wins and keeps going. Each one rolls its prize KIND fresh at the Monday roll
+ * from `weights` (a weighted pick, not a per-kind independent chance), then
+ * rolls the prize itself from the matching pool below.
+ *
+ * A rung listed in prizePools.json ALWAYS wins over the random roll — curate
+ * any individual endless rung by adding its win count there like a normal rung.
+ *
+ * `max` only bounds how many get generated and stored each week; the best week
+ * on record is 573, so 1500 is generous headroom at trivial storage cost.
+ * Endless rungs are NEVER boss gates (BOSS_GATES derives from LADDER only).
+ */
+const ENDLESS = {
+    step: 50,
+    max: 1500,
+    weights: { pack: 60, car: 30, driver: 10 },
+    // Prize-tier cars are reserved for the exclusive rung, so these are strong
+    // Normals — good pulls without cheapening the 400 headline.
+    car: { cardTypes: ["Normal"], crMin: 850, crMax: 9999 },
+    packTier: "elite",
+    // Mirrors ROTATION_RARITIES (declared further down). Secret+ stays exclusive
+    // to the 400 rung; serialised is rejected by validPrizeDriver regardless.
+    driverRarities: ["base", "rare"]
+};
 
 // The race attempted when weeklyWins + 1 hits one of these is ALWAYS a boss
 // round (boss-class opponents, no reqs, any hand). Derived from the car rungs.
@@ -78,7 +109,7 @@ const FILLER_25 = {
  * pack rungs: value is a pack TIER resolved via daily.js-style getPackTier
  * inference ("elite" in name → elite, "booster" → booster, else standard);
  * null = not a pack rung (250 is the weekly driver rung).
- * Rung 1000 additionally rolls a RUNG_1000_DRIVER_RARITY driver alongside
+ * The exclusive rung additionally rolls a RUNG_EXCLUSIVE_DRIVER_RARITY driver alongside
  * the exclusive car (rarity v3) — the prize object carries both keys.
  */
 const PRIZE_POOLS = {
@@ -86,16 +117,14 @@ const PRIZE_POOLS = {
         50: { cardTypes: ["Normal"], crMin: 550, crMax: 699 },
         100: { cardTypes: ["Normal"], crMin: 700, crMax: 849 },
         150: { cardTypes: ["Normal"], crMin: 850, crMax: 999 },
-        1000: { cardTypes: ["Prize"], crMin: 1000, crMax: 99999 }
+        400: { cardTypes: ["Prize"], crMin: 1000, crMax: 99999 }
     },
     pack: {
         10: "standard",
         200: "standard",
         250: null,
         300: "standard",
-        500: "elite",
-        700: "elite",
-        888: "elite"
+        350: "elite"
     }
 };
 
@@ -170,7 +199,7 @@ const ROTATION_RARITIES = ["base", "rare"];
 
 // Rung-1000 grants the exclusive car AND a rolled driver of this rarity —
 // the weekly prize object carries both keys (additive, not replacing the car).
-const RUNG_1000_DRIVER_RARITY = "secret";
+const RUNG_EXCLUSIVE_DRIVER_RARITY = "secret";
 
 /**
  * Card-art palette (rarity v3) — the colour each tier's card is printed in.
@@ -308,12 +337,13 @@ module.exports = {
     WEEK_KEY_FORMAT,
     LADDER,
     BOSS_GATES,
+    ENDLESS,
     FILLER_25,
     PRIZE_POOLS,
     DIFFICULTY,
     REQ_POOLS,
     ROTATION_RARITIES,
-    RUNG_1000_DRIVER_RARITY,
+    RUNG_EXCLUSIVE_DRIVER_RARITY,
     RARITY_COLORS,
     RECRUIT,
     DUPE_DRIVER_MONEY,

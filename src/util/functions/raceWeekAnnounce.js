@@ -21,6 +21,7 @@ const {
     raceWeekChampionRoleID
 } = require("../consts/consts.js");
 const { getCar, getDriver } = require("./dataManager.js");
+const { LADDER, ENDLESS } = require("../consts/raceWeek.js");
 const carNameGen = require("./carNameGen.js");
 const rwEmoji = require("./rwEmoji.js");
 const { driverDisplayName } = require("./raceWeekEvents.js");
@@ -143,8 +144,11 @@ function buildEmbeds({ currentKey, prizes, standings, totals, meta, nextMeta, we
     // so the numbers line up into an actual ladder, and every car carries its
     // rarity + CR — the thing that makes a prize look worth chasing, and what
     // cd-carinfo shows everywhere else.
-    const exclusiveID = prizeCarID(prizes, 1000);
-    const secretDriverID = prizes["1000"] && prizes["1000"].driver;
+    // Derived from LADDER, never hardcoded — the exclusive rung moved 1000 -> 500
+    // on 2026-08-23 and a literal here would have silently emptied the headline.
+    const exclusiveWins = (LADDER.find(rung => rung.exclusive) || LADDER[LADDER.length - 1]).wins;
+    const exclusiveID = prizeCarID(prizes, exclusiveWins);
+    const secretDriverID = prizes[String(exclusiveWins)] && prizes[String(exclusiveWins)].driver;
     const secretDriver = secretDriverID ? getDriver(secretDriverID) : null;
     const rotationDriverID = prizes["250"] && prizes["250"].driver;
     const rotationDriver = rotationDriverID ? getDriver(rotationDriverID) : null;
@@ -154,7 +158,7 @@ function buildEmbeds({ currentKey, prizes, standings, totals, meta, nextMeta, we
     if (rotationDriver) {
         ladder.push(rung(250, `${driverRarityEmoji(rotationDriver.rarity)} **${driverDisplayName(rotationDriver)}** · driver of the week`));
     }
-    ladder.push(rung(1000, `${rwEmoji("exclusive")} **${carLabel(exclusiveID)}**`));
+    ladder.push(rung(exclusiveWins, `${rwEmoji("exclusive")} **${carLabel(exclusiveID)}**`));
     if (secretDriver) {
         // A continuation of the 1000 rung, not a rung of its own. An empty code
         // span was used to indent it and rendered as a stray grey box, so the
@@ -162,6 +166,12 @@ function buildEmbeds({ currentKey, prizes, standings, totals, meta, nextMeta, we
         // reads as "here is a secret driver" rather than trailing off the name.
         ladder.push(`↳ SECRET driver: ${driverRarityEmoji(secretDriver.rarity)} **${driverDisplayName(secretDriver)}**`);
     }
+    // The ladder does not stop at the exclusive: a rung lands every ENDLESS.step
+    // wins after it, each rolling pack/car/driver. Listing 22 of them would bury
+    // the headline, so it is summarised as one line.
+    const firstEndless = exclusiveWins + ENDLESS.step;
+    ladder.push(rung(`${firstEndless}+`.padStart(4), `🎲 a **mystery prize** every ${ENDLESS.step} wins — pack, car or driver`));
+
     // 🎁 rather than 🏆 — rwEmoji("winner") above already uses a trophy, and two
     // trophies in one embed reads as a mistake.
     main.addFields({ name: "🎁 This week's headline prizes", value: ladder.join("\n") });

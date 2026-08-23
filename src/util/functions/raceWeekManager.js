@@ -22,7 +22,7 @@ const { readFileSync } = require("fs");
 const path = require("path");
 const { DateTime } = require("luxon");
 const { BotError } = require("../classes/classes.js");
-const { WEEK_KEY_FORMAT, LADDER, FILLER_25, PRIZE_POOLS } = require("../consts/raceWeek.js");
+const { WEEK_KEY_FORMAT, LADDER, FILLER_25, PRIZE_POOLS, ENDLESS } = require("../consts/raceWeek.js");
 const { getCar, getPack, getDriver, getAllDrivers, getCarFiles, getPackFiles } = require("./dataManager.js");
 const { getBaseType } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
@@ -109,6 +109,36 @@ function getRotationPool() {
  * drivers are loaded (the rung then rolls car-only rather than blocking the
  * whole weekly rollover).
  */
+/**
+ * A driver eligible to DROP: rarity in `rarities`, not recruit-exclusive, and
+ * inRotation. That last flag is load-bearing — it marks drivers that must never
+ * be handed out by a random roll: Ragnar Voss (earned by clearing every boss
+ * gate), The Rookie (the default everyone already owns), and the secret-rung
+ * Hamilton. Without it an endless rung will happily gift the Boss Slayer.
+ */
+function rollRotationDriver(rarities) {
+    const allowed = new Set((rarities || []).map(rarity => String(rarity).toLowerCase()));
+    const pool = getAllDrivers().filter(driver =>
+        allowed.has(normalizeDriverRarity(driver.rarity))
+        && driver.recruitExclusive !== true
+        && driver.inRotation === true);
+    if (pool.length === 0) return null;
+    return pool[Math.floor(Math.random() * pool.length)].driverID;
+}
+
+/** Weighted pick of "pack" | "car" | "driver" for one endless rung. */
+function rollEndlessKind(weights) {
+    const entries = Object.entries(weights || ENDLESS.weights || {}).filter(([, weight]) => weight > 0);
+    const total = entries.reduce((sum, [, weight]) => sum + weight, 0);
+    if (total <= 0) return "pack";
+    let roll = Math.random() * total;
+    for (const [kind, weight] of entries) {
+        roll -= weight;
+        if (roll < 0) return kind;
+    }
+    return entries[entries.length - 1][0];
+}
+
 function rollSecretDriver() {
     const pool = getAllDrivers().filter(driver =>
         normalizeDriverRarity(driver.rarity) === "secret" && driver.recruitExclusive !== true);
@@ -142,6 +172,34 @@ function loadFullConfig() {
         console.log(`[RaceWeek] prizePools.json unreadable (${error.message}) — automatic rules only`);
         return {};
     }
+}
+
+/**
+ * The "endless" block from prizePools.json, over the ENDLESS defaults in consts.
+ * Read FRESH like every other pool, so interval, ceiling, kind weights and the
+ * curated pools can all be edited without a restart. Empty/absent pool = the
+ * automatic roll, exactly as with the fixed rungs.
+ */
+function getEndlessConfig(cfg = loadFullConfig()) {
+    const raw = (cfg && typeof cfg.endless === "object" && cfg.endless) || {};
+    const positive = (value, fallback) => (typeof value === "number" && value > 0 ? value : fallback);
+    const weights = {};
+    for (const kind of ["pack", "car", "driver"]) {
+        const configured = raw.weights && raw.weights[kind];
+        weights[kind] = typeof configured === "number" && configured >= 0 ? configured : ENDLESS.weights[kind];
+    }
+    const list = value => (Array.isArray(value) ? value : []);
+    return {
+        step: positive(raw.step, ENDLESS.step),
+        max: positive(raw.max, ENDLESS.max),
+        weights,
+        carPool: list(raw.carPool),
+        packPool: list(raw.packPool),
+        driverPool: list(raw.driverPool),
+        car: ENDLESS.car,
+        packTier: ENDLESS.packTier,
+        driverRarities: ENDLESS.driverRarities
+    };
 }
 
 /**
@@ -198,15 +256,62 @@ function getEffectiveConfig(dt = DateTime.utc()) {
 
 // Random valid entry from a configured pool, or null (→ automatic rule).
 // Invalid IDs are skipped with a warning, never fatal.
+/**
+ * A pool entry is either a bare ID ("c03652") or a weighted one
+ * ({ "id": "c03652", "weight": 5 }). Weight defaults to 1, so a plain list stays
+ * a uniform roll and every existing pool keeps behaving exactly as before.
+ */
+function normalizePoolEntry(entry, label) {
+    if (typeof entry === "string") return { id: entry, weight: 1 };
+    if (entry && typeof entry === "object" && typeof entry.id === "string") {
+        // Any finite number, decimals included — 0.5 is simply half a share, and
+        // weights never need to sum to anything. Exactly 0 DISABLES the entry,
+        // which is the useful way to park one without deleting the line; a
+        // missing weight means 1. Without this, 0 silently meant "normal odds".
+        let weight = 1;
+        if (typeof entry.weight === "number" && Number.isFinite(entry.weight)) {
+            if (entry.weight < 0) {
+                console.log(`[RaceWeek] prizePools: negative weight on ${label} "${entry.id}" — treated as 0 (never picked)`);
+                weight = 0;
+            }
+            else {
+                weight = entry.weight;
+            }
+        }
+        return { id: entry.id, weight };
+    }
+    console.log(`[RaceWeek] prizePools: malformed ${label} entry ${JSON.stringify(entry)} — expected an ID string or { id, weight }`);
+    return null;
+}
+
 function pickFromPool(pool, validator, label) {
     if (!Array.isArray(pool) || pool.length === 0) return null;
-    const valid = pool.filter(id => {
-        if (validator(id)) return true;
-        console.log(`[RaceWeek] prizePools: skipping invalid ${label} "${id}"`);
-        return false;
-    });
+    const valid = [];
+    for (const raw of pool) {
+        const entry = normalizePoolEntry(raw, label);
+        if (!entry) continue;
+        if (!validator(entry.id)) {
+            console.log(`[RaceWeek] prizePools: skipping invalid ${label} "${entry.id}"`);
+            continue;
+        }
+        valid.push(entry);
+    }
     if (valid.length === 0) return null;
-    return valid[Math.floor(Math.random() * valid.length)];
+    // Zero-weight entries are parked, not picked. If EVERY entry is parked the
+    // pool is effectively empty, so fall back to the automatic rule rather than
+    // silently handing back the last one.
+    const usable = valid.filter(entry => entry.weight > 0);
+    if (usable.length === 0) {
+        console.log(`[RaceWeek] prizePools: every ${label} entry is weight 0 — automatic rule used instead`);
+        return null;
+    }
+    const total = usable.reduce((sum, entry) => sum + entry.weight, 0);
+    let roll = Math.random() * total;
+    for (const entry of usable) {
+        roll -= entry.weight;
+        if (roll < 0) return entry.id;
+    }
+    return usable[usable.length - 1].id;
 }
 
 // ANY existing car is poolable — including BM/reference cards and bosses; the
@@ -227,7 +332,12 @@ const validPrizeDriver = id => {
 // for its week rather than shifting (and desyncing) every later pairing.
 function pickOrderedFromPool(pool, validator, label, dt) {
     if (!Array.isArray(pool) || pool.length === 0) return null;
-    const id = pool[dt.toUTC().weekNumber % pool.length];
+    // Weights are deliberately IGNORED here: "ordered" is a deterministic weekly
+    // rotation where each entry owns exactly one slot. To give an entry more
+    // weeks, list it more than once — that is what position means in this mode.
+    const ids = pool.map(entry => normalizePoolEntry(entry, label)).filter(Boolean).map(entry => entry.id);
+    if (ids.length === 0) return null;
+    const id = ids[dt.toUTC().weekNumber % ids.length];
     if (validator(id)) return id;
     console.log(`[RaceWeek] prizePools: ordered ${label} "${id}" is invalid — automatic rule fallback for this week (fix the entry to keep pairings aligned)`);
     return null;
@@ -273,6 +383,47 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
                 return null;
             }
             return prize;
+        }
+        case "endless": {
+            // Curation beats the dice: if prizePools.json configures ANY pool for
+            // this win count, that IS the prize and no kind is rolled.
+            const curated = {};
+            const curatedCar = pick(rungCfg.carPool, validPrizeCar, "carID");
+            if (curatedCar) curated.car = { carID: curatedCar, upgrade: "000" };
+            const curatedDriver = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
+            if (curatedDriver) curated.driver = curatedDriver;
+            const curatedPack = pick(rungCfg.packPool, validPrizePack, "packID");
+            if (curatedPack) curated.pack = curatedPack;
+            if (typeof rungCfg.money === "number" && rungCfg.money > 0) curated.money = rungCfg.money;
+            if (Object.keys(curated).length > 0) return curated;
+
+            const endless = getEndlessConfig();
+            const kind = rollEndlessKind(endless.weights);
+            if (kind === "car") {
+                // A curated endless pool beats the automatic CR window.
+                const fromPool = pick(endless.carPool, validPrizeCar, "carID");
+                if (fromPool) return { car: { carID: fromPool, upgrade: "000" } };
+                // rollPrizeCar THROWS on an empty pool rather than returning null,
+                // and one bad window must not abort the whole weekly roll.
+                try {
+                    const carID = rollPrizeCar(endless.car);
+                    if (carID) return { car: { carID, upgrade: "000" } };
+                }
+                catch (error) {
+                    console.log(`[RaceWeek] endless rung ${rung.wins}: car roll failed (${error.message}) — falling back to a pack`);
+                }
+            }
+            else if (kind === "driver") {
+                const pooledDriver = pick(endless.driverPool, validPrizeDriver, "driverID");
+                if (pooledDriver) return { driver: pooledDriver };
+                const driverID = rollRotationDriver(endless.driverRarities);
+                if (driverID) return { driver: driverID };
+                console.log(`[RaceWeek] endless rung ${rung.wins}: no eligible drivers — falling back to a pack`);
+            }
+            // Pack is both the common case and the safety net for a failed roll.
+            const pooledPack = pick(endless.packPool, validPrizePack, "packID");
+            const packID = pooledPack || rollPrizePack(endless.packTier);
+            return packID ? { pack: packID } : null;
         }
         case "filler":
             return { money: (typeof rungCfg.money === "number" && rungCfg.money > 0) ? rungCfg.money : FILLER_25.money };
@@ -324,6 +475,18 @@ function getActiveLadder(cfg = getEffectiveConfig().cfg) {
             || (typeof rungCfg.money === "number" && rungCfg.money > 0);
         if (!hasAny) continue;
         ladder.push({ wins, kind: "custom" });
+        known.add(wins);
+    }
+
+    // Endless tail: one rung every ENDLESS.step past the fixed ladder, each
+    // rolling its own prize kind. Anything already claimed by LADDER or by a
+    // curated prizePools key is skipped, so config always wins.
+    const endless = getEndlessConfig();
+    const top = LADDER.reduce((max, rung) => Math.max(max, rung.wins), 0);
+    for (let wins = top + endless.step; wins <= endless.max; wins += endless.step) {
+        if (known.has(wins)) continue;
+        ladder.push({ wins, kind: "endless" });
+        known.add(wins);
     }
     return ladder.sort((a, b) => a.wins - b.wins);
 }

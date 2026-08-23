@@ -1,20 +1,23 @@
 {
-    "_comment": "Race Week configurable prize pools. Read FRESH at every Monday roll and by cd-raceweekprizes reroll - edit any time, no restart needed. An empty/missing pool falls back to the automatic rule (CR band for car rungs, pack tier for pack rungs, base/rare rotation for 250, random secret driver for 1000). Invalid IDs are skipped with a console warning. Serialised drivers are never valid ladder prizes.",
+    "_comment": "Race Week configurable prize pools. Read FRESH at every Monday roll and by cd-raceweekprizes reroll - edit any time, no restart needed. An empty/missing pool falls back to the automatic rule (CR band for car rungs, pack tier for pack rungs, base/rare rotation for 250, random secret driver for the exclusive rung). Invalid IDs are skipped with a console warning. Serialised drivers are never valid ladder prizes.",
     "_rules": {
         "carPool": "list of carIDs - ANY car is allowed (BM/reference cards, bosses, anything that exists)",
         "packPool": "list of packIDs",
         "driverPool": "list of driverIDs (serialised drivers are never valid ladder prizes)",
-        "ordered": "true on any rung = its pools cycle by ISO week number IN LIST ORDER instead of random; the same week index is used across all pools in that rung, so equal-length carPool+driverPool lists pair up for themed weeks (rung 1000 ships ordered)",
+        "pool_entries": "Every pool (carPool/packPool/driverPool, in rungs AND in endless) takes either a bare ID (\"c03652\") or a weighted entry ({ \"id\": \"c03652\", \"weight\": 9 }). Weight defaults to 1, so a plain list is a uniform roll. Weights are RELATIVE shares and never need to sum to anything — 7/3, 0.7/0.3 and 700/300 are all the same 70/30 split. Decimals are fine (0.5 is half a share, 0.05 is about 5%). A weight of exactly 0 DISABLES that entry (park it without deleting the line); if every entry is 0 the pool counts as empty and the automatic rule takes over. Missing weight = 1. Mixing forms is fine. Listing an ID twice also doubles its chance, which is the easy way to do small ratios. NOTE: an \"ordered\" pool IGNORES weights — it is a fixed weekly rotation, so repeat an entry to give it more weeks.",
+        "ordered": "true on any rung = its pools cycle by ISO week number IN LIST ORDER instead of random; the same week index is used across all pools in that rung, so equal-length carPool+driverPool lists pair up for themed weeks (the exclusive rung ships ordered)",
         "money": "money amount for the rung (25-rung override, or part of a custom rung)",
+        "endless_rungs": "Past the top fixed rung, a rung lands every 50 wins automatically and rolls its own prize kind (pack/car/driver by weight, see ENDLESS in consts/raceWeek.js). Adding that win count here OVERRIDES the random roll for that rung, exactly like any other. Tuning the interval, ceiling or weights is a code change, not a config one.",
         "custom_rungs": "add ANY numeric key (e.g. \"20\") with at least one pool/money to create a new threshold rung - applies at the next Monday roll, or immediately via cd-raceweekprizes reroll all. Custom rungs are normal races (never boss gates). Remove the key + reroll all to retire it. Players already past the rung's win count that week won't retro-claim it.",
         "rung_250": "driverPool list order IS the weekly rotation order (always ordered)",
         "events": "curated packPool per pack-granting in-race event (packshards / goldenopponent), read fresh at EVERY event resolution - no reroll needed, edits apply to the next drop. Empty pool = automatic roll across every standard-tier pack (event/limited packs included, so curate these once you care)",
         "weeks": "PRE-PROGRAMMED WEEKS. Two key forms: \"2026-W44\" fires that exact week once, \"44\" fires week 44 of EVERY year. Exact beats recurring. Inside a week, any rung key overrides that rung's pools for that week only - every rung you DON'T list falls back to \"rungs\" below exactly as normal, so you only script what you care about. Meta keys: _label (shown in the announcement title), _description (replaces the default blurb), _color (hex, themes the embed). Any key starting with _ is ignored by the prize resolver. Scheduled weeks are resolved at the Monday roll, so edits land at the next rollover or immediately via cd-raceweekprizes reroll all."
     },
     "weeks": {
-        "2026-W35": {
-            "_comment": "FAST & FURIOUS WEEK — Mon 24 Aug to Sun 30 Aug 2026, marking 25 years of the first film. Meta only for now: NO rung keys are set, so every rung runs on its normal pool from \"rungs\" below. Add rung keys ONLY when you have the prize picked — see _howToAddPrizes.",
-            "_howToAddPrizes": "A rung key here REPLACES that rung's normal config for the week, wholesale. So \"1000\": { \"carPool\": [] } does NOT mean 'leave it alone' — an empty pool falls back to the AUTOMATIC rule and you lose the curated prize. Either give the rung a real pool, or leave the key out entirely. Shape to copy: \"1000\": { \"carPool\": [\"cXXXXX\"], \"driverPool\": [\"dXXXXX\"] } · \"50\": { \"carPool\": [\"cXXXXX\"] } · \"200\": { \"packPool\": [\"pXXXXX\"] } · \"25\": { \"money\": 500000 }",
+        "_PARKED-fast-and-furious": {
+            "_status": "PARKED — inactive. This key starts with _ so the resolver ignores it entirely. To arm it, rename the key back to a week key like \"2026-W35\" (that exact week) or \"35\" (week 35 every year), then it fires at the next Monday roll.",
+            "_comment": "FAST & FURIOUS WEEK — originally Mon 24 Aug to Sun 30 Aug 2026, postponed, marking 25 years of the first film. Meta only for now: NO rung keys are set, so every rung runs on its normal pool from \"rungs\" below. Add rung keys ONLY when you have the prize picked — see _howToAddPrizes.",
+            "_howToAddPrizes": "A rung key here REPLACES that rung's normal config for the week, wholesale. So \"400\": { \"carPool\": [] } does NOT mean 'leave it alone' — an empty pool falls back to the AUTOMATIC rule and you lose the curated prize. Either give the rung a real pool, or leave the key out entirely. Shape to copy: \"400\": { \"carPool\": [\"cXXXXX\"], \"driverPool\": [\"dXXXXX\"] } · \"50\": { \"carPool\": [\"cXXXXX\"] } · \"200\": { \"packPool\": [\"pXXXXX\"] } · \"25\": { \"money\": 500000 }",
             "_label": "Fast & Furious",
             "_color": "#00a8e8",
             "_description": "Twenty-five years since a green Eclipse and an orange Supra taught everyone what a quarter mile is. It's not about the prizes. It's about family."
@@ -24,26 +27,66 @@
             "_label": "Halloween",
             "_description": "The lights are off at the circuit and something out there is running quicker lap times than it has any right to.",
             "_color": "#ff6a00",
-            "1000": { "carPool": ["c01234"], "driverPool": ["d00007"] },
-            "500": { "packPool": ["p00099"] }
+            "400": { "carPool": ["c01234"], "driverPool": ["d00007"] },
+            "300": { "packPool": ["p00099"] }
         }
     },
+    "endless": {
+        "_comment": "THE ENDLESS TAIL. Past the last fixed rung a prize lands every `step` wins, up to `max`. Each of those rungs rolls its KIND from `weights` at the Monday roll, then draws from the matching pool below. Read fresh like everything else here — no restart.",
+        "_pools": "Weighted entries work here too ({ \"id\": \"cXXXXX\", \"weight\": 5 }) — see pool_entries in _rules. Empty pool = automatic roll (strong Normal cars 850+, elite packs, any in-rotation base/rare driver). Fill one to curate exactly what can drop, same as the rung pools below. Drivers flagged inRotation:false are NEVER dropped automatically — that protects Ragnar Voss, The Rookie and the secret-rung driver — but listing one in driverPool here WILL hand it out, so be deliberate.",
+        "_override": "To pin a single endless rung, just add its win count to \"rungs\" below (e.g. \"750\": { \"carPool\": [\"cXXXXX\"] }). A configured rung always beats the random roll.",
+        "_weights": "Relative, not percentages — they are normalised. { pack: 60, car: 30, driver: 10 } gives 60/30/10; { pack: 1, car: 1, driver: 0 } gives a 50/50 car-or-pack split and no drivers.",
+        "step": 50,
+        "max": 1000,
+        "weights": { "pack": 60, "car": 30, "driver": 10 },
+        "carPool": [
+		{ "id": "c05207", "weight": 9 },
+		{ "id": "c04566", "weight": 9 },		
+		{ "id": "c01734", "weight": 9 },		
+		{ "id": "c07654", "weight": 9 },		
+		{ "id": "c02814", "weight": 9 },		
+		{ "id": "c05554", "weight": 9 },		
+		{ "id": "c04344", "weight": 9 },		
+		{ "id": "c02969", "weight": 9 },		
+		{ "id": "c05604", "weight": 9 },		
+		{ "id": "c03514", "weight": 9 },
+		{ "id": "c03968", "weight": 8 },		
+		{ "id": "c06220", "weight": 8 },		
+		{ "id": "c02662", "weight": 8 },		
+		{ "id": "c04924", "weight": 8 },		
+		{ "id": "c07721", "weight": 8 },
+		{ "id": "c01246", "weight": 8 },
+		{ "id": "c03247", "weight": 8 },		
+		{ "id": "c06945", "weight": 7 },		
+		{ "id": "c06946", "weight": 7 },		
+		{ "id": "c07565", "weight": 3 },		
+		{ "id": "c03557", "weight": 3 },	
+		{ "id": "c03176", "weight": 1.5 },
+		{ "id": "c03102", "weight": 1.5 },
+		{ "id": "c03101", "weight": 1.5 },
+		{ "id": "c05352", "weight": 1.5 },
+		{ "id": "c05359", "weight": 0.9 },
+		{ "id": "c00506", "weight": 0.9 },
+		{ "id": "c07121", "weight": 0.9 },
+		{ "id": "c05685", "weight": 0.9 }	
+		],
+        "packPool": ["p00199","p00138","p00133","p00137","p00132","p00198","p00180","p00185","p00045","p00128","p00195","p00043","p00067","p00046","p00108","p00097","p00139","p00059","p00064","p00080","p00190","p00187","p00090"],
+        "driverPool": ["d00003","d00005","d00006","d00007","d00008"]
+    },
     "events": {
-        "packshards": { "packPool": [] },
-        "goldenopponent": { "packPool": [] }
+        "packshards": { "packPool": ["p00009","p00199","p00138","p00133","p00137","p00132","p00198","p00095","p00096"] },
+        "goldenopponent": { "packPool": ["p00199","p00138","p00133","p00137","p00132","p00198","p00095","p00096"] }
     },
     "rungs": {
         "10": { "packPool": ["p00105"] },
-        "25": { "money": 500000 },
-        "50": { "carPool": ["c07710","c06779"], "ordered": true },
-        "100": { "carPool": ["c06489"], "ordered": true },
-        "150": { "carPool": ["c00840"], "ordered": true },
+        "25": { "money": 675000 },
+        "50": { "carPool": ["c04407"], "ordered": true },
+        "100": { "carPool": ["c06456"], "ordered": true },
+        "150": { "carPool": ["c07683"], "ordered": true },
         "200": { "packPool": ["p00125"] },
-        "250": { "driverPool": ["d00003"], "ordered": true },
+        "250": { "driverPool": ["d00034"], "ordered": true },
         "300": { "packPool": ["p00125"] },
-        "500": { "packPool": ["p00154"] },
-        "700": { "packPool": ["p00158"] },
-        "888": { "packPool": ["p00097"] },
-        "1000": { "carPool": ["c03652"], "driverPool": ["d00001"], "ordered": true }
+        "350": { "packPool": ["p00154"] },
+        "400": { "carPool": ["c01424"], "driverPool": ["d00001"], "ordered": true }
     }
 }
