@@ -42,6 +42,7 @@ const offerTemplates = new Map(); // templateID (without .json) -> template data
 const pvpEventTemplates = new Map(); // templateID (without .json) -> pvp event template data
 const packBattleTemplates = new Map(); // templateID (without .json) -> pack battle template data
 const autoEventTemplates = new Map(); // templateID (without .json) -> auto-event template data
+const championshipTemplates = new Map(); // templateID (without .json) -> championship chapter template
 const drivers = new Map();     // driverID (without .json) -> driver data object
 
 // File lists (equivalent to readdirSync results)
@@ -52,6 +53,7 @@ let offerTemplateFiles = [];      // ["o00001.json", "o00002.json", ...]
 let pvpEventTemplateFiles = [];   // ["pe00001.json", "pe00002.json", ...]
 let packBattleTemplateFiles = []; // ["pb00001.json", "pb00002.json", ...]
 let autoEventTemplateFiles = [];  // ["ae00001.json", ...] ("_"-prefixed files are skipped)
+let championshipTemplateFiles = []; // ["ch00001.json", ...] ("_"-prefixed files are skipped)
 let driverFiles = [];             // ["d00000.json", ...] (only files that passed validation)
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
@@ -267,6 +269,7 @@ function initialize(basePath = "./src") {
         offerTemplates: { loaded: 0, failed: 0, errors: [] },
         pvpEventTemplates: { loaded: 0, failed: 0, errors: [] },
         packBattleTemplates: { loaded: 0, failed: 0, errors: [] },
+        championshipTemplates: { loaded: 0, failed: 0, errors: [] },
         autoEventTemplates: { loaded: 0, failed: 0, errors: [] },
         drivers: { loaded: 0, failed: 0, errors: [] }
     };
@@ -391,6 +394,30 @@ function initialize(basePath = "./src") {
         console.log(`   Pack Battle Templates: directory not found, skipping`);
     }
 
+    // Load Championship Templates — pre-built chapters ("_"-prefixed files are
+    // documentation/examples, not templates)
+    const championshipsPath = path.join(basePath, "championships");
+    try {
+        championshipTemplateFiles = readdirSync(championshipsPath)
+            .filter(file => file.endsWith(".json") && !file.startsWith("_"));
+        for (const file of championshipTemplateFiles) {
+            try {
+                const filePath = path.join(championshipsPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const templateID = file.slice(0, -5);
+                championshipTemplates.set(templateID, parsed);
+                stats.championshipTemplates.loaded++;
+            } catch (err) {
+                stats.championshipTemplates.failed++;
+                stats.championshipTemplates.errors.push({ file, error: err.message });
+            }
+        }
+    } catch (err) {
+        // championships/ directory may not exist yet — that's fine
+        console.log(`   Championship Templates: directory not found, skipping`);
+    }
+
     // Load Auto-Event Templates ("_"-prefixed files are documentation, not templates)
     const autoEventsPath = path.join(basePath, "autoevents");
     try {
@@ -479,6 +506,9 @@ function initialize(basePath = "./src") {
     console.log(`   Offer Templates: ${stats.offerTemplates.loaded} loaded, ${stats.offerTemplates.failed} failed`);
     console.log(`   PvP Event Templates: ${stats.pvpEventTemplates.loaded} loaded, ${stats.pvpEventTemplates.failed} failed`);
     console.log(`   Pack Battle Templates: ${stats.packBattleTemplates.loaded} loaded, ${stats.packBattleTemplates.failed} failed`);
+    if (stats.championshipTemplates.loaded > 0 || stats.championshipTemplates.failed > 0) {
+        console.log(`   Championship Templates: ${stats.championshipTemplates.loaded} loaded, ${stats.championshipTemplates.failed} failed`);
+    }
     console.log(`   Auto-Event Templates: ${stats.autoEventTemplates.loaded} loaded, ${stats.autoEventTemplates.failed} failed`);
     console.log(`   Drivers: ${stats.drivers.loaded} loaded, ${stats.drivers.failed} failed`);
 
@@ -650,6 +680,23 @@ function getPackBattleTemplate(templateID) {
  * @param {string} templateID - Template ID with or without .json extension
  * @returns {Object|null} Template data object or null if not found
  */
+function getChampionshipTemplate(templateID) {
+    if (!templateID) return null;
+    let cleanID = templateID;
+    if (cleanID.includes("/")) cleanID = cleanID.split("/").pop();
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    const template = championshipTemplates.get(cleanID);
+    if (!template) {
+        console.warn(`⚠️ Championship template not found: ${templateID} (cleaned: ${cleanID})`);
+        return null;
+    }
+    return template;
+}
+
+function getAllChampionshipTemplates() {
+    return Array.from(championshipTemplates.entries()).map(([id, data]) => ({ templateID: id, ...data }));
+}
+
 function getAutoEventTemplate(templateID) {
     if (!templateID) return null;
     let cleanID = templateID;
@@ -1090,6 +1137,7 @@ module.exports = {
     getOfferTemplate,
     getPvpEventTemplate,
     getPackBattleTemplate,
+    getChampionshipTemplate,
     getAutoEventTemplate,
     getDriver,
 
@@ -1110,6 +1158,7 @@ module.exports = {
     getAllOfferTemplates,
     getAllPvpEventTemplates,
     getAllPackBattleTemplates,
+    getAllChampionshipTemplates,
     getAllDrivers,
 
     // Existence checks

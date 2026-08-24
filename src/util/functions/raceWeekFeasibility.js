@@ -40,7 +40,7 @@ const TUNES = ["000", "333", "666", "699", "969", "996"];
  * Stops at the first winning car — the common case costs a handful of sims,
  * and only a genuinely impossible round pays for a full sweep.
  */
-function bestPossibleResult({ opponent, track, reqs }) {
+function bestPossibleResult({ opponent, track, reqs, applyOrLogic = false }) {
     const opp = getTuned(opponent.carID, opponent.upgrade);
     const best = { score: -Infinity, carID: null, tune: null, eligible: 0 };
 
@@ -53,7 +53,9 @@ function bestPossibleResult({ opponent, track, reqs }) {
 
         let legal;
         try {
-            legal = filterCheck({ car: { carID, upgrade: "000" }, filter: reqs });
+            // applyOrLogic mirrors the caller's runtime check — championships filter
+            // with OR logic (playchampionship.js), Race Week rounds with AND.
+            legal = filterCheck({ car: { carID, upgrade: "000" }, filter: reqs, applyOrLogic });
         }
         catch (error) {
             // filterCheck throws on a malformed range rather than returning

@@ -1,0 +1,935 @@
+{
+    "_comment": "CHAMPIONSHIP CHAPTER TEMPLATE — 100-round worked example. Files here named chXXXXX.json load at startup (restart to pick up new ones; _-prefixed files like this one are ignored by the loader — copy to e.g. ch00001.json to make it creatable). Create in-game with: cd-createchampionship template <name>. Full authoring guide: docs/championship-guide.md.",
+    "_fields": "name = unique championship name. duration = days (number or \"14d\") or \"unlimited\" — the timer starts at cd-startchampionship, NOT at create. isVIP = optional bool. roster = 1-100 rounds in play order.",
+    "_round_fields": "carID + upgrade (000/333/666/699/969/996) + track are required per round. _round is a LABEL for your own navigation — it is ignored at create time, as is any other _-prefixed or unknown key. reqs = optional hand requirements, same shapes as cd-filter. rewards = optional, MAX 3 types: money/fuseTokens/trophies (numbers), car ({carID, upgrade}), pack (packID), driver (driverID).",
+    "_verify": "node scripts/checkChampionship.js src/championships/<file>.json — proves every round is well-formed AND beatable by at least one car in the game.",
+    "name": "Example Chapter",
+    "duration": "unlimited",
+    "roster": [
+        {
+            "_round": "Round 1",
+            "carID": "c03407",
+            "upgrade": "000",
+            "track": "t00188",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 2",
+            "carID": "c02698",
+            "upgrade": "000",
+            "track": "t00184",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 3",
+            "carID": "c00891",
+            "upgrade": "000",
+            "track": "t00042",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 4",
+            "carID": "c02621",
+            "upgrade": "000",
+            "track": "t00223",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 5",
+            "carID": "c03210",
+            "upgrade": "000",
+            "track": "t00011",
+            "reqs": {},
+            "rewards": {
+                "money": 75000
+            }
+        },
+        {
+            "_round": "Round 6",
+            "carID": "c02472",
+            "upgrade": "000",
+            "track": "t00196",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 7",
+            "carID": "c00108",
+            "upgrade": "000",
+            "track": "t00019",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 8",
+            "carID": "c00319",
+            "upgrade": "000",
+            "track": "t00009",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 9",
+            "carID": "c03191",
+            "upgrade": "000",
+            "track": "t00161",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 10",
+            "carID": "c01932",
+            "upgrade": "000",
+            "track": "t00117",
+            "reqs": {},
+            "rewards": {
+                "money": 200000,
+                "trophies": 10
+            }
+        },
+        {
+            "_round": "Round 11",
+            "carID": "c04187",
+            "upgrade": "000",
+            "track": "t00006",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 12",
+            "carID": "c00298",
+            "upgrade": "000",
+            "track": "t00207",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 13",
+            "carID": "c03394",
+            "upgrade": "000",
+            "track": "t00210",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 14",
+            "carID": "c02098",
+            "upgrade": "000",
+            "track": "t00004",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 15",
+            "carID": "c00444",
+            "upgrade": "000",
+            "track": "t00192",
+            "reqs": {},
+            "rewards": {
+                "money": 225000
+            }
+        },
+        {
+            "_round": "Round 16",
+            "carID": "c04246",
+            "upgrade": "000",
+            "track": "t00057",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 17",
+            "carID": "c01044",
+            "upgrade": "000",
+            "track": "t00170",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 18",
+            "carID": "c00307",
+            "upgrade": "000",
+            "track": "t00101",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 19",
+            "carID": "c01306",
+            "upgrade": "000",
+            "track": "t00018",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 20",
+            "carID": "c01243",
+            "upgrade": "000",
+            "track": "t00220",
+            "reqs": {},
+            "rewards": {
+                "money": 400000,
+                "trophies": 20
+            }
+        },
+        {
+            "_round": "Round 21",
+            "carID": "c01323",
+            "upgrade": "333",
+            "track": "t00190",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 22",
+            "carID": "c00475",
+            "upgrade": "333",
+            "track": "t00185",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 23",
+            "carID": "c00858",
+            "upgrade": "333",
+            "track": "t00046",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 24",
+            "carID": "c00065",
+            "upgrade": "333",
+            "track": "t00086",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 25",
+            "carID": "c00985",
+            "upgrade": "333",
+            "track": "t00075",
+            "reqs": {},
+            "rewards": {
+                "pack": "p00005"
+            }
+        },
+        {
+            "_round": "Round 26",
+            "carID": "c00168",
+            "upgrade": "333",
+            "track": "t00005",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 27",
+            "carID": "c00024",
+            "upgrade": "333",
+            "track": "t00187",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 28",
+            "carID": "c03398",
+            "upgrade": "333",
+            "track": "t00135",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 29",
+            "carID": "c00433",
+            "upgrade": "333",
+            "track": "t00069",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 30",
+            "carID": "c00987",
+            "upgrade": "333",
+            "track": "t00139",
+            "reqs": {},
+            "rewards": {
+                "money": 600000,
+                "trophies": 30
+            }
+        },
+        {
+            "_round": "Round 31",
+            "carID": "c00532",
+            "upgrade": "333",
+            "track": "t00117",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 32",
+            "carID": "c00288",
+            "upgrade": "333",
+            "track": "t00017",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 33",
+            "carID": "c00462",
+            "upgrade": "333",
+            "track": "t00170",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 34",
+            "carID": "c00964",
+            "upgrade": "333",
+            "track": "t00168",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 35",
+            "carID": "c00410",
+            "upgrade": "333",
+            "track": "t00185",
+            "reqs": {},
+            "rewards": {
+                "money": 525000
+            }
+        },
+        {
+            "_round": "Round 36",
+            "carID": "c00914",
+            "upgrade": "333",
+            "track": "t00071",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 37",
+            "carID": "c00566",
+            "upgrade": "333",
+            "track": "t00040",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 440
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 38",
+            "carID": "c00102",
+            "upgrade": "333",
+            "track": "t00099",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 39",
+            "carID": "c00001",
+            "upgrade": "333",
+            "track": "t00154",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 40",
+            "carID": "c00281",
+            "upgrade": "333",
+            "track": "t00129",
+            "reqs": {},
+            "rewards": {
+                "money": 800000,
+                "trophies": 40
+            }
+        },
+        {
+            "_round": "Round 41",
+            "carID": "c00529",
+            "upgrade": "666",
+            "track": "t00031",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 42",
+            "carID": "c01554",
+            "upgrade": "666",
+            "track": "t00080",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 43",
+            "carID": "c00282",
+            "upgrade": "666",
+            "track": "t00150",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 44",
+            "carID": "c00726",
+            "upgrade": "666",
+            "track": "t00182",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 45",
+            "carID": "c01597",
+            "upgrade": "666",
+            "track": "t00180",
+            "reqs": {},
+            "rewards": {
+                "money": 675000
+            }
+        },
+        {
+            "_round": "Round 46",
+            "carID": "c00576",
+            "upgrade": "666",
+            "track": "t00045",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 47",
+            "carID": "c00441",
+            "upgrade": "666",
+            "track": "t00212",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 526
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 48",
+            "carID": "c01765",
+            "upgrade": "666",
+            "track": "t00217",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 49",
+            "carID": "c01401",
+            "upgrade": "666",
+            "track": "t00205",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 50",
+            "carID": "c01100",
+            "upgrade": "666",
+            "track": "t00126",
+            "reqs": {},
+            "rewards": {
+                "car": {
+                    "carID": "c06779",
+                    "upgrade": "000"
+                }
+            }
+        },
+        {
+            "_round": "Round 51",
+            "carID": "c00167",
+            "upgrade": "666",
+            "track": "t00063",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 52",
+            "carID": "c00250",
+            "upgrade": "666",
+            "track": "t00129",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 53",
+            "carID": "c00686",
+            "upgrade": "666",
+            "track": "t00110",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 54",
+            "carID": "c01709",
+            "upgrade": "666",
+            "track": "t00201",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 55",
+            "carID": "c00069",
+            "upgrade": "666",
+            "track": "t00135",
+            "reqs": {},
+            "rewards": {
+                "money": 825000
+            }
+        },
+        {
+            "_round": "Round 56",
+            "carID": "c00157",
+            "upgrade": "666",
+            "track": "t00207",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 57",
+            "carID": "c04316",
+            "upgrade": "666",
+            "track": "t00149",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 617
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 58",
+            "carID": "c01227",
+            "upgrade": "666",
+            "track": "t00109",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 59",
+            "carID": "c00077",
+            "upgrade": "666",
+            "track": "t00125",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 60",
+            "carID": "c00743",
+            "upgrade": "666",
+            "track": "t00116",
+            "reqs": {},
+            "rewards": {
+                "money": 1200000,
+                "trophies": 60
+            }
+        },
+        {
+            "_round": "Round 61",
+            "carID": "c00354",
+            "upgrade": "969",
+            "track": "t00047",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 62",
+            "carID": "c00239",
+            "upgrade": "969",
+            "track": "t00124",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 63",
+            "carID": "c00016",
+            "upgrade": "969",
+            "track": "t00131",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 64",
+            "carID": "c00863",
+            "upgrade": "969",
+            "track": "t00163",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 65",
+            "carID": "c00136",
+            "upgrade": "969",
+            "track": "t00175",
+            "reqs": {},
+            "rewards": {
+                "money": 975000
+            }
+        },
+        {
+            "_round": "Round 66",
+            "carID": "c01333",
+            "upgrade": "969",
+            "track": "t00180",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 67",
+            "carID": "c00356",
+            "upgrade": "969",
+            "track": "t00119",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 712
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 68",
+            "carID": "c00193",
+            "upgrade": "969",
+            "track": "t00100",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 69",
+            "carID": "c00089",
+            "upgrade": "969",
+            "track": "t00183",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 70",
+            "carID": "c01213",
+            "upgrade": "969",
+            "track": "t00148",
+            "reqs": {},
+            "rewards": {
+                "money": 1400000,
+                "trophies": 70
+            }
+        },
+        {
+            "_round": "Round 71",
+            "carID": "c00875",
+            "upgrade": "969",
+            "track": "t00211",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 72",
+            "carID": "c00062",
+            "upgrade": "969",
+            "track": "t00088",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 73",
+            "carID": "c00746",
+            "upgrade": "969",
+            "track": "t00151",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 74",
+            "carID": "c01097",
+            "upgrade": "969",
+            "track": "t00190",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 75",
+            "carID": "c00359",
+            "upgrade": "969",
+            "track": "t00159",
+            "reqs": {},
+            "rewards": {
+                "pack": "p00005"
+            }
+        },
+        {
+            "_round": "Round 76",
+            "carID": "c00818",
+            "upgrade": "969",
+            "track": "t00158",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 77",
+            "carID": "c00481",
+            "upgrade": "969",
+            "track": "t00056",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 811
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 78",
+            "carID": "c01078",
+            "upgrade": "969",
+            "track": "t00224",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 79",
+            "carID": "c02572",
+            "upgrade": "969",
+            "track": "t00120",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 80",
+            "carID": "c00113",
+            "upgrade": "969",
+            "track": "t00115",
+            "reqs": {},
+            "rewards": {
+                "money": 1600000,
+                "trophies": 80
+            }
+        },
+        {
+            "_round": "Round 81",
+            "carID": "c01232",
+            "upgrade": "996",
+            "track": "t00214",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 82",
+            "carID": "c01083",
+            "upgrade": "996",
+            "track": "t00037",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 83",
+            "carID": "c02202",
+            "upgrade": "996",
+            "track": "t00123",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 84",
+            "carID": "c00385",
+            "upgrade": "996",
+            "track": "t00037",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 85",
+            "carID": "c01515",
+            "upgrade": "996",
+            "track": "t00016",
+            "reqs": {},
+            "rewards": {
+                "money": 1275000
+            }
+        },
+        {
+            "_round": "Round 86",
+            "carID": "c00804",
+            "upgrade": "996",
+            "track": "t00004",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 87",
+            "carID": "c00404",
+            "upgrade": "996",
+            "track": "t00011",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 913
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 88",
+            "carID": "c01517",
+            "upgrade": "996",
+            "track": "t00029",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 89",
+            "carID": "c01082",
+            "upgrade": "996",
+            "track": "t00090",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 90",
+            "carID": "c01123",
+            "upgrade": "996",
+            "track": "t00113",
+            "reqs": {},
+            "rewards": {
+                "money": 1800000,
+                "trophies": 90
+            }
+        },
+        {
+            "_round": "Round 91",
+            "carID": "c00073",
+            "upgrade": "996",
+            "track": "t00145",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 92",
+            "carID": "c02053",
+            "upgrade": "996",
+            "track": "t00120",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 93",
+            "carID": "c00941",
+            "upgrade": "996",
+            "track": "t00094",
+            "reqs": {
+                "modelYear": {
+                    "start": 1980,
+                    "end": 2026
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 94",
+            "carID": "c00226",
+            "upgrade": "996",
+            "track": "t00020",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 95",
+            "carID": "c01169",
+            "upgrade": "996",
+            "track": "t00033",
+            "reqs": {},
+            "rewards": {
+                "money": 1425000
+            }
+        },
+        {
+            "_round": "Round 96",
+            "carID": "c01538",
+            "upgrade": "996",
+            "track": "t00050",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 97",
+            "carID": "c02045",
+            "upgrade": "996",
+            "track": "t00026",
+            "reqs": {
+                "cr": {
+                    "start": 1,
+                    "end": 1018
+                }
+            },
+            "rewards": {}
+        },
+        {
+            "_round": "Round 98",
+            "carID": "c01274",
+            "upgrade": "996",
+            "track": "t00191",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 99",
+            "carID": "c00670",
+            "upgrade": "996",
+            "track": "t00056",
+            "reqs": {},
+            "rewards": {}
+        },
+        {
+            "_round": "Round 100",
+            "carID": "c01182",
+            "upgrade": "996",
+            "track": "t00131",
+            "reqs": {},
+            "rewards": {
+                "car": {
+                    "carID": "c03652",
+                    "upgrade": "000"
+                },
+                "trophies": 100
+            }
+        }
+    ]
+}

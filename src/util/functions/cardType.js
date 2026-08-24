@@ -102,6 +102,17 @@ const CARD_TYPES = {
         tag: "CE",
     },
 
+    // Championship/chapter reward car — obtainable ONLY by clearing its round.
+    // Distinct from Prize on purpose: Prize sits in the cd-exchange prize pool,
+    // so any prize dupe within ±50 CR could be swapped INTO it. This type has
+    // no exchangePool, closing that road. Behaviorally CollectorsEdition today,
+    // kept as its own row so provenance reads in the data and the two can
+    // diverge later without a re-stamp.
+    ChampionshipExclusive: {
+        ...LOCKED,
+        tag: "Champ",
+    },
+
     // Boss cars: race-only opponents in boss rounds, fully locked as property.
     // (Previously implied by cr > 1500 + isPrize. Note: this row REMOVES the
     // old boss↔boss cd-exchange loophole — set exchangePool: "prize" to restore.)
@@ -207,6 +218,11 @@ for (const [name, row] of Object.entries(CARD_TYPES)) {
 }
 const TYPE_NAMES = Object.keys(RESOLVED);
 const NAME_LOOKUP = new Map(TYPE_NAMES.map(n => [n.toLowerCase(), n]));
+// Aliases — spellings people naturally write in car JSONs / filters. The first
+// live ChampionshipExclusive card was stamped "Champ" (the display tag), which
+// fail-safed to locked but warned; accept it as the same type.
+NAME_LOOKUP.set("champ", "ChampionshipExclusive");
+NAME_LOOKUP.set("ce", "CollectorsEdition");
 
 // ─── Type resolution ─────────────────────────────────────────────────────────
 
