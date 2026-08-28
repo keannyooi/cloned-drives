@@ -202,13 +202,15 @@ function roundStat(stat, value) {
 
 // Cond keys resolved here from race context / tuned stats; every OTHER key is
 // a filterCheck car criterion and is routed through filterCheck untouched.
-const COND_CONTEXT_KEYS = ["statMin", "statMax", "carID", "weather", "surface", "bossRace", "underdog"];
+const COND_CONTEXT_KEYS = ["statMin", "statMax", "carID", "weather", "surface", "trackID", "bossRace", "underdog"];
 
 /**
  * ALL present cond keys must match (AND). Sources per key:
  * carID → the hand's raw card ID (signature cars); statMin/statMax → the
  * TUNED carModule stats race() consumes; weather/surface → track JSON strings
- * (exact case); underdog/bossRace → ctx; anything else → filterCheck against
+ * (exact case); trackID → specific venues by tXXXXX id (rename-proof — track
+ * files carry their own trackID since 2026-08-27); underdog/bossRace → ctx;
+ * anything else → filterCheck against
  * the hand's card (same criteria shapes as event reqs, values lowercased).
  */
 function condMatches(cond, rawCar, carModule, track, ctx) {
@@ -216,6 +218,7 @@ function condMatches(cond, rawCar, carModule, track, ctx) {
     if (Array.isArray(cond.carID) && !(rawCar && cond.carID.includes(rawCar.carID))) return false;
     if (cond.weather && !(track && cond.weather.includes(track.weather))) return false;
     if (cond.surface && !(track && cond.surface.includes(track.surface))) return false;
+    if (cond.trackID && !(track && cond.trackID.includes(track.trackID))) return false;
     if (cond.underdog && !(ctx.playerCR < ctx.oppCR)) return false;
     if (cond.bossRace && !ctx.isBoss) return false;
     if (cond.statMin) {

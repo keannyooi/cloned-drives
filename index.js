@@ -83,10 +83,63 @@ connect(process.env.MONGO_PW)
 
 bot.login(token);
 
+// ── Gateway health ───────────────────────────────────────────────────────────
+// 2026-08-27 outage post-mortem: a 20-minute host network loss killed the
+// gateway WebSocket. When the network returned, mongoose reconnected silently
+// but the gateway never did — the bot sat "alive" (timers running, CPU moving)
+// yet offline to players for over an hour, printing NOTHING, because none of
+// these events had handlers. Log every lifecycle transition so a dead gateway
+// is visible in the console instead of silent.
+bot.on("shardDisconnect", (event, id) => console.error(`[gateway] shard ${id} DISCONNECTED (code ${event?.code}) — discord.js should reconnect; watchdog will exit if it does not`));
+bot.on("shardReconnecting", id => console.log(`[gateway] shard ${id} reconnecting...`));
+bot.on("shardResume", (id, replayed) => console.log(`[gateway] shard ${id} resumed (${replayed} events replayed)`));
+bot.on("shardError", (error, id) => console.error(`[gateway] shard ${id} error: ${error.message}`));
+bot.on("error", error => console.error(`[gateway] client error: ${error.message}`));
+bot.on("warn", info => console.log(`[gateway] warn: ${info}`));
+
+// Session invalidated = discord.js stops and will NEVER reconnect (documented
+// behavior). Staying up in that state is a guaranteed zombie — exit so the
+// panel's crash detection restarts us into a fresh session.
+bot.on("invalidated", () => {
+    console.error("[gateway] session INVALIDATED — client will not reconnect. Exiting for a clean restart.");
+    process.exit(1);
+});
+
+// Zombie watchdog: the panel restarts an EXITED process, but cannot see a
+// process that is alive with a dead gateway. If the client reports not-ready
+// for 10 straight minutes, self-terminate and let the panel bring us back.
+// Armed only after the first successful ready, so a slow boot is never killed.
+let gatewayDownMinutes = 0;
+let watchdogArmed = false;
+// isReady() misses the worst case: a socket that died without the client
+// noticing, so status still says Ready. Real gateway traffic is the honest
+// signal — in a server this size, packets (presences, messages, typing) flow
+// continuously, so 15 minutes of TOTAL silence means the connection is dead
+// regardless of what the client believes. Worst case on a false positive is
+// one clean restart.
+let lastGatewayPacket = Date.now();
+bot.on("raw", () => { lastGatewayPacket = Date.now(); });
+setInterval(() => {
+    if (!watchdogArmed) return;
+    const silentMinutes = Math.floor((Date.now() - lastGatewayPacket) / 60000);
+    if (bot.isReady() && silentMinutes < 15) {
+        if (gatewayDownMinutes >= 3) console.log(`[gateway] recovered after ~${gatewayDownMinutes} minute(s) down`);
+        gatewayDownMinutes = 0;
+        return;
+    }
+    gatewayDownMinutes++;
+    if (gatewayDownMinutes === 3) console.error(`[gateway] watchdog: unhealthy for 3 minutes (ready=${bot.isReady()}, last packet ${silentMinutes}m ago)`);
+    if (gatewayDownMinutes >= 10) {
+        console.error(`[gateway] watchdog: unhealthy for 10 minutes (ready=${bot.isReady()}, last packet ${silentMinutes}m ago) — assuming zombie connection, exiting for a clean restart.`);
+        process.exit(1);
+    }
+}, 60000);
+
 // bot events
 bot.once("ready", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
     bot.awakenTime = DateTime.now();
+    watchdogArmed = true;
 
     await bot.fetchHomeGuild();
 

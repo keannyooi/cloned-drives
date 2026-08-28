@@ -4,7 +4,8 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID, defaultPageLimit } = require("../util/consts/consts.js");
-const { getCar, getPack } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const listRewards = require("../util/functions/listRewards.js");
 const timeDisplay = require("../util/functions/timeDisplay.js");
@@ -74,6 +75,12 @@ module.exports = {
                 for (let packID of rewards.packs) {
                     let currentPack = getPack(packID);
                     rewardDesc += `${currentPack["packName"]}\n`;
+                }
+            }
+            if (rewards.drivers && rewards.drivers.length > 0) {
+                for (let driverID of rewards.drivers) {
+                    let codeDriver = getDriver(driverID);
+                    rewardDesc += `Driver: ${codeDriver ? driverDisplayName(codeDriver) : driverID}\n`;
                 }
             }
             if (rewardDesc === "") {

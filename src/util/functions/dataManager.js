@@ -75,7 +75,7 @@ const DRIVER_RARITIES = ["base", "rare", "secret", "divine", "icon", "autograph"
 const DRIVER_MAX_LEVELS = { base: 4, rare: 5, secret: 6, divine: 7, icon: 0, autograph: 0, serialised: 0 };
 const DRIVER_EFFECT_STATS = ["topSpeed", "accel", "handling", "weight", "mra", "ola"];
 // Race-context / stat-threshold cond keys resolved by the race engine.
-const DRIVER_COND_SPECIAL_KEYS = ["statMin", "statMax", "carID", "weather", "surface", "bossRace", "underdog"];
+const DRIVER_COND_SPECIAL_KEYS = ["statMin", "statMax", "carID", "weather", "surface", "trackID", "bossRace", "underdog"];
 // filterCheck car criteria documented for driver bonus conds.
 const DRIVER_COND_FILTER_KEYS = [
     "make", "model", "country", "tags", "search", "bodyStyle", "gc", "driveType",
@@ -238,6 +238,17 @@ function validateDriver(driver, expectedID) {
             }
             if (bonus.cond.carID !== undefined && (!Array.isArray(bonus.cond.carID) || bonus.cond.carID.some(id => typeof id !== "string"))) {
                 return `${label} cond.carID must be an array of car ID strings`;
+            }
+            if (bonus.cond.trackID !== undefined) {
+                if (!Array.isArray(bonus.cond.trackID) || bonus.cond.trackID.some(id => typeof id !== "string")) {
+                    return `${label} cond.trackID must be an array of track ID strings`;
+                }
+                // Drivers load AFTER tracks, so existence is checkable here — a
+                // typo'd venue would otherwise just never fire, silently.
+                const missingTracks = bonus.cond.trackID.filter(id => !tracks.has(id.replace(/.json$/, "")));
+                if (missingTracks.length > 0) {
+                    return `${label} cond.trackID references unknown track(s): ${missingTracks.join(", ")}`;
+                }
             }
         }
     }

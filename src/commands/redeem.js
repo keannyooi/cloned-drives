@@ -4,7 +4,8 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { SuccessMessage, ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCar, getPack } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const { trackMoneyEarned, trackTrophiesEarned, trackFuseTokensEarned, trackCodeRedeemed } = require("../util/functions/tracker.js");
@@ -117,26 +118,47 @@ module.exports = {
             }
         }
 
-        // Packs (added to unclaimedRewards for opening via cd-rewards)
+        // Packs and drivers route through unclaimedRewards so cd-rewards'
+        // existing machinery does the heavy lifting — pack opening for packs;
+        // dupe→XP conversion, level-ups and ownership for drivers.
+        const pendingEntries = [];
         if (rewards.packs && rewards.packs.length > 0) {
             for (let packID of rewards.packs) {
-                playerData.unclaimedRewards.push({
-                    pack: packID,
-                    origin: `Code: ${codeName}`
-                });
+                pendingEntries.push({ pack: packID, origin: `Code: ${codeName}` });
                 let currentPack = getPack(packID);
                 rewardLog += `1x ${currentPack["packName"]} *(claim via \`cd-rewards\`)*\n`;
             }
         }
+        if (rewards.drivers && rewards.drivers.length > 0) {
+            for (let driverID of rewards.drivers) {
+                const codeDriver = getDriver(driverID);
+                if (!codeDriver) {
+                    // Roster file removed since the code was built — skip the
+                    // grant rather than filing an unclaimable entry.
+                    console.log(`[codes] ${codeName}: unknown driver "${driverID}" skipped`);
+                    continue;
+                }
+                pendingEntries.push({ driver: driverID, origin: `Code: ${codeName}` });
+                rewardLog += `Driver: **${driverDisplayName(codeDriver)}** *(claim via \`cd-rewards\`)*\n`;
+            }
+        }
 
-        // Save player data
-        await profileModel.updateOne({ userID: message.author.id }, {
-            money: playerData.money,
-            trophies: playerData.trophies,
-            fuseTokens: playerData.fuseTokens,
-            garage: playerData.garage,
-            unclaimedRewards: playerData.unclaimedRewards
-        });
+        // Save. Currencies go through $inc and queued rewards through $push,
+        // never absolute writes from the stale pre-read copy — a background
+        // grant (Race Week payout, pack battle milestone) landing between this
+        // command's read and write used to be silently clobbered by the old
+        // whole-array $set. The garage $set remains: addCars merges upgrade
+        // maps, and only user-serialized commands write the garage directly.
+        const update = {
+            "$inc": {
+                money: rewards.money || 0,
+                trophies: rewards.trophies || 0,
+                fuseTokens: rewards.fuseTokens || 0
+            }
+        };
+        if (rewards.cars && rewards.cars.length > 0) update["$set"] = { garage: playerData.garage };
+        if (pendingEntries.length > 0) update["$push"] = { unclaimedRewards: { "$each": pendingEntries } };
+        await profileModel.updateOne({ userID: message.author.id }, update);
 
         // Track redemption
         trackCodeRedeemed();

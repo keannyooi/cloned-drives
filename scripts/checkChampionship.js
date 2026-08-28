@@ -37,7 +37,14 @@ const { _internals } = require("../src/commands/createchampionship.js");
 const { validateTemplateRound } = _internals;
 
 const VERBOSE = process.argv.includes("--verbose");
-const args = process.argv.slice(2).filter(arg => arg !== "--verbose");
+const STRICT = process.argv.includes("--strict");
+const args = process.argv.slice(2).filter(arg => arg !== "--verbose" && arg !== "--strict");
+
+// Authoring convention: rounds not written yet are gated behind an impossible
+// CR requirement (cr 9999-9999) so nobody can progress past the authored part.
+// Reported as WALL, not as a failure — pass --strict to treat walls as errors
+// (e.g. before declaring a chapter finished).
+const isWall = reqs => !!(reqs && reqs.cr && typeof reqs.cr.start === "number" && reqs.cr.start >= 9000);
 
 function carLabel(carID) {
     const car = getCar(carID);
@@ -80,7 +87,7 @@ async function loadRoster() {
     console.log(`\nChecking: ${label}\n`);
 
     const validTunes = getAvailableTunes();
-    let impossible = 0, invalid = 0;
+    let impossible = 0, invalid = 0, walls = 0;
 
     for (const [i, round] of roster.entries()) {
         const tag = round._round || `Round ${i + 1}`;
@@ -100,7 +107,11 @@ async function loadRoster() {
             applyOrLogic: true
         });
 
-        if (!(result.score > 0)) {
+        if (!(result.score > 0) && isWall(round.reqs) && !STRICT) {
+            walls++;
+            console.log(`🧱 ${tag}: WALL — intentional impossible req (cr ${round.reqs.cr.start}+); rounds past here are gated`);
+        }
+        else if (!(result.score > 0)) {
             impossible++;
             console.log(`❌ ${tag}: IMPOSSIBLE — vs ${carLabel(round.carID)} [${round.upgrade}] on ${track.trackName}`);
             console.log(`      reqs ${JSON.stringify(round.reqs || {})} — ${result.eligible} car(s) eligible, best margin ${result.score === -Infinity ? "n/a" : result.score}`);
@@ -110,8 +121,8 @@ async function loadRoster() {
         }
     }
 
-    console.log(`\n${roster.length} rounds — ${roster.length - impossible - invalid} beatable, ${impossible} impossible, ${invalid} invalid`);
-    if (impossible + invalid === 0) console.log("✅ Every round is valid and beatable.");
+    console.log(`\n${roster.length} rounds — ${roster.length - impossible - invalid - walls} beatable, ${walls} wall(s), ${impossible} impossible, ${invalid} invalid`);
+    if (impossible + invalid === 0) console.log(walls > 0 ? `✅ Every authored round is valid and beatable (${walls} construction wall(s) noted).` : "✅ Every round is valid and beatable.");
     process.exit(impossible + invalid > 0 ? 1 : 0);
 })().catch(error => {
     console.error("❌ Failed:", error.stack || error.message);

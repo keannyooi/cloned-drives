@@ -3,7 +3,8 @@
 const bot = require("../config/config.js");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
+const { getCarFiles, getPackFiles, getCar, getPack, getDriver, getAllDrivers } = require("../util/functions/dataManager.js");
+const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -19,6 +20,8 @@ module.exports = {
         "<code> removecar <car name>",
         "<code> addpack <pack name>",
         "<code> removepack <pack name>",
+        "<code> adddriver <driver ID or name>",
+        "<code> removedriver <driver ID or name>",
         "<code> maxuses <number>",
         "<code> deadline <days or \"unlimited\">",
         "<code> activate",
@@ -353,6 +356,81 @@ module.exports = {
                         throw error;
                     });
                 break;
+
+            case "adddriver":
+            case "removedriver": {
+                if (!args[2]) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, please provide a driver.",
+                        desc: `Usage: \`cd-editcode <code> ${criteria} <driver ID or name>\` — IDs look like \`d00003\`, see \`cd-driverlist\`.`,
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+                // Resolve by ID first, then by (partial) display name.
+                const driverQuery = args.slice(2).join(" ").toLowerCase();
+                let driver = getDriver(driverQuery);
+                if (!driver) {
+                    const matches = getAllDrivers().filter(entry =>
+                        driverDisplayName(entry).toLowerCase().includes(driverQuery));
+                    if (matches.length === 1) driver = matches[0];
+                    else {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: matches.length === 0 ? "Error, driver not found." : "Error, more than one driver matches.",
+                            desc: matches.length === 0
+                                ? "Provide a driver ID (\`d00003\`) or enough of the name to be unique. \`cd-driverlist\` shows the roster."
+                                : matches.map(entry => `\`${entry.driverID}\` ${driverDisplayName(entry)}`).join("\n"),
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage();
+                    }
+                }
+
+                if (criteria === "adddriver") {
+                    // Serialised drivers mint numbered copies from a global,
+                    // capped ledger — the Driver Scout is their only intended
+                    // source, and a code with unlimited redemptions could
+                    // drain the whole mint. Keep them out of codes entirely.
+                    if (rarityOf(driver) === "serialised") {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, serialised drivers can't be given through codes.",
+                            desc: "Serials mint from a capped global ledger — the Driver Scout is their only source.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage();
+                    }
+                    if (!codeData.rewards.drivers) codeData.rewards.drivers = [];
+                    codeData.rewards.drivers.push(driver.driverID);
+                }
+                else {
+                    const index = (codeData.rewards.drivers || []).indexOf(driver.driverID);
+                    if (index === -1) {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, that driver isn't on this code.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage();
+                    }
+                    codeData.rewards.drivers.splice(index, 1);
+                    if (codeData.rewards.drivers.length === 0) delete codeData.rewards.drivers;
+                }
+
+                const driverList = (codeData.rewards.drivers || []).map(id => {
+                    const entry = getDriver(id);
+                    return entry ? driverDisplayName(entry) : id;
+                }).join("\n") || "None";
+                successMessage = new SuccessMessage({
+                    channel: message.channel,
+                    title: `Successfully ${criteria === "adddriver" ? "added" : "removed"} ${driverDisplayName(driver)} ${criteria === "adddriver" ? "to" : "from"} code \`${codeName}\`!`,
+                    fields: [{ name: "Drivers on this code", value: driverList }],
+                    author: message.author
+                });
+                break;
+            }
 
             case "maxuses":
                 if (!args[2] || isNaN(args[2]) || parseInt(args[2]) < 0) {

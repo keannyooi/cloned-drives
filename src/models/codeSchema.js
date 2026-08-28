@@ -13,6 +13,7 @@ const codeSchema = new Schema({
         // fuseTokens: Number
         // cars: [{ carID: String, upgrade: String }]
         // packs: [String]  (pack IDs, e.g. "p00001")
+        // drivers: [String]  (driver IDs, e.g. "d00003" — granted via unclaimedRewards, claimed with cd-rewards)
     },
     maxRedemptions: { type: Number, default: 0 }, // 0 = unlimited
     redeemedBy: { type: Array, default: [] },     // Array of user IDs
