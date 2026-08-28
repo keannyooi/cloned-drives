@@ -3,6 +3,33 @@
 const { carSave } = require("../consts/consts.js");
 
 function addCars(garage, cars) {
+    // TRIPWIRE + SELF-HEAL (2026-08-28): 7 live profiles were found carrying
+    // DUPLICATE garage entries for the same carID — every known writer merges
+    // through this function, so the duplicates' origin is still unidentified.
+    // The Map below silently masks them (last entry wins, earlier siblings
+    // stranded). Instead: merge duplicates into one entry, and log LOUDLY so
+    // the next occurrence pinpoints when/where they are being born.
+    const counts = new Map();
+    for (const car of garage) {
+        if (car && car.carID) counts.set(car.carID, (counts.get(car.carID) || 0) + 1);
+    }
+    const duped = [...counts.entries()].filter(([, n]) => n > 1).map(([id]) => id);
+    if (duped.length > 0) {
+        console.log(`[garage] DUPLICATE entries detected for ${duped.join(", ")} — merging. If this line appears, the write that created them happened recently; check surrounding logs.`);
+        for (const id of duped) {
+            const entries = garage.filter(car => car && car.carID === id);
+            const primary = entries[0];
+            for (const extra of entries.slice(1)) {
+                for (const [tune, count] of Object.entries(extra.upgrades || {})) {
+                    if (typeof count === "number" && count > 0) {
+                        primary.upgrades[tune] = (primary.upgrades[tune] || 0) + count;
+                    }
+                }
+                garage.splice(garage.indexOf(extra), 1);
+            }
+        }
+    }
+
     // Create a map for quick lookups by carID
     const garageMap = new Map(garage.map(car => [car.carID, car]));
 

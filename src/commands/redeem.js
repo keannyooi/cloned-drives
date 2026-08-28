@@ -7,7 +7,6 @@ const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/con
 const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
 const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
-const addCars = require("../util/functions/addCars.js");
 const { trackMoneyEarned, trackTrophiesEarned, trackFuseTokensEarned, trackCodeRedeemed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const codeModel = require("../models/codeSchema.js");
@@ -109,19 +108,21 @@ module.exports = {
             rewardLog += `${fuseEmoji}${rewards.fuseTokens.toLocaleString("en")}\n`;
         }
 
-        // Cars (added directly to garage)
-        if (rewards.cars && rewards.cars.length > 0) {
-            playerData.garage = addCars(playerData.garage, rewards.cars);
-            for (let car of rewards.cars) {
-                let currentCar = getCar(car.carID);
-                rewardLog += `1x ${carNameGen({ currentCar, rarity: true, upgrade: car.upgrade })}\n`;
-            }
-        }
-
-        // Packs and drivers route through unclaimedRewards so cd-rewards'
+        // Packs, cars and drivers route through unclaimedRewards so cd-rewards'
         // existing machinery does the heavy lifting — pack opening for packs;
         // dupe→XP conversion, level-ups and ownership for drivers.
         const pendingEntries = [];
+        // Cars queue too — redeem no longer writes the garage at all. One
+        // fewer garage read-modify-write in the codebase, and cd-rewards'
+        // claim path (addCars + discoveredCars) is the single place code
+        // cars materialize, exactly like every other car reward source.
+        if (rewards.cars && rewards.cars.length > 0) {
+            for (let car of rewards.cars) {
+                pendingEntries.push({ car: { carID: car.carID, upgrade: car.upgrade || "000" }, origin: `Code: ${codeName}` });
+                let currentCar = getCar(car.carID);
+                rewardLog += `1x ${carNameGen({ currentCar, rarity: true, upgrade: car.upgrade })} *(claim via \`cd-rewards\`)*\n`;
+            }
+        }
         if (rewards.packs && rewards.packs.length > 0) {
             for (let packID of rewards.packs) {
                 pendingEntries.push({ pack: packID, origin: `Code: ${codeName}` });
@@ -143,12 +144,10 @@ module.exports = {
             }
         }
 
-        // Save. Currencies go through $inc and queued rewards through $push,
-        // never absolute writes from the stale pre-read copy — a background
-        // grant (Race Week payout, pack battle milestone) landing between this
-        // command's read and write used to be silently clobbered by the old
-        // whole-array $set. The garage $set remains: addCars merges upgrade
-        // maps, and only user-serialized commands write the garage directly.
+        // Save. Currencies go through $inc and queued rewards through $push —
+        // redeem performs NO absolute writes at all. Cars/packs/drivers land in
+        // unclaimedRewards and materialize through cd-rewards' claim path, so a
+        // background grant arriving mid-redeem can never be clobbered.
         const update = {
             "$inc": {
                 money: rewards.money || 0,
@@ -156,7 +155,6 @@ module.exports = {
                 fuseTokens: rewards.fuseTokens || 0
             }
         };
-        if (rewards.cars && rewards.cars.length > 0) update["$set"] = { garage: playerData.garage };
         if (pendingEntries.length > 0) update["$push"] = { unclaimedRewards: { "$each": pendingEntries } };
         await profileModel.updateOne({ userID: message.author.id }, update);
 
