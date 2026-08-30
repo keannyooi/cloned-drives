@@ -53,9 +53,15 @@ function stagingKeyOf(car) {
     return /^c\d{5}$/.test(id) ? id : "";
 }
 
-/** Human-readable name, matching how cars read everywhere else. */
+/**
+ * Human-readable name, matching how cars read everywhere else: the FIRST make
+ * only. The array is [sub-brand, ..., parent] — ["SMS", "Ford"] is an SMS card
+ * that merely remembers its parent — and carNameGen renders make[0] everywhere.
+ * Joining the whole chain printed "SMS Ford ..." for a card that says "SMS",
+ * which sent creators hunting for a car that doesn't exist under that name.
+ */
 function stagingNameOf(car) {
-    const make = (Array.isArray(car.make) ? car.make : [car.make]).filter(Boolean).join(" ");
+    const make = (Array.isArray(car.make) ? car.make : [car.make]).filter(Boolean)[0] || "";
     return `${make} ${car.model} (${car.modelYear})`;
 }
 

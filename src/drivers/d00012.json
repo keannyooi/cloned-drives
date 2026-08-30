@@ -11,7 +11,7 @@
         {
             "description": "+2.5% to every stat in boss races",
             "cond": {"bossRace": true},
-            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 1.025}}
+            "effects": {"mult": {"topSpeed": 1.025, "accel": 0.975, "handling": 1.025, "mra": 1.025, "ola": 0.975}}
         },
         {
             "description": "+3 handling when you're the underdog",

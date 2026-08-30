@@ -19,9 +19,9 @@
             "effects": {"mult": {"handling": 0.97}}
         },
         {
-            "description": "+5 mra and ola in American cars — that's a big-block launch",
+            "description": "+5 mra and -5 ola in American cars — that is a big-block launch",
             "cond": {"country": ["us"]},
-            "effects": {"add": {"ola": 5, "mra": 5}},
+            "effects": {"add": {"ola": -5, "mra": 5}},
             "minLevel": 2
         },
         {

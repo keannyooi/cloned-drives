@@ -1,0 +1,40 @@
+{
+    "driverID": "d00038",
+    "name": "Ryan Preece",
+    "variant": "",
+    "description": "Short-track racer turned Cup Series wheelman for the #60 Ford. Has been upside down at Daytona more times than anyone would like.",
+    "image": "https://discord.com/channels/711769157078876305/813085299713507378/1543693895945424906",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3 mra in 2025-2027 Fords — the current stock car is home",
+            "cond": {"make": ["ford"], "modelYear": {"start": 2025, "end": 2027}},
+            "effects": {"add": {"mra": 3}}
+        },
+        {
+            "description": "+3% top speed in anything called Mustang",
+            "cond": {"search": "mustang"},
+            "effects": {"mult": {"topSpeed": 1.03}}
+        },
+        {
+            "description": "-3 ola in 2025-2027 Fords — nobody launches a restart harder",
+            "cond": {"make": ["ford"], "modelYear": {"start": 2025, "end": 2027}},
+            "effects": {"add": {"ola": -3}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling in anything over 1,500kg — muscling heavy metal is the day job",
+            "cond": {"statMin": {"weight": 1500}},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "+4 mra and +2mph top speed in the Mustang Mach-E NASCAR Prototype and Super Venom Mustang Dark Horse — superspeedway pace, right side up this time",
+            "cond": {"carID": ["c06947", "c07504"]},
+            "effects": {"add": {"mra": 4, "topSpeed": 2}},
+            "minLevel": 4
+        }
+    ]
+}

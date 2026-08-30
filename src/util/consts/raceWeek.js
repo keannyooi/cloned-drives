@@ -89,8 +89,12 @@ const ENDLESS = {
 };
 
 // The race attempted when weeklyWins + 1 hits one of these is ALWAYS a boss
-// round (boss-class opponents, no reqs, any hand). Derived from the car rungs.
-const BOSS_GATES = LADDER.filter(rung => rung.kind === "car").map(rung => rung.wins);
+// round (boss-class opponents, no reqs, any hand). EXPLICIT since 2026-08-31 —
+// no longer derived from the car rungs, because gates and reward kinds are now
+// decoupled: prizePools.json decides what each rung GRANTS (any pool on any
+// rung), while this list alone decides where the boss fights ARE. The kind on
+// a LADDER rung only picks the automatic fallback when nothing is configured.
+const BOSS_GATES = [50, 150, 250, 400];
 
 // Money portion of the 25-win rung (aggregates into existing
 // same-origin unclaimedRewards entries per the reward contract).

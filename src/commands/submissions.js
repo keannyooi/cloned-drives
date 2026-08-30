@@ -29,7 +29,7 @@ const { resolveReference, resolveMake } = require("./submit.js");
 const { validateAttachment, archiveSubmissionImage } = require("../util/functions/submissionImage.js");
 const { getStagingCars } = require("../util/functions/stagingCars.js");
 const listUpdate = require("../util/functions/listUpdate.js");
-const { isAdmin, fail, searchSubmissions, summarise, buildDetailEmbed, paginate } = require("../util/functions/submissionViews.js");
+const { isAdmin, fail, searchSubmissions, summarise, buildDetailEmbed, paginate, bySubmissionNumber } = require("../util/functions/submissionViews.js");
 const BT = String.fromCharCode(96);   // backtick, for inline code in messages
 
 module.exports = {
@@ -54,8 +54,8 @@ module.exports = {
         }
 
         if (sub === "mine") {
-            const list = await submissionModel.find({ creatorID: message.author.id })
-                .sort({ submissionID: 1 }).lean();
+            const list = await submissionModel.find({ creatorID: message.author.id }).lean();
+            list.sort(bySubmissionNumber);
             if (list.length === 0) {
                 return new InfoMessage({
                     channel: message.channel,
@@ -124,7 +124,8 @@ module.exports = {
             if (!flags.has("--all")) filter.status = "pending";
             if (flags.has("--mine")) filter.creatorID = message.author.id;
 
-            const all = await submissionModel.find(filter).sort({ submissionID: 1 }).lean();
+            const all = await submissionModel.find(filter).lean();
+            all.sort(bySubmissionNumber);
             // The truthiness check matters: without it a blank query would
             // match every UNCOLLECTED submission ("" === ""). The empty-query
             // guard above already covers the command path, but the filter

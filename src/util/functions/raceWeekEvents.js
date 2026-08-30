@@ -59,10 +59,13 @@ const STAT_LABELS = {
     ola: "OLA"
 };
 
-// accel (0-60 time) and weight improve DOWNWARD — used to classify whether an
-// effect helps or hurts (display keeps the raw signed change, which already
-// reads correctly: "-2.5% 0-60" is faster).
-const LOWER_IS_BETTER = { accel: true, weight: true };
+// accel (0-60 time), weight AND ola improve DOWNWARD — used to classify
+// whether an effect helps or hurts (display keeps the raw signed change).
+// ola's direction is confirmed intentional (2026-08-29): the race formula
+// scores (opponent.ola - player.ola), and the engine tune digit deliberately
+// TRADES ola away (+3/+5/+8) for better 0-60. Missing ola here let eight
+// driver cards ship +ola "buffs" that were quietly self-nerfs.
+const LOWER_IS_BETTER = { accel: true, weight: true, ola: true };
 
 // ─── Rarity system v3 (design doc §5, 2026-07-24) ────────────────────────────
 

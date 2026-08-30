@@ -16,7 +16,7 @@
         {
             "description": "+4% to every stat when you're the underdog. He has been here before",
             "cond": {"underdog": true},
-            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 1.04}},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 0.96}},
             "minLevel": 2
         },
         {
@@ -45,7 +45,7 @@
         {
             "description": "+7% to every stat of the star cars of this driver!",
             "cond": {"carID": ["c05439", "c05440", "c00841", "c03829", "c00871"]},
-            "effects": {"mult": {"topSpeed": 1.07, "accel": 0.93, "handling": 1.07, "mra": 1.07, "ola": 1.07}},
+            "effects": {"mult": {"topSpeed": 1.07, "accel": 0.93, "handling": 1.07, "mra": 1.07, "ola": 0.93}},
             "minLevel": 7
         }
     ]

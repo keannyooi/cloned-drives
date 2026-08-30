@@ -150,20 +150,35 @@ function buildEmbeds({ currentKey, prizes, standings, totals, meta, nextMeta, we
     const exclusiveID = prizeCarID(prizes, exclusiveWins);
     const secretDriverID = prizes[String(exclusiveWins)] && prizes[String(exclusiveWins)].driver;
     const secretDriver = secretDriverID ? getDriver(secretDriverID) : null;
-    const rotationDriverID = prizes["250"] && prizes["250"].driver;
-    const rotationDriver = rotationDriverID ? getDriver(rotationDriverID) : null;
 
+    // Headline lines derive from what each fixed rung ACTUALLY rolled — since
+    // gates and reward kinds were decoupled (2026-08-31), any rung can hold a
+    // car or a driver, so rendering hardcoded rung numbers would lie the first
+    // time the config moves a prize. Cars and drivers make headlines; packs and
+    // money rungs stay out of this block, as before.
     const rung = (wins, text) => `\`${String(wins).padStart(4)}\` ${text}`;
-    const ladder = [50, 100, 150].map(wins => rung(wins, carLabel(prizeCarID(prizes, wins))));
-    if (rotationDriver) {
-        ladder.push(rung(250, `${driverRarityEmoji(rotationDriver.rarity)} **${driverDisplayName(rotationDriver)}** · driver of the week`));
+    const ladder = [];
+    for (const fixed of LADDER) {
+        if (fixed.exclusive) continue;                       // rendered last, with regalia
+        const prize = prizes[String(fixed.wins)];
+        if (!prize) continue;
+        if (prize.car && prize.car.carID) {
+            ladder.push(rung(fixed.wins, carLabel(prize.car.carID)));
+        }
+        if (prize.driver) {
+            const rungDriver = getDriver(prize.driver);
+            if (rungDriver) {
+                const tag = fixed.kind === "driver" ? " · driver of the week" : " · driver";
+                ladder.push(rung(fixed.wins, `${driverRarityEmoji(rungDriver.rarity)} **${driverDisplayName(rungDriver)}**${tag}`));
+            }
+        }
     }
     ladder.push(rung(exclusiveWins, `${rwEmoji("exclusive")} **${carLabel(exclusiveID)}**`));
     if (secretDriver) {
-        // A continuation of the 1000 rung, not a rung of its own. An empty code
-        // span was used to indent it and rendered as a stray grey box, so the
-        // arrow carries the relationship instead — and the label leads, so it
-        // reads as "here is a secret driver" rather than trailing off the name.
+        // A continuation of the exclusive rung, not a rung of its own. An empty
+        // code span was used to indent it and rendered as a stray grey box, so
+        // the arrow carries the relationship instead — and the label leads, so
+        // it reads as "here is a secret driver" rather than trailing off the name.
         ladder.push(`↳ SECRET driver: ${driverRarityEmoji(secretDriver.rarity)} **${driverDisplayName(secretDriver)}**`);
     }
     // The ladder does not stop at the exclusive: a rung lands every ENDLESS.step
@@ -195,7 +210,16 @@ function buildEmbeds({ currentKey, prizes, standings, totals, meta, nextMeta, we
     // Driver art is the exception — it's a different KIND of card, so it adds
     // information rather than repeating it. Only d00001 is illustrated today,
     // so this is usually a no-op that lights up as art gets filled in.
-    for (const driver of [secretDriver, rotationDriver]) {
+    // Every driver appearing on a fixed rung this week (any rung can hold one
+    // since gates/rewards decoupled), the secret driver included — deduped.
+    const artDrivers = [];
+    for (const fixed of LADDER) {
+        const prize = prizes[String(fixed.wins)];
+        if (!prize || !prize.driver) continue;
+        const rungDriver = getDriver(prize.driver);
+        if (rungDriver && !artDrivers.includes(rungDriver)) artDrivers.push(rungDriver);
+    }
+    for (const driver of artDrivers) {
         if (!driver || typeof driver.image !== "string" || driver.image.trim() === "") continue;
         embeds.push(new EmbedBuilder()
             .setColor(main.data.color)

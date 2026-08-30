@@ -25,21 +25,21 @@
             "effects": {"add": {"handling": 3}},
             "minLevel": 3
         },
-		{
+        {
             "description": "+6 mra in any 2019 car",
             "cond": {"modelYear": {"start": 2019, "end": 2019}},
             "effects": {"add": {"mra": 6}},
             "minLevel": 4
         },
-		{
+        {
             "description": "5% bonus income when using this driver",
             "effects": {"moneyMult": 1.05},
             "minLevel": 5
         },
-		{
+        {
             "description": "+5% to every stat of the star cars of this driver!",
-            "cond": {"carID": ["c05440","c05439","c05510","c05678","c02999","c05518"]},
-            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 1.05}},
+            "cond": {"carID": ["c05440", "c05439", "c05510", "c05678", "c02999", "c05518"]},
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 0.95}},
             "minLevel": 6
         }
     ]

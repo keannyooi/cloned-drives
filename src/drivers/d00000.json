@@ -24,8 +24,8 @@
             "minLevel": 3
         },
         {
-            "description": "+1 ola — finally getting the launch right",
-            "effects": {"add": {"ola": 1}},
+            "description": "-1 ola — finally getting the launch right",
+            "effects": {"add": {"ola": -1}},
             "minLevel": 4
         }
     ]

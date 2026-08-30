@@ -2,6 +2,7 @@
 
 const { DateTime } = require("luxon");
 const { getCar, getDriver } = require("./dataManager.js");
+const filterCheck = require("./filterCheck.js");
 const { rarityOf } = require("./raceWeekEvents.js");
 const makeRewardID = require("./rewardID.js");
 const packBattleModel = require("../../models/packBattleSchema.js");
@@ -70,11 +71,15 @@ function createDefaultStats() {
 // DAILY RESET — zeros daily stats if the date has changed
 // ============================================================================
 
-function resetDailyIfNeeded(stats) {
+function resetDailyIfNeeded(stats, counters) {
     const today = DateTime.now().toFormat("yyyy-MM-dd");
     if (stats.lastDailyReset !== today) {
         stats.dailyCRPulled = 0;
         stats.dailyHighestSinglePullCR = 0;
+        // Custom counters keep a _today mirror so milestones can be daily.
+        for (const counter of counters || []) {
+            if (counter && counter.key) stats[counter.key + "_today"] = 0;
+        }
         stats.lastDailyReset = today;
         return true;
     }
@@ -97,8 +102,8 @@ async function processPackOpening(userID, packID, addedCars) {
             stats = createDefaultStats();
         }
 
-        // Reset daily fields if needed
-        resetDailyIfNeeded(stats);
+        // Reset daily fields if needed (counter day-mirrors included)
+        resetDailyIfNeeded(stats, battle.counters);
 
         // Compute stats from this pack opening
         let packPullCR = 0;
@@ -134,6 +139,53 @@ async function processPackOpening(userID, packID, addedCars) {
 
         stats.dryStreak = hasLegendaryPlus ? 0 : (stats.dryStreak + 1);
 
+        // Custom counters — per-card filtered tallies. carIDs is an exact
+        // allowlist, filter is any cd-filter criteria (OR across array values,
+        // matching how players read "coupe or convertible"). A broken filter
+        // logs and skips ITS counter only — pack opening must never break on a
+        // battle's config.
+        for (const counter of battle.counters || []) {
+            if (!counter || !counter.key || typeof counter.key !== "string") continue;
+            let tally = 0;
+            for (const car of addedCars) {
+                const carData = getCar(car.carID);
+                if (!carData) continue;
+                if (Array.isArray(counter.carIDs) && counter.carIDs.length > 0
+                    && !counter.carIDs.includes(car.carID)) continue;
+                if (counter.filter && Object.keys(counter.filter).length > 0) {
+                    let matched = false;
+                    try {
+                        matched = filterCheck({ car: { carID: car.carID }, filter: counter.filter, applyOrLogic: true });
+                    }
+                    catch (err) {
+                        console.error(`[PackBattle] counter "${counter.key}" filter error: ${err.message}`);
+                        tally = 0;
+                        break;
+                    }
+                    if (!matched) continue;
+                }
+                if (counter.type === "uniqueCars") {
+                    // Distinct matching carIDs, scoped to THIS battle: the set
+                    // lives beside the number so milestones (which read a flat
+                    // numeric stat) keep working untouched.
+                    const seenKey = counter.key + "_seen";
+                    if (!Array.isArray(stats[seenKey])) stats[seenKey] = [];
+                    if (!stats[seenKey].includes(car.carID)) {
+                        stats[seenKey].push(car.carID);
+                        tally += 1;
+                    }
+                    continue;
+                }
+                tally += counter.type === "crPulled" ? (carData.cr || 0) : 1;
+            }
+            if (tally > 0) {
+                stats[counter.key] = (stats[counter.key] || 0) + tally;
+                if (counter.type !== "uniqueCars") {
+                    stats[counter.key + "_today"] = (stats[counter.key + "_today"] || 0) + tally;
+                }
+            }
+        }
+
         // Write updated stats back to DB
         const setObj = {};
         setObj[`playerStats.${userID}`] = stats;
@@ -164,6 +216,11 @@ async function checkMilestones(battle, userID, stats) {
         if (milestone.resetType === "daily") {
             if (milestone.stat === "totalCRPulled") currentValue = stats.dailyCRPulled;
             else if (milestone.stat === "highestSinglePullCR") currentValue = stats.dailyHighestSinglePullCR;
+            // Custom counters (crPulled/cardsPulled) keep a _today mirror,
+            // zeroed by resetDailyIfNeeded — so counter-backed dailies work.
+            else if ((battle.counters || []).some(counter => counter && counter.key === milestone.stat && counter.type !== "uniqueCars")) {
+                currentValue = stats[milestone.stat + "_today"];
+            }
             else continue;
         } else {
             currentValue = stats[milestone.stat];

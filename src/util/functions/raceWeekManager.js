@@ -350,53 +350,58 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
     const pick = rungCfg.ordered === true
         ? (pool, validator, label) => pickOrderedFromPool(pool, validator, label, dt)
         : pickFromPool;
+
+    // ── Configured pools first — for EVERY rung kind (decoupled 2026-08-31).
+    // Whatever prizePools.json defines on a rung IS that rung's prize: a
+    // driverPool on 100, a carPool on 250, money anywhere. The rung's kind no
+    // longer gates what it may grant — it only picks the AUTOMATIC fallback
+    // below when nothing (valid) is configured. Boss gates are a separate,
+    // explicit list (BOSS_GATES) and unaffected by any of this.
+    const prize = {};
+    const pooledCar = pick(rungCfg.carPool, validPrizeCar, "carID");
+    if (pooledCar) prize.car = { carID: pooledCar, upgrade: "000" };
+    if (rung.kind === "driver" && Array.isArray(rungCfg.driverPool) && rungCfg.driverPool.length > 0) {
+        // Rotation contract: on the driver-of-the-week rung, LIST ORDER is the
+        // weekly sequence (weekNumber modulo), with or without ordered: true.
+        const configured = rungCfg.driverPool.filter(id => validPrizeDriver(id));
+        if (configured.length > 0) prize.driver = configured[dt.toUTC().weekNumber % configured.length];
+        else console.log("[RaceWeek] prizePools: rung-" + rung.wins + " pool has no valid drivers — using automatic rotation");
+    }
+    else {
+        const pooledDriver = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
+        if (pooledDriver) prize.driver = pooledDriver;
+    }
+    const pooledPack = pick(rungCfg.packPool, validPrizePack, "packID");
+    if (pooledPack) prize.pack = pooledPack;
+    if (typeof rungCfg.money === "number" && rungCfg.money > 0) prize.money = rungCfg.money;
+
+    // The exclusive rung's secret driver rides along even when only the car is
+    // curated — losing it to a config that just picks the car would be a trap.
+    if (rung.exclusive && prize.car && !prize.driver) {
+        const secret = rollSecretDriver();
+        if (secret) prize.driver = secret;
+        else console.log("[RaceWeek] no secret-rarity drivers loaded — exclusive rung rolls car-only this week");
+    }
+    if (Object.keys(prize).length > 0) return prize;
+
+    // ── Nothing configured: automatic fallback by rung kind ──
     switch (rung.kind) {
         case "car": {
-            const pooledCar = pick(rungCfg.carPool, validPrizeCar, "carID");
-            const prize = { car: { carID: pooledCar || rollPrizeCar(PRIZE_POOLS.car[rung.wins]), upgrade: "000" } };
+            const fallback = { car: { carID: rollPrizeCar(PRIZE_POOLS.car[rung.wins]), upgrade: "000" } };
             if (rung.exclusive) {
-                const pooledDriver = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
-                const driverID = pooledDriver || rollSecretDriver();
-                if (driverID) prize.driver = driverID;
-                else console.log("[RaceWeek] no secret-rarity drivers loaded — 1000-win rung rolls car-only this week");
+                const driverID = rollSecretDriver();
+                if (driverID) fallback.driver = driverID;
+                else console.log("[RaceWeek] no secret-rarity drivers loaded — exclusive rung rolls car-only this week");
             }
-            return prize;
+            return fallback;
         }
-        case "pack": {
-            const pooledPack = pick(rungCfg.packPool, validPrizePack, "packID");
-            return { pack: pooledPack || rollPrizePack(PRIZE_POOLS.pack[rung.wins]) };
-        }
-        case "custom": {
-            // Admin-added rung (any key in prizePools.json that isn't a built-in
-            // LADDER rung) — assembled purely from its configured pools. Custom
-            // rungs are normal races (never boss gates).
-            const prize = {};
-            const carID = pick(rungCfg.carPool, validPrizeCar, "carID");
-            if (carID) prize.car = { carID, upgrade: "000" };
-            const driverID = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
-            if (driverID) prize.driver = driverID;
-            const packID = pick(rungCfg.packPool, validPrizePack, "packID");
-            if (packID) prize.pack = packID;
-            if (typeof rungCfg.money === "number" && rungCfg.money > 0) prize.money = rungCfg.money;
-            if (Object.keys(prize).length === 0) {
-                console.log(`[RaceWeek] prizePools: custom rung ${rung.wins} has no valid prizes — skipped this roll`);
-                return null;
-            }
-            return prize;
-        }
+        case "pack":
+            return { pack: rollPrizePack(PRIZE_POOLS.pack[rung.wins]) };
+        case "custom":
+            // Admin-added rung whose pools all failed validation — skip.
+            console.log(`[RaceWeek] prizePools: custom rung ${rung.wins} has no valid prizes — skipped this roll`);
+            return null;
         case "endless": {
-            // Curation beats the dice: if prizePools.json configures ANY pool for
-            // this win count, that IS the prize and no kind is rolled.
-            const curated = {};
-            const curatedCar = pick(rungCfg.carPool, validPrizeCar, "carID");
-            if (curatedCar) curated.car = { carID: curatedCar, upgrade: "000" };
-            const curatedDriver = pick(rungCfg.driverPool, validPrizeDriver, "driverID");
-            if (curatedDriver) curated.driver = curatedDriver;
-            const curatedPack = pick(rungCfg.packPool, validPrizePack, "packID");
-            if (curatedPack) curated.pack = curatedPack;
-            if (typeof rungCfg.money === "number" && rungCfg.money > 0) curated.money = rungCfg.money;
-            if (Object.keys(curated).length > 0) return curated;
-
             const endless = getEndlessConfig();
             const kind = rollEndlessKind(endless.weights);
             if (kind === "car") {
@@ -421,27 +426,17 @@ function rollRungPrize(rung, cfg, dt = DateTime.utc()) {
                 console.log(`[RaceWeek] endless rung ${rung.wins}: no eligible drivers — falling back to a pack`);
             }
             // Pack is both the common case and the safety net for a failed roll.
-            const pooledPack = pick(endless.packPool, validPrizePack, "packID");
-            const packID = pooledPack || rollPrizePack(endless.packTier);
+            const packID = pick(endless.packPool, validPrizePack, "packID") || rollPrizePack(endless.packTier);
             return packID ? { pack: packID } : null;
         }
         case "filler":
-            return { money: (typeof rungCfg.money === "number" && rungCfg.money > 0) ? rungCfg.money : FILLER_25.money };
+            return { money: FILLER_25.money };
         case "driver": {
-            // Configured pool: LIST ORDER is the rotation order (weekNumber
-            // modulo) — admins control the driver-of-the-week sequence.
-            const configured = Array.isArray(rungCfg.driverPool) ? rungCfg.driverPool.filter(id => validPrizeDriver(id)) : [];
-            if (Array.isArray(rungCfg.driverPool) && rungCfg.driverPool.length > 0 && configured.length === 0) {
-                console.log("[RaceWeek] prizePools: rung-250 pool has no valid drivers — using automatic rotation");
-            }
-            if (configured.length > 0) {
-                return { driver: configured[dt.toUTC().weekNumber % configured.length] };
-            }
             const rotation = getRotationPool();
             if (rotation.length === 0) {
                 // Never abort the whole rollover over a missing rotation pool
                 // (e.g. a deploy that forgot src/drivers/) — skip the rung.
-                console.log("[RaceWeek] no base/rare inRotation drivers available — rung 250 skipped this week");
+                console.log("[RaceWeek] no base/rare inRotation drivers available — rung " + rung.wins + " skipped this week");
                 return null;
             }
             return { driver: rotation[dt.toUTC().weekNumber % rotation.length].driverID };

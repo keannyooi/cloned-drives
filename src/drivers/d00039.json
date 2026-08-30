@@ -1,0 +1,42 @@
+{
+    "driverID": "d00039",
+    "name": "Ken Block",
+    "variant": "",
+    "description": "A legendary rally driver and icon of automotive culture, remembered for redefining the sport with fearless driving and unforgettable style.",
+    "image": "https://discord.com/channels/711769157078876305/813085299713507378/1543693889532334090",
+    "rarity": "icon",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+4 handling in every Hoonigan — his fleet, his rules",
+            "cond": {"make": ["hoonigan"]},
+            "effects": {"add": {"handling": 4}}
+        },
+        {
+            "description": "-3 ola in every Hoonigan — clutch in, handbrake up, gone",
+            "cond": {"make": ["hoonigan"]},
+            "effects": {"add": {"ola": -3}}
+        },
+        {
+            "description": "-3% 0-60 on Dirt — the rally roots never left",
+            "cond": {"surface": ["Dirt"]},
+            "effects": {"mult": {"accel": 0.97}}
+        },
+        {
+            "description": "+2 handling in anything called Mustang — the Hoonicorn's whole family tree",
+            "cond": {"search": "mustang"},
+            "effects": {"add": {"handling": 2}}
+        },
+        {
+            "description": "+6 handling and -4 ola in the Hoonicorn RTR, Hoonicorn V2 and Hoonipigasus — the machines built in his own image",
+            "cond": {"carID": ["c03120", "c03121", "c03122"]},
+            "effects": {"add": {"handling": 6, "ola": -4}}
+        },
+        {
+            "description": "+5% payout — the content pays for itself",
+            "cond": null,
+            "effects": {"moneyMult": 1.05}
+        }
+    ]
+}

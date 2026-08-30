@@ -21,7 +21,9 @@ const { updateSubmission, rebuildMirror, purgeDevSubmissions, normalizeSubmissio
 const { generateCarfile, formatCarfile } = require("../util/functions/submissionCarfile.js");
 const { getStagingCar, refreshStaging } = require("../util/functions/stagingCars.js");
 const { previewEmbed, previewButtons, loadCandidateImages } = require("../util/functions/submissionPreview.js");
-const { isAdmin, fail, summarise, notifyCreator, buildDetailEmbed, paginate } = require("../util/functions/submissionViews.js");
+const { isAdmin, fail, summarise, notifyCreator, buildDetailEmbed, paginate, bySubmissionNumber } = require("../util/functions/submissionViews.js");
+const listUpdate = require("../util/functions/listUpdate.js");
+const profileModel = require("../models/profileSchema.js");
 const BT = String.fromCharCode(96);   // backtick, for inline code in messages
 
 module.exports = {
@@ -42,7 +44,7 @@ module.exports = {
         const sub = (args[0] || "queue").toLowerCase();
 
         if (sub === "queue") {
-            const all = await submissionModel.find({ status: "pending" }).sort({ submissionID: 1 }).lean();
+            const all = await submissionModel.find({ status: "pending" }).lean();
             if (all.length === 0) {
                 return new InfoMessage({
                     channel: message.channel,
@@ -51,18 +53,28 @@ module.exports = {
                     author: message.author
                 }).sendMessage();
             }
-            const { page, totalPages, slice } = paginate(all, args[1]);
-            return new InfoMessage({
-                channel: message.channel,
-                title: "Review queue — " + all.length + " pending",
-                desc: slice.map(summarise).join("\n"),
-                author: message.author,
-                footer: totalPages > 1 ? "Page " + page + " of " + totalPages + " — `cd-review queue <page>`" : undefined
-            }).sendMessage();
+            // Numeric ID order = true submission order (a DB string sort puts
+            // SAW10 before SAW2), and listUpdate gives the same page buttons
+            // every other list in the bot has.
+            all.sort(bySubmissionNumber);
+            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { page, totalPages } = paginate(all, args[1]);
+            return listUpdate(all, page, totalPages, queueDisplay, settings);
+
+            function queueDisplay(section, page, totalPages) {
+                return new InfoMessage({
+                    channel: message.channel,
+                    title: "Review queue — " + all.length + " pending",
+                    desc: section.map(summarise).join("\n"),
+                    author: message.author,
+                    footer: "Page " + page + " of " + totalPages + " - Interact with the buttons below to navigate through pages."
+                });
+            }
         }
 
         if (sub === "pending") {
-            const waiting = await submissionModel.find({ status: "approved", finalCarID: "" }).sort({ submissionID: 1 }).lean();
+            const waiting = await submissionModel.find({ status: "approved", finalCarID: "" }).lean();
+            waiting.sort(bySubmissionNumber);
             return new InfoMessage({
                 channel: message.channel,
                 title: waiting.length === 0 ? "Nothing is waiting on art." : `${waiting.length} approved, still needing art`,
@@ -138,8 +150,8 @@ module.exports = {
             }
 
             const candidates = await submissionModel
-                .find({ type: "art", targetKey: staged.key, status: { "$in": ["pending", "approved"] } })
-                .sort({ submissionID: 1 });
+                .find({ type: "art", targetKey: staged.key, status: { "$in": ["pending", "approved"] } });
+            candidates.sort(bySubmissionNumber);
             const images = await loadCandidateImages(candidates);
 
             let index = 0;

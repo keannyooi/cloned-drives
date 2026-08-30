@@ -4,7 +4,8 @@ const bot = require("../config/config.js");
 const { DateTime } = require("luxon");
 const { ErrorMessage, SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getPack, getCar } = require("../util/functions/dataManager.js");
+const { getPack, getCar, getDriver, getAllDrivers } = require("../util/functions/dataManager.js");
+const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const packBattleModel = require("../models/packBattleSchema.js");
@@ -17,9 +18,11 @@ module.exports = {
         "<battle name> duration <days>",
         "<battle name> extend <hours>",
         "<battle name> addmilestone <stat> <threshold> <resetType> <rewardType> <amount>",
+        "<battle name> addmilestone <stat> <threshold> <resetType> driver <driver ID or name>",
         "<battle name> removemilestone <milestoneID>",
         "<battle name> secretmilestone <milestoneID> <hint text>",
         "<battle name> addplacement <leaderboard> <minRank> <maxRank> <rewardType> <amount>",
+        "<battle name> addplacement <leaderboard> <minRank> <maxRank> driver <driver ID or name>",
         "<battle name> removeplacement <index>",
         "<battle name> viewconfig"
     ],
@@ -178,7 +181,7 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
-                    if (!["money", "fusetokens", "trophies", "car", "pack"].includes(rewardType)) {
+                    if (!["money", "fusetokens", "trophies", "car", "pack", "driver"].includes(rewardType)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, invalid reward type.",
@@ -221,6 +224,34 @@ module.exports = {
                             return errorMessage.sendMessage({ currentMessage });
                         }
                         reward = { pack: packID.slice(0, 6) };
+                    } else if (rewardType === "driver") {
+                        const driverQuery = args.slice(6).join(" ").toLowerCase();
+                        let rewardDriver = getDriver(driverQuery);
+                        if (!rewardDriver) {
+                            const matches = getAllDrivers().filter(entry =>
+                                driverDisplayName(entry).toLowerCase().includes(driverQuery));
+                            if (matches.length === 1) rewardDriver = matches[0];
+                        }
+                        if (!rewardDriver) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, driver not found (or name not unique).",
+                                desc: "Provide a driver ID (`d00038`) or a unique name fragment — `cd-driverlist` shows the roster.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                        if (rarityOf(rewardDriver) === "serialised") {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, serialised drivers can't be pack battle rewards.",
+                                desc: "Serials mint from a capped global ledger — the Driver Scout is their only source.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                        reward = { driver: rewardDriver.driverID };
+
                         rewardDisplay = `${packData["packName"]}`;
                     } else {
                         const amount = parseInt(args[6]);
@@ -360,7 +391,7 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
-                    if (!["money", "fusetokens", "trophies", "car", "pack"].includes(plRewardType)) {
+                    if (!["money", "fusetokens", "trophies", "car", "pack", "driver"].includes(plRewardType)) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, invalid reward type.",
@@ -401,6 +432,34 @@ module.exports = {
                             return errorMessage.sendMessage({ currentMessage });
                         }
                         plReward = { pack: packID.slice(0, 6) };
+                    } else if (plRewardType === "driver") {
+                        const driverQuery = args.slice(6).join(" ").toLowerCase();
+                        let rewardDriver = getDriver(driverQuery);
+                        if (!rewardDriver) {
+                            const matches = getAllDrivers().filter(entry =>
+                                driverDisplayName(entry).toLowerCase().includes(driverQuery));
+                            if (matches.length === 1) rewardDriver = matches[0];
+                        }
+                        if (!rewardDriver) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, driver not found (or name not unique).",
+                                desc: "Provide a driver ID (`d00038`) or a unique name fragment — `cd-driverlist` shows the roster.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                        if (rarityOf(rewardDriver) === "serialised") {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, serialised drivers can't be pack battle rewards.",
+                                desc: "Serials mint from a capped global ledger — the Driver Scout is their only source.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
+                        }
+                        plReward = { driver: rewardDriver.driverID };
+
                         plRewardDisplay = `${packData["packName"]}`;
                     } else {
                         const plAmount = parseInt(args[6]);

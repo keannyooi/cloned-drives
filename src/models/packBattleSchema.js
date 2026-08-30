@@ -9,6 +9,16 @@ const packBattleSchema = new Schema({
     deadline: { type: String, default: "unlimited" },
     packID: String,
 
+    // Custom per-card counters — evaluated against every pulled card.
+    // Each: { key, type: "crPulled"|"cardsPulled", carIDs?: [String], filter?: {} }
+    // filter takes cd-filter criteria (OR logic on arrays); carIDs is an exact
+    // allowlist; both present = both must match. Tallies land FLAT in
+    // playerStats under `key`, so milestones reference them via stat: key.
+    counters: {
+        type: Array,
+        default: []
+    },
+
     // Milestone definitions
     milestones: {
         type: Array,

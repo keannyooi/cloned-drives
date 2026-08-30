@@ -1,0 +1,47 @@
+{
+    "driverID": "d00040",
+    "name": "Ryan Preece",
+    "variant": "Door Breaker",
+    "description": "Three years after his Daytona heartbreak, Ryan Preece returned to the track and turned the same story into redemption, surviving the chaos and taking the win when it mattered most. when one door shuts, he breaks down the next one.",
+    "image": "https://discord.com/channels/711769157078876305/813085299713507378/1543723605051834538",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+4 mra at Daytona — this place owes him, and he collects",
+            "cond": {"trackID": ["t00032", "t00033", "t00034"]},
+            "effects": {"add": {"mra": 4}}
+        },
+        {
+            "description": "+5% top speed on Slick tyres — race rubber, race pace",
+            "cond": {"tyreType": ["slick"]},
+            "effects": {"mult": {"topSpeed": 1.05}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 handling in anything called Mustang — he knows where the draft ends",
+            "cond": {"search": "mustang"},
+            "effects": {"add": {"handling": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "+5 mra on Slicks on Track surfaces — superspeedway pack running",
+            "cond": {"tyreType": ["slick"], "surface": ["Track"]},
+            "effects": {"add": {"mra": 5}},
+            "minLevel": 4
+        },
+        {
+            "description": "+5% top speed as the underdog — three years of heartbreak make the comeback hit harder",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.05}},
+            "minLevel": 5
+        },
+        {
+            "description": "+10 mra and +7mph top speed in a Mustang at Daytona — won the hard way",
+            "cond": {"trackID": ["t00032", "t00033", "t00034"], "search": "mustang"},
+            "effects": {"add": {"mra": 10, "topSpeed": 7}},
+            "minLevel": 6
+        }
+    ]
+}

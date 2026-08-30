@@ -1,0 +1,112 @@
+{
+    "name": "Operation: Wild Horse",
+    "packID": "p00041",
+    "duration": "14d",
+    "counters": [
+        { "key": "coupeCR", "type": "crPulled", "filter": { "bodyStyle": ["coupe"] } },
+        { "key": "mustangPulls", "type": "cardsPulled", "filter": { "search": "mustang" } },
+        { "key": "darkHorsePulls", "type": "cardsPulled", "carIDs": ["c06499"] },
+        { "key": "uniqueExotics", "type": "uniqueCars", "filter": { "cr": { "start": 700, "end": 849 } } }
+    ],
+    "milestones": [
+        {
+            "stat": "coupeCR",
+            "threshold": 1500,
+            "resetType": "cumulative",
+            "reward": { "money": 100000 },
+            "hint": "Pull 1,500 CR of COUPES from American Elite Packs — only the two-doors count."
+        },
+        {
+            "stat": "coupeCR",
+            "threshold": 8000,
+            "resetType": "cumulative",
+            "reward": { "money": 350000, "trophies": 25 },
+            "hint": "Reach 8,000 coupe CR."
+        },
+        {
+            "stat": "coupeCR",
+            "threshold": 16000,
+            "resetType": "cumulative",
+            "reward": { "pack": "p00160" },
+            "hint": "Reach 16,000 coupe CR — a bonus American Basic Pack on the house."
+        },
+        {
+            "stat": "coupeCR",
+            "threshold": 30000,
+            "resetType": "cumulative",
+            "reward": { "driver": "d00038" },
+            "hint": "Reach 30,000 coupe CR and Ryan Preece joins your paddock."
+        },
+        {
+            "stat": "mustangPulls",
+            "threshold": 5,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c06499", "upgrade": "000" } },
+            "hint": "Pull FIVE Mustangs of any kind — round up the herd and a Dark Horse joins it."
+        },
+        {
+            "stat": "darkHorsePulls",
+            "threshold": 1,
+            "resetType": "cumulative",
+            "reward": { "trophies": 30 },
+            "isSecret": true,
+            "hint": "You found the wild one itself. The Dark Horse salutes you."
+        },
+        {
+            "stat": "uniqueExotics",
+            "threshold": 10,
+            "resetType": "cumulative",
+            "reward": { "money": 500000, "trophies": 40 },
+            "hint": "Pull 10 DIFFERENT Exotic cards (CR 700-849) — duplicates don't count."
+        },
+        {
+            "stat": "coupeCR",
+            "threshold": 900,
+            "resetType": "daily",
+            "reward": { "money": 40000 },
+            "hint": "Pull 900 coupe CR today — keep the herd moving."
+        },
+        {
+            "stat": "mustangPulls",
+            "threshold": 1,
+            "resetType": "daily",
+            "reward": { "money": 25000 },
+            "hint": "A Mustang a day. Any Mustang."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "daily",
+            "reward": { "money": 50000 },
+            "hint": "Pull a single 950+ CR card today."
+        },
+        {
+            "stat": "dryStreak",
+            "threshold": 10,
+            "resetType": "cumulative",
+            "reward": { "money": 150000 },
+            "isSecret": true,
+            "hint": "Sometimes the cards just don't come. We see you."
+        }
+    ],
+    "placementRewards": [
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 750000, "trophies": 100 }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 3,
+            "reward": { "money": 300000, "trophies": 50 }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 250000, "trophies": 50 }
+        }
+    ]
+}

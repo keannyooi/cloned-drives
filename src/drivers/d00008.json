@@ -15,9 +15,9 @@
             "effects": {"mult": {"handling": 1.03}}
         },
         {
-            "description": "+2 ola in RWD cars — grip is a negotiation, not a rule",
+            "description": "-2 ola in RWD cars — grip is a negotiation, not a rule",
             "cond": {"driveType": ["rwd"]},
-            "effects": {"add": {"ola": 2}},
+            "effects": {"add": {"ola": -2}},
             "minLevel": 2
         },
         {

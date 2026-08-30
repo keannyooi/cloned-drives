@@ -227,6 +227,18 @@ async function buildDetailEmbed(submission) {
     return embed;
 }
 
+/**
+ * Sort comparator for submission IDs. A Mongo .sort({ submissionID: 1 }) is
+ * LEXICOGRAPHIC, which orders SAW1, SAW10, SAW11, SAW2 — the number inside the
+ * ID is what "oldest first" actually means, since IDs mint sequentially.
+ * SBM and SAW interleave by number; same-number ties break on the prefix.
+ */
+function bySubmissionNumber(a, b) {
+    const numberOf = id => parseInt(String(id).replace(/\D/g, ""), 10) || 0;
+    return numberOf(a.submissionID) - numberOf(b.submissionID)
+        || String(a.submissionID).localeCompare(String(b.submissionID));
+}
+
 /** Shared pagination maths for the list views. */
 function paginate(list, pageArg) {
     const totalPages = Math.max(1, Math.ceil(list.length / PER_PAGE));
@@ -236,6 +248,7 @@ function paginate(list, pageArg) {
 
 module.exports = {
     PER_PAGE,
+    bySubmissionNumber,
     STATUS_ICON,
     memberOf,
     hasRole,

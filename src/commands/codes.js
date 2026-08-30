@@ -13,6 +13,25 @@ const listUpdate = require("../util/functions/listUpdate.js");
 const codeModel = require("../models/codeSchema.js");
 const profileModel = require("../models/profileSchema.js");
 
+/**
+ * The status a code EFFECTIVELY has, not just its stored isActive flag. A code
+ * past its deadline or at its redemption cap still says isActive: true in the
+ * database (nothing flips it — cd-redeem checks each condition separately), so
+ * displaying the raw flag produced "Active" next to "Expired" in one embed.
+ * Priority: admin switch off > expired > fully redeemed > active.
+ */
+function effectiveStatus(code) {
+    if (!code.isActive) return { icon: "🔴", label: "Inactive" };
+    if (code.deadline !== "unlimited" && !code.deadline.endsWith("d")) {
+        const interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(code.deadline));
+        if (interval.invalid !== null) return { icon: "⏰", label: "Expired" };
+    }
+    if (code.maxRedemptions > 0 && code.redeemedBy.length >= code.maxRedemptions) {
+        return { icon: "🔒", label: "Fully redeemed" };
+    }
+    return { icon: "🟢", label: "Active" };
+}
+
 module.exports = {
     name: "codes",
     aliases: ["codelist"],
@@ -87,8 +106,9 @@ module.exports = {
                 rewardDesc = "None configured";
             }
 
-            // Status
-            let statusStr = codeData.isActive ? "🟢 Active" : "🔴 Inactive";
+            // Status — derived, so it can never contradict the deadline field
+            const status = effectiveStatus(codeData);
+            let statusStr = `${status.icon} ${status.label}`;
 
             // Deadline
             let deadlineStr = "Unlimited";
@@ -155,7 +175,7 @@ module.exports = {
             let codeList = "";
             for (let i = 0; i < section.length; i++) {
                 let code = section[i];
-                let statusIcon = code.isActive ? "🟢" : "🔴";
+                let statusIcon = effectiveStatus(code).icon;
                 let usesStr = code.maxRedemptions === 0
                     ? `${code.redeemedBy.length}/∞`
                     : `${code.redeemedBy.length}/${code.maxRedemptions}`;
