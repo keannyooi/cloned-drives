@@ -27,8 +27,11 @@
         "packPool": [],
         "milestones": {
             "5": { "trophies": 25 },
+			"7": { "money": "$BUDGET" },
             "10": { "trophies": 50 },
+			"12": { "money": "$BUDGET" },
             "15": { "trophies": 75 },
+			"17": { "money": "$BUDGET" },
             "20": { "trophies": 100, "car": "$CARPOOL" }
         }
     }
