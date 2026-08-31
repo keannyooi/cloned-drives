@@ -18,7 +18,7 @@ const {
 } = require("discord.js");
 const { findBestMatch } = require("string-similarity");
 const { ErrorMessage, SuccessMessage } = require("../classes/classes.js");
-const { defaultChoiceTime, artSubmitterRoleID } = require("../consts/consts.js");
+const { defaultChoiceTime, artSubmitterRoleIDs } = require("../consts/consts.js");
 const { getOpenForArt } = require("./stagingCars.js");
 const { hasRole } = require("./submissionViews.js");
 const { stagingCrName } = require("./submissionDisplay.js");
@@ -81,10 +81,10 @@ async function runArtSubmission(message, args) {
     const fail = (title, desc) => new ErrorMessage({ channel: message.channel, title, desc, author: message.author }).sendMessage();
 
     // Optional extra gate on top of the channel. Left blank = channel access is
-    // the only requirement; set artSubmitterRoleID in consts.js to tighten it.
-    if (!(await hasRole(message, artSubmitterRoleID))) {
+    // the only requirement; set artSubmitterRoleIDs in consts.js to tighten it.
+    if (!(await hasRole(message, artSubmitterRoleIDs))) {
         return fail("Error, you can't submit artwork.",
-            `Art submissions are limited to <@&${artSubmitterRoleID}>.`);
+            `Art submissions are limited to ${artSubmitterRoleIDs.map(id => `<@&${id}>`).join(" / ")}.`);
     }
 
     const query = args.join(" ").trim();

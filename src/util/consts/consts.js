@@ -332,7 +332,7 @@ const consts = {
      * so creators aren't all crowding one channel. Both kinds use the same
      * role: if you're trusted to design a BM card, you're trusted to draw one.
      */
-    artSubmitterRoleID: "809447750583975936",
+    artSubmitterRoleIDs: ["809447750583975936", "1263581569407385685"],
 
     /**
      * Roles players may toggle themselves from the panel in

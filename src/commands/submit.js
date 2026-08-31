@@ -21,7 +21,7 @@ const {
 } = require("discord.js");
 const { findBestMatch } = require("string-similarity");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
-const { submissionArchiveChannelID, artSubmitterRoleID, defaultChoiceTime } = require("../util/consts/consts.js");
+const { submissionArchiveChannelID, artSubmitterRoleIDs, defaultChoiceTime } = require("../util/consts/consts.js");
 const { hasRole } = require("../util/functions/submissionViews.js");
 const { getCar, getCarFiles } = require("../util/functions/dataManager.js");
 const { isBMCar } = require("../util/functions/cardType.js");
@@ -136,13 +136,13 @@ module.exports = {
         // ── configuration guards ─────────────────────────────────────────────
         // Gated by ROLE, not by channel — submissions run in DMs so creators
         // aren't all crowding one channel with half-finished forms and images.
-        if (!(await hasRole(message, artSubmitterRoleID))) {
+        if (!(await hasRole(message, artSubmitterRoleIDs))) {
             return new ErrorMessage({
                 channel: message.channel,
                 title: "Error, you can't submit right now.",
-                desc: artSubmitterRoleID
-                    ? `Submissions are limited to <@&${artSubmitterRoleID}>.`
-                    : "`artSubmitterRoleID` needs filling in inside `src/util/consts/consts.js`.",
+                desc: artSubmitterRoleIDs.length > 0
+                    ? `Submissions are limited to ${artSubmitterRoleIDs.map(id => `<@&${id}>`).join(" / ")}.`
+                    : "`artSubmitterRoleIDs` needs filling in inside `src/util/consts/consts.js`.",
                 author: message.author
             }).sendMessage();
         }

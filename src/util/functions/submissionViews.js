@@ -49,9 +49,11 @@ async function memberOf(message) {
 }
 
 async function hasRole(message, roleID) {
-    if (!roleID) return false;
+    // Accepts a single role ID or an array of them (any match passes).
+    const wanted = (Array.isArray(roleID) ? roleID : [roleID]).filter(Boolean);
+    if (wanted.length === 0) return false;
     const member = await memberOf(message);
-    return !!member && member.roles.cache.has(roleID);
+    return !!member && wanted.some(id => member.roles.cache.has(id));
 }
 
 const isAdmin = message => hasRole(message, adminRoleID);
