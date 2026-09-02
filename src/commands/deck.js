@@ -28,6 +28,7 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 const pvpEventModel = require("../models/pvpEventSchema.js");
 
 const MAX_DECKS = 25;
@@ -55,7 +56,7 @@ module.exports = {
     category: "Gameplay",
     description: "Create and manage saved 5-car decks for use in PvP events.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
         if (!playerData) {
             return new ErrorMessage({
                 channel: message.channel,

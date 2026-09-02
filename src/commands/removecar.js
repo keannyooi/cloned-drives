@@ -12,6 +12,7 @@ const calcTotal = require("../util/functions/calcTotal.js");
 const updateHands = require("../util/functions/updateHands.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "removecar",
@@ -24,7 +25,7 @@ module.exports = {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
                 try {
-                    await getCar(message.mentions.users.first());
+                    await getCarFunc(message.mentions.users.first());
                 }
                 catch (error) {
                     throw error;
@@ -39,15 +40,17 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    await getCar(result.user, currentMessage);
+                    await getCarFunc(result.user, currentMessage);
                 })
                 .catch(error => {
                     throw error;
                 });
         }
 
-        async function getCar(user, currentMessage) {
-            const playerData = await profileModel.findOne({ userID: user.id });
+        // getCarFunc, not getCar — a local named getCar would shadow the
+        // dataManager import that removeCar() below needs for car data.
+        async function getCarFunc(user, currentMessage) {
+            const playerData = await getProfile(user.id);
             if (!playerData) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
@@ -61,7 +64,7 @@ module.exports = {
             if (args[1].toLowerCase() === "all" && args[2]) {
                 startFrom = 2;
             }
-            else if (isNaN(args[1]) || !args[2] || parseInt(args[1]) > 30) {
+            else if (!/^\d+$/.test(args[1]) || !args[2] || parseInt(args[1]) > 30 || parseInt(args[1]) < 1) {
                 startFrom = 1;
             }
             else {
@@ -118,7 +121,7 @@ module.exports = {
                     async function acceptedFunction(currentMessage) {
                         // Re-fetch the target's profile so the write is built from FRESH data —
                         // another writer may have touched their garage while the dialog was open.
-                        const freshData = await profileModel.findOne({ userID: user.id });
+                        const freshData = await getProfile(user.id);
                         const freshCar = freshData ? freshData.garage.find(c => c.carID === currentCar.carID) : null;
                         if (!freshData || !freshCar || (freshCar.upgrades[upgrade] || 0) < amount) {
                             const errorMessage = new ErrorMessage({

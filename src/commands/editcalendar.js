@@ -760,7 +760,7 @@ module.exports = {
                     let newOpponents = [];
                     
                     if (regenMode === "filter") {
-                        const { filter } = await profileModel.findOne({ userID: message.author.id });
+                        const { filter } = await profileModel.findOne({ userID: message.author.id }, { filter: 1 });
                         newOpponents = carFiles.filter(file => {
                             const carID = file.slice(0, 6);
                             return filterCheck({ car: carID, filter });

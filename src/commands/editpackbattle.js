@@ -31,15 +31,30 @@ module.exports = {
     description: "Edits a pack battle's settings.",
     async execute(message, args) {
         const battles = await packBattleModel.find();
-        let query = [args[0].toLowerCase()];
-        await new Promise(resolve => resolve(search(message, query, battles, "packbattle")))
-            .then(async (response) => {
-                if (!Array.isArray(response)) return;
-                await editBattle(...response);
-            })
-            .catch(error => {
-                throw error;
-            });
+        // Multi-word battle names: greedily match the LONGEST args-prefix against
+        // a battle name, so "Operation: Wild Horse viewconfig" parses with the
+        // subcommand in the right slot. Falls back to the original single-token
+        // fuzzy search when no exact name matches.
+        let exactBattle = null;
+        for (let k = args.length - 1; k >= 1; k--) {
+            const candidate = args.slice(0, k).join(" ").toLowerCase();
+            const hit = battles.find(b => b.name.toLowerCase() === candidate);
+            if (hit) { exactBattle = hit; args.splice(1, k - 1); break; }
+        }
+        if (exactBattle) {
+            await editBattle(exactBattle, undefined);
+        }
+        else {
+            let query = [args[0].toLowerCase()];
+            await new Promise(resolve => resolve(search(message, query, battles, "packbattle")))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    await editBattle(...response);
+                })
+                .catch(error => {
+                    throw error;
+                });
+        }
 
         async function editBattle(battle, currentMessage) {
             let successMessage;

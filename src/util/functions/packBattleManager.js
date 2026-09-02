@@ -91,8 +91,9 @@ function resetDailyIfNeeded(stats, counters) {
 // ============================================================================
 
 async function processPackOpening(userID, packID, addedCars) {
+    const earnedAcrossBattles = [];
     const activeBattles = await packBattleModel.find({ isActive: true, packID });
-    if (activeBattles.length === 0) return;
+    if (activeBattles.length === 0) return earnedAcrossBattles;
 
     for (const battle of activeBattles) {
         // Get or init player stats
@@ -195,9 +196,15 @@ async function processPackOpening(userID, packID, addedCars) {
             { "$set": setObj }
         );
 
-        // Check milestones after the update
-        await checkMilestones(battle, userID, stats);
+        // Check milestones after the update — collected so the pack-open flow
+        // can ANNOUNCE them. They used to be earned in total silence: reward
+        // pushed, nothing on screen, player none the wiser until cd-rewards.
+        const earned = await checkMilestones(battle, userID, stats);
+        for (const entry of earned || []) {
+            earnedAcrossBattles.push({ battleName: battle.name, milestone: entry.milestone });
+        }
     }
+    return earnedAcrossBattles;
 }
 
 // ============================================================================

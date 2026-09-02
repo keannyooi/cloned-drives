@@ -21,7 +21,7 @@ module.exports = {
     category: "Gameplay",
     description: "View active pack battles, your stats, leaderboards, and milestone progress.",
     async execute(message, args) {
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
 
         // No args: list all active battles
         if (!args.length) {

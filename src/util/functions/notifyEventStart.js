@@ -35,7 +35,12 @@ async function notifyEventStart(eventName) {
 
     console.log(`[EVENT DMs] Starting background notifications for "${eventName}"...`);
 
-    const cursor = profileModel.find({ "settings.sendeventnotifs": true }).cursor();
+    // Exclude the heavy arrays: this used to stream every opted-in player's
+    // full profile (garages included) over the throttled DB link per event.
+    const cursor = profileModel.find(
+        { "settings.sendeventnotifs": true },
+        { garage: 0, discoveredCars: 0, decks: 0 }
+    ).lean().cursor();
 
     let batch = [];
     for await (const profile of cursor) {

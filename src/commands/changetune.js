@@ -12,6 +12,7 @@ const generateHud = require("../util/functions/generateHud.js");
 const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "changetune",
@@ -52,7 +53,7 @@ module.exports = {
         }
 
         async function getCarFunc(user, currentMessage) {
-            const playerData = await profileModel.findOne({ userID: user.id });
+            const playerData = await getProfile(user.id);
             let query, searchByID = false;
             if (args[1].toLowerCase().startsWith("-c")) {
                 query = [args[1].toLowerCase().slice(1)];

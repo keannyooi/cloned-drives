@@ -9,6 +9,7 @@ const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
 const { trackMoneySpent, trackTrophiesEarned, trackPackOpened } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "openpack",
@@ -42,7 +43,7 @@ module.exports = {
             let [result, currentMessage] = response;
             packId = result.endsWith('.json') ? result.slice(0, -5) : result;
 
-            const playerData = await profileModel.findOne({ userID: message.author.id });
+            const playerData = await getProfile(message.author.id);
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const currentPack = getPack(packId);
 
@@ -180,11 +181,18 @@ module.exports = {
             if (bonusTrophies > 0) trackTrophiesEarned(bonusTrophies);
 
             // Pack Battle tracking (non-fatal — never breaks normal pack opening)
+            let earnedMilestones = [];
             try {
                 const { processPackOpening } = require("../util/functions/packBattleManager.js");
-                await processPackOpening(message.author.id, packId, pulledCars);
+                earnedMilestones = await processPackOpening(message.author.id, packId, pulledCars) || [];
             } catch (err) {
                 console.error("[PackBattle] Tracking failed (non-fatal):", err.message);
+            }
+            if (earnedMilestones.length > 0) {
+                const listRewards = require("../util/functions/listRewards.js");
+                const lines = earnedMilestones.map(entry =>
+                    `\uD83C\uDFC1 **${entry.battleName}** milestone hit${entry.milestone.isSecret ? " (a secret one!)" : ""}: ${entry.milestone.hint || entry.milestone.stat + " \u2265 " + entry.milestone.threshold}\n\u21B3 ${listRewards(entry.milestone.reward)} — claim with \`cd-rewards\``);
+                await message.channel.send({ content: lines.join("\n") }).catch(() => {});
             }
 
             // Sent immediately AFTER the verified write. The old 5s-delayed

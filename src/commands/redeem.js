@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { SuccessMessage, ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver, getVoucher } = require("../util/functions/dataManager.js");
 const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const { trackMoneyEarned, trackTrophiesEarned, trackFuseTokensEarned, trackCodeRedeemed } = require("../util/functions/tracker.js");
@@ -86,7 +86,7 @@ module.exports = {
         }
 
         // All checks passed - apply rewards
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await profileModel.findOne({ userID: message.author.id }, { money: 1, trophies: 1, fuseTokens: 1 });
         const rewards = codeData.rewards;
         let rewardLog = "";
 
@@ -141,6 +141,20 @@ module.exports = {
                 }
                 pendingEntries.push({ driver: driverID, origin: `Code: ${codeName}` });
                 rewardLog += `Driver: **${driverDisplayName(codeDriver)}** *(claim via \`cd-rewards\`)*\n`;
+            }
+        }
+        if (rewards.vouchers && rewards.vouchers.length > 0) {
+            for (let entry of rewards.vouchers) {
+                const codeVoucher = getVoucher(entry.voucherID);
+                if (!codeVoucher) {
+                    // Voucher file removed since the code was built — skip the
+                    // grant rather than filing an unclaimable entry.
+                    console.log(`[codes] ${codeName}: unknown voucher "${entry.voucherID}" skipped`);
+                    continue;
+                }
+                const amount = Number.isInteger(entry.amount) && entry.amount > 0 ? entry.amount : 1;
+                pendingEntries.push({ voucher: { voucherID: entry.voucherID, amount }, origin: `Code: ${codeName}` });
+                rewardLog += `${amount}x ${codeVoucher.name} 🎟️ *(claim via \`cd-rewards\`)*\n`;
             }
         }
 

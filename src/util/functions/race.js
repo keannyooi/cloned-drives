@@ -39,7 +39,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics, si
     const { tcsPen, absPen, drivePen, tyrePen } = weatherVars[`${currentTrack["weather"]} ${currentTrack["surface"]}`];
     let attachment;
     
-    if (!disablegraphics) {
+    if (!disablegraphics && !silentResult) {
         try {
             const canvas = createCanvas(674, 379);
             const context = canvas.getContext("2d");

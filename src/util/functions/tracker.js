@@ -29,6 +29,7 @@ const buffer = {
     offersBought: 0,
     hiloGames: 0,
     exchanges: 0,
+    voucherRedemptions: 0,
     commandErrors: 0,
     hourlyActivity: {}   // { "14": count }
 };
@@ -161,6 +162,13 @@ function trackExchange() {
 }
 
 /**
+ * Track a voucher redemption (cd-voucher)
+ */
+function trackVoucherRedeemed() {
+    buffer.voucherRedemptions++;
+}
+
+/**
  * Track a new player creation
  */
 function trackNewPlayer() {
@@ -219,6 +227,7 @@ async function flush() {
     if (buffer.offersBought > 0) inc.offersBought = buffer.offersBought;
     if (buffer.hiloGames > 0) inc.hiloGames = buffer.hiloGames;
     if (buffer.exchanges > 0) inc.exchanges = buffer.exchanges;
+    if (buffer.voucherRedemptions > 0) inc.voucherRedemptions = buffer.voucherRedemptions;
     if (buffer.newPlayers > 0) inc.newPlayers = buffer.newPlayers;
     if (buffer.commandErrors > 0) inc.commandErrors = buffer.commandErrors;
 
@@ -259,6 +268,7 @@ async function flush() {
     buffer.offersBought = 0;
     buffer.hiloGames = 0;
     buffer.exchanges = 0;
+    buffer.voucherRedemptions = 0;
     buffer.commandErrors = 0;
     buffer.hourlyActivity = {};
 }
@@ -280,6 +290,7 @@ module.exports = {
     trackOfferBought,
     trackHiloGame,
     trackExchange,
+    trackVoucherRedeemed,
     trackNewPlayer,
     trackError,
     flush

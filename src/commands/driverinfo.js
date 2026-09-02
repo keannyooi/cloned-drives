@@ -105,7 +105,7 @@ module.exports = {
             });
 
         async function displayInfo(driverFile, currentMessage) {
-            const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id });
+            const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id }, { raceWeekStats: 1 });
             const driver = getDriver(driverFile);
             const driverID = driverFile.slice(0, -5);
 

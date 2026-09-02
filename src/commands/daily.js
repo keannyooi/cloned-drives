@@ -11,6 +11,7 @@ const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
 const { trackMoneyEarned } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "daily",
@@ -22,7 +23,7 @@ module.exports = {
         const carFiles = getCarFiles();
         const packFiles = getPackFiles();
         
-        let playerData = await profileModel.findOne({ userID: message.author.id });
+        let playerData = await getProfile(message.author.id);
         let { dailyStats, money, garage } = playerData;
         let { lastDaily, streak, highestStreak } = dailyStats;
 

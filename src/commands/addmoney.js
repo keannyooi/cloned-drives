@@ -47,7 +47,7 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            const playerData = await profileModel.findOne({ userID: user.id });
+            const playerData = await profileModel.findOne({ userID: user.id }, { money: 1 });
             const balance = playerData.money + amount;
             await profileModel.updateOne({ userID: user.id }, { money: balance });
 

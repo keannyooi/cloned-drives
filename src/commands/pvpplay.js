@@ -38,6 +38,7 @@ const reqDisplay = require("../util/functions/reqDisplay.js");
 const createCar = require("../util/functions/createCar.js");
 const race = require("../util/functions/race.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 const pvpEventModel = require("../models/pvpEventSchema.js");
 const {
     newEntry,
@@ -97,7 +98,7 @@ module.exports = {
             }).sendMessage();
         }
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
         if (!playerData) {
             return new ErrorMessage({
                 channel: message.channel,

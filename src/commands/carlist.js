@@ -12,6 +12,7 @@ const listUpdate = require("../util/functions/listUpdate.js");
 const filterCheck = require("../util/functions/filterCheck.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "carlist",
@@ -41,7 +42,7 @@ module.exports = {
             return errorMessage.sendMessage();
         }
 
-        const { filter, garage, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { filter, garage, settings } = await getProfile(message.author.id);
         if (!settings.disablecarlistfilter) {
             list = list.filter(car => {
                 const carId = car.endsWith('.json') ? car.slice(0, -5) : car.slice(0, 6);

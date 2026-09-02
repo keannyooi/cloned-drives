@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver, getVoucher } = require("../util/functions/dataManager.js");
 const { DUPE_DRIVER_MONEY } = require("../util/consts/raceWeek.js");
 // Shared rarity v3 curve/display helpers — single source of truth.
 const { RARITY_CURVES, rarityOf, isAllActiveRarity, maxLevelFor, levelFromDupes, driverDisplayName } = require("../util/functions/raceWeekEvents.js");
@@ -13,6 +13,7 @@ const rwEmoji = require("../util/functions/rwEmoji.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "rewards",
@@ -25,13 +26,16 @@ module.exports = {
         const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
 
         // Initialize discoveredCars
         let discoveredCars = playerData.discoveredCars || [];
         if (discoveredCars.length === 0 && playerData.garage.length > 0) {
             discoveredCars = playerData.garage.map(c => c.carID);
         }
+
+        // Voucher wallet (docs/voucher-system.md) — array-guarded for legacy profiles
+        let walletVouchers = Array.isArray(playerData.vouchers) ? playerData.vouchers : [];
 
         if (playerData.unclaimedRewards.length > 0) {
             // Bookkeeping model: rewards are removed via $pullAll of the exact
@@ -128,6 +132,27 @@ module.exports = {
                         consume = false; // already pulled above
                         line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
                         break;
+                    case "voucher": {
+                        const grant = reward.voucher || {};
+                        const voucherDef = getVoucher(grant.voucherID);
+                        if (!voucherDef) {
+                            // Voucher file removed/renamed after the grant — keep
+                            // the entry claimable rather than voiding it.
+                            console.log(`rewards: unknown voucher ID "${grant.voucherID}" from ${origin}, keeping unclaimed`);
+                            consume = false;
+                            break;
+                        }
+                        const grantAmount = Number.isInteger(grant.amount) && grant.amount > 0 ? grant.amount : 1;
+                        const walletEntry = walletVouchers.find(entry => entry && entry.voucherID === grant.voucherID);
+                        if (walletEntry) {
+                            walletEntry.amount = (walletEntry.amount || 0) + grantAmount;
+                        }
+                        else {
+                            walletVouchers.push({ voucherID: grant.voucherID, amount: grantAmount });
+                        }
+                        line = `Received **${grantAmount}× ${voucherDef.name}** 🎟️ from **${origin}** *(redeem via \`cd-voucher\`)*\n`;
+                        break;
+                    }
                     case "driver": {
                         let driverDef = getDriver(reward.driver);
                         if (!driverDef) {
@@ -267,7 +292,8 @@ module.exports = {
                 fuseTokens: playerData.fuseTokens,
                 trophies: playerData.trophies,
                 garage: playerData.garage,
-                discoveredCars
+                discoveredCars,
+                vouchers: walletVouchers
             };
             const update = { "$set": profileUpdate };
             // Driver grants use atomic dotted-path ops — never a full raceWeekStats

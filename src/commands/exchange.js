@@ -1,8 +1,8 @@
 "use strict";
 
-const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
+const { ActionRowBuilder, StringSelectMenuBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { defaultWaitTime, defaultChoiceTime, trophyEmojiID } = require("../util/consts/consts.js");
+const { defaultWaitTime, defaultChoiceTime, trophyEmojiID, defaultPageLimit } = require("../util/consts/consts.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { exchangePool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -10,307 +10,380 @@ const calcTotal = require("../util/functions/calcTotal.js");
 const updateHands = require("../util/functions/updateHands.js");
 const addCars = require("../util/functions/addCars.js");
 const confirm = require("../util/functions/confirm.js");
-const search = require("../util/functions/search.js");
+const listUpdate = require("../util/functions/listUpdate.js");
+const paginate = require("../util/functions/paginate.js");
+const getButtons = require("../util/functions/getButtons.js");
 const { getAvailableTunes } = require("../util/functions/calcTune.js");
 const { trackExchange } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
+
+const DUPE_PAGE_SIZE = 25; // Discord select menus cap at 25 options
 
 module.exports = {
     name: "exchange",
     aliases: ["ex", "prizeexchange"],
-    usage: [],
+    usage: ["", "market", "market [page number]"],
     args: 0,
     category: "Gameplay",
-    description: "Exchange a duplicate prize car for another prize car you don't own (within 50 CR and same tyre type).",
+    description: "Exchange a duplicate prize car for another currently-exchangeable prize car you don't own (within 50 CR). `cd-exchange market` browses everything currently exchangeable.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        const carFiles = getCarFiles();
+        const playerData = await getProfile(message.author.id);
+        const settings = playerData.settings;
+        const pageLimit = settings.listamount || defaultPageLimit;
 
-        // Step 1: Find all duplicate prize cars (prize cars where player owns more than 1)
-        const duplicatePrizeCars = [];
+        // EXCHANGE TAG (2026-09-01, user design): a prize car is a legal
+        // exchange TARGET only while its carfile carries "Exchange" in
+        // hiddenTag. New prize cars ship untagged, so nothing is reachable
+        // before its event has run (246 of 524 were, before this); the admin
+        // opens a car by adding the tag and can re-lock it by removing it
+        // (e.g. before re-running an event). GIVING a dupe away is never
+        // restricted — only what it can become. Raw ownership was tried and
+        // rejected as the signal: old-exchange leaks left cars owned by 1-2
+        // players that were never actually awarded.
+        const isExchangeOpen = car => (car.hiddenTag || []).some(tag => String(tag).toLowerCase() === "exchange");
+
+        // The market: every exchange-open prize car, best (highest CR) first.
+        const taggedPool = [];
+        for (const file of getCarFiles()) {
+            const carID = file.slice(0, 6);
+            const car = getCar(carID);
+            if (car && exchangePool(car) === "prize" && isExchangeOpen(car)) {
+                taggedPool.push({ carID, car });
+            }
+        }
+        taggedPool.sort((a, b) => b.car.cr - a.car.cr);
+
+        const ownsCopy = carID => {
+            const owned = playerData.garage.find(c => c.carID === carID);
+            return owned && calcTotal(owned) > 0;
+        };
+
+        // ── Read-only market browser: cd-exchange market [page] ──────────────
+        if (args[0] && ["market", "list"].includes(args[0].toLowerCase())) {
+            return showMarket(args[1] ? parseInt(args[1]) : 1);
+        }
+
+        // ── Interactive flow ─────────────────────────────────────────────────
+        // Every duplicate prize car, with its personal target list precomputed
+        // (tag-gated, ±50 CR, not already owned) so screen 1 can show what each
+        // dupe unlocks BEFORE the player commits to one.
+        const duplicates = [];
         for (const garageCar of playerData.garage) {
             const carData = getCar(garageCar.carID);
             // Prize-pool cards only — diamonds have their own exchange
             // (cd-diamondexchange) and BOSS cars are exchange-locked.
-            if (exchangePool(carData) === "prize") {
-                const totalOwned = calcTotal(garageCar);
-                if (totalOwned > 1) {
-                    duplicatePrizeCars.push({
-                        garageCar,
-                        carData,
-                        totalOwned
-                    });
-                }
-            }
+            if (exchangePool(carData) !== "prize") continue;
+            const totalOwned = calcTotal(garageCar);
+            if (totalOwned < 2) continue;
+            const targets = taggedPool.filter(({ carID, car }) =>
+                Math.abs(car.cr - carData.cr) <= 50 && !ownsCopy(carID));
+            duplicates.push({ garageCar, carData, totalOwned, targets });
+        }
+        duplicates.sort((a, b) => b.carData.cr - a.carData.cr);
+
+        if (duplicates.length === 0) {
+            // Not a dead end: show the market anyway so players learn what's
+            // worth hunting dupes for.
+            return showMarket(1, "You have no duplicate prize cars to trade in right now — here's what's currently on the market.");
         }
 
-        // Step 2: Check if player has any duplicate prize cars
-        if (duplicatePrizeCars.length === 0) {
-            const errorMessage = new ErrorMessage({
+        const tradeable = duplicates.filter(d => d.targets.length > 0);
+        if (tradeable.length === 0) {
+            const infoMessage = new InfoMessage({
                 channel: message.channel,
-                title: "Error, you do not own any duplicate prize cars.",
-                desc: "You need to own more than one of a prize car to exchange it.",
+                title: "None of your duplicates can be exchanged right now.",
+                desc: duplicates.map(d => `${carNameGen({ currentCar: d.carData, rarity: true, removePrizeTag: true })} ×${d.totalOwned} — no targets in range`).join("\n")
+                    + "\n\nNothing currently exchangeable sits within ±50 CR of these that you don't already own. Browse the market with `cd-exchange market`.",
                 author: message.author
             });
-            return errorMessage.sendMessage();
+            return infoMessage.sendMessage();
         }
 
-        // Step 3: Create dropdown with duplicate prize cars
-        const options = duplicatePrizeCars.map((item, index) => ({
-            label: `${carNameGen({ currentCar: item.carData, removePrizeTag: true })} (x${item.totalOwned})`,
-            description: `CR: ${item.carData.cr} | ${item.carData.tyreType || "Standard"} tyres`,
-            value: `${index}`,
-            emoji: `<trophies:${trophyEmojiID}>`
-        }));
+        // ── Screen state machine ─────────────────────────────────────────────
+        // Screen 1: pick a dupe (shows what each unlocks). Screen 2: browse
+        // that dupe's market, pages of `pageLimit`, pick from a dropdown —
+        // typing is gone, so typo/owned/CR errors are structurally impossible.
+        // Back on screen 2 returns to screen 1 without re-running the command.
+        let screen = 1, dupePage = 1, targetPage = 1, chosenDupe = null;
+        let currentMessage = null;
+        const filter = i => i.user.id === message.author.id;
 
-        const dropdownList = new StringSelectMenuBuilder()
-            .setCustomId("exchangeSelect")
-            .setPlaceholder("Select a duplicate prize car to exchange...")
-            .addOptions(...options);
-        const row = new ActionRowBuilder().addComponents(dropdownList);
+        const navRow = (page, totalPages) => {
+            const { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", settings.buttonstyle);
+            firstPage.setDisabled(page === 1);
+            prevPage.setDisabled(page === 1);
+            nextPage.setDisabled(page === totalPages);
+            lastPage.setDisabled(page === totalPages);
+            return new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
+        };
+        const backCancelRow = withBack => {
+            const row = new ActionRowBuilder();
+            if (withBack) {
+                row.addComponents(new ButtonBuilder().setCustomId("exBack").setLabel("← Back").setStyle(ButtonStyle.Secondary));
+            }
+            row.addComponents(new ButtonBuilder().setCustomId("exCancel").setLabel("Cancel").setStyle(ButtonStyle.Secondary));
+            return row;
+        };
 
-        const selectMessage = new InfoMessage({
-            channel: message.channel,
-            title: "Prize Car Exchange",
-            desc: "Select a duplicate prize car you want to exchange.",
-            author: message.author,
-            footer: `You have been given ${defaultWaitTime / 1000} seconds to select.`
-        });
-        let currentMessage = await selectMessage.sendMessage({ buttons: [row], preserve: true });
+        const renderScreenOne = () => {
+            const totalPages = Math.ceil(tradeable.length / DUPE_PAGE_SIZE);
+            const section = paginate(tradeable, dupePage, DUPE_PAGE_SIZE);
+            const lines = section.map((d, i) =>
+                `**${(dupePage - 1) * DUPE_PAGE_SIZE + i + 1}.** ${carNameGen({ currentCar: d.carData, rarity: true, removePrizeTag: true })} ×${d.totalOwned} — **${d.targets.length} option${d.targets.length === 1 ? "" : "s"}**`);
 
-        // Step 4: Wait for selection
-        const filter = (interaction) => interaction.user.id === message.author.id && interaction.customId === "exchangeSelect";
-        
-        try {
-            const selection = await message.channel.awaitMessageComponent({
-                filter,
-                time: defaultWaitTime
-            });
-            await selection.deferUpdate();
-            await currentMessage.removeButtons();
+            const fields = [];
+            const untradeable = duplicates.filter(d => d.targets.length === 0);
+            if (untradeable.length > 0 && dupePage === 1) {
+                let value = untradeable.map(d => `${carNameGen({ currentCar: d.carData, removePrizeTag: true })} ×${d.totalOwned}`).join(", ");
+                if (value.length > 1000) value = value.slice(0, 1000) + "…";
+                fields.push({ name: "Not exchangeable right now (no targets in range)", value });
+            }
 
-            const selectedIndex = parseInt(selection.values[0]);
-            const selectedDuplicate = duplicatePrizeCars[selectedIndex];
-            const selectedCarData = selectedDuplicate.carData;
-            const selectedGarageCar = selectedDuplicate.garageCar;
-            const selectedTyreType = selectedCarData.tyreType || "Standard";
+            const dropdown = new StringSelectMenuBuilder()
+                .setCustomId("exDupeSelect")
+                .setPlaceholder("Select a duplicate to trade in...")
+                .addOptions(...section.map((d, i) => ({
+                    label: `${carNameGen({ currentCar: d.carData, removePrizeTag: true })} (x${d.totalOwned})`.slice(0, 100),
+                    description: `CR: ${d.carData.cr} | ${d.targets.length} option${d.targets.length === 1 ? "" : "s"} available`,
+                    value: `${(dupePage - 1) * DUPE_PAGE_SIZE + i}`,
+                    emoji: `<trophies:${trophyEmojiID}>`
+                })));
 
-            // Step 5: Ask player to type desired prize car
-            const typeMessage = new InfoMessage({
+            const embed = new InfoMessage({
                 channel: message.channel,
-                title: "Type out the prize car you want",
-                desc: `You selected: **${carNameGen({ currentCar: selectedCarData, rarity: true })}**\n\nNow type the name of the prize car you want to receive.\nIt must be within Â±50 CR of your selected car (CR ${selectedCarData.cr - 50} to ${selectedCarData.cr + 50}) and have the same tyre type (**${selectedTyreType}**).`,
+                title: "Prize Car Exchange",
+                desc: "Pick a duplicate to trade in — each shows how many cars it can currently get you.\n\n" + lines.join("\n"),
                 author: message.author,
-                image: selectedCarData.racehud,
-                footer: `You have been given ${defaultWaitTime / 1000} seconds to respond.`
+                fields,
+                footer: `${totalPages > 1 ? `Page ${dupePage} of ${totalPages} • ` : ""}Browse everything with cd-exchange market • ${defaultWaitTime / 1000}s to choose`
             });
-            currentMessage = await typeMessage.sendMessage({ currentMessage });
+            const rows = [new ActionRowBuilder().addComponents(dropdown)];
+            if (totalPages > 1) rows.push(navRow(dupePage, totalPages));
+            rows.push(backCancelRow(false));
+            return { embed, rows, totalPages };
+        };
 
-            // Step 6: Wait for player to type car name
-            const messageFilter = (m) => m.author.id === message.author.id;
-            
+        const renderScreenTwo = () => {
+            const { carData, totalOwned, targets } = chosenDupe;
+            const totalPages = Math.ceil(targets.length / pageLimit);
+            const section = paginate(targets, targetPage, pageLimit);
+            const lines = section.map(({ car }, i) =>
+                `**${(targetPage - 1) * pageLimit + i + 1}.** ${carNameGen({ currentCar: car, rarity: true, removePrizeTag: true })}`);
+
+            const dropdown = new StringSelectMenuBuilder()
+                .setCustomId("exTargetSelect")
+                .setPlaceholder("Select the car you want to receive...")
+                .addOptions(...section.map(({ carID, car }) => ({
+                    label: carNameGen({ currentCar: car, removePrizeTag: true }).slice(0, 100),
+                    description: `CR: ${car.cr} | ${car.tyreType || "Standard"} tyres`,
+                    value: carID,
+                    emoji: `<trophies:${trophyEmojiID}>`
+                })));
+
+            const embed = new InfoMessage({
+                channel: message.channel,
+                title: `Trade in: ${carNameGen({ currentCar: carData, removePrizeTag: true })} (x${totalOwned})`,
+                desc: `**${targets.length} car${targets.length === 1 ? "" : "s"}** available for it — CR ${carData.cr - 50} to ${carData.cr + 50}, best first. Pick one from the dropdown.\n\n` + lines.join("\n"),
+                author: message.author,
+                thumbnail: carData.racehud,
+                footer: `${totalPages > 1 ? `Page ${targetPage} of ${totalPages} • ` : ""}${defaultWaitTime / 1000}s to choose`
+            });
+            const rows = [new ActionRowBuilder().addComponents(dropdown)];
+            if (totalPages > 1) rows.push(navRow(targetPage, totalPages));
+            rows.push(backCancelRow(true));
+            return { embed, rows, totalPages };
+        };
+
+        while (true) {
+            const { embed, rows, totalPages } = screen === 1 ? renderScreenOne() : renderScreenTwo();
+            currentMessage = await embed.sendMessage({ currentMessage, buttons: rows, preserve: true });
+            if (!currentMessage) return;
+
+            let interaction;
             try {
-                const collected = await message.channel.awaitMessages({
-                    filter: messageFilter,
-                    max: 1,
-                    time: defaultWaitTime,
-                    errors: ["time"]
-                });
-
-                const userInput = collected.first().content.toLowerCase().split(" ");
-                
-                // Try to delete the user's message to keep chat clean
-                try {
-                    await collected.first().delete();
-                } catch (e) {
-                    // Ignore if we can't delete
-                }
-
-                // Step 7: Search for the prize car they want
-                // Filter car files to only include prize cars within CR range AND same tyre type
-                const validPrizeCars = carFiles.filter(file => {
-                    const carId = file.endsWith('.json') ? file.slice(0, -5) : file;
-                    const car = getCar(carId);
-                    if (!car || exchangePool(car) !== "prize") return false;
-                    const crDiff = Math.abs(car.cr - selectedCarData.cr);
-                    if (crDiff > 50) return false;
-                    // Check tyre type matches
-                    const carTyreType = car.tyreType || "Standard";
-                    return carTyreType === selectedTyreType;
-                });
-
-                if (validPrizeCars.length === 0) {
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, no valid prize cars found.",
-                        desc: `There are no other prize cars within the CR range with **${selectedTyreType}** tyres to exchange for.`,
-                        author: message.author
-                    });
-                    return errorMessage.sendMessage({ currentMessage });
-                }
-
-                // Search for the car
-                await new Promise(resolve => resolve(search(message, userInput, validPrizeCars, "car", currentMessage)))
-                    .then(async (response) => {
-                        if (!Array.isArray(response)) return;
-                        let [carFile, currentMessage2] = response;
-                        currentMessage = currentMessage2;
-
-                        const desiredCarID = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
-                        const desiredCar = getCar(desiredCarID);
-
-                        // Step 8: Check if player already owns the desired car
-                        const alreadyOwns = playerData.garage.find(c => c.carID === desiredCarID.slice(0, 6));
-                        if (alreadyOwns && calcTotal(alreadyOwns) > 0) {
-                            const errorMessage = new ErrorMessage({
-                                channel: message.channel,
-                                title: "Sorry, you can't trade for a prize car you already own!",
-                                desc: `You already own the ${carNameGen({ currentCar: desiredCar, rarity: true })}.`,
-                                author: message.author,
-                                image: desiredCar.racehud
-                            });
-                            return errorMessage.sendMessage({ currentMessage });
-                        }
-
-                        // Step 9: Check if it's the same car
-                        if (desiredCarID.slice(0, 6) === selectedGarageCar.carID) {
-                            const errorMessage = new ErrorMessage({
-                                channel: message.channel,
-                                title: "Error, you can't exchange a car for itself!",
-                                desc: "Please choose a different prize car.",
-                                author: message.author
-                            });
-                            return errorMessage.sendMessage({ currentMessage });
-                        }
-
-                        // Step 10: Double-check CR range (should already be filtered but just in case)
-                        const crDiff = Math.abs(desiredCar.cr - selectedCarData.cr);
-                        if (crDiff > 50) {
-                            const errorMessage = new ErrorMessage({
-                                channel: message.channel,
-                                title: "Error, prize car is not within CR range!",
-                                desc: `The selected car must be within Â±50 CR of your duplicate.\nYour car: CR ${selectedCarData.cr}\nDesired car: CR ${desiredCar.cr}\nDifference: ${crDiff} CR (max: 50)`,
-                                author: message.author
-                            });
-                            return errorMessage.sendMessage({ currentMessage });
-                        }
-
-                        // Step 10b: Double-check tyre type (should already be filtered but just in case)
-                        const desiredTyreType = desiredCar.tyreType || "Standard";
-                        if (desiredTyreType !== selectedTyreType) {
-                            const errorMessage = new ErrorMessage({
-                                channel: message.channel,
-                                title: "Error, tyre types do not match!",
-                                desc: `The selected car must have the same tyre type.\nYour car: **${selectedTyreType}** tyres\nDesired car: **${desiredTyreType}** tyres`,
-                                author: message.author
-                            });
-                            return errorMessage.sendMessage({ currentMessage });
-                        }
-
-                        // Step 11: Confirmation
-                        const confirmationMessage = new InfoMessage({
-                            channel: message.channel,
-                            title: "Confirm Prize Car Exchange",
-                            desc: `Are you sure you want to exchange:\n\n**Giving:** ${carNameGen({ currentCar: selectedCarData, rarity: true })}\n**Receiving:** ${carNameGen({ currentCar: desiredCar, rarity: true })}`,
-                            author: message.author,
-                            image: desiredCar.racehud,
-                            footer: `You have ${defaultChoiceTime / 1000} seconds to confirm.`
-                        });
-
-                        await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
-
-                        async function acceptedFunction(currentMessage) {
-                            // Re-fetch the profile so the write is built from FRESH data —
-                            // another writer may have touched the garage while the dialog was open.
-                            const freshData = await profileModel.findOne({ userID: message.author.id });
-                            const freshGarageCar = freshData.garage.find(c => c.carID === selectedGarageCar.carID);
-                            const freshDesired = freshData.garage.find(c => c.carID === desiredCarID.slice(0, 6));
-                            if (!freshGarageCar || calcTotal(freshGarageCar) < 2 || (freshDesired && calcTotal(freshDesired) > 0)) {
-                                const errorMessage = new ErrorMessage({
-                                    channel: message.channel,
-                                    title: "Error, your garage changed while you were deciding.",
-                                    desc: "You no longer own a duplicate of the selected prize car, or you now own the desired car. Please run the command again.",
-                                    author: message.author
-                                });
-                                return errorMessage.sendMessage({ currentMessage });
-                            }
-
-                            // Find the upgrade to remove (prefer stock, then lowest upgrade)
-                            let upgradeToRemove = null;
-                            const upgradeOrder = getAvailableTunes();
-                            for (const upg of upgradeOrder) {
-                                if (freshGarageCar.upgrades[upg] > 0) {
-                                    upgradeToRemove = upg;
-                                    break;
-                                }
-                            }
-
-                            if (!upgradeToRemove) {
-                                const errorMessage = new ErrorMessage({
-                                    channel: message.channel,
-                                    title: "Error, could not find a car to remove.",
-                                    desc: "Something went wrong. Please try again.",
-                                    author: message.author
-                                });
-                                return errorMessage.sendMessage({ currentMessage });
-                            }
-
-                            // Remove one of the duplicate prize cars
-                            updateHands(freshData, freshGarageCar.carID, upgradeToRemove, "remove");
-                            freshGarageCar.upgrades[upgradeToRemove] -= 1;
-
-                            // If no more of this car, remove from garage
-                            if (calcTotal(freshGarageCar) === 0) {
-                                freshData.garage.splice(freshData.garage.indexOf(freshGarageCar), 1);
-                            }
-
-                            // Add the new prize car (stock upgrade)
-                            freshData.garage = addCars(freshData.garage, [{ carID: desiredCarID.slice(0, 6), upgrade: "000" }]);
-
-                            // Save to database
-                            await profileModel.updateOne({ userID: message.author.id }, {
-                                garage: freshData.garage,
-                                hand: freshData.hand,
-                                decks: freshData.decks
-                            });
-
-                            trackExchange();
-
-                            // Success message
-                            const successMessage = new SuccessMessage({
-                                channel: message.channel,
-                                title: "ðŸŽ‰ Congratulations! Exchange Successful!",
-                                desc: `You exchanged your ${carNameGen({ currentCar: selectedCarData, rarity: true })} for a brand new ${carNameGen({ currentCar: desiredCar, rarity: true })}!`,
-                                author: message.author,
-                                image: desiredCar.racehud
-                            });
-                            await successMessage.sendMessage({ currentMessage });
-                            return successMessage.removeButtons();
-                        }
-                    })
-                    .catch(error => {
-                        throw error;
-                    });
-
-            } catch (timeError) {
+                interaction = await currentMessage.message.awaitMessageComponent({ filter, time: defaultWaitTime });
+                await interaction.deferUpdate();
+            }
+            catch (timeError) {
                 const cancelMessage = new InfoMessage({
                     channel: message.channel,
                     title: "Action cancelled automatically.",
-                    desc: `You didn't type a car name in time. Please try again.`,
+                    desc: "You didn't choose anything in time. Please try again.",
                     author: message.author
                 });
                 return cancelMessage.sendMessage({ currentMessage });
             }
 
-        } catch (error) {
-            const cancelMessage = new InfoMessage({
+            switch (interaction.customId) {
+                case "firstPage":
+                    if (screen === 1) dupePage = 1; else targetPage = 1;
+                    break;
+                case "prevPage":
+                    if (screen === 1) dupePage = Math.max(1, dupePage - 1); else targetPage = Math.max(1, targetPage - 1);
+                    break;
+                case "nextPage":
+                    if (screen === 1) dupePage = Math.min(totalPages, dupePage + 1); else targetPage = Math.min(totalPages, targetPage + 1);
+                    break;
+                case "lastPage":
+                    if (screen === 1) dupePage = totalPages; else targetPage = totalPages;
+                    break;
+                case "exBack":
+                    screen = 1;
+                    chosenDupe = null;
+                    break;
+                case "exCancel": {
+                    const cancelMessage = new InfoMessage({
+                        channel: message.channel,
+                        title: "Exchange cancelled.",
+                        desc: "Nothing was traded.",
+                        author: message.author
+                    });
+                    return cancelMessage.sendMessage({ currentMessage });
+                }
+                case "exDupeSelect":
+                    chosenDupe = tradeable[parseInt(interaction.values[0])];
+                    screen = 2;
+                    targetPage = 1;
+                    break;
+                case "exTargetSelect":
+                    return confirmExchange(chosenDupe, interaction.values[0], currentMessage);
+                default:
+                    break;
+            }
+        }
+
+        // ── Screen 3: confirm and execute ────────────────────────────────────
+        async function confirmExchange(dupe, desiredCarID, currentMessage) {
+            const desiredCar = getCar(desiredCarID);
+            const upgradeOrder = getAvailableTunes();
+            // Advisory display of which copy gets consumed (stock first, then
+            // lowest tune) — the accepted handler recomputes this from fresh data.
+            const copyToGive = upgradeOrder.find(upg => dupe.garageCar.upgrades[upg] > 0) || "000";
+
+            const confirmationMessage = new InfoMessage({
                 channel: message.channel,
-                title: "Action cancelled automatically.",
-                desc: `You didn't select a car in time. Please try again.`,
-                author: message.author
+                title: "Confirm Prize Car Exchange",
+                desc: `**Giving:** ${carNameGen({ currentCar: dupe.carData, rarity: true, upgrade: copyToGive })} (your ${copyToGive === "000" ? "stock" : `${copyToGive}-tuned`} copy)\n**Receiving:** ${carNameGen({ currentCar: desiredCar, rarity: true, upgrade: "000" })}`,
+                author: message.author,
+                image: desiredCar.racehud,
+                thumbnail: dupe.carData.racehud,
+                footer: `You have ${defaultChoiceTime / 1000} seconds to confirm.`
             });
-            await cancelMessage.sendMessage({ currentMessage });
-            return currentMessage.removeButtons();
+
+            await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
+
+            async function acceptedFunction(currentMessage) {
+                // Re-fetch the profile so the write is built from FRESH data —
+                // another writer may have touched the garage while the dialog was open.
+                const freshData = await getProfile(message.author.id);
+                const freshGarageCar = freshData.garage.find(c => c.carID === dupe.garageCar.carID);
+                const freshDesired = freshData.garage.find(c => c.carID === desiredCarID);
+                if (!freshGarageCar || calcTotal(freshGarageCar) < 2 || (freshDesired && calcTotal(freshDesired) > 0)) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, your garage changed while you were deciding.",
+                        desc: "You no longer own a duplicate of the selected prize car, or you now own the desired car. Please run the command again.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage({ currentMessage });
+                }
+
+                // Find the upgrade to remove (prefer stock, then lowest upgrade)
+                const upgradeToRemove = upgradeOrder.find(upg => freshGarageCar.upgrades[upg] > 0);
+                if (!upgradeToRemove) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, could not find a car to remove.",
+                        desc: "Something went wrong. Please try again.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage({ currentMessage });
+                }
+
+                // Remove one of the duplicate prize cars
+                updateHands(freshData, freshGarageCar.carID, upgradeToRemove, "remove");
+                freshGarageCar.upgrades[upgradeToRemove] -= 1;
+
+                // If no more of this car, remove from garage
+                if (calcTotal(freshGarageCar) === 0) {
+                    freshData.garage.splice(freshData.garage.indexOf(freshGarageCar), 1);
+                }
+
+                // Add the new prize car (stock upgrade)
+                freshData.garage = addCars(freshData.garage, [{ carID: desiredCarID, upgrade: "000" }]);
+
+                // Record discovery (powers the NEW indicator in pack openings),
+                // with the same lazy-init heal every acquisition path uses.
+                let discoveredCars = freshData.discoveredCars || [];
+                if (discoveredCars.length === 0 && freshData.garage.length > 0) {
+                    discoveredCars = freshData.garage.map(c => c.carID);
+                }
+                if (!discoveredCars.includes(desiredCarID)) discoveredCars.push(desiredCarID);
+
+                // Save to database
+                await profileModel.updateOne({ userID: message.author.id }, {
+                    garage: freshData.garage,
+                    hand: freshData.hand,
+                    decks: freshData.decks,
+                    discoveredCars
+                });
+
+                trackExchange();
+
+                const successMessage = new SuccessMessage({
+                    channel: message.channel,
+                    title: "🎉 Congratulations! Exchange Successful!",
+                    desc: `You exchanged your ${carNameGen({ currentCar: dupe.carData, rarity: true })} for a brand new ${carNameGen({ currentCar: desiredCar, rarity: true })}!`,
+                    author: message.author,
+                    image: desiredCar.racehud
+                });
+                await successMessage.sendMessage({ currentMessage });
+                return successMessage.removeButtons();
+            }
+        }
+
+        // ── The market: read-only paginated view of the whole tagged pool ────
+        async function showMarket(page, noteLine) {
+            if (taggedPool.length === 0) {
+                const infoMessage = new InfoMessage({
+                    channel: message.channel,
+                    title: "The exchange market is empty right now.",
+                    desc: "No prize cars are currently open for exchange. Check back later!",
+                    author: message.author
+                });
+                return infoMessage.sendMessage();
+            }
+
+            const totalPages = Math.ceil(taggedPool.length / pageLimit);
+            if (isNaN(page) || page < 1 || page > totalPages) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, page number requested invalid.",
+                    desc: `The exchange market ends at page ${totalPages}.`,
+                    author: message.author
+                });
+                return errorMessage.sendMessage();
+            }
+
+            try {
+                await listUpdate(taggedPool, page, totalPages, listDisplay, settings);
+            }
+            catch (error) {
+                throw error;
+            }
+
+            function listDisplay(section, pg, total) {
+                const lines = section.map(({ carID, car }, i) =>
+                    `**${(pg - 1) * pageLimit + i + 1}.** ${carNameGen({ currentCar: car, rarity: true, removePrizeTag: true })}${ownsCopy(carID) ? " ✅" : ""}`);
+                return new InfoMessage({
+                    channel: message.channel,
+                    title: `Prize Exchange Market (${taggedPool.length} car${taggedPool.length === 1 ? "" : "s"} currently exchangeable)`,
+                    desc: `${noteLine ? noteLine + "\n\n" : ""}Trade a duplicate prize car within ±50 CR for any of these with \`cd-exchange\`. ✅ = already in your garage.\n\n` + lines.join("\n"),
+                    author: message.author,
+                    footer: `Page ${pg} of ${total}`
+                });
+            }
         }
     }
 };

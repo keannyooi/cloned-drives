@@ -30,7 +30,7 @@ module.exports = {
     name: "review",
     aliases: ["rev", "reviewsubs"],
     usage: [
-        "queue [page]", "view <ID>", "preview <carID | ID>",
+        "queue [bm/art] [page]", "view <ID>", "preview <carID | ID>",
         "approve <ID> [IBM|ABM|PBM]", "reject <ID> <reason>", "changes <ID> <note>",
         "sethud <ID> <url>", "pending", "rescan", "rebuildmirror", "purgedev"
     ],
@@ -44,12 +44,26 @@ module.exports = {
         const sub = (args[0] || "queue").toLowerCase();
 
         if (sub === "queue") {
-            const all = await submissionModel.find({ status: "pending" }).lean();
+            // Optional type filter so BM cards and artwork don't clash in one
+            // list: queue bm / queue art / queue saw / queue sbm — with or
+            // without a page number after it.
+            const TYPE_WORDS = { bm: "bm", sbm: "bm", art: "art", saw: "art", artwork: "art" };
+            let typeFilter = null, pageArg = args[1];
+            if (args[1] && TYPE_WORDS[String(args[1]).toLowerCase()]) {
+                typeFilter = TYPE_WORDS[String(args[1]).toLowerCase()];
+                pageArg = args[2];
+            }
+            const filter = { status: "pending" };
+            if (typeFilter) filter.type = typeFilter;
+
+            const all = await submissionModel.find(filter).lean();
             if (all.length === 0) {
                 return new InfoMessage({
                     channel: message.channel,
-                    title: "The review queue is empty.",
-                    desc: "Nothing is waiting on you.",
+                    title: typeFilter
+                        ? `No pending ${typeFilter === "bm" ? "BM card" : "artwork"} submissions.`
+                        : "The review queue is empty.",
+                    desc: typeFilter ? "The other queue might not be — `cd-review queue` shows everything." : "Nothing is waiting on you.",
                     author: message.author
                 }).sendMessage();
             }
@@ -57,15 +71,17 @@ module.exports = {
             // SAW10 before SAW2), and listUpdate gives the same page buttons
             // every other list in the bot has.
             all.sort(bySubmissionNumber);
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
-            const { page, totalPages } = paginate(all, args[1]);
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
+            const { page, totalPages } = paginate(all, pageArg);
             return listUpdate(all, page, totalPages, queueDisplay, settings);
 
             function queueDisplay(section, page, totalPages) {
+                const label = typeFilter === "bm" ? " BM cards" : typeFilter === "art" ? " artwork submissions" : "";
                 return new InfoMessage({
                     channel: message.channel,
-                    title: "Review queue — " + all.length + " pending",
-                    desc: section.map(summarise).join("\n"),
+                    title: "Review queue — " + all.length + " pending" + label,
+                    desc: section.map(summarise).join("\n")
+                        + (typeFilter ? "" : "\n\n*Split the queue: `cd-review queue bm` · `cd-review queue art`*"),
                     author: message.author,
                     footer: "Page " + page + " of " + totalPages + " - Interact with the buttons below to navigate through pages."
                 });

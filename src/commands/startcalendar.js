@@ -33,7 +33,7 @@ module.exports = {
             });
         
         async function startCalendar(calendar, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             
             // Preview the calendar
             const previewFields = [];

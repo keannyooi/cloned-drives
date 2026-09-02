@@ -14,6 +14,7 @@ const search = require("../util/functions/search.js");
 const { getAvailableTunes } = require("../util/functions/calcTune.js");
 const { trackExchange } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "diamondexchange",
@@ -34,7 +35,7 @@ module.exports = {
             return errorMessage.sendMessage();
         }
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
         const carFiles = getCarFiles();
 
         // Step 1: Find all duplicate Diamond cars (diamonds where player owns more than 1)
@@ -231,7 +232,7 @@ module.exports = {
                         async function acceptedFunction(currentMessage) {
                             // Re-fetch the profile so the write is built from FRESH data —
                             // another writer may have touched the garage while the dialog was open.
-                            const freshData = await profileModel.findOne({ userID: message.author.id });
+                            const freshData = await getProfile(message.author.id);
                             const freshGarageCar = freshData.garage.find(c => c.carID === selectedGarageCar.carID);
                             const freshDesired = freshData.garage.find(c => c.carID === desiredCarID.slice(0, 6));
                             if (!freshGarageCar || calcTotal(freshGarageCar) < 2 || (freshDesired && calcTotal(freshDesired) > 0)) {

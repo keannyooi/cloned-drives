@@ -8,36 +8,52 @@ const { isSellProtected, isPrizeLike } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js")
 const processResults = require("./corefiles/processResults.js");
+const { _match } = require("./search.js");
 
 async function searchGarage(args) {
     let { message, query, garage, amount, searchByID, restrictedMode, currentMessage } = args;
     let matchList = [];
-    const searchResults = garage.filter(car => {
-        let matchFound, isSufficient;
-        let currentCar = getCar(car.carID);
-        if (restrictedMode && isSellProtected(currentCar)) {
-            return false;
-        }
 
+    // Bare carIDs now work here like everywhere else; the legacy -c prefix
+    // (which sets searchByID upstream) is unchanged.
+    if (!searchByID && query.length === 1 && /^c\d{5}$/.test(String(query[0]).toLowerCase())) {
+        searchByID = true;
+        query = [String(query[0]).toLowerCase()];
+    }
+
+    // Same forgiving matcher as the global search: punctuation-blind, partial
+    // words allowed, ranked so the best match tops the picker. matchList keeps
+    // every NAME match regardless of copy count — the insufficient-copies
+    // fallback below depends on it.
+    const queryParts = query.map(_match.normalize).filter(Boolean);
+    const scored = [];
+    for (const car of garage) {
+        const currentCar = getCar(car.carID);
+        if (restrictedMode && isSellProtected(currentCar)) continue;
+
+        let matchFound, score = 0;
         if (searchByID) {
             matchFound = car.carID === query[0];
+            score = 1;
         }
         else {
-            let name = carNameGen({ currentCar, removePrizeTag: true, removeBMTag: true }).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
-            matchFound = query.every(part => name.includes(part.replace(/[()"]/g, "")));
-            if (matchFound) {
-                matchList.push(car);
-            }
+            const name = carNameGen({ currentCar, removePrizeTag: true, removeBMTag: true });
+            score = queryParts.length > 0 ? _match.scoreItem(name, queryParts) : 0;
+            matchFound = score > 0;
+            if (matchFound) matchList.push(car);
         }
-        if (restrictedMode) {
-            isSufficient = (car.upgrades["000"] + car.upgrades["333"] + car.upgrades["666"]) >= amount;
-        }
-        else {
-            isSufficient = calcTotal(car) >= amount;
-        }
+        if (!matchFound) continue;
 
-        return matchFound && isSufficient;
-    });
+        const isSufficient = restrictedMode
+            ? (car.upgrades["000"] + car.upgrades["333"] + car.upgrades["666"]) >= amount
+            : calcTotal(car) >= amount;
+        if (isSufficient) {
+            scored.push({ car, score, name: carNameGen({ currentCar, removePrizeTag: true }) });
+        }
+    }
+    scored.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+    const totalMatches = scored.length;
+    const searchResults = scored.slice(0, 25).map(entry => entry.car);
 
     return processResults(message, searchResults, () => {
         const options = [];
@@ -57,9 +73,9 @@ async function searchGarage(args) {
             .setPlaceholder("Select a car...")
             .addOptions(...options);
         return list;
-    }, null, currentMessage)
+    }, null, currentMessage, totalMatches)
         .catch(throwError => {
-            console.log(throwError);
+            if (typeof throwError !== "function") throw throwError;
             if (matchList.length > 0) {
                 let list = "";
                 for (let i = 0; i < matchList.length; i++) {

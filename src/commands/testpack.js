@@ -5,6 +5,7 @@ const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "testpack",
@@ -18,7 +19,7 @@ module.exports = {
         let query = args.map(i => i.toLowerCase());
 
         // Load player data for NEW indicators (we won't persist changes)
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
         let discoveredCars = playerData?.discoveredCars ? [...playerData.discoveredCars] : [];
         if (discoveredCars.length === 0 && playerData?.garage?.length > 0) {
             discoveredCars = playerData.garage.map(c => c.carID);

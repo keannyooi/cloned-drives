@@ -11,6 +11,7 @@
 //const searchGarage = require("../util/functions/searchGarage.js");
 //const confirm = require("../util/functions/confirm.js");
 //const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 //module.exports = {
     //name: "fuse",
@@ -20,7 +21,7 @@
     //category: "Gameplay",
     //description: "Converts one or more cars inside your garage into fuse tokens.",
     //async execute(message, args) {
-        //const playerData = await profileModel.findOne({ userID: message.author.id });
+        //const playerData = await getProfile(message.author.id);
         //if (playerData.garage.length <= 5) {
             //const errorMessage = new ErrorMessage({
                 //channel: message.channel,

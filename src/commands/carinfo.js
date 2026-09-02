@@ -9,6 +9,7 @@ const unbritish = require("../util/functions/unbritish.js");
 const generateHud = require("../util/functions/generateHud.js");
 const getFlag = require("../util/functions/getFlag.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "carinfo",
@@ -38,7 +39,7 @@ module.exports = {
             });
 
         async function displayInfo(carFile, currentMessage) {
-            const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
+            const { garage, settings } = await getProfile(message.author.id);
             let description = "None", mra = "N/A", ola = "N/A", collection = "N/A";
             let currentCar = getCar(carFile);
             const bmReference = modifiedBase(currentCar);

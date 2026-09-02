@@ -27,7 +27,7 @@ module.exports = {
             });
 
         async function endOffer(offer, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
                 title: `Are you sure you want to end the ${offer.name} offer?`,

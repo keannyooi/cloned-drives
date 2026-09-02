@@ -19,7 +19,7 @@ const {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder,
     ModalBuilder, TextInputBuilder, TextInputStyle
 } = require("discord.js");
-const { findBestMatch } = require("string-similarity");
+const { _match } = require("../util/functions/search.js");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { submissionArchiveChannelID, artSubmitterRoleIDs, defaultChoiceTime } = require("../util/consts/consts.js");
 const { hasRole } = require("../util/functions/submissionViews.js");
@@ -47,7 +47,6 @@ const IMAGE_TIMEOUT = 5 * 60 * 1000;
 const SESSION_BUDGET = 10 * 60 * 1000;
 // Below this similarity we assume the base car simply isn't in the game yet
 // rather than pretending a bad match is what they meant.
-const MATCH_FLOOR = 0.45;
 
 /** Resolve free text to a real car: exact carID first, then fuzzy on name. */
 function resolveReference(input) {
@@ -67,10 +66,28 @@ function resolveReference(input) {
     }
     if (candidates.length === 0) return { car: null, carID: "", confident: false };
 
-    const match = findBestMatch(trimmed.toLowerCase(), candidates.map(entry => entry.name.toLowerCase()));
-    const best = candidates[match.bestMatchIndex];
-    if (match.bestMatch.rating < MATCH_FLOOR) return { car: null, carID: "", confident: false };
-    return { car: getCar(best.carID), carID: best.carID, confident: true, rating: match.bestMatch.rating };
+    // Banded scoring (shared with the global search) instead of the old Dice
+    // fuzzy match — Dice favours SHORT names, which is how "911 gt2 rs" could
+    // resolve to a 1995 GT2 R over the 2017 GT2 RS.
+    const parts = trimmed.toLowerCase().split(/\s+/).map(_match.normalize).filter(Boolean);
+    if (parts.length === 0) return { car: null, carID: "", confident: false };
+    let bestScore = 0, best = [];
+    for (const candidate of candidates) {
+        const score = _match.scoreItem(candidate.name, parts);
+        if (score > bestScore) { bestScore = score; best = [candidate]; }
+        else if (score === bestScore && score > 0) best.push(candidate);
+    }
+    if (bestScore === 0) return { car: null, carID: "", confident: false };
+    if (best.length > 1) {
+        // Generation twins (same name, different year). A year in the query
+        // settles it; otherwise return the newest but NOT confident, so the
+        // flow makes the creator check the "Based on" line.
+        const byYear = best.filter(candidate => parts.includes(String(getCar(candidate.carID).modelYear)));
+        if (byYear.length === 1) return { car: getCar(byYear[0].carID), carID: byYear[0].carID, confident: true, rating: bestScore };
+        best.sort((a, b) => (getCar(b.carID).modelYear || 0) - (getCar(a.carID).modelYear || 0));
+        return { car: getCar(best[0].carID), carID: best[0].carID, confident: false, rating: bestScore };
+    }
+    return { car: getCar(best[0].carID), carID: best[0].carID, confident: true, rating: bestScore };
 }
 
 const makeOf = car => (Array.isArray(car.make) ? car.make : [car.make]).filter(Boolean);

@@ -65,7 +65,7 @@ module.exports = {
             }).sendMessage();
         }
 
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
         const perPage = settings.listamount || defaultPageLimit;
         const totalPages = Math.ceil(list.length / perPage);
         const page = trailingPage ? parseInt(args[args.length - 1]) : 1;

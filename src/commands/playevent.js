@@ -64,7 +64,7 @@ module.exports = {
        // } - Play DM Only
 
         const events = await eventModel.find();
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
         if (hand.carID === "") {
             return handMissingError(message);
         }
@@ -164,7 +164,7 @@ module.exports = {
                             if (!debit) {
                                 // Couldn't afford it — release the claim so they can pay later.
                                 await eventModel.updateOne({ eventID: event.eventID }, { "$unset": { [feeKey]: "" } });
-                                const fresh = await profileModel.findOne({ userID: message.author.id });
+                                const fresh = await profileModel.findOne({ userID: message.author.id }, { money: 1 });
                                 intermission.editEmbed({
                                     title: "Error, you can't afford this event's entry fee.",
                                     desc: `Entry costs ${moneyEmoji}${unpaidFee.toLocaleString("en")}; you have ${moneyEmoji}${fresh.money.toLocaleString("en")}.`

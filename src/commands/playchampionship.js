@@ -64,7 +64,7 @@ module.exports = {
        // } - Play DM Only
 
         const championships = await championshipModel.find();
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
         if (hand.carID === "") {
             return handMissingError(message);
         }

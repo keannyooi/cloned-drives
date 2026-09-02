@@ -36,7 +36,7 @@
     "//subtitles": "Random subtitle pool for unthemed spawns (themed spawns use the theme's own name). Empty array = no subtitle.",
     "subtitles": ["Trial by Fire", "Iron Garage", "The Long Road"],
 
-    "//theme": "null/'none' = never themed. 'auto' = roll from themeRecipes each spawn. Or a FIXED object: { \"name\": \"Black Market Mayhem\", \"baseReqs\": { \"cardType\": [\"abm\", \"ibm\", \"pbm\"] }, \"universe\": \"bm\" } — baseReqs are merged into every round; 'universe': 'bm' switches the solvability universe to BM cards (only for deliberate BM-only events; omit otherwise).",
+    "//theme": "null/'none' = never themed. 'auto' = roll from themeRecipes each spawn. Or a FIXED object: { \"name\": \"Black Market Mayhem\", \"baseReqs\": { \"cardType\": [\"abm\", \"ibm\", \"pbm\"] }, \"universe\": \"bm\" } — baseReqs are merged into every round (hiddenTag is ignored here — hidden tags like Exchange are admin plumbing, never event requirements); 'universe': 'bm' switches the solvability universe to BM cards (only for deliberate BM-only events; omit otherwise).",
     "theme": "auto",
 
     "//themeRecipes": "Used when theme = 'auto'. Weighted roll per spawn; 'none' weight keeps most spawns unthemed. Each recipe samples a concrete value from real car data and validates at least minCars (default 100) match before committing. Kinds: rarity (CR bracket, 'Legendary Gauntlet'), make ('Mazda Showcase'), country ('Made in JP'), decade ('1980s Throwback'), cardType (player-side restriction, e.g. normal-only 'No Crutches' — values is a list of cardType arrays to choose from).",

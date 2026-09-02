@@ -190,7 +190,19 @@ const THEME_NAME_PATTERNS = {
 function pickTheme(template, defaultUniverse) {
     const theme = template.theme;
     if (!theme || theme === "none") return null;
-    if (typeof theme === "object") return { name: theme.name || "Special", baseReqs: theme.baseReqs || {}, universe: theme.universe };
+    if (typeof theme === "object") {
+        const baseReqs = { ...(theme.baseReqs || {}) };
+        // hiddenTag is admin plumbing (e.g. the "Exchange" release gate), not
+        // gameplay — a req on it would demand cars almost nobody owns. Strip
+        // it even if a template author writes one in.
+        for (const key of Object.keys(baseReqs)) {
+            if (key.toLowerCase() === "hiddentag") {
+                console.log(`[autoevents] theme "${theme.name || "Special"}": ignored hiddenTag in baseReqs — hidden tags can't be auto-event requirements`);
+                delete baseReqs[key];
+            }
+        }
+        return { name: theme.name || "Special", baseReqs, universe: theme.universe };
+    }
 
     // auto
     const recipes = template.themeRecipes || { none: { weight: 1 } };

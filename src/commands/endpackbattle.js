@@ -32,7 +32,7 @@ module.exports = {
             });
 
         async function endBattle(battle, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const pack = getPack(battle.packID);
             const packName = pack ? pack["packName"] : battle.packID;
             const participants = Object.keys(battle.playerStats || {}).length;

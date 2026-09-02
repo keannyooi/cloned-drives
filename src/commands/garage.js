@@ -15,6 +15,7 @@ const filterCheck = require("../util/functions/filterCheck.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 // Map sort keys to calcTune result keys
 const tunableStats = {
@@ -90,14 +91,14 @@ module.exports = {
             // H-06: Parallel fetch when viewing someone else's garage, single fetch when viewing own
             let garage, settings, filter;
             if (user.id === message.author.id) {
-                const profile = await profileModel.findOne({ userID: user.id });
+                const profile = await getProfile(user.id);
                 garage = profile.garage;
                 settings = profile.settings;
                 filter = profile.filter;
             } else {
                 const [targetProfile, authorProfile] = await Promise.all([
-                    profileModel.findOne({ userID: user.id }),
-                    profileModel.findOne({ userID: message.author.id })
+                    getProfile(user.id),
+                    getProfile(message.author.id)
                 ]);
                 garage = targetProfile.garage;
                 settings = authorProfile.settings;

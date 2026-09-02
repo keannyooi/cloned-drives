@@ -74,7 +74,7 @@ module.exports = {
             collectionName = match.collection;
         }
 
-        const { raceWeekStats, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { raceWeekStats, settings } = await profileModel.findOne({ userID: message.author.id }, { raceWeekStats: 1, settings: 1 });
         const stats = (raceWeekStats && typeof raceWeekStats === "object") ? raceWeekStats : {};
         const ownedDrivers = Array.isArray(stats.ownedDrivers) ? stats.ownedDrivers : ["d00000"];
 

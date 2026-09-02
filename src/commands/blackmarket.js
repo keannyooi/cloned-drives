@@ -16,7 +16,7 @@ module.exports = {
     category: "Gameplay",
     description: "Check what's on sale in the black market here!",
     async execute(message) {
-        const { trophies } = await profileModel.findOne({ userID: message.author.id });
+        const { trophies } = await profileModel.findOne({ userID: message.author.id }, { trophies: 1 });
         const { bmCatalog } = await serverStatModel.findOne({});
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
         const fields = [];

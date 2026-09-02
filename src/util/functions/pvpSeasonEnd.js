@@ -235,9 +235,14 @@ async function processLeague(league, season, dryRun) {
             if (!dryRun) {
                 try {
                     // Add car to player's garage (properly stacking if they already own it)
-                    const profile = await profileModel.findOne({ userID: player.userID });
+                    // $elemMatch projection: only the prize car's entry (if owned)
+                    // comes back, not the whole garage.
+                    const profile = await profileModel.findOne(
+                        { userID: player.userID },
+                        { garage: { "$elemMatch": { carID: prizeCar } } }
+                    ).lean();
                     if (profile) {
-                        const existingCar = profile.garage.find(c => c.carID === prizeCar);
+                        const existingCar = (profile.garage || []).find(c => c.carID === prizeCar);
 
                         if (existingCar) {
                             await profileModel.updateOne(

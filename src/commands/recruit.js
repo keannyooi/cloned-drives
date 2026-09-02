@@ -60,7 +60,7 @@ module.exports = {
             return infoMessage.sendMessage();
         }
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await profileModel.findOne({ userID: message.author.id }, { money: 1, raceWeekStats: 1, settings: 1 });
         const stats = (playerData.raceWeekStats && typeof playerData.raceWeekStats === "object") ? playerData.raceWeekStats : {};
         const settings = playerData.settings || {};
 
@@ -182,7 +182,7 @@ module.exports = {
         async function acceptedFunction(reactionMessage) {
             // Re-read: the confirmation window is live, and money/copies can
             // move underneath us (a race win paying out, another purchase).
-            const fresh = await profileModel.findOne({ userID: message.author.id });
+            const fresh = await profileModel.findOne({ userID: message.author.id }, { money: 1, raceWeekStats: 1, settings: 1 });
             const freshStats = (fresh.raceWeekStats && typeof fresh.raceWeekStats === "object") ? fresh.raceWeekStats : {};
             const freshCopies = copiesOwnedOf(freshStats, driver.driverID);
             const freshPrice = recruitPriceFor(driver, freshCopies);

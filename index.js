@@ -309,7 +309,9 @@ schedule("0 */12 * * *", async () => {
         return errorReport.sendReport();
     }
 
-    const playerDatum = await profileModel.find({ "settings.senddealnotifs": true });
+    // Projected: only the ID is needed, and an unprojected find here dragged
+    // every opted-in player's full garage over the throttled DB link twice a day.
+    const playerDatum = await profileModel.find({ "settings.senddealnotifs": true }, { userID: 1 }).lean();
     for (let { userID } of playerDatum) {
         let user = await bot.homeGuild.members.fetch(userID)
             .catch(() => "unable to find user, next");
@@ -450,14 +452,23 @@ async function processCommand(message) {
     }
 }
 
+// Users known to have a profile — once confirmed, the per-command existence
+// query (a full DB round trip, ~180ms to the remote cluster) is skipped for
+// the life of the process. Profiles are never deleted while the bot runs, so
+// a positive answer can't go stale.
+const knownProfiles = new Set();
+
 async function upsertUserRecord(user) {
+    if (knownProfiles.has(user.id)) return;
     let params = { userID: user.id };
     let hasProfile = await profileModel.exists(params);
     if (!hasProfile && !user.bot) {
         await profileModel.create(params);
         tracker.trackNewPlayer();
         console.log(`profile created for user ${user.id}`);
+        hasProfile = true;
     }
+    if (hasProfile) knownProfiles.add(user.id);
 }
 
 function accessDenied(message, roleID) {

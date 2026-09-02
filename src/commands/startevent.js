@@ -35,7 +35,7 @@ module.exports = {
             });
 
         async function startEvent(event, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
                 title: `Are you sure you want to start the ${event.name} event?`,

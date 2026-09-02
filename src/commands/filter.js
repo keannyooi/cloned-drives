@@ -19,7 +19,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets up a filter for garages and car lists.",
     async execute(message, args) {
-        let { filter, raceWeekStats, settings } = await profileModel.findOne({ userID: message.author.id });
+        let { filter, raceWeekStats, settings } = await profileModel.findOne({ userID: message.author.id }, { filter: 1, raceWeekStats: 1, settings: 1 });
         let infoMessage;
 
         if (!args[0]) {

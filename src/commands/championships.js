@@ -65,7 +65,7 @@ module.exports = {
             console.log(championship);
 
             if (championship.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
-               const { settings } = await profileModel.findOne({ userID: message.author.id });
+               const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
                let list = championship.roster;
                 const totalPages = Math.ceil(list.length / (settings.listamount || defaultPageLimit));
                 if (page < 1 || totalPages < page) {

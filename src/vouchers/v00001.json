@@ -1,0 +1,10 @@
+{
+    "voucherID": "v00001",
+    "name": "850-899 Car Voucher",
+    "description": "Redeem for any CR 850-899 car of your choice.",
+    "image": "https://file.garden/ZmdgDS5GsALKuOXo/Tokens/850-899Token.png",
+    "redeem": {
+        "pool": "cars",
+        "filter": { "cr": { "start": 850, "end": 899 } }
+    }
+}

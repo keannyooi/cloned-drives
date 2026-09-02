@@ -24,7 +24,7 @@ module.exports = {
         const carFiles = getCarFiles();
         const trackFiles = getTrackFiles();
         
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
         if (hand.carID === "") {
             return handMissingError(message);
         }

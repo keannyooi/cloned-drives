@@ -85,7 +85,47 @@ const profileSchema = new Schema({
     // Tracks every unique carID ever pulled from packs — used for the NEW indicator.
     // Initialized from the player's garage on first pack opening.
     discoveredCars: { type: Array, default: [] },
+    // Held vouchers (docs/voucher-system.md): [{ voucherID: "v00001", amount: 2 }].
+    // Granted by cd-rewards claims and cd-addvoucher; spent by cd-voucher.
+    vouchers: { type: Array, default: [] },
+    // Bumped on EVERY write by the query hooks below — the profile cache
+    // (util/functions/profileCache.js) serves the heavy arrays from memory
+    // only while this matches. Never set it by hand.
+    cacheStamp: { type: Number, default: 0 },
 }, { minimize: false });
+
+// ── Profile cache hooks ──────────────────────────────────────────────────────
+// Every write stamps the profile; after it lands, the cache is told what
+// changed. Lazy require: profileCache.js requires this file at load.
+const profileCache = () => require("../util/functions/profileCache.js");
+const WRITE_OPS = ["updateOne", "updateMany", "findOneAndUpdate", "replaceOne"];
+
+profileSchema.pre(WRITE_OPS, function () {
+    const stamp = profileCache().newStamp();
+    this._cacheStamp = stamp;
+    const update = this.getUpdate();
+    if (!update || Array.isArray(update)) return;   // pipeline update — post-hook invalidates instead
+    if (Object.keys(update).some(key => key.startsWith("$"))) {
+        update.$set = { ...(update.$set || {}), cacheStamp: stamp };
+    }
+    else {
+        update.cacheStamp = stamp;
+    }
+    this.setUpdate(update);
+});
+
+profileSchema.post(["updateOne", "updateMany", "replaceOne"], function (res) {
+    const matched = !!(res && (res.matchedCount > 0 || res.upsertedCount > 0));
+    profileCache().onWrite(this.getFilter(), this.getUpdate(), this._cacheStamp, matched);
+});
+
+profileSchema.post("findOneAndUpdate", function (res) {
+    profileCache().onWrite(this.getFilter(), this.getUpdate(), this._cacheStamp, res != null);
+});
+
+profileSchema.post(["deleteOne", "deleteMany"], function () {
+    profileCache().onDelete(this.getFilter());
+});
 
 const profileModel = model("Profiles", profileSchema);
 module.exports = profileModel;

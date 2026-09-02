@@ -58,7 +58,7 @@ module.exports = {
         const allActive = isAllActiveRarity(rarity);
 
         // What level has the player reached? Drives the unlocked/locked marks.
-        const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id });
+        const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id }, { raceWeekStats: 1 });
         const stats = (raceWeekStats && typeof raceWeekStats === "object") ? raceWeekStats : {};
         const owned = (Array.isArray(stats.ownedDrivers) ? stats.ownedDrivers : []).includes(driver.driverID);
         const xp = (stats.driverXP && typeof stats.driverXP === "object") ? stats.driverXP[driver.driverID] : null;

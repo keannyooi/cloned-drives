@@ -48,7 +48,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets your active driver for the random race (Race Week) gamemode.",
     async execute(message, args) {
-        const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id });
+        const { raceWeekStats } = await profileModel.findOne({ userID: message.author.id }, { raceWeekStats: 1 });
 
         // Lazy-init tolerant reads — old profiles may lack raceWeekStats entirely.
         const stats = (raceWeekStats && typeof raceWeekStats === "object") ? raceWeekStats : {};

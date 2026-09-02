@@ -9,6 +9,7 @@ const searchUser = require("../util/functions/searchUser.js");
 const calcTotal = require("../util/functions/calcTotal.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "statistics",
@@ -58,7 +59,7 @@ module.exports = {
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
-            const playerData = await profileModel.findOne({ userID: user.id });
+            const playerData = await getProfile(user.id);
             let totalCars = 0, maxedCars = 0, totalBMCars = 0;
             for (let car of playerData.garage) {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);

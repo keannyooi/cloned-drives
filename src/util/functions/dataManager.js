@@ -44,6 +44,7 @@ const packBattleTemplates = new Map(); // templateID (without .json) -> pack bat
 const autoEventTemplates = new Map(); // templateID (without .json) -> auto-event template data
 const championshipTemplates = new Map(); // templateID (without .json) -> championship chapter template
 const drivers = new Map();     // driverID (without .json) -> driver data object
+const vouchers = new Map();    // voucherID (without .json) -> voucher data object
 
 // File lists (equivalent to readdirSync results)
 let carFiles = [];                // ["c00001.json", "c00002.json", ...]
@@ -55,6 +56,7 @@ let packBattleTemplateFiles = []; // ["pb00001.json", "pb00002.json", ...]
 let autoEventTemplateFiles = [];  // ["ae00001.json", ...] ("_"-prefixed files are skipped)
 let championshipTemplateFiles = []; // ["ch00001.json", ...] ("_"-prefixed files are skipped)
 let driverFiles = [];             // ["d00000.json", ...] (only files that passed validation)
+let voucherFiles = [];            // ["v00001.json", ...] (only files that passed validation)
 
 // L-01: Cached arrays — built once after initialization, avoids repeated Array.from()
 let cachedCarArray = [];
@@ -267,6 +269,84 @@ function validateDriver(driver, expectedID) {
  * @param {string} basePath - Base path to src folder (e.g., "./src" or "../")
  * @returns {Object} Statistics about loaded data
  */
+// Voucher redeem-filter vocabulary (see docs/voucher-system.md). Car keys are
+// the filterCheck vocabulary; driver filters are deliberately tiny.
+const VOUCHER_CAR_FILTER_KEYS = [
+    "cr", "make", "country", "tags", "collection", "bodyStyle", "driveType",
+    "tyreType", "fuelType", "enginePos", "seatCount", "modelYear", "gc",
+    "abs", "tcs", "cardType", "isPrize", "isBM"
+];
+const VOUCHER_DRIVER_FILTER_KEYS = ["rarity", "inRotation"];
+
+/**
+ * Validate a parsed voucher JSON (docs/voucher-system.md). Fail-closed: any
+ * problem skips the file — a malformed voucher must never become redeemable.
+ * @returns {string|null} Reason string if invalid, null if valid
+ */
+function validateVoucher(voucher, expectedID) {
+    if (!voucher || typeof voucher !== "object" || Array.isArray(voucher)) {
+        return "not a JSON object";
+    }
+    if (voucher.voucherID !== expectedID) {
+        return `voucherID must be "${expectedID}" (matching the filename)`;
+    }
+    if (typeof voucher.name !== "string" || voucher.name.trim() === "") {
+        return "missing/empty name";
+    }
+    if (typeof voucher.description !== "string") {
+        return "missing description";
+    }
+    if (voucher.image !== undefined && typeof voucher.image !== "string") {
+        return "image must be a string URL when present";
+    }
+    const redeem = voucher.redeem;
+    if (!redeem || typeof redeem !== "object" || Array.isArray(redeem)) {
+        return "missing redeem block";
+    }
+    if (redeem.unownedOnly !== undefined && typeof redeem.unownedOnly !== "boolean") {
+        return "redeem.unownedOnly must be a boolean";
+    }
+    const hasFilter = redeem.filter !== undefined, hasList = redeem.list !== undefined;
+    if (hasFilter === hasList) {
+        return "redeem needs exactly ONE of filter/list";
+    }
+    if (hasList) {
+        if (!Array.isArray(redeem.list) || redeem.list.length === 0) {
+            return "redeem.list must be a non-empty array";
+        }
+        for (const id of redeem.list) {
+            if (typeof id !== "string" || !/^[cd]\d{5}$/.test(id)) {
+                return `redeem.list entry "${id}" is not a car (cXXXXX) or driver (dXXXXX) ID`;
+            }
+            // Cars and drivers load before vouchers, so existence is checkable.
+            if (id.startsWith("c") && !cars.has(id)) {
+                return `redeem.list car "${id}" does not exist`;
+            }
+            if (id.startsWith("d") && !drivers.has(id)) {
+                return `redeem.list driver "${id}" does not exist`;
+            }
+        }
+        return null;
+    }
+    // filter mode
+    if (redeem.pool !== "cars" && redeem.pool !== "drivers") {
+        return `redeem.pool must be "cars" or "drivers" in filter mode (got "${redeem.pool}")`;
+    }
+    if (!redeem.filter || typeof redeem.filter !== "object" || Array.isArray(redeem.filter) || Object.keys(redeem.filter).length === 0) {
+        return "redeem.filter must be a non-empty object";
+    }
+    const allowed = redeem.pool === "cars" ? VOUCHER_CAR_FILTER_KEYS : VOUCHER_DRIVER_FILTER_KEYS;
+    for (const key of Object.keys(redeem.filter)) {
+        if (!allowed.includes(key)) {
+            return `redeem.filter has unknown ${redeem.pool} key "${key}" (allowed: ${allowed.join(", ")})`;
+        }
+    }
+    if (redeem.pool === "drivers" && redeem.filter.rarity !== undefined && !DRIVER_RARITIES.includes(redeem.filter.rarity)) {
+        return `redeem.filter.rarity must be one of ${DRIVER_RARITIES.join("/")}`;
+    }
+    return null;
+}
+
 function initialize(basePath = "./src") {
     if (initialized) {
         console.warn("⚠️ DataManager already initialized, skipping...");
@@ -282,7 +362,8 @@ function initialize(basePath = "./src") {
         packBattleTemplates: { loaded: 0, failed: 0, errors: [] },
         championshipTemplates: { loaded: 0, failed: 0, errors: [] },
         autoEventTemplates: { loaded: 0, failed: 0, errors: [] },
-        drivers: { loaded: 0, failed: 0, errors: [] }
+        drivers: { loaded: 0, failed: 0, errors: [] },
+        vouchers: { loaded: 0, failed: 0, errors: [] }
     };
 
     // Load Cars
@@ -480,6 +561,36 @@ function initialize(basePath = "./src") {
         console.log(`   Drivers: directory not found, skipping`);
     }
 
+    // Load Vouchers (docs/voucher-system.md — validated at startup; invalid files
+    // are logged and skipped, NEVER fatal. Loaded AFTER cars/drivers so list-mode
+    // vouchers can verify their choice IDs exist.)
+    const vouchersPath = path.join(basePath, "vouchers");
+    try {
+        const voucherFileNames = readdirSync(vouchersPath).filter(file => file.endsWith(".json"));
+        for (const file of voucherFileNames) {
+            try {
+                const filePath = path.join(vouchersPath, file);
+                const rawData = readFileSync(filePath, "utf8");
+                const parsed = JSON.parse(rawData);
+                const voucherID = file.slice(0, -5);
+                const invalidReason = validateVoucher(parsed, voucherID);
+                if (invalidReason) {
+                    throw new Error(invalidReason);
+                }
+                vouchers.set(voucherID, parsed);
+                voucherFiles.push(file);
+                stats.vouchers.loaded++;
+            } catch (err) {
+                stats.vouchers.failed++;
+                stats.vouchers.errors.push({ file, error: err.message });
+                console.warn(`⚠️ Voucher file skipped: ${file} - ${err.message}`);
+            }
+        }
+    } catch (err) {
+        // vouchers/ directory may not exist yet — that's fine
+        console.log(`   Vouchers: directory not found, skipping`);
+    }
+
     /**
      * A driver's identity to a player is name + variant + rarity — that's what
      * every list, card and search shows. Nothing enforces it structurally
@@ -522,6 +633,9 @@ function initialize(basePath = "./src") {
     }
     console.log(`   Auto-Event Templates: ${stats.autoEventTemplates.loaded} loaded, ${stats.autoEventTemplates.failed} failed`);
     console.log(`   Drivers: ${stats.drivers.loaded} loaded, ${stats.drivers.failed} failed`);
+    if (stats.vouchers.loaded > 0 || stats.vouchers.failed > 0) {
+        console.log(`   Vouchers: ${stats.vouchers.loaded} loaded, ${stats.vouchers.failed} failed`);
+    }
 
     if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0 || stats.pvpEventTemplates.failed > 0) {
         console.error("❌ Some files failed to load:");
@@ -807,6 +921,26 @@ function getDriverFiles() {
     return driverFiles;
 }
 
+/**
+ * Get voucher data by ID
+ * @param {string} voucherID - Voucher ID (e.g., "v00001" or "v00001.json")
+ * @returns {Object|undefined} Voucher data object
+ */
+function getVoucher(voucherID) {
+    if (!voucherID) return undefined;
+    let cleanID = voucherID;
+    if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
+    return vouchers.get(cleanID);
+}
+
+/**
+ * Get list of all voucher files that passed validation
+ * @returns {string[]} Array of voucher filenames (e.g., ["v00001.json", ...])
+ */
+function getVoucherFiles() {
+    return voucherFiles;
+}
+
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
@@ -959,7 +1093,8 @@ function getStats() {
             offerTemplates: offerTemplates.size,
             pvpEventTemplates: pvpEventTemplates.size,
             packBattleTemplates: packBattleTemplates.size,
-            drivers: drivers.size
+            drivers: drivers.size,
+            vouchers: vouchers.size
         },
         fileCounts: {
             cars: carFiles.length,
@@ -967,7 +1102,8 @@ function getStats() {
             packs: packFiles.length,
             offerTemplates: offerTemplateFiles.length,
             pvpEventTemplates: pvpEventTemplateFiles.length,
-            drivers: driverFiles.length
+            drivers: driverFiles.length,
+            vouchers: voucherFiles.length
         }
     };
 }
@@ -1151,6 +1287,8 @@ module.exports = {
     getChampionshipTemplate,
     getAutoEventTemplate,
     getDriver,
+    getVoucher,
+    validateVoucher,
 
     // File lists (replace readdirSync())
     getCarFiles,
@@ -1161,6 +1299,7 @@ module.exports = {
     getPackBattleTemplateFiles,
     getAutoEventTemplateFiles,
     getDriverFiles,
+    getVoucherFiles,
 
     // Bulk getters
     getAllCars,

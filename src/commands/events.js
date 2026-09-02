@@ -25,7 +25,7 @@ module.exports = {
     description: "Views all active and inactive events.",
     async execute(message, args) {
         const events = await eventModel.find();
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
         
         // Check if first arg is a page number (for event list pagination)
         let listPage = 1;

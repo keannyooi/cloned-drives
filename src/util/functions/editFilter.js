@@ -371,7 +371,7 @@ function format(input) {
         tags: "tags",
         collection: "collection",
         bodystyle: "bodyStyle",
-        hiddenTag: "hiddenTag",
+        hiddentag: "hiddenTag",
         modelyear: "modelYear",
         seatcount: "seatCount",
         enginepos: "enginePos",

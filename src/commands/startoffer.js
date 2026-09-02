@@ -29,7 +29,7 @@ module.exports = {
             });
 
         async function startOffer(offer, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
                 title: `Are you sure you want to start the ${offer.name} offer?`,
@@ -44,7 +44,7 @@ module.exports = {
             }
 
             async function acceptedFunction(currentMessage) {
-                const playerDatum = await profileModel.find({ "settings.sendoffernotifs": true });
+                const playerDatum = await profileModel.find({ "settings.sendoffernotifs": true }, { garage: 0, discoveredCars: 0, decks: 0 }).lean();
                 const currentOffersChannel = await bot.homeGuild.channels.fetch(currentOffersChannelID);
                 offer.isActive = true;
                 if (offer.deadline.length < 9) {

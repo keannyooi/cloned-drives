@@ -28,7 +28,7 @@ module.exports = {
             });
         
         async function endCalendar(calendar, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             
             // Calculate some stats for the confirmation message
             const playerCount = Object.keys(calendar.playerProgress || {}).length;

@@ -48,7 +48,7 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            const playerData = await profileModel.findOne({ userID: user.id });
+            const playerData = await profileModel.findOne({ userID: user.id }, { fuseTokens: 1 });
             if (amount <= playerData.fuseTokens) {
                 const balance = playerData.fuseTokens - amount;
                 await profileModel.updateOne({ userID: user.id }, { fuseTokens: balance });

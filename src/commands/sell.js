@@ -14,6 +14,7 @@ const { costFromStock, getSellPrice } = require("../util/functions/upgradePrice.
 const { isDiamondCar, isSellProtected, sellValueMult, hasType } = require("../util/functions/cardType.js");
 const { trackMoneyEarned, trackCarsSold } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 // Fraction of the original upgrade investment refunded when selling an upgraded car.
 // 0.20 = 20% — small enough that selling isn't an exploit, generous enough to make
@@ -40,7 +41,7 @@ module.exports = {
     args: 1,
     category: "Gameplay",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
 
         // ─── Bulk dupes mode ────────────────────────────────────────────────
         // cd-sell dupes              → keep 1 of each car, sell rest
@@ -67,7 +68,10 @@ module.exports = {
         if (args[0].toLowerCase() === "all" && args[1]) {
             startFrom = 1;
         }
-        else if (isNaN(args[0]) || !args[1] || parseInt(args[0]) > 50 || parseInt(args[0]) < 1) {
+        // Whole numbers only — isNaN let "3.4" through (parseInt -> 3), so
+        // selling a car whose NAME starts with a decimal ("3.4 RSR") silently
+        // became "sell 3 of whatever matches the rest".
+        else if (!/^\d+$/.test(args[0]) || !args[1] || parseInt(args[0]) > 50 || parseInt(args[0]) < 1) {
             startFrom = 0;
         }
         else {
@@ -159,7 +163,7 @@ module.exports = {
                     async function acceptedFunction(currentMessage) {
                         // Re-fetch the profile so the write is built from FRESH data —
                         // another writer may have touched the garage while the dialog was open.
-                        const freshData = await profileModel.findOne({ userID: message.author.id });
+                        const freshData = await getProfile(message.author.id);
                         const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
                         if (!freshCar || (freshCar.upgrades[upgrade] || 0) < amount) {
                             const errorMessage = new ErrorMessage({
@@ -520,7 +524,7 @@ async function bulkSellDupes(message, playerData, args) {
             // another writer may have touched the garage while the dialog was open.
             // Each op is re-clamped against fresh stock so the keep guarantee holds
             // and we never sell more than what was previewed in the confirm embed.
-            const freshData = await profileModel.findOne({ userID: message.author.id });
+            const freshData = await getProfile(message.author.id);
             let actualCount = 0;
             let actualMoney = 0;
             let actualModels = 0;

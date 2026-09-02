@@ -24,7 +24,7 @@ module.exports = {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             
             const allOffers = await offerModel.find();
 

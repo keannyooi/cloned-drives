@@ -31,7 +31,7 @@ module.exports = {
             });
 
         async function startBattle(battle, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const pack = getPack(battle.packID);
             const packName = pack ? pack["packName"] : battle.packID;
 
@@ -79,7 +79,7 @@ module.exports = {
 
                     console.log(`[PackBattle DMs] Starting background notifications for "${battleName}"...`);
 
-                    const cursor = profileModel.find({ "settings.sendeventnotifs": true }).cursor();
+                    const cursor = profileModel.find({ "settings.sendeventnotifs": true }, { garage: 0, discoveredCars: 0, decks: 0 }).lean().cursor();
 
                     let batch = [];
                     for await (const profile of cursor) {

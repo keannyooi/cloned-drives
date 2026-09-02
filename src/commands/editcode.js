@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCarFiles, getPackFiles, getCar, getPack, getDriver, getAllDrivers } = require("../util/functions/dataManager.js");
+const { getCarFiles, getPackFiles, getCar, getPack, getDriver, getAllDrivers, getVoucher, getVoucherFiles } = require("../util/functions/dataManager.js");
 const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
@@ -22,6 +22,8 @@ module.exports = {
         "<code> removepack <pack name>",
         "<code> adddriver <driver ID or name>",
         "<code> removedriver <driver ID or name>",
+        "<code> addvoucher <voucher ID> [amount]",
+        "<code> removevoucher <voucher ID>",
         "<code> maxuses <number>",
         "<code> deadline <days or \"unlimited\">",
         "<code> activate",
@@ -427,6 +429,76 @@ module.exports = {
                     channel: message.channel,
                     title: `Successfully ${criteria === "adddriver" ? "added" : "removed"} ${driverDisplayName(driver)} ${criteria === "adddriver" ? "to" : "from"} code \`${codeName}\`!`,
                     fields: [{ name: "Drivers on this code", value: driverList }],
+                    author: message.author
+                });
+                break;
+            }
+
+            case "addvoucher":
+            case "removevoucher": {
+                if (!args[2]) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, please provide a voucher ID.",
+                        desc: `Usage: \`cd-editcode <code> ${criteria} <voucher ID>\` — IDs look like \`v00001\`, see \`cd-voucherinfo\`.`,
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+                const voucherID = args[2].toLowerCase();
+                const voucherDef = getVoucher(voucherID);
+                if (!voucherDef) {
+                    const known = getVoucherFiles().map(f => `\`${f.slice(0, -5)}\``).join(", ") || "(none loaded)";
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, voucher not found.",
+                        desc: `Loaded vouchers: ${known}`,
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+
+                if (criteria === "addvoucher") {
+                    let voucherAmount = 1;
+                    if (args[3] !== undefined) {
+                        if (!/^\d+$/.test(args[3]) || parseInt(args[3]) < 1 || parseInt(args[3]) > 100) {
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, voucher amount provided is invalid.",
+                                desc: "Provide a whole number from 1 to 100.",
+                                author: message.author
+                            });
+                            return errorMessage.sendMessage();
+                        }
+                        voucherAmount = parseInt(args[3]);
+                    }
+                    if (!codeData.rewards.vouchers) codeData.rewards.vouchers = [];
+                    const existing = codeData.rewards.vouchers.find(v => v.voucherID === voucherID);
+                    if (existing) existing.amount += voucherAmount;
+                    else codeData.rewards.vouchers.push({ voucherID, amount: voucherAmount });
+                }
+                else {
+                    const index = (codeData.rewards.vouchers || []).findIndex(v => v.voucherID === voucherID);
+                    if (index === -1) {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, that voucher isn't on this code.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage();
+                    }
+                    codeData.rewards.vouchers.splice(index, 1);
+                    if (codeData.rewards.vouchers.length === 0) delete codeData.rewards.vouchers;
+                }
+
+                const voucherList = (codeData.rewards.vouchers || []).map(v => {
+                    const entry = getVoucher(v.voucherID);
+                    return `${v.amount}x ${entry ? entry.name : v.voucherID}`;
+                }).join("\n") || "None";
+                successMessage = new SuccessMessage({
+                    channel: message.channel,
+                    title: `Successfully ${criteria === "addvoucher" ? "added" : "removed"} ${voucherDef.name} ${criteria === "addvoucher" ? "to" : "from"} code \`${codeName}\`!`,
+                    fields: [{ name: "Vouchers on this code", value: voucherList }],
                     author: message.author
                 });
                 break;

@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID, defaultPageLimit } = require("../util/consts/consts.js");
-const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver, getVoucher } = require("../util/functions/dataManager.js");
 const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const listRewards = require("../util/functions/listRewards.js");
@@ -44,7 +44,7 @@ module.exports = {
         const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
         const allCodes = await codeModel.find();
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
 
         if (allCodes.length === 0) {
             const infoMessage = new InfoMessage({
@@ -100,6 +100,12 @@ module.exports = {
                 for (let driverID of rewards.drivers) {
                     let codeDriver = getDriver(driverID);
                     rewardDesc += `Driver: ${codeDriver ? driverDisplayName(codeDriver) : driverID}\n`;
+                }
+            }
+            if (rewards.vouchers && rewards.vouchers.length > 0) {
+                for (let voucherEntry of rewards.vouchers) {
+                    let codeVoucher = getVoucher(voucherEntry.voucherID);
+                    rewardDesc += `${voucherEntry.amount}x ${codeVoucher ? codeVoucher.name : voucherEntry.voucherID} 🎟️\n`;
                 }
             }
             if (rewardDesc === "") {

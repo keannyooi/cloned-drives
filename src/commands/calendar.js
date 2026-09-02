@@ -24,7 +24,7 @@ module.exports = {
     async execute(message, args) {
         const calendars = await calendarModel.find();
         const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
         const isEventMaker = guildMember.roles.cache.has(eventMakerRoleID);
         
         // No args - show calendar list

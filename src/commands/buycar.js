@@ -11,6 +11,7 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const { trackMoneySpent, trackTrophiesSpent, trackCarsBought } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
@@ -71,7 +72,7 @@ module.exports = {
 
         async function buyCar(currentCar, amount, currentMessage) {
             const emoji = bot.emojis.cache.get(mode === "bm" ? trophyEmojiID : moneyEmojiID);
-            const { money, trophies, garage } = await profileModel.findOne({ userID: message.author.id });
+            const { money, trophies, garage } = await getProfile(message.author.id);
             const car = getCar(currentCar.carID);
             const price = currentCar.price * amount;
             let balance = mode === "bm" ? trophies : money;

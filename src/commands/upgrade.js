@@ -14,6 +14,7 @@ const { upgradeCost } = require("../util/functions/upgradePrice.js");
 const { modifiedBase } = require("../util/functions/cardType.js");
 const confirm = require("../util/functions/confirm.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "upgrade",
@@ -33,7 +34,7 @@ module.exports = {
             return errorMessage.sendMessage();
         }
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const playerData = await getProfile(message.author.id);
         let query, searchByID = false;
         if (args[0].toLowerCase().startsWith("-c")) {
             query = [args[0].toLowerCase().slice(1)];
@@ -86,7 +87,7 @@ module.exports = {
                             async function acceptedFunction(currentMessage) {
                                 // Re-fetch the profile so the write is built from FRESH data —
                                 // another writer may have touched the garage while the dialog was open.
-                                const freshData = await profileModel.findOne({ userID: message.author.id });
+                                const freshData = await getProfile(message.author.id);
                                 const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
                                 if (!freshCar || (freshCar.upgrades[origUpgrade] || 0) < 1 || freshData.money < moneyLimit) {
                                     const errorMessage = new ErrorMessage({

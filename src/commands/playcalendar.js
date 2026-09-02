@@ -54,7 +54,7 @@ module.exports = {
     description: "Play a calendar event day. Plays the next incomplete unlocked day, or specify a day number.",
     async execute(message, args) {
         const calendars = await calendarModel.find();
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
         
         if (hand.carID === "") {
             return handMissingError(message);

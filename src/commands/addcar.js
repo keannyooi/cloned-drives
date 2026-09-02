@@ -8,6 +8,7 @@ const search = require("../util/functions/search.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "addcar",
@@ -66,7 +67,7 @@ module.exports = {
                     // Handle .json extension
                     const carId = result.endsWith('.json') ? result.slice(0, -5) : result.slice(0, 6);
 
-                    const { garage } = await profileModel.findOne({ userID: user.id });
+                    const { garage } = await getProfile(user.id);
                     const currentCar = getCar(carId);
                     const currentName = carNameGen({ currentCar });
 

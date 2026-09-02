@@ -12,6 +12,7 @@ const openPack = require("../util/functions/openPack.js");
 const search = require("../util/functions/search.js");
 const { trackMoneySpent, trackFuseTokensEarned, trackOfferBought } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 const offerModel = require("../models/offerSchema.js");
 
 module.exports = {
@@ -36,7 +37,7 @@ module.exports = {
         async function buyOffer(offer, currentMessage) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
-            const playerData = await profileModel.findOne({ userID: message.author.id });
+            const playerData = await getProfile(message.author.id);
 
             // Initialize discoveredCars
             let discoveredCars = playerData.discoveredCars || [];

@@ -16,7 +16,7 @@ module.exports = {
     category: "Gameplay",
     description: "Check what's on sale in the car dealership here!",
     async execute(message) {
-        const { money } = await profileModel.findOne({ userID: message.author.id });
+        const { money } = await profileModel.findOne({ userID: message.author.id }, { money: 1 });
         const { dealershipCatalog } = await serverStatModel.findOne({});
         const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
         const fields = [];

@@ -56,7 +56,7 @@ module.exports = {
     description: "Shows the leaderboards. `cd-lb owned <car>` lists everyone who owns a specific car.",
     async execute(message, args) {
         const criteriaArg = (args[0] || "").toLowerCase();
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
 
         // ── "who owns this car?" ─────────────────────────────────────────────
         if (criteriaArg === "owned" || criteriaArg === "owners") {

@@ -15,7 +15,7 @@ module.exports = {
     description: "Shows all the tracks that are available in Cloned Drives in list form. You can filter by keyword.",
     async execute(message, args) {
         const trackFiles = getTrackFiles();
-        const { settings } = await profileModel.findOne({ userID: message.author.id });
+        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
         let list = trackFiles, page;
 		
         // Extract keyword or page number

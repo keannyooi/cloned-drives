@@ -65,7 +65,7 @@ module.exports = {
                 }).sendMessage();
             }
 
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const perPage = settings.listamount || defaultPageLimit;
             const totalPages = Math.ceil(list.length / perPage);
             const page = parseInt(args[1]) || 1;
@@ -163,7 +163,11 @@ module.exports = {
         // ── cars awaiting artwork ────────────────────────────────────────────
         if (sub === "missing") {
             const { needsArt, unassigned } = getStagingCars();
-            const query = args.slice(1).filter(a => !/^\d+$/.test(a)).join(" ").trim().toLowerCase();
+            // Only a TRAILING 1-2 digit arg is a page number — stripping every
+            // number ate years and IDs ("missing 911" searched for nothing and
+            // then errored on "page 911").
+            const hasPageArg = args.length > 2 && /^\d{1,2}$/.test(args[args.length - 1]);
+            const query = args.slice(1, hasPageArg ? args.length - 1 : undefined).join(" ").trim().toLowerCase();
             const list = query
                 ? needsArt.filter(car => car.name.toLowerCase().includes(query) || car.key === query)
                 : needsArt;
@@ -187,10 +191,10 @@ module.exports = {
             ]);
             const tally = Object.fromEntries(counts.map(entry => [entry._id, entry.n]));
 
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const perPage = settings.listamount || defaultPageLimit;
             const totalPages = Math.ceil(list.length / perPage);
-            const page = parseInt(args[args.length - 1]) || 1;
+            const page = hasPageArg ? parseInt(args[args.length - 1]) : 1;
             if (page < 1 || totalPages < page) {
                 return fail(message, "Error, page number requested invalid.", "The list ends at page " + totalPages + ".");
             }

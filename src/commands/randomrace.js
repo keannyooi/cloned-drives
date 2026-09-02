@@ -540,7 +540,7 @@ function nextRungInfo(weeklyWins, claimedThresholds, prizes) {
     return null;
 }
 
-function buildIntermission({ message, stats, prizes, track, reqs, playerList, opponentList, settings, isBossGate, freeSkipsLeft, driverInfo, event }) {
+function buildIntermission({ message, stats, prizes, track, reqs, playerList, opponentList, settings, isBossGate, freeSkipsLeft, driverInfo, event, unclaimedCount = 0 }) {
     const bossEmoji = bot.emojis.cache.get(bossEmojiID);
     const nextWin = stats.weeklyWins + 1;
 
@@ -577,7 +577,7 @@ function buildIntermission({ message, stats, prizes, track, reqs, playerList, op
             { name: "Your Hand", value: playerList, inline: true },
             { name: "Opponent's Hand", value: opponentList, inline: true }
         ],
-        footer: `This week: ${stats.weeklyWins}W / ${stats.weeklyLosses}L | Free skips left today: ${freeSkipsLeft}`
+        footer: `This week: ${stats.weeklyWins}W / ${stats.weeklyLosses}L | Free skips left today: ${freeSkipsLeft}${unclaimedCount > 0 ? ` | \uD83D\uDCE6 ${unclaimedCount} unclaimed — cd-rewards` : ""}`
     });
 }
 
@@ -595,6 +595,9 @@ module.exports = {
         await checkRaceWeekRollover();
 
         const profile = await profileModel.findOne({ userID: message.author.id });
+        // Footer nudge: rewards pile up invisibly (rungs, codes, milestones all
+        // queue into unclaimedRewards) — surface the count every race.
+        const unclaimedCount = Array.isArray(profile && profile.unclaimedRewards) ? profile.unclaimedRewards.length : 0;
         if (!profile) return;
 
         const { hand, settings } = profile;
@@ -687,7 +690,7 @@ module.exports = {
 
         let intermission = buildIntermission({
             message, stats, prizes, track, reqs, playerList, opponentList, settings, isBossGate, freeSkipsLeft,
-            driverInfo: driverLine(activeDriverID, driverState), event: activeEvent
+            driverInfo: driverLine(activeDriverID, driverState), event: activeEvent, unclaimedCount
         });
 
         const { yse, nop } = getButtons("rr", settings.buttonstyle);
@@ -726,7 +729,7 @@ module.exports = {
         const rerenderIntermission = async () => {
             intermission = buildIntermission({
                 message, stats, prizes, track, reqs, playerList, opponentList, settings, isBossGate, freeSkipsLeft,
-                driverInfo: driverLine(activeDriverID, driverState), event: activeEvent
+                driverInfo: driverLine(activeDriverID, driverState), event: activeEvent, unclaimedCount
             });
             await intermission.sendMessage({ currentMessage: reactionMessage, buttons: buttonRows(), preserve: true });
         };
@@ -761,7 +764,10 @@ module.exports = {
                             }
 
                             await button.deferReply({ ephemeral: true }).catch(() => {});
-                            const testResult = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
+                            // silentResult — the ephemeral below is the WHOLE test output.
+                            // Without it, race() also posted the full public result embed
+                            // ("sad violin noises" and all), so every test double-posted.
+                            const testResult = await race(message, playerCar, opponentCar, track, settings.disablegraphics, true);
 
                             let testMessage = testResult > 0
                                 ? `🧪 **TEST RACE RESULT: WIN** ✅\nYou won by ${testResult} points!\n\n✨ This was a test — your wins and money are untouched.`

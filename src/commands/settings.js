@@ -13,7 +13,7 @@ module.exports = {
     category: "Configuration",
     description: "Configure settings here.",
     async execute(message, args) {
-        let { settings } = await profileModel.findOne({ userID: message.author.id });
+        let { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
 
         if (!args[0]) {
             const filter = (button) => button.user.id === message.author.id;

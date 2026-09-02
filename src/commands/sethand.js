@@ -7,6 +7,7 @@ const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const generateHud = require("../util/functions/generateHud.js");
 const profileModel = require("../models/profileSchema.js");
+const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "sethand",
@@ -16,7 +17,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets your hand for quick race, random race and event gamemodes.",
     async execute(message, args) {
-        const { garage } = await profileModel.findOne({ userID: message.author.id });
+        const { garage } = await getProfile(message.author.id);
         if (args[0].toLowerCase() === "random") {
             let randomCar = garage[Math.floor(Math.random() * garage.length)];
             let randomTune = Object.keys(randomCar.upgrades).filter(u => randomCar.upgrades[u] > 0);

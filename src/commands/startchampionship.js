@@ -33,7 +33,7 @@ module.exports = {
             });
 
         async function startChampionship(championship, currentMessage) {
-            const { settings } = await profileModel.findOne({ userID: message.author.id });
+            const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
                 title: `Are you sure you want to start the ${championship.name} championship?`,
@@ -43,7 +43,7 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
-                const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true });
+                const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true }, { garage: 0, discoveredCars: 0, decks: 0 }).lean();
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 championship.isActive = true;
                 if (championship.deadline.length < 9) {
