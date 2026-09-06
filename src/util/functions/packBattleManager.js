@@ -211,6 +211,24 @@ async function processPackOpening(userID, packID, addedCars) {
 // CHECK MILESTONES — find newly crossed thresholds, push rewards
 // ============================================================================
 
+/**
+ * Reward-entry contract: rewards.js reads ONE reward key per entry (it
+ * switches on the first key). A milestone/placement reward written as
+ * { money: 500000, trophies: 40 } therefore paid the money and silently
+ * dropped the trophies. Split every reward into single-key entries; rid on
+ * non-numeric ones for exact removal at claim time.
+ */
+function toRewardEntries(reward, origin) {
+    const entries = [];
+    for (const [key, value] of Object.entries(reward || {})) {
+        if (value === undefined || value === null) continue;
+        const entry = { [key]: value, origin };
+        if (key !== "money" && key !== "fuseTokens" && key !== "trophies") entry.rid = makeRewardID();
+        entries.push(entry);
+    }
+    return entries;
+}
+
 async function checkMilestones(battle, userID, stats) {
     if (!battle.milestones || battle.milestones.length === 0) return [];
 
@@ -255,13 +273,7 @@ async function checkMilestones(battle, userID, stats) {
 
         // Push rewards to player's unclaimedRewards (rid on non-numeric
         // entries → exact-entry removal at claim time)
-        const rewards = newlyEarned.map(e => {
-            const entry = { ...e.milestone.reward, origin: `${battle.name} Milestone` };
-            if (entry.money === undefined && entry.fuseTokens === undefined && entry.trophies === undefined) {
-                entry.rid = makeRewardID();
-            }
-            return entry;
-        });
+        const rewards = newlyEarned.flatMap(e => toRewardEntries(e.milestone.reward, `${battle.name} Milestone`));
 
         await profileModel.updateOne(
             { userID },
@@ -357,25 +369,23 @@ async function distributePlacementRewards(battle) {
 
             // Reward-entry contract: one reward key per entry, reward key first,
             // origin second (rewards.js switches on Object.keys(reward)[0]).
-            const rewardEntry = {
-                ...placement.reward,
-                origin: `${freshBattle.name} (#${placement.minRank}${placement.minRank !== placement.maxRank ? `-${placement.maxRank}` : ""} ${placement.leaderboard})`
-            };
-            if (rewardEntry.money === undefined && rewardEntry.fuseTokens === undefined && rewardEntry.trophies === undefined) {
-                rewardEntry.rid = makeRewardID();
-            }
+            const origin = `${freshBattle.name} (#${placement.minRank}${placement.minRank !== placement.maxRank ? `-${placement.maxRank}` : ""} ${placement.leaderboard})`;
+            const rewardEntries = toRewardEntries(placement.reward, origin);
+            if (rewardEntries.length === 0) continue;
 
             await profileModel.updateOne(
                 { userID },
-                { $push: { unclaimedRewards: rewardEntry } }
+                { $push: { unclaimedRewards: { $each: rewardEntries } } }
             );
 
-            distributedRewards.push({
-                userID,
-                rank,
-                leaderboard: placement.leaderboard,
-                reward: rewardEntry
-            });
+            for (const rewardEntry of rewardEntries) {
+                distributedRewards.push({
+                    userID,
+                    rank,
+                    leaderboard: placement.leaderboard,
+                    reward: rewardEntry
+                });
+            }
         }
     }
 
@@ -387,6 +397,7 @@ module.exports = {
     takeSnapshot,
     distributePlacementRewards,
     checkMilestones,
+    toRewardEntries,
     resetDailyIfNeeded,
     computeDenseRanking,
     getRarityFromCR,

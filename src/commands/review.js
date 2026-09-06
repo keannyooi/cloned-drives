@@ -12,7 +12,27 @@
 
 const { ActionRowBuilder, AttachmentBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require("discord.js");
 const path = require("path");
+const fs = require("fs");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { getArchivedImageURL } = require("../util/functions/submissionImage.js");
+
+/**
+ * The submitted artwork as a Discord attachment, so an approval hands you the
+ * file to upload to file.garden without hunting for it. Local archive copy
+ * first (no network), the archive channel otherwise. Null if neither works.
+ */
+async function artworkAttachment(submission) {
+    if (submission.imageLocalPath) {
+        const full = path.join(__dirname, "../..", submission.imageLocalPath);
+        if (fs.existsSync(full)) return new AttachmentBuilder(full, { name: path.basename(full) });
+    }
+    const url = await getArchivedImageURL(submission);
+    if (!url) return null;
+    const response = await fetch(url).catch(() => null);
+    if (!response || !response.ok) return null;
+    const ext = (url.split("?")[0].match(/\.(png|jpe?g|webp|gif)$/i) || [null, "png"])[1];
+    return new AttachmentBuilder(Buffer.from(await response.arrayBuffer()), { name: `${submission.submissionID}.${ext}` });
+}
 const { submissionArchiveChannelID } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
 const { crName } = require("../util/functions/submissionDisplay.js");
@@ -31,7 +51,7 @@ module.exports = {
     aliases: ["rev", "reviewsubs"],
     usage: [
         "queue [bm/art] [page]", "view <ID>", "preview <carID | ID>",
-        "approve <ID> [IBM|ABM|PBM]", "reject <ID> <reason>", "changes <ID> <note>",
+        "approve <ID> [IBM|ABM|PBM] [collection]", "reject <ID> <reason>", "changes <ID> <note>",
         "sethud <ID> <url>", "pending", "rescan", "rebuildmirror", "purgedev"
     ],
     args: 0,
@@ -266,6 +286,14 @@ module.exports = {
                     `**${submission.targetName}** is going into the game with your card. Nice one 🖤`
                 );
 
+                const artwork = await artworkAttachment(submission);
+                if (artwork) {
+                    await message.channel.send({
+                        content: `\`${submissionID}\` — artwork for **${submission.targetName}**, ready to upload to file.garden`,
+                        files: [artwork]
+                    }).catch(() => {});
+                }
+
                 return new SuccessMessage({
                     channel: message.channel,
                     title: `Picked ${submissionID} for ${submission.targetName}.`,
@@ -295,6 +323,12 @@ module.exports = {
                 PBM: "Prize only — never enters rotation"
             };
             let cardType = (args[2] || "").toUpperCase();
+            // Optional collection after the type: approve SBM2 ABM "Rest of The World".
+            // Quotes are stripped (Discord passes them through as plain text).
+            let collectionArg = "";
+            if (VARIANTS[cardType]) collectionArg = args.slice(3).join(" ");
+            else if (args.length > 2) { collectionArg = args.slice(2).join(" "); cardType = ""; }
+            collectionArg = collectionArg.trim().replace(/^["'“”]+|["'“”]+$/g, "").trim();
             if (!VARIANTS[cardType]) {
                 const pickRow = new ActionRowBuilder().addComponents(
                     Object.keys(VARIANTS).map(variant => new ButtonBuilder()
@@ -319,9 +353,13 @@ module.exports = {
                 cardType = picked.customId.replace("variant", "");
             }
 
+            const collectionName = collectionArg || submission.collectionName || "";
+            if (collectionArg && collectionArg !== submission.collectionName) {
+                await updateSubmission(submissionID, { collectionName: collectionArg });
+            }
             let generated;
             try {
-                generated = generateCarfile({ ...submission.toObject(), cardType });
+                generated = generateCarfile({ ...submission.toObject(), cardType, collectionName });
             }
             catch (error) {
                 return fail(message, "Error, the carfile couldn't be written.", `\`${error.message}\``);
@@ -343,15 +381,18 @@ module.exports = {
             // The carfile is attached as well as written to disk: when the bot
             // runs on a remote host (PebbleHost etc.) the file lands on THAT
             // filesystem, so Discord is the only way it reaches you.
+            const files = [new AttachmentBuilder(Buffer.from(formatCarfile(generated.json), "utf8"), { name: generated.filename })];
+            const artwork = await artworkAttachment(submission);
+            if (artwork) files.push(artwork);
             await message.channel.send({
-                content: `\`${submissionID}\` — **${cardType}** carfile, ready to drop into \`src/0 Carfiles to Add/1 BM cars/\``,
-                files: [new AttachmentBuilder(Buffer.from(formatCarfile(generated.json), "utf8"), { name: generated.filename })]
+                content: `\`${submissionID}\` — **${cardType}** carfile${artwork ? " + the artwork to upload to file.garden" : ""}, ready to drop into \`src/0 Carfiles to Add/1 BM cars/\``,
+                files
             }).catch(() => {});
 
             return new SuccessMessage({
                 channel: message.channel,
                 title: `Approved ${submissionID} as ${cardType}.`,
-                desc: `Staged at \`${generated.path}\` (and attached above).\n\n`
+                desc: `Staged at \`${generated.path}\` (and attached above). Collection: **${collectionName || "none"}**.\n\n`
                     + "**Still to do:** upload the art to file.garden, then\n"
                     + `\`cd-sub sethud ${submissionID} <url>\` — that re-attaches the finished file.`
                     + (reached === "nobody" ? "\n\n⚠️ The creator couldn't be notified." : ""),

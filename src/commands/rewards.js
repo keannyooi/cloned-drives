@@ -13,6 +13,7 @@ const rwEmoji = require("../util/functions/rwEmoji.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
 const profileModel = require("../models/profileSchema.js");
+const consumeNumericRewards = require("../util/functions/consumeRewards.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
@@ -318,21 +319,10 @@ module.exports = {
                     { "$pull": { unclaimedRewards: { rid: { "$in": ridsToPull } } } }
                 );
             }
-            // Numeric consumption: decrement exactly what was granted, then
-            // sweep spent (<= 0) husks per key. A concurrent grant that $inc-ed
-            // the same entry mid-claim stays positive and claimable.
-            for (const num of consumedNumeric) {
-                await profileModel.updateOne(
-                    { userID: message.author.id, unclaimedRewards: { "$elemMatch": { origin: num.origin, [num.key]: { "$exists": true } } } },
-                    { "$inc": { [`unclaimedRewards.$.${num.key}`]: -num.amount } }
-                );
-            }
-            for (const huskKey of [...new Set(consumedNumeric.map(num => num.key))]) {
-                await profileModel.updateOne(
-                    { userID: message.author.id },
-                    { "$pull": { unclaimedRewards: { [huskKey]: { "$lte": 0 } } } }
-                );
-            }
+            // Numeric consumption (value-aware — see util/functions/consumeRewards.js):
+            // decrement exactly what was granted from an entry that holds it,
+            // then sweep spent husks. A concurrent merge-style grant stays claimable.
+            await consumeNumericRewards(message.author.id, consumedNumeric);
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,

@@ -17,7 +17,7 @@ const bot = require("../../config/config.js");
 const { EmbedBuilder } = require("discord.js");
 const { compareTwoStrings } = require("string-similarity");
 const { ErrorMessage } = require("../classes/classes.js");
-const { adminRoleID, submissionsChannelID } = require("../consts/consts.js");
+const { adminRoleID, submissionsChannelID, submissionArchiveChannelID } = require("../consts/consts.js");
 const { getCar } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const { crName, stagingCrName } = require("./submissionDisplay.js");
@@ -159,7 +159,21 @@ async function notifyCreator(submission, title, body) {
     return "nobody";
 }
 
-/** Full card view, with a freshly-fetched archive image. */
+/**
+ * "Image source" field: the direct URL the embed uses plus the durable archive
+ * message link and the local copy — so a broken embed image is still one
+ * click away.
+ */
+function imageSourceField(submission, imageURL) {
+    const bits = [];
+    if (imageURL) bits.push(`[direct image](${imageURL})`);
+    if (submission.imageArchiveMessageID && bot.homeGuild) {
+        bits.push(`[archive message](https://discord.com/channels/${bot.homeGuild.id}/${submission.imageArchiveChannelID || submissionArchiveChannelID}/${submission.imageArchiveMessageID})`);
+    }
+    if (submission.imageLocalPath) bits.push(`local copy \`${submission.imageLocalPath}\``);
+    return bits.length ? { name: "Image source", value: bits.join(" · ") } : null;
+}
+
 async function buildDetailEmbed(submission) {
     // Art submissions have no reference car and no card metadata of their own —
     // they're a picture proposed for a car that already exists in staging.
@@ -187,7 +201,9 @@ async function buildDetailEmbed(submission) {
         if (submission.reviewNote) embed.addFields({ name: "Review note", value: submission.reviewNote });
         const artURL = await getArchivedImageURL(submission);
         if (artURL) embed.setImage(artURL);
-        else if (submission.imageLocalPath) embed.addFields({ name: "Image", value: `Archive unreachable — local copy at \`${submission.imageLocalPath}\`` });
+        const artSource = imageSourceField(submission, artURL);
+        if (artSource) embed.addFields(artSource);
+        if (!artURL && submission.imageLocalPath) embed.addFields({ name: "Image", value: "Archive unreachable — see the local copy above." });
         return embed;
     }
 
@@ -210,10 +226,12 @@ async function buildDetailEmbed(submission) {
                     : `⚠️ not in the game: "${submission.referenceName || "?"}"`
             },
             { name: "Brand", value: (submission.make || []).join(", ") || "—", inline: true },
-            { name: "Year", value: String(submission.modelYear || "—"), inline: true },
-            { name: "Country", value: submission.country || "—", inline: true }
+            // Year/country are pre-filled from the reference; flag it when the
+            // creator changed them so a typo (or a deliberate variant) is obvious.
+            { name: "Year", value: flagChanged(submission.modelYear, reference && reference.modelYear), inline: true },
+            { name: "Country", value: flagChanged(submission.country, reference && reference.country), inline: true },
+            { name: "Collection", value: submission.collectionName || "None", inline: true }
         );
-    if (submission.collectionName) embed.addFields({ name: "Collection", value: submission.collectionName });
     // Description at the bottom, closest to the art it describes.
     embed.addFields({ name: "Description", value: submission.description || "*(none)*" });
     if (submission.reviewNote) embed.addFields({ name: "Review note", value: submission.reviewNote });
@@ -224,9 +242,18 @@ async function buildDetailEmbed(submission) {
 
     const imageURL = await getArchivedImageURL(submission);
     if (imageURL) embed.setImage(imageURL);
-    else if (submission.imageLocalPath) embed.addFields({ name: "Image", value: `Archive unreachable — local copy at \`${submission.imageLocalPath}\`` });
+    const source = imageSourceField(submission, imageURL);
+    if (source) embed.addFields(source);
+    if (!imageURL && submission.imageLocalPath) embed.addFields({ name: "Image", value: "Archive unreachable — see the local copy above." });
 
     return embed;
+}
+
+/** "2024" or "2024 ⚠️ changed (ref 2019)" — a value beside what the reference car says. */
+function flagChanged(mine, ref) {
+    const shown = mine === undefined || mine === null || mine === "" ? "—" : String(mine);
+    if (ref === undefined || ref === null || ref === "" || shown === "—") return shown;
+    return String(mine) === String(ref) ? shown : `${shown} ⚠️ changed (ref ${ref})`;
 }
 
 /**

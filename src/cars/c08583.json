@@ -10,7 +10,10 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly",
+        "Trophy Tour 26"
+    ],
     "weight": 2345,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,6 +27,10 @@
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PorscheMacan4S(2024).png",
     "creator": "Bnuuy",
-    "hiddenTag": [""],
-    "cardType": ["Normal"]
+    "hiddenTag": [
+        ""
+    ],
+    "cardType": [
+        "Normal"
+    ]
 }

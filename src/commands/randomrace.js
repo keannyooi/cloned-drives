@@ -890,13 +890,18 @@ module.exports = {
                                     settleGrant(grantDriver(stats, scoutGrant.driverID, { serial: scoutSerial }), extraLines);
                                 }
 
-                                // Boss Slayer: all four gates claimed within one week
+                                // Boss Slayer: all four gates claimed within one week.
+                                // Fires on the race that lands the LAST gate (one gate per
+                                // race, each claimable once a week) and goes through
+                                // grantDriver, so a repeat week pays a DUPE — level
+                                // progress, or money past max level — instead of nothing
+                                // (the old `!owned` guard made him a one-time unlock).
                                 const mergedClaimed = stats.claimedThresholds.concat(awards.claimed);
-                                if (driverExists(BOSS_SLAYER_DRIVER_ID) && BOSS_GATES.every(gate => mergedClaimed.includes(gate))
-                                    && !stats.ownedDrivers.includes(BOSS_SLAYER_DRIVER_ID)) {
-                                    stats.ownedDrivers.push(BOSS_SLAYER_DRIVER_ID);
-                                    ownedDirty = true;
-                                    celebrationLines.push(`${rwEmoji("bossSlayer")} **BOSS SLAYER!** All four boss gates cleared this week — driver **${driverDisplayName(BOSS_SLAYER_DRIVER_ID)}** unlocked!`);
+                                const landedGate = awards.claimed.some(gate => BOSS_GATES.includes(gate));
+                                if (driverExists(BOSS_SLAYER_DRIVER_ID) && landedGate && BOSS_GATES.every(gate => mergedClaimed.includes(gate))) {
+                                    const firstTime = !stats.ownedDrivers.includes(BOSS_SLAYER_DRIVER_ID);
+                                    celebrationLines.push(`${rwEmoji("bossSlayer")} **BOSS SLAYER!** All four boss gates cleared this week — driver **${driverDisplayName(BOSS_SLAYER_DRIVER_ID)}** ${firstTime ? "unlocked!" : "earned again!"}`);
+                                    settleGrant(grantDriver(stats, BOSS_SLAYER_DRIVER_ID), celebrationLines);
                                 }
 
                                 // Revenge served — retire that recent-loss entry

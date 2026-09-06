@@ -47,6 +47,10 @@ const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(
 const dataManager = require("./src/util/functions/dataManager.js");
 const { startImageLinkRefresh } = require("./src/util/functions/discordImageLinks.js");
 const dataStats = dataManager.initialize("./src");
+// Pace Index — per-car strength table from the race formula (docs/pace-index.md).
+// Pure function of the loaded cars/tracks; rebuilt on every start.
+const paceSummary = require("./src/util/functions/paceIndex.js").computePaceIndex();
+console.log(`   Pace Index: ${paceSummary.cars} cars x ${paceSummary.tracks} tracks in ${paceSummary.ms}ms`);
 
 // Exit if critical files failed to load
 if (dataStats.cars.failed > 0) {

@@ -1,7 +1,9 @@
 {
     "carID": "c08620",
     "cr": 830,
-    "make": ["Ford"],
+    "make": [
+        "Ford"
+    ],
     "model": "Mustang Dark Horse SC Track Pack",
     "modelYear": 2026,
     "country": "US",
@@ -10,8 +12,14 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day","Muscle Car"],
-    "cardType": ["Prize"],
+    "tags": [
+        "Track Day",
+        "Muscle Car",
+        "Trophy Tour 26"
+    ],
+    "cardType": [
+        "Prize"
+    ],
     "weight": 1879,
     "gc": "Low",
     "seatCount": 2,
@@ -23,7 +31,9 @@
     "mra": 100,
     "ola": 90,
     "description": "",
-    "racehud": "",
-    "creator": "",
-    "hiddenTag": [""]
+    "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/FordMustangDarkHorseSCTrackPack(2026).png",
+    "creator": "fiero",
+    "hiddenTag": [
+        ""
+    ]
 }

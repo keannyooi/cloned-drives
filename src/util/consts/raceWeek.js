@@ -251,7 +251,8 @@ const DUPE_DRIVER_MONEY = 250000;
 
 // The boss-slayer driver (Ragnar Voss, re-raritied to BASE under rarity v3 —
 // legacy-mapping override in raceWeekEvents.js) is granted when all four boss
-// gates (50/100/150/1000) are claimed within a single week. He is
+// gates (BOSS_GATES) are claimed within a single week — every week: a repeat
+// clear pays a dupe (level progress / money past max), not nothing. He is
 // inRotation: false, so the gate rule is the intended way to earn him (the
 // ~0.06%-per-race Driver Scout can technically also roll any driver).
 const BOSS_SLAYER_RULE = "all4gates";

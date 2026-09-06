@@ -10,7 +10,10 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [],
+    "tags": [
+        "Eco-Friendly",
+        "Trophy Tour 26"
+    ],
     "weight": 2019,
     "gc": "High",
     "seatCount": 5,
@@ -24,6 +27,10 @@
     "description": "Another armored DS 7 but this time for civillian use.",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/DS7Vauban(2024).png",
     "creator": "Crossfire",
-    "hiddenTag": [""],
-    "cardType": ["Normal"]
+    "hiddenTag": [
+        ""
+    ],
+    "cardType": [
+        "Normal"
+    ]
 }
