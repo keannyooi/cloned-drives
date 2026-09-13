@@ -1,0 +1,28 @@
+{
+    "layoutID": "rt00003",
+    "name": "Pikes Peak",
+    "kind": "hillclimb",
+    "country": "US",
+    "city": "Cascade, Colorado",
+    "realName": "Pikes Peak International Hill Climb — the Race to the Clouds",
+    "fictional": false,
+    "distance": 12.42,
+    "opened": 1916,
+    "altitude": 14115,
+    "tags": ["Hillclimb", "Pikes Peak", "Race to the Clouds"],
+    "obstacles": { "speedbumps": 0, "humps": 0 },
+    "layout": {
+        "start": "standing",
+        "corners": { "tight": 40, "medium": 76, "fast": 40 },
+        "straights": { "count": 156, "longest": 0.6 },
+        "netClimb": 4725
+    },
+    "conditions": [
+        { "id": "dry", "label": "Sunny", "surface": "Asphalt", "weather": "Sunny", "equivalentTrackID": "t00075" },
+        { "id": "gravel", "label": "Gravel", "surface": "Gravel", "weather": "Sunny", "equivalentTrackID": "t00074" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "12.42 miles from the start line at 9,390 ft to the summit at 14,115 ft (net climb 4,725 ft, average grade 7.2%). All 156 official turns are counted (40 tight, 76 medium, 40 fast — a reading of the road, not a survey); the corners are so dense that the engine shrinks its standard corner arcs to fit them. The gravel condition is the pre-2011 surface. Record: 7:57.148 (Dumas, VW I.D. R, 2018). Altitude is the summit."
+}

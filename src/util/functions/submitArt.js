@@ -20,7 +20,7 @@ const { findBestMatch } = require("string-similarity");
 const { ErrorMessage, SuccessMessage } = require("../classes/classes.js");
 const { defaultChoiceTime, artSubmitterRoleIDs } = require("../consts/consts.js");
 const { getOpenForArt } = require("./stagingCars.js");
-const { hasRole } = require("./submissionViews.js");
+const { hasRole, feed } = require("./submissionViews.js");
 const { stagingCrName } = require("./submissionDisplay.js");
 const { createSubmission } = require("./submissionStore.js");
 const { validateAttachment, archiveSubmissionImage } = require("./submissionImage.js");
@@ -191,6 +191,7 @@ async function runArtSubmission(message, args) {
         pending.imageHeight = archived.height;
         await pending.save();
         require("./submissionStore.js").mirrorToDisk(pending);
+        void feed("art", pending);
 
         return new SuccessMessage({
             channel: message.channel,

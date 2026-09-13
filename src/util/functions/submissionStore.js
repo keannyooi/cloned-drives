@@ -23,7 +23,8 @@ const SUBMISSIONS_DIR = path.join(__dirname, "../../submissions");
 const IMAGES_DIR = path.join(SUBMISSIONS_DIR, "images");
 
 /**
- * SBM = Submit Black Market, SAW = Submit ArtWork.
+ * SBM = Submit Black Market, SAW = Submit ArtWork, SCR = Submit CaR,
+ * SED = Suggested EDit (a correction to a live car).
  *
  * Each type counts separately so the numbers stay small and memorable —
  * SBM1, SAW1 — rather than sharing one counter and producing gappy sequences.
@@ -33,6 +34,8 @@ const IMAGES_DIR = path.join(SUBMISSIONS_DIR, "images");
 const ID_PREFIX = {
     bm: "SBM",
     art: "SAW",
+    car: "SCR",
+    edit: "SED",
     track: "STRK",
     pack: "SPCK"
 };
@@ -74,7 +77,7 @@ async function mintSubmissionID(type = "bm") {
  */
 function normalizeSubmissionID(input) {
     const raw = String(input || "").trim().toUpperCase();
-    const match = raw.match(/^(T?)(SBM|SAW|STRK|SPCK)0*(\d+)$/);
+    const match = raw.match(/^(T?)(SBM|SAW|SCR|SED|STRK|SPCK)0*(\d+)$/);
     return match ? `${match[1]}${match[2]}${match[3]}` : raw;
 }
 
@@ -104,14 +107,17 @@ function mirrorToDisk(submission) {
 async function createSubmission(payload) {
     const now = DateTime.utc().toISO();
     const submissionID = await mintSubmissionID(payload.type || "bm");
+    // Everything is born pending except a car saved as a draft, which has no
+    // submittedAt until the creator (or the draft clock) sends it.
+    const status = payload.status === "draft" ? "draft" : "pending";
     const doc = await submissionModel.create({
         ...payload,
         submissionID,
         isDev: bot.devMode === true,
-        status: "pending",
+        status,
         createdAt: now,
         updatedAt: now,
-        submittedAt: now
+        submittedAt: status === "pending" ? now : ""
     });
     mirrorToDisk(doc);
     return doc;
@@ -192,7 +198,7 @@ async function purgeDevSubmissions() {
 
     const { deletedCount } = await submissionModel.deleteMany({ isDev: true });
     await serverStatModel.updateOne({}, {
-        "$set": { "submissionCounters.dev_bm": 0, "submissionCounters.dev_art": 0 }
+        "$set": { "submissionCounters.dev_bm": 0, "submissionCounters.dev_art": 0, "submissionCounters.dev_car": 0, "submissionCounters.dev_edit": 0 }
     });
 
     return { removed: deletedCount || 0, files, archiveMessages };

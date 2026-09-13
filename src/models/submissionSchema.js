@@ -19,10 +19,12 @@ const { Schema, model } = require("mongoose");
  */
 const submissionSchema = new Schema({
     submissionID: { type: String, unique: true, index: true },
-    // "bm" for now; the ID prefix varies by type so cars/tracks/packs can slot
-    // in later off the same counter.
+    // "bm" | "art" | "car" | "edit"; the ID prefix varies by type (SBM / SAW / SCR / SED),
+    // each off its own counter.
     type: { type: String, default: "bm" },
-    // pending → approved | rejected | changes | withdrawn
+    // (draft →) pending → approved | rejected | changes | withdrawn
+    // "draft" exists for car submissions only: saved and valid, but held back
+    // by the creator (usually until they have artwork) and invisible to review.
     status: { type: String, default: "pending", index: true },
 
     // True when created by a devMode bot. Dev and production share one
@@ -67,6 +69,50 @@ const submissionSchema = new Schema({
     // Stored HERE rather than only patched into the staged file, so the record
     // is complete even when the bot runs on a remote host.
     racehud: { type: String, default: "" },
+
+    // ─── Car submissions (type: "car") ───────────────────────────────────────
+    // A whole car proposed from scratch. `carData` is the validated stat block
+    // in carfile shape — carfile keys, casing and order, `cr` from the formula
+    // (util/functions/carSubmissionValidator.js). make / model / modelYear /
+    // country / description above are mirrored from it so search, lists and
+    // the BM-era views keep working unchanged.
+    carData: { type: Object, default: null },
+    // Reviewer's override of the formula CR. 0 = none (the formula stands).
+    crOverride: { type: Number, default: 0 },
+    // Reviewer-only. Written into the carfile as-is; [] becomes [""] there.
+    hiddenTag: { type: Array, default: [] },
+    // Drafts are a private hold with a clock: the creator is reminded at
+    // consts.draftReminderDays and the car is sent to review as it stands at
+    // consts.draftAutoSubmitDays. `draftDeadline` is that moment (ISO); a
+    // snooze moves it. `reminderSentFor` records which deadline the reminder
+    // went out for, so a snooze re-arms it.
+    draftDeadline: { type: String, default: "" },
+    reminderSentFor: { type: String, default: "" },
+    // ISO date (YYYY-MM-DD) of the last "can't be sent yet" DM, so a draft
+    // that is overdue but fails validation nags once a day, not once a sweep.
+    blockedNotifiedOn: { type: String, default: "" },
+    snoozeCount: { type: Number, default: 0 },
+    // True when the clock, not the creator, sent it to review.
+    autoSubmitted: { type: Boolean, default: false },
+    // Filled by the startup check once the shipped car is found loaded, so
+    // the feed can say "in the game" exactly once.
+    liveCarID: { type: String, default: "" },
+
+    // ─── Suggested edits (type: "edit") ──────────────────────────────────────
+    // A correction to a LIVE car, proposed from the Suggest edit button on
+    // cd-carinfo by anyone. `reference` holds the carID and `targetName` the
+    // car's name; `targetKey` is "<carID>|<field>", so a second suggestion on
+    // the same field of the same car joins the open one as a supporter
+    // instead of duplicating it.
+    field: { type: String, default: "" },            // description | power | other
+    proposedValue: { type: String, default: "" },    // canonical ("456 PS") or the text itself
+    proposedRaw: { type: String, default: "" },      // exactly what was typed
+    currentValue: { type: String, default: "" },     // what the carfile said at the time
+    sourceUrl: { type: String, default: "" },
+    supporters: { type: Array, default: [] },        // [{ userID, tag, note, source, at }]
+    appliedAt: { type: String, default: "" },
+    appliedBy: { type: String, default: "" },
+    appliedValue: { type: String, default: "" },
 
     // ─── Image ───────────────────────────────────────────────────────────────
     // Discord attachment URLs are signed and expire (~24h), so the URL is NEVER

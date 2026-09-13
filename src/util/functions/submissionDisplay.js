@@ -58,14 +58,42 @@ function stagingCrName(staged) {
 }
 
 /**
+ * "(<rarity> <CR>) Make Model (Year)" for a CAR submission, whose CR is its
+ * own — the formula's, or the reviewer's override when one is set. Lead brand
+ * only, the way carNameGen renders every car.
+ */
+function carCrName(submission) {
+    const make = (Array.isArray(submission.make) ? submission.make : [submission.make]).filter(Boolean);
+    const plain = `${make[0] || ""} ${submission.model || ""}`.trim() + (submission.modelYear ? ` (${submission.modelYear})` : "");
+    const cr = submission.crOverride > 0 ? submission.crOverride : (submission.carData ? submission.carData.cr : undefined);
+    if (typeof cr !== "number") return plain || "Untitled";
+    const emoji = rarityCheck({ cr, cardType: ["Normal"] });
+    return emoji ? `(${emoji} ${cr}) ${plain}` : `(${cr}) ${plain}`;
+}
+
+/**
  * The archive-channel caption: ID, CR + name, and what it's based on.
  *   `SBM000001` — (<rarity> 849) Porsche 911 GT2 Vorse — based on `c01073`
+ *   `SCR12` — (<rarity> 921) Porsche 911 GT3 RS (2023)
  */
 function archiveLabel(submissionID, submission, referenceCar) {
+    if (submission.type === "car") return `\`${submissionID}\` — ${carCrName(submission)}`;
     const bits = [`\`${submissionID}\``, crName(submission, referenceCar)];
     if (referenceCar) bits.push(`based on \`${submission.reference}\``);
     else if (submission.referenceName) bits.push(`based on *${submission.referenceName}* (not in game)`);
     return bits.join(" — ");
 }
 
-module.exports = { crTag, crName, stagingCrName, archiveLabel };
+/**
+ * What a car currently says for a suggestable field — the "Currently" line on
+ * a suggested edit (SED). Power carries its "(est.)" marker while the value
+ * is the backfill's estimate rather than a person's.
+ */
+function editCurrentValue(car, field) {
+    if (!car) return "—";
+    if (field === "power") return typeof car.power === "number" ? `${car.power} PS${car.powerEstimated ? " (est.)" : ""}` : "—";
+    if (field === "description") return car.description ? String(car.description) : "—";
+    return "";
+}
+
+module.exports = { crTag, crName, carCrName, stagingCrName, archiveLabel, editCurrentValue };

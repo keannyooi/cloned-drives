@@ -196,7 +196,10 @@ module.exports = {
                 return errorMessage.sendMessage();
             }
 
-            const response = await search(message, carArgs.map(arg => arg.toLowerCase()), getCarFiles(), "car");
+            // "carWithBM": Black Market cards are ownable, so they must be findable
+            // by name here — the plain "car" type hides them (search.js), which
+            // is why `-c03098` worked while "chiron super sport" didn't.
+            const response = await search(message, carArgs.map(arg => arg.toLowerCase()), getCarFiles(), "carWithBM");
             if (!Array.isArray(response)) return;
             const [carFile, currentMessage] = response;
             const carID = carFile.slice(0, 6);

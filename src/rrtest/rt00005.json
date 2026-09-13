@@ -1,0 +1,29 @@
+{
+    "layoutID": "rt00005",
+    "name": "Col de Turini",
+    "kind": "stage",
+    "country": "FR",
+    "city": "La Bollène-Vésubie",
+    "realName": "Col de Turini (Rallye Monte-Carlo)",
+    "fictional": false,
+    "distance": 9.3,
+    "opened": 1961,
+    "altitude": 5272,
+    "tags": ["Rally", "WRC", "Monte-Carlo", "Touge"],
+    "obstacles": { "speedbumps": 0, "humps": 0 },
+    "layout": {
+        "start": "standing",
+        "corners": { "tight": 34, "medium": 45, "fast": 14 },
+        "straights": { "count": 93, "longest": 0.4 },
+        "netClimb": 2950
+    },
+    "conditions": [
+        { "id": "dry", "label": "Sunny", "surface": "Asphalt", "weather": "Sunny", "equivalentTrackID": "t00159" },
+        { "id": "wet", "label": "Rainy", "surface": "Asphalt", "weather": "Rainy", "equivalentTrackID": "t00160" },
+        { "id": "snow", "label": "Snowy", "surface": "Snow", "weather": "Sunny", "equivalentTrackID": "t00161" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "The ascent from La Bollène-Vésubie (about 2,300 ft) to the col at 5,272 ft, roughly 15 km: 34 hairpins on the way up counted tight. Corner counts are read off the road, not surveyed. Opened = the year the Monte-Carlo Rally first ran the col as a stage, approximate. Snow is the condition players asked for; the dry and wet variants come free."
+}

@@ -1,0 +1,25 @@
+{
+    "layoutID": "rt00006",
+    "name": "City Streets Medium",
+    "kind": "street",
+    "fictional": true,
+    "distance": 2.1,
+    "tags": ["Street", "City"],
+    "obstacles": { "speedbumps": 4, "humps": 0 },
+    "layout": {
+        "start": "rolling",
+        "corners": { "tight": 9, "medium": 8, "fast": 2 },
+        "straights": { "count": 19, "longest": 0.3 },
+        "netClimb": 0
+    },
+    "conditions": [
+        { "id": "sunny", "label": "Sunny", "surface": "Asphalt", "weather": "Sunny", "equivalentTrackID": "t00023" },
+        { "id": "rainy", "label": "Rainy", "surface": "Asphalt", "weather": "Rainy", "equivalentTrackID": "t00021", "background": "https://file.garden/ZmdgDS5GsALKuOXo/TB/csmrain.png" },
+        { "id": "snowy", "label": "Snowy", "surface": "Snow", "weather": "Sunny", "equivalentTrackID": "t00022", "background": "https://file.garden/ZmdgDS5GsALKuOXo/TB/csmSnow.png" },
+        { "id": "ice", "label": "Ice", "surface": "Ice", "weather": "Sunny", "equivalentTrackID": "t00020", "background": "https://file.garden/ZmdgDS5GsALKuOXo/TB/csmIce.png" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "Fictional street circuit. The lap is a design: 2.1 miles (Monaco-length, with Monaco's 19 corners), 19 corners of which 9 are 90-degree city corners, four speed bumps. The rainy, snowy and icy variants keep the live artwork; the sunny one had none."
+}

@@ -11,6 +11,7 @@ const generateHud = require("../util/functions/generateHud.js");
 const getFlag = require("../util/functions/getFlag.js");
 const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { suggestButtonRow, watchSuggestButton } = require("../util/functions/suggestEdit.js");
 
 module.exports = {
     name: "carinfo",
@@ -49,6 +50,8 @@ module.exports = {
             }
             let topSpeed = `${bmReference.topSpeed}MPH`, accel = "N/A", weight = `${bmReference.weight.toLocaleString("en")}kg`;
             let bodyStyle = Array.isArray(bmReference["bodyStyle"]) ? bmReference["bodyStyle"].join(", ") : bmReference["bodyStyle"];
+            // "(est.)" while the figure is the backfill's estimate, until someone confirms it via Suggest edit.
+            const power = typeof bmReference.power === "number" ? `${bmReference.power} PS${bmReference.powerEstimated ? " (est.)" : ""}` : "N/A";
 
             if (currentCar["description"].length > 0) {
                 description = currentCar["description"];
@@ -99,6 +102,7 @@ module.exports = {
                     { name: "Collection", value: collection || "None", inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
+                    { name: "Power", value: power, inline: true },
                     { name: "Creator", value: currentCar.creator ?? "None", inline: true },
                     { name: "Card Type", value: getCardTypes(currentCar).join(", "), inline: true },
                     { name: "Pace Index", value: getPI(carFile) ? `**${getPI(carFile).pi}** (avg ${getPI(carFile).average})` : "N/A", inline: true },
@@ -116,7 +120,11 @@ module.exports = {
                 }
                 infoMessage.editEmbed({ footer: `✅ You own ${str.slice(0, -2)} of this car!` });
             }
-            return infoMessage.sendMessage({ currentMessage });
+            // Anyone can propose a correction from here; the button lives a few minutes.
+            const carID = carFile.slice(0, 6);
+            const sent = await infoMessage.sendMessage({ currentMessage, buttons: [suggestButtonRow(carID)] });
+            if (sent && sent.message) watchSuggestButton(sent, carID, currentCar);
+            return sent;
         }
     }
 };

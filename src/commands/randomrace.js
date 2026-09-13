@@ -25,7 +25,7 @@
  */
 
 const bot = require("../config/config.js");
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags } = require("discord.js");
 const { DateTime } = require("luxon");
 const { getCarFiles, getTrackFiles, getCar, getTrack, getPack, getDriver, driverExists } = require("../util/functions/dataManager.js");
 const { isWinnable } = require("../util/functions/raceWeekFeasibility.js");
@@ -758,12 +758,12 @@ module.exports = {
                         case "test": {
                             // 🧪 Test race — no consequences
                             if (!isBossGate && !filterCheck({ car: hand, filter: reqs })) {
-                                await button.reply({ content: "⚠️ Your hand does not meet the requirements for this race!", ephemeral: true });
+                                await button.reply({ content: "⚠️ Your hand does not meet the requirements for this race!", flags: MessageFlags.Ephemeral });
                                 processed = false;
                                 return;
                             }
 
-                            await button.deferReply({ ephemeral: true }).catch(() => {});
+                            await button.deferReply({ flags: MessageFlags.Ephemeral }).catch(() => {});
                             // silentResult — the ephemeral below is the WHOLE test output.
                             // Without it, race() also posted the full public result embed
                             // ("sad violin noises" and all), so every test double-posted.
@@ -1144,7 +1144,7 @@ module.exports = {
                             }
                             const verdict = validateAccept(activeEvent, { hand, stats });
                             if (!verdict.ok) {
-                                await button.reply({ content: `⚠️ ${verdict.reason}`, ephemeral: true }).catch(() => {});
+                                await button.reply({ content: `⚠️ ${verdict.reason}`, flags: MessageFlags.Ephemeral }).catch(() => {});
                                 processed = false;
                                 return;
                             }

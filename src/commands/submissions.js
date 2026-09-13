@@ -21,7 +21,7 @@ const path = require("path");
 const { ErrorMessage, SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
-const { stagingCrName, archiveLabel } = require("../util/functions/submissionDisplay.js");
+const { stagingCrName, archiveLabel, carCrName } = require("../util/functions/submissionDisplay.js");
 const submissionModel = require("../models/submissionSchema.js");
 const profileModel = require("../models/profileSchema.js");
 const { updateSubmission, normalizeSubmissionID, SUBMISSIONS_DIR } = require("../util/functions/submissionStore.js");
@@ -29,7 +29,15 @@ const { resolveReference, resolveMake } = require("./submit.js");
 const { validateAttachment, archiveSubmissionImage } = require("../util/functions/submissionImage.js");
 const { getStagingCars } = require("../util/functions/stagingCars.js");
 const listUpdate = require("../util/functions/listUpdate.js");
-const { isAdmin, fail, searchSubmissions, summarise, buildDetailEmbed, paginate, bySubmissionNumber } = require("../util/functions/submissionViews.js");
+const {
+    isAdmin, fail, searchSubmissions, summarise, buildDetailEmbed, paginate, bySubmissionNumber,
+    feed, rawFieldsFrom, mirrorFields, formatDate
+} = require("../util/functions/submissionViews.js");
+// Car submissions: the stat block is re-validated on every change.
+const { canonicalKey } = require("../util/functions/carSubmissionParser.js");
+const { validateCarSubmission, describeReport, LABEL, CREATOR_FIELDS, OPTIONAL_FIELDS } = require("../util/functions/carSubmissionValidator.js");
+const { collectCarPaste } = require("../util/functions/submitCar.js");
+const { snoozeDraft, sendToReview } = require("../util/functions/submissionDrafts.js");
 const BT = String.fromCharCode(96);   // backtick, for inline code in messages
 
 module.exports = {
@@ -38,8 +46,8 @@ module.exports = {
     usage: [
         "mine [page]", "view <ID>", "missing [search] [page]",
         "search <query> [--all] [--mine]", "collection <name> [--all]",
-        "edit <ID>", "image <ID>", "set <ID> <country|year> <value>",
-        "withdraw <ID>", "export <ID>"
+        "edit <ID>", "image <ID>", "set <ID> <field> <value>",
+        "submit <ID [ID …] | all>", "snooze <ID>", "withdraw <ID>", "export <ID>"
     ],
     args: 0,
     category: "Miscellaneous",
@@ -60,7 +68,7 @@ module.exports = {
                 return new InfoMessage({
                     channel: message.channel,
                     title: "You have not submitted anything yet.",
-                    desc: "Design a Black Market card with " + BT + "cd-submit bm" + BT + ", or make artwork for a car that needs it — see " + BT + "cd-sub missing" + BT + ".",
+                    desc: "Submit a whole car with " + BT + "cd-submit car" + BT + ", design a Black Market card with " + BT + "cd-submit bm" + BT + ", or make artwork for a car that needs it — see " + BT + "cd-sub missing" + BT + ".",
                     author: message.author
                 }).sendMessage();
             }
@@ -122,6 +130,8 @@ module.exports = {
             // already done this?", which closed submissions don't answer.
             const filter = {};
             if (!flags.has("--all")) filter.status = "pending";
+            // Drafts are private: --all shows them only to their owner (--mine) or an admin.
+            else if (!flags.has("--mine") && !(await isAdmin(message))) filter.status = { "$ne": "draft" };
             if (flags.has("--mine")) filter.creatorID = message.author.id;
 
             const all = await submissionModel.find(filter).lean();
@@ -236,6 +246,56 @@ module.exports = {
             }
         }
 
+        // ── send several at once: `submit all` (every draft you own) or
+        //    `submit SCR12 SCR13 SCR14` (a list). One ID falls through to the
+        //    single path below. Each car is validated and sent on its own, so
+        //    one that fails never holds up the others.
+        if (sub === "submit" && (args.length > 2 || (args[1] || "").toLowerCase() === "all")) {
+            const wantAll = (args[1] || "").toLowerCase() === "all";
+            const admin = await isAdmin(message);
+            let entries;
+            if (wantAll) {
+                const drafts = await submissionModel.find({ creatorID: message.author.id, type: "car", status: "draft" });
+                if (drafts.length === 0) {
+                    return fail(message, "Error, you have no drafts.",
+                        "Save one from the preview in `cd-submit car`, or send a single submission with `cd-sub submit <ID>`.");
+                }
+                drafts.sort(bySubmissionNumber);
+                entries = drafts.map(doc => ({ id: doc.submissionID, doc }));
+            }
+            else {
+                const ids = [...new Set(args.slice(1).map(normalizeSubmissionID).filter(Boolean))];
+                const docs = await submissionModel.find({ submissionID: { "$in": ids } });
+                const byID = new Map(docs.map(doc => [doc.submissionID, doc]));
+                entries = ids.map(id => ({ id, doc: byID.get(id) || null }));   // the order they typed
+            }
+
+            const lines = [];
+            let sent = 0;
+            for (const { id, doc } of entries) {
+                if (!doc) { lines.push(`❓ \`${id}\` — no such submission`); continue; }
+                if (doc.creatorID !== message.author.id && !admin) { lines.push(`🔒 \`${id}\` — not yours`); continue; }
+                if (doc.type !== "car") { lines.push(`⏭️ \`${id}\` — not a car submission`); continue; }
+                if (!["draft", "changes", "withdrawn"].includes(doc.status)) { lines.push(`⏭️ \`${id}\` — already ${doc.status}`); continue; }
+                const result = await sendToReview(doc);
+                if (result.ok) {
+                    sent++;
+                    lines.push(`✅ \`${id}\` ${carCrName(result.submission)}`);
+                }
+                else {
+                    lines.push(`❌ \`${id}\` — ${result.report ? result.report.blockers[0].message : result.reason}`);
+                }
+            }
+            const total = entries.length;
+            return new SuccessMessage({
+                channel: message.channel,
+                title: `Sent ${sent} of ${total} to review.`,
+                desc: lines.join("\n").slice(0, 3800)
+                    + (sent < total ? "\n\nAnything ❌ needs `cd-sub set <ID> <field> <value>` first, then send it again." : ""),
+                author: message.author
+            }).sendMessage();
+        }
+
         // ── everything below needs an ID ─────────────────────────────────────
         // "sbm7", "SBM007" and "SBM000007" all resolve to SBM7.
         const submissionID = normalizeSubmissionID(args[1] || "");
@@ -248,12 +308,24 @@ module.exports = {
         }
 
 
-        if (sub === "view") {
-            return message.channel.send({ embeds: [await buildDetailEmbed(submission)] });
+        const isOwner = submission.creatorID === message.author.id;
+
+        // A suggested edit is one sentence; there is nothing to edit on it.
+        if (submission.type === "edit" && ["edit", "set", "image", "submit", "snooze"].includes(sub)) {
+            return fail(message, "Error, suggestions can't be edited.",
+                `Withdraw it with \`cd-sub withdraw ${submissionID}\` and suggest again from the car's page (\`cd-carinfo\` → Suggest edit).`);
         }
 
-        const isOwner = submission.creatorID === message.author.id;
-        if (["edit", "withdraw", "set", "image"].includes(sub) && !isOwner && !(await isAdmin(message))) {
+        if (sub === "view") {
+            // A draft is the creator's private hold — nobody else's business until it's sent.
+            const admin = await isAdmin(message);
+            if (submission.status === "draft" && !isOwner && !admin) {
+                return fail(message, "Error, that's a private draft.", "It shows up once its creator sends it to review.");
+            }
+            return message.channel.send({ embeds: [await buildDetailEmbed(submission, { forReviewer: admin })] });
+        }
+
+        if (["edit", "withdraw", "set", "image", "submit", "snooze"].includes(sub) && !isOwner && !(await isAdmin(message))) {
             return fail(message, "Error, that is not your submission.", "You can only change your own.");
         }
 
@@ -271,6 +343,134 @@ module.exports = {
         };
         if (["edit", "image"].includes(sub) && LOCKED_FOR_EDIT[submission.status]) {
             return fail(message, "Error, " + submissionID + " cannot be changed.", LOCKED_FOR_EDIT[submission.status]);
+        }
+        // A car's stats are what got approved and staged — changing them after
+        // the fact would desync the record from the file. (BM `set` stays open:
+        // country/year on a BM card are metadata the admin fixes by hand anyway.)
+        if (sub === "set" && submission.type === "car" && LOCKED_FOR_EDIT[submission.status]) {
+            return fail(message, "Error, " + submissionID + " cannot be changed.", LOCKED_FOR_EDIT[submission.status]);
+        }
+
+        // ── car submissions: send / snooze / set ─────────────────────────────
+
+        if (sub === "submit") {
+            if (submission.type !== "car") {
+                return fail(message, "Error, only car submissions use `submit`.",
+                    "Black Market cards and artwork go back to the queue on their own when you edit them.");
+            }
+            if (!["draft", "changes", "withdrawn"].includes(submission.status)) {
+                return fail(message, `Error, ${submissionID} is already ${submission.status}.`, "Only drafts, sent-back and withdrawn submissions can be sent.");
+            }
+            const result = await sendToReview(submission);
+            if (!result.ok) {
+                return fail(message, "Error, it doesn't validate any more.",
+                    (result.report ? describeReport(result.report).join("\n") : result.reason).slice(0, 3500)
+                    + `\n\nFix it with \`cd-sub set ${submissionID} <field> <value>\` and try again.`);
+            }
+            return new SuccessMessage({
+                channel: message.channel,
+                title: `Sent ${submissionID} to review.`,
+                desc: `**${carCrName(result.submission)}** is in the queue. \`cd-sub view ${submissionID}\` to see it.`,
+                author: message.author
+            }).sendMessage();
+        }
+
+        if (sub === "snooze") {
+            if (submission.type !== "car" || submission.status !== "draft") {
+                return fail(message, "Error, only drafts can be snoozed.", "A draft is a car saved from the `cd-submit car` preview but not yet sent.");
+            }
+            const updated = await snoozeDraft(submission);
+            return new SuccessMessage({
+                channel: message.channel,
+                title: `Snoozed ${submissionID}.`,
+                desc: `It now goes to review on **${formatDate(updated.draftDeadline)}** unless you send it first`
+                    + (updated.snoozeCount > 1 ? ` (snoozed ${updated.snoozeCount} times)` : "") + ".",
+                author: message.author
+            }).sendMessage();
+        }
+
+        if (sub === "set" && submission.type === "car") {
+            if (!submission.carData) {
+                return fail(message, "Error, that submission has no car data.", "It predates car submissions — ask an admin.");
+            }
+            const admin = await isAdmin(message);
+            const fieldArg = (args[2] || "").toLowerCase();
+            const value = args.slice(3).join(" ").trim();
+            const settable = [...CREATOR_FIELDS, ...OPTIONAL_FIELDS];
+            const fieldList = settable.map(field => LABEL[field]).join(", ");
+            if (!fieldArg) {
+                return fail(message, "Error, usage is `set <ID> <field> <value>`.",
+                    `Fields: ${fieldList}` + (admin ? ", plus `cr` and `hiddentag` for reviewers" : "")
+                    + `.\nExample: \`cd-sub set ${submissionID} handling 95\``);
+            }
+
+            // Reviewer-only fields live outside the stat block.
+            if (fieldArg === "cr" || fieldArg === "hiddentag") {
+                if (!admin) return fail(message, "Error, that field is reviewer-only.", "CR comes from the formula; hidden tags are set at review.");
+                if (fieldArg === "cr") {
+                    if (/^(formula|none|clear|0)?$/.test(value)) {
+                        await updateSubmission(submissionID, { crOverride: 0 });
+                        return new SuccessMessage({
+                            channel: message.channel,
+                            title: `${submissionID}: CR override cleared.`,
+                            desc: `The formula's **${submission.carData.cr}** stands.`,
+                            author: message.author
+                        }).sendMessage();
+                    }
+                    const cr = parseInt(value, 10);
+                    if (!Number.isInteger(cr) || cr < 1 || cr > 9999) {
+                        return fail(message, "Error, that isn't a usable CR.", "A whole number from 1 to 9999, or `formula` to clear the override.");
+                    }
+                    await updateSubmission(submissionID, { crOverride: cr });
+                    return new SuccessMessage({
+                        channel: message.channel,
+                        title: `${submissionID}: CR set to ${cr}.`,
+                        desc: `Overrides the formula's ${submission.carData.cr}. The view shows both.`,
+                        author: message.author
+                    }).sendMessage();
+                }
+                const hidden = value ? value.split(/[,;]/).map(tag => tag.trim()).filter(Boolean) : [];
+                await updateSubmission(submissionID, { hiddenTag: hidden });
+                return new SuccessMessage({
+                    channel: message.channel,
+                    title: `${submissionID}: hidden tags ${hidden.length ? "set" : "cleared"}.`,
+                    desc: hidden.length ? hidden.join(", ") : "None.",
+                    author: message.author
+                }).sendMessage();
+            }
+
+            const canonical = canonicalKey(fieldArg);
+            if (!canonical || !settable.includes(canonical)) {
+                return fail(message, `Error, \`${fieldArg}\` isn't a field you can set.`, `Fields: ${fieldList}.`);
+            }
+            if (!value && !OPTIONAL_FIELDS.includes(canonical)) {
+                return fail(message, `Error, give \`${LABEL[canonical]}\` a value.`, `Example: \`cd-sub set ${submissionID} ${LABEL[canonical]} …\``);
+            }
+
+            // The whole block is re-validated with the one change applied, so a
+            // stat can't be pushed somewhere the paste would have refused.
+            const fields = rawFieldsFrom(submission.carData);
+            fields[canonical] = value;
+            const report = validateCarSubmission(fields, { isAdmin: admin });
+            if (!report.ok) {
+                return fail(message, "Error, that change doesn't validate.", describeReport(report).join("\n").slice(0, 3800));
+            }
+            const show = entry => Array.isArray(entry)
+                ? (entry.length ? entry.join(", ") : "—")
+                : typeof entry === "boolean" ? (entry ? "yes" : "no") : String(entry === "" || entry === undefined ? "—" : entry);
+            const before = submission.carData[canonical];
+            const crBefore = submission.carData.cr;
+            await updateSubmission(submissionID, { carData: report.car, ...mirrorFields(report.car) });
+            const notes = describeReport(report).filter(line => line.startsWith("✏️") || line.startsWith("⚠️"));
+            return new SuccessMessage({
+                channel: message.channel,
+                title: `${submissionID}: ${LABEL[canonical]} updated.`,
+                desc: `\`${show(before)}\` → **${show(report.car[canonical])}**`
+                    + (report.car.cr !== crBefore ? `\nCR ${crBefore} → **${report.car.cr}**` : "")
+                    + (notes.length ? `\n\n${notes.join("\n")}` : "")
+                    + (["changes", "withdrawn"].includes(submission.status) ? `\n\nSend it back to review with \`cd-sub submit ${submissionID}\` when you're done.` : ""),
+                author: message.author
+            }).sendMessage();
         }
 
         if (sub === "set") {
@@ -373,12 +573,37 @@ module.exports = {
                 return fail(message, "Error, that's already withdrawn.", "Nothing to do.");
             }
             await updateSubmission(submissionID, { status: "withdrawn" });
+            // Drafts were never in the feed, so pulling one makes no line either.
+            if (["pending", "changes"].includes(submission.status)) void feed("withdrawn", submission);
             return new SuccessMessage({
                 channel: message.channel,
                 title: `Withdrew ${submissionID}.`,
                 desc: "It's out of the review queue. The record and its image are kept, so it can be restored if you change your mind.",
                 author: message.author
             }).sendMessage();
+        }
+
+        // A car is edited by pasting the whole block again — the image stays,
+        // and the status stays too: a sent-back car returns to the queue only
+        // when the creator says `cd-sub submit`, not on the first half-fix.
+        if (sub === "edit" && submission.type === "car") {
+            if (!submission.carData) {
+                return fail(message, "Error, that submission has no car data.", "It predates car submissions — ask an admin.");
+            }
+            const admin = await isAdmin(message);
+            await message.channel.send({
+                content: `<@${message.author.id}> — paste the **full block** for \`${submissionID}\` again, every field. The image stays. Type \`cancel\` to leave it as it is.`
+            });
+            const collected = await collectCarPaste(message, { deadline: Date.now() + 10 * 60 * 1000, admin, allowBulk: false });
+            if (collected.kind !== "single") {
+                return fail(message, collected.kind === "cancelled" ? "Edit cancelled." : "Edit timed out.", "Nothing changed.");
+            }
+            const updated = await updateSubmission(submissionID, { carData: collected.report.car, ...mirrorFields(collected.report.car) });
+            return message.channel.send({
+                content: `✅ \`${submissionID}\` updated.`
+                    + (["changes", "withdrawn"].includes(submission.status) ? ` Send it back to review with \`cd-sub submit ${submissionID}\`.` : ""),
+                embeds: [await buildDetailEmbed(updated)]
+            });
         }
 
         if (sub === "edit") {

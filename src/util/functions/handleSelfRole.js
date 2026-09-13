@@ -16,6 +16,7 @@
  */
 
 const { selfAssignRoles } = require("../consts/consts.js");
+const { MessageFlags } = require("discord.js");
 
 const CUSTOM_ID_PREFIX = "selfrole";
 
@@ -30,7 +31,7 @@ async function handleSelfRoleInteraction(interaction) {
         // Panel is older than the current whitelist — the role was retired.
         await interaction.reply({
             content: "That role isn't self-assignable any more. Ask an admin to refresh this panel.",
-            ephemeral: true
+            flags: MessageFlags.Ephemeral
         }).catch(() => {});
         return true;
     }
@@ -40,7 +41,7 @@ async function handleSelfRoleInteraction(interaction) {
         if (!role) {
             await interaction.reply({
                 content: `The **${entry.label}** role no longer exists — an admin needs to fix the panel.`,
-                ephemeral: true
+                flags: MessageFlags.Ephemeral
             });
             return true;
         }
@@ -54,14 +55,14 @@ async function handleSelfRoleInteraction(interaction) {
             await member.roles.remove(role);
             await interaction.reply({
                 content: `${entry.emoji} Removed **${entry.label}** — you'll no longer be pinged for this.`,
-                ephemeral: true
+                flags: MessageFlags.Ephemeral
             });
         }
         else {
             await member.roles.add(role);
             await interaction.reply({
                 content: `${entry.emoji} You now have **${entry.label}** — ${entry.description.toLowerCase()}.`,
-                ephemeral: true
+                flags: MessageFlags.Ephemeral
             });
         }
     }
@@ -71,7 +72,7 @@ async function handleSelfRoleInteraction(interaction) {
         console.log(`[SelfRole] failed to toggle ${roleID} for ${interaction.user.id}: ${error.message}`);
         await interaction.reply({
             content: "Something went wrong assigning that role — an admin has been notified.",
-            ephemeral: true
+            flags: MessageFlags.Ephemeral
         }).catch(() => {});
     }
     return true;

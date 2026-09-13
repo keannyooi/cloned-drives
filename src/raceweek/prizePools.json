@@ -78,15 +78,15 @@
         "goldenopponent": { "packPool": ["p00199","p00138","p00133","p00137","p00132","p00198","p00095","p00096"] }
     },
     "rungs": {
-        "10": { "packPool": ["p00165"] },
+        "10": { "packPool": ["p00181"] },
         "25": { "money": 675000 },
-        "50": { "carPool": ["c07484"], "ordered": true },
-        "100": { "driverPool": ["d00010"], "ordered": true },
-        "150": { "carPool": ["c04921"], "ordered": true },
-        "200": { "packPool": ["p00128"] },
+        "50": { "carPool": ["c03090"], "ordered": true },
+        "100": { "driverPool": ["d00008"], "ordered": true },
+        "150": { "carPool": ["c06949"], "ordered": true },
+        "200": { "packPool": ["p00132"] },
         "250": { "packPool": ["p00127"] },
-		"300": { "carPool": ["c08620"], "ordered": true },
-        "350": { "packPool": ["p00169"] },
-        "400": { "carPool": ["c06513"], "driverPool": ["d00040"], "ordered": true }
+		"300": { "carPool": ["c06855"], "ordered": true },
+        "350": { "packPool": ["p00097"] },
+        "400": { "carPool": ["c02660"], "driverPool": ["d00001"], "ordered": true }
     }
 }

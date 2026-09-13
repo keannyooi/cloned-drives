@@ -1,0 +1,22 @@
+{
+    "layoutID": "rt00002",
+    "name": "Half Mile Drag",
+    "kind": "drag",
+    "fictional": true,
+    "distance": 0.5,
+    "tags": ["Drag", "Half Mile"],
+    "obstacles": { "speedbumps": 0, "humps": 0 },
+    "layout": {
+        "start": "standing",
+        "corners": { "tight": 0, "medium": 0, "fast": 0 },
+        "straights": [0.5],
+        "netClimb": 0
+    },
+    "conditions": [
+        { "id": "sunny", "label": "Sunny", "surface": "Drag", "weather": "Sunny", "equivalentTrackID": "t00055" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "A standing half mile on a prepared strip. No corners, one straight, nothing to tune: the distance alone decides how much of the run is launch, pull and flat-out. The live family has seven more surface variants (t00049–t00054 dirt/gravel/ice/rainy gravel/rainy/snow and t00153 sand) — each is one more line in conditions when wanted; the dirt and gravel ones carry the only real artwork (12dirt.png, 12gravel.jpg)."
+}

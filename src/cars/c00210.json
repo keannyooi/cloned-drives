@@ -1,7 +1,7 @@
 {
     "carID": "c00210",
     "cr": 614,
-    "make": "Brabus",
+    "make": ["Brabus","Mercedes-Benz","Mercedes-AMG"],
     "model": "E V12",
     "modelYear": 2004,
     "country": "DE",
@@ -21,6 +21,8 @@
     "fuelType": "Petrol",
     "mra": 93.48,
     "ola": 97.67,
+    "power": 425,
+    "powerEstimated": true,
     "description": "Brabus going brrr... probably should mention it was once the world's fastest street legal sedan.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BrabusEV12(2004).png",
     "creator": "Havvy",

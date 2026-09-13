@@ -1,0 +1,28 @@
+{
+    "layoutID": "rt00004",
+    "name": "Mugello Circuit",
+    "kind": "circuit",
+    "country": "IT",
+    "city": "Scarperia e San Piero",
+    "realName": "Autodromo Internazionale del Mugello",
+    "fictional": false,
+    "distance": 3.26,
+    "opened": 1974,
+    "altitude": 950,
+    "tags": ["Circuit", "F1", "MotoGP"],
+    "obstacles": { "speedbumps": 0, "humps": 0 },
+    "layout": {
+        "start": "rolling",
+        "corners": { "tight": 2, "medium": 8, "fast": 5 },
+        "straights": { "count": 15, "longest": 0.71 },
+        "netClimb": 0
+    },
+    "conditions": [
+        { "id": "dry", "label": "Sunny", "surface": "Track", "weather": "Sunny", "equivalentTrackID": "t00146" },
+        { "id": "wet", "label": "Rainy", "surface": "Track", "weather": "Rainy", "equivalentTrackID": "t00147" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "5.245 km, 15 turns, 1,141 m main straight. Corners: San Donato and Scarperia counted tight; Luco, Poggio Secco, Materassi, Borgo San Lorenzo, Palagio, Correntaio and Bucine medium; Casanova, Savelli, Arrabbiata 1 and 2 and Biondetti fast."
+}

@@ -335,6 +335,29 @@ const consts = {
     artSubmitterRoleIDs: ["809447750583975936", "1263581569407385685"],
 
     /**
+     * CAR SUBMISSIONS (`cd-submit car` — whole cars proposed from scratch).
+     * - submissionFeedChannelID: optional read-only feed of submission events
+     *   (submitted, sent back, approved, artwork picked, withdrawn, "in the
+     *   game"). Never pings. Blank = no feed. The dev bot posts to the Dev
+     *   variant instead, or nowhere when that is blank, so testing never
+     *   touches the real one.
+     * - reservedSubmissionTags: tags a creator may NOT put on a car — event and
+     *   system tags the reviewer adds at approval. Admins can always set them.
+     *   Add each new event tag here when the event is created.
+     * - draftReminderDays / draftAutoSubmitDays: a draft is a private hold.
+     *   The creator is DM'd at the first number and the car is sent to review
+     *   as it stands at the second. `cd-sub snooze` restarts the clock.
+     */
+    submissionFeedChannelID: "1546626517038272662",
+    // Same channel for now so dev testing shows the feed (dev IDs carry the T
+    // prefix, so they're identifiable). Point this at a scratch channel — or
+    // blank it — once the live feed matters.
+    submissionFeedChannelIDDev: "1546626517038272662",
+    reservedSubmissionTags: ["Token", "Trophy Tour 26"],
+    draftReminderDays: 14,
+    draftAutoSubmitDays: 30,
+
+    /**
      * Roles players may toggle themselves from the panel in
      * #auto-assign-roles (posted by `cd-rolepanel`). This list is the
      * WHITELIST — the button handler in index.js refuses any role ID that
@@ -359,6 +382,15 @@ const consts = {
             label: "Race Week Updates",
             emoji: "🏁",
             description: "Pinged when a new Race Week begins"
+        },
+        {
+            // Unlocks the submissions feed channel: every car, card and
+            // artwork as it's submitted and decided — i.e. what's coming
+            // before it's announced. Never pinged; it's a viewing role.
+            roleID: "1263581572980805632",
+            label: "Submissions Feed",
+            emoji: "🔧",
+            description: "See cars and cards as they're submitted — spoilers!"
         }
     ],
     

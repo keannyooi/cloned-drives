@@ -75,6 +75,10 @@ function surfaceFamily(track) {
 let entries = new Map();      // base carID -> PI entry
 let peakDistribution = [];    // sorted best-ten means of the live field (for rating outsiders)
 let summary = { cars: 0, tracks: 0, ms: 0, computedAt: null };
+// Per-track score columns of the live field, kept so an OUTSIDER (a car not
+// in the game yet — a submission under review) can be placed on every track
+// with a binary search instead of a full recompute. ~14 MB at 8k × 225.
+let outsiderField = null;     // { tracks, scores: Float64Array[] (descending per track), ids, crs, n }
 
 /**
  * Per-car half of evalScore for one tuned variant on one track. The MPH
@@ -142,12 +146,13 @@ function liveTracks() {
  * state. computePaceIndex() feeds it the live roster; scripts/pendingPI.js
  * feeds it live + staged cars to rate a whole batch as if it had shipped.
  */
-function computeTable(cars, tracks) {
+function computeTable(cars, tracks, options = {}) {
     const t0 = Date.now();
     const tunes = getAvailableTunes();
     const n = cars.length;
     const T = tracks.length;
-    if (n === 0 || T === 0) return { entries: new Map(), peakSorted: [], n, T, ms: 0 };
+    if (n === 0 || T === 0) return { entries: new Map(), peakSorted: [], scoreTables: [], n, T, ms: 0 };
+    const scoreTables = options.keepScores ? [] : null;
 
     const variants = cars.map(car => variantsOf(car, tunes));
     const cr = new Int32Array(n);
@@ -190,6 +195,11 @@ function computeTable(cars, tracks) {
             order[i] = i;
         }
         order.sort((a, b) => S[b] - S[a]);
+        if (scoreTables) {
+            const column = new Float64Array(n);
+            for (let k = 0; k < n; k++) column[k] = S[order[k]];
+            scoreTables.push(column);
+        }
 
         const family = surfaceFamily(track);
         famCount[family]++;
@@ -326,15 +336,88 @@ function computeTable(cars, tracks) {
             field: n
         });
     }
-    return { entries: next, peakSorted, n, T, ms: Date.now() - t0 };
+    return { entries: next, peakSorted, scoreTables: scoreTables || [], n, T, ms: Date.now() - t0 };
 }
 
 function computePaceIndex() {
-    const table = computeTable(liveRoster(), liveTracks());
+    const cars = liveRoster();
+    const tracks = liveTracks();
+    const table = computeTable(cars, tracks, { keepScores: true });
     entries = table.entries;
     peakDistribution = table.peakSorted;
+    outsiderField = {
+        tracks,
+        scores: table.scoreTables,
+        ids: cars.map(car => car.carID),
+        crs: Int32Array.from(cars, car => car.cr || 0),
+        n: table.n
+    };
     summary = { cars: table.n, tracks: table.T, ms: table.ms, computedAt: new Date() };
     return summary;
+}
+
+/**
+ * Where a car that is NOT in the game would land if it shipped today — used
+ * by the submission review view. Same scoring as the table; the field is the
+ * live roster as computed at startup, so the number matches what cd-cinfo
+ * would show the day after release (give or take other newcomers).
+ *
+ * Per track: cars strictly better than it = a binary search in that track's
+ * descending score column, so the whole rating is ~225 searches, not a
+ * recompute. Ties share, exactly as in the table.
+ *
+ * @param {Object} car - a carfile-shaped object (stats, gc, driveType, tyreType, tcs, abs, cr)
+ * @returns {null | { pi, average, crowns, crownTracks, topTracks, field, bracket: { cr, avgPI, n } | null, vsCR }}
+ */
+function rateOutsider(car) {
+    if (!outsiderField || !car || typeof car.topSpeed !== "number") return null;
+    const { tracks, scores, ids, crs, n } = outsiderField;
+    const variants = variantsOf({ cardType: ["Normal"], ...car }, getAvailableTunes());
+    const pcts = [];
+    const per = [];
+    const crownTracks = [];
+    for (let ti = 0; ti < tracks.length; ti++) {
+        const track = tracks[ti];
+        const pens = weatherVars[`${track.weather} ${track.surface}`] || { drivePen: 0, absPen: 0, tcsPen: 0, tyrePen: {} };
+        const mph = mphOf(track);
+        let s = -Infinity;
+        for (const v of variants) { const x = scoreVariant(v, track, pens, mph); if (x > s) s = x; }
+        const column = scores[ti];
+        let lo = 0, hi = n;
+        while (lo < hi) { const m = (lo + hi) >> 1; if (column[m] > s) lo = m + 1; else hi = m; }
+        const beat = lo;                          // strictly better cars
+        const pct = 1 - beat / (n + 1);
+        pcts.push(pct);
+        per.push({ trackName: track.trackName, pct, rank: beat + 1, gap: column[0] - s });
+        if (beat === 0) crownTracks.push(track.trackName);
+    }
+    const average = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length * 9999);
+    const ten = [...pcts].sort((a, b) => b - a).slice(0, PEAK_TRACKS);
+    const pi = rankPeakAgainstField(ten.reduce((a, b) => a + b, 0) / ten.length);
+    per.sort((a, b) => a.rank - b.rank || a.gap - b.gap);
+
+    // Its CR bracket: the average PI of live cars within ±25 CR, so the
+    // reviewer sees "typical for this price" beside the number.
+    let bracket = null;
+    if (typeof car.cr === "number") {
+        let sum = 0, count = 0;
+        for (let i = 0; i < n; i++) {
+            if (Math.abs(crs[i] - car.cr) > 25) continue;
+            const entry = entries.get(ids[i]);
+            if (!entry) continue;
+            sum += entry.pi; count++;
+        }
+        if (count > 0) bracket = { cr: car.cr, avgPI: Math.round(sum / count), n: count };
+    }
+    return {
+        pi, average,
+        crowns: crownTracks.length,
+        crownTracks: crownTracks.slice(0, KING_LIST_CAP),
+        topTracks: per.slice(0, TOP_TRACKS).map(t => ({ trackName: t.trackName, pct: Math.round(t.pct * 9999), rank: t.rank, gap: Math.round(t.gap * 10) / 10 })),
+        field: n,
+        bracket,
+        vsCR: bracket ? pi - bracket.avgPI : null
+    };
 }
 
 /** PI entry for any car (BM cards resolve to their base car); null if unrated. */
@@ -367,7 +450,7 @@ function rankPeakAgainstField(peakMean) {
 }
 
 module.exports = {
-    computePaceIndex, computeTable, liveRoster, liveTracks, getPI, getPaceSummary, surfaceFamily, SURFACE_LABELS, FAMILIES, PODIUM, SAVER, CEILING_MAX, CEILING_STEP, PEAK_TRACKS, rankPeakAgainstField,
+    computePaceIndex, computeTable, liveRoster, liveTracks, getPI, getPaceSummary, surfaceFamily, SURFACE_LABELS, FAMILIES, PODIUM, SAVER, CEILING_MAX, CEILING_STEP, PEAK_TRACKS, rankPeakAgainstField, rateOutsider,
     // internals shared with scripts/tests (scripts/pendingPI.js rates cars that are not in the game yet)
     _allEntries, _scoreVariant: scoreVariant, _variantsOf: variantsOf, _mphOf: mphOf,
     _scoreVariantForTest: scoreVariant, _variantsForTest: variantsOf, _mphForTest: mphOf

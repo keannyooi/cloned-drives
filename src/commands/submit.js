@@ -3,7 +3,9 @@
 /**
  * CREATOR SUBMISSIONS — cd-submit
  * ===============================
- * Runs the Black Market questionnaire and files the result.
+ * Runs the Black Market questionnaire and files the result. Artwork
+ * (`cd-submit art`) and whole cars (`cd-submit car`) are routed to their own
+ * modules — submitArt.js and submitCar.js.
  *
  * Flow: button → modal (5 fields) → resolve the reference car and auto-fill
  * everything derivable from it → wait for the image in-channel → archive it →
@@ -17,12 +19,13 @@
 const bot = require("../config/config.js");
 const {
     ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder,
-    ModalBuilder, TextInputBuilder, TextInputStyle
+    ModalBuilder, TextInputBuilder, TextInputStyle,
+    MessageFlags
 } = require("discord.js");
 const { _match } = require("../util/functions/search.js");
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const { submissionArchiveChannelID, artSubmitterRoleIDs, defaultChoiceTime } = require("../util/consts/consts.js");
-const { hasRole } = require("../util/functions/submissionViews.js");
+const { hasRole, feed } = require("../util/functions/submissionViews.js");
 const { getCar, getCarFiles } = require("../util/functions/dataManager.js");
 const { isBMCar } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
@@ -30,6 +33,7 @@ const { crName, archiveLabel } = require("../util/functions/submissionDisplay.js
 const { createSubmission, mirrorToDisk } = require("../util/functions/submissionStore.js");
 const { validateAttachment, archiveSubmissionImage } = require("../util/functions/submissionImage.js");
 const { runArtSubmission } = require("../util/functions/submitArt.js");
+const { runCarSubmission } = require("../util/functions/submitCar.js");
 
 // How long each stage waits before giving up on the submitter.
 const FORM_TIMEOUT = 5 * 60 * 1000;
@@ -145,10 +149,10 @@ function previewEmbed(draft, resolved, imageURL) {
 module.exports = {
     name: "submit",
     aliases: ["submitcar"],
-    usage: ["bm", "art <car name>"],
+    usage: ["bm", "art <car name>", "car"],
     args: 0,
     category: "Miscellaneous",
-    description: "Submit a Black Market card design, or artwork for a car that's waiting on one.",
+    description: "Submit a Black Market card design, artwork for a car that's waiting on one, or a whole new car.",
     async execute(message, args) {
         // ── configuration guards ─────────────────────────────────────────────
         // Gated by ROLE, not by channel — submissions run in DMs so creators
@@ -177,11 +181,16 @@ module.exports = {
             // a much shorter flow, so it lives in its own module.
             return runArtSubmission(message, args.slice(1));
         }
+        if (type === "car") {
+            // A whole car from a pasted stat block — its own module too.
+            return runCarSubmission(message, args.slice(1));
+        }
         if (type !== "bm") {
             return new ErrorMessage({
                 channel: message.channel,
                 title: "Error, what are you submitting?",
-                desc: "`cd-submit bm` — a new Black Market card design\n"
+                desc: "`cd-submit car` — a whole new car, from a pasted stat block\n"
+                    + "`cd-submit bm` — a new Black Market card design\n"
                     + "`cd-submit art <car>` — artwork for a car that's waiting on one\n\n"
                     + "See what needs artwork with `cd-sub missing`.",
                 author: message.author
@@ -374,7 +383,7 @@ module.exports = {
 
             await override.reply({
                 content: problems.length > 0 ? `⚠️ ${problems.join(" ")}` : "✅ Updated.",
-                ephemeral: true
+                flags: MessageFlags.Ephemeral
             }).catch(() => {});
             await preview.edit({ embeds: [previewEmbed(draft, resolved, attachment.url)] }).catch(() => {});
         }
@@ -415,6 +424,7 @@ module.exports = {
             pending.imageHeight = archived.height;
             await pending.save();
             mirrorToDisk(pending);
+            void feed("submitted", pending);
 
             return new SuccessMessage({
                 channel: message.channel,

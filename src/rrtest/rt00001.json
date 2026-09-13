@@ -1,0 +1,28 @@
+{
+    "layoutID": "rt00001",
+    "name": "Kenya Safari Rally Route",
+    "kind": "stage",
+    "country": "KE",
+    "city": "Naivasha",
+    "realName": "WRC Safari Rally Kenya (Kedong stage)",
+    "fictional": false,
+    "distance": 19.9,
+    "opened": 1953,
+    "altitude": 6200,
+    "tags": ["WRC", "Safari Rally", "Rally"],
+    "obstacles": { "speedbumps": 5, "humps": 7 },
+    "layout": {
+        "start": "standing",
+        "corners": { "tight": 12, "medium": 28, "fast": 20 },
+        "straights": { "count": 60, "longest": 1.4 },
+        "netClimb": 0
+    },
+    "conditions": [
+        { "id": "dry", "label": "Dirt", "surface": "Dirt", "weather": "Sunny", "equivalentTrackID": "t00120" },
+        { "id": "wet", "label": "Muddy", "surface": "Dirt", "weather": "Rainy", "equivalentTrackID": "t00121" }
+    ],
+    "background": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Arts/Temp.png",
+    "map": "https://file.garden/ZSrBMiDRyR84aPJp/Track%20Maps/Temp.png",
+    "creator": "Bnuuy",
+    "notes": "Composite Safari stage: rough, fast and flowing, with the drainage humps and rock sections the live pair modelled as 7 humps and 5 bumps. Distance and altitude are the Kedong stage's near Naivasha. The corner counts and straights are an approximation for the sandbox, not a traced map — count them properly when the real map is at hand. netClimb 0 = not surveyed."
+}

@@ -18,6 +18,7 @@ const regenDealership = require("./src/util/functions/regenDealership.js");
 const { checkAutoEvents } = require("./src/util/functions/autoEvents.js");
 const { checkRaceWeekRollover } = require("./src/util/functions/raceWeekManager.js");
 const { handleSelfRoleInteraction } = require("./src/util/functions/handleSelfRole.js");
+const { runSubmissionSweep, sweepDrafts, sweepSuggestions } = require("./src/util/functions/submissionSweep.js");
 
 /**
  * The weekly rollover resets EVERY player's week, so a devMode bot — which
@@ -50,6 +51,10 @@ const dataStats = dataManager.initialize("./src");
 // Pace Index — per-car strength table from the race formula (docs/pace-index.md).
 // Pure function of the loaded cars/tracks; rebuilt on every start.
 const paceSummary = require("./src/util/functions/paceIndex.js").computePaceIndex();
+// Sandbox track pool for cd-testrace (src/rrtest, v2 format). Separate map: Random Race, events, PI and PvP never see it.
+const testTracks = require("./src/util/functions/testTracks.js");
+testTracks.load("./src");
+testTracks.logSummary();
 console.log(`   Pace Index: ${paceSummary.cars} cars x ${paceSummary.tracks} tracks in ${paceSummary.ms}ms`);
 
 // Exit if critical files failed to load
@@ -140,7 +145,7 @@ setInterval(() => {
 }, 60000);
 
 // bot events
-bot.once("ready", async () => {
+bot.once("clientReady", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
     bot.awakenTime = DateTime.now();
     watchdogArmed = true;
@@ -150,6 +155,10 @@ bot.once("ready", async () => {
     // Art hosted as Discord message links resolves to a signed URL that expires
     // in ~24h, so it is refreshed here and every 12h after. Needs the gateway up.
     startImageLinkRefresh();
+    // Car submissions: the draft clock (reminders, auto-send) and the "in the
+    // game" check for approved cars that now load. Scoped by isDev, so the dev
+    // bot only touches its own records. Repeats daily at 12:00 UTC below.
+    runSubmissionSweep().catch(error => console.log(`[Submissions] startup sweep failed: ${error.message}`));
     // devMode shares the production DB — a dev bot must never run (or announce)
     // the live Monday rollover. Test rollovers manually instead.
     if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] startup check failed: ${error.message}`));
@@ -294,6 +303,14 @@ setInterval(async () => {
 // cadence or spawn day is due. Proving Grounds and friends live here.
 schedule("0 0 * * *", async () => {
     await checkAutoEvents();
+});
+
+// The draft clock for car submissions — reminder at 14 days, auto-send at 30
+// (consts). Midday UTC so the DMs land at a civil hour on both sides of the
+// Atlantic. Idempotent, so the startup run above and this never double up.
+schedule("0 12 * * *", async () => {
+    await sweepDrafts().catch(error => console.log(`[Submissions] daily sweep failed: ${error.message}`));
+    await sweepSuggestions();
 });
 
 schedule("0 */12 * * *", async () => {

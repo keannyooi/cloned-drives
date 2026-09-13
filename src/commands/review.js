@@ -35,13 +35,40 @@ async function artworkAttachment(submission) {
 }
 const { submissionArchiveChannelID } = require("../util/consts/consts.js");
 const { getCar } = require("../util/functions/dataManager.js");
-const { crName } = require("../util/functions/submissionDisplay.js");
+const { crName, carCrName } = require("../util/functions/submissionDisplay.js");
 const submissionModel = require("../models/submissionSchema.js");
 const { updateSubmission, rebuildMirror, purgeDevSubmissions, normalizeSubmissionID } = require("../util/functions/submissionStore.js");
-const { generateCarfile, formatCarfile } = require("../util/functions/submissionCarfile.js");
+const { generateCarfile, generateNormalCarfile, formatCarfile } = require("../util/functions/submissionCarfile.js");
 const { getStagingCar, refreshStaging } = require("../util/functions/stagingCars.js");
 const { previewEmbed, previewButtons, loadCandidateImages } = require("../util/functions/submissionPreview.js");
-const { isAdmin, fail, summarise, notifyCreator, buildDetailEmbed, paginate, bySubmissionNumber } = require("../util/functions/submissionViews.js");
+const {
+    isAdmin, fail, summarise, submissionName, notifyCreator, feed, buildDetailEmbed, paginate, bySubmissionNumber,
+    archiveMessageLink, rawFieldsFrom, mirrorFields
+} = require("../util/functions/submissionViews.js");
+const { validateCarSubmission, describeReport } = require("../util/functions/carSubmissionValidator.js");
+const { runSubmissionSweep } = require("../util/functions/submissionSweep.js");
+const { formatDate } = require("../util/functions/submissionViews.js");
+const { DateTime } = require("luxon");
+
+/**
+ * Queue order: everyone's first car before anyone's second. Oldest-first
+ * within a creator, creators in the order their oldest entry arrived — so a
+ * ten-car batch from one person can't wall off someone else's single card.
+ * `list` must already be in submission-number order.
+ */
+function interleaveByCreator(list) {
+    const lanes = new Map();
+    for (const entry of list) {
+        const key = entry.creatorID || "?";
+        if (!lanes.has(key)) lanes.set(key, []);
+        lanes.get(key).push(entry);
+    }
+    const out = [];
+    for (let round = 0; out.length < list.length; round++) {
+        for (const lane of lanes.values()) if (lane[round]) out.push(lane[round]);
+    }
+    return out;
+}
 const listUpdate = require("../util/functions/listUpdate.js");
 const profileModel = require("../models/profileSchema.js");
 const BT = String.fromCharCode(96);   // backtick, for inline code in messages
@@ -50,9 +77,10 @@ module.exports = {
     name: "review",
     aliases: ["rev", "reviewsubs"],
     usage: [
-        "queue [bm/art] [page]", "view <ID>", "preview <carID | ID>",
-        "approve <ID> [IBM|ABM|PBM] [collection]", "reject <ID> <reason>", "changes <ID> <note>",
-        "sethud <ID> <url>", "pending", "rescan", "rebuildmirror", "purgedev"
+        "queue [bm/art/car/edit] [page]", "view <ID>", "preview <carID | ID>",
+        "approve <ID> [IBM|ABM|PBM | Normal|Prize | apply] [collection]", "reject <ID> <reason>", "changes <ID> <note>",
+        "sethud <ID> <url>", "pending", "rescan", "rebuildmirror", "purgedev",
+        "sweep", "clock <ID> <days>"
     ],
     args: 0,
     category: "Admin",
@@ -67,7 +95,7 @@ module.exports = {
             // Optional type filter so BM cards and artwork don't clash in one
             // list: queue bm / queue art / queue saw / queue sbm — with or
             // without a page number after it.
-            const TYPE_WORDS = { bm: "bm", sbm: "bm", art: "art", saw: "art", artwork: "art" };
+            const TYPE_WORDS = { bm: "bm", sbm: "bm", art: "art", saw: "art", artwork: "art", car: "car", cars: "car", scr: "car", edit: "edit", edits: "edit", sed: "edit", suggestion: "edit", suggestions: "edit" };
             let typeFilter = null, pageArg = args[1];
             if (args[1] && TYPE_WORDS[String(args[1]).toLowerCase()]) {
                 typeFilter = TYPE_WORDS[String(args[1]).toLowerCase()];
@@ -81,27 +109,31 @@ module.exports = {
                 return new InfoMessage({
                     channel: message.channel,
                     title: typeFilter
-                        ? `No pending ${typeFilter === "bm" ? "BM card" : "artwork"} submissions.`
+                        ? `No pending ${typeFilter === "bm" ? "BM card" : typeFilter === "car" ? "car" : typeFilter === "edit" ? "suggested edit" : "artwork"} submissions.`
                         : "The review queue is empty.",
                     desc: typeFilter ? "The other queue might not be — `cd-review queue` shows everything." : "Nothing is waiting on you.",
                     author: message.author
                 }).sendMessage();
             }
             // Numeric ID order = true submission order (a DB string sort puts
-            // SAW10 before SAW2), and listUpdate gives the same page buttons
-            // every other list in the bot has.
+            // SAW10 before SAW2), then interleaved by creator so a batch from
+            // one person never walls off everyone else. listUpdate gives the
+            // same page buttons every other list in the bot has.
             all.sort(bySubmissionNumber);
+            const ordered = interleaveByCreator(all);
+            const creators = new Set(all.map(entry => entry.creatorID)).size;
             const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
-            const { page, totalPages } = paginate(all, pageArg);
-            return listUpdate(all, page, totalPages, queueDisplay, settings);
+            const { page, totalPages } = paginate(ordered, pageArg);
+            return listUpdate(ordered, page, totalPages, queueDisplay, settings);
 
             function queueDisplay(section, page, totalPages) {
-                const label = typeFilter === "bm" ? " BM cards" : typeFilter === "art" ? " artwork submissions" : "";
+                const label = typeFilter === "bm" ? " BM cards" : typeFilter === "art" ? " artwork submissions" : typeFilter === "car" ? " cars" : typeFilter === "edit" ? " suggested edits" : "";
                 return new InfoMessage({
                     channel: message.channel,
                     title: "Review queue — " + all.length + " pending" + label,
                     desc: section.map(summarise).join("\n")
-                        + (typeFilter ? "" : "\n\n*Split the queue: `cd-review queue bm` · `cd-review queue art`*"),
+                        + (creators > 1 ? "\n\n*Everyone's first before anyone's second.*" : "")
+                        + (typeFilter ? "" : "\n*Split the queue: `cd-review queue bm` · `queue art` · `queue car` · `queue edit`*"),
                     author: message.author,
                     footer: "Page " + page + " of " + totalPages + " - Interact with the buttons below to navigate through pages."
                 });
@@ -109,13 +141,16 @@ module.exports = {
         }
 
         if (sub === "pending") {
-            const waiting = await submissionModel.find({ status: "approved", finalCarID: "" }).lean();
+            // Car submissions are left out on purpose: once staged and given a
+            // carID, an art-less car is tracked by `cd-sub missing` (the staging
+            // scan), and its art arrives through the artwork flow — not sethud.
+            const waiting = await submissionModel.find({ status: "approved", finalCarID: "", type: { "$ne": "car" } }).lean();
             waiting.sort(bySubmissionNumber);
             return new InfoMessage({
                 channel: message.channel,
                 title: waiting.length === 0 ? "Nothing is waiting on art." : `${waiting.length} approved, still needing art`,
                 desc: waiting.length === 0
-                    ? "Every approved submission has its final URL attached."
+                    ? "Every approved BM card has its final URL attached. Art-less cars live in `cd-sub missing` once staged."
                     : waiting.map(summarise).join("\n") + "\n\nAttach one with `cd-review sethud <ID> <url>`.",
                 author: message.author
             }).sendMessage();
@@ -161,9 +196,20 @@ module.exports = {
             }).sendMessage();
         }
 
-        // The staging scan is cached from startup — normally that's right, since
-        // a restart is what publishes a new batch of carfiles. This re-reads the
-        // folder without one, which matters when iterating.
+        // Run the draft clock and the "in the game" check now rather than
+        // waiting for midday — for testing, or after a batch of cars ships.
+        if (sub === "sweep") {
+            const { drafts, live, suggestions } = await runSubmissionSweep();
+            return new SuccessMessage({
+                channel: message.channel,
+                title: "Sweep done.",
+                desc: `**Drafts:** ${drafts.drafts} checked — ${drafts.reminded} reminded, ${drafts.sent} sent to review, `
+                    + `${drafts.blocked} overdue but blocked, ${drafts.reset} given a fresh clock.\n`
+                    + `**Live check:** ${live.approved} approved car(s) looked up, ${live.live} now in the game.\n`
+                    + `**Suggestions:** ${suggestions.checked} open, ${suggestions.closed} closed as stale.`,
+                author: message.author
+            }).sendMessage();
+        }
 
         // ── preview: the card, with each candidate artwork on it ─────────────
         if (sub === "preview") {
@@ -241,12 +287,75 @@ module.exports = {
 
 
         if (sub === "view") {
-            return message.channel.send({ embeds: [await buildDetailEmbed(submission)] });
+            return message.channel.send({ embeds: [await buildDetailEmbed(submission, { forReviewer: true })] });
+        }
+
+        // Move a draft's clock: `clock TSCR2 0` makes it due now, `clock TSCR2 15`
+        // puts it 15 days out (so the 14-day reminder is already due). Re-arms
+        // the reminder. For testing the sweep without waiting a fortnight.
+        if (sub === "clock") {
+            if (submission.type !== "car" || submission.status !== "draft") {
+                return fail(message, "Error, only drafts have a clock.", "The clock decides when a draft is reminded about and sent automatically.");
+            }
+            const days = parseInt(args[2], 10);
+            if (!Number.isInteger(days) || days < -365 || days > 365) {
+                return fail(message, "Error, give a number of days.", `\`cd-review clock ${submissionID} 0\` — due now · \`cd-review clock ${submissionID} 15\` — 15 days out`);
+            }
+            const deadline = DateTime.utc().plus({ days }).toISO();
+            await updateSubmission(submissionID, { draftDeadline: deadline, reminderSentFor: "", blockedNotifiedOn: "" });
+            return new SuccessMessage({
+                channel: message.channel,
+                title: `${submissionID} is now due ${days <= 0 ? "now" : `on ${formatDate(deadline)}`}.`,
+                desc: "Reminder re-armed. Run `cd-review sweep` to apply the clock immediately.",
+                author: message.author
+            }).sendMessage();
         }
 
         if (sub === "approve") {
             if (submission.status === "approved") {
                 return fail(message, "Error, that's already approved.", `Its file is \`${submission.generatedFile || "unknown"}\`.`);
+            }
+
+            // ── suggested edits: write the value in (power) or accept the ticket ──
+            if (submission.type === "edit") {
+                const { applySuggestion, notifyEveryone } = require("../util/functions/suggestEdit.js");
+                const wantApply = (args[2] || "").toLowerCase() === "apply";
+                let outcome;
+                try { outcome = await applySuggestion(submission, { by: message.author.id, apply: wantApply }); }
+                catch (error) {
+                    return fail(message, "Error, the carfile couldn't be patched.", `\`${error.message}\`\n\nNothing was changed; the suggestion is still pending.`);
+                }
+                const approved = await updateSubmission(submissionID, {
+                    status: "approved",
+                    reviewedBy: message.author.id,
+                    reviewedAt: new Date().toISOString(),
+                    ...(outcome.applied ? { appliedAt: new Date().toISOString(), appliedBy: message.author.id, appliedValue: String(outcome.to).slice(0, 200) } : {})
+                });
+                const target = `**${submission.targetName || submission.reference}**`;
+                const shown = value => (value === null || value === undefined || value === "" ? "—" : String(value).slice(0, 200));
+                const reached = await notifyEveryone(
+                    { ...approved.toObject(), status: "approved" },
+                    "✅ Your suggestion was accepted",
+                    `The **${submission.field}** of ${target} ${outcome.applied ? `is now **${submission.proposedValue}**` : "will be changed as you suggested"}. Thanks for the correction 🖤`
+                );
+                void feed("approved", approved, {
+                    detail: outcome.applied ? `applied: ${shown(outcome.from).slice(0, 60)} → ${shown(outcome.to).slice(0, 60)}` : "accepted, applied by hand"
+                });
+                if (outcome.applied) {
+                    await message.channel.send({
+                        content: `\`${submissionID}\` — patched \`${submission.reference}.json\` and reloaded the car. If the bot runs on another machine, drop this over your copy before committing.`,
+                        files: [new AttachmentBuilder(Buffer.from(outcome.text, "utf8"), { name: `${submission.reference}.json` })]
+                    }).catch(() => {});
+                }
+                return new SuccessMessage({
+                    channel: message.channel,
+                    title: `Approved ${submissionID}.`,
+                    desc: (outcome.applied
+                        ? `**${submission.field}** of ${target}: ${shown(outcome.from)} → **${shown(outcome.to)}**. The carfile is patched and the car reloaded — commit \`src/cars/${submission.reference}.json\` on your normal cadence.`
+                        : `Marked accepted — ${outcome.why || "apply it by hand"}.\n\n**Proposed:** ${String(submission.proposedValue).slice(0, 1500)}`)
+                        + (reached === "nobody" ? "\n\n⚠️ The suggester couldn't be notified." : ""),
+                    author: message.author
+                }).sendMessage();
             }
 
             // Art: nothing to generate — the carfile already exists and only
@@ -285,6 +394,7 @@ module.exports = {
                     "🎨 Your artwork was picked!",
                     `**${submission.targetName}** is going into the game with your card. Nice one 🖤`
                 );
+                void feed("picked", submission, { detail: rivals.length > 0 ? `${rivals.length} other${rivals.length === 1 ? "" : "s"} closed` : "" });
 
                 const artwork = await artworkAttachment(submission);
                 if (artwork) {
@@ -304,6 +414,110 @@ module.exports = {
                     author: message.author
                 }).sendMessage();
             }
+            // ── whole cars: Normal | Prize, full carfile to the staging root ──
+            if (submission.type === "car") {
+                if (!submission.carData) {
+                    return fail(message, "Error, that submission has no car data.", "It predates car submissions and can't be approved from here.");
+                }
+                // Re-check against today's roster — a tag may have been retired
+                // since it was sent. What's stored is what ships.
+                const report = validateCarSubmission(rawFieldsFrom(submission.carData), { isAdmin: true });
+                if (!report.ok) {
+                    return fail(message, "Error, it no longer validates.",
+                        describeReport(report).join("\n").slice(0, 3500) + `\n\nFix it with \`cd-sub set ${submissionID} <field> <value>\`.`);
+                }
+
+                const CAR_TYPES = { NORMAL: "Normal", PRIZE: "Prize" };
+                let cardType = CAR_TYPES[(args[2] || "").toUpperCase()] || "";
+                let collectionArg = cardType ? args.slice(3).join(" ") : args.length > 2 ? args.slice(2).join(" ") : "";
+                collectionArg = collectionArg.trim().replace(/^["'“”]+|["'“”]+$/g, "").trim();
+                if (!cardType) {
+                    const pickRow = new ActionRowBuilder().addComponents(
+                        new ButtonBuilder().setCustomId("carTypeNormal").setLabel("Normal").setStyle(ButtonStyle.Primary),
+                        new ButtonBuilder().setCustomId("carTypePrize").setLabel("Prize").setStyle(ButtonStyle.Secondary)
+                    );
+                    const ask = await message.channel.send({
+                        embeds: [new EmbedBuilder()
+                            .setColor(0x3498db)
+                            .setTitle(`Approving ${submissionID} — which type?`)
+                            .setDescription("**Normal** — drops from packs and the dealership like any other car\n"
+                                + "**Prize** — a locked reward card: events, Race Week, never from packs")],
+                        components: [pickRow]
+                    });
+                    const picked = await ask.awaitMessageComponent({
+                        filter: click => click.user.id === message.author.id,
+                        time: 60000
+                    }).catch(() => null);
+                    await ask.edit({ components: [] }).catch(() => {});
+                    if (!picked) return;
+                    await picked.deferUpdate().catch(() => {});
+                    cardType = picked.customId === "carTypePrize" ? "Prize" : "Normal";
+                }
+                const collectionName = collectionArg || submission.collectionName || "";
+
+                // Art that arrived with the submission is hosted off its archive
+                // message link, so the car is complete the moment it's approved
+                // and is never offered to other artists. No art = "" = it shows
+                // in cd-sub missing once it has a carID.
+                const racehud = submission.racehud || archiveMessageLink(submission);
+                const approved = await updateSubmission(submissionID, {
+                    status: "approved",
+                    cardType,
+                    collectionName,
+                    racehud,
+                    // Same convention sethud uses for BM cards: "staged" marks
+                    // "nothing more to attach", so `pending` stays clean.
+                    finalCarID: racehud ? "staged" : "",
+                    reviewedBy: message.author.id,
+                    reviewedAt: new Date().toISOString(),
+                    carData: report.car,
+                    ...mirrorFields(report.car)
+                });
+                let generated;
+                try {
+                    generated = generateNormalCarfile(approved.toObject());
+                }
+                catch (error) {
+                    return fail(message, "Error, the carfile couldn't be written.", `\`${error.message}\``);
+                }
+                await updateSubmission(submissionID, { generatedFile: generated.path });
+
+                const reached = await notifyCreator(
+                    { ...approved.toObject(), status: "approved" },
+                    "✅ Your car was approved!",
+                    `**${carCrName(approved)}** is going into the game as a **${cardType}** card.`
+                        + (racehud ? "" : "\n\nIt has no artwork yet — once it's staged with a carID, anyone (you included) can draw it via `cd-submit art`.")
+                        + "\n\nThanks for building it 🖤"
+                );
+                void feed("approved", approved, {
+                    detail: `${cardType}${collectionName ? ` · ${collectionName}` : ""}${racehud ? "" : " · needs artwork"}`
+                });
+
+                const files = [new AttachmentBuilder(Buffer.from(formatCarfile(generated.json), "utf8"), { name: generated.filename })];
+                const artwork = await artworkAttachment(approved);
+                if (artwork) files.push(artwork);
+                await message.channel.send({
+                    content: `\`${submissionID}\` — **${cardType}** carfile${artwork ? " + the artwork" : ""}, ready to drop into \`src/0 Carfiles to Add/\``,
+                    files
+                }).catch(() => {});
+
+                const crLine = approved.crOverride > 0
+                    ? `CR **${approved.crOverride}** (reviewer override; formula said ${report.car.cr})`
+                    : `CR **${report.car.cr}** (formula)`;
+                return new SuccessMessage({
+                    channel: message.channel,
+                    title: `Approved ${submissionID} as ${cardType}.`,
+                    desc: `Staged at \`${generated.path}\` (and attached above). ${crLine}. Collection: **${collectionName || "none"}**.\n\n`
+                        + (racehud
+                            ? "🖼️ Art is hosted off the archive link, so the car is complete. To move it to file.garden later: "
+                                + `\`cd-review sethud ${submissionID} <url>\`.`
+                            : "**Next:** drop the file into staging, run the carID script, push, then `cd-review rescan` — "
+                                + "it appears in `cd-sub missing` for artwork from there.")
+                        + (reached === "nobody" ? "\n\n⚠️ The creator couldn't be notified." : ""),
+                    author: message.author
+                }).sendMessage();
+            }
+
             if (!submission.reference) {
                 return fail(message, "Error, this can't be approved yet.",
                     `It's based on "${submission.referenceName}", which isn't in the game. Add that car first, then edit the submission's reference.`);
@@ -378,6 +592,7 @@ module.exports = {
                 // "TechArt,Porsche".
                 `**${crName(submission, getCar(submission.reference))}** is going into the game.\n\nThanks for building it 🖤`
             );
+            void feed("approved", submission, { detail: `${cardType}${collectionName ? ` · ${collectionName}` : ""}` });
             // The carfile is attached as well as written to disk: when the bot
             // runs on a remote host (PebbleHost etc.) the file lands on THAT
             // filesystem, so Discord is the only way it reaches you.
@@ -405,26 +620,37 @@ module.exports = {
             if (!note) {
                 return fail(message, "Error, a reason is required.", `Example: \`cd-review ${sub} ${submissionID} the reference car is wrong\``);
             }
+            if (submission.type === "edit" && sub === "changes") {
+                return fail(message, "Error, suggestions can't be sent back.", "Approve it, or reject it with a reason — the suggester can always file a new one from the car's page.");
+            }
             await updateSubmission(submissionID, {
                 status: sub === "reject" ? "rejected" : "changes",
                 reviewedBy: message.author.id,
                 reviewedAt: new Date().toISOString(),
                 reviewNote: note
             });
-            const reached = await notifyCreator(
+            // Must NOT say "cd-submit …" — that mints a new ID and orphans this
+            // record. Editing keeps the ID. BM cards return to the queue on the
+            // first edit; cars return only when the creator says `submit`, so a
+            // half-fixed car never lands back in front of the reviewer.
+            const howToFix = submission.type === "car"
+                ? `\n\n**To fix it — same ID, no need to start over:**\n`
+                    + `\`cd-sub set ${submissionID} <field> <value>\` — change one stat\n`
+                    + `\`cd-sub edit ${submissionID}\` — paste the whole block again\n`
+                    + `\`cd-sub image ${submissionID}\` — add or replace the artwork\n\n`
+                    + `Then \`cd-sub submit ${submissionID}\` to send it back to review.`
+                : `\n\n**To fix it — same ID, no need to start over:**\n`
+                    + `\`cd-sub edit ${submissionID}\` — reopens the form, pre-filled\n`
+                    + `\`cd-sub image ${submissionID}\` — replace the artwork\n\n`
+                    + "It goes back into the review queue the moment you do.";
+            // A suggestion's +1s hear the verdict too.
+            const notify = submission.type === "edit" ? require("../util/functions/suggestEdit.js").notifyEveryone : notifyCreator;
+            const reached = await notify(
                 { ...submission.toObject(), status: sub === "reject" ? "rejected" : "changes" },
                 sub === "reject" ? "❌ Your submission wasn't accepted" : "✏️ Your submission needs changes",
-                `**${crName(submission, submission.reference ? getCar(submission.reference) : null)}**\n\n> ${note}`
-                    // Must NOT say "cd-submit bm" — that mints a new ID and
-                    // orphans this record. Editing keeps the ID and puts it
-                    // straight back in the queue.
-                    + (sub === "changes"
-                        ? `\n\n**To fix it — same ID, no need to start over:**\n`
-                            + `\`cd-sub edit ${submissionID}\` — reopens the form, pre-filled\n`
-                            + `\`cd-sub image ${submissionID}\` — replace the artwork\n\n`
-                            + "It goes back into the review queue the moment you do."
-                        : "")
+                `**${submissionName(submission)}**\n\n> ${note}` + (sub === "changes" ? howToFix : "")
             );
+            void feed(sub === "reject" ? "rejected" : "changes", submission, { reason: note });
             return new SuccessMessage({
                 channel: message.channel,
                 title: `${sub === "reject" ? "Rejected" : "Sent back"} ${submissionID}.`,
@@ -449,7 +675,8 @@ module.exports = {
             const updated = await updateSubmission(submissionID, { racehud: url, finalCarID: "staged" });
             let generated;
             try {
-                generated = generateCarfile(updated.toObject ? updated.toObject() : updated);
+                const plain = updated.toObject ? updated.toObject() : updated;
+                generated = plain.type === "car" ? generateNormalCarfile(plain) : generateCarfile(plain);
             }
             catch (error) {
                 return fail(message, "Error, the carfile couldn't be regenerated.", `\`${error.message}\``);
@@ -471,5 +698,7 @@ module.exports = {
 
         return fail(message, "Error, unknown subcommand.",
             "Try one of: " + module.exports.usage.join(" · "));
-    }
+    },
+    // exported for the test harness
+    interleaveByCreator
 };
