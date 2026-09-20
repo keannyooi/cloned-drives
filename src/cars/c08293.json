@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 76.15,
     "ola": 81.25,
-    "power": 260,
-    "powerEstimated": true,
+    "power": 451,
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/Puritalia427(2014).png",
     "creator": "Bnuuy",
 	"hiddenTag": [""],
+	"editLog": [{"at":"2026-09-20T13:57:45.693Z","by":"209038568138604546","field":"power","via":"SED2","from":260,"to":451}],
     "cardType": ["Normal"]
 }

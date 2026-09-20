@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 64.8,
     "ola": 86.35,
-    "power": 60,
-    "powerEstimated": true,
+    "power": 294,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/MGEX181(1957).png",
     "creator": "Bnuuy",
     "hiddenTag": ["Exchange"],
+    "editLog": [{"at":"2026-09-20T13:56:27.520Z","by":"209038568138604546","field":"power","via":"SED6","from":60,"to":294}],
     "cardType": ["Prize"]
 }

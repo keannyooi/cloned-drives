@@ -79,14 +79,14 @@
     },
     "rungs": {
         "10": { "packPool": ["p00181"] },
-        "25": { "money": 675000 },
-        "50": { "carPool": ["c03090"], "ordered": true },
+        "25": { "money": 777777 },
+        "50": { "carPool": ["c02978"], "ordered": true },
         "100": { "driverPool": ["d00008"], "ordered": true },
-        "150": { "carPool": ["c06949"], "ordered": true },
+        "150": { "carPool": ["c07014"], "ordered": true },
         "200": { "packPool": ["p00132"] },
         "250": { "packPool": ["p00127"] },
-		"300": { "carPool": ["c06855"], "ordered": true },
+		"300": { "carPool": ["c07109"], "ordered": true },
         "350": { "packPool": ["p00097"] },
-        "400": { "carPool": ["c02660"], "driverPool": ["d00001"], "ordered": true }
+        "400": { "carPool": ["c03126"], "driverPool": ["d00001"], "ordered": true }
     }
 }

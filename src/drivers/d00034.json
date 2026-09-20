@@ -26,8 +26,14 @@
             "minLevel": 3
         },
         {
-            "description": "The Transit lap: +6 handling in SUVs and Pickups",
-            "cond": {"bodyStyle": ["suv", "pickup"]},
+            "description": "The Transit lap: +6 handling in SUVs",
+            "cond": {"bodyStyle": ["suv"]},
+            "effects": {"add": {"handling": 6}},
+            "minLevel": 4
+        },
+        {
+            "description": "The Transit lap: +6 handling in Pickups",
+            "cond": {"bodyStyle": ["pickup"]},
             "effects": {"add": {"handling": 6}},
             "minLevel": 4
         },

@@ -1,0 +1,40 @@
+{
+    "driverID": "d00042",
+    "name": "The Stig",
+    "variant": "",
+    "description": "Signed — though nobody saw him do it, and the ink tests as tyre rubber. Some say it isn't a signature at all, just a lap time.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/TheStigAuto.png",
+    "rarity": "autograph",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3% to every stat — every car, every track, every time",
+            "effects": {"mult": {"topSpeed": 1.03, "accel": 0.97, "handling": 1.03, "mra": 1.03, "ola": 0.97}}
+        },
+        {
+            "description": "+3 handling in anything front-wheel drive — the Reasonably Priced Car years",
+            "cond": {"driveType": ["fwd"]},
+            "effects": {"add": {"handling": 3}}
+        },
+        {
+            "description": "-3% 0-60 in anything rear-wheel drive — some say he has never met traction control",
+            "cond": {"driveType": ["rwd"]},
+            "effects": {"mult": {"accel": 0.97}}
+        },
+        {
+            "description": "+3 mra in anything 4WD — some say all four wheels are simply afraid of him",
+            "cond": {"driveType": ["4wd"]},
+            "effects": {"add": {"mra": 3}}
+        },
+        {
+            "description": "+6 handling and +4 mra at the Top Gear Test Track — his lap board, his rules",
+            "cond": {"trackID": ["t00097", "t00098"]},
+            "effects": {"add": {"handling": 6, "mra": 4}}
+        },
+        {
+            "description": "+8% payout. Some say he has never once asked what the money is for",
+            "effects": {"moneyMult": 1.08}
+        }
+    ]
+}

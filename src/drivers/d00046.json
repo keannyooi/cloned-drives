@@ -1,0 +1,41 @@
+{
+    "driverID": "d00046",
+    "name": "Alexander Calder",
+    "variant": "",
+    "description": "The sculptor who invented the mobile. In 1975 he painted a BMW 3.0 CSL in primary colours and sent it to Le Mans — the first Art Car. It lasted seven hours and has never stopped moving since.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/AlexanderCalderRare.png",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+4 handling in any 1970s BMW — balance was the whole of his art",
+            "cond": {"make": ["bmw"], "modelYear": {"start": 1970, "end": 1979}},
+            "effects": {"add": {"handling": 4}}
+        },
+        {
+            "description": "+2 handling in any Style Icon — a sculptor knows one on sight",
+            "cond": {"tags": ["style icon"]},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 2
+        },
+        {
+            "description": "-4% 0-60 in any 1970s BMW",
+            "cond": {"make": ["bmw"], "modelYear": {"start": 1970, "end": 1979}},
+            "effects": {"mult": {"accel": 0.96}},
+            "minLevel": 3
+        },
+        {
+            "description": "+3 mra in any car from the 1970s — the decade the paint met the pit lane",
+            "cond": {"modelYear": {"start": 1970, "end": 1979}},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 4
+        },
+        {
+            "description": "+4% to every stat in any 1970s BMW — a mobile, finally at speed",
+            "cond": {"make": ["bmw"], "modelYear": {"start": 1970, "end": 1979}},
+            "effects": {"mult": {"topSpeed": 1.04, "accel": 0.96, "handling": 1.04, "mra": 1.04, "ola": 0.96}},
+            "minLevel": 5
+        }
+    ]
+}

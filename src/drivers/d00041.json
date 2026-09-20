@@ -1,0 +1,41 @@
+{
+    "driverID": "d00041",
+    "name": "The Stig",
+    "variant": "",
+    "description": "Some say his blood type is 98 RON, and that he has never once looked for a parking space. Nobody knows his name. Everybody knows his lap times.",
+    "image": "https://file.garden/aFBkIPmb4DlYDcyR/Drivers/0in/TheStigIcon.png",
+    "rarity": "icon",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2% to every stat — every car, every track. Some say he doesn't know the word 'specialist'",
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02, "mra": 1.02, "ola": 0.98}}
+        },
+        {
+            "description": "+3 handling in the Rain — some say water simply declines to slow him down",
+            "cond": {"weather": ["Rainy"]},
+            "effects": {"add": {"handling": 3}}
+        },
+        {
+            "description": "+3 mra off the tarmac — some say he thinks gravel is asphalt that isn't trying",
+            "cond": {"surface": ["Dirt", "Gravel", "Sand", "Snow", "Ice", "OffRoad"]},
+            "effects": {"add": {"mra": 3}}
+        },
+        {
+            "description": "-3% 0-60 on Drag strips — some say he reacts to green lights before they've decided",
+            "cond": {"surface": ["Drag"]},
+            "effects": {"mult": {"accel": 0.97}}
+        },
+        {
+            "description": "+2% to every stat as the underdog — some say he has never noticed being outgunned",
+            "cond": {"underdog": true},
+            "effects": {"mult": {"topSpeed": 1.02, "accel": 0.98, "handling": 1.02, "mra": 1.02, "ola": 0.98}}
+        },
+        {
+            "description": "+5 handling and +4 mra at the Top Gear Test Track. Flat through the Follow-Through",
+            "cond": {"trackID": ["t00097", "t00098"]},
+            "effects": {"add": {"handling": 5, "mra": 4}}
+        }
+    ]
+}
