@@ -1,0 +1,47 @@
+{
+    "driverID": "d00045",
+    "name": "Peter Schutz",
+    "variant": "Gruppe B",
+    "description": "Frankfurt, 1983: a white concept called Gruppe B. He signed off the most advanced road car on earth knowing every one built would lose money. It became the 959.",
+    "image": "",
+    "rarity": "secret",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+3 handling in any Porsche 959",
+            "cond": {"search": "porsche 959"},
+            "effects": {"add": {"handling": 3}}
+        },
+        {
+            "description": "+3 mra in any 4WD Porsche — the 959's hardware, handed down",
+            "cond": {"make": ["porsche"], "driveType": ["4wd"]},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "-4% 0-60 in any Porsche 959 — sequential turbos, no lag, no excuses",
+            "cond": {"search": "porsche 959"},
+            "effects": {"mult": {"accel": 0.96}},
+            "minLevel": 3
+        },
+        {
+            "description": "+4 handling off the tarmac in any 4WD Porsche — Paris-Dakar 1986: first, second and sixth",
+            "cond": {"surface": ["Dirt", "Gravel", "Sand", "Snow", "Ice", "OffRoad"], "make": ["porsche"], "driveType": ["4wd"]},
+            "effects": {"add": {"handling": 4}},
+            "minLevel": 4
+        },
+        {
+            "description": "+4% top speed in any Porsche 959 — 197mph, the fastest road car of 1986",
+            "cond": {"search": "porsche 959"},
+            "effects": {"mult": {"topSpeed": 1.04}},
+            "minLevel": 5
+        },
+        {
+            "description": "+5% to every stat in the Gruppe B programme cars: the Prototype, the Vorserie, the Paris-Dakar and the 961",
+            "cond": {"carID": ["c03842", "c01454", "c03762", "c03840"]},
+            "effects": {"mult": {"topSpeed": 1.05, "accel": 0.95, "handling": 1.05, "mra": 1.05, "ola": 0.95}},
+            "minLevel": 6
+        }
+    ]
+}

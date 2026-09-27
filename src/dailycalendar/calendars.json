@@ -1,0 +1,47 @@
+{
+    "_comment": "DAILY CALENDARS: a bonus track on top of cd-daily. While a calendar is running, every successful cd-daily ALSO hands out that player's next calendar reward (their 1st daily in the window gets reward 1, their 2nd gets reward 2, and so on). Missed days are never lost, only not earned: 15 dailies = the first 15 rewards. Rewards land in cd-rewards. Players see the track with cd-daily calendar. This file is read fresh at every cd-daily, so edits apply without a restart. Keys starting with _ are notes.",
+    "_rules": {
+        "calendarID": "Permanent key for player progress (stored under dailyStats.calendars.<calendarID>). Letters, numbers, - and _ only. NEVER reuse or rename an ID once a calendar has run, or players' progress would carry over or vanish.",
+        "name": "Shown in cd-daily and in cd-rewards as '<name>: Day N'.",
+        "enabled": "false = never runs, even inside its dates.",
+        "activeFrom / activeUntil": "'YYYY-MM-DD', both inclusive, in the server's local time (the same clock as the auto-event cron). Both are required.",
+        "color": "Optional hex for the cd-daily calendar embed.",
+        "rewards": "One entry per day, in order. Each is a reward object: money, trophies, fuseTokens (numbers), car ({ \"carID\": \"cXXXXX\", \"upgrade\": \"000\" }), pack (\"pXXXXX\"), driver (\"dXXXXX\", never serialised). Several keys in one entry all pay, e.g. { \"pack\": \"p00059\", \"money\": 100000 }.",
+        "length": "Make the track shorter than the window to leave slack: cd-daily is a 24h cooldown, so a player who misses one day can still reach the last reward.",
+        "broken_rewards": "If ANY reward is invalid (unknown car, pack or driver, bad tune, zero amount), the whole calendar pauses: nobody's progress moves and the problems print in the console and on cd-daily calendar. Fix the entry and it resumes with nothing lost.",
+        "overlap": "If two calendars cover the same day, the first one in this list runs."
+    },
+    "calendars": [
+        {
+            "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W42). 20 rewards over the 21-day window, so one missed day still reaches the finale. Packs: p00013 Porsche Elite, p00059 Porsche Titan, p00270 Porsche Cosmo, p00271 2 Mystic Porsche. Reward packs opened from cd-rewards don't count toward the Turbopanzer pack battle; only packs bought with cd-openpack do.",
+            "calendarID": "porsche2026",
+            "name": "3 Weeks of Porsche",
+            "enabled": true,
+            "activeFrom": "2026-09-28",
+            "activeUntil": "2026-10-18",
+            "color": "#c8102e",
+            "rewards": [
+                { "pack": "p00013" },
+                { "money": 100000 },
+                { "trophies": 25 },
+                { "pack": "p00013" },
+                { "pack": "p00059" },
+                { "money": 150000 },
+                { "pack": "p00013" },
+                { "trophies": 50 },
+                { "money": 200000 },
+                { "pack": "p00059" },
+                { "pack": "p00013" },
+                { "money": 250000 },
+                { "trophies": 50 },
+                { "pack": "p00059" },
+                { "pack": "p00270" },
+                { "money": 300000 },
+                { "trophies": 75 },
+                { "pack": "p00059" },
+                { "money": 500000 },
+                { "pack": "p00271", "trophies": 100 }
+            ]
+        }
+    ]
+}

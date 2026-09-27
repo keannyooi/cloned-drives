@@ -7,6 +7,9 @@ const packBattleSchema = new Schema({
     name: String,
     isActive: { type: Boolean, default: false },
     deadline: { type: String, default: "unlimited" },
+    // ISO time an inactive battle starts by itself (cd-startpackbattle <name>
+    // raceweek = the next Monday 00:00 UTC rollover); null = start by hand.
+    scheduledStart: { type: String, default: null },
     packID: String,
 
     // Custom per-card counters — evaluated against every pulled card.

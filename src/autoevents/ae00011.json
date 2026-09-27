@@ -1,0 +1,68 @@
+{
+    "_comment": "3 WEEKS OF PORSCHE — stands in for Daily Drive (ae00002) from 28 Sep to 18 Oct 2026 via `suppresses`. Every opponent is Porsche-badged; player reqs are the usual Daily Drive mix and never ask for a Porsche. One venue per day, in trackPool order by day of the window, so day 21 is always Circuit de la Sarthe. The round-5 car comes from ordinary (non-prize) Porsche-badged cards in Daily Drive's CR band (838-923); cars listed in docs/porsche-review.csv were left out until they're reviewed.",
+    "name": "Porsche Cup",
+    "enabled": true,
+    "announceDMs": false,
+    "generator": "provinggrounds",
+    "cadenceDays": 1,
+    "durationDays": 1,
+    "ignoreDupe": true,
+    "activeFrom": "2026-09-28",
+    "activeUntil": "2026-10-18",
+    "suppresses": ["ae00002"],
+    "rounds": 5,
+    "difficulty": {
+        "start": 1,
+        "end": 5
+    },
+    "entryFee": 0,
+    "uniqueSolutionThreshold": 0,
+    "nameFormat": "Porsche Cup {n}: {track}",
+    "singleTrack": true,
+    "trackOrder": "sequence",
+    "trackPool": ["t00073", "t00062", "t00140", "t00142", "t00195", "t00071", "t00068", "t00146", "t00166", "t00087", "t00034", "t00198", "t00066", "t00209", "t00203", "t00075", "t00069", "t00042", "t00072", "t00149", "t00019"],
+    "opponentLeadMake": ["porsche"],
+    "excludeReqValues": {
+        "make": ["porsche"]
+    },
+    "subtitles": [],
+    "theme": "auto",
+    "themeRecipes": {
+        "none": {
+            "weight": 5
+        },
+        "country": {
+            "weight": 2
+        },
+        "decade": {
+            "weight": 2
+        }
+    },
+    "themeOpponents": false,
+    "rewards": {
+        "moneyBudget": 1200000,
+        "moneyCurve": "flat",
+        "allowNonPrize": true,
+        "carPool": ["c01073", "c01081", "c01082", "c01117", "c01124", "c02213", "c02349", "c02355", "c02358", "c02458", "c02552", "c02598", "c02601", "c02607", "c02661", "c02827", "c03301", "c03303", "c03304", "c03308", "c03838", "c04076", "c04362", "c04364", "c04718", "c04731", "c04735", "c04781", "c04786", "c04791", "c04798", "c04799", "c04802", "c04803", "c04830", "c04832", "c04833", "c04839", "c04850", "c04915", "c04968", "c04969", "c04971", "c04972", "c04973", "c04974", "c04975", "c04976", "c04983", "c05012", "c05013", "c05014", "c05017", "c05018", "c05020", "c05021", "c05024", "c05025", "c05026", "c05027", "c05083", "c05085", "c05087", "c05095", "c05096", "c05097", "c05102", "c05104", "c05105", "c05106", "c05109", "c05111", "c05114", "c05145", "c05929", "c06185", "c06938", "c06987", "c06990", "c07201", "c07203", "c07204", "c07205", "c07206", "c07207", "c07208", "c07252", "c07253", "c07256", "c07259", "c07261", "c07262", "c07263", "c07264"],
+        "packPool": [],
+        "milestones": {
+            "1": {
+                "trophies": 10
+            },
+            "2": {
+                "money": "$BUDGET"
+            },
+            "3": {
+                "money": "$BUDGET"
+            },
+            "4": {
+                "money": "$BUDGET"
+            },
+            "5": {
+                "money": "$BUDGET",
+                "trophies": 30,
+                "car": "$CARPOOL"
+            }
+        }
+    }
+}

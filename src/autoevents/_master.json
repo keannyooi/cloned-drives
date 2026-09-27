@@ -58,6 +58,34 @@
     "//ignoreDupe": "false (default) = a spawn is skipped while a previous instance of THIS template is still genuinely running (more than ~2h left). true = never block on a live instance — spawn whenever due, allowing multiple differently-named instances to be active at once. Regardless of this flag, two events can never share the exact same name (generated names carry an incrementing numeral). Handy for back-to-back templates like a daily where you don't care about brief overlap at the handover.",
     "ignoreDupe": false,
 
+    "//activeFrom / activeUntil": "Optional date window, 'YYYY-MM-DD', both inclusive, in the server's local time like the midnight cron. Outside it the template never spawns on its own (cd-ae spawn still works). Either end may be left null. Added 2026-09-27 for the Porsche Cup.",
+    "activeFrom": null,
+    "activeUntil": null,
+
+    "//suppresses": "Template IDs this one PAUSES while it is inside its own window, e.g. [\"ae00002\"] = no Daily Drive while a themed daily stands in for it. Nothing to switch back afterwards: once the window ends, the paused template resumes by itself.",
+    "suppresses": [],
+
+    "//nameFormat": "Custom name pattern. Tokens: {name} {n} {roman} {track} {subtitle}. {n} is the day of the window when activeFrom is set (so day 21 is always 21), otherwise the spawn counter. null = the classic '<name> <ROMAN>[: <subtitle>]'. Example: 'Porsche Cup {n}: {track}'.",
+    "nameFormat": null,
+
+    "//singleTrack": "true = every round of a spawn runs on ONE track (the venue), taken from trackPool. The venue is named in the announcement and available to nameFormat as {track}.",
+    "singleTrack": false,
+
+    "//trackPool": "Track IDs rounds may use. Empty = every track. With singleTrack, the list of venues.",
+    "trackPool": [],
+
+    "//trackOrder": "How singleTrack picks the venue: 'sequence' (default) walks trackPool in order by {n}, so the last entry is always the last day; 'random' picks any entry except the previous spawn's.",
+    "trackOrder": "sequence",
+
+    "//opponentLeadMake": "Opponents must carry one of these BADGES (the first make): [\"porsche\"] = Porsche-badged only, so RUF or TechArt tuners are left out. Setting this (or opponentFilter) makes the opponent pool exactly those cars, BOSS cards excluded, and the theme stops choosing opponents.",
+    "opponentLeadMake": [],
+
+    "//opponentFilter": "Opponents must pass these cd-filter criteria (OR within a list, the way events read reqs), e.g. { \"tags\": [\"motorsport\"] }. Combines with opponentLeadMake.",
+    "opponentFilter": {},
+
+    "//excludeReqValues": "Values a generated requirement may never ask for, per key: { \"make\": [\"porsche\"] } = no round ever requires a Porsche.",
+    "excludeReqValues": {},
+
     "//rewards": "Everything below. All rewards are delivered through cd-rewards with the event's name as origin, once per round per player (first clear).",
     "rewards": {
         "//moneyBudget": "HARD CAP on total money this event can pay one player. 0 = a pure no-money event (any money in milestones then fails the spawn — purity guard). If milestones use \"$BUDGET\" money, the remaining budget is split across those slots by moneyCurve.",
@@ -66,8 +94,11 @@
         "//moneyCurve": "How \"$BUDGET\" money spreads across its slots: 'flat' (even), 'quadratic' (later rounds pay more), 'finale' (everything on the last budget slot).",
         "moneyCurve": "finale",
 
-        "//carPool": "Cars the \"$CARPOOL\" sentinel draws from (avoids repeating the previous spawn's pick; distinct within one event). Entries must exist; non-Prize entries log a warning. The drawn car is featured in the spawn announcement.",
+        "//carPool": "Cars the \"$CARPOOL\" sentinel draws from (avoids repeating the previous spawn's pick; distinct within one event). Entries must exist; non-Prize entries log a warning unless allowNonPrize is true. The drawn car is featured in the spawn announcement.",
         "carPool": [],
+
+        "//allowNonPrize": "true = the carPool is ordinary cards on purpose (dailies hand out normal cars), so don't warn about non-Prize entries at every spawn.",
+        "allowNonPrize": false,
 
         "//packPool": "Same idea for \"$PACKPOOL\" pack rewards.",
         "packPool": [],

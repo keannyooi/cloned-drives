@@ -1,7 +1,8 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { getPack, getAllPackBattleTemplates, getCarFiles, getCar } = require("../util/functions/dataManager.js");
+const { getPack, getAllPackBattleTemplates } = require("../util/functions/dataManager.js");
+const { validateBattleTemplate } = require("../util/functions/packBattleManager.js");
 const search = require("../util/functions/search.js");
 const packBattleModel = require("../models/packBattleSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
@@ -142,76 +143,21 @@ module.exports = {
                 }).sendMessage({ currentMessage });
             }
 
-            // Auto-generate milestone IDs if not specified in the template
-            const milestones = Array.isArray(template.milestones)
-                ? template.milestones.map((m, i) => ({
-                    milestoneID: m.milestoneID || `m${i + 1}`,
-                    stat: m.stat,
-                    threshold: m.threshold,
-                    reward: m.reward,
-                    resetType: m.resetType || "none",
-                    isSecret: !!m.isSecret,
-                    hint: m.hint || ""
-                }))
-                : [];
-
-            // Custom counters: validate hard at create time — a typo'd key or
-            // filter would otherwise just never tick, silently.
-            const RESERVED_STATS = ["packsOpened", "totalCRPulled", "highestPackPullCR", "highestSinglePullCR",
-                "dryStreak", "dailyCRPulled", "dailyHighestSinglePullCR", "lastDailyReset", "rarityCounts", "milestonesEarned"];
-            const counters = Array.isArray(template.counters) ? template.counters : [];
-            for (const counter of counters) {
-                let problem = null;
-                if (!counter || typeof counter.key !== "string" || counter.key.length === 0) problem = "a counter is missing its key";
-                else if (RESERVED_STATS.includes(counter.key)) problem = `counter key "${counter.key}" collides with a built-in stat`;
-                else if (!["crPulled", "cardsPulled", "uniqueCars"].includes(counter.type)) problem = `counter "${counter.key}" type must be crPulled, cardsPulled or uniqueCars`;
-                else if (counter.key.endsWith("_seen") || counter.key.endsWith("_today")) problem = `counter key "${counter.key}" may not end in _seen or _today (reserved bookkeeping suffixes)`;
-                else if (counters.filter(other => other && other.key === counter.key).length > 1) problem = `duplicate counter key "${counter.key}"`;
-                else if (counter.carIDs !== undefined && (!Array.isArray(counter.carIDs) || counter.carIDs.some(id => !getCar(id)))) problem = `counter "${counter.key}" has an unknown carID`;
-                else if (counter.filter !== undefined && (typeof counter.filter !== "object" || Array.isArray(counter.filter))) problem = `counter "${counter.key}" filter must be an object`;
-                else if (counter.filter && Object.keys(counter.filter).length > 0) {
-                    try { require("../util/functions/filterCheck.js")({ car: { carID: getCarFiles()[0].slice(0, 6) }, filter: counter.filter, applyOrLogic: true }); }
-                    catch (err) { problem = `counter "${counter.key}" filter is malformed: ${err.message}`; }
-                }
-                if (problem) {
-                    return new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, template counter invalid.",
-                        desc: problem,
-                        author: message.author
-                    }).sendMessage({ currentMessage });
-                }
+            // Counters, milestones (incl. several-requirement ones), placements and
+            // every reward's car/pack/driver are checked before anything is
+            // created — a placeholder car blocks here instead of failing the
+            // player who earns it.
+            const { problems, counters, milestones, placementRewards } = validateBattleTemplate(template);
+            if (problems.length > 0) {
+                const shown = problems.slice(0, 12).map(problem => `• ${problem}`).join("\n");
+                return new ErrorMessage({
+                    channel: message.channel,
+                    title: `Error, the template has ${problems.length} problem${problems.length === 1 ? "" : "s"}.`,
+                    desc: shown + (problems.length > 12 ? `\n…and ${problems.length - 12} more.` : "")
+                        + "\n\nFix the template file and restart the bot, then create it again.",
+                    author: message.author
+                }).sendMessage({ currentMessage });
             }
-            const counterKeys = counters.map(counter => counter.key);
-            const dailyCapable = ["totalCRPulled", "highestSinglePullCR",
-                ...counters.filter(counter => counter.type !== "uniqueCars").map(counter => counter.key)];
-            for (const m of (template.milestones || [])) {
-                if (m && m.resetType === "daily" && !dailyCapable.includes(m.stat)) {
-                    return new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, milestone cannot be daily.",
-                        desc: `Daily milestones work on totalCRPulled, highestSinglePullCR, or a crPulled/cardsPulled counter — "${m.stat}" is none of those.`,
-                        author: message.author
-                    }).sendMessage({ currentMessage });
-                }
-                if (m && m.stat && !RESERVED_STATS.includes(m.stat) && !counterKeys.includes(m.stat)) {
-                    return new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, milestone references an unknown stat.",
-                        desc: `Milestone stat "${m.stat}" is neither a built-in stat nor a counter key — it would never fire.`,
-                        author: message.author
-                    }).sendMessage({ currentMessage });
-                }
-            }
-
-            const placementRewards = Array.isArray(template.placementRewards)
-                ? template.placementRewards.map(p => ({
-                    leaderboard: p.leaderboard,
-                    minRank: p.minRank,
-                    maxRank: p.maxRank,
-                    reward: p.reward
-                }))
-                : [];
 
             const { totalPackBattles } = await serverStatModel.findOne({});
             const newDoc = {
@@ -236,7 +182,7 @@ module.exports = {
             return new SuccessMessage({
                 channel: message.channel,
                 title: `Created pack battle "${battleName}" from template!`,
-                desc: `**Pre-filled from template:**\n${filled.join("\n")}\n\nUse \`cd-editpackbattle\` to tweak anything, then \`cd-startpackbattle\` to launch.`,
+                desc: `**Pre-filled from template:**\n${filled.join("\n")}\n\nUse \`cd-editpackbattle\` to tweak anything, then \`cd-startpackbattle\` to launch, or \`cd-startpackbattle <name> raceweek\` to start it with the next Race Week rollover.`,
                 author: message.author
             }).sendMessage({ currentMessage });
         }

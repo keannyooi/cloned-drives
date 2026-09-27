@@ -1,0 +1,35 @@
+{
+    "driverID": "d00043",
+    "name": "Peter Schutz",
+    "variant": "",
+    "description": "The American who ran Porsche from 1981 to 1987. Found a chart where the 911's line stopped, picked up a marker pen and drew it off the page and onto the wall.",
+    "image": "",
+    "rarity": "base",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2 handling in any 1980s Porsche",
+            "cond": {"make": ["porsche"], "modelYear": {"start": 1980, "end": 1989}},
+            "effects": {"add": {"handling": 2}}
+        },
+        {
+            "description": "+3 mra in any 1980s Porsche — he funded the engineers and got out of their way",
+            "cond": {"make": ["porsche"], "modelYear": {"start": 1980, "end": 1989}},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 2
+        },
+        {
+            "description": "-3% 0-60 in any 1980s Porsche",
+            "cond": {"make": ["porsche"], "modelYear": {"start": 1980, "end": 1989}},
+            "effects": {"mult": {"accel": 0.97}},
+            "minLevel": 3
+        },
+        {
+            "description": "+4 handling in any 911 Carrera 3.2 — the first new 911 of the line he refused to end",
+            "cond": {"make": ["porsche"], "search": "911 carrera 3.2"},
+            "effects": {"add": {"handling": 4}},
+            "minLevel": 4
+        }
+    ]
+}

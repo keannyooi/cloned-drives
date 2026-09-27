@@ -1,0 +1,37 @@
+{
+    "packName": "Porsche Cosmo Pack",
+    "description": "Nothing but Exotic-or-better Porsches!",
+    "repetition": 1,
+    "pack": "https://file.garden/aFBkIPmb4DlYDcyR/Pack/PlaceholderC1.png",
+    "categories": ["reward"],
+    "filter": {
+        "make": "Porsche"
+    },
+    "packSequence": [
+        {
+            "exotic": 85,
+            "legendary": 13.5,
+            "mystic": 1.5
+        },
+        {
+            "exotic": 85,
+            "legendary": 13.5,
+            "mystic": 1.5
+        },
+        {
+            "exotic": 85,
+            "legendary": 13.5,
+            "mystic": 1.5
+        },
+        {
+            "exotic": 85,
+            "legendary": 13.5,
+            "mystic": 1.5
+        },
+        {
+            "exotic": 85,
+            "legendary": 13.5,
+            "mystic": 1.5
+        }
+    ]
+}

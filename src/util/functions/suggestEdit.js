@@ -15,7 +15,8 @@
  *
  * Rules: no role gate, but accounts under RULES.minAccountDays are refused,
  * a person may file RULES.maxPerHour suggestions an hour (a burst limit, not a
- * cap — someone who knows thirty real figures is welcome), a second
+ * cap — someone who knows thirty real figures is welcome; Verified Creators,
+ * consts.verifiedCreatorRoleID, are exempt from it entirely), a second
  * suggestion on the same field of the same car joins the open one as a +1
  * instead of duplicating it, and anything untouched for RULES.staleDays is
  * closed by the daily sweep.
@@ -35,6 +36,7 @@ const { getCar, reloadCar } = require("./dataManager.js");
 const { modifiedBase } = require("./cardType.js");
 const { patchCarfile } = require("./carfilePatch.js");
 const carNameGen = require("./carNameGen.js");
+const { verifiedCreatorRoleID } = require("../consts/consts.js");
 
 const RULES = {
     maxPerHour: 20,
@@ -135,6 +137,20 @@ function normaliseProposal(kind, raw, car) {
 // ─── filing ──────────────────────────────────────────────────────────────────
 
 /**
+ * Verified Creators skip the hourly limit — the creation team files
+ * corrections in bulk. Resolved from the home guild by user ID rather than
+ * from the interaction, because the form can be submitted from a DM (no
+ * member attached). Anything unresolvable means "not exempt": the limit is
+ * the safe default.
+ */
+async function exemptFromHourlyLimit(user) {
+    if (!verifiedCreatorRoleID || !user || !bot.homeGuild) return false;
+    const member = bot.homeGuild.members.cache.get(user.id)
+        || await bot.homeGuild.members.fetch(user.id).catch(() => null);
+    return !!(member && member.roles && member.roles.cache && member.roles.cache.has(verifiedCreatorRoleID));
+}
+
+/**
  * Save a suggestion, or attach it to the open one on the same field.
  * @returns {Promise<{ ok: true, submission, attached: boolean, proposal } | { ok: false, error: string }>}
  */
@@ -167,10 +183,12 @@ async function fileSuggestion({ user, carID, car, kind, raw, source }) {
         }
     }
 
-    const hourAgo = DateTime.utc().minus({ hours: 1 }).toISO();
-    const recent = await submissionModel.countDocuments({ type: "edit", creatorID: user.id, isDev, createdAt: { "$gte": hourAgo } });
-    if (recent >= RULES.maxPerHour) {
-        return { ok: false, error: `That's ${recent} suggestions in the last hour — the limit is ${RULES.maxPerHour}. Give it a little while and carry on.` };
+    if (!(await exemptFromHourlyLimit(user))) {
+        const hourAgo = DateTime.utc().minus({ hours: 1 }).toISO();
+        const recent = await submissionModel.countDocuments({ type: "edit", creatorID: user.id, isDev, createdAt: { "$gte": hourAgo } });
+        if (recent >= RULES.maxPerHour) {
+            return { ok: false, error: `That's ${recent} suggestions in the last hour — the limit is ${RULES.maxPerHour}. Give it a little while and carry on.` };
+        }
     }
 
     const submission = await createSubmission({
@@ -342,5 +360,6 @@ async function closeStaleSuggestions(now = DateTime.utc()) {
 module.exports = {
     RULES, KINDS, BUTTON_PREFIX,
     suggestButtonRow, buildModal, watchSuggestButton, openSuggestFlow,
-    normaliseProposal, fileSuggestion, applySuggestion, notifyEveryone, closeStaleSuggestions
+    normaliseProposal, fileSuggestion, applySuggestion, notifyEveryone, closeStaleSuggestions,
+    exemptFromHourlyLimit
 };

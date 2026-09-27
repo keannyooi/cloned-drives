@@ -1,0 +1,27 @@
+{
+    "packName": "2 Mystic Porsche Pack",
+    "description": "2 Mystic Porsches and 8 Rare Porsches!",
+    "repetition": 2,
+    "pack": "https://file.garden/ZmdgDS5GsALKuOXo/packart/2Mystic.png",
+    "categories": ["reward"],
+    "filter": {
+        "make": "Porsche"
+    },
+    "packSequence": [
+        {
+            "rare": 100
+        },
+        {
+            "rare": 100
+        },
+        {
+            "rare": 100
+        },
+        {
+            "rare": 100
+        },
+        {
+            "mystic": 100
+        }
+    ]
+}

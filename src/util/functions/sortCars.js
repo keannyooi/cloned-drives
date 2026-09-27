@@ -1,7 +1,7 @@
 "use strict";
 
 const { getCar } = require("./dataManager.js");
-const { calcTune } = require("./calcTune.js");
+const { calcTune, isValidTune } = require("./calcTune.js");
 const { modifiedBase } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
@@ -15,8 +15,43 @@ const sortKeyMap = {
     "mra": "mra",
     "ola": "ola"
 };
+// Lower is better for: 0-60, weight, ola (lower = faster launch)
+const LOWER_IS_BETTER = new Set(["0to60", "weight", "ola"]);
+
+/**
+ * The tunes a list entry holds copies of. Garage entries carry `upgrades`;
+ * a few legacy callers pass the tune counts on the object itself; bare IDs
+ * (catalogue lists) hold nothing.
+ */
+function ownedTunes(entry) {
+    if (!entry || typeof entry !== "object") return [];
+    const counts = entry.upgrades && typeof entry.upgrades === "object" ? entry.upgrades : entry;
+    return Object.keys(counts).filter(tune => isValidTune(tune) && counts[tune] > 0);
+}
+
+/**
+ * A car's value for a tunable stat = the BEST figure among the tunes the
+ * player actually owns. Not the highest tune's figure: the engine digit
+ * trades OLA for 0-60 (and the chassis digit weight for handling), so a
+ * stock Jimny's 61.9 OLA beats its own 996's 69.9 — and a player holding
+ * both has a 61.9-OLA car. Catalogue entries and copy-less husks read stock.
+ * Unreadable stats sort last in either direction.
+ */
+function bestTunedValue(entry, base, tuneKey, lowerIsBetter) {
+    const tunes = ownedTunes(entry);
+    if (tunes.length === 0) tunes.push("000");
+    let best = null;
+    for (const tune of tunes) {
+        const value = calcTune(base, tune)[tuneKey];
+        if (typeof value !== "number" || Number.isNaN(value)) continue;
+        if (best === null || (lowerIsBetter ? value < best : value > best)) best = value;
+    }
+    if (best === null) return lowerIsBetter ? Infinity : -Infinity;
+    return best;
+}
 
 function sortCars(list, sort, order, garage) {
+    const lowerIsBetter = LOWER_IS_BETTER.has(sort);
     return list.sort(function (a, b) {
         // Handle both string filenames and objects with carID
         let carIdA = typeof a === "string" ? (a.endsWith('.json') ? a.slice(0, -5) : a) : a.carID;
@@ -31,51 +66,12 @@ function sortCars(list, sort, order, garage) {
 
         let critA, critB;
         
-        // Check if this is a tunable stat (uses calcTune)
+        // Tunable stat: each car ranks by the best figure the player owns
+        // across ALL their tunes of it (see bestTunedValue).
         if (sortKeyMap[sort]) {
             const tuneKey = sortKeyMap[sort];
-            let checkOrder = ["333", "666", "699", "969", "996"];
-            
-            // Find the highest tune for each car
-            let tuneA = "000";
-            let tuneB = "000";
-            
-            // If we have upgrade info (from garage objects)
-            if (a.upgrades) {
-                for (let upg of checkOrder) {
-                    if (a.upgrades[upg] > 0) {
-                        tuneA = upg;
-                    }
-                }
-            } else if (typeof a !== "string") {
-                // Check for old-style direct tune properties
-                for (let upg of checkOrder) {
-                    if (a[upg] > 0) {
-                        tuneA = upg;
-                    }
-                }
-            }
-            
-            if (b.upgrades) {
-                for (let upg of checkOrder) {
-                    if (b.upgrades[upg] > 0) {
-                        tuneB = upg;
-                    }
-                }
-            } else if (typeof b !== "string") {
-                for (let upg of checkOrder) {
-                    if (b[upg] > 0) {
-                        tuneB = upg;
-                    }
-                }
-            }
-            
-            // Calculate tuned stats
-            const statsA = calcTune(bmRefA, tuneA);
-            const statsB = calcTune(bmRefB, tuneB);
-            
-            critA = statsA[tuneKey];
-            critB = statsB[tuneKey];
+            critA = bestTunedValue(a, bmRefA, tuneKey, lowerIsBetter);
+            critB = bestTunedValue(b, bmRefB, tuneKey, lowerIsBetter);
         }
         else if (sort === "duplicates") {
             let upgA, upgB;
@@ -104,8 +100,6 @@ function sortCars(list, sort, order, garage) {
             return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
         }
         else {
-            // Lower is better for: 0-60, weight, ola (lower = faster launch)
-            let lowerIsBetter = (sort === "0to60" || sort === "weight" || sort === "ola");
             if ((order === "ascending") ? !lowerIsBetter : lowerIsBetter) {
                 return critA - critB;
             }
@@ -117,3 +111,4 @@ function sortCars(list, sort, order, garage) {
 }
 
 module.exports = sortCars;
+module.exports.bestTunedValue = bestTunedValue;   // for tests

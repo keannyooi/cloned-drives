@@ -1,0 +1,41 @@
+{
+    "driverID": "d00044",
+    "name": "Peter Schutz",
+    "variant": "",
+    "description": "Weeks into the job he ordered a 911 with no roof into production — Porsche's first cabriolet since the 356. The coupe he had just saved paid for the rest.",
+    "image": "",
+    "rarity": "rare",
+    "creator": "bnuuy",
+    "inRotation": true,
+    "bonuses": [
+        {
+            "description": "+2 handling in any Porsche Coupe",
+            "cond": {"make": ["porsche"], "bodyStyle": ["coupe"]},
+            "effects": {"add": {"handling": 2}}
+        },
+        {
+            "description": "+2 handling in any Porsche Convertible — the 911 Cabriolet was his first big call",
+            "cond": {"make": ["porsche"], "bodyStyle": ["convertible"]},
+            "effects": {"add": {"handling": 2}},
+            "minLevel": 2
+        },
+        {
+            "description": "+3 mra in any Porsche Coupe",
+            "cond": {"make": ["porsche"], "bodyStyle": ["coupe"]},
+            "effects": {"add": {"mra": 3}},
+            "minLevel": 3
+        },
+        {
+            "description": "-3% 0-60 in any Porsche Convertible — roof down, foot down",
+            "cond": {"make": ["porsche"], "bodyStyle": ["convertible"]},
+            "effects": {"mult": {"accel": 0.97}},
+            "minLevel": 4
+        },
+        {
+            "description": "+2% top speed in any rear-engined Porsche, roof or no roof",
+            "cond": {"make": ["porsche"], "enginePos": ["rear"]},
+            "effects": {"mult": {"topSpeed": 1.02}},
+            "minLevel": 5
+        }
+    ]
+}

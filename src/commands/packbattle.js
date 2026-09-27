@@ -4,8 +4,9 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
-const { getCar, getPack } = require("../util/functions/dataManager.js");
+const { getCar, getPack, getDriver } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const { computeDenseRanking } = require("../util/functions/packBattleManager.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const timeDisplay = require("../util/functions/timeDisplay.js");
@@ -329,6 +330,27 @@ module.exports = {
                 return infoMessage.sendMessage({ currentMessage });
             }
 
+            // Reward text — every part of the reward (car + money + trophies
+            // all show), covering money, trophies, fuseTokens, car, pack, driver
+            const rewardText = reward => Object.entries(reward).map(([k, v]) => {
+                if (k === "car") {
+                    const carData = getCar(v.carID);
+                    return carData
+                        ? carNameGen({ currentCar: carData, rarity: true, upgrade: v.upgrade })
+                        : `${v.carID} [${v.upgrade}]`;
+                }
+                if (k === "pack") {
+                    const packData = getPack(v);
+                    return packData ? packData["packName"] : v;
+                }
+                if (k === "driver") {
+                    const driver = getDriver(v);
+                    return driver ? `Driver: ${driverDisplayName(driver)}` : v;
+                }
+                const emoji = k === "money" ? moneyEmoji : k === "fuseTokens" ? fuseEmoji : trophyEmoji;
+                return `${emoji}${v.toLocaleString("en")}`;
+            }).join(", ");
+
             const fields = [];
             for (const m of battle.milestones) {
                 // Determine earned key
@@ -337,12 +359,26 @@ module.exports = {
                     : `${m.milestoneID}`;
                 const earned = stats ? (stats.milestonesEarned || []).includes(earnedKey) : false;
 
+                // Several requirements at once: one line of progress each.
+                if (Array.isArray(m.requires) && m.requires.length > 0) {
+                    const lines = m.requires.map(req => {
+                        const value = stats ? (stats[req.stat] || 0) : 0;
+                        return `${value >= req.threshold ? "✅" : "▫️"} ${req.stat} ${Math.min(value, req.threshold).toLocaleString("en")}/${req.threshold.toLocaleString("en")}`;
+                    }).join("\n");
+                    fields.push(m.isSecret && !earned
+                        ? { name: "??? 🔒", value: `${m.hint ? `*${m.hint}*\n` : ""}${lines}`, inline: true }
+                        : { name: `All of these ${earned ? "✅" : ""}`, value: `${m.hint ? `*${m.hint}*\n` : ""}${lines}\nReward: ${rewardText(m.reward)}`, inline: true });
+                    continue;
+                }
+
                 // Determine current progress
                 let currentValue = 0;
                 if (stats) {
                     if (m.resetType === "daily") {
                         if (m.stat === "totalCRPulled") currentValue = stats.dailyCRPulled || 0;
                         else if (m.stat === "highestSinglePullCR") currentValue = stats.dailyHighestSinglePullCR || 0;
+                        // Counter-backed dailies read the counter's _today mirror
+                        else currentValue = stats[m.stat + "_today"] || 0;
                     } else {
                         currentValue = stats[m.stat] || 0;
                     }
@@ -351,22 +387,7 @@ module.exports = {
                 const progress = Math.min(currentValue, m.threshold);
                 const progressBar = `${progress.toLocaleString("en")}/${m.threshold.toLocaleString("en")}`;
 
-                // Build reward string (supports money, trophies, fuseTokens, car, pack)
-                let rewardStr;
-                if (m.reward.car) {
-                    const carData = getCar(m.reward.car.carID);
-                    rewardStr = carData
-                        ? carNameGen({ currentCar: carData, rarity: true, upgrade: m.reward.car.upgrade })
-                        : `${m.reward.car.carID} [${m.reward.car.upgrade}]`;
-                } else if (m.reward.pack) {
-                    const packData = getPack(m.reward.pack);
-                    rewardStr = packData ? packData["packName"] : m.reward.pack;
-                } else {
-                    rewardStr = Object.entries(m.reward).map(([k, v]) => {
-                        const emoji = k === "money" ? moneyEmoji : k === "fuseTokens" ? fuseEmoji : trophyEmoji;
-                        return `${emoji}${v.toLocaleString("en")}`;
-                    }).join(", ");
-                }
+                const rewardStr = rewardText(m.reward);
 
                 const resetTag = m.resetType === "daily" ? " (Daily)" : "";
 
@@ -380,7 +401,7 @@ module.exports = {
                 } else {
                     fields.push({
                         name: `${m.stat} >= ${m.threshold.toLocaleString("en")}${resetTag} ${earned ? "✅" : ""}`,
-                        value: `${progressBar}\nReward: ${rewardStr}`,
+                        value: `${m.hint ? `*${m.hint}*\n` : ""}${progressBar}\nReward: ${rewardStr}`,
                         inline: true
                     });
                 }

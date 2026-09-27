@@ -29,6 +29,39 @@
             "_color": "#ff6a00",
             "400": { "carPool": ["c01234"], "driverPool": ["d00007"] },
             "300": { "packPool": ["p00099"] }
+        },
+        "2026-W40": {
+            "_comment": "3 WEEKS OF PORSCHE, week 1 of 3 (Mon 28 Sep to Sun 4 Oct 2026): Peter Schutz. Packs are the Porsche versions of the normal rung packs (same odds): 10 Elite, 200 Titan, 250 Cosmo (p00270, new), 350 2 Mystic (p00271, new). 300 had no car picked, so it pays a 5x Porsche Titan — swap in a carPool if you want a car there. 25 isn't listed, so it pays the normal money.",
+            "_label": "3 Weeks of Porsche: Peter Schutz",
+            "_color": "#1f3f8f",
+            "_description": "1981. Porsche's new chief walks into the engineering office, sees the 911's line stopping dead on the production chart, picks up a pen and draws it on across the wall and out the door. The 911 lived, and so did Porsche. This week belongs to Peter Schutz.",
+            "10": { "packPool": ["p00013"] },
+            "50": { "carPool": ["c04693"] },
+            "100": { "driverPool": ["d00043"] },
+            "150": { "carPool": ["c03101"] },
+            "200": { "packPool": ["p00059"] },
+            "250": { "packPool": ["p00270"] },
+            "300": { "packPool": ["p00130"] },
+            "350": { "packPool": ["p00271"] },
+            "400": { "carPool": ["c03840"], "driverPool": ["d00045"] }
+        },
+        "2026-W41": {
+            "_comment": "3 WEEKS OF PORSCHE, week 2 of 3 (Mon 5 Oct to Sun 11 Oct 2026). Porsche packs are set; add the week's cars (50, 150, 300, 400) and drivers (100, 400) once picked. Rungs not listed here run the normal pools from \"rungs\".",
+            "_label": "3 Weeks of Porsche: Week 2",
+            "_color": "#c8102e",
+            "10": { "packPool": ["p00013"] },
+            "200": { "packPool": ["p00059"] },
+            "250": { "packPool": ["p00270"] },
+            "350": { "packPool": ["p00271"] }
+        },
+        "2026-W42": {
+            "_comment": "3 WEEKS OF PORSCHE, week 3 of 3 (Mon 12 Oct to Sun 18 Oct 2026). Porsche packs are set; add the week's cars (50, 150, 300, 400) and drivers (100, 400) once picked. Rungs not listed here run the normal pools from \"rungs\".",
+            "_label": "3 Weeks of Porsche: Week 3",
+            "_color": "#c8102e",
+            "10": { "packPool": ["p00013"] },
+            "200": { "packPool": ["p00059"] },
+            "250": { "packPool": ["p00270"] },
+            "350": { "packPool": ["p00271"] }
         }
     },
     "endless": {

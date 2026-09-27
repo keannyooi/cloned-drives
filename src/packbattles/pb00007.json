@@ -1,0 +1,129 @@
+{
+    "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W42). Keys starting with _ are notes and are ignored. The four exclusive BM cards: c08661 911 Turbo Remastered by Sonderwunsch (Heritage Five), c08663 911 Turbo S Sadu Edition (5 Mystics), c08660 911 Dakar Rallye 1971 (top 5), c08662 911 GT3 Touring Tree of Life (top 20). cd-createpackbattle refuses the template if any reward car doesn't load, so nothing unclaimable can reach a player.",
+    "name": "Operation: Turbopanzer",
+    "packID": "p00059",
+    "duration": "21d",
+    "counters": [
+        { "key": "differentPorsches", "type": "uniqueCars", "filter": { "make": ["porsche"] } },
+        { "key": "porschesPulled", "type": "cardsPulled", "filter": { "make": ["porsche"] } },
+        { "key": "legendsPulled", "type": "cardsPulled", "filter": { "cr": { "start": 850, "end": 9999 } } },
+        { "key": "mysticsPulled", "type": "cardsPulled", "filter": { "cr": { "start": 1000, "end": 9999 } } },
+        { "key": "heritage911s", "type": "uniqueCars", "carIDs": ["c04989", "c01069", "c04744", "c04696", "c01075"] },
+        { "key": "any917", "type": "cardsPulled", "filter": { "search": "porsche 917" } }
+    ],
+    "milestones": [
+        {
+            "_comment": "THE TURBOPANZER — all three at once. 53 legends = the 53 years since the 917/30 arrived in 1973. 'Legends' count Legendary AND Mystic pulls (CR 850+). Median packs for all three: 263 (lucky 220, unlucky 312), Monte Carlo on this pack; the legends goal is the slowest of the three.",
+            "requires": [
+                { "stat": "differentPorsches", "threshold": 300 },
+                { "stat": "porschesPulled", "threshold": 911 },
+                { "stat": "legendsPulled", "threshold": 53 }
+            ],
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c03910", "upgrade": "000" } },
+            "hint": "Collect 300 different Porsches, pull 911 Porsches in total and 53 Legendary-or-better cards, one for every year since 1973. Do all three and the Turbopanzer is yours."
+        },
+        {
+            "stat": "differentPorsches",
+            "threshold": 100,
+            "resetType": "cumulative",
+            "reward": { "money": 250000 },
+            "hint": "Collect 100 different Porsches."
+        },
+        {
+            "stat": "differentPorsches",
+            "threshold": 200,
+            "resetType": "cumulative",
+            "reward": { "trophies": 50 },
+            "hint": "Collect 200 different Porsches."
+        },
+        {
+            "stat": "porschesPulled",
+            "threshold": 500,
+            "resetType": "cumulative",
+            "reward": { "money": 500000 },
+            "hint": "Pull 500 Porsches."
+        },
+        {
+            "stat": "legendsPulled",
+            "threshold": 25,
+            "resetType": "cumulative",
+            "reward": { "trophies": 75 },
+            "hint": "Pull 25 Legendary-or-better Porsches."
+        },
+        {
+            "_comment": "5 specific 911s → the special BM 911 (c08661, 911 Turbo Remastered by Sonderwunsch). The five are in counters.heritage911s (all Epic, so each is findable: ~82 packs median to own all five). Swap any of them there.",
+            "stat": "heritage911s",
+            "threshold": 5,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c08661", "upgrade": "000" } },
+            "hint": "Collect five classic 911s: the 911 R 2.0, Carrera RS 2.7 Touring, Turbo 3.0, the 993 Carrera RS and the first GT3."
+        },
+        {
+            "_comment": "5 Mystic pulls → c08663, 911 Turbo S Sadu Edition (BM).",
+            "stat": "mysticsPulled",
+            "threshold": 5,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c08663", "upgrade": "000" } },
+            "hint": "Pull 5 Mystic Porsches."
+        },
+        {
+            "stat": "any917",
+            "threshold": 1,
+            "resetType": "cumulative",
+            "reward": { "trophies": 30 },
+            "isSecret": true,
+            "hint": "Some Porsches are more equal than others. Find one with a 917 on it."
+        },
+        {
+            "stat": "dryStreak",
+            "threshold": 25,
+            "resetType": "cumulative",
+            "reward": { "money": 300000 },
+            "isSecret": true,
+            "hint": "Twenty-five packs without a Legendary. Stuttgart feels your pain."
+        },
+        {
+            "stat": "legendsPulled",
+            "threshold": 1,
+            "resetType": "daily",
+            "reward": { "money": 100000 },
+            "hint": "Daily: pull a Legendary-or-better Porsche today."
+        },
+        {
+            "stat": "porschesPulled",
+            "threshold": 50,
+            "resetType": "daily",
+            "reward": { "money": 150000 },
+            "hint": "Daily: pull 50 Porsches today (10 packs)."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 1000,
+            "resetType": "daily",
+            "reward": { "trophies": 25 },
+            "hint": "Daily: pull a Mystic today."
+        }
+    ],
+    "placementRewards": [
+        {
+            "_comment": "Top 5 by packs opened. Additive with the top-20 tier below, so ranks 1-5 collect BOTH cars. Ranks are dense: players tied on packs share a rank.",
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 5,
+            "reward": { "car": { "carID": "c08660", "upgrade": "000" }, "money": 1000000, "trophies": 100 }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 20,
+            "reward": { "car": { "carID": "c08662", "upgrade": "000" }, "money": 500000, "trophies": 50 }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 500000, "trophies": 50 }
+        }
+    ]
+}

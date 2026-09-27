@@ -30,7 +30,7 @@ function allowRaceWeekRollover() {
     return !bot.devMode || process.env.RACEWEEK_DEV_ROLLOVER === "true";
 }
 const tracker = require("./src/util/functions/tracker.js");
-const { takeSnapshot, distributePlacementRewards } = require("./src/util/functions/packBattleManager.js");
+const { takeSnapshot, startScheduledPackBattles, expirePackBattle } = require("./src/util/functions/packBattleManager.js");
 const serverStatModel = require("./src/models/serverStatSchema.js");
 const profileModel = require("./src/models/profileSchema.js");
 const championshipsModel = require("./src/models/championshipsSchema.js");
@@ -162,6 +162,8 @@ bot.once("clientReady", async () => {
     // devMode shares the production DB — a dev bot must never run (or announce)
     // the live Monday rollover. Test rollovers manually instead.
     if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] startup check failed: ${error.message}`));
+    // A pack battle scheduled while the bot was down starts now (same gate).
+    if (allowRaceWeekRollover()) startScheduledPackBattles().catch(error => console.log(`[PackBattle] startup schedule check failed: ${error.message}`));
     const members = await bot.homeGuild.members.fetch();
     members.forEach(async (user) => {
         await upsertUserRecord(user);
@@ -203,6 +205,9 @@ setInterval(async () => {
     // Race Week rollover check — idempotent, fire-and-forget (never in devMode:
     // shared prod DB, see the ready-hook note)
     if (allowRaceWeekRollover()) checkRaceWeekRollover().catch(error => console.log(`[RaceWeek] rollover check failed: ${error.message}`));
+    // Scheduled pack battle starts (cd-startpackbattle <name> raceweek) — same
+    // gate and same tick as the rollover, so "with Race Week" means with it.
+    if (allowRaceWeekRollover()) await startScheduledPackBattles().catch(error => console.log(`[PackBattle] schedule check failed: ${error.message}`));
 
     // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch)
     const [events, championships, offers, packBattles, pvpEvents, playerDatum] = await Promise.all([
@@ -239,9 +244,9 @@ setInterval(async () => {
     for (let battle of packBattles) {
         if (battle.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(battle.deadline)).invalid !== null) {
             try {
-                await distributePlacementRewards(battle);
-                await packBattleModel.deleteOne({ battleID: battle.battleID });
-                console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
+                // Claims the battle first (the dev bot runs this loop on the same
+                // database), then pays placements, archives and deletes it.
+                if (await expirePackBattle(battle)) console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
             } catch (err) {
                 console.error(`[PackBattle] Error auto-expiring ${battle.name}:`, err.message);
             }

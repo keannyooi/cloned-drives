@@ -4,28 +4,47 @@ const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
-const { moneyEmojiID, patronRoleID } = require("../util/consts/consts.js");
+const { moneyEmojiID, trophyEmojiID, fuseEmojiID, patronRoleID } = require("../util/consts/consts.js");
 const { inDailyGiftPool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
 const { trackMoneyEarned } = require("../util/functions/tracker.js");
+const { planDailyClaim, currentCalendar, progressOf, describeReward, rewardImage, calendarView } = require("../util/functions/dailyCalendar.js");
 const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 
 module.exports = {
     name: "daily",
-    usage: "(no arguments required)",
+    usage: ["", "calendar"],
     args: 0,
     category: "Gameplay",
-    description: "Collect your daily reward with this command!",
-    async execute(message) {
+    description: "Collect your daily reward with this command! While a daily calendar is running, each daily also pays a calendar reward — `cd-daily calendar` shows the track.",
+    async execute(message, args = []) {
         const carFiles = getCarFiles();
         const packFiles = getPackFiles();
-        
+
         let playerData = await getProfile(message.author.id);
         let { dailyStats, money, garage } = playerData;
         let { lastDaily, streak, highestStreak } = dailyStats;
+        const rewardEmojis = {
+            money: bot.emojis.cache.get(moneyEmojiID),
+            trophies: bot.emojis.cache.get(trophyEmojiID),
+            fuseTokens: bot.emojis.cache.get(fuseEmojiID)
+        };
+
+        // cd-daily calendar: show the calendar track without claiming anything
+        if (args[0] && args[0].toLowerCase() === "calendar") {
+            const view = calendarView(dailyStats, rewardEmojis);
+            const calendarMessage = new InfoMessage({
+                channel: message.channel,
+                title: view.title,
+                desc: view.desc,
+                author: message.author
+            });
+            if (view.color !== null) calendarMessage.editEmbed({ color: view.color });
+            return calendarMessage.sendMessage();
+        }
 
         // Initialize discoveredCars
         let discoveredCars = playerData.discoveredCars || [];
@@ -133,17 +152,56 @@ module.exports = {
             }
             money += moneyReward;
             trackMoneyEarned(moneyReward);
-            await profileModel.updateOne({ userID: message.author.id }, {
+
+            // Daily calendar: while one is running, this daily also pays the
+            // player's next calendar reward. It rides in the same update, so the
+            // daily and its calendar step always land together. A calendar
+            // problem must never cost the player their daily.
+            let calendarStep = null;
+            try {
+                calendarStep = planDailyClaim(dailyStats);
+            }
+            catch (error) {
+                console.error("[DailyCalendar] could not plan this daily's calendar reward:", error);
+            }
+
+            const update = {
                 "$set": {
                     "dailyStats.lastDaily": DateTime.now().toISO(),
                     "dailyStats.streak": streak,
                     "dailyStats.highestStreak": highestStreak,
-                    "dailyStats.notifReceived": false
+                    "dailyStats.notifReceived": false,
+                    ...(calendarStep && calendarStep.set ? calendarStep.set : {})
                 },
                 money,
                 garage,
                 discoveredCars
-            });
+            };
+            if (calendarStep && Array.isArray(calendarStep.entries) && calendarStep.entries.length > 0) {
+                update["$push"] = { unclaimedRewards: { "$each": calendarStep.entries } };
+            }
+            await profileModel.updateOne({ userID: message.author.id }, update);
+
+            const fields = [
+                { name: "Current Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
+            ];
+            if (calendarStep && calendarStep.complete) {
+                fields.push({
+                    name: `🗓️ ${calendarStep.calendar.name} — complete`,
+                    value: `You've collected all ${calendarStep.total} calendar rewards.`
+                });
+            }
+            else if (calendarStep) {
+                fields.push({
+                    name: `🗓️ ${calendarStep.calendar.name} — Day ${calendarStep.day}/${calendarStep.total}`,
+                    value: `${describeReward(calendarStep.reward, rewardEmojis)} → added to \`cd-rewards\``
+                        + (calendarStep.next
+                            ? `\nNext daily: ${describeReward(calendarStep.next, rewardEmojis)}`
+                            : "\nThat was the last one — calendar complete!")
+                        + "\n`cd-daily calendar` shows the whole track."
+                });
+                if (!image) image = rewardImage(calendarStep.reward);
+            }
 
             const infoMessage = new SuccessMessage({
                 channel: message.channel,
@@ -151,9 +209,7 @@ module.exports = {
                 desc: `Current Streak: \`${streak}\`${desc}`,
                 author: message.author,
                 image,
-                fields: [
-                    { name: "Current Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
-                ]
+                fields
             });
             if (guildMember.roles.cache.has(patronRoleID)) {
                 infoMessage.editEmbed({ footer: "As a token of appreciation for becoming a Cloned Drives patron, you now enjoy a x1.5 multiplier for your money daily rewards!" });
@@ -167,10 +223,27 @@ module.exports = {
         const minutesRemaining = Math.floor((remainingTime % 1) * 60);
         const secondsRemaining = Math.floor(((remainingTime * 60) % 1) * 60);
 
+        // While a calendar runs, say what the next daily will add from it
+        let calendarHint = "";
+        try {
+            const current = currentCalendar();
+            if (current && current.problems.length === 0) {
+                const { calendar } = current;
+                const total = calendar.rewards.length;
+                const { claimed } = progressOf(dailyStats, calendar.calendarID);
+                calendarHint = claimed >= total
+                    ? `\n\n🗓️ ${calendar.name}: complete, all ${total} rewards collected!`
+                    : `\n\n🗓️ ${calendar.name} (${claimed}/${total}): your next daily also pays ${describeReward(calendar.rewards[claimed], rewardEmojis)}.`;
+            }
+        }
+        catch (error) {
+            console.error("[DailyCalendar] could not build the cooldown hint:", error);
+        }
+
         const infoMessage = new InfoMessage({
             channel: message.channel,
             title: "You've already received your daily reward!",
-            desc: `Come back in \`${hoursRemaining}h ${minutesRemaining}m ${secondsRemaining}s\`!`,
+            desc: `Come back in \`${hoursRemaining}h ${minutesRemaining}m ${secondsRemaining}s\`!${calendarHint}`,
             author: message.author
         });
         infoMessage.sendMessage();

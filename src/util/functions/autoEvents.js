@@ -39,7 +39,51 @@ const generators = {
 const WEEKDAYS = { monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6, sunday: 7 };
 const DUPE_GUARD_MS = 2 * 60 * 60 * 1000;   // only block a respawn while the live instance has >2h left
 
+/**
+ * Optional date window: `activeFrom` / `activeUntil` ("YYYY-MM-DD", both
+ * inclusive, server-local like the midnight cron). Outside it the template
+ * never spawns on its own. Either end may be left off.
+ */
+function inWindow(template, now) {
+    if (template.activeFrom) {
+        const from = DateTime.fromISO(template.activeFrom);
+        if (from.isValid && now < from.startOf("day")) return false;
+    }
+    if (template.activeUntil) {
+        const until = DateTime.fromISO(template.activeUntil);
+        if (until.isValid && now > until.endOf("day")) return false;
+    }
+    return true;
+}
+
+/** 1-based day of the template's window (null without activeFrom, or outside the window). */
+function windowDay(template, now) {
+    if (!template.activeFrom || !inWindow(template, now)) return null;
+    const from = DateTime.fromISO(template.activeFrom);
+    if (!from.isValid) return null;
+    const day = Math.round(now.startOf("day").diff(from.startOf("day"), "days").days) + 1;
+    return day >= 1 ? day : null;
+}
+
+/**
+ * `suppresses: ["ae00002"]` on an enabled template pauses those templates for
+ * as long as it is inside its own window — e.g. a themed daily standing in for
+ * Daily Drive for three weeks, with no one flipping switches by hand.
+ * @returns {string|null} the ID of the template doing the suppressing
+ */
+function suppressedBy(templateID, now) {
+    for (const file of getAutoEventTemplateFiles()) {
+        const otherID = file.slice(0, -5);
+        if (otherID === templateID) continue;
+        const other = getAutoEventTemplate(otherID);
+        if (!other || other.enabled !== true || !Array.isArray(other.suppresses)) continue;
+        if (other.suppresses.includes(templateID) && inWindow(other, now)) return otherID;
+    }
+    return null;
+}
+
 function isDue(template, state, now) {
+    if (!inWindow(template, now)) return false;
     if (template.spawnDay) {
         // now.weekday is locale-independent (1=Mon..7=Sun) — weekdayLong was not
         const wanted = WEEKDAYS[String(template.spawnDay).toLowerCase()];
@@ -79,9 +123,17 @@ async function checkAutoEvents() {
             const stat = await serverStatModel.findOne({});
             const state = (stat.autoEventState || {})[templateID] || {};
 
+            // Paused while another template stands in for it (its `suppresses`).
+            const now = DateTime.now();
+            const suppressor = suppressedBy(templateID, now);
+            if (suppressor) {
+                console.log(`[AutoEvents] ${templateID} paused today — ${suppressor} is standing in for it`);
+                continue;
+            }
+
             // Spawn when due, unless a previous instance is still genuinely running
             // (and the template hasn't opted out of duplicate protection).
-            if (!isDue(template, state, DateTime.now())) continue;
+            if (!isDue(template, state, now)) continue;
             if (!template.ignoreDupe && await hasRunningInstance(state)) continue;
 
             await spawnFromTemplate(templateID);
@@ -107,7 +159,9 @@ async function spawnFromTemplate(templateID) {
     const result = generate(template, {
         counter: state.counter || 0,
         lastCarPick: state.lastCarPick,
-        lastPackPick: state.lastPackPick
+        lastPackPick: state.lastPackPick,
+        lastTrack: state.lastTrack,
+        dayNumber: windowDay(template, DateTime.now())
     });
 
     // The one hard invariant: never two events sharing a name (that breaks cd-pe's
@@ -143,6 +197,7 @@ async function spawnFromTemplate(templateID) {
         counter: (state.counter || 0) + 1,
         lastCarPick: result.statePatch.lastCarPick ?? state.lastCarPick ?? null,
         lastPackPick: result.statePatch.lastPackPick ?? state.lastPackPick ?? null,
+        lastTrack: result.statePatch.lastTrack ?? state.lastTrack ?? null,
         currentEventID: eventID
     };
     await serverStatModel.updateOne({}, {
@@ -162,7 +217,7 @@ async function spawnFromTemplate(templateID) {
             .join(", ");
         const lines = [
             `**🏁 ${result.name} has begun!**`,
-            `${result.roster.length} rounds — every one verified beatable. How deep does your garage go?`,
+            `${result.roster.length} rounds${result.venue ? `, all at **${result.venue}**` : ""} — every one verified beatable. How deep does your garage go?`,
             result.entryFee > 0 ? `Entry: ${moneyEmoji}${result.entryFee.toLocaleString("en")} (one-time, charged at your first race).` : null,
             carReward ? `Final reward: **${carReward}**!` : null,
             `Ends <t:${Math.round(DateTime.fromISO(deadline).toSeconds())}:R> — play with \`cd-pe ${template.name.toLowerCase()}\`.`
@@ -194,4 +249,4 @@ async function spawnFromTemplate(templateID) {
     return { eventID, debug: result.debug, name: result.name };
 }
 
-module.exports = { checkAutoEvents, spawnFromTemplate, generators };
+module.exports = { checkAutoEvents, spawnFromTemplate, generators, inWindow, windowDay, suppressedBy, isDue };

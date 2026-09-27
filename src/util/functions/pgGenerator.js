@@ -23,8 +23,9 @@
 
 const { getCar, getTrack, getCarFiles, getTrackFiles, packExists, carExists } = require("./dataManager.js");
 const { calcTune } = require("./calcTune.js");
-const { isPackable, isPrizeLike, usesReferenceStats, isBMCar, hasType, modifiedBase } = require("./cardType.js");
+const { isPackable, isPrizeLike, usesReferenceStats, isBMCar, hasType, modifiedBase, getBaseType } = require("./cardType.js");
 const { driveHierarchy, gcHierarchy, weatherVars } = require("../consts/consts.js");
+const filterCheck = require("./filterCheck.js");
 
 // ─── Race scoring — MIRRORS race.js evalScore (v2.0 rebalanced) ─────────────
 
@@ -316,7 +317,8 @@ function assembleRewards(template, roundCount, context, warnings) {
     // validate pools up front
     for (const id of carPool) {
         if (!carExists(id)) throw new Error(`rewards.carPool entry "${id}" does not exist`);
-        if (!isPrizeLike(getCar(id))) warnings.push(`carPool entry ${id} is not a Prize-type card`);
+        // allowNonPrize: the pool is ordinary cards on purpose (dailies).
+        if (!cfg.allowNonPrize && !isPrizeLike(getCar(id))) warnings.push(`carPool entry ${id} is not a Prize-type card`);
     }
     for (const id of packPool) {
         if (!packExists(id)) throw new Error(`rewards.packPool entry "${id}" does not exist`);
@@ -403,12 +405,61 @@ function roman(n) {
     return out || "I";
 }
 
+// ─── Opponents, venue and requirement limits (optional template options) ────
+
+/**
+ * An explicit opponent rule: `opponentLeadMake` (the badge — make[0] — must
+ * be one of these, so ["porsche"] means Porsche-badged, not RUF or TechArt)
+ * and/or `opponentFilter` (cd-filter criteria, OR within a list, as events
+ * read reqs). Either one set = the opponent pool is exactly those cars, BOSS
+ * cards excluded, and the theme no longer picks opponents.
+ */
+function hasOpponentRule(template) {
+    return (Array.isArray(template.opponentLeadMake) && template.opponentLeadMake.length > 0)
+        || (template.opponentFilter && typeof template.opponentFilter === "object" && Object.keys(template.opponentFilter).length > 0);
+}
+function opponentMatches(id, template) {
+    const car = getCar(id);
+    if (!car || /boss/i.test(getBaseType(car) || "")) return false;
+    if (Array.isArray(template.opponentLeadMake) && template.opponentLeadMake.length > 0) {
+        const lead = String(Array.isArray(car.make) ? car.make[0] : car.make).toLowerCase();
+        if (!template.opponentLeadMake.some(make => String(make).toLowerCase() === lead)) return false;
+    }
+    if (template.opponentFilter && Object.keys(template.opponentFilter).length > 0) {
+        if (!filterCheck({ car: { carID: id }, filter: template.opponentFilter, applyOrLogic: true })) return false;
+    }
+    return true;
+}
+
+/** `excludeReqValues: { make: ["porsche"] }` — a generated req may never ask for these values. */
+function isExcludedReq(template, key, value) {
+    const banned = template.excludeReqValues && template.excludeReqValues[key];
+    if (!Array.isArray(banned) || banned.length === 0) return false;
+    const values = (Array.isArray(value) ? value : [value]).map(v => String(v).toLowerCase());
+    return banned.some(b => values.includes(String(b).toLowerCase()));
+}
+
+/**
+ * The venue for this spawn when `singleTrack` is on: every round runs on one
+ * track from `trackPool`. trackOrder "sequence" (default) walks the pool in
+ * order by spawn number — day number of the window when `activeFrom` is set,
+ * so a missed midnight never shifts the finale; "random" picks any entry but
+ * the previous spawn's.
+ */
+function pickVenue(template, pool, number, lastTrack) {
+    if (template.trackOrder === "random") {
+        const choices = pool.length > 1 ? pool.filter(id => id !== lastTrack) : pool;
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
+    return pool[(Math.max(1, number) - 1) % pool.length];
+}
+
 // ─── The generator ───────────────────────────────────────────────────────────
 
 /**
  * @param {Object} template - an auto-event template (src/autoevents/*.json)
- * @param {Object} context  - spawn state: { counter, lastCarPick, lastPackPick }
- * @returns {{ name, roster, entryFee, eventType, themeName, statePatch, debug }}
+ * @param {Object} context  - spawn state: { counter, lastCarPick, lastPackPick, lastTrack, dayNumber }
+ * @returns {{ name, roster, entryFee, eventType, themeName, venue, statePatch, debug }}
  */
 function generate(template, context = {}) {
     const roundCount = template.rounds || 20;
@@ -419,7 +470,21 @@ function generate(template, context = {}) {
 
     const carFiles = getCarFiles();
     const allCarIDs = carFiles.map(f => f.slice(0, 6));
-    const trackIDs = getTrackFiles().map(f => f.slice(0, 6));
+    const allTrackIDs = getTrackFiles().map(f => f.slice(0, 6));
+
+    // Tracks: the template's pool when given (unknown IDs dropped with a
+    // warning), otherwise every track. singleTrack = one venue per event.
+    let trackIDs = allTrackIDs;
+    if (Array.isArray(template.trackPool) && template.trackPool.length > 0) {
+        trackIDs = template.trackPool.filter(id => getTrack(id));
+        const missing = template.trackPool.filter(id => !getTrack(id));
+        if (missing.length > 0) warnings.push(`trackPool entries not found: ${missing.join(", ")}`);
+        if (trackIDs.length === 0) throw new Error("trackPool has no loadable tracks");
+    }
+    // The spawn's number: day of the active window when there is one, else the counter.
+    const counter = (context.counter || 0) + 1;
+    const number = context.dayNumber >= 1 ? context.dayNumber : counter;
+    const venue = template.singleTrack ? pickVenue(template, trackIDs, number, context.lastTrack) : null;
 
     // Default universe: every card a player can obtain without prizes.
     const defaultUniverse = allCarIDs.filter(id => {
@@ -449,7 +514,13 @@ function generate(template, context = {}) {
         return !usesReferenceStats(c) && (c.cr || 0) > 0;
     });
     let opponentPool = standalone;
-    if (template.themeOpponents !== false && theme && !theme.baseReqs.cardType && theme.universe !== "bm") {
+    if (hasOpponentRule(template)) {
+        // An explicit rule wins outright: "every opponent is a Porsche" must not
+        // turn into "every opponent is German" on a Made-in-DE spawn.
+        opponentPool = standalone.filter(id => opponentMatches(id, template));
+        if (opponentPool.length < 30) throw new Error(`opponent rule leaves only ${opponentPool.length} cars (need at least 30)`);
+    }
+    else if (template.themeOpponents !== false && theme && !theme.baseReqs.cardType && theme.universe !== "bm") {
         const themed = standalone.filter(id => reqCheck(getCar(id), theme.baseReqs));
         if (themed.length >= 60) opponentPool = themed;
     }
@@ -484,7 +555,7 @@ function generate(template, context = {}) {
             } while ((oppCar.cr < winLo || oppCar.cr > winHi) && tries < 3000);
             const tunePool = level < 4 ? TUNES : level < 7 ? ["333", "666", "699", "969", "996"] : ["699", "969", "996"];
             const oppTune = tunePool[Math.floor(Math.random() * tunePool.length)];
-            const trackID = trackIDs[Math.floor(Math.random() * trackIDs.length)];
+            const trackID = venue || trackIDs[Math.floor(Math.random() * trackIDs.length)];
 
             // reqs: CR cap (tightening past the opponent) + property reqs
             const reqs = {};
@@ -506,7 +577,7 @@ function generate(template, context = {}) {
             } while (!reqCheck(getCar(reqCarID), { cr: reqs.cr }) && sampleTries < 200);
             for (const key of keys) {
                 const built = buildReq(key, getCar(reqCarID), hard);
-                if (built !== null) reqs[key] = built;
+                if (built !== null && !isExcludedReq(template, key, built)) reqs[key] = built;
             }
             if (theme) Object.assign(reqs, structuredClone(theme.baseReqs), { cr: reqs.cr });
             // hard-round spice on unthemed events: plain cards only
@@ -562,14 +633,24 @@ function generate(template, context = {}) {
     }
 
     // name
-    const counter = (context.counter || 0) + 1;
     const subtitlePool = template.subtitles || [];
     // themed spawns use the theme as subtitle — unless it IS the template name
     // (fixed single-theme templates would read "X I: X" otherwise)
     const subtitle = theme && theme.name !== template.name
         ? theme.name
         : (subtitlePool.length > 0 ? subtitlePool[Math.floor(Math.random() * subtitlePool.length)] : null);
-    const name = `${template.name} ${roman(counter)}${subtitle ? `: ${subtitle}` : ""}`;
+    const venueName = venue ? getTrack(venue).trackName : null;
+    // nameFormat tokens: {name} {n} {roman} {track} {subtitle}. Without one,
+    // the classic "<name> <ROMAN>[: <subtitle>]".
+    const name = template.nameFormat
+        ? template.nameFormat
+            .replace(/\{name\}/g, template.name)
+            .replace(/\{n\}/g, String(number))
+            .replace(/\{roman\}/g, roman(number))
+            .replace(/\{track\}/g, venueName || "")
+            .replace(/\{subtitle\}/g, subtitle || "")
+            .replace(/\s{2,}/g, " ").replace(/:\s*$/, "").trim()
+        : `${template.name} ${roman(counter)}${subtitle ? `: ${subtitle}` : ""}`;
 
     return {
         name,
@@ -577,7 +658,8 @@ function generate(template, context = {}) {
         entryFee: template.entryFee || 0,
         eventType: template.generator || "provinggrounds",
         themeName: theme ? theme.name : null,
-        statePatch,
+        venue: venueName,
+        statePatch: { ...statePatch, lastTrack: venue || context.lastTrack || null },
         debug: {
             solverRamp: rounds.map(r => r.pgStats.solvers),
             themeName: theme ? theme.name : null,
@@ -590,4 +672,8 @@ function generate(template, context = {}) {
 // evalScore/getTuned are exported for the Race Week feasibility check, which
 // must score a candidate hand EXACTLY as a real race would — a second copy of
 // the formula would drift and start passing unwinnable rounds.
-module.exports = { generate, evalScore, getTuned };
+module.exports = {
+    generate, evalScore, getTuned,
+    // exported for tests
+    _internals: { hasOpponentRule, opponentMatches, isExcludedReq, pickVenue }
+};
