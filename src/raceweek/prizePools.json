@@ -46,13 +46,17 @@
             "400": { "carPool": ["c03840"], "driverPool": ["d00045"] }
         },
         "2026-W41": {
-            "_comment": "3 WEEKS OF PORSCHE, week 2 of 3 (Mon 5 Oct to Sun 11 Oct 2026). Porsche packs are set; add the week's cars (50, 150, 300, 400) and drivers (100, 400) once picked. Rungs not listed here run the normal pools from \"rungs\".",
+            "_comment": "3 WEEKS OF PORSCHE, week 2 of 3 (Mon 5 Oct to Sun 11 Oct 2026). Cars: 50 = c08187 911 GT3 (MA25), 150 = c04857 Vision Renndienst, 400 = c01462 Mission R Concept. 300 had no car picked, so it pays a 5x Porsche Titan like week 1 — swap in a carPool if you want a car there. No drivers were picked: 100 isn't listed, so it pays the normal driver from \"rungs\", and 400 keeps the normal 400 driver (d00046) — change the driverPool to theme it. Packs are the Porsche versions of the normal rung packs. 25 isn't listed, so it pays the normal money.",
             "_label": "3 Weeks of Porsche: Week 2",
             "_color": "#c8102e",
             "10": { "packPool": ["p00013"] },
+            "50": { "carPool": ["c08187"] },
+            "150": { "carPool": ["c04857"] },
             "200": { "packPool": ["p00059"] },
             "250": { "packPool": ["p00270"] },
-            "350": { "packPool": ["p00271"] }
+            "300": { "packPool": ["p00130"] },
+            "350": { "packPool": ["p00271"] },
+            "400": { "carPool": ["c01462"], "driverPool": ["d00046"] }
         },
         "2026-W42": {
             "_comment": "3 WEEKS OF PORSCHE, week 3 of 3 (Mon 12 Oct to Sun 18 Oct 2026). Porsche packs are set; add the week's cars (50, 150, 300, 400) and drivers (100, 400) once picked. Rungs not listed here run the normal pools from \"rungs\".",
