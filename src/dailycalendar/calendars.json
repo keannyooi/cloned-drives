@@ -13,12 +13,12 @@
     },
     "calendars": [
         {
-            "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W42). 20 rewards over the 21-day window, so one missed day still reaches the finale. Packs: p00013 Porsche Elite, p00059 Porsche Titan, p00270 Porsche Cosmo, p00271 2 Mystic Porsche. Reward packs opened from cd-rewards don't count toward the Turbopanzer pack battle; only packs bought with cd-openpack do.",
+            "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W43; extended a week, originally to 18 Oct). 20 rewards over the 28-day window, so a player can miss eight days and still reach the finale. Packs: p00013 Porsche Elite, p00059 Porsche Titan, p00270 Porsche Cosmo, p00271 2 Mystic Porsche. Reward packs opened from cd-rewards don't count toward the Turbopanzer pack battle; only packs bought with cd-openpack do.",
             "calendarID": "porsche2026",
             "name": "3 Weeks of Porsche",
             "enabled": true,
             "activeFrom": "2026-09-28",
-            "activeUntil": "2026-10-18",
+            "activeUntil": "2026-10-25",
             "color": "#c8102e",
             "rewards": [
                 { "pack": "p00013" },

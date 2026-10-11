@@ -591,6 +591,8 @@ async function checkRaceWeekRollover() {
         // happens as performRollover's FINAL write, so a crash mid-rollover
         // leaves weekKey stale and a later tick retries (lock goes stale after
         // 10 minutes). ISO strings compare lexicographically, so $lt works.
+        // A lock dated in the FUTURE is a deliberate hold on the rollover —
+        // see scripts/holdRaceWeekRollover.js.
         const staleBefore = DateTime.utc().minus({ minutes: 10 }).toISO();
         const claimed = await serverStatModel.findOneAndUpdate(
             {

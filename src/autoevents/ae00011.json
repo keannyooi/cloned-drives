@@ -1,5 +1,5 @@
 {
-    "_comment": "3 WEEKS OF PORSCHE — stands in for Daily Drive (ae00002) from 28 Sep to 18 Oct 2026 via `suppresses`. Every opponent is Porsche-badged; player reqs are the usual Daily Drive mix and never ask for a Porsche. One venue per day, in trackPool order by day of the window, so day 21 is always Circuit de la Sarthe. The round-5 car comes from ordinary (non-prize) Porsche-badged cards in Daily Drive's CR band (838-923); cars listed in docs/porsche-review.csv were left out until they're reviewed.",
+    "_comment": "3 WEEKS OF PORSCHE — stands in for Daily Drive (ae00002) from 28 Sep to 25 Oct 2026 via `suppresses` (extended a week from 18 Oct when the campaign was pushed back; days 19-25 are the seven added venues). Every opponent is Porsche-badged; player reqs are the usual Daily Drive mix and never ask for a Porsche. One venue per day, in trackPool order by day of the window, so day 28 is always Circuit de la Sarthe. The round-5 car comes from ordinary (non-prize) Porsche-badged cards in Daily Drive's CR band (838-923); cars listed in docs/porsche-review.csv were left out until they're reviewed.",
     "name": "Porsche Cup",
     "enabled": true,
     "announceDMs": false,
@@ -8,7 +8,7 @@
     "durationDays": 1,
     "ignoreDupe": true,
     "activeFrom": "2026-09-28",
-    "activeUntil": "2026-10-18",
+    "activeUntil": "2026-10-25",
     "suppresses": ["ae00002"],
     "rounds": 5,
     "difficulty": {
@@ -20,7 +20,7 @@
     "nameFormat": "Porsche Cup {n}: {track}",
     "singleTrack": true,
     "trackOrder": "sequence",
-    "trackPool": ["t00073", "t00062", "t00140", "t00142", "t00195", "t00071", "t00068", "t00146", "t00166", "t00087", "t00034", "t00198", "t00066", "t00209", "t00203", "t00075", "t00069", "t00042", "t00072", "t00149", "t00019"],
+    "trackPool": ["t00073", "t00062", "t00140", "t00142", "t00195", "t00071", "t00068", "t00146", "t00166", "t00087", "t00034", "t00198", "t00066", "t00209", "t00203", "t00075", "t00069", "t00042", "t00196", "t00096", "t00211", "t00108", "t00102", "t00144", "t00100", "t00072", "t00149", "t00019"],
     "opponentLeadMake": ["porsche"],
     "excludeReqValues": {
         "make": ["porsche"]

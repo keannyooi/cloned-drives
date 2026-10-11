@@ -1,8 +1,8 @@
 {
-    "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W42). Keys starting with _ are notes and are ignored. The four exclusive BM cards: c08661 911 Turbo Remastered by Sonderwunsch (Heritage Five), c08663 911 Turbo S Sadu Edition (5 Mystics), c08660 911 Dakar Rallye 1971 (top 5), c08662 911 GT3 Touring Tree of Life (top 20). cd-createpackbattle refuses the template if any reward car doesn't load, so nothing unclaimable can reach a player.",
+    "_comment": "3 WEEKS OF PORSCHE (2026-W40 to W43; extended from 21 to 28 days, the live battle now ends Mon 26 Oct 00:00 UTC). Keys starting with _ are notes and are ignored. The four exclusive BM cards: c08661 911 Turbo Remastered by Sonderwunsch (Heritage Five), c08663 911 Turbo S Sadu Edition (5 Mystics), c08660 911 Dakar Rallye 1971 (top 5), c08662 911 GT3 Touring Tree of Life (top 20). cd-createpackbattle refuses the template if any reward car doesn't load, so nothing unclaimable can reach a player.",
     "name": "Operation: Turbopanzer",
     "packID": "p00059",
-    "duration": "21d",
+    "duration": "28d",
     "counters": [
         { "key": "differentPorsches", "type": "uniqueCars", "filter": { "make": ["porsche"] } },
         { "key": "porschesPulled", "type": "cardsPulled", "filter": { "make": ["porsche"] } },
