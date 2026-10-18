@@ -59,13 +59,17 @@
             "400": { "carPool": ["c01462"], "driverPool": ["d00046"] }
         },
         "2026-W43": {
-            "_comment": "3 WEEKS OF PORSCHE, week 3 of 3 (Mon 19 Oct to Sun 25 Oct 2026; delayed a week from W42). Porsche packs are set; add the week's cars (50, 150, 300, 400) and drivers (100, 400) once picked. Rungs not listed here run the normal pools from \"rungs\".",
+            "_comment": "3 WEEKS OF PORSCHE, week 3 of 3 (Mon 19 Oct to Sun 25 Oct 2026; delayed a week from W42). Porsche single-seaters: 50 = c03285 718/2 Monoposto (1959), 150 = c04913 804 (1962), 400 = c04859 Porsche-March 90P #4 Porsche Motorsports (1990). 300 had no car picked, so it pays a 5x Porsche Titan like weeks 1 and 2. No drivers were picked: 100 isn't listed, so it pays the normal driver from \"rungs\", and 400 keeps the normal 400 driver (d00046). Packs are the Porsche versions of the normal rung packs. 25 isn't listed, so it pays the normal money.",
             "_label": "3 Weeks of Porsche: Week 3",
             "_color": "#c8102e",
             "10": { "packPool": ["p00013"] },
+            "50": { "carPool": ["c03285"] },
+            "150": { "carPool": ["c04913"] },
             "200": { "packPool": ["p00059"] },
             "250": { "packPool": ["p00270"] },
-            "350": { "packPool": ["p00271"] }
+            "300": { "packPool": ["p00130"] },
+            "350": { "packPool": ["p00271"] },
+            "400": { "carPool": ["c04859"], "driverPool": ["d00046"] }
         }
     },
     "endless": {
