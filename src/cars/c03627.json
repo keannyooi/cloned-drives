@@ -21,11 +21,11 @@
     "fuelType": "Hybrid",
     "mra": 55.56,
     "ola": 66.67,
-    "power": 375,
-    "powerEstimated": true,
+    "power": 309,
     "description": "The worker’s special.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/Ram15003.64x4TradesmanCrewCab(2019).png",
     "creator": "DodgeDemon",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:11.841Z","by":"209038568138604546","field":"power","via":"SED56","from":375,"to":309}],
     "cardType": ["Normal"]
 }

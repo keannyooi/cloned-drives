@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 64.89,
     "ola": 75.41,
-    "power": 280,
-    "powerEstimated": true,
+    "power": 309,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DodgeChallengerSXT2015.png",
     "creator": "DodgeDemon",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:16.834Z","by":"209038568138604546","field":"power","via":"SED12","from":280,"to":309}],
     "cardType": ["Normal"]
 }

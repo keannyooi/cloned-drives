@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 41.96,
     "ola": 61.68,
-    "power": 65,
-    "powerEstimated": true,
+    "power": 96,
     "description": "Refined A1 now brings an optional crossover-looking package and new engines, including this cute little 1.0.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA11.0TFSIultraActive(2014).png",
     "creator": "Lemon",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:06.065Z","by":"209038568138604546","field":"power","via":"SED28","from":65,"to":96}],
     "cardType": ["Normal"]
 }

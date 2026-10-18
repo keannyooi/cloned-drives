@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 55.54,
     "ola": 73.34,
-    "power": 90,
-    "powerEstimated": true,
+    "power": 150,
     "description": "One of the true greats spawned from the British Sports-Classic Era.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AustinHealey3000mkIII(1963).png",
     "creator": "Exist",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:17.582Z","by":"209038568138604546","field":"power","via":"SED15","from":90,"to":150}],
     "cardType": ["Normal"]
 }

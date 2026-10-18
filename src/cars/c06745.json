@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 62.96,
     "ola": 76.47,
-    "power": 145,
-    "powerEstimated": true,
+    "power": 200,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SubaruBRZ(2012).png",
     "creator": "Pfugs",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:13.585Z","by":"209038568138604546","field":"power","via":"SED67","from":145,"to":200}],
     "cardType": ["Normal"]
 }

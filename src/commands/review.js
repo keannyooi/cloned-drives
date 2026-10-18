@@ -71,16 +71,168 @@ function interleaveByCreator(list) {
 }
 const listUpdate = require("../util/functions/listUpdate.js");
 const profileModel = require("../models/profileSchema.js");
+const bot = require("../config/config.js");
 const BT = String.fromCharCode(96);   // backtick, for inline code in messages
+
+// ─── Bulk actions on suggested edits ─────────────────────────────────────────
+
+const BULK_MAX = 80;
+const isEditID = arg => /^T?SED\d+$/.test(normalizeSubmissionID(arg));
+
+/** Lines joined under Discord's 4096-char description cap, the rest counted. */
+function clampLines(lines, limit = 3800) {
+    const kept = [];
+    let length = 0;
+    for (const line of lines) {
+        if (length + line.length + 1 > limit) break;
+        kept.push(line);
+        length += line.length + 1;
+    }
+    const more = lines.length - kept.length;
+    return kept.join("\n") + (more > 0 ? `\n…and ${more} more` : "");
+}
+
+/**
+ * `cd-review approve SED23 SED25 …` — approve several POWER suggestions at
+ * once. Each is patched exactly like a single approve; expired ones may be
+ * approved too. Description and "other" edits are skipped (they need
+ * `apply` or a hand edit, so they go one at a time). One DM per person and
+ * one feed post for the whole batch, instead of one per suggestion.
+ */
+async function bulkApproveEdits(message, rawIDs) {
+    const { applySuggestion } = require("../util/functions/suggestEdit.js");
+    const { notifyCreator, feedNote } = require("../util/functions/submissionViews.js");
+    const ids = [...new Set(rawIDs.map(normalizeSubmissionID))];
+    if (ids.length > BULK_MAX) {
+        return fail(message, `Error, that's ${ids.length} IDs.`, `Bulk approve takes up to ${BULK_MAX} at a time.`);
+    }
+    const docs = await submissionModel.find({ submissionID: { "$in": ids } });
+    const byID = new Map(docs.map(doc => [doc.submissionID, doc]));
+    const now = new Date().toISOString();
+    const done = [], skipped = [], files = [];
+
+    for (const id of ids) {
+        const submission = byID.get(id);
+        if (!submission) { skipped.push(`${BT}${id}${BT} not found`); continue; }
+        if (submission.type !== "edit") { skipped.push(`${BT}${id}${BT} isn't a suggested edit — approve it on its own`); continue; }
+        if (submission.field !== "power") { skipped.push(`${BT}${id}${BT} is a ${submission.field} edit — approve it on its own`); continue; }
+        if (!["pending", "expired"].includes(submission.status)) { skipped.push(`${BT}${id}${BT} is already ${submission.status}`); continue; }
+        let outcome;
+        try { outcome = await applySuggestion(submission, { by: message.author.id }); }
+        catch (error) { skipped.push(`${BT}${id}${BT} couldn't be patched: ${error.message}`); continue; }
+        const approved = await updateSubmission(id, {
+            status: "approved",
+            reviewedBy: message.author.id,
+            reviewedAt: now,
+            appliedAt: now,
+            appliedBy: message.author.id,
+            appliedValue: String(outcome.to).slice(0, 200),
+            reviewNote: ""
+        });
+        done.push({ submission: approved.toObject(), from: outcome.from, to: outcome.to });
+        files.push(new AttachmentBuilder(Buffer.from(outcome.text, "utf8"), { name: `${submission.reference}.json` }));
+    }
+
+    // One DM per person (suggester or +1) listing everything of theirs accepted.
+    const perPerson = new Map();
+    for (const { submission, to } of done) {
+        const line = `**${submission.targetName || submission.reference}** — power is now **${to} PS**`;
+        const people = new Set([submission.creatorID, ...(submission.supporters || []).map(supporter => supporter.userID)]);
+        for (const userID of people) {
+            if (!userID) continue;
+            if (!perPerson.has(userID)) perPerson.set(userID, []);
+            perPerson.get(userID).push({ submission, line });
+        }
+    }
+    let unreached = 0;
+    for (const [userID, entries] of perPerson) {
+        const count = entries.length;
+        const reached = await notifyCreator(
+            { ...entries[0].submission, creatorID: userID, status: "approved", submissionID: entries.map(entry => entry.submission.submissionID).join(", ").slice(0, 2000) },
+            `✅ ${count === 1 ? "Your suggestion was" : `${count} of your suggestions were`} accepted`,
+            `${clampLines(entries.map(entry => entry.line))}\n\nThanks for the corrections 🖤`
+        ).catch(() => "nobody");
+        if (reached === "nobody") unreached++;
+    }
+
+    const changes = done.map(({ submission, from, to }) => `${submission.submissionID} **${submission.targetName || submission.reference}** ${from ?? "—"} → **${to} PS**`);
+    if (done.length > 0) {
+        void feedNote("approved", `${done.length} suggested power edit${done.length === 1 ? "" : "s"} approved:\n${clampLines(changes, 3900)}`);
+    }
+
+    await new SuccessMessage({
+        channel: message.channel,
+        title: `Approved ${done.length} of ${ids.length} suggested edits.`,
+        desc: (done.length > 0 ? `${clampLines(changes, 2600)}\n\nThe carfiles are patched and the cars reloaded — commit them on your normal cadence.` : "Nothing was approved.")
+            + (skipped.length > 0 ? `\n\n**Skipped:**\n${clampLines(skipped, 900)}` : "")
+            + (unreached > 0 ? `\n\n⚠️ ${unreached} ${unreached === 1 ? "person" : "people"} couldn't be notified.` : ""),
+        author: message.author
+    }).sendMessage();
+    // The patched files, ten to a message (Discord's attachment cap).
+    for (let i = 0; i < files.length; i += 10) {
+        await message.channel.send({
+            content: i === 0 ? "Patched carfiles — if the bot runs on another machine, drop these over your copies before committing." : undefined,
+            files: files.slice(i, i + 10)
+        }).catch(() => {});
+    }
+}
+
+/**
+ * `cd-review extend all` / `cd-review extend SED3 SED20 …` — restart the
+ * stale clock on suggested edits so they get another full RULES.staleDays.
+ * Expired ones named by ID come back to pending. The clock runs from
+ * submittedAt (closeStaleSuggestions), which nothing displays, so restarting
+ * it changes nothing a player can see.
+ */
+async function extendEdits(message, rawArgs) {
+    const { RULES } = require("../util/functions/suggestEdit.js");
+    const wantAll = rawArgs.some(arg => String(arg).toLowerCase() === "all");
+    const ids = [...new Set(rawArgs.filter(arg => String(arg).toLowerCase() !== "all").map(normalizeSubmissionID))];
+    if (!wantAll && ids.length === 0) {
+        return fail(message, "Error, extend what?", `${BT}cd-review extend all${BT} — every pending suggested edit · ${BT}cd-review extend SED3 SED16${BT} — those, reviving expired ones`);
+    }
+    const bad = ids.filter(id => !isEditID(id));
+    if (bad.length > 0) {
+        return fail(message, "Error, only suggested edits (SED) can be extended.", `Not suggested edits: ${bad.map(id => `${BT}${id}${BT}`).join(", ")}`);
+    }
+    const now = DateTime.utc();
+    const query = wantAll
+        ? { "$or": [{ type: "edit", status: "pending", isDev: bot.devMode === true }, { submissionID: { "$in": ids } }] }
+        : { submissionID: { "$in": ids } };
+    const docs = await submissionModel.find(query).lean();
+    let extended = 0, revived = 0;
+    const skipped = [];
+    for (const doc of docs) {
+        if (doc.status === "pending") {
+            await updateSubmission(doc.submissionID, { submittedAt: now.toISO() });
+            extended++;
+        }
+        else if (doc.status === "expired") {
+            await updateSubmission(doc.submissionID, { status: "pending", reviewNote: "", submittedAt: now.toISO() });
+            revived++;
+        }
+        else skipped.push(`${BT}${doc.submissionID}${BT} is ${doc.status}`);
+    }
+    const missing = ids.filter(id => !docs.some(doc => doc.submissionID === id));
+    return new SuccessMessage({
+        channel: message.channel,
+        title: `Extended ${extended + revived} suggested edit${extended + revived === 1 ? "" : "s"}.`,
+        desc: `${extended} pending got a fresh clock${revived > 0 ? `, ${revived} expired came back to pending` : ""}. They now close on **${formatDate(now.plus({ days: RULES.staleDays }).toISO())}** unless reviewed.`
+            + (skipped.length > 0 ? `\n\n**Skipped:**\n${clampLines(skipped, 900)}` : "")
+            + (missing.length > 0 ? `\n\n**Not found:** ${missing.map(id => `${BT}${id}${BT}`).join(", ")}` : ""),
+        author: message.author
+    }).sendMessage();
+}
 
 module.exports = {
     name: "review",
     aliases: ["rev", "reviewsubs"],
     usage: [
         "queue [bm/art/car/edit] [page]", "view <ID>", "preview <carID | ID>",
-        "approve <ID> [IBM|ABM|PBM | Normal|Prize | apply] [collection]", "reject <ID> <reason>", "changes <ID> <note>",
+        "approve <ID> [IBM|ABM|PBM | Normal|Prize | apply] [collection]", "approve <SED ID> <SED ID> … (bulk power edits)",
+        "reject <ID> <reason>", "changes <ID> <note>",
         "sethud <ID> <url>", "pending", "rescan", "rebuildmirror", "purgedev",
-        "sweep", "clock <ID> <days>"
+        "sweep", "clock <ID> <days>", "extend <all | SED IDs…>"
     ],
     args: 0,
     category: "Admin",
@@ -272,6 +424,16 @@ module.exports = {
                 }).catch(() => {});
             });
             return;
+        }
+
+        // ── bulk verbs for suggested edits ───────────────────────────────────
+        // Two or more IDs after approve = bulk. "approve SED35 apply" still
+        // goes the single route, since "apply" isn't an ID.
+        if (sub === "approve" && args.length > 2 && args.slice(1).every(isEditID)) {
+            return bulkApproveEdits(message, args.slice(1));
+        }
+        if (sub === "extend") {
+            return extendEdits(message, args.slice(1));
         }
 
         // ── everything below needs an ID ─────────────────────────────────────

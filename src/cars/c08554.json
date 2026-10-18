@@ -25,14 +25,14 @@
     "fuelType": "Petrol",
     "mra": 72.88,
     "ola": 75.31,
-    "power": 280,
-    "powerEstimated": true,
+    "power": 340,
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/MorganSupersport(2025).png",
     "creator": "Bnuuy",
     "hiddenTag": [
         ""
     ],
+    "editLog": [{"at":"2026-10-18T23:15:12.843Z","by":"209038568138604546","field":"power","via":"SED61","from":280,"to":340}],
     "cardType": [
         "Normal"
     ]

@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 83.33,
     "ola": 94.85,
-    "power": 455,
-    "powerEstimated": true,
+    "power": 600,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinVanquishZagatoConcept(2016).png",
     "creator": "Bnuuy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:17.828Z","by":"209038568138604546","field":"power","via":"SED17","from":455,"to":600}],
     "cardType": ["Normal"]
 }

@@ -390,6 +390,24 @@ async function feed(event, submission, extra = {}) {
     }
 }
 
+/**
+ * One free-text line in the feed, for batch actions where a post per
+ * submission would flood the channel. Same channel rules as feed().
+ */
+async function feedNote(event, text) {
+    try {
+        const channelID = bot.devMode ? submissionFeedChannelIDDev : submissionFeedChannelID;
+        if (!channelID || !bot.homeGuild) return;
+        const channel = await bot.homeGuild.channels.fetch(channelID).catch(() => null);
+        if (!channel) return;
+        const style = FEED_STYLE[event] || { colour: 0x95a5a6, icon: "•" };
+        await channel.send({ embeds: [new EmbedBuilder().setColor(style.colour).setDescription(`${style.icon} ${text}`.slice(0, 4096))] });
+    }
+    catch (error) {
+        console.log(`[Submissions] feed note failed (${event}): ${error.message}`);
+    }
+}
+
 // ─── Detail view ─────────────────────────────────────────────────────────────
 
 /**
@@ -643,6 +661,7 @@ module.exports = {
     submissionName,
     notifyCreator,
     feed,
+    feedNote,
     buildDetailEmbed,
     buildCarEmbed,
     archiveMessageLink,

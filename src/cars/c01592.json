@@ -21,11 +21,11 @@
     "fuelType": "Diesel",
     "mra": 15.78,
     "ola": 55.36,
-    "power": 65,
-    "powerEstimated": true,
+    "power": 68,
     "description": "Cheap frugal fun in a hot burger bun.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda21.4MZ-CDFun(2008).png",
     "creator": "Andu",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:08.071Z","by":"209038568138604546","field":"power","via":"SED39","from":65,"to":68}],
     "cardType": ["Normal"]
 }

@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 53.52,
     "ola": 70.79,
-    "power": 250,
-    "powerEstimated": true,
+    "power": 269,
     "description": "Nismo's North American debut.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/NissanFrontierNismoOffroad(2005).png",
     "creator": "DodgeDemon",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:05.307Z","by":"209038568138604546","field":"power","via":"SED25","from":250,"to":269}],
     "cardType": ["Normal"]
 }

@@ -21,11 +21,11 @@
     "fuelType": "Hybrid",
     "mra": 98.6,
     "ola": 94.25,
-    "power": 620,
-    "powerEstimated": true,
+    "power": 965,
     "description": "",
     "racehud": "https://file.garden/aFBkIPmb4DlYDcyR/Cars/0in/PuritaliaBerlinetta(2019).png",
     "creator": "Bnuuy",
 	"hiddenTag": [""],
+	"editLog": [{"at":"2026-10-18T23:15:15.576Z","by":"209038568138604546","field":"power","via":"SED4","from":620,"to":965}],
     "cardType": ["Normal"]
 }

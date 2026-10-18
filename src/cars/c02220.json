@@ -21,11 +21,11 @@
     "fuelType": "Diesel",
     "mra": 44.03,
     "ola": 74.05,
-    "power": 155,
-    "powerEstimated": true,
+    "power": 204,
     "description": "None.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RangeRoverVelarD200MHEV(2020).png",
     "creator": "Macan",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:12.587Z","by":"209038568138604546","field":"power","via":"SED60","from":155,"to":204}],
     "cardType": ["Normal"]
 }

@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 7.24,
     "ola": 64.41,
-    "power": 70,
-    "powerEstimated": true,
+    "power": 98,
     "description": "A box with amazing mra.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaCapaC(1998).png",
     "creator": "Havvy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:05.559Z","by":"209038568138604546","field":"power","via":"SED26","from":70,"to":98}],
     "cardType": ["Normal"]
 }

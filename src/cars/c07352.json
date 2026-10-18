@@ -21,11 +21,11 @@
     "fuelType": "Electric",
     "mra": 60.13,
     "ola": 80,
-    "power": 560,
-    "powerEstimated": true,
+    "power": 345,
     "description": "It's also pretty fast, I guess.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/FordCapriPremiumAWD(2024).png",
     "creator": "ama4nn",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:15.824Z","by":"209038568138604546","field":"power","via":"SED8","from":560,"to":345}],
     "cardType": ["Normal"]
 }

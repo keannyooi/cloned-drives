@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 92.5,
     "ola": 82.55,
-    "power": 415,
-    "powerEstimated": true,
+    "power": 500,
     "description": "",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Porsche911GT3R(2018).png",
     "creator": "Bnuuy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:12.338Z","by":"209038568138604546","field":"power","via":"SED59","from":415,"to":500}],
     "cardType": ["Normal"]
 }

@@ -21,11 +21,11 @@
     "fuelType": "Electric",
     "mra": 0,
     "ola": 90,
-    "power": 185,
-    "powerEstimated": true,
+    "power": 326,
     "description": "The mythen chassis, previously utilized in the 2019 season, underwent thorough cleaning and weight reduction to serve as the foundation for the 2023 world record attempt. Over the course of a year, reengineering efforts were dedicated to the drivetrain, aerodynamics, and electrical systems, pushing the car to the edge of its performance capabilities.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AMZMythenWR(2023).png",
     "creator": "Bnuuy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:06.314Z","by":"209038568138604546","field":"power","via":"SED29","from":185,"to":326}],
     "cardType": ["Prize"]
 }

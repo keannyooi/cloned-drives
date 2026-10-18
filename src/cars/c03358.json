@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 31.4,
     "ola": 62.14,
-    "power": 120,
-    "powerEstimated": true,
+    "power": 211,
     "description": "The perfect beach get around.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MercedesBenzG320Cabrio(1997).png",
     "creator": "Havvy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:09.854Z","by":"209038568138604546","field":"power","via":"SED48","from":120,"to":211}],
     "cardType": ["Normal"]
 }

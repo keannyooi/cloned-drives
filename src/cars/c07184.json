@@ -21,11 +21,11 @@
     "fuelType": "Diesel",
     "mra": 52.76,
     "ola": 74.41,
-    "power": 115,
-    "powerEstimated": true,
+    "power": 155,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/AudiA425TDIV6(2001).png",
     "creator": "Connor",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:10.848Z","by":"209038568138604546","field":"power","via":"SED52","from":115,"to":155}],
     "cardType": ["Normal"]
 }

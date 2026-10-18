@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 105.08,
     "ola": 82.35,
-    "power": 365,
-    "powerEstimated": true,
+    "power": 600,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/KoenigseggCCGT(2008).png",
     "creator": "Aqo",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:07.069Z","by":"209038568138604546","field":"power","via":"SED33","from":365,"to":600}],
     "cardType": ["Normal"]
 }

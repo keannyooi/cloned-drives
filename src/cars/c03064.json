@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 79.21,
     "ola": 82.25,
-    "power": 650,
-    "powerEstimated": true,
+    "power": 830,
     "description": "The fast box.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PosaidonG63(2015).png",
     "creator": "Havvy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:09.322Z","by":"209038568138604546","field":"power","via":"SED44","from":650,"to":830}],
     "cardType": ["Normal"]
 }

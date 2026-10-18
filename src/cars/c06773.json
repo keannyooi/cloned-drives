@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 125.11,
     "ola": 90.43,
-    "power": 1220,
-    "powerEstimated": true,
+    "power": 1600,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/BugattiW16MistralWorldRecordCar(2024).png",
     "creator": "Yapper",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:13.337Z","by":"209038568138604546","field":"power","via":"SED64","from":1220,"to":1600}],
     "cardType": ["Normal"]
 }

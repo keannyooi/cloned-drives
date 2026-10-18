@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 70.6,
     "ola": 92.94,
-    "power": 205,
-    "powerEstimated": true,
+    "power": 400,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/DallaraStradaleSpyder(2017).png",
     "creator": "Yapper",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:08.817Z","by":"209038568138604546","field":"power","via":"SED42","from":205,"to":400}],
     "cardType": ["Normal"]
 }

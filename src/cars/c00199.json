@@ -21,11 +21,11 @@
     "fuelType": "Diesel",
     "mra": 57.98,
     "ola": 70.6,
-    "power": 170,
-    "powerEstimated": true,
+    "power": 190,
     "description": "One day I lost my mind and made a modern diesel crossover.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWX2xDrive20dMSport(2018).png",
     "creator": "Macan",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:08.325Z","by":"209038568138604546","field":"power","via":"SED40","from":170,"to":190}],
     "cardType": ["Normal"]
 }

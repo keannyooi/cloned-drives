@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 58.87,
     "ola": 82.19,
-    "power": 225,
-    "powerEstimated": true,
+    "power": 260,
     "description": "Far more capable off-road than its sedan underpinnings would suggest.",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/SubaruOutback3.6RPremium(2010).png",
     "creator": "McNuggets",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:13.832Z","by":"209038568138604546","field":"power","via":"SED68","from":225,"to":260}],
     "cardType": ["Normal"]
 }

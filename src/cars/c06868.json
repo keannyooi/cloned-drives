@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 88.16,
     "ola": 83.56,
-    "power": 560,
-    "powerEstimated": true,
+    "power": 575,
     "description": "",
     "racehud": "https://file.garden/ZmdgDS5GsALKuOXo/Cards/0in/JaguarF-TypeRP575Convertible(2020).png",
     "creator": "fiero",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:14.830Z","by":"209038568138604546","field":"power","via":"SED74","from":560,"to":575}],
     "cardType": ["Normal"]
 }

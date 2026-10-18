@@ -21,11 +21,11 @@
     "fuelType": "Petrol",
     "mra": 81.26,
     "ola": 88.81,
-    "power": 375,
-    "powerEstimated": true,
+    "power": 510,
     "description": "A truly great Italian super saloon.",
     "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoGiuliaQuadrifoglio(2016).png",
     "creator": "Bnuuy",
     "hiddenTag": [""],
+    "editLog": [{"at":"2026-10-18T23:15:14.328Z","by":"209038568138604546","field":"power","via":"SED71","from":375,"to":510}],
     "cardType": ["Normal"]
 }
