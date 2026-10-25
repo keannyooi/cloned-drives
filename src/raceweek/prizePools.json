@@ -70,6 +70,15 @@
             "300": { "packPool": ["p00130"] },
             "350": { "packPool": ["p00271"] },
             "400": { "carPool": ["c04859"], "driverPool": ["d00046"] }
+        },
+        "2026-W44": {
+            "_comment": "HALLOWEEN WEEK (Mon 26 Oct to Sun 1 Nov 2026). Cars: 50 = c01520 ABR Hosoki Fairlady Z \"Devil Z\" (1994), 150 = c08062 Geiger Challenger SRT Hellcat \"Cerberus\" (2019), 400 = c07564 Hennessey Venom F5 Evolution (2024). All three are Prize cards and none has been a Race Week prize before. Only the car rungs are set: packs, money, the 100 driver and the 300 car run the normal pools from \"rungs\", and 400 keeps the normal 400 driver (d00046).",
+            "_label": "Halloween",
+            "_color": "#ff6a00",
+            "_description": "The lights are off at the circuit and something out there is running quicker lap times than it has any right to. A devil, a three-headed hellhound and a dose of venom are waiting at the end of the ladder.",
+            "50": { "carPool": ["c01520"] },
+            "150": { "carPool": ["c08062"] },
+            "400": { "carPool": ["c07564"], "driverPool": ["d00046"] }
         }
     },
     "endless": {
