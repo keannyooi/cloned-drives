@@ -36,8 +36,10 @@ module.exports = {
     // Get car files inside execute() to ensure dataManager is initialized
     const carFiles = getCarFiles();
     
-    const profile = await profileModel.findOne({ userID: message.author.id });
+    // Only the button style is read; the whole profile (garage included) isn't needed.
+    const profile = await profileModel.findOne({ userID: message.author.id }, { "settings.buttonstyle": 1 }).lean();
     if (!profile) return;
+    const buttonStyle = (profile.settings || {}).buttonstyle;
 
     // Helper functions defined inside execute() so they have access to carFiles
     function getCarCR(car) {
@@ -163,7 +165,7 @@ module.exports = {
         }
       }
 
-      const { high, low, skip } = getButtons("hilo", profile.settings.buttonstyle);
+      const { high, low, skip } = getButtons("hilo", buttonStyle);
       const row = new ActionRowBuilder().addComponents(high, low, skip);
 
       const embed = new InfoMessage({
@@ -350,23 +352,20 @@ module.exports = {
         if (!gameActive && reward > 0) {
           trackHiloGame();
           trackMoneyEarned(reward);
-          const latestProfile = await profileModel.findOne({ userID: message.author.id });
-          const { unclaimedRewards } = latestProfile;
-          const index = unclaimedRewards.findIndex(e => e.origin === "Hi-Lo");
-
-          if (index > -1) {
-            unclaimedRewards[index].money += reward;
-          } else {
-            unclaimedRewards.push({
-              money: reward,
-              origin: "Hi-Lo"
-            });
-          }
-
-          await profileModel.updateOne(
-            { userID: message.author.id },
-            { unclaimedRewards }
+          // Atomic merge (as randomrace.js persistMoneyReward): $inc the existing
+          // Hi-Lo money entry, else $push a new one. Never $sets the whole array,
+          // so a concurrent grant (e.g. a Race Week prize) can't be clobbered.
+          const res = await profileModel.updateOne(
+            { userID: message.author.id, unclaimedRewards: { "$elemMatch": { origin: "Hi-Lo", money: { "$exists": true } } } },
+            { "$inc": { "unclaimedRewards.$.money": reward } }
           );
+          const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
+          if (!modified) {
+            await profileModel.updateOne(
+              { userID: message.author.id },
+              { "$push": { unclaimedRewards: { money: reward, origin: "Hi-Lo" } } }
+            );
+          }
 
           const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
           const finalEmbed = new InfoMessage({

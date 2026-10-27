@@ -13,8 +13,8 @@ const confirm = require("../util/functions/confirm.js");
 const { costFromStock, getSellPrice } = require("../util/functions/upgradePrice.js");
 const { isDiamondCar, isSellProtected, sellValueMult, hasType } = require("../util/functions/cardType.js");
 const { trackMoneyEarned, trackCarsSold } = require("../util/functions/tracker.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
 
 // Fraction of the original upgrade investment refunded when selling an upgraded car.
 // 0.20 = 20% — small enough that selling isn't an exploit, generous enough to make
@@ -161,32 +161,40 @@ module.exports = {
                     }
 
                     async function acceptedFunction(currentMessage) {
-                        // Re-fetch the profile so the write is built from FRESH data —
-                        // another writer may have touched the garage while the dialog was open.
-                        const freshData = await getProfile(message.author.id);
-                        const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
-                        if (!freshCar || (freshCar.upgrades[upgrade] || 0) < amount) {
-                            const errorMessage = new ErrorMessage({
-                                channel: message.channel,
-                                title: "Error, your garage changed while you were deciding.",
-                                desc: "You no longer own enough copies of this car at this tune. Please run the command again.",
-                                author: message.author
-                            });
-                            return errorMessage.sendMessage({ currentMessage });
-                        }
+                        // saveGarage guards the decrement on the server, so a change made
+                        // while the dialog was open fails the write instead of being
+                        // overwritten — no fresh re-read needed.
+                        const before = structuredClone(playerData.garage);
+                        const handDecks = snapshotHandDecks(playerData);
+                        const ownedCar = playerData.garage.find(c => c.carID === currentCar.carID);
+                        const changedError = () => new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, your garage changed while you were deciding.",
+                            desc: "You no longer own enough copies of this car at this tune. Please run the command again.",
+                            author: message.author
+                        }).sendMessage({ currentMessage });
+                        if (!ownedCar || (ownedCar.upgrades[upgrade] || 0) < amount) return changedError();
 
-                        let balance = freshData.money + money;
-                        updateHands(freshData, freshCar.carID, upgrade, "remove");
-                        freshCar.upgrades[upgrade] -= amount;
-                        if (calcTotal(freshCar) === 0) {
-                            freshData.garage.splice(freshData.garage.indexOf(freshCar), 1);
+                        updateHands(playerData, ownedCar.carID, upgrade, "remove");
+                        ownedCar.upgrades[upgrade] -= amount;
+                        // The helper only drops the row if its stored counts really reach zero.
+                        if (calcTotal(ownedCar) === 0) {
+                            playerData.garage.splice(playerData.garage.indexOf(ownedCar), 1);
                         }
-                        await profileModel.updateOne({ userID: message.author.id }, {
-                            money: balance,
-                            garage: freshData.garage,
-                            hand: freshData.hand,
-                            decks: freshData.decks
+                        const { ok, doc } = await saveGarage({
+                            userID: message.author.id,
+                            before,
+                            after: playerData.garage,
+                            inc: { money },
+                            // hand/decks only when updateHands changed them, and only if
+                            // still as read — a stale copy never reverts a change made elsewhere.
+                            ...handDeckChanges(playerData, handDecks),
+                            returning: ["money"],
+                            baseStamp: playerData.cacheStamp
                         });
+                        if (!ok) return changedError();
+                        // The stored balance, read back by the same write.
+                        const balance = doc && typeof doc.money === "number" ? doc.money : playerData.money + money;
 
                         trackMoneyEarned(money);
                         trackCarsSold(amount);
@@ -520,40 +528,81 @@ async function bulkSellDupes(message, playerData, args) {
     try {
         await confirm(message, confirmationMessage, async (currentMessage) => {
             // ─── Apply ──────────────────────────────────────────────────────
-            // Re-fetch the profile so the write is built from FRESH data —
-            // another writer may have touched the garage while the dialog was open.
-            // Each op is re-clamped against fresh stock so the keep guarantee holds
-            // and we never sell more than what was previewed in the confirm embed.
-            const freshData = await getProfile(message.author.id);
-            let actualCount = 0;
-            let actualMoney = 0;
-            let actualModels = 0;
-            for (const op of toSell) {
-                const garageCar = freshData.garage.find(g => g.carID === op.carID);
-                if (!garageCar) continue;
-                const stockOwned = garageCar.upgrades?.["000"] || 0;
-                const sellCount = Math.min(op.count, Math.max(stockOwned - op.effectiveKeep, 0));
-                if (sellCount <= 0) continue;
-                garageCar.upgrades["000"] = stockOwned - sellCount;
-                // Only clear hand/decks for tune 000 if it fully zeroed out.
-                if ((garageCar.upgrades["000"] || 0) === 0) {
-                    updateHands(freshData, op.carID, "000", "remove");
+            // Built from the first read: saveGarage guards every decrement on the
+            // server, so if the garage changed while the dialog was open the write
+            // fails instead of selling more than was previewed. Each op stays
+            // clamped so the keep guarantee holds.
+            const apply = profile => {
+                const before = structuredClone(profile.garage);
+                const handDecks = snapshotHandDecks(profile);
+                // First row per carID wins, as garage.find() did (matters only
+                // for legacy garages that still hold duplicate rows).
+                const byID = new Map();
+                for (const g of profile.garage) {
+                    if (!byID.has(g.carID)) byID.set(g.carID, g);
                 }
-                actualCount += sellCount;
-                actualMoney += op.basePerCar * sellCount;
-                actualModels++;
-            }
-            // Drop garage entries that have 0 across all tunes (rare — only if
-            // the safety net was bypassed, which currently can't happen)
-            freshData.garage = freshData.garage.filter(g => calcTotal(g) > 0);
-            const newBalance = freshData.money + actualMoney;
-
-            await profileModel.updateOne({ userID: message.author.id }, {
-                money: newBalance,
-                garage: freshData.garage,
-                hand: freshData.hand,
-                decks: freshData.decks
+                let actualCount = 0;
+                let actualMoney = 0;
+                let actualModels = 0;
+                for (const op of toSell) {
+                    const garageCar = byID.get(op.carID);
+                    if (!garageCar) continue;
+                    const stockOwned = garageCar.upgrades?.["000"] || 0;
+                    const sellCount = Math.min(op.count, Math.max(stockOwned - op.effectiveKeep, 0));
+                    if (sellCount <= 0) continue;
+                    garageCar.upgrades["000"] = stockOwned - sellCount;
+                    // Only clear hand/decks for tune 000 if it fully zeroed out.
+                    if ((garageCar.upgrades["000"] || 0) === 0) {
+                        updateHands(profile, op.carID, "000", "remove");
+                    }
+                    actualCount += sellCount;
+                    actualMoney += op.basePerCar * sellCount;
+                    actualModels++;
+                }
+                // Drop garage entries that have 0 across all tunes (rare — only if
+                // the safety net was bypassed, which currently can't happen)
+                const after = profile.garage.filter(g => calcTotal(g) > 0);
+                return {
+                    profile, before, after, actualCount, actualMoney, actualModels,
+                    // hand/decks only when updateHands changed them, and only if still as read.
+                    handDecks: handDeckChanges(profile, handDecks)
+                };
+            };
+            const save = sale => saveGarage({
+                userID: message.author.id,
+                before: sale.before,
+                after: sale.after,
+                inc: { money: sale.actualMoney },
+                ...sale.handDecks,
+                returning: ["money"],
+                baseStamp: sale.profile.cacheStamp
             });
+
+            let sale = apply(playerData);
+            let saved = await save(sale);
+            let ok = saved.ok;
+            if (!ok) {
+                // Over 1,000 models the helper falls back to a whole write guarded
+                // by cacheStamp, which ANY profile write bumps (a notification flag,
+                // a reward), so a refusal need not mean the garage changed. Rebuild
+                // once from a fresh read, re-clamped as above (never more than
+                // previewed), before calling it a change.
+                const fresh = await getProfile(message.author.id);
+                sale = fresh ? apply(fresh) : null;
+                if (sale !== null && sale.actualCount > 0) saved = await save(sale);
+                ok = sale !== null && sale.actualCount > 0 && saved.ok;
+            }
+            if (!ok) {
+                return new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, your garage changed while you were deciding.",
+                    desc: "Some of these stock copies are no longer in your garage. Please run the command again.",
+                    author: message.author
+                }).sendMessage({ currentMessage });
+            }
+            const { actualCount, actualMoney, actualModels } = sale;
+            // The stored balance, read back by the same write.
+            const newBalance = saved.doc && typeof saved.doc.money === "number" ? saved.doc.money : sale.profile.money + actualMoney;
 
             trackMoneyEarned(actualMoney);
             trackCarsSold(actualCount);

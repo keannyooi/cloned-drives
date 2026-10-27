@@ -10,6 +10,7 @@ const { getCar, getTrack, getPack } = require("../util/functions/dataManager.js"
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
+const { getScaledImage } = require("../util/functions/imageCache.js");
 const profileModel = require("../models/profileSchema.js");
 const championshipModel = require("../models/championshipsSchema.js");
 
@@ -43,7 +44,6 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
-                const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true }, { garage: 0, discoveredCars: 0, decks: 0 }).lean();
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 championship.isActive = true;
                 if (championship.deadline.length < 9) {
@@ -55,21 +55,26 @@ module.exports = {
                 let attachment, cucked = false;
 
                 try {
-                    let hudPromises = await Promise.all(championship.roster.map(car => {
-                        let currentCar = getCar(car.carID);
-                        return loadImage(currentCar["racehud"]);
-                    }));
-                    let mapPromises = await Promise.all(championship.roster.map(track => {
-                        let currentTrack = getTrack(track.track);
-                        return loadImage(currentTrack["map"]);
-                    }));
-                    let [moneyImage, fuseImage,
-                        trophyImage, carImage, packImage] = await Promise.all([
-                            loadImage(bot.emojis.cache.get(moneyEmojiID).url),
-                            loadImage(bot.emojis.cache.get(fuseEmojiID).url),
-                            loadImage(bot.emojis.cache.get(trophyEmojiID).url),
-                            loadImage(bot.emojis.cache.get(glofEmojiID).url),
-                            loadImage(bot.emojis.cache.get(packEmojiID).url)
+                    // HUDs and maps through the image cache, pre-scaled to the
+                    // size they are drawn at (pixel-identical), and everything
+                    // loads at once instead of HUDs, then maps, then emojis.
+                    let [hudPromises, mapPromises, [moneyImage, fuseImage,
+                        trophyImage, carImage, packImage]] = await Promise.all([
+                            Promise.all(championship.roster.map(car => {
+                                let currentCar = getCar(car.carID);
+                                return getScaledImage(currentCar["racehud"], 374, 224);
+                            })),
+                            Promise.all(championship.roster.map(track => {
+                                let currentTrack = getTrack(track.track);
+                                return getScaledImage(currentTrack["map"], 98, 98);
+                            })),
+                            Promise.all([
+                                loadImage(bot.emojis.cache.get(moneyEmojiID).url),
+                                loadImage(bot.emojis.cache.get(fuseEmojiID).url),
+                                loadImage(bot.emojis.cache.get(trophyEmojiID).url),
+                                loadImage(bot.emojis.cache.get(glofEmojiID).url),
+                                loadImage(bot.emojis.cache.get(packEmojiID).url)
+                            ])
                         ]);
                     context.fillStyle = "#ffffff";
 
@@ -197,18 +202,36 @@ module.exports = {
                     files: [attachment]
                 });
 
-                for (let { userID } of playerDatum) {
-                    let user = await bot.homeGuild.members.fetch(userID)
-                        .catch(() => "unable to find user, next");
-                    
-                    if (typeof user !== "string") {
-                        await user.send(`**Notification: The ${championship.name} championship has officially started!**`)
-				            .catch(() => console.log(`unable to send notification to user ${userID}`));
-                    }
-                }
+                // Saved and confirmed BEFORE the DMs: the old one-at-a-time loop
+                // held the championship inactive (and the admin's command lock)
+                // for minutes. The DMs now go out in the background.
                 await championshipModel.updateOne({ championshipID: championship.championshipID }, championship);
-                return successMessage.sendMessage({ attachment, currentMessage });
+                await successMessage.sendMessage({ attachment, currentMessage });
+                notifyChampionshipStart(championship.name).catch(error => {
+                    console.error(`[CHAMPIONSHIP DMs] Error sending notifications for "${championship.name}":`, error);
+                });
             }
         }
     }
 };
+
+// DMs everyone who opted into event notifications, DM_CONCURRENCY at a time.
+// Per-user failures are logged and skipped, as they always were.
+const DM_CONCURRENCY = 5;
+async function notifyChampionshipStart(championshipName) {
+    const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true }, { userID: 1 }).lean();
+    let next = 0;
+    async function worker() {
+        while (next < playerDatum.length) {
+            const { userID } = playerDatum[next++];
+            let user = await bot.homeGuild.members.fetch(userID)
+                .catch(() => "unable to find user, next");
+
+            if (typeof user !== "string") {
+                await user.send(`**Notification: The ${championshipName} championship has officially started!**`)
+                    .catch(() => console.log(`unable to send notification to user ${userID}`));
+            }
+        }
+    }
+    await Promise.all(Array.from({ length: DM_CONCURRENCY }, worker));
+}

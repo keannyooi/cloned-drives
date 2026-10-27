@@ -5,11 +5,16 @@ const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 const { modifiedBase, isBMCar, isPrizeLike, hasType } = require("./cardType.js");
 
+/**
+ * Optional `garageMap` (carID -> first garage row with it) replaces the
+ * per-car garage.find for callers checking a whole list; `car` must then be
+ * an exact 6-char carID. Without it, behaviour is unchanged.
+ */
 function filterCheck(args) {
-    let { car, filter, garage, applyOrLogic } = args;
-    let passed = true, carObject = garage ? {
+    let { car, filter, garage, applyOrLogic, garageMap } = args;
+    let passed = true, carObject = (garageMap || garage) ? {
         carID: car,
-        upgrades: garage.find(c => car.includes(c.carID))?.upgrades ?? {
+        upgrades: (garageMap ? garageMap.get(car) : garage.find(c => car.includes(c.carID)))?.upgrades ?? {
             "000": 0,
             "333": 0,
             "666": 0,

@@ -13,6 +13,7 @@ const { trackMoneyEarned } = require("../util/functions/tracker.js");
 const { planDailyClaim, currentCalendar, progressOf, describeReward, rewardImage, calendarView } = require("../util/functions/dailyCalendar.js");
 const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
 
 module.exports = {
     name: "daily",
@@ -24,8 +25,13 @@ module.exports = {
         const carFiles = getCarFiles();
         const packFiles = getPackFiles();
 
-        let playerData = await getProfile(message.author.id);
-        let { dailyStats, money, garage } = playerData;
+        // Light read: the cooldown reply and the calendar view need only
+        // dailyStats, so they never pull the heavy arrays. The garage is
+        // loaded below only on the streak days that grant cars.
+        const lightData = await profileModel.findOne({ userID: message.author.id }, { dailyStats: 1, money: 1 }).lean();
+        // Lean skips schema defaults; every profile is created with dailyStats.
+        const dailyStats = lightData.dailyStats || profileModel.schema.path("dailyStats").getDefault();
+        let money = lightData.money || 0;
         let { lastDaily, streak, highestStreak } = dailyStats;
         const rewardEmojis = {
             money: bot.emojis.cache.get(moneyEmojiID),
@@ -46,12 +52,6 @@ module.exports = {
             return calendarMessage.sendMessage();
         }
 
-        // Initialize discoveredCars
-        let discoveredCars = playerData.discoveredCars || [];
-        if (discoveredCars.length === 0 && garage.length > 0) {
-            discoveredCars = garage.map(c => c.carID);
-        }
-
         // Check if 24 hours have passed since the last daily
         const lastDailyDateTime = DateTime.fromISO(lastDaily);
         const currentDateTime = DateTime.now();
@@ -60,7 +60,6 @@ module.exports = {
         if (hoursSinceLastDaily >= 24) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const streakCheck = Interval.fromDateTimes(lastDailyDateTime, lastDailyDateTime.plus({ days: 1 }));
-            const guildMember = await bot.homeGuild.members.fetch(message.author.id);
             let desc = "", image = null;
             if (streakCheck.length("days") > 1) {
                 streak = 1;
@@ -70,6 +69,28 @@ module.exports = {
             if (streak > highestStreak) {
                 highestStreak = streak;
             }
+
+            // Only streak %5 / %7 / %20 days (%20 implies %5) grant cars; load the
+            // full profile for those alone, alongside the member fetch.
+            const grantsCars = streak % 5 === 0 || streak % 7 === 0;
+            const [guildMember, playerData] = await Promise.all([
+                bot.homeGuild.members.fetch(message.author.id),
+                grantsCars ? getProfile(message.author.id) : null
+            ]);
+            let garage = playerData ? playerData.garage : [];
+            // Deep copy BEFORE addCars mutates the garage in place.
+            const garageBefore = playerData ? structuredClone(garage) : null;
+            const grantedCars = [];
+
+            // Initialize discoveredCars
+            let discoveredCars = (playerData && playerData.discoveredCars) || [];
+            let discoveredInitialised = false;
+            if (discoveredCars.length === 0 && garage.length > 0) {
+                discoveredCars = garage.map(c => c.carID);
+                discoveredInitialised = true;
+            }
+            // openPack pushes new discoveries onto discoveredCars in place.
+            const discoveredBefore = discoveredCars.length;
 
             if (streak % 20 === 0) {
                 // === Streak 20: Random ELITE daily pack ===
@@ -92,6 +113,7 @@ module.exports = {
                         return bot.deleteID(message.author.id);
                     }
                     garage = addCars(garage, pulledCars);
+                    grantedCars.push(...pulledCars);
                     desc = " and you've received a free random elite pack as a bonus!";
                     image = currentPack.pack;
                 }
@@ -125,6 +147,7 @@ module.exports = {
                         return bot.deleteID(message.author.id);
                     }
                     garage = addCars(garage, pulledCars);
+                    grantedCars.push(...pulledCars);
                     desc = " and you've received a free random pack as a bonus!";
                     image = currentPack.pack;
                 }
@@ -138,6 +161,7 @@ module.exports = {
                 }
                 const newCarID = carID.slice(0, 6);
                 garage = addCars(garage, [{ carID: newCarID, upgrade: "000" }]);
+                grantedCars.push({ carID: newCarID, upgrade: "000" });
                 // Track discovery
                 if (!discoveredCars.includes(newCarID)) {
                     discoveredCars.push(newCarID);
@@ -165,22 +189,41 @@ module.exports = {
                 console.error("[DailyCalendar] could not plan this daily's calendar reward:", error);
             }
 
-            const update = {
-                "$set": {
-                    "dailyStats.lastDaily": DateTime.now().toISO(),
-                    "dailyStats.streak": streak,
-                    "dailyStats.highestStreak": highestStreak,
-                    "dailyStats.notifReceived": false,
-                    ...(calendarStep && calendarStep.set ? calendarStep.set : {})
-                },
-                money,
-                garage,
-                discoveredCars
+            const dailySet = {
+                "dailyStats.lastDaily": DateTime.now().toISO(),
+                "dailyStats.streak": streak,
+                "dailyStats.highestStreak": highestStreak,
+                "dailyStats.notifReceived": false,
+                ...(calendarStep && calendarStep.set ? calendarStep.set : {})
             };
-            if (calendarStep && Array.isArray(calendarStep.entries) && calendarStep.entries.length > 0) {
-                update["$push"] = { unclaimedRewards: { "$each": calendarStep.entries } };
+            const calendarEntries = calendarStep && Array.isArray(calendarStep.entries) ? calendarStep.entries : [];
+            if (grantedCars.length > 0) {
+                // Car day: saveGarage sends only the granted rows (merged by
+                // carID on the server), not the whole garage. discoveredCars
+                // goes whole via `set` so the profile cache follows it.
+                if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+                    dailySet.discoveredCars = discoveredCars;
+                }
+                // No filter and no decrements, so there is no guard to fail
+                // (the old wholesale write never checked its result either).
+                await saveGarage({
+                    userID: message.author.id,
+                    before: garageBefore,
+                    after: garage,
+                    inc: { money: moneyReward },
+                    set: dailySet,
+                    push: { unclaimedRewards: calendarEntries },
+                    baseStamp: playerData.cacheStamp
+                });
             }
-            await profileModel.updateOne({ userID: message.author.id }, update);
+            else {
+                // Every other day leaves the garage alone: a plain light write.
+                const update = { "$set": dailySet, "$inc": { money: moneyReward } };
+                if (calendarEntries.length > 0) {
+                    update["$push"] = { unclaimedRewards: { "$each": calendarEntries } };
+                }
+                await profileModel.updateOne({ userID: message.author.id }, update);
+            }
 
             const fields = [
                 { name: "Current Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }

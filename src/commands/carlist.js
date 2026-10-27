@@ -23,7 +23,8 @@ module.exports = {
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
         const carFiles = getCarFiles();
-        let list = carFiles;
+        // A copy: sortCars sorts in place, and getCarFiles() is the shared catalogue.
+        let list = carFiles.slice();
         let sort = "cr";
         let page;
         if (!args.length || (args[0] === "-s" && args[1])) {
@@ -43,21 +44,29 @@ module.exports = {
         }
 
         const { filter, garage, settings } = await getProfile(message.author.id);
-        if (!settings.disablecarlistfilter) {
+        // carID -> first garage row (what garage.find returned), built once instead
+        // of scanning the garage for every one of ~8k cars.
+        const garageMap = new Map();
+        for (const row of garage) {
+            if (!garageMap.has(row.carID)) garageMap.set(row.carID, row);
+        }
+        // An empty filter passes every car, so skip the pass entirely.
+        if (!settings.disablecarlistfilter && !(filter && Object.keys(filter).length === 0)) {
             list = list.filter(car => {
                 const carId = car.endsWith('.json') ? car.slice(0, -5) : car.slice(0, 6);
                 return filterCheck({
                     car: carId,
                     filter,
-                    garage,
+                    garageMap,
                     applyOrLogic: settings.filterlogic === "or" ? true : false,
                 });
             });
         }
-        const ownedCars = list.filter(function (carFile) {
+        let ownedCount = 0;
+        for (const carFile of list) {
             const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
-            return garage.some(part => carId.includes(part.carID));
-        });
+            if (garageMap.has(carId)) ownedCount++;
+        }
 
         if (args[args.length - 2] === "-s") {
             sort = sortCheck(message, args[args.length - 1].toLowerCase());
@@ -93,7 +102,7 @@ module.exports = {
                 const carFile = section[i];
                 const carId = carFile.endsWith('.json') ? carFile.slice(0, -5) : carFile.slice(0, 6);
                 let currentCar = getCar(carId);
-                let findCar = garage.find(c => c.carID === carId);
+                let findCar = garageMap.get(carId);
                 carList += carNameGen({ currentCar, rarity: true });
                 carList += findCar ? " ✅\n" : "\n";
                 currentCar = modifiedBase(currentCar);
@@ -118,7 +127,7 @@ module.exports = {
 
             const infoMessage = new InfoMessage({
                 channel: message.channel,
-                title: `List of All Cars in Cloned Drives (${ownedCars.length}/${list.length} Cars Owned)`,
+                title: `List of All Cars in Cloned Drives (${ownedCount}/${list.length} Cars Owned)`,
                 desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter, settings.filterlogic)}\``,
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),

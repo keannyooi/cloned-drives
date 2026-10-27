@@ -92,6 +92,8 @@ const profileSchema = new Schema({
     // (util/functions/profileCache.js) serves the heavy arrays from memory
     // only while this matches. Never set it by hand.
     cacheStamp: { type: Number, default: 0 },
+    // One-time ID of the last garageWrite.saveGarage call — makes its retry idempotent.
+    lastGarageOp: { type: String },
 }, { minimize: false });
 
 // ── Profile cache hooks ──────────────────────────────────────────────────────
@@ -104,7 +106,14 @@ profileSchema.pre(WRITE_OPS, function () {
     const stamp = profileCache().newStamp();
     this._cacheStamp = stamp;
     const update = this.getUpdate();
-    if (!update || Array.isArray(update)) return;   // pipeline update — post-hook invalidates instead
+    if (!update) return;
+    if (Array.isArray(update)) {
+        // Pipeline update: stamp it with a final stage, so other processes on
+        // the shared DB still see the change. The post-hook invalidates unless
+        // the caller vouched for the result (profileCache.writeWithHeavy).
+        this.setUpdate([...update, { "$set": { cacheStamp: stamp } }]);
+        return;
+    }
     if (Object.keys(update).some(key => key.startsWith("$"))) {
         update.$set = { ...(update.$set || {}), cacheStamp: stamp };
     }

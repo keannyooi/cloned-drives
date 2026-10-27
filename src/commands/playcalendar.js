@@ -28,6 +28,10 @@ const calendarModel = require("../models/calendarSchema.js");
 async function persistRewards(userID, aggregates, entries) {
     // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
     const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
+    // Not one pipeline write: profileCache drops the player's cached garage on
+    // any pipeline update. Sequential, not Promise.all: the cache records the
+    // stamp of the last post-hook to fire, and concurrent writes can return in
+    // a different order than the server applied them, leaving a stale stamp.
     for (const { key, value, origin } of aggregates) {
         const res = await profileModel.updateOne(
             { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
@@ -53,10 +57,17 @@ module.exports = {
     cooldown: 10,
     description: "Play a calendar event day. Plays the next incomplete unlocked day, or specify a day number.",
     async execute(message, args) {
-        const calendars = await calendarModel.find();
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
+        // Independent reads, run together. The profile read is lean, so guard
+        // the schema defaults it skips (settings).
+        const [calendars, profile] = await Promise.all([
+            // Hydrated, not lean: the play checks rely on schema defaults.
+            calendarModel.find(),
+            profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 }).lean()
+        ]);
+        const { hand } = profile;
+        const settings = profile.settings || {};
         
-        if (hand.carID === "") {
+        if (!hand || hand.carID === "") {
             return handMissingError(message);
         }
         
@@ -119,7 +130,7 @@ module.exports = {
             
             // Get current day and player progress
             const currentDay = getCurrentDay(calendar);
-            const progress = calendar.playerProgress[message.author.id] || {
+            const progress = (calendar.playerProgress ?? {})[message.author.id] || {
                 completedDays: [],
                 currentStreak: 0,
                 longestStreak: 0,
@@ -261,7 +272,7 @@ module.exports = {
                 }
                 
                 currentMessage.removeButtons();
-                const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
+                const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
                 
                 if (result > 0) {
                     // Victory!

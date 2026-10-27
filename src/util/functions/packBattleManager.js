@@ -105,12 +105,19 @@ function resetDailyIfNeeded(stats, counters) {
 
 async function processPackOpening(userID, packID, addedCars) {
     const earnedAcrossBattles = [];
-    const activeBattles = await packBattleModel.find({ isActive: true, packID });
+    // Projected + lean: this runs before cd-openpack's success message, and the
+    // whole battle doc (100 snapshots, every participant's stats and _seen
+    // arrays) was downloaded and hydrated to touch one player's entry.
+    const activeBattles = await packBattleModel.find(
+        { isActive: true, packID },
+        { battleID: 1, name: 1, counters: 1, milestones: 1, [`playerStats.${userID}`]: 1 }
+    ).lean();
     if (activeBattles.length === 0) return earnedAcrossBattles;
 
     for (const battle of activeBattles) {
-        // Get or init player stats
-        let stats = battle.playerStats[userID];
+        // Get or init player stats (a projected playerStats is absent entirely
+        // until this player's first open in the battle)
+        let stats = (battle.playerStats || {})[userID];
         const isNew = !stats;
         if (isNew) {
             stats = createDefaultStats();
@@ -200,6 +207,17 @@ async function processPackOpening(userID, packID, addedCars) {
             }
         }
 
+        // Milestones are found in memory and their keys ride along in the same
+        // $set as the stats (was a separate $push round trip). Collected so the
+        // pack-open flow can ANNOUNCE them. They used to be earned in total
+        // silence: reward pushed, nothing on screen, player none the wiser
+        // until cd-rewards.
+        const earned = findNewMilestones(battle, stats);
+        if (earned.length > 0) {
+            if (!Array.isArray(stats.milestonesEarned)) stats.milestonesEarned = [];
+            stats.milestonesEarned.push(...earned.map(e => e.earnedKey));
+        }
+
         // Write updated stats back to DB
         const setObj = {};
         setObj[`playerStats.${userID}`] = stats;
@@ -209,11 +227,11 @@ async function processPackOpening(userID, packID, addedCars) {
             { "$set": setObj }
         );
 
-        // Check milestones after the update — collected so the pack-open flow
-        // can ANNOUNCE them. They used to be earned in total silence: reward
-        // pushed, nothing on screen, player none the wiser until cd-rewards.
-        const earned = await checkMilestones(battle, userID, stats);
-        for (const entry of earned || []) {
+        // Rewards only after the battle write lands: if that write failed, the
+        // milestone isn't recorded, and paying anyway would let the next open
+        // earn (and pay) it a second time.
+        if (earned.length > 0) await pushMilestoneRewards(battle, userID, earned);
+        for (const entry of earned) {
             earnedAcrossBattles.push({ battleName: battle.name, milestone: entry.milestone });
         }
     }
@@ -242,7 +260,8 @@ function toRewardEntries(reward, origin) {
     return entries;
 }
 
-async function checkMilestones(battle, userID, stats) {
+/** The milestones `stats` has newly crossed, as [{ milestone, earnedKey }]. Pure — writes nothing. */
+function findNewMilestones(battle, stats) {
     if (!battle.milestones || battle.milestones.length === 0) return [];
 
     const today = DateTime.now().toFormat("yyyy-MM-dd");
@@ -287,6 +306,27 @@ async function checkMilestones(battle, userID, stats) {
         }
     }
 
+    return newlyEarned;
+}
+
+/** Push newly earned milestones' rewards to the player's unclaimedRewards. */
+async function pushMilestoneRewards(battle, userID, newlyEarned) {
+    // rid on non-numeric entries → exact-entry removal at claim time
+    const rewards = newlyEarned.flatMap(e => toRewardEntries(e.milestone.reward, `${battle.name} Milestone`));
+    await profileModel.updateOne(
+        { userID },
+        { $push: { unclaimedRewards: { $each: rewards } } }
+    );
+}
+
+/**
+ * Find newly crossed milestones and record them in separate writes (keys
+ * $pushed onto the battle, rewards onto the profile). processPackOpening no
+ * longer uses this — it folds the keys into its stats $set — but it stays
+ * exported with its old behaviour.
+ */
+async function checkMilestones(battle, userID, stats) {
+    const newlyEarned = findNewMilestones(battle, stats);
     if (newlyEarned.length > 0) {
         // Add earned keys to battle document
         const pushKeys = newlyEarned.map(e => e.earnedKey);
@@ -294,17 +334,8 @@ async function checkMilestones(battle, userID, stats) {
             { battleID: battle.battleID },
             { $push: { [`playerStats.${userID}.milestonesEarned`]: { $each: pushKeys } } }
         );
-
-        // Push rewards to player's unclaimedRewards (rid on non-numeric
-        // entries → exact-entry removal at claim time)
-        const rewards = newlyEarned.flatMap(e => toRewardEntries(e.milestone.reward, `${battle.name} Milestone`));
-
-        await profileModel.updateOne(
-            { userID },
-            { $push: { unclaimedRewards: { $each: rewards } } }
-        );
+        await pushMilestoneRewards(battle, userID, newlyEarned);
     }
-
     return newlyEarned;
 }
 
@@ -481,7 +512,9 @@ async function sendStartDMs(battleName, packName) {
         }
     }));
 
-    const cursor = profileModel.find({ "settings.sendeventnotifs": true }, { garage: 0, discoveredCars: 0, decks: 0 }).lean().cursor();
+    // Only the ID is used — an exclusion projection still streamed every
+    // other profile field (unclaimedRewards, rrStats, …) per opted-in player.
+    const cursor = profileModel.find({ "settings.sendeventnotifs": true }, { userID: 1 }).lean().cursor();
     let batch = [];
     for await (const profile of cursor) {
         batch.push(profile);

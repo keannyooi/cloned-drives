@@ -13,8 +13,8 @@ const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.j
 const { upgradeCost } = require("../util/functions/upgradePrice.js");
 const { modifiedBase } = require("../util/functions/cardType.js");
 const confirm = require("../util/functions/confirm.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
 
 module.exports = {
     name: "upgrade",
@@ -85,34 +85,41 @@ module.exports = {
                             await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                             async function acceptedFunction(currentMessage) {
-                                // Re-fetch the profile so the write is built from FRESH data —
-                                // another writer may have touched the garage while the dialog was open.
-                                const freshData = await getProfile(message.author.id);
-                                const freshCar = freshData.garage.find(c => c.carID === currentCar.carID);
-                                if (!freshCar || (freshCar.upgrades[origUpgrade] || 0) < 1 || freshData.money < moneyLimit) {
-                                    const errorMessage = new ErrorMessage({
-                                        channel: message.channel,
-                                        title: "Error, your garage or balance changed while you were deciding.",
-                                        desc: "You no longer own this car at the selected tune, or you can no longer afford this upgrade. Please run the command again.",
-                                        author: message.author
-                                    });
-                                    return errorMessage.sendMessage({ currentMessage });
-                                }
+                                // saveGarage guards the tune decrement and the balance on the
+                                // server, so a change made while the dialog was open fails the
+                                // write instead of being overwritten — no fresh re-read needed.
+                                const before = structuredClone(playerData.garage);
+                                const handDecks = snapshotHandDecks(playerData);
+                                const ownedCar = playerData.garage.find(c => c.carID === currentCar.carID);
+                                const changedError = () => new ErrorMessage({
+                                    channel: message.channel,
+                                    title: "Error, your garage or balance changed while you were deciding.",
+                                    desc: "You no longer own this car at the selected tune, or you can no longer afford this upgrade. Please run the command again.",
+                                    author: message.author
+                                }).sendMessage({ currentMessage });
+                                if (!ownedCar || (ownedCar.upgrades[origUpgrade] || 0) < 1) return changedError();
 
-                                freshCar.upgrades[upgrade]++;
-                                freshCar.upgrades[origUpgrade]--;
-                                updateHands(freshData, freshCar.carID, origUpgrade, upgrade);
+                                ownedCar.upgrades[upgrade] = (ownedCar.upgrades[upgrade] || 0) + 1;
+                                ownedCar.upgrades[origUpgrade]--;
+                                updateHands(playerData, ownedCar.carID, origUpgrade, upgrade);
 
-                                let moneyBalance = freshData.money - moneyLimit;
-                                const [, attachment] = await Promise.all([
-                                    profileModel.updateOne({ userID: message.author.id }, {
-                                        money: moneyBalance,
-                                        garage: freshData.garage,
-                                        hand: freshData.hand,
-                                        decks: freshData.decks
+                                const [{ ok, doc }, attachment] = await Promise.all([
+                                    saveGarage({
+                                        userID: message.author.id,
+                                        before,
+                                        after: playerData.garage,
+                                        inc: { money: -moneyLimit },
+                                        // hand/decks only when updateHands changed them, and only if still as read.
+                                        ...handDeckChanges(playerData, handDecks),
+                                        filter: { money: { $gte: moneyLimit } },
+                                        returning: ["money"],
+                                        baseStamp: playerData.cacheStamp
                                     }),
                                     generateHud(car, upgrade)
                                 ]);
+                                if (!ok) return changedError();
+                                // The stored balance, read back by the same write.
+                                const moneyBalance = doc && typeof doc.money === "number" ? doc.money : playerData.money - moneyLimit;
 
                                 const successMessage = new SuccessMessage({
                                     channel: message.channel,

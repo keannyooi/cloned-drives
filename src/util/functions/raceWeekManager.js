@@ -567,26 +567,37 @@ async function getPrizes() {
 
 // ─── Rollover ────────────────────────────────────────────────────────────────
 
+// The week key last read from the DB AND found to match the clock. cd-rr
+// passes { trustConfirmed: true } to skip the read while the clock still says
+// that week, which saves a round trip per race. The 3-minute tick never skips,
+// so a script that rewinds the stored key (testRaceWeekRollover --arm) is
+// still picked up within one tick.
+let confirmedWeekKey = null;
+
 /**
  * Called every 3 minutes. No-op while the stored weekKey is current; on a new
  * ISO week, claims the rollover atomically and runs it. Never throws — DB
  * failures are reported through the BotError channel (same pattern as the
  * 12h dealership cron).
  */
-async function checkRaceWeekRollover() {
+async function checkRaceWeekRollover({ trustConfirmed = false } = {}) {
+    if (trustConfirmed && confirmedWeekKey !== null && confirmedWeekKey === getWeekKey()) return;
     try {
         const stat = await serverStatModel.findOne({});
         if (!stat) return;
         const state = stat.raceWeekState || {};
         if (!state.weekKey) {
+            confirmedWeekKey = null;
             await ensureRaceWeekState();
             return;
         }
         const currentKey = getWeekKey();
         if (currentKey === state.weekKey) {
+            confirmedWeekKey = currentKey;
             if (!cachedPrizes) cachedPrizes = state.prizes || {};
             return;
         }
+        confirmedWeekKey = null;
         // CLAIM: take a lock field instead of flipping weekKey — the flip only
         // happens as performRollover's FINAL write, so a crash mid-rollover
         // leaves weekKey stale and a later tick retries (lock goes stale after

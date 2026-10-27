@@ -13,6 +13,8 @@ const search = require("../util/functions/search.js");
 const { trackMoneySpent, trackFuseTokensEarned, trackOfferBought } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
+const { addToSetStage } = require("../util/functions/rewardPipelines.js");
 const offerModel = require("../models/offerSchema.js");
 
 module.exports = {
@@ -37,13 +39,28 @@ module.exports = {
         async function buyOffer(offer, currentMessage) {
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
-            const playerData = await getProfile(message.author.id);
+            // Only offers with cars or a pack touch the garage; the rest (money,
+            // fuse tokens, drivers) read and write the light fields alone.
+            const needsGarage = ["cars", "pack"].some(key => Object.prototype.hasOwnProperty.call(offer.offer, key));
+            const playerData = needsGarage
+                ? await getProfile(message.author.id)
+                : await profileModel.findOne({ userID: message.author.id }, { garage: 0, discoveredCars: 0, decks: 0 }).lean();
+            // Lean skips schema defaults.
+            if (typeof playerData.money !== "number") playerData.money = 0;
+            // Deep copy BEFORE addCars mutates the garage in place.
+            const garageBefore = needsGarage ? structuredClone(playerData.garage) : null;
+            const grantedCars = [];
+            let fuseTokensGranted = 0;
 
             // Initialize discoveredCars
             let discoveredCars = playerData.discoveredCars || [];
-            if (discoveredCars.length === 0 && playerData.garage.length > 0) {
+            let discoveredInitialised = false;
+            if (needsGarage && discoveredCars.length === 0 && playerData.garage.length > 0) {
                 discoveredCars = playerData.garage.map(c => c.carID);
+                discoveredInitialised = true;
             }
+            // openPack pushes new discoveries onto discoveredCars in place.
+            const discoveredBefore = discoveredCars.length;
 
             let amountBought = offer.purchasedPlayers[message.author.id] ?? 0;
             if (offer.isActive && offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
@@ -68,11 +85,10 @@ module.exports = {
             if (playerData.money >= offer.price) {
                 const fields = [];
                 let driverGrant = null;   // set by a "driver" entry, applied atomically below
-                playerData.money -= offer.price;
                 for (let [key, value] of Object.entries(offer.offer)) {
                     switch (key) {
                         case "fuseTokens":
-                            playerData.fuseTokens += value;
+                            fuseTokensGranted += value;
                             fields.push({ name: "Claimed Fuse Tokens", value: `${fuseEmoji}${value.toLocaleString("en")}`, inline: true });
                             break;
                         case "cars":
@@ -90,6 +106,7 @@ module.exports = {
                                 }
                             }
                             playerData.garage = addCars(playerData.garage, value);
+                            grantedCars.push(...value);
                             fields.push({ name: "Claimed Cars", value: carList, inline: true });
                             break;
                         case "pack":
@@ -98,6 +115,7 @@ module.exports = {
                             if (!Array.isArray(addedCars)) return;
 
                             playerData.garage = addCars(playerData.garage, addedCars);
+                            grantedCars.push(...addedCars);
                             fields.push({ name: "Claimed Pack", value: currentPack["packName"], inline: true });
                             break;
                         case "driver": {
@@ -126,37 +144,71 @@ module.exports = {
 
                 const set = {};
                 set[`purchasedPlayers.${message.author.id}`] = amountBought + 1;
-                const profileUpdate = {
-                    "$set": {
-                        money: playerData.money,
-                        fuseTokens: playerData.fuseTokens,
-                        garage: playerData.garage,
-                        discoveredCars
-                    }
-                };
+                // Money and fuse tokens go as deltas, guarded so the balance
+                // can't go negative; never absolute values from the read.
+                const inc = { money: -offer.price };
+                if (fuseTokensGranted) inc.fuseTokens = fuseTokensGranted;
+                const profileSet = {};
+                if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+                    profileSet.discoveredCars = discoveredCars;
+                }
                 // Driver grants use atomic dotted paths so they can't clobber a
                 // concurrent Race Week write with this command's stale snapshot.
+                let newDriverID = null;
                 if (driverGrant) {
                     const owned = Array.isArray(playerData.raceWeekStats?.ownedDrivers)
                         ? playerData.raceWeekStats.ownedDrivers : [];
                     if (!owned.includes(driverGrant.driverID)) {
-                        profileUpdate["$addToSet"] = {
-                            "raceWeekStats.ownedDrivers": { "$each": ["d00000", driverGrant.driverID] }
-                        };
+                        newDriverID = driverGrant.driverID;
                     }
                     else {
                         const xp = playerData.raceWeekStats?.driverXP?.[driverGrant.driverID];
                         const dupes = ((xp && typeof xp.dupes === "number") ? xp.dupes : 0) + 1;
-                        profileUpdate["$set"][`raceWeekStats.driverXP.${driverGrant.driverID}`] = {
+                        profileSet[`raceWeekStats.driverXP.${driverGrant.driverID}`] = {
                             dupes,
                             level: levelFromDupes(dupes, rarityOf(driverGrant.driver))
                         };
                     }
                 }
-                await Promise.all([
+                const moneyGuard = { money: { "$gte": offer.price } };
+
+                let profileWrite;
+                if (grantedCars.length > 0) {
+                    // Cars changed: saveGarage sends only the granted rows (merged
+                    // by carID on the server), not the whole garage.
+                    profileWrite = saveGarage({
+                        userID: message.author.id,
+                        before: garageBefore,
+                        after: playerData.garage,
+                        inc,
+                        set: profileSet,
+                        stages: newDriverID ? [addToSetStage("raceWeekStats.ownedDrivers", ["d00000", newDriverID])] : [],
+                        filter: moneyGuard,
+                        baseStamp: playerData.cacheStamp
+                    });
+                }
+                else {
+                    // Garage untouched: a plain light write.
+                    const profileUpdate = { "$inc": inc };
+                    if (Object.keys(profileSet).length > 0) profileUpdate["$set"] = profileSet;
+                    if (newDriverID) {
+                        profileUpdate["$addToSet"] = {
+                            "raceWeekStats.ownedDrivers": { "$each": ["d00000", newDriverID] }
+                        };
+                    }
+                    profileWrite = profileModel.updateOne({ userID: message.author.id, ...moneyGuard }, profileUpdate)
+                        .then(result => ({ ok: result.matchedCount > 0 }));
+                }
+                const [, saved] = await Promise.all([
                     offerModel.updateOne({ offerID: offer.offerID }, { "$set": set }),
-                    profileModel.updateOne({ userID: message.author.id }, profileUpdate)
+                    profileWrite
                 ]);
+                if (!saved.ok) {
+                    // The balance no longer covers it, so nothing was charged:
+                    // undo the purchase count and show the usual error.
+                    await offerModel.updateOne({ offerID: offer.offerID }, { "$set": { [`purchasedPlayers.${message.author.id}`]: amountBought } });
+                    return insufficientMoney();
+                }
 
                 trackMoneySpent(offer.price);
                 trackOfferBought();
@@ -165,6 +217,10 @@ module.exports = {
                 return successMessage.sendMessage({ currentMessage });
             }
             else {
+                return insufficientMoney();
+            }
+
+            function insufficientMoney() {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, it looks like you don't have enough money for this purchase.",

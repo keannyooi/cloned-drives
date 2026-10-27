@@ -99,7 +99,7 @@ bot.login(token);
 // yet offline to players for over an hour, printing NOTHING, because none of
 // these events had handlers. Log every lifecycle transition so a dead gateway
 // is visible in the console instead of silent.
-bot.on("shardDisconnect", (event, id) => console.error(`[gateway] shard ${id} DISCONNECTED (code ${event?.code}) — discord.js should reconnect; watchdog will exit if it does not`));
+bot.on("shardDisconnect", (event, id) => console.error(`[gateway] shard ${id} DISCONNECTED (code ${event?.code}) — discord.js should reconnect; watchdog will force a reconnect if it does not`));
 bot.on("shardReconnecting", id => console.log(`[gateway] shard ${id} reconnecting...`));
 bot.on("shardResume", (id, replayed) => console.log(`[gateway] shard ${id} resumed (${replayed} events replayed)`));
 bot.on("shardError", (error, id) => console.error(`[gateway] shard ${id} error: ${error.message}`));
@@ -114,33 +114,79 @@ bot.on("invalidated", () => {
     process.exit(1);
 });
 
-// Zombie watchdog: the panel restarts an EXITED process, but cannot see a
-// process that is alive with a dead gateway. If the client reports not-ready
-// for 10 straight minutes, self-terminate and let the panel bring us back.
-// Armed only after the first successful ready, so a slow boot is never killed.
+// Zombie watchdog: catches a process that is alive with a dead gateway.
+// Armed only after the first successful ready, so a slow boot is never touched.
+//
+// 2026-10-26 post-mortem: the old version judged health by dispatch traffic
+// ("15 minutes of silence = dead") and by isReady(). Both were wrong:
+// - isReady() never goes false after the first ready (discord.js 14.27 only
+//   sets the manager status once), so it can't see a dead gateway at all.
+// - The bot has no presence/typing intents, so a quiet chat means zero
+//   dispatches. A healthy connection was killed after 17 quiet minutes, and
+//   PebbleHost did NOT restart the exited process: the bot stayed offline.
+//
+// The honest signal is the heartbeat: Discord ACKs one every ~41s whether or
+// not anyone is talking, and discord.js records when the last ACKed beat was
+// sent (shard.lastPingTimestamp). Stale beats = dead link. Recovery is
+// in-process and retried forever — never exit, because nothing restarts us
+// (a long host network outage would otherwise strand the bot offline).
+const HEARTBEAT_STALE_MS = 3 * 60000;       // ~4 missed beats
+const FIRST_RECONNECT_TICK = 2;             // unhealthy ticks (~minutes) before the first reconnect
+const RECONNECT_EVERY_TICKS = 5;            // then retry this often until heartbeats return
 let gatewayDownMinutes = 0;
 let watchdogArmed = false;
-// isReady() misses the worst case: a socket that died without the client
-// noticing, so status still says Ready. Real gateway traffic is the honest
-// signal — in a server this size, packets (presences, messages, typing) flow
-// continuously, so 15 minutes of TOTAL silence means the connection is dead
-// regardless of what the client believes. Worst case on a false positive is
-// one clean restart.
-let lastGatewayPacket = Date.now();
-bot.on("raw", () => { lastGatewayPacket = Date.now(); });
-setInterval(() => {
-    if (!watchdogArmed) return;
-    const silentMinutes = Math.floor((Date.now() - lastGatewayPacket) / 60000);
-    if (bot.isReady() && silentMinutes < 15) {
-        if (gatewayDownMinutes >= 3) console.log(`[gateway] recovered after ~${gatewayDownMinutes} minute(s) down`);
+let watchdogReconnecting = false;
+
+function heartbeatAgeMs() {
+    // Oldest shard wins. -1 means the shard has never been ACKed since it was created.
+    let oldest = 0;
+    for (const shard of bot.ws.shards.values()) {
+        const age = shard.lastPingTimestamp > 0 ? Date.now() - shard.lastPingTimestamp : Infinity;
+        oldest = Math.max(oldest, age);
+    }
+    return oldest;
+}
+
+// Tear down every shard and connect fresh ones (new IDENTIFY). Goes through the
+// @discordjs/ws manager discord.js keeps at ws._ws: its events are attached at
+// the manager level, so new shards report into the same client. Client.destroy()
+// + login() is NOT used: in 14.x the destroyed flag never resets and isReady()
+// would stay false forever.
+async function reconnectGateway(reason) {
+    const wsManager = bot.ws._ws;
+    if (!wsManager) throw new Error("no internal ws manager");
+    const withTimeout = (promise, ms, label) => Promise.race([
+        promise,
+        new Promise((_, reject) => setTimeout(() => reject(new Error(`${label} timed out after ${ms / 1000}s`)), ms))
+    ]);
+    await withTimeout(wsManager.destroy({ code: 1000, reason }), 60000, "destroy").catch(error => console.error(`[gateway] watchdog: destroy failed (${error.message}), connecting anyway`));
+    await withTimeout(wsManager.connect(), 120000, "connect");
+}
+
+setInterval(async () => {
+    if (!watchdogArmed || watchdogReconnecting) return;
+    const ageMs = heartbeatAgeMs();
+    const ageText = Number.isFinite(ageMs) ? `${Math.round(ageMs / 1000)}s ago` : "never";
+    if (ageMs < HEARTBEAT_STALE_MS) {
+        if (gatewayDownMinutes > 0) console.log(`[gateway] watchdog: heartbeat healthy again after ~${gatewayDownMinutes} unhealthy minute(s)`);
         gatewayDownMinutes = 0;
         return;
     }
     gatewayDownMinutes++;
-    if (gatewayDownMinutes === 3) console.error(`[gateway] watchdog: unhealthy for 3 minutes (ready=${bot.isReady()}, last packet ${silentMinutes}m ago)`);
-    if (gatewayDownMinutes >= 10) {
-        console.error(`[gateway] watchdog: unhealthy for 10 minutes (ready=${bot.isReady()}, last packet ${silentMinutes}m ago) — assuming zombie connection, exiting for a clean restart.`);
-        process.exit(1);
+    console.error(`[gateway] watchdog: unhealthy for ${gatewayDownMinutes} minute(s) (last heartbeat ACK ${ageText}, ping ${bot.ws.ping}ms)`);
+
+    const sinceFirst = gatewayDownMinutes - FIRST_RECONNECT_TICK;
+    if (sinceFirst < 0 || sinceFirst % RECONNECT_EVERY_TICKS !== 0) return;
+    const attempt = sinceFirst / RECONNECT_EVERY_TICKS + 1;
+    console.error(`[gateway] watchdog: reconnecting in-process (attempt ${attempt})...`);
+    watchdogReconnecting = true;
+    try {
+        await reconnectGateway("Watchdog: heartbeat stale");
+        console.log(`[gateway] watchdog: reconnect attempt ${attempt} completed, waiting for heartbeats`);
+    } catch (error) {
+        console.error(`[gateway] watchdog: reconnect attempt ${attempt} failed: ${error.message} — retrying in ${RECONNECT_EVERY_TICKS} minutes`);
+    } finally {
+        watchdogReconnecting = false;
     }
 }, 60000);
 
@@ -165,9 +211,8 @@ bot.once("clientReady", async () => {
     // A pack battle scheduled while the bot was down starts now (same gate).
     if (allowRaceWeekRollover()) startScheduledPackBattles().catch(error => console.log(`[PackBattle] startup schedule check failed: ${error.message}`));
     const members = await bot.homeGuild.members.fetch();
-    members.forEach(async (user) => {
-        await upsertUserRecord(user);
-    });
+    // Not awaited, as before: the activity is set without waiting on the DB.
+    seedKnownProfiles(members).catch(error => console.log(`[profiles] startup seed failed: ${error.message}`));
 
     bot.devMode ? bot.user.setActivity("around with code", { type: "PLAYING" }) : bot.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
@@ -200,6 +245,21 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
     }
 });
 
+function isPastDeadline(item) {
+    return item.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(item.deadline)).invalid !== null;
+}
+
+// The tick finds { _id, deadline } stubs; this reloads the expired ones in full
+// (same filter and lean shape the tick used to fetch). By _id, because eventIDs
+// have collided before. A stub ended elsewhere in the meantime (the dev bot
+// runs this loop on the same database) comes back null and is skipped.
+async function loadExpired(model, stubs) {
+    const expired = stubs.filter(isPastDeadline);
+    if (expired.length === 0) return [];
+    const docs = await Promise.all(expired.map(stub => model.findOne({ _id: stub._id, isActive: true }).lean()));
+    return docs.filter(Boolean);
+}
+
 // loop thingy - checks for expired events/offers every 3 minutes
 setInterval(async () => {
     // Race Week rollover check — idempotent, fire-and-forget (never in devMode:
@@ -209,59 +269,54 @@ setInterval(async () => {
     // gate and same tick as the rollover, so "with Race Week" means with it.
     if (allowRaceWeekRollover()) await startScheduledPackBattles().catch(error => console.log(`[PackBattle] schedule check failed: ${error.message}`));
 
-    // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch)
+    // Fetch all active items in parallel (H-02: was 5 sequential queries, now 1 parallel batch).
+    // Only the deadline is fetched for each: the full documents (rosters,
+    // playerProgress, PvP entries, battle snapshots + playerStats) were pulled
+    // ~480 times a day just to compare a date. The rare item that has expired
+    // is reloaded in full by loadExpired, so the end handlers get the same lean
+    // document as before.
     const [events, championships, offers, packBattles, pvpEvents, playerDatum] = await Promise.all([
-        eventModel.find({ isActive: true }).lean(),
-        championshipsModel.find({ isActive: true }).lean(),
-        offerModel.find({ isActive: true }).lean(),
-        packBattleModel.find({ isActive: true }).lean(),
-        pvpEventModel.find({ isActive: true }).lean(),
+        eventModel.find({ isActive: true }, { deadline: 1 }).lean(),
+        championshipsModel.find({ isActive: true }, { deadline: 1 }).lean(),
+        offerModel.find({ isActive: true }, { deadline: 1 }).lean(),
+        packBattleModel.find({ isActive: true }, { deadline: 1 }).lean(),
+        pvpEventModel.find({ isActive: true }, { deadline: 1 }).lean(),
         profileModel.find(
             { "settings.senddailynotifs": true, "dailyStats.notifReceived": false },
             { userID: 1, dailyStats: 1 }  // H-02: projection — only fetch needed fields
         ).lean()
     ]);
 
-    for (let event of events) {
-        if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
-            await endEvent(event);
-        }
+    for (let event of await loadExpired(eventModel, events)) {
+        await endEvent(event);
     }
 
-    for (let championship of championships) {
-        if (championship.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(championship.deadline)).invalid !== null) {
-            await endChampionship(championship);
-        }
+    for (let championship of await loadExpired(championshipsModel, championships)) {
+        await endChampionship(championship);
     }
 
-    for (let offer of offers) {
-        if (offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
-            await endOffer(offer);
-        }
+    for (let offer of await loadExpired(offerModel, offers)) {
+        await endOffer(offer);
     }
 
     // Auto-expire pack battles
-    for (let battle of packBattles) {
-        if (battle.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(battle.deadline)).invalid !== null) {
-            try {
-                // Claims the battle first (the dev bot runs this loop on the same
-                // database), then pays placements, archives and deletes it.
-                if (await expirePackBattle(battle)) console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
-            } catch (err) {
-                console.error(`[PackBattle] Error auto-expiring ${battle.name}:`, err.message);
-            }
+    for (let battle of await loadExpired(packBattleModel, packBattles)) {
+        try {
+            // Claims the battle first (the dev bot runs this loop on the same
+            // database), then pays placements, archives and deletes it.
+            if (await expirePackBattle(battle)) console.log(`[PackBattle] Auto-expired and ended: ${battle.name}`);
+        } catch (err) {
+            console.error(`[PackBattle] Error auto-expiring ${battle.name}:`, err.message);
         }
     }
 
     // Auto-expire PvP events — endPvpEvent() handles leaderboard archival + reward distribution
-    for (let pvpEvent of pvpEvents) {
-        if (pvpEvent.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(pvpEvent.deadline)).invalid !== null) {
-            try {
-                await endPvpEvent(pvpEvent);
-                console.log(`[PvP] Auto-expired and ended: ${pvpEvent.name}`);
-            } catch (err) {
-                console.error(`[PvP] Error auto-expiring ${pvpEvent.name}:`, err.message);
-            }
+    for (let pvpEvent of await loadExpired(pvpEventModel, pvpEvents)) {
+        try {
+            await endPvpEvent(pvpEvent);
+            console.log(`[PvP] Auto-expired and ended: ${pvpEvent.name}`);
+        } catch (err) {
+            console.error(`[PvP] Error auto-expiring ${pvpEvent.name}:`, err.message);
         }
     }
 
@@ -495,6 +550,20 @@ async function upsertUserRecord(user) {
         hasProfile = true;
     }
     if (hasProfile) knownProfiles.add(user.id);
+}
+
+// Startup: one distinct() over the userID index seeds knownProfiles, instead of
+// one exists() per guild member (~835 at once, queued ahead of the first
+// commands after a restart). Only members with no profile yet go through
+// upsertUserRecord, one at a time — normally just whoever joined while the bot
+// was down.
+async function seedKnownProfiles(members) {
+    const existing = await profileModel.distinct("userID");
+    for (const userID of existing) knownProfiles.add(userID);
+    for (const member of members.values()) {
+        if (knownProfiles.has(member.id)) continue;
+        await upsertUserRecord(member).catch(error => console.log(`[profiles] could not create a profile for ${member.id}: ${error.message}`));
+    }
 }
 
 function accessDenied(message, roleID) {

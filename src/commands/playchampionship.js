@@ -28,6 +28,10 @@ const championshipModel = require("../models/championshipsSchema.js");
 async function persistRewards(userID, aggregates, entries) {
     // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
     const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
+    // Not one pipeline write: profileCache drops the player's cached garage on
+    // any pipeline update. Sequential, not Promise.all: the cache records the
+    // stamp of the last post-hook to fire, and concurrent writes can return in
+    // a different order than the server applied them, leaving a stale stamp.
     for (const { key, value, origin } of aggregates) {
         const res = await profileModel.updateOne(
             { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
@@ -63,9 +67,17 @@ module.exports = {
            // return errorMessage.sendMessage();
        // } - Play DM Only
 
-        const championships = await championshipModel.find();
-        const { hand, settings } = await profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 });
-        if (hand.carID === "") {
+        // Independent reads, run together. The profile read is lean, so guard
+        // the schema defaults it skips (settings).
+        const [championships, profile] = await Promise.all([
+            // Hydrated, not lean: the play checks rely on schema defaults
+            // (e.g. deadline "unlimited" on legacy docs that never stored it).
+            championshipModel.find(),
+            profileModel.findOne({ userID: message.author.id }, { hand: 1, settings: 1 }).lean()
+        ]);
+        const { hand } = profile;
+        const settings = profile.settings || {};
+        if (!hand || hand.carID === "") {
             return handMissingError(message);
         }
 
@@ -82,7 +94,7 @@ module.exports = {
         async function playChampionship(championship, currentMessage) {
             // console.log(championship);
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-            let round = championship.playerProgress[message.author.id] ?? 1;
+            let round = (championship.playerProgress ?? {})[message.author.id] ?? 1;
             if (round > championship.roster.length) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
@@ -139,7 +151,7 @@ module.exports = {
                         return intermission.sendMessage({ currentMessage });
                     }
                     currentMessage.removeButtons();
-                    const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
+                    const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
 
                     if (result > 0) {
                         trackChampionshipPlayed();

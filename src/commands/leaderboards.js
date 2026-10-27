@@ -47,6 +47,28 @@ const BOARDS = {
 
 const BOARD_NAMES = Object.keys(BOARDS);
 
+// The car boards are a ~3.5s aggregation over every garage, so their sorted
+// rows are shared for a short TTL. Only those are cached: the scalar and
+// raceweek boards are one tight-projection find, and players check them right
+// after a race or the Monday rollover, so they stay live. Only the full ranking
+// is cached — the viewer's placement and paging are derived from it per call.
+// The in-flight promise is stored too, so concurrent viewers of a cold board
+// share one build.
+const BOARD_TTL_MS = 2 * 60 * 1000;
+const boardCache = new Map();   // criteria -> { at, rows: Promise<rows> }
+
+function cachedBoardRows(criteria, build) {
+    const hit = boardCache.get(criteria);
+    if (hit && Date.now() - hit.at < BOARD_TTL_MS) return hit.rows;
+    const entry = { at: Date.now(), rows: build() };
+    boardCache.set(criteria, entry);
+    // A failed build must not be served for the rest of the TTL.
+    entry.rows.catch(() => {
+        if (boardCache.get(criteria) === entry) boardCache.delete(criteria);
+    });
+    return entry.rows;
+}
+
 module.exports = {
     name: "leaderboards",
     aliases: ["lb", "leader", "leaderboard", "lead"],
@@ -56,14 +78,22 @@ module.exports = {
     description: "Shows the leaderboards. `cd-lb owned <car>` lists everyone who owns a specific car.",
     async execute(message, args) {
         const criteriaArg = (args[0] || "").toLowerCase();
-        const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
+        const board = BOARDS[criteriaArg];
+        // Settings and the board rows are independent reads, so a cold board
+        // doesn't pay the settings round trip on top of its build.
+        const [viewer, boardRows] = await Promise.all([
+            profileModel.findOne({ userID: message.author.id }, { settings: 1 }).lean(),
+            !board ? null
+                : board.kind === "cars" ? cachedBoardRows(criteriaArg, () => buildRows(board))
+                : buildRows(board)
+        ]);
+        const settings = viewer.settings || {};
 
         // ── "who owns this car?" ─────────────────────────────────────────────
         if (criteriaArg === "owned" || criteriaArg === "owners") {
             return ownersBoard(args.slice(1));
         }
 
-        const board = BOARDS[criteriaArg];
         if (!board) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
@@ -76,7 +106,7 @@ module.exports = {
         }
 
         const page = args[1] && !isNaN(args[1]) ? parseInt(args[1], 10) : 1;
-        const rows = await buildRows(board);
+        const rows = boardRows;
 
         if (rows.length === 0) {
             const infoMessage = new InfoMessage({
@@ -206,6 +236,8 @@ module.exports = {
             const currentCar = getCar(carID);
 
             // Mongo filters by garage.carID — we never scan garages in Node.
+            // Deliberately unindexed: a multikey garage.carID index over every
+            // garage row would be huge on this Atlas tier.
             const owners = await profileModel
                 .find({ "garage.carID": carID }, { userID: 1, "garage.$": 1 })
                 .lean();

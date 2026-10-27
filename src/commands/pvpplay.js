@@ -88,7 +88,13 @@ module.exports = {
             }).sendMessage();
         }
 
-        const events = await pvpEventModel.find({ isActive: true });
+        // Independent reads, run together (a "no active events" error wastes the
+        // profile read, which is rare). Lean: the flow only reads event fields and
+        // writes through the model, never document methods.
+        const [events, playerData] = await Promise.all([
+            pvpEventModel.find({ isActive: true }).lean(),
+            getProfile(message.author.id)
+        ]);
         if (events.length === 0) {
             return new ErrorMessage({
                 channel: message.channel,
@@ -98,7 +104,6 @@ module.exports = {
             }).sendMessage();
         }
 
-        const playerData = await getProfile(message.author.id);
         if (!playerData) {
             return new ErrorMessage({
                 channel: message.channel,
@@ -417,14 +422,17 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
     const updateOps = { "$set": setUpdates };
     if (Object.keys(incUpdates).length > 0) updateOps["$inc"] = incUpdates;
 
-    await pvpEventModel.updateOne({ pvpEventID: pvpEvent.pvpEventID }, updateOps);
+    // 14. The write returns the fresh entries (only those: rank is all we need),
+    // so the player's NEW rank includes concurrent matches without a second
+    // round trip. Rank is the most asked-for post-match info ("did I climb?").
+    const freshEvent = await pvpEventModel.findOneAndUpdate(
+        { pvpEventID: pvpEvent.pvpEventID },
+        updateOps,
+        { returnDocument: "after" }
+    ).select({ entries: 1 }).lean();
 
-    // 14. Re-fetch fresh leaderboard to compute the player's NEW rank.
-    // This is one extra DB read but cheap, and the rank is the most asked-for
-    // post-match info ("did I climb?"). Falls back gracefully if the read fails.
     let rankInfo = { newRank: null, oldRank: playerRank, totalParticipants: leaderboardBefore.length };
     try {
-        const freshEvent = await pvpEventModel.findOne({ pvpEventID: pvpEvent.pvpEventID }).lean();
         if (freshEvent) {
             const newLb = buildLeaderboard(freshEvent.entries);
             const newRow = newLb.find(r => r.userID === message.author.id);
@@ -435,7 +443,7 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
             };
         }
     } catch (err) {
-        console.error(`[PvP] Failed to fetch post-match leaderboard: ${err.message}`);
+        console.error(`[PvP] Failed to compute post-match leaderboard: ${err.message}`);
     }
 
     // 15. Show match summary

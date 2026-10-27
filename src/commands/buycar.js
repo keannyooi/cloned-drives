@@ -10,8 +10,8 @@ const addCars = require("../util/functions/addCars.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const { trackMoneySpent, trackTrophiesSpent, trackCarsBought } = require("../util/functions/tracker.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
@@ -23,8 +23,15 @@ module.exports = {
     description: "Buy a car from either the dealership or the black market using this command!",
 	
     async execute(message, args) {
-		const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-        const { dealershipCatalog, bmCatalog } = await serverStatModel.findOne({});
+        // The member, the two catalogs and the profile are independent reads:
+        // start them together. The no-op catch stops an unhandled rejection
+        // when an early error return never awaits the profile.
+        const profilePromise = getProfile(message.author.id);
+        profilePromise.catch(() => {});
+        const [guildMember, { dealershipCatalog, bmCatalog }] = await Promise.all([
+            bot.homeGuild.members.fetch(message.author.id),
+            serverStatModel.findOne({}, { dealershipCatalog: 1, bmCatalog: 1 }).lean()
+        ]);
         let query, list, mode = args[0].toLowerCase();
         let amount = 1;
         if (isNaN(args[1]) || !args[2]) {
@@ -72,7 +79,8 @@ module.exports = {
 
         async function buyCar(currentCar, amount, currentMessage) {
             const emoji = bot.emojis.cache.get(mode === "bm" ? trophyEmojiID : moneyEmojiID);
-            const { money, trophies, garage } = await getProfile(message.author.id);
+            const playerData = await profilePromise;
+            const { money, trophies, garage } = playerData;
             const car = getCar(currentCar.carID);
             const price = currentCar.price * amount;
             let balance = mode === "bm" ? trophies : money;
@@ -99,20 +107,9 @@ module.exports = {
                 });
                 return errorMessage.sendMessage();
             }
-            else if (balance >= price && currentCar.stock >= amount) {
-                let addedCars = [];
-                for (let i = 0; i < amount; i++) {
-                    addedCars.push({ carID: currentCar.carID, upgrade: "000" });
-                }
+            else if (balance >= price && currentCar.stock >= amount && await completePurchase(playerData, currentCar, amount, price)) {
                 balance -= price;
                 currentCar.stock -= amount;
-
-                const obj = mode === "bm" ? { trophies: balance } : { money: balance };
-                obj.garage = addCars(garage, addedCars);
-                await Promise.all([
-                    profileModel.updateOne({ userID: message.author.id }, obj),
-                    serverStatModel.updateOne({}, { dealershipCatalog, bmCatalog })
-                ]);
 
                 if (mode === "bm") trackTrophiesSpent(price);
                 else trackMoneySpent(price);
@@ -143,6 +140,51 @@ module.exports = {
                 });
                 return errorMessage.sendMessage({ currentMessage });
             }
+        }
+
+        /**
+         * Take the stock, then charge the player and add the cars. Returns
+         * false (nothing changed) when the stock or the balance no longer
+         * covers it, which shows the usual "unable to purchase" error.
+         */
+        async function completePurchase(playerData, currentCar, amount, price) {
+            // Reserve first, guarded and positional on the ONE catalog entry: the
+            // old wholesale rewrite of both catalogs could oversell to concurrent
+            // buyers and clobber a dealership refresh made since the read.
+            const catalog = mode === "bm" ? "bmCatalog" : "dealershipCatalog";
+            const reserved = await serverStatModel.updateOne(
+                { [catalog]: { "$elemMatch": { carID: currentCar.carID, stock: { "$gte": amount } } } },
+                { "$inc": { [`${catalog}.$.stock`]: -amount } }
+            );
+            if (reserved.matchedCount === 0) return false;
+            const release = () => serverStatModel.updateOne(
+                { [`${catalog}.carID`]: currentCar.carID },
+                { "$inc": { [`${catalog}.$.stock`]: amount } }
+            );
+
+            let addedCars = [];
+            for (let i = 0; i < amount; i++) {
+                addedCars.push({ carID: currentCar.carID, upgrade: "000" });
+            }
+            const currency = mode === "bm" ? "trophies" : "money";
+            const before = structuredClone(playerData.garage);
+            let saved;
+            try {
+                saved = await saveGarage({
+                    userID: message.author.id,
+                    before,
+                    after: addCars(playerData.garage, addedCars),
+                    inc: { [currency]: -price },
+                    filter: { [currency]: { "$gte": price } },
+                    baseStamp: playerData.cacheStamp
+                });
+            }
+            catch (error) {
+                await release().catch(() => {});
+                throw error;
+            }
+            if (!saved.ok) await release().catch(error => console.error("[buycar] stock release failed:", error.message));
+            return saved.ok;
         }
     }
 };

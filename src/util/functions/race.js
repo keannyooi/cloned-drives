@@ -1,17 +1,25 @@
 "use strict";
 
 const bot = require("../../config/config.js");
-const { createCanvas, loadImage } = require("@napi-rs/canvas");
+const { createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
 const { renderHudCanvas } = require("./generateHud.js");
+const { getScaledImage } = require("./imageCache.js");
 
-/** Load an image with a timeout — rejects if it takes too long so the catch block can handle it */
+const RACE_WIDTH = 674;
+const RACE_HEIGHT = 379;
+
+/**
+ * Load the track background (pre-scaled to the race canvas, via imageCache)
+ * with a timeout — rejects if it takes too long so the catch block can handle
+ * it. A timed-out download still lands in the cache for the next race.
+ */
 function loadImageWithTimeout(src, ms = 3000) {
     return new Promise((resolve, reject) => {
         const timer = setTimeout(() => reject(new Error(`Image load timeout: ${src}`)), ms);
-        loadImage(src)
+        getScaledImage(src, RACE_WIDTH, RACE_HEIGHT)
             .then(img => { clearTimeout(timer); resolve(img); })
             .catch(err => { clearTimeout(timer); reject(err); });
     });
@@ -41,7 +49,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics, si
     
     if (!disablegraphics && !silentResult) {
         try {
-            const canvas = createCanvas(674, 379);
+            const canvas = createCanvas(RACE_WIDTH, RACE_HEIGHT);
             const context = canvas.getContext("2d");
             // HUDs are composed via renderHudCanvas so the printed stats are the
             // EXACT values this race runs on — including driver-boosted player

@@ -50,64 +50,79 @@ function bestTunedValue(entry, base, tuneKey, lowerIsBetter) {
     return best;
 }
 
+/**
+ * Sorts `list` in place and returns it. Decorate-sort-undecorate: each
+ * entry's sort key is computed once up front instead of on both sides of
+ * every comparison (~108k of them for the full catalogue). The comparator
+ * keeps the old semantics exactly — including the tie-break never returning
+ * 0 — so the same TimSort run yields the same order, ties included.
+ */
 function sortCars(list, sort, order, garage) {
+    // A 0/1-entry list never reaches the comparator, so compute nothing for it.
+    if (list.length < 2) return list;
     const lowerIsBetter = LOWER_IS_BETTER.has(sort);
-    return list.sort(function (a, b) {
-        // Handle both string filenames and objects with carID
-        let carIdA = typeof a === "string" ? (a.endsWith('.json') ? a.slice(0, -5) : a) : a.carID;
-        let carIdB = typeof b === "string" ? (b.endsWith('.json') ? b.slice(0, -5) : b) : b.carID;
-        
-        let carA = getCar(carIdA);
-        let carB = getCar(carIdB);
-        
-        // Get base reference for BM cars
-        let bmRefA = modifiedBase(carA);
-        let bmRefB = modifiedBase(carB);
+    const tuneKey = sortKeyMap[sort];
+    const ascending = (order === "ascending") ? !lowerIsBetter : lowerIsBetter;
 
-        let critA, critB;
-        
+    // carID -> FIRST garage row with it, as garage.find returned (duplicate-row
+    // garages exist). Exact match stands in for the old includes(): carIDs are 6 chars.
+    let garageMap;
+    if (sort === "duplicates" && garage) {
+        garageMap = new Map();
+        for (const row of garage) {
+            if (row && !garageMap.has(row.carID)) garageMap.set(row.carID, row);
+        }
+    }
+
+    // sort() moves undefined entries to the end without comparing them; keep that.
+    const decorated = [];
+    let undefinedCount = 0;
+    for (const entry of list) {
+        if (entry === undefined) {
+            undefinedCount++;
+            continue;
+        }
+        // Handle both string filenames and objects with carID
+        const carID = typeof entry === "string" ? (entry.endsWith('.json') ? entry.slice(0, -5) : entry) : entry.carID;
+        const car = getCar(carID);
+        // Get base reference for BM cars
+        const bmRef = modifiedBase(car);
+
+        let crit;
         // Tunable stat: each car ranks by the best figure the player owns
         // across ALL their tunes of it (see bestTunedValue).
-        if (sortKeyMap[sort]) {
-            const tuneKey = sortKeyMap[sort];
-            critA = bestTunedValue(a, bmRefA, tuneKey, lowerIsBetter);
-            critB = bestTunedValue(b, bmRefB, tuneKey, lowerIsBetter);
+        if (tuneKey) {
+            crit = bestTunedValue(entry, bmRef, tuneKey, lowerIsBetter);
         }
         else if (sort === "duplicates") {
-            let upgA, upgB;
-            if (garage) {
-                const aId = typeof a === "string" ? (a.endsWith('.json') ? a.slice(0, -5) : a.slice(0, 6)) : a.carID;
-                const bId = typeof b === "string" ? (b.endsWith('.json') ? b.slice(0, -5) : b.slice(0, 6)) : b.carID;
-                upgA = garage.find(c => aId.includes(c.carID));
-                upgB = garage.find(c => bId.includes(c.carID));
+            let row;
+            if (garageMap) {
+                // Bare strings key on their first 6 chars here, unlike getCar above.
+                const dupID = typeof entry === "string" ? (entry.endsWith('.json') ? entry.slice(0, -5) : entry.slice(0, 6)) : entry.carID;
+                row = garageMap.get(dupID);
             }
-
-            if (upgA === 0 && upgB === 0) {
-                critA = critB = 0;
-            }
-            else {
-                critA = calcTotal(upgA ?? a);
-                critB = calcTotal(upgB ?? b);
-            }
+            crit = calcTotal(row ?? entry);
         }
         else {
             // Non-tunable stats (cr, driveType, etc.) - use base car values
-            critA = bmRefA[sort];
-            critB = bmRefB[sort];
+            crit = bmRef[sort];
         }
+        // name is only needed on ties; filled lazily.
+        decorated.push({ entry, car, crit, name: undefined });
+    }
 
-        if (critA === critB) {
-            return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
+    const nameOf = d => d.name ?? (d.name = carNameGen({ currentCar: d.car }));
+    decorated.sort(function (a, b) {
+        if (a.crit === b.crit) {
+            return nameOf(a) > nameOf(b) ? 1 : -1;
         }
-        else {
-            if ((order === "ascending") ? !lowerIsBetter : lowerIsBetter) {
-                return critA - critB;
-            }
-            else {
-                return critB - critA;
-            }
-        }
+        return ascending ? a.crit - b.crit : b.crit - a.crit;
     });
+
+    let i = 0;
+    for (const d of decorated) list[i++] = d.entry;
+    while (i < list.length) list[i++] = undefined;
+    return list;
 }
 
 module.exports = sortCars;

@@ -591,10 +591,13 @@ module.exports = {
     category: "Gameplay",
     description: "Race Week: climb the weekly win ladder against randomly generated opponents. Threshold prizes land instantly; losses never cost you wins.",
     async execute(message) {
-        // Idempotent weekly-rollover guard — cheap no-op while the week is current.
-        await checkRaceWeekRollover();
+        // Idempotent weekly-rollover guard — free (no DB read) while the clock
+        // is still in the week the DB last confirmed.
+        await checkRaceWeekRollover({ trustConfirmed: true });
 
-        const profile = await profileModel.findOne({ userID: message.author.id });
+        // Race Week never touches the heavy arrays — skip them (a veteran's
+        // garage is ~900 KB on a throttled link).
+        const profile = await profileModel.findOne({ userID: message.author.id }, { garage: 0, discoveredCars: 0, decks: 0 });
         // Footer nudge: rewards pile up invisibly (rungs, codes, milestones all
         // queue into unclaimedRewards) — surface the count every race.
         const unclaimedCount = Array.isArray(profile && profile.unclaimedRewards) ? profile.unclaimedRewards.length : 0;
@@ -781,7 +784,10 @@ module.exports = {
 
                         case "yse": {
                             raceCompleted = true;
-                            await button.deferUpdate().catch(() => {});
+                            // Not awaited: the ack goes out first (meets the 3s
+                            // deadline) while the race renders, instead of
+                            // costing a Discord round trip before it starts.
+                            button.deferUpdate().catch(() => {});
                             reactionMessage?.removeButtons();
 
                             if (!isBossGate && !filterCheck({ car: hand, filter: reqs })) {
@@ -964,8 +970,14 @@ module.exports = {
                                 if (awards.claimed.length > 0) pushOps["raceWeekStats.claimedThresholds"] = { "$each": awards.claimed };
                                 if (pendingEntries.length > 0) pushOps.unclaimedRewards = { "$each": pendingEntries };
                                 if (Object.keys(pushOps).length > 0) update["$push"] = pushOps;
-                                await profileModel.updateOne({ userID: message.author.id }, update);
-                                await persistMoneyReward(message.author.id, pendingMoney);
+                                // Safe to run together: pendingEntries never holds a
+                                // money entry (money always aggregates into
+                                // pendingMoney), so the $push here and the money
+                                // $inc/$push can't produce two Race Week money entries.
+                                await Promise.all([
+                                    profileModel.updateOne({ userID: message.author.id }, update),
+                                    persistMoneyReward(message.author.id, pendingMoney)
+                                ]);
 
                                 let earningsMsg = buildEarningsMessage(payout, newWins);
                                 if (isBossGate) {

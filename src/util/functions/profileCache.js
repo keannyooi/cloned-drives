@@ -40,6 +40,8 @@ const MAX_AGE_MS = 15 * 60 * 1000;       // safety net against any writer that b
 
 /** userID -> { stamp, at, heavy: { garage, discoveredCars, decks } } */
 const cache = new Map();
+/** userID -> heavy fields a caller vouched for during its write (writeWithHeavy) */
+const vouched = new Map();
 const stats = { hits: 0, misses: 0, writeThroughs: 0, invalidations: 0 };
 
 // Schema defaults for lean objects (mongoose only applies them on hydration).
@@ -116,6 +118,11 @@ async function getProfile(userID) {
             // can hit. The write hook records the stamp on this entry.
             remember(userID, null, heavy);
             await profileModel.updateOne({ userID }, { cacheStamp: newStamp() });
+            // The write hook replaced that stamp with its own and recorded it on
+            // the entry; hand it back so callers chaining baseStamp (garageWrite,
+            // writeWithHeavy) start from the stored value, not undefined/0.
+            const stamped = cache.get(userID);
+            if (stamped && stamped.stamp !== null) light.cacheStamp = stamped.stamp;
         }
         else {
             remember(userID, stamp, heavy);
@@ -147,8 +154,18 @@ function onWrite(filter, update, stamp, modified) {
     }
     const entry = cache.get(userID);
     if (!entry) return;
+    const voucher = vouched.get(userID);
+    if (voucher && voucher.baseStamp !== undefined && entry.stamp !== voucher.baseStamp) {
+        // Someone else wrote this profile since the voucher's copy was taken —
+        // that copy may be missing their change, so certify nothing.
+        cache.delete(userID);
+        stats.invalidations++;
+        return;
+    }
+    if (voucher) voucher.appliedStamp = stamp;
 
     if (!update || Array.isArray(update)) {   // aggregation-pipeline update: can't reason about it
+        if (voucher) return applyVoucher(entry, voucher.heavy, stamp);
         cache.delete(userID);
         stats.invalidations++;
         return;
@@ -172,6 +189,7 @@ function onWrite(filter, update, stamp, modified) {
         }
     }
     if (touchedOtherwise) {
+        if (voucher) return applyVoucher(entry, voucher.heavy, stamp);
         cache.delete(userID);
         stats.invalidations++;
         return;
@@ -180,6 +198,47 @@ function onWrite(filter, update, stamp, modified) {
         entry.heavy[field] = clone(value);
     }
     if (Object.keys(replaced).length > 0) stats.writeThroughs++;
+    entry.stamp = stamp;
+    entry.at = Date.now();
+}
+
+/**
+ * Targeted writes to heavy arrays (pipeline merges, positional $inc) would
+ * otherwise drop the cache entry, and the player's next garage command pays
+ * the full fetch again. A caller that knows the post-write values vouches for
+ * them: while `write` runs, a write for this user that touches heavy fields
+ * becomes a write-through of `heavy` instead of an invalidation.
+ *
+ * `heavy` holds the fields the write changes, e.g. { garage, discoveredCars };
+ * `{}` vouches that the write leaves every heavy field alone. The assumption is
+ * the same one a wholesale `$set` write-through already makes: the caller's
+ * copy matched the database when it was read.
+ *
+ * `baseStamp` (optional) is the cacheStamp the caller's copy came from — the
+ * profile's `cacheStamp` at read time, then whatever the previous call
+ * returned. If the cached entry has moved on (another write in between), the
+ * voucher is refused and the entry dropped. Pass `null` when unknown.
+ *
+ * @returns {Promise<{ result, stamp }>} `stamp` — the new cacheStamp when the
+ *   cache followed the write (chain it into the next call), else null.
+ */
+async function writeWithHeavy(userID, heavy, write, baseStamp) {
+    const voucher = { heavy, baseStamp, appliedStamp: null };
+    vouched.set(userID, voucher);
+    try {
+        const result = await write();
+        return { result, stamp: voucher.appliedStamp };
+    }
+    finally {
+        vouched.delete(userID);
+    }
+}
+
+function applyVoucher(entry, heavy, stamp) {
+    for (const [field, value] of Object.entries(heavy)) {
+        if (HEAVY_FIELDS.includes(field)) entry.heavy[field] = clone(value);
+    }
+    if (Object.keys(heavy).length > 0) stats.writeThroughs++;
     entry.stamp = stamp;
     entry.at = Date.now();
 }
@@ -200,4 +259,4 @@ function cacheStats() {
     return { ...stats, entries: cache.size };
 }
 
-module.exports = { getProfile, onWrite, onDelete, invalidate, newStamp, cacheStats, HEAVY_FIELDS };
+module.exports = { getProfile, onWrite, onDelete, invalidate, newStamp, cacheStats, writeWithHeavy, HEAVY_FIELDS };

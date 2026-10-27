@@ -18,6 +18,7 @@ const { loadImage, createCanvas } = require("@napi-rs/canvas");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID, raceWeekEmojiIDs } = require("../consts/consts.js");
 const { getCar, getTrack, getPack, getDriver } = require("./dataManager.js");
 const reqDisplay = require("./reqDisplay.js");
+const { getScaledImage } = require("./imageCache.js");
 
 // ─── Cell layout (tweak here — all positions relative to the cell origin) ────
 const ROUND_NUM_X = 185;    // round number, drawn after the template's "Round" label
@@ -25,6 +26,8 @@ const ROUND_NUM_Y = 41;
 const MAP_X = 512;          // track map (was 482 — shifted right for the tune slot)
 const MAP_Y = 190;
 const MAP_SIZE = 98;
+const HUD_W = 374;          // opponent HUD, drawn at (13, 59)
+const HUD_H = 224;
 const TUNE_X = 428;         // tune icon slot, left of the track map
 const TUNE_Y = 207;
 const TUNE_SIZE = 64;
@@ -49,6 +52,22 @@ async function loadTuneIcon(upgrade) {
     return icon;
 }
 
+// Emoji icons are the same on every board, so they are downloaded once per
+// process. The promise is cached (concurrent renders share one download) and
+// dropped on failure so the next render retries. Keyed by URL: a re-uploaded
+// emoji gets a new URL and simply misses once.
+const emojiImageCache = new Map();
+function loadEmojiImage(emojiID) {
+    const url = bot.emojis.cache.get(emojiID).url;
+    if (!emojiImageCache.has(url)) {
+        emojiImageCache.set(url, loadImage(url).catch(error => {
+            emojiImageCache.delete(url);
+            throw error;
+        }));
+    }
+    return emojiImageCache.get(url);
+}
+
 function adjustSize(image) {
     const scale = Math.min(65 / image.width, 64 / image.height);
     return { w: image.width * scale, h: image.height * scale };
@@ -65,31 +84,26 @@ async function generateEventGraphic(event) {
     const context = canvas.getContext("2d");
 
     try {
-        // Load HUD + map images in batches to reduce the memory spike on big rosters
-        const batchSize = 5;
-        let hudImages = [];
-        let mapImages = [];
-
-        for (let i = 0; i < event.roster.length; i += batchSize) {
-            const batch = event.roster.slice(i, i + batchSize);
-
-            const hudBatch = await Promise.all(batch.map(item => loadImage(getCar(item.carID).racehud)));
-            const mapBatch = await Promise.all(batch.map(item => loadImage(getTrack(item.track).map)));
-
-            hudImages.push(...hudBatch);
-            mapImages.push(...mapBatch);
-        }
-
-        let [moneyImage, fuseImage, trophyImage, carImage, packImage, driverImage] = await Promise.all([
-            loadImage(bot.emojis.cache.get(moneyEmojiID).url),
-            loadImage(bot.emojis.cache.get(fuseEmojiID).url),
-            loadImage(bot.emojis.cache.get(trophyEmojiID).url),
-            // Dedicated reward-type icons (shared with cd-rrprizes) rather than
-            // the old glof/pack stand-ins — drivers get their own too.
-            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.car).url),
-            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.pack).url),
-            loadImage(bot.emojis.cache.get(raceWeekEmojiIDs.driver).url)
+        // HUDs and maps come from the image cache, pre-scaled to the size they
+        // are drawn at (pixel-identical, a fraction of the memory), so every
+        // image can load at once — the old batches of 5 (HUDs, then maps)
+        // existed only to cap the full-size decode spike. A failed load still
+        // rejects and falls through to the null return below, as before.
+        const [hudImages, mapImages, emojiImages] = await Promise.all([
+            Promise.all(event.roster.map(item => getScaledImage(getCar(item.carID).racehud, HUD_W, HUD_H))),
+            Promise.all(event.roster.map(item => getScaledImage(getTrack(item.track).map, MAP_SIZE, MAP_SIZE))),
+            Promise.all([
+                loadEmojiImage(moneyEmojiID),
+                loadEmojiImage(fuseEmojiID),
+                loadEmojiImage(trophyEmojiID),
+                // Dedicated reward-type icons (shared with cd-rrprizes) rather than
+                // the old glof/pack stand-ins — drivers get their own too.
+                loadEmojiImage(raceWeekEmojiIDs.car),
+                loadEmojiImage(raceWeekEmojiIDs.pack),
+                loadEmojiImage(raceWeekEmojiIDs.driver)
+            ])
         ]);
+        let [moneyImage, fuseImage, trophyImage, carImage, packImage, driverImage] = emojiImages;
 
         context.fillStyle = "#ffffff";
 
@@ -100,7 +114,7 @@ async function generateEventGraphic(event) {
             context.font = 'bold 41px "Roboto Condensed"';
             context.textAlign = "left";
             context.drawImage(bot.graphics.eventTemp, baseX, baseY);
-            context.drawImage(hudImages[i], baseX + 13, baseY + 59, 374, 224);
+            context.drawImage(hudImages[i], baseX + 13, baseY + 59, HUD_W, HUD_H);
             context.drawImage(mapImages[i], baseX + MAP_X, baseY + MAP_Y, MAP_SIZE, MAP_SIZE);
             // Round number — clearly placed after the template's "Round" label
             context.fillText(i + 1, baseX + ROUND_NUM_X, baseY + ROUND_NUM_Y);

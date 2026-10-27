@@ -11,8 +11,8 @@ const searchUser = require("../util/functions/searchUser.js");
 const generateHud = require("../util/functions/generateHud.js");
 const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
 
 module.exports = {
     name: "changetune",
@@ -71,10 +71,11 @@ module.exports = {
                 searchByID,
                 currentMessage
             })))
-                .then(response => {
+                .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    changeTune(user, result, playerData, currentMessage);
+                    // Awaited so the per-user command lock covers the whole dialog.
+                    await changeTune(user, result, playerData, currentMessage);
                 })
                 .catch(error => {
                     throw error;
@@ -82,24 +83,45 @@ module.exports = {
         }
 
         function changeTune(user, currentCar, playerData, currentMessage) {
-            new Promise(resolve => resolve(selectUpgrade({ message, currentCar, amount: 1, currentMessage })))
+            return new Promise(resolve => resolve(selectUpgrade({ message, currentCar, amount: 1, currentMessage })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [origUpgrade, currentMessage] = response;
                     let upgrade = args[args.length - 1];
-                    currentCar.upgrades[upgrade]++;
-                    currentCar.upgrades[origUpgrade]--;
-                    updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
-                    
-                    let car = getCar(currentCar.carID);
-                    const [, attachment] = await Promise.all([
-                        profileModel.updateOne({ userID: user.id }, {
-                            garage: playerData.garage,
-                            hand: playerData.hand,
-                            decks: playerData.decks
+                    // playerData was read before the dialogs: saveGarage guards the
+                    // decrement, so a change the player made meanwhile fails the write
+                    // instead of being overwritten.
+                    const before = structuredClone(playerData.garage);
+                    const handDecks = snapshotHandDecks(playerData);
+                    const ownedCar = playerData.garage.find(c => c.carID === currentCar.carID);
+                    const changedError = () => new ErrorMessage({
+                        channel: message.channel,
+                        title: `Error, ${user.username}'s garage changed while you were deciding.`,
+                        desc: "They no longer own this car at the selected tune. Please run the command again.",
+                        author: message.author
+                    }).sendMessage({ currentMessage });
+                    if (!ownedCar || (ownedCar.upgrades[origUpgrade] || 0) < 1) return changedError();
+
+                    ownedCar.upgrades[upgrade] = (ownedCar.upgrades[upgrade] || 0) + 1;
+                    ownedCar.upgrades[origUpgrade]--;
+                    updateHands(playerData, ownedCar.carID, origUpgrade, upgrade);
+
+                    let car = getCar(ownedCar.carID);
+                    const [{ ok }, attachment] = await Promise.all([
+                        saveGarage({
+                            userID: user.id,
+                            before,
+                            after: playerData.garage,
+                            // hand/decks only when updateHands changed them, and only if
+                            // still as read: the target is not under the admin's command
+                            // lock, so a stale copy would revert a cd-sethand they ran
+                            // during the dialog.
+                            ...handDeckChanges(playerData, handDecks),
+                            baseStamp: playerData.cacheStamp
                         }),
                         generateHud(car, upgrade)
                     ]);
+                    if (!ok) return changedError();
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

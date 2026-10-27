@@ -1,9 +1,10 @@
 "use strict";
 
-const { loadImage, createCanvas } = require("@napi-rs/canvas");
+const { createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { calcTune } = require("./calcTune.js");
 const { modifiedBase } = require("./cardType.js");
+const { getScaledImage } = require("./imageCache.js");
 
 const tyreAbbrevs = {
     "Standard": "STD",
@@ -17,23 +18,30 @@ const tyreAbbrevs = {
 // Path to default HUD image for fallback
 const DEFAULT_HUD_PATH = require.resolve("../../assets/images/default_hud.jpeg");
 
+// The size every HUD is drawn at — the image cache stores art pre-scaled to it.
+const HUD_WIDTH = 500;
+const HUD_HEIGHT = 312;
+
 /**
- * Loads an image with a timeout. Falls back to a default HUD image if loading fails or times out.
+ * Loads HUD art (pre-scaled, via imageCache) with a timeout. Falls back to the
+ * default HUD image if loading fails or times out. A timed-out download keeps
+ * going in the background and lands in the cache for next time.
  * @param {string} imagePath - URL or path to the image.
  * @param {number} timeout - Timeout duration in milliseconds.
- * @returns {Promise<Image>} - Loaded image.
+ * @returns {Promise<Canvas>} - HUD_WIDTH×HUD_HEIGHT image (shared, read-only).
  */
 async function loadImageWithFallback(imagePath, timeout = 2000) {
+    const fallback = () => getScaledImage(DEFAULT_HUD_PATH, HUD_WIDTH, HUD_HEIGHT);
     return new Promise((resolve) => {
         let didTimeout = false;
 
         const timer = setTimeout(() => {
             didTimeout = true;
             console.warn(`Image load timeout for ${imagePath}. Using fallback.`);
-            resolve(loadImage(DEFAULT_HUD_PATH));
+            resolve(fallback());
         }, timeout);
 
-        loadImage(imagePath)
+        getScaledImage(imagePath, HUD_WIDTH, HUD_HEIGHT)
             .then(image => {
                 if (!didTimeout) {
                     clearTimeout(timer);
@@ -41,8 +49,10 @@ async function loadImageWithFallback(imagePath, timeout = 2000) {
                 }
             })
             .catch(err => {
+                if (didTimeout) return;
+                clearTimeout(timer);
                 console.warn(`Image load error for ${imagePath}:`, err.message);
-                resolve(loadImage(DEFAULT_HUD_PATH));
+                resolve(fallback());
             });
     });
 }
@@ -56,14 +66,14 @@ async function loadImageWithFallback(imagePath, timeout = 2000) {
  * @returns {Promise<Canvas>} - the composed canvas (draw it or encode it).
  */
 async function renderHudCanvas(spec) {
-    const canvas = createCanvas(500, 312);
+    const canvas = createCanvas(HUD_WIDTH, HUD_HEIGHT);
     const context = canvas.getContext("2d");
     context.textAlign = "center";
     context.fillStyle = "#ffffff";
     context.font = "bold italic 17px Rubik";
 
     const hud = await loadImageWithFallback(spec["racehud"]);
-    context.drawImage(hud, 0, 0, 500, 312);
+    context.drawImage(hud, 0, 0, HUD_WIDTH, HUD_HEIGHT);
 
     const accelDisplay = spec.accel === 99.9 ? "N/A" : Number(spec.accel).toFixed(1);
     context.fillText(String(spec.topSpeed), 28, 109);

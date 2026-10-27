@@ -10,7 +10,6 @@ const unbritish = require("../util/functions/unbritish.js");
 const generateHud = require("../util/functions/generateHud.js");
 const getFlag = require("../util/functions/getFlag.js");
 const profileModel = require("../models/profileSchema.js");
-const { getProfile } = require("../util/functions/profileCache.js");
 const { suggestButtonRow, watchSuggestButton } = require("../util/functions/suggestEdit.js");
 
 module.exports = {
@@ -41,7 +40,13 @@ module.exports = {
             });
 
         async function displayInfo(carFile, currentMessage) {
-            const { garage, settings } = await getProfile(message.author.id);
+            // Only the one garage row for this car is needed: $elemMatch returns the
+            // first match (as garage.find did), so the heavy garage is never read.
+            const profile = await profileModel.findOne(
+                { userID: message.author.id },
+                { settings: 1, garage: { $elemMatch: { carID: carFile.slice(0, 6) } } }
+            ).lean();
+            const settings = profile?.settings || {};
             let description = "None", mra = "N/A", ola = "N/A", collection = "N/A";
             let currentCar = getCar(carFile);
             const bmReference = modifiedBase(currentCar);
@@ -103,14 +108,14 @@ module.exports = {
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
                     { name: "Power", value: power, inline: true },
-                    { name: "Creator", value: currentCar.creator ?? "None", inline: true },
+                    { name: "Creator", value: currentCar.creator || "None", inline: true },   // ||: an empty string is an empty field, which Discord rejects
                     { name: "Card Type", value: getCardTypes(currentCar).join(", "), inline: true },
                     { name: "Pace Index", value: getPI(carFile) ? `**${getPI(carFile).pi}** (avg ${getPI(carFile).average})` : "N/A", inline: true },
                     { name: "Description", value: description }
                 ]
             });
 
-            let hasCar = garage.find(c => carFile.includes(c.carID));
+            let hasCar = profile?.garage?.[0];
             if (hasCar !== undefined) {
                 let str = "";
                 for (let [key, value] of Object.entries(hasCar.upgrades)) {

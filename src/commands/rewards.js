@@ -13,8 +13,10 @@ const rwEmoji = require("../util/functions/rwEmoji.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
 const profileModel = require("../models/profileSchema.js");
-const consumeNumericRewards = require("../util/functions/consumeRewards.js");
-const { getProfile } = require("../util/functions/profileCache.js");
+const { getProfile, writeWithHeavy } = require("../util/functions/profileCache.js");
+const {
+    garageMergeStage, discoveredStage, pullRewardsStage, addToSetStage, consumeNumericStages, PIPELINE_OPTIONS
+} = require("../util/functions/rewardPipelines.js");
 
 module.exports = {
     name: "rewards",
@@ -28,12 +30,26 @@ module.exports = {
         const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
         const playerData = await getProfile(message.author.id);
+        // Currencies persist as deltas from these, never as the stale pre-read copy.
+        const startCurrencies = { money: playerData.money, fuseTokens: playerData.fuseTokens, trophies: playerData.trophies };
 
-        // Initialize discoveredCars
+        // Initialize discoveredCars (persisted wholesale by the first write below)
         let discoveredCars = playerData.discoveredCars || [];
+        let discoveredNeedsSave = false;
         if (discoveredCars.length === 0 && playerData.garage.length > 0) {
             discoveredCars = playerData.garage.map(c => c.carID);
+            discoveredNeedsSave = true;
         }
+        // Garage writes are targeted (rewardPipelines.js: only the new cars go
+        // over the wire, merged server side so a carID can never gain a second
+        // row). They assume one row per carID — if a legacy duplicate turns up,
+        // addCars heals it in memory and this claim writes the whole garage
+        // back instead, so the heal lands.
+        const garageIsClean = new Set(playerData.garage.map(c => c && c.carID)).size === playerData.garage.length;
+        let vouchersChanged = false;
+        // The cacheStamp our copy matches; each write passes it on so the cache
+        // refuses a voucher if anything else wrote this profile mid-claim.
+        let cacheStamp = playerData.cacheStamp ?? null;
 
         // Voucher wallet (docs/voucher-system.md) — array-guarded for legacy profiles
         let walletVouchers = Array.isArray(playerData.vouchers) ? playerData.vouchers : [];
@@ -61,6 +77,8 @@ module.exports = {
             // Non-numeric entries pull by rid when stamped (exact per-entry
             // removal), exact-match $pullAll only for legacy rid-less entries.
             const consumedNumeric = [], consumedOther = [];
+            // Cars from "car" entries — merged into the garage by the final write.
+            const grantedCars = [];
             for (let reward of batch) {
                 let { origin } = reward;
                 line = "";
@@ -92,11 +110,10 @@ module.exports = {
                             consume = false;
                             break;
                         }
-                        playerData.garage = addCars(playerData.garage, [reward.car]);
-                        // Track discovery
-                        if (!discoveredCars.includes(reward.car.carID)) {
-                            discoveredCars.push(reward.car.carID);
-                        }
+                        // Merged (and discovered) by the final write, not here:
+                        // until then the in-memory garage must equal the stored
+                        // one, because each pack write reports it to the cache.
+                        grantedCars.push(reward.car);
                         line = `Received **1x ${carNameGen({ currentCar, rarity: true, upgrade: reward.car.upgrade })}** from **${origin}**\n`;
                         break;
                     case "pack":
@@ -108,28 +125,67 @@ module.exports = {
                             consume = false;
                             break;
                         }
-                        let addedCars = await openPack({ message, currentPack, discoveredCars });
+                        // openPack marks new discoveries in discoveredCars as it
+                        // reveals; snapshot it so a failed write can undo that.
+                        const discoveredBefore = discoveredCars.slice();
+                        let addedCars;
+                        try {
+                            addedCars = await openPack({ message, currentPack, discoveredCars });
+                        }
+                        catch (packError) {
+                            discoveredCars = discoveredBefore;
+                            throw packError;
+                        }
                         if (!Array.isArray(addedCars)) {
                             // Pack couldn't be opened — keep it unclaimed and move on so
                             // the rest of the batch is still granted and persisted.
+                            discoveredCars = discoveredBefore;
                             consume = false;
                             break;
                         }
 
-                        playerData.garage = addCars(playerData.garage, addedCars);
+                        // Merged into a COPY, adopted only once the write lands: a
+                        // failed write must leave the in-memory garage equal to
+                        // the stored one, or a later write would vouch phantom
+                        // cars into the cache (or $set them, on the heal path).
+                        const nextGarage = addCars(structuredClone(playerData.garage), addedCars);
                         // INCREMENTAL PERSIST (pack-loss fix): the reveal just
                         // happened on screen, so this pack's cars + its consumed
                         // entry removal are written NOW in one atomic updateOne.
                         // A throw later in the batch can no longer void it.
-                        // ($set garage is safe here — the per-user command lock
-                        // holds, and pulling the exact entry leaves concurrent
-                        // $push grants alone.)
-                        await profileModel.updateOne(
-                            { userID: message.author.id },
-                            reward.rid
-                                ? { "$set": { garage: playerData.garage, discoveredCars }, "$pull": { unclaimedRewards: { rid: reward.rid } } }
-                                : { "$set": { garage: playerData.garage, discoveredCars }, "$pullAll": { unclaimedRewards: [reward] } }
-                        );
+                        // Targeted: only this pack's cars travel, merged server
+                        // side (rewardPipelines.js); the cache is told the result.
+                        // Rid-less legacy entries and duplicate-healing claims
+                        // keep the wholesale $set (safe — the per-user command
+                        // lock holds, and pulling the exact entry leaves
+                        // concurrent $push grants alone).
+                        try {
+                            if (garageIsClean && reward.rid) {
+                                const stages = [
+                                    garageMergeStage(addedCars),
+                                    discoveredStage(addedCars.map(car => car.carID), discoveredNeedsSave ? discoveredCars : null),
+                                    pullRewardsStage([reward.rid])
+                                ].filter(Boolean);
+                                ({ stamp: cacheStamp } = await writeWithHeavy(message.author.id, { garage: nextGarage, discoveredCars }, () =>
+                                    profileModel.updateOne({ userID: message.author.id }, stages, PIPELINE_OPTIONS), cacheStamp));
+                            }
+                            else {
+                                // A wholesale $set is an ordinary write-through; the
+                                // empty voucher only carries the stamp chain along.
+                                ({ stamp: cacheStamp } = await writeWithHeavy(message.author.id, {}, () => profileModel.updateOne(
+                                    { userID: message.author.id },
+                                    reward.rid
+                                        ? { "$set": { garage: nextGarage, discoveredCars }, "$pull": { unclaimedRewards: { rid: reward.rid } } }
+                                        : { "$set": { garage: nextGarage, discoveredCars }, "$pullAll": { unclaimedRewards: [reward] } }
+                                ), cacheStamp));
+                            }
+                        }
+                        catch (writeError) {
+                            discoveredCars = discoveredBefore;
+                            throw writeError;
+                        }
+                        playerData.garage = nextGarage;
+                        discoveredNeedsSave = false;
                         consume = false; // already pulled above
                         line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
                         break;
@@ -151,6 +207,7 @@ module.exports = {
                         else {
                             walletVouchers.push({ voucherID: grant.voucherID, amount: grantAmount });
                         }
+                        vouchersChanged = true;
                         line = `Received **${grantAmount}× ${voucherDef.name}** 🎟️ from **${origin}** *(redeem via \`cd-voucher\`)*\n`;
                         break;
                     }
@@ -196,14 +253,14 @@ module.exports = {
                                     // minted on the global ledger (irreversible),
                                     // so the grant + entry removal land NOW — a
                                     // later mid-batch throw can't leak the serial.
-                                    await profileModel.updateOne(
+                                    ({ stamp: cacheStamp } = await writeWithHeavy(message.author.id, {}, () => profileModel.updateOne(
                                         { userID: message.author.id },
                                         {
                                             "$addToSet": { "raceWeekStats.ownedDrivers": { "$each": ["d00000", reward.driver] } },
                                             "$set": { [`raceWeekStats.driverXP.${reward.driver}`]: serialEntry },
                                             "$pullAll": { unclaimedRewards: [reward] }
                                         }
-                                    );
+                                    ), cacheStamp));
                                     consume = false; // already pulled above
                                     line = `🎉 Recruited driver **${driverName}** from **${origin}** — **Serial #${serial} of ${driverDef.serialCap}**! All bonuses active!\n`;
                                 }
@@ -288,41 +345,69 @@ module.exports = {
                 }
             }
 
-            const profileUpdate = {
-                money: playerData.money,
-                fuseTokens: playerData.fuseTokens,
-                trophies: playerData.trophies,
-                garage: playerData.garage,
-                discoveredCars,
-                vouchers: walletVouchers
-            };
-            const update = { "$set": profileUpdate };
-            // Driver grants use atomic dotted-path ops — never a full raceWeekStats
+            // ONE atomic pipeline write for everything not persisted above:
+            // currencies, vouchers, drivers, "car" entries, entry removal and
+            // numeric consumption. (These used to be up to 3 + N separate
+            // writes, with a crash window between granting and consuming.)
+            const stages = [];
+
+            // Currencies as deltas, so a concurrent background $inc survives.
+            const currencySet = {};
+            for (const field of Object.keys(startCurrencies)) {
+                const delta = playerData[field] - startCurrencies[field];
+                if (delta !== 0) currencySet[field] = { "$add": [{ "$ifNull": [`$${field}`, 0] }, delta] };
+            }
+            if (Object.keys(currencySet).length > 0) stages.push({ "$set": currencySet });
+            if (vouchersChanged) stages.push({ "$set": { vouchers: { "$literal": walletVouchers } } });
+
+            // Driver grants use atomic dotted-path writes — never a full raceWeekStats
             // overwrite, which would clobber a concurrent Monday rollover reset or
             // an in-flight cd-rr write with this claim's stale pre-read copy.
-            if (newDriverIDs.length > 0) {
-                update["$addToSet"] = { "raceWeekStats.ownedDrivers": { "$each": ["d00000", ...newDriverIDs] } };
-            }
+            if (newDriverIDs.length > 0) stages.push(addToSetStage("raceWeekStats.ownedDrivers", ["d00000", ...newDriverIDs]));
+            const driverXPSet = {};
             for (const [driverID, xpEntry] of Object.entries(driverXPWrites)) {
-                profileUpdate[`raceWeekStats.driverXP.${driverID}`] = xpEntry;
+                driverXPSet[`raceWeekStats.driverXP.${driverID}`] = { "$literal": xpEntry };
             }
-            // Legacy rid-less entries are the only exact-match pulls left.
-            const ridsToPull = consumedOther.filter(entry => entry.rid).map(entry => entry.rid);
-            const legacyPull = consumedOther.filter(entry => !entry.rid);
-            if (legacyPull.length > 0) {
-                update["$pullAll"] = { unclaimedRewards: legacyPull };
+            if (Object.keys(driverXPSet).length > 0) stages.push({ "$set": driverXPSet });
+
+            // "car" entries: merged now (see the car case).
+            const heavyWritten = {};
+            if (grantedCars.length > 0) {
+                playerData.garage = addCars(playerData.garage, grantedCars);
+                for (const car of grantedCars) {
+                    if (!discoveredCars.includes(car.carID)) discoveredCars.push(car.carID);
+                }
             }
-            await profileModel.updateOne({ userID: message.author.id }, update);
-            if (ridsToPull.length > 0) {
-                await profileModel.updateOne(
-                    { userID: message.author.id },
-                    { "$pull": { unclaimedRewards: { rid: { "$in": ridsToPull } } } }
-                );
+            if (!garageIsClean) {
+                // Duplicate rows: heal them (addCars merges duplicates even with
+                // nothing to add) and write the healed garage back whole.
+                playerData.garage = addCars(playerData.garage, []);
+                stages.push({ "$set": { garage: { "$literal": playerData.garage }, discoveredCars: { "$literal": discoveredCars } } });
+                Object.assign(heavyWritten, { garage: playerData.garage, discoveredCars });
             }
-            // Numeric consumption (value-aware — see util/functions/consumeRewards.js):
-            // decrement exactly what was granted from an entry that holds it,
-            // then sweep spent husks. A concurrent merge-style grant stays claimable.
-            await consumeNumericRewards(message.author.id, consumedNumeric);
+            else if (grantedCars.length > 0 || discoveredNeedsSave) {
+                const merge = garageMergeStage(grantedCars);
+                if (merge) stages.push(merge);
+                const discovered = discoveredStage(grantedCars.map(car => car.carID), discoveredNeedsSave ? discoveredCars : null);
+                if (discovered) stages.push(discovered);
+                Object.assign(heavyWritten, { garage: playerData.garage, discoveredCars });
+            }
+
+            // Entry removal: by rid, or exact match for legacy rid-less entries.
+            const pull = pullRewardsStage(
+                consumedOther.filter(entry => entry.rid).map(entry => entry.rid),
+                consumedOther.filter(entry => !entry.rid)
+            );
+            if (pull) stages.push(pull);
+            // Numeric consumption (value-aware): decrement exactly what was
+            // granted from an entry that holds it, then sweep spent husks. A
+            // concurrent merge-style grant stays claimable.
+            stages.push(...consumeNumericStages(consumedNumeric));
+
+            if (stages.length > 0) {
+                await writeWithHeavy(message.author.id, heavyWritten, () =>
+                    profileModel.updateOne({ userID: message.author.id }, stages, PIPELINE_OPTIONS), cacheStamp);
+            }
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,

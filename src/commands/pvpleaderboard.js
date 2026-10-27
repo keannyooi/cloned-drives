@@ -42,7 +42,8 @@ module.exports = {
         }
         const query = queryArgs.map(a => a.toLowerCase());
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
+        // Only settings is read — skip the garage/discoveredCars/decks payload.
+        const playerData = await profileModel.findOne({ userID: message.author.id }, { settings: 1 }).lean();
         const settings = playerData?.settings || {};
 
         await new Promise(resolve => resolve(search(message, query, events, "event")))
@@ -70,26 +71,49 @@ module.exports = {
 
             // Try to fetch usernames so the leaderboard reads nicely.
             // Fall back to <@id> mention if the user isn't cached.
-            const userCache = new Map();
-            for (const row of leaderboard) {
-                if (userCache.has(row.userID)) continue;
-                try {
-                    const u = await message.client.users.fetch(row.userID);
-                    userCache.set(row.userID, u?.username || row.userID);
-                } catch {
-                    userCache.set(row.userID, null); // mention will be used
+            // The old loop fetched every participant serially before rendering,
+            // one REST round trip per uncached user after a restart. Now only
+            // the pages one button press can reach are awaited (misses only, in
+            // parallel); everyone else is warmed in the background afterwards.
+            const users = message.client.users;
+            const pending = new Map();   // userID -> in-flight fetch, so warmers never double-fetch
+            const fetchNames = (rows) => Promise.all(rows
+                .filter(row => !users.cache.has(row.userID))
+                .map(row => {
+                    if (!pending.has(row.userID)) {
+                        pending.set(row.userID, users.fetch(row.userID).catch(() => null)
+                            .finally(() => pending.delete(row.userID)));
+                    }
+                    return pending.get(row.userID);
+                }));
+            const pageRows = (page) => leaderboard.slice((page - 1) * pageLimit, page * pageLimit);
+            const fetchPageNames = (page) => fetchNames(pageRows(page));
+            // First/last too: the jump buttons skip straight past the neighbours.
+            await Promise.all([startPage, startPage + 1, 1, totalPages].map(fetchPageNames));
+            const usernameOf = (userID) => users.cache.get(userID)?.username || null;
+
+            // Background warm of the rest, in small batches so a big event
+            // doesn't flood the shared REST queue the way an all-at-once burst would.
+            (async () => {
+                for (let i = 0; i < leaderboard.length; i += 10) {
+                    await fetchNames(leaderboard.slice(i, i + 10));
                 }
-            }
+            })().catch(() => null);
 
             const myID = message.author.id;
             const myRow = leaderboard.find(r => r.userID === myID);
 
             function listDisplay(section, page, totalPages) {
+                // listUpdate renders synchronously, so warm the neighbouring
+                // pages in the background for the next button press.
+                fetchPageNames(page - 1);
+                fetchPageNames(page + 1);
+
                 let body = "";
                 for (const row of section) {
                     const isYou = row.userID === myID;
                     const medal = row.rank === 1 ? "🥇 " : row.rank === 2 ? "🥈 " : row.rank === 3 ? "🥉 " : "";
-                    const username = userCache.get(row.userID) || `<@${row.userID}>`;
+                    const username = usernameOf(row.userID) || `<@${row.userID}>`;
                     const wld = `${row.wins}W/${row.losses}L/${row.draws}D`;
                     const line = `${medal}**#${row.rank}** ${username}${isYou ? " ← _you_" : ""} — **${row.score} pts** • ${row.matchesPlayed} matches • ${wld}`;
                     body += line + "\n";

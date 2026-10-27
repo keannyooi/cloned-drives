@@ -7,8 +7,8 @@ const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
 
 module.exports = {
     name: "addcar",
@@ -67,7 +67,7 @@ module.exports = {
                     // Handle .json extension
                     const carId = result.endsWith('.json') ? result.slice(0, -5) : result.slice(0, 6);
 
-                    const { garage } = await getProfile(user.id);
+                    const { garage, cacheStamp } = await getProfile(user.id);
                     const currentCar = getCar(carId);
                     const currentName = carNameGen({ currentCar });
 
@@ -75,7 +75,21 @@ module.exports = {
                     for (let i = 0; i < amount; i++) {
                         addedCars.push({ carID: carId.slice(0, 6), upgrade: "000" });
                     }
-                    await profileModel.updateOne({ userID: user.id }, { garage: addCars(garage, addedCars) });
+                    // Only the added count travels (merged by carID on the
+                    // server), not the whole garage. addCars mutates, so copy first.
+                    const before = structuredClone(garage);
+                    const { ok } = await saveGarage({ userID: user.id, before, after: addCars(garage, addedCars), baseStamp: cacheStamp });
+                    if (!ok) {
+                        // Adds carry no decrement guards, so this only happens if
+                        // the profile vanished mid-command.
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, the car could not be added.",
+                            desc: `${user.username}'s garage could not be updated. Please try again.`,
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage({ currentMessage });
+                    }
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

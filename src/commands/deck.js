@@ -56,7 +56,15 @@ module.exports = {
     category: "Gameplay",
     description: "Create and manage saved 5-car decks for use in PvP events.",
     async execute(message, args) {
-        const playerData = await getProfile(message.author.id);
+        const subcmd = (args[0] || "list").toLowerCase();
+        const rest = args.slice(1).join(" ").trim();
+
+        // Only setslot searches the garage. Every other subcommand needs just
+        // decks (+ settings.buttonstyle for delete's confirm), so it skips the
+        // garage entirely — decks is a heavy field, hence projected by name.
+        const playerData = ["setslot", "set"].includes(subcmd)
+            ? await getProfile(message.author.id)
+            : await profileModel.findOne({ userID: message.author.id }, { decks: 1, settings: 1 }).lean();
         if (!playerData) {
             return new ErrorMessage({
                 channel: message.channel,
@@ -68,9 +76,6 @@ module.exports = {
 
         // Defensive: make sure decks is an array
         if (!Array.isArray(playerData.decks)) playerData.decks = [];
-
-        const subcmd = (args[0] || "list").toLowerCase();
-        const rest = args.slice(1).join(" ").trim();
 
         switch (subcmd) {
             case "list":

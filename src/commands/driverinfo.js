@@ -168,7 +168,7 @@ module.exports = {
             const fields = [
                 { name: "Rarity", value: rarityDisplay, inline: true },
                 { name: "In Rotation?", value: driver.inRotation ? "Yes" : "No", inline: true },
-                { name: "Creator", value: driver.creator ?? "None", inline: true }
+                { name: "Creator", value: driver.creator || "None", inline: true }   // ||: an empty string is an empty field, which Discord rejects
             ];
             if (driver.variant) {
                 fields.push({ name: "Variant", value: driver.variant, inline: true });

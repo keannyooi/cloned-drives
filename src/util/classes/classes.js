@@ -74,8 +74,22 @@ class BotMessage {
         } catch (error) {
             console.error("BotMessage.sendMessage failed:", {
                 error: error?.message ?? error,
+                code: error?.code,
+                mode: currentMessage ? "edit" : "send",
+                title: this.embed?.title,
                 channel: this.channel?.id
             });
+            // A failed EDIT used to leave the player staring at the previous
+            // screen (e.g. a search picker with its dropdown already removed)
+            // with no way forward. Post the result as a new message instead.
+            if (currentMessage) {
+                try {
+                    this.message = await this.channel.send(payload);
+                    return this;
+                } catch (sendError) {
+                    console.error("BotMessage.sendMessage fallback send failed:", { error: sendError?.message ?? sendError, code: sendError?.code });
+                }
+            }
 
             return null; // ⛔ swallow error, prevent crash
         }

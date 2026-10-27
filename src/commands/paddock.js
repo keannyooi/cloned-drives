@@ -87,20 +87,22 @@ module.exports = {
         }
 
         async function loop(user, page, currentMessage) {
-            // Parallel fetch when viewing someone else's paddock, single fetch for own (garage H-06 idiom)
+            // Parallel fetch when viewing someone else's paddock, single fetch for own (garage H-06 idiom).
+            // Projected + lean: only raceWeekStats/settings are read, and a whale
+            // profile's garage is hundreds of KB we'd otherwise pull and hydrate.
             let raceWeekStats, settings;
             if (user.id === message.author.id) {
-                const profile = await profileModel.findOne({ userID: user.id });
+                const profile = await profileModel.findOne({ userID: user.id }, { raceWeekStats: 1, settings: 1 }).lean();
                 raceWeekStats = profile.raceWeekStats;
-                settings = profile.settings;
+                settings = profile.settings || {};
             }
             else {
                 const [targetProfile, authorProfile] = await Promise.all([
-                    profileModel.findOne({ userID: user.id }),
-                    profileModel.findOne({ userID: message.author.id })
+                    profileModel.findOne({ userID: user.id }, { raceWeekStats: 1 }).lean(),
+                    profileModel.findOne({ userID: message.author.id }, { settings: 1 }).lean()
                 ]);
                 raceWeekStats = targetProfile?.raceWeekStats;
-                settings = authorProfile.settings;
+                settings = authorProfile.settings || {};
             }
 
             // Lazy-init tolerant reads — old profiles may lack raceWeekStats entirely.

@@ -96,13 +96,15 @@ module.exports = {
                 settings = profile.settings;
                 filter = profile.filter;
             } else {
+                // The author only supplies settings/filter, so skip their heavy fields.
                 const [targetProfile, authorProfile] = await Promise.all([
                     getProfile(user.id),
-                    getProfile(message.author.id)
+                    profileModel.findOne({ userID: message.author.id }, { settings: 1, filter: 1 }).lean()
                 ]);
                 garage = targetProfile.garage;
-                settings = authorProfile.settings;
-                filter = authorProfile.filter;
+                // Lean reads carry no schema defaults ({} for both).
+                settings = authorProfile?.settings || {};
+                filter = authorProfile?.filter || {};
             }
             let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck({
                 car,

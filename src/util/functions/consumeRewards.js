@@ -1,6 +1,8 @@
 "use strict";
 
 const profileModel = require("../../models/profileSchema.js");
+const { consumeNumericStages, PIPELINE_OPTIONS } = require("./rewardPipelines.js");
+const { writeWithHeavy } = require("./profileCache.js");
 
 /**
  * Consume claimed NUMERIC rewards (money / fuseTokens / trophies) from a
@@ -17,35 +19,18 @@ const profileModel = require("../../models/profileSchema.js");
  * the pool is conserved in every ordering. Concurrent merge-style grants
  * ($inc on an existing entry) stay claimable exactly as before.
  *
+ * Runs as ONE pipeline write (rewardPipelines.consumeNumericStages, same
+ * match and fallback order: holds >= amount, then > 0, then key present).
+ * cd-rewards folds these stages into its single final write instead.
+ *
  * @param {string} userID
  * @param {Array<{key: string, amount: number, origin: string}>} consumedNumeric
  */
 async function consumeNumericRewards(userID, consumedNumeric) {
-    for (const num of consumedNumeric) {
-        const filterFor = cond => ({
-            userID,
-            unclaimedRewards: { "$elemMatch": { origin: num.origin, [num.key]: cond } }
-        });
-        const decrement = { "$inc": { [`unclaimedRewards.$.${num.key}`]: -num.amount } };
-
-        let result = await profileModel.updateOne(filterFor({ "$gte": num.amount }), decrement);
-        if (result.matchedCount === 0) {
-            // Should not happen (the grant was read from an entry holding this
-            // amount, and the per-user lock rules out a concurrent claim) —
-            // fall back to any positive entry, then the legacy shape, and say so.
-            result = await profileModel.updateOne(filterFor({ "$gt": 0 }), decrement);
-            if (result.matchedCount === 0) {
-                result = await profileModel.updateOne(filterFor({ "$exists": true }), decrement);
-            }
-            console.log(`[rewards] numeric consumption fallback for ${userID}: ${num.origin} / ${num.key} ${num.amount} (matched=${result.matchedCount})`);
-        }
-    }
-    for (const huskKey of [...new Set(consumedNumeric.map(num => num.key))]) {
-        await profileModel.updateOne(
-            { userID },
-            { "$pull": { unclaimedRewards: { [huskKey]: { "$lte": 0 } } } }
-        );
-    }
+    if (consumedNumeric.length === 0) return;
+    await writeWithHeavy(userID, {}, () =>
+        profileModel.updateOne({ userID }, consumeNumericStages(consumedNumeric), PIPELINE_OPTIONS)
+    );
 }
 
 module.exports = consumeNumericRewards;

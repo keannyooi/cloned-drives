@@ -15,8 +15,8 @@ const paginate = require("../util/functions/paginate.js");
 const getButtons = require("../util/functions/getButtons.js");
 const { getAvailableTunes } = require("../util/functions/calcTune.js");
 const { trackExchange } = require("../util/functions/tracker.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
 
 const DUPE_PAGE_SIZE = 25; // Discord select menus cap at 25 options
 
@@ -54,10 +54,30 @@ module.exports = {
         }
         taggedPool.sort((a, b) => b.car.cr - a.car.cr);
 
-        const ownsCopy = carID => {
-            const owned = playerData.garage.find(c => c.carID === carID);
-            return owned && calcTotal(owned) > 0;
-        };
+        // Built once: ownsCopy runs per dupe x in-range target, and a linear
+        // garage scan there was O(dupes x targets x garage) for big garages.
+        const ownedIDs = new Set(playerData.garage.filter(c => calcTotal(c) > 0).map(c => c.carID));
+        const ownsCopy = carID => ownedIDs.has(carID);
+
+        // Server-side copy count of one carID in the STORED garage (all rows,
+        // all tunes) — lets the trade write itself enforce the exchange rules.
+        const storedTotal = carID => ({
+            "$sum": {
+                "$map": {
+                    input: { "$filter": { input: { "$ifNull": ["$garage", []] }, as: "g", cond: { "$eq": ["$$g.carID", carID] } } },
+                    as: "g",
+                    in: {
+                        "$sum": {
+                            "$map": {
+                                input: { "$objectToArray": { "$cond": [{ "$eq": [{ "$type": "$$g.upgrades" }, "object"] }, "$$g.upgrades", {}] } },
+                                as: "t",
+                                in: "$$t.v"
+                            }
+                        }
+                    }
+                }
+            }
+        });
 
         // ── Read-only market browser: cd-exchange market [page] ──────────────
         if (args[0] && ["market", "list"].includes(args[0].toLowerCase())) {
@@ -274,23 +294,24 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
-                // Re-fetch the profile so the write is built from FRESH data —
-                // another writer may have touched the garage while the dialog was open.
-                const freshData = await getProfile(message.author.id);
-                const freshGarageCar = freshData.garage.find(c => c.carID === dupe.garageCar.carID);
-                const freshDesired = freshData.garage.find(c => c.carID === desiredCarID);
-                if (!freshGarageCar || calcTotal(freshGarageCar) < 2 || (freshDesired && calcTotal(freshDesired) > 0)) {
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, your garage changed while you were deciding.",
-                        desc: "You no longer own a duplicate of the selected prize car, or you now own the desired car. Please run the command again.",
-                        author: message.author
-                    });
-                    return errorMessage.sendMessage({ currentMessage });
+                const garageChangedError = () => new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, your garage changed while you were deciding.",
+                    desc: "You no longer own a duplicate of the selected prize car, or you now own the desired car. Please run the command again.",
+                    author: message.author
+                }).sendMessage({ currentMessage });
+
+                // No re-read: the write below is guarded on the server (dupe
+                // still >= 2 copies, desired still unowned) — exactly what the
+                // fresh read used to check — so the first read is the baseline.
+                const garageCar = playerData.garage.find(c => c.carID === dupe.garageCar.carID);
+                const ownedDesired = playerData.garage.find(c => c.carID === desiredCarID);
+                if (!garageCar || calcTotal(garageCar) < 2 || (ownedDesired && calcTotal(ownedDesired) > 0)) {
+                    return garageChangedError();
                 }
 
                 // Find the upgrade to remove (prefer stock, then lowest upgrade)
-                const upgradeToRemove = upgradeOrder.find(upg => freshGarageCar.upgrades[upg] > 0);
+                const upgradeToRemove = upgradeOrder.find(upg => garageCar.upgrades[upg] > 0);
                 if (!upgradeToRemove) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -301,33 +322,61 @@ module.exports = {
                     return errorMessage.sendMessage({ currentMessage });
                 }
 
+                // Snapshot BEFORE any mutation — saveGarage diffs against it.
+                const before = structuredClone(playerData.garage);
+                const handDecks = snapshotHandDecks(playerData);
+
                 // Remove one of the duplicate prize cars
-                updateHands(freshData, freshGarageCar.carID, upgradeToRemove, "remove");
-                freshGarageCar.upgrades[upgradeToRemove] -= 1;
+                updateHands(playerData, garageCar.carID, upgradeToRemove, "remove");
+                garageCar.upgrades[upgradeToRemove] -= 1;
 
                 // If no more of this car, remove from garage
-                if (calcTotal(freshGarageCar) === 0) {
-                    freshData.garage.splice(freshData.garage.indexOf(freshGarageCar), 1);
+                if (calcTotal(garageCar) === 0) {
+                    playerData.garage.splice(playerData.garage.indexOf(garageCar), 1);
                 }
 
                 // Add the new prize car (stock upgrade)
-                freshData.garage = addCars(freshData.garage, [{ carID: desiredCarID, upgrade: "000" }]);
+                playerData.garage = addCars(playerData.garage, [{ carID: desiredCarID, upgrade: "000" }]);
 
                 // Record discovery (powers the NEW indicator in pack openings),
                 // with the same lazy-init heal every acquisition path uses.
-                let discoveredCars = freshData.discoveredCars || [];
-                if (discoveredCars.length === 0 && freshData.garage.length > 0) {
-                    discoveredCars = freshData.garage.map(c => c.carID);
+                let discoveredCars = playerData.discoveredCars || [];
+                let discoveredChanged = false;
+                if (discoveredCars.length === 0 && playerData.garage.length > 0) {
+                    discoveredCars = playerData.garage.map(c => c.carID);
+                    discoveredChanged = true;
                 }
-                if (!discoveredCars.includes(desiredCarID)) discoveredCars.push(desiredCarID);
+                if (!discoveredCars.includes(desiredCarID)) {
+                    discoveredCars.push(desiredCarID);
+                    discoveredChanged = true;
+                }
 
-                // Save to database
-                await profileModel.updateOne({ userID: message.author.id }, {
-                    garage: freshData.garage,
-                    hand: freshData.hand,
-                    decks: freshData.decks,
-                    discoveredCars
+                // Only what changed travels: the tune diff always, hand/decks
+                // only if the traded copy was slotted, discoveredCars only if it
+                // grew (sent whole: saveGarage vouches heavy fields to the cache
+                // only through `set`, so a pipeline append would leave it stale).
+                // hand/decks: only if still as read, so a change made during the
+                // dialog is refused rather than overwritten.
+                const { set, expect } = handDeckChanges(playerData, handDecks);
+                if (discoveredChanged) set.discoveredCars = discoveredCars;
+
+                const { ok } = await saveGarage({
+                    userID: message.author.id,
+                    before,
+                    after: playerData.garage,
+                    set,
+                    expect,
+                    filter: {
+                        "$expr": {
+                            "$and": [
+                                { "$gte": [storedTotal(garageCar.carID), 2] },
+                                { "$eq": [storedTotal(desiredCarID), 0] }
+                            ]
+                        }
+                    },
+                    baseStamp: playerData.cacheStamp
                 });
+                if (!ok) return garageChangedError();
 
                 trackExchange();
 

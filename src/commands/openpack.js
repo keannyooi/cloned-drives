@@ -8,8 +8,9 @@ const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
 const { trackMoneySpent, trackTrophiesEarned, trackPackOpened } = require("../util/functions/tracker.js");
-const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
+const { addToSetStage } = require("../util/functions/rewardPipelines.js");
 
 module.exports = {
     name: "openpack",
@@ -38,12 +39,19 @@ module.exports = {
                 return getPackCategories(contents).includes("normal");
             });
 
+            // Read the profile while the player picks from the search menu. Safe:
+            // the per-user command lock means nothing of theirs writes in between,
+            // and the write below is guarded deltas, never values from this read.
+            // The no-op catch stops an unhandled rejection if search bails early.
+            const profilePromise = getProfile(message.author.id);
+            profilePromise.catch(() => {});
+
             const response = await search(message, query, packs, "pack");
             if (!Array.isArray(response)) return;
             let [result, currentMessage] = response;
             packId = result.endsWith('.json') ? result.slice(0, -5) : result;
 
-            const playerData = await getProfile(message.author.id);
+            const playerData = await profilePromise;
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const currentPack = getPack(packId);
 
@@ -62,9 +70,13 @@ module.exports = {
 
             // Initialize discoveredCars from garage if this is the first time
             let discoveredCars = playerData.discoveredCars || [];
+            let discoveredInitialised = false;
             if (discoveredCars.length === 0 && playerData.garage.length > 0) {
                 discoveredCars = playerData.garage.map(c => c.carID);
+                discoveredInitialised = true;
             }
+            // openPack pushes new discoveries onto discoveredCars in place.
+            const discoveredBefore = discoveredCars.length;
 
             // Open the pack. allowDriverDrops opts THIS caller into the pack's
             // driverDrops config (drivers v2) — the returned array may then mix
@@ -130,49 +142,40 @@ module.exports = {
                 });
             }
 
-            // Single DB update: subtract price, add bonus rewards, add cars, save
-            // discoveries, and grant any dropped drivers.
-            const setObj = {
-                money: balance,
-                garage: addCars(playerData.garage, pulledCars),
-                discoveredCars
-            };
-            if (bonusTrophies > 0) {
-                setObj.trophies = playerData.trophies + bonusTrophies;
+            // Single DB write: subtract price, add bonus rewards, add cars, save
+            // discoveries, and grant any dropped drivers. saveGarage sends only
+            // the changed garage rows (merged by carID on the server) instead of
+            // the whole garage, and retries once idempotently itself.
+            const before = structuredClone(playerData.garage);
+            const after = addCars(playerData.garage, pulledCars);
+            const set = {};
+            // Whole list via `set` (not a pipeline stage) so the profile cache
+            // follows it; only sent when this opening discovered something.
+            if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+                set.discoveredCars = discoveredCars;
             }
             for (const [driverID, xpEntry] of Object.entries(driverGrants.xpWrites)) {
-                setObj[`raceWeekStats.driverXP.${driverID}`] = xpEntry;
+                set[`raceWeekStats.driverXP.${driverID}`] = xpEntry;
             }
-            const updateObj = { "$set": setObj };
-            if (driverGrants.newDriverIDs.length > 0) {
-                updateObj["$addToSet"] = {
-                    "raceWeekStats.ownedDrivers": { "$each": ["d00000", ...driverGrants.newDriverIDs] }
-                };
-            }
+            const stages = driverGrants.newDriverIDs.length > 0
+                ? [addToSetStage("raceWeekStats.ownedDrivers", ["d00000", ...driverGrants.newDriverIDs])]
+                : [];
 
-            // Verified write with ONE retry — covers both a thrown driver error
-            // and a "matched nothing" result. A transient failure here used to be
-            // swallowed silently AFTER the full reveal ("pack didn't transact").
-            let writeError = null;
-            for (let attempt = 1; attempt <= 2; attempt++) {
-                try {
-                    const writeResult = await profileModel.updateOne({ userID: message.author.id }, updateObj);
-                    const matched = writeResult.matchedCount !== undefined ? writeResult.matchedCount : writeResult.n;
-                    if (matched) {
-                        writeError = null;
-                        break;
-                    }
-                    writeError = new Error(`profile not matched on garage write (userID ${message.author.id})`);
-                } catch (err) {
-                    writeError = err;
-                }
-                if (attempt === 1) {
-                    console.error(`[openpack] write attempt 1 failed for ${message.author.id} (${packId}), retrying once:`, writeError.message);
-                    await new Promise(r => setTimeout(r, 1000));
-                }
-            }
-            if (writeError) {
-                throw writeError; // outer catch sends the ErrorMessage + logs the grant trail
+            const saved = await saveGarage({
+                userID: message.author.id,
+                before,
+                after,
+                // balance - money = -price + every bonus: a delta, never the absolute.
+                inc: { money: balance - playerData.money, trophies: bonusTrophies },
+                set,
+                stages,
+                filter: { money: { "$gte": currentPack.price } },
+                baseStamp: playerData.cacheStamp
+            });
+            if (!saved.ok) {
+                // Guard failed, so nothing was written. The outer catch sends the
+                // "not charged" ErrorMessage + logs the grant trail.
+                throw new Error(`profile not matched on garage write (userID ${message.author.id})`);
             }
             persisted = true;
 
@@ -180,7 +183,9 @@ module.exports = {
             trackPackOpened(currentPack["packName"]);
             if (bonusTrophies > 0) trackTrophiesEarned(bonusTrophies);
 
-            // Pack Battle tracking (non-fatal — never breaks normal pack opening)
+            // Pack Battle tracking (non-fatal — never breaks normal pack opening).
+            // Awaited before the success message so any milestone line still
+            // posts ahead of the confirmation, as it always has.
             let earnedMilestones = [];
             try {
                 const { processPackOpening } = require("../util/functions/packBattleManager.js");
