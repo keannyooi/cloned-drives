@@ -3,6 +3,7 @@
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const championshipModel = require("../models/championshipsSchema.js");
 
@@ -23,7 +24,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -54,6 +55,7 @@ module.exports = {
                     round = Math.ceil(parseInt(round));
 
                     const set = {};
+                    const previousRound = championship.playerProgress?.[user.id] ?? null;
                     if (round === 1) {
                         set[`playerProgress.${user.id}`] = championship.playerProgress[user.id];
                         await championshipModel.updateOne({ championshipID: championship.championshipID }, {
@@ -66,6 +68,8 @@ module.exports = {
                             "$set": set
                         });
                     }
+
+                    auditLog(message, { command: "setchampionshipround", target: user, details: { championshipID: championship.championshipID, from: previousRound, to: round } });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

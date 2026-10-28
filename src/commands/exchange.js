@@ -7,7 +7,7 @@ const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { exchangePool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
-const updateHands = require("../util/functions/updateHands.js");
+const { removeIfNoneLeft } = require("../util/functions/updateHands.js");
 const addCars = require("../util/functions/addCars.js");
 const confirm = require("../util/functions/confirm.js");
 const listUpdate = require("../util/functions/listUpdate.js");
@@ -327,8 +327,9 @@ module.exports = {
                 const handDecks = snapshotHandDecks(playerData);
 
                 // Remove one of the duplicate prize cars
-                updateHands(playerData, garageCar.carID, upgradeToRemove, "remove");
                 garageCar.upgrades[upgradeToRemove] -= 1;
+                // Hand/deck slots clear only if no copy at this tune is left.
+                removeIfNoneLeft(playerData, garageCar, upgradeToRemove);
 
                 // If no more of this car, remove from garage
                 if (calcTotal(garageCar) === 0) {
@@ -341,30 +342,40 @@ module.exports = {
                 // Record discovery (powers the NEW indicator in pack openings),
                 // with the same lazy-init heal every acquisition path uses.
                 let discoveredCars = playerData.discoveredCars || [];
-                let discoveredChanged = false;
+                let discoveredInitialised = false, discoveredAdded = false;
                 if (discoveredCars.length === 0 && playerData.garage.length > 0) {
                     discoveredCars = playerData.garage.map(c => c.carID);
-                    discoveredChanged = true;
+                    discoveredInitialised = true;
                 }
                 if (!discoveredCars.includes(desiredCarID)) {
                     discoveredCars.push(desiredCarID);
-                    discoveredChanged = true;
+                    discoveredAdded = true;
                 }
 
                 // Only what changed travels: the tune diff always, hand/decks
                 // only if the traded copy was slotted, discoveredCars only if it
-                // grew (sent whole: saveGarage vouches heavy fields to the cache
-                // only through `set`, so a pipeline append would leave it stale).
+                // grew — just the new carID (server-side append), with `heavy`
+                // handing the profile cache the full list; a list just
+                // initialised from the garage still goes whole via `set`.
                 // hand/decks: only if still as read, so a change made during the
                 // dialog is refused rather than overwritten.
                 const { set, expect } = handDeckChanges(playerData, handDecks);
-                if (discoveredChanged) set.discoveredCars = discoveredCars;
+                let addToSet = {}, heavy = {};
+                if (discoveredInitialised) {
+                    set.discoveredCars = discoveredCars;
+                }
+                else if (discoveredAdded) {
+                    addToSet = { discoveredCars: [desiredCarID] };
+                    heavy = { discoveredCars };
+                }
 
                 const { ok } = await saveGarage({
                     userID: message.author.id,
                     before,
                     after: playerData.garage,
                     set,
+                    addToSet,
+                    heavy,
                     expect,
                     filter: {
                         "$expr": {

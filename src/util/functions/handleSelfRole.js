@@ -36,12 +36,21 @@ async function handleSelfRoleInteraction(interaction) {
         return true;
     }
 
+    // Defer first: the role PUT/DELETE can be slow or queued behind a rate
+    // limit, and a reply after Discord's 3s window fails as "This interaction
+    // failed". If the defer itself fails the click has already expired, so
+    // leave the role alone rather than toggle it with no way to say so.
+    const deferred = await interaction.deferReply({ flags: MessageFlags.Ephemeral }).then(() => true, (error) => {
+        console.log(`[SelfRole] could not acknowledge ${interaction.customId} for ${interaction.user.id}: ${error.message}`);
+        return false;
+    });
+    if (!deferred) return true;
+
     try {
         const role = await interaction.guild.roles.fetch(roleID).catch(() => null);
         if (!role) {
-            await interaction.reply({
-                content: `The **${entry.label}** role no longer exists — an admin needs to fix the panel.`,
-                flags: MessageFlags.Ephemeral
+            await interaction.editReply({
+                content: `The **${entry.label}** role no longer exists — an admin needs to fix the panel.`
             });
             return true;
         }
@@ -53,16 +62,14 @@ async function handleSelfRoleInteraction(interaction) {
         const hasRole = member.roles.cache.has(roleID);
         if (hasRole) {
             await member.roles.remove(role);
-            await interaction.reply({
-                content: `${entry.emoji} Removed **${entry.label}** — you'll no longer be pinged for this.`,
-                flags: MessageFlags.Ephemeral
+            await interaction.editReply({
+                content: `${entry.emoji} Removed **${entry.label}** — you'll no longer be pinged for this.`
             });
         }
         else {
             await member.roles.add(role);
-            await interaction.reply({
-                content: `${entry.emoji} You now have **${entry.label}** — ${entry.description.toLowerCase()}.`,
-                flags: MessageFlags.Ephemeral
+            await interaction.editReply({
+                content: `${entry.emoji} You now have **${entry.label}** — ${entry.description.toLowerCase()}.`
             });
         }
     }
@@ -70,9 +77,8 @@ async function handleSelfRoleInteraction(interaction) {
         // Overwhelmingly the cause is role hierarchy: Manage Roles is not
         // enough, the bot's own highest role must sit ABOVE the role it grants.
         console.log(`[SelfRole] failed to toggle ${roleID} for ${interaction.user.id}: ${error.message}`);
-        await interaction.reply({
-            content: "Something went wrong assigning that role — an admin has been notified.",
-            flags: MessageFlags.Ephemeral
+        await interaction.editReply({
+            content: "Something went wrong assigning that role — an admin has been notified."
         }).catch(() => {});
     }
     return true;

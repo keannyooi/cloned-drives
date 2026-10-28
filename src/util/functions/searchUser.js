@@ -4,7 +4,15 @@ const { StringSelectMenuBuilder } = require("discord.js");
 const bot = require("../../config/config.js");
 const processResults = require("./corefiles/processResults.js");
 
-async function searchUser(message, username, currentMessage) {
+/**
+ * Finds a home-guild member by nickname / tag substring.
+ *
+ * options.strict (staff commands that change someone's data): a user ID or
+ * an exact username / tag / display name / nickname resolves straight away;
+ * otherwise the substring matches are offered in the picker even when only
+ * one matches, so a typo can't silently land on the wrong player.
+ */
+async function searchUser(message, username, currentMessage, { strict = false } = {}) {
     // ❌ REMOVED: guild.members.fetch()
     // ✅ Use cache only to avoid gateway member chunking
     const playerList = bot.homeGuild.members.cache;
@@ -12,14 +20,31 @@ async function searchUser(message, username, currentMessage) {
     // Normalize username once
     const search = username.toLowerCase();
 
-    // Filter cached members safely
-    let searchResults = playerList.filter(member =>
-        member.nickname?.toLowerCase().includes(search) ||
-        member.user.tag.toLowerCase().includes(search)
-    );
+    let searchResults;
+    if (strict) {
+        searchResults = /^\d{17,20}$/.test(search) && playerList.has(search)
+            ? [playerList.get(search)]
+            : [...playerList.filter(member =>
+                member.user.username.toLowerCase() === search ||
+                member.user.tag.toLowerCase() === search ||
+                member.user.globalName?.toLowerCase() === search ||
+                member.nickname?.toLowerCase() === search
+            ).values()];
+    }
 
-    // Convert Collection → Array
-    searchResults = [...searchResults.values()];
+    if (!searchResults || searchResults.length === 0) {
+        // Filter cached members safely
+        searchResults = playerList.filter(member =>
+            member.nickname?.toLowerCase().includes(search) ||
+            member.user.tag.toLowerCase().includes(search)
+        );
+
+        // Convert Collection → Array
+        searchResults = [...searchResults.values()];
+    }
+    else {
+        strict = false; // exact hit: no confirmation needed
+    }
 
     return processResults(
         message,
@@ -36,7 +61,9 @@ async function searchUser(message, username, currentMessage) {
                 .addOptions(...options);
         },
         null,
-        currentMessage
+        currentMessage,
+        undefined,
+        strict
     ).catch(throwError => {
         console.error(throwError);
 

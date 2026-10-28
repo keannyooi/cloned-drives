@@ -10,6 +10,8 @@ const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 const offerModel = require("../models/offerSchema.js");
+const makeRewardID = require("../util/functions/rewardID.js");
+const auditLog = require("../util/functions/auditLog.js");
 
 module.exports = {
     name: "givereward",
@@ -27,7 +29,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -41,6 +43,9 @@ module.exports = {
         async function addStuff(user, currentMessage) {
             // New entries are collected here and $pushed atomically at the end —
             // never a full-array $set that could clobber concurrent grants.
+            // Non-numeric entries carry a rid (rewardID.js), kept AFTER the type
+            // key (cd-rewards reads the first key), so the claim removes exactly
+            // that entry even when the same pack is gifted twice.
             const newRewards = [];
             let successMessage, operationFailed = false;
             switch (args[1].toLowerCase()) {
@@ -53,7 +58,7 @@ module.exports = {
                             }
                             else {
                                 let [pack] = response;
-                                newRewards.push({ pack: pack.slice(0, 6), origin: message.author.tag });
+                                newRewards.push({ pack: pack.slice(0, 6), origin: message.author.tag, rid: makeRewardID() });
                                 let currentPack = getPack(pack);
                                 successMessage = new SuccessMessage({
                                     channel: message.channel,
@@ -101,7 +106,7 @@ module.exports = {
                         await recruitError.sendMessage({ currentMessage });
                     }
                     else {
-                        newRewards.push({ driver: driverID, origin: message.author.tag });
+                        newRewards.push({ driver: driverID, origin: message.author.tag, rid: makeRewardID() });
                         successMessage = new SuccessMessage({
                             channel: message.channel,
                             title: `Successfully gifted driver ${driverDisplayName(giftDriver)} to ${user.username}!`,
@@ -135,14 +140,16 @@ module.exports = {
                                                         carID,
                                                         upgrade: "000"
                                                     },
-                                                    origin: message.author.tag
+                                                    origin: message.author.tag,
+                                                    rid: makeRewardID()
                                                 });
                                             }
                                             break;
                                         case "pack":
                                             newRewards.push({
                                                 pack: value.slice(0, 6),
-                                                origin: message.author.tag
+                                                origin: message.author.tag,
+                                                rid: makeRewardID()
                                             });
                                             break;
                                         default:
@@ -174,10 +181,11 @@ module.exports = {
 
             if (!operationFailed) {
                 if (newRewards.length > 0) {
-                    await profileModel.updateOne(
+                    const pushed = await profileModel.updateOne(
                         { userID: user.id },
                         { "$push": { unclaimedRewards: { "$each": newRewards } } }
                     );
+                    auditLog(message, { command: "givereward", target: user, details: { kind: args[1].toLowerCase(), rewards: newRewards, matched: pushed.matchedCount > 0 } });
                 }
                 return successMessage.sendMessage({ currentMessage });
             }

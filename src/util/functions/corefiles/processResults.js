@@ -4,7 +4,7 @@ const { ActionRowBuilder } = require("discord.js");
 const { InfoMessage, ErrorMessage } = require("../../classes/classes.js");
 const { defaultWaitTime } = require("../../consts/consts.js");
 
-async function processResults(message, searchResults, listGen, type, currentMessage, totalMatches) {
+async function processResults(message, searchResults, listGen, type, currentMessage, totalMatches, confirmSingle = false) {
     // Helper to send error messages
     const sendErrorMessage = async (title, desc, fields = []) => {
         const errorMessage = new ErrorMessage({
@@ -29,14 +29,18 @@ async function processResults(message, searchResults, listGen, type, currentMess
     // If multiple results are found. Callers that pre-rank and pre-slice to
     // 25 (search.js) pass totalMatches, turning what used to be a dead-end
     // refusal into a picker of the best matches with a broad-search notice.
-    if (searchResults.length > 1) {
+    // confirmSingle (searchUser strict mode) sends a lone fuzzy match through
+    // the picker too, so staff confirm who they're about to act on.
+    if (searchResults.length > 1 || (confirmSingle && searchResults.length === 1)) {
         const isBroad = typeof totalMatches === "number" && totalMatches > searchResults.length;
         const row = new ActionRowBuilder().addComponents(listGen());
         const infoMessage = new InfoMessage({
             channel: message.channel,
             title: isBroad
                 ? `This search is broad — showing the ${searchResults.length} best matches of ${totalMatches}.`
-                : "Multiple results found, please choose one of the following.",
+                : searchResults.length === 1
+                    ? "No exact match found, please confirm the result below."
+                    : "Multiple results found, please choose one of the following.",
             desc: isBroad ? "Not seeing yours? Add another word (the year works well) to narrow it down." : undefined,
             author: message.author,
             footer: `You have ${defaultWaitTime / 1000} seconds to decide.`,

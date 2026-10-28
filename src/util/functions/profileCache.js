@@ -30,6 +30,7 @@
  * command was its own CPU problem on the shared host.
  */
 
+const { AsyncLocalStorage } = require("async_hooks");
 const profileModel = require("../../models/profileSchema.js");
 
 const HEAVY_FIELDS = ["garage", "discoveredCars", "decks"];
@@ -40,8 +41,20 @@ const MAX_AGE_MS = 15 * 60 * 1000;       // safety net against any writer that b
 
 /** userID -> { stamp, at, heavy: { garage, discoveredCars, decks } } */
 const cache = new Map();
-/** userID -> heavy fields a caller vouched for during its write (writeWithHeavy) */
-const vouched = new Map();
+/**
+ * The voucher (writeWithHeavy) for the write running in this async chain. Held
+ * per chain, not per user: a write some other command (an admin command, a
+ * second flow for the same player) makes while a voucher is live can't pick it
+ * up and be certified with heavy values that don't include its change.
+ */
+const voucherContext = new AsyncLocalStorage();
+/**
+ * Users known to have a profile (index.js upsertUserRecord). Once confirmed,
+ * a player's commands skip the existence check for the life of the process.
+ * Kept here so a profile delete (cd-reset all) drops the user from it too —
+ * the next command then recreates the profile instead of trusting the Set.
+ */
+const knownProfiles = new Set();
 const stats = { hits: 0, misses: 0, writeThroughs: 0, invalidations: 0 };
 
 // Schema defaults for lean objects (mongoose only applies them on hydration).
@@ -154,7 +167,8 @@ function onWrite(filter, update, stamp, modified) {
     }
     const entry = cache.get(userID);
     if (!entry) return;
-    const voucher = vouched.get(userID);
+    const store = voucherContext.getStore();
+    const voucher = store && store.userID === userID ? store : null;
     if (voucher && voucher.baseStamp !== undefined && entry.stamp !== voucher.baseStamp) {
         // Someone else wrote this profile since the voucher's copy was taken —
         // that copy may be missing their change, so certify nothing.
@@ -219,19 +233,24 @@ function onWrite(filter, update, stamp, modified) {
  * returned. If the cached entry has moved on (another write in between), the
  * voucher is refused and the entry dropped. Pass `null` when unknown.
  *
+ * The voucher covers only the write `write` makes: it travels with that
+ * call's async chain, so other writes for the same user that land meanwhile
+ * are handled as usual (invalidated if they touch heavy fields). `write`
+ * returns the mongoose Query un-awaited (`() => profileModel.updateOne(...)`);
+ * it is executed inside the voucher's context.
+ *
  * @returns {Promise<{ result, stamp }>} `stamp` — the new cacheStamp when the
  *   cache followed the write (chain it into the next call), else null.
  */
 async function writeWithHeavy(userID, heavy, write, baseStamp) {
-    const voucher = { heavy, baseStamp, appliedStamp: null };
-    vouched.set(userID, voucher);
-    try {
-        const result = await write();
-        return { result, stamp: voucher.appliedStamp };
-    }
-    finally {
-        vouched.delete(userID);
-    }
+    const voucher = { userID, heavy, baseStamp, appliedStamp: null };
+    const result = await voucherContext.run(voucher, () => {
+        // A Query is lazy: awaiting it outside run() would execute it (and
+        // fire the write hooks) outside the voucher's context, so start it here.
+        const pending = write();
+        return pending && typeof pending.exec === "function" ? pending.exec() : pending;
+    });
+    return { result, stamp: voucher.appliedStamp };
 }
 
 function applyVoucher(entry, heavy, stamp) {
@@ -246,8 +265,14 @@ function applyVoucher(entry, heavy, stamp) {
 /** Called by profileSchema.js after deletes. */
 function onDelete(filter) {
     const userID = filter && typeof filter.userID === "string" ? filter.userID : null;
-    if (userID) cache.delete(userID);
-    else cache.clear();
+    if (userID) {
+        cache.delete(userID);
+        knownProfiles.delete(userID);
+    }
+    else {
+        cache.clear();
+        knownProfiles.clear();
+    }
 }
 
 function invalidate(userID) {
@@ -259,4 +284,4 @@ function cacheStats() {
     return { ...stats, entries: cache.size };
 }
 
-module.exports = { getProfile, onWrite, onDelete, invalidate, newStamp, cacheStats, writeWithHeavy, HEAVY_FIELDS };
+module.exports = { getProfile, onWrite, onDelete, invalidate, newStamp, cacheStats, writeWithHeavy, HEAVY_FIELDS, knownProfiles };

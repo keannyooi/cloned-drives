@@ -18,3 +18,16 @@ preview-serial.png
 # creator submissions — operational data mirrored out of Mongo, not game data.
 # Mongo is the source of truth; these files are the local recovery copy.
 src/submissions/
+
+# archived code: never loaded (the command loader is non-recursive, dataManager
+# reads fixed folders). Untrack once with:
+#   git rm -r --cached "src/Z - Archived code" src/commands/_archive_pvp
+src/Z - Archived code/
+src/commands/_archive_pvp/
+
+# automated tests (npm test / test:db / test:net): kept local, not shipped
+test/
+
+# dev/admin scripts: run by hand from this PC, never loaded by the bot.
+# Untrack the already-committed ones once with:  git rm -r --cached scripts
+scripts/

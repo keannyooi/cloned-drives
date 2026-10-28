@@ -8,6 +8,8 @@ const buildVoucherChoices = require("../util/functions/voucherChoices.js");
 const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
+const { saveGarage } = require("../util/functions/garageWrite.js");
+const makeRewardID = require("../util/functions/rewardID.js");
 const confirm = require("../util/functions/confirm.js");
 const paginate = require("../util/functions/paginate.js");
 const getButtons = require("../util/functions/getButtons.js");
@@ -257,46 +259,67 @@ module.exports = {
                 const freshData = await getProfile(message.author.id);
                 const freshWallet = Array.isArray(freshData.vouchers) ? freshData.vouchers : [];
                 const freshEntry = freshWallet.find(v => v && v.voucherID === heldEntry.voucherID);
-                if (!freshEntry || !(freshEntry.amount > 0)) {
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, you no longer hold this voucher.",
-                        desc: "It was spent or removed while you were deciding. Please run the command again.",
-                        author: message.author
-                    });
-                    return errorMessage.sendMessage({ currentMessage });
-                }
+                const noLongerHeld = () => new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you no longer hold this voucher.",
+                    desc: "It was spent or removed while you were deciding. Please run the command again.",
+                    author: message.author
+                }).sendMessage({ currentMessage });
+                if (!freshEntry || !(freshEntry.amount > 0)) return noLongerHeld();
 
+                // The wallet exactly as read: every write below only lands if the
+                // stored wallet still equals it, so a voucher granted or spent in
+                // between is refused (the error above), never overwritten.
+                const walletAsRead = structuredClone(freshWallet);
                 // Consume one copy; drop the entry entirely at zero.
                 freshEntry.amount -= 1;
                 const newWallet = freshWallet.filter(v => v && v.amount > 0);
-
-                const update = { "$set": { vouchers: newWallet } };
                 let successDesc;
 
                 if (choice.kind === "car") {
-                    // addCars merges by carID into an existing entry — never a
-                    // duplicate garage row (see addCars' 2026-08-28 tripwire).
-                    freshData.garage = addCars(freshData.garage, [{ carID: choice.id, upgrade: "000" }]);
+                    // saveGarage sends only the new car, merged by carID on the
+                    // server, so the garage never gains a duplicate row and a
+                    // change made elsewhere is never overwritten. `before` is the
+                    // garage as read; addCars builds `after` (and heals legacy
+                    // duplicate rows, which saveGarage then writes whole).
+                    const before = structuredClone(freshData.garage);
+                    const after = addCars(freshData.garage, [{ carID: choice.id, upgrade: "000" }]);
                     // Record discovery (powers the NEW indicator in pack openings),
                     // with the same lazy-init heal every acquisition path uses.
                     let discoveredCars = freshData.discoveredCars || [];
-                    if (discoveredCars.length === 0 && freshData.garage.length > 0) {
-                        discoveredCars = freshData.garage.map(c => c.carID);
+                    let discoveredChanged = false;
+                    if (discoveredCars.length === 0 && before.length > 0) {
+                        discoveredCars = before.map(c => c.carID);
+                        discoveredChanged = true;
                     }
-                    if (!discoveredCars.includes(choice.id)) discoveredCars.push(choice.id);
-                    update["$set"].garage = freshData.garage;
-                    update["$set"].discoveredCars = discoveredCars;
+                    if (!discoveredCars.includes(choice.id)) {
+                        discoveredCars.push(choice.id);
+                        discoveredChanged = true;
+                    }
+                    const { ok } = await saveGarage({
+                        userID: message.author.id,
+                        before,
+                        after,
+                        set: discoveredChanged ? { vouchers: newWallet, discoveredCars } : { vouchers: newWallet },
+                        expect: { vouchers: walletAsRead },
+                        baseStamp: freshData.cacheStamp
+                    });
+                    if (!ok) return noLongerHeld();
                     successDesc = `You redeemed **${voucher.name}** for a brand new ${carNameGen({ currentCar: choice.item, rarity: true })}!`;
                 }
                 else {
                     // Drivers materialize through cd-rewards' claim machinery
-                    // (ownership, dupe→XP, level-ups) — same as code drivers.
-                    update["$push"] = { unclaimedRewards: { driver: choice.id, origin: `Voucher: ${voucher.name}` } };
+                    // (ownership, dupe→XP, level-ups) — same as code drivers. The
+                    // rid (rewardID.js, after the type key) lets the claim remove
+                    // exactly this entry.
+                    const result = await profileModel.updateOne({ userID: message.author.id, vouchers: walletAsRead }, {
+                        "$set": { vouchers: newWallet },
+                        "$push": { unclaimedRewards: { driver: choice.id, origin: `Voucher: ${voucher.name}`, rid: makeRewardID() } }
+                    });
+                    if (result.matchedCount === 0) return noLongerHeld();
                     successDesc = `You redeemed **${voucher.name}** for driver **${driverDisplayName(choice.item)}**!\nClaim them with \`cd-rewards\`.`;
                 }
 
-                await profileModel.updateOne({ userID: message.author.id }, update);
                 trackVoucherRedeemed();
 
                 const successMessage = new SuccessMessage({

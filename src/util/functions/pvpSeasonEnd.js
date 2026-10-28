@@ -12,9 +12,17 @@
  * Options:
  *   --dry-run   Preview what would happen without making changes
  *   --force     Run even if season hasn't ended yet
+ *
+ * Safe to re-run (e.g. after a crash or timeout part-way through): each player is
+ * claimed per league with a seasonRewardsClaimed.<season>.<league> marker in the
+ * same write that resets their rating, BEFORE anything is paid, so a re-run skips
+ * everyone already processed. A season with a saved (non-dry-run) result is
+ * refused outright.
  */
 
 const mongoose = require("mongoose");
+const addCars = require("./addCars.js");
+const { saveGarage } = require("./garageWrite.js");
 const pvpModel = require("../../models/pvpSchema.js");
 const profileModel = require("../../models/profileSchema.js");
 const pvpSeasonResultModel = require("../../models/pvpSeasonResultSchema.js");
@@ -26,15 +34,37 @@ const { getCurrentSeason, getMostRecentSeason, getSeason, isSeasonEnded } = requ
 // =============================================================================
 
 const CONFIG = {
-    // MongoDB connection string (set via environment or here)
-    mongoURI: process.env.MONGO_URI || "mongodb://localhost:27017/cloneddrives",
-    
     // Minimum games to qualify for rewards
     minGamesForRewards: PVP_SETTINGS.minGamesForRewards || 10,
     
     // Base rating (everyone resets to this each season)
     baseRating: PVP_SETTINGS.baseRating || 1000
 };
+
+/**
+ * Refuse a connection that isn't the bot's database. MONGO_URI has no database
+ * name in its path and lands on the empty default "test" DB, where this would
+ * "succeed" with 0 players.
+ */
+function assertBotDatabase() {
+    const dbName = mongoose.connection.name;
+    console.log(`Database: "${dbName}"`);
+    if (!dbName || dbName === "test") {
+        throw new Error(`Refusing to run against "${dbName}": not the bot's database (connect with MONGO_PW, never MONGO_URI).`);
+    }
+}
+
+/** Standalone connect — MONGO_PW, same as index.js. */
+async function connectStandalone() {
+    if (!process.env.MONGO_PW) throw new Error("MONGO_PW is not set (it is read from the repo's .env).");
+    await mongoose.connect(process.env.MONGO_PW);
+    try {
+        assertBotDatabase();
+    } catch (err) {
+        await mongoose.disconnect();
+        throw err;
+    }
+}
 
 // =============================================================================
 // MAIN FUNCTIONS
@@ -71,11 +101,24 @@ async function processSeasonEnd(options = {}) {
     // When running standalone, we need to connect
     let weConnected = false;
     if (mongoose.connection.readyState !== 1) {
-        await mongoose.connect(CONFIG.mongoURI);
+        await connectStandalone();
         weConnected = true;
         console.log("✅ Connected to database");
     } else {
+        assertBotDatabase();
         console.log("✅ Using existing database connection");
+    }
+
+    // A season whose result was already saved has been fully paid — refuse a
+    // second run outright (a crashed run saves no result; the per-player
+    // markers in processLeague make that re-run safe).
+    if (!dryRun) {
+        const alreadyDone = await pvpSeasonResultModel.exists({ seasonID: currentSeason.id, wasDryRun: { $ne: true } });
+        if (alreadyDone) {
+            console.log(`❌ Season ${currentSeason.id} was already processed (a saved result exists). Not paying it again.`);
+            if (weConnected) await mongoose.disconnect();
+            return { success: false, reason: "Season already processed" };
+        }
     }
     
     const results = {
@@ -86,6 +129,7 @@ async function processSeasonEnd(options = {}) {
         totalPrizeCarsAwarded: 0,
         ratingsReset: 0,
         defensesCleared: 0,
+        alreadyProcessed: 0,
         distributedRewards: [],
         failedRewards: []
     };
@@ -104,6 +148,7 @@ async function processSeasonEnd(options = {}) {
             results.totalPrizeCarsAwarded += leagueResult.prizeCarsAwarded;
             results.ratingsReset += leagueResult.ratingsReset;
             results.defensesCleared += leagueResult.defensesCleared;
+            results.alreadyProcessed += leagueResult.alreadyProcessed;
             results.distributedRewards.push(...(leagueResult.distributedRewards || []));
             results.failedRewards.push(...(leagueResult.failedRewards || []));
         }
@@ -157,6 +202,9 @@ async function processSeasonEnd(options = {}) {
         console.log(`Prize Cars Awarded: ${results.totalPrizeCarsAwarded}`);
         console.log(`Ratings Reset: ${results.ratingsReset}`);
         console.log(`Defenses Cleared: ${results.defensesCleared}`);
+        if (results.alreadyProcessed > 0) {
+            console.log(`Skipped (already processed by an earlier run): ${results.alreadyProcessed}`);
+        }
         if (results.failedRewards.length > 0) {
             console.log(`⚠️ Failed Rewards: ${results.failedRewards.length}`);
         }
@@ -187,6 +235,7 @@ async function processLeague(league, season, dryRun) {
         prizeCarsAwarded: 0,
         ratingsReset: 0,
         defensesCleared: 0,
+        alreadyProcessed: 0,
         topPlayers: [],
         distributedRewards: [],
         failedRewards: []
@@ -208,108 +257,44 @@ async function processLeague(league, season, dryRun) {
     
     console.log(`  Found ${qualifyingPlayers.length} qualifying players (of ${players.length} with defenses)`);
     
+    // Per-player marker: written (with the rating reset) BEFORE the player is
+    // paid, so a re-run after a crash skips them. It keeps the rating they
+    // finished on, so a re-run still ranks everyone as the first run did
+    // (processed players are already back at baseRating).
+    const markerPath = `seasonRewardsClaimed.${season.id}.${league}`;
+    const markerOf = p => p.seasonRewardsClaimed?.[season.id]?.[league];
+    const finalRating = p => {
+        const marker = markerOf(p);
+        if (marker && typeof marker.rating === "number") return marker.rating;
+        return p.leagueStats[league]?.rating || CONFIG.baseRating;
+    };
+
     // Sort by rating for prize cars
-    qualifyingPlayers.sort((a, b) => {
-        const ratingA = a.leagueStats[league]?.rating || CONFIG.baseRating;
-        const ratingB = b.leagueStats[league]?.rating || CONFIG.baseRating;
-        return ratingB - ratingA;
-    });
-    
-    // Award prize cars to top players
+    qualifyingPlayers.sort((a, b) => finalRating(b) - finalRating(a));
+
     const prizeCar = season.prizeCars?.[league];
     const prizeSlots = season.prizeCarSlots || 3;
-    
-    if (prizeCar) {
-        const topPlayers = qualifyingPlayers.slice(0, prizeSlots);
-        
-        for (let i = 0; i < topPlayers.length; i++) {
-            const player = topPlayers[i];
-            result.topPlayers.push({
-                userID: player.userID,
-                rank: i + 1,
-                rating: player.leagueStats[league]?.rating || CONFIG.baseRating
-            });
-            
-            console.log(`  🏆 Rank ${i + 1}: ${player.userID} - Rating: ${player.leagueStats[league]?.rating}`);
+    if (!prizeCar) console.log("  ℹ️ No prize car configured for this league");
 
-            if (!dryRun) {
-                try {
-                    // Add car to player's garage (properly stacking if they already own it)
-                    // $elemMatch projection: only the prize car's entry (if owned)
-                    // comes back, not the whole garage.
-                    const profile = await profileModel.findOne(
-                        { userID: player.userID },
-                        { garage: { "$elemMatch": { carID: prizeCar } } }
-                    ).lean();
-                    if (profile) {
-                        const existingCar = (profile.garage || []).find(c => c.carID === prizeCar);
-
-                        if (existingCar) {
-                            await profileModel.updateOne(
-                                { userID: player.userID, "garage.carID": prizeCar },
-                                { $inc: { "garage.$.upgrades.000": 1 } }
-                            );
-                        } else {
-                            await profileModel.updateOne(
-                                { userID: player.userID },
-                                {
-                                    $push: {
-                                        garage: {
-                                            carID: prizeCar,
-                                            upgrades: { "000": 1 },
-                                            tpiBonus: 0
-                                        }
-                                    }
-                                }
-                            );
-                        }
-                        result.distributedRewards.push({
-                            userID: player.userID,
-                            league,
-                            type: "prizeCar",
-                            amount: prizeCar,
-                            origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`
-                        });
-                    } else {
-                        result.failedRewards.push({
-                            userID: player.userID,
-                            league,
-                            type: "prizeCar",
-                            amount: prizeCar,
-                            origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`,
-                            reason: "No profile found for user"
-                        });
-                    }
-                } catch (err) {
-                    result.failedRewards.push({
-                        userID: player.userID,
-                        league,
-                        type: "prizeCar",
-                        amount: prizeCar,
-                        origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${i + 1}`,
-                        reason: err.message
-                    });
-                }
-            }
-            result.prizeCarsAwarded++;
-        }
-    } else {
-        console.log("  ℹ️ No prize car configured for this league");
-    }
-    
-    // Process each qualifying player for rating rewards and soft reset
-    for (const player of qualifyingPlayers) {
+    // Process each qualifying player: claim (marker + soft reset), then prize
+    // car (top players) and rating rewards
+    for (let i = 0; i < qualifyingPlayers.length; i++) {
+        const player = qualifyingPlayers[i];
         const stats = player.leagueStats[league];
         if (!stats) continue;
-        
-        const currentRating = stats.rating || CONFIG.baseRating;
-        result.playersProcessed++;
-        
+
+        const currentRating = finalRating(player);
+        const prizeRank = prizeCar && i < prizeSlots ? i + 1 : null;
+        if (prizeRank) {
+            result.topPlayers.push({ userID: player.userID, rank: prizeRank, rating: currentRating });
+            console.log(`  🏆 Rank ${prizeRank}: ${player.userID} - Rating: ${currentRating}`);
+        }
+
         // Calculate rating threshold rewards
         let totalMoney = 0;
         let totalTrophies = 0;
         const claimedThresholds = [];
-        
+
         for (const threshold of season.ratingRewards || []) {
             if (currentRating >= threshold.rating) {
                 totalMoney += threshold.money;
@@ -317,82 +302,86 @@ async function processLeague(league, season, dryRun) {
                 claimedThresholds.push(threshold.rating);
             }
         }
-        
-        if (totalMoney > 0 || totalTrophies > 0) {
-            result.rewardsDistributed++;
 
-            if (!dryRun) {
-                const origin = `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`;
-
-                try {
-                    if (totalMoney > 0) {
-                        const moneyResult = await profileModel.updateOne(
-                            { userID: player.userID },
-                            { $push: { unclaimedRewards: { money: totalMoney, origin } } }
-                        );
-                        if (moneyResult.matchedCount === 0) {
-                            result.failedRewards.push({
-                                userID: player.userID, league, type: "money",
-                                amount: totalMoney, origin, reason: "No profile found for user"
-                            });
-                        } else {
-                            result.distributedRewards.push({
-                                userID: player.userID, league, type: "money",
-                                amount: totalMoney, origin
-                            });
-                        }
-                    }
-
-                    if (totalTrophies > 0) {
-                        const trophyResult = await profileModel.updateOne(
-                            { userID: player.userID },
-                            { $push: { unclaimedRewards: { trophies: totalTrophies, origin } } }
-                        );
-                        if (trophyResult.matchedCount === 0) {
-                            result.failedRewards.push({
-                                userID: player.userID, league, type: "trophies",
-                                amount: totalTrophies, origin, reason: "No profile found for user"
-                            });
-                        } else {
-                            result.distributedRewards.push({
-                                userID: player.userID, league, type: "trophies",
-                                amount: totalTrophies, origin
-                            });
-                        }
-                    }
-
-                    // Mark rewards as claimed
-                    await pvpModel.updateOne(
-                        { userID: player.userID },
-                        { $set: { [`seasonRewardsClaimed.${season.id}.${league}`]: claimedThresholds } }
-                    );
-                } catch (err) {
-                    result.failedRewards.push({
-                        userID: player.userID, league, type: "ratingRewards",
-                        amount: { money: totalMoney, trophies: totalTrophies },
-                        origin: `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`,
-                        reason: err.message
-                    });
-                }
-            }
-        }
-        
-        // Full reset rating to base (everyone starts fresh each season)
         if (!dryRun) {
-            await pvpModel.updateOne(
-                { userID: player.userID },
+            // Atomic claim: only the run that writes the marker pays this player.
+            // Full reset rating to base (everyone starts fresh each season).
+            const claim = await pvpModel.updateOne(
+                { userID: player.userID, [markerPath]: { $exists: false } },
                 {
                     $set: {
+                        [markerPath]: { thresholds: claimedThresholds, rating: currentRating, prizeRank, processedAt: new Date() },
                         [`leagueStats.${league}.rating`]: CONFIG.baseRating,
                         [`leagueStats.${league}.winStreak`]: 0
                     }
                 }
             );
+            if (claim.matchedCount === 0) {
+                console.log(`  ⏭️ ${player.userID} already processed for this league — skipping`);
+                result.alreadyProcessed++;
+                continue;
+            }
         }
-        
+
+        result.playersProcessed++;
         result.ratingsReset++;
+
+        // Award prize car to top players (stacks onto an owned copy server-side —
+        // never a second garage row)
+        if (prizeRank) {
+            const origin = `PvP Season ${season.id} - ${PVP_LEAGUES[league].name} #${prizeRank}`;
+            if (!dryRun) {
+                try {
+                    const { ok } = await saveGarage({
+                        userID: player.userID,
+                        before: [],
+                        after: addCars([], [{ carID: prizeCar, upgrade: "000" }])
+                    });
+                    if (ok) {
+                        result.distributedRewards.push({ userID: player.userID, league, type: "prizeCar", amount: prizeCar, origin });
+                    } else {
+                        result.failedRewards.push({ userID: player.userID, league, type: "prizeCar", amount: prizeCar, origin, reason: "No profile found for user" });
+                    }
+                } catch (err) {
+                    result.failedRewards.push({ userID: player.userID, league, type: "prizeCar", amount: prizeCar, origin, reason: err.message });
+                }
+            }
+            result.prizeCarsAwarded++;
+        }
+
+        if (totalMoney > 0 || totalTrophies > 0) {
+            result.rewardsDistributed++;
+
+            if (!dryRun) {
+                const origin = `PvP Season ${season.id} - ${PVP_LEAGUES[league].name}`;
+                // Money and trophies in one write, so they land (or fail) together
+                const entries = [];
+                if (totalMoney > 0) entries.push({ money: totalMoney, origin });
+                if (totalTrophies > 0) entries.push({ trophies: totalTrophies, origin });
+
+                try {
+                    const pushResult = await profileModel.updateOne(
+                        { userID: player.userID },
+                        { $push: { unclaimedRewards: { $each: entries } } }
+                    );
+                    for (const entry of entries) {
+                        const type = entry.money !== undefined ? "money" : "trophies";
+                        const record = { userID: player.userID, league, type, amount: entry[type], origin };
+                        if (pushResult.matchedCount === 0) result.failedRewards.push({ ...record, reason: "No profile found for user" });
+                        else result.distributedRewards.push(record);
+                    }
+                } catch (err) {
+                    result.failedRewards.push({
+                        userID: player.userID, league, type: "ratingRewards",
+                        amount: { money: totalMoney, trophies: totalTrophies },
+                        origin,
+                        reason: err.message
+                    });
+                }
+            }
+        }
     }
-    
+
     // Clear ALL defenses in this league (including non-qualifying players)
     // This ensures old hands don't persist into the new season with potentially different filters
     if (!dryRun) {
@@ -418,7 +407,7 @@ async function processLeague(league, season, dryRun) {
  * Preview leaderboard without processing
  */
 async function previewLeaderboard(league, limit = 10) {
-    await mongoose.connect(CONFIG.mongoURI);
+    await connectStandalone();
     
     try {
         const players = await pvpModel.getLeaderboard(league, limit, CONFIG.minGamesForRewards);
@@ -446,6 +435,8 @@ async function previewLeaderboard(league, limit = 10) {
 // =============================================================================
 
 if (require.main === module) {
+    // Standalone: read MONGO_PW from the repo's .env (whatever the cwd)
+    require("dotenv").config({ path: require("path").join(__dirname, "../../../.env") });
     const args = process.argv.slice(2);
     const dryRun = args.includes("--dry-run");
     const force = args.includes("--force");

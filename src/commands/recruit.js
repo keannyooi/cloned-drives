@@ -212,7 +212,18 @@ module.exports = {
                     ? `⬆️ **${driverDisplayName(driver)}** reaches **Level ${newLevel}**!`
                     : `📈 Duplicate banked — **${driverDisplayName(driver)}** now has ${newDupes} duplicate${newDupes === 1 ? "" : "s"}.`;
             }
-            await profileModel.updateOne({ userID: message.author.id }, update);
+            // Guarded charge: the filter re-checks the balance on the server, so a
+            // write landing between the re-read and here can't push money negative.
+            const result = await profileModel.updateOne({ userID: message.author.id, money: { $gte: freshPrice } }, update);
+            if (result.matchedCount === 0) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you can no longer afford this driver.",
+                    desc: `The fee is ${moneyEmoji}${freshPrice.toLocaleString("en")}.`,
+                    author: message.author
+                });
+                return errorMessage.sendMessage({ currentMessage: reactionMessage });
+            }
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,

@@ -6,6 +6,7 @@ const { trophyEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const auditLog = require("../util/functions/auditLog.js");
 
 module.exports = {
     name: "removetrophies",
@@ -24,7 +25,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -48,26 +49,44 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            const playerData = await profileModel.findOne({ userID: user.id }, { trophies: 1 });
-            if (amount <= playerData.trophies) {
-                const balance = playerData.trophies - amount;
-                await profileModel.updateOne({ userID: user.id }, { trophies: balance });
+            // Atomic guarded $inc, not an absolute write from a fresh read: a
+            // player's own win or purchase landing mid-command is no longer
+            // overwritten, and the balance still can't go below 0.
+            let playerData = await profileModel.findOneAndUpdate(
+                { userID: user.id, trophies: { "$gte": amount } },
+                { "$inc": { trophies: -amount } },
+                { returnDocument: "after", projection: { trophies: 1 } }
+            );
+            if (playerData) {
+                const balance = playerData.trophies;
+                auditLog(message, { command: "removetrophies", target: user, details: { amount, trophies: balance } });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully removed ${trophyEmoji}${amount.toLocaleString("en")} from ${user.username}'s trophy amount!`,
                     desc: `Current Trophy Amount: ${trophyEmoji}${balance.toLocaleString("en")}`,
                     author: message.author,
-                    thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
+                    thumbnail: user.displayAvatarURL({ extension: "png" })
                 });
                 return successMessage.sendMessage({ currentMessage });
             }
             else {
+                // Refused: no profile, or the balance is short of amount.
+                playerData = await profileModel.findOne({ userID: user.id }, { trophies: 1 });
+                if (!playerData) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: `Error, ${user.username} has no profile.`,
+                        desc: "This user hasn't started playing yet, so there is no balance to change.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage({ currentMessage });
+                }
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, a user's trophy amount cannot be in the negatives.",
                     desc: "The amount of trophies that can be taken away should not be bigger than the user's trophy amount.",
                     author: message.author,
-                    thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                    thumbnail: user.displayAvatarURL({ extension: "png" }),
                     fields: [
                         { name: `${user.username}'s Trophy Amount (${trophyEmoji})`, value: `\`${playerData.trophies.toLocaleString("en")}\``, inline: true }
                     ]

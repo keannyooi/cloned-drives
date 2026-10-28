@@ -130,7 +130,7 @@ module.exports = {
                 title: `List of All Cars in Cloned Drives (${ownedCount}/${list.length} Cars Owned)`,
                 desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter, settings.filterlogic)}\``,
                 author: message.author,
-                thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: message.author.displayAvatarURL({ extension: "png" }),
                 fields: [{ name: "Car", value: carList, inline: true }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });

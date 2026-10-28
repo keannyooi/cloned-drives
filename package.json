@@ -8,14 +8,19 @@
     "discord.js": "^14.27.0",
     "dotenv": "^10.0.0",
     "luxon": "^1.27.0",
-    "mongoose": "^9.1.5",
+    "mongoose": "^9.11.2",
     "node-cron": "^3.0.0",
     "string-similarity": "^4.0.4"
   },
   "scripts": {
     "devstart": "node --max-old-space-size=4096 index.js dev",
     "start": "node --max-old-space-size=4096 index.js",
-    "replace": "node src/config/replace.js"
+    "replace": "node src/config/replace.js",
+    "test": "node --test \"test/unit/**/*.test.js\"",
+    "test:db": "node --test --test-concurrency=1 --test-timeout=300000 --test-force-exit \"test/db/**/*.test.js\"",
+    "test:net": "node --test \"test/net/**/*.test.js\"",
+    "test:all": "npm run check && npm test && npm run test:db && npm run test:net",
+    "check": "node scripts/checkSyntax.js"
   },
   "author": "keanny",
   "license": "MIT (in other words, you can do whatever you want as long as it doesn't harm us)"

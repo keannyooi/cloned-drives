@@ -2,6 +2,7 @@
 
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -22,7 +23,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -50,11 +51,12 @@ module.exports = {
                     "raceWeekStats.weeklyWins": parseInt(args[1])
                 }
             });
+            auditLog(message, { command: "setwinstreak", target: user, details: { weeklyWins: parseInt(args[1]) } });
             const successMessage = new SuccessMessage({
                 channel: message.channel,
                 title: `Successfully set ${user.username}'s Race Week weekly wins to ${args[1]}!`,
                 author: message.author,
-                thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
+                thumbnail: user.displayAvatarURL({ extension: "png" })
             });
             return successMessage.sendMessage({ currentMessage });
         }

@@ -7,32 +7,56 @@ const trackingModel = require("../../models/trackingSchema.js");
 // IN-MEMORY BUFFER - accumulated stats flushed to MongoDB periodically
 // ============================================================================
 
-const buffer = {
-    commands: {},         // { commandName: count }
-    activeUsers: new Set(),
-    newPlayers: 0,
-    economy: {
-        moneyEarned: 0,
-        moneySpent: 0,
-        trophiesEarned: 0,
-        trophiesSpent: 0,
-        fuseTokensEarned: 0,
-        fuseTokensSpent: 0
-    },
-    packsOpened: {},      // { packName: count }
-    carsSold: 0,
-    carsBought: { dealership: 0, blackmarket: 0 },
-    eventsPlayed: 0,
-    championshipsPlayed: 0,
-    pvp: { attacks: 0, wins: 0, losses: 0, draws: 0 },
-    codesRedeemed: 0,
-    offersBought: 0,
-    hiloGames: 0,
-    exchanges: 0,
-    voucherRedemptions: 0,
-    commandErrors: 0,
-    hourlyActivity: {}   // { "14": count }
-};
+function emptyBuffer() {
+    return {
+        commands: {},         // { commandName: count }
+        activeUsers: new Set(),
+        newPlayers: 0,
+        economy: {
+            moneyEarned: 0,
+            moneySpent: 0,
+            trophiesEarned: 0,
+            trophiesSpent: 0,
+            fuseTokensEarned: 0,
+            fuseTokensSpent: 0
+        },
+        packsOpened: {},      // { packName: count }
+        carsSold: 0,
+        carsBought: { dealership: 0, blackmarket: 0 },
+        eventsPlayed: 0,
+        championshipsPlayed: 0,
+        pvp: { attacks: 0, wins: 0, losses: 0, draws: 0 },
+        codesRedeemed: 0,
+        offersBought: 0,
+        hiloGames: 0,
+        exchanges: 0,
+        voucherRedemptions: 0,
+        commandErrors: 0,
+        hourlyActivity: {}   // { "14": count }
+    };
+}
+
+// The track* functions read buffer.<field> on every call, so flush() can swap
+// each field for a fresh one and keep the old values as the batch it writes.
+const buffer = emptyBuffer();
+
+// Adds a batch that failed to write back into the live buffer, so the next
+// flush sends it along with whatever was tracked since.
+function mergeBack(batch) {
+    for (const [key, value] of Object.entries(batch)) {
+        if (value instanceof Set) {
+            for (const item of value) buffer[key].add(item);
+        }
+        else if (typeof value === "number") {
+            buffer[key] += value;
+        }
+        else {
+            for (const [subKey, count] of Object.entries(value)) {
+                buffer[key][subKey] = (buffer[key][subKey] || 0) + count;
+            }
+        }
+    }
+}
 
 // ============================================================================
 // PUBLIC TRACKING FUNCTIONS - call these from commands / index.js
@@ -183,56 +207,61 @@ function trackError() {
 }
 
 // ============================================================================
-// FLUSH - writes buffered stats to MongoDB, then resets the buffer
+// FLUSH - takes the buffered stats as a batch and writes it to MongoDB
 // ============================================================================
 
 async function flush() {
     const today = DateTime.now().toFormat("yyyy-MM-dd");
 
-    // Build $inc operations from buffer
+    // Take the batch and reset the buffer before the write: stats tracked
+    // while it is in flight land in the fresh buffer instead of being wiped.
+    const batch = { ...buffer };
+    Object.assign(buffer, emptyBuffer());
+
+    // Build $inc operations from the batch
     const inc = {};
     const addToSet = {};
 
     // Commands
-    for (const [cmd, count] of Object.entries(buffer.commands)) {
+    for (const [cmd, count] of Object.entries(batch.commands)) {
         if (count > 0) inc[`commands.${cmd}`] = count;
     }
 
     // Economy
-    for (const [key, value] of Object.entries(buffer.economy)) {
+    for (const [key, value] of Object.entries(batch.economy)) {
         if (value > 0) inc[`economy.${key}`] = value;
     }
 
     // Packs
-    for (const [pack, count] of Object.entries(buffer.packsOpened)) {
+    for (const [pack, count] of Object.entries(batch.packsOpened)) {
         if (count > 0) inc[`packsOpened.${pack}`] = count;
     }
 
     // Hourly activity
-    for (const [hour, count] of Object.entries(buffer.hourlyActivity)) {
+    for (const [hour, count] of Object.entries(batch.hourlyActivity)) {
         if (count > 0) inc[`hourlyActivity.${hour}`] = count;
     }
 
     // Simple counters
-    if (buffer.carsSold > 0) inc.carsSold = buffer.carsSold;
-    if (buffer.carsBought.dealership > 0) inc["carsBought.dealership"] = buffer.carsBought.dealership;
-    if (buffer.carsBought.blackmarket > 0) inc["carsBought.blackmarket"] = buffer.carsBought.blackmarket;
-    if (buffer.eventsPlayed > 0) inc.eventsPlayed = buffer.eventsPlayed;
-    if (buffer.championshipsPlayed > 0) inc.championshipsPlayed = buffer.championshipsPlayed;
-    if (buffer.pvp.attacks > 0) inc["pvp.attacks"] = buffer.pvp.attacks;
-    if (buffer.pvp.wins > 0) inc["pvp.wins"] = buffer.pvp.wins;
-    if (buffer.pvp.losses > 0) inc["pvp.losses"] = buffer.pvp.losses;
-    if (buffer.pvp.draws > 0) inc["pvp.draws"] = buffer.pvp.draws;
-    if (buffer.codesRedeemed > 0) inc.codesRedeemed = buffer.codesRedeemed;
-    if (buffer.offersBought > 0) inc.offersBought = buffer.offersBought;
-    if (buffer.hiloGames > 0) inc.hiloGames = buffer.hiloGames;
-    if (buffer.exchanges > 0) inc.exchanges = buffer.exchanges;
-    if (buffer.voucherRedemptions > 0) inc.voucherRedemptions = buffer.voucherRedemptions;
-    if (buffer.newPlayers > 0) inc.newPlayers = buffer.newPlayers;
-    if (buffer.commandErrors > 0) inc.commandErrors = buffer.commandErrors;
+    if (batch.carsSold > 0) inc.carsSold = batch.carsSold;
+    if (batch.carsBought.dealership > 0) inc["carsBought.dealership"] = batch.carsBought.dealership;
+    if (batch.carsBought.blackmarket > 0) inc["carsBought.blackmarket"] = batch.carsBought.blackmarket;
+    if (batch.eventsPlayed > 0) inc.eventsPlayed = batch.eventsPlayed;
+    if (batch.championshipsPlayed > 0) inc.championshipsPlayed = batch.championshipsPlayed;
+    if (batch.pvp.attacks > 0) inc["pvp.attacks"] = batch.pvp.attacks;
+    if (batch.pvp.wins > 0) inc["pvp.wins"] = batch.pvp.wins;
+    if (batch.pvp.losses > 0) inc["pvp.losses"] = batch.pvp.losses;
+    if (batch.pvp.draws > 0) inc["pvp.draws"] = batch.pvp.draws;
+    if (batch.codesRedeemed > 0) inc.codesRedeemed = batch.codesRedeemed;
+    if (batch.offersBought > 0) inc.offersBought = batch.offersBought;
+    if (batch.hiloGames > 0) inc.hiloGames = batch.hiloGames;
+    if (batch.exchanges > 0) inc.exchanges = batch.exchanges;
+    if (batch.voucherRedemptions > 0) inc.voucherRedemptions = batch.voucherRedemptions;
+    if (batch.newPlayers > 0) inc.newPlayers = batch.newPlayers;
+    if (batch.commandErrors > 0) inc.commandErrors = batch.commandErrors;
 
     // Active users go into $addToSet to avoid duplicates across flushes
-    const activeUsersArray = [...buffer.activeUsers];
+    const activeUsersArray = [...batch.activeUsers];
 
     // Only write if there's something to write
     if (Object.keys(inc).length === 0 && activeUsersArray.length === 0) {
@@ -250,27 +279,11 @@ async function flush() {
             { upsert: true }
         );
     } catch (error) {
-        console.error("[Tracker] Flush failed:", error.message);
+        // Kept for the next flush. A write that timed out after the server
+        // applied it is counted twice — acceptable for analytics.
+        console.error("[Tracker] Flush failed, keeping the batch for the next flush:", error.message);
+        mergeBack(batch);
     }
-
-    // Reset buffer
-    buffer.commands = {};
-    buffer.activeUsers.clear();
-    buffer.newPlayers = 0;
-    buffer.economy = { moneyEarned: 0, moneySpent: 0, trophiesEarned: 0, trophiesSpent: 0, fuseTokensEarned: 0, fuseTokensSpent: 0 };
-    buffer.packsOpened = {};
-    buffer.carsSold = 0;
-    buffer.carsBought = { dealership: 0, blackmarket: 0 };
-    buffer.eventsPlayed = 0;
-    buffer.championshipsPlayed = 0;
-    buffer.pvp = { attacks: 0, wins: 0, losses: 0, draws: 0 };
-    buffer.codesRedeemed = 0;
-    buffer.offersBought = 0;
-    buffer.hiloGames = 0;
-    buffer.exchanges = 0;
-    buffer.voucherRedemptions = 0;
-    buffer.commandErrors = 0;
-    buffer.hourlyActivity = {};
 }
 
 module.exports = {

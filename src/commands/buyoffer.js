@@ -25,7 +25,9 @@ module.exports = {
     cooldown: 4.388,
     description: "Buy limited offers with this command!",
     async execute(message, args) {
-        const offers = await offerModel.find();
+        // Only started offers are for sale; drafts (isActive false) stay hidden
+        // until cd-startoffer, matching cd-limitedoffers.
+        const offers = await offerModel.find({ isActive: true });
         let query = args.map(i => i.toLowerCase());
         await new Promise(resolve => resolve(search(message, query, offers, "offer")))
             .then(async (response) => {
@@ -149,8 +151,15 @@ module.exports = {
                 const inc = { money: -offer.price };
                 if (fuseTokensGranted) inc.fuseTokens = fuseTokensGranted;
                 const profileSet = {};
-                if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+                // New discoveries travel as just the new carIDs (server-side
+                // append, see the saveGarage call); a list just initialised
+                // from the garage still goes whole via `set`.
+                let discoveredAdded = [];
+                if (discoveredInitialised) {
                     profileSet.discoveredCars = discoveredCars;
+                }
+                else if (discoveredCars.length !== discoveredBefore) {
+                    discoveredAdded = discoveredCars.slice(discoveredBefore);
                 }
                 // Driver grants use atomic dotted paths so they can't clobber a
                 // concurrent Race Week write with this command's stale snapshot.
@@ -182,13 +191,18 @@ module.exports = {
                         after: playerData.garage,
                         inc,
                         set: profileSet,
+                        // `heavy` hands the profile cache the full post-write list.
+                        addToSet: discoveredAdded.length > 0 ? { discoveredCars: discoveredAdded } : {},
+                        heavy: discoveredAdded.length > 0 ? { discoveredCars } : {},
                         stages: newDriverID ? [addToSetStage("raceWeekStats.ownedDrivers", ["d00000", newDriverID])] : [],
                         filter: moneyGuard,
                         baseStamp: playerData.cacheStamp
                     });
                 }
                 else {
-                    // Garage untouched: a plain light write.
+                    // Garage untouched: a plain light write. (Discoveries only come
+                    // with granted cars, so this is a never-taken fallback.)
+                    if (discoveredAdded.length > 0) profileSet.discoveredCars = discoveredCars;
                     const profileUpdate = { "$inc": inc };
                     if (Object.keys(profileSet).length > 0) profileUpdate["$set"] = profileSet;
                     if (newDriverID) {

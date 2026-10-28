@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
+const { getPackCategories } = require("../util/consts/economy.js");
 const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
@@ -149,10 +150,17 @@ module.exports = {
             const before = structuredClone(playerData.garage);
             const after = addCars(playerData.garage, pulledCars);
             const set = {};
-            // Whole list via `set` (not a pipeline stage) so the profile cache
-            // follows it; only sent when this opening discovered something.
-            if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+            // Discoveries: only the new carIDs are sent (a server-side append,
+            // skipping any already stored), not the whole ~80 KB list; `heavy`
+            // hands the profile cache the full post-write list. A list that was
+            // just initialised from the garage still goes whole via `set`.
+            let addToSet = {}, heavy = {};
+            if (discoveredInitialised) {
                 set.discoveredCars = discoveredCars;
+            }
+            else if (discoveredCars.length !== discoveredBefore) {
+                addToSet = { discoveredCars: discoveredCars.slice(discoveredBefore) };
+                heavy = { discoveredCars };
             }
             for (const [driverID, xpEntry] of Object.entries(driverGrants.xpWrites)) {
                 set[`raceWeekStats.driverXP.${driverID}`] = xpEntry;
@@ -168,6 +176,8 @@ module.exports = {
                 // balance - money = -price + every bonus: a delta, never the absolute.
                 inc: { money: balance - playerData.money, trophies: bonusTrophies },
                 set,
+                addToSet,
+                heavy,
                 stages,
                 filter: { money: { "$gte": currentPack.price } },
                 baseStamp: playerData.cacheStamp
@@ -325,15 +335,8 @@ async function resolveDriverGrants(playerData, driverPulls, moneyEmoji) {
     return result;
 }
 
-// === Backward-compatible category helper ===
-function getPackCategories(pack) {
-    if (pack.categories) return pack.categories;
-    // Infer from legacy properties
-    const cats = [];
-    if (pack.price) cats.push("normal");
-    cats.push("daily", "event", "limited", "reward", "calendar");
-    return cats;
-}
+// getPackCategories (backward-compatible category helper) lives in
+// consts/economy.js.
 
 /**
  * Resolve a bonus reward value that may be flat or chance-based.

@@ -200,7 +200,7 @@ module.exports = {
                     title: `${user.username}'s Garage`,
                     desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter, settings.filterlogic)}\``,
                     author: message.author,
-                    thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                    thumbnail: user.displayAvatarURL({ extension: "png" }),
                     fields: [
                         { name: "Car", value: garageList, inline: true },
                         { name: "Amount", value: amountList, inline: true }

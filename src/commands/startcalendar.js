@@ -73,8 +73,14 @@ module.exports = {
             async function acceptedFunction(currentMessage) {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 
+                // First start only: wipe progress left by test plays. An ended
+                // calendar (endcalendar keeps startDate and progress) is listed
+                // here too, and restarting it must keep real players' progress.
+                const neverStarted = !calendar.startDate;
+
                 // Set start date to now
                 calendar.isActive = true;
+                if (neverStarted) calendar.playerProgress = {};
                 calendar.startDate = DateTime.now().toISO();
                 
                 // Convert duration to deadline date if not unlimited

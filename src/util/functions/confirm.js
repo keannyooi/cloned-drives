@@ -34,6 +34,11 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
 
         const collector = reactionMessage.message.createMessageComponentCollector({ filter, time: defaultChoiceTime, componentType: Button });
         collector.on("collect", (button) => {
+            // Acknowledge every click straight away, duplicates too, or Discord
+            // shows "This interaction failed" after 3s. The dialog itself is
+            // still changed with plain message edits below. Not awaited, so a
+            // slow acceptedFunction can't push it past the deadline.
+            button.deferUpdate().catch(() => {});
             if (processed) return;
             processed = true;
             const handled = (async () => {

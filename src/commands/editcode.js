@@ -8,6 +8,7 @@ const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvent
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const listRewards = require("../util/functions/listRewards.js");
+const { snapshotEdit, saveEdit } = require("../util/functions/editSave.js");
 const codeModel = require("../models/codeSchema.js");
 
 module.exports = {
@@ -50,6 +51,9 @@ module.exports = {
             });
             return errorMessage.sendMessage();
         }
+        // Only the fields this edit changes get written — redeemedBy keeps any
+        // redemptions made while the command ran
+        const loaded = snapshotEdit(codeData);
 
         let criteria = args[1].toLowerCase();
         let operationFailed = false;
@@ -635,7 +639,7 @@ module.exports = {
         }
 
         if (!operationFailed) {
-            await codeModel.updateOne({ code: codeName }, codeData);
+            await saveEdit(codeModel, codeData, loaded);
             return successMessage.sendMessage({ currentMessage });
         }
     }

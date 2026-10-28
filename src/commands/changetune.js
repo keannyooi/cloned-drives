@@ -8,6 +8,7 @@ const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const generateHud = require("../util/functions/generateHud.js");
 const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
@@ -41,7 +42,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -122,6 +123,7 @@ module.exports = {
                         generateHud(car, upgrade)
                     ]);
                     if (!ok) return changedError();
+                    auditLog(message, { command: "changetune", target: user, details: { carID: ownedCar.carID, from: origUpgrade, to: upgrade } });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

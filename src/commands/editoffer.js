@@ -7,6 +7,7 @@ const { moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
 const { getCar, getPack, getCarFiles, getPackFiles } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
+const { snapshotEdit, saveEdit } = require("../util/functions/editSave.js");
 const offerModel = require("../models/offerSchema.js");
 
 const carFiles = getCarFiles();
@@ -41,6 +42,9 @@ module.exports = {
             });
 
         async function editOffer(offer, currentMessage) {
+            // Only the fields this edit changes get written — purchasedPlayers
+            // keeps any buys made while the command ran
+            const loaded = snapshotEdit(offer);
             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             let criteria = args[1].toLowerCase(), criteria2 = args[2].toLowerCase(), operationFailed = false, successMessage;
@@ -123,18 +127,19 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
-                    offer.deadline = `${duration}d`;
+                    // "unlimited" stays as-is ("unlimitedd" read as an expired date)
+                    offer.deadline = duration === "unlimited" ? "unlimited" : `${duration}d`;
                     successMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: `Successfully changed the duration of the ${offer.name} to \`${duration} day(s)\`!`,
+                        title: `Successfully changed the duration of the ${offer.name} to \`${duration === "unlimited" ? "unlimited" : `${duration} day(s)`}\`!`,
                         author: message.author
                     });
                     break;
                 case "extend":
-                    if (!offer.isActive) {
+                    if (!offer.isActive || offer.deadline === "unlimited") {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
-                            title: "Error, this attribute can only be edited while an offer is live.",
+                            title: "Error, this attribute can only be edited while a timed offer is live.",
                             desc: "This command is only intended for the unlikely scenario of bot-related delays.",
                             author: message.author
                         });
@@ -312,7 +317,7 @@ module.exports = {
                                 \`fusetokens\` - Sets a certain amount of fuse tokens to the offer bundle. Provide the amount of fuse tokens after that.`,
                                 author: message.author
                             }).displayClosest(criteria2);
-                            errorMessage.sendMessage({ currentMessage });
+                            return errorMessage.sendMessage({ currentMessage });
                     }
                     break;
                 default:
@@ -333,7 +338,7 @@ module.exports = {
             }
 
             if (!operationFailed) {
-                await offerModel.updateOne({ offerID: offer.offerID }, offer);
+                await saveEdit(offerModel, offer, loaded);
                 return successMessage.sendMessage({ currentMessage });
             }
         }

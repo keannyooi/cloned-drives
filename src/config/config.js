@@ -5,8 +5,6 @@ const { join } = require("path");
 const { readFileSync } = require("fs");
 const { DateTime } = require("luxon");
 const { GlobalFonts, loadImage } = require("@napi-rs/canvas");
-const { spawn } = require("child_process");
-const { schedule } = require("node-cron");
 
 class Bot extends Client {
     constructor(intents) {
@@ -19,8 +17,12 @@ class Bot extends Client {
         this.graphics = {};
     }
 
+    // Releases the player's command lock only when called from the execute()
+    // chain of the command that holds it (classes.js), so a hung command that
+    // was taken over as stale can't free the new command's lock. Lazy require:
+    // classes.js requires this file.
     deleteID(id) {
-        delete this.execList[id];
+        require("../util/classes/classes.js").releaseOwnCommandLock(id);
     }
 
     async fetchHomeGuild() {
@@ -69,24 +71,7 @@ const bot = new Bot({
 
 bot.loadGraphics().catch(err => console.error("[graphics] loadGraphics crashed:", err));
 
-if (bot.devMode) {
-    schedule("30 * * * *", () => {
-        spawn("mongodump", [
-            `--uri=${process.env.MONGO_URI}`,
-            "--gzip"
-        ])
-            .on("exit", (code, signal) => {
-                if (code) {
-                    console.error("database backup process exited with code ", code);
-                }
-                else if (signal) {
-                    console.error("database backup process killed with signal ", signal);
-                }
-                else {
-                    console.log("database backup success!");
-                }
-            });
-    });
-}
+// Database backups are taken by scripts/backupDatabase.js on a Windows
+// scheduled task (every 2 hours, one week kept), not by the bot.
 
 module.exports = bot;

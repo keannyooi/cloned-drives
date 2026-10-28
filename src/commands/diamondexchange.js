@@ -7,7 +7,7 @@ const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { isDiamondCar, isDiamondRollable, exchangePool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const calcTotal = require("../util/functions/calcTotal.js");
-const updateHands = require("../util/functions/updateHands.js");
+const { removeIfNoneLeft } = require("../util/functions/updateHands.js");
 const addCars = require("../util/functions/addCars.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
@@ -266,8 +266,9 @@ module.exports = {
                             }
 
                             // Remove one of the duplicate Diamond cars
-                            updateHands(freshData, freshGarageCar.carID, upgradeToRemove, "remove");
                             freshGarageCar.upgrades[upgradeToRemove] -= 1;
+                            // Hand/deck slots clear only if no copy at this tune is left.
+                            removeIfNoneLeft(freshData, freshGarageCar, upgradeToRemove);
 
                             // If no more of this car, remove from garage
                             if (calcTotal(freshGarageCar) === 0) {

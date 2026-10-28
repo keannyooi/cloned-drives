@@ -3,6 +3,7 @@
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { getVoucher, getVoucherFiles } = require("../util/functions/dataManager.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -23,7 +24,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -97,6 +98,7 @@ module.exports = {
                 wallet.push({ voucherID, amount: newTotal });
             }
             await profileModel.updateOne({ userID: user.id }, { vouchers: wallet.filter(v => v && v.amount > 0) });
+            auditLog(message, { command: "addvoucher", target: user, details: { voucherID, amount: applied, before: heldNow, after: newTotal } });
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,

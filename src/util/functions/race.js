@@ -4,7 +4,8 @@ const bot = require("../../config/config.js");
 const { createCanvas } = require("@napi-rs/canvas");
 const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
-const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
+const { driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
+const { evalScore, trackPens } = require("./raceScore.js");
 const { renderHudCanvas } = require("./generateHud.js");
 const { getScaledImage } = require("./imageCache.js");
 
@@ -25,26 +26,14 @@ function loadImageWithTimeout(src, ms = 3000) {
     });
 }
 
-/**
- * Race Formula v2.0 - Balanced for 6-stat tune system
- * 
- * Changes from v1.0:
- * - Top Speed: ÷4.2 → ÷2 (+110% value)
- * - 0-60: ×15 → ×8 (-47% value)
- * - Handling: ×1 → ×1.2 (+20% value)
- * - Weight: ÷50 → ÷30 (+67% value)
- * - MRA: ÷10 → ÷6 (+67% value)
- * - OLA: ÷10 → ÷10 (unchanged)
- * 
- * This rebalancing ensures all three max tunes have viable niches:
- * - 996 (Drag): Wins on high TS + 0-60 tracks
- * - 969 (Balanced): Wins on mixed/balanced tracks
- * - 699 (Twisty): Wins on high handling + weight tracks
- */
+// Scoring (Race Formula v2.0) lives in raceScore.js — the one copy every
+// generator, script and checker shares. This file renders and explains it.
 
 async function race(message, player, opponent, currentTrack, disablegraphics, silentResult) {
     message.channel.sendTyping();
-    const { tcsPen, absPen, drivePen, tyrePen } = weatherVars[`${currentTrack["weather"]} ${currentTrack["surface"]}`];
+    // Strict: throws on a weather/surface combo with no weatherVars entry.
+    const pens = trackPens(currentTrack);
+    const { tyrePen } = pens;
     let attachment;
     
     if (!disablegraphics && !silentResult) {
@@ -71,7 +60,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics, si
         }
     }
 
-    const result = evalScore(player, opponent);
+    const result = evalScore(player, opponent, currentTrack, { pens });
     const raceInfo = compare(player, opponent, (result > 0));
     let resultMessage;
     if (isNaN(result)) {
@@ -224,66 +213,6 @@ async function race(message, player, opponent, currentTrack, disablegraphics, si
         else {
             return response.slice(0, -2);
         }
-    }
-
-    function evalScore(player, opponent) {
-        let score = 0;
-        
-        // === REBALANCED FORMULA v2.0 ===
-        
-        // Top Speed: ÷2 (was ÷4.2) - Major buff to high-speed cars
-        score += (player.topSpeed - opponent.topSpeed) / 2 * (currentTrack["specsDistr"]["topSpeed"] / 100);
-        
-        // 0-60: ×8 (was ×15) - Major nerf to launch-focused builds
-        score += (opponent.accel - player.accel) * 8 * (currentTrack["specsDistr"]["0to60"] / 100);
-        
-        // Handling: ×1.2 (was ×1) - Slight buff to cornering ability
-        score += (player.handling - opponent.handling) * 1.2 * (currentTrack["specsDistr"]["handling"] / 100);
-        
-        // Weight: ÷30 (was ÷50) - Buff to lightweight cars
-        score += (opponent.weight - player.weight) / 30 * (currentTrack["specsDistr"]["weight"] / 100);
-        
-        // MRA: ÷6 (was ÷10) - Buff to high-speed acceleration
-        score += (player.mra - opponent.mra) / 6 * (currentTrack["specsDistr"]["mra"] / 100);
-        
-        // OLA: ÷10 (unchanged) - Off-the-line acceleration
-        score += (opponent.ola - player.ola) / 10 * (currentTrack["specsDistr"]["ola"] / 100);
-
-        // Ground clearance penalties (unchanged)
-        if (player.gc.toLowerCase() === "low") {
-            score -= (currentTrack["speedbumps"] * 10);
-        }
-        if (opponent.gc.toLowerCase() === "low") {
-            score += (currentTrack["speedbumps"] * 10);
-        }
-        score += (gcHierarchy.indexOf(opponent.gc) - gcHierarchy.indexOf(player.gc)) * currentTrack["humps"] * 10;
-        
-        // Surface/weather modifiers (unchanged)
-        score += (driveHierarchy.indexOf(opponent.driveType) - driveHierarchy.indexOf(player.driveType)) * drivePen;
-        score += ((tyrePen[opponent.tyreType]) - tyrePen[player.tyreType]);
-        if (currentTrack["specsDistr"]["handling"] > 0) {
-            score += (player.abs - opponent.abs) * absPen;
-        }
-        score += (player.tcs - opponent.tcs) * tcsPen;
-
-        // MPH track special cases (unchanged)
-        if (currentTrack["trackName"].includes("MPH")) {
-            let [startMPH, endMPH] = currentTrack["trackName"].split("-");
-            startMPH = parseInt(startMPH);
-            endMPH = parseInt(endMPH);
-
-            if ((opponent.topSpeed < startMPH && player.topSpeed >= startMPH) || (opponent.topSpeed < endMPH && player.topSpeed >= endMPH)) {
-                score = 250;
-            }
-            else if ((opponent.topSpeed >= startMPH && player.topSpeed < startMPH) || (opponent.topSpeed >= endMPH && player.topSpeed < endMPH)) {
-                score = -250;
-            }
-            else if (opponent.topSpeed < endMPH && player.topSpeed < endMPH) {
-                score = player.topSpeed - opponent.topSpeed;
-            }
-        }
-
-        return Math.round((score + Number.EPSILON) * 100) / 100;
     }
 }
 

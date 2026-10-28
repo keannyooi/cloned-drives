@@ -6,12 +6,14 @@ const bot = require("../config/config.js");
 const { ActionRowBuilder } = require("discord.js");
 const { getCarFiles, getCar } = require("../util/functions/dataManager.js");
 const { modifiedBase } = require("../util/functions/cardType.js");
-const { InfoMessage } = require("../util/classes/classes.js");
+const { InfoMessage, keepCommandLockAlive } = require("../util/classes/classes.js");
 const { defaultChoiceTime, hiloChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
+const { HILO, hiloStreakReward, hiloKeepPercentage } = require("../util/consts/economy.js");
 const getButtons = require("../util/functions/getButtons.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const { trackHiloGame, trackMoneyEarned } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
+const { persistMoneyReward } = require("../util/functions/rewardEntries.js");
 
 // 🎯 CR Range brackets for balanced gameplay
 const CR_BRACKETS = [
@@ -31,6 +33,7 @@ module.exports = {
   args: 0,
   category: "Gameplay",
   description: "Guess whether the next car will be higher or lower in value.",
+  cooldown: 5,
 
   async execute(message) {
     // Get car files inside execute() to ensure dataManager is initialized
@@ -99,15 +102,6 @@ module.exports = {
       return `**Current Car**\n${carName}\n\n🔥 Streak: ${streak}\n💵 Pot: ${moneyEmoji}${reward.toLocaleString()}${bonusInfo}`;
     }
 
-    function calculateReward(streak) {
-      if (streak === 1) return 15000;
-      if (streak < 5) return 8000;
-      if (streak < 10) return 18000;
-      if (streak < 15) return 30000;
-      if (streak < 20) return 45000;
-      return 60000 + (streak - 20) * 5000;
-    }
-
     let streak = 0;
     let reward = 0;
     let multiplier = 1;
@@ -122,8 +116,49 @@ module.exports = {
 
     const filter = (button) => button.user.id === message.author.id;
 
+    // execute() awaits this until the whole game is over (every round, the
+    // money write and the summary), so the execList lock holds for the entire
+    // game — otherwise a second cd-hilo could run alongside and be fed the
+    // same clicks. Rounds chain through setTimeout → playRound → a new
+    // collector, so only finishGame() may resolve it, never a round's "end".
+    let resolveGame;
+    const gameDone = new Promise((resolve) => { resolveGame = resolve; });
+    let finished = false;
+
+    async function finishGame() {
+      if (finished) return;
+      finished = true;
+      gameActive = false;
+
+      try {
+        if (reward > 0) {
+          trackHiloGame();
+          trackMoneyEarned(reward);
+          // Atomic merge (rewardEntries.js): $inc the existing Hi-Lo money
+          // entry, else $push a new one. Never $sets the whole array, so a
+          // concurrent grant (e.g. a Race Week prize) can't be clobbered.
+          await persistMoneyReward(message.author.id, reward, "Hi-Lo");
+
+          const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+          const finalEmbed = new InfoMessage({
+            channel: message.channel,
+            title: "💰 Rewards Saved!",
+            desc: `✅ Game ended!\n\n🔥 Streak: ${streak}\n💵 Earned: **${moneyEmoji}${reward.toLocaleString()}**\n\nUse \`cd-rewards\` to claim your earnings!`,
+            author: message.author
+          });
+
+          await finalEmbed.sendMessage({ preserve: true });
+        }
+      } catch (err) {
+        console.error("Hilo payout error:", err);
+      } finally {
+        resolveGame();
+      }
+    }
+
     async function playRound() {
       if (!gameActive) return;
+      touchLock();
 
       let eventMessage = "";
 
@@ -177,22 +212,30 @@ module.exports = {
         footer: `Difficulty: ${difficulty.toUpperCase()} | Range: ${currentBracket.label}`
       });
 
-      let reactionMessage;
-      try {
-        reactionMessage = await embed.sendMessage({ buttons: [row], preserve: true });
-      } catch (err) {
-        console.error("Failed to send hilo message:", err);
-        gameActive = false;
-        return;
+      // sendMessage never throws — it returns null when the send fails. End the
+      // game there (banking any pot already won) rather than leave it hanging.
+      const reactionMessage = await embed.sendMessage({ buttons: [row], preserve: true });
+      if (!reactionMessage || !reactionMessage.message) {
+        console.error("Failed to send hilo message");
+        return finishGame();
       }
 
       let processed = false;
-      const collector = message.channel.createMessageComponentCollector({ 
-        filter, 
+      // Tracks the running click handler so the end handler can await it: a
+      // collector.stop() inside the handler emits "end" synchronously, before
+      // the final pot (kept %, cash-out bonus) has been worked out.
+      let inFlight = Promise.resolve();
+      // Message-scoped, so clicks on other messages in the channel (another
+      // command's buttons) are never read as a guess.
+      const collector = reactionMessage.message.createMessageComponentCollector({
+        filter,
         time: hiloChoiceTime
       });
 
-      collector.on("collect", async (button) => {
+      const handleButton = async (button) => {
+        // Acknowledge every click (duplicates included) so the player never
+        // sees "This interaction failed". The game message is edited directly.
+        await button.deferUpdate().catch(() => {});
         if (processed || !gameActive) return;
         processed = true;
 
@@ -200,7 +243,7 @@ module.exports = {
           if (button.customId === "skip") {
             gameActive = false;
             collector.stop("skipped");
-            
+
             if (bonusRoundsLeft > 0) {
               const cashOutBonus = Math.floor(reward * 0.15);
               reward += cashOutBonus;
@@ -212,8 +255,13 @@ module.exports = {
             } else {
               embed.editEmbed({ title: "⏹️ Game cancelled." });
             }
-            
-            return embed.sendMessage({ currentMessage: reactionMessage });
+
+            return embed.sendMessage({ currentMessage: reactionMessage, preserve: true });
+          }
+
+          if (button.customId !== "high" && button.customId !== "low") {
+            processed = false;
+            return;
           }
 
           const guessedHigher = button.customId === "high";
@@ -233,17 +281,8 @@ module.exports = {
             let keptAmount = 0;
             let keepPercentage = 0;
             
-            if (streak >= 15) {
-              keepPercentage = 75;
-            } else if (streak >= 10) {
-              keepPercentage = 60;
-            } else if (streak >= 5) {
-              keepPercentage = 50;
-            } else if (streak >= 3) {
-              keepPercentage = 30;
-            } else if (streak >= 1) {
-              keepPercentage = 15;
-            }
+            // Kept-% ladder lives in consts/economy.js (HILO.keepPercentages).
+            keepPercentage = hiloKeepPercentage(streak);
             
             keptAmount = Math.floor(reward * (keepPercentage / 100));
             const lostAmount = reward - keptAmount;
@@ -269,13 +308,13 @@ module.exports = {
                 image: nextCar.racehud || null
               });
             }
-            
-            return embed.sendMessage({ currentMessage: reactionMessage });
+
+            return embed.sendMessage({ currentMessage: reactionMessage, preserve: true });
           }
 
           // ✅ Correct guess
           streak++;
-          let gain = calculateReward(streak);
+          let gain = hiloStreakReward(streak);
           const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
           
           gain = Math.floor(gain * multiplier);
@@ -290,19 +329,11 @@ module.exports = {
             bonusText = `\n🎯 **CLOSE CALL BONUS!** +${moneyEmoji}${perfectBonus.toLocaleString()}`;
           }
           
-          let milestoneBonus = 0;
-          if (streak === 5) {
-            milestoneBonus = 10000;
+          // Milestone amounts live in consts/economy.js (HILO.milestoneBonuses).
+          const milestoneBonus = HILO.milestoneBonuses[streak] || 0;
+          if (milestoneBonus > 0) {
             gain += milestoneBonus;
-            bonusText += `\n🔥 **5-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
-          } else if (streak === 10) {
-            milestoneBonus = 25000;
-            gain += milestoneBonus;
-            bonusText += `\n🔥 **10-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
-          } else if (streak === 20) {
-            milestoneBonus = 75000;
-            gain += milestoneBonus;
-            bonusText += `\n🔥 **20-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
+            bonusText += `\n🔥 **${streak}-STREAK MILESTONE!** +${moneyEmoji}${milestoneBonus.toLocaleString()}`;
           }
 
           reward += gain;
@@ -332,55 +363,58 @@ module.exports = {
             footer: "It gets harder every round…"
           });
 
-          await embed.sendMessage({ currentMessage: reactionMessage });
+          await embed.sendMessage({ currentMessage: reactionMessage, preserve: true });
 
-          setTimeout(() => playRound(), 1500);
+          setTimeout(() => {
+            playRound().catch((err) => {
+              console.error("Hilo round error:", err);
+              finishGame();
+            });
+          }, 1500);
 
         } catch (err) {
           console.error("Hilo interaction error:", err);
-          gameActive = false;
+          // End the game outright: on the correct-guess path this round's
+          // collector has already ended, so nothing else would finish it.
+          collector.stop("error");
+          finishGame();
         }
+      };
+
+      collector.on("collect", (button) => {
+        // ACCUMULATE, never replace — a spam-click returning on the processed
+        // guard must not clobber the promise the end handler awaits.
+        const handled = handleButton(button);
+        inFlight = inFlight.then(() => handled, () => handled);
       });
 
-      collector.on("end", async (collected, reason) => {
+      collector.on("end", async () => {
+        // Yield once so a stop() fired from inside the handler has had its
+        // promise added to inFlight, then wait for it to settle the pot.
+        await Promise.resolve();
+        await inFlight.catch(() => {});
+
         if (!processed && gameActive) {
           gameActive = false;
           embed.editEmbed({ title: "⏱️ Time's up! Game over." });
-          embed.sendMessage({ currentMessage: reactionMessage }).catch(() => {});
+          await embed.sendMessage({ currentMessage: reactionMessage, preserve: true });
         }
 
-        if (!gameActive && reward > 0) {
-          trackHiloGame();
-          trackMoneyEarned(reward);
-          // Atomic merge (as randomrace.js persistMoneyReward): $inc the existing
-          // Hi-Lo money entry, else $push a new one. Never $sets the whole array,
-          // so a concurrent grant (e.g. a Race Week prize) can't be clobbered.
-          const res = await profileModel.updateOne(
-            { userID: message.author.id, unclaimedRewards: { "$elemMatch": { origin: "Hi-Lo", money: { "$exists": true } } } },
-            { "$inc": { "unclaimedRewards.$.money": reward } }
-          );
-          const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
-          if (!modified) {
-            await profileModel.updateOne(
-              { userID: message.author.id },
-              { "$push": { unclaimedRewards: { money: reward, origin: "Hi-Lo" } } }
-            );
-          }
-
-          const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-          const finalEmbed = new InfoMessage({
-            channel: message.channel,
-            title: "💰 Rewards Saved!",
-            desc: `✅ Game ended!\n\n🔥 Streak: ${streak}\n💵 Earned: **${moneyEmoji}${reward.toLocaleString()}**\n\nUse \`cd-rewards\` to claim your earnings!`,
-            author: message.author
-          });
-
-          await finalEmbed.sendMessage();
-        }
+        // A correct guess ends this round's collector but the game goes on
+        // (the next playRound makes a new one); only a finished game pays out.
+        if (!gameActive) await finishGame();
       });
     }
 
-    // Start the first round
-    playRound();
+    // Start the first round, then hold the command (and its lock) until the
+    // game is over. A game has no length limit, so every round refreshes the
+    // lock's startedAt (index.js takes over a lock only after 20 minutes).
+    // Taken here in execute's own chain; round callbacks carry no lock context.
+    const touchLock = keepCommandLockAlive();
+    playRound().catch((err) => {
+      console.error("Hilo round error:", err);
+      finishGame();
+    });
+    await gameDone;
   }
 };

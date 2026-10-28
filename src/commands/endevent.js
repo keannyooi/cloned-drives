@@ -43,7 +43,17 @@ module.exports = {
 
             async function acceptedFunction(currentMessage) {
                 const endEvent = require("../util/functions/endEvent.js");
-                await endEvent(event, message.author.id);
+                const ended = await endEvent(event, message.author.id);
+                // false: the 3-minute tick (or another admin) ended it first.
+                if (ended === false) {
+                    const infoMessage = new InfoMessage({
+                        channel: message.channel,
+                        title: `The ${event.name} event had already ended.`,
+                        author: message.author
+                    });
+                    await infoMessage.sendMessage({ currentMessage });
+                    return infoMessage.removeButtons();
+                }
 
                 const progress = event.playerProgress || {};
                 const participants = Object.keys(progress).length;

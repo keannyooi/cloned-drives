@@ -64,7 +64,7 @@ async function searchGarage(args) {
                 value: `${i + 1}`
             });
             if (isPrizeLike(currentCar)) {
-                options.emoji = `<trophies:${trophyEmojiID}>`;
+                options[i].emoji = `<trophies:${trophyEmojiID}>`;
             }
         }
 

@@ -6,6 +6,7 @@ const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentOffersChannelID, defaultChoiceTime } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
+const { snapshotEdit, saveEdit } = require("../util/functions/editSave.js");
 const profileModel = require("../models/profileSchema.js");
 const offerModel = require("../models/offerSchema.js");
 
@@ -29,6 +30,9 @@ module.exports = {
             });
 
         async function startOffer(offer, currentMessage) {
+            // Taken before anything changes: the save below writes only what
+            // this command edited (editSave.js), never a stale purchasedPlayers.
+            const loaded = snapshotEdit(offer);
             const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
@@ -67,7 +71,7 @@ module.exports = {
                     }
                 }
 
-                await offerModel.updateOne({ offerID: offer.offerID }, offer);
+                await saveEdit(offerModel, offer, loaded);
                 return successMessage.sendMessage({ currentMessage });
             }
         }

@@ -17,57 +17,25 @@
  *     pairwise-disjoint solver sets — no single car can clear two of them.
  *
  * Pure module: no Discord, no Mongo. generate() returns data; the caller
- * persists and announces. Race scoring MIRRORS race.js evalScore v2.0 — keep
- * in sync with rebalances (same note as simulateEconomy.js).
+ * persists and announces. Race scoring is the shared raceScore.js evalScore
+ * (the same function the live race runs), in its lenient mode.
  */
 
 const { getCar, getTrack, getCarFiles, getTrackFiles, packExists, carExists } = require("./dataManager.js");
 const { calcTune } = require("./calcTune.js");
 const { isPackable, isPrizeLike, usesReferenceStats, isBMCar, hasType, modifiedBase, getBaseType } = require("./cardType.js");
-const { driveHierarchy, gcHierarchy, weatherVars } = require("../consts/consts.js");
 const filterCheck = require("./filterCheck.js");
+const raceScore = require("./raceScore.js");
 
-// ─── Race scoring — MIRRORS race.js evalScore (v2.0 rebalanced) ─────────────
+// ─── Race scoring — the live formula (raceScore.js), lenient ────────────────
+// Lenient: a weather/surface combo or tyre type missing from weatherVars
+// scores as neutral instead of throwing/NaN, so one bad data file can't stop
+// generation. The live race stays strict (see raceScore.js).
 
-const ZERO_PENS = { drivePen: 0, absPen: 0, tcsPen: 0, tyrePen: {} };
+const LENIENT = Object.freeze({ lenient: true });
 
 function evalScore(player, opponent, track) {
-    const pens = weatherVars[`${track.weather} ${track.surface}`] || ZERO_PENS;
-    const { drivePen, absPen, tcsPen, tyrePen } = pens;
-
-    let score = 0;
-    score += (player.topSpeed - opponent.topSpeed) / 2 * (track.specsDistr.topSpeed / 100);
-    score += (opponent.accel - player.accel) * 8 * (track.specsDistr["0to60"] / 100);
-    score += (player.handling - opponent.handling) * 1.2 * (track.specsDistr.handling / 100);
-    score += (opponent.weight - player.weight) / 30 * (track.specsDistr.weight / 100);
-    score += (player.mra - opponent.mra) / 6 * (track.specsDistr.mra / 100);
-    score += (opponent.ola - player.ola) / 10 * (track.specsDistr.ola / 100);
-
-    if (player.gc.toLowerCase() === "low") score -= track.speedbumps * 10;
-    if (opponent.gc.toLowerCase() === "low") score += track.speedbumps * 10;
-    score += (gcHierarchy.indexOf(opponent.gc) - gcHierarchy.indexOf(player.gc)) * track.humps * 10;
-
-    score += (driveHierarchy.indexOf(opponent.driveType) - driveHierarchy.indexOf(player.driveType)) * drivePen;
-    score += (tyrePen[opponent.tyreType] || 0) - (tyrePen[player.tyreType] || 0);
-    if (track.specsDistr.handling > 0) {
-        score += (player.abs - opponent.abs) * absPen;
-    }
-    score += (player.tcs - opponent.tcs) * tcsPen;
-
-    if (track.trackName.includes("MPH")) {
-        let [startMPH, endMPH] = track.trackName.split("-");
-        startMPH = parseInt(startMPH);
-        endMPH = parseInt(endMPH);
-        if ((opponent.topSpeed < startMPH && player.topSpeed >= startMPH) || (opponent.topSpeed < endMPH && player.topSpeed >= endMPH)) {
-            score = 250;
-        } else if ((opponent.topSpeed >= startMPH && player.topSpeed < startMPH) || (opponent.topSpeed >= endMPH && player.topSpeed < endMPH)) {
-            score = -250;
-        } else if (opponent.topSpeed < endMPH && player.topSpeed < endMPH) {
-            score = player.topSpeed - opponent.topSpeed;
-        }
-    }
-
-    return Math.round((score + Number.EPSILON) * 100) / 100;
+    return raceScore.evalScore(player, opponent, track, LENIENT);
 }
 
 const TUNES = ["000", "333", "666", "699", "969", "996"];

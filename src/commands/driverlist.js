@@ -145,7 +145,7 @@ module.exports = {
                     : `List of All Drivers in Cloned Drives (${ownedCount}/${list.length} Drivers Owned)`,
                 desc: "🔄 = in the weekly rotation (rung-250 prize / Driver Scout pool).\nUse `cd-driverinfo` to view a driver's bonuses.",
                 author: message.author,
-                thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: message.author.displayAvatarURL({ extension: "png" }),
                 fields: [{ name: "Driver", value: driverList, inline: true }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });

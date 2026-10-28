@@ -29,7 +29,8 @@ module.exports = {
     category: "Events",
     description: "Manually ends a PvP event, distributing rewards and archiving results.",
     async execute(message, args) {
-        const events = await pvpEventModel.find();
+        // Lean: only fields are read, and it exposes the end-claim marker (not in the schema)
+        const events = await pvpEventModel.find().lean();
         if (events.length === 0) {
             return new ErrorMessage({
                 channel: message.channel,
@@ -45,6 +46,18 @@ module.exports = {
                 if (!Array.isArray(response)) return;
                 const [pvpEvent, currentMessage] = response;
 
+                // Already claimed by an end (isActive is false, but it's no draft): either
+                // that end is still running, or it was interrupted and some players may
+                // already hold their rewards. Ending it again here would archive it as a draft.
+                if (pvpEvent[endPvpEvent.CLAIM_MARKER]) {
+                    return new ErrorMessage({
+                        channel: message.channel,
+                        title: `Error, "${pvpEvent.name}" is already being ended.`,
+                        desc: `An end of this event started <t:${Math.floor(Date.parse(pvpEvent[endPvpEvent.CLAIM_MARKER]) / 1000)}:R>. If it's been more than a few minutes it was interrupted — check the bot log and \`unclaimedRewards\` before cleaning it up by hand.`,
+                        author: message.author
+                    }).sendMessage({ currentMessage });
+                }
+
                 const playerData = await profileModel.findOne({ userID: message.author.id });
                 const participantCount = Object.keys(pvpEvent.entries || {}).length;
 
@@ -59,13 +72,25 @@ module.exports = {
                 });
 
                 await confirm(message, confirmationMessage, async (currentMessage2) => {
-                    await endPvpEvent(pvpEvent, message.author.username);
+                    // endPvpEvent re-reads the event (the copy above predates this
+                    // dialog) and returns null if it was ended or changed meanwhile.
+                    const ended = await endPvpEvent(pvpEvent, message.author.username);
+                    if (!ended) {
+                        return new ErrorMessage({
+                            channel: message.channel,
+                            title: `Error, "${pvpEvent.name}" was not ended.`,
+                            desc: pvpEvent.isActive
+                                ? "It was already ended elsewhere (likely the deadline scheduler), so rewards went out once, from there."
+                                : "The draft was already removed, has been started, or is being ended elsewhere. Check `cd-pvp`.",
+                            author: message.author
+                        }).sendMessage({ currentMessage: currentMessage2 });
+                    }
 
                     return new SuccessMessage({
                         channel: message.channel,
                         title: `Ended PvP event "${pvpEvent.name}".`,
                         desc: pvpEvent.isActive
-                            ? `Rewards distributed to ${participantCount} participant(s). See <#current-events> for the final standings.`
+                            ? `Rewards distributed to ${ended.totalParticipants} participant(s). See <#current-events> for the final standings.`
                             : "Draft event removed.",
                         author: message.author
                     }).sendMessage({ currentMessage: currentMessage2 });

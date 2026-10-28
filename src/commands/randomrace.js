@@ -7,7 +7,7 @@
  * by raceWeekManager and land instantly in unclaimedRewards (origin "Race Week").
  *
  * Extension points for the drivers/random-events layers (module-scope):
- *   computeWinPayout, generateMatchup, generateReqs, buildIntermission,
+ *   computeWinPayout (raceWeekPayout.js), generateMatchup, generateReqs, buildIntermission,
  *   buildEarningsMessage, persistMoneyReward, normalizeRaceWeekStats,
  *   nextRungInfo, prizeName, utcToday.
  * Reward persistence is ATOMIC by design: money via persistMoneyReward
@@ -29,11 +29,12 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags } = require("
 const { DateTime } = require("luxon");
 const { getCarFiles, getTrackFiles, getCar, getTrack, getPack, getDriver, driverExists } = require("../util/functions/dataManager.js");
 const { isWinnable } = require("../util/functions/raceWeekFeasibility.js");
-const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { InfoMessage, ErrorMessage, BotError } = require("../util/classes/classes.js");
 const { defaultChoiceTime, moneyEmojiID, bossEmojiID, DIAMONDS_ENABLED } = require("../util/consts/consts.js");
 const { ECON, LADDER, BOSS_GATES, DIFFICULTY, REQ_POOLS, DUPE_DRIVER_MONEY, BOSS_SLAYER_DRIVER_ID } = require("../util/consts/raceWeek.js");
-const { rrOpponentClass, usesReferenceStats, rrMoneyBonusPct } = require("../util/functions/cardType.js");
-const { checkRaceWeekRollover, getPrizes, computeThresholdAwards, claimDriverSerial } = require("../util/functions/raceWeekManager.js");
+const { rrOpponentClass, usesReferenceStats } = require("../util/functions/cardType.js");
+const { computeWinPayout } = require("../util/functions/raceWeekPayout.js");
+const { checkRaceWeekRollover, getPrizes, computeThresholdAwards, claimDriverSerial, WEEKLY_FIELDS } = require("../util/functions/raceWeekManager.js");
 const {
     DEFAULT_DRIVER_ID, RARITY_CURVES, rarityOf, isAllActiveRarity, maxLevelFor,
     levelFromDupes, scoutTierDown,
@@ -50,6 +51,7 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const rwEmoji = require("../util/functions/rwEmoji.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const profileModel = require("../models/profileSchema.js");
+const { persistMoneyReward: persistMoney } = require("../util/functions/rewardEntries.js");
 
 const REWARD_ORIGIN = "Race Week";
 const OPPONENT_UPGRADES = ["000", "333", "666", "699", "969", "996"];
@@ -102,23 +104,83 @@ function normalizeRaceWeekStats(raw) {
 
 /**
  * Atomically add money to the player's "Race Week"-origin unclaimedRewards
- * entry ($inc on the matched element; $push a fresh entry when none exists).
- * Never rewrites the whole array, so concurrent background grants survive.
+ * entry (rewardEntries.persistMoneyReward: $inc the matched element, else
+ * $push a fresh entry). Never rewrites the whole array, so concurrent
+ * background grants survive.
  */
-async function persistMoneyReward(userID, amount) {
-    if (!amount || amount <= 0) return;
-    const res = await profileModel.updateOne(
-        { userID, unclaimedRewards: { "$elemMatch": { origin: REWARD_ORIGIN, money: { "$exists": true } } } },
-        { "$inc": { "unclaimedRewards.$.money": amount } }
-    );
-    const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
-    if (!modified) {
-        await profileModel.updateOne(
-            { userID },
-            { "$push": { unclaimedRewards: { money: amount, origin: REWARD_ORIGIN } } }
-        );
-    }
+function persistMoneyReward(userID, amount) {
+    return persistMoney(userID, amount, REWARD_ORIGIN);
 }
+
+/**
+ * The one profile update every cd-rr outcome writes (win / loss / draw / skip).
+ * Shared skeleton: the next matchup, its event, lastPlayedDay, the skip count
+ * and the used-cars ring, then settleNextEvent's `set` merged AFTER dailySkips
+ * (so skip-token refunds win), then the branch's own fields. `set` keys are
+ * raceWeekStats-relative; `inc` / `max` / `push` take full paths (a skip fee
+ * is top-level `money`). `dailySkips` / `usedCars` undefined = leave the
+ * stored value (a skip races nothing, so it never touches the ring).
+ *
+ * Returns { update, fallback }. `fallback` is `update` minus every
+ * week-scoped field (WEEKLY_FIELDS — what the Monday reset zeroes); see
+ * writeOutcome.
+ */
+function buildOutcomeUpdate({ next, settled, today, dailySkips, usedCars, set = {}, inc = {}, max = {}, push = {} }) {
+    const fields = {
+        opponent: next.opponent,
+        trackID: next.trackID,
+        reqs: next.reqs,
+        lastPlayedDay: today,
+        activeEvent: settled.active
+    };
+    if (usedCars !== undefined) fields.usedCars = usedCars;
+    if (dailySkips !== undefined) fields.dailySkips = dailySkips;
+    Object.assign(fields, settled.set, set);
+
+    const update = {}, fallback = {};
+    const isWeekly = (path) => {
+        const [root, field] = path.split(".");
+        return root === "raceWeekStats" && WEEKLY_FIELDS.includes(field);
+    };
+    const place = (op, path, value) => {
+        update[op] = update[op] || {};
+        update[op][path] = value;
+        if (isWeekly(path)) return;
+        fallback[op] = fallback[op] || {};
+        fallback[op][path] = value;
+    };
+    for (const [key, value] of Object.entries(fields)) place("$set", `raceWeekStats.${key}`, value);
+    for (const [path, value] of Object.entries(inc)) place("$inc", path, value);
+    for (const [path, value] of Object.entries(max)) place("$max", path, value);
+    for (const [path, entries] of Object.entries(push)) {
+        if (entries.length > 0) place("$push", path, { "$each": entries });
+    }
+    return { update, fallback };
+}
+
+/**
+ * Persist a buildOutcomeUpdate payload against the week the race STARTED in.
+ * `guard` pins the stored weeklyWins and opponent carID the command read; the
+ * Monday reset zeroes both (opponent carID → ""), and nothing else touches
+ * them while this user holds the command lock. If the reset landed mid-race
+ * the full write matches nothing, and only the fallback lands: rewards,
+ * driver grants and the day/skip bookkeeping, never last week's rung, counters,
+ * opponent or event in the new week (the next cd-rr regenerates the matchup).
+ * Returns true when the week was still live, false when it rolled over.
+ */
+async function writeOutcome(userID, guard, { update, fallback }) {
+    const res = await profileModel.updateOne({ userID, ...guard }, update);
+    const matched = res.matchedCount !== undefined ? res.matchedCount : res.n;
+    if (matched) return true;
+    if (Object.keys(fallback).length > 0) await profileModel.updateOne({ userID }, fallback);
+    return false;
+}
+
+// Discord errors from a click acknowledged too late (10062 Unknown interaction,
+// 40060 already acknowledged, and discord.js's reply-state errors).
+const INTERACTION_TIMING_CODES = new Set([10062, 40060, "InteractionNotReplied", "InteractionAlreadyReplied"]);
+
+const ROLLED_OVER_LINE ="⏰ **Race Week rolled over while this race was open.** It counted toward last week, whose standings were already final — any rewards above still land in cd-rewards. Your new week starts fresh on your next cd-rr.";
 
 /**
  * In-memory driver grant (rarity system v3): first copy joins ownedDrivers at
@@ -445,46 +507,7 @@ function settleNextEvent({ stats, matchup, wins, survivor, usedSkipsToday, today
 
 // ─── Payout (v2.2 formula — see docs/race-week-design.md §4a) ────────────────
 
-/**
- * Flat per-win pay + clamped CR-differential bonus, then the card-type money
- * bonus (BM +25% via rrMoneyBonusPct; Diamond gated by DIAMONDS_ENABLED),
- * domination tiers on the subtotal, and the 5% lucky-race roll.
- */
-function computeWinPayout({ playerCar, opponentCar, rawHandCar, result }) {
-    const flat = ECON.flatBase;
-
-    let crBonus = 0;
-    if (playerCar.cr - opponentCar.cr <= ECON.crBonusEligibleDiff) {
-        // counted crDiff clamps at +40 — bounds the farmable deep-underdog channel
-        crBonus = (Math.min(opponentCar.cr - playerCar.cr, ECON.crDiffClamp) + 40) * ECON.crBonusBase;
-    }
-    const baseSubtotal = flat + crBonus;
-
-    let bonusPct = rawHandCar ? rrMoneyBonusPct(rawHandCar) : 0;
-    // Race Week rule (spec §4a): the diamond 2× money bonus stays OFF here
-    // REGARDLESS of the global DIAMONDS_ENABLED flag — an all-diamond nolife
-    // week at 2× would blow the weekly economy target (~$63M sim'd).
-    if (playerCar.isDiamond) bonusPct = 0;
-    const cardBonus = Math.round(baseSubtotal * bonusPct / 100);
-    const subtotal = baseSubtotal + cardBonus;
-
-    let dominationBonus = 0, dominationLabel = null;
-    for (const tier of ECON.dominationTiers) {
-        if (result >= tier.threshold) {
-            dominationBonus = Math.floor(subtotal * tier.multiplier);
-            dominationLabel = tier.label;
-            break;
-        }
-    }
-
-    const lucky = Math.random() < ECON.luckyChance;
-    const luckyBonus = lucky ? Math.floor(subtotal * ECON.luckyMult) : 0;
-
-    return {
-        flat, crBonus, bonusPct, cardBonus, subtotal, dominationBonus, dominationLabel,
-        lucky, luckyBonus, total: subtotal + dominationBonus + luckyBonus
-    };
-}
+// computeWinPayout lives in raceWeekPayout.js (shared with the economy simulator).
 
 function buildEarningsMessage(payout, newWins) {
     const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
@@ -663,6 +686,15 @@ module.exports = {
                 await message.channel.send(settled.lines.join("\n")).catch(() => {});
             }
         }
+
+        // Every settlement write is pinned to the week this race was read in
+        // (see writeOutcome). Built at write time: a cursed-race accept can
+        // swap the opponent mid-intermission (and stores the swap first).
+        const startWins = stats.weeklyWins;
+        const weekGuard = () => ({
+            "raceWeekStats.weeklyWins": startWins,
+            "raceWeekStats.opponent.carID": opponent.carID
+        });
 
         const track = getTrack(trackID);
         const rawHandCar = getCar(hand.carID);
@@ -943,41 +975,37 @@ module.exports = {
                                 });
                                 extraLines.push(...settled.lines);
 
-                                const setPayload = {
-                                    "raceWeekStats.opponent": next.opponent,
-                                    "raceWeekStats.trackID": next.trackID,
-                                    "raceWeekStats.reqs": next.reqs,
-                                    "raceWeekStats.lastPlayedDay": today,
-                                    "raceWeekStats.activeEvent": settled.active,
-                                    "raceWeekStats.usedCars": usedCars
-                                };
-                                if (dayRolled) setPayload["raceWeekStats.dailySkips"] = 0;
-                                for (const [key, value] of Object.entries(settled.set)) setPayload[`raceWeekStats.${key}`] = value;
-                                if (ownedDirty) setPayload["raceWeekStats.ownedDrivers"] = stats.ownedDrivers;
-                                if (driverXPDirty) setPayload["raceWeekStats.driverXP"] = stats.driverXP;
-                                if (evRes.clearRecentLoss) setPayload["raceWeekStats.recentLosses"] = stats.recentLosses;
-                                // Counters go through $inc/$max so a concurrent Monday
-                                // rollover reset can never be resurrected by this write.
-                                const update = {
-                                    "$set": setPayload,
-                                    "$inc": {
+                                const winSet = {};
+                                if (ownedDirty) winSet.ownedDrivers = stats.ownedDrivers;
+                                if (driverXPDirty) winSet.driverXP = stats.driverXP;
+                                if (evRes.clearRecentLoss) winSet.recentLosses = stats.recentLosses;
+                                // Counters go through $inc/$max (and the write is
+                                // week-guarded) so a concurrent Monday rollover reset
+                                // can never be resurrected by this write.
+                                const winUpdate = buildOutcomeUpdate({
+                                    next, settled, today, usedCars,
+                                    dailySkips: dayRolled ? 0 : undefined,
+                                    set: winSet,
+                                    inc: {
                                         "raceWeekStats.weeklyWins": 1,
                                         "raceWeekStats.weeklyMargin": Math.round(result * 100) / 100
                                     },
-                                    "$max": { "raceWeekStats.bestWeek": newWins }
-                                };
-                                const pushOps = {};
-                                if (awards.claimed.length > 0) pushOps["raceWeekStats.claimedThresholds"] = { "$each": awards.claimed };
-                                if (pendingEntries.length > 0) pushOps.unclaimedRewards = { "$each": pendingEntries };
-                                if (Object.keys(pushOps).length > 0) update["$push"] = pushOps;
+                                    max: { "raceWeekStats.bestWeek": newWins },
+                                    push: {
+                                        "raceWeekStats.claimedThresholds": awards.claimed,
+                                        unclaimedRewards: pendingEntries
+                                    }
+                                });
                                 // Safe to run together: pendingEntries never holds a
                                 // money entry (money always aggregates into
                                 // pendingMoney), so the $push here and the money
                                 // $inc/$push can't produce two Race Week money entries.
-                                await Promise.all([
-                                    profileModel.updateOne({ userID: message.author.id }, update),
+                                // Money pays whichever week the write lands in.
+                                const [weekLive] = await Promise.all([
+                                    writeOutcome(message.author.id, weekGuard(), winUpdate),
                                     persistMoneyReward(message.author.id, pendingMoney)
                                 ]);
+                                if (!weekLive) extraLines.push(ROLLED_OVER_LINE);
 
                                 let earningsMsg = buildEarningsMessage(payout, newWins);
                                 if (isBossGate) {
@@ -1021,31 +1049,31 @@ module.exports = {
                                 });
                                 lossLines.push(...settled.lines);
 
-                                const setPayload = {
-                                    "raceWeekStats.recentLosses": stats.recentLosses,
-                                    "raceWeekStats.opponent": next.opponent,
-                                    "raceWeekStats.trackID": next.trackID,
-                                    "raceWeekStats.reqs": next.reqs,
-                                    "raceWeekStats.lastPlayedDay": today,
-                                    "raceWeekStats.activeEvent": settled.active,
-                                    "raceWeekStats.usedCars": usedCars
-                                };
-                                if (dayRolled) setPayload["raceWeekStats.dailySkips"] = 0;
-                                for (const [key, value] of Object.entries(settled.set)) setPayload[`raceWeekStats.${key}`] = value;
-                                const lossUpdate = {
-                                    "$set": setPayload,
-                                    "$inc": { "raceWeekStats.weeklyLosses": 1 }
-                                };
-                                if (lossPending.length > 0) lossUpdate["$push"] = { unclaimedRewards: { "$each": lossPending } };
-                                await profileModel.updateOne({ userID: message.author.id }, lossUpdate);
+                                const lossUpdate = buildOutcomeUpdate({
+                                    next, settled, today, usedCars,
+                                    dailySkips: dayRolled ? 0 : undefined,
+                                    set: { recentLosses: stats.recentLosses },
+                                    inc: { "raceWeekStats.weeklyLosses": 1 },
+                                    push: { unclaimedRewards: lossPending }
+                                });
+                                if (!await writeOutcome(message.author.id, weekGuard(), lossUpdate)) lossLines.push(ROLLED_OVER_LINE);
 
                                 let lossMsg = "💨 You lost — but no wins lost, your ladder progress is safe. Opponent re-rolled, straight back in!";
                                 if (lossLines.length > 0) lossMsg += `\n${lossLines.join("\n")}`;
                                 await message.channel.send(lossMsg);
                             }
                             else {
-                                // Dead heat — no stat change, fresh opponent (the
-                                // attached event re-rolls with the race, like a skip)
+                                // Dead heat — no win/loss counted, fresh opponent (the
+                                // attached event re-rolls with the race, like a skip).
+                                // Still a race: it advances the day's bookkeeping and
+                                // the showcase used-cars ring like a loss does.
+                                let usedCars = Array.isArray(stats.usedCars) ? stats.usedCars.slice() : [];
+                                if (!usedCars.includes(hand.carID)) {
+                                    usedCars.push(hand.carID);
+                                    if (usedCars.length > USED_CARS_MAX) usedCars = usedCars.slice(-USED_CARS_MAX);
+                                }
+                                stats.usedCars = usedCars;
+
                                 const next = generateMatchup(stats.weeklyWins);
                                 const drawPending = [];
                                 const settled = settleNextEvent({
@@ -1054,18 +1082,15 @@ module.exports = {
                                     usedSkipsToday: dayRolled ? 0 : stats.dailySkips,
                                     today, unclaimedRewards: drawPending
                                 });
-                                const setPayload = {
-                                    "raceWeekStats.opponent": next.opponent,
-                                    "raceWeekStats.trackID": next.trackID,
-                                    "raceWeekStats.reqs": next.reqs,
-                                    "raceWeekStats.activeEvent": settled.active
-                                };
-                                for (const [key, value] of Object.entries(settled.set)) setPayload[`raceWeekStats.${key}`] = value;
-                                const drawUpdate = { "$set": setPayload };
-                                if (drawPending.length > 0) drawUpdate["$push"] = { unclaimedRewards: { "$each": drawPending } };
-                                await profileModel.updateOne({ userID: message.author.id }, drawUpdate);
-                                if (settled.lines.length > 0) {
-                                    await message.channel.send(settled.lines.join("\n")).catch(() => {});
+                                const drawUpdate = buildOutcomeUpdate({
+                                    next, settled, today, usedCars,
+                                    dailySkips: dayRolled ? 0 : undefined,
+                                    push: { unclaimedRewards: drawPending }
+                                });
+                                const drawLines = settled.lines.slice();
+                                if (!await writeOutcome(message.author.id, weekGuard(), drawUpdate)) drawLines.push(ROLLED_OVER_LINE);
+                                if (drawLines.length > 0) {
+                                    await message.channel.send(drawLines.join("\n")).catch(() => {});
                                 }
                             }
 
@@ -1116,26 +1141,21 @@ module.exports = {
                                 usedSkipsToday: newDailySkips,
                                 today, unclaimedRewards: skipPending
                             });
-                            const skipSet = {
-                                "raceWeekStats.opponent": next.opponent,
-                                "raceWeekStats.trackID": next.trackID,
-                                "raceWeekStats.reqs": next.reqs,
-                                "raceWeekStats.dailySkips": newDailySkips,
-                                "raceWeekStats.lastPlayedDay": today,
-                                "raceWeekStats.activeEvent": settled.active
-                            };
-                            for (const [key, value] of Object.entries(settled.set)) skipSet[`raceWeekStats.${key}`] = value;
-                            const update = { "$set": skipSet };
-                            if (!isFree) update["$inc"] = { money: -ECON.skipFee };
-                            if (skipPending.length > 0) update["$push"] = { unclaimedRewards: { "$each": skipPending } };
-                            await profileModel.updateOne({ userID: message.author.id }, update);
+                            const skipUpdate = buildOutcomeUpdate({
+                                next, settled, today,
+                                dailySkips: newDailySkips,
+                                inc: isFree ? {} : { money: -ECON.skipFee },
+                                push: { unclaimedRewards: skipPending }
+                            });
+                            const skipWeekLive = await writeOutcome(message.author.id, weekGuard(), skipUpdate);
 
-                            const finalDailySkips = skipSet["raceWeekStats.dailySkips"];
+                            const finalDailySkips = skipUpdate.update["$set"]["raceWeekStats.dailySkips"];
                             const freeLeft = Math.max(0, ECON.skipFreePerDay - finalDailySkips);
                             let skipDesc = isFree
                                 ? `New opponent rolled — your wins are untouched. ${freeLeft} free skip${freeLeft === 1 ? "" : "s"} left today.`
                                 : `New opponent rolled — your wins are untouched. Skip fee of ${bot.emojis.cache.get(moneyEmojiID)}${ECON.skipFee.toLocaleString("en")} charged.`;
                             if (settled.lines.length > 0) skipDesc += `\n${settled.lines.join("\n")}`;
+                            if (!skipWeekLive) skipDesc += `\n${ROLLED_OVER_LINE}`;
                             const skipMessage = new InfoMessage({
                                 channel: message.channel,
                                 title: "Successfully skipped race.",
@@ -1161,6 +1181,9 @@ module.exports = {
                                 return;
                             }
                             await button.deferUpdate().catch(() => {});
+                            // Captured before a cursed-race swap reassigns `opponent`
+                            // — the guard pins what is stored, not what is about to be.
+                            const acceptGuard = weekGuard();
                             activeEvent.accepted = true;
                             if (activeEvent.id === "convoy") activeEvent.trackID = trackID;
                             const acceptSet = { "raceWeekStats.activeEvent": activeEvent };
@@ -1189,7 +1212,20 @@ module.exports = {
                                     buildPlayerSide();   // underdog-driver state may flip vs the new CR
                                 }
                             }
-                            await profileModel.updateOne({ userID: message.author.id }, { "$set": acceptSet });
+                            const acceptRes = await profileModel.updateOne({ userID: message.author.id, ...acceptGuard }, { "$set": acceptSet });
+                            const acceptMatched = acceptRes.matchedCount !== undefined ? acceptRes.matchedCount : acceptRes.n;
+                            if (!acceptMatched) {
+                                // The Monday reset landed mid-intermission: last week's
+                                // offer (and a cursed rival) must not seed the new week.
+                                // Nothing was written; accepting costs nothing, so void
+                                // the offer and end the session — the next cd-rr rolls
+                                // a fresh matchup for the new week.
+                                raceCompleted = true;
+                                collector.stop();
+                                intermission.editEmbed({ title: "⏰ Race Week rolled over — this offer is void. Run cd-rr to start your new week." });
+                                await intermission.sendMessage({ currentMessage: reactionMessage, preserve: true });
+                                return;
+                            }
                             await rerenderIntermission();
                             processed = false;
                             return;
@@ -1201,6 +1237,21 @@ module.exports = {
                     }
                 } catch (err) {
                     console.error("Randomrace interaction error:", err);
+                    // The dispatcher's catch never sees this (the collector
+                    // swallows it), so report it here — a throw mid-settlement
+                    // is a money-path failure. Capped well under Discord's
+                    // 4,096-char embed limit so the report itself can't fail.
+                    // Late-click interaction errors (token expired / already
+                    // acked under gateway lag) are timing, not bugs — console only.
+                    if (!INTERACTION_TIMING_CODES.has(err && err.code)) {
+                        const stack = `cd-rr "${button.customId}" button, user ${message.author.id}\n${(err && err.stack) || err}`;
+                        new BotError({
+                            guild: message.guild,
+                            channel: message.channel,
+                            message,
+                            stack: stack.slice(0, 3800)
+                        }).sendReport().catch(() => {});
+                    }
                     // A thrown error in a non-terminal branch must not dead-lock
                     // the remaining buttons until timeout.
                     if (!raceCompleted) processed = false;
@@ -1232,4 +1283,4 @@ module.exports = {
 
 // Exposed for the matchup test harness. The command loader only reads
 // `command.name`, so extra keys on the export are inert at runtime.
-module.exports._internals = { generateMatchup, rollMatchup, generateReqs, pickOpponent };
+module.exports._internals = { generateMatchup, rollMatchup, generateReqs, pickOpponent, buildOutcomeUpdate, writeOutcome };

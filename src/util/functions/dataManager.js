@@ -259,6 +259,81 @@ function validateDriver(driver, expectedID) {
 }
 
 // ============================================================================
+// DATA WARNINGS (cars/tracks/packs — WARN ONLY, never skip or correct a file)
+// ============================================================================
+
+// Stats every playable (non-BM) car needs as numbers. Type checks only — no
+// value ranges: some CRs are intentionally unusual (e.g. the Porsche campaign).
+const CAR_NUMERIC_FIELDS = ["cr", "topSpeed", "0to60", "handling", "weight", "mra", "ola"];
+// How many warning lines to print per category before summarising the rest.
+const WARNING_PRINT_LIMIT = 20;
+
+function isPlainObject(value) {
+    return !!value && typeof value === "object" && !Array.isArray(value);
+}
+
+function isBlankString(value) {
+    return typeof value !== "string" || value.trim() === "";
+}
+
+/**
+ * Field problems in a parsed car JSON. Startup only reports these; the car
+ * still loads exactly as written.
+ * @returns {string[]} Problems found (empty when the car looks fine)
+ */
+function carWarnings(car, expectedID) {
+    if (!isPlainObject(car)) return ["not a JSON object"];
+    const problems = [];
+    if (car.carID !== expectedID) problems.push(`carID "${car.carID}" does not match the filename`);
+    if (isBlankString(car.creator)) problems.push("creator is missing or empty");
+    if (isBlankString(car.racehud)) problems.push("racehud is missing or empty");
+    // BM variants (reference set) borrow their stats from the referenced car
+    if (car.reference === undefined) {
+        for (const field of CAR_NUMERIC_FIELDS) {
+            if (typeof car[field] !== "number" || !Number.isFinite(car[field])) {
+                problems.push(`${field} is not a number (${JSON.stringify(car[field])})`);
+            }
+        }
+        if (car.make === undefined || car.make === null || car.make === "") problems.push("make is missing");
+        if (isBlankString(car.model)) problems.push("model is missing or empty");
+    }
+    return problems;
+}
+
+function trackWarnings(track, expectedID) {
+    if (!isPlainObject(track)) return ["not a JSON object"];
+    const problems = [];
+    if (track.trackID !== undefined && track.trackID !== expectedID) problems.push(`trackID "${track.trackID}" does not match the filename`);
+    if (isBlankString(track.trackName)) problems.push("trackName is missing or empty");
+    if (!isPlainObject(track.specsDistr)) problems.push("specsDistr is missing");
+    else {
+        for (const [stat, weight] of Object.entries(track.specsDistr)) {
+            if (typeof weight !== "number" || !Number.isFinite(weight)) problems.push(`specsDistr.${stat} is not a number (${JSON.stringify(weight)})`);
+        }
+    }
+    return problems;
+}
+
+function packWarnings(pack) {
+    if (!isPlainObject(pack)) return ["not a JSON object"];
+    const problems = [];
+    if (isBlankString(pack.packName)) problems.push("packName is missing or empty");
+    if (!Array.isArray(pack.packSequence) || pack.packSequence.length === 0) problems.push("packSequence is missing or empty");
+    return problems;
+}
+
+/** Templates are only checked for being a JSON object; their own systems validate the rest. */
+function templateWarnings(template) {
+    return isPlainObject(template) ? [] : ["not a JSON object"];
+}
+
+/** Print a category's lines, capped so a schema-wide problem can't flood the boot log. */
+function printCapped(lines, print) {
+    lines.slice(0, WARNING_PRINT_LIMIT).forEach(line => print(line));
+    if (lines.length > WARNING_PRINT_LIMIT) print(`   ...and ${lines.length - WARNING_PRINT_LIMIT} more`);
+}
+
+// ============================================================================
 // INITIALIZATION
 // ============================================================================
 
@@ -354,30 +429,36 @@ function initialize(basePath = "./src") {
     }
 
     const stats = {
-        cars: { loaded: 0, failed: 0, errors: [] },
-        tracks: { loaded: 0, failed: 0, errors: [] },
-        packs: { loaded: 0, failed: 0, errors: [] },
-        offerTemplates: { loaded: 0, failed: 0, errors: [] },
-        pvpEventTemplates: { loaded: 0, failed: 0, errors: [] },
-        packBattleTemplates: { loaded: 0, failed: 0, errors: [] },
-        championshipTemplates: { loaded: 0, failed: 0, errors: [] },
-        autoEventTemplates: { loaded: 0, failed: 0, errors: [] },
+        cars: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        tracks: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        packs: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        offerTemplates: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        pvpEventTemplates: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        packBattleTemplates: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        championshipTemplates: { loaded: 0, failed: 0, errors: [], warnings: [] },
+        autoEventTemplates: { loaded: 0, failed: 0, errors: [], warnings: [] },
         drivers: { loaded: 0, failed: 0, errors: [] },
         vouchers: { loaded: 0, failed: 0, errors: [] }
     };
 
+    // File lists below are filled only with files that parsed (as drivers and
+    // vouchers already were), so a broken file is never offered by name, e.g.
+    // a broken track can't be rolled as a null track in Random Race.
+
     // Load Cars
     const carsPath = path.join(basePath, "cars");
-    carFiles = readdirSync(carsPath).filter(file => file.endsWith(".json"));
+    const carFileNames = readdirSync(carsPath).filter(file => file.endsWith(".json"));
     
-    for (const file of carFiles) {
+    for (const file of carFileNames) {
         try {
             const filePath = path.join(carsPath, file);
             const rawData = readFileSync(filePath, "utf8");
             const parsed = JSON.parse(rawData);
             const carID = file.slice(0, -5); // Remove .json
             cars.set(carID, parsed);
+            carFiles.push(file);
             stats.cars.loaded++;
+            for (const problem of carWarnings(parsed, carID)) stats.cars.warnings.push({ file, warning: problem });
         } catch (err) {
             stats.cars.failed++;
             stats.cars.errors.push({ file, error: err.message });
@@ -386,16 +467,18 @@ function initialize(basePath = "./src") {
 
     // Load Tracks
     const tracksPath = path.join(basePath, "tracks");
-    trackFiles = readdirSync(tracksPath).filter(file => file.endsWith(".json"));
+    const trackFileNames = readdirSync(tracksPath).filter(file => file.endsWith(".json"));
     
-    for (const file of trackFiles) {
+    for (const file of trackFileNames) {
         try {
             const filePath = path.join(tracksPath, file);
             const rawData = readFileSync(filePath, "utf8");
             const parsed = JSON.parse(rawData);
             const trackID = file.slice(0, -5);
             tracks.set(trackID, parsed);
+            trackFiles.push(file);
             stats.tracks.loaded++;
+            for (const problem of trackWarnings(parsed, trackID)) stats.tracks.warnings.push({ file, warning: problem });
         } catch (err) {
             stats.tracks.failed++;
             stats.tracks.errors.push({ file, error: err.message });
@@ -404,16 +487,18 @@ function initialize(basePath = "./src") {
 
     // Load Packs
     const packsPath = path.join(basePath, "packs");
-    packFiles = readdirSync(packsPath).filter(file => file.endsWith(".json"));
+    const packFileNames = readdirSync(packsPath).filter(file => file.endsWith(".json"));
     
-    for (const file of packFiles) {
+    for (const file of packFileNames) {
         try {
             const filePath = path.join(packsPath, file);
             const rawData = readFileSync(filePath, "utf8");
             const parsed = JSON.parse(rawData);
             const packID = file.slice(0, -5);
             packs.set(packID, parsed);
+            packFiles.push(file);
             stats.packs.loaded++;
+            for (const problem of packWarnings(parsed)) stats.packs.warnings.push({ file, warning: problem });
         } catch (err) {
             stats.packs.failed++;
             stats.packs.errors.push({ file, error: err.message });
@@ -423,15 +508,17 @@ function initialize(basePath = "./src") {
     // Load Offer Templates
     const offersPath = path.join(basePath, "offers");
     try {
-        offerTemplateFiles = readdirSync(offersPath).filter(file => file.endsWith(".json"));
-        for (const file of offerTemplateFiles) {
+        const offerFileNames = readdirSync(offersPath).filter(file => file.endsWith(".json"));
+        for (const file of offerFileNames) {
             try {
                 const filePath = path.join(offersPath, file);
                 const rawData = readFileSync(filePath, "utf8");
                 const parsed = JSON.parse(rawData);
                 const templateID = file.slice(0, -5);
                 offerTemplates.set(templateID, parsed);
+                offerTemplateFiles.push(file);
                 stats.offerTemplates.loaded++;
+                for (const problem of templateWarnings(parsed)) stats.offerTemplates.warnings.push({ file, warning: problem });
             } catch (err) {
                 stats.offerTemplates.failed++;
                 stats.offerTemplates.errors.push({ file, error: err.message });
@@ -445,15 +532,17 @@ function initialize(basePath = "./src") {
     // Load PvP Event Templates
     const pvpEventsPath = path.join(basePath, "pvpevents");
     try {
-        pvpEventTemplateFiles = readdirSync(pvpEventsPath).filter(file => file.endsWith(".json"));
-        for (const file of pvpEventTemplateFiles) {
+        const pvpEventFileNames = readdirSync(pvpEventsPath).filter(file => file.endsWith(".json"));
+        for (const file of pvpEventFileNames) {
             try {
                 const filePath = path.join(pvpEventsPath, file);
                 const rawData = readFileSync(filePath, "utf8");
                 const parsed = JSON.parse(rawData);
                 const templateID = file.slice(0, -5);
                 pvpEventTemplates.set(templateID, parsed);
+                pvpEventTemplateFiles.push(file);
                 stats.pvpEventTemplates.loaded++;
+                for (const problem of templateWarnings(parsed)) stats.pvpEventTemplates.warnings.push({ file, warning: problem });
             } catch (err) {
                 stats.pvpEventTemplates.failed++;
                 stats.pvpEventTemplates.errors.push({ file, error: err.message });
@@ -467,15 +556,17 @@ function initialize(basePath = "./src") {
     // Load Pack Battle Templates
     const packBattlesPath = path.join(basePath, "packbattles");
     try {
-        packBattleTemplateFiles = readdirSync(packBattlesPath).filter(file => file.endsWith(".json"));
-        for (const file of packBattleTemplateFiles) {
+        const packBattleFileNames = readdirSync(packBattlesPath).filter(file => file.endsWith(".json"));
+        for (const file of packBattleFileNames) {
             try {
                 const filePath = path.join(packBattlesPath, file);
                 const rawData = readFileSync(filePath, "utf8");
                 const parsed = JSON.parse(rawData);
                 const templateID = file.slice(0, -5);
                 packBattleTemplates.set(templateID, parsed);
+                packBattleTemplateFiles.push(file);
                 stats.packBattleTemplates.loaded++;
+                for (const problem of templateWarnings(parsed)) stats.packBattleTemplates.warnings.push({ file, warning: problem });
             } catch (err) {
                 stats.packBattleTemplates.failed++;
                 stats.packBattleTemplates.errors.push({ file, error: err.message });
@@ -490,16 +581,18 @@ function initialize(basePath = "./src") {
     // documentation/examples, not templates)
     const championshipsPath = path.join(basePath, "championships");
     try {
-        championshipTemplateFiles = readdirSync(championshipsPath)
+        const championshipFileNames = readdirSync(championshipsPath)
             .filter(file => file.endsWith(".json") && !file.startsWith("_"));
-        for (const file of championshipTemplateFiles) {
+        for (const file of championshipFileNames) {
             try {
                 const filePath = path.join(championshipsPath, file);
                 const rawData = readFileSync(filePath, "utf8");
                 const parsed = JSON.parse(rawData);
                 const templateID = file.slice(0, -5);
                 championshipTemplates.set(templateID, parsed);
+                championshipTemplateFiles.push(file);
                 stats.championshipTemplates.loaded++;
+                for (const problem of templateWarnings(parsed)) stats.championshipTemplates.warnings.push({ file, warning: problem });
             } catch (err) {
                 stats.championshipTemplates.failed++;
                 stats.championshipTemplates.errors.push({ file, error: err.message });
@@ -513,15 +606,17 @@ function initialize(basePath = "./src") {
     // Load Auto-Event Templates ("_"-prefixed files are documentation, not templates)
     const autoEventsPath = path.join(basePath, "autoevents");
     try {
-        autoEventTemplateFiles = readdirSync(autoEventsPath).filter(file => file.endsWith(".json") && !file.startsWith("_"));
-        for (const file of autoEventTemplateFiles) {
+        const autoEventFileNames = readdirSync(autoEventsPath).filter(file => file.endsWith(".json") && !file.startsWith("_"));
+        for (const file of autoEventFileNames) {
             try {
                 const filePath = path.join(autoEventsPath, file);
                 const rawData = readFileSync(filePath, "utf8");
                 const parsed = JSON.parse(rawData);
                 const templateID = file.slice(0, -5);
                 autoEventTemplates.set(templateID, parsed);
+                autoEventTemplateFiles.push(file);
                 stats.autoEventTemplates.loaded++;
+                for (const problem of templateWarnings(parsed)) stats.autoEventTemplates.warnings.push({ file, warning: problem });
             } catch (err) {
                 stats.autoEventTemplates.failed++;
                 stats.autoEventTemplates.errors.push({ file, error: err.message });
@@ -637,14 +732,31 @@ function initialize(basePath = "./src") {
         console.log(`   Vouchers: ${stats.vouchers.loaded} loaded, ${stats.vouchers.failed} failed`);
     }
 
-    if (stats.cars.failed > 0 || stats.tracks.failed > 0 || stats.packs.failed > 0 || stats.offerTemplates.failed > 0 || stats.pvpEventTemplates.failed > 0) {
+    // Every category's failures and warnings, by file. Drivers and vouchers
+    // already printed theirs as they loaded. A failed file is left out of its
+    // file list; a warned file still loads exactly as written (nothing here
+    // corrects data).
+    const reported = [
+        ["Car", stats.cars],
+        ["Track", stats.tracks],
+        ["Pack", stats.packs],
+        ["Offer Template", stats.offerTemplates],
+        ["PvP Event Template", stats.pvpEventTemplates],
+        ["Pack Battle Template", stats.packBattleTemplates],
+        ["Championship Template", stats.championshipTemplates],
+        ["Auto-Event Template", stats.autoEventTemplates]
+    ];
+    const failures = reported.flatMap(([label, s]) => s.errors.map(e => `   ${label}: ${e.file} - ${e.error}`));
+    if (failures.length > 0) {
         console.error("❌ Some files failed to load:");
-        stats.cars.errors.forEach(e => console.error(`   Car: ${e.file} - ${e.error}`));
-        stats.tracks.errors.forEach(e => console.error(`   Track: ${e.file} - ${e.error}`));
-        stats.packs.errors.forEach(e => console.error(`   Pack: ${e.file} - ${e.error}`));
-        stats.offerTemplates.errors.forEach(e => console.error(`   Offer Template: ${e.file} - ${e.error}`));
-        stats.pvpEventTemplates.errors.forEach(e => console.error(`   PvP Event Template: ${e.file} - ${e.error}`));
-        stats.packBattleTemplates.errors.forEach(e => console.error(`   Pack Battle Template: ${e.file} - ${e.error}`));
+        failures.forEach(line => console.error(line));
+    }
+    const warnings = reported.filter(([, s]) => s.warnings.length > 0);
+    if (warnings.length > 0) {
+        console.warn("⚠️ Data warnings (files still loaded as written):");
+        for (const [label, s] of warnings) {
+            printCapped(s.warnings.map(w => `   ${label}: ${w.file} - ${w.warning}`), line => console.warn(line));
+        }
     }
 
     return stats;
@@ -1112,17 +1224,27 @@ function getStats() {
  * Reload a specific car (useful if JSON file was updated)
  * @param {string} carID - Car ID to reload
  * @param {string} basePath - Base path to src folder
- * @returns {boolean} Success status
+ * @returns {boolean} Success status (false leaves the loaded copy untouched)
  */
 function reloadCar(carID, basePath = "./src") {
     try {
         let cleanID = carID;
         if (cleanID.endsWith(".json")) cleanID = cleanID.slice(0, -5);
-        
+
         const filePath = path.join(basePath, "cars", `${cleanID}.json`);
         const rawData = readFileSync(filePath, "utf8");
         const parsed = JSON.parse(rawData);
+        // A file that isn't this car must not replace the good copy in memory
+        if (!isPlainObject(parsed)) throw new Error("not a JSON object");
+        if (parsed.carID !== cleanID) throw new Error(`carID "${parsed.carID}" does not match the filename`);
+        for (const problem of carWarnings(parsed, cleanID)) {
+            console.warn(`⚠️ Car ${cleanID}.json reloaded with a warning: ${problem}`);
+        }
+
         cars.set(cleanID, parsed);
+        if (!carFiles.includes(`${cleanID}.json`)) carFiles.push(`${cleanID}.json`);
+        // Keep getRandomCar in step with the Map (it reads the cached array)
+        cachedCarArray = Array.from(cars.values());
         return true;
     } catch (err) {
         console.error(`Failed to reload car ${carID}: ${err.message}`);
@@ -1130,34 +1252,9 @@ function reloadCar(carID, basePath = "./src") {
     }
 }
 
-/**
- * Reload all data (useful after adding new cars/tracks/packs)
- * @param {string} basePath - Base path to src folder
- * @returns {Object} Statistics about loaded data
- */
-function reloadAll(basePath = "./src") {
-    // Clear existing data
-    cars.clear();
-    tracks.clear();
-    packs.clear();
-    offerTemplates.clear();
-    pvpEventTemplates.clear();
-    packBattleTemplates.clear();
-    drivers.clear();
-    carFiles = [];
-    trackFiles = [];
-    packFiles = [];
-    offerTemplateFiles = [];
-    pvpEventTemplateFiles = [];
-    packBattleTemplateFiles = [];
-    driverFiles = [];
-    cachedCarArray = [];
-    cachedTrackArray = [];
-    initialized = false;
-
-    // Reinitialize
-    return initialize(basePath);
-}
+// There is deliberately no reloadAll: restart is the reload path. A hot reload
+// would have to build new maps and swap them in, and rebuild everything derived
+// from them (cached arrays, file lists captured by commands, Pace Index).
 
 /**
  * Get a random car (useful for random race, daily rewards, etc.)
@@ -1274,7 +1371,6 @@ function searchCars(criteria = {}) {
 module.exports = {
     // Initialization
     initialize,
-    reloadAll,
     reloadCar,
 
     // Getters (replace require())

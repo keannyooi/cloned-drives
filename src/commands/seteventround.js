@@ -3,6 +3,7 @@
 const { ErrorMessage, SuccessMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const eventModel = require("../models/eventSchema.js");
 
@@ -23,7 +24,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -54,6 +55,7 @@ module.exports = {
                     round = Math.ceil(parseInt(round));
 
                     const set = {};
+                    const previousRound = event.playerProgress?.[user.id] ?? null;
                     if (round === 1) {
                         set[`playerProgress.${user.id}`] = event.playerProgress[user.id];
                         await eventModel.updateOne({ eventID: event.eventID }, {
@@ -66,6 +68,8 @@ module.exports = {
                             "$set": set
                         });
                     }
+
+                    auditLog(message, { command: "seteventround", target: user, details: { eventID: event.eventID, from: previousRound, to: round } });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

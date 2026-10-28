@@ -40,8 +40,8 @@
 
 const crypto = require("crypto");
 const profileModel = require("../../models/profileSchema.js");
-const { writeWithHeavy, HEAVY_FIELDS } = require("./profileCache.js");
-const { PIPELINE_OPTIONS } = require("./rewardPipelines.js");
+const { writeWithHeavy, invalidate, HEAVY_FIELDS } = require("./profileCache.js");
+const { PIPELINE_OPTIONS, addToSetStage } = require("./rewardPipelines.js");
 const { carSave } = require("../consts/consts.js");
 
 // A changed row with no usable upgrades object starts from every tune at 0 —
@@ -181,6 +181,12 @@ function decrementGuards(changes) {
  * @param {Object} [args.inc]     numeric deltas, e.g. { money: -500, trophies: 2 }
  * @param {Object} [args.set]     fields to overwrite (dotted paths ok), e.g. { hand, decks }
  * @param {Object} [args.push]    arrays to append to, e.g. { unclaimedRewards: [entry] }
+ * @param {Object} [args.addToSet] arrays to append to, skipping values already stored (what
+ *   `$addToSet: { $each }` does), e.g. { discoveredCars: newIDs }: sends just the new values,
+ *   not the whole list. For a cached heavy field pass its post-write value in `heavy` too.
+ * @param {Object} [args.heavy]   post-write values of heavy fields (profileCache.HEAVY_FIELDS)
+ *   this write changes other than through `set`, e.g. { discoveredCars } after an `addToSet`
+ *   append, so the profile cache follows the write instead of keeping the old list.
  * @param {Array}  [args.stages]  extra pipeline $set stages (rewardPipelines helpers)
  * @param {Object} [args.filter]  extra query conditions, e.g. { money: { $gte: cost } }
  * @param {Object} [args.expect]  fields that must still hold the value the caller READ, e.g.
@@ -192,7 +198,7 @@ function decrementGuards(changes) {
  * @returns {Promise<{ ok: boolean, stamp: number|null, doc?: Object }>} ok=false when a guard
  *   failed (the stored garage/balance/expected fields no longer match) — nothing was written.
  */
-async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}, stages: extra = [], filter = {}, expect = {}, returning = null, baseStamp }) {
+async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}, addToSet = {}, heavy: heavyAfter = {}, stages: extra = [], filter = {}, expect = {}, returning = null, baseStamp }) {
     const opID = crypto.randomUUID();
     const duplicateRows = hasDuplicateRows(before);
     let diff = duplicateRows ? null : diffGarage(before, after);
@@ -231,12 +237,22 @@ async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}
         if (values.length > 0) plainSet[field] = { "$concatArrays": [{ "$ifNull": [`$${field}`, []] }, { "$literal": values }] };
     }
     stages.push({ "$set": { ...incSet, ...plainSet } });
+    for (const [field, values] of Object.entries(addToSet)) {
+        const stage = addToSetStage(field, values || []);
+        if (stage) stages.push(stage);
+    }
     stages.push(...extra.filter(Boolean));
 
     const heavy = { garage: after };
     for (const field of Object.keys(set)) {
         if (HEAVY_FIELDS.includes(field)) heavy[field] = set[field];
     }
+    for (const [field, value] of Object.entries(heavyAfter)) {
+        if (HEAVY_FIELDS.includes(field) && value !== undefined) heavy[field] = value;
+    }
+    // A heavy field appended without its post-write value can't be vouched
+    // for (the cache would keep the old list), so its entry is dropped instead.
+    const unvouched = Object.keys(addToSet).some(field => HEAVY_FIELDS.includes(field) && heavy[field] === undefined);
 
     let stamp = baseStamp ?? null;
     let lastError = null;
@@ -249,12 +265,17 @@ async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}
                 })
                 : profileModel.updateOne(query, stages, PIPELINE_OPTIONS)), stamp);
             const matched = returning ? result !== null : result.matchedCount > 0;
+            if (matched && unvouched) {
+                invalidate(userID);
+                return { ok: true, stamp: null, ...(returning ? { doc: result } : {}) };
+            }
             if (matched) return { ok: true, stamp: newStamp, ...(returning ? { doc: result } : {}) };
             // Matched nothing: either a guard failed, or an earlier attempt
             // already landed (its opID is now stored) — tell them apart.
             if (attempt > 1) {
                 const stored = await profileModel.findOne({ userID }, { lastGarageOp: 1 }).lean();
                 if (stored && stored.lastGarageOp === opID) {
+                    if (unvouched) invalidate(userID);
                     const doc = returning ? await profileModel.findOne({ userID }, Object.fromEntries(returning.map(field => [field, 1]))).lean() : undefined;
                     return { ok: true, stamp: null, ...(returning ? { doc } : {}) };
                 }

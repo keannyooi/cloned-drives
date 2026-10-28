@@ -43,7 +43,7 @@ const IMAGE_TIMEOUT = 5 * 60 * 1000;
  *
  * index.js holds bot.execList for the entire duration of execute(), so a
  * creator running this can't use any other command until it finishes — and
- * the "1 command at a time" error promises it clears in 30 seconds. Without a
+ * index.js only clears a lock stuck for over 20 minutes. Without a
  * ceiling, the per-stage timeouts stack (and the override loop refreshes the
  * confirm timer on every click), so someone could hold their own lock
  * indefinitely. Every wait below is clamped to whatever is left of this.

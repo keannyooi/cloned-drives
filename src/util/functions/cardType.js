@@ -320,12 +320,25 @@ const typeTag = (car) => behavior(car).tag;
 function statsSource(car) {
     if (!car) return car;
     if (behavior(car).statsFromReference && car.reference) {
-        // lazy require: dataManager is the layer below this one, and some of its
-        // consumers load before it finishes initializing — avoids a require cycle
-        const { getCar } = require("./dataManager.js");
-        return getCar(car.reference) || car;
+        return referencedCar(car);
     }
     return car;
+}
+
+// Lazy require: dataManager is the layer below this one, and some of its
+// consumers load before it finishes initializing — avoids a require cycle.
+// The module is kept once it has loaded, because require() itself costs
+// ~0.1 ms a call (path resolution) — most of a cd-carlist sort over the
+// catalogue. getCar is read off the exports object each call, never copied.
+let dataManager = null;
+function referencedCar(car) {
+    let dm = dataManager;
+    if (!dm) {
+        dm = require("./dataManager.js");
+        // mid-cycle the exports are still empty — don't keep that
+        if (typeof dm.getCar === "function") dataManager = dm;
+    }
+    return dm.getCar(car.reference) || car;
 }
 
 // ─── Type-family helpers ─────────────────────────────────────────────────────
@@ -383,6 +396,28 @@ function parseModifier(raw) {
     return null;
 }
 
+// card object -> { useRef, hasMods }: the type-resolution half of
+// modifiedBase, which is all that depends on the card alone. Car objects are
+// never mutated in place — dataManager.reloadCar swaps in a NEW object, which
+// simply misses here. The referenced car is still looked up on every call, so
+// a reloaded base car is picked up at once, and the merged object is still
+// built fresh each time, so callers see exactly what they did before.
+const resolvedCards = new WeakMap();
+
+function resolveCard(card) {
+    let entry = resolvedCards.get(card);
+    if (!entry) {
+        const fromReference = behavior(card).statsFromReference;
+        entry = {
+            useRef: !!(fromReference && card.reference),
+            // modifiers are ignored on non-edition types
+            hasMods: !!(fromReference && (card.statModifiers || card.attributeOverrides || card.crModifier !== undefined)),
+        };
+        resolvedCards.set(card, entry);
+    }
+    return entry;
+}
+
 /**
  * The card's effective BASE car: the referenced car with this card's
  * statModifiers / attributeOverrides / crModifier applied. This is what
@@ -390,10 +425,21 @@ function parseModifier(raw) {
  */
 function modifiedBase(card) {
     if (!card) return card;
+    if (typeof card !== "object") return modifiedBaseUncached(card);
+    const { useRef, hasMods } = resolveCard(card);
+    const base = useRef ? referencedCar(card) : card;
+    return hasMods ? applyModifiers(card, base) : base;
+}
+
+// The original, unmemoized path — for anything that isn't an object.
+function modifiedBaseUncached(card) {
     const base = statsSource(card);
     if (!behavior(card).statsFromReference) return base;    // modifiers ignored on non-edition types
     if (!card.statModifiers && !card.attributeOverrides && card.crModifier === undefined) return base;
+    return applyModifiers(card, base);
+}
 
+function applyModifiers(card, base) {
     const merged = { ...base };
     for (const [key, raw] of Object.entries(card.statModifiers || {})) {
         const p = parseModifier(raw);

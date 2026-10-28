@@ -6,7 +6,8 @@ const { DateTime } = require("luxon");
 const { getCar, getPack, getDriver } = require("./dataManager.js");
 const carNameGen = require("./carNameGen.js");
 const { driverDisplayName } = require("./raceWeekEvents.js");
-const { toRewardEntries, rewardProblems } = require("./packBattleManager.js");
+const { toRewardEntries } = require("./rewardEntries.js");
+const { rewardProblems } = require("./packBattleManager.js");
 
 // Daily calendars (src/dailycalendar/calendars.json) — a bonus track on top of
 // cd-daily. A player's Nth successful daily inside a calendar's dates pays its

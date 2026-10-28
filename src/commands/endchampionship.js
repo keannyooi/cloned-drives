@@ -43,7 +43,17 @@ module.exports = {
 
             async function acceptedFunction(currentMessage) {
                 const endChampionship = require("../util/functions/endChampionship.js");
-                await endChampionship(championship);
+                const ended = await endChampionship(championship);
+                // false: the 3-minute tick (or another admin) ended it first.
+                if (ended === false) {
+                    const infoMessage = new InfoMessage({
+                        channel: message.channel,
+                        title: `The ${championship.name} championship had already ended.`,
+                        author: message.author
+                    });
+                    await infoMessage.sendMessage({ currentMessage });
+                    return infoMessage.removeButtons();
+                }
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully ended the ${championship.name} championship!`,

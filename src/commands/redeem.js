@@ -7,6 +7,7 @@ const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/con
 const { getCar, getPack, getDriver, getVoucher } = require("../util/functions/dataManager.js");
 const { driverDisplayName } = require("../util/functions/raceWeekEvents.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const makeRewardID = require("../util/functions/rewardID.js");
 const { trackMoneyEarned, trackTrophiesEarned, trackFuseTokensEarned, trackCodeRedeemed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
 const codeModel = require("../models/codeSchema.js");
@@ -85,32 +86,30 @@ module.exports = {
             return errorMessage.sendMessage();
         }
 
-        // All checks passed - apply rewards
-        const playerData = await profileModel.findOne({ userID: message.author.id }, { money: 1, trophies: 1, fuseTokens: 1 });
+        // All checks passed - build the rewards (nothing is written yet)
         const rewards = codeData.rewards;
         let rewardLog = "";
 
         // Money
         if (rewards.money) {
-            playerData.money += rewards.money;
             rewardLog += `${moneyEmoji}${rewards.money.toLocaleString("en")}\n`;
         }
 
         // Trophies
         if (rewards.trophies) {
-            playerData.trophies += rewards.trophies;
             rewardLog += `${trophyEmoji}${rewards.trophies.toLocaleString("en")}\n`;
         }
 
         // Fuse Tokens
         if (rewards.fuseTokens) {
-            playerData.fuseTokens += rewards.fuseTokens;
             rewardLog += `${fuseEmoji}${rewards.fuseTokens.toLocaleString("en")}\n`;
         }
 
         // Packs, cars and drivers route through unclaimedRewards so cd-rewards'
         // existing machinery does the heavy lifting — pack opening for packs;
-        // dupe→XP conversion, level-ups and ownership for drivers.
+        // dupe→XP conversion, level-ups and ownership for drivers. Every entry
+        // carries a rid (rewardID.js), kept AFTER the type key — cd-rewards
+        // reads the first key — so the claim removes exactly that entry.
         const pendingEntries = [];
         // Cars queue too — redeem no longer writes the garage at all. One
         // fewer garage read-modify-write in the codebase, and cd-rewards'
@@ -118,14 +117,14 @@ module.exports = {
         // cars materialize, exactly like every other car reward source.
         if (rewards.cars && rewards.cars.length > 0) {
             for (let car of rewards.cars) {
-                pendingEntries.push({ car: { carID: car.carID, upgrade: car.upgrade || "000" }, origin: `Code: ${codeName}` });
+                pendingEntries.push({ car: { carID: car.carID, upgrade: car.upgrade || "000" }, origin: `Code: ${codeName}`, rid: makeRewardID() });
                 let currentCar = getCar(car.carID);
                 rewardLog += `1x ${carNameGen({ currentCar, rarity: true, upgrade: car.upgrade })} *(claim via \`cd-rewards\`)*\n`;
             }
         }
         if (rewards.packs && rewards.packs.length > 0) {
             for (let packID of rewards.packs) {
-                pendingEntries.push({ pack: packID, origin: `Code: ${codeName}` });
+                pendingEntries.push({ pack: packID, origin: `Code: ${codeName}`, rid: makeRewardID() });
                 let currentPack = getPack(packID);
                 rewardLog += `1x ${currentPack["packName"]} *(claim via \`cd-rewards\`)*\n`;
             }
@@ -139,7 +138,7 @@ module.exports = {
                     console.log(`[codes] ${codeName}: unknown driver "${driverID}" skipped`);
                     continue;
                 }
-                pendingEntries.push({ driver: driverID, origin: `Code: ${codeName}` });
+                pendingEntries.push({ driver: driverID, origin: `Code: ${codeName}`, rid: makeRewardID() });
                 rewardLog += `Driver: **${driverDisplayName(codeDriver)}** *(claim via \`cd-rewards\`)*\n`;
             }
         }
@@ -153,12 +152,76 @@ module.exports = {
                     continue;
                 }
                 const amount = Number.isInteger(entry.amount) && entry.amount > 0 ? entry.amount : 1;
-                pendingEntries.push({ voucher: { voucherID: entry.voucherID, amount }, origin: `Code: ${codeName}` });
+                pendingEntries.push({ voucher: { voucherID: entry.voucherID, amount }, origin: `Code: ${codeName}`, rid: makeRewardID() });
                 rewardLog += `${amount}x ${codeVoucher.name} 🎟️ *(claim via \`cd-rewards\`)*\n`;
             }
         }
 
-        // Save. Currencies go through $inc and queued rewards through $push —
+        // Record the redemption FIRST, in one guarded write: the filter re-checks
+        // "active", "not redeemed by this player" and "uses left" on the server,
+        // so a burst of redeems right after a code drop can never push a capped
+        // code past its limit (the checks above ran on a copy that may already
+        // be stale). redeemedBy.length is the use counter. Matching nothing means
+        // someone took the last use (or the code changed) — pay nothing.
+        let claim;
+        try {
+            claim = await codeModel.updateOne({
+                code: codeName,
+                isActive: true,
+                redeemedBy: { "$ne": message.author.id },
+                "$expr": {
+                    "$or": [
+                        { "$lte": [{ "$ifNull": ["$maxRedemptions", 0] }, 0] },
+                        { "$lt": [{ "$size": { "$ifNull": ["$redeemedBy", []] } }, "$maxRedemptions"] }
+                    ]
+                }
+            }, {
+                "$push": { redeemedBy: message.author.id }
+            });
+        }
+        catch (error) {
+            // An errored write may still have landed: the use may be recorded
+            // with nothing paid. Log it so staff can check redeemedBy and re-grant.
+            console.error(`[codes] CLAIM UNCERTAIN (${error.message}): ${message.author.id} redeeming ${codeName}. The use may or may not have been recorded; nothing was paid.`);
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, this code could not be redeemed.",
+                desc: `Something went wrong while redeeming \`${codeName}\`. Please try again. If it then says you have already redeemed it, contact staff so they can grant the rewards.`,
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+        if (claim.matchedCount === 0) {
+            // Re-read once to say why.
+            const latest = await codeModel.findOne({ code: codeName }, { isActive: 1, redeemedBy: 1, maxRedemptions: 1 }).lean();
+            const redeemedBy = latest && Array.isArray(latest.redeemedBy) ? latest.redeemedBy : [];
+            let title = "Error, this code could not be redeemed.", desc = "Please try again.";
+            if (!latest) {
+                title = "Error, this code doesn't exist.";
+                desc = "Double-check the code and try again. Codes are not case-sensitive.";
+            }
+            else if (redeemedBy.includes(message.author.id)) {
+                title = "Error, you have already redeemed this code.";
+                desc = "Each code can only be redeemed once per player.";
+            }
+            else if (!latest.isActive) {
+                title = "Error, this code is not currently active.";
+                desc = "This code may have been deactivated or hasn't been activated yet.";
+            }
+            else if (latest.maxRedemptions > 0 && redeemedBy.length >= latest.maxRedemptions) {
+                title = "Error, this code has reached its maximum number of redemptions.";
+                desc = "Unfortunately, this code is no longer available.";
+            }
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title,
+                desc,
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+
+        // Pay. Currencies go through $inc and queued rewards through $push —
         // redeem performs NO absolute writes at all. Cars/packs/drivers land in
         // unclaimedRewards and materialize through cd-rewards' claim path, so a
         // background grant arriving mid-redeem can never be clobbered.
@@ -170,18 +233,33 @@ module.exports = {
             }
         };
         if (pendingEntries.length > 0) update["$push"] = { unclaimedRewards: { "$each": pendingEntries } };
-        await profileModel.updateOne({ userID: message.author.id }, update);
+        // The use is already recorded, so a failure here leaves the player
+        // UNPAID, never paid twice. Not retried and not rolled back (a write
+        // that errored may still have landed) — log what support needs to re-grant.
+        let paid = false;
+        try {
+            const result = await profileModel.updateOne({ userID: message.author.id }, update);
+            paid = result.matchedCount > 0;
+            if (!paid) console.error(`[codes] PAYMENT FAILED (no profile matched): ${message.author.id} redeemed ${codeName} but was NOT paid. Update: ${JSON.stringify(update)}`);
+        }
+        catch (error) {
+            console.error(`[codes] PAYMENT FAILED (${error.message}): ${message.author.id} redeemed ${codeName} and may NOT have been paid. Update: ${JSON.stringify(update)}`);
+        }
+        if (!paid) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, your code rewards could not be delivered.",
+                desc: `Your redemption of \`${codeName}\` was recorded, but adding the rewards failed. Please contact staff so they can re-grant them.`,
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
 
         // Track redemption
         trackCodeRedeemed();
         if (rewards.money) trackMoneyEarned(rewards.money);
         if (rewards.trophies) trackTrophiesEarned(rewards.trophies);
         if (rewards.fuseTokens) trackFuseTokensEarned(rewards.fuseTokens);
-
-        // L-07: Use $addToSet instead of replacing entire array (avoids sending full array over wire)
-        await codeModel.updateOne({ code: codeName }, {
-            $addToSet: { redeemedBy: message.author.id }
-        });
 
         const successMessage = new SuccessMessage({
             channel: message.channel,

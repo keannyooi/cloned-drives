@@ -32,9 +32,8 @@
  *   unclaimedRewards convention (ONE reward key per entry, reward key first).
  */
 
-const { readFileSync } = require("fs");
-const path = require("path");
-const { getCar, getPack, getPackFiles, getDriver, getAllDrivers } = require("./dataManager.js");
+const { getCar, getPack, getDriver, getAllDrivers } = require("./dataManager.js");
+const { readPrizePools, rollPackByTier } = require("./raceWeekPrizePools.js");
 const { EVENTS, BOSS_SLAYER_DRIVER_ID, RECRUIT } = require("../consts/raceWeek.js");
 const makeRewardID = require("./rewardID.js");
 const rwEmoji = require("./rwEmoji.js");
@@ -490,33 +489,14 @@ function eventConfig(id) {
     return EVENTS.table.find(entry => entry.id === id) || null;
 }
 
-// daily.js getPackTier, replicated (matches raceWeekManager's copy).
-function getPackTier(pack) {
-    if (pack.tier) return pack.tier;
-    const name = (pack.packName || "").toLowerCase();
-    if (name.includes("elite")) return "elite";
-    if (name.includes("booster")) return "booster";
-    return "standard";
-}
-
-function rollPackByTier(tier) {
-    const candidates = getPackFiles().filter(file => {
-        const pack = getPack(file);
-        return pack && getPackTier(pack) === tier;
-    });
-    if (candidates.length === 0) return null;
-    return candidates[Math.floor(Math.random() * candidates.length)].slice(0, -5);
-}
-
 // Curated pack pools for the pack-granting in-race events — prizePools.json
 // "events" section, read FRESH at every resolution so edits apply live with
 // no restart. Empty/missing pool = automatic tier-based roll (which spans
-// EVERY pack of that inferred tier, event/limited packs included).
-const PRIZE_POOLS_PATH = path.join(__dirname, "../../raceweek/prizePools.json");
-
+// EVERY pack of that inferred tier, event/limited packs included). The tier
+// roll returns null when no pack has that tier; both callers skip the pack.
 function rollEventPack(eventID, tier) {
     try {
-        const parsed = JSON.parse(readFileSync(PRIZE_POOLS_PATH, "utf8"));
+        const parsed = readPrizePools();
         const pool = parsed && parsed.events && parsed.events[eventID] && parsed.events[eventID].packPool;
         if (Array.isArray(pool) && pool.length > 0) {
             const valid = pool.filter(id => {

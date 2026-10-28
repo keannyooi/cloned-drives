@@ -83,7 +83,7 @@ module.exports = {
                 title: `Stats of ${user.tag}`,
                 desc: `Account created on <t:${Math.round(user.createdAt.getTime() / 1000)}>`,
                 author: message.author,
-                thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: user.displayAvatarURL({ extension: "png" }),
                 fields: [
                     { name: "Money Balance", value: `${moneyEmoji}${playerData.money.toLocaleString("en")}`, inline: true },
                     { name: "Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens.toLocaleString("en")}`, inline: true },

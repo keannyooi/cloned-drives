@@ -190,7 +190,7 @@ module.exports = {
                     title: `${user.username}'s Paddock (${roster.length} Driver${roster.length === 1 ? "" : "s"})`,
                     desc: "⚡ = active driver. Use `cd-setdriver` to change drivers and `cd-driverinfo` for bonus details.",
                     author: message.author,
-                    thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                    thumbnail: user.displayAvatarURL({ extension: "png" }),
                     fields: [
                         { name: "Driver", value: driverList, inline: true },
                         { name: "Level", value: levelList, inline: true }

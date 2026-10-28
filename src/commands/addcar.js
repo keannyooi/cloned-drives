@@ -9,6 +9,7 @@ const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 const { saveGarage } = require("../util/functions/garageWrite.js");
+const auditLog = require("../util/functions/auditLog.js");
 
 module.exports = {
     name: "addcar",
@@ -28,7 +29,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -90,13 +91,14 @@ module.exports = {
                         });
                         return errorMessage.sendMessage({ currentMessage });
                     }
+                    auditLog(message, { command: "addcar", target: user, details: { carID: carId.slice(0, 6), amount } });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully added ${amount} ${currentName} to ${user.username}'s garage!`,
                         desc: `Use \`cd-garage\` to check if the car has arrived at ${user.username}'s garage. If it hasn't, try running this command again.`,
                         author: message.author,
-                        thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                        thumbnail: user.displayAvatarURL({ extension: "png" }),
                         image: currentCar["racehud"]
                     });
                     return successMessage.sendMessage({ currentMessage });

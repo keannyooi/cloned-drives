@@ -148,17 +148,24 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
     const isNewPlayer = !entries[message.author.id];
     const entry = entries[message.author.id] || newEntry(pvpEvent);
     const ticketsBeforeRegen = entry.tickets;
+    const lastUseBeforeRegen = entry.lastTicketUse ?? null;
     applyRegen(entry, pvpEvent.ticketCap, pvpEvent.ticketRegenMinutes);
 
     // 1b. If the player already has a DB entry AND regen actually added tickets,
     // persist the regen update right now. Otherwise the atomic spend filter later
     // will check against the stale (pre-regen) DB state and fail with "ticket spend failed".
     // We only update the two regen-relevant fields so we don't clobber concurrent updates
-    // (e.g. admin ticket grants) to score / matchesPlayed / etc.
+    // to score / matchesPlayed / etc. — and only while they still hold what we read,
+    // so an admin grant that landed during the event picker isn't reverted (if it
+    // did, the write just misses and the spend below runs against the DB's count).
     if (!isNewPlayer && entry.tickets !== ticketsBeforeRegen) {
         try {
             await pvpEventModel.updateOne(
-                { pvpEventID: pvpEvent.pvpEventID },
+                {
+                    pvpEventID: pvpEvent.pvpEventID,
+                    [`entries.${message.author.id}.tickets`]: ticketsBeforeRegen,
+                    [`entries.${message.author.id}.lastTicketUse`]: lastUseBeforeRegen
+                },
                 { "$set": {
                     [`entries.${message.author.id}.tickets`]: entry.tickets,
                     [`entries.${message.author.id}.lastTicketUse`]: entry.lastTicketUse
@@ -232,18 +239,28 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
     // Why now (before deck pick): the player has decided to play. The penalty deters
     // "cancel-to-scout" loops; we want the cost applied immediately, not at the final confirm.
     const cancelPenalty = typeof pvpEvent.cancelPenalty === "number" ? pvpEvent.cancelPenalty : 25;
+    const hadRegenAnchor = !!entry.lastTicketUse;
     spendTicket(entry);
-    const postSpendEntry = JSON.parse(JSON.stringify(entry));
-    const spendResult = await pvpEventModel.findOneAndUpdate(
-        {
-            pvpEventID: pvpEvent.pvpEventID,
-            $or: [
-                { [`entries.${message.author.id}`]: { $exists: false } },
-                { [`entries.${message.author.id}.tickets`]: { $gte: 1 } }
-            ]
-        },
-        { "$set": { [`entries.${message.author.id}`]: postSpendEntry } }
-    );
+    // A new player's entry doesn't exist yet, so writing it whole is safe (the
+    // $exists filter refuses if one appeared meanwhile). An existing entry is
+    // only ever $inc'd — a whole-entry $set from this read would wipe score
+    // changes other players' matches made in between. isActive: once the event
+    // has been claimed for ending, refuse instead of writing into a document
+    // that is about to be archived and deleted.
+    const entryPath = `entries.${message.author.id}`;
+    const spendFilter = { pvpEventID: pvpEvent.pvpEventID, isActive: true };
+    let spendUpdate;
+    if (isNewPlayer) {
+        spendFilter[entryPath] = { $exists: false };
+        spendUpdate = { "$set": { [entryPath]: JSON.parse(JSON.stringify(entry)) } };
+    }
+    else {
+        spendFilter[`${entryPath}.tickets`] = { $gte: 1 };
+        spendUpdate = { "$inc": { [`${entryPath}.tickets`]: -1 } };
+        // Spending from cap starts the regen clock
+        if (!hadRegenAnchor) spendUpdate["$set"] = { [`${entryPath}.lastTicketUse`]: entry.lastTicketUse };
+    }
+    const spendResult = await pvpEventModel.findOneAndUpdate(spendFilter, spendUpdate);
     if (!spendResult) {
         return new ErrorMessage({
             channel: message.channel,
@@ -251,6 +268,21 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
             desc: "Something raced ahead of you on this event. Try again in a moment.",
             author: message.author
         }).sendMessage({ currentMessage });
+    }
+
+    // A picker whose message failed to post (sendMessage returned null) is a
+    // system fault, not a cancel: refund the ticket, no penalty, and throw so
+    // the dispatcher reports the real cause.
+    async function refundAfterSendFailure(result) {
+        try {
+            await pvpEventModel.updateOne(
+                { pvpEventID: pvpEvent.pvpEventID },
+                { "$inc": { [`entries.${message.author.id}.tickets`]: 1 } }
+            );
+        } catch (refundErr) {
+            console.error(`[PvP] Ticket refund failed for ${message.author.id}: ${refundErr.message}`);
+        }
+        throw new Error(`pvpplay: could not post the ${result.step}, ticket refunded (${result.error?.message ?? "unknown send failure"})`, { cause: result.error });
     }
 
     // Helper to apply the LB penalty + show the cancel message when a UI step bails out.
@@ -292,6 +324,7 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
     }
     else {
         const pickResult = await pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, currentMessage, cancelPenalty);
+        if (pickResult?.sendFailed) return refundAfterSendFailure(pickResult);
         if (!pickResult || pickResult.cancelled) {
             if (pickResult?.reason) await applyCancelPenalty(pickResult.reason, pickResult.currentMessage || currentMessage);
             return;
@@ -324,6 +357,7 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
 
     // 9. Show opponent picker (160s)
     const opponentResult = await pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents, deckCurrentMessage, cancelPenalty);
+    if (opponentResult?.sendFailed) return refundAfterSendFailure(opponentResult);
     if (!opponentResult || opponentResult.cancelled) {
         if (opponentResult?.reason) await applyCancelPenalty(opponentResult.reason, opponentResult.currentMessage || deckCurrentMessage);
         return;
@@ -333,6 +367,7 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
 
     // 10. Match review (5 min — most complex step, slot swaps to plan around opponent)
     const reviewResult = await reviewAndConfirm(message, playerDeck, pvpEvent.name, deckCrCap, chosenOpponent, trackset, tracksetIdx, pvpEvent.tracksets.length, cancelPenalty);
+    if (reviewResult?.sendFailed) return refundAfterSendFailure(reviewResult);
     if (!reviewResult || reviewResult.cancelled) {
         if (reviewResult?.reason) await applyCancelPenalty(reviewResult.reason, reviewResult.currentMessage || cm2);
         return;
@@ -391,10 +426,10 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
 
     const delta = computeLeaderboardDelta(matchScore, playerRank, opponentRank);
 
-    // 12. Update player entry
-    if (matchScore > 0) entry.wins += 1;
-    else if (matchScore < 0) entry.losses += 1;
-    else entry.draws += 1;
+    // 12. Update player entry (in memory — only used for the summary if the
+    // write below can't hand back the stored entry)
+    const resultField = matchScore > 0 ? "wins" : (matchScore < 0 ? "losses" : "draws");
+    entry[resultField] = (entry[resultField] || 0) + 1;
 
     if (matchScore !== 0) {
         entry.score = (entry.score || 0) + delta;
@@ -403,33 +438,53 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
     entry.matchesPlayed = (entry.matchesPlayed || 0) + 1;
     entry.lastMatchEnd = DateTime.now().toISO();
     entry.snapshots = entry.snapshots || {};
-    entry.snapshots[String(tracksetIdx)] = {
+    const snapshot = {
         deck: finalDeck.map(d => d.carID),
         upgrades: finalDeck.map(d => d.upgrade),
         updatedAt: DateTime.now().toISO()
     };
+    entry.snapshots[String(tracksetIdx)] = snapshot;
 
-    // 13. Persist player entry (full $set) + opponent score (atomic $inc).
-    // Using $inc on the opponent's score field is critical: if the opponent is
-    // simultaneously playing their own match, $set on their full entry would
-    // clobber their concurrent updates. $inc only touches the score field atomically.
-    const setUpdates = { [`entries.${message.author.id}`]: entry };
-    const incUpdates = {};
+    // 13. Persist the result field-by-field: $inc for the counters and score,
+    // dotted $set for the snapshot of THIS trackset and the cooldown anchor.
+    // `entry` was read before the multi-minute deck/opponent/review flow, and
+    // other players' matches $inc this player's score meanwhile (and admins
+    // grant tickets) — a whole-entry $set from that read would wipe them.
+    // The opponent's score is an atomic $inc for the same reason.
+    const playerPath = `entries.${message.author.id}`;
+    const incUpdates = {
+        [`${playerPath}.${resultField}`]: 1,
+        [`${playerPath}.matchesPlayed`]: 1
+    };
+    if (matchScore !== 0) incUpdates[`${playerPath}.score`] = delta;
     if (chosenOpponent.type === "real" && matchScore !== 0 && pvpEvent.entries[chosenOpponent.userID]) {
         incUpdates[`entries.${chosenOpponent.userID}.score`] = -delta;
     }
-
-    const updateOps = { "$set": setUpdates };
-    if (Object.keys(incUpdates).length > 0) updateOps["$inc"] = incUpdates;
+    const setUpdates = {
+        [`${playerPath}.lastMatchEnd`]: entry.lastMatchEnd,
+        [`${playerPath}.snapshots.${tracksetIdx}`]: snapshot
+    };
 
     // 14. The write returns the fresh entries (only those: rank is all we need),
     // so the player's NEW rank includes concurrent matches without a second
     // round trip. Rank is the most asked-for post-match info ("did I climb?").
+    // isActive: a match still in flight when the event was claimed for ending
+    // finds nothing here (the final standings are already fixed) — say so
+    // rather than show a result that was never counted.
     const freshEvent = await pvpEventModel.findOneAndUpdate(
-        { pvpEventID: pvpEvent.pvpEventID },
-        updateOps,
+        { pvpEventID: pvpEvent.pvpEventID, isActive: true, [playerPath]: { $exists: true } },
+        { "$inc": incUpdates, "$set": setUpdates },
         { returnDocument: "after" }
     ).select({ entries: 1 }).lean();
+
+    if (!freshEvent) {
+        return new ErrorMessage({
+            channel: message.channel,
+            title: "Match not counted — the event has ended.",
+            desc: `**${pvpEvent.name}** ended while your match was in progress, so this result missed the final standings.`,
+            author: message.author
+        }).sendMessage();
+    }
 
     let rankInfo = { newRank: null, oldRank: playerRank, totalParticipants: leaderboardBefore.length };
     try {
@@ -446,8 +501,10 @@ async function runMatchFlow(message, pvpEvent, playerData, savedDeckName, curren
         console.error(`[PvP] Failed to compute post-match leaderboard: ${err.message}`);
     }
 
-    // 15. Show match summary
-    await showMatchSummary(message, pvpEvent, chosenOpponent, raceResults, matchScore, delta, entry, rankInfo);
+    // 15. Show match summary — from the stored entry, so score/tickets include
+    // anything that landed during the match
+    const storedEntry = freshEvent.entries?.[message.author.id] || entry;
+    await showMatchSummary(message, pvpEvent, chosenOpponent, raceResults, matchScore, delta, storedEntry, rankInfo);
 }
 
 // ============================================================================
@@ -588,6 +645,8 @@ async function pickOpponent(message, pvpEvent, trackset, tracksetIdx, opponents,
         buttons: [new ActionRowBuilder().addComponents(menu), new ActionRowBuilder().addComponents(cancelBtn)],
         preserve: true
     });
+    // sendMessage returns null on a failed send; execute refunds the ticket.
+    if (!sentMessage) return { sendFailed: true, step: "opponent picker", error: teaser.lastError };
 
     return new Promise((resolve) => {
         const collector = sentMessage.message.createMessageComponentCollector({
@@ -844,6 +903,8 @@ async function pickQualifyingDeck(message, playerData, pvpEvent, deckCrCap, curr
         buttons: [new ActionRowBuilder().addComponents(menu), new ActionRowBuilder().addComponents(cancelBtn)],
         preserve: true
     });
+    // sendMessage returns null on a failed send; execute refunds the ticket.
+    if (!sentMessage) return { sendFailed: true, step: "deck picker", error: teaser.lastError };
 
     return new Promise((resolve) => {
         const collector = sentMessage.message.createMessageComponentCollector({
@@ -939,6 +1000,8 @@ async function reviewAndConfirm(message, deck, eventName, deckCrCap, chosenOppon
         buttons: [new ActionRowBuilder().addComponents(swapMenu), new ActionRowBuilder().addComponents(confirmBtn, cancelBtn)],
         preserve: true
     });
+    // sendMessage returns null on a failed send; execute refunds the ticket.
+    if (!sent) return { sendFailed: true, step: "match review", error: reviewEmbed.lastError };
 
     return new Promise((resolve) => {
         const collector = sent.message.createMessageComponentCollector({

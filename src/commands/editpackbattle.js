@@ -9,6 +9,7 @@ const { rarityOf, driverDisplayName } = require("../util/functions/raceWeekEvent
 const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const { MILESTONE_STATS, rewardProblems } = require("../util/functions/packBattleManager.js");
+const { snapshotEdit, saveEdit } = require("../util/functions/editSave.js");
 const packBattleModel = require("../models/packBattleSchema.js");
 
 // Stats a milestone can watch: the built-ins plus this battle's own counters.
@@ -105,6 +106,9 @@ module.exports = {
         }
 
         async function editBattle(battle, currentMessage) {
+            // Only the fields this edit changes get written — playerStats keeps
+            // whatever players opened while the command ran
+            const loaded = snapshotEdit(battle);
             let successMessage;
             const criteria = args[1].toLowerCase();
 
@@ -681,7 +685,7 @@ module.exports = {
                 }
             }
 
-            await packBattleModel.updateOne({ battleID: battle.battleID }, battle);
+            await saveEdit(packBattleModel, battle, loaded);
             return successMessage.sendMessage({ currentMessage });
         }
     }

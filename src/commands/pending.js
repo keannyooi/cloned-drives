@@ -29,7 +29,10 @@ module.exports = {
     aliases: ["pendingcars", "upcoming"],
     usage: ["", "[search]", "[search] [page]"],
     args: 0,
-    category: "Admin",
+    // Not "Admin": index.js gates that category to the admin role alone, which
+    // would lock out the event makers and testers ALLOWED_ROLES lets in. The
+    // check at the top of execute() is the only gate (same as cd-submit).
+    category: "Miscellaneous",
     description: "Lists cars staged for a future update, and what each is still waiting on. Staff only.",
     async execute(message, args) {
         const allowed = await Promise.all(ALLOWED_ROLES.map(role => hasRole(message, role)));

@@ -3,6 +3,37 @@
 const { findBestMatch } = require("string-similarity");
 const { bugReportsChannelID } = require("../consts/consts.js");
 const bot = require("../../config/config.js");
+const { AsyncLocalStorage } = require("async_hooks");
+const { AttachmentBuilder } = require("discord.js");
+
+// ── Per-user command lock ────────────────────────────────────────────────────
+// bot.execList[userID] holds the lock object of the command that player is
+// running (index.js processCommand), and execute() runs inside this context
+// with that same object as its store. A non-preserve send releases the lock
+// only when it comes from the command that owns it — its own execute() chain
+// (awaits, .then, timers it set). Dispatcher replies (cooldown, 404, ...) and
+// collector callbacks fired after execute() returned carry no matching store,
+// so they can no longer free some other command's lock mid-claim.
+const commandLockContext = new AsyncLocalStorage();
+
+function runWithCommandLock(lock, fn) {
+    return commandLockContext.run(lock, fn);
+}
+
+function releaseOwnCommandLock(userID) {
+    const lock = commandLockContext.getStore();
+    if (lock && bot.execList[userID] === lock) delete bot.execList[userID];
+}
+
+// A flow that holds the lock on purpose for an open-ended time (a cd-hilo game
+// runs round after round) calls this from its execute() chain and calls the
+// returned function on every player action, so index.js's stale-lock takeover
+// only ever hits a command that has really stopped. Touching a lock that has
+// since been released or taken over changes nothing.
+function keepCommandLockAlive() {
+    const lock = commandLockContext.getStore();
+    return () => { if (lock) lock.startedAt = Date.now(); };
+}
 
 /**
  * Base message class for embeds
@@ -19,7 +50,7 @@ class BotMessage {
             color: null,
             author: {
                 name: args.author.tag,
-                iconURL: args.author.displayAvatarURL({ format: "png", dynamic: true })
+                iconURL: args.author.displayAvatarURL({ extension: "png" })
             },
             fields: Array.isArray(args.fields) ? args.fields : [],
             footer: {
@@ -39,6 +70,10 @@ class BotMessage {
         }
 
         this.message = null;
+        // The error behind the last failed sendMessage (null after a good one),
+        // so a caller that can't go on without the message can report the real
+        // cause instead of dying on `null.message`.
+        this.lastError = null;
     }
 
     /**
@@ -62,7 +97,7 @@ class BotMessage {
         }
 
         if (!args.preserve) {
-            bot.deleteID(this.authorID);
+            releaseOwnCommandLock(this.authorID);
         }
 
         try {
@@ -70,8 +105,10 @@ class BotMessage {
                 ? await currentMessage.edit(payload)
                 : await this.channel.send(payload);
 
+            this.lastError = null;
             return this;
         } catch (error) {
+            this.lastError = error;
             console.error("BotMessage.sendMessage failed:", {
                 error: error?.message ?? error,
                 code: error?.code,
@@ -85,6 +122,7 @@ class BotMessage {
             if (currentMessage) {
                 try {
                     this.message = await this.channel.send(payload);
+                    this.lastError = null;
                     return this;
                 } catch (sendError) {
                     console.error("BotMessage.sendMessage fallback send failed:", { error: sendError?.message ?? sendError, code: sendError?.code });
@@ -195,6 +233,10 @@ class InfoMessage extends BotMessage {
 /**
  * BOT ERROR REPORTER
  */
+// Stack characters kept in the report embed: the code fence adds 8 more,
+// which keeps the description under Discord's 4096 limit.
+const REPORT_STACK_LIMIT = 4000;
+
 class BotError {
     constructor(args) {
         this.stack = args.stack;
@@ -216,13 +258,22 @@ class BotError {
                 ? `guild ${this.guild.name} in #${this.channel.name}`
                 : "a DM channel";
 
+            // A long error message (a Discord form-body dump, a big mongoose
+            // validation error) used to get the whole report rejected. Trim it
+            // and attach the full text instead.
+            const stack = String(this.stack ?? "No stack trace.");
+            const truncated = stack.length > REPORT_STACK_LIMIT;
+            let shownStack = truncated ? stack.slice(0, REPORT_STACK_LIMIT) : stack;
+            // Don't end on half an emoji: Discord rejects a lone surrogate.
+            if (truncated && /[\uD800-\uDBFF]$/.test(shownStack)) shownStack = shownStack.slice(0, -1);
+
             const reportEmbed = {
                 color: 0xfc0303,
                 title: `Error report from ${this.unknownSource ? "an unknown source" : source}`,
-                description: `\`\`\`\n${this.stack}\n\`\`\``,
+                description: `\`\`\`\n${shownStack}\n\`\`\``,
                 author: {
                     name: bot.user.tag,
-                    iconURL: bot.user.displayAvatarURL({ format: "png", dynamic: true })
+                    iconURL: bot.user.displayAvatarURL({ extension: "png" })
                 },
                 url: this.link,
                 footer: {
@@ -231,10 +282,25 @@ class BotError {
                 timestamp: new Date().toISOString()
             };
 
-            return await bugReportsChannel.send({
+            const report = {
                 content: this.unknownSource ? "<@!209038568138604546>" : null,
                 embeds: [reportEmbed]
-            });
+            };
+            if (!truncated) return await bugReportsChannel.send(report);
+
+            reportEmbed.footer.text = "Automatically generated error report. Trace trimmed, full text attached.";
+            try {
+                return await bugReportsChannel.send({
+                    ...report,
+                    files: [new AttachmentBuilder(Buffer.from(stack, "utf8"), { name: "stack.txt" })]
+                });
+            } catch (attachError) {
+                // No Attach Files permission, or the upload failed: the trimmed
+                // report still beats losing it to the console.
+                console.error("BotError.sendReport attachment failed, sending trimmed report:", attachError?.message ?? attachError);
+                reportEmbed.footer.text = "Automatically generated error report. Trace trimmed.";
+                return await bugReportsChannel.send(report);
+            }
         } catch (error) {
             console.error("BotError.sendReport failed:", error);
             return null;
@@ -246,5 +312,8 @@ module.exports = {
     SuccessMessage,
     InfoMessage,
     ErrorMessage,
-    BotError
+    BotError,
+    runWithCommandLock,
+    releaseOwnCommandLock,
+    keepCommandLockAlive
 };

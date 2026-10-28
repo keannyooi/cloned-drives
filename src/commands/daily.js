@@ -5,6 +5,7 @@ const { DateTime, Interval } = require("luxon");
 const { getCarFiles, getPackFiles, getCar, getPack } = require("../util/functions/dataManager.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, trophyEmojiID, fuseEmojiID, patronRoleID } = require("../util/consts/consts.js");
+const { dailyMoneyReward, getPackCategories, getPackTier } = require("../util/consts/economy.js");
 const { inDailyGiftPool } = require("../util/functions/cardType.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
@@ -170,10 +171,7 @@ module.exports = {
                 image = currentCar["racehud"];
             }
 
-            let moneyReward = 7500 + ((streak - 1) * 4000);
-            if (guildMember.roles.cache.has(patronRoleID)) {
-                moneyReward *= 1.5;
-            }
+            const moneyReward = dailyMoneyReward(streak, guildMember.roles.cache.has(patronRoleID));
             money += moneyReward;
             trackMoneyEarned(moneyReward);
 
@@ -199,10 +197,17 @@ module.exports = {
             const calendarEntries = calendarStep && Array.isArray(calendarStep.entries) ? calendarStep.entries : [];
             if (grantedCars.length > 0) {
                 // Car day: saveGarage sends only the granted rows (merged by
-                // carID on the server), not the whole garage. discoveredCars
-                // goes whole via `set` so the profile cache follows it.
-                if (discoveredInitialised || discoveredCars.length !== discoveredBefore) {
+                // carID on the server), not the whole garage. Discoveries send
+                // only the new carIDs (server-side append); `heavy` hands the
+                // profile cache the full list. A list just initialised from
+                // the garage still goes whole via `set`.
+                let addToSet = {}, heavy = {};
+                if (discoveredInitialised) {
                     dailySet.discoveredCars = discoveredCars;
+                }
+                else if (discoveredCars.length !== discoveredBefore) {
+                    addToSet = { discoveredCars: discoveredCars.slice(discoveredBefore) };
+                    heavy = { discoveredCars };
                 }
                 // No filter and no decrements, so there is no guard to fail
                 // (the old wholesale write never checked its result either).
@@ -212,6 +217,8 @@ module.exports = {
                     after: garage,
                     inc: { money: moneyReward },
                     set: dailySet,
+                    addToSet,
+                    heavy,
                     push: { unclaimedRewards: calendarEntries },
                     baseStamp: playerData.cacheStamp
                 });
@@ -294,22 +301,8 @@ module.exports = {
 };
 
 // === Pack selection helpers ===
-
-function getPackCategories(pack) {
-    if (pack.categories) return pack.categories;
-    const cats = [];
-    if (pack.price) cats.push("normal");
-    cats.push("daily", "event", "limited", "reward", "calendar");
-    return cats;
-}
-
-function getPackTier(pack) {
-    if (pack.tier) return pack.tier;
-    const name = (pack.packName || "").toLowerCase();
-    if (name.includes("elite")) return "elite";
-    if (name.includes("booster")) return "booster";
-    return "standard";
-}
+// getPackCategories / getPackTier live in consts/economy.js (shared with
+// Race Week prizes and the simulator).
 
 /**
  * Weighted random selection from a list of pack file identifiers.

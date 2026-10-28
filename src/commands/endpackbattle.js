@@ -1,15 +1,14 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime } = require("../util/consts/consts.js");
 const { getPack } = require("../util/functions/dataManager.js");
-const { distributePlacementRewards, computeDenseRanking } = require("../util/functions/packBattleManager.js");
+const { endPackBattle, computeDenseRanking } = require("../util/functions/packBattleManager.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const profileModel = require("../models/profileSchema.js");
 const packBattleModel = require("../models/packBattleSchema.js");
-const packBattleResultModel = require("../models/packBattleResultSchema.js");
 
 module.exports = {
     name: "endpackbattle",
@@ -49,12 +48,25 @@ module.exports = {
             async function acceptedFunction(currentMessage) {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
 
-                // Distribute placement rewards (takes final snapshot internally)
-                const { battle: freshBattle, finalSnapshot, distributedRewards, failedRewards } = await distributePlacementRewards(battle);
+                // Claim, pay placements (final snapshot taken inside), archive
+                // and delete: one shared path with the timed auto-end. Null
+                // means the timer (or another confirm) already ended it and
+                // paid, so nothing more is paid, archived or announced here.
+                const ended = await endPackBattle(battle, message.author.id);
+                if (!ended) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: `Error, the ${battle.name} pack battle has already ended.`,
+                        desc: "Its placement rewards are paid by whichever end got there first (the timer or another confirm). Nothing more was paid.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage({ currentMessage });
+                }
+                const { battle: freshBattle, failedRewards } = ended;
 
-                // Use freshBattle stats for results (has latest data)
+                // Use freshBattle stats for results (the battle as it was claimed)
                 const freshEntries = Object.entries((freshBattle || battle).playerStats || {});
-                let resultsDesc = `**${battle.name}** has ended! ${participants} player(s) participated.\n\n`;
+                let resultsDesc = `**${battle.name}** has ended! ${freshEntries.length} player(s) participated.\n\n`;
 
                 if (freshEntries.length > 0) {
                     // Packs Opened top 3
@@ -93,36 +105,18 @@ module.exports = {
                     }
                 }
 
-                // Save results to database before deleting the battle
-                try {
-                    await packBattleResultModel.create({
-                        battleID: battle.battleID,
-                        battleName: battle.name,
-                        packID: battle.packID,
-                        endedAt: new Date(),
-                        endedBy: message.author.id,
-                        participants,
-                        playerStats: (freshBattle || battle).playerStats || {},
-                        finalSnapshot: finalSnapshot || null,
-                        placementRewards: battle.placementRewards || [],
-                        distributedRewards: distributedRewards || [],
-                        failedRewards: failedRewards || [],
-                        milestones: battle.milestones || []
-                    });
-                } catch (err) {
-                    console.error(`Failed to save pack battle results: ${err.message}`);
-                }
-
-                // Delete the battle document
-                await packBattleModel.deleteOne({ battleID: battle.battleID });
-
                 let successDesc = "Placement rewards have been distributed to qualifying players' unclaimed rewards.";
                 if (failedRewards && failedRewards.length > 0) {
                     successDesc += `\n\n⚠️ **${failedRewards.length} reward(s) failed to distribute:**\n`;
-                    for (const fail of failedRewards) {
+                    // Capped so a mass failure (database outage) can't overflow
+                    // the embed; the archive's failedRewards has the full list.
+                    for (const fail of failedRewards.slice(0, 15)) {
                         const member = bot.homeGuild.members.cache.get(fail.userID);
                         const name = member ? member.user.tag : fail.userID;
-                        successDesc += `- \`${name}\` (Rank #${fail.rank}, ${fail.leaderboard}): ${fail.reason}\n`;
+                        successDesc += `- \`${name}\` (Rank #${fail.rank}, ${fail.leaderboard}): ${String(fail.reason).slice(0, 120)}\n`;
+                    }
+                    if (failedRewards.length > 15) {
+                        successDesc += `…and ${failedRewards.length - 15} more (full list in the battle's packbattleresults archive).\n`;
                     }
                 }
 

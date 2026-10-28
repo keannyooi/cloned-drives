@@ -9,10 +9,11 @@ const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const confirm = require("../util/functions/confirm.js");
 const calcTotal = require("../util/functions/calcTotal.js");
-const updateHands = require("../util/functions/updateHands.js");
+const { removeIfNoneLeft } = require("../util/functions/updateHands.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 const { getProfile } = require("../util/functions/profileCache.js");
+const auditLog = require("../util/functions/auditLog.js");
 
 module.exports = {
     name: "removecar",
@@ -36,7 +37,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -113,7 +114,7 @@ module.exports = {
                         title: `Are you sure you want to remove ${amount} of ${user.username}'s ${currentName} from their garage?`,
                         desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                         author: message.author,
-                        thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                        thumbnail: user.displayAvatarURL({ extension: "png" }),
                         image: car["racehud"]
                     });
                     await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
@@ -133,8 +134,9 @@ module.exports = {
                             return errorMessage.sendMessage({ currentMessage });
                         }
 
-                        updateHands(freshData, freshCar.carID, upgrade, "remove");
                         freshCar.upgrades[upgrade] -= amount;
+                        // Hand/deck slots clear only if no copy at this tune is left.
+                        removeIfNoneLeft(freshData, freshCar, upgrade);
                         if (calcTotal(freshCar) === 0) {
                             freshData.garage.splice(freshData.garage.indexOf(freshCar), 1);
                         }
@@ -143,13 +145,14 @@ module.exports = {
                             hand: freshData.hand,
                             decks: freshData.decks
                         });
+                        auditLog(message, { command: "removecar", target: user, details: { carID: currentCar.carID, upgrade, amount } });
 
                         const successMessage = new SuccessMessage({
                             channel: message.channel,
                             title: `Successfully removed ${amount} of ${user.username}'s ${currentName}!`,
                             desc: `Use \`cd-garage\` to check if the car has been removed from ${user.username}'s garage. If it hasn't, try running this command again.`,
                             author: message.author,
-                            thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                            thumbnail: user.displayAvatarURL({ extension: "png" }),
                             image: car["racehud"]
                         });
                         await successMessage.sendMessage({ currentMessage });

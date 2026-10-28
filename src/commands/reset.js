@@ -6,6 +6,7 @@ const searchUser = require("../util/functions/searchUser.js");
 const confirm = require("../util/functions/confirm.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
+const auditLog = require("../util/functions/auditLog.js");
 
 module.exports = {
     name: "reset",
@@ -24,7 +25,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -73,30 +74,47 @@ module.exports = {
                 title,
                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                 author: message.author,
-                thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: user.displayAvatarURL({ extension: "png" }),
             });
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
+                // Balances log the value they replaced. garage/all are
+                // irreversible, so the wiped data is snapshotted into the audit
+                // log first, and the wipe is aborted if that copy didn't land.
+                let before;
+                const snapshotFailed = () => new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, could not save a backup of the data, reset aborted.",
+                    desc: "Nothing was changed. Please try again.",
+                    author: message.author,
+                }).sendMessage({ currentMessage });
                 switch (reset) {
                     case "money":
-                        await profileModel.updateOne({ userID: user.id }, { money: 0 });
+                        before = await profileModel.findOneAndUpdate({ userID: user.id }, { money: 0 }, { projection: { money: 1 } });
+                        auditLog(message, { command: "reset", target: user, details: { reset, money: before?.money } });
                         title = `Successfully reset ${user.username}'s money balance!`;
                         break;
                     case "fusetokens":
-                        await profileModel.updateOne({ userID: user.id }, { fuseTokens: 0 });
+                        before = await profileModel.findOneAndUpdate({ userID: user.id }, { fuseTokens: 0 }, { projection: { fuseTokens: 1 } });
+                        auditLog(message, { command: "reset", target: user, details: { reset, fuseTokens: before?.fuseTokens } });
                         title = `Successfully reset ${user.username}'s fuse token balance!`;
                         break;
                     case "trophies":
-                        await profileModel.updateOne({ userID: user.id }, { trophies: 0 });
+                        before = await profileModel.findOneAndUpdate({ userID: user.id }, { trophies: 0 }, { projection: { trophies: 1 } });
+                        auditLog(message, { command: "reset", target: user, details: { reset, trophies: before?.trophies } });
                         title = `Successfully reset ${user.username}'s trophy count!`;
                         break;
                     case "garage":
                         console.log(starterGarage);
+                        before = await profileModel.findOne({ userID: user.id }, { garage: 1 }).lean();
+                        if (!await auditLog(message, { command: "reset", target: user, details: { reset, garageRows: before?.garage?.length ?? 0, snapshot: before } })) return snapshotFailed();
                         await profileModel.updateOne({ userID: user.id }, { garage: starterGarage });
                         title = `Successfully reset ${user.username}'s garage!`;
                         break;
                     case "all":
+                        before = await profileModel.findOne({ userID: user.id }).lean();
+                        if (!await auditLog(message, { command: "reset", target: user, details: { reset, garageRows: before?.garage?.length ?? 0, snapshot: before } })) return snapshotFailed();
                         await profileModel.deleteOne({ userID: user.id });
                         await profileModel.create({ userID: user.id });
                         title = `Successfully reset ${user.username}'s data!`;
@@ -109,7 +127,7 @@ module.exports = {
                     channel: message.channel,
                     title,
                     author: message.author,
-                    thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
+                    thumbnail: user.displayAvatarURL({ extension: "png" }),
                 });
                 return successMessage.sendMessage({ currentMessage });
             }

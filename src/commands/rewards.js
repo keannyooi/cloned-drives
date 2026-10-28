@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const { getCar, getPack, getDriver, getVoucher } = require("../util/functions/dataManager.js");
 const { DUPE_DRIVER_MONEY } = require("../util/consts/raceWeek.js");
@@ -43,8 +43,8 @@ module.exports = {
         // Garage writes are targeted (rewardPipelines.js: only the new cars go
         // over the wire, merged server side so a carID can never gain a second
         // row). They assume one row per carID — if a legacy duplicate turns up,
-        // addCars heals it in memory and this claim writes the whole garage
-        // back instead, so the heal lands.
+        // the claim heals it first (below), before any reveal, so no wholesale
+        // garage write is ever built from a copy that is minutes old.
         const garageIsClean = new Set(playerData.garage.map(c => c && c.carID)).size === playerData.garage.length;
         let vouchersChanged = false;
         // The cacheStamp our copy matches; each write passes it on so the cache
@@ -60,8 +60,35 @@ module.exports = {
             // $push-ed DURING the interactive claim window are untouched, and a
             // failed/deferred entry is "requeued" simply by NOT being pulled.
             // Concurrent double-claims are prevented by the per-user command
-            // lock (bot.execList).
+            // lock (bot.execList); as a second line of defence, each stamped
+            // pack's write only lands while its rid is still unclaimed.
             const batch = playerData.unclaimedRewards;
+            if (!garageIsClean) {
+                // Duplicate rows: write the healed garage (addCars merges
+                // duplicates even with nothing to add) back whole NOW, guarded
+                // by the stamp like saveGarage's wholesale path — refused if
+                // anything wrote since our read. From here on every garage
+                // write is a server-side merge, so a second claim racing this
+                // one can never overwrite the other's pack cars.
+                const healedGarage = addCars(structuredClone(playerData.garage), []);
+                const healFilter = cacheStamp !== null
+                    ? { userID: message.author.id, cacheStamp }
+                    : { userID: message.author.id };
+                const heal = await writeWithHeavy(message.author.id, { garage: healedGarage }, () =>
+                    profileModel.updateOne(healFilter, { "$set": { garage: healedGarage } }), cacheStamp);
+                if (heal.result.matchedCount === 0) {
+                    // Nothing claimed yet, so stopping here is free.
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, your profile changed while your rewards were being claimed.",
+                        desc: "Nothing was claimed. Please run the command again.",
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage();
+                }
+                playerData.garage = healedGarage;
+                cacheStamp = heal.stamp;
+            }
             // Crash insurance: log the batch so support can re-grant if the
             // process dies mid-claim.
             console.log(`[rewards] claiming batch for ${message.author.id}: ${JSON.stringify(batch)}`);
@@ -147,7 +174,7 @@ module.exports = {
                         // Merged into a COPY, adopted only once the write lands: a
                         // failed write must leave the in-memory garage equal to
                         // the stored one, or a later write would vouch phantom
-                        // cars into the cache (or $set them, on the heal path).
+                        // cars into the cache.
                         const nextGarage = addCars(structuredClone(playerData.garage), addedCars);
                         // INCREMENTAL PERSIST (pack-loss fix): the reveal just
                         // happened on screen, so this pack's cars + its consumed
@@ -155,35 +182,41 @@ module.exports = {
                         // A throw later in the batch can no longer void it.
                         // Targeted: only this pack's cars travel, merged server
                         // side (rewardPipelines.js); the cache is told the result.
-                        // Rid-less legacy entries and duplicate-healing claims
-                        // keep the wholesale $set (safe — the per-user command
-                        // lock holds, and pulling the exact entry leaves
-                        // concurrent $push grants alone).
+                        // Never a wholesale garage $set: a run racing this one
+                        // would overwrite the other's pack cars with its own
+                        // stale copy. Rid-less legacy entries are pulled by
+                        // exact match (as $pullAll did).
+                        // A stamped entry is matched by its rid too: if it is
+                        // no longer in unclaimedRewards (claimed by another run
+                        // meanwhile) nothing is written, so a pack can never
+                        // land twice.
+                        const packFilter = reward.rid
+                            ? { userID: message.author.id, "unclaimedRewards.rid": reward.rid }
+                            : { userID: message.author.id };
+                        let packWrite;
                         try {
-                            if (garageIsClean && reward.rid) {
-                                const stages = [
-                                    garageMergeStage(addedCars),
-                                    discoveredStage(addedCars.map(car => car.carID), discoveredNeedsSave ? discoveredCars : null),
-                                    pullRewardsStage([reward.rid])
-                                ].filter(Boolean);
-                                ({ stamp: cacheStamp } = await writeWithHeavy(message.author.id, { garage: nextGarage, discoveredCars }, () =>
-                                    profileModel.updateOne({ userID: message.author.id }, stages, PIPELINE_OPTIONS), cacheStamp));
-                            }
-                            else {
-                                // A wholesale $set is an ordinary write-through; the
-                                // empty voucher only carries the stamp chain along.
-                                ({ stamp: cacheStamp } = await writeWithHeavy(message.author.id, {}, () => profileModel.updateOne(
-                                    { userID: message.author.id },
-                                    reward.rid
-                                        ? { "$set": { garage: nextGarage, discoveredCars }, "$pull": { unclaimedRewards: { rid: reward.rid } } }
-                                        : { "$set": { garage: nextGarage, discoveredCars }, "$pullAll": { unclaimedRewards: [reward] } }
-                                ), cacheStamp));
-                            }
+                            const stages = [
+                                garageMergeStage(addedCars),
+                                discoveredStage(addedCars.map(car => car.carID), discoveredNeedsSave ? discoveredCars : null),
+                                reward.rid ? pullRewardsStage([reward.rid]) : pullRewardsStage([], [reward])
+                            ].filter(Boolean);
+                            packWrite = await writeWithHeavy(message.author.id, { garage: nextGarage, discoveredCars }, () =>
+                                profileModel.updateOne(packFilter, stages, PIPELINE_OPTIONS), cacheStamp);
                         }
                         catch (writeError) {
                             discoveredCars = discoveredBefore;
                             throw writeError;
                         }
+                        if (packWrite.result && packWrite.result.matchedCount === 0) {
+                            // Already claimed elsewhere: no cars were added, and
+                            // nothing was written, so the stamp chain is unchanged.
+                            console.log(`[rewards] pack ${reward.rid} for ${message.author.id} was already claimed, no cars added`);
+                            discoveredCars = discoveredBefore;
+                            consume = false;
+                            line = `**${currentPack["packName"]}** from **${origin}** was already claimed — no cars added\n`;
+                            break;
+                        }
+                        cacheStamp = packWrite.stamp;
                         playerData.garage = nextGarage;
                         discoveredNeedsSave = false;
                         consume = false; // already pulled above
@@ -332,6 +365,9 @@ module.exports = {
                         consumedNumeric.push({ key: rewardKey, amount: reward[rewardKey], origin: reward.origin });
                     }
                     else {
+                        // Tripwire: every writer should stamp a rid (rewardID.js);
+                        // a rid-less entry falls back to the exact-match path.
+                        if (!reward.rid) console.log(`[rewards] rid-less ${rewardKey} entry from ${origin}: its writer skips rewardID.js`);
                         consumedOther.push(reward);
                     }
                 }
@@ -378,14 +414,9 @@ module.exports = {
                     if (!discoveredCars.includes(car.carID)) discoveredCars.push(car.carID);
                 }
             }
-            if (!garageIsClean) {
-                // Duplicate rows: heal them (addCars merges duplicates even with
-                // nothing to add) and write the healed garage back whole.
-                playerData.garage = addCars(playerData.garage, []);
-                stages.push({ "$set": { garage: { "$literal": playerData.garage }, discoveredCars: { "$literal": discoveredCars } } });
-                Object.assign(heavyWritten, { garage: playerData.garage, discoveredCars });
-            }
-            else if (grantedCars.length > 0 || discoveredNeedsSave) {
+            // (A duplicate-row garage was healed before the batch, so this is
+            // always a targeted merge.)
+            if (grantedCars.length > 0 || discoveredNeedsSave) {
                 const merge = garageMergeStage(grantedCars);
                 if (merge) stages.push(merge);
                 const discovered = discoveredStage(grantedCars.map(car => car.carID), discoveredNeedsSave ? discoveredCars : null);

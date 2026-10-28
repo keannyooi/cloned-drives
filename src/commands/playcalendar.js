@@ -15,38 +15,8 @@ const race = require("../util/functions/race.js");
 const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const profileModel = require("../models/profileSchema.js");
-const makeRewardID = require("../util/functions/rewardID.js");
+const { persistRewards } = require("../util/functions/rewardEntries.js");
 const calendarModel = require("../models/calendarSchema.js");
-
-/**
- * Atomically persist reward entries to unclaimedRewards: money/fuseTokens/
- * trophies aggregate into the matching same-origin entry via the elemMatch
- * positional $inc (falling back to a fresh entry), everything else is $pushed
- * with $each. Never $sets the whole array, so concurrent grants (e.g. Race
- * Week threshold prizes) can't be clobbered.
- */
-async function persistRewards(userID, aggregates, entries) {
-    // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
-    const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
-    // Not one pipeline write: profileCache drops the player's cached garage on
-    // any pipeline update. Sequential, not Promise.all: the cache records the
-    // stamp of the last post-hook to fire, and concurrent writes can return in
-    // a different order than the server applied them, leaving a stale stamp.
-    for (const { key, value, origin } of aggregates) {
-        const res = await profileModel.updateOne(
-            { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
-            { "$inc": { [`unclaimedRewards.$.${key}`]: value } }
-        );
-        const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
-        if (!modified) pushes.push({ [key]: value, origin });
-    }
-    if (pushes.length > 0) {
-        await profileModel.updateOne(
-            { userID },
-            { "$push": { unclaimedRewards: { "$each": pushes } } }
-        );
-    }
-}
 
 module.exports = {
     name: "playcalendar",
@@ -128,6 +98,11 @@ module.exports = {
                 }
             }
             
+            // An Event Maker playing an inactive calendar (not started yet, or
+            // ended) is a test play: no rewards and no progress written. Makers
+            // can already play any day, so they test one with a day number.
+            const isTestPlay = !calendar.isActive;
+
             // Get current day and player progress
             const currentDay = getCurrentDay(calendar);
             const progress = (calendar.playerProgress ?? {})[message.author.id] || {
@@ -249,7 +224,7 @@ module.exports = {
             const intermission = new InfoMessage({
                 channel: message.channel,
                 title: `📅 ${calendar.name} - Day ${dayToPlay}`,
-                desc: `Track: ${track?.trackName || "Unknown"}\nRequirements: \`${reqDisplay(dayData.reqs)}\`\n\nReward: ${listRewards(dayData.rewards) || "None"}`,
+                desc: `Track: ${track?.trackName || "Unknown"}\nRequirements: \`${reqDisplay(dayData.reqs)}\`\n\nReward: ${listRewards(dayData.rewards) || "None"}${isTestPlay ? `\n🧪 **Test play** — this calendar isn't active, so no rewards and no progress. Pick a day with \`cd-playcalendar ${calendar.name} <day>\`.` : ""}`,
                 author: message.author,
                 thumbnail: track?.map,
                 fields: [
@@ -274,7 +249,10 @@ module.exports = {
                 currentMessage.removeButtons();
                 const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
                 
-                if (result > 0) {
+                if (result > 0 && isTestPlay) {
+                    message.channel.send(`**[TEST] Day ${dayToPlay} beaten! No rewards were granted and no progress was saved.**`);
+                }
+                else if (result > 0) {
                     // Victory!
                     const now = DateTime.now();
                     const today = now.toFormat("yyyy-MM-dd");

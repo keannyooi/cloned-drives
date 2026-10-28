@@ -7,7 +7,7 @@ const { getCar } = require("../util/functions/dataManager.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const calcTotal = require("../util/functions/calcTotal.js");
-const updateHands = require("../util/functions/updateHands.js");
+const { removeIfNoneLeft } = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const confirm = require("../util/functions/confirm.js");
 const { costFromStock, getSellPrice } = require("../util/functions/upgradePrice.js");
@@ -175,8 +175,9 @@ module.exports = {
                         }).sendMessage({ currentMessage });
                         if (!ownedCar || (ownedCar.upgrades[upgrade] || 0) < amount) return changedError();
 
-                        updateHands(playerData, ownedCar.carID, upgrade, "remove");
                         ownedCar.upgrades[upgrade] -= amount;
+                        // Hand/deck slots clear only if no copy at this tune is left.
+                        removeIfNoneLeft(playerData, ownedCar, upgrade);
                         // The helper only drops the row if its stored counts really reach zero.
                         if (calcTotal(ownedCar) === 0) {
                             playerData.garage.splice(playerData.garage.indexOf(ownedCar), 1);
@@ -552,9 +553,7 @@ async function bulkSellDupes(message, playerData, args) {
                     if (sellCount <= 0) continue;
                     garageCar.upgrades["000"] = stockOwned - sellCount;
                     // Only clear hand/decks for tune 000 if it fully zeroed out.
-                    if ((garageCar.upgrades["000"] || 0) === 0) {
-                        updateHands(profile, op.carID, "000", "remove");
-                    }
+                    removeIfNoneLeft(profile, garageCar, "000");
                     actualCount += sellCount;
                     actualMoney += op.basePerCar * sellCount;
                     actualModels++;

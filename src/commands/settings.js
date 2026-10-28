@@ -19,6 +19,8 @@ module.exports = {
             const filter = (button) => button.user.id === message.author.id;
             let { infoMessage, row } = menu(), processing = false;
             let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
+            // Report why the menu couldn't be posted, not a TypeError on null.
+            if (!currentMessage) throw new Error(`cd-settings: could not post the settings menu (${infoMessage.lastError?.message ?? "unknown send failure"})`, { cause: infoMessage.lastError });
 
             const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
             collector.on("collect", async (interaction) => {

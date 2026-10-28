@@ -15,38 +15,8 @@ const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
 const { trackEventPlayed } = require("../util/functions/tracker.js");
 const profileModel = require("../models/profileSchema.js");
-const makeRewardID = require("../util/functions/rewardID.js");
+const { persistRewards } = require("../util/functions/rewardEntries.js");
 const eventModel = require("../models/eventSchema.js");
-
-/**
- * Atomically persist reward entries to unclaimedRewards: money/fuseTokens/
- * trophies aggregate into the matching same-origin entry via the elemMatch
- * positional $inc (falling back to a fresh entry), everything else is $pushed
- * with $each. Never $sets the whole array, so concurrent grants (e.g. Race
- * Week threshold prizes) can't be clobbered.
- */
-async function persistRewards(userID, aggregates, entries) {
-    // rid on non-numeric entries -> exact-entry removal at claim (rewardID.js)
-    const pushes = entries.map(entry => (entry.rid ? entry : { ...entry, rid: makeRewardID() }));
-    // Not one pipeline write: profileCache drops the player's cached garage on
-    // any pipeline update. Sequential, not Promise.all: the cache records the
-    // stamp of the last post-hook to fire, and concurrent writes can return in
-    // a different order than the server applied them, leaving a stale stamp.
-    for (const { key, value, origin } of aggregates) {
-        const res = await profileModel.updateOne(
-            { userID, unclaimedRewards: { "$elemMatch": { origin, [key]: { "$exists": true } } } },
-            { "$inc": { [`unclaimedRewards.$.${key}`]: value } }
-        );
-        const modified = res.modifiedCount !== undefined ? res.modifiedCount : res.nModified;
-        if (!modified) pushes.push({ [key]: value, origin });
-    }
-    if (pushes.length > 0) {
-        await profileModel.updateOne(
-            { userID },
-            { "$push": { unclaimedRewards: { "$each": pushes } } }
-        );
-    }
-}
 
 module.exports = {
     name: "playevent",
@@ -127,10 +97,14 @@ module.exports = {
             }
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
+                // An Event Maker playing an event that hasn't started is a test
+                // play: no entry fee, no rewards, and the progress it records is
+                // wiped by cd-startevent so nobody starts the live event part-way.
+                const isTestPlay = !event.isActive;
                 // One-time entry fee — charged when the player commits to their
                 // first race of this event (not on viewing it).
                 const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-                const unpaidFee = (event.entryFee || 0) > 0 && !(event.paidPlayers ?? {})[message.author.id]
+                const unpaidFee = !isTestPlay && (event.entryFee || 0) > 0 && !(event.paidPlayers ?? {})[message.author.id]
                     ? event.entryFee
                     : 0;
 
@@ -141,7 +115,7 @@ module.exports = {
                 const intermission = new InfoMessage({
                     channel: message.channel,
                     title: "Ready to Play?",
-                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs, settings.filterlogic)}\`${unpaidFee > 0 ? `\n⚠️ **This event has a one-time entry fee of ${moneyEmoji}${unpaidFee.toLocaleString("en")}, charged when you accept this race.**` : ""}`,
+                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs, settings.filterlogic)}\`${unpaidFee > 0 ? `\n⚠️ **This event has a one-time entry fee of ${moneyEmoji}${unpaidFee.toLocaleString("en")}, charged when you accept this race.**` : ""}${isTestPlay ? "\n🧪 **Test play** — this event hasn't started, so no rewards or entry fee. Your progress is wiped when it starts." : ""}`,
                     author: message.author,
                     thumbnail: track["map"],
                     fields: [
@@ -189,7 +163,16 @@ module.exports = {
                     currentMessage.removeButtons();
                     const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
 
-                    if (result > 0) {
+                    if (result > 0 && isTestPlay) {
+                        message.channel.send(`**[TEST] You have beaten Round ${round}! No rewards were granted — test progress is wiped when the event starts.**`);
+                        // isActive: false in the filter: a win that lands after
+                        // cd-startevent (which wipes test progress) writes nothing.
+                        await eventModel.updateOne(
+                            { eventID: event.eventID, isActive: false },
+                            { "$set": { [`playerProgress.${message.author.id}`]: round + 1 } }
+                        );
+                    }
+                    else if (result > 0) {
                         trackEventPlayed();
                         const aggregateRewards = [], newRewards = [];
                         for (let [key, value] of Object.entries(event.roster[round - 1].rewards)) {

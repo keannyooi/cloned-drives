@@ -104,7 +104,7 @@ module.exports = {
                 channel: message.channel,
                 title: "List of All Tracks in Cloned Drives",
                 author: message.author,
-                thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: message.author.displayAvatarURL({ extension: "png" }),
                 fields: [{ name: "Track", value: trackList }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });

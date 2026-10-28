@@ -18,12 +18,11 @@
  */
 
 const bot = require("../../config/config.js");
-const { readFileSync } = require("fs");
-const path = require("path");
 const { DateTime } = require("luxon");
 const { BotError } = require("../classes/classes.js");
 const { WEEK_KEY_FORMAT, LADDER, FILLER_25, PRIZE_POOLS, ENDLESS } = require("../consts/raceWeek.js");
-const { getCar, getPack, getDriver, getAllDrivers, getCarFiles, getPackFiles } = require("./dataManager.js");
+const { getCar, getPack, getDriver, getAllDrivers, getCarFiles } = require("./dataManager.js");
+const { readPrizePools, rollPackByTier } = require("./raceWeekPrizePools.js");
 const { getBaseType } = require("./cardType.js");
 const carNameGen = require("./carNameGen.js");
 const makeRewardID = require("./rewardID.js");
@@ -41,6 +40,33 @@ const REWARD_ORIGIN = "Race Week";
 let cachedPrizes = null;
 
 /**
+ * The week-scoped half of raceWeekStats: every field the Monday reset zeroes,
+ * with its reset value. performRollover's mass reset writes exactly this, and
+ * cd-rr's settlement uses WEEKLY_FIELDS to drop these fields from a write
+ * when the reset landed while its race was in flight. A new weekly field only
+ * has to be added here. Everything else (ownedDrivers, activeDriver, driverXP,
+ * packShards, bestWeek, legacyHighestStreak, dailySkips, lastPlayedDay)
+ * persists across weeks. Factory, so callers never share array/object refs.
+ */
+function weeklyResetValues() {
+    return {
+        weeklyWins: 0,
+        weeklyLosses: 0,
+        weeklyMargin: 0,
+        claimedThresholds: [],
+        activeEvent: null,
+        opponent: { carID: "", upgrade: "000" },
+        trackID: "",
+        reqs: {},
+        // The showcase event's "unused this week" ring must clear weekly,
+        // and revenge matches must not target last week's opponents.
+        usedCars: [],
+        recentLosses: []
+    };
+}
+const WEEKLY_FIELDS = Object.keys(weeklyResetValues());
+
+/**
  * Luxon UTC ISO week key, e.g. "2026-W30". Accepts an optional DateTime
  * (converted to UTC); defaults to now.
  */
@@ -49,15 +75,6 @@ function getWeekKey(dt = DateTime.utc()) {
 }
 
 // ─── Prize rolling ───────────────────────────────────────────────────────────
-
-// daily.js getPackTier, replicated locally (daily's helpers are not exported).
-function getPackTier(pack) {
-    if (pack.tier) return pack.tier;
-    const name = (pack.packName || "").toLowerCase();
-    if (name.includes("elite")) return "elite";
-    if (name.includes("booster")) return "booster";
-    return "standard";
-}
 
 function rollPrizeCar(pool) {
     const candidates = getCarFiles().filter(file => {
@@ -146,28 +163,24 @@ function rollSecretDriver() {
     return pool[Math.floor(Math.random() * pool.length)].driverID;
 }
 
+// Prizes are rolled at the Monday rollover, so an empty tier is a data error
+// worth failing loudly on (the shared roll returns null; events skip instead).
 function rollPrizePack(tier) {
-    const candidates = getPackFiles().filter(file => {
-        const pack = getPack(file);
-        return pack && getPackTier(pack) === tier;
-    });
-    if (candidates.length === 0) {
+    const packID = rollPackByTier(tier);
+    if (!packID) {
         throw new Error(`Race Week: no packs of tier "${tier}" available`);
     }
-    const pick = candidates[Math.floor(Math.random() * candidates.length)];
-    return pick.slice(0, -5);
+    return packID;
 }
 
 // ─── Configurable prize pools (src/raceweek/prizePools.json) ─────────────────
 // Read FRESH on every roll (Monday rollover + admin reroll), so edits apply
 // with no restart. Empty/missing pools fall back to the automatic rules.
-const PRIZE_POOLS_PATH = path.join(__dirname, "../../raceweek/prizePools.json");
 
 /** Whole parsed config (rungs + weeks). Unreadable file → automatic rules. */
 function loadFullConfig() {
     try {
-        const parsed = JSON.parse(readFileSync(PRIZE_POOLS_PATH, "utf8"));
-        return (parsed && typeof parsed === "object") ? parsed : {};
+        return readPrizePools();
     } catch (error) {
         console.log(`[RaceWeek] prizePools.json unreadable (${error.message}) — automatic rules only`);
         return {};
@@ -726,24 +739,11 @@ async function performRollover(prevState, currentKey) {
     // deliberately untouched. The $exists filter keeps dotted $sets from
     // manufacturing partial raceWeekStats objects on unmigrated profiles
     // (those have nothing to reset; runtime lazy-init covers them).
+    const resetSet = {};
+    for (const [key, value] of Object.entries(weeklyResetValues())) resetSet[`raceWeekStats.${key}`] = value;
     await profileModel.updateMany(
         { raceWeekStats: { "$exists": true } },
-        {
-            "$set": {
-                "raceWeekStats.weeklyWins": 0,
-                "raceWeekStats.weeklyLosses": 0,
-                "raceWeekStats.weeklyMargin": 0,
-                "raceWeekStats.claimedThresholds": [],
-                "raceWeekStats.activeEvent": null,
-                "raceWeekStats.opponent": { carID: "", upgrade: "000" },
-                "raceWeekStats.trackID": "",
-                "raceWeekStats.reqs": {},
-                // The showcase event's "unused this week" ring must clear weekly,
-                // and revenge matches must not target last week's opponents.
-                "raceWeekStats.usedCars": [],
-                "raceWeekStats.recentLosses": []
-            }
-        }
+        { "$set": resetSet }
     );
 
     // (5) the weekKey flip — this full-object $set is the atomic COMPLETION of
@@ -923,5 +923,6 @@ module.exports = {
     getPrizes,
     computeThresholdAwards,
     claimDriverSerial,
-    isSerialAvailable
+    isSerialAvailable,
+    WEEKLY_FIELDS
 };

@@ -7,7 +7,7 @@ const { getCar, getDriver, getPack, getCarFiles } = require("./dataManager.js");
 const filterCheck = require("./filterCheck.js");
 const { rarityOf } = require("./raceWeekEvents.js");
 const { isValidTune } = require("./calcTune.js");
-const makeRewardID = require("./rewardID.js");
+const { toRewardEntries } = require("./rewardEntries.js");
 const packBattleModel = require("../../models/packBattleSchema.js");
 const packBattleResultModel = require("../../models/packBattleResultSchema.js");
 const profileModel = require("../../models/profileSchema.js");
@@ -212,7 +212,27 @@ async function processPackOpening(userID, packID, addedCars) {
         // pack-open flow can ANNOUNCE them. They used to be earned in total
         // silence: reward pushed, nothing on screen, player none the wiser
         // until cd-rewards.
-        const earned = findNewMilestones(battle, stats);
+        //
+        // Rewards are queued FIRST, then the keys are marked. Marking first
+        // lost the reward for good when the queue write then failed: the key
+        // said "earned", so the milestone was never offered again. Now:
+        //   - queue fails → the keys are NOT marked, the stats still save, and
+        //     the next open (still over the threshold) earns it again;
+        //   - queue lands but the stats write fails → the next open re-finds
+        //     it, and the queue skips it: every entry carries a milestoneKey
+        //     (battleID:earnedKey), and an already-queued key isn't pushed
+        //     twice. That guard lasts while the entry is unclaimed, so the
+        //     MILESTONE-UNMARKED log line below names what to check.
+        let earned = findNewMilestones(battle, stats);
+        if (earned.length > 0) {
+            try {
+                await pushMilestoneRewards(battle, userID, earned);
+            }
+            catch (err) {
+                console.error(`[PackBattle] MILESTONE-UNQUEUED (retried on the next open) ${JSON.stringify({ userID, battleID: battle.battleID, earnedKeys: earned.map(e => e.earnedKey), rewards: earned.map(e => e.milestone.reward) })}: ${err.message}`);
+                earned = [];
+            }
+        }
         if (earned.length > 0) {
             if (!Array.isArray(stats.milestonesEarned)) stats.milestonesEarned = [];
             stats.milestonesEarned.push(...earned.map(e => e.earnedKey));
@@ -222,15 +242,20 @@ async function processPackOpening(userID, packID, addedCars) {
         const setObj = {};
         setObj[`playerStats.${userID}`] = stats;
 
-        await packBattleModel.updateOne(
-            { battleID: battle.battleID },
-            { "$set": setObj }
-        );
-
-        // Rewards only after the battle write lands: if that write failed, the
-        // milestone isn't recorded, and paying anyway would let the next open
-        // earn (and pay) it a second time.
-        if (earned.length > 0) await pushMilestoneRewards(battle, userID, earned);
+        try {
+            await packBattleModel.updateOne(
+                { battleID: battle.battleID },
+                { "$set": setObj }
+            );
+        }
+        catch (err) {
+            // Rewards already queued above still stand (and are announced), so
+            // one battle's failed write must not skip the rest of the loop.
+            console.error(`[PackBattle] Tracking failed (non-fatal) for "${battle.name}": ${err.message}`);
+            if (earned.length > 0) {
+                console.error(`[PackBattle] MILESTONE-UNMARKED (rewards queued, keys not saved) ${JSON.stringify({ userID, battleID: battle.battleID, earnedKeys: earned.map(e => e.earnedKey) })}`);
+            }
+        }
         for (const entry of earned) {
             earnedAcrossBattles.push({ battleName: battle.name, milestone: entry.milestone });
         }
@@ -241,24 +266,6 @@ async function processPackOpening(userID, packID, addedCars) {
 // ============================================================================
 // CHECK MILESTONES — find newly crossed thresholds, push rewards
 // ============================================================================
-
-/**
- * Reward-entry contract: rewards.js reads ONE reward key per entry (it
- * switches on the first key). A milestone/placement reward written as
- * { money: 500000, trophies: 40 } therefore paid the money and silently
- * dropped the trophies. Split every reward into single-key entries; rid on
- * non-numeric ones for exact removal at claim time.
- */
-function toRewardEntries(reward, origin) {
-    const entries = [];
-    for (const [key, value] of Object.entries(reward || {})) {
-        if (value === undefined || value === null) continue;
-        const entry = { [key]: value, origin };
-        if (key !== "money" && key !== "fuseTokens" && key !== "trophies") entry.rid = makeRewardID();
-        entries.push(entry);
-    }
-    return entries;
-}
 
 /** The milestones `stats` has newly crossed, as [{ milestone, earnedKey }]. Pure — writes nothing. */
 function findNewMilestones(battle, stats) {
@@ -309,14 +316,28 @@ function findNewMilestones(battle, stats) {
     return newlyEarned;
 }
 
-/** Push newly earned milestones' rewards to the player's unclaimedRewards. */
+/**
+ * Push newly earned milestones' rewards to the player's unclaimedRewards.
+ * Idempotent per milestone: each entry is stamped milestoneKey =
+ * "battleID:earnedKey" (after the reward key and origin, so rewards.js still
+ * reads the reward key first), and a key already queued is skipped by the
+ * write's filter. A retry after a half-failed open can't queue the same
+ * milestone twice. One plain $push per milestone (rarely more than one per
+ * open): unclaimedRewards is a light field, so the profile cache keeps the
+ * player's entry without a heavy-field voucher.
+ */
 async function pushMilestoneRewards(battle, userID, newlyEarned) {
-    // rid on non-numeric entries → exact-entry removal at claim time
-    const rewards = newlyEarned.flatMap(e => toRewardEntries(e.milestone.reward, `${battle.name} Milestone`));
-    await profileModel.updateOne(
-        { userID },
-        { $push: { unclaimedRewards: { $each: rewards } } }
-    );
+    for (const e of newlyEarned) {
+        const milestoneKey = `${battle.battleID}:${e.earnedKey}`;
+        // rid on non-numeric entries → exact-entry removal at claim time
+        const rewards = toRewardEntries(e.milestone.reward, `${battle.name} Milestone`)
+            .map(entry => ({ ...entry, milestoneKey }));
+        if (rewards.length === 0) continue;
+        await profileModel.updateOne(
+            { userID, "unclaimedRewards.milestoneKey": { "$ne": milestoneKey } },
+            { "$push": { unclaimedRewards: { "$each": rewards } } }
+        );
+    }
 }
 
 /**
@@ -344,6 +365,22 @@ async function checkMilestones(battle, userID, stats) {
 // ============================================================================
 
 async function takeSnapshot(battle) {
+    const snapshot = buildSnapshot(battle);
+    if (!snapshot) return null;
+
+    // M-13: Cap snapshots at 100 to prevent unbounded array growth
+    // $slice: -100 keeps the most recent 100 entries
+    await packBattleModel.updateOne(
+        { battleID: battle.battleID },
+        { $push: { snapshots: { $each: [snapshot], $slice: -100 } } }
+    );
+
+    // H-08: Return the snapshot so callers don't need to re-fetch the document
+    return snapshot;
+}
+
+/** The leaderboard snapshot for a battle's current stats, computed in memory (no write). */
+function buildSnapshot(battle) {
     const entries = Object.entries(battle.playerStats || {});
     if (entries.length === 0) return null;
 
@@ -364,15 +401,6 @@ async function takeSnapshot(battle) {
         packsOpened: computeDenseRanking(packsOpenedList),
         highestPackPullCR: computeDenseRanking(crList)
     };
-
-    // M-13: Cap snapshots at 100 to prevent unbounded array growth
-    // $slice: -100 keeps the most recent 100 entries
-    await packBattleModel.updateOne(
-        { battleID: battle.battleID },
-        { $push: { snapshots: { $each: [snapshot], $slice: -100 } } }
-    );
-
-    // H-08: Return the snapshot so callers don't need to re-fetch the document
     return snapshot;
 }
 
@@ -380,13 +408,24 @@ async function takeSnapshot(battle) {
 // DISTRIBUTE PLACEMENT REWARDS — called at battle end
 // ============================================================================
 
-async function distributePlacementRewards(battle) {
-    // H-08: Re-fetch once for latest stats, then use returned snapshot (was 3 fetches, now 1)
-    const freshBattle = await packBattleModel.findOne({ battleID: battle.battleID });
+async function distributePlacementRewards(battle, claimed = null) {
+    // H-08: Re-fetch once for latest stats, then use returned snapshot (was 3 fetches, now 1).
+    // endPackBattle passes the doc its claim returned, which is already fresh.
+    const freshBattle = claimed || await packBattleModel.findOne({ battleID: battle.battleID });
     if (!freshBattle) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [], failedRewards: [] };
 
-    // takeSnapshot now returns the snapshot directly — no need to re-fetch
-    const finalSnapshot = await takeSnapshot(freshBattle);
+    // takeSnapshot now returns the snapshot directly — no need to re-fetch.
+    // Storing it on the battle doc is best-effort here: the doc is deleted
+    // right after and the archive keeps finalSnapshot itself, so a failed push
+    // must not strand an already-claimed battle with nobody paid.
+    let finalSnapshot;
+    try {
+        finalSnapshot = await takeSnapshot(freshBattle);
+    }
+    catch (error) {
+        console.error(`[PackBattle] final snapshot write failed for "${freshBattle.name}" (paying from the in-memory snapshot): ${error.message}`);
+        finalSnapshot = buildSnapshot(freshBattle);
+    }
     if (!finalSnapshot) return { battle: freshBattle, finalSnapshot: null, distributedRewards: [], failedRewards: [] };
 
     const distributedRewards = [];
@@ -428,10 +467,21 @@ async function distributePlacementRewards(battle) {
             const rewardEntries = toRewardEntries(placement.reward, origin);
             if (rewardEntries.length === 0) continue;
 
-            await profileModel.updateOne(
-                { userID },
-                { $push: { unclaimedRewards: { $each: rewardEntries } } }
-            );
+            // The battle is already claimed (inactive) by now, so one player's
+            // failed write must not abort the loop: that would leave everyone
+            // after them unpaid, no archive, and the battle stranded. Record
+            // it instead — the archive and cd-endpackbattle list it for a re-grant.
+            try {
+                await profileModel.updateOne(
+                    { userID },
+                    { $push: { unclaimedRewards: { $each: rewardEntries } } }
+                );
+            }
+            catch (error) {
+                console.error(`[PackBattle] PLACEMENT-UNPAID ${JSON.stringify({ userID, battleID: freshBattle.battleID, rank, leaderboard: placement.leaderboard, reward: placement.reward })}: ${error.message}`);
+                failedRewards.push({ userID, rank, leaderboard: placement.leaderboard, reward: placement.reward, reason: `write failed: ${error.message}` });
+                continue;
+            }
 
             for (const rewardEntry of rewardEntries) {
                 distributedRewards.push({
@@ -597,21 +647,42 @@ async function startScheduledPackBattles(now = DateTime.utc()) {
 }
 
 /**
- * End a battle whose deadline has passed: pay placements, archive, delete.
- * It is claimed first (active → inactive) because the dev bot shares this
- * database and runs the same loop — placement rewards must only pay once.
+ * End a battle: claim it, pay placements, archive, delete. Shared by
+ * cd-endpackbattle and the timed auto-end. The claim (active → inactive) is
+ * one atomic write, so whichever path gets there first ends the battle and
+ * every other one — the 3-minute tick, the dev bot's copy of it, a second
+ * admin's confirm — gets null and pays nothing. Placements are paid from the
+ * doc the claim returned (the battle as it stood when it ended).
+ * @param {Object} battle   the battle as loaded (only battleID is read)
+ * @param {string} endedBy  a userID, or "auto" for the timer
+ * @returns {Promise<Object|null>} distributePlacementRewards' result, or null if it was already ended
+ */
+async function endPackBattle(battle, endedBy = "auto") {
+    const claimed = await packBattleModel.findOneAndUpdate(
+        { battleID: battle.battleID, isActive: true },
+        { $set: { isActive: false } },
+        { returnDocument: "after", projection: { snapshots: 0 } }
+    ).lean();
+    if (!claimed) return null;
+    const distribution = await distributePlacementRewards(claimed, claimed);
+    await archivePackBattle(claimed, distribution, endedBy);
+    try {
+        await packBattleModel.deleteOne({ battleID: claimed.battleID });
+    }
+    catch (error) {
+        // Already paid and archived, and inactive so nothing re-claims it:
+        // report the end as done and leave the leftover doc for a cleanup.
+        console.error(`[PackBattle] "${claimed.name}" ended and paid, but deleting it failed (leftover inactive doc, battleID ${claimed.battleID}): ${error.message}`);
+    }
+    return distribution;
+}
+
+/**
+ * End a battle whose deadline has passed (the 3-minute loop in index.js).
  * @returns {Promise<boolean>} true if this call ended it
  */
 async function expirePackBattle(battle) {
-    const claim = await packBattleModel.updateOne(
-        { battleID: battle.battleID, isActive: true },
-        { $set: { isActive: false } }
-    );
-    if (!claim || claim.modifiedCount === 0) return false;
-    const distribution = await distributePlacementRewards(battle);
-    await archivePackBattle(battle, distribution, "auto");
-    await packBattleModel.deleteOne({ battleID: battle.battleID });
-    return true;
+    return (await endPackBattle(battle, "auto")) !== null;
 }
 
 // ============================================================================
@@ -737,6 +808,7 @@ module.exports = {
     nextRaceWeekStart,
     activatePackBattle,
     startScheduledPackBattles,
+    endPackBattle,
     expirePackBattle,
     validateBattleTemplate,
     rewardProblems,

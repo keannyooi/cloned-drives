@@ -30,6 +30,8 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
 
     let row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
     let listMessage = await embed.sendMessage({ buttons: [row], currentMessage });
+    // sendMessage returns null when the send fails; nothing to paginate then.
+    if (!listMessage) return console.log(`[listUpdate] list message failed to send: ${embed.lastError?.message ?? "unknown send failure"}`);
 
     const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime, componentType: Button });
     collector.on("collect", async (button) => {

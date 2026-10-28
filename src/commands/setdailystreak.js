@@ -3,6 +3,7 @@
 const { DateTime } = require("luxon");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -22,7 +23,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), undefined, { strict: true })))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -43,11 +44,12 @@ module.exports = {
                             "dailyStats.notifReceived": true
                         }
                     });
+                    auditLog(message, { command: "setdailystreak", target: result.user, details: { streak: parseInt(args[1]) } });
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully set ${result.user.username}'s daily reward streak to ${args[1]}!`,
                         author: message.author,
-                        thumbnail: result.user.displayAvatarURL({ format: "png", dynamic: true })
+                        thumbnail: result.user.displayAvatarURL({ extension: "png" })
                     });
                     return successMessage.sendMessage({ currentMessage });
                 })

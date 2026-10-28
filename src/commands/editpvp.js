@@ -51,6 +51,7 @@ const { getCar, getTrack } = require("../util/functions/dataManager.js");
 const search = require("../util/functions/search.js");
 const { parseDuration, validateDurationBounds } = require("../util/functions/pvpTickets.js");
 const pvpEventModel = require("../models/pvpEventSchema.js");
+const endPvpEvent = require("../util/functions/endPvpEvent.js");
 
 const VALID_TUNES = ["000", "333", "666", "699", "969", "996"];
 
@@ -607,7 +608,15 @@ async function resetField(message, pvpEvent, args, currentMessage) {
     if (pvpEvent.isActive) return sendErr(message, "Error, can't reset entries on a live event.", "End the event first.", currentMessage);
     const what = (args[0] || "").toLowerCase();
     if (what === "entries") {
-        await pvpEventModel.updateOne({ pvpEventID: pvpEvent.pvpEventID }, { entries: {} });
+        // Also refused for an event an end has claimed (endPvpEvent's endingAt
+        // marker): its entries are the only record of who was or wasn't paid.
+        const res = await pvpEventModel.updateOne(
+            { _id: pvpEvent._id, isActive: { $ne: true }, [endPvpEvent.CLAIM_MARKER]: { $exists: false } },
+            { entries: {} }
+        );
+        if (res.matchedCount === 0) {
+            return sendErr(message, "Error, this event is being ended (or its end was interrupted).", "Its entries were left as they are.", currentMessage);
+        }
         return success(message, "Cleared all participant entries.", undefined, currentMessage);
     }
     return sendErr(message, "Error, unknown reset target.", "Currently only `reset entries` is supported.", currentMessage);

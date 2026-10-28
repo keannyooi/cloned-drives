@@ -14,6 +14,7 @@ const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { OWNER_ID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
 const searchUser = require("../util/functions/searchUser.js");
+const auditLog = require("../util/functions/auditLog.js");
 const { applyRegen } = require("../util/functions/pvpTickets.js");
 const pvpEventModel = require("../models/pvpEventSchema.js");
 
@@ -95,7 +96,7 @@ async function grantTickets(message, args) {
         }
     }
     else {
-        const userResponse = await searchUser(message, userArg.toLowerCase());
+        const userResponse = await searchUser(message, userArg.toLowerCase(), undefined, { strict: true });
         if (!Array.isArray(userResponse)) return;
         targetUser = userResponse[0].user;
     }
@@ -128,21 +129,64 @@ async function grantTickets(message, args) {
             // Build / update the user's entry.
             // First, settle any pending regen so we don't wipe in-progress regen
             // when bumping their ticket count. Then apply the grant, capped at ticketCap.
-            const entries = pvpEvent.entries || {};
-            const existing = entries[targetUser.id] || newEntry(pvpEvent);
-            applyRegen(existing, pvpEvent.ticketCap, pvpEvent.ticketRegenMinutes);
-            const before = existing.tickets;
-            // Cap at ticketCap on the upper end, floor at 0 on the lower end.
-            const newTotal = Math.min(pvpEvent.ticketCap, Math.max(0, before + amount));
-            existing.tickets = newTotal;
-            // Don't reset lastTicketUse — applyRegen already set it correctly.
+            // Only the two ticket fields are written, and only while they still hold
+            // what we read (compare-and-set): the player may be mid-match, and a
+            // whole-entry $set would wipe their score/record changes, while a blind
+            // ticket $set would undo a ticket they just spent. On a miss, re-read
+            // and recompute (a few tries — a match spends at most one ticket).
+            const entryPath = `entries.${targetUser.id}`;
+            let entries = pvpEvent.entries || {};
+            let before, newTotal, applied = false;
+            for (let attempt = 1; attempt <= 3 && !applied; attempt++) {
+                if (attempt > 1) {
+                    const fresh = await pvpEventModel.findOne(
+                        { pvpEventID: pvpEvent.pvpEventID, isActive: true },
+                        { [entryPath]: 1 }
+                    ).lean();
+                    if (!fresh) break;
+                    entries = fresh.entries || {};
+                }
+                const stored = entries[targetUser.id];
+                const existing = stored ? { ...stored } : newEntry(pvpEvent);
+                applyRegen(existing, pvpEvent.ticketCap, pvpEvent.ticketRegenMinutes);
+                before = existing.tickets;
+                // Cap at ticketCap on the upper end, floor at 0 on the lower end.
+                newTotal = Math.min(pvpEvent.ticketCap, Math.max(0, before + amount));
+                existing.tickets = newTotal;
+                // Don't reset lastTicketUse — applyRegen already set it correctly.
 
-            entries[targetUser.id] = existing;
-            await pvpEventModel.updateOne(
-                { pvpEventID: pvpEvent.pvpEventID },
-                { "$set": { [`entries.${targetUser.id}`]: existing } }
-            );
+                let filter, update;
+                if (stored) {
+                    filter = {
+                        pvpEventID: pvpEvent.pvpEventID,
+                        isActive: true,
+                        [`${entryPath}.tickets`]: stored.tickets ?? null,
+                        [`${entryPath}.lastTicketUse`]: stored.lastTicketUse ?? null
+                    };
+                    update = { "$set": {
+                        [`${entryPath}.tickets`]: newTotal,
+                        [`${entryPath}.lastTicketUse`]: existing.lastTicketUse ?? null
+                    }};
+                }
+                else {
+                    // No entry yet — safe to write it whole, unless one appears meanwhile
+                    filter = { pvpEventID: pvpEvent.pvpEventID, isActive: true, [entryPath]: { $exists: false } };
+                    update = { "$set": { [entryPath]: existing } };
+                }
+                const result = await pvpEventModel.updateOne(filter, update);
+                applied = result.matchedCount > 0;
+            }
 
+            if (!applied) {
+                return new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, ticket grant failed.",
+                    desc: `${targetUser.username}'s entry kept changing (or "${pvpEvent.name}" just ended). Try again in a moment.`,
+                    author: message.author
+                }).sendMessage({ currentMessage });
+            }
+
+            auditLog(message, { command: "pvpadmin", target: targetUser, details: { sub: "grant", pvpEventID: pvpEvent.pvpEventID, amount, ticketsBefore: before, ticketsAfter: newTotal } });
             const cappedNote = (before + amount > pvpEvent.ticketCap) ? ` _(capped at ${pvpEvent.ticketCap})_` : "";
             return new SuccessMessage({
                 channel: message.channel,

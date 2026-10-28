@@ -27,6 +27,7 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const { parseDuration } = require("../util/functions/pvpTickets.js");
 const profileModel = require("../models/profileSchema.js");
 const pvpEventModel = require("../models/pvpEventSchema.js");
+const endPvpEvent = require("../util/functions/endPvpEvent.js");
 
 module.exports = {
     name: "startpvp",
@@ -36,7 +37,10 @@ module.exports = {
     category: "Events",
     description: "Starts an inactive PvP event after validating it has tracksets, ghost decks, rewards, and a duration.",
     async execute(message, args) {
-        const events = await pvpEventModel.find({ isActive: false });
+        // Drafts only: an event an end has claimed (endPvpEvent's endingAt
+        // marker) is inactive too, but may already have paid some players, and
+        // restarting it would let the next end pay everyone again.
+        const events = await pvpEventModel.find({ isActive: false, [endPvpEvent.CLAIM_MARKER]: { $exists: false } });
         if (events.length === 0) {
             return new ErrorMessage({
                 channel: message.channel,
@@ -91,10 +95,20 @@ module.exports = {
                 pvpEvent.deadline = DateTime.now().plus({ [parsed.luxonKey]: parsed.amount }).toISO();
                 pvpEvent.isActive = true;
 
-                await pvpEventModel.updateOne({ pvpEventID: pvpEvent.pvpEventID }, {
-                    deadline: pvpEvent.deadline,
-                    isActive: true
-                });
+                // Still a draft? Refused if another admin started it during the
+                // confirm, or an end claimed it meanwhile.
+                const res = await pvpEventModel.updateOne(
+                    { _id: pvpEvent._id, isActive: false, [endPvpEvent.CLAIM_MARKER]: { $exists: false } },
+                    { deadline: pvpEvent.deadline, isActive: true }
+                );
+                if (res.matchedCount === 0) {
+                    return new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, this event can no longer be started.",
+                        desc: "It was started or ended by someone else meanwhile.",
+                        author: message.author
+                    }).sendMessage({ currentMessage: currentMessage2 });
+                }
 
                 // Public announcement
                 try {

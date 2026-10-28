@@ -41,4 +41,24 @@ function updateHands(playerData, carID, origUpg, newUpgrade) {
     return playerData;
 }
 
+/**
+ * Removing some copies of a car (sell / exchange / removecar): clears the hand
+ * and deck slots for that car+tune only once the garage row has none left at
+ * that tune. Call it AFTER decrementing `garageRow.upgrades[upgrade]`, so
+ * selling one of three stock copies keeps the hand and decks as they were.
+ * Counts every row with that carID, so a legacy garage that still holds a
+ * duplicate row doesn't lose its hand while copies remain in the other row.
+ */
+function removeIfNoneLeft(playerData, garageRow, upgrade) {
+    if (!garageRow) return playerData;
+    const rows = Array.isArray(playerData.garage) ? playerData.garage.filter(g => g?.carID === garageRow.carID) : [];
+    if (!rows.includes(garageRow)) rows.push(garageRow);
+    const left = rows.reduce((sum, g) => sum + (g.upgrades?.[upgrade] || 0), 0);
+    if (left === 0) {
+        updateHands(playerData, garageRow.carID, upgrade, "remove");
+    }
+    return playerData;
+}
+
 module.exports = updateHands;
+module.exports.removeIfNoneLeft = removeIfNoneLeft;

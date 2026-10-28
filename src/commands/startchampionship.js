@@ -4,11 +4,12 @@ const bot = require("../config/config.js");
 const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
 const { registerFont, loadImage, createCanvas } = require("@napi-rs/canvas");
-const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { ErrorMessage, SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
 const { getCar, getTrack, getPack } = require("../util/functions/dataManager.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
+const { snapshotEdit, editedUpdate } = require("../util/functions/editSave.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const { getScaledImage } = require("../util/functions/imageCache.js");
 const profileModel = require("../models/profileSchema.js");
@@ -34,6 +35,9 @@ module.exports = {
             });
 
         async function startChampionship(championship, currentMessage) {
+            // Taken before anything changes, so the start writes only what it
+            // edited (editSave.js) plus the test-play wipe below.
+            const loaded = snapshotEdit(championship);
             const { settings } = await profileModel.findOne({ userID: message.author.id }, { settings: 1 });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
@@ -46,6 +50,10 @@ module.exports = {
             async function acceptedFunction(currentMessage) {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 championship.isActive = true;
+                // Wipe Event Maker test plays so everyone starts the live
+                // championship clean. Ended championships are deleted, so this
+                // never touches live progress.
+                championship.playerProgress = {};
                 if (championship.deadline.length < 9) {
                     championship.deadline = DateTime.now().plus({ days: parseInt(championship.deadline) }).toISO();
                 }
@@ -197,15 +205,28 @@ module.exports = {
                     title: `Successfully started the ${championship.name} championship!`,
                     author: message.author,
                 });
+                // Saved and confirmed BEFORE the DMs: the old one-at-a-time loop
+                // held the championship inactive (and the admin's command lock)
+                // for minutes. The DMs now go out in the background.
+                // Only a championship that is still inactive can be started, so a
+                // second staff member confirming late can't wipe live progress.
+                // editedUpdate leaves out player fields, so the wipe is added here.
+                const update = editedUpdate(championship, loaded) ?? {};
+                update.$set = { ...update.$set, playerProgress: {} };
+                const startResult = await championshipModel.updateOne({ _id: championship._id, isActive: false }, update);
+                if (startResult.matchedCount === 0) {
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: `Error, the ${championship.name} championship has already been started.`,
+                        author: message.author
+                    });
+                    return errorMessage.sendMessage({ currentMessage });
+                }
+
                 await currentEventsChannel.send({
                     content: `**The ${championship.name} championship has officially started!**`,
                     files: [attachment]
                 });
-
-                // Saved and confirmed BEFORE the DMs: the old one-at-a-time loop
-                // held the championship inactive (and the admin's command lock)
-                // for minutes. The DMs now go out in the background.
-                await championshipModel.updateOne({ championshipID: championship.championshipID }, championship);
                 await successMessage.sendMessage({ attachment, currentMessage });
                 notifyChampionshipStart(championship.name).catch(error => {
                     console.error(`[CHAMPIONSHIP DMs] Error sending notifications for "${championship.name}":`, error);

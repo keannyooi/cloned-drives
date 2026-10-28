@@ -73,7 +73,7 @@ function costFromStock(cr, tune) {
  */
 function getSellPrice(cr) {
     if (cr > 1500)                     return 1;          // BOSS guard
-    if (cr > 1149 && cr <= 1499)       return 7250000;
+    if (cr > 1149 && cr <= 1500)       return 7250000;
     if (cr > 1099 && cr <= 1149)       return 4200000;
     if (cr > 1049 && cr <= 1099)       return 1400000;
     if (cr > 999  && cr <= 1049)       return 1080000;

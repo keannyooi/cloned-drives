@@ -4,6 +4,8 @@ const { getPackFiles, getPack } = require("../util/functions/dataManager.js");
 const { ErrorMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
 const listUpdate = require("../util/functions/listUpdate.js");
+// The same tier/category rules daily and Race Week draw packs with.
+const { getPackCategories, getPackTier } = require("../util/consts/economy.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 
 module.exports = {
@@ -104,7 +106,7 @@ module.exports = {
                 title: "List of All Packs in Cloned Drives",
                 desc: "🟢 Buyable · 🔴 Elite · 🟡 Booster",
                 author: message.author,
-                thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
+                thumbnail: message.author.displayAvatarURL({ extension: "png" }),
                 fields: [{ name: "Pack", value: packList }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });
@@ -112,20 +114,3 @@ module.exports = {
         }
     }
 };
-
-// === Backward-compatible helpers ===
-function getPackCategories(pack) {
-    if (pack.categories) return pack.categories;
-    const cats = [];
-    if (pack.price) cats.push("normal");
-    cats.push("daily", "event", "limited", "reward", "calendar");
-    return cats;
-}
-
-function getPackTier(pack) {
-    if (pack.tier) return pack.tier;
-    const name = (pack.packName || "").toLowerCase();
-    if (name.includes("elite")) return "elite";
-    if (name.includes("booster")) return "booster";
-    return "standard";
-}

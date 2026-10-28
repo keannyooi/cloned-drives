@@ -43,7 +43,17 @@ module.exports = {
 
             async function acceptedFunction(currentMessage) {
                 const endOffer = require("../util/functions/endOffer.js");
-                await endOffer(offer);
+                const ended = await endOffer(offer);
+                // false: the 3-minute tick (or another admin) ended it first.
+                if (ended === false) {
+                    const infoMessage = new InfoMessage({
+                        channel: message.channel,
+                        title: `The ${offer.name} offer had already ended.`,
+                        author: message.author
+                    });
+                    await infoMessage.sendMessage({ currentMessage });
+                    return infoMessage.removeButtons();
+                }
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully ended the ${offer.name} offer!`,

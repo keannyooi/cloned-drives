@@ -4,8 +4,8 @@
  * PACE INDEX (PI) — how good a car is right now, from the real race formula.
  * Design: docs/pace-index.md.
  *
- * Every term of evalScore (race.js / pgGenerator.js) is a difference of
- * per-car quantities, so race(A, B) = S(A) − S(B) for an exact per-car,
+ * Every term of evalScore (raceScore.js, the live race formula) is a
+ * difference of per-car quantities, so race(A, B) = S(A) − S(B) for an exact per-car,
  * per-track score S. Ranking every car on every track is therefore a sort,
  * not a tournament: ~8k cars × 6 tunes × 225 tracks in well under a second.
  *
@@ -32,7 +32,8 @@
 const { getCarFiles, getCar, getTrackFiles, getTrack } = require("./dataManager.js");
 const { modifiedBase, isBMCar, getBaseType } = require("./cardType.js");
 const { calcTune, getAvailableTunes } = require("./calcTune.js");
-const { weatherVars, driveHierarchy, gcHierarchy } = require("../consts/consts.js");
+const { driveHierarchy, gcHierarchy } = require("../consts/consts.js");
+const { trackPens } = require("./raceScore.js");
 
 const PODIUM = [16, 9, 5, 2, 1];          // top 5 in a niche, per track
 const SAVER = [3, 1.5, 1.2, 0.8, 0.3];     // top 5 under a CR ceiling, per track
@@ -81,10 +82,11 @@ let summary = { cars: 0, tracks: 0, ms: 0, computedAt: null };
 let outsiderField = null;     // { tracks, scores: Float64Array[] (descending per track), ids, crs, n }
 
 /**
- * Per-car half of evalScore for one tuned variant on one track. The MPH
- * threshold tracks are tiered exactly as the engine decides them: above the
- * end speed the normal formula applies, otherwise pure top speed, with a
- * crossed threshold beating any car that has not crossed it.
+ * Per-car half of evalScore (raceScore.js) for one tuned variant on one
+ * track — change the two together. The MPH threshold tracks are tiered
+ * exactly as the engine decides them: above the end speed the normal formula
+ * applies, otherwise pure top speed, with a crossed threshold beating any car
+ * that has not crossed it.
  */
 function scoreVariant(v, track, pens, mph) {
     const d = track.specsDistr;
@@ -186,7 +188,7 @@ function computeTable(cars, tracks, options = {}) {
     const ceilState = ceilings.map(() => ({ count: 0, lastS: NaN, lastPos: 0, closed: false }));
 
     for (const track of tracks) {
-        const pens = weatherVars[`${track.weather} ${track.surface}`] || { drivePen: 0, absPen: 0, tcsPen: 0, tyrePen: {} };
+        const pens = trackPens(track, true);   // lenient: missing combo = neutral
         const mph = mphOf(track);
         for (let i = 0; i < n; i++) {
             let best = -Infinity;
@@ -378,7 +380,7 @@ function rateOutsider(car) {
     const crownTracks = [];
     for (let ti = 0; ti < tracks.length; ti++) {
         const track = tracks[ti];
-        const pens = weatherVars[`${track.weather} ${track.surface}`] || { drivePen: 0, absPen: 0, tcsPen: 0, tyrePen: {} };
+        const pens = trackPens(track, true);   // lenient: missing combo = neutral
         const mph = mphOf(track);
         let s = -Infinity;
         for (const v of variants) { const x = scoreVariant(v, track, pens, mph); if (x > s) s = x; }

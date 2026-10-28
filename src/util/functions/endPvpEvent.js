@@ -5,7 +5,8 @@
  * =============
  * Wraps up a PvP event:
  *   1. Builds final leaderboard from event.entries
- *   2. Distributes rewards by tier (each player gets only highest tier they qualify for)
+ *   2. Distributes rewards by tier (each player gets only highest tier they qualify for;
+ *      active events only — ending a draft never pays)
  *   3. Saves a snapshot to pvpEventResultModel
  *   4. Deletes the active pvpEvent document
  *   5. Posts an end message + archived thread to #current-events (if it was active)
@@ -167,20 +168,50 @@ function stripTierMeta(tier) {
     return out;
 }
 
-async function endPvpEvent(pvpEvent, endedBy) {
-    const wasActive = !!pvpEvent.isActive;
+// The caller's document by _id when it has one (both callers do) — exact even
+// if two events ever shared a pvpEventID.
+const eventKey = ev => (ev._id ? { _id: ev._id } : { pvpEventID: ev.pvpEventID });
+
+// Set by the active claim below. Without it a claimed event (isActive already
+// false, not deleted yet — mid-end, or left behind by a crash during payouts)
+// looks exactly like a draft. Not in the schema, so the claim writes it with
+// strict:false; cd-endpvp reads it too.
+const CLAIM_MARKER = "endingAt";
+
+async function endPvpEvent(callerCopy, endedBy) {
+    const wasActive = !!callerCopy.isActive;
 
     // Atomic claim — prevents the scheduler and a manual cd-endpvp from both
     // ending the same event in parallel (would double-distribute rewards).
     // We flip isActive→false in the same op that gates entry into the rest of the function.
+    // Everything below is built from the CLAIMED document, not the caller's copy:
+    // cd-endpvp reads the event before a confirm dialog, and matches finished
+    // during it must still count. After the claim no match result or ticket
+    // spend can land any more (pvpplay's writes require isActive), so this is final.
+    let pvpEvent;
     if (wasActive) {
-        const claimed = await pvpEventModel.findOneAndUpdate(
-            { pvpEventID: pvpEvent.pvpEventID, isActive: true },
-            { "$set": { isActive: false } }
-        );
-        if (!claimed) {
-            console.log(`[PvP] ${pvpEvent.pvpEventID} already ended by another process — skipping duplicate end`);
-            return;
+        pvpEvent = await pvpEventModel.findOneAndUpdate(
+            { ...eventKey(callerCopy), isActive: true },
+            { "$set": { isActive: false, [CLAIM_MARKER]: new Date().toISOString() } },
+            { returnDocument: "after", strict: false }
+        ).lean();
+        if (!pvpEvent) {
+            console.log(`[PvP] ${callerCopy.pvpEventID} already ended by another process — skipping duplicate end`);
+            return null;
+        }
+    }
+    else {
+        // Draft — claimed by deleting it in one op, so two ends can't both archive it.
+        // A claimed active event is not a draft: ending it here would archive (and
+        // before, re-pay) an event whose real end is running or was interrupted.
+        pvpEvent = await pvpEventModel.findOneAndDelete({
+            ...eventKey(callerCopy),
+            isActive: { $ne: true },
+            [CLAIM_MARKER]: { $exists: false }
+        }).lean();
+        if (!pvpEvent) {
+            console.log(`[PvP] ${callerCopy.pvpEventID} is no longer a draft (already removed, started, or claimed by an end) — skipping end`);
+            return null;
         }
     }
 
@@ -189,9 +220,9 @@ async function endPvpEvent(pvpEvent, endedBy) {
     const totalParticipants = leaderboard.length;
     const totalMatchesPlayed = leaderboard.reduce((sum, p) => sum + p.matchesPlayed, 0);
 
-    // Distribute rewards
+    // Distribute rewards — only for an event this call claimed as active
     const distribution = [];
-    for (const player of leaderboard) {
+    for (const player of (wasActive ? leaderboard : [])) {
         const tier = findRewardTier(pvpEvent.rewards, player.finalRank, totalParticipants);
         if (!tier) {
             player.rewardTier = null;
@@ -241,8 +272,9 @@ async function endPvpEvent(pvpEvent, endedBy) {
         console.error(`Failed to save PvP event results for ${pvpEvent.pvpEventID}: ${err.message}`);
     }
 
-    // Delete active document
-    await pvpEventModel.deleteOne({ pvpEventID: pvpEvent.pvpEventID });
+    // Delete the event document — by _id, the exact document claimed above
+    // (a draft was already deleted by its claim)
+    if (wasActive) await pvpEventModel.deleteOne({ _id: pvpEvent._id });
 
     // Public end announcement (only for events that were live)
     if (wasActive) {
@@ -283,6 +315,9 @@ async function endPvpEvent(pvpEvent, endedBy) {
             console.error(`Failed to post PvP event end message: ${err.message}`);
         }
     }
+
+    return { totalParticipants, totalMatchesPlayed };
 }
 
 module.exports = endPvpEvent;
+module.exports.CLAIM_MARKER = CLAIM_MARKER;
