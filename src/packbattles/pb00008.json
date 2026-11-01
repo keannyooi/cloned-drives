@@ -1,0 +1,140 @@
+{
+    "_comment": "RACE WEEK 2026-W45 (Mon 2 Nov to Sun 8 Nov 2026), the harder sequel to Operation: Wild Horse. Start it with `cd-startpackbattle Operation: Raging Bull raceweek` so it runs alongside the Raging Bull Race Week. Calibrated by Monte Carlo on the Italian Elite Pack: Wild Horse's headline was a median 12 packs; here the Countach is 27 and the Veneno is about 100. 63 = Lamborghini was founded in 1963. The Veneno was named after a fighting bull.",
+    "name": "Operation: Raging Bull",
+    "packID": "p00038",
+    "duration": "7d",
+    "counters": [
+        { "key": "bullsPulled", "type": "cardsPulled", "filter": { "make": ["lamborghini"] } },
+        { "key": "differentBulls", "type": "uniqueCars", "filter": { "make": ["lamborghini"] } },
+        { "key": "legendsPulled", "type": "cardsPulled", "filter": { "cr": { "start": 850, "end": 9999 } } },
+        { "key": "miuraPulls", "type": "cardsPulled", "filter": { "search": "miura" } },
+        { "key": "horsesPulled", "type": "cardsPulled", "filter": { "make": ["ferrari"] } },
+        { "key": "differentHorses", "type": "uniqueCars", "filter": { "make": ["ferrari"] } },
+        { "key": "legendaryHorses", "type": "cardsPulled", "filter": { "make": ["ferrari"], "cr": { "start": 850, "end": 9999 } } }
+    ],
+    "milestones": [
+        {
+            "_comment": "THE VENENO: all three at once, roughly 100 packs (see the Monte Carlo note above).",
+            "requires": [
+                { "stat": "differentBulls", "threshold": 30 },
+                { "stat": "bullsPulled", "threshold": 63 },
+                { "stat": "legendsPulled", "threshold": 5 }
+            ],
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c02339", "upgrade": "000" } },
+            "hint": "Collect 30 different Lamborghinis, pull 63 in total (Lamborghini was founded in 1963) and land 5 Legendary cards of any make. Do all three and the Veneno is yours."
+        },
+        {
+            "stat": "bullsPulled",
+            "threshold": 25,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c02310", "upgrade": "000" } },
+            "hint": "Pull 25 Lamborghinis of any kind and the Countach LP500 Prototipo joins the herd."
+        },
+        {
+            "stat": "differentBulls",
+            "threshold": 15,
+            "resetType": "cumulative",
+            "reward": { "money": 300000 },
+            "hint": "Collect 15 different Lamborghinis."
+        },
+        {
+            "stat": "legendsPulled",
+            "threshold": 3,
+            "resetType": "cumulative",
+            "reward": { "trophies": 50 },
+            "hint": "Pull 3 Legendary cards from Italian Elite Packs."
+        },
+        {
+            "stat": "differentBulls",
+            "threshold": 40,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c02976", "upgrade": "000" } },
+            "hint": "The long chase: 40 different Lamborghinis earns the Miura Concept."
+        },
+        {
+            "_comment": "ENZO'S REVENGE: four secret Ferrari goals in the same Italian Elite Pack. Median packs: 32, 92, 110, 130 (Monte Carlo).",
+            "stat": "horsesPulled",
+            "threshold": 10,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c00384", "upgrade": "000" } },
+            "isSecret": true,
+            "hint": "This battle is for bulls, yet something keeps galloping in. Enzo is watching."
+        },
+        {
+            "stat": "differentHorses",
+            "threshold": 15,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c00385", "upgrade": "000" } },
+            "isSecret": true,
+            "hint": "One horse is a stray. A whole stable is a statement."
+        },
+        {
+            "stat": "legendaryHorses",
+            "threshold": 2,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c02925", "upgrade": "000" } },
+            "isSecret": true,
+            "hint": "Maranello keeps its finest out of sight. Find them, and more than once."
+        },
+        {
+            "stat": "horsesPulled",
+            "threshold": 40,
+            "resetType": "cumulative",
+            "reward": { "car": { "carID": "c03247", "upgrade": "000" } },
+            "isSecret": true,
+            "hint": "He told a tractor maker to go home. Steal this battle right out from under the bull."
+        },
+        {
+            "stat": "miuraPulls",
+            "threshold": 1,
+            "resetType": "cumulative",
+            "reward": { "trophies": 30 },
+            "isSecret": true,
+            "hint": "Ferruccio's masterpiece is in here somewhere."
+        },
+        {
+            "stat": "dryStreak",
+            "threshold": 40,
+            "resetType": "cumulative",
+            "reward": { "money": 300000 },
+            "isSecret": true,
+            "hint": "Sometimes the bull just has you on its horns."
+        },
+        {
+            "stat": "bullsPulled",
+            "threshold": 10,
+            "resetType": "daily",
+            "reward": { "money": 100000 },
+            "hint": "Daily: pull 10 Lamborghinis today."
+        },
+        {
+            "stat": "highestSinglePullCR",
+            "threshold": 950,
+            "resetType": "daily",
+            "reward": { "money": 50000 },
+            "hint": "Daily: pull a single 950+ CR card today."
+        }
+    ],
+    "placementRewards": [
+        {
+            "_comment": "Ranks are dense, so tied players share a rank.",
+            "leaderboard": "packsOpened",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "car": { "carID": "c05146", "upgrade": "000" }, "money": 1000000, "trophies": 100 }
+        },
+        {
+            "leaderboard": "packsOpened",
+            "minRank": 2,
+            "maxRank": 5,
+            "reward": { "car": { "carID": "c02330", "upgrade": "000" }, "money": 500000, "trophies": 50 }
+        },
+        {
+            "leaderboard": "highestPackPullCR",
+            "minRank": 1,
+            "maxRank": 1,
+            "reward": { "money": 250000, "trophies": 50 }
+        }
+    ]
+}

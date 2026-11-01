@@ -31,6 +31,8 @@ function loadImageWithTimeout(src, ms = 3000) {
 
 async function race(message, player, opponent, currentTrack, disablegraphics, silentResult) {
     message.channel.sendTyping();
+    // Racing a car ends the cd-undo refund on its upgrades. Lazy, not awaited, never throws into a race.
+    try { require("./undoActions.js").markRaced(message.author.id, player.carID); } catch (_) { /* never affects the race */ }
     // Strict: throws on a weather/surface combo with no weatherVars entry.
     const pens = trackPens(currentTrack);
     const { tyrePen } = pens;

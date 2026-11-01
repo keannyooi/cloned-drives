@@ -17,6 +17,7 @@ function createCar(currentCar, unitPreference, hideStats) {
     const tunedStats = calcTune(bmReference, tune);
     
     const carModule = {
+        carID: currentCar.carID,
         cr: bmReference["cr"],
         topSpeed: tunedStats.topSpeed,
         accel: tunedStats.accel,

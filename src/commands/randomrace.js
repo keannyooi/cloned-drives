@@ -807,6 +807,7 @@ module.exports = {
                             let testMessage = testResult > 0
                                 ? `🧪 **TEST RACE RESULT: WIN** ✅\nYou won by ${testResult} points!\n\n✨ This was a test — your wins and money are untouched.`
                                 : `🧪 **TEST RACE RESULT: LOSS** ❌\nYou lost by ${Math.abs(testResult)} points.\n\n✨ This was a test — your wins and money are untouched.`;
+                            testMessage += "\nIt does end `cd-undo` for any upgrades you made to this car before it.";
                             testMessage += "\n\nWhat would you like to do?\n• Click **Race** to play this race for real\n• Click **Skip** to re-roll the opponent (never touches your wins)\n• Click **Cancel** to exit without racing";
 
                             await button.editReply({ content: testMessage });

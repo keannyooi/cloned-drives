@@ -14,6 +14,7 @@ const { isValidTune, getAvailableTunes } = require("../util/functions/calcTune.j
 const botUserError = require("../util/commonerrors/botUserError.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
+const { recordChangeTune, UNDO_HINT } = require("../util/functions/undoActions.js");
 
 module.exports = {
     name: "changetune",
@@ -125,10 +126,21 @@ module.exports = {
                     if (!ok) return changedError();
                     auditLog(message, { command: "changetune", target: user, details: { carID: ownedCar.carID, from: origUpgrade, to: upgrade } });
 
+                    // Only the admin who ran this can undo it, from their own cd-undo.
+                    const undoable = origUpgrade !== upgrade && await recordChangeTune({
+                        actorID: message.author.id,
+                        targetID: user.id,
+                        targetName: user.username,
+                        summary: `Changed ${user.username}'s ${carNameGen({ currentCar: car })} from \`${origUpgrade}\` to \`${upgrade}\``,
+                        carID: ownedCar.carID,
+                        from: origUpgrade,
+                        to: upgrade
+                    });
+
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully changed tune for ${user.username}'s ${carNameGen({ currentCar: car })}!`,
-                        desc: "Current upgrade status:",
+                        desc: `${undoable ? `${UNDO_HINT}\n\n` : ""}Current upgrade status:`,
                         author: message.author,
                         fields: [
                             { name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },

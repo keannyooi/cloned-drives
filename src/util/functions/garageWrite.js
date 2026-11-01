@@ -195,8 +195,9 @@ function decrementGuards(changes) {
  * @param {Array}  [args.returning] fields to read back from the written document in the same
  *   round trip (e.g. ["money"] for an exact balance to display); returned as `doc`.
  * @param {number} [args.baseStamp] cacheStamp the caller's copy came from (see writeWithHeavy)
- * @returns {Promise<{ ok: boolean, stamp: number|null, doc?: Object }>} ok=false when a guard
- *   failed (the stored garage/balance/expected fields no longer match) — nothing was written.
+ * @returns {Promise<{ ok: boolean, stamp: number|null, doc?: Object, uncertain?: boolean }>} ok=false
+ *   when a guard failed (the stored garage/balance/expected fields no longer match) — nothing was
+ *   written, unless uncertain=true: a first attempt errored and may have landed after all.
  */
 async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}, addToSet = {}, heavy: heavyAfter = {}, stages: extra = [], filter = {}, expect = {}, returning = null, baseStamp }) {
     const opID = crypto.randomUUID();
@@ -279,6 +280,9 @@ async function saveGarage({ userID, before, after, inc = {}, set = {}, push = {}
                     const doc = returning ? await profileModel.findOne({ userID }, Object.fromEntries(returning.map(field => [field, 1]))).lean() : undefined;
                     return { ok: true, stamp: null, ...(returning ? { doc } : {}) };
                 }
+                // The first attempt errored and its opID isn't stored: a guard
+                // failed, or it landed and a later write replaced the opID.
+                return { ok: false, stamp, uncertain: true };
             }
             return { ok: false, stamp };
         }

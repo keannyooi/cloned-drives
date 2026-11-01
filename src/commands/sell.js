@@ -15,6 +15,7 @@ const { isDiamondCar, isSellProtected, sellValueMult, hasType } = require("../ut
 const { trackMoneyEarned, trackCarsSold } = require("../util/functions/tracker.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
+const { recordSell, clearedSlots, UNDO_HINT, UNDO_RECORD_FAILED } = require("../util/functions/undoActions.js");
 
 // Fraction of the original upgrade investment refunded when selling an upgraded car.
 // 0.20 = 20% — small enough that selling isn't an exploit, generous enough to make
@@ -27,8 +28,8 @@ module.exports = {
     usage: [
         "[amount / 'all'] | <car name goes here>",
         "[amount / 'all'] | -<car ID>",
-        "dupes                         — bulk-sell stock dupes, keep 3 of each (default)",
-        "dupes <N>                     — keep N stock copies (override default of 3)",
+        "dupes                         — bulk-sell stock dupes, keep 3 of each (change this with cd-settings dupeskeep)",
+        "dupes <N>                     — keep N stock copies this time",
         "Filter compose with AND. All optional:",
         "  Ranges:  cr 500-800  |  modelyear 1990-2000  |  seatcount 2  |  under <CR> (cr shorthand)",
         "  Exact:   country JP  |  driveType RWD  |  tyreType Performance  |  gc Low  |  enginePos Front  |  fuelType Petrol  |  creator <name>",
@@ -44,7 +45,7 @@ module.exports = {
         const playerData = await getProfile(message.author.id);
 
         // ─── Bulk dupes mode ────────────────────────────────────────────────
-        // cd-sell dupes              → keep 1 of each car, sell rest
+        // cd-sell dupes              → keep the player's default (3 unless set in cd-settings), sell rest
         // cd-sell dupes 2            → keep 2 of each car
         // cd-sell dupes under 200    → only sell dupes of cars with CR < 200
         // cd-sell dupes 1 under 200  → both
@@ -178,6 +179,7 @@ module.exports = {
                         ownedCar.upgrades[upgrade] -= amount;
                         // Hand/deck slots clear only if no copy at this tune is left.
                         removeIfNoneLeft(playerData, ownedCar, upgrade);
+                        const slots = clearedSlots(handDecks, playerData);
                         // The helper only drops the row if its stored counts really reach zero.
                         if (calcTotal(ownedCar) === 0) {
                             playerData.garage.splice(playerData.garage.indexOf(ownedCar), 1);
@@ -200,10 +202,18 @@ module.exports = {
                         trackMoneyEarned(money);
                         trackCarsSold(amount);
 
+                        const undoable = await recordSell({
+                            actorID: message.author.id,
+                            summary: `Sold ${amount.toLocaleString("en")}× ${carNameGen({ currentCar: car, upgrade, rarity: true })} for ${moneyEmoji}${money.toLocaleString("en")}`,
+                            cars: [{ carID: currentCar.carID, tune: upgrade, n: amount }],
+                            money,
+                            slots
+                        });
+
                         const infoMessage = new SuccessMessage({
                             channel: message.channel,
                             title: `Successfully sold your ${carNameGen({ currentCar: car, upgrade, rarity: true })}!`,
-                            desc: `You earned ${moneyEmoji}${money.toLocaleString("en")}!`,
+                            desc: `You earned ${moneyEmoji}${money.toLocaleString("en")}!${undoable ? `\n\n${UNDO_HINT}` : ""}`,
                             author: message.author,
                             image: car["racehud"],
                             fields: [
@@ -225,6 +235,13 @@ module.exports = {
 // Default number of stock (tune 000) copies to keep per car when running
 // `cd-sell dupes` without an explicit number.
 const DEFAULT_KEEP_STOCK = 3;
+
+/** The keep number `cd-sell dupes` uses when none is given. A bad stored value means the default. */
+function defaultKeepFor(settings) {
+    const stored = settings?.dupeskeep;
+    return Number.isInteger(stored) && stored >= 0 && stored <= 1000 ? stored : DEFAULT_KEEP_STOCK;
+}
+module.exports.defaultKeepFor = defaultKeepFor;
 
 // Upgraded tunes — these copies are NEVER touched by bulk-sell, ever.
 // Only stock (000) copies are eligible. This protects players from accidentally
@@ -356,7 +373,7 @@ function carMatchesFilters(car, f) {
  * cd-sell dupes [N] [filter <value>] [filter <value>] ...
  *
  * Bulk-sells STOCK (000) duplicate copies of cars in the garage.
- *   - Default: keep 3 stock per car. Override with `cd-sell dupes <N>`.
+ *   - Default: keep 3 stock per car, or the player's `dupeskeep` setting. Override with `cd-sell dupes <N>`.
  *   - Upgraded copies (333/666/699/969/996) are NEVER sold (protected).
  *   - Skips prize / diamond / BM cars entirely.
  *   - Filters compose with AND. See FILTER_DEFS above for all supported keys.
@@ -375,7 +392,7 @@ async function bulkSellDupes(message, playerData, args) {
 
     // Parse flags. Order-independent. Each filter keyword consumes the next token.
     const filters = { range: {}, exact: {}, array: {}, bool: {}, rarity: null, search: null };
-    let keepStock = DEFAULT_KEEP_STOCK;
+    let keepStock = defaultKeepFor(playerData.settings);
     let keepExplicit = false;
     const unrecognised = [];
 
@@ -522,7 +539,7 @@ async function bulkSellDupes(message, playerData, args) {
     const confirmationMessage = new InfoMessage({
         channel: message.channel,
         title: `Bulk-sell stock duplicates — keeping ${keepStock} of each?${filterTag}`,
-        desc: `**${totalCount.toLocaleString()} stock cars** across **${modelsTouched.toLocaleString()} model(s)** will be sold for **${moneyEmoji}${totalMoney.toLocaleString("en")}**.\n\n_🔒 Upgraded copies (333+) are protected — never sold via bulk._${safetyNote}\n\n**Top by count:**\n${topSold}${moreLine}\n\n_This is irreversible._ ${defaultChoiceTime / 1000}s to confirm.`,
+        desc: `**${totalCount.toLocaleString()} stock cars** across **${modelsTouched.toLocaleString()} model(s)** will be sold for **${moneyEmoji}${totalMoney.toLocaleString("en")}**.\n\n_🔒 Upgraded copies (333+) are protected — never sold via bulk._${safetyNote}\n\n**Top by count:**\n${topSold}${moreLine}${keepExplicit ? "" : "\n\n_Set how many you keep by default with `cd-settings dupeskeep <number>`._"}\n\n_You can undo this with \`cd-undo\` for 2 hours, if you still have the money._ ${defaultChoiceTime / 1000}s to confirm.`,
         author: message.author
     });
 
@@ -545,6 +562,7 @@ async function bulkSellDupes(message, playerData, args) {
                 let actualCount = 0;
                 let actualMoney = 0;
                 let actualModels = 0;
+                const sold = [];
                 for (const op of toSell) {
                     const garageCar = byID.get(op.carID);
                     if (!garageCar) continue;
@@ -557,12 +575,14 @@ async function bulkSellDupes(message, playerData, args) {
                     actualCount += sellCount;
                     actualMoney += op.basePerCar * sellCount;
                     actualModels++;
+                    sold.push({ carID: op.carID, tune: "000", n: sellCount });
                 }
                 // Drop garage entries that have 0 across all tunes (rare — only if
                 // the safety net was bypassed, which currently can't happen)
                 const after = profile.garage.filter(g => calcTotal(g) > 0);
                 return {
-                    profile, before, after, actualCount, actualMoney, actualModels,
+                    profile, before, after, actualCount, actualMoney, actualModels, sold,
+                    slots: clearedSlots(handDecks, profile),
                     // hand/decks only when updateHands changed them, and only if still as read.
                     handDecks: handDeckChanges(profile, handDecks)
                 };
@@ -606,10 +626,19 @@ async function bulkSellDupes(message, playerData, args) {
             trackMoneyEarned(actualMoney);
             trackCarsSold(actualCount);
 
+            // What this sale really sold: the retry above may have rebuilt it.
+            const undoable = await recordSell({
+                actorID: message.author.id,
+                summary: `Sold ${actualCount.toLocaleString("en")} stock duplicate(s) of ${actualModels.toLocaleString("en")} model(s) for ${moneyEmoji}${actualMoney.toLocaleString("en")}`,
+                cars: sale.sold,
+                money: actualMoney,
+                slots: sale.slots
+            });
+
             const successMessage = new SuccessMessage({
                 channel: message.channel,
                 title: `Sold ${actualCount.toLocaleString()} stock duplicate(s)!`,
-                desc: `You earned **${moneyEmoji}${actualMoney.toLocaleString("en")}**.\n\n_All upgraded copies (333+) were preserved._`,
+                desc: `You earned **${moneyEmoji}${actualMoney.toLocaleString("en")}**.\n\n_All upgraded copies (333+) were preserved._\n\n${undoable ? UNDO_HINT : UNDO_RECORD_FAILED}`,
                 author: message.author,
                 fields: [
                     { name: "Models touched", value: actualModels.toLocaleString(), inline: true },

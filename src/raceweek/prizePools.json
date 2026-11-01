@@ -79,6 +79,19 @@
             "50": { "carPool": ["c01520"] },
             "150": { "carPool": ["c08062"] },
             "400": { "carPool": ["c07564"], "driverPool": ["d00046"] }
+        },
+        "2026-W45": {
+            "_comment": "RAGING BULL WEEK (Mon 2 Nov to Sun 8 Nov 2026), running alongside the Operation: Raging Bull pack battle (pb00008, Italian Elite Pack). Cars: 50 = c02030 Miura P400 Jota (1970), 150 = c02034 Miura SVR (1976), 300 = c02282 Countach LPI 800-4 (2022), 400 = c02335 Essenza SCV12 (2020). None has been a Race Week prize before. Packs: 10 Lamborghini Elite p00048, 200 Italian Titan p00046, 250 Italian Cosmo p00093. 25, 100 and 350 aren't listed, so they run the normal pools, and 400 keeps the normal 400 driver (d00046). Reward packs don't count toward the battle; only packs bought with cd-openpack do.",
+            "_label": "Raging Bull",
+            "_color": "#d4a017",
+            "_description": "Ferruccio Lamborghini went to Enzo Ferrari to complain about a clutch and was told to stick to tractors. He built a supercar instead. Climb the ladder for a pair of Miuras, a new Countach and the track-only Essenza, and take on Operation: Raging Bull in the Italian Elite Pack all week.",
+            "10": { "packPool": ["p00048"] },
+            "50": { "carPool": ["c02030"] },
+            "150": { "carPool": ["c02034"] },
+            "200": { "packPool": ["p00046"] },
+            "250": { "packPool": ["p00093"] },
+            "300": { "carPool": ["c02282"] },
+            "400": { "carPool": ["c02335"], "driverPool": ["d00046"] }
         }
     },
     "endless": {

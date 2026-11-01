@@ -138,6 +138,12 @@ module.exports = {
                                                 value: `\`and\` logic narrows the filter selection when more criterias are added while \`or\` logic widens it.
                                                 **Value:** \`${settings.filterlogic ?? "and"}\``,
                                                 inline: true
+                                            },
+                                            {
+                                                name: "Dupes To Keep (ID: \`dupeskeep\`)",
+                                                value: `How many stock copies of each car \`cd-sell dupes\` keeps unless you give it a number. Values are restricted between \`0\` and \`1000\`.
+                                                **Value:** \`${settings.dupeskeep ?? 3}\``,
+                                                inline: true
                                             }
                                         ]
                                     });
@@ -374,6 +380,33 @@ module.exports = {
                         return errorMessage.sendMessage();
                     }
                     break;
+                case "dupeskeep":
+                    // Whole numbers only: parseInt would read "1.5" as 1 and "15x" as 15.
+                    if (/^\d+$/.test(argument) && parseInt(argument, 10) <= 1000) {
+                        const keep = parseInt(argument, 10);
+                        if (keep === 3) {
+                            delete settings[setting];
+                        }
+                        else {
+                            settings[setting] = keep;
+                        }
+
+                        infoMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully set \`cd-sell dupes\` to keep \`${keep}\` of each car by default!`,
+                            author: message.author
+                        });
+                    }
+                    else {
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is invalid.",
+                            desc: "The value should be a whole number between `0` and `1000`.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage();
+                    }
+                    break;
                 case "bio":
                     let bio = args.slice(1, args.length).join(" ").trim();
                     if (bio.length > 1024) {
@@ -412,6 +445,7 @@ module.exports = {
                         \`filterlogic\` - Choose the preferred filter logic. Provide \`and\` or \`or\` after that.
                         \`buttonstyle\` - Choose the order that items are sorted in. Provide either \`default\` or \`classic\` after that.
                         \`listamount\` - Choose the amount of items listed per page. Provide a number between \`5\` and \`10\` after that.
+                        \`dupeskeep\` - Choose how many stock copies \`cd-sell dupes\` keeps by default. Provide a number between \`0\` and \`1000\` after that.
                         \`bio\` - Edits the text in your About Me.`,
                         author: message.author
                     }).displayClosest(setting);

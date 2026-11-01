@@ -15,6 +15,7 @@ const { modifiedBase } = require("../util/functions/cardType.js");
 const confirm = require("../util/functions/confirm.js");
 const { getProfile } = require("../util/functions/profileCache.js");
 const { saveGarage, snapshotHandDecks, handDeckChanges } = require("../util/functions/garageWrite.js");
+const { recordUpgrade, UPGRADE_UNDO_HINT } = require("../util/functions/undoActions.js");
 
 module.exports = {
     name: "upgrade",
@@ -121,10 +122,21 @@ module.exports = {
                                 // The stored balance, read back by the same write.
                                 const moneyBalance = doc && typeof doc.money === "number" ? doc.money : playerData.money - moneyLimit;
 
+                                // Awaited: the command lock is still held, so no race can
+                                // start before this row exists for race() to mark.
+                                const undoable = await recordUpgrade({
+                                    actorID: message.author.id,
+                                    summary: `Upgraded your ${carName} from \`${origUpgrade}\` to \`${upgrade}\` for ${moneyEmoji}${moneyLimit.toLocaleString("en")}`,
+                                    carID: ownedCar.carID,
+                                    from: origUpgrade,
+                                    to: upgrade,
+                                    money: moneyLimit
+                                });
+
                                 const successMessage = new SuccessMessage({
                                     channel: message.channel,
                                     title: `Successfully upgraded your ${carName}!`,
-                                    desc: "Current upgrade status:",
+                                    desc: `${undoable ? `${UPGRADE_UNDO_HINT}\n\n` : ""}Current upgrade status:`,
                                     author: message.author,
                                     fields: [
                                         { name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
